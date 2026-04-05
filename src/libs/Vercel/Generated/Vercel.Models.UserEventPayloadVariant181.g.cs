@@ -1,0 +1,92 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// The payload of the event, if requested.
+    /// </summary>
+    public sealed partial class UserEventPayloadVariant181
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Target { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Domain { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuredBy")]
+        public string? ConfiguredBy { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevConfiguredBy")]
+        public string? PrevConfiguredBy { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserEventPayloadVariant181" /> class.
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="target"></param>
+        /// <param name="domain"></param>
+        /// <param name="configuredBy"></param>
+        /// <param name="prevConfiguredBy"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public UserEventPayloadVariant181(
+            string projectId,
+            string projectName,
+            string target,
+            string domain,
+            string? configuredBy,
+            string? prevConfiguredBy)
+        {
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.Target = target ?? throw new global::System.ArgumentNullException(nameof(target));
+            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
+            this.ConfiguredBy = configuredBy;
+            this.PrevConfiguredBy = prevConfiguredBy;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserEventPayloadVariant181" /> class.
+        /// </summary>
+        public UserEventPayloadVariant181()
+        {
+        }
+    }
+}

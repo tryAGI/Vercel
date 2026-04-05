@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace Vercel.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class AddBypassIpResponseVariant2ResultItemActionNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.AddBypassIpResponseVariant2ResultItemAction?>
+    {
+        /// <inheritdoc />
+        public override global::Vercel.AddBypassIpResponseVariant2ResultItemAction? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Vercel.AddBypassIpResponseVariant2ResultItemActionExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Vercel.AddBypassIpResponseVariant2ResultItemAction)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Vercel.AddBypassIpResponseVariant2ResultItemAction?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Vercel.AddBypassIpResponseVariant2ResultItemAction? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::Vercel.AddBypassIpResponseVariant2ResultItemActionExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

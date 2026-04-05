@@ -1,0 +1,57 @@
+#nullable enable
+
+namespace Vercel
+{
+    public partial interface IProjectsClient
+    {
+        /// <summary>
+        /// Batch remove environment variables<br/>
+        /// Delete multiple environment variables for a given project in a single batch operation.
+        /// </summary>
+        /// <param name="idOrName">
+        /// The unique project identifier or the project name<br/>
+        /// Example: prj_XLKmu1DyR1eY7zq8UgeRKbA7yVLA
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.BatchRemoveProjectEnvResponse> BatchRemoveProjectEnvAsync(
+            string idOrName,
+
+            global::Vercel.BatchRemoveProjectEnvRequest request,
+            string? teamId = default,
+            string? slug = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Batch remove environment variables<br/>
+        /// Delete multiple environment variables for a given project in a single batch operation.
+        /// </summary>
+        /// <param name="idOrName">
+        /// The unique project identifier or the project name<br/>
+        /// Example: prj_XLKmu1DyR1eY7zq8UgeRKbA7yVLA
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="ids">
+        /// Array of environment variable IDs to delete
+        /// </param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.BatchRemoveProjectEnvResponse> BatchRemoveProjectEnvAsync(
+            string idOrName,
+            global::System.Collections.Generic.IList<string> ids,
+            string? teamId = default,
+            string? slug = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

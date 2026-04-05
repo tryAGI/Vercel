@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace Vercel.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class UpdateSharedEnvVariableResponseUpdatedItemTargetItemNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem?>
+    {
+        /// <inheritdoc />
+        public override global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItemExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItemExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

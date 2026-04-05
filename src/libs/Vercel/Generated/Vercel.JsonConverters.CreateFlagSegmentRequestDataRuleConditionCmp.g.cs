@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace Vercel.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class CreateFlagSegmentRequestDataRuleConditionCmpJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.CreateFlagSegmentRequestDataRuleConditionCmp>
+    {
+        /// <inheritdoc />
+        public override global::Vercel.CreateFlagSegmentRequestDataRuleConditionCmp Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Vercel.CreateFlagSegmentRequestDataRuleConditionCmpExtensions.ToEnum(stringValue) ?? default;
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Vercel.CreateFlagSegmentRequestDataRuleConditionCmp)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Vercel.CreateFlagSegmentRequestDataRuleConditionCmp);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Vercel.CreateFlagSegmentRequestDataRuleConditionCmp value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::Vercel.CreateFlagSegmentRequestDataRuleConditionCmpExtensions.ToValueString(value));
+        }
+    }
+}

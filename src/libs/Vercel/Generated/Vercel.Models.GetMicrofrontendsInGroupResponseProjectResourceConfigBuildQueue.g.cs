@@ -1,0 +1,44 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueue
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueueConfigurationJsonConverter))]
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueueConfiguration? Configuration { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueue" /> class.
+        /// </summary>
+        /// <param name="configuration"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueue(
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueueConfiguration? configuration)
+        {
+            this.Configuration = configuration;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueue" /> class.
+        /// </summary>
+        public GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueue()
+        {
+        }
+    }
+}

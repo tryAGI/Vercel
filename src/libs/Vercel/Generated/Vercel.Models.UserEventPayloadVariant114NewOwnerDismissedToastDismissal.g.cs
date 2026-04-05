@@ -1,0 +1,54 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class UserEventPayloadVariant114NewOwnerDismissedToastDismissal
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scopeId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ScopeId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserEventPayloadVariant114NewOwnerDismissedToastDismissal" /> class.
+        /// </summary>
+        /// <param name="scopeId"></param>
+        /// <param name="createdAt"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public UserEventPayloadVariant114NewOwnerDismissedToastDismissal(
+            string scopeId,
+            double createdAt)
+        {
+            this.ScopeId = scopeId ?? throw new global::System.ArgumentNullException(nameof(scopeId));
+            this.CreatedAt = createdAt;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserEventPayloadVariant114NewOwnerDismissedToastDismissal" /> class.
+        /// </summary>
+        public UserEventPayloadVariant114NewOwnerDismissedToastDismissal()
+        {
+        }
+    }
+}

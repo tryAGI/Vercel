@@ -1,0 +1,64 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class UpdateDrainResponseVariant2DeliveryVariant3
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainResponseVariant2DeliveryVariant3TypeJsonConverter))]
+        public global::Vercel.UpdateDrainResponseVariant2DeliveryVariant3Type Type { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("endpoint")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Endpoint { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("table")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Table { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UpdateDrainResponseVariant2DeliveryVariant3" /> class.
+        /// </summary>
+        /// <param name="endpoint"></param>
+        /// <param name="table"></param>
+        /// <param name="type"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public UpdateDrainResponseVariant2DeliveryVariant3(
+            string endpoint,
+            string table,
+            global::Vercel.UpdateDrainResponseVariant2DeliveryVariant3Type type)
+        {
+            this.Type = type;
+            this.Endpoint = endpoint ?? throw new global::System.ArgumentNullException(nameof(endpoint));
+            this.Table = table ?? throw new global::System.ArgumentNullException(nameof(table));
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UpdateDrainResponseVariant2DeliveryVariant3" /> class.
+        /// </summary>
+        public UpdateDrainResponseVariant2DeliveryVariant3()
+        {
+        }
+    }
+}

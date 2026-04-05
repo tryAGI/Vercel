@@ -1,0 +1,53 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class StageRedirectsResponse
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
+        public string? Alias { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.StageRedirectsResponseVersion Version { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StageRedirectsResponse" /> class.
+        /// </summary>
+        /// <param name="version"></param>
+        /// <param name="alias"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public StageRedirectsResponse(
+            global::Vercel.StageRedirectsResponseVersion version,
+            string? alias)
+        {
+            this.Alias = alias;
+            this.Version = version ?? throw new global::System.ArgumentNullException(nameof(version));
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StageRedirectsResponse" /> class.
+        /// </summary>
+        public StageRedirectsResponse()
+        {
+        }
+    }
+}
