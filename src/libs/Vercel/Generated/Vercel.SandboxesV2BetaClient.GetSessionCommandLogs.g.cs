@@ -160,7 +160,7 @@ namespace Vercel
                     continue;
                 }
 
-                var __streamedResponse = global::Vercel.OneOf<global::Vercel.GetSessionCommandLogsResponseVariant1, global::Vercel.GetSessionCommandLogsResponseVariant2>.FromJson(__content, JsonSerializerOptions) ??
+                var __streamedResponse = global::Vercel.OneOf<global::Vercel.GetSessionCommandLogsResponseVariant1, global::Vercel.GetSessionCommandLogsResponseVariant2>.FromJson(__content, JsonSerializerContext) ??
                                        throw new global::Vercel.ApiException(
                                            message: $"Response deserialization failed for \"{__content}\" ",
                                            statusCode: __response.StatusCode)
