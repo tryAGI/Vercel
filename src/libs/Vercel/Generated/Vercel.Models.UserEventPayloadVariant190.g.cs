@@ -11,23 +11,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousProjectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
+        public required string PreviousProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("newProjectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string NewProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationAccountName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        public required string DestinationAccountName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transferId")]
+        public string? TransferId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +44,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant190" /> class.
         /// </summary>
-        /// <param name="source"></param>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
+        /// <param name="previousProjectName"></param>
+        /// <param name="newProjectName"></param>
+        /// <param name="destinationAccountName"></param>
+        /// <param name="transferId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant190(
-            string source,
-            string projectId,
-            string projectName)
+            string previousProjectName,
+            string newProjectName,
+            string destinationAccountName,
+            string? transferId)
         {
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.PreviousProjectName = previousProjectName ?? throw new global::System.ArgumentNullException(nameof(previousProjectName));
+            this.NewProjectName = newProjectName ?? throw new global::System.ArgumentNullException(nameof(newProjectName));
+            this.DestinationAccountName = destinationAccountName ?? throw new global::System.ArgumentNullException(nameof(destinationAccountName));
+            this.TransferId = transferId;
         }
 
         /// <summary>

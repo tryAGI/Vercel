@@ -18,9 +18,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("githubLogin")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketLogin")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GithubLogin { get; set; }
+        public required string BitbucketLogin { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketEmail")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string BitbucketEmail { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string BitbucketName { get; set; }
 
         /// <summary>
         /// 
@@ -46,7 +60,9 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant222" /> class.
         /// </summary>
         /// <param name="email"></param>
-        /// <param name="githubLogin"></param>
+        /// <param name="bitbucketLogin"></param>
+        /// <param name="bitbucketEmail"></param>
+        /// <param name="bitbucketName"></param>
         /// <param name="zeitAccount"></param>
         /// <param name="zeitAccountType"></param>
 #if NET7_0_OR_GREATER
@@ -54,12 +70,16 @@ namespace Vercel
 #endif
         public UserEventPayloadVariant222(
             string email,
-            string githubLogin,
+            string bitbucketLogin,
+            string bitbucketEmail,
+            string bitbucketName,
             string zeitAccount,
             string zeitAccountType)
         {
             this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.GithubLogin = githubLogin ?? throw new global::System.ArgumentNullException(nameof(githubLogin));
+            this.BitbucketLogin = bitbucketLogin ?? throw new global::System.ArgumentNullException(nameof(bitbucketLogin));
+            this.BitbucketEmail = bitbucketEmail ?? throw new global::System.ArgumentNullException(nameof(bitbucketEmail));
+            this.BitbucketName = bitbucketName ?? throw new global::System.ArgumentNullException(nameof(bitbucketName));
             this.ZeitAccount = zeitAccount ?? throw new global::System.ArgumentNullException(nameof(zeitAccount));
             this.ZeitAccountType = zeitAccountType ?? throw new global::System.ArgumentNullException(nameof(zeitAccountType));
         }

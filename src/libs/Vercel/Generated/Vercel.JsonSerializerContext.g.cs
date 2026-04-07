@@ -693,117 +693,109 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant171CreateDeploymentsNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant180ProjectRoleJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant181ProjectRoleJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant180ProjectRoleNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant181ProjectRoleNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant182ProjectMembershipRoleJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant183ProjectMembershipRoleJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant182ProjectMembershipRoleNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant183ProjectMembershipRoleNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant183ProjectRoleJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant184ProjectRoleJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant183ProjectRoleNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant184ProjectRoleNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant184RemovedMembershipRoleJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant185RemovedMembershipRoleJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant184RemovedMembershipRoleNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant185RemovedMembershipRoleNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant185ProjectMembershipRoleJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant186ProjectMembershipRoleJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant185ProjectMembershipRoleNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant186ProjectMembershipRoleNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant185ProjectMembershipPreviousRoleJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant186ProjectMembershipPreviousRoleJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant185ProjectMembershipPreviousRoleNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant186ProjectMembershipPreviousRoleNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192PasswordProtectionEnumDeploymentTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant193PasswordProtectionEnumDeploymentTypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192PasswordProtectionEnumDeploymentTypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant193PasswordProtectionEnumDeploymentTypeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192PasswordProtectionEnum2JsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant193PasswordProtectionEnum2JsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192PasswordProtectionEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant193PasswordProtectionEnum2NullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192OldPasswordProtectionEnumDeploymentTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant193OldPasswordProtectionEnumDeploymentTypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192OldPasswordProtectionEnumDeploymentTypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant193OldPasswordProtectionEnumDeploymentTypeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192OldPasswordProtectionEnum2JsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant193OldPasswordProtectionEnum2JsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192OldPasswordProtectionEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant193OldPasswordProtectionEnum2NullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant193ReasonCodeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant194ReasonCodeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant193ReasonCodeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant194ReasonCodeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant194ConsentJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant195ConsentJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant194ConsentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant195ConsentNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant197PreviousIssuerModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant198PreviousIssuerModeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant197PreviousIssuerModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant198PreviousIssuerModeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant197NextIssuerModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant198NextIssuerModeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant197NextIssuerModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant198NextIssuerModeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206SsoProtectionEnumDeploymentTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207SsoProtectionEnumDeploymentTypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206SsoProtectionEnumDeploymentTypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207SsoProtectionEnumDeploymentTypeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206SsoProtectionEnumCve55182MigrationAppliedFromJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207SsoProtectionEnumCve55182MigrationAppliedFromJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206SsoProtectionEnumCve55182MigrationAppliedFromNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207SsoProtectionEnumCve55182MigrationAppliedFromNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206SsoProtectionEnum2JsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207SsoProtectionEnum2JsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206SsoProtectionEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207SsoProtectionEnum2NullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206OldSsoProtectionEnumDeploymentTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207OldSsoProtectionEnumDeploymentTypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206OldSsoProtectionEnumDeploymentTypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207OldSsoProtectionEnumDeploymentTypeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206OldSsoProtectionEnumCve55182MigrationAppliedFromJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207OldSsoProtectionEnumCve55182MigrationAppliedFromJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206OldSsoProtectionEnumCve55182MigrationAppliedFromNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207OldSsoProtectionEnumCve55182MigrationAppliedFromNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206OldSsoProtectionEnum2JsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207OldSsoProtectionEnum2JsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant206OldSsoProtectionEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant207OldSsoProtectionEnum2NullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant208TrustedIpsJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant209TrustedIpsJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant208TrustedIpsNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant209TrustedIpsNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant208OldTrustedIpsJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant209OldTrustedIpsJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant208OldTrustedIpsNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant209OldTrustedIpsNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant209ReasonCodeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant210ReasonCodeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant209ReasonCodeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant210ReasonCodeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant220FactorOriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant221FactorOriginJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant220FactorOriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant221FactorOriginNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant225BudgetBudgetItemTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant226BudgetBudgetItemTypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant225BudgetBudgetItemTypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant226BudgetBudgetItemTypeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant225BudgetBudgetItemPricingPlanJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant226BudgetBudgetItemPricingPlanJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant225BudgetBudgetItemPricingPlanNullableJsonConverter),
-
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant226BudgetTypeJsonConverter),
-
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant226BudgetTypeNullableJsonConverter),
-
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant226BudgetPricingPlanJsonConverter),
-
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant226BudgetPricingPlanNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant226BudgetBudgetItemPricingPlanNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant227BudgetTypeJsonConverter),
 
@@ -813,9 +805,13 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant227BudgetPricingPlanNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant229StoreTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant228BudgetTypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant229StoreTypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant228BudgetTypeNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant228BudgetPricingPlanJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant228BudgetPricingPlanNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant230StoreTypeJsonConverter),
 
@@ -829,109 +825,113 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant232StoreTypeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant233TypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant233StoreTypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant233TypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant233StoreTypeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant233AccessJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant234TypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant233AccessNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant234TypeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant236PreviousScopeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant234AccessJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant236PreviousScopeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant234AccessNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant236NextScopeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant237PreviousScopeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant236NextScopeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant237PreviousScopeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant239PreviousJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant237NextScopeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant239PreviousNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant237NextScopeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant239NextJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant240PreviousJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant239NextNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant240PreviousNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant240RemovedUsersRoleJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant240NextJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant240RemovedUsersRoleNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant240NextNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant242EnvironmentJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant241RemovedUsersRoleJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant242EnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant241RemovedUsersRoleNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant243EnvironmentJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant243EnvironmentNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant243EnabledJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant244EnvironmentJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant243EnabledNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant244EnvironmentNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant249RoleJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant244EnabledJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant249RoleNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant244EnabledNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant249PreviousPlanJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant250RoleJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant249PreviousPlanNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant250RoleNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant249NewPlanJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant250PreviousPlanJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant249NewPlanNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant250PreviousPlanNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant257PlanJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant250NewPlanJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant257PlanNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant250NewPlanNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant258PlanJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant258PlanNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant261ConsentJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant259PlanJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant261ConsentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant259PlanNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant263EnabledJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant262ConsentJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant263EnabledNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant262ConsentNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant264ScopeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant264EnabledJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant264ScopeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant264EnabledNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant265PreviousEnum2JsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant265ScopeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant265PreviousEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant265ScopeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant265NextEnum2JsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant266PreviousEnum2JsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant265NextEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant266PreviousEnum2NullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant270ProviderJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant266NextEnum2JsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant270ProviderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant266NextEnum2NullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant271ActorTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant271ProviderJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant271ActorTypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant271ProviderNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant282TierJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant272ActorTypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant282TierNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant272ActorTypeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant288GrantTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant283TierJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant288GrantTypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant283TierNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant288AuthMethodJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant289GrantTypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant288AuthMethodNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant289GrantTypeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant288AppClientAuthenticationUsedMethodJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant289AuthMethodJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant288AppClientAuthenticationUsedMethodNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant289AuthMethodNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant289AppClientAuthenticationUsedMethodJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant289AppClientAuthenticationUsedMethodNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.FlagExperimentGuardrailMetricMetricTypeJsonConverter),
 
@@ -10673,7 +10673,7 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2>),
 
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<object, global::Vercel.UserEventPayloadVariant2, global::Vercel.UserEventPayloadVariant3, global::Vercel.UserEventPayloadVariant4, global::Vercel.UserEventPayloadVariant5, global::Vercel.UserEventPayloadVariant6, global::Vercel.UserEventPayloadVariant7, global::Vercel.UserEventPayloadVariant8, global::Vercel.UserEventPayloadVariant9, global::Vercel.UserEventPayloadVariant10, global::Vercel.UserEventPayloadVariant11, global::Vercel.UserEventPayloadVariant12, global::Vercel.UserEventPayloadVariant13, global::Vercel.UserEventPayloadVariant14, global::Vercel.UserEventPayloadVariant15, global::Vercel.UserEventPayloadVariant16, global::Vercel.UserEventPayloadVariant17, global::Vercel.UserEventPayloadVariant18, global::Vercel.UserEventPayloadVariant19, global::Vercel.UserEventPayloadVariant20, global::Vercel.UserEventPayloadVariant21, global::Vercel.UserEventPayloadVariant22, global::Vercel.UserEventPayloadVariant23, global::Vercel.UserEventPayloadVariant24, global::Vercel.UserEventPayloadVariant25, global::Vercel.UserEventPayloadVariant26, global::Vercel.UserEventPayloadVariant27, global::Vercel.UserEventPayloadVariant28, global::Vercel.UserEventPayloadVariant29, global::Vercel.UserEventPayloadVariant30, global::Vercel.UserEventPayloadVariant31, global::Vercel.UserEventPayloadVariant32, global::Vercel.UserEventPayloadVariant33, global::Vercel.UserEventPayloadVariant34, global::Vercel.UserEventPayloadVariant35, global::Vercel.UserEventPayloadVariant36, global::Vercel.UserEventPayloadVariant37, global::Vercel.UserEventPayloadVariant38, global::Vercel.UserEventPayloadVariant39, global::Vercel.UserEventPayloadVariant40, global::Vercel.UserEventPayloadVariant41, global::Vercel.UserEventPayloadVariant42, global::Vercel.UserEventPayloadVariant43, global::Vercel.UserEventPayloadVariant44, global::Vercel.UserEventPayloadVariant45, global::Vercel.UserEventPayloadVariant46, global::Vercel.UserEventPayloadVariant47, global::Vercel.UserEventPayloadVariant48, global::Vercel.UserEventPayloadVariant49, global::Vercel.UserEventPayloadVariant50, global::Vercel.UserEventPayloadVariant51, global::Vercel.UserEventPayloadVariant52, global::Vercel.UserEventPayloadVariant53, global::Vercel.UserEventPayloadVariant54, global::Vercel.UserEventPayloadVariant55, global::Vercel.UserEventPayloadVariant56, global::Vercel.UserEventPayloadVariant57, global::Vercel.UserEventPayloadVariant58, global::Vercel.UserEventPayloadVariant59, global::Vercel.UserEventPayloadVariant60, global::Vercel.UserEventPayloadVariant61, global::Vercel.UserEventPayloadVariant62, global::Vercel.UserEventPayloadVariant63, global::Vercel.UserEventPayloadVariant64, global::Vercel.UserEventPayloadVariant65, global::Vercel.UserEventPayloadVariant66, global::Vercel.UserEventPayloadVariant67, global::Vercel.UserEventPayloadVariant68, global::Vercel.UserEventPayloadVariant69, global::Vercel.UserEventPayloadVariant70, global::Vercel.UserEventPayloadVariant71, global::Vercel.UserEventPayloadVariant72, global::Vercel.UserEventPayloadVariant73, global::Vercel.UserEventPayloadVariant74, global::Vercel.UserEventPayloadVariant75, global::Vercel.UserEventPayloadVariant76, global::Vercel.UserEventPayloadVariant77, global::Vercel.UserEventPayloadVariant78, global::Vercel.UserEventPayloadVariant79, global::Vercel.UserEventPayloadVariant80, global::Vercel.UserEventPayloadVariant81, global::Vercel.UserEventPayloadVariant82, global::Vercel.UserEventPayloadVariant83, global::Vercel.UserEventPayloadVariant84, global::Vercel.UserEventPayloadVariant85, global::Vercel.UserEventPayloadVariant86, global::Vercel.UserEventPayloadVariant87, global::Vercel.UserEventPayloadVariant88, global::Vercel.UserEventPayloadVariant89, global::Vercel.UserEventPayloadVariant90, global::Vercel.UserEventPayloadVariant91, global::Vercel.UserEventPayloadVariant92, global::Vercel.UserEventPayloadVariant93, global::Vercel.UserEventPayloadVariant94, global::Vercel.UserEventPayloadVariant95, global::Vercel.UserEventPayloadVariant96, global::Vercel.UserEventPayloadVariant97, global::Vercel.UserEventPayloadVariant98, global::Vercel.UserEventPayloadVariant99, global::Vercel.UserEventPayloadVariant100, global::Vercel.UserEventPayloadVariant101, global::Vercel.UserEventPayloadVariant102, global::Vercel.UserEventPayloadVariant103, global::Vercel.UserEventPayloadVariant104, global::Vercel.UserEventPayloadVariant105, global::Vercel.UserEventPayloadVariant106, global::Vercel.UserEventPayloadVariant107, global::Vercel.UserEventPayloadVariant108, global::Vercel.UserEventPayloadVariant109, global::Vercel.UserEventPayloadVariant110, global::Vercel.UserEventPayloadVariant111, global::Vercel.UserEventPayloadVariant112, global::Vercel.UserEventPayloadVariant113, global::Vercel.UserEventPayloadVariant114, global::Vercel.UserEventPayloadVariant115, global::Vercel.UserEventPayloadVariant116, global::Vercel.UserEventPayloadVariant117, global::Vercel.UserEventPayloadVariant118, global::Vercel.UserEventPayloadVariant119, global::Vercel.UserEventPayloadVariant120, global::Vercel.UserEventPayloadVariant121, global::Vercel.UserEventPayloadVariant122, global::Vercel.UserEventPayloadVariant123, global::Vercel.UserEventPayloadVariant124, global::Vercel.UserEventPayloadVariant125, global::Vercel.UserEventPayloadVariant126, global::Vercel.UserEventPayloadVariant127, global::Vercel.UserEventPayloadVariant128, global::Vercel.UserEventPayloadVariant129, global::Vercel.UserEventPayloadVariant130, global::Vercel.UserEventPayloadVariant131, global::Vercel.UserEventPayloadVariant132, global::Vercel.UserEventPayloadVariant133, global::Vercel.UserEventPayloadVariant134, global::Vercel.UserEventPayloadVariant135, global::Vercel.UserEventPayloadVariant136, global::Vercel.UserEventPayloadVariant137, global::Vercel.UserEventPayloadVariant138, global::Vercel.UserEventPayloadVariant139, global::Vercel.UserEventPayloadVariant140, global::Vercel.UserEventPayloadVariant141, global::Vercel.UserEventPayloadVariant142, global::Vercel.UserEventPayloadVariant143, global::Vercel.UserEventPayloadVariant144, global::Vercel.UserEventPayloadVariant145, global::Vercel.UserEventPayloadVariant146, global::Vercel.UserEventPayloadVariant147, global::Vercel.UserEventPayloadVariant148, global::Vercel.UserEventPayloadVariant149, global::Vercel.UserEventPayloadVariant150, global::Vercel.UserEventPayloadVariant151, global::Vercel.UserEventPayloadVariant152, global::Vercel.UserEventPayloadVariant153, global::Vercel.UserEventPayloadVariant154, global::Vercel.UserEventPayloadVariant155, global::Vercel.UserEventPayloadVariant156, global::Vercel.UserEventPayloadVariant157, global::Vercel.UserEventPayloadVariant158, global::Vercel.UserEventPayloadVariant159, global::Vercel.UserEventPayloadVariant160, global::Vercel.UserEventPayloadVariant161, global::Vercel.UserEventPayloadVariant162, global::Vercel.UserEventPayloadVariant163, global::Vercel.UserEventPayloadVariant164, global::Vercel.UserEventPayloadVariant165, global::Vercel.UserEventPayloadVariant166, global::Vercel.UserEventPayloadVariant167, global::Vercel.UserEventPayloadVariant168, global::Vercel.UserEventPayloadVariant169, global::Vercel.UserEventPayloadVariant170, global::Vercel.UserEventPayloadVariant171, global::Vercel.UserEventPayloadVariant172, global::Vercel.UserEventPayloadVariant173, global::Vercel.UserEventPayloadVariant174, global::Vercel.UserEventPayloadVariant175, global::Vercel.UserEventPayloadVariant176, global::Vercel.UserEventPayloadVariant177, global::Vercel.UserEventPayloadVariant178, global::Vercel.UserEventPayloadVariant179, global::Vercel.UserEventPayloadVariant180, global::Vercel.UserEventPayloadVariant181, global::Vercel.UserEventPayloadVariant182, global::Vercel.UserEventPayloadVariant183, global::Vercel.UserEventPayloadVariant184, global::Vercel.UserEventPayloadVariant185, global::Vercel.UserEventPayloadVariant186, global::Vercel.UserEventPayloadVariant187, global::Vercel.UserEventPayloadVariant188, global::Vercel.UserEventPayloadVariant189, global::Vercel.UserEventPayloadVariant190, global::Vercel.UserEventPayloadVariant191, global::Vercel.UserEventPayloadVariant192, global::Vercel.UserEventPayloadVariant193, global::Vercel.UserEventPayloadVariant194, global::Vercel.UserEventPayloadVariant195, global::Vercel.UserEventPayloadVariant196, global::Vercel.UserEventPayloadVariant197, global::Vercel.UserEventPayloadVariant198, global::Vercel.UserEventPayloadVariant199, global::Vercel.UserEventPayloadVariant200, global::Vercel.UserEventPayloadVariant201, global::Vercel.UserEventPayloadVariant202, global::Vercel.UserEventPayloadVariant203, global::Vercel.UserEventPayloadVariant204, global::Vercel.UserEventPayloadVariant205, global::Vercel.UserEventPayloadVariant206, global::Vercel.UserEventPayloadVariant207, global::Vercel.UserEventPayloadVariant208, global::Vercel.UserEventPayloadVariant209, global::Vercel.UserEventPayloadVariant210, global::Vercel.UserEventPayloadVariant211, global::Vercel.UserEventPayloadVariant212, global::Vercel.UserEventPayloadVariant213, global::Vercel.UserEventPayloadVariant214, global::Vercel.UserEventPayloadVariant215, global::Vercel.UserEventPayloadVariant216, global::Vercel.UserEventPayloadVariant217, global::Vercel.UserEventPayloadVariant218, global::Vercel.UserEventPayloadVariant219, global::Vercel.UserEventPayloadVariant220, global::Vercel.UserEventPayloadVariant221, global::Vercel.UserEventPayloadVariant222, global::Vercel.UserEventPayloadVariant223, global::Vercel.UserEventPayloadVariant224, global::Vercel.UserEventPayloadVariant225, global::Vercel.UserEventPayloadVariant226, global::Vercel.UserEventPayloadVariant227, global::Vercel.UserEventPayloadVariant228, global::Vercel.UserEventPayloadVariant229, global::Vercel.UserEventPayloadVariant230, global::Vercel.UserEventPayloadVariant231, global::Vercel.UserEventPayloadVariant232, global::Vercel.UserEventPayloadVariant233, global::Vercel.UserEventPayloadVariant234, global::Vercel.UserEventPayloadVariant235, global::Vercel.UserEventPayloadVariant236, global::Vercel.UserEventPayloadVariant237, global::Vercel.UserEventPayloadVariant238, global::Vercel.UserEventPayloadVariant239, global::Vercel.UserEventPayloadVariant240, global::Vercel.UserEventPayloadVariant241, global::Vercel.UserEventPayloadVariant242, global::Vercel.UserEventPayloadVariant243, global::Vercel.UserEventPayloadVariant244, global::Vercel.UserEventPayloadVariant245, global::Vercel.UserEventPayloadVariant246, global::Vercel.UserEventPayloadVariant247, global::Vercel.UserEventPayloadVariant248, global::Vercel.UserEventPayloadVariant249, global::Vercel.UserEventPayloadVariant250, global::Vercel.UserEventPayloadVariant251, global::Vercel.UserEventPayloadVariant252, global::Vercel.UserEventPayloadVariant253, global::Vercel.UserEventPayloadVariant254, global::Vercel.UserEventPayloadVariant255, global::Vercel.UserEventPayloadVariant256, global::Vercel.UserEventPayloadVariant257, global::Vercel.UserEventPayloadVariant258, global::Vercel.UserEventPayloadVariant259, global::Vercel.UserEventPayloadVariant260, global::Vercel.UserEventPayloadVariant261, global::Vercel.UserEventPayloadVariant262, global::Vercel.UserEventPayloadVariant263, global::Vercel.UserEventPayloadVariant264, global::Vercel.UserEventPayloadVariant265, global::Vercel.UserEventPayloadVariant266, global::Vercel.UserEventPayloadVariant267, global::Vercel.UserEventPayloadVariant268, global::Vercel.UserEventPayloadVariant269, global::Vercel.UserEventPayloadVariant270, global::Vercel.UserEventPayloadVariant271, global::Vercel.UserEventPayloadVariant272, global::Vercel.UserEventPayloadVariant273, global::Vercel.UserEventPayloadVariant274, global::Vercel.UserEventPayloadVariant275, global::Vercel.UserEventPayloadVariant276, global::Vercel.UserEventPayloadVariant277, global::Vercel.UserEventPayloadVariant278, global::Vercel.UserEventPayloadVariant279, global::Vercel.UserEventPayloadVariant280, global::Vercel.UserEventPayloadVariant281, global::Vercel.UserEventPayloadVariant282, global::Vercel.UserEventPayloadVariant283, global::Vercel.UserEventPayloadVariant284, global::Vercel.UserEventPayloadVariant285, global::Vercel.UserEventPayloadVariant286, global::Vercel.UserEventPayloadVariant287, global::Vercel.UserEventPayloadVariant288>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<object, global::Vercel.UserEventPayloadVariant2, global::Vercel.UserEventPayloadVariant3, global::Vercel.UserEventPayloadVariant4, global::Vercel.UserEventPayloadVariant5, global::Vercel.UserEventPayloadVariant6, global::Vercel.UserEventPayloadVariant7, global::Vercel.UserEventPayloadVariant8, global::Vercel.UserEventPayloadVariant9, global::Vercel.UserEventPayloadVariant10, global::Vercel.UserEventPayloadVariant11, global::Vercel.UserEventPayloadVariant12, global::Vercel.UserEventPayloadVariant13, global::Vercel.UserEventPayloadVariant14, global::Vercel.UserEventPayloadVariant15, global::Vercel.UserEventPayloadVariant16, global::Vercel.UserEventPayloadVariant17, global::Vercel.UserEventPayloadVariant18, global::Vercel.UserEventPayloadVariant19, global::Vercel.UserEventPayloadVariant20, global::Vercel.UserEventPayloadVariant21, global::Vercel.UserEventPayloadVariant22, global::Vercel.UserEventPayloadVariant23, global::Vercel.UserEventPayloadVariant24, global::Vercel.UserEventPayloadVariant25, global::Vercel.UserEventPayloadVariant26, global::Vercel.UserEventPayloadVariant27, global::Vercel.UserEventPayloadVariant28, global::Vercel.UserEventPayloadVariant29, global::Vercel.UserEventPayloadVariant30, global::Vercel.UserEventPayloadVariant31, global::Vercel.UserEventPayloadVariant32, global::Vercel.UserEventPayloadVariant33, global::Vercel.UserEventPayloadVariant34, global::Vercel.UserEventPayloadVariant35, global::Vercel.UserEventPayloadVariant36, global::Vercel.UserEventPayloadVariant37, global::Vercel.UserEventPayloadVariant38, global::Vercel.UserEventPayloadVariant39, global::Vercel.UserEventPayloadVariant40, global::Vercel.UserEventPayloadVariant41, global::Vercel.UserEventPayloadVariant42, global::Vercel.UserEventPayloadVariant43, global::Vercel.UserEventPayloadVariant44, global::Vercel.UserEventPayloadVariant45, global::Vercel.UserEventPayloadVariant46, global::Vercel.UserEventPayloadVariant47, global::Vercel.UserEventPayloadVariant48, global::Vercel.UserEventPayloadVariant49, global::Vercel.UserEventPayloadVariant50, global::Vercel.UserEventPayloadVariant51, global::Vercel.UserEventPayloadVariant52, global::Vercel.UserEventPayloadVariant53, global::Vercel.UserEventPayloadVariant54, global::Vercel.UserEventPayloadVariant55, global::Vercel.UserEventPayloadVariant56, global::Vercel.UserEventPayloadVariant57, global::Vercel.UserEventPayloadVariant58, global::Vercel.UserEventPayloadVariant59, global::Vercel.UserEventPayloadVariant60, global::Vercel.UserEventPayloadVariant61, global::Vercel.UserEventPayloadVariant62, global::Vercel.UserEventPayloadVariant63, global::Vercel.UserEventPayloadVariant64, global::Vercel.UserEventPayloadVariant65, global::Vercel.UserEventPayloadVariant66, global::Vercel.UserEventPayloadVariant67, global::Vercel.UserEventPayloadVariant68, global::Vercel.UserEventPayloadVariant69, global::Vercel.UserEventPayloadVariant70, global::Vercel.UserEventPayloadVariant71, global::Vercel.UserEventPayloadVariant72, global::Vercel.UserEventPayloadVariant73, global::Vercel.UserEventPayloadVariant74, global::Vercel.UserEventPayloadVariant75, global::Vercel.UserEventPayloadVariant76, global::Vercel.UserEventPayloadVariant77, global::Vercel.UserEventPayloadVariant78, global::Vercel.UserEventPayloadVariant79, global::Vercel.UserEventPayloadVariant80, global::Vercel.UserEventPayloadVariant81, global::Vercel.UserEventPayloadVariant82, global::Vercel.UserEventPayloadVariant83, global::Vercel.UserEventPayloadVariant84, global::Vercel.UserEventPayloadVariant85, global::Vercel.UserEventPayloadVariant86, global::Vercel.UserEventPayloadVariant87, global::Vercel.UserEventPayloadVariant88, global::Vercel.UserEventPayloadVariant89, global::Vercel.UserEventPayloadVariant90, global::Vercel.UserEventPayloadVariant91, global::Vercel.UserEventPayloadVariant92, global::Vercel.UserEventPayloadVariant93, global::Vercel.UserEventPayloadVariant94, global::Vercel.UserEventPayloadVariant95, global::Vercel.UserEventPayloadVariant96, global::Vercel.UserEventPayloadVariant97, global::Vercel.UserEventPayloadVariant98, global::Vercel.UserEventPayloadVariant99, global::Vercel.UserEventPayloadVariant100, global::Vercel.UserEventPayloadVariant101, global::Vercel.UserEventPayloadVariant102, global::Vercel.UserEventPayloadVariant103, global::Vercel.UserEventPayloadVariant104, global::Vercel.UserEventPayloadVariant105, global::Vercel.UserEventPayloadVariant106, global::Vercel.UserEventPayloadVariant107, global::Vercel.UserEventPayloadVariant108, global::Vercel.UserEventPayloadVariant109, global::Vercel.UserEventPayloadVariant110, global::Vercel.UserEventPayloadVariant111, global::Vercel.UserEventPayloadVariant112, global::Vercel.UserEventPayloadVariant113, global::Vercel.UserEventPayloadVariant114, global::Vercel.UserEventPayloadVariant115, global::Vercel.UserEventPayloadVariant116, global::Vercel.UserEventPayloadVariant117, global::Vercel.UserEventPayloadVariant118, global::Vercel.UserEventPayloadVariant119, global::Vercel.UserEventPayloadVariant120, global::Vercel.UserEventPayloadVariant121, global::Vercel.UserEventPayloadVariant122, global::Vercel.UserEventPayloadVariant123, global::Vercel.UserEventPayloadVariant124, global::Vercel.UserEventPayloadVariant125, global::Vercel.UserEventPayloadVariant126, global::Vercel.UserEventPayloadVariant127, global::Vercel.UserEventPayloadVariant128, global::Vercel.UserEventPayloadVariant129, global::Vercel.UserEventPayloadVariant130, global::Vercel.UserEventPayloadVariant131, global::Vercel.UserEventPayloadVariant132, global::Vercel.UserEventPayloadVariant133, global::Vercel.UserEventPayloadVariant134, global::Vercel.UserEventPayloadVariant135, global::Vercel.UserEventPayloadVariant136, global::Vercel.UserEventPayloadVariant137, global::Vercel.UserEventPayloadVariant138, global::Vercel.UserEventPayloadVariant139, global::Vercel.UserEventPayloadVariant140, global::Vercel.UserEventPayloadVariant141, global::Vercel.UserEventPayloadVariant142, global::Vercel.UserEventPayloadVariant143, global::Vercel.UserEventPayloadVariant144, global::Vercel.UserEventPayloadVariant145, global::Vercel.UserEventPayloadVariant146, global::Vercel.UserEventPayloadVariant147, global::Vercel.UserEventPayloadVariant148, global::Vercel.UserEventPayloadVariant149, global::Vercel.UserEventPayloadVariant150, global::Vercel.UserEventPayloadVariant151, global::Vercel.UserEventPayloadVariant152, global::Vercel.UserEventPayloadVariant153, global::Vercel.UserEventPayloadVariant154, global::Vercel.UserEventPayloadVariant155, global::Vercel.UserEventPayloadVariant156, global::Vercel.UserEventPayloadVariant157, global::Vercel.UserEventPayloadVariant158, global::Vercel.UserEventPayloadVariant159, global::Vercel.UserEventPayloadVariant160, global::Vercel.UserEventPayloadVariant161, global::Vercel.UserEventPayloadVariant162, global::Vercel.UserEventPayloadVariant163, global::Vercel.UserEventPayloadVariant164, global::Vercel.UserEventPayloadVariant165, global::Vercel.UserEventPayloadVariant166, global::Vercel.UserEventPayloadVariant167, global::Vercel.UserEventPayloadVariant168, global::Vercel.UserEventPayloadVariant169, global::Vercel.UserEventPayloadVariant170, global::Vercel.UserEventPayloadVariant171, global::Vercel.UserEventPayloadVariant172, global::Vercel.UserEventPayloadVariant173, global::Vercel.UserEventPayloadVariant174, global::Vercel.UserEventPayloadVariant175, global::Vercel.UserEventPayloadVariant176, global::Vercel.UserEventPayloadVariant177, global::Vercel.UserEventPayloadVariant178, global::Vercel.UserEventPayloadVariant179, global::Vercel.UserEventPayloadVariant180, global::Vercel.UserEventPayloadVariant181, global::Vercel.UserEventPayloadVariant182, global::Vercel.UserEventPayloadVariant183, global::Vercel.UserEventPayloadVariant184, global::Vercel.UserEventPayloadVariant185, global::Vercel.UserEventPayloadVariant186, global::Vercel.UserEventPayloadVariant187, global::Vercel.UserEventPayloadVariant188, global::Vercel.UserEventPayloadVariant189, global::Vercel.UserEventPayloadVariant190, global::Vercel.UserEventPayloadVariant191, global::Vercel.UserEventPayloadVariant192, global::Vercel.UserEventPayloadVariant193, global::Vercel.UserEventPayloadVariant194, global::Vercel.UserEventPayloadVariant195, global::Vercel.UserEventPayloadVariant196, global::Vercel.UserEventPayloadVariant197, global::Vercel.UserEventPayloadVariant198, global::Vercel.UserEventPayloadVariant199, global::Vercel.UserEventPayloadVariant200, global::Vercel.UserEventPayloadVariant201, global::Vercel.UserEventPayloadVariant202, global::Vercel.UserEventPayloadVariant203, global::Vercel.UserEventPayloadVariant204, global::Vercel.UserEventPayloadVariant205, global::Vercel.UserEventPayloadVariant206, global::Vercel.UserEventPayloadVariant207, global::Vercel.UserEventPayloadVariant208, global::Vercel.UserEventPayloadVariant209, global::Vercel.UserEventPayloadVariant210, global::Vercel.UserEventPayloadVariant211, global::Vercel.UserEventPayloadVariant212, global::Vercel.UserEventPayloadVariant213, global::Vercel.UserEventPayloadVariant214, global::Vercel.UserEventPayloadVariant215, global::Vercel.UserEventPayloadVariant216, global::Vercel.UserEventPayloadVariant217, global::Vercel.UserEventPayloadVariant218, global::Vercel.UserEventPayloadVariant219, global::Vercel.UserEventPayloadVariant220, global::Vercel.UserEventPayloadVariant221, global::Vercel.UserEventPayloadVariant222, global::Vercel.UserEventPayloadVariant223, global::Vercel.UserEventPayloadVariant224, global::Vercel.UserEventPayloadVariant225, global::Vercel.UserEventPayloadVariant226, global::Vercel.UserEventPayloadVariant227, global::Vercel.UserEventPayloadVariant228, global::Vercel.UserEventPayloadVariant229, global::Vercel.UserEventPayloadVariant230, global::Vercel.UserEventPayloadVariant231, global::Vercel.UserEventPayloadVariant232, global::Vercel.UserEventPayloadVariant233, global::Vercel.UserEventPayloadVariant234, global::Vercel.UserEventPayloadVariant235, global::Vercel.UserEventPayloadVariant236, global::Vercel.UserEventPayloadVariant237, global::Vercel.UserEventPayloadVariant238, global::Vercel.UserEventPayloadVariant239, global::Vercel.UserEventPayloadVariant240, global::Vercel.UserEventPayloadVariant241, global::Vercel.UserEventPayloadVariant242, global::Vercel.UserEventPayloadVariant243, global::Vercel.UserEventPayloadVariant244, global::Vercel.UserEventPayloadVariant245, global::Vercel.UserEventPayloadVariant246, global::Vercel.UserEventPayloadVariant247, global::Vercel.UserEventPayloadVariant248, global::Vercel.UserEventPayloadVariant249, global::Vercel.UserEventPayloadVariant250, global::Vercel.UserEventPayloadVariant251, global::Vercel.UserEventPayloadVariant252, global::Vercel.UserEventPayloadVariant253, global::Vercel.UserEventPayloadVariant254, global::Vercel.UserEventPayloadVariant255, global::Vercel.UserEventPayloadVariant256, global::Vercel.UserEventPayloadVariant257, global::Vercel.UserEventPayloadVariant258, global::Vercel.UserEventPayloadVariant259, global::Vercel.UserEventPayloadVariant260, global::Vercel.UserEventPayloadVariant261, global::Vercel.UserEventPayloadVariant262, global::Vercel.UserEventPayloadVariant263, global::Vercel.UserEventPayloadVariant264, global::Vercel.UserEventPayloadVariant265, global::Vercel.UserEventPayloadVariant266, global::Vercel.UserEventPayloadVariant267, global::Vercel.UserEventPayloadVariant268, global::Vercel.UserEventPayloadVariant269, global::Vercel.UserEventPayloadVariant270, global::Vercel.UserEventPayloadVariant271, global::Vercel.UserEventPayloadVariant272, global::Vercel.UserEventPayloadVariant273, global::Vercel.UserEventPayloadVariant274, global::Vercel.UserEventPayloadVariant275, global::Vercel.UserEventPayloadVariant276, global::Vercel.UserEventPayloadVariant277, global::Vercel.UserEventPayloadVariant278, global::Vercel.UserEventPayloadVariant279, global::Vercel.UserEventPayloadVariant280, global::Vercel.UserEventPayloadVariant281, global::Vercel.UserEventPayloadVariant282, global::Vercel.UserEventPayloadVariant283, global::Vercel.UserEventPayloadVariant284, global::Vercel.UserEventPayloadVariant285, global::Vercel.UserEventPayloadVariant286, global::Vercel.UserEventPayloadVariant287, global::Vercel.UserEventPayloadVariant288, global::Vercel.UserEventPayloadVariant289>),
 
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant68JobVariant1, global::Vercel.UserEventPayloadVariant68JobVariant2, global::Vercel.UserEventPayloadVariant68JobVariant3, global::Vercel.UserEventPayloadVariant68JobVariant4, global::Vercel.UserEventPayloadVariant68JobVariant5, global::Vercel.UserEventPayloadVariant68JobVariant6, global::Vercel.UserEventPayloadVariant68JobVariant7, global::Vercel.UserEventPayloadVariant68JobVariant8>),
 
@@ -10715,19 +10715,19 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UserEventPayloadVariant151ProjectNewConnectConfigurationEnvId?>),
 
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant192PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant192PasswordProtectionEnum2?>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant193PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant193PasswordProtectionEnum2?>),
 
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant192OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant192OldPasswordProtectionEnum2?>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant193OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant193OldPasswordProtectionEnum2?>),
 
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant206SsoProtectionEnum, global::Vercel.UserEventPayloadVariant206SsoProtectionEnum2?>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant207SsoProtectionEnum, global::Vercel.UserEventPayloadVariant207SsoProtectionEnum2?>),
 
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant206OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant206OldSsoProtectionEnum2?>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant207OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant207OldSsoProtectionEnum2?>),
 
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UserEventPayloadVariant215Name>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UserEventPayloadVariant216Name>),
 
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant265PreviousEnum, global::Vercel.UserEventPayloadVariant265PreviousEnum2?>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant266PreviousEnum, global::Vercel.UserEventPayloadVariant266PreviousEnum2?>),
 
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant265NextEnum, global::Vercel.UserEventPayloadVariant265NextEnum2?>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant266NextEnum, global::Vercel.UserEventPayloadVariant266NextEnum2?>),
 
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.FlagEnvironmentsFallthroughVariant1, global::Vercel.FlagEnvironmentsFallthroughVariant2>),
 
@@ -12482,7 +12482,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventViaItemVariant1Type), TypeInfoPropertyName = "UserEventViaItemVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventViaItemVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventViaItemVariant2Type), TypeInfoPropertyName = "UserEventViaItemVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<object, global::Vercel.UserEventPayloadVariant2, global::Vercel.UserEventPayloadVariant3, global::Vercel.UserEventPayloadVariant4, global::Vercel.UserEventPayloadVariant5, global::Vercel.UserEventPayloadVariant6, global::Vercel.UserEventPayloadVariant7, global::Vercel.UserEventPayloadVariant8, global::Vercel.UserEventPayloadVariant9, global::Vercel.UserEventPayloadVariant10, global::Vercel.UserEventPayloadVariant11, global::Vercel.UserEventPayloadVariant12, global::Vercel.UserEventPayloadVariant13, global::Vercel.UserEventPayloadVariant14, global::Vercel.UserEventPayloadVariant15, global::Vercel.UserEventPayloadVariant16, global::Vercel.UserEventPayloadVariant17, global::Vercel.UserEventPayloadVariant18, global::Vercel.UserEventPayloadVariant19, global::Vercel.UserEventPayloadVariant20, global::Vercel.UserEventPayloadVariant21, global::Vercel.UserEventPayloadVariant22, global::Vercel.UserEventPayloadVariant23, global::Vercel.UserEventPayloadVariant24, global::Vercel.UserEventPayloadVariant25, global::Vercel.UserEventPayloadVariant26, global::Vercel.UserEventPayloadVariant27, global::Vercel.UserEventPayloadVariant28, global::Vercel.UserEventPayloadVariant29, global::Vercel.UserEventPayloadVariant30, global::Vercel.UserEventPayloadVariant31, global::Vercel.UserEventPayloadVariant32, global::Vercel.UserEventPayloadVariant33, global::Vercel.UserEventPayloadVariant34, global::Vercel.UserEventPayloadVariant35, global::Vercel.UserEventPayloadVariant36, global::Vercel.UserEventPayloadVariant37, global::Vercel.UserEventPayloadVariant38, global::Vercel.UserEventPayloadVariant39, global::Vercel.UserEventPayloadVariant40, global::Vercel.UserEventPayloadVariant41, global::Vercel.UserEventPayloadVariant42, global::Vercel.UserEventPayloadVariant43, global::Vercel.UserEventPayloadVariant44, global::Vercel.UserEventPayloadVariant45, global::Vercel.UserEventPayloadVariant46, global::Vercel.UserEventPayloadVariant47, global::Vercel.UserEventPayloadVariant48, global::Vercel.UserEventPayloadVariant49, global::Vercel.UserEventPayloadVariant50, global::Vercel.UserEventPayloadVariant51, global::Vercel.UserEventPayloadVariant52, global::Vercel.UserEventPayloadVariant53, global::Vercel.UserEventPayloadVariant54, global::Vercel.UserEventPayloadVariant55, global::Vercel.UserEventPayloadVariant56, global::Vercel.UserEventPayloadVariant57, global::Vercel.UserEventPayloadVariant58, global::Vercel.UserEventPayloadVariant59, global::Vercel.UserEventPayloadVariant60, global::Vercel.UserEventPayloadVariant61, global::Vercel.UserEventPayloadVariant62, global::Vercel.UserEventPayloadVariant63, global::Vercel.UserEventPayloadVariant64, global::Vercel.UserEventPayloadVariant65, global::Vercel.UserEventPayloadVariant66, global::Vercel.UserEventPayloadVariant67, global::Vercel.UserEventPayloadVariant68, global::Vercel.UserEventPayloadVariant69, global::Vercel.UserEventPayloadVariant70, global::Vercel.UserEventPayloadVariant71, global::Vercel.UserEventPayloadVariant72, global::Vercel.UserEventPayloadVariant73, global::Vercel.UserEventPayloadVariant74, global::Vercel.UserEventPayloadVariant75, global::Vercel.UserEventPayloadVariant76, global::Vercel.UserEventPayloadVariant77, global::Vercel.UserEventPayloadVariant78, global::Vercel.UserEventPayloadVariant79, global::Vercel.UserEventPayloadVariant80, global::Vercel.UserEventPayloadVariant81, global::Vercel.UserEventPayloadVariant82, global::Vercel.UserEventPayloadVariant83, global::Vercel.UserEventPayloadVariant84, global::Vercel.UserEventPayloadVariant85, global::Vercel.UserEventPayloadVariant86, global::Vercel.UserEventPayloadVariant87, global::Vercel.UserEventPayloadVariant88, global::Vercel.UserEventPayloadVariant89, global::Vercel.UserEventPayloadVariant90, global::Vercel.UserEventPayloadVariant91, global::Vercel.UserEventPayloadVariant92, global::Vercel.UserEventPayloadVariant93, global::Vercel.UserEventPayloadVariant94, global::Vercel.UserEventPayloadVariant95, global::Vercel.UserEventPayloadVariant96, global::Vercel.UserEventPayloadVariant97, global::Vercel.UserEventPayloadVariant98, global::Vercel.UserEventPayloadVariant99, global::Vercel.UserEventPayloadVariant100, global::Vercel.UserEventPayloadVariant101, global::Vercel.UserEventPayloadVariant102, global::Vercel.UserEventPayloadVariant103, global::Vercel.UserEventPayloadVariant104, global::Vercel.UserEventPayloadVariant105, global::Vercel.UserEventPayloadVariant106, global::Vercel.UserEventPayloadVariant107, global::Vercel.UserEventPayloadVariant108, global::Vercel.UserEventPayloadVariant109, global::Vercel.UserEventPayloadVariant110, global::Vercel.UserEventPayloadVariant111, global::Vercel.UserEventPayloadVariant112, global::Vercel.UserEventPayloadVariant113, global::Vercel.UserEventPayloadVariant114, global::Vercel.UserEventPayloadVariant115, global::Vercel.UserEventPayloadVariant116, global::Vercel.UserEventPayloadVariant117, global::Vercel.UserEventPayloadVariant118, global::Vercel.UserEventPayloadVariant119, global::Vercel.UserEventPayloadVariant120, global::Vercel.UserEventPayloadVariant121, global::Vercel.UserEventPayloadVariant122, global::Vercel.UserEventPayloadVariant123, global::Vercel.UserEventPayloadVariant124, global::Vercel.UserEventPayloadVariant125, global::Vercel.UserEventPayloadVariant126, global::Vercel.UserEventPayloadVariant127, global::Vercel.UserEventPayloadVariant128, global::Vercel.UserEventPayloadVariant129, global::Vercel.UserEventPayloadVariant130, global::Vercel.UserEventPayloadVariant131, global::Vercel.UserEventPayloadVariant132, global::Vercel.UserEventPayloadVariant133, global::Vercel.UserEventPayloadVariant134, global::Vercel.UserEventPayloadVariant135, global::Vercel.UserEventPayloadVariant136, global::Vercel.UserEventPayloadVariant137, global::Vercel.UserEventPayloadVariant138, global::Vercel.UserEventPayloadVariant139, global::Vercel.UserEventPayloadVariant140, global::Vercel.UserEventPayloadVariant141, global::Vercel.UserEventPayloadVariant142, global::Vercel.UserEventPayloadVariant143, global::Vercel.UserEventPayloadVariant144, global::Vercel.UserEventPayloadVariant145, global::Vercel.UserEventPayloadVariant146, global::Vercel.UserEventPayloadVariant147, global::Vercel.UserEventPayloadVariant148, global::Vercel.UserEventPayloadVariant149, global::Vercel.UserEventPayloadVariant150, global::Vercel.UserEventPayloadVariant151, global::Vercel.UserEventPayloadVariant152, global::Vercel.UserEventPayloadVariant153, global::Vercel.UserEventPayloadVariant154, global::Vercel.UserEventPayloadVariant155, global::Vercel.UserEventPayloadVariant156, global::Vercel.UserEventPayloadVariant157, global::Vercel.UserEventPayloadVariant158, global::Vercel.UserEventPayloadVariant159, global::Vercel.UserEventPayloadVariant160, global::Vercel.UserEventPayloadVariant161, global::Vercel.UserEventPayloadVariant162, global::Vercel.UserEventPayloadVariant163, global::Vercel.UserEventPayloadVariant164, global::Vercel.UserEventPayloadVariant165, global::Vercel.UserEventPayloadVariant166, global::Vercel.UserEventPayloadVariant167, global::Vercel.UserEventPayloadVariant168, global::Vercel.UserEventPayloadVariant169, global::Vercel.UserEventPayloadVariant170, global::Vercel.UserEventPayloadVariant171, global::Vercel.UserEventPayloadVariant172, global::Vercel.UserEventPayloadVariant173, global::Vercel.UserEventPayloadVariant174, global::Vercel.UserEventPayloadVariant175, global::Vercel.UserEventPayloadVariant176, global::Vercel.UserEventPayloadVariant177, global::Vercel.UserEventPayloadVariant178, global::Vercel.UserEventPayloadVariant179, global::Vercel.UserEventPayloadVariant180, global::Vercel.UserEventPayloadVariant181, global::Vercel.UserEventPayloadVariant182, global::Vercel.UserEventPayloadVariant183, global::Vercel.UserEventPayloadVariant184, global::Vercel.UserEventPayloadVariant185, global::Vercel.UserEventPayloadVariant186, global::Vercel.UserEventPayloadVariant187, global::Vercel.UserEventPayloadVariant188, global::Vercel.UserEventPayloadVariant189, global::Vercel.UserEventPayloadVariant190, global::Vercel.UserEventPayloadVariant191, global::Vercel.UserEventPayloadVariant192, global::Vercel.UserEventPayloadVariant193, global::Vercel.UserEventPayloadVariant194, global::Vercel.UserEventPayloadVariant195, global::Vercel.UserEventPayloadVariant196, global::Vercel.UserEventPayloadVariant197, global::Vercel.UserEventPayloadVariant198, global::Vercel.UserEventPayloadVariant199, global::Vercel.UserEventPayloadVariant200, global::Vercel.UserEventPayloadVariant201, global::Vercel.UserEventPayloadVariant202, global::Vercel.UserEventPayloadVariant203, global::Vercel.UserEventPayloadVariant204, global::Vercel.UserEventPayloadVariant205, global::Vercel.UserEventPayloadVariant206, global::Vercel.UserEventPayloadVariant207, global::Vercel.UserEventPayloadVariant208, global::Vercel.UserEventPayloadVariant209, global::Vercel.UserEventPayloadVariant210, global::Vercel.UserEventPayloadVariant211, global::Vercel.UserEventPayloadVariant212, global::Vercel.UserEventPayloadVariant213, global::Vercel.UserEventPayloadVariant214, global::Vercel.UserEventPayloadVariant215, global::Vercel.UserEventPayloadVariant216, global::Vercel.UserEventPayloadVariant217, global::Vercel.UserEventPayloadVariant218, global::Vercel.UserEventPayloadVariant219, global::Vercel.UserEventPayloadVariant220, global::Vercel.UserEventPayloadVariant221, global::Vercel.UserEventPayloadVariant222, global::Vercel.UserEventPayloadVariant223, global::Vercel.UserEventPayloadVariant224, global::Vercel.UserEventPayloadVariant225, global::Vercel.UserEventPayloadVariant226, global::Vercel.UserEventPayloadVariant227, global::Vercel.UserEventPayloadVariant228, global::Vercel.UserEventPayloadVariant229, global::Vercel.UserEventPayloadVariant230, global::Vercel.UserEventPayloadVariant231, global::Vercel.UserEventPayloadVariant232, global::Vercel.UserEventPayloadVariant233, global::Vercel.UserEventPayloadVariant234, global::Vercel.UserEventPayloadVariant235, global::Vercel.UserEventPayloadVariant236, global::Vercel.UserEventPayloadVariant237, global::Vercel.UserEventPayloadVariant238, global::Vercel.UserEventPayloadVariant239, global::Vercel.UserEventPayloadVariant240, global::Vercel.UserEventPayloadVariant241, global::Vercel.UserEventPayloadVariant242, global::Vercel.UserEventPayloadVariant243, global::Vercel.UserEventPayloadVariant244, global::Vercel.UserEventPayloadVariant245, global::Vercel.UserEventPayloadVariant246, global::Vercel.UserEventPayloadVariant247, global::Vercel.UserEventPayloadVariant248, global::Vercel.UserEventPayloadVariant249, global::Vercel.UserEventPayloadVariant250, global::Vercel.UserEventPayloadVariant251, global::Vercel.UserEventPayloadVariant252, global::Vercel.UserEventPayloadVariant253, global::Vercel.UserEventPayloadVariant254, global::Vercel.UserEventPayloadVariant255, global::Vercel.UserEventPayloadVariant256, global::Vercel.UserEventPayloadVariant257, global::Vercel.UserEventPayloadVariant258, global::Vercel.UserEventPayloadVariant259, global::Vercel.UserEventPayloadVariant260, global::Vercel.UserEventPayloadVariant261, global::Vercel.UserEventPayloadVariant262, global::Vercel.UserEventPayloadVariant263, global::Vercel.UserEventPayloadVariant264, global::Vercel.UserEventPayloadVariant265, global::Vercel.UserEventPayloadVariant266, global::Vercel.UserEventPayloadVariant267, global::Vercel.UserEventPayloadVariant268, global::Vercel.UserEventPayloadVariant269, global::Vercel.UserEventPayloadVariant270, global::Vercel.UserEventPayloadVariant271, global::Vercel.UserEventPayloadVariant272, global::Vercel.UserEventPayloadVariant273, global::Vercel.UserEventPayloadVariant274, global::Vercel.UserEventPayloadVariant275, global::Vercel.UserEventPayloadVariant276, global::Vercel.UserEventPayloadVariant277, global::Vercel.UserEventPayloadVariant278, global::Vercel.UserEventPayloadVariant279, global::Vercel.UserEventPayloadVariant280, global::Vercel.UserEventPayloadVariant281, global::Vercel.UserEventPayloadVariant282, global::Vercel.UserEventPayloadVariant283, global::Vercel.UserEventPayloadVariant284, global::Vercel.UserEventPayloadVariant285, global::Vercel.UserEventPayloadVariant286, global::Vercel.UserEventPayloadVariant287, global::Vercel.UserEventPayloadVariant288>), TypeInfoPropertyName = "UserEventPayloadVariant288_133ae0711f25a88e")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<object, global::Vercel.UserEventPayloadVariant2, global::Vercel.UserEventPayloadVariant3, global::Vercel.UserEventPayloadVariant4, global::Vercel.UserEventPayloadVariant5, global::Vercel.UserEventPayloadVariant6, global::Vercel.UserEventPayloadVariant7, global::Vercel.UserEventPayloadVariant8, global::Vercel.UserEventPayloadVariant9, global::Vercel.UserEventPayloadVariant10, global::Vercel.UserEventPayloadVariant11, global::Vercel.UserEventPayloadVariant12, global::Vercel.UserEventPayloadVariant13, global::Vercel.UserEventPayloadVariant14, global::Vercel.UserEventPayloadVariant15, global::Vercel.UserEventPayloadVariant16, global::Vercel.UserEventPayloadVariant17, global::Vercel.UserEventPayloadVariant18, global::Vercel.UserEventPayloadVariant19, global::Vercel.UserEventPayloadVariant20, global::Vercel.UserEventPayloadVariant21, global::Vercel.UserEventPayloadVariant22, global::Vercel.UserEventPayloadVariant23, global::Vercel.UserEventPayloadVariant24, global::Vercel.UserEventPayloadVariant25, global::Vercel.UserEventPayloadVariant26, global::Vercel.UserEventPayloadVariant27, global::Vercel.UserEventPayloadVariant28, global::Vercel.UserEventPayloadVariant29, global::Vercel.UserEventPayloadVariant30, global::Vercel.UserEventPayloadVariant31, global::Vercel.UserEventPayloadVariant32, global::Vercel.UserEventPayloadVariant33, global::Vercel.UserEventPayloadVariant34, global::Vercel.UserEventPayloadVariant35, global::Vercel.UserEventPayloadVariant36, global::Vercel.UserEventPayloadVariant37, global::Vercel.UserEventPayloadVariant38, global::Vercel.UserEventPayloadVariant39, global::Vercel.UserEventPayloadVariant40, global::Vercel.UserEventPayloadVariant41, global::Vercel.UserEventPayloadVariant42, global::Vercel.UserEventPayloadVariant43, global::Vercel.UserEventPayloadVariant44, global::Vercel.UserEventPayloadVariant45, global::Vercel.UserEventPayloadVariant46, global::Vercel.UserEventPayloadVariant47, global::Vercel.UserEventPayloadVariant48, global::Vercel.UserEventPayloadVariant49, global::Vercel.UserEventPayloadVariant50, global::Vercel.UserEventPayloadVariant51, global::Vercel.UserEventPayloadVariant52, global::Vercel.UserEventPayloadVariant53, global::Vercel.UserEventPayloadVariant54, global::Vercel.UserEventPayloadVariant55, global::Vercel.UserEventPayloadVariant56, global::Vercel.UserEventPayloadVariant57, global::Vercel.UserEventPayloadVariant58, global::Vercel.UserEventPayloadVariant59, global::Vercel.UserEventPayloadVariant60, global::Vercel.UserEventPayloadVariant61, global::Vercel.UserEventPayloadVariant62, global::Vercel.UserEventPayloadVariant63, global::Vercel.UserEventPayloadVariant64, global::Vercel.UserEventPayloadVariant65, global::Vercel.UserEventPayloadVariant66, global::Vercel.UserEventPayloadVariant67, global::Vercel.UserEventPayloadVariant68, global::Vercel.UserEventPayloadVariant69, global::Vercel.UserEventPayloadVariant70, global::Vercel.UserEventPayloadVariant71, global::Vercel.UserEventPayloadVariant72, global::Vercel.UserEventPayloadVariant73, global::Vercel.UserEventPayloadVariant74, global::Vercel.UserEventPayloadVariant75, global::Vercel.UserEventPayloadVariant76, global::Vercel.UserEventPayloadVariant77, global::Vercel.UserEventPayloadVariant78, global::Vercel.UserEventPayloadVariant79, global::Vercel.UserEventPayloadVariant80, global::Vercel.UserEventPayloadVariant81, global::Vercel.UserEventPayloadVariant82, global::Vercel.UserEventPayloadVariant83, global::Vercel.UserEventPayloadVariant84, global::Vercel.UserEventPayloadVariant85, global::Vercel.UserEventPayloadVariant86, global::Vercel.UserEventPayloadVariant87, global::Vercel.UserEventPayloadVariant88, global::Vercel.UserEventPayloadVariant89, global::Vercel.UserEventPayloadVariant90, global::Vercel.UserEventPayloadVariant91, global::Vercel.UserEventPayloadVariant92, global::Vercel.UserEventPayloadVariant93, global::Vercel.UserEventPayloadVariant94, global::Vercel.UserEventPayloadVariant95, global::Vercel.UserEventPayloadVariant96, global::Vercel.UserEventPayloadVariant97, global::Vercel.UserEventPayloadVariant98, global::Vercel.UserEventPayloadVariant99, global::Vercel.UserEventPayloadVariant100, global::Vercel.UserEventPayloadVariant101, global::Vercel.UserEventPayloadVariant102, global::Vercel.UserEventPayloadVariant103, global::Vercel.UserEventPayloadVariant104, global::Vercel.UserEventPayloadVariant105, global::Vercel.UserEventPayloadVariant106, global::Vercel.UserEventPayloadVariant107, global::Vercel.UserEventPayloadVariant108, global::Vercel.UserEventPayloadVariant109, global::Vercel.UserEventPayloadVariant110, global::Vercel.UserEventPayloadVariant111, global::Vercel.UserEventPayloadVariant112, global::Vercel.UserEventPayloadVariant113, global::Vercel.UserEventPayloadVariant114, global::Vercel.UserEventPayloadVariant115, global::Vercel.UserEventPayloadVariant116, global::Vercel.UserEventPayloadVariant117, global::Vercel.UserEventPayloadVariant118, global::Vercel.UserEventPayloadVariant119, global::Vercel.UserEventPayloadVariant120, global::Vercel.UserEventPayloadVariant121, global::Vercel.UserEventPayloadVariant122, global::Vercel.UserEventPayloadVariant123, global::Vercel.UserEventPayloadVariant124, global::Vercel.UserEventPayloadVariant125, global::Vercel.UserEventPayloadVariant126, global::Vercel.UserEventPayloadVariant127, global::Vercel.UserEventPayloadVariant128, global::Vercel.UserEventPayloadVariant129, global::Vercel.UserEventPayloadVariant130, global::Vercel.UserEventPayloadVariant131, global::Vercel.UserEventPayloadVariant132, global::Vercel.UserEventPayloadVariant133, global::Vercel.UserEventPayloadVariant134, global::Vercel.UserEventPayloadVariant135, global::Vercel.UserEventPayloadVariant136, global::Vercel.UserEventPayloadVariant137, global::Vercel.UserEventPayloadVariant138, global::Vercel.UserEventPayloadVariant139, global::Vercel.UserEventPayloadVariant140, global::Vercel.UserEventPayloadVariant141, global::Vercel.UserEventPayloadVariant142, global::Vercel.UserEventPayloadVariant143, global::Vercel.UserEventPayloadVariant144, global::Vercel.UserEventPayloadVariant145, global::Vercel.UserEventPayloadVariant146, global::Vercel.UserEventPayloadVariant147, global::Vercel.UserEventPayloadVariant148, global::Vercel.UserEventPayloadVariant149, global::Vercel.UserEventPayloadVariant150, global::Vercel.UserEventPayloadVariant151, global::Vercel.UserEventPayloadVariant152, global::Vercel.UserEventPayloadVariant153, global::Vercel.UserEventPayloadVariant154, global::Vercel.UserEventPayloadVariant155, global::Vercel.UserEventPayloadVariant156, global::Vercel.UserEventPayloadVariant157, global::Vercel.UserEventPayloadVariant158, global::Vercel.UserEventPayloadVariant159, global::Vercel.UserEventPayloadVariant160, global::Vercel.UserEventPayloadVariant161, global::Vercel.UserEventPayloadVariant162, global::Vercel.UserEventPayloadVariant163, global::Vercel.UserEventPayloadVariant164, global::Vercel.UserEventPayloadVariant165, global::Vercel.UserEventPayloadVariant166, global::Vercel.UserEventPayloadVariant167, global::Vercel.UserEventPayloadVariant168, global::Vercel.UserEventPayloadVariant169, global::Vercel.UserEventPayloadVariant170, global::Vercel.UserEventPayloadVariant171, global::Vercel.UserEventPayloadVariant172, global::Vercel.UserEventPayloadVariant173, global::Vercel.UserEventPayloadVariant174, global::Vercel.UserEventPayloadVariant175, global::Vercel.UserEventPayloadVariant176, global::Vercel.UserEventPayloadVariant177, global::Vercel.UserEventPayloadVariant178, global::Vercel.UserEventPayloadVariant179, global::Vercel.UserEventPayloadVariant180, global::Vercel.UserEventPayloadVariant181, global::Vercel.UserEventPayloadVariant182, global::Vercel.UserEventPayloadVariant183, global::Vercel.UserEventPayloadVariant184, global::Vercel.UserEventPayloadVariant185, global::Vercel.UserEventPayloadVariant186, global::Vercel.UserEventPayloadVariant187, global::Vercel.UserEventPayloadVariant188, global::Vercel.UserEventPayloadVariant189, global::Vercel.UserEventPayloadVariant190, global::Vercel.UserEventPayloadVariant191, global::Vercel.UserEventPayloadVariant192, global::Vercel.UserEventPayloadVariant193, global::Vercel.UserEventPayloadVariant194, global::Vercel.UserEventPayloadVariant195, global::Vercel.UserEventPayloadVariant196, global::Vercel.UserEventPayloadVariant197, global::Vercel.UserEventPayloadVariant198, global::Vercel.UserEventPayloadVariant199, global::Vercel.UserEventPayloadVariant200, global::Vercel.UserEventPayloadVariant201, global::Vercel.UserEventPayloadVariant202, global::Vercel.UserEventPayloadVariant203, global::Vercel.UserEventPayloadVariant204, global::Vercel.UserEventPayloadVariant205, global::Vercel.UserEventPayloadVariant206, global::Vercel.UserEventPayloadVariant207, global::Vercel.UserEventPayloadVariant208, global::Vercel.UserEventPayloadVariant209, global::Vercel.UserEventPayloadVariant210, global::Vercel.UserEventPayloadVariant211, global::Vercel.UserEventPayloadVariant212, global::Vercel.UserEventPayloadVariant213, global::Vercel.UserEventPayloadVariant214, global::Vercel.UserEventPayloadVariant215, global::Vercel.UserEventPayloadVariant216, global::Vercel.UserEventPayloadVariant217, global::Vercel.UserEventPayloadVariant218, global::Vercel.UserEventPayloadVariant219, global::Vercel.UserEventPayloadVariant220, global::Vercel.UserEventPayloadVariant221, global::Vercel.UserEventPayloadVariant222, global::Vercel.UserEventPayloadVariant223, global::Vercel.UserEventPayloadVariant224, global::Vercel.UserEventPayloadVariant225, global::Vercel.UserEventPayloadVariant226, global::Vercel.UserEventPayloadVariant227, global::Vercel.UserEventPayloadVariant228, global::Vercel.UserEventPayloadVariant229, global::Vercel.UserEventPayloadVariant230, global::Vercel.UserEventPayloadVariant231, global::Vercel.UserEventPayloadVariant232, global::Vercel.UserEventPayloadVariant233, global::Vercel.UserEventPayloadVariant234, global::Vercel.UserEventPayloadVariant235, global::Vercel.UserEventPayloadVariant236, global::Vercel.UserEventPayloadVariant237, global::Vercel.UserEventPayloadVariant238, global::Vercel.UserEventPayloadVariant239, global::Vercel.UserEventPayloadVariant240, global::Vercel.UserEventPayloadVariant241, global::Vercel.UserEventPayloadVariant242, global::Vercel.UserEventPayloadVariant243, global::Vercel.UserEventPayloadVariant244, global::Vercel.UserEventPayloadVariant245, global::Vercel.UserEventPayloadVariant246, global::Vercel.UserEventPayloadVariant247, global::Vercel.UserEventPayloadVariant248, global::Vercel.UserEventPayloadVariant249, global::Vercel.UserEventPayloadVariant250, global::Vercel.UserEventPayloadVariant251, global::Vercel.UserEventPayloadVariant252, global::Vercel.UserEventPayloadVariant253, global::Vercel.UserEventPayloadVariant254, global::Vercel.UserEventPayloadVariant255, global::Vercel.UserEventPayloadVariant256, global::Vercel.UserEventPayloadVariant257, global::Vercel.UserEventPayloadVariant258, global::Vercel.UserEventPayloadVariant259, global::Vercel.UserEventPayloadVariant260, global::Vercel.UserEventPayloadVariant261, global::Vercel.UserEventPayloadVariant262, global::Vercel.UserEventPayloadVariant263, global::Vercel.UserEventPayloadVariant264, global::Vercel.UserEventPayloadVariant265, global::Vercel.UserEventPayloadVariant266, global::Vercel.UserEventPayloadVariant267, global::Vercel.UserEventPayloadVariant268, global::Vercel.UserEventPayloadVariant269, global::Vercel.UserEventPayloadVariant270, global::Vercel.UserEventPayloadVariant271, global::Vercel.UserEventPayloadVariant272, global::Vercel.UserEventPayloadVariant273, global::Vercel.UserEventPayloadVariant274, global::Vercel.UserEventPayloadVariant275, global::Vercel.UserEventPayloadVariant276, global::Vercel.UserEventPayloadVariant277, global::Vercel.UserEventPayloadVariant278, global::Vercel.UserEventPayloadVariant279, global::Vercel.UserEventPayloadVariant280, global::Vercel.UserEventPayloadVariant281, global::Vercel.UserEventPayloadVariant282, global::Vercel.UserEventPayloadVariant283, global::Vercel.UserEventPayloadVariant284, global::Vercel.UserEventPayloadVariant285, global::Vercel.UserEventPayloadVariant286, global::Vercel.UserEventPayloadVariant287, global::Vercel.UserEventPayloadVariant288, global::Vercel.UserEventPayloadVariant289>), TypeInfoPropertyName = "UserEventPayloadVariant289_9f5b8e60f63e61f4")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant2Action), TypeInfoPropertyName = "UserEventPayloadVariant2Action2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant3))]
@@ -13097,77 +13097,75 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant172))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant173))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant174))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant174ConsolidatedGitCommitStatus))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant175))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant175Previous))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant175Next))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant175ConsolidatedGitCommitStatus))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant176))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant176Previous))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant176Next))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant177))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant178))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant179))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant180))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant180Project>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant180Project))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant180ProjectRole), TypeInfoPropertyName = "UserEventPayloadVariant180ProjectRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant181))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant181Project>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant181Project))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant181ProjectRole), TypeInfoPropertyName = "UserEventPayloadVariant181ProjectRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant182))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant182Project))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant182ProjectMembership))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant182ProjectMembershipRole), TypeInfoPropertyName = "UserEventPayloadVariant182ProjectMembershipRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant183))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant183Project))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant183ProjectRole), TypeInfoPropertyName = "UserEventPayloadVariant183ProjectRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant183ProjectMembership))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant183ProjectMembershipRole), TypeInfoPropertyName = "UserEventPayloadVariant183ProjectMembershipRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant184))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant184Project))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant184RemovedMembership))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant184RemovedMembershipRole), TypeInfoPropertyName = "UserEventPayloadVariant184RemovedMembershipRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant184ProjectRole), TypeInfoPropertyName = "UserEventPayloadVariant184ProjectRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant185))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant185Project))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant185ProjectMembership))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant185ProjectMembershipRole), TypeInfoPropertyName = "UserEventPayloadVariant185ProjectMembershipRole2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant185ProjectMembershipPreviousRole), TypeInfoPropertyName = "UserEventPayloadVariant185ProjectMembershipPreviousRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant185RemovedMembership))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant185RemovedMembershipRole), TypeInfoPropertyName = "UserEventPayloadVariant185RemovedMembershipRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant186))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant186Project))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant186ProjectMembership))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant186ProjectMembershipRole), TypeInfoPropertyName = "UserEventPayloadVariant186ProjectMembershipRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant186ProjectMembershipPreviousRole), TypeInfoPropertyName = "UserEventPayloadVariant186ProjectMembershipPreviousRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant187))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant188))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant189))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant190))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant191))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant191OptionsAllowlist))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant191OptionsAllowlistPath>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant191OptionsAllowlistPath))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant191OldOptionsAllowlist))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant191OldOptionsAllowlistPath>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant191OldOptionsAllowlistPath))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant192PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant192PasswordProtectionEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant192PasswordProtectionEnumUserEventPayloadVariant192PasswordProtectionEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192PasswordProtectionEnum))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192PasswordProtectionEnumDeploymentType), TypeInfoPropertyName = "UserEventPayloadVariant192PasswordProtectionEnumDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192PasswordProtectionEnum2), TypeInfoPropertyName = "UserEventPayloadVariant192PasswordProtectionEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant192OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant192OldPasswordProtectionEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant192OldPasswordProtectionEnumUserEventPayloadVariant192OldPasswordProtectionEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192OldPasswordProtectionEnum))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192OldPasswordProtectionEnumDeploymentType), TypeInfoPropertyName = "UserEventPayloadVariant192OldPasswordProtectionEnumDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192OldPasswordProtectionEnum2), TypeInfoPropertyName = "UserEventPayloadVariant192OldPasswordProtectionEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192OptionsAllowlist))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant192OptionsAllowlistPath>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192OptionsAllowlistPath))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192OldOptionsAllowlist))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant192OldOptionsAllowlistPath>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant192OldOptionsAllowlistPath))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193ReasonCode), TypeInfoPropertyName = "UserEventPayloadVariant193ReasonCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant193PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant193PasswordProtectionEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant193PasswordProtectionEnumUserEventPayloadVariant193PasswordProtectionEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193PasswordProtectionEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193PasswordProtectionEnumDeploymentType), TypeInfoPropertyName = "UserEventPayloadVariant193PasswordProtectionEnumDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193PasswordProtectionEnum2), TypeInfoPropertyName = "UserEventPayloadVariant193PasswordProtectionEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant193OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant193OldPasswordProtectionEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant193OldPasswordProtectionEnumUserEventPayloadVariant193OldPasswordProtectionEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193OldPasswordProtectionEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193OldPasswordProtectionEnumDeploymentType), TypeInfoPropertyName = "UserEventPayloadVariant193OldPasswordProtectionEnumDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193OldPasswordProtectionEnum2), TypeInfoPropertyName = "UserEventPayloadVariant193OldPasswordProtectionEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant194))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant194Consent), TypeInfoPropertyName = "UserEventPayloadVariant194Consent2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant194ReasonCode), TypeInfoPropertyName = "UserEventPayloadVariant194ReasonCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant195))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant195Consent), TypeInfoPropertyName = "UserEventPayloadVariant195Consent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant196))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant197))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant197Previous))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant197PreviousIssuerMode), TypeInfoPropertyName = "UserEventPayloadVariant197PreviousIssuerMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant197Next))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant197NextIssuerMode), TypeInfoPropertyName = "UserEventPayloadVariant197NextIssuerMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant198))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant198Previous))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant198PreviousIssuerMode), TypeInfoPropertyName = "UserEventPayloadVariant198PreviousIssuerMode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant198Next))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant198NextIssuerMode), TypeInfoPropertyName = "UserEventPayloadVariant198NextIssuerMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant199))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant200))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant201))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant202))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant202Previous))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant202Next))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant203))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant203Next))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant203Previous))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant203Next))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant204))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant204Next))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant204Previous))]
@@ -13175,79 +13173,79 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant205Next))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant205Previous))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant206SsoProtectionEnum, global::Vercel.UserEventPayloadVariant206SsoProtectionEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant206SsoProtectionEnumUserEventPayloadVariant206SsoProtectionEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206SsoProtectionEnum))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206SsoProtectionEnumDeploymentType), TypeInfoPropertyName = "UserEventPayloadVariant206SsoProtectionEnumDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206SsoProtectionEnumCve55182MigrationAppliedFrom), TypeInfoPropertyName = "UserEventPayloadVariant206SsoProtectionEnumCve55182MigrationAppliedFrom2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206SsoProtectionEnum2), TypeInfoPropertyName = "UserEventPayloadVariant206SsoProtectionEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant206OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant206OldSsoProtectionEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant206OldSsoProtectionEnumUserEventPayloadVariant206OldSsoProtectionEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206OldSsoProtectionEnum))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206OldSsoProtectionEnumDeploymentType), TypeInfoPropertyName = "UserEventPayloadVariant206OldSsoProtectionEnumDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206OldSsoProtectionEnumCve55182MigrationAppliedFrom), TypeInfoPropertyName = "UserEventPayloadVariant206OldSsoProtectionEnumCve55182MigrationAppliedFrom2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206OldSsoProtectionEnum2), TypeInfoPropertyName = "UserEventPayloadVariant206OldSsoProtectionEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206Next))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant206Previous))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207Next))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207NextProject))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207NextProjectStaticIps))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207Previous))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207PreviousProject))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207PreviousProjectStaticIps))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant207SsoProtectionEnum, global::Vercel.UserEventPayloadVariant207SsoProtectionEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant207SsoProtectionEnumUserEventPayloadVariant207SsoProtectionEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207SsoProtectionEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207SsoProtectionEnumDeploymentType), TypeInfoPropertyName = "UserEventPayloadVariant207SsoProtectionEnumDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207SsoProtectionEnumCve55182MigrationAppliedFrom), TypeInfoPropertyName = "UserEventPayloadVariant207SsoProtectionEnumCve55182MigrationAppliedFrom2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207SsoProtectionEnum2), TypeInfoPropertyName = "UserEventPayloadVariant207SsoProtectionEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant207OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant207OldSsoProtectionEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant207OldSsoProtectionEnumUserEventPayloadVariant207OldSsoProtectionEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207OldSsoProtectionEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207OldSsoProtectionEnumDeploymentType), TypeInfoPropertyName = "UserEventPayloadVariant207OldSsoProtectionEnumDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207OldSsoProtectionEnumCve55182MigrationAppliedFrom), TypeInfoPropertyName = "UserEventPayloadVariant207OldSsoProtectionEnumCve55182MigrationAppliedFrom2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant207OldSsoProtectionEnum2), TypeInfoPropertyName = "UserEventPayloadVariant207OldSsoProtectionEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant208))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant208TrustedIps), TypeInfoPropertyName = "UserEventPayloadVariant208TrustedIps2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant208OldTrustedIps), TypeInfoPropertyName = "UserEventPayloadVariant208OldTrustedIps2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant208Next))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant208NextProject))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant208NextProjectStaticIps))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant208Previous))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant208PreviousProject))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant208PreviousProjectStaticIps))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant209))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant209ReasonCode), TypeInfoPropertyName = "UserEventPayloadVariant209ReasonCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant209TrustedIps), TypeInfoPropertyName = "UserEventPayloadVariant209TrustedIps2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant209OldTrustedIps), TypeInfoPropertyName = "UserEventPayloadVariant209OldTrustedIps2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant210))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant210ProjectWebAnalytics))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant210PrevProjectWebAnalytics))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant210ReasonCode), TypeInfoPropertyName = "UserEventPayloadVariant210ReasonCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant211))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant211ProjectWebAnalytics))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant211PrevProjectWebAnalytics))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant212))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant213))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant214))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant215))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.UserEventPayloadVariant215Name>), TypeInfoPropertyName = "OneOfStringUserEventPayloadVariant215Name2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant215Name))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant216))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.UserEventPayloadVariant216Name>), TypeInfoPropertyName = "OneOfStringUserEventPayloadVariant216Name2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant216Name))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant217))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant218))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant219))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant219ScalingRules2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant219ScalingRules2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220Geolocation))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220GeolocationCity))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220GeolocationCityNames))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220GeolocationCountry))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220GeolocationCountryNames))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220GeolocationMostSpecificSubdivision))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220GeolocationMostSpecificSubdivisionNames))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant220Factor>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220Factor), TypeInfoPropertyName = "UserEventPayloadVariant220Factor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220FactorOrigin), TypeInfoPropertyName = "UserEventPayloadVariant220FactorOrigin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant220ScalingRules2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant220ScalingRules2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant221))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant221Geolocation))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant221GeolocationCity))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant221GeolocationCityNames))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant221GeolocationCountry))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant221GeolocationCountryNames))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant221GeolocationMostSpecificSubdivision))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant221GeolocationMostSpecificSubdivisionNames))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant221Factor>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant221Factor), TypeInfoPropertyName = "UserEventPayloadVariant221Factor2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant221FactorOrigin), TypeInfoPropertyName = "UserEventPayloadVariant221FactorOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant222))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant223))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant224))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant224Previous))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant225))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant225Budget))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant225BudgetBudgetItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant225BudgetBudgetItemType), TypeInfoPropertyName = "UserEventPayloadVariant225BudgetBudgetItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<double>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant225BudgetBudgetItemPricingPlan), TypeInfoPropertyName = "UserEventPayloadVariant225BudgetBudgetItemPricingPlan2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant225Previous))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant226))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant226Budget))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant226BudgetType), TypeInfoPropertyName = "UserEventPayloadVariant226BudgetType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant226BudgetPricingPlan), TypeInfoPropertyName = "UserEventPayloadVariant226BudgetPricingPlan2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant226BudgetBudgetItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant226BudgetBudgetItemType), TypeInfoPropertyName = "UserEventPayloadVariant226BudgetBudgetItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<double>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant226BudgetBudgetItemPricingPlan), TypeInfoPropertyName = "UserEventPayloadVariant226BudgetBudgetItemPricingPlan2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant227))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant227Budget))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant227BudgetType), TypeInfoPropertyName = "UserEventPayloadVariant227BudgetType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant227BudgetPricingPlan), TypeInfoPropertyName = "UserEventPayloadVariant227BudgetPricingPlan2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant228))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant228Budget))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant228BudgetType), TypeInfoPropertyName = "UserEventPayloadVariant228BudgetType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant228BudgetPricingPlan), TypeInfoPropertyName = "UserEventPayloadVariant228BudgetPricingPlan2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant229))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant229StoreType), TypeInfoPropertyName = "UserEventPayloadVariant229StoreType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant230))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant230Store))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant230StoreType), TypeInfoPropertyName = "UserEventPayloadVariant230StoreType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant231))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant231Store))]
@@ -13256,97 +13254,96 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant232Store))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant232StoreType), TypeInfoPropertyName = "UserEventPayloadVariant232StoreType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant233))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant233Type), TypeInfoPropertyName = "UserEventPayloadVariant233Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant233Access), TypeInfoPropertyName = "UserEventPayloadVariant233Access2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant233Store))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant233StoreType), TypeInfoPropertyName = "UserEventPayloadVariant233StoreType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant234))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant234Store))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant234Type), TypeInfoPropertyName = "UserEventPayloadVariant234Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant234Access), TypeInfoPropertyName = "UserEventPayloadVariant234Access2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant235))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant235Store))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant236))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant236Previous))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant236PreviousScope), TypeInfoPropertyName = "UserEventPayloadVariant236PreviousScope2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant236Next))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant236NextScope), TypeInfoPropertyName = "UserEventPayloadVariant236NextScope2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant237))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant237Previous))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant237PreviousScope), TypeInfoPropertyName = "UserEventPayloadVariant237PreviousScope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant237Next))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant237NextScope), TypeInfoPropertyName = "UserEventPayloadVariant237NextScope2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant238))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant239))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant239Previous), TypeInfoPropertyName = "UserEventPayloadVariant239Previous2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant239Next), TypeInfoPropertyName = "UserEventPayloadVariant239Next2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant240))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant240Reason>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant240Reason))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant240RemovedUsers2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant240RemovedUsers2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant240RemovedUsersRole), TypeInfoPropertyName = "UserEventPayloadVariant240RemovedUsersRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant240Previous), TypeInfoPropertyName = "UserEventPayloadVariant240Previous2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant240Next), TypeInfoPropertyName = "UserEventPayloadVariant240Next2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant241))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant241Reason>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant241Reason))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant241RemovedUsers2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant241RemovedUsers2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant241RemovedUsersRole), TypeInfoPropertyName = "UserEventPayloadVariant241RemovedUsersRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant242))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant242Environment), TypeInfoPropertyName = "UserEventPayloadVariant242Environment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant243))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant243Environment), TypeInfoPropertyName = "UserEventPayloadVariant243Environment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant243Enabled), TypeInfoPropertyName = "UserEventPayloadVariant243Enabled2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant244))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant244Environment), TypeInfoPropertyName = "UserEventPayloadVariant244Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant244Enabled), TypeInfoPropertyName = "UserEventPayloadVariant244Enabled2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant245))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant246))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant246InvitedUser))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant247))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant247InvitedUser))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant248))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant249))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant249DeletedUser))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant249Role), TypeInfoPropertyName = "UserEventPayloadVariant249Role2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant249PreviousPlan), TypeInfoPropertyName = "UserEventPayloadVariant249PreviousPlan2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant249NewPlan), TypeInfoPropertyName = "UserEventPayloadVariant249NewPlan2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant250))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant250User))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant250DeletedUser))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant250Role), TypeInfoPropertyName = "UserEventPayloadVariant250Role2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant250PreviousPlan), TypeInfoPropertyName = "UserEventPayloadVariant250PreviousPlan2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant250NewPlan), TypeInfoPropertyName = "UserEventPayloadVariant250NewPlan2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant251))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant251User))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant252))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant252User))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant253))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant254))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant254UpdatedUser))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant255))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant255UpdatedUser))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant256))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant257))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant257Plan), TypeInfoPropertyName = "UserEventPayloadVariant257Plan2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant257Trial))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant258))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant258Plan), TypeInfoPropertyName = "UserEventPayloadVariant258Plan2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant258Trial))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant259))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant259Plan), TypeInfoPropertyName = "UserEventPayloadVariant259Plan2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant260))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant261))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant261Consent), TypeInfoPropertyName = "UserEventPayloadVariant261Consent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant262))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant262RemoteCaching))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant262Consent), TypeInfoPropertyName = "UserEventPayloadVariant262Consent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant263))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant263Enabled), TypeInfoPropertyName = "UserEventPayloadVariant263Enabled2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant263RemoteCaching))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant264))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant264Scope), TypeInfoPropertyName = "UserEventPayloadVariant264Scope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant264Enabled), TypeInfoPropertyName = "UserEventPayloadVariant264Enabled2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant265))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant265PreviousEnum, global::Vercel.UserEventPayloadVariant265PreviousEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant265PreviousEnumUserEventPayloadVariant265PreviousEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant265PreviousEnum))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant265PreviousEnum2), TypeInfoPropertyName = "UserEventPayloadVariant265PreviousEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant265NextEnum, global::Vercel.UserEventPayloadVariant265NextEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant265NextEnumUserEventPayloadVariant265NextEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant265NextEnum))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant265NextEnum2), TypeInfoPropertyName = "UserEventPayloadVariant265NextEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant265Scope), TypeInfoPropertyName = "UserEventPayloadVariant265Scope2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant266))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant266PreviousEnum, global::Vercel.UserEventPayloadVariant266PreviousEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant266PreviousEnumUserEventPayloadVariant266PreviousEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant266PreviousEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant266PreviousEnum2), TypeInfoPropertyName = "UserEventPayloadVariant266PreviousEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant266NextEnum, global::Vercel.UserEventPayloadVariant266NextEnum2?>), TypeInfoPropertyName = "OneOfUserEventPayloadVariant266NextEnumUserEventPayloadVariant266NextEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant266NextEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant266NextEnum2), TypeInfoPropertyName = "UserEventPayloadVariant266NextEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant267))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant268))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant269))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant270))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant270Provider), TypeInfoPropertyName = "UserEventPayloadVariant270Provider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant271))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant271ActorType), TypeInfoPropertyName = "UserEventPayloadVariant271ActorType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant271Provider), TypeInfoPropertyName = "UserEventPayloadVariant271Provider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant272))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant272ActorType), TypeInfoPropertyName = "UserEventPayloadVariant272ActorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant273))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant273Previous))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant273Next))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant274))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant274Previous))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant274Next))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant275))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant276))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant277))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant278))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant279))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant279Team))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant279Configuration))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant279Peering))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant280))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant280Team))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant280Configuration))]
@@ -13356,18 +13353,22 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant281Configuration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant281Peering))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant282))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant282Tier), TypeInfoPropertyName = "UserEventPayloadVariant282Tier2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant282Team))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant282Configuration))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant282Peering))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant283))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant283Tier), TypeInfoPropertyName = "UserEventPayloadVariant283Tier2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant284))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant285))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant286))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant287))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant288))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant288GrantType), TypeInfoPropertyName = "UserEventPayloadVariant288GrantType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant288AuthMethod), TypeInfoPropertyName = "UserEventPayloadVariant288AuthMethod2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant288App))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant288AppClientAuthenticationUsed))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant288AppClientAuthenticationUsedMethod), TypeInfoPropertyName = "UserEventPayloadVariant288AppClientAuthenticationUsedMethod2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant289))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant289GrantType), TypeInfoPropertyName = "UserEventPayloadVariant289GrantType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant289AuthMethod), TypeInfoPropertyName = "UserEventPayloadVariant289AuthMethod2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant289App))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant289AppClientAuthenticationUsed))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant289AppClientAuthenticationUsedMethod), TypeInfoPropertyName = "UserEventPayloadVariant289AppClientAuthenticationUsedMethod2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Flag))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperiment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagExperimentGuardrailMetric>))]
@@ -20699,12 +20700,12 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant122FactorsVariant2ItemVariant1, global::Vercel.UserEventPayloadVariant122FactorsVariant2ItemVariant2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant151ProjectOldConnectConfiguration>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant151ProjectNewConnectConfiguration>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant180Project>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant191OptionsAllowlistPath>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant191OldOptionsAllowlistPath>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant220Factor>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant181Project>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant192OptionsAllowlistPath>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant192OldOptionsAllowlistPath>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant221Factor>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant240Reason>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant241Reason>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.FlagExperimentGuardrailMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.FlagExperimentPrimaryMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.FlagEnvironmentsTarget>>>>))]
