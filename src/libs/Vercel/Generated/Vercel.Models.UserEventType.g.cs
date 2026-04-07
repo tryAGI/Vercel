@@ -1136,11 +1136,19 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectRollingReleaseContinued,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectRollingReleaseDisabled,
         /// <summary>
         /// 
         /// </summary>
         ProjectRollingReleaseEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectRollingReleasePaused,
         /// <summary>
         /// 
         /// </summary>
@@ -1964,8 +1972,10 @@ namespace Vercel
                 UserEventType.ProjectRollingReleaseApproved => "project-rolling-release-approved",
                 UserEventType.ProjectRollingReleaseCompleted => "project-rolling-release-completed",
                 UserEventType.ProjectRollingReleaseConfigured => "project-rolling-release-configured",
+                UserEventType.ProjectRollingReleaseContinued => "project-rolling-release-continued",
                 UserEventType.ProjectRollingReleaseDisabled => "project-rolling-release-disabled",
                 UserEventType.ProjectRollingReleaseEnabled => "project-rolling-release-enabled",
+                UserEventType.ProjectRollingReleasePaused => "project-rolling-release-paused",
                 UserEventType.ProjectRollingReleaseStarted => "project-rolling-release-started",
                 UserEventType.ProjectRollingReleaseTimer => "project-rolling-release-timer",
                 UserEventType.ProjectRootDirectoryUpdated => "project-root-directory-updated",
@@ -2389,8 +2399,10 @@ namespace Vercel
                 "project-rolling-release-approved" => UserEventType.ProjectRollingReleaseApproved,
                 "project-rolling-release-completed" => UserEventType.ProjectRollingReleaseCompleted,
                 "project-rolling-release-configured" => UserEventType.ProjectRollingReleaseConfigured,
+                "project-rolling-release-continued" => UserEventType.ProjectRollingReleaseContinued,
                 "project-rolling-release-disabled" => UserEventType.ProjectRollingReleaseDisabled,
                 "project-rolling-release-enabled" => UserEventType.ProjectRollingReleaseEnabled,
+                "project-rolling-release-paused" => UserEventType.ProjectRollingReleasePaused,
                 "project-rolling-release-started" => UserEventType.ProjectRollingReleaseStarted,
                 "project-rolling-release-timer" => UserEventType.ProjectRollingReleaseTimer,
                 "project-root-directory-updated" => UserEventType.ProjectRootDirectoryUpdated,

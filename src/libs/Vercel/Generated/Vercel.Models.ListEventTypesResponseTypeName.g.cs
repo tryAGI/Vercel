@@ -1135,11 +1135,19 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectRollingReleaseContinued,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectRollingReleaseDisabled,
         /// <summary>
         /// 
         /// </summary>
         ProjectRollingReleaseEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectRollingReleasePaused,
         /// <summary>
         /// 
         /// </summary>
@@ -1963,8 +1971,10 @@ namespace Vercel
                 ListEventTypesResponseTypeName.ProjectRollingReleaseApproved => "project-rolling-release-approved",
                 ListEventTypesResponseTypeName.ProjectRollingReleaseCompleted => "project-rolling-release-completed",
                 ListEventTypesResponseTypeName.ProjectRollingReleaseConfigured => "project-rolling-release-configured",
+                ListEventTypesResponseTypeName.ProjectRollingReleaseContinued => "project-rolling-release-continued",
                 ListEventTypesResponseTypeName.ProjectRollingReleaseDisabled => "project-rolling-release-disabled",
                 ListEventTypesResponseTypeName.ProjectRollingReleaseEnabled => "project-rolling-release-enabled",
+                ListEventTypesResponseTypeName.ProjectRollingReleasePaused => "project-rolling-release-paused",
                 ListEventTypesResponseTypeName.ProjectRollingReleaseStarted => "project-rolling-release-started",
                 ListEventTypesResponseTypeName.ProjectRollingReleaseTimer => "project-rolling-release-timer",
                 ListEventTypesResponseTypeName.ProjectRootDirectoryUpdated => "project-root-directory-updated",
@@ -2388,8 +2398,10 @@ namespace Vercel
                 "project-rolling-release-approved" => ListEventTypesResponseTypeName.ProjectRollingReleaseApproved,
                 "project-rolling-release-completed" => ListEventTypesResponseTypeName.ProjectRollingReleaseCompleted,
                 "project-rolling-release-configured" => ListEventTypesResponseTypeName.ProjectRollingReleaseConfigured,
+                "project-rolling-release-continued" => ListEventTypesResponseTypeName.ProjectRollingReleaseContinued,
                 "project-rolling-release-disabled" => ListEventTypesResponseTypeName.ProjectRollingReleaseDisabled,
                 "project-rolling-release-enabled" => ListEventTypesResponseTypeName.ProjectRollingReleaseEnabled,
+                "project-rolling-release-paused" => ListEventTypesResponseTypeName.ProjectRollingReleasePaused,
                 "project-rolling-release-started" => ListEventTypesResponseTypeName.ProjectRollingReleaseStarted,
                 "project-rolling-release-timer" => ListEventTypesResponseTypeName.ProjectRollingReleaseTimer,
                 "project-root-directory-updated" => ListEventTypesResponseTypeName.ProjectRootDirectoryUpdated,

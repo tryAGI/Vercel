@@ -19,6 +19,13 @@ namespace Vercel
         public required global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseState State { get; set; }
 
         /// <summary>
+        /// When set to `PAUSED`, the rollout is frozen at the current percentage until continued.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("substate")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ApproveRollingReleaseStageResponseRollingReleaseSubstateJsonConverter))]
+        public global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseSubstate? Substate { get; set; }
+
+        /// <summary>
         /// The current deployment receiving production traffic<br/>
         /// Example: {"id":"dpl_abc123","name":"my-shop@main","url":"my-shop.vercel.app","target":"production","source":"git","createdAt":1716206500000,"readyState":"READY","readyStateAt":1716206800000}
         /// </summary>
@@ -124,6 +131,9 @@ namespace Vercel
         /// Unix timestamp in milliseconds when the rolling release was last updated<br/>
         /// Example: 1716210600000L
         /// </param>
+        /// <param name="substate">
+        /// When set to `PAUSED`, the rollout is frozen at the current percentage until continued.
+        /// </param>
         /// <param name="currentDeployment">
         /// The current deployment receiving production traffic<br/>
         /// Example: {"id":"dpl_abc123","name":"my-shop@main","url":"my-shop.vercel.app","target":"production","source":"git","createdAt":1716206500000,"readyState":"READY","readyStateAt":1716206800000}
@@ -153,6 +163,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseStage> stages,
             double startedAt,
             double updatedAt,
+            global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseSubstate? substate,
             global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseCurrentDeployment? currentDeployment,
             global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseCanaryDeployment? canaryDeployment,
             string? queuedDeploymentId,
@@ -160,6 +171,7 @@ namespace Vercel
             global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseNextStage? nextStage)
         {
             this.State = state;
+            this.Substate = substate;
             this.CurrentDeployment = currentDeployment;
             this.CanaryDeployment = canaryDeployment;
             this.QueuedDeploymentId = queuedDeploymentId;
