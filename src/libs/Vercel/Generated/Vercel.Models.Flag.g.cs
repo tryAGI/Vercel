@@ -17,6 +17,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
+        public bool? Permanent { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experiment")]
         public global::Vercel.FlagExperiment? Experiment { get; set; }
 
@@ -149,6 +155,7 @@ namespace Vercel
         /// <param name="ownerId"></param>
         /// <param name="projectId"></param>
         /// <param name="description"></param>
+        /// <param name="permanent"></param>
         /// <param name="experiment"></param>
         /// <param name="typeName"></param>
         /// <param name="metadata"></param>
@@ -170,11 +177,13 @@ namespace Vercel
             string ownerId,
             string projectId,
             string? description,
+            bool? permanent,
             global::Vercel.FlagExperiment? experiment,
             global::Vercel.FlagTypeName typeName,
             global::Vercel.FlagMetadata? metadata)
         {
             this.Description = description;
+            this.Permanent = permanent;
             this.Experiment = experiment;
             this.Variants = variants ?? throw new global::System.ArgumentNullException(nameof(variants));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));

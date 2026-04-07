@@ -59,6 +59,9 @@ namespace Vercel
         /// A description of the flag
         /// </param>
         /// <param name="state"></param>
+        /// <param name="permanent">
+        /// Whether this flag is marked as permanent, indicating it should not be removed
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateFlagResponse> CreateFlagAsync(
@@ -72,6 +75,7 @@ namespace Vercel
             double? seed = default,
             string? description = default,
             global::Vercel.CreateFlagRequestState? state = default,
+            bool? permanent = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

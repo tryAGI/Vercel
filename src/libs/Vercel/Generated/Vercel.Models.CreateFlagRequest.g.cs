@@ -56,6 +56,12 @@ namespace Vercel
         public global::Vercel.CreateFlagRequestState? State { get; set; }
 
         /// <summary>
+        /// Whether this flag is marked as permanent, indicating it should not be removed
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
+        public bool? Permanent { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -83,6 +89,9 @@ namespace Vercel
         /// A description of the flag
         /// </param>
         /// <param name="state"></param>
+        /// <param name="permanent">
+        /// Whether this flag is marked as permanent, indicating it should not be removed
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -93,7 +102,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.CreateFlagRequestVariant>? variants,
             double? seed,
             string? description,
-            global::Vercel.CreateFlagRequestState? state)
+            global::Vercel.CreateFlagRequestState? state,
+            bool? permanent)
         {
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Kind = kind;
@@ -102,6 +112,7 @@ namespace Vercel
             this.Seed = seed;
             this.Description = description;
             this.State = state;
+            this.Permanent = permanent;
         }
 
         /// <summary>
