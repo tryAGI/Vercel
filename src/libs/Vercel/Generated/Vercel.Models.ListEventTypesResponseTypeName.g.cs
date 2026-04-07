@@ -991,6 +991,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectGitCommitStatusToggled,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectGitCreateDeploymentsToggled,
         /// <summary>
         /// 
@@ -1935,6 +1939,7 @@ namespace Vercel
                 ListEventTypesResponseTypeName.ProjectFunctionsFluidDisabled => "project-functions-fluid-disabled",
                 ListEventTypesResponseTypeName.ProjectFunctionsFluidEnabled => "project-functions-fluid-enabled",
                 ListEventTypesResponseTypeName.ProjectGitCommitCommentsToggled => "project-git-commit-comments-toggled",
+                ListEventTypesResponseTypeName.ProjectGitCommitStatusToggled => "project-git-commit-status-toggled",
                 ListEventTypesResponseTypeName.ProjectGitCreateDeploymentsToggled => "project-git-create-deployments-toggled",
                 ListEventTypesResponseTypeName.ProjectGitForkProtectionUpdated => "project-git-fork-protection-updated",
                 ListEventTypesResponseTypeName.ProjectGitLfsToggled => "project-git-lfs-toggled",
@@ -2362,6 +2367,7 @@ namespace Vercel
                 "project-functions-fluid-disabled" => ListEventTypesResponseTypeName.ProjectFunctionsFluidDisabled,
                 "project-functions-fluid-enabled" => ListEventTypesResponseTypeName.ProjectFunctionsFluidEnabled,
                 "project-git-commit-comments-toggled" => ListEventTypesResponseTypeName.ProjectGitCommitCommentsToggled,
+                "project-git-commit-status-toggled" => ListEventTypesResponseTypeName.ProjectGitCommitStatusToggled,
                 "project-git-create-deployments-toggled" => ListEventTypesResponseTypeName.ProjectGitCreateDeploymentsToggled,
                 "project-git-fork-protection-updated" => ListEventTypesResponseTypeName.ProjectGitForkProtectionUpdated,
                 "project-git-lfs-toggled" => ListEventTypesResponseTypeName.ProjectGitLfsToggled,

@@ -257,6 +257,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connexClient")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexClient { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connexToken")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexToken { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineDefault")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BuildMachineDefault { get; set; }
 
@@ -1474,6 +1486,8 @@ namespace Vercel
         /// <param name="concurrentBuilds"></param>
         /// <param name="connect"></param>
         /// <param name="connectConfiguration"></param>
+        /// <param name="connexClient"></param>
+        /// <param name="connexToken"></param>
         /// <param name="buildMachineDefault"></param>
         /// <param name="dataCacheBillingSettings"></param>
         /// <param name="defaultDeploymentProtection"></param>
@@ -1714,6 +1728,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? concurrentBuilds,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connect,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connectConfiguration,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexClient,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexToken,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? buildMachineDefault,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? dataCacheBillingSettings,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? defaultDeploymentProtection,
@@ -1951,6 +1967,8 @@ namespace Vercel
             this.ConcurrentBuilds = concurrentBuilds;
             this.Connect = connect;
             this.ConnectConfiguration = connectConfiguration;
+            this.ConnexClient = connexClient;
+            this.ConnexToken = connexToken;
             this.BuildMachineDefault = buildMachineDefault;
             this.DataCacheBillingSettings = dataCacheBillingSettings;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;

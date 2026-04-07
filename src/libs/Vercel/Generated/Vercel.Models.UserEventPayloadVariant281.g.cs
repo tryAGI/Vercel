@@ -30,12 +30,6 @@ namespace Vercel
         public required global::Vercel.UserEventPayloadVariant281Peering Peering { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
-        public string? NewName { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -47,20 +41,17 @@ namespace Vercel
         /// <param name="team"></param>
         /// <param name="configuration"></param>
         /// <param name="peering"></param>
-        /// <param name="newName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant281(
             global::Vercel.UserEventPayloadVariant281Team team,
             global::Vercel.UserEventPayloadVariant281Configuration configuration,
-            global::Vercel.UserEventPayloadVariant281Peering peering,
-            string? newName)
+            global::Vercel.UserEventPayloadVariant281Peering peering)
         {
             this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
             this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
             this.Peering = peering ?? throw new global::System.ArgumentNullException(nameof(peering));
-            this.NewName = newName;
         }
 
         /// <summary>

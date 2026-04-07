@@ -12,16 +12,9 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant264EnabledJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Enabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant264ScopeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant264Scope Scope { get; set; }
+        public required global::Vercel.UserEventPayloadVariant264Enabled Enabled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -33,16 +26,13 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant264" /> class.
         /// </summary>
         /// <param name="enabled"></param>
-        /// <param name="scope"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant264(
-            bool enabled,
-            global::Vercel.UserEventPayloadVariant264Scope scope)
+            global::Vercel.UserEventPayloadVariant264Enabled enabled)
         {
             this.Enabled = enabled;
-            this.Scope = scope;
         }
 
         /// <summary>

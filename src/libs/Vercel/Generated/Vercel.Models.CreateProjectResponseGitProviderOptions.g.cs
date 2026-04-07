@@ -29,6 +29,12 @@ namespace Vercel
         public bool? RequireVerifiedCommits { get; set; }
 
         /// <summary>
+        /// Whether Vercel should post commit statuses for this project. When omitted, commit statuses remain enabled.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitCommitStatus")]
+        public bool? GitCommitStatus { get; set; }
+
+        /// <summary>
         /// Configuration for consolidated git commit status reporting. When enabled, Vercel will post a single consolidated commit status instead of individual statuses for each deployment.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("consolidatedGitCommitStatus")]
@@ -52,6 +58,9 @@ namespace Vercel
         /// <param name="requireVerifiedCommits">
         /// Whether the project requires commits to be signed before deployments will be created.
         /// </param>
+        /// <param name="gitCommitStatus">
+        /// Whether Vercel should post commit statuses for this project. When omitted, commit statuses remain enabled.
+        /// </param>
         /// <param name="consolidatedGitCommitStatus">
         /// Configuration for consolidated git commit status reporting. When enabled, Vercel will post a single consolidated commit status instead of individual statuses for each deployment.
         /// </param>
@@ -62,11 +71,13 @@ namespace Vercel
             global::Vercel.CreateProjectResponseGitProviderOptionsCreateDeployments createDeployments,
             bool? disableRepositoryDispatchEvents,
             bool? requireVerifiedCommits,
+            bool? gitCommitStatus,
             global::Vercel.CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus? consolidatedGitCommitStatus)
         {
             this.CreateDeployments = createDeployments;
             this.DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents;
             this.RequireVerifiedCommits = requireVerifiedCommits;
+            this.GitCommitStatus = gitCommitStatus;
             this.ConsolidatedGitCommitStatus = consolidatedGitCommitStatus;
         }
 

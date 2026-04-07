@@ -18,8 +18,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant184ProjectRoleJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant184ProjectRole Role { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitedUserName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string InvitedUserName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         public string? Id { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitedUserId")]
+        public string? InvitedUserId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,16 +52,25 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant184Project" /> class.
         /// </summary>
         /// <param name="name"></param>
+        /// <param name="role"></param>
+        /// <param name="invitedUserName"></param>
         /// <param name="id"></param>
+        /// <param name="invitedUserId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant184Project(
             string name,
-            string? id)
+            global::Vercel.UserEventPayloadVariant184ProjectRole role,
+            string invitedUserName,
+            string? id,
+            string? invitedUserId)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Role = role;
+            this.InvitedUserName = invitedUserName ?? throw new global::System.ArgumentNullException(nameof(invitedUserName));
             this.Id = id;
+            this.InvitedUserId = invitedUserId;
         }
 
         /// <summary>
