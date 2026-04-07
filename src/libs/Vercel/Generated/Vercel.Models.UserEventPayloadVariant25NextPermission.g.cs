@@ -91,6 +91,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ReadWrite_sandbox,
+        /// <summary>
+        /// 
+        /// </summary>
         Read_accessGroup,
         /// <summary>
         /// 
@@ -131,7 +135,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Read_projectOidcToken,
+        Read_sandbox,
         /// <summary>
         /// 
         /// </summary>
@@ -178,6 +182,7 @@ namespace Vercel
                 UserEventPayloadVariant25NextPermission.ReadWrite_projectFlagsProduction => "read-write:project-flags-production",
                 UserEventPayloadVariant25NextPermission.ReadWrite_projectProtectionBypass => "read-write:project-protection-bypass",
                 UserEventPayloadVariant25NextPermission.ReadWrite_remoteCache => "read-write:remote-cache",
+                UserEventPayloadVariant25NextPermission.ReadWrite_sandbox => "read-write:sandbox",
                 UserEventPayloadVariant25NextPermission.Read_accessGroup => "read:access-group",
                 UserEventPayloadVariant25NextPermission.Read_billing => "read:billing",
                 UserEventPayloadVariant25NextPermission.Read_deployment => "read:deployment",
@@ -188,7 +193,7 @@ namespace Vercel
                 UserEventPayloadVariant25NextPermission.Read_project => "read:project",
                 UserEventPayloadVariant25NextPermission.Read_projectEnvVarsNonProduction => "read:project-env-vars-non-production",
                 UserEventPayloadVariant25NextPermission.Read_projectEnvVarsProduction => "read:project-env-vars-production",
-                UserEventPayloadVariant25NextPermission.Read_projectOidcToken => "read:project-oidc-token",
+                UserEventPayloadVariant25NextPermission.Read_sandbox => "read:sandbox",
                 UserEventPayloadVariant25NextPermission.Read_team => "read:team",
                 UserEventPayloadVariant25NextPermission.Read_user => "read:user",
                 UserEventPayloadVariant25NextPermission.Use_aiGateway => "use:ai-gateway",
@@ -222,6 +227,7 @@ namespace Vercel
                 "read-write:project-flags-production" => UserEventPayloadVariant25NextPermission.ReadWrite_projectFlagsProduction,
                 "read-write:project-protection-bypass" => UserEventPayloadVariant25NextPermission.ReadWrite_projectProtectionBypass,
                 "read-write:remote-cache" => UserEventPayloadVariant25NextPermission.ReadWrite_remoteCache,
+                "read-write:sandbox" => UserEventPayloadVariant25NextPermission.ReadWrite_sandbox,
                 "read:access-group" => UserEventPayloadVariant25NextPermission.Read_accessGroup,
                 "read:billing" => UserEventPayloadVariant25NextPermission.Read_billing,
                 "read:deployment" => UserEventPayloadVariant25NextPermission.Read_deployment,
@@ -232,7 +238,7 @@ namespace Vercel
                 "read:project" => UserEventPayloadVariant25NextPermission.Read_project,
                 "read:project-env-vars-non-production" => UserEventPayloadVariant25NextPermission.Read_projectEnvVarsNonProduction,
                 "read:project-env-vars-production" => UserEventPayloadVariant25NextPermission.Read_projectEnvVarsProduction,
-                "read:project-oidc-token" => UserEventPayloadVariant25NextPermission.Read_projectOidcToken,
+                "read:sandbox" => UserEventPayloadVariant25NextPermission.Read_sandbox,
                 "read:team" => UserEventPayloadVariant25NextPermission.Read_team,
                 "read:user" => UserEventPayloadVariant25NextPermission.Read_user,
                 "use:ai-gateway" => UserEventPayloadVariant25NextPermission.Use_aiGateway,
