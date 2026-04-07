@@ -87,6 +87,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ReadWrite_sandbox,
+        /// <summary>
+        /// 
+        /// </summary>
         Read_accessGroup,
         /// <summary>
         /// 
@@ -127,7 +131,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Read_projectOidcToken,
+        Read_sandbox,
         /// <summary>
         /// 
         /// </summary>
@@ -169,6 +173,7 @@ namespace Vercel
                 UserEventPayloadVariant27Permission.ReadWrite_projectFlagsProduction => "read-write:project-flags-production",
                 UserEventPayloadVariant27Permission.ReadWrite_projectProtectionBypass => "read-write:project-protection-bypass",
                 UserEventPayloadVariant27Permission.ReadWrite_remoteCache => "read-write:remote-cache",
+                UserEventPayloadVariant27Permission.ReadWrite_sandbox => "read-write:sandbox",
                 UserEventPayloadVariant27Permission.Read_accessGroup => "read:access-group",
                 UserEventPayloadVariant27Permission.Read_billing => "read:billing",
                 UserEventPayloadVariant27Permission.Read_deployment => "read:deployment",
@@ -179,7 +184,7 @@ namespace Vercel
                 UserEventPayloadVariant27Permission.Read_project => "read:project",
                 UserEventPayloadVariant27Permission.Read_projectEnvVarsNonProduction => "read:project-env-vars-non-production",
                 UserEventPayloadVariant27Permission.Read_projectEnvVarsProduction => "read:project-env-vars-production",
-                UserEventPayloadVariant27Permission.Read_projectOidcToken => "read:project-oidc-token",
+                UserEventPayloadVariant27Permission.Read_sandbox => "read:sandbox",
                 UserEventPayloadVariant27Permission.Read_team => "read:team",
                 UserEventPayloadVariant27Permission.Use_aiGateway => "use:ai-gateway",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -211,6 +216,7 @@ namespace Vercel
                 "read-write:project-flags-production" => UserEventPayloadVariant27Permission.ReadWrite_projectFlagsProduction,
                 "read-write:project-protection-bypass" => UserEventPayloadVariant27Permission.ReadWrite_projectProtectionBypass,
                 "read-write:remote-cache" => UserEventPayloadVariant27Permission.ReadWrite_remoteCache,
+                "read-write:sandbox" => UserEventPayloadVariant27Permission.ReadWrite_sandbox,
                 "read:access-group" => UserEventPayloadVariant27Permission.Read_accessGroup,
                 "read:billing" => UserEventPayloadVariant27Permission.Read_billing,
                 "read:deployment" => UserEventPayloadVariant27Permission.Read_deployment,
@@ -221,7 +227,7 @@ namespace Vercel
                 "read:project" => UserEventPayloadVariant27Permission.Read_project,
                 "read:project-env-vars-non-production" => UserEventPayloadVariant27Permission.Read_projectEnvVarsNonProduction,
                 "read:project-env-vars-production" => UserEventPayloadVariant27Permission.Read_projectEnvVarsProduction,
-                "read:project-oidc-token" => UserEventPayloadVariant27Permission.Read_projectOidcToken,
+                "read:sandbox" => UserEventPayloadVariant27Permission.Read_sandbox,
                 "read:team" => UserEventPayloadVariant27Permission.Read_team,
                 "use:ai-gateway" => UserEventPayloadVariant27Permission.Use_aiGateway,
                 _ => null,
