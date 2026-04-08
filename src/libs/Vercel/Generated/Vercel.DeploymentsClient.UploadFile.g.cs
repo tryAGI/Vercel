@@ -263,6 +263,39 @@ namespace Vercel
                         h => h.Value),
                 };
             }
+            // 
+            if ((int)__response.StatusCode == 426)
+            {
+                string? __content_426 = null;
+                global::System.Exception? __exception_426 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_426 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                    }
+                    else
+                    {
+                        __content_426 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_426 = __ex;
+                }
+
+                throw new global::Vercel.ApiException(
+                    message: __content_426 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_426,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_426,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
 
             if (ReadResponseAsString)
             {
