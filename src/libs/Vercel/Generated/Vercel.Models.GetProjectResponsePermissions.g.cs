@@ -821,12 +821,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("securityPlusConfiguration")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SecurityPlusConfiguration { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sensitiveEnvironmentVariablePolicy")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SensitiveEnvironmentVariablePolicy { get; set; }
 
@@ -1409,6 +1403,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("securityPlusConfiguration")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SecurityPlusConfiguration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharedEnvVarConnection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SharedEnvVarConnection { get; set; }
 
@@ -1586,7 +1586,6 @@ namespace Vercel
         /// <param name="repository"></param>
         /// <param name="samlConfig"></param>
         /// <param name="secret"></param>
-        /// <param name="securityPlusConfiguration"></param>
         /// <param name="sensitiveEnvironmentVariablePolicy"></param>
         /// <param name="sharedEnvVars"></param>
         /// <param name="sharedEnvVarsProduction"></param>
@@ -1684,6 +1683,7 @@ namespace Vercel
         /// <param name="projectUsage"></param>
         /// <param name="pageIntegrity"></param>
         /// <param name="seawallConfig"></param>
+        /// <param name="securityPlusConfiguration"></param>
         /// <param name="sharedEnvVarConnection"></param>
         /// <param name="skewProtection"></param>
         /// <param name="analytics"></param>
@@ -1829,7 +1829,6 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? repository,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? samlConfig,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? secret,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? securityPlusConfiguration,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sensitiveEnvironmentVariablePolicy,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVars,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVarsProduction,
@@ -1927,6 +1926,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectUsage,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? pageIntegrity,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? seawallConfig,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? securityPlusConfiguration,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVarConnection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? skewProtection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? analytics,
@@ -2069,7 +2069,6 @@ namespace Vercel
             this.Repository = repository;
             this.SamlConfig = samlConfig;
             this.Secret = secret;
-            this.SecurityPlusConfiguration = securityPlusConfiguration;
             this.SensitiveEnvironmentVariablePolicy = sensitiveEnvironmentVariablePolicy;
             this.SharedEnvVars = sharedEnvVars;
             this.SharedEnvVarsProduction = sharedEnvVarsProduction;
@@ -2167,6 +2166,7 @@ namespace Vercel
             this.ProjectUsage = projectUsage;
             this.PageIntegrity = pageIntegrity;
             this.SeawallConfig = seawallConfig;
+            this.SecurityPlusConfiguration = securityPlusConfiguration;
             this.SharedEnvVarConnection = sharedEnvVarConnection;
             this.SkewProtection = skewProtection;
             this.Analytics = analytics;

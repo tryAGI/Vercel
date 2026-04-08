@@ -30,6 +30,12 @@ namespace Vercel
         public string? Type { get; set; }
 
         /// <summary>
+        /// The git provider (github, gitlab, bitbucket)
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
+        public string? Provider { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,17 +51,22 @@ namespace Vercel
         /// <param name="type">
         /// User type
         /// </param>
+        /// <param name="provider">
+        /// The git provider (github, gitlab, bitbucket)
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseAttributionGitUser(
             global::Vercel.OneOf<string, double?> id,
             string login,
-            string? type)
+            string? type,
+            string? provider)
         {
             this.Id = id;
             this.Login = login ?? throw new global::System.ArgumentNullException(nameof(login));
             this.Type = type;
+            this.Provider = provider;
         }
 
         /// <summary>

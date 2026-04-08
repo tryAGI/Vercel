@@ -106,6 +106,12 @@ namespace Vercel
         public bool? SecurityPlus { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("securityPlusMetadata")]
+        public global::Vercel.GetProjectsResponseVariant2ProjectSecuritySecurityPlusMetadata? SecurityPlusMetadata { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -130,6 +136,7 @@ namespace Vercel
         /// <param name="requestLogsKey"></param>
         /// <param name="logHeaders"></param>
         /// <param name="securityPlus"></param>
+        /// <param name="securityPlusMetadata"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -149,7 +156,8 @@ namespace Vercel
             bool? botIdEnabled,
             global::System.Collections.Generic.IList<string>? requestLogsKey,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectsResponseVariant2ProjectSecurityLogHeaders?>? logHeaders,
-            bool? securityPlus)
+            bool? securityPlus,
+            global::Vercel.GetProjectsResponseVariant2ProjectSecuritySecurityPlusMetadata? securityPlusMetadata)
         {
             this.AttackModeEnabled = attackModeEnabled;
             this.AttackModeUpdatedAt = attackModeUpdatedAt;
@@ -167,6 +175,7 @@ namespace Vercel
             this.RequestLogsKey = requestLogsKey;
             this.LogHeaders = logHeaders;
             this.SecurityPlus = securityPlus;
+            this.SecurityPlusMetadata = securityPlusMetadata;
         }
 
         /// <summary>
