@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("instances")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitProvider")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Instances { get; set; }
+        public required string GitProvider { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitProviderGroupDescriptor")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        public required string GitProviderGroupDescriptor { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitScope")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GitScope { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant213" /> class.
         /// </summary>
-        /// <param name="instances"></param>
-        /// <param name="url"></param>
+        /// <param name="gitProvider"></param>
+        /// <param name="gitProviderGroupDescriptor"></param>
+        /// <param name="gitScope"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant213(
-            double instances,
-            string url)
+            string gitProvider,
+            string gitProviderGroupDescriptor,
+            string gitScope)
         {
-            this.Instances = instances;
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.GitProvider = gitProvider ?? throw new global::System.ArgumentNullException(nameof(gitProvider));
+            this.GitProviderGroupDescriptor = gitProviderGroupDescriptor ?? throw new global::System.ArgumentNullException(nameof(gitProviderGroupDescriptor));
+            this.GitScope = gitScope ?? throw new global::System.ArgumentNullException(nameof(gitScope));
         }
 
         /// <summary>

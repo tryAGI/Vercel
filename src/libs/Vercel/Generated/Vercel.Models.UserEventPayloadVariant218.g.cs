@@ -11,22 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Enabled { get; set; }
+        public required string OldName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double UpdatedAt { get; set; }
+        public required string NewName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("firstEnabledAt")]
-        public double? FirstEnabledAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        public string? Uid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant218" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
-        /// <param name="updatedAt"></param>
-        /// <param name="firstEnabledAt"></param>
+        /// <param name="oldName"></param>
+        /// <param name="newName"></param>
+        /// <param name="uid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant218(
-            bool enabled,
-            double updatedAt,
-            double? firstEnabledAt)
+            string oldName,
+            string newName,
+            string? uid)
         {
-            this.Enabled = enabled;
-            this.UpdatedAt = updatedAt;
-            this.FirstEnabledAt = firstEnabledAt;
+            this.OldName = oldName ?? throw new global::System.ArgumentNullException(nameof(oldName));
+            this.NewName = newName ?? throw new global::System.ArgumentNullException(nameof(newName));
+            this.Uid = uid;
         }
 
         /// <summary>

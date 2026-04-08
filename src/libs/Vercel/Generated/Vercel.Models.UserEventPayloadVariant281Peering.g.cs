@@ -18,8 +18,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("accountId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string AccountId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Region { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vpcId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string VpcId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,16 +46,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant281Peering" /> class.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="name"></param>
+        /// <param name="accountId"></param>
+        /// <param name="region"></param>
+        /// <param name="vpcId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant281Peering(
             string id,
-            string? name)
+            string accountId,
+            string region,
+            string vpcId)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Name = name;
+            this.AccountId = accountId ?? throw new global::System.ArgumentNullException(nameof(accountId));
+            this.Region = region ?? throw new global::System.ArgumentNullException(nameof(region));
+            this.VpcId = vpcId ?? throw new global::System.ArgumentNullException(nameof(vpcId));
         }
 
         /// <summary>

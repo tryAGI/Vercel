@@ -920,6 +920,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectDelegatedProtectionEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectDelete,
         /// <summary>
         /// 
@@ -1922,6 +1926,7 @@ namespace Vercel
                 UserEventType.ProjectCustomEnvironmentDeleted => "project-custom-environment-deleted",
                 UserEventType.ProjectCustomEnvironmentUpdated => "project-custom-environment-updated",
                 UserEventType.ProjectCustomerSuccessCodeVisibilityUpdated => "project-customer-success-code-visibility-updated",
+                UserEventType.ProjectDelegatedProtectionEnabled => "project-delegated-protection-enabled",
                 UserEventType.ProjectDelete => "project-delete",
                 UserEventType.ProjectDeploymentRetentionUpdated => "project-deployment-retention-updated",
                 UserEventType.ProjectDirectoryListing => "project-directory-listing",
@@ -2350,6 +2355,7 @@ namespace Vercel
                 "project-custom-environment-deleted" => UserEventType.ProjectCustomEnvironmentDeleted,
                 "project-custom-environment-updated" => UserEventType.ProjectCustomEnvironmentUpdated,
                 "project-customer-success-code-visibility-updated" => UserEventType.ProjectCustomerSuccessCodeVisibilityUpdated,
+                "project-delegated-protection-enabled" => UserEventType.ProjectDelegatedProtectionEnabled,
                 "project-delete" => UserEventType.ProjectDelete,
                 "project-deployment-retention-updated" => UserEventType.ProjectDeploymentRetentionUpdated,
                 "project-directory-listing" => UserEventType.ProjectDirectoryListing,
