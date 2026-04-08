@@ -27,6 +27,9 @@ namespace Vercel
         /// <param name="kind">
         /// The kind of flags to retrieve.
         /// </param>
+        /// <param name="tags">
+        /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -43,6 +46,7 @@ namespace Vercel
             string? cursor = default,
             string? search = default,
             global::Vercel.ListTeamFlagsKind? kind = default,
+            global::System.Collections.Generic.IList<string>? tags = default,
             string? slug = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

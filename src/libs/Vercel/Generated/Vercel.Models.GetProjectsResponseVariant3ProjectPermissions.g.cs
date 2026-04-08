@@ -1397,6 +1397,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pageIntegrity")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PageIntegrity { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("seawallConfig")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SeawallConfig { get; set; }
 
@@ -1676,6 +1682,7 @@ namespace Vercel
         /// <param name="projectTransfer"></param>
         /// <param name="projectTransferOut"></param>
         /// <param name="projectUsage"></param>
+        /// <param name="pageIntegrity"></param>
         /// <param name="seawallConfig"></param>
         /// <param name="sharedEnvVarConnection"></param>
         /// <param name="skewProtection"></param>
@@ -1918,6 +1925,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectTransfer,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectTransferOut,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectUsage,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? pageIntegrity,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? seawallConfig,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVarConnection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? skewProtection,
@@ -2157,6 +2165,7 @@ namespace Vercel
             this.ProjectTransfer = projectTransfer;
             this.ProjectTransferOut = projectTransferOut;
             this.ProjectUsage = projectUsage;
+            this.PageIntegrity = pageIntegrity;
             this.SeawallConfig = seawallConfig;
             this.SharedEnvVarConnection = sharedEnvVarConnection;
             this.SkewProtection = skewProtection;

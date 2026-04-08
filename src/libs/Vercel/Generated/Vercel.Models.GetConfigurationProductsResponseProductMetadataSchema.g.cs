@@ -29,6 +29,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? Required { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ui:order")]
+        public global::System.Collections.Generic.IList<string>? Ui_order { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -40,17 +46,20 @@ namespace Vercel
         /// <param name="properties"></param>
         /// <param name="type"></param>
         /// <param name="required"></param>
+        /// <param name="ui_order"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConfigurationProductsResponseProductMetadataSchema(
             object properties,
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaType type,
-            global::System.Collections.Generic.IList<string>? required)
+            global::System.Collections.Generic.IList<string>? required,
+            global::System.Collections.Generic.IList<string>? ui_order)
         {
             this.Type = type;
             this.Properties = properties ?? throw new global::System.ArgumentNullException(nameof(properties));
             this.Required = required;
+            this.Ui_order = ui_order;
         }
 
         /// <summary>

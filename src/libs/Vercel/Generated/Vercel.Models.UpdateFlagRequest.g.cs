@@ -58,6 +58,12 @@ namespace Vercel
         public bool? Permanent { get; set; }
 
         /// <summary>
+        /// Tags for categorizing the flag
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -88,6 +94,9 @@ namespace Vercel
         /// <param name="permanent">
         /// Whether this flag is marked as permanent, indicating it should not be removed
         /// </param>
+        /// <param name="tags">
+        /// Tags for categorizing the flag
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -99,7 +108,8 @@ namespace Vercel
             double? seed,
             string? description,
             global::Vercel.UpdateFlagRequestState? state,
-            bool? permanent)
+            bool? permanent,
+            global::System.Collections.Generic.IList<string>? tags)
         {
             this.CreatedBy = createdBy;
             this.Message = message;
@@ -109,6 +119,7 @@ namespace Vercel
             this.Description = description;
             this.State = state;
             this.Permanent = permanent;
+            this.Tags = tags;
         }
 
         /// <summary>
