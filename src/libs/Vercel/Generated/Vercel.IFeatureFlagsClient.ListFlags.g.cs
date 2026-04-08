@@ -26,6 +26,9 @@ namespace Vercel
         /// <param name="search">
         /// Search flags by their slug or description. Case-insensitive.
         /// </param>
+        /// <param name="tags">
+        /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -41,6 +44,7 @@ namespace Vercel
             int? limit = default,
             string? cursor = default,
             string? search = default,
+            global::System.Collections.Generic.IList<string>? tags = default,
             string? teamId = default,
             string? slug = default,
             global::System.Threading.CancellationToken cancellationToken = default);

@@ -75,6 +75,12 @@ namespace Vercel
         public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiFormattedValue? Ui_formattedValue { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ui:paid-only")]
+        public bool? Ui_paidOnly { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -93,6 +99,7 @@ namespace Vercel
         /// <param name="ui_disabled"></param>
         /// <param name="ui_description"></param>
         /// <param name="ui_formattedValue"></param>
+        /// <param name="ui_paidOnly"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -106,7 +113,8 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiHiddenEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiHiddenEnum2?>? ui_hidden,
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiDisabledEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiDisabledEnum2?>? ui_disabled,
             global::Vercel.OneOf<string, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiDescription>? ui_description,
-            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiFormattedValue? ui_formattedValue)
+            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiFormattedValue? ui_formattedValue,
+            bool? ui_paidOnly)
         {
             this.Type = type;
             this.Ui_control = ui_control;
@@ -118,6 +126,7 @@ namespace Vercel
             this.Ui_disabled = ui_disabled;
             this.Ui_description = ui_description;
             this.Ui_formattedValue = ui_formattedValue;
+            this.Ui_paidOnly = ui_paidOnly;
         }
 
         /// <summary>

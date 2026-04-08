@@ -71,6 +71,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ui:paid-only")]
+        public bool? Ui_paidOnly { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ui:placeholder")]
         public string? Ui_placeholder { get; set; }
 
@@ -98,6 +104,7 @@ namespace Vercel
         /// <param name="ui_disabled"></param>
         /// <param name="ui_description"></param>
         /// <param name="ui_formattedValue"></param>
+        /// <param name="ui_paidOnly"></param>
         /// <param name="ui_placeholder"></param>
         /// <param name="git_providers"></param>
 #if NET7_0_OR_GREATER
@@ -113,6 +120,7 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiDisabledEnum, bool?, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiDisabledEnum2?>? ui_disabled,
             global::Vercel.OneOf<string, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiDescription>? ui_description,
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiFormattedValue? ui_formattedValue,
+            bool? ui_paidOnly,
             string? ui_placeholder,
             global::System.Collections.Generic.IList<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11GitProvider>? git_providers)
         {
@@ -125,6 +133,7 @@ namespace Vercel
             this.Ui_disabled = ui_disabled;
             this.Ui_description = ui_description;
             this.Ui_formattedValue = ui_formattedValue;
+            this.Ui_paidOnly = ui_paidOnly;
             this.Ui_placeholder = ui_placeholder;
             this.Git_providers = git_providers;
         }

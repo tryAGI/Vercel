@@ -13,6 +13,7 @@ namespace Vercel
             ref int? limit,
             ref string? cursor,
             ref string? search,
+            global::System.Collections.Generic.IList<string>? tags,
             ref string? teamId,
             ref string? slug);
         partial void PrepareListFlagsRequest(
@@ -24,6 +25,7 @@ namespace Vercel
             int? limit,
             string? cursor,
             string? search,
+            global::System.Collections.Generic.IList<string>? tags,
             string? teamId,
             string? slug);
         partial void ProcessListFlagsResponse(
@@ -57,6 +59,9 @@ namespace Vercel
         /// <param name="search">
         /// Search flags by their slug or description. Case-insensitive.
         /// </param>
+        /// <param name="tags">
+        /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -72,6 +77,7 @@ namespace Vercel
             int? limit = default,
             string? cursor = default,
             string? search = default,
+            global::System.Collections.Generic.IList<string>? tags = default,
             string? teamId = default,
             string? slug = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -86,6 +92,7 @@ namespace Vercel
                 limit: ref limit,
                 cursor: ref cursor,
                 search: ref search,
+                tags: tags,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -98,6 +105,7 @@ namespace Vercel
                 .AddOptionalParameter("limit", limit?.ToString())
                 .AddOptionalParameter("cursor", cursor)
                 .AddOptionalParameter("search", search)
+                .AddOptionalParameter("tags", tags, delimiter: ",", explode: true)
                 .AddOptionalParameter("teamId", teamId)
                 .AddOptionalParameter("slug", slug) 
                 ; 
@@ -138,6 +146,7 @@ namespace Vercel
                 limit: limit,
                 cursor: cursor,
                 search: search,
+                tags: tags,
                 teamId: teamId,
                 slug: slug);
 

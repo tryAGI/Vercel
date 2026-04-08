@@ -97,6 +97,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ui:paid-only")]
+        public bool? Ui_paidOnly { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ui:placeholder")]
         public string? Ui_placeholder { get; set; }
 
@@ -134,6 +140,7 @@ namespace Vercel
         /// <param name="ui_disabled"></param>
         /// <param name="ui_description"></param>
         /// <param name="ui_formattedValue"></param>
+        /// <param name="ui_paidOnly"></param>
         /// <param name="ui_placeholder"></param>
         /// <param name="default"></param>
         /// <param name="example"></param>
@@ -154,6 +161,7 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant9UiDisabledEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant9UiDisabledEnum2?>? ui_disabled,
             global::Vercel.OneOf<string, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant9UiDescription>? ui_description,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant9UiFormattedValue? ui_formattedValue,
+            bool? ui_paidOnly,
             string? ui_placeholder,
             global::System.Collections.Generic.IList<string>? @default,
             global::System.Collections.Generic.IList<string>? example)
@@ -171,6 +179,7 @@ namespace Vercel
             this.Ui_disabled = ui_disabled;
             this.Ui_description = ui_description;
             this.Ui_formattedValue = ui_formattedValue;
+            this.Ui_paidOnly = ui_paidOnly;
             this.Ui_placeholder = ui_placeholder;
             this.Default = @default;
             this.Example = example;

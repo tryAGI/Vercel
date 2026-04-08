@@ -23,6 +23,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experiment")]
         public global::Vercel.ListFlagVersionsResponseVersionDataExperiment? Experiment { get; set; }
 
@@ -70,6 +76,7 @@ namespace Vercel
         /// <param name="state"></param>
         /// <param name="description"></param>
         /// <param name="permanent"></param>
+        /// <param name="tags"></param>
         /// <param name="experiment"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -81,10 +88,12 @@ namespace Vercel
             global::Vercel.ListFlagVersionsResponseVersionDataState state,
             string? description,
             bool? permanent,
+            global::System.Collections.Generic.IList<string>? tags,
             global::Vercel.ListFlagVersionsResponseVersionDataExperiment? experiment)
         {
             this.Description = description;
             this.Permanent = permanent;
+            this.Tags = tags;
             this.Experiment = experiment;
             this.Variants = variants ?? throw new global::System.ArgumentNullException(nameof(variants));
             this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));

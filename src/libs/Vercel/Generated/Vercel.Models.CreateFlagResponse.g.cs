@@ -23,6 +23,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experiment")]
         public global::Vercel.CreateFlagResponseExperiment? Experiment { get; set; }
 
@@ -150,6 +156,7 @@ namespace Vercel
         /// <param name="projectId"></param>
         /// <param name="description"></param>
         /// <param name="permanent"></param>
+        /// <param name="tags"></param>
         /// <param name="experiment"></param>
         /// <param name="typeName"></param>
 #if NET7_0_OR_GREATER
@@ -171,11 +178,13 @@ namespace Vercel
             string projectId,
             string? description,
             bool? permanent,
+            global::System.Collections.Generic.IList<string>? tags,
             global::Vercel.CreateFlagResponseExperiment? experiment,
             global::Vercel.CreateFlagResponseTypeName typeName)
         {
             this.Description = description;
             this.Permanent = permanent;
+            this.Tags = tags;
             this.Experiment = experiment;
             this.Variants = variants ?? throw new global::System.ArgumentNullException(nameof(variants));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));

@@ -97,6 +97,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ui:paid-only")]
+        public bool? Ui_paidOnly { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default")]
         public global::System.Collections.Generic.IList<double>? Default { get; set; }
 
@@ -122,6 +128,7 @@ namespace Vercel
         /// <param name="ui_disabled"></param>
         /// <param name="ui_description"></param>
         /// <param name="ui_formattedValue"></param>
+        /// <param name="ui_paidOnly"></param>
         /// <param name="default"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -140,6 +147,7 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiDisabledEnum, bool?, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiDisabledEnum2?>? ui_disabled,
             global::Vercel.OneOf<string, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiDescription>? ui_description,
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiFormattedValue? ui_formattedValue,
+            bool? ui_paidOnly,
             global::System.Collections.Generic.IList<double>? @default)
         {
             this.Type = type;
@@ -155,6 +163,7 @@ namespace Vercel
             this.Ui_disabled = ui_disabled;
             this.Ui_description = ui_description;
             this.Ui_formattedValue = ui_formattedValue;
+            this.Ui_paidOnly = ui_paidOnly;
             this.Default = @default;
         }
 
