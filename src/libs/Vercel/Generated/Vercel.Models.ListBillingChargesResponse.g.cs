@@ -45,18 +45,16 @@ namespace Vercel
         public required string ChargePeriodEnd { get; set; }
 
         /// <summary>
-        /// Volume of resource consumed
+        /// Volume of resource consumed. Null when a charge does not involve measurable consumption quantity.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ConsumedQuantity")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double ConsumedQuantity { get; set; }
+        public double? ConsumedQuantity { get; set; }
 
         /// <summary>
-        /// Unit of measurement for consumed quantity
+        /// Unit of measurement for consumed quantity. Null when the charge is not measured in units.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ConsumedUnit")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ConsumedUnit { get; set; }
+        public string? ConsumedUnit { get; set; }
 
         /// <summary>
         /// Amortized cost representation including discounts, pre-commitment credit purchase amount, etc.
@@ -155,12 +153,6 @@ namespace Vercel
         /// <param name="chargePeriodEnd">
         /// Exclusive end of the charge period (ISO 8601 UTC) - Required in v1.3
         /// </param>
-        /// <param name="consumedQuantity">
-        /// Volume of resource consumed
-        /// </param>
-        /// <param name="consumedUnit">
-        /// Unit of measurement for consumed quantity
-        /// </param>
         /// <param name="effectiveCost">
         /// Amortized cost representation including discounts, pre-commitment credit purchase amount, etc.
         /// </param>
@@ -181,6 +173,12 @@ namespace Vercel
         /// <param name="billingCurrency">
         /// Currency used for billing (ISO 4217)
         /// </param>
+        /// <param name="consumedQuantity">
+        /// Volume of resource consumed. Null when a charge does not involve measurable consumption quantity.
+        /// </param>
+        /// <param name="consumedUnit">
+        /// Unit of measurement for consumed quantity. Null when the charge is not measured in units.
+        /// </param>
         /// <param name="regionId">
         /// Provider-assigned region identifier
         /// </param>
@@ -199,8 +197,6 @@ namespace Vercel
             global::Vercel.ListBillingChargesResponseChargeCategory chargeCategory,
             string chargePeriodStart,
             string chargePeriodEnd,
-            double consumedQuantity,
-            string consumedUnit,
             double effectiveCost,
             string serviceName,
             string serviceProviderName,
@@ -209,6 +205,8 @@ namespace Vercel
             double pricingQuantity,
             string pricingUnit,
             global::Vercel.ListBillingChargesResponseBillingCurrency billingCurrency,
+            double? consumedQuantity,
+            string? consumedUnit,
             string? regionId,
             string? regionName,
             global::Vercel.ListBillingChargesResponseServiceCategory? serviceCategory,
@@ -220,7 +218,7 @@ namespace Vercel
             this.ChargePeriodStart = chargePeriodStart ?? throw new global::System.ArgumentNullException(nameof(chargePeriodStart));
             this.ChargePeriodEnd = chargePeriodEnd ?? throw new global::System.ArgumentNullException(nameof(chargePeriodEnd));
             this.ConsumedQuantity = consumedQuantity;
-            this.ConsumedUnit = consumedUnit ?? throw new global::System.ArgumentNullException(nameof(consumedUnit));
+            this.ConsumedUnit = consumedUnit;
             this.EffectiveCost = effectiveCost;
             this.RegionId = regionId;
             this.RegionName = regionName;

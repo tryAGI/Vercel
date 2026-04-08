@@ -94,6 +94,12 @@ namespace Vercel
         public bool? SecurityPlus { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("securityPlusMetadata")]
+        public global::Vercel.GetProjectResponseSecuritySecurityPlusMetadata? SecurityPlusMetadata { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -116,6 +122,7 @@ namespace Vercel
         /// <param name="botIdEnabled"></param>
         /// <param name="logHeaders"></param>
         /// <param name="securityPlus"></param>
+        /// <param name="securityPlusMetadata"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -133,7 +140,8 @@ namespace Vercel
             global::Vercel.GetProjectResponseSecurityManagedRules? managedRules,
             bool? botIdEnabled,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectResponseSecurityLogHeaders?>? logHeaders,
-            bool? securityPlus)
+            bool? securityPlus,
+            global::Vercel.GetProjectResponseSecuritySecurityPlusMetadata? securityPlusMetadata)
         {
             this.AttackModeEnabled = attackModeEnabled;
             this.AttackModeUpdatedAt = attackModeUpdatedAt;
@@ -149,6 +157,7 @@ namespace Vercel
             this.BotIdEnabled = botIdEnabled;
             this.LogHeaders = logHeaders;
             this.SecurityPlus = securityPlus;
+            this.SecurityPlusMetadata = securityPlusMetadata;
         }
 
         /// <summary>
