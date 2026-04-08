@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentsEnabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("autoAssignCustomDomains")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool PreviewDeploymentsEnabled { get; set; }
+        public required bool AutoAssignCustomDomains { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="previewDeploymentsEnabled"></param>
+        /// <param name="autoAssignCustomDomains"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant157(
             string projectId,
             string projectName,
-            bool previewDeploymentsEnabled)
+            bool autoAssignCustomDomains)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.PreviewDeploymentsEnabled = previewDeploymentsEnabled;
+            this.AutoAssignCustomDomains = autoAssignCustomDomains;
         }
 
         /// <summary>

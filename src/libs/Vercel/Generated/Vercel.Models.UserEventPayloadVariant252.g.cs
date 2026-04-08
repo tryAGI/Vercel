@@ -23,12 +23,6 @@ namespace Vercel
         public required global::Vercel.UserEventPayloadVariant252User User { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousCanceledAt")]
-        public string? PreviousCanceledAt { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -39,18 +33,15 @@ namespace Vercel
         /// </summary>
         /// <param name="entitlement"></param>
         /// <param name="user"></param>
-        /// <param name="previousCanceledAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant252(
             string entitlement,
-            global::Vercel.UserEventPayloadVariant252User user,
-            string? previousCanceledAt)
+            global::Vercel.UserEventPayloadVariant252User user)
         {
             this.Entitlement = entitlement ?? throw new global::System.ArgumentNullException(nameof(entitlement));
             this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
-            this.PreviousCanceledAt = previousCanceledAt;
         }
 
         /// <summary>

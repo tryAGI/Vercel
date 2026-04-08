@@ -11,16 +11,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Domain { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        public object? Previous { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ips")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Ips { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        public object? Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant267" /> class.
         /// </summary>
-        /// <param name="domain"></param>
-        /// <param name="ips"></param>
+        /// <param name="previous"></param>
+        /// <param name="next"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant267(
-            string domain,
-            global::System.Collections.Generic.IList<string> ips)
+            object? previous,
+            object? next)
         {
-            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
-            this.Ips = ips ?? throw new global::System.ArgumentNullException(nameof(ips));
+            this.Previous = previous;
+            this.Next = next;
         }
 
         /// <summary>

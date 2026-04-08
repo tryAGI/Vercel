@@ -919,6 +919,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectDelegatedProtectionEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectDelete,
         /// <summary>
         /// 
@@ -1921,6 +1925,7 @@ namespace Vercel
                 ListEventTypesResponseTypeName.ProjectCustomEnvironmentDeleted => "project-custom-environment-deleted",
                 ListEventTypesResponseTypeName.ProjectCustomEnvironmentUpdated => "project-custom-environment-updated",
                 ListEventTypesResponseTypeName.ProjectCustomerSuccessCodeVisibilityUpdated => "project-customer-success-code-visibility-updated",
+                ListEventTypesResponseTypeName.ProjectDelegatedProtectionEnabled => "project-delegated-protection-enabled",
                 ListEventTypesResponseTypeName.ProjectDelete => "project-delete",
                 ListEventTypesResponseTypeName.ProjectDeploymentRetentionUpdated => "project-deployment-retention-updated",
                 ListEventTypesResponseTypeName.ProjectDirectoryListing => "project-directory-listing",
@@ -2349,6 +2354,7 @@ namespace Vercel
                 "project-custom-environment-deleted" => ListEventTypesResponseTypeName.ProjectCustomEnvironmentDeleted,
                 "project-custom-environment-updated" => ListEventTypesResponseTypeName.ProjectCustomEnvironmentUpdated,
                 "project-customer-success-code-visibility-updated" => ListEventTypesResponseTypeName.ProjectCustomerSuccessCodeVisibilityUpdated,
+                "project-delegated-protection-enabled" => ListEventTypesResponseTypeName.ProjectDelegatedProtectionEnabled,
                 "project-delete" => ListEventTypesResponseTypeName.ProjectDelete,
                 "project-deployment-retention-updated" => ListEventTypesResponseTypeName.ProjectDeploymentRetentionUpdated,
                 "project-directory-listing" => ListEventTypesResponseTypeName.ProjectDirectoryListing,
