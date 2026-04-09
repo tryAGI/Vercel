@@ -12,7 +12,7 @@ namespace Vercel
         /// <summary>
         /// Production API
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.vercel.com";
+        public const string DefaultBaseUrl = "https://api.vercel.com/";
 
         private bool _disposeHttpClient = true;
 

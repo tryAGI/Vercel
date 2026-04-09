@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class AuthenticationClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_ListAuthTokensSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_ListAuthTokensSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_ListAuthTokensSecurityRequirement0,
+            };
         partial void PrepareListAuthTokensArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareListAuthTokensRequest(
@@ -33,9 +52,15 @@ namespace Vercel
             PrepareListAuthTokensArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListAuthTokensSecurityRequirements,
+                operationName: "ListAuthTokensAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: "/v6/user/tokens",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -45,7 +70,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

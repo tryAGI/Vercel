@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class ProjectMembersClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_AddProjectMemberSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_AddProjectMemberSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_AddProjectMemberSecurityRequirement0,
+            };
         partial void PrepareAddProjectMemberArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string idOrName,
@@ -63,13 +82,19 @@ namespace Vercel
                 slug: ref slug,
                 request: request);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AddProjectMemberSecurityRequirements,
+                operationName: "AddProjectMemberAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: $"/v1/projects/{idOrName}/members",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("teamId", teamId)
                 .AddOptionalParameter("slug", slug) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -79,7 +104,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

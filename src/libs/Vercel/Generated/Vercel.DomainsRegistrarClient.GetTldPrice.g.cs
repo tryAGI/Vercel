@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class DomainsRegistrarClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_GetTldPriceSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetTldPriceSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_GetTldPriceSecurityRequirement0,
+            };
         partial void PrepareGetTldPriceArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string tld,
@@ -54,13 +73,19 @@ namespace Vercel
                 years: ref years,
                 teamId: ref teamId);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetTldPriceSecurityRequirements,
+                operationName: "GetTldPriceAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: $"/v1/registrar/tlds/{tld}/price",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("years", years)
                 .AddOptionalParameter("teamId", teamId) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -70,7 +95,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -16,7 +16,7 @@ namespace Vercel
         /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.ListContractCommitmentsResponse> ListContractCommitmentsAsync(
+        global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.ListContractCommitmentsResponse> ListContractCommitmentsAsync(
             string? teamId = default,
             string? slug = default,
             global::System.Threading.CancellationToken cancellationToken = default);
