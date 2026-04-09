@@ -127,6 +127,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Mastra,
+        /// <summary>
+        /// 
+        /// </summary>
         Middleman,
         /// <summary>
         /// 
@@ -311,6 +315,7 @@ namespace Vercel
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.IonicReact => "ionic-react",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Jekyll => "jekyll",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Koa => "koa",
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Mastra => "mastra",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Middleman => "middleman",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Nestjs => "nestjs",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Nextjs => "nextjs",
@@ -386,6 +391,7 @@ namespace Vercel
                 "ionic-react" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.IonicReact,
                 "jekyll" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Jekyll,
                 "koa" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Koa,
+                "mastra" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Mastra,
                 "middleman" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Middleman,
                 "nestjs" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Nestjs,
                 "nextjs" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Nextjs,

@@ -127,6 +127,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Mastra,
+        /// <summary>
+        /// 
+        /// </summary>
         Middleman,
         /// <summary>
         /// 
@@ -311,6 +315,7 @@ namespace Vercel
                 GetProjectResponseFramework.IonicReact => "ionic-react",
                 GetProjectResponseFramework.Jekyll => "jekyll",
                 GetProjectResponseFramework.Koa => "koa",
+                GetProjectResponseFramework.Mastra => "mastra",
                 GetProjectResponseFramework.Middleman => "middleman",
                 GetProjectResponseFramework.Nestjs => "nestjs",
                 GetProjectResponseFramework.Nextjs => "nextjs",
@@ -386,6 +391,7 @@ namespace Vercel
                 "ionic-react" => GetProjectResponseFramework.IonicReact,
                 "jekyll" => GetProjectResponseFramework.Jekyll,
                 "koa" => GetProjectResponseFramework.Koa,
+                "mastra" => GetProjectResponseFramework.Mastra,
                 "middleman" => GetProjectResponseFramework.Middleman,
                 "nestjs" => GetProjectResponseFramework.Nestjs,
                 "nextjs" => GetProjectResponseFramework.Nextjs,

@@ -127,6 +127,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Mastra,
+        /// <summary>
+        /// 
+        /// </summary>
         Middleman,
         /// <summary>
         /// 
@@ -311,6 +315,7 @@ namespace Vercel
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.IonicReact => "ionic-react",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Jekyll => "jekyll",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Koa => "koa",
+                GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Mastra => "mastra",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Middleman => "middleman",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Nestjs => "nestjs",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Nextjs => "nextjs",
@@ -386,6 +391,7 @@ namespace Vercel
                 "ionic-react" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.IonicReact,
                 "jekyll" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Jekyll,
                 "koa" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Koa,
+                "mastra" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Mastra,
                 "middleman" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Middleman,
                 "nestjs" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Nestjs,
                 "nextjs" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Nextjs,

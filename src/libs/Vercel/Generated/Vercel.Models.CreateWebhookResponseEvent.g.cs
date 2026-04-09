@@ -68,11 +68,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        DeploymentCanceled2,
+        DeploymentCanceledHyphen,
         /// <summary>
         /// 
         /// </summary>
-        DeploymentCheckRerequested2,
+        DeploymentCheckRerequestedHyphen,
         /// <summary>
         /// 
         /// </summary>
@@ -80,15 +80,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        DeploymentError2,
+        DeploymentErrorHyphen,
         /// <summary>
         /// 
         /// </summary>
-        DeploymentPrepared,
+        DeploymentPreparedHyphen,
         /// <summary>
         /// 
         /// </summary>
-        DeploymentReady2,
+        DeploymentReadyHyphen,
         /// <summary>
         /// 
         /// </summary>
@@ -156,7 +156,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        DomainCreated2,
+        DomainCreatedHyphen,
         /// <summary>
         /// 
         /// </summary>
@@ -260,15 +260,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        IntegrationConfigurationPermissionUpdated,
+        IntegrationConfigurationPermissionUpdatedHyphen,
         /// <summary>
         /// 
         /// </summary>
-        IntegrationConfigurationRemoved2,
+        IntegrationConfigurationRemovedHyphen,
         /// <summary>
         /// 
         /// </summary>
-        IntegrationConfigurationScopeChangeConfirmed2,
+        IntegrationConfigurationScopeChangeConfirmedHyphen,
         /// <summary>
         /// 
         /// </summary>
@@ -360,11 +360,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        ProjectCreated2,
+        ProjectCreatedHyphen,
         /// <summary>
         /// 
         /// </summary>
-        ProjectRemoved2,
+        ProjectRemovedHyphen,
         /// <summary>
         /// 
         /// </summary>
@@ -469,12 +469,12 @@ namespace Vercel
                 CreateWebhookResponseEvent.CommentUnresolved => "comment.unresolved",
                 CreateWebhookResponseEvent.CommentUpdated => "comment.updated",
                 CreateWebhookResponseEvent.Deployment => "deployment",
-                CreateWebhookResponseEvent.DeploymentCanceled2 => "deployment-canceled",
-                CreateWebhookResponseEvent.DeploymentCheckRerequested2 => "deployment-check-rerequested",
+                CreateWebhookResponseEvent.DeploymentCanceledHyphen => "deployment-canceled",
+                CreateWebhookResponseEvent.DeploymentCheckRerequestedHyphen => "deployment-check-rerequested",
                 CreateWebhookResponseEvent.DeploymentChecksCompleted => "deployment-checks-completed",
-                CreateWebhookResponseEvent.DeploymentError2 => "deployment-error",
-                CreateWebhookResponseEvent.DeploymentPrepared => "deployment-prepared",
-                CreateWebhookResponseEvent.DeploymentReady2 => "deployment-ready",
+                CreateWebhookResponseEvent.DeploymentErrorHyphen => "deployment-error",
+                CreateWebhookResponseEvent.DeploymentPreparedHyphen => "deployment-prepared",
+                CreateWebhookResponseEvent.DeploymentReadyHyphen => "deployment-ready",
                 CreateWebhookResponseEvent.DeploymentCanceled => "deployment.canceled",
                 CreateWebhookResponseEvent.DeploymentCheckRerequested => "deployment.check-rerequested",
                 CreateWebhookResponseEvent.DeploymentCheckrunCancel => "deployment.checkrun.cancel",
@@ -491,7 +491,7 @@ namespace Vercel
                 CreateWebhookResponseEvent.DeploymentReady => "deployment.ready",
                 CreateWebhookResponseEvent.DeploymentRollback => "deployment.rollback",
                 CreateWebhookResponseEvent.DeploymentSucceeded => "deployment.succeeded",
-                CreateWebhookResponseEvent.DomainCreated2 => "domain-created",
+                CreateWebhookResponseEvent.DomainCreatedHyphen => "domain-created",
                 CreateWebhookResponseEvent.DomainAutoRenewChanged => "domain.auto-renew.changed",
                 CreateWebhookResponseEvent.DomainCertificateAdd => "domain.certificate.add",
                 CreateWebhookResponseEvent.DomainCertificateAddFailed => "domain.certificate.add.failed",
@@ -517,9 +517,9 @@ namespace Vercel
                 CreateWebhookResponseEvent.FlagSegmentDeleted => "flag.segment.deleted",
                 CreateWebhookResponseEvent.FlagSegmentUpdated => "flag.segment.updated",
                 CreateWebhookResponseEvent.FlagUpdated => "flag.updated",
-                CreateWebhookResponseEvent.IntegrationConfigurationPermissionUpdated => "integration-configuration-permission-updated",
-                CreateWebhookResponseEvent.IntegrationConfigurationRemoved2 => "integration-configuration-removed",
-                CreateWebhookResponseEvent.IntegrationConfigurationScopeChangeConfirmed2 => "integration-configuration-scope-change-confirmed",
+                CreateWebhookResponseEvent.IntegrationConfigurationPermissionUpdatedHyphen => "integration-configuration-permission-updated",
+                CreateWebhookResponseEvent.IntegrationConfigurationRemovedHyphen => "integration-configuration-removed",
+                CreateWebhookResponseEvent.IntegrationConfigurationScopeChangeConfirmedHyphen => "integration-configuration-scope-change-confirmed",
                 CreateWebhookResponseEvent.IntegrationConfigurationPermissionUpgraded => "integration-configuration.permission-upgraded",
                 CreateWebhookResponseEvent.IntegrationConfigurationRemoved => "integration-configuration.removed",
                 CreateWebhookResponseEvent.IntegrationConfigurationScopeChangeConfirmed => "integration-configuration.scope-change-confirmed",
@@ -542,8 +542,8 @@ namespace Vercel
                 CreateWebhookResponseEvent.ObservabilityAnomalyError => "observability.anomaly-error",
                 CreateWebhookResponseEvent.ObservabilityErrorAnomaly => "observability.error-anomaly",
                 CreateWebhookResponseEvent.ObservabilityUsageAnomaly => "observability.usage-anomaly",
-                CreateWebhookResponseEvent.ProjectCreated2 => "project-created",
-                CreateWebhookResponseEvent.ProjectRemoved2 => "project-removed",
+                CreateWebhookResponseEvent.ProjectCreatedHyphen => "project-created",
+                CreateWebhookResponseEvent.ProjectRemovedHyphen => "project-removed",
                 CreateWebhookResponseEvent.ProjectCreated => "project.created",
                 CreateWebhookResponseEvent.ProjectDomainCreated => "project.domain.created",
                 CreateWebhookResponseEvent.ProjectDomainDeleted => "project.domain.deleted",
@@ -587,12 +587,12 @@ namespace Vercel
                 "comment.unresolved" => CreateWebhookResponseEvent.CommentUnresolved,
                 "comment.updated" => CreateWebhookResponseEvent.CommentUpdated,
                 "deployment" => CreateWebhookResponseEvent.Deployment,
-                "deployment-canceled" => CreateWebhookResponseEvent.DeploymentCanceled2,
-                "deployment-check-rerequested" => CreateWebhookResponseEvent.DeploymentCheckRerequested2,
+                "deployment-canceled" => CreateWebhookResponseEvent.DeploymentCanceledHyphen,
+                "deployment-check-rerequested" => CreateWebhookResponseEvent.DeploymentCheckRerequestedHyphen,
                 "deployment-checks-completed" => CreateWebhookResponseEvent.DeploymentChecksCompleted,
-                "deployment-error" => CreateWebhookResponseEvent.DeploymentError2,
-                "deployment-prepared" => CreateWebhookResponseEvent.DeploymentPrepared,
-                "deployment-ready" => CreateWebhookResponseEvent.DeploymentReady2,
+                "deployment-error" => CreateWebhookResponseEvent.DeploymentErrorHyphen,
+                "deployment-prepared" => CreateWebhookResponseEvent.DeploymentPreparedHyphen,
+                "deployment-ready" => CreateWebhookResponseEvent.DeploymentReadyHyphen,
                 "deployment.canceled" => CreateWebhookResponseEvent.DeploymentCanceled,
                 "deployment.check-rerequested" => CreateWebhookResponseEvent.DeploymentCheckRerequested,
                 "deployment.checkrun.cancel" => CreateWebhookResponseEvent.DeploymentCheckrunCancel,
@@ -609,7 +609,7 @@ namespace Vercel
                 "deployment.ready" => CreateWebhookResponseEvent.DeploymentReady,
                 "deployment.rollback" => CreateWebhookResponseEvent.DeploymentRollback,
                 "deployment.succeeded" => CreateWebhookResponseEvent.DeploymentSucceeded,
-                "domain-created" => CreateWebhookResponseEvent.DomainCreated2,
+                "domain-created" => CreateWebhookResponseEvent.DomainCreatedHyphen,
                 "domain.auto-renew.changed" => CreateWebhookResponseEvent.DomainAutoRenewChanged,
                 "domain.certificate.add" => CreateWebhookResponseEvent.DomainCertificateAdd,
                 "domain.certificate.add.failed" => CreateWebhookResponseEvent.DomainCertificateAddFailed,
@@ -635,9 +635,9 @@ namespace Vercel
                 "flag.segment.deleted" => CreateWebhookResponseEvent.FlagSegmentDeleted,
                 "flag.segment.updated" => CreateWebhookResponseEvent.FlagSegmentUpdated,
                 "flag.updated" => CreateWebhookResponseEvent.FlagUpdated,
-                "integration-configuration-permission-updated" => CreateWebhookResponseEvent.IntegrationConfigurationPermissionUpdated,
-                "integration-configuration-removed" => CreateWebhookResponseEvent.IntegrationConfigurationRemoved2,
-                "integration-configuration-scope-change-confirmed" => CreateWebhookResponseEvent.IntegrationConfigurationScopeChangeConfirmed2,
+                "integration-configuration-permission-updated" => CreateWebhookResponseEvent.IntegrationConfigurationPermissionUpdatedHyphen,
+                "integration-configuration-removed" => CreateWebhookResponseEvent.IntegrationConfigurationRemovedHyphen,
+                "integration-configuration-scope-change-confirmed" => CreateWebhookResponseEvent.IntegrationConfigurationScopeChangeConfirmedHyphen,
                 "integration-configuration.permission-upgraded" => CreateWebhookResponseEvent.IntegrationConfigurationPermissionUpgraded,
                 "integration-configuration.removed" => CreateWebhookResponseEvent.IntegrationConfigurationRemoved,
                 "integration-configuration.scope-change-confirmed" => CreateWebhookResponseEvent.IntegrationConfigurationScopeChangeConfirmed,
@@ -660,8 +660,8 @@ namespace Vercel
                 "observability.anomaly-error" => CreateWebhookResponseEvent.ObservabilityAnomalyError,
                 "observability.error-anomaly" => CreateWebhookResponseEvent.ObservabilityErrorAnomaly,
                 "observability.usage-anomaly" => CreateWebhookResponseEvent.ObservabilityUsageAnomaly,
-                "project-created" => CreateWebhookResponseEvent.ProjectCreated2,
-                "project-removed" => CreateWebhookResponseEvent.ProjectRemoved2,
+                "project-created" => CreateWebhookResponseEvent.ProjectCreatedHyphen,
+                "project-removed" => CreateWebhookResponseEvent.ProjectRemovedHyphen,
                 "project.created" => CreateWebhookResponseEvent.ProjectCreated,
                 "project.domain.created" => CreateWebhookResponseEvent.ProjectDomainCreated,
                 "project.domain.deleted" => CreateWebhookResponseEvent.ProjectDomainDeleted,

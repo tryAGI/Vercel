@@ -68,11 +68,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        DeploymentCanceled2,
+        DeploymentCanceledHyphen,
         /// <summary>
         /// 
         /// </summary>
-        DeploymentCheckRerequested2,
+        DeploymentCheckRerequestedHyphen,
         /// <summary>
         /// 
         /// </summary>
@@ -80,15 +80,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        DeploymentError2,
+        DeploymentErrorHyphen,
         /// <summary>
         /// 
         /// </summary>
-        DeploymentPrepared,
+        DeploymentPreparedHyphen,
         /// <summary>
         /// 
         /// </summary>
-        DeploymentReady2,
+        DeploymentReadyHyphen,
         /// <summary>
         /// 
         /// </summary>
@@ -156,7 +156,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        DomainCreated2,
+        DomainCreatedHyphen,
         /// <summary>
         /// 
         /// </summary>
@@ -260,15 +260,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        IntegrationConfigurationPermissionUpdated,
+        IntegrationConfigurationPermissionUpdatedHyphen,
         /// <summary>
         /// 
         /// </summary>
-        IntegrationConfigurationRemoved2,
+        IntegrationConfigurationRemovedHyphen,
         /// <summary>
         /// 
         /// </summary>
-        IntegrationConfigurationScopeChangeConfirmed2,
+        IntegrationConfigurationScopeChangeConfirmedHyphen,
         /// <summary>
         /// 
         /// </summary>
@@ -360,11 +360,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        ProjectCreated2,
+        ProjectCreatedHyphen,
         /// <summary>
         /// 
         /// </summary>
-        ProjectRemoved2,
+        ProjectRemovedHyphen,
         /// <summary>
         /// 
         /// </summary>
@@ -469,12 +469,12 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemEvent.CommentUnresolved => "comment.unresolved",
                 GetWebhooksResponseVariant1ItemEvent.CommentUpdated => "comment.updated",
                 GetWebhooksResponseVariant1ItemEvent.Deployment => "deployment",
-                GetWebhooksResponseVariant1ItemEvent.DeploymentCanceled2 => "deployment-canceled",
-                GetWebhooksResponseVariant1ItemEvent.DeploymentCheckRerequested2 => "deployment-check-rerequested",
+                GetWebhooksResponseVariant1ItemEvent.DeploymentCanceledHyphen => "deployment-canceled",
+                GetWebhooksResponseVariant1ItemEvent.DeploymentCheckRerequestedHyphen => "deployment-check-rerequested",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentChecksCompleted => "deployment-checks-completed",
-                GetWebhooksResponseVariant1ItemEvent.DeploymentError2 => "deployment-error",
-                GetWebhooksResponseVariant1ItemEvent.DeploymentPrepared => "deployment-prepared",
-                GetWebhooksResponseVariant1ItemEvent.DeploymentReady2 => "deployment-ready",
+                GetWebhooksResponseVariant1ItemEvent.DeploymentErrorHyphen => "deployment-error",
+                GetWebhooksResponseVariant1ItemEvent.DeploymentPreparedHyphen => "deployment-prepared",
+                GetWebhooksResponseVariant1ItemEvent.DeploymentReadyHyphen => "deployment-ready",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentCanceled => "deployment.canceled",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentCheckRerequested => "deployment.check-rerequested",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentCheckrunCancel => "deployment.checkrun.cancel",
@@ -491,7 +491,7 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemEvent.DeploymentReady => "deployment.ready",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentRollback => "deployment.rollback",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentSucceeded => "deployment.succeeded",
-                GetWebhooksResponseVariant1ItemEvent.DomainCreated2 => "domain-created",
+                GetWebhooksResponseVariant1ItemEvent.DomainCreatedHyphen => "domain-created",
                 GetWebhooksResponseVariant1ItemEvent.DomainAutoRenewChanged => "domain.auto-renew.changed",
                 GetWebhooksResponseVariant1ItemEvent.DomainCertificateAdd => "domain.certificate.add",
                 GetWebhooksResponseVariant1ItemEvent.DomainCertificateAddFailed => "domain.certificate.add.failed",
@@ -517,9 +517,9 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemEvent.FlagSegmentDeleted => "flag.segment.deleted",
                 GetWebhooksResponseVariant1ItemEvent.FlagSegmentUpdated => "flag.segment.updated",
                 GetWebhooksResponseVariant1ItemEvent.FlagUpdated => "flag.updated",
-                GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationPermissionUpdated => "integration-configuration-permission-updated",
-                GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationRemoved2 => "integration-configuration-removed",
-                GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationScopeChangeConfirmed2 => "integration-configuration-scope-change-confirmed",
+                GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationPermissionUpdatedHyphen => "integration-configuration-permission-updated",
+                GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationRemovedHyphen => "integration-configuration-removed",
+                GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationScopeChangeConfirmedHyphen => "integration-configuration-scope-change-confirmed",
                 GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationPermissionUpgraded => "integration-configuration.permission-upgraded",
                 GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationRemoved => "integration-configuration.removed",
                 GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationScopeChangeConfirmed => "integration-configuration.scope-change-confirmed",
@@ -542,8 +542,8 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemEvent.ObservabilityAnomalyError => "observability.anomaly-error",
                 GetWebhooksResponseVariant1ItemEvent.ObservabilityErrorAnomaly => "observability.error-anomaly",
                 GetWebhooksResponseVariant1ItemEvent.ObservabilityUsageAnomaly => "observability.usage-anomaly",
-                GetWebhooksResponseVariant1ItemEvent.ProjectCreated2 => "project-created",
-                GetWebhooksResponseVariant1ItemEvent.ProjectRemoved2 => "project-removed",
+                GetWebhooksResponseVariant1ItemEvent.ProjectCreatedHyphen => "project-created",
+                GetWebhooksResponseVariant1ItemEvent.ProjectRemovedHyphen => "project-removed",
                 GetWebhooksResponseVariant1ItemEvent.ProjectCreated => "project.created",
                 GetWebhooksResponseVariant1ItemEvent.ProjectDomainCreated => "project.domain.created",
                 GetWebhooksResponseVariant1ItemEvent.ProjectDomainDeleted => "project.domain.deleted",
@@ -587,12 +587,12 @@ namespace Vercel
                 "comment.unresolved" => GetWebhooksResponseVariant1ItemEvent.CommentUnresolved,
                 "comment.updated" => GetWebhooksResponseVariant1ItemEvent.CommentUpdated,
                 "deployment" => GetWebhooksResponseVariant1ItemEvent.Deployment,
-                "deployment-canceled" => GetWebhooksResponseVariant1ItemEvent.DeploymentCanceled2,
-                "deployment-check-rerequested" => GetWebhooksResponseVariant1ItemEvent.DeploymentCheckRerequested2,
+                "deployment-canceled" => GetWebhooksResponseVariant1ItemEvent.DeploymentCanceledHyphen,
+                "deployment-check-rerequested" => GetWebhooksResponseVariant1ItemEvent.DeploymentCheckRerequestedHyphen,
                 "deployment-checks-completed" => GetWebhooksResponseVariant1ItemEvent.DeploymentChecksCompleted,
-                "deployment-error" => GetWebhooksResponseVariant1ItemEvent.DeploymentError2,
-                "deployment-prepared" => GetWebhooksResponseVariant1ItemEvent.DeploymentPrepared,
-                "deployment-ready" => GetWebhooksResponseVariant1ItemEvent.DeploymentReady2,
+                "deployment-error" => GetWebhooksResponseVariant1ItemEvent.DeploymentErrorHyphen,
+                "deployment-prepared" => GetWebhooksResponseVariant1ItemEvent.DeploymentPreparedHyphen,
+                "deployment-ready" => GetWebhooksResponseVariant1ItemEvent.DeploymentReadyHyphen,
                 "deployment.canceled" => GetWebhooksResponseVariant1ItemEvent.DeploymentCanceled,
                 "deployment.check-rerequested" => GetWebhooksResponseVariant1ItemEvent.DeploymentCheckRerequested,
                 "deployment.checkrun.cancel" => GetWebhooksResponseVariant1ItemEvent.DeploymentCheckrunCancel,
@@ -609,7 +609,7 @@ namespace Vercel
                 "deployment.ready" => GetWebhooksResponseVariant1ItemEvent.DeploymentReady,
                 "deployment.rollback" => GetWebhooksResponseVariant1ItemEvent.DeploymentRollback,
                 "deployment.succeeded" => GetWebhooksResponseVariant1ItemEvent.DeploymentSucceeded,
-                "domain-created" => GetWebhooksResponseVariant1ItemEvent.DomainCreated2,
+                "domain-created" => GetWebhooksResponseVariant1ItemEvent.DomainCreatedHyphen,
                 "domain.auto-renew.changed" => GetWebhooksResponseVariant1ItemEvent.DomainAutoRenewChanged,
                 "domain.certificate.add" => GetWebhooksResponseVariant1ItemEvent.DomainCertificateAdd,
                 "domain.certificate.add.failed" => GetWebhooksResponseVariant1ItemEvent.DomainCertificateAddFailed,
@@ -635,9 +635,9 @@ namespace Vercel
                 "flag.segment.deleted" => GetWebhooksResponseVariant1ItemEvent.FlagSegmentDeleted,
                 "flag.segment.updated" => GetWebhooksResponseVariant1ItemEvent.FlagSegmentUpdated,
                 "flag.updated" => GetWebhooksResponseVariant1ItemEvent.FlagUpdated,
-                "integration-configuration-permission-updated" => GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationPermissionUpdated,
-                "integration-configuration-removed" => GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationRemoved2,
-                "integration-configuration-scope-change-confirmed" => GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationScopeChangeConfirmed2,
+                "integration-configuration-permission-updated" => GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationPermissionUpdatedHyphen,
+                "integration-configuration-removed" => GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationRemovedHyphen,
+                "integration-configuration-scope-change-confirmed" => GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationScopeChangeConfirmedHyphen,
                 "integration-configuration.permission-upgraded" => GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationPermissionUpgraded,
                 "integration-configuration.removed" => GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationRemoved,
                 "integration-configuration.scope-change-confirmed" => GetWebhooksResponseVariant1ItemEvent.IntegrationConfigurationScopeChangeConfirmed,
@@ -660,8 +660,8 @@ namespace Vercel
                 "observability.anomaly-error" => GetWebhooksResponseVariant1ItemEvent.ObservabilityAnomalyError,
                 "observability.error-anomaly" => GetWebhooksResponseVariant1ItemEvent.ObservabilityErrorAnomaly,
                 "observability.usage-anomaly" => GetWebhooksResponseVariant1ItemEvent.ObservabilityUsageAnomaly,
-                "project-created" => GetWebhooksResponseVariant1ItemEvent.ProjectCreated2,
-                "project-removed" => GetWebhooksResponseVariant1ItemEvent.ProjectRemoved2,
+                "project-created" => GetWebhooksResponseVariant1ItemEvent.ProjectCreatedHyphen,
+                "project-removed" => GetWebhooksResponseVariant1ItemEvent.ProjectRemovedHyphen,
                 "project.created" => GetWebhooksResponseVariant1ItemEvent.ProjectCreated,
                 "project.domain.created" => GetWebhooksResponseVariant1ItemEvent.ProjectDomainCreated,
                 "project.domain.deleted" => GetWebhooksResponseVariant1ItemEvent.ProjectDomainDeleted,

@@ -127,6 +127,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Mastra,
+        /// <summary>
+        /// 
+        /// </summary>
         Middleman,
         /// <summary>
         /// 
@@ -311,6 +315,7 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.IonicReact => "ionic-react",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Jekyll => "jekyll",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Koa => "koa",
+                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Mastra => "mastra",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Middleman => "middleman",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Nestjs => "nestjs",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Nextjs => "nextjs",
@@ -386,6 +391,7 @@ namespace Vercel
                 "ionic-react" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.IonicReact,
                 "jekyll" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Jekyll,
                 "koa" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Koa,
+                "mastra" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Mastra,
                 "middleman" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Middleman,
                 "nestjs" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Nestjs,
                 "nextjs" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Nextjs,

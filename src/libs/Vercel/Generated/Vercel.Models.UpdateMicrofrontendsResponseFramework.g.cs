@@ -127,6 +127,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Mastra,
+        /// <summary>
+        /// 
+        /// </summary>
         Middleman,
         /// <summary>
         /// 
@@ -311,6 +315,7 @@ namespace Vercel
                 UpdateMicrofrontendsResponseFramework.IonicReact => "ionic-react",
                 UpdateMicrofrontendsResponseFramework.Jekyll => "jekyll",
                 UpdateMicrofrontendsResponseFramework.Koa => "koa",
+                UpdateMicrofrontendsResponseFramework.Mastra => "mastra",
                 UpdateMicrofrontendsResponseFramework.Middleman => "middleman",
                 UpdateMicrofrontendsResponseFramework.Nestjs => "nestjs",
                 UpdateMicrofrontendsResponseFramework.Nextjs => "nextjs",
@@ -386,6 +391,7 @@ namespace Vercel
                 "ionic-react" => UpdateMicrofrontendsResponseFramework.IonicReact,
                 "jekyll" => UpdateMicrofrontendsResponseFramework.Jekyll,
                 "koa" => UpdateMicrofrontendsResponseFramework.Koa,
+                "mastra" => UpdateMicrofrontendsResponseFramework.Mastra,
                 "middleman" => UpdateMicrofrontendsResponseFramework.Middleman,
                 "nestjs" => UpdateMicrofrontendsResponseFramework.Nestjs,
                 "nextjs" => UpdateMicrofrontendsResponseFramework.Nextjs,

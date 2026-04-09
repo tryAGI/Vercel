@@ -5,53 +5,50 @@ namespace Vercel
 {
     public partial class MarketplaceClient
     {
-        partial void PrepareCreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsArguments(
+        partial void PrepareCreateInstallationIntegrationEdgeConfigArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string integrationConfigurationId,
-            ref string resourceId,
-            global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequest request);
-        partial void PrepareCreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequest(
+            ref string resourceId);
+        partial void PrepareCreateInstallationIntegrationEdgeConfigRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string integrationConfigurationId,
-            string resourceId,
-            global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequest request);
-        partial void ProcessCreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsResponse(
+            string resourceId);
+        partial void ProcessCreateInstallationIntegrationEdgeConfigResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
+        partial void ProcessCreateInstallationIntegrationEdgeConfigResponseContent(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage,
+            ref string content);
+
         /// <summary>
-        /// Create one or multiple experimentation items<br/>
-        /// Create one or multiple experimentation items
+        /// Get the data of a user-provided Edge Config<br/>
+        /// When the user enabled Edge Config syncing, then this endpoint can be used by the partner to fetch the contents of the Edge Config.
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="resourceId"></param>
-        /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponse> CreateInstallationIntegrationEdgeConfigAsync(
             string integrationConfigurationId,
             string resourceId,
-
-            global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequest request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
-
             PrepareArguments(
                 client: HttpClient);
-            PrepareCreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsArguments(
+            PrepareCreateInstallationIntegrationEdgeConfigArguments(
                 httpClient: HttpClient,
                 integrationConfigurationId: ref integrationConfigurationId,
-                resourceId: ref resourceId,
-                request: request);
+                resourceId: ref resourceId);
 
             var __pathBuilder = new global::Vercel.PathBuilder(
-                path: $"/v1/installations/{integrationConfigurationId}/resources/{resourceId}/experimentation/items",
+                path: $"/v1/installations/{integrationConfigurationId}/resources/{resourceId}/experimentation/edge-config",
                 baseUri: HttpClient.BaseAddress); 
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                method: global::System.Net.Http.HttpMethod.Post,
+                method: global::System.Net.Http.HttpMethod.Head,
                 requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
             __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -73,22 +70,15 @@ namespace Vercel
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
-            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
-            var __httpRequestContent = new global::System.Net.Http.StringContent(
-                content: __httpRequestContentBody,
-                encoding: global::System.Text.Encoding.UTF8,
-                mediaType: "application/json");
-            __httpRequest.Content = __httpRequestContent;
 
             PrepareRequest(
                 client: HttpClient,
                 request: __httpRequest);
-            PrepareCreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequest(
+            PrepareCreateInstallationIntegrationEdgeConfigRequest(
                 httpClient: HttpClient,
                 httpRequestMessage: __httpRequest,
                 integrationConfigurationId: integrationConfigurationId,
-                resourceId: resourceId,
-                request: request);
+                resourceId: resourceId);
 
             using var __response = await HttpClient.SendAsync(
                 request: __httpRequest,
@@ -98,9 +88,42 @@ namespace Vercel
             ProcessResponse(
                 client: HttpClient,
                 response: __response);
-            ProcessCreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsResponse(
+            ProcessCreateInstallationIntegrationEdgeConfigResponse(
                 httpClient: HttpClient,
                 httpResponseMessage: __response);
+            // 
+            if ((int)__response.StatusCode == 304)
+            {
+                string? __content_304 = null;
+                global::System.Exception? __exception_304 = null;
+                try
+                {
+                    if (ReadResponseAsString)
+                    {
+                        __content_304 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                    }
+                    else
+                    {
+                        __content_304 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+                    }
+                }
+                catch (global::System.Exception __ex)
+                {
+                    __exception_304 = __ex;
+                }
+
+                throw new global::Vercel.ApiException(
+                    message: __content_304 ?? __response.ReasonPhrase ?? string.Empty,
+                    innerException: __exception_304,
+                    statusCode: __response.StatusCode)
+                {
+                    ResponseBody = __content_304,
+                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                        __response.Headers,
+                        h => h.Key,
+                        h => h.Value),
+                };
+            }
             // 
             if ((int)__response.StatusCode == 400)
             {
@@ -246,11 +269,18 @@ namespace Vercel
                     client: HttpClient,
                     response: __response,
                     content: ref __content);
+                ProcessCreateInstallationIntegrationEdgeConfigResponseContent(
+                    httpClient: HttpClient,
+                    httpResponseMessage: __response,
+                    content: ref __content);
 
                 try
                 {
                     __response.EnsureSuccessStatusCode();
 
+                    return
+                        global::Vercel.HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponse.FromJson(__content, JsonSerializerContext) ??
+                        throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -272,6 +302,15 @@ namespace Vercel
                 try
                 {
                     __response.EnsureSuccessStatusCode();
+                    using var __content = await __response.Content.ReadAsStreamAsync(
+#if NET5_0_OR_GREATER
+                        cancellationToken
+#endif
+                    ).ConfigureAwait(false);
+
+                    return
+                        await global::Vercel.HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
                 {
@@ -301,32 +340,6 @@ namespace Vercel
                     };
                 }
             }
-        }
-        /// <summary>
-        /// Create one or multiple experimentation items<br/>
-        /// Create one or multiple experimentation items
-        /// </summary>
-        /// <param name="integrationConfigurationId"></param>
-        /// <param name="resourceId"></param>
-        /// <param name="items"></param>
-        /// <param name="cancellationToken">The token to cancel the operation with</param>
-        /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsAsync(
-            string integrationConfigurationId,
-            string resourceId,
-            global::System.Collections.Generic.IList<global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItem> items,
-            global::System.Threading.CancellationToken cancellationToken = default)
-        {
-            var __request = new global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequest
-            {
-                Items = items,
-            };
-
-            await CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsAsync(
-                integrationConfigurationId: integrationConfigurationId,
-                resourceId: resourceId,
-                request: __request,
-                cancellationToken: cancellationToken).ConfigureAwait(false);
         }
     }
 }

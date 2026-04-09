@@ -5,20 +5,20 @@ namespace Vercel
 {
     public partial class MarketplaceClient
     {
-        partial void PrepareUpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdArguments(
+        partial void PrepareUpdateInstallationIntegrationConfigurationArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string integrationConfigurationId,
             ref string resourceId,
             ref string itemId,
             global::Vercel.UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequest request);
-        partial void PrepareUpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequest(
+        partial void PrepareUpdateInstallationIntegrationConfigurationRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string integrationConfigurationId,
             string resourceId,
             string itemId,
             global::Vercel.UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequest request);
-        partial void ProcessUpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdResponse(
+        partial void ProcessUpdateInstallationIntegrationConfigurationResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
@@ -32,7 +32,7 @@ namespace Vercel
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdAsync(
+        public async global::System.Threading.Tasks.Task UpdateInstallationIntegrationConfigurationAsync(
             string integrationConfigurationId,
             string resourceId,
             string itemId,
@@ -44,7 +44,7 @@ namespace Vercel
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareUpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdArguments(
+            PrepareUpdateInstallationIntegrationConfigurationArguments(
                 httpClient: HttpClient,
                 integrationConfigurationId: ref integrationConfigurationId,
                 resourceId: ref resourceId,
@@ -88,7 +88,7 @@ namespace Vercel
             PrepareRequest(
                 client: HttpClient,
                 request: __httpRequest);
-            PrepareUpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequest(
+            PrepareUpdateInstallationIntegrationConfigurationRequest(
                 httpClient: HttpClient,
                 httpRequestMessage: __httpRequest,
                 integrationConfigurationId: integrationConfigurationId,
@@ -104,7 +104,7 @@ namespace Vercel
             ProcessResponse(
                 client: HttpClient,
                 response: __response);
-            ProcessUpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdResponse(
+            ProcessUpdateInstallationIntegrationConfigurationResponse(
                 httpClient: HttpClient,
                 httpResponseMessage: __response);
             // 
@@ -325,7 +325,7 @@ namespace Vercel
         /// <param name="updatedAt"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdAsync(
+        public async global::System.Threading.Tasks.Task UpdateInstallationIntegrationConfigurationAsync(
             string integrationConfigurationId,
             string resourceId,
             string itemId,
@@ -351,7 +351,7 @@ namespace Vercel
                 UpdatedAt = updatedAt,
             };
 
-            await UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdAsync(
+            await UpdateInstallationIntegrationConfigurationAsync(
                 integrationConfigurationId: integrationConfigurationId,
                 resourceId: resourceId,
                 itemId: itemId,
