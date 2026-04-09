@@ -26,6 +26,14 @@ namespace Vercel
         public string? Role { get; set; }
 
         /// <summary>
+        /// The team permissions to set for the member. Permissions must be compatible with the team roles assigned to the member.<br/>
+        /// Example: [CreateProject, FullProductionDeployment]
+        /// </summary>
+        /// <example>[CreateProject, FullProductionDeployment]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateTeamMemberRequestTeamPermission>? TeamPermissions { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
@@ -55,6 +63,10 @@ namespace Vercel
         /// Default Value: MEMBER<br/>
         /// Example: VIEWER
         /// </param>
+        /// <param name="teamPermissions">
+        /// The team permissions to set for the member. Permissions must be compatible with the team roles assigned to the member.<br/>
+        /// Example: [CreateProject, FullProductionDeployment]
+        /// </param>
         /// <param name="projects"></param>
         /// <param name="joinedFrom"></param>
 #if NET7_0_OR_GREATER
@@ -63,11 +75,13 @@ namespace Vercel
         public UpdateTeamMemberRequest(
             bool? confirmed,
             string? role,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateTeamMemberRequestTeamPermission>? teamPermissions,
             global::System.Collections.Generic.IList<global::Vercel.UpdateTeamMemberRequestProject>? projects,
             global::Vercel.UpdateTeamMemberRequestJoinedFrom? joinedFrom)
         {
             this.Confirmed = confirmed;
             this.Role = role;
+            this.TeamPermissions = teamPermissions;
             this.Projects = projects;
             this.JoinedFrom = joinedFrom;
         }

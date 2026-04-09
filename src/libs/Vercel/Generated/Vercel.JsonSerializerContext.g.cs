@@ -2153,6 +2153,10 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.RequestAccessToTeamRequestJoinedFromOriginNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.UpdateTeamMemberRequestTeamPermissionJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UpdateTeamMemberRequestTeamPermissionNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.UpdateTeamMemberRequestProjectRoleJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UpdateTeamMemberRequestProjectRoleNullableJsonConverter),
@@ -14494,6 +14498,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RequestAccessToTeamRequestJoinedFromOrigin), TypeInfoPropertyName = "RequestAccessToTeamRequestJoinedFromOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.JoinTeamRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateTeamMemberRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateTeamMemberRequestTeamPermission>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateTeamMemberRequestTeamPermission), TypeInfoPropertyName = "UpdateTeamMemberRequestTeamPermission2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateTeamMemberRequestProject>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateTeamMemberRequestProject))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateTeamMemberRequestProjectRole), TypeInfoPropertyName = "UpdateTeamMemberRequestProjectRole2")]
@@ -20881,6 +20887,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?, global::System.Collections.Generic.List<string>, global::System.Collections.Generic.List<double>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.InviteUserToTeamRequestItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.InviteUserToTeamRequestItemProject>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateTeamMemberRequestTeamPermission>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateTeamMemberRequestProject>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.DeleteTeamRequestReason>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.RequestDeleteRequestReason>))]

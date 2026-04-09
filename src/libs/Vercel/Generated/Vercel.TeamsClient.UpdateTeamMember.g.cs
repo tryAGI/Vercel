@@ -474,6 +474,10 @@ namespace Vercel
         /// Default Value: MEMBER<br/>
         /// Example: VIEWER
         /// </param>
+        /// <param name="teamPermissions">
+        /// The team permissions to set for the member. Permissions must be compatible with the team roles assigned to the member.<br/>
+        /// Example: [CreateProject, FullProductionDeployment]
+        /// </param>
         /// <param name="projects"></param>
         /// <param name="joinedFrom"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -483,6 +487,7 @@ namespace Vercel
             string teamId,
             bool? confirmed = default,
             string? role = default,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateTeamMemberRequestTeamPermission>? teamPermissions = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateTeamMemberRequestProject>? projects = default,
             global::Vercel.UpdateTeamMemberRequestJoinedFrom? joinedFrom = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -491,6 +496,7 @@ namespace Vercel
             {
                 Confirmed = confirmed,
                 Role = role,
+                TeamPermissions = teamPermissions,
                 Projects = projects,
                 JoinedFrom = joinedFrom,
             };
