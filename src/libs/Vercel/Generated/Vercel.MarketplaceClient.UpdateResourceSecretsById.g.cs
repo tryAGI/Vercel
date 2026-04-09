@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class MarketplaceClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_UpdateResourceSecretsByIdSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_UpdateResourceSecretsByIdSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_UpdateResourceSecretsByIdSecurityRequirement0,
+            };
         partial void PrepareUpdateResourceSecretsByIdArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string integrationConfigurationId,
@@ -46,9 +65,15 @@ namespace Vercel
                 resourceId: ref resourceId,
                 request: request);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_UpdateResourceSecretsByIdSecurityRequirements,
+                operationName: "UpdateResourceSecretsByIdAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: $"/v1/installations/{integrationConfigurationId}/resources/{resourceId}/secrets",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Put,
@@ -58,7 +83,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

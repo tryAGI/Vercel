@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class SandboxesV2BetaClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_RunSessionCommandAsStreamSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_RunSessionCommandAsStreamSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_RunSessionCommandAsStreamSecurityRequirement0,
+            };
         partial void PrepareRunSessionCommandAsStreamArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string sessionId,
@@ -58,13 +77,19 @@ namespace Vercel
                 slug: ref slug,
                 request: request);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_RunSessionCommandAsStreamSecurityRequirements,
+                operationName: "RunSessionCommandAsStreamAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: $"/v2/sandboxes/sessions/{sessionId}/cmd",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("teamId", teamId)
                 .AddOptionalParameter("slug", slug) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -74,7 +99,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
@@ -156,6 +181,7 @@ namespace Vercel
                 cancellationToken
 #endif
             ).ConfigureAwait(false);
+
             using var __reader = new global::System.IO.StreamReader(__stream);
 
             while (!__reader.EndOfStream && !cancellationToken.IsCancellationRequested)

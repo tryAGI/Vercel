@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class IntegrationsClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_GitNamespacesSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GitNamespacesSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_GitNamespacesSecurityRequirement0,
+            };
         partial void PrepareGitNamespacesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? host,
@@ -46,13 +65,19 @@ namespace Vercel
                 host: ref host,
                 provider: ref provider);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GitNamespacesSecurityRequirements,
+                operationName: "GitNamespacesAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: "/v1/integrations/git-namespaces",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("host", host)
                 .AddOptionalParameter("provider", provider?.ToValueString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -62,7 +87,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

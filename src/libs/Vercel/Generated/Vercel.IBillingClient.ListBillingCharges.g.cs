@@ -31,7 +31,7 @@ namespace Vercel
         ///   --header 'Accept-Encoding: gzip' \<br/>
         ///   --compressed
         /// </remarks>
-        global::System.Threading.Tasks.Task<global::Vercel.ListBillingChargesResponse> ListBillingChargesAsync(
+        global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.ListBillingChargesResponse> ListBillingChargesAsync(
             string from,
             string to,
             string? teamId = default,

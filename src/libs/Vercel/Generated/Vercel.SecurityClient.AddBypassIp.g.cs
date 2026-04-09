@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class SecurityClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_AddBypassIpSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_AddBypassIpSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_AddBypassIpSecurityRequirement0,
+            };
         partial void PrepareAddBypassIpArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string projectId,
@@ -60,6 +79,12 @@ namespace Vercel
                 slug: ref slug,
                 request: request);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AddBypassIpSecurityRequirements,
+                operationName: "AddBypassIpAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: "/v1/security/firewall/bypass",
                 baseUri: HttpClient.BaseAddress); 
@@ -67,7 +92,7 @@ namespace Vercel
                 .AddRequiredParameter("projectId", projectId)
                 .AddOptionalParameter("teamId", teamId)
                 .AddOptionalParameter("slug", slug) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -77,7 +102,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

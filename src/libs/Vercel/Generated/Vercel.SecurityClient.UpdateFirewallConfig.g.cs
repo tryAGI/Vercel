@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class SecurityClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_UpdateFirewallConfigSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_UpdateFirewallConfigSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_UpdateFirewallConfigSecurityRequirement0,
+            };
         partial void PrepareUpdateFirewallConfigArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string projectId,
@@ -58,6 +77,12 @@ namespace Vercel
                 slug: ref slug,
                 request: request);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_UpdateFirewallConfigSecurityRequirements,
+                operationName: "UpdateFirewallConfigAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: "/v1/security/firewall/config",
                 baseUri: HttpClient.BaseAddress); 
@@ -65,7 +90,7 @@ namespace Vercel
                 .AddRequiredParameter("projectId", projectId)
                 .AddOptionalParameter("teamId", teamId)
                 .AddOptionalParameter("slug", slug) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -75,7 +100,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

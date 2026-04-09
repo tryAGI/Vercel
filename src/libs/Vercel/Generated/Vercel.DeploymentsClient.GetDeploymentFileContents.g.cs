@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class DeploymentsClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_GetDeploymentFileContentsSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetDeploymentFileContentsSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_GetDeploymentFileContentsSecurityRequirement0,
+            };
         partial void PrepareGetDeploymentFileContentsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id,
@@ -63,6 +82,12 @@ namespace Vercel
                 teamId: ref teamId,
                 slug: ref slug);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetDeploymentFileContentsSecurityRequirements,
+                operationName: "GetDeploymentFileContentsAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: $"/v8/deployments/{id}/files/{fileId}",
                 baseUri: HttpClient.BaseAddress); 
@@ -70,7 +95,7 @@ namespace Vercel
                 .AddOptionalParameter("path", path)
                 .AddOptionalParameter("teamId", teamId)
                 .AddOptionalParameter("slug", slug) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -80,7 +105,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

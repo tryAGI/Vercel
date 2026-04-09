@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class UserClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_ListEventTypesSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_ListEventTypesSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_ListEventTypesSecurityRequirement0,
+            };
         partial void PrepareListEventTypesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? teamId,
@@ -47,13 +66,19 @@ namespace Vercel
                 teamId: ref teamId,
                 slug: ref slug);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListEventTypesSecurityRequirements,
+                operationName: "ListEventTypesAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: "/v1/events/types",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("teamId", teamId)
                 .AddOptionalParameter("slug", slug) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -63,7 +88,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

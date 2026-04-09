@@ -5,6 +5,25 @@ namespace Vercel
 {
     public partial class TeamsClient
     {
+
+
+        private static readonly global::Vercel.EndPointSecurityRequirement s_GetTeamsSecurityRequirement0 =
+            new global::Vercel.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
+                {                    new global::Vercel.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetTeamsSecurityRequirements =
+            new global::Vercel.EndPointSecurityRequirement[]
+            {                s_GetTeamsSecurityRequirement0,
+            };
         partial void PrepareGetTeamsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref double? limit,
@@ -57,6 +76,12 @@ namespace Vercel
                 since: ref since,
                 until: ref until);
 
+
+            var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetTeamsSecurityRequirements,
+                operationName: "GetTeamsAsync");
+
             var __pathBuilder = new global::Vercel.PathBuilder(
                 path: "/v2/teams",
                 baseUri: HttpClient.BaseAddress); 
@@ -64,7 +89,7 @@ namespace Vercel
                 .AddOptionalParameter("limit", limit?.ToString())
                 .AddOptionalParameter("since", since?.ToString())
                 .AddOptionalParameter("until", until?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -74,7 +99,7 @@ namespace Vercel
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
