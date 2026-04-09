@@ -5,22 +5,22 @@ namespace Vercel
 {
     public partial class MarketplaceClient
     {
-        partial void PrepareReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigArguments(
+        partial void PrepareUpdateInstallationIntegrationEdgeConfigArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string integrationConfigurationId,
             ref string resourceId,
             global::Vercel.ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigRequest request);
-        partial void PrepareReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigRequest(
+        partial void PrepareUpdateInstallationIntegrationEdgeConfigRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string integrationConfigurationId,
             string resourceId,
             global::Vercel.ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigRequest request);
-        partial void ProcessReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponse(
+        partial void ProcessUpdateInstallationIntegrationEdgeConfigResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponseContent(
+        partial void ProcessUpdateInstallationIntegrationEdgeConfigResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
@@ -34,7 +34,7 @@ namespace Vercel
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponse> ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponse> UpdateInstallationIntegrationEdgeConfigAsync(
             string integrationConfigurationId,
             string resourceId,
 
@@ -45,7 +45,7 @@ namespace Vercel
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigArguments(
+            PrepareUpdateInstallationIntegrationEdgeConfigArguments(
                 httpClient: HttpClient,
                 integrationConfigurationId: ref integrationConfigurationId,
                 resourceId: ref resourceId,
@@ -88,7 +88,7 @@ namespace Vercel
             PrepareRequest(
                 client: HttpClient,
                 request: __httpRequest);
-            PrepareReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigRequest(
+            PrepareUpdateInstallationIntegrationEdgeConfigRequest(
                 httpClient: HttpClient,
                 httpRequestMessage: __httpRequest,
                 integrationConfigurationId: integrationConfigurationId,
@@ -103,7 +103,7 @@ namespace Vercel
             ProcessResponse(
                 client: HttpClient,
                 response: __response);
-            ProcessReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponse(
+            ProcessUpdateInstallationIntegrationEdgeConfigResponse(
                 httpClient: HttpClient,
                 httpResponseMessage: __response);
             // 
@@ -317,7 +317,7 @@ namespace Vercel
                     client: HttpClient,
                     response: __response,
                     content: ref __content);
-                ProcessReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponseContent(
+                ProcessUpdateInstallationIntegrationEdgeConfigResponseContent(
                     httpClient: HttpClient,
                     httpResponseMessage: __response,
                     content: ref __content);
@@ -398,7 +398,7 @@ namespace Vercel
         /// <param name="data"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponse> ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigResponse> UpdateInstallationIntegrationEdgeConfigAsync(
             string integrationConfigurationId,
             string resourceId,
             object data,
@@ -409,7 +409,7 @@ namespace Vercel
                 Data = data,
             };
 
-            return await ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfigAsync(
+            return await UpdateInstallationIntegrationEdgeConfigAsync(
                 integrationConfigurationId: integrationConfigurationId,
                 resourceId: resourceId,
                 request: __request,

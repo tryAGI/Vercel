@@ -5,50 +5,53 @@ namespace Vercel
 {
     public partial class MarketplaceClient
     {
-        partial void PrepareDeleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdArguments(
+        partial void PrepareCreateInstallationIntegrationConfigurationArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string integrationConfigurationId,
             ref string resourceId,
-            ref string itemId);
-        partial void PrepareDeleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequest(
+            global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequest request);
+        partial void PrepareCreateInstallationIntegrationConfigurationRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string integrationConfigurationId,
             string resourceId,
-            string itemId);
-        partial void ProcessDeleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdResponse(
+            global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequest request);
+        partial void ProcessCreateInstallationIntegrationConfigurationResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
         /// <summary>
-        /// Delete an existing experimentation item<br/>
-        /// Delete an existing experimentation item
+        /// Create one or multiple experimentation items<br/>
+        /// Create one or multiple experimentation items
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="resourceId"></param>
-        /// <param name="itemId"></param>
+        /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task DeleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdAsync(
+        public async global::System.Threading.Tasks.Task CreateInstallationIntegrationConfigurationAsync(
             string integrationConfigurationId,
             string resourceId,
-            string itemId,
+
+            global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequest request,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+
             PrepareArguments(
                 client: HttpClient);
-            PrepareDeleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdArguments(
+            PrepareCreateInstallationIntegrationConfigurationArguments(
                 httpClient: HttpClient,
                 integrationConfigurationId: ref integrationConfigurationId,
                 resourceId: ref resourceId,
-                itemId: ref itemId);
+                request: request);
 
             var __pathBuilder = new global::Vercel.PathBuilder(
-                path: $"/v1/installations/{integrationConfigurationId}/resources/{resourceId}/experimentation/items/{itemId}",
+                path: $"/v1/installations/{integrationConfigurationId}/resources/{resourceId}/experimentation/items",
                 baseUri: HttpClient.BaseAddress); 
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                method: global::System.Net.Http.HttpMethod.Delete,
+                method: global::System.Net.Http.HttpMethod.Post,
                 requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
             __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -70,16 +73,22 @@ namespace Vercel
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
+            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
+            var __httpRequestContent = new global::System.Net.Http.StringContent(
+                content: __httpRequestContentBody,
+                encoding: global::System.Text.Encoding.UTF8,
+                mediaType: "application/json");
+            __httpRequest.Content = __httpRequestContent;
 
             PrepareRequest(
                 client: HttpClient,
                 request: __httpRequest);
-            PrepareDeleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequest(
+            PrepareCreateInstallationIntegrationConfigurationRequest(
                 httpClient: HttpClient,
                 httpRequestMessage: __httpRequest,
                 integrationConfigurationId: integrationConfigurationId,
                 resourceId: resourceId,
-                itemId: itemId);
+                request: request);
 
             using var __response = await HttpClient.SendAsync(
                 request: __httpRequest,
@@ -89,7 +98,7 @@ namespace Vercel
             ProcessResponse(
                 client: HttpClient,
                 response: __response);
-            ProcessDeleteInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdResponse(
+            ProcessCreateInstallationIntegrationConfigurationResponse(
                 httpClient: HttpClient,
                 httpResponseMessage: __response);
             // 
@@ -292,6 +301,32 @@ namespace Vercel
                     };
                 }
             }
+        }
+        /// <summary>
+        /// Create one or multiple experimentation items<br/>
+        /// Create one or multiple experimentation items
+        /// </summary>
+        /// <param name="integrationConfigurationId"></param>
+        /// <param name="resourceId"></param>
+        /// <param name="items"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        public async global::System.Threading.Tasks.Task CreateInstallationIntegrationConfigurationAsync(
+            string integrationConfigurationId,
+            string resourceId,
+            global::System.Collections.Generic.IList<global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItem> items,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var __request = new global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequest
+            {
+                Items = items,
+            };
+
+            await CreateInstallationIntegrationConfigurationAsync(
+                integrationConfigurationId: integrationConfigurationId,
+                resourceId: resourceId,
+                request: __request,
+                cancellationToken: cancellationToken).ConfigureAwait(false);
         }
     }
 }
