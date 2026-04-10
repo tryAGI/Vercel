@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// The project role that will be added to this Access Group. \"null\" will remove this project level role.<br/>
+    /// The project role that will be added to this Access Group. "null" will remove this project level role.<br/>
     /// Example: ADMIN
     /// </summary>
     public enum CreateAccessGroupRequestProjectRole

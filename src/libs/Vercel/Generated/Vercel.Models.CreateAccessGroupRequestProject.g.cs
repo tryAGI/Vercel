@@ -18,7 +18,7 @@ namespace Vercel
         public required string ProjectId { get; set; }
 
         /// <summary>
-        /// The project role that will be added to this Access Group. \"null\" will remove this project level role.<br/>
+        /// The project role that will be added to this Access Group. "null" will remove this project level role.<br/>
         /// Example: ADMIN
         /// </summary>
         /// <example>ADMIN</example>
@@ -40,7 +40,7 @@ namespace Vercel
         /// Example: prj_ndlgr43fadlPyCtREAqxxdyFK
         /// </param>
         /// <param name="role">
-        /// The project role that will be added to this Access Group. \"null\" will remove this project level role.<br/>
+        /// The project role that will be added to this Access Group. "null" will remove this project level role.<br/>
         /// Example: ADMIN
         /// </param>
 #if NET7_0_OR_GREATER

@@ -21,7 +21,7 @@ namespace Vercel
         /// Filter SharedEnvVariables based on comma separated ids<br/>
         /// Example: env_2WjyKQmM8ZnGcJsPWMrHRHrE,env_2WjyKQmM8ZnGcJsPWMrHRCRV
         /// </param>
-        /// <param name="excludeIds2">
+        /// <param name="x_excludeIds_">
         /// Filter SharedEnvVariables based on comma separated ids<br/>
         /// Example: env_2WjyKQmM8ZnGcJsPWMrHRHrE,env_2WjyKQmM8ZnGcJsPWMrHRCRV
         /// </param>
@@ -29,7 +29,7 @@ namespace Vercel
         /// Filter SharedEnvVariables that belong to a project<br/>
         /// Example: prj_2WjyKQmM8ZnGcJsPWMrHRHrE
         /// </param>
-        /// <param name="excludeProjectId2">
+        /// <param name="x_excludeProjectId_">
         /// Filter SharedEnvVariables that belong to a project<br/>
         /// Example: prj_2WjyKQmM8ZnGcJsPWMrHRHrE
         /// </param>
@@ -47,9 +47,9 @@ namespace Vercel
             string? projectId = default,
             string? ids = default,
             string? excludeIds = default,
-            string? excludeIds2 = default,
+            string? x_excludeIds_ = default,
             string? excludeProjectId = default,
-            string? excludeProjectId2 = default,
+            string? x_excludeProjectId_ = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

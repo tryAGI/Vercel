@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Type of matcher. One of \"equals\", \"startsWith\", or \"endsWith\".
+    /// Type of matcher. One of "equals", "startsWith", or "endsWith".
     /// </summary>
     public enum UpdateCustomEnvironmentRequestBranchMatcherType
     {

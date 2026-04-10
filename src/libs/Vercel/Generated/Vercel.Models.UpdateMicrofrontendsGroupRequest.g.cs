@@ -17,7 +17,7 @@ namespace Vercel
         public string? Name { get; set; }
 
         /// <summary>
-        /// The new fallback environment for the microfrontends group. Must be \"SAME_ENV\", \"PRODUCTION\", or a valid custom environment slug from the default app.
+        /// The new fallback environment for the microfrontends group. Must be "SAME_ENV", "PRODUCTION", or a valid custom environment slug from the default app.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fallbackEnvironment")]
         public string? FallbackEnvironment { get; set; }
@@ -36,7 +36,7 @@ namespace Vercel
         /// Example: MFE Group 1
         /// </param>
         /// <param name="fallbackEnvironment">
-        /// The new fallback environment for the microfrontends group. Must be \"SAME_ENV\", \"PRODUCTION\", or a valid custom environment slug from the default app.
+        /// The new fallback environment for the microfrontends group. Must be "SAME_ENV", "PRODUCTION", or a valid custom environment slug from the default app.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

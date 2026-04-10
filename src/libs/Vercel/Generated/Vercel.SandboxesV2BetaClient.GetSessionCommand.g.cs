@@ -62,7 +62,7 @@ namespace Vercel
         /// Example: cmd_abc123
         /// </param>
         /// <param name="wait">
-        /// If set to \"true\", the request will block until the command finishes execution. Useful for synchronously waiting for command completion.<br/>
+        /// If set to "true", the request will block until the command finishes execution. Useful for synchronously waiting for command completion.<br/>
         /// Default Value: false
         /// </param>
         /// <param name="teamId">

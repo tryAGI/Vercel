@@ -34,9 +34,9 @@ namespace Vercel
 
         /// <summary>
         /// A CAA record to specify which Certificate Authorities (CAs) are allowed to issue certificates for the domain.<br/>
-        /// Example: 0 issue \"letsencrypt.org\"
+        /// Example: 0 issue "letsencrypt.org"
         /// </summary>
-        /// <example>0 issue \"letsencrypt.org\"</example>
+        /// <example>0 issue "letsencrypt.org"</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Value { get; set; }
@@ -64,7 +64,7 @@ namespace Vercel
         /// </param>
         /// <param name="value">
         /// A CAA record to specify which Certificate Authorities (CAs) are allowed to issue certificates for the domain.<br/>
-        /// Example: 0 issue \"letsencrypt.org\"
+        /// Example: 0 issue "letsencrypt.org"
         /// </param>
         /// <param name="type">
         /// Must be of type `CAA`.

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Excludes redirect project domains when \"false\". Includes redirect project domains when \"true\" (default).<br/>
+    /// Excludes redirect project domains when "false". Includes redirect project domains when "true" (default).<br/>
     /// Default Value: true
     /// </summary>
     public enum GetProjectDomainsRedirects

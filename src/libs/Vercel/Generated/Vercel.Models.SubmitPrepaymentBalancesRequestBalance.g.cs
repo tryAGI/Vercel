@@ -15,13 +15,13 @@ namespace Vercel
         public string? ResourceId { get; set; }
 
         /// <summary>
-        /// A human-readable description of the credits the user currently has, e.g. \"2,000 Tokens\"
+        /// A human-readable description of the credits the user currently has, e.g. "2,000 Tokens"
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("credit")]
         public string? Credit { get; set; }
 
         /// <summary>
-        /// The name of the credits, for display purposes, e.g. \"Tokens\"
+        /// The name of the credits, for display purposes, e.g. "Tokens"
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nameLabel")]
         public string? NameLabel { get; set; }
@@ -49,10 +49,10 @@ namespace Vercel
         /// Partner's resource ID, exclude if credits are tied to the installation and not an individual resource.
         /// </param>
         /// <param name="credit">
-        /// A human-readable description of the credits the user currently has, e.g. \"2,000 Tokens\"
+        /// A human-readable description of the credits the user currently has, e.g. "2,000 Tokens"
         /// </param>
         /// <param name="nameLabel">
-        /// The name of the credits, for display purposes, e.g. \"Tokens\"
+        /// The name of the credits, for display purposes, e.g. "Tokens"
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

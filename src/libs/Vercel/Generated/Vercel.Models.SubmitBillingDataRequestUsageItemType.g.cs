@@ -4,20 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// \n              Type of the metric.\n              - total: measured total value, such as Database size\n              - interval: usage during the period, such as i/o or number of queries.\n              - rate: rate of usage, such as queries per second.\n            
+    ///               Type of the metric.<br/>
+    ///               - total: measured total value, such as Database size<br/>
+    ///               - interval: usage during the period, such as i/o or number of queries.<br/>
+    ///               - rate: rate of usage, such as queries per second.<br/>
+    ///             
     /// </summary>
     public enum SubmitBillingDataRequestUsageItemType
     {
         /// <summary>
-        /// measured total value, such as Database size\n              - interval: usage during the period, such as i/o or number of queries.\n              - rate: rate of usage, such as queries per second.\n
+        /// usage during the period, such as i/o or number of queries.
         /// </summary>
         Interval,
         /// <summary>
-        /// measured total value, such as Database size\n              - interval: usage during the period, such as i/o or number of queries.\n              - rate: rate of usage, such as queries per second.\n
+        /// rate of usage, such as queries per second.
         /// </summary>
         Rate,
         /// <summary>
-        /// measured total value, such as Database size\n              - interval: usage during the period, such as i/o or number of queries.\n              - rate: rate of usage, such as queries per second.\n
+        /// measured total value, such as Database size
         /// </summary>
         Total,
     }

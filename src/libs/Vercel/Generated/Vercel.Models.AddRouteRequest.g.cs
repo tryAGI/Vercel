@@ -16,7 +16,7 @@ namespace Vercel
         public required global::Vercel.AddRouteRequestRoute Route { get; set; }
 
         /// <summary>
-        /// Controls where the route is inserted. Defaults to \"end\" if omitted.
+        /// Controls where the route is inserted. Defaults to "end" if omitted.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("position")]
         public global::Vercel.AddRouteRequestPosition? Position { get; set; }
@@ -32,7 +32,7 @@ namespace Vercel
         /// </summary>
         /// <param name="route"></param>
         /// <param name="position">
-        /// Controls where the route is inserted. Defaults to \"end\" if omitted.
+        /// Controls where the route is inserted. Defaults to "end" if omitted.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Filters on the target of the domain. Can be either \"production\", \"preview\"
+    /// Filters on the target of the domain. Can be either "production", "preview"
     /// </summary>
     public enum GetProjectDomainsTarget
     {

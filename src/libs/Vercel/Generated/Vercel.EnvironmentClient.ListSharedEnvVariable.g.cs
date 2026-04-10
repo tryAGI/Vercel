@@ -31,9 +31,9 @@ namespace Vercel
             ref string? projectId,
             ref string? ids,
             ref string? excludeIds,
-            ref string? excludeIds2,
+            ref string? x_excludeIds_,
             ref string? excludeProjectId,
-            ref string? excludeProjectId2,
+            ref string? x_excludeProjectId_,
             ref string? teamId,
             ref string? slug);
         partial void PrepareListSharedEnvVariableRequest(
@@ -43,9 +43,9 @@ namespace Vercel
             string? projectId,
             string? ids,
             string? excludeIds,
-            string? excludeIds2,
+            string? x_excludeIds_,
             string? excludeProjectId,
-            string? excludeProjectId2,
+            string? x_excludeProjectId_,
             string? teamId,
             string? slug);
         partial void ProcessListSharedEnvVariableResponse(
@@ -74,7 +74,7 @@ namespace Vercel
         /// Filter SharedEnvVariables based on comma separated ids<br/>
         /// Example: env_2WjyKQmM8ZnGcJsPWMrHRHrE,env_2WjyKQmM8ZnGcJsPWMrHRCRV
         /// </param>
-        /// <param name="excludeIds2">
+        /// <param name="x_excludeIds_">
         /// Filter SharedEnvVariables based on comma separated ids<br/>
         /// Example: env_2WjyKQmM8ZnGcJsPWMrHRHrE,env_2WjyKQmM8ZnGcJsPWMrHRCRV
         /// </param>
@@ -82,7 +82,7 @@ namespace Vercel
         /// Filter SharedEnvVariables that belong to a project<br/>
         /// Example: prj_2WjyKQmM8ZnGcJsPWMrHRHrE
         /// </param>
-        /// <param name="excludeProjectId2">
+        /// <param name="x_excludeProjectId_">
         /// Filter SharedEnvVariables that belong to a project<br/>
         /// Example: prj_2WjyKQmM8ZnGcJsPWMrHRHrE
         /// </param>
@@ -100,9 +100,9 @@ namespace Vercel
             string? projectId = default,
             string? ids = default,
             string? excludeIds = default,
-            string? excludeIds2 = default,
+            string? x_excludeIds_ = default,
             string? excludeProjectId = default,
-            string? excludeProjectId2 = default,
+            string? x_excludeProjectId_ = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -116,9 +116,9 @@ namespace Vercel
                 projectId: ref projectId,
                 ids: ref ids,
                 excludeIds: ref excludeIds,
-                excludeIds2: ref excludeIds2,
+                x_excludeIds_: ref x_excludeIds_,
                 excludeProjectId: ref excludeProjectId,
-                excludeProjectId2: ref excludeProjectId2,
+                x_excludeProjectId_: ref x_excludeProjectId_,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -152,9 +152,9 @@ namespace Vercel
                                 .AddOptionalParameter("projectId", projectId)
                                 .AddOptionalParameter("ids", ids)
                                 .AddOptionalParameter("exclude_ids", excludeIds)
-                                .AddOptionalParameter("exclude-ids", excludeIds2)
+                                .AddOptionalParameter("'exclude-ids'", x_excludeIds_)
                                 .AddOptionalParameter("exclude_projectId", excludeProjectId)
-                                .AddOptionalParameter("exclude-projectId", excludeProjectId2)
+                                .AddOptionalParameter("'exclude-projectId'", x_excludeProjectId_)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug) 
                                 ;
@@ -202,9 +202,9 @@ namespace Vercel
                     projectId: projectId,
                     ids: ids,
                     excludeIds: excludeIds,
-                    excludeIds2: excludeIds2,
+                    x_excludeIds_: x_excludeIds_,
                     excludeProjectId: excludeProjectId,
-                    excludeProjectId2: excludeProjectId2,
+                    x_excludeProjectId_: x_excludeProjectId_,
                     teamId: teamId,
                     slug: slug);
 

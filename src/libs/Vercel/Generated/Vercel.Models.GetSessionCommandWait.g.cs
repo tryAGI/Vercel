@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// If set to \"true\", the request will block until the command finishes execution. Useful for synchronously waiting for command completion.<br/>
+    /// If set to "true", the request will block until the command finishes execution. Useful for synchronously waiting for command completion.<br/>
     /// Default Value: false
     /// </summary>
     public enum GetSessionCommandWait

@@ -47,16 +47,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("destination")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
+        public required string Destination { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destination")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Destination { get; set; }
+        public required string Source { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -67,8 +67,8 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetRedirectsResponseVariant2Redirect" /> class.
         /// </summary>
-        /// <param name="source"></param>
         /// <param name="destination"></param>
+        /// <param name="source"></param>
         /// <param name="statusCode"></param>
         /// <param name="permanent"></param>
         /// <param name="sensitive"></param>
@@ -79,8 +79,8 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetRedirectsResponseVariant2Redirect(
-            string source,
             string destination,
+            string source,
             double? statusCode,
             bool? permanent,
             bool? sensitive,
@@ -94,8 +94,8 @@ namespace Vercel
             this.CaseSensitive = caseSensitive;
             this.Query = query;
             this.PreserveQueryParams = preserveQueryParams;
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
             this.Destination = destination ?? throw new global::System.ArgumentNullException(nameof(destination));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
         }
 
         /// <summary>

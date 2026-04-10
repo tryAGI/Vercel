@@ -8,11 +8,11 @@ namespace Vercel
         /// Download a cache artifact<br/>
         /// Downloads a cache artifact indentified by its `hash` specified on the request path. The artifact is downloaded as an octet-stream. The client should verify the content-length header and response body.
         /// </summary>
-        /// <param name="xArtifactClientCi">
+        /// <param name="x_xArtifactClientCi_">
         /// The continuous integration or delivery environment where this artifact is downloaded.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="xArtifactClientInteractive">
+        /// <param name="x_xArtifactClientInteractive_">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
@@ -31,8 +31,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<byte[]> DownloadArtifactAsync(
             string hash,
-            string? xArtifactClientCi = default,
-            int? xArtifactClientInteractive = default,
+            string? x_xArtifactClientCi_ = default,
+            int? x_xArtifactClientInteractive_ = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

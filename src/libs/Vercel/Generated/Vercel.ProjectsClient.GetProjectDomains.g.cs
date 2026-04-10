@@ -79,7 +79,7 @@ namespace Vercel
         /// Default Value: false
         /// </param>
         /// <param name="target">
-        /// Filters on the target of the domain. Can be either \"production\", \"preview\"
+        /// Filters on the target of the domain. Can be either "production", "preview"
         /// </param>
         /// <param name="customEnvironmentId">
         /// The unique custom environment identifier within the project<br/>
@@ -89,7 +89,7 @@ namespace Vercel
         /// Filters domains based on specific branch.
         /// </param>
         /// <param name="redirects">
-        /// Excludes redirect project domains when \"false\". Includes redirect project domains when \"true\" (default).<br/>
+        /// Excludes redirect project domains when "false". Includes redirect project domains when "true" (default).<br/>
         /// Default Value: true
         /// </param>
         /// <param name="redirect">

@@ -27,14 +27,14 @@ namespace Vercel
             };
         partial void PrepareWriteSessionFilesArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string? xCwd,
+            ref string? x_xCwd_,
             ref string sessionId,
             ref string? teamId,
             ref string? slug);
         partial void PrepareWriteSessionFilesRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string? xCwd,
+            string? x_xCwd_,
             string sessionId,
             string? teamId,
             string? slug);
@@ -51,7 +51,7 @@ namespace Vercel
         /// Write files<br/>
         /// Uploads and extracts files to a session's filesystem. Files must be uploaded as a gzipped tarball (`.tar.gz`) with the `Content-Type` header set to `application/gzip`. The tarball contents are extracted to the session's working directory, or to a custom directory specified via the `x-cwd` header.
         /// </summary>
-        /// <param name="xCwd">
+        /// <param name="x_xCwd_">
         /// The target directory where the tarball contents will be extracted. If not specified, files are extracted to the sandbox home directory.<br/>
         /// Example: /home/vercel-sandbox
         /// </param>
@@ -70,7 +70,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<string> WriteSessionFilesAsync(
             string sessionId,
-            string? xCwd = default,
+            string? x_xCwd_ = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -80,7 +80,7 @@ namespace Vercel
                 client: HttpClient);
             PrepareWriteSessionFilesArguments(
                 httpClient: HttpClient,
-                xCwd: ref xCwd,
+                x_xCwd_: ref x_xCwd_,
                 sessionId: ref sessionId,
                 teamId: ref teamId,
                 slug: ref slug);
@@ -144,9 +144,9 @@ namespace Vercel
                 } 
             }
 
-                if (xCwd != default)
+                if (x_xCwd_ != default)
                 {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-cwd", xCwd.ToString());
+                    __httpRequest.Headers.TryAddWithoutValidation("'x-Cwd'", x_xCwd_.ToString());
                 }
 
                 global::Vercel.AutoSDKRequestOptionsSupport.ApplyHeaders(
@@ -160,7 +160,7 @@ namespace Vercel
                 PrepareWriteSessionFilesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xCwd: xCwd,
+                    x_xCwd_: x_xCwd_,
                     sessionId: sessionId,
                     teamId: teamId,
                     slug: slug);

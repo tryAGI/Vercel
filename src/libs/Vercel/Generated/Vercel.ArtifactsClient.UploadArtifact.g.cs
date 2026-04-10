@@ -27,13 +27,13 @@ namespace Vercel
             };
         partial void PrepareUploadArtifactArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref double contentLength,
-            ref double? xArtifactDuration,
-            ref string? xArtifactClientCi,
-            ref int? xArtifactClientInteractive,
-            ref string? xArtifactTag,
-            ref string? xArtifactSha,
-            ref string? xArtifactDirtyHash,
+            ref double? x_contentLength_,
+            ref double? x_xArtifactDuration_,
+            ref string? x_xArtifactClientCi_,
+            ref int? x_xArtifactClientInteractive_,
+            ref string? x_xArtifactTag_,
+            ref string? x_xArtifactSha_,
+            ref string? x_xArtifactDirtyHash_,
             ref string hash,
             ref string? teamId,
             ref string? slug,
@@ -41,13 +41,13 @@ namespace Vercel
         partial void PrepareUploadArtifactRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            double contentLength,
-            double? xArtifactDuration,
-            string? xArtifactClientCi,
-            int? xArtifactClientInteractive,
-            string? xArtifactTag,
-            string? xArtifactSha,
-            string? xArtifactDirtyHash,
+            double? x_contentLength_,
+            double? x_xArtifactDuration_,
+            string? x_xArtifactClientCi_,
+            int? x_xArtifactClientInteractive_,
+            string? x_xArtifactTag_,
+            string? x_xArtifactSha_,
+            string? x_xArtifactDirtyHash_,
             string hash,
             string? teamId,
             string? slug,
@@ -65,29 +65,29 @@ namespace Vercel
         /// Upload a cache artifact<br/>
         /// Uploads a cache artifact identified by the `hash` specified on the path. The cache artifact can then be downloaded with the provided `hash`.
         /// </summary>
-        /// <param name="contentLength">
+        /// <param name="x_contentLength_">
         /// The artifact size in bytes
         /// </param>
-        /// <param name="xArtifactDuration">
+        /// <param name="x_xArtifactDuration_">
         /// The time taken to generate the uploaded artifact in milliseconds.<br/>
         /// Example: 400
         /// </param>
-        /// <param name="xArtifactClientCi">
+        /// <param name="x_xArtifactClientCi_">
         /// The continuous integration or delivery environment where this artifact was generated.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="xArtifactClientInteractive">
+        /// <param name="x_xArtifactClientInteractive_">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
-        /// <param name="xArtifactTag">
+        /// <param name="x_xArtifactTag_">
         /// The base64 encoded tag for this artifact. The value is sent back to clients when the artifact is downloaded as the header `x-artifact-tag`<br/>
         /// Example: Tc0BmHvJYMIYJ62/zx87YqO0Flxk+5Ovip25NY825CQ=
         /// </param>
-        /// <param name="xArtifactSha">
+        /// <param name="x_xArtifactSha_">
         /// The SHA of the source control revision that generated this artifact.
         /// </param>
-        /// <param name="xArtifactDirtyHash">
+        /// <param name="x_xArtifactDirtyHash_">
         /// A hash representing uncommitted changes in the working directory when this artifact was generated.
         /// </param>
         /// <param name="hash">
@@ -105,16 +105,16 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.UploadArtifactResponse> UploadArtifactAsync(
-            double contentLength,
             string hash,
 
             byte[] request,
-            double? xArtifactDuration = default,
-            string? xArtifactClientCi = default,
-            int? xArtifactClientInteractive = default,
-            string? xArtifactTag = default,
-            string? xArtifactSha = default,
-            string? xArtifactDirtyHash = default,
+            double? x_contentLength_ = default,
+            double? x_xArtifactDuration_ = default,
+            string? x_xArtifactClientCi_ = default,
+            int? x_xArtifactClientInteractive_ = default,
+            string? x_xArtifactTag_ = default,
+            string? x_xArtifactSha_ = default,
+            string? x_xArtifactDirtyHash_ = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -126,13 +126,13 @@ namespace Vercel
                 client: HttpClient);
             PrepareUploadArtifactArguments(
                 httpClient: HttpClient,
-                contentLength: ref contentLength,
-                xArtifactDuration: ref xArtifactDuration,
-                xArtifactClientCi: ref xArtifactClientCi,
-                xArtifactClientInteractive: ref xArtifactClientInteractive,
-                xArtifactTag: ref xArtifactTag,
-                xArtifactSha: ref xArtifactSha,
-                xArtifactDirtyHash: ref xArtifactDirtyHash,
+                x_contentLength_: ref x_contentLength_,
+                x_xArtifactDuration_: ref x_xArtifactDuration_,
+                x_xArtifactClientCi_: ref x_xArtifactClientCi_,
+                x_xArtifactClientInteractive_: ref x_xArtifactClientInteractive_,
+                x_xArtifactTag_: ref x_xArtifactTag_,
+                x_xArtifactSha_: ref x_xArtifactSha_,
+                x_xArtifactDirtyHash_: ref x_xArtifactDirtyHash_,
                 hash: ref hash,
                 teamId: ref teamId,
                 slug: ref slug,
@@ -197,30 +197,33 @@ namespace Vercel
                 } 
             }
 
-                __httpRequest.Headers.TryAddWithoutValidation("Content-Length", contentLength.ToString());
-                if (xArtifactDuration != default)
+                if (x_contentLength_ != default)
                 {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-artifact-duration", xArtifactDuration.ToString());
+                    __httpRequest.Headers.TryAddWithoutValidation("'content-Length'", x_contentLength_.ToString());
                 }
-                if (xArtifactClientCi != default)
+                if (x_xArtifactDuration_ != default)
                 {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-artifact-client-ci", xArtifactClientCi.ToString());
+                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Duration'", x_xArtifactDuration_.ToString());
                 }
-                if (xArtifactClientInteractive != default)
+                if (x_xArtifactClientCi_ != default)
                 {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-artifact-client-interactive", xArtifactClientInteractive.ToString());
+                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Ci'", x_xArtifactClientCi_.ToString());
                 }
-                if (xArtifactTag != default)
+                if (x_xArtifactClientInteractive_ != default)
                 {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-artifact-tag", xArtifactTag.ToString());
+                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Interactive'", x_xArtifactClientInteractive_.ToString());
                 }
-                if (xArtifactSha != default)
+                if (x_xArtifactTag_ != default)
                 {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-artifact-sha", xArtifactSha.ToString());
+                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Tag'", x_xArtifactTag_.ToString());
                 }
-                if (xArtifactDirtyHash != default)
+                if (x_xArtifactSha_ != default)
                 {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-artifact-dirty-hash", xArtifactDirtyHash.ToString());
+                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Sha'", x_xArtifactSha_.ToString());
+                }
+                if (x_xArtifactDirtyHash_ != default)
+                {
+                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Dirty-Hash'", x_xArtifactDirtyHash_.ToString());
                 }
 
 
@@ -238,13 +241,13 @@ namespace Vercel
                 PrepareUploadArtifactRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    contentLength: contentLength,
-                    xArtifactDuration: xArtifactDuration,
-                    xArtifactClientCi: xArtifactClientCi,
-                    xArtifactClientInteractive: xArtifactClientInteractive,
-                    xArtifactTag: xArtifactTag,
-                    xArtifactSha: xArtifactSha,
-                    xArtifactDirtyHash: xArtifactDirtyHash,
+                    x_contentLength_: x_contentLength_,
+                    x_xArtifactDuration_: x_xArtifactDuration_,
+                    x_xArtifactClientCi_: x_xArtifactClientCi_,
+                    x_xArtifactClientInteractive_: x_xArtifactClientInteractive_,
+                    x_xArtifactTag_: x_xArtifactTag_,
+                    x_xArtifactSha_: x_xArtifactSha_,
+                    x_xArtifactDirtyHash_: x_xArtifactDirtyHash_,
                     hash: hash,
                     teamId: teamId,
                     slug: slug,

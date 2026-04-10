@@ -22,7 +22,11 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        /// \n              Type of the metric.\n              - total: measured total value, such as Database size\n              - interval: usage during the period, such as i/o or number of queries.\n              - rate: rate of usage, such as queries per second.\n            
+        ///               Type of the metric.<br/>
+        ///               - total: measured total value, such as Database size<br/>
+        ///               - interval: usage during the period, such as i/o or number of queries.<br/>
+        ///               - rate: rate of usage, such as queries per second.<br/>
+        ///             
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SubmitBillingDataRequestUsageItemTypeJsonConverter))]
@@ -30,7 +34,7 @@ namespace Vercel
         public required global::Vercel.SubmitBillingDataRequestUsageItemType Type { get; set; }
 
         /// <summary>
-        /// Metric units. Example: \"GB\"
+        /// Metric units. Example: "GB"
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("units")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -69,10 +73,14 @@ namespace Vercel
         /// Metric name.
         /// </param>
         /// <param name="type">
-        /// \n              Type of the metric.\n              - total: measured total value, such as Database size\n              - interval: usage during the period, such as i/o or number of queries.\n              - rate: rate of usage, such as queries per second.\n            
+        ///               Type of the metric.<br/>
+        ///               - total: measured total value, such as Database size<br/>
+        ///               - interval: usage during the period, such as i/o or number of queries.<br/>
+        ///               - rate: rate of usage, such as queries per second.<br/>
+        ///             
         /// </param>
         /// <param name="units">
-        /// Metric units. Example: \"GB\"
+        /// Metric units. Example: "GB"
         /// </param>
         /// <param name="dayValue">
         /// Metric value for the day. Could be a final or an interim value for the day.
