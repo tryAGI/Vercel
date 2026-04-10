@@ -16,6 +16,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AddRouteResponse> AddRouteAsync(
@@ -24,6 +25,7 @@ namespace Vercel
             global::Vercel.AddRouteRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Add a routing rule<br/>
@@ -40,6 +42,7 @@ namespace Vercel
         /// <param name="position">
         /// Controls where the route is inserted. Defaults to \"end\" if omitted.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AddRouteResponse> AddRouteAsync(
@@ -48,6 +51,7 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             global::Vercel.AddRouteRequestPosition? position = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

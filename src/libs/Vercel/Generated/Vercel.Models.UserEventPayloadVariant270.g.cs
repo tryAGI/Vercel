@@ -11,9 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fileId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("exportId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string FileId { get; set; }
+        public required string ExportId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("from")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double From { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("to")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double To { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("format")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Format { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant270" /> class.
         /// </summary>
-        /// <param name="fileId"></param>
+        /// <param name="exportId"></param>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
+        /// <param name="format"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant270(
-            string fileId)
+            string exportId,
+            double from,
+            double to,
+            string format)
         {
-            this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
+            this.ExportId = exportId ?? throw new global::System.ArgumentNullException(nameof(exportId));
+            this.From = from;
+            this.To = to;
+            this.Format = format ?? throw new global::System.ArgumentNullException(nameof(format));
         }
 
         /// <summary>

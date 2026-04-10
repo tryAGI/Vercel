@@ -18,6 +18,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateProjectTransferRequestResponse> CreateProjectTransferRequestAsync(
@@ -26,6 +27,7 @@ namespace Vercel
             global::Vercel.CreateProjectTransferRequestRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create project transfer request<br/>
@@ -46,6 +48,7 @@ namespace Vercel
         /// <param name="callbackSecret">
         /// The secret to use to sign the webhook payload with HMAC-SHA256.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateProjectTransferRequestResponse> CreateProjectTransferRequestAsync(
@@ -54,6 +57,7 @@ namespace Vercel
             string? slug = default,
             string? callbackUrl = default,
             string? callbackSecret = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

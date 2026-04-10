@@ -11,9 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
+        public required global::Vercel.UserEventPayloadVariant237Store Store { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        public string? OwnerId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant237" /> class.
         /// </summary>
-        /// <param name="slug"></param>
+        /// <param name="store"></param>
+        /// <param name="ownerId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant237(
-            string slug)
+            global::Vercel.UserEventPayloadVariant237Store store,
+            string? ownerId)
         {
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
+            this.OwnerId = ownerId;
         }
 
         /// <summary>

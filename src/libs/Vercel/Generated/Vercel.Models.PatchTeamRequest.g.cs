@@ -139,6 +139,13 @@ namespace Vercel
         public global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>? NsnbConfig { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultProjectJobs")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.PatchTeamRequestDefaultProjectJobs, string>))]
+        public global::Vercel.OneOf<global::Vercel.PatchTeamRequestDefaultProjectJobs, string>? DefaultProjectJobs { get; set; }
+
+        /// <summary>
         /// Resource configuration for the team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
@@ -211,6 +218,7 @@ namespace Vercel
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </param>
         /// <param name="nsnbConfig"></param>
+        /// <param name="defaultProjectJobs"></param>
         /// <param name="resourceConfig">
         /// Resource configuration for the team.
         /// </param>
@@ -236,6 +244,7 @@ namespace Vercel
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>? nsnbConfig,
+            global::Vercel.OneOf<global::Vercel.PatchTeamRequestDefaultProjectJobs, string>? defaultProjectJobs,
             global::Vercel.PatchTeamRequestResourceConfig? resourceConfig)
         {
             this.Avatar = avatar;
@@ -256,6 +265,7 @@ namespace Vercel
             this.DefaultExpirationSettings = defaultExpirationSettings;
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
             this.NsnbConfig = nsnbConfig;
+            this.DefaultProjectJobs = defaultProjectJobs;
             this.ResourceConfig = resourceConfig;
         }
 

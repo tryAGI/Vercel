@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateAuthTokenResponse> CreateAuthTokenAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             global::Vercel.CreateAuthTokenRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create an Auth Token<br/>
@@ -35,6 +37,7 @@ namespace Vercel
         /// </param>
         /// <param name="name"></param>
         /// <param name="expiresAt"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateAuthTokenResponse> CreateAuthTokenAsync(
@@ -42,6 +45,7 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             double? expiresAt = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

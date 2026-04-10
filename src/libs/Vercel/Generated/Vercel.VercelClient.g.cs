@@ -31,6 +31,9 @@ namespace Vercel
 #if DEBUG
             = true;
 #endif
+
+        /// <inheritdoc/>
+        public global::Vercel.AutoSDKClientOptions Options { get; }
         /// <summary>
         /// 
         /// </summary>
@@ -40,7 +43,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public AccessGroupsClient AccessGroups => new AccessGroupsClient(HttpClient, authorizations: Authorizations)
+        public AccessGroupsClient AccessGroups => new AccessGroupsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -49,7 +52,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public AliasesClient Aliases => new AliasesClient(HttpClient, authorizations: Authorizations)
+        public AliasesClient Aliases => new AliasesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -58,7 +61,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public ApiObservabilityClient ApiObservability => new ApiObservabilityClient(HttpClient, authorizations: Authorizations)
+        public ApiObservabilityClient ApiObservability => new ApiObservabilityClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -67,7 +70,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public ArtifactsClient Artifacts => new ArtifactsClient(HttpClient, authorizations: Authorizations)
+        public ArtifactsClient Artifacts => new ArtifactsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -76,7 +79,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public AuthenticationClient Authentication => new AuthenticationClient(HttpClient, authorizations: Authorizations)
+        public AuthenticationClient Authentication => new AuthenticationClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -85,7 +88,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public BillingClient Billing => new BillingClient(HttpClient, authorizations: Authorizations)
+        public BillingClient Billing => new BillingClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -94,7 +97,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public BulkRedirectsClient BulkRedirects => new BulkRedirectsClient(HttpClient, authorizations: Authorizations)
+        public BulkRedirectsClient BulkRedirects => new BulkRedirectsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -103,7 +106,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public CertsClient Certs => new CertsClient(HttpClient, authorizations: Authorizations)
+        public CertsClient Certs => new CertsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -112,7 +115,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public ChecksV2Client ChecksV2 => new ChecksV2Client(HttpClient, authorizations: Authorizations)
+        public ChecksV2Client ChecksV2 => new ChecksV2Client(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -121,7 +124,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public ConnectClient Connect => new ConnectClient(HttpClient, authorizations: Authorizations)
+        public ConnectClient Connect => new ConnectClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -130,7 +133,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public DeploymentsClient Deployments => new DeploymentsClient(HttpClient, authorizations: Authorizations)
+        public DeploymentsClient Deployments => new DeploymentsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -139,7 +142,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public DnsClient Dns => new DnsClient(HttpClient, authorizations: Authorizations)
+        public DnsClient Dns => new DnsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -148,7 +151,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public DomainsClient Domains => new DomainsClient(HttpClient, authorizations: Authorizations)
+        public DomainsClient Domains => new DomainsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -157,7 +160,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public DomainsRegistrarClient DomainsRegistrar => new DomainsRegistrarClient(HttpClient, authorizations: Authorizations)
+        public DomainsRegistrarClient DomainsRegistrar => new DomainsRegistrarClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -166,7 +169,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public DrainsClient Drains => new DrainsClient(HttpClient, authorizations: Authorizations)
+        public DrainsClient Drains => new DrainsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -175,7 +178,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public EdgeCacheClient EdgeCache => new EdgeCacheClient(HttpClient, authorizations: Authorizations)
+        public EdgeCacheClient EdgeCache => new EdgeCacheClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -184,7 +187,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public EdgeConfigClient EdgeConfig => new EdgeConfigClient(HttpClient, authorizations: Authorizations)
+        public EdgeConfigClient EdgeConfig => new EdgeConfigClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -193,7 +196,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public EnvironmentClient Environment => new EnvironmentClient(HttpClient, authorizations: Authorizations)
+        public EnvironmentClient Environment => new EnvironmentClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -202,7 +205,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public FeatureFlagsClient FeatureFlags => new FeatureFlagsClient(HttpClient, authorizations: Authorizations)
+        public FeatureFlagsClient FeatureFlags => new FeatureFlagsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -211,7 +214,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public IntegrationsClient Integrations => new IntegrationsClient(HttpClient, authorizations: Authorizations)
+        public IntegrationsClient Integrations => new IntegrationsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -220,7 +223,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public LogDrainsClient LogDrains => new LogDrainsClient(HttpClient, authorizations: Authorizations)
+        public LogDrainsClient LogDrains => new LogDrainsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -229,7 +232,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public LogsClient Logs => new LogsClient(HttpClient, authorizations: Authorizations)
+        public LogsClient Logs => new LogsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -238,7 +241,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public MarketplaceClient Marketplace => new MarketplaceClient(HttpClient, authorizations: Authorizations)
+        public MarketplaceClient Marketplace => new MarketplaceClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -247,7 +250,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public MicrofrontendsClient Microfrontends => new MicrofrontendsClient(HttpClient, authorizations: Authorizations)
+        public MicrofrontendsClient Microfrontends => new MicrofrontendsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -256,7 +259,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public ProjectMembersClient ProjectMembers => new ProjectMembersClient(HttpClient, authorizations: Authorizations)
+        public ProjectMembersClient ProjectMembers => new ProjectMembersClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -265,7 +268,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public ProjectRoutesClient ProjectRoutes => new ProjectRoutesClient(HttpClient, authorizations: Authorizations)
+        public ProjectRoutesClient ProjectRoutes => new ProjectRoutesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -274,7 +277,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations)
+        public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -283,7 +286,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public RollingReleaseClient RollingRelease => new RollingReleaseClient(HttpClient, authorizations: Authorizations)
+        public RollingReleaseClient RollingRelease => new RollingReleaseClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -292,7 +295,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public SandboxesClient Sandboxes => new SandboxesClient(HttpClient, authorizations: Authorizations)
+        public SandboxesClient Sandboxes => new SandboxesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -301,7 +304,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public SandboxesV2BetaClient SandboxesV2Beta => new SandboxesV2BetaClient(HttpClient, authorizations: Authorizations)
+        public SandboxesV2BetaClient SandboxesV2Beta => new SandboxesV2BetaClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -310,7 +313,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public SecurityClient Security => new SecurityClient(HttpClient, authorizations: Authorizations)
+        public SecurityClient Security => new SecurityClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -319,7 +322,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public TeamsClient Teams => new TeamsClient(HttpClient, authorizations: Authorizations)
+        public TeamsClient Teams => new TeamsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -328,7 +331,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public UserClient User => new UserClient(HttpClient, authorizations: Authorizations)
+        public UserClient User => new UserClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -337,7 +340,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public WebhooksClient Webhooks => new WebhooksClient(HttpClient, authorizations: Authorizations)
+        public WebhooksClient Webhooks => new WebhooksClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -356,11 +359,37 @@ namespace Vercel
             global::System.Net.Http.HttpClient? httpClient = null,
             global::System.Uri? baseUri = null,
             global::System.Collections.Generic.List<global::Vercel.EndPointAuthorization>? authorizations = null,
+            bool disposeHttpClient = true) : this(
+                httpClient,
+                baseUri,
+                authorizations,
+                options: null,
+                disposeHttpClient: disposeHttpClient)
+        {
+        }
+
+        /// <summary>
+        /// Creates a new instance of the VercelClient.
+        /// If no httpClient is provided, a new one will be created.
+        /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
+        /// </summary>
+        /// <param name="httpClient">The HttpClient instance. If not provided, a new one will be created.</param>
+        /// <param name="baseUri">The base URL for the API. If not provided, the default baseUri from OpenAPI spec will be used.</param>
+        /// <param name="authorizations">The authorizations to use for the requests.</param>
+        /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
+        /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
+        public VercelClient(
+            global::System.Net.Http.HttpClient? httpClient = null,
+            global::System.Uri? baseUri = null,
+            global::System.Collections.Generic.List<global::Vercel.EndPointAuthorization>? authorizations = null,
+            global::Vercel.AutoSDKClientOptions? options = null,
             bool disposeHttpClient = true)
         {
+
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
             HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Vercel.EndPointAuthorization>();
+            Options = options ?? new global::Vercel.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
 
             Initialized(HttpClient);

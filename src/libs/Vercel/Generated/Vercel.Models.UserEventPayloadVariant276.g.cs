@@ -11,9 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mfaEnabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool MfaEnabled { get; set; }
+        public required global::Vercel.UserEventPayloadVariant276Previous Previous { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant276Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant276" /> class.
         /// </summary>
-        /// <param name="mfaEnabled"></param>
+        /// <param name="previous"></param>
+        /// <param name="next"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant276(
-            bool mfaEnabled)
+            global::Vercel.UserEventPayloadVariant276Previous previous,
+            global::Vercel.UserEventPayloadVariant276Next next)
         {
-            this.MfaEnabled = mfaEnabled;
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

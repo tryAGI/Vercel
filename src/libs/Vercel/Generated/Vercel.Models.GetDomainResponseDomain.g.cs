@@ -16,6 +16,12 @@ namespace Vercel
         public required bool Suffix { get; set; }
 
         /// <summary>
+        /// Timestamp in milliseconds at which the domain is set to expire. null if not bought with Vercel.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        public double? ExpiresAt { get; set; }
+
+        /// <summary>
         /// If the domain has the ownership verified.<br/>
         /// Example: true
         /// </summary>
@@ -90,14 +96,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
-
-        /// <summary>
-        /// Timestamp in milliseconds at which the domain is set to expire. `null` if not bought with Vercel.<br/>
-        /// Example: 1613602938882L
-        /// </summary>
-        /// <example>1613602938882L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
-        public double? ExpiresAt { get; set; }
 
         /// <summary>
         /// The unique identifier of the domain.<br/>
@@ -192,6 +190,9 @@ namespace Vercel
         /// Example: zeit.world
         /// </param>
         /// <param name="userId"></param>
+        /// <param name="expiresAt">
+        /// Timestamp in milliseconds at which the domain is set to expire. null if not bought with Vercel.
+        /// </param>
         /// <param name="customNameservers">
         /// A list of custom nameservers for the domain to point to. Only applies to domains purchased with Vercel.<br/>
         /// Example: [ns1.nameserver.net, ns2.nameserver.net]
@@ -199,10 +200,6 @@ namespace Vercel
         /// <param name="teamId"></param>
         /// <param name="boughtAt">
         /// If it was purchased through Vercel, the timestamp in milliseconds when it was purchased.<br/>
-        /// Example: 1613602938882L
-        /// </param>
-        /// <param name="expiresAt">
-        /// Timestamp in milliseconds at which the domain is set to expire. `null` if not bought with Vercel.<br/>
         /// Example: 1613602938882L
         /// </param>
         /// <param name="renew">
@@ -231,15 +228,16 @@ namespace Vercel
             string id,
             global::Vercel.GetDomainResponseDomainServiceType serviceType,
             string userId,
+            double? expiresAt,
             global::System.Collections.Generic.IList<string>? customNameservers,
             string? teamId,
             double? boughtAt,
-            double? expiresAt,
             bool? renew,
             double? transferredAt,
             double? transferStartedAt)
         {
             this.Suffix = suffix;
+            this.ExpiresAt = expiresAt;
             this.Verified = verified;
             this.Nameservers = nameservers ?? throw new global::System.ArgumentNullException(nameof(nameservers));
             this.IntendedNameservers = intendedNameservers ?? throw new global::System.ArgumentNullException(nameof(intendedNameservers));
@@ -249,7 +247,6 @@ namespace Vercel
             this.TeamId = teamId;
             this.BoughtAt = boughtAt;
             this.CreatedAt = createdAt;
-            this.ExpiresAt = expiresAt;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Renew = renew;
             this.ServiceType = serviceType;

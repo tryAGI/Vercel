@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateOrTransferDomainResponse> CreateOrTransferDomainAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             global::Vercel.CreateOrTransferDomainRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Add an existing domain to the Vercel platform<br/>
@@ -37,12 +39,14 @@ namespace Vercel
         /// The domain operation to perform. It can be either `add` or `move-in`.<br/>
         /// Example: add
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateOrTransferDomainResponse> CreateOrTransferDomainAsync(
             string? teamId = default,
             string? slug = default,
             string? method = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

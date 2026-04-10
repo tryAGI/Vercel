@@ -21,6 +21,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateProjectResponse> UpdateProjectAsync(
@@ -29,6 +30,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update an existing project<br/>
@@ -153,6 +155,7 @@ namespace Vercel
         /// <param name="dismissedToasts">
         /// An array of objects representing a Dismissed Toast in regards to a Project. Objects are either merged with existing toasts (on key match), or added to the `dimissedToasts` array.`
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateProjectResponse> UpdateProjectAsync(
@@ -199,6 +202,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestOptionsAllowlist? optionsAllowlist = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestConnectConfiguration>? connectConfigurations = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestDismissedToast>? dismissedToasts = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

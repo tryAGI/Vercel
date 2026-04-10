@@ -19,6 +19,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AddProjectMemberResponse> AddProjectMemberAsync(
@@ -27,6 +28,7 @@ namespace Vercel
             global::Vercel.AddProjectMemberRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Adds a new member to a project.<br/>
@@ -58,6 +60,7 @@ namespace Vercel
         /// The project role of the member that will be added.<br/>
         /// Example: ADMIN
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AddProjectMemberResponse> AddProjectMemberAsync(
@@ -68,6 +71,7 @@ namespace Vercel
             string? uid = default,
             string? username = default,
             string? email = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

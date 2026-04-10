@@ -21,6 +21,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateDeploymentResponse> CreateDeploymentAsync(
@@ -30,6 +31,7 @@ namespace Vercel
             global::Vercel.CreateDeploymentSkipAutoDetectionConfirmation? skipAutoDetectionConfirmation = default,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a new deployment<br/>
@@ -88,6 +90,7 @@ namespace Vercel
         /// <param name="withLatestCommit">
         /// When `true` and `deploymentId` is passed in, the sha from the previous deployment's `gitSource` is removed forcing the latest commit to be used.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateDeploymentResponse> CreateDeploymentAsync(
@@ -107,6 +110,7 @@ namespace Vercel
             global::Vercel.CreateDeploymentRequestProjectSettings? projectSettings = default,
             string? target = default,
             bool? withLatestCommit = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

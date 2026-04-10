@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateSandboxResponse> CreateSandboxAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             global::Vercel.CreateSandboxRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a sandbox<br/>
@@ -64,6 +66,7 @@ namespace Vercel
         /// Default Value: {}<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateSandboxResponse> CreateSandboxAsync(
@@ -77,6 +80,7 @@ namespace Vercel
             int? timeout = default,
             global::Vercel.CreateSandboxRequestNetworkPolicy? networkPolicy = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

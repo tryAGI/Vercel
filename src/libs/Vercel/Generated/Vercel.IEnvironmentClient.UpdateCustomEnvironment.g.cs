@@ -21,6 +21,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateCustomEnvironmentResponse> UpdateCustomEnvironmentAsync(
@@ -30,6 +31,7 @@ namespace Vercel
             global::Vercel.UpdateCustomEnvironmentRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a custom environment<br/>
@@ -56,6 +58,7 @@ namespace Vercel
         /// <param name="branchMatcher">
         /// How we want to determine a matching branch. This is optional.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateCustomEnvironmentResponse> UpdateCustomEnvironmentAsync(
@@ -66,6 +69,7 @@ namespace Vercel
             string? requestSlug = default,
             string? description = default,
             global::Vercel.UpdateCustomEnvironmentRequestBranchMatcher? branchMatcher = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -25,6 +25,7 @@ namespace Vercel
             Authorizations.Add(new global::Vercel.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "HttpBearer",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,

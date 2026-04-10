@@ -16,6 +16,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.StageRoutesResponse> StageRoutesAsync(
@@ -24,6 +25,7 @@ namespace Vercel
             global::Vercel.StageRoutesRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Stage routing rules<br/>
@@ -40,6 +42,7 @@ namespace Vercel
         /// <param name="routes">
         /// Default Value: []
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.StageRoutesResponse> StageRoutesAsync(
@@ -48,6 +51,7 @@ namespace Vercel
             string? slug = default,
             bool? overwrite = default,
             global::System.Collections.Generic.IList<global::Vercel.StageRoutesRequestRoute>? routes = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

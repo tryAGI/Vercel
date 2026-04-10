@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("functionDefaultMemoryType")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("functionDefaultTimeout")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string FunctionDefaultMemoryType { get; set; }
+        public required double FunctionDefaultTimeout { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant162Next" /> class.
         /// </summary>
-        /// <param name="functionDefaultMemoryType"></param>
+        /// <param name="functionDefaultTimeout"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant162Next(
-            string functionDefaultMemoryType)
+            double functionDefaultTimeout)
         {
-            this.FunctionDefaultMemoryType = functionDefaultMemoryType ?? throw new global::System.ArgumentNullException(nameof(functionDefaultMemoryType));
+            this.FunctionDefaultTimeout = functionDefaultTimeout;
         }
 
         /// <summary>

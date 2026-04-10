@@ -10,12 +10,14 @@ namespace Vercel
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task SubmitPrepaymentBalancesAsync(
             string integrationConfigurationId,
 
             global::Vercel.SubmitPrepaymentBalancesRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Submit Prepayment Balances<br/>
@@ -26,12 +28,14 @@ namespace Vercel
         /// Server time of your integration, used to determine the most recent data for race conditions &amp; updates. Only the latest usage data for a given day, week, and month will be kept.
         /// </param>
         /// <param name="balances"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task SubmitPrepaymentBalancesAsync(
             string integrationConfigurationId,
             global::System.DateTime timestamp,
             global::System.Collections.Generic.IList<global::Vercel.SubmitPrepaymentBalancesRequestBalance> balances,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

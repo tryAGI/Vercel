@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateSharedEnvVariableResponse> UpdateSharedEnvVariableAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             global::Vercel.UpdateSharedEnvVariableRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Updates one or more shared environment variables<br/>
@@ -37,12 +39,14 @@ namespace Vercel
         /// An object where each key is an environment variable ID (not the key name) and the value is the update to apply<br/>
         /// Example: {"env_2WjyKQmM8ZnGcJsPWMrHRHrE":{"key":"API_URL","value":"https://api.vercel.com","target":["production","preview"],"projectIdUpdates":{"link":["prj_2WjyKQmM8ZnGcJsPWMrHRHrE"]}}}
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateSharedEnvVariableResponse> UpdateSharedEnvVariableAsync(
             global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateSharedEnvVariableRequestUpdates2> updates,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -18,6 +18,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateObservabilityConfigurationProjectResponse> UpdateObservabilityConfigurationProjectAsync(
@@ -26,6 +27,7 @@ namespace Vercel
             global::Vercel.UpdateObservabilityConfigurationProjectRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Updates a disabled Observability Plus project setting<br/>
@@ -43,6 +45,7 @@ namespace Vercel
         /// <param name="disabled">
         /// Whether Observability Plus should be disabled for the project
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateObservabilityConfigurationProjectResponse> UpdateObservabilityConfigurationProjectAsync(
@@ -50,6 +53,7 @@ namespace Vercel
             bool disabled,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

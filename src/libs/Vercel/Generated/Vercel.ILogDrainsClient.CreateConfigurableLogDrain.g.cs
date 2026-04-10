@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<string> CreateConfigurableLogDrainAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             global::Vercel.CreateConfigurableLogDrainRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Creates a Configurable Log Drain (deprecated)<br/>
@@ -55,6 +57,7 @@ namespace Vercel
         /// <param name="name">
         /// The custom name of this log drain.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<string> CreateConfigurableLogDrainAsync(
@@ -69,6 +72,7 @@ namespace Vercel
             string? secret = default,
             double? samplingRate = default,
             string? name = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

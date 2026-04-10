@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateMicrofrontendsGroupWithApplicationsResponse> CreateMicrofrontendsGroupWithApplicationsAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             global::Vercel.CreateMicrofrontendsGroupWithApplicationsRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a microfrontends group with applications<br/>
@@ -43,6 +45,7 @@ namespace Vercel
         /// <param name="otherApplications">
         /// The list of other applications that will be used in the new microfrontend group
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateMicrofrontendsGroupWithApplicationsResponse> CreateMicrofrontendsGroupWithApplicationsAsync(
@@ -51,6 +54,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.CreateMicrofrontendsGroupWithApplicationsRequestOtherApplication> otherApplications,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

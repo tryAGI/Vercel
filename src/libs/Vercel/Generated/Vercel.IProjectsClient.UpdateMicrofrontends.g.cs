@@ -19,6 +19,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateMicrofrontendsResponse> UpdateMicrofrontendsAsync(
@@ -27,6 +28,7 @@ namespace Vercel
             global::Vercel.UpdateMicrofrontendsRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update the microfrontends settings<br/>
@@ -64,6 +66,7 @@ namespace Vercel
         /// <param name="doNotRouteWithMicrofrontendsRouting">
         /// Whether domains in this project should route as a microfrontend. Can only be set for child applications.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateMicrofrontendsResponse> UpdateMicrofrontendsAsync(
@@ -76,6 +79,7 @@ namespace Vercel
             string? defaultRoute = default,
             bool? routeObservabilityToThisProject = default,
             bool? doNotRouteWithMicrofrontendsRouting = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

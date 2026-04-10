@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateLogDrainResponse> CreateLogDrainAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             global::Vercel.CreateLogDrainRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Creates a new Integration Log Drain (deprecated)<br/>
@@ -55,6 +57,7 @@ namespace Vercel
         /// Headers to be sent together with the request
         /// </param>
         /// <param name="environments"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateLogDrainResponse> CreateLogDrainAsync(
@@ -68,6 +71,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.CreateLogDrainRequestSource>? sources = default,
             global::System.Collections.Generic.Dictionary<string, string>? headers = default,
             global::System.Collections.Generic.IList<global::Vercel.CreateLogDrainRequestEnvironment>? environments = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

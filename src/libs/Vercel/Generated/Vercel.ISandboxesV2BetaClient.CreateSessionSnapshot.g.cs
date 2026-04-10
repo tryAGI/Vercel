@@ -19,6 +19,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateSessionSnapshotResponse> CreateSessionSnapshotAsync(
@@ -27,6 +28,7 @@ namespace Vercel
             global::Vercel.CreateSessionSnapshotRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a snapshot<br/>
@@ -45,6 +47,7 @@ namespace Vercel
         /// <param name="expiration">
         /// The number of milliseconds after which the snapshot will expire and be deleted. Use 0 for no expiration.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateSessionSnapshotResponse> CreateSessionSnapshotAsync(
@@ -52,6 +55,7 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             global::Vercel.OneOf<object, int?>? expiration = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
