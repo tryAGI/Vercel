@@ -16,7 +16,7 @@ namespace Vercel
         public required global::System.DateTime Timestamp { get; set; }
 
         /// <summary>
-        /// End of Day, the UTC datetime for when the end of the billing/usage day is in UTC time. This tells us which day the usage data is for, and also allows for your \"end of day\" to be different from UTC 00:00:00. eod must be within the period dates, and cannot be older than 24h earlier from our server's current time.
+        /// End of Day, the UTC datetime for when the end of the billing/usage day is in UTC time. This tells us which day the usage data is for, and also allows for your "end of day" to be different from UTC 00:00:00. eod must be within the period dates, and cannot be older than 24h earlier from our server's current time.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eod")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -57,7 +57,7 @@ namespace Vercel
         /// Server time of your integration, used to determine the most recent data for race conditions &amp; updates. Only the latest usage data for a given day, week, and month will be kept.
         /// </param>
         /// <param name="eod">
-        /// End of Day, the UTC datetime for when the end of the billing/usage day is in UTC time. This tells us which day the usage data is for, and also allows for your \"end of day\" to be different from UTC 00:00:00. eod must be within the period dates, and cannot be older than 24h earlier from our server's current time.
+        /// End of Day, the UTC datetime for when the end of the billing/usage day is in UTC time. This tells us which day the usage data is for, and also allows for your "end of day" to be different from UTC 00:00:00. eod must be within the period dates, and cannot be older than 24h earlier from our server's current time.
         /// </param>
         /// <param name="period">
         /// Period for the billing cycle. The period end date cannot be older than 24 hours earlier than our current server's time.

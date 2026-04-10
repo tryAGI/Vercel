@@ -4,12 +4,14 @@
 namespace Vercel
 {
     /// <summary>
-    /// Network access policy for the sandbox.\n    Controls which external hosts the sandbox can communicate with.\n    Use \"allow-all\" mode to allow all traffic, \"deny-all\" to block all traffic or \"custom\" to provide specific rules.
+    /// Network access policy for the sandbox.<br/>
+    ///     Controls which external hosts the sandbox can communicate with.<br/>
+    ///     Use "allow-all" mode to allow all traffic, "deny-all" to block all traffic or "custom" to provide specific rules.
     /// </summary>
     public sealed partial class UpdateNetworkPolicyRequest
     {
         /// <summary>
-        /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.<br/>
+        /// The network access policy mode. Use "allow-all" to permit all outbound traffic. Use "deny-all" to block all outbound traffic. Use "custom" to specify explicit allow/deny rules.<br/>
         /// Example: custom
         /// </summary>
         /// <example>custom</example>
@@ -19,7 +21,7 @@ namespace Vercel
         public required global::Vercel.UpdateNetworkPolicyRequestMode Mode { get; set; }
 
         /// <summary>
-        /// List of domain names the sandbox is allowed to connect to. Only applies when mode is \"custom\". Supports wildcard patterns (e.g., \"*.example.com\" matches all subdomains).<br/>
+        /// List of domain names the sandbox is allowed to connect to. Only applies when mode is "custom". Supports wildcard patterns (e.g., "*.example.com" matches all subdomains).<br/>
         /// Example: [api.github.com, *.npmjs.org]
         /// </summary>
         /// <example>[api.github.com, *.npmjs.org]</example>
@@ -52,11 +54,11 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateNetworkPolicyRequest" /> class.
         /// </summary>
         /// <param name="mode">
-        /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.<br/>
+        /// The network access policy mode. Use "allow-all" to permit all outbound traffic. Use "deny-all" to block all outbound traffic. Use "custom" to specify explicit allow/deny rules.<br/>
         /// Example: custom
         /// </param>
         /// <param name="allowedDomains">
-        /// List of domain names the sandbox is allowed to connect to. Only applies when mode is \"custom\". Supports wildcard patterns (e.g., \"*.example.com\" matches all subdomains).<br/>
+        /// List of domain names the sandbox is allowed to connect to. Only applies when mode is "custom". Supports wildcard patterns (e.g., "*.example.com" matches all subdomains).<br/>
         /// Example: [api.github.com, *.npmjs.org]
         /// </param>
         /// <param name="allowedCIDRs">

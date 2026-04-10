@@ -965,12 +965,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vercelRunExec")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelRunExec { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vpcPeeringConnection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VpcPeeringConnection { get; set; }
 
@@ -1610,7 +1604,6 @@ namespace Vercel
         /// <param name="usage"></param>
         /// <param name="usageCycle"></param>
         /// <param name="vercelRun"></param>
-        /// <param name="vercelRunExec"></param>
         /// <param name="vpcPeeringConnection"></param>
         /// <param name="webAnalyticsPlan"></param>
         /// <param name="webhook"></param>
@@ -1853,7 +1846,6 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? usage,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? usageCycle,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelRun,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelRunExec,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vpcPeeringConnection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalyticsPlan,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webhook,
@@ -2093,7 +2085,6 @@ namespace Vercel
             this.Usage = usage;
             this.UsageCycle = usageCycle;
             this.VercelRun = vercelRun;
-            this.VercelRunExec = vercelRunExec;
             this.VpcPeeringConnection = vpcPeeringConnection;
             this.WebAnalyticsPlan = webAnalyticsPlan;
             this.Webhook = webhook;

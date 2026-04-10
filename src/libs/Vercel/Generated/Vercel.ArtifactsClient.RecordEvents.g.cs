@@ -27,16 +27,16 @@ namespace Vercel
             };
         partial void PrepareRecordEventsArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string? xArtifactClientCi,
-            ref int? xArtifactClientInteractive,
+            ref string? x_xArtifactClientCi_,
+            ref int? x_xArtifactClientInteractive_,
             ref string? teamId,
             ref string? slug,
             global::System.Collections.Generic.IList<global::Vercel.RecordEventsRequestItem> request);
         partial void PrepareRecordEventsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string? xArtifactClientCi,
-            int? xArtifactClientInteractive,
+            string? x_xArtifactClientCi_,
+            int? x_xArtifactClientInteractive_,
             string? teamId,
             string? slug,
             global::System.Collections.Generic.IList<global::Vercel.RecordEventsRequestItem> request);
@@ -48,11 +48,11 @@ namespace Vercel
         /// Record an artifacts cache usage event<br/>
         /// Records an artifacts cache usage event. The body of this request is an array of cache usage events. The supported event types are `HIT` and `MISS`. The source is either `LOCAL` the cache event was on the users filesystem cache or `REMOTE` if the cache event is for a remote cache. When the event is a `HIT` the request also accepts a number `duration` which is the time taken to generate the artifact in the cache.
         /// </summary>
-        /// <param name="xArtifactClientCi">
+        /// <param name="x_xArtifactClientCi_">
         /// The continuous integration or delivery environment where this artifact is downloaded.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="xArtifactClientInteractive">
+        /// <param name="x_xArtifactClientInteractive_">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
@@ -69,8 +69,8 @@ namespace Vercel
         public async global::System.Threading.Tasks.Task RecordEventsAsync(
 
             global::System.Collections.Generic.IList<global::Vercel.RecordEventsRequestItem> request,
-            string? xArtifactClientCi = default,
-            int? xArtifactClientInteractive = default,
+            string? x_xArtifactClientCi_ = default,
+            int? x_xArtifactClientInteractive_ = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -82,8 +82,8 @@ namespace Vercel
                 client: HttpClient);
             PrepareRecordEventsArguments(
                 httpClient: HttpClient,
-                xArtifactClientCi: ref xArtifactClientCi,
-                xArtifactClientInteractive: ref xArtifactClientInteractive,
+                x_xArtifactClientCi_: ref x_xArtifactClientCi_,
+                x_xArtifactClientInteractive_: ref x_xArtifactClientInteractive_,
                 teamId: ref teamId,
                 slug: ref slug,
                 request: request);
@@ -147,13 +147,13 @@ namespace Vercel
                 } 
             }
 
-                if (xArtifactClientCi != default)
+                if (x_xArtifactClientCi_ != default)
                 {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-artifact-client-ci", xArtifactClientCi.ToString());
+                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Ci'", x_xArtifactClientCi_.ToString());
                 }
-                if (xArtifactClientInteractive != default)
+                if (x_xArtifactClientInteractive_ != default)
                 {
-                    __httpRequest.Headers.TryAddWithoutValidation("x-artifact-client-interactive", xArtifactClientInteractive.ToString());
+                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Interactive'", x_xArtifactClientInteractive_.ToString());
                 }
 
                             var __httpRequestContentBody = global::System.Text.Json.JsonSerializer.Serialize(request, request.GetType(), JsonSerializerContext);
@@ -173,8 +173,8 @@ namespace Vercel
                 PrepareRecordEventsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    xArtifactClientCi: xArtifactClientCi,
-                    xArtifactClientInteractive: xArtifactClientInteractive,
+                    x_xArtifactClientCi_: x_xArtifactClientCi_,
+                    x_xArtifactClientInteractive_: x_xArtifactClientInteractive_,
                     teamId: teamId,
                     slug: slug,
                     request: request);

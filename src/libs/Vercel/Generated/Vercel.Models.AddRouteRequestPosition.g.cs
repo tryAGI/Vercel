@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// Controls where the route is inserted. Defaults to \"end\" if omitted.
+    /// Controls where the route is inserted. Defaults to "end" if omitted.
     /// </summary>
     public sealed partial class AddRouteRequestPosition
     {
         /// <summary>
-        /// \"after\"/\"before\" require referenceId.
+        /// "after"/"before" require referenceId.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("placement")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AddRouteRequestPositionPlacementJsonConverter))]
         public global::Vercel.AddRouteRequestPositionPlacement? Placement { get; set; }
 
         /// <summary>
-        /// Route ID to insert after/before. Required for \"after\"/\"before\".
+        /// Route ID to insert after/before. Required for "after"/"before".
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("referenceId")]
         public string? ReferenceId { get; set; }
@@ -31,10 +31,10 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="AddRouteRequestPosition" /> class.
         /// </summary>
         /// <param name="placement">
-        /// \"after\"/\"before\" require referenceId.
+        /// "after"/"before" require referenceId.
         /// </param>
         /// <param name="referenceId">
-        /// Route ID to insert after/before. Required for \"after\"/\"before\".
+        /// Route ID to insert after/before. Required for "after"/"before".
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

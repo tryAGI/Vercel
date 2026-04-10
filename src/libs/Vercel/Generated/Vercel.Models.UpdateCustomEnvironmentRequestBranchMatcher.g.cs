@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class UpdateCustomEnvironmentRequestBranchMatcher
     {
         /// <summary>
-        /// Type of matcher. One of \"equals\", \"startsWith\", or \"endsWith\".
+        /// Type of matcher. One of "equals", "startsWith", or "endsWith".
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateCustomEnvironmentRequestBranchMatcherTypeJsonConverter))]
@@ -33,7 +33,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateCustomEnvironmentRequestBranchMatcher" /> class.
         /// </summary>
         /// <param name="type">
-        /// Type of matcher. One of \"equals\", \"startsWith\", or \"endsWith\".
+        /// Type of matcher. One of "equals", "startsWith", or "endsWith".
         /// </param>
         /// <param name="pattern">
         /// Git branch name or portion thereof.

@@ -76,7 +76,7 @@ namespace Vercel
         /// Example: 2019-12-09T23:00:38.976Z
         /// </param>
         /// <param name="types">
-        /// Comma-delimited list of event \"types\" to filter the results by.<br/>
+        /// Comma-delimited list of event "types" to filter the results by.<br/>
         /// Example: login,team-member-join,domain-buy
         /// </param>
         /// <param name="userId">

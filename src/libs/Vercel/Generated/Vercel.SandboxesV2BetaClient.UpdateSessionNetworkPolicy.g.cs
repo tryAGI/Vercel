@@ -662,11 +662,11 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="mode">
-        /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.<br/>
+        /// The network access policy mode. Use "allow-all" to permit all outbound traffic. Use "deny-all" to block all outbound traffic. Use "custom" to specify explicit allow/deny rules.<br/>
         /// Example: custom
         /// </param>
         /// <param name="allowedDomains">
-        /// List of domain names the sandbox is allowed to connect to. Only applies when mode is \"custom\". Supports wildcard patterns (e.g., \"*.example.com\" matches all subdomains).<br/>
+        /// List of domain names the sandbox is allowed to connect to. Only applies when mode is "custom". Supports wildcard patterns (e.g., "*.example.com" matches all subdomains).<br/>
         /// Example: [api.github.com, *.npmjs.org]
         /// </param>
         /// <param name="allowedCIDRs">

@@ -8,7 +8,7 @@ namespace Vercel
         /// Write files<br/>
         /// Uploads and extracts files to a session's filesystem. Files must be uploaded as a gzipped tarball (`.tar.gz`) with the `Content-Type` header set to `application/gzip`. The tarball contents are extracted to the session's working directory, or to a custom directory specified via the `x-cwd` header.
         /// </summary>
-        /// <param name="xCwd">
+        /// <param name="x_xCwd_">
         /// The target directory where the tarball contents will be extracted. If not specified, files are extracted to the sandbox home directory.<br/>
         /// Example: /home/vercel-sandbox
         /// </param>
@@ -27,7 +27,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<string> WriteSessionFilesAsync(
             string sessionId,
-            string? xCwd = default,
+            string? x_xCwd_ = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
