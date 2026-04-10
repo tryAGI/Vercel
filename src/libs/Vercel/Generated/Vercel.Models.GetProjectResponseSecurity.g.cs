@@ -100,6 +100,12 @@ namespace Vercel
         public global::Vercel.GetProjectResponseSecuritySecurityPlusMetadata? SecurityPlusMetadata { get; set; }
 
         /// <summary>
+        /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pageIntegrityEnabled")]
+        public bool? PageIntegrityEnabled { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -123,6 +129,9 @@ namespace Vercel
         /// <param name="logHeaders"></param>
         /// <param name="securityPlus"></param>
         /// <param name="securityPlusMetadata"></param>
+        /// <param name="pageIntegrityEnabled">
+        /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -141,7 +150,8 @@ namespace Vercel
             bool? botIdEnabled,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectResponseSecurityLogHeaders?>? logHeaders,
             bool? securityPlus,
-            global::Vercel.GetProjectResponseSecuritySecurityPlusMetadata? securityPlusMetadata)
+            global::Vercel.GetProjectResponseSecuritySecurityPlusMetadata? securityPlusMetadata,
+            bool? pageIntegrityEnabled)
         {
             this.AttackModeEnabled = attackModeEnabled;
             this.AttackModeUpdatedAt = attackModeUpdatedAt;
@@ -158,6 +168,7 @@ namespace Vercel
             this.LogHeaders = logHeaders;
             this.SecurityPlus = securityPlus;
             this.SecurityPlusMetadata = securityPlusMetadata;
+            this.PageIntegrityEnabled = pageIntegrityEnabled;
         }
 
         /// <summary>
