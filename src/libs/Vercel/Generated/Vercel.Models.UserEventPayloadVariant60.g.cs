@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketEmail")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string BitbucketEmail { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketLogin")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BitbucketLogin { get; set; }
@@ -18,9 +25,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketAccountId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string BitbucketAccountId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketName")]
+        public string? BitbucketName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant60" /> class.
         /// </summary>
+        /// <param name="bitbucketEmail"></param>
         /// <param name="bitbucketLogin"></param>
-        /// <param name="bitbucketAccountId"></param>
+        /// <param name="bitbucketName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant60(
+            string bitbucketEmail,
             string bitbucketLogin,
-            string bitbucketAccountId)
+            string? bitbucketName)
         {
+            this.BitbucketEmail = bitbucketEmail ?? throw new global::System.ArgumentNullException(nameof(bitbucketEmail));
             this.BitbucketLogin = bitbucketLogin ?? throw new global::System.ArgumentNullException(nameof(bitbucketLogin));
-            this.BitbucketAccountId = bitbucketAccountId ?? throw new global::System.ArgumentNullException(nameof(bitbucketAccountId));
+            this.BitbucketName = bitbucketName;
         }
 
         /// <summary>

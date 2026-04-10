@@ -19,15 +19,13 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("destinationId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DestinationId { get; set; }
+        public string? DestinationId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("destinationName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DestinationName { get; set; }
+        public string? DestinationName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,12 +44,12 @@ namespace Vercel
 #endif
         public UserEventPayloadVariant87(
             string name,
-            string destinationId,
-            string destinationName)
+            string? destinationId,
+            string? destinationName)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.DestinationId = destinationId ?? throw new global::System.ArgumentNullException(nameof(destinationId));
-            this.DestinationName = destinationName ?? throw new global::System.ArgumentNullException(nameof(destinationName));
+            this.DestinationId = destinationId;
+            this.DestinationName = destinationName;
         }
 
         /// <summary>

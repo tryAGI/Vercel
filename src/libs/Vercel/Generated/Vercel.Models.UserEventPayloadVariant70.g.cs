@@ -11,37 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Sha { get; set; }
+        public required string Url { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitUserPlatform")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitUserPlatform { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
+        public global::Vercel.UserEventPayloadVariant70OldTeam? OldTeam { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitCommitterName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitCommitterName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
+        public global::Vercel.UserEventPayloadVariant70NewTeam? NewTeam { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,26 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant70" /> class.
         /// </summary>
-        /// <param name="sha"></param>
-        /// <param name="gitUserPlatform"></param>
-        /// <param name="projectName"></param>
-        /// <param name="gitCommitterName"></param>
-        /// <param name="source"></param>
+        /// <param name="url"></param>
+        /// <param name="oldTeam"></param>
+        /// <param name="newTeam"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant70(
-            string sha,
-            string gitUserPlatform,
-            string projectName,
-            string gitCommitterName,
-            string source)
+            string url,
+            global::Vercel.UserEventPayloadVariant70OldTeam? oldTeam,
+            global::Vercel.UserEventPayloadVariant70NewTeam? newTeam)
         {
-            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
-            this.GitUserPlatform = gitUserPlatform ?? throw new global::System.ArgumentNullException(nameof(gitUserPlatform));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.GitCommitterName = gitCommitterName ?? throw new global::System.ArgumentNullException(nameof(gitCommitterName));
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.OldTeam = oldTeam;
+            this.NewTeam = newTeam;
         }
 
         /// <summary>

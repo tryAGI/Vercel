@@ -30,6 +30,18 @@ namespace Vercel
         public required global::Vercel.UserEventPayloadVariant53Project Project { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildsEnabled")]
+        public bool? BuildsEnabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passive")]
+        public bool? Passive { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -41,17 +53,23 @@ namespace Vercel
         /// <param name="team"></param>
         /// <param name="configuration"></param>
         /// <param name="project"></param>
+        /// <param name="buildsEnabled"></param>
+        /// <param name="passive"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant53(
             global::Vercel.UserEventPayloadVariant53Team team,
             global::Vercel.UserEventPayloadVariant53Configuration configuration,
-            global::Vercel.UserEventPayloadVariant53Project project)
+            global::Vercel.UserEventPayloadVariant53Project project,
+            bool? buildsEnabled,
+            bool? passive)
         {
             this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
             this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
             this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.BuildsEnabled = buildsEnabled;
+            this.Passive = passive;
         }
 
         /// <summary>

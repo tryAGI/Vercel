@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Email { get; set; }
+        public required bool Enabled { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevEmail")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("totpVerified")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PrevEmail { get; set; }
+        public required bool TotpVerified { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant279" /> class.
         /// </summary>
-        /// <param name="email"></param>
-        /// <param name="prevEmail"></param>
+        /// <param name="enabled"></param>
+        /// <param name="totpVerified"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant279(
-            string email,
-            string prevEmail)
+            bool enabled,
+            bool totpVerified)
         {
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.PrevEmail = prevEmail ?? throw new global::System.ArgumentNullException(nameof(prevEmail));
+            this.Enabled = enabled;
+            this.TotpVerified = totpVerified;
         }
 
         /// <summary>

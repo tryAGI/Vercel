@@ -23,14 +23,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        public global::System.Collections.Generic.IList<string>? Target { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("certId")]
+        public string? CertId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updated")]
-        public bool? Updated { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
+        public string? Origin { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,21 +43,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="target"></param>
-        /// <param name="updated"></param>
+        /// <param name="certId"></param>
+        /// <param name="origin"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant150(
             string? projectId,
             string? projectName,
-            global::System.Collections.Generic.IList<string>? target,
-            bool? updated)
+            string? certId,
+            string? origin)
         {
             this.ProjectId = projectId;
             this.ProjectName = projectName;
-            this.Target = target;
-            this.Updated = updated;
+            this.CertId = certId;
+            this.Origin = origin;
         }
 
         /// <summary>

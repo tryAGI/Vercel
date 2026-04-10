@@ -12,27 +12,27 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("passwordProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant195PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant195PasswordProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant195PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant195PasswordProtectionEnum2?>? PasswordProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
+        public global::Vercel.UserEventPayloadVariant195OptionsAllowlist? OptionsAllowlist { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldPasswordProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant195OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant195OldPasswordProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant195OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant195OldPasswordProtectionEnum2?>? OldPasswordProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldOptionsAllowlist")]
+        public global::Vercel.UserEventPayloadVariant195OldOptionsAllowlist? OldOptionsAllowlist { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,21 +45,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="passwordProtection"></param>
-        /// <param name="oldPasswordProtection"></param>
+        /// <param name="optionsAllowlist"></param>
+        /// <param name="oldOptionsAllowlist"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant195(
-            string? projectId,
-            string? projectName,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant195PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant195PasswordProtectionEnum2?>? passwordProtection,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant195OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant195OldPasswordProtectionEnum2?>? oldPasswordProtection)
+            string projectId,
+            string projectName,
+            global::Vercel.UserEventPayloadVariant195OptionsAllowlist? optionsAllowlist,
+            global::Vercel.UserEventPayloadVariant195OldOptionsAllowlist? oldOptionsAllowlist)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.PasswordProtection = passwordProtection;
-            this.OldPasswordProtection = oldPasswordProtection;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.OptionsAllowlist = optionsAllowlist;
+            this.OldOptionsAllowlist = oldOptionsAllowlist;
         }
 
         /// <summary>

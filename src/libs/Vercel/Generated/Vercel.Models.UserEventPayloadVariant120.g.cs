@@ -11,14 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("logDrainUrl")]
-        public string? LogDrainUrl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IntegrationId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationSlug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IntegrationSlug { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
-        public string? IntegrationName { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IntegrationName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant120" /> class.
         /// </summary>
-        /// <param name="logDrainUrl"></param>
+        /// <param name="integrationId"></param>
+        /// <param name="integrationSlug"></param>
         /// <param name="integrationName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant120(
-            string? logDrainUrl,
-            string? integrationName)
+            string integrationId,
+            string integrationSlug,
+            string integrationName)
         {
-            this.LogDrainUrl = logDrainUrl;
-            this.IntegrationName = integrationName;
+            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
+            this.IntegrationSlug = integrationSlug ?? throw new global::System.ArgumentNullException(nameof(integrationSlug));
+            this.IntegrationName = integrationName ?? throw new global::System.ArgumentNullException(nameof(integrationName));
         }
 
         /// <summary>

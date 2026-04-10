@@ -132,6 +132,12 @@ namespace Vercel
         public global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? StrictDeploymentProtectionSettings { get; set; }
 
         /// <summary>
+        /// When enabled, creating shareable links requires Owner role.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("strictShareableLinks")]
+        public global::Vercel.PatchTeamRequestStrictShareableLinks? StrictShareableLinks { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nsnbConfig")]
@@ -217,6 +223,9 @@ namespace Vercel
         /// <param name="strictDeploymentProtectionSettings">
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </param>
+        /// <param name="strictShareableLinks">
+        /// When enabled, creating shareable links requires Owner role.
+        /// </param>
         /// <param name="nsnbConfig"></param>
         /// <param name="defaultProjectJobs"></param>
         /// <param name="resourceConfig">
@@ -243,6 +252,7 @@ namespace Vercel
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
+            global::Vercel.PatchTeamRequestStrictShareableLinks? strictShareableLinks,
             global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>? nsnbConfig,
             global::Vercel.OneOf<global::Vercel.PatchTeamRequestDefaultProjectJobs, string>? defaultProjectJobs,
             global::Vercel.PatchTeamRequestResourceConfig? resourceConfig)
@@ -264,6 +274,7 @@ namespace Vercel
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
             this.DefaultExpirationSettings = defaultExpirationSettings;
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
+            this.StrictShareableLinks = strictShareableLinks;
             this.NsnbConfig = nsnbConfig;
             this.DefaultProjectJobs = defaultProjectJobs;
             this.ResourceConfig = resourceConfig;

@@ -11,30 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("exportId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ExportId { get; set; }
+        public required string Domain { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("from")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ips")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double From { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("to")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double To { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("format")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Format { get; set; }
+        public required global::System.Collections.Generic.IList<string> Ips { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant270" /> class.
         /// </summary>
-        /// <param name="exportId"></param>
-        /// <param name="from"></param>
-        /// <param name="to"></param>
-        /// <param name="format"></param>
+        /// <param name="domain"></param>
+        /// <param name="ips"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant270(
-            string exportId,
-            double from,
-            double to,
-            string format)
+            string domain,
+            global::System.Collections.Generic.IList<string> ips)
         {
-            this.ExportId = exportId ?? throw new global::System.ArgumentNullException(nameof(exportId));
-            this.From = from;
-            this.To = to;
-            this.Format = format ?? throw new global::System.ArgumentNullException(nameof(format));
+            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
+            this.Ips = ips ?? throw new global::System.ArgumentNullException(nameof(ips));
         }
 
         /// <summary>

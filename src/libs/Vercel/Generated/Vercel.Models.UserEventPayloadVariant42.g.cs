@@ -18,9 +18,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("versionId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("bulkRedirectsLimit")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string VersionId { get; set; }
+        public required double BulkRedirectsLimit { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevBulkRedirectsLimit")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double PrevBulkRedirectsLimit { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,16 +39,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant42" /> class.
         /// </summary>
         /// <param name="project"></param>
-        /// <param name="versionId"></param>
+        /// <param name="bulkRedirectsLimit"></param>
+        /// <param name="prevBulkRedirectsLimit"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant42(
             global::Vercel.UserEventPayloadVariant42Project project,
-            string versionId)
+            double bulkRedirectsLimit,
+            double prevBulkRedirectsLimit)
         {
             this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.VersionId = versionId ?? throw new global::System.ArgumentNullException(nameof(versionId));
+            this.BulkRedirectsLimit = bulkRedirectsLimit;
+            this.PrevBulkRedirectsLimit = prevBulkRedirectsLimit;
         }
 
         /// <summary>

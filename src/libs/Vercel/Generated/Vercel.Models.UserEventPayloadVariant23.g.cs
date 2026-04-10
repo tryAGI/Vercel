@@ -11,28 +11,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AppName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
+        public string? Alias { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("appId")]
-        public string? AppId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasId")]
+        public string? AliasId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant23Scope> Scopes { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
+        public string? UserId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
-        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant23Permission>? Permissions { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        public string? Username { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,23 +41,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant23" /> class.
         /// </summary>
-        /// <param name="appName"></param>
-        /// <param name="scopes"></param>
-        /// <param name="appId"></param>
-        /// <param name="permissions"></param>
+        /// <param name="alias"></param>
+        /// <param name="aliasId"></param>
+        /// <param name="userId"></param>
+        /// <param name="username"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant23(
-            string appName,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant23Scope> scopes,
-            string? appId,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant23Permission>? permissions)
+            string? alias,
+            string? aliasId,
+            string? userId,
+            string? username)
         {
-            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
-            this.AppId = appId;
-            this.Scopes = scopes ?? throw new global::System.ArgumentNullException(nameof(scopes));
-            this.Permissions = permissions;
+            this.Alias = alias;
+            this.AliasId = aliasId;
+            this.UserId = userId;
+            this.Username = username;
         }
 
         /// <summary>

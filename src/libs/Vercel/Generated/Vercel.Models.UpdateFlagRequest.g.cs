@@ -52,6 +52,12 @@ namespace Vercel
         public global::Vercel.UpdateFlagRequestState? State { get; set; }
 
         /// <summary>
+        /// The user ids of the maintainers of the flag
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("maintainerIds")]
+        public global::System.Collections.Generic.IList<string>? MaintainerIds { get; set; }
+
+        /// <summary>
         /// Whether this flag is marked as permanent, indicating it should not be removed
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
@@ -91,6 +97,9 @@ namespace Vercel
         /// A description of the flag
         /// </param>
         /// <param name="state"></param>
+        /// <param name="maintainerIds">
+        /// The user ids of the maintainers of the flag
+        /// </param>
         /// <param name="permanent">
         /// Whether this flag is marked as permanent, indicating it should not be removed
         /// </param>
@@ -108,6 +117,7 @@ namespace Vercel
             double? seed,
             string? description,
             global::Vercel.UpdateFlagRequestState? state,
+            global::System.Collections.Generic.IList<string>? maintainerIds,
             bool? permanent,
             global::System.Collections.Generic.IList<string>? tags)
         {
@@ -118,6 +128,7 @@ namespace Vercel
             this.Seed = seed;
             this.Description = description;
             this.State = state;
+            this.MaintainerIds = maintainerIds;
             this.Permanent = permanent;
             this.Tags = tags;
         }

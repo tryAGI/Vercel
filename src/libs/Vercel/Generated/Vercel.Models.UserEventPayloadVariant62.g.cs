@@ -11,9 +11,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Status { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
 
         /// <summary>
         /// 
@@ -31,16 +30,16 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant62" /> class.
         /// </summary>
-        /// <param name="status"></param>
         /// <param name="suffix"></param>
+        /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant62(
-            string status,
-            string suffix)
+            string suffix,
+            string? reason)
         {
-            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
+            this.Reason = reason;
             this.Suffix = suffix ?? throw new global::System.ArgumentNullException(nameof(suffix));
         }
 

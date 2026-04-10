@@ -638,6 +638,9 @@ namespace Vercel
         /// <param name="strictDeploymentProtectionSettings">
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </param>
+        /// <param name="strictShareableLinks">
+        /// When enabled, creating shareable links requires Owner role.
+        /// </param>
         /// <param name="nsnbConfig"></param>
         /// <param name="defaultProjectJobs"></param>
         /// <param name="resourceConfig">
@@ -666,6 +669,7 @@ namespace Vercel
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection = default,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings = default,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings = default,
+            global::Vercel.PatchTeamRequestStrictShareableLinks? strictShareableLinks = default,
             global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>? nsnbConfig = default,
             global::Vercel.OneOf<global::Vercel.PatchTeamRequestDefaultProjectJobs, string>? defaultProjectJobs = default,
             global::Vercel.PatchTeamRequestResourceConfig? resourceConfig = default,
@@ -691,6 +695,7 @@ namespace Vercel
                 DefaultDeploymentProtection = defaultDeploymentProtection,
                 DefaultExpirationSettings = defaultExpirationSettings,
                 StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings,
+                StrictShareableLinks = strictShareableLinks,
                 NsnbConfig = nsnbConfig,
                 DefaultProjectJobs = defaultProjectJobs,
                 ResourceConfig = resourceConfig,

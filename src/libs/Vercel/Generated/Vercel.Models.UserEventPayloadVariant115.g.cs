@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string UserId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IntegrationId { get; set; }
@@ -33,28 +40,13 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationName { get; set; }
+        public string? IntegrationName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectIds")]
-        public global::System.Collections.Generic.IList<string>? ProjectIds { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("confirmedScopes")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> ConfirmedScopes { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newOwner")]
+        public global::Vercel.UserEventPayloadVariant115NewOwner? NewOwner { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,32 +57,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant115" /> class.
         /// </summary>
+        /// <param name="userId"></param>
         /// <param name="integrationId"></param>
         /// <param name="configurationId"></param>
         /// <param name="integrationSlug"></param>
         /// <param name="integrationName"></param>
-        /// <param name="ownerId"></param>
-        /// <param name="confirmedScopes"></param>
-        /// <param name="projectIds"></param>
+        /// <param name="newOwner"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant115(
+            string userId,
             string integrationId,
             string configurationId,
             string integrationSlug,
-            string integrationName,
-            string ownerId,
-            global::System.Collections.Generic.IList<string> confirmedScopes,
-            global::System.Collections.Generic.IList<string>? projectIds)
+            string? integrationName,
+            global::Vercel.UserEventPayloadVariant115NewOwner? newOwner)
         {
+            this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
             this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
             this.ConfigurationId = configurationId ?? throw new global::System.ArgumentNullException(nameof(configurationId));
             this.IntegrationSlug = integrationSlug ?? throw new global::System.ArgumentNullException(nameof(integrationSlug));
-            this.IntegrationName = integrationName ?? throw new global::System.ArgumentNullException(nameof(integrationName));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.ProjectIds = projectIds;
-            this.ConfirmedScopes = confirmedScopes ?? throw new global::System.ArgumentNullException(nameof(confirmedScopes));
+            this.IntegrationName = integrationName;
+            this.NewOwner = newOwner;
         }
 
         /// <summary>

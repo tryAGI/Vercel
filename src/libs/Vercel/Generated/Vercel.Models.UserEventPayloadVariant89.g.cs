@@ -11,21 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("renew")]
+        public bool? Renew { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("price")]
-        public double? Price { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
-        public string? Currency { get; set; }
+        public required string Domain { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,20 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant89" /> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="price"></param>
-        /// <param name="currency"></param>
+        /// <param name="domain"></param>
+        /// <param name="renew"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant89(
-            string name,
-            double? price,
-            string? currency)
+            string domain,
+            bool? renew)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Price = price;
-            this.Currency = currency;
+            this.Renew = renew;
+            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
         }
 
         /// <summary>

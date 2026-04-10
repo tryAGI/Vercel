@@ -11,11 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Disable,
+        Challenge,
         /// <summary>
         /// 
         /// </summary>
-        Enable,
+        Deny,
+        /// <summary>
+        /// 
+        /// </summary>
+        Log,
     }
 
     /// <summary>
@@ -30,8 +34,9 @@ namespace Vercel
         {
             return value switch
             {
-                UserEventPayloadVariant112Action.Disable => "disable",
-                UserEventPayloadVariant112Action.Enable => "enable",
+                UserEventPayloadVariant112Action.Challenge => "challenge",
+                UserEventPayloadVariant112Action.Deny => "deny",
+                UserEventPayloadVariant112Action.Log => "log",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -42,8 +47,9 @@ namespace Vercel
         {
             return value switch
             {
-                "disable" => UserEventPayloadVariant112Action.Disable,
-                "enable" => UserEventPayloadVariant112Action.Enable,
+                "challenge" => UserEventPayloadVariant112Action.Challenge,
+                "deny" => UserEventPayloadVariant112Action.Deny,
+                "log" => UserEventPayloadVariant112Action.Log,
                 _ => null,
             };
         }

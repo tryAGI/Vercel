@@ -174,6 +174,12 @@ namespace Vercel
         public global::Vercel.TeamStrictDeploymentProtectionSettings? StrictDeploymentProtectionSettings { get; set; }
 
         /// <summary>
+        /// When enabled, creating shareable links requires Owner role.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("strictShareableLinks")]
+        public global::Vercel.TeamStrictShareableLinks? StrictShareableLinks { get; set; }
+
+        /// <summary>
         /// NSNB configuration for the team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nsnbConfig")]
@@ -324,6 +330,9 @@ namespace Vercel
         /// <param name="strictDeploymentProtectionSettings">
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </param>
+        /// <param name="strictShareableLinks">
+        /// When enabled, creating shareable links requires Owner role.
+        /// </param>
         /// <param name="nsnbConfig">
         /// NSNB configuration for the team.
         /// </param>
@@ -367,6 +376,7 @@ namespace Vercel
             bool? hideIpAddressesInLogDrains,
             global::System.Collections.Generic.IList<global::Vercel.TeamIpBucket>? ipBuckets,
             global::Vercel.TeamStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
+            global::Vercel.TeamStrictShareableLinks? strictShareableLinks,
             global::Vercel.TeamNsnbConfig? nsnbConfig,
             string? name,
             string? avatar)
@@ -395,6 +405,7 @@ namespace Vercel
             this.HideIpAddressesInLogDrains = hideIpAddressesInLogDrains;
             this.IpBuckets = ipBuckets;
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
+            this.StrictShareableLinks = strictShareableLinks;
             this.NsnbConfig = nsnbConfig;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));

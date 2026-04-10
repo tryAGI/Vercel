@@ -11,30 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant66Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("job")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("checkId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CheckId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("checkName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CheckName { get; set; }
+        public required global::Vercel.UserEventPayloadVariant66Job Job { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant66" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="checkId"></param>
-        /// <param name="checkName"></param>
+        /// <param name="project"></param>
+        /// <param name="job"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant66(
-            string projectId,
-            string projectName,
-            string checkId,
-            string checkName)
+            global::Vercel.UserEventPayloadVariant66Project project,
+            global::Vercel.UserEventPayloadVariant66Job job)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.CheckId = checkId ?? throw new global::System.ArgumentNullException(nameof(checkId));
-            this.CheckName = checkName ?? throw new global::System.ArgumentNullException(nameof(checkName));
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.Job = job ?? throw new global::System.ArgumentNullException(nameof(job));
         }
 
         /// <summary>

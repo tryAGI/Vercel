@@ -12,19 +12,15 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
-        public string? Alias { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Alias { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
-        public string? UserId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
-        public string? Username { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentUrl")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DeploymentUrl { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,19 +32,16 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant21" /> class.
         /// </summary>
         /// <param name="alias"></param>
-        /// <param name="userId"></param>
-        /// <param name="username"></param>
+        /// <param name="deploymentUrl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant21(
-            string? alias,
-            string? userId,
-            string? username)
+            string alias,
+            string deploymentUrl)
         {
-            this.Alias = alias;
-            this.UserId = userId;
-            this.Username = username;
+            this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
+            this.DeploymentUrl = deploymentUrl ?? throw new global::System.ArgumentNullException(nameof(deploymentUrl));
         }
 
         /// <summary>

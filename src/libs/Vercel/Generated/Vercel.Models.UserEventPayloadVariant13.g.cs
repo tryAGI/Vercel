@@ -11,27 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Alias { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
-        public global::Vercel.UserEventPayloadVariant13OldTeam? OldTeam { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasCount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double AliasCount { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
-        public global::Vercel.UserEventPayloadVariant13NewTeam? NewTeam { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
+        public global::Vercel.UserEventPayloadVariant13Deployment? Deployment { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -42,23 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant13" /> class.
         /// </summary>
-        /// <param name="alias"></param>
-        /// <param name="name"></param>
-        /// <param name="oldTeam"></param>
-        /// <param name="newTeam"></param>
+        /// <param name="projectId"></param>
+        /// <param name="aliasCount"></param>
+        /// <param name="deployment"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant13(
-            string alias,
-            string? name,
-            global::Vercel.UserEventPayloadVariant13OldTeam? oldTeam,
-            global::Vercel.UserEventPayloadVariant13NewTeam? newTeam)
+            string projectId,
+            double aliasCount,
+            global::Vercel.UserEventPayloadVariant13Deployment? deployment)
         {
-            this.Name = name;
-            this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
-            this.OldTeam = oldTeam;
-            this.NewTeam = newTeam;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.AliasCount = aliasCount;
+            this.Deployment = deployment;
         }
 
         /// <summary>

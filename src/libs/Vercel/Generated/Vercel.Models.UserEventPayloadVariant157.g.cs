@@ -11,44 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("elasticConcurrencyEnabled")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool ElasticConcurrencyEnabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldElasticConcurrencyEnabled")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool OldElasticConcurrencyEnabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildQueueConfiguration")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant157BuildQueueConfigurationJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant157BuildQueueConfiguration? BuildQueueConfiguration { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldBuildQueueConfiguration")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant157OldBuildQueueConfigurationJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant157OldBuildQueueConfiguration? OldBuildQueueConfiguration { get; set; }
+        public required string OwnerId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,29 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant157" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="elasticConcurrencyEnabled"></param>
-        /// <param name="oldElasticConcurrencyEnabled"></param>
-        /// <param name="buildQueueConfiguration"></param>
-        /// <param name="oldBuildQueueConfiguration"></param>
+        /// <param name="name"></param>
+        /// <param name="ownerId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant157(
-            string projectId,
-            string projectName,
-            bool elasticConcurrencyEnabled,
-            bool oldElasticConcurrencyEnabled,
-            global::Vercel.UserEventPayloadVariant157BuildQueueConfiguration? buildQueueConfiguration,
-            global::Vercel.UserEventPayloadVariant157OldBuildQueueConfiguration? oldBuildQueueConfiguration)
+            string name,
+            string ownerId)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
-            this.OldElasticConcurrencyEnabled = oldElasticConcurrencyEnabled;
-            this.BuildQueueConfiguration = buildQueueConfiguration;
-            this.OldBuildQueueConfiguration = oldBuildQueueConfiguration;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
         }
 
         /// <summary>

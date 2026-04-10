@@ -18,24 +18,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newInvoiceId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewInvoiceId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("settlementMethod")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant34SettlementMethodJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant34SettlementMethod SettlementMethod { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Amount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("refundReason")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RefundReason { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lineItemCount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double LineItemCount { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,22 +46,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant34" /> class.
         /// </summary>
         /// <param name="invoiceId"></param>
-        /// <param name="newInvoiceId"></param>
-        /// <param name="settlementMethod"></param>
         /// <param name="amount"></param>
+        /// <param name="refundReason"></param>
+        /// <param name="lineItemCount"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant34(
             string invoiceId,
-            string newInvoiceId,
-            global::Vercel.UserEventPayloadVariant34SettlementMethod settlementMethod,
-            double amount)
+            double amount,
+            string refundReason,
+            double lineItemCount)
         {
             this.InvoiceId = invoiceId ?? throw new global::System.ArgumentNullException(nameof(invoiceId));
-            this.NewInvoiceId = newInvoiceId ?? throw new global::System.ArgumentNullException(nameof(newInvoiceId));
-            this.SettlementMethod = settlementMethod;
             this.Amount = amount;
+            this.RefundReason = refundReason ?? throw new global::System.ArgumentNullException(nameof(refundReason));
+            this.LineItemCount = lineItemCount;
         }
 
         /// <summary>

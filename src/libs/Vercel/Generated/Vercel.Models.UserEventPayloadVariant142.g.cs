@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
@@ -18,29 +24,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalytics")]
+        public object? ProjectAnalytics { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant142ActionJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant142Action Action { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isEnvVar")]
-        public bool? IsEnvVar { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("note")]
-        public string? Note { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevProjectAnalytics")]
+        public object? PrevProjectAnalytics { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,24 +44,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="action"></param>
-        /// <param name="isEnvVar"></param>
-        /// <param name="note"></param>
+        /// <param name="projectAnalytics"></param>
+        /// <param name="prevProjectAnalytics"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant142(
             string projectId,
-            string projectName,
-            global::Vercel.UserEventPayloadVariant142Action action,
-            bool? isEnvVar,
-            string? note)
+            string? projectName,
+            object? projectAnalytics,
+            object? prevProjectAnalytics)
         {
+            this.ProjectName = projectName;
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Action = action;
-            this.IsEnvVar = isEnvVar;
-            this.Note = note;
+            this.ProjectAnalytics = projectAnalytics;
+            this.PrevProjectAnalytics = prevProjectAnalytics;
         }
 
         /// <summary>

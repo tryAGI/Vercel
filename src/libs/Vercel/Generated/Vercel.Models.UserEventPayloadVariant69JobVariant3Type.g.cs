@@ -1,0 +1,45 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public enum UserEventPayloadVariant69JobVariant3Type
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        Pr,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class UserEventPayloadVariant69JobVariant3TypeExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this UserEventPayloadVariant69JobVariant3Type value)
+        {
+            return value switch
+            {
+                UserEventPayloadVariant69JobVariant3Type.Pr => "pr",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static UserEventPayloadVariant69JobVariant3Type? ToEnum(string value)
+        {
+            return value switch
+            {
+                "pr" => UserEventPayloadVariant69JobVariant3Type.Pr,
+                _ => null,
+            };
+        }
+    }
+}
