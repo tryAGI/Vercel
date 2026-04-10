@@ -11,21 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("job")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant69JobVariant1, global::Vercel.UserEventPayloadVariant69JobVariant2, global::Vercel.UserEventPayloadVariant69JobVariant3, global::Vercel.UserEventPayloadVariant69JobVariant4, global::Vercel.UserEventPayloadVariant69JobVariant5, global::Vercel.UserEventPayloadVariant69JobVariant6, global::Vercel.UserEventPayloadVariant69JobVariant7, global::Vercel.UserEventPayloadVariant69JobVariant8>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
-        public global::Vercel.UserEventPayloadVariant69OldTeam? OldTeam { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
-        public global::Vercel.UserEventPayloadVariant69NewTeam? NewTeam { get; set; }
+        public required global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant69JobVariant1, global::Vercel.UserEventPayloadVariant69JobVariant2, global::Vercel.UserEventPayloadVariant69JobVariant3, global::Vercel.UserEventPayloadVariant69JobVariant4, global::Vercel.UserEventPayloadVariant69JobVariant5, global::Vercel.UserEventPayloadVariant69JobVariant6, global::Vercel.UserEventPayloadVariant69JobVariant7, global::Vercel.UserEventPayloadVariant69JobVariant8> Job { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,20 +25,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant69" /> class.
         /// </summary>
-        /// <param name="url"></param>
-        /// <param name="oldTeam"></param>
-        /// <param name="newTeam"></param>
+        /// <param name="job"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant69(
-            string url,
-            global::Vercel.UserEventPayloadVariant69OldTeam? oldTeam,
-            global::Vercel.UserEventPayloadVariant69NewTeam? newTeam)
+            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant69JobVariant1, global::Vercel.UserEventPayloadVariant69JobVariant2, global::Vercel.UserEventPayloadVariant69JobVariant3, global::Vercel.UserEventPayloadVariant69JobVariant4, global::Vercel.UserEventPayloadVariant69JobVariant5, global::Vercel.UserEventPayloadVariant69JobVariant6, global::Vercel.UserEventPayloadVariant69JobVariant7, global::Vercel.UserEventPayloadVariant69JobVariant8> job)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.OldTeam = oldTeam;
-            this.NewTeam = newTeam;
+            this.Job = job;
         }
 
         /// <summary>

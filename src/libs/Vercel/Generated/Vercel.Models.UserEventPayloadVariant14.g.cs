@@ -24,15 +24,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("aliasId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AliasId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
+        public global::Vercel.UserEventPayloadVariant14OldTeam? OldTeam { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
-        public string? DeploymentId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
+        public global::Vercel.UserEventPayloadVariant14NewTeam? NewTeam { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,22 +43,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant14" /> class.
         /// </summary>
         /// <param name="alias"></param>
-        /// <param name="aliasId"></param>
         /// <param name="name"></param>
-        /// <param name="deploymentId"></param>
+        /// <param name="oldTeam"></param>
+        /// <param name="newTeam"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant14(
             string alias,
-            string aliasId,
             string? name,
-            string? deploymentId)
+            global::Vercel.UserEventPayloadVariant14OldTeam? oldTeam,
+            global::Vercel.UserEventPayloadVariant14NewTeam? newTeam)
         {
             this.Name = name;
             this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
-            this.AliasId = aliasId ?? throw new global::System.ArgumentNullException(nameof(aliasId));
-            this.DeploymentId = deploymentId;
+            this.OldTeam = oldTeam;
+            this.NewTeam = newTeam;
         }
 
         /// <summary>

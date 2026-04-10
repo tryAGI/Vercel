@@ -11,21 +11,31 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("paymentMethodId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PaymentMethodId { get; set; }
+        public required string InvoiceId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("brand")]
-        public string? Brand { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newInvoiceId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NewInvoiceId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("last4")]
-        public string? Last4 { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("settlementMethod")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant35SettlementMethodJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant35SettlementMethod SettlementMethod { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Amount { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,20 +46,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant35" /> class.
         /// </summary>
-        /// <param name="paymentMethodId"></param>
-        /// <param name="brand"></param>
-        /// <param name="last4"></param>
+        /// <param name="invoiceId"></param>
+        /// <param name="newInvoiceId"></param>
+        /// <param name="settlementMethod"></param>
+        /// <param name="amount"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant35(
-            string paymentMethodId,
-            string? brand,
-            string? last4)
+            string invoiceId,
+            string newInvoiceId,
+            global::Vercel.UserEventPayloadVariant35SettlementMethod settlementMethod,
+            double amount)
         {
-            this.PaymentMethodId = paymentMethodId ?? throw new global::System.ArgumentNullException(nameof(paymentMethodId));
-            this.Brand = brand;
-            this.Last4 = last4;
+            this.InvoiceId = invoiceId ?? throw new global::System.ArgumentNullException(nameof(invoiceId));
+            this.NewInvoiceId = newInvoiceId ?? throw new global::System.ArgumentNullException(nameof(newInvoiceId));
+            this.SettlementMethod = settlementMethod;
+            this.Amount = amount;
         }
 
         /// <summary>

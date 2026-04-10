@@ -11,43 +11,43 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required string IntegrationId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("configurationId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Value { get; set; }
+        public required string ConfigurationId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationSlug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required string IntegrationSlug { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Domain { get; set; }
+        public required string IntegrationName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Type { get; set; }
+        public required string OwnerId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mxPriority")]
-        public double? MxPriority { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectIds")]
+        public global::System.Collections.Generic.IList<string>? ProjectIds { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,29 +58,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant73" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="value"></param>
-        /// <param name="name"></param>
-        /// <param name="domain"></param>
-        /// <param name="type"></param>
-        /// <param name="mxPriority"></param>
+        /// <param name="integrationId"></param>
+        /// <param name="configurationId"></param>
+        /// <param name="integrationSlug"></param>
+        /// <param name="integrationName"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="projectIds"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant73(
-            string id,
-            string value,
-            string name,
-            string domain,
-            string type,
-            double? mxPriority)
+            string integrationId,
+            string configurationId,
+            string integrationSlug,
+            string integrationName,
+            string ownerId,
+            global::System.Collections.Generic.IList<string>? projectIds)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
-            this.MxPriority = mxPriority;
+            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
+            this.ConfigurationId = configurationId ?? throw new global::System.ArgumentNullException(nameof(configurationId));
+            this.IntegrationSlug = integrationSlug ?? throw new global::System.ArgumentNullException(nameof(integrationSlug));
+            this.IntegrationName = integrationName ?? throw new global::System.ArgumentNullException(nameof(integrationName));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.ProjectIds = projectIds;
         }
 
         /// <summary>

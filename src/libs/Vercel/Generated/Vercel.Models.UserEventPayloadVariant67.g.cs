@@ -11,75 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
-        public global::System.Collections.Generic.IList<string>? Alias { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        public string? Target { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
-        public global::Vercel.UserEventPayloadVariant67Deployment? Deployment { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("forced")]
-        public bool? Forced { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
-        public string? DeploymentId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
-        public string? Plan { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        public string? Project { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("regions")]
-        public global::System.Collections.Generic.IList<string>? Regions { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string? Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("checkId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CheckId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("checkName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CheckName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -90,47 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant67" /> class.
         /// </summary>
-        /// <param name="url"></param>
-        /// <param name="name"></param>
-        /// <param name="alias"></param>
-        /// <param name="target"></param>
-        /// <param name="deployment"></param>
-        /// <param name="forced"></param>
-        /// <param name="deploymentId"></param>
-        /// <param name="plan"></param>
-        /// <param name="project"></param>
         /// <param name="projectId"></param>
-        /// <param name="regions"></param>
-        /// <param name="type"></param>
+        /// <param name="projectName"></param>
+        /// <param name="checkId"></param>
+        /// <param name="checkName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant67(
-            string url,
-            string? name,
-            global::System.Collections.Generic.IList<string>? alias,
-            string? target,
-            global::Vercel.UserEventPayloadVariant67Deployment? deployment,
-            bool? forced,
-            string? deploymentId,
-            string? plan,
-            string? project,
-            string? projectId,
-            global::System.Collections.Generic.IList<string>? regions,
-            string? type)
+            string projectId,
+            string projectName,
+            string checkId,
+            string checkName)
         {
-            this.Name = name;
-            this.Alias = alias;
-            this.Target = target;
-            this.Deployment = deployment;
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.Forced = forced;
-            this.DeploymentId = deploymentId;
-            this.Plan = plan;
-            this.Project = project;
-            this.ProjectId = projectId;
-            this.Regions = regions;
-            this.Type = type;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.CheckId = checkId ?? throw new global::System.ArgumentNullException(nameof(checkId));
+            this.CheckName = checkName ?? throw new global::System.ArgumentNullException(nameof(checkName));
         }
 
         /// <summary>

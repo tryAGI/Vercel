@@ -15,12 +15,6 @@ namespace Vercel
         public string? Alias { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
-        public string? Email { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -30,16 +24,13 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant17" /> class.
         /// </summary>
         /// <param name="alias"></param>
-        /// <param name="email"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant17(
-            string? alias,
-            string? email)
+            string? alias)
         {
             this.Alias = alias;
-            this.Email = email;
         }
 
         /// <summary>

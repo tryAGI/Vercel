@@ -32,8 +32,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("blockReason")]
-        public string? BlockReason { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +47,7 @@ namespace Vercel
         /// <param name="ownerId"></param>
         /// <param name="source"></param>
         /// <param name="cause"></param>
-        /// <param name="blockReason"></param>
+        /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -55,12 +55,12 @@ namespace Vercel
             string ownerId,
             string source,
             string cause,
-            string? blockReason)
+            string? reason)
         {
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
             this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
-            this.BlockReason = blockReason;
+            this.Reason = reason;
         }
 
         /// <summary>

@@ -9,36 +9,29 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant30
     {
         /// <summary>
-        /// 
+        /// The App's name at the moment this even was published (it may have changed since then).
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string AppName { get; set; }
 
         /// <summary>
-        /// 
+        /// The App's ID. Note that not all historical events have this field.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevAttackModeEnabled")]
-        public bool? PrevAttackModeEnabled { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("appId")]
+        public string? AppId { get; set; }
 
         /// <summary>
-        /// 
+        /// Note that not all historical events have this field.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevAttackModeActiveUntil")]
-        public double? PrevAttackModeActiveUntil { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("app")]
+        public global::Vercel.UserEventPayloadVariant30App? App { get; set; }
 
         /// <summary>
-        /// 
+        /// UNIX timestamp in seconds. Tokens issued before this timestamp will be revoked. Note that not all historical events have this field.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("attackModeEnabled")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool AttackModeEnabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("attackModeActiveUntil")]
-        public double? AttackModeActiveUntil { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("issuedBefore")]
+        public double? IssuedBefore { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,26 +42,31 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant30" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="attackModeEnabled"></param>
-        /// <param name="prevAttackModeEnabled"></param>
-        /// <param name="prevAttackModeActiveUntil"></param>
-        /// <param name="attackModeActiveUntil"></param>
+        /// <param name="appName">
+        /// The App's name at the moment this even was published (it may have changed since then).
+        /// </param>
+        /// <param name="appId">
+        /// The App's ID. Note that not all historical events have this field.
+        /// </param>
+        /// <param name="app">
+        /// Note that not all historical events have this field.
+        /// </param>
+        /// <param name="issuedBefore">
+        /// UNIX timestamp in seconds. Tokens issued before this timestamp will be revoked. Note that not all historical events have this field.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant30(
-            string projectId,
-            bool attackModeEnabled,
-            bool? prevAttackModeEnabled,
-            double? prevAttackModeActiveUntil,
-            double? attackModeActiveUntil)
+            string appName,
+            string? appId,
+            global::Vercel.UserEventPayloadVariant30App? app,
+            double? issuedBefore)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.PrevAttackModeEnabled = prevAttackModeEnabled;
-            this.PrevAttackModeActiveUntil = prevAttackModeActiveUntil;
-            this.AttackModeEnabled = attackModeEnabled;
-            this.AttackModeActiveUntil = attackModeActiveUntil;
+            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
+            this.AppId = appId;
+            this.App = app;
+            this.IssuedBefore = issuedBefore;
         }
 
         /// <summary>

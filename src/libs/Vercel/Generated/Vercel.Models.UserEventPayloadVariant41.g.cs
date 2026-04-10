@@ -11,23 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant41Project Project { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionId")]
+        public string? SubscriptionId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bulkRedirectsLimit")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("productAliases")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double BulkRedirectsLimit { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevBulkRedirectsLimit")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double PrevBulkRedirectsLimit { get; set; }
+        public required global::System.Collections.Generic.IList<string> ProductAliases { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant41" /> class.
         /// </summary>
-        /// <param name="project"></param>
-        /// <param name="bulkRedirectsLimit"></param>
-        /// <param name="prevBulkRedirectsLimit"></param>
+        /// <param name="productAliases"></param>
+        /// <param name="subscriptionId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant41(
-            global::Vercel.UserEventPayloadVariant41Project project,
-            double bulkRedirectsLimit,
-            double prevBulkRedirectsLimit)
+            global::System.Collections.Generic.IList<string> productAliases,
+            string? subscriptionId)
         {
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.BulkRedirectsLimit = bulkRedirectsLimit;
-            this.PrevBulkRedirectsLimit = prevBulkRedirectsLimit;
+            this.SubscriptionId = subscriptionId;
+            this.ProductAliases = productAliases ?? throw new global::System.ArgumentNullException(nameof(productAliases));
         }
 
         /// <summary>

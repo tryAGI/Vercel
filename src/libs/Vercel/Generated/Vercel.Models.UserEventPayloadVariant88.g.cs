@@ -11,15 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("renew")]
-        public bool? Renew { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Domain { get; set; }
+        public required string DestinationId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DestinationName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant88" /> class.
         /// </summary>
-        /// <param name="domain"></param>
-        /// <param name="renew"></param>
+        /// <param name="name"></param>
+        /// <param name="destinationId"></param>
+        /// <param name="destinationName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant88(
-            string domain,
-            bool? renew)
+            string name,
+            string destinationId,
+            string destinationName)
         {
-            this.Renew = renew;
-            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.DestinationId = destinationId ?? throw new global::System.ArgumentNullException(nameof(destinationId));
+            this.DestinationName = destinationName ?? throw new global::System.ArgumentNullException(nameof(destinationName));
         }
 
         /// <summary>

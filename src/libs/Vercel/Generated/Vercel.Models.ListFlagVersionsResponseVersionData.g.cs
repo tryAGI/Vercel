@@ -17,6 +17,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("maintainerIds")]
+        public global::System.Collections.Generic.IList<string>? MaintainerIds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
         public bool? Permanent { get; set; }
 
@@ -75,6 +81,7 @@ namespace Vercel
         /// <param name="seed"></param>
         /// <param name="state"></param>
         /// <param name="description"></param>
+        /// <param name="maintainerIds"></param>
         /// <param name="permanent"></param>
         /// <param name="tags"></param>
         /// <param name="experiment"></param>
@@ -87,11 +94,13 @@ namespace Vercel
             double seed,
             global::Vercel.ListFlagVersionsResponseVersionDataState state,
             string? description,
+            global::System.Collections.Generic.IList<string>? maintainerIds,
             bool? permanent,
             global::System.Collections.Generic.IList<string>? tags,
             global::Vercel.ListFlagVersionsResponseVersionDataExperiment? experiment)
         {
             this.Description = description;
+            this.MaintainerIds = maintainerIds;
             this.Permanent = permanent;
             this.Tags = tags;
             this.Experiment = experiment;

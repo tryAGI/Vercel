@@ -23,11 +23,18 @@ namespace Vercel
         public required string EdgeConfigSlug { get; set; }
 
         /// <summary>
-        /// ids of deleted tokens
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenIds")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> EdgeConfigTokenIds { get; set; }
+        public required string EdgeConfigTokenId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Label { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,20 +47,21 @@ namespace Vercel
         /// </summary>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigSlug"></param>
-        /// <param name="edgeConfigTokenIds">
-        /// ids of deleted tokens
-        /// </param>
+        /// <param name="edgeConfigTokenId"></param>
+        /// <param name="label"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant99(
             string edgeConfigId,
             string edgeConfigSlug,
-            global::System.Collections.Generic.IList<string> edgeConfigTokenIds)
+            string edgeConfigTokenId,
+            string label)
         {
             this.EdgeConfigId = edgeConfigId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigId));
             this.EdgeConfigSlug = edgeConfigSlug ?? throw new global::System.ArgumentNullException(nameof(edgeConfigSlug));
-            this.EdgeConfigTokenIds = edgeConfigTokenIds ?? throw new global::System.ArgumentNullException(nameof(edgeConfigTokenIds));
+            this.EdgeConfigTokenId = edgeConfigTokenId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigTokenId));
+            this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
         }
 
         /// <summary>

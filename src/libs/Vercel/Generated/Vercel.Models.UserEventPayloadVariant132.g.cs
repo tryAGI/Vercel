@@ -30,6 +30,12 @@ namespace Vercel
         public required string Cause { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("blockReason")]
+        public string? BlockReason { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -41,17 +47,20 @@ namespace Vercel
         /// <param name="ownerId"></param>
         /// <param name="source"></param>
         /// <param name="cause"></param>
+        /// <param name="blockReason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant132(
             string ownerId,
             string source,
-            string cause)
+            string cause,
+            string? blockReason)
         {
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
             this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
+            this.BlockReason = blockReason;
         }
 
         /// <summary>

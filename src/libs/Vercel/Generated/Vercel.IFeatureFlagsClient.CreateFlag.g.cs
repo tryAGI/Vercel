@@ -61,6 +61,9 @@ namespace Vercel
         /// A description of the flag
         /// </param>
         /// <param name="state"></param>
+        /// <param name="maintainerIds">
+        /// The user ids of the maintainers of the flag
+        /// </param>
         /// <param name="permanent">
         /// Whether this flag is marked as permanent, indicating it should not be removed
         /// </param>
@@ -81,6 +84,7 @@ namespace Vercel
             double? seed = default,
             string? description = default,
             global::Vercel.CreateFlagRequestState? state = default,
+            global::System.Collections.Generic.IList<string>? maintainerIds = default,
             bool? permanent = default,
             global::System.Collections.Generic.IList<string>? tags = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

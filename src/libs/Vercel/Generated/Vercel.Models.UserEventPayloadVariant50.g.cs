@@ -11,9 +11,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant50Configuration Configuration { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cn")]
+        public string? Cn { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cns")]
+        public global::System.Collections.Generic.IList<string>? Cns { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant50" /> class.
         /// </summary>
-        /// <param name="configuration"></param>
+        /// <param name="cn"></param>
+        /// <param name="cns"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant50(
-            global::Vercel.UserEventPayloadVariant50Configuration configuration)
+            string? cn,
+            global::System.Collections.Generic.IList<string>? cns)
         {
-            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.Cn = cn;
+            this.Cns = cns;
         }
 
         /// <summary>

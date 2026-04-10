@@ -11,9 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("githubLogin")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GithubLogin { get; set; }
+        public required global::Vercel.UserEventPayloadVariant55Team Team { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant55Configuration Configuration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NewName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant55" /> class.
         /// </summary>
-        /// <param name="githubLogin"></param>
+        /// <param name="team"></param>
+        /// <param name="configuration"></param>
+        /// <param name="newName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant55(
-            string githubLogin)
+            global::Vercel.UserEventPayloadVariant55Team team,
+            global::Vercel.UserEventPayloadVariant55Configuration configuration,
+            string newName)
         {
-            this.GithubLogin = githubLogin ?? throw new global::System.ArgumentNullException(nameof(githubLogin));
+            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
+            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.NewName = newName ?? throw new global::System.ArgumentNullException(nameof(newName));
         }
 
         /// <summary>

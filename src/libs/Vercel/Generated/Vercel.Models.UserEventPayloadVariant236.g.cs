@@ -11,48 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("transferRequestCode")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required string TransferRequestCode { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("computeUnitsMax")]
-        public double? ComputeUnitsMax { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("computeUnitsMin")]
-        public double? ComputeUnitsMin { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("suspendTimeoutSeconds")]
-        public double? SuspendTimeoutSeconds { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant236TypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant236Type Type { get; set; }
+        public required global::Vercel.UserEventPayloadVariant236Store Store { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("access")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant236AccessJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant236Access? Access { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("originTeamId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OriginTeamId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("originTeamName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OriginTeamName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -63,32 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant236" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="type"></param>
-        /// <param name="name"></param>
-        /// <param name="computeUnitsMax"></param>
-        /// <param name="computeUnitsMin"></param>
-        /// <param name="suspendTimeoutSeconds"></param>
-        /// <param name="access"></param>
+        /// <param name="transferRequestCode"></param>
+        /// <param name="store"></param>
+        /// <param name="originTeamId"></param>
+        /// <param name="originTeamName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant236(
-            string id,
-            global::Vercel.UserEventPayloadVariant236Type type,
-            string? name,
-            double? computeUnitsMax,
-            double? computeUnitsMin,
-            double? suspendTimeoutSeconds,
-            global::Vercel.UserEventPayloadVariant236Access? access)
+            string transferRequestCode,
+            global::Vercel.UserEventPayloadVariant236Store store,
+            string originTeamId,
+            string originTeamName)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Name = name;
-            this.ComputeUnitsMax = computeUnitsMax;
-            this.ComputeUnitsMin = computeUnitsMin;
-            this.SuspendTimeoutSeconds = suspendTimeoutSeconds;
-            this.Type = type;
-            this.Access = access;
+            this.TransferRequestCode = transferRequestCode ?? throw new global::System.ArgumentNullException(nameof(transferRequestCode));
+            this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
+            this.OriginTeamId = originTeamId ?? throw new global::System.ArgumentNullException(nameof(originTeamId));
+            this.OriginTeamName = originTeamName ?? throw new global::System.ArgumentNullException(nameof(originTeamName));
         }
 
         /// <summary>

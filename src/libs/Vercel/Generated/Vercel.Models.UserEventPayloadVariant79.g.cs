@@ -18,23 +18,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string UserId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
+        public global::Vercel.UserEventPayloadVariant79OldTeam? OldTeam { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TeamId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
+        public global::Vercel.UserEventPayloadVariant79NewTeam? NewTeam { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,22 +37,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant79" /> class.
         /// </summary>
         /// <param name="name"></param>
-        /// <param name="userId"></param>
-        /// <param name="teamId"></param>
-        /// <param name="ownerName"></param>
+        /// <param name="oldTeam"></param>
+        /// <param name="newTeam"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant79(
             string name,
-            string userId,
-            string teamId,
-            string ownerName)
+            global::Vercel.UserEventPayloadVariant79OldTeam? oldTeam,
+            global::Vercel.UserEventPayloadVariant79NewTeam? newTeam)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
-            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
-            this.OwnerName = ownerName ?? throw new global::System.ArgumentNullException(nameof(ownerName));
+            this.OldTeam = oldTeam;
+            this.NewTeam = newTeam;
         }
 
         /// <summary>

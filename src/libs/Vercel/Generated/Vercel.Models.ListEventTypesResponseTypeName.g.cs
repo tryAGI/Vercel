@@ -43,6 +43,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayApiKeyCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayApiKeyDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         AlertRuleCreated,
         /// <summary>
         /// 
@@ -1419,6 +1427,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        StrictShareableLinks,
+        /// <summary>
+        /// 
+        /// </summary>
         SubscriptionCreated,
         /// <summary>
         /// 
@@ -1710,6 +1722,8 @@ namespace Vercel
                 ListEventTypesResponseTypeName.AccessGroupUserRemoved => "access-group-user-removed",
                 ListEventTypesResponseTypeName.AiAlertInvestigation => "ai-alert-investigation",
                 ListEventTypesResponseTypeName.AiCodeReview => "ai-code-review",
+                ListEventTypesResponseTypeName.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
+                ListEventTypesResponseTypeName.AiGatewayApiKeyDeleted => "ai-gateway-api-key-deleted",
                 ListEventTypesResponseTypeName.AlertRuleCreated => "alert-rule-created",
                 ListEventTypesResponseTypeName.AlertRuleDeleted => "alert-rule-deleted",
                 ListEventTypesResponseTypeName.AlertRuleUpdated => "alert-rule-updated",
@@ -2054,6 +2068,7 @@ namespace Vercel
                 ListEventTypesResponseTypeName.StorageUpdateProjectConnection => "storage-update-project-connection",
                 ListEventTypesResponseTypeName.StorageViewSecret => "storage-view-secret",
                 ListEventTypesResponseTypeName.StrictDeploymentProtectionSettings => "strict-deployment-protection-settings",
+                ListEventTypesResponseTypeName.StrictShareableLinks => "strict-shareable-links",
                 ListEventTypesResponseTypeName.SubscriptionCreated => "subscription-created",
                 ListEventTypesResponseTypeName.SubscriptionProductAdded => "subscription-product-added",
                 ListEventTypesResponseTypeName.SubscriptionProductRemoved => "subscription-product-removed",
@@ -2140,6 +2155,8 @@ namespace Vercel
                 "access-group-user-removed" => ListEventTypesResponseTypeName.AccessGroupUserRemoved,
                 "ai-alert-investigation" => ListEventTypesResponseTypeName.AiAlertInvestigation,
                 "ai-code-review" => ListEventTypesResponseTypeName.AiCodeReview,
+                "ai-gateway-api-key-created" => ListEventTypesResponseTypeName.AiGatewayApiKeyCreated,
+                "ai-gateway-api-key-deleted" => ListEventTypesResponseTypeName.AiGatewayApiKeyDeleted,
                 "alert-rule-created" => ListEventTypesResponseTypeName.AlertRuleCreated,
                 "alert-rule-deleted" => ListEventTypesResponseTypeName.AlertRuleDeleted,
                 "alert-rule-updated" => ListEventTypesResponseTypeName.AlertRuleUpdated,
@@ -2484,6 +2501,7 @@ namespace Vercel
                 "storage-update-project-connection" => ListEventTypesResponseTypeName.StorageUpdateProjectConnection,
                 "storage-view-secret" => ListEventTypesResponseTypeName.StorageViewSecret,
                 "strict-deployment-protection-settings" => ListEventTypesResponseTypeName.StrictDeploymentProtectionSettings,
+                "strict-shareable-links" => ListEventTypesResponseTypeName.StrictShareableLinks,
                 "subscription-created" => ListEventTypesResponseTypeName.SubscriptionCreated,
                 "subscription-product-added" => ListEventTypesResponseTypeName.SubscriptionProductAdded,
                 "subscription-product-removed" => ListEventTypesResponseTypeName.SubscriptionProductRemoved,

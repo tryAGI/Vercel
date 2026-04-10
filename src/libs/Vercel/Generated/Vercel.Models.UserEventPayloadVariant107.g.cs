@@ -30,6 +30,12 @@ namespace Vercel
         public required string Source { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        public double? ExpiresAt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -41,17 +47,20 @@ namespace Vercel
         /// <param name="projectId"></param>
         /// <param name="scope"></param>
         /// <param name="source"></param>
+        /// <param name="expiresAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant107(
             string projectId,
             string scope,
-            string source)
+            string source,
+            double? expiresAt)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Scope = scope ?? throw new global::System.ArgumentNullException(nameof(scope));
             this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.ExpiresAt = expiresAt;
         }
 
         /// <summary>

@@ -11,23 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfig")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant97EdgeConfig EdgeConfig { get; set; }
+        public required string EdgeConfigId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fromAccount")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSlug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant97FromAccount FromAccount { get; set; }
+        public required string EdgeConfigSlug { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("toAccount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant97ToAccount ToAccount { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigDigest")]
+        public string? EdgeConfigDigest { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant97" /> class.
         /// </summary>
-        /// <param name="edgeConfig"></param>
-        /// <param name="fromAccount"></param>
-        /// <param name="toAccount"></param>
+        /// <param name="edgeConfigId"></param>
+        /// <param name="edgeConfigSlug"></param>
+        /// <param name="edgeConfigDigest"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant97(
-            global::Vercel.UserEventPayloadVariant97EdgeConfig edgeConfig,
-            global::Vercel.UserEventPayloadVariant97FromAccount fromAccount,
-            global::Vercel.UserEventPayloadVariant97ToAccount toAccount)
+            string edgeConfigId,
+            string edgeConfigSlug,
+            string? edgeConfigDigest)
         {
-            this.EdgeConfig = edgeConfig ?? throw new global::System.ArgumentNullException(nameof(edgeConfig));
-            this.FromAccount = fromAccount ?? throw new global::System.ArgumentNullException(nameof(fromAccount));
-            this.ToAccount = toAccount ?? throw new global::System.ArgumentNullException(nameof(toAccount));
+            this.EdgeConfigId = edgeConfigId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigId));
+            this.EdgeConfigSlug = edgeConfigSlug ?? throw new global::System.ArgumentNullException(nameof(edgeConfigSlug));
+            this.EdgeConfigDigest = edgeConfigDigest;
         }
 
         /// <summary>

@@ -1403,6 +1403,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("shareableLinkStrict")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ShareableLinkStrict { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharedEnvVarConnection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SharedEnvVarConnection { get; set; }
 
@@ -1677,6 +1683,7 @@ namespace Vercel
         /// <param name="pageIntegrity"></param>
         /// <param name="seawallConfig"></param>
         /// <param name="securityPlusConfiguration"></param>
+        /// <param name="shareableLinkStrict"></param>
         /// <param name="sharedEnvVarConnection"></param>
         /// <param name="skewProtection"></param>
         /// <param name="analytics"></param>
@@ -1919,6 +1926,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? pageIntegrity,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? seawallConfig,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? securityPlusConfiguration,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? shareableLinkStrict,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVarConnection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? skewProtection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? analytics,
@@ -2158,6 +2166,7 @@ namespace Vercel
             this.PageIntegrity = pageIntegrity;
             this.SeawallConfig = seawallConfig;
             this.SecurityPlusConfiguration = securityPlusConfiguration;
+            this.ShareableLinkStrict = shareableLinkStrict;
             this.SharedEnvVarConnection = sharedEnvVarConnection;
             this.SkewProtection = skewProtection;
             this.Analytics = analytics;
