@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.Team> PatchTeamAsync(
@@ -22,6 +23,7 @@ namespace Vercel
 
             global::Vercel.PatchTeamRequest request,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a Team<br/>
@@ -91,9 +93,11 @@ namespace Vercel
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </param>
         /// <param name="nsnbConfig"></param>
+        /// <param name="defaultProjectJobs"></param>
         /// <param name="resourceConfig">
         /// Resource configuration for the team.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.Team> PatchTeamAsync(
@@ -117,7 +121,9 @@ namespace Vercel
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings = default,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings = default,
             global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>? nsnbConfig = default,
+            global::Vercel.OneOf<global::Vercel.PatchTeamRequestDefaultProjectJobs, string>? defaultProjectJobs = default,
             global::Vercel.PatchTeamRequestResourceConfig? resourceConfig = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

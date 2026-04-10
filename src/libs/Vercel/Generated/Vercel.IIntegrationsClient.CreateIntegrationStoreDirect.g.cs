@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateIntegrationStoreDirectResponse> CreateIntegrationStoreDirectAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             global::Vercel.CreateIntegrationStoreDirectRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create integration store (free and paid plans)<br/>
@@ -74,6 +76,7 @@ namespace Vercel
         /// Amount in cents for prepayment billing plans. Required only for prepayment plans with variable amounts.<br/>
         /// Example: 5000
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateIntegrationStoreDirectResponse> CreateIntegrationStoreDirectAsync(
@@ -89,6 +92,7 @@ namespace Vercel
             string? billingPlanId = default,
             string? paymentMethodId = default,
             double? prepaymentAmountCents = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

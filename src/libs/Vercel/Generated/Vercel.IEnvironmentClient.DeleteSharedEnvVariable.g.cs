@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.DeleteSharedEnvVariableResponse> DeleteSharedEnvVariableAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             global::Vercel.DeleteSharedEnvVariableRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete one or more Env Var<br/>
@@ -37,12 +39,14 @@ namespace Vercel
         /// IDs of the Shared Environment Variables to delete<br/>
         /// Example: [env_abc123, env_abc124]
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.DeleteSharedEnvVariableResponse> DeleteSharedEnvVariableAsync(
             global::System.Collections.Generic.IList<string> ids,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

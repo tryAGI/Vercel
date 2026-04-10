@@ -10,12 +10,14 @@ namespace Vercel
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.SubmitInvoiceResponse> SubmitInvoiceAsync(
             string integrationConfigurationId,
 
             global::Vercel.SubmitInvoiceRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Submit Invoice<br/>
@@ -40,6 +42,7 @@ namespace Vercel
         /// <param name="test">
         /// Test mode
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.SubmitInvoiceResponse> SubmitInvoiceAsync(
@@ -52,6 +55,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.SubmitInvoiceRequestDiscount>? discounts = default,
             bool? final = default,
             global::Vercel.SubmitInvoiceRequestTest? test = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

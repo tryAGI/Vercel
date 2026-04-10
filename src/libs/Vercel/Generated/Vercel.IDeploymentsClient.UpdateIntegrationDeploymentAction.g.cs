@@ -13,6 +13,7 @@ namespace Vercel
         /// <param name="resourceId"></param>
         /// <param name="action"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task UpdateIntegrationDeploymentActionAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             string action,
 
             global::Vercel.UpdateIntegrationDeploymentActionRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update deployment integration action<br/>
@@ -35,6 +37,7 @@ namespace Vercel
         /// <param name="statusText"></param>
         /// <param name="statusUrl"></param>
         /// <param name="outcomes"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task UpdateIntegrationDeploymentActionAsync(
@@ -46,6 +49,7 @@ namespace Vercel
             string? statusText = default,
             string? statusUrl = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome>? outcomes = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

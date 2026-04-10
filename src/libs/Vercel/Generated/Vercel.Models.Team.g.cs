@@ -123,6 +123,12 @@ namespace Vercel
         public global::Vercel.TeamDefaultExpirationSettings? DefaultExpirationSettings { get; set; }
 
         /// <summary>
+        /// Default job configuration applied to new projects created in this team.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultProjectJobs")]
+        public global::Vercel.TeamDefaultProjectJobs? DefaultProjectJobs { get; set; }
+
+        /// <summary>
         /// Whether toolbar is enabled on preview deployments
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enablePreviewFeedback")]
@@ -296,6 +302,9 @@ namespace Vercel
         /// <param name="defaultExpirationSettings">
         /// Default deployment expiration settings for this team
         /// </param>
+        /// <param name="defaultProjectJobs">
+        /// Default job configuration applied to new projects created in this team.
+        /// </param>
         /// <param name="enablePreviewFeedback">
         /// Whether toolbar is enabled on preview deployments
         /// </param>
@@ -350,6 +359,7 @@ namespace Vercel
             global::Vercel.TeamRemoteCaching? remoteCaching,
             global::Vercel.TeamDefaultDeploymentProtection? defaultDeploymentProtection,
             global::Vercel.TeamDefaultExpirationSettings? defaultExpirationSettings,
+            global::Vercel.TeamDefaultProjectJobs? defaultProjectJobs,
             global::Vercel.TeamEnablePreviewFeedback? enablePreviewFeedback,
             global::Vercel.TeamEnableProductionFeedback? enableProductionFeedback,
             global::Vercel.TeamSensitiveEnvironmentVariablePolicy? sensitiveEnvironmentVariablePolicy,
@@ -377,6 +387,7 @@ namespace Vercel
             this.RemoteCaching = remoteCaching;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
             this.DefaultExpirationSettings = defaultExpirationSettings;
+            this.DefaultProjectJobs = defaultProjectJobs;
             this.EnablePreviewFeedback = enablePreviewFeedback;
             this.EnableProductionFeedback = enableProductionFeedback;
             this.SensitiveEnvironmentVariablePolicy = sensitiveEnvironmentVariablePolicy;

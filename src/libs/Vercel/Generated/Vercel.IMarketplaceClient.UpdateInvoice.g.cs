@@ -11,6 +11,7 @@ namespace Vercel
         /// <param name="integrationConfigurationId"></param>
         /// <param name="invoiceId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task UpdateInvoiceAsync(
@@ -18,6 +19,7 @@ namespace Vercel
             string invoiceId,
 
             global::Vercel.UpdateInvoiceRequest2 request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Invoice Actions<br/>
@@ -25,11 +27,13 @@ namespace Vercel
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="invoiceId"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task UpdateInvoiceAsync(
             string integrationConfigurationId,
             string invoiceId,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

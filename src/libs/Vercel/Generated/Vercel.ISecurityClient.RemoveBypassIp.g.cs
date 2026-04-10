@@ -16,6 +16,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.RemoveBypassIpResponse> RemoveBypassIpAsync(
@@ -24,6 +25,7 @@ namespace Vercel
             global::Vercel.RemoveBypassIpRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Remove System Bypass Rule<br/>
@@ -41,6 +43,7 @@ namespace Vercel
         /// <param name="sourceIp"></param>
         /// <param name="allSources"></param>
         /// <param name="note"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.RemoveBypassIpResponse> RemoveBypassIpAsync(
@@ -52,6 +55,7 @@ namespace Vercel
             string? sourceIp = default,
             bool? allSources = default,
             string? note = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

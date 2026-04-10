@@ -19,6 +19,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.DeleteTeamResponse> DeleteTeamAsync(
@@ -27,6 +28,7 @@ namespace Vercel
             global::Vercel.DeleteTeamRequest request,
             string? newDefaultTeamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a Team<br/>
@@ -45,6 +47,7 @@ namespace Vercel
         /// <param name="reasons">
         /// Optional array of objects that describe the reason why the team is being deleted.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.DeleteTeamResponse> DeleteTeamAsync(
@@ -52,6 +55,7 @@ namespace Vercel
             string? newDefaultTeamId = default,
             string? slug = default,
             global::System.Collections.Generic.IList<global::Vercel.DeleteTeamRequestReason>? reasons = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

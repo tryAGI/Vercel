@@ -16,6 +16,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateMicrofrontendsGroupResponse> UpdateMicrofrontendsGroupAsync(
@@ -24,6 +25,7 @@ namespace Vercel
 
             global::Vercel.UpdateMicrofrontendsGroupRequest request,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a microfrontends group<br/>
@@ -43,6 +45,7 @@ namespace Vercel
         /// <param name="fallbackEnvironment">
         /// The new fallback environment for the microfrontends group. Must be \"SAME_ENV\", \"PRODUCTION\", or a valid custom environment slug from the default app.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateMicrofrontendsGroupResponse> UpdateMicrofrontendsGroupAsync(
@@ -51,6 +54,7 @@ namespace Vercel
             string? slug = default,
             string? name = default,
             string? fallbackEnvironment = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

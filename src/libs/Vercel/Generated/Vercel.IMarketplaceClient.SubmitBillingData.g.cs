@@ -10,12 +10,14 @@ namespace Vercel
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task SubmitBillingDataAsync(
             string integrationConfigurationId,
 
             global::Vercel.SubmitBillingDataRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Submit Billing Data<br/>
@@ -35,6 +37,7 @@ namespace Vercel
         /// Billing data (interim invoicing data).
         /// </param>
         /// <param name="usage"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task SubmitBillingDataAsync(
@@ -44,6 +47,7 @@ namespace Vercel
             global::Vercel.SubmitBillingDataRequestPeriod period,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestBillingItem>, global::Vercel.SubmitBillingDataRequestBilling> billing,
             global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestUsageItem> usage,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

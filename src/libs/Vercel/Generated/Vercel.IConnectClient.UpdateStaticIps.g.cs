@@ -18,6 +18,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>> UpdateStaticIpsAsync(
@@ -26,6 +27,7 @@ namespace Vercel
             global::Vercel.UpdateStaticIpsRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Configures Static IPs for a project<br/>
@@ -44,6 +46,7 @@ namespace Vercel
         /// Whether to use Static IPs for builds.
         /// </param>
         /// <param name="regions"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>> UpdateStaticIpsAsync(
@@ -52,6 +55,7 @@ namespace Vercel
             string? slug = default,
             bool? builds = default,
             global::System.Collections.Generic.IList<string>? regions = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

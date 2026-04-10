@@ -18,9 +18,35 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reasonCode")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant211ReasonCodeJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant211ReasonCode? ReasonCode { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trustedIps")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant211TrustedIpsJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant211TrustedIps? TrustedIps { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldTrustedIps")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant211OldTrustedIpsJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant211OldTrustedIps? OldTrustedIps { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("addedAddresses")]
+        public global::System.Collections.Generic.IList<string>? AddedAddresses { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("removedAddresses")]
+        public global::System.Collections.Generic.IList<string>? RemovedAddresses { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,16 +58,28 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant211" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="reasonCode"></param>
+        /// <param name="projectName"></param>
+        /// <param name="trustedIps"></param>
+        /// <param name="oldTrustedIps"></param>
+        /// <param name="addedAddresses"></param>
+        /// <param name="removedAddresses"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant211(
             string projectId,
-            global::Vercel.UserEventPayloadVariant211ReasonCode? reasonCode)
+            string projectName,
+            global::Vercel.UserEventPayloadVariant211TrustedIps? trustedIps,
+            global::Vercel.UserEventPayloadVariant211OldTrustedIps? oldTrustedIps,
+            global::System.Collections.Generic.IList<string>? addedAddresses,
+            global::System.Collections.Generic.IList<string>? removedAddresses)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ReasonCode = reasonCode;
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.TrustedIps = trustedIps;
+            this.OldTrustedIps = oldTrustedIps;
+            this.AddedAddresses = addedAddresses;
+            this.RemovedAddresses = removedAddresses;
         }
 
         /// <summary>

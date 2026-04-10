@@ -23,6 +23,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.EditProjectEnvResponse> EditProjectEnvAsync(
@@ -32,6 +33,7 @@ namespace Vercel
             global::Vercel.EditProjectEnvRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Edit an environment variable<br/>
@@ -78,6 +80,7 @@ namespace Vercel
         /// A comment to add context on what this env var is for<br/>
         /// Example: database connection string for production
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.EditProjectEnvResponse> EditProjectEnvAsync(
@@ -92,6 +95,7 @@ namespace Vercel
             string? value = default,
             global::System.Collections.Generic.IList<string>? customEnvironmentIds = default,
             string? comment = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

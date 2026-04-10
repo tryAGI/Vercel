@@ -11,22 +11,17 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OldName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        public string? Uid { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Uid { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UserEventPayloadVariant218Name>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.OneOf<string, global::Vercel.UserEventPayloadVariant218Name> Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +32,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant218" /> class.
         /// </summary>
-        /// <param name="oldName"></param>
-        /// <param name="newName"></param>
         /// <param name="uid"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant218(
-            string oldName,
-            string newName,
-            string? uid)
+            string uid,
+            global::Vercel.OneOf<string, global::Vercel.UserEventPayloadVariant218Name> name)
         {
-            this.OldName = oldName ?? throw new global::System.ArgumentNullException(nameof(oldName));
-            this.NewName = newName ?? throw new global::System.ArgumentNullException(nameof(newName));
-            this.Uid = uid;
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
+            this.Name = name;
         }
 
         /// <summary>

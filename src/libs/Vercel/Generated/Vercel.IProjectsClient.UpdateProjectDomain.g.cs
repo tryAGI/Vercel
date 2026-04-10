@@ -22,6 +22,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateProjectDomainResponse> UpdateProjectDomainAsync(
@@ -31,6 +32,7 @@ namespace Vercel
             global::Vercel.UpdateProjectDomainRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a project domain<br/>
@@ -61,6 +63,7 @@ namespace Vercel
         /// Status code for domain redirect<br/>
         /// Example: 307
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateProjectDomainResponse> UpdateProjectDomainAsync(
@@ -71,6 +74,7 @@ namespace Vercel
             string? gitBranch = default,
             string? redirect = default,
             int? redirectStatusCode = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

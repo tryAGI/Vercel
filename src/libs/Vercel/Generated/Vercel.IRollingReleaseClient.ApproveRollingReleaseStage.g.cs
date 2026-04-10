@@ -18,6 +18,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.ApproveRollingReleaseStageResponse> ApproveRollingReleaseStageAsync(
@@ -26,6 +27,7 @@ namespace Vercel
             global::Vercel.ApproveRollingReleaseStageRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update the active rolling release to the next stage for a project<br/>
@@ -46,6 +48,7 @@ namespace Vercel
         /// <param name="canaryDeploymentId">
         /// The id of the canary deployment to approve for the next stage
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.ApproveRollingReleaseStageResponse> ApproveRollingReleaseStageAsync(
@@ -54,6 +57,7 @@ namespace Vercel
             string canaryDeploymentId,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

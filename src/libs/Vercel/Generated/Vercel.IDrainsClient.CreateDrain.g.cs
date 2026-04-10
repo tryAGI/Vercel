@@ -15,6 +15,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.CreateDrainResponseVariant1, global::Vercel.CreateDrainResponseVariant2>> CreateDrainAsync(
@@ -22,6 +23,7 @@ namespace Vercel
             global::Vercel.CreateDrainRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a new Drain<br/>
@@ -42,6 +44,7 @@ namespace Vercel
         /// <param name="sampling"></param>
         /// <param name="transforms"></param>
         /// <param name="source"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.CreateDrainResponseVariant1, global::Vercel.CreateDrainResponseVariant2>> CreateDrainAsync(
@@ -56,6 +59,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.CreateDrainRequestSamplingItem>? sampling = default,
             global::System.Collections.Generic.IList<global::Vercel.CreateDrainRequestTransform>? transforms = default,
             global::Vercel.OneOf<global::Vercel.OneOf<global::Vercel.CreateDrainRequestSourceVariant1, global::Vercel.CreateDrainRequestSourceVariant2, global::Vercel.CreateDrainRequestSourceVariant3>?, global::Vercel.CreateDrainRequestSource2>? source = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -16,6 +16,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.RestoreRedirectsResponse> RestoreRedirectsAsync(
@@ -24,6 +25,7 @@ namespace Vercel
             global::Vercel.RestoreRedirectsRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Restore staged project-level redirects to their production version.<br/>
@@ -40,6 +42,7 @@ namespace Vercel
         /// <param name="redirects">
         /// The redirects to restore. The source of the redirect is used to match the redirect to restore.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.RestoreRedirectsResponse> RestoreRedirectsAsync(
@@ -48,6 +51,7 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             string? name = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

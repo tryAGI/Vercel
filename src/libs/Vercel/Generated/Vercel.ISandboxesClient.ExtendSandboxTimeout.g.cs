@@ -19,6 +19,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.ExtendSandboxTimeoutResponse> ExtendSandboxTimeoutAsync(
@@ -27,6 +28,7 @@ namespace Vercel
             global::Vercel.ExtendSandboxTimeoutRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Extend sandbox timeout<br/>
@@ -46,6 +48,7 @@ namespace Vercel
         /// The amount of time in milliseconds to add to the current timeout. Must be at least 1000ms (1 second).<br/>
         /// Example: 300000
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.ExtendSandboxTimeoutResponse> ExtendSandboxTimeoutAsync(
@@ -53,6 +56,7 @@ namespace Vercel
             double duration,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

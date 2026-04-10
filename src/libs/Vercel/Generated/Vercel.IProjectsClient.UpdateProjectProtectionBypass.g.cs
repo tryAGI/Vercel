@@ -18,6 +18,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateProjectProtectionBypassResponse> UpdateProjectProtectionBypassAsync(
@@ -26,6 +27,7 @@ namespace Vercel
             global::Vercel.UpdateProjectProtectionBypassRequest request,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update Protection Bypass for Automation<br/>
@@ -49,6 +51,7 @@ namespace Vercel
         /// <param name="update">
         /// Update an existing bypass
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UpdateProjectProtectionBypassResponse> UpdateProjectProtectionBypassAsync(
@@ -58,6 +61,7 @@ namespace Vercel
             global::Vercel.UpdateProjectProtectionBypassRequestRevoke? revoke = default,
             global::Vercel.UpdateProjectProtectionBypassRequestGenerate? generate = default,
             global::Vercel.UpdateProjectProtectionBypassRequestUpdate? update = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

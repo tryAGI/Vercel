@@ -12,6 +12,7 @@ namespace Vercel
         /// <param name="resourceId"></param>
         /// <param name="itemId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task UpdateInstallationIntegrationConfigurationAsync(
@@ -20,6 +21,7 @@ namespace Vercel
             string itemId,
 
             global::Vercel.UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Patch an existing experimentation item<br/>
@@ -36,6 +38,7 @@ namespace Vercel
         /// <param name="isArchived"></param>
         /// <param name="createdAt"></param>
         /// <param name="updatedAt"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task UpdateInstallationIntegrationConfigurationAsync(
@@ -50,6 +53,7 @@ namespace Vercel
             bool? isArchived = default,
             double? createdAt = default,
             double? updatedAt = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
