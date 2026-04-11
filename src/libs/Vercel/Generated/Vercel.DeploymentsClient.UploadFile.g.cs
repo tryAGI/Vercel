@@ -166,22 +166,22 @@ namespace Vercel
                 } 
             }
 
-                if (x_contentLength_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'content-Length'", x_contentLength_.ToString());
-                }
-                if (x_xVercelDigest_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Vercel-Digest'", x_xVercelDigest_.ToString());
-                }
-                if (x_xNowDigest_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Now-Digest'", x_xNowDigest_.ToString());
-                }
-                if (x_xNowSize_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Now-Size'", x_xNowSize_.ToString());
-                }
+            if (x_contentLength_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'content-Length'", x_contentLength_.ToString());
+            }
+            if (x_xVercelDigest_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Vercel-Digest'", x_xVercelDigest_.ToString());
+            }
+            if (x_xNowDigest_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Now-Digest'", x_xNowDigest_.ToString());
+            }
+            if (x_xNowSize_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Now-Size'", x_xNowSize_.ToString());
+            }
 
 
                             var __httpRequestContent = new global::System.Net.Http.ByteArrayContent(request);

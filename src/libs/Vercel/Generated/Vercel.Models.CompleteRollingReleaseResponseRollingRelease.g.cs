@@ -103,6 +103,12 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
+        /// When set (for example while {@link substate} is `PAUSED`), the canary traffic percentage persisted on the rollout document — use for dashboard display when linear shift is active.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("currentCanaryPercentage")]
+        public double? CurrentCanaryPercentage { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -154,6 +160,9 @@ namespace Vercel
         /// The next stage to be activated, null if not in ACTIVE state<br/>
         /// Example: {"index":2,"isFinalStage":false,"targetPercentage":60,"requireApproval":true,"duration":null}
         /// </param>
+        /// <param name="currentCanaryPercentage">
+        /// When set (for example while {@link substate} is `PAUSED`), the canary traffic percentage persisted on the rollout document — use for dashboard display when linear shift is active.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -168,7 +177,8 @@ namespace Vercel
             global::Vercel.CompleteRollingReleaseResponseRollingReleaseCanaryDeployment? canaryDeployment,
             string? queuedDeploymentId,
             global::Vercel.CompleteRollingReleaseResponseRollingReleaseActiveStage? activeStage,
-            global::Vercel.CompleteRollingReleaseResponseRollingReleaseNextStage? nextStage)
+            global::Vercel.CompleteRollingReleaseResponseRollingReleaseNextStage? nextStage,
+            double? currentCanaryPercentage)
         {
             this.State = state;
             this.Substate = substate;
@@ -181,6 +191,7 @@ namespace Vercel
             this.NextStage = nextStage;
             this.StartedAt = startedAt;
             this.UpdatedAt = updatedAt;
+            this.CurrentCanaryPercentage = currentCanaryPercentage;
         }
 
         /// <summary>

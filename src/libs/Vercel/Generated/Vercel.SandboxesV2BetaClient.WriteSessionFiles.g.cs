@@ -144,10 +144,10 @@ namespace Vercel
                 } 
             }
 
-                if (x_xCwd_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Cwd'", x_xCwd_.ToString());
-                }
+            if (x_xCwd_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Cwd'", x_xCwd_.ToString());
+            }
 
                 global::Vercel.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
