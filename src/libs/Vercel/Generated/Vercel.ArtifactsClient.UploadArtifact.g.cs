@@ -197,34 +197,34 @@ namespace Vercel
                 } 
             }
 
-                if (x_contentLength_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'content-Length'", x_contentLength_.ToString());
-                }
-                if (x_xArtifactDuration_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Duration'", x_xArtifactDuration_.ToString());
-                }
-                if (x_xArtifactClientCi_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Ci'", x_xArtifactClientCi_.ToString());
-                }
-                if (x_xArtifactClientInteractive_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Interactive'", x_xArtifactClientInteractive_.ToString());
-                }
-                if (x_xArtifactTag_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Tag'", x_xArtifactTag_.ToString());
-                }
-                if (x_xArtifactSha_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Sha'", x_xArtifactSha_.ToString());
-                }
-                if (x_xArtifactDirtyHash_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Dirty-Hash'", x_xArtifactDirtyHash_.ToString());
-                }
+            if (x_contentLength_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'content-Length'", x_contentLength_.ToString());
+            }
+            if (x_xArtifactDuration_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Duration'", x_xArtifactDuration_.ToString());
+            }
+            if (x_xArtifactClientCi_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Ci'", x_xArtifactClientCi_.ToString());
+            }
+            if (x_xArtifactClientInteractive_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Interactive'", x_xArtifactClientInteractive_.ToString());
+            }
+            if (x_xArtifactTag_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Tag'", x_xArtifactTag_.ToString());
+            }
+            if (x_xArtifactSha_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Sha'", x_xArtifactSha_.ToString());
+            }
+            if (x_xArtifactDirtyHash_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Dirty-Hash'", x_xArtifactDirtyHash_.ToString());
+            }
 
 
                             var __httpRequestContent = new global::System.Net.Http.ByteArrayContent(request);

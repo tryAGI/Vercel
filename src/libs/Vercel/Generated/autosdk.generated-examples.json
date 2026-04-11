@@ -1,0 +1,48 @@
+{
+  "Examples": [
+    {
+      "Order": 1,
+      "Title": "Delete an access group project",
+      "Slug": "deleteaccessgroupproject",
+      "Description": "Allows deletion of an access group project",
+      "Language": "csharp",
+      "Code": "using var client = new VercelClient(apiKey);\n\nawait client.AccessGroups.DeleteAccessGroupProjectAsync(\n    accessGroupIdOrName: \u0022ag_1a2b3c4d5e6f7g8h9i0j\u0022,\n    projectId: \u0022prj_ndlgr43fadlPyCtREAqxxdyFK\u0022\n);",
+      "Format": "sdk",
+      "OperationId": "deleteAccessGroupProject",
+      "Setup": "This example assumes \u0060using Vercel;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 2,
+      "Title": "Reads an access group",
+      "Slug": "readaccessgroup",
+      "Description": "Allows to read an access group",
+      "Language": "csharp",
+      "Code": "using var client = new VercelClient(apiKey);\n\nvar response = await client.AccessGroups.ReadAccessGroupAsync(\n    idOrName: \u0022ag_1a2b3c4d5e6f7g8h9i0j\u0022\n);",
+      "Format": "sdk",
+      "OperationId": "readAccessGroup",
+      "Setup": "This example assumes \u0060using Vercel;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 3,
+      "Title": "Reads an access group project",
+      "Slug": "readaccessgroupproject",
+      "Description": "Allows reading an access group project",
+      "Language": "csharp",
+      "Code": "using var client = new VercelClient(apiKey);\n\nvar response = await client.AccessGroups.ReadAccessGroupProjectAsync(\n    accessGroupIdOrName: \u0022ag_1a2b3c4d5e6f7g8h9i0j\u0022,\n    projectId: \u0022prj_ndlgr43fadlPyCtREAqxxdyFK\u0022\n);",
+      "Format": "sdk",
+      "OperationId": "readAccessGroupProject",
+      "Setup": "This example assumes \u0060using Vercel;\u0060 is in scope and \u0060apiKey\u0060 contains the required credential."
+    },
+    {
+      "Order": 4,
+      "Title": "Update an access group project",
+      "Slug": "updateaccessgroupproject",
+      "Description": "Allows update of an access group project",
+      "Language": "http",
+      "Code": "### Update an access group project\n# @name updateAccessGroupProject\nPATCH {{host}}/v1/access-groups/{{accessGroupIdOrName}}/projects/{{projectId}}?teamId={{teamId}}\u0026slug={{slug}}\nAuthorization: Bearer {{token}}\nContent-Type: application/json\nAccept: application/json\n\n{\n  \u0022role\u0022: \u0022ADMIN\u0022\n}\n\n## Responses\n# 200\n# Content-Type: application/json\n# 400\n# Description: One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid.\n# 401\n# Description: The request is not authorized.\n# 403\n# Description: You do not have permission to access this resource.",
+      "Format": "http",
+      "OperationId": "updateAccessGroupProject",
+      "Setup": null
+    }
+  ]
+}

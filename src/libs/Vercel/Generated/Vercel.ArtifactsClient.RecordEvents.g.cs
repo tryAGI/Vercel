@@ -147,14 +147,14 @@ namespace Vercel
                 } 
             }
 
-                if (x_xArtifactClientCi_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Ci'", x_xArtifactClientCi_.ToString());
-                }
-                if (x_xArtifactClientInteractive_ != default)
-                {
-                    __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Interactive'", x_xArtifactClientInteractive_.ToString());
-                }
+            if (x_xArtifactClientCi_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Ci'", x_xArtifactClientCi_.ToString());
+            }
+            if (x_xArtifactClientInteractive_ != default)
+            {
+                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Interactive'", x_xArtifactClientInteractive_.ToString());
+            }
 
                             var __httpRequestContentBody = global::System.Text.Json.JsonSerializer.Serialize(request, request.GetType(), JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
