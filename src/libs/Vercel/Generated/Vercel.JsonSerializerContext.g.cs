@@ -953,6 +953,10 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.FlagExperimentDeviceNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.FlagExperimentDurationUnitJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.FlagExperimentDurationUnitNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.FlagExperimentAllocationUnitJsonConverter),
 
             typeof(global::Vercel.JsonConverters.FlagExperimentAllocationUnitNullableJsonConverter),
@@ -5249,6 +5253,10 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.CreateFlagResponseExperimentDeviceNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.CreateFlagResponseExperimentDurationUnitJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.CreateFlagResponseExperimentDurationUnitNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.CreateFlagResponseExperimentAllocationUnitJsonConverter),
 
             typeof(global::Vercel.JsonConverters.CreateFlagResponseExperimentAllocationUnitNullableJsonConverter),
@@ -5345,6 +5353,10 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.UpdateFlagResponseExperimentDeviceNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.UpdateFlagResponseExperimentDurationUnitJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UpdateFlagResponseExperimentDurationUnitNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.UpdateFlagResponseExperimentAllocationUnitJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UpdateFlagResponseExperimentAllocationUnitNullableJsonConverter),
@@ -5440,6 +5452,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.ListFlagVersionsResponseVersionDataExperimentDeviceJsonConverter),
 
             typeof(global::Vercel.JsonConverters.ListFlagVersionsResponseVersionDataExperimentDeviceNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.ListFlagVersionsResponseVersionDataExperimentDurationUnitJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.ListFlagVersionsResponseVersionDataExperimentDurationUnitNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.ListFlagVersionsResponseVersionDataExperimentAllocationUnitJsonConverter),
 
@@ -13395,6 +13411,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentGuardrailMetricMetricUnit), TypeInfoPropertyName = "FlagExperimentGuardrailMetricMetricUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentGuardrailMetricDirectionality), TypeInfoPropertyName = "FlagExperimentGuardrailMetricDirectionality2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentDevice), TypeInfoPropertyName = "FlagExperimentDevice2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentDurationUnit), TypeInfoPropertyName = "FlagExperimentDurationUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentAllocationUnit), TypeInfoPropertyName = "FlagExperimentAllocationUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagExperimentPrimaryMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentPrimaryMetric))]
@@ -16516,6 +16533,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseExperimentGuardrailMetricMetricUnit), TypeInfoPropertyName = "CreateFlagResponseExperimentGuardrailMetricMetricUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseExperimentGuardrailMetricDirectionality), TypeInfoPropertyName = "CreateFlagResponseExperimentGuardrailMetricDirectionality2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseExperimentDevice), TypeInfoPropertyName = "CreateFlagResponseExperimentDevice2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseExperimentDurationUnit), TypeInfoPropertyName = "CreateFlagResponseExperimentDurationUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseExperimentAllocationUnit), TypeInfoPropertyName = "CreateFlagResponseExperimentAllocationUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateFlagResponseExperimentPrimaryMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseExperimentPrimaryMetric))]
@@ -16579,6 +16597,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentGuardrailMetricMetricUnit), TypeInfoPropertyName = "UpdateFlagResponseExperimentGuardrailMetricMetricUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentGuardrailMetricDirectionality), TypeInfoPropertyName = "UpdateFlagResponseExperimentGuardrailMetricDirectionality2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentDevice), TypeInfoPropertyName = "UpdateFlagResponseExperimentDevice2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentDurationUnit), TypeInfoPropertyName = "UpdateFlagResponseExperimentDurationUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentAllocationUnit), TypeInfoPropertyName = "UpdateFlagResponseExperimentAllocationUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateFlagResponseExperimentPrimaryMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentPrimaryMetric))]
@@ -16644,6 +16663,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataExperimentGuardrailMetricMetricUnit), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataExperimentGuardrailMetricMetricUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataExperimentGuardrailMetricDirectionality), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataExperimentGuardrailMetricDirectionality2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataExperimentDevice), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataExperimentDevice2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataExperimentDurationUnit), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataExperimentDurationUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataExperimentAllocationUnit), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataExperimentAllocationUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersionDataExperimentPrimaryMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataExperimentPrimaryMetric))]
