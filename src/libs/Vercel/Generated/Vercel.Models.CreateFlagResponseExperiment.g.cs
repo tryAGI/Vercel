@@ -84,6 +84,37 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("decision")]
+        public string? Decision { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("decisionReason")]
+        public string? DecisionReason { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("duration")]
+        public double? Duration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("durationUnit")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateFlagResponseExperimentDurationUnitJsonConverter))]
+        public global::Vercel.CreateFlagResponseExperimentDurationUnit? DurationUnit { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("allocationPercent")]
+        public double? AllocationPercent { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("allocationUnit")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateFlagResponseExperimentAllocationUnitJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -128,6 +159,11 @@ namespace Vercel
         /// <param name="controlVariantId"></param>
         /// <param name="startedAt"></param>
         /// <param name="endedAt"></param>
+        /// <param name="decision"></param>
+        /// <param name="decisionReason"></param>
+        /// <param name="duration"></param>
+        /// <param name="durationUnit"></param>
+        /// <param name="allocationPercent"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -146,7 +182,12 @@ namespace Vercel
             global::Vercel.CreateFlagResponseExperimentDevice? device,
             string? controlVariantId,
             double? startedAt,
-            double? endedAt)
+            double? endedAt,
+            string? decision,
+            string? decisionReason,
+            double? duration,
+            global::Vercel.CreateFlagResponseExperimentDurationUnit? durationUnit,
+            double? allocationPercent)
         {
             this.Name = name;
             this.Id = id;
@@ -160,6 +201,11 @@ namespace Vercel
             this.ControlVariantId = controlVariantId;
             this.StartedAt = startedAt;
             this.EndedAt = endedAt;
+            this.Decision = decision;
+            this.DecisionReason = decisionReason;
+            this.Duration = duration;
+            this.DurationUnit = durationUnit;
+            this.AllocationPercent = allocationPercent;
             this.AllocationUnit = allocationUnit;
             this.PrimaryMetrics = primaryMetrics ?? throw new global::System.ArgumentNullException(nameof(primaryMetrics));
             this.Status = status;
