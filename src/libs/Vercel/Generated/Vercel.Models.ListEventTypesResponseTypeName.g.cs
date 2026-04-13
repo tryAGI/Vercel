@@ -51,6 +51,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayByokCredentialCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayByokCredentialDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayByokCredentialUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AlertRuleCreated,
         /// <summary>
         /// 
@@ -1732,6 +1744,9 @@ namespace Vercel
                 ListEventTypesResponseTypeName.AiCodeReview => "ai-code-review",
                 ListEventTypesResponseTypeName.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
                 ListEventTypesResponseTypeName.AiGatewayApiKeyDeleted => "ai-gateway-api-key-deleted",
+                ListEventTypesResponseTypeName.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
+                ListEventTypesResponseTypeName.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
+                ListEventTypesResponseTypeName.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
                 ListEventTypesResponseTypeName.AlertRuleCreated => "alert-rule-created",
                 ListEventTypesResponseTypeName.AlertRuleDeleted => "alert-rule-deleted",
                 ListEventTypesResponseTypeName.AlertRuleUpdated => "alert-rule-updated",
@@ -2167,6 +2182,9 @@ namespace Vercel
                 "ai-code-review" => ListEventTypesResponseTypeName.AiCodeReview,
                 "ai-gateway-api-key-created" => ListEventTypesResponseTypeName.AiGatewayApiKeyCreated,
                 "ai-gateway-api-key-deleted" => ListEventTypesResponseTypeName.AiGatewayApiKeyDeleted,
+                "ai-gateway-byok-credential-created" => ListEventTypesResponseTypeName.AiGatewayByokCredentialCreated,
+                "ai-gateway-byok-credential-deleted" => ListEventTypesResponseTypeName.AiGatewayByokCredentialDeleted,
+                "ai-gateway-byok-credential-updated" => ListEventTypesResponseTypeName.AiGatewayByokCredentialUpdated,
                 "alert-rule-created" => ListEventTypesResponseTypeName.AlertRuleCreated,
                 "alert-rule-deleted" => ListEventTypesResponseTypeName.AlertRuleDeleted,
                 "alert-rule-updated" => ListEventTypesResponseTypeName.AlertRuleUpdated,

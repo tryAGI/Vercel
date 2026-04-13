@@ -11,14 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("price")]
-        public double? Price { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroup")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant11AccessGroup AccessGroup { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
-        public string? Currency { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant11User User { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
+        public string? DirectoryType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant11" /> class.
         /// </summary>
-        /// <param name="price"></param>
-        /// <param name="currency"></param>
+        /// <param name="accessGroup"></param>
+        /// <param name="user"></param>
+        /// <param name="directoryType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant11(
-            double? price,
-            string? currency)
+            global::Vercel.UserEventPayloadVariant11AccessGroup accessGroup,
+            global::Vercel.UserEventPayloadVariant11User user,
+            string? directoryType)
         {
-            this.Price = price;
-            this.Currency = currency;
+            this.AccessGroup = accessGroup ?? throw new global::System.ArgumentNullException(nameof(accessGroup));
+            this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
+            this.DirectoryType = directoryType;
         }
 
         /// <summary>

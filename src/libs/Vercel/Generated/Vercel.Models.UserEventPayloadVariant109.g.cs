@@ -18,17 +18,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        public required string Scope { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configVersion")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<string, double?> ConfigVersion { get; set; }
+        public required string Source { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,19 +39,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant109" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="configVersion"></param>
+        /// <param name="scope"></param>
+        /// <param name="source"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant109(
             string projectId,
-            string projectName,
-            global::Vercel.OneOf<string, double?> configVersion)
+            string scope,
+            string source)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.ConfigVersion = configVersion;
+            this.Scope = scope ?? throw new global::System.ArgumentNullException(nameof(scope));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
         }
 
         /// <summary>

@@ -11,23 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("toDeploymentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
+        public required string ToDeploymentId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant125" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="slug"></param>
-        /// <param name="name"></param>
+        /// <param name="projectId"></param>
+        /// <param name="toDeploymentId"></param>
+        /// <param name="projectName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant125(
-            string id,
-            string slug,
-            string name)
+            string projectId,
+            string toDeploymentId,
+            string projectName)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ToDeploymentId = toDeploymentId ?? throw new global::System.ArgumentNullException(nameof(toDeploymentId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
         }
 
         /// <summary>

@@ -25,16 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ruleGroups")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Active { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant112ActionJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant112Action? Action { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant112RuleGroups2> RuleGroups { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,21 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="rulesetName"></param>
-        /// <param name="active"></param>
-        /// <param name="action"></param>
+        /// <param name="ruleGroups"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant112(
             string projectId,
             string rulesetName,
-            bool active,
-            global::Vercel.UserEventPayloadVariant112Action? action)
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant112RuleGroups2> ruleGroups)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.RulesetName = rulesetName ?? throw new global::System.ArgumentNullException(nameof(rulesetName));
-            this.Active = active;
-            this.Action = action;
+            this.RuleGroups = ruleGroups ?? throw new global::System.ArgumentNullException(nameof(ruleGroups));
         }
 
         /// <summary>

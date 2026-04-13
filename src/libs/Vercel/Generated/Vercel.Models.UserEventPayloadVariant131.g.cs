@@ -32,8 +32,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        public string? Reason { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("blockReason")]
+        public string? BlockReason { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("siftRoute")]
+        public global::Vercel.UserEventPayloadVariant131SiftRoute? SiftRoute { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +53,8 @@ namespace Vercel
         /// <param name="ownerId"></param>
         /// <param name="source"></param>
         /// <param name="cause"></param>
-        /// <param name="reason"></param>
+        /// <param name="blockReason"></param>
+        /// <param name="siftRoute"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -55,12 +62,14 @@ namespace Vercel
             string ownerId,
             string source,
             string cause,
-            string? reason)
+            string? blockReason,
+            global::Vercel.UserEventPayloadVariant131SiftRoute? siftRoute)
         {
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
             this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
-            this.Reason = reason;
+            this.BlockReason = blockReason;
+            this.SiftRoute = siftRoute;
         }
 
         /// <summary>

@@ -11,14 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("drainUrl")]
-        public string? DrainUrl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
-        public string? IntegrationName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("price")]
+        public double? Price { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
+        public string? Currency { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant91" /> class.
         /// </summary>
-        /// <param name="drainUrl"></param>
-        /// <param name="integrationName"></param>
+        /// <param name="name"></param>
+        /// <param name="price"></param>
+        /// <param name="currency"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant91(
-            string? drainUrl,
-            string? integrationName)
+            string name,
+            double? price,
+            string? currency)
         {
-            this.DrainUrl = drainUrl;
-            this.IntegrationName = integrationName;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Price = price;
+            this.Currency = currency;
         }
 
         /// <summary>

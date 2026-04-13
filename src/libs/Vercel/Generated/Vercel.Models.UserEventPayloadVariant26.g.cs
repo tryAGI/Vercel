@@ -22,19 +22,6 @@ namespace Vercel
         public string? AppId { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nextScopes")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant26NextScope> NextScopes { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nextPermissions")]
-        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant26NextPermission>? NextPermissions { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -44,22 +31,16 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant26" /> class.
         /// </summary>
         /// <param name="appName"></param>
-        /// <param name="nextScopes"></param>
         /// <param name="appId"></param>
-        /// <param name="nextPermissions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant26(
             string appName,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant26NextScope> nextScopes,
-            string? appId,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant26NextPermission>? nextPermissions)
+            string? appId)
         {
             this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
             this.AppId = appId;
-            this.NextScopes = nextScopes ?? throw new global::System.ArgumentNullException(nameof(nextScopes));
-            this.NextPermissions = nextPermissions;
         }
 
         /// <summary>

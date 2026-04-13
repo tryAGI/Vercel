@@ -25,15 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("srcImages")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Tags { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        public string? Target { get; set; }
+        public required global::System.Collections.Generic.IList<string> SrcImages { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,21 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="tags"></param>
-        /// <param name="target"></param>
+        /// <param name="srcImages"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant93(
             string projectId,
             string projectName,
-            global::System.Collections.Generic.IList<string> tags,
-            string? target)
+            global::System.Collections.Generic.IList<string> srcImages)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
-            this.Target = target;
+            this.SrcImages = srcImages ?? throw new global::System.ArgumentNullException(nameof(srcImages));
         }
 
         /// <summary>

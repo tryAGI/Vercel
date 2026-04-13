@@ -23,13 +23,6 @@ namespace Vercel
         public required string ProjectId { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousEndpoint")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant139PreviousEndpoint PreviousEndpoint { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -40,18 +33,15 @@ namespace Vercel
         /// </summary>
         /// <param name="privateLinkEndpoint"></param>
         /// <param name="projectId"></param>
-        /// <param name="previousEndpoint"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant139(
             global::Vercel.UserEventPayloadVariant139PrivateLinkEndpoint privateLinkEndpoint,
-            string projectId,
-            global::Vercel.UserEventPayloadVariant139PreviousEndpoint previousEndpoint)
+            string projectId)
         {
             this.PrivateLinkEndpoint = privateLinkEndpoint ?? throw new global::System.ArgumentNullException(nameof(privateLinkEndpoint));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.PreviousEndpoint = previousEndpoint ?? throw new global::System.ArgumentNullException(nameof(previousEndpoint));
         }
 
         /// <summary>

@@ -12,8 +12,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logDrainUrl")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string LogDrainUrl { get; set; }
+        public string? LogDrainUrl { get; set; }
 
         /// <summary>
         /// 
@@ -36,10 +35,10 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant122(
-            string logDrainUrl,
+            string? logDrainUrl,
             string? integrationName)
         {
-            this.LogDrainUrl = logDrainUrl ?? throw new global::System.ArgumentNullException(nameof(logDrainUrl));
+            this.LogDrainUrl = logDrainUrl;
             this.IntegrationName = integrationName;
         }
 

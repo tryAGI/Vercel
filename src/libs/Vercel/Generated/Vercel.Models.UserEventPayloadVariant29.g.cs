@@ -24,8 +24,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("secretLastFourChars")]
-        public string? SecretLastFourChars { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("resources")]
+        public global::Vercel.UserEventPayloadVariant29Resources? Resources { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant29Permission>? Permissions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,18 +44,21 @@ namespace Vercel
         /// </summary>
         /// <param name="appName"></param>
         /// <param name="appId"></param>
-        /// <param name="secretLastFourChars"></param>
+        /// <param name="resources"></param>
+        /// <param name="permissions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant29(
             string appName,
             string? appId,
-            string? secretLastFourChars)
+            global::Vercel.UserEventPayloadVariant29Resources? resources,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant29Permission>? permissions)
         {
             this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
             this.AppId = appId;
-            this.SecretLastFourChars = secretLastFourChars;
+            this.Resources = resources;
+            this.Permissions = permissions;
         }
 
         /// <summary>

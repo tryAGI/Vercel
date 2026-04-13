@@ -25,8 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSchema")]
-        public object? EdgeConfigSchema { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigDigest")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string EdgeConfigDigest { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigSlug"></param>
-        /// <param name="edgeConfigSchema"></param>
+        /// <param name="edgeConfigDigest"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant96(
             string edgeConfigId,
             string edgeConfigSlug,
-            object? edgeConfigSchema)
+            string edgeConfigDigest)
         {
             this.EdgeConfigId = edgeConfigId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigId));
             this.EdgeConfigSlug = edgeConfigSlug ?? throw new global::System.ArgumentNullException(nameof(edgeConfigSlug));
-            this.EdgeConfigSchema = edgeConfigSchema;
+            this.EdgeConfigDigest = edgeConfigDigest ?? throw new global::System.ArgumentNullException(nameof(edgeConfigDigest));
         }
 
         /// <summary>

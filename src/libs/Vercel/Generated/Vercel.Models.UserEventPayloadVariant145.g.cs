@@ -25,9 +25,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enableAffectedProjectsDeployments")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant145ActionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool EnableAffectedProjectsDeployments { get; set; }
+        public required global::Vercel.UserEventPayloadVariant145Action Action { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isEnvVar")]
+        public bool? IsEnvVar { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("note")]
+        public string? Note { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,18 +53,24 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="enableAffectedProjectsDeployments"></param>
+        /// <param name="action"></param>
+        /// <param name="isEnvVar"></param>
+        /// <param name="note"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant145(
             string projectId,
             string projectName,
-            bool enableAffectedProjectsDeployments)
+            global::Vercel.UserEventPayloadVariant145Action action,
+            bool? isEnvVar,
+            string? note)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.EnableAffectedProjectsDeployments = enableAffectedProjectsDeployments;
+            this.Action = action;
+            this.IsEnvVar = isEnvVar;
+            this.Note = note;
         }
 
         /// <summary>

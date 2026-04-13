@@ -11,22 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketEmail")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabLogin")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string BitbucketEmail { get; set; }
+        public required string GitlabLogin { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketLogin")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabUserId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string BitbucketLogin { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketName")]
-        public string? BitbucketName { get; set; }
+        public required double GitlabUserId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant60" /> class.
         /// </summary>
-        /// <param name="bitbucketEmail"></param>
-        /// <param name="bitbucketLogin"></param>
-        /// <param name="bitbucketName"></param>
+        /// <param name="gitlabLogin"></param>
+        /// <param name="gitlabUserId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant60(
-            string bitbucketEmail,
-            string bitbucketLogin,
-            string? bitbucketName)
+            string gitlabLogin,
+            double gitlabUserId)
         {
-            this.BitbucketEmail = bitbucketEmail ?? throw new global::System.ArgumentNullException(nameof(bitbucketEmail));
-            this.BitbucketLogin = bitbucketLogin ?? throw new global::System.ArgumentNullException(nameof(bitbucketLogin));
-            this.BitbucketName = bitbucketName;
+            this.GitlabLogin = gitlabLogin ?? throw new global::System.ArgumentNullException(nameof(gitlabLogin));
+            this.GitlabUserId = gitlabUserId;
         }
 
         /// <summary>

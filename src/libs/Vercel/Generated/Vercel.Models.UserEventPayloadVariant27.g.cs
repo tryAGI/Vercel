@@ -24,20 +24,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("installationId")]
-        public string? InstallationId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextScopes")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant27NextScope> NextScopes { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("before")]
-        public global::Vercel.UserEventPayloadVariant27Before? Before { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("after")]
-        public global::Vercel.UserEventPayloadVariant27After? After { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextPermissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant27NextPermission>? NextPermissions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,25 +44,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant27" /> class.
         /// </summary>
         /// <param name="appName"></param>
+        /// <param name="nextScopes"></param>
         /// <param name="appId"></param>
-        /// <param name="installationId"></param>
-        /// <param name="before"></param>
-        /// <param name="after"></param>
+        /// <param name="nextPermissions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant27(
             string appName,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant27NextScope> nextScopes,
             string? appId,
-            string? installationId,
-            global::Vercel.UserEventPayloadVariant27Before? before,
-            global::Vercel.UserEventPayloadVariant27After? after)
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant27NextPermission>? nextPermissions)
         {
             this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
             this.AppId = appId;
-            this.InstallationId = installationId;
-            this.Before = before;
-            this.After = after;
+            this.NextScopes = nextScopes ?? throw new global::System.ArgumentNullException(nameof(nextScopes));
+            this.NextPermissions = nextPermissions;
         }
 
         /// <summary>

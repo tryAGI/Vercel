@@ -19,7 +19,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,10 +38,10 @@ namespace Vercel
 #endif
         public UserEventPayloadVariant10AccessGroup(
             string id,
-            string? name)
+            string name)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Name = name;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 
         /// <summary>

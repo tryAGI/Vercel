@@ -23,13 +23,6 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant128ProjectMicrofrontendsVariant1, global::Vercel.UserEventPayloadVariant128ProjectMicrofrontendsVariant2, global::Vercel.UserEventPayloadVariant128ProjectMicrofrontendsVariant3>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant128ProjectMicrofrontendsVariant1, global::Vercel.UserEventPayloadVariant128ProjectMicrofrontendsVariant2, global::Vercel.UserEventPayloadVariant128ProjectMicrofrontendsVariant3>? Microfrontends { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -40,18 +33,15 @@ namespace Vercel
         /// </summary>
         /// <param name="id"></param>
         /// <param name="name"></param>
-        /// <param name="microfrontends"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant128Project(
             string id,
-            string name,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant128ProjectMicrofrontendsVariant1, global::Vercel.UserEventPayloadVariant128ProjectMicrofrontendsVariant2, global::Vercel.UserEventPayloadVariant128ProjectMicrofrontendsVariant3>? microfrontends)
+            string name)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Microfrontends = microfrontends;
         }
 
         /// <summary>

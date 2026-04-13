@@ -11,16 +11,37 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required global::Vercel.UserEventPayloadVariant158Next Next { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant158Previous Previous { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updates")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant158Update> Updates { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +52,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant158" /> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="ownerId"></param>
+        /// <param name="next"></param>
+        /// <param name="previous"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="updates"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant158(
-            string name,
-            string ownerId)
+            global::Vercel.UserEventPayloadVariant158Next next,
+            global::Vercel.UserEventPayloadVariant158Previous previous,
+            string projectId,
+            string projectName,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant158Update> updates)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.Updates = updates ?? throw new global::System.ArgumentNullException(nameof(updates));
         }
 
         /// <summary>

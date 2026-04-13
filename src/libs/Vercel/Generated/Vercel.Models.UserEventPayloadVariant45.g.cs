@@ -11,16 +11,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cn")]
+        public string? Cn { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cns")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Cns { get; set; }
+        public global::System.Collections.Generic.IList<string>? Cns { get; set; }
 
         /// <summary>
         /// 
@@ -28,6 +26,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("custom")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Custom { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        public string? Id { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +42,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant45" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="cns"></param>
         /// <param name="custom"></param>
+        /// <param name="cn"></param>
+        /// <param name="cns"></param>
+        /// <param name="id"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant45(
-            string id,
-            global::System.Collections.Generic.IList<string> cns,
-            bool custom)
+            bool custom,
+            string? cn,
+            global::System.Collections.Generic.IList<string>? cns,
+            string? id)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Cns = cns ?? throw new global::System.ArgumentNullException(nameof(cns));
+            this.Cn = cn;
+            this.Cns = cns;
             this.Custom = custom;
+            this.Id = id;
         }
 
         /// <summary>

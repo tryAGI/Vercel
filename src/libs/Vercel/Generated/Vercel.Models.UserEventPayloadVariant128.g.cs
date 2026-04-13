@@ -18,13 +18,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prev")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant128Prev Prev { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("group")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UserEventPayloadVariant128Group Group { get; set; }
@@ -39,18 +32,15 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant128" /> class.
         /// </summary>
         /// <param name="project"></param>
-        /// <param name="prev"></param>
         /// <param name="group"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant128(
             global::Vercel.UserEventPayloadVariant128Project project,
-            global::Vercel.UserEventPayloadVariant128Prev prev,
             global::Vercel.UserEventPayloadVariant128Group group)
         {
             this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.Prev = prev ?? throw new global::System.ArgumentNullException(nameof(prev));
             this.Group = group ?? throw new global::System.ArgumentNullException(nameof(group));
         }
 

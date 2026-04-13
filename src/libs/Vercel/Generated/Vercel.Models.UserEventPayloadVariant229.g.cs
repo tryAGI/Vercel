@@ -11,39 +11,44 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("analyticsId")]
-        public string? AnalyticsId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sampleRatePercent")]
-        public double? SampleRatePercent { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("spendLimitInDollars")]
-        public double? SpendLimitInDollars { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant229Previous Previous { get; set; }
+        public required string Email { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabLogin")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GitlabLogin { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabEmail")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GitlabEmail { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GitlabName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ZeitAccount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccountType")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ZeitAccountType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,29 +59,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant229" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="analyticsId"></param>
-        /// <param name="sampleRatePercent"></param>
-        /// <param name="spendLimitInDollars"></param>
+        /// <param name="email"></param>
+        /// <param name="gitlabLogin"></param>
+        /// <param name="gitlabEmail"></param>
+        /// <param name="gitlabName"></param>
+        /// <param name="zeitAccount"></param>
+        /// <param name="zeitAccountType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant229(
-            global::Vercel.UserEventPayloadVariant229Previous previous,
-            string? projectId,
-            string? projectName,
-            string? analyticsId,
-            double? sampleRatePercent,
-            double? spendLimitInDollars)
+            string email,
+            string gitlabLogin,
+            string gitlabEmail,
+            string gitlabName,
+            string zeitAccount,
+            string zeitAccountType)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.AnalyticsId = analyticsId;
-            this.SampleRatePercent = sampleRatePercent;
-            this.SpendLimitInDollars = spendLimitInDollars;
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
+            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.GitlabLogin = gitlabLogin ?? throw new global::System.ArgumentNullException(nameof(gitlabLogin));
+            this.GitlabEmail = gitlabEmail ?? throw new global::System.ArgumentNullException(nameof(gitlabEmail));
+            this.GitlabName = gitlabName ?? throw new global::System.ArgumentNullException(nameof(gitlabName));
+            this.ZeitAccount = zeitAccount ?? throw new global::System.ArgumentNullException(nameof(zeitAccount));
+            this.ZeitAccountType = zeitAccountType ?? throw new global::System.ArgumentNullException(nameof(zeitAccountType));
         }
 
         /// <summary>

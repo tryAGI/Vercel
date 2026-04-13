@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        ResumePlan,
+        CancelPlan,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                UserEventPayloadVariant39Action.ResumePlan => "resume_plan",
+                UserEventPayloadVariant39Action.CancelPlan => "cancel_plan",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "resume_plan" => UserEventPayloadVariant39Action.ResumePlan,
+                "cancel_plan" => UserEventPayloadVariant39Action.CancelPlan,
                 _ => null,
             };
         }

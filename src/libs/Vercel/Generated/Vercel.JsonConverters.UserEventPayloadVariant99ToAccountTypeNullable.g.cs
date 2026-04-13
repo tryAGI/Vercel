@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace Vercel.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class UserEventPayloadVariant99ToAccountTypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.UserEventPayloadVariant99ToAccountType?>
+    {
+        /// <inheritdoc />
+        public override global::Vercel.UserEventPayloadVariant99ToAccountType? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Vercel.UserEventPayloadVariant99ToAccountTypeExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Vercel.UserEventPayloadVariant99ToAccountType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Vercel.UserEventPayloadVariant99ToAccountType?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Vercel.UserEventPayloadVariant99ToAccountType? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::Vercel.UserEventPayloadVariant99ToAccountTypeExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

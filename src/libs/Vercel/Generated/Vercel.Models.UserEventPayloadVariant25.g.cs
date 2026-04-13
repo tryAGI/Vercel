@@ -22,6 +22,19 @@ namespace Vercel
         public string? AppId { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant25Scope> Scopes { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant25Permission>? Permissions { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -31,16 +44,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant25" /> class.
         /// </summary>
         /// <param name="appName"></param>
+        /// <param name="scopes"></param>
         /// <param name="appId"></param>
+        /// <param name="permissions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant25(
             string appName,
-            string? appId)
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant25Scope> scopes,
+            string? appId,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant25Permission>? permissions)
         {
             this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
             this.AppId = appId;
+            this.Scopes = scopes ?? throw new global::System.ArgumentNullException(nameof(scopes));
+            this.Permissions = permissions;
         }
 
         /// <summary>

@@ -11,30 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("author")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Author { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accessGroup")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UserEventPayloadVariant8AccessGroup AccessGroup { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant8Project Project { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next_role")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant8NextRoleJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant8NextRole? NextRole { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous_role")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant8PreviousRoleJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant8PreviousRole? PreviousRole { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant8" /> class.
         /// </summary>
+        /// <param name="author"></param>
         /// <param name="accessGroup"></param>
-        /// <param name="project"></param>
-        /// <param name="nextRole"></param>
-        /// <param name="previousRole"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant8(
-            global::Vercel.UserEventPayloadVariant8AccessGroup accessGroup,
-            global::Vercel.UserEventPayloadVariant8Project project,
-            global::Vercel.UserEventPayloadVariant8NextRole? nextRole,
-            global::Vercel.UserEventPayloadVariant8PreviousRole? previousRole)
+            string author,
+            global::Vercel.UserEventPayloadVariant8AccessGroup accessGroup)
         {
+            this.Author = author ?? throw new global::System.ArgumentNullException(nameof(author));
             this.AccessGroup = accessGroup ?? throw new global::System.ArgumentNullException(nameof(accessGroup));
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.NextRole = nextRole;
-            this.PreviousRole = previousRole;
         }
 
         /// <summary>

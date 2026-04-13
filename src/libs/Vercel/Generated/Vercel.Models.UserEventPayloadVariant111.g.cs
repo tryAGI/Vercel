@@ -18,16 +18,36 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rulesetName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RulesetName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ruleGroups")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("restore")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant111RuleGroups2> RuleGroups { get; set; }
+        public required bool Restore { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("configVersion")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double ConfigVersion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("configChangeCount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double ConfigChangeCount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("configChanges")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<object> ConfigChanges { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,19 +59,28 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant111" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="rulesetName"></param>
-        /// <param name="ruleGroups"></param>
+        /// <param name="restore"></param>
+        /// <param name="configVersion"></param>
+        /// <param name="configChangeCount"></param>
+        /// <param name="configChanges"></param>
+        /// <param name="projectName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant111(
             string projectId,
-            string rulesetName,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant111RuleGroups2> ruleGroups)
+            bool restore,
+            double configVersion,
+            double configChangeCount,
+            global::System.Collections.Generic.IList<object> configChanges,
+            string? projectName)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.RulesetName = rulesetName ?? throw new global::System.ArgumentNullException(nameof(rulesetName));
-            this.RuleGroups = ruleGroups ?? throw new global::System.ArgumentNullException(nameof(ruleGroups));
+            this.ProjectName = projectName;
+            this.Restore = restore;
+            this.ConfigVersion = configVersion;
+            this.ConfigChangeCount = configChangeCount;
+            this.ConfigChanges = configChanges ?? throw new global::System.ArgumentNullException(nameof(configChanges));
         }
 
         /// <summary>

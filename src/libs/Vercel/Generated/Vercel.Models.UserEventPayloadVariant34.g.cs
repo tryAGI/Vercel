@@ -11,30 +11,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string InvoiceId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Amount { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("refundReason")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RefundReason { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("lineItemCount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double LineItemCount { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
+        public string? Avatar { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +23,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant34" /> class.
         /// </summary>
-        /// <param name="invoiceId"></param>
-        /// <param name="amount"></param>
-        /// <param name="refundReason"></param>
-        /// <param name="lineItemCount"></param>
+        /// <param name="avatar"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant34(
-            string invoiceId,
-            double amount,
-            string refundReason,
-            double lineItemCount)
+            string? avatar)
         {
-            this.InvoiceId = invoiceId ?? throw new global::System.ArgumentNullException(nameof(invoiceId));
-            this.Amount = amount;
-            this.RefundReason = refundReason ?? throw new global::System.ArgumentNullException(nameof(refundReason));
-            this.LineItemCount = lineItemCount;
+            this.Avatar = avatar;
         }
 
         /// <summary>
