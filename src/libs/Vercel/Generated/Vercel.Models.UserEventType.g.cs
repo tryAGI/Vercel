@@ -840,6 +840,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        PrivatelinkEndpointDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         ProductionBranchUpdated,
         /// <summary>
         /// 
@@ -1922,6 +1926,7 @@ namespace Vercel
                 UserEventType.PreviewDeploymentSuffixEnabled => "preview-deployment-suffix-enabled",
                 UserEventType.PreviewDeploymentSuffixUpdate => "preview-deployment-suffix-update",
                 UserEventType.PrivatelinkEndpointCreated => "privatelink-endpoint-created",
+                UserEventType.PrivatelinkEndpointDeleted => "privatelink-endpoint-deleted",
                 UserEventType.ProductionBranchUpdated => "production-branch-updated",
                 UserEventType.ProjectAddAlias => "project-add-alias",
                 UserEventType.ProjectAddRedirect => "project-add-redirect",
@@ -2355,6 +2360,7 @@ namespace Vercel
                 "preview-deployment-suffix-enabled" => UserEventType.PreviewDeploymentSuffixEnabled,
                 "preview-deployment-suffix-update" => UserEventType.PreviewDeploymentSuffixUpdate,
                 "privatelink-endpoint-created" => UserEventType.PrivatelinkEndpointCreated,
+                "privatelink-endpoint-deleted" => UserEventType.PrivatelinkEndpointDeleted,
                 "production-branch-updated" => UserEventType.ProductionBranchUpdated,
                 "project-add-alias" => UserEventType.ProjectAddAlias,
                 "project-add-redirect" => UserEventType.ProjectAddRedirect,
