@@ -15672,27 +15672,27 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.CreateEdgeConfigResponseTransfer? Type3911 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.CreateEdgeConfigResponsePurposeVariant1, global::Vercel.CreateEdgeConfigResponsePurposeVariant2>? Type3911 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.CreateEdgeConfigResponsePurposeVariant1, global::Vercel.CreateEdgeConfigResponsePurposeVariant2>? Type3912 { get; set; }
+        public global::Vercel.CreateEdgeConfigResponsePurposeVariant1? Type3912 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.CreateEdgeConfigResponsePurposeVariant1? Type3913 { get; set; }
+        public global::Vercel.CreateEdgeConfigResponsePurposeVariant1Type? Type3913 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.CreateEdgeConfigResponsePurposeVariant1Type? Type3914 { get; set; }
+        public global::Vercel.CreateEdgeConfigResponsePurposeVariant2? Type3914 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.CreateEdgeConfigResponsePurposeVariant2? Type3915 { get; set; }
+        public global::Vercel.CreateEdgeConfigResponsePurposeVariant2Type? Type3915 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.CreateEdgeConfigResponsePurposeVariant2Type? Type3916 { get; set; }
+        public global::Vercel.CreateEdgeConfigResponseTransfer? Type3916 { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -15700,27 +15700,27 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetEdgeConfigResponseTransfer? Type3918 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetEdgeConfigResponsePurposeVariant1, global::Vercel.GetEdgeConfigResponsePurposeVariant2>? Type3918 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetEdgeConfigResponsePurposeVariant1, global::Vercel.GetEdgeConfigResponsePurposeVariant2>? Type3919 { get; set; }
+        public global::Vercel.GetEdgeConfigResponsePurposeVariant1? Type3919 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetEdgeConfigResponsePurposeVariant1? Type3920 { get; set; }
+        public global::Vercel.GetEdgeConfigResponsePurposeVariant1Type? Type3920 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetEdgeConfigResponsePurposeVariant1Type? Type3921 { get; set; }
+        public global::Vercel.GetEdgeConfigResponsePurposeVariant2? Type3921 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetEdgeConfigResponsePurposeVariant2? Type3922 { get; set; }
+        public global::Vercel.GetEdgeConfigResponsePurposeVariant2Type? Type3922 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetEdgeConfigResponsePurposeVariant2Type? Type3923 { get; set; }
+        public global::Vercel.GetEdgeConfigResponseTransfer? Type3923 { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -15728,27 +15728,27 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.UpdateEdgeConfigResponseTransfer? Type3925 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.UpdateEdgeConfigResponsePurposeVariant1, global::Vercel.UpdateEdgeConfigResponsePurposeVariant2>? Type3925 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.UpdateEdgeConfigResponsePurposeVariant1, global::Vercel.UpdateEdgeConfigResponsePurposeVariant2>? Type3926 { get; set; }
+        public global::Vercel.UpdateEdgeConfigResponsePurposeVariant1? Type3926 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.UpdateEdgeConfigResponsePurposeVariant1? Type3927 { get; set; }
+        public global::Vercel.UpdateEdgeConfigResponsePurposeVariant1Type? Type3927 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.UpdateEdgeConfigResponsePurposeVariant1Type? Type3928 { get; set; }
+        public global::Vercel.UpdateEdgeConfigResponsePurposeVariant2? Type3928 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.UpdateEdgeConfigResponsePurposeVariant2? Type3929 { get; set; }
+        public global::Vercel.UpdateEdgeConfigResponsePurposeVariant2Type? Type3929 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.UpdateEdgeConfigResponsePurposeVariant2Type? Type3930 { get; set; }
+        public global::Vercel.UpdateEdgeConfigResponseTransfer? Type3930 { get; set; }
         /// <summary>
         /// 
         /// </summary>

@@ -9,12 +9,6 @@ namespace Vercel
     public sealed partial class GetEdgeConfigResponse
     {
         /// <summary>
-        /// Keeps track of the current state of the Edge Config while it gets transferred.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transfer")]
-        public global::Vercel.GetEdgeConfigResponseTransfer? Transfer { get; set; }
-
-        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
@@ -76,6 +70,12 @@ namespace Vercel
         public double? DeletedAt { get; set; }
 
         /// <summary>
+        /// Keeps track of the current state of the Edge Config while it gets transferred.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transfer")]
+        public global::Vercel.GetEdgeConfigResponseTransfer? Transfer { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("schema")]
@@ -120,14 +120,14 @@ namespace Vercel
         /// <param name="digest"></param>
         /// <param name="sizeInBytes"></param>
         /// <param name="itemCount"></param>
-        /// <param name="transfer">
-        /// Keeps track of the current state of the Edge Config while it gets transferred.
-        /// </param>
         /// <param name="createdBy">
         /// The ID of the user who created the Edge Config, optional because it is not always set.
         /// </param>
         /// <param name="purpose"></param>
         /// <param name="deletedAt"></param>
+        /// <param name="transfer">
+        /// Keeps track of the current state of the Edge Config while it gets transferred.
+        /// </param>
         /// <param name="schema"></param>
         /// <param name="syncedToDynamoAt">
         /// Timestamp of when the Edge Config was synced to DynamoDB initially. It is only set when syncing the entire Edge Config, not when updating.
@@ -144,14 +144,13 @@ namespace Vercel
             string digest,
             double sizeInBytes,
             double itemCount,
-            global::Vercel.GetEdgeConfigResponseTransfer? transfer,
             string? createdBy,
             global::Vercel.OneOf<global::Vercel.GetEdgeConfigResponsePurposeVariant1, global::Vercel.GetEdgeConfigResponsePurposeVariant2>? purpose,
             double? deletedAt,
+            global::Vercel.GetEdgeConfigResponseTransfer? transfer,
             object? schema,
             double? syncedToDynamoAt)
         {
-            this.Transfer = transfer;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.CreatedAt = createdAt;
             this.CreatedBy = createdBy;
@@ -161,6 +160,7 @@ namespace Vercel
             this.Digest = digest ?? throw new global::System.ArgumentNullException(nameof(digest));
             this.Purpose = purpose;
             this.DeletedAt = deletedAt;
+            this.Transfer = transfer;
             this.Schema = schema;
             this.SyncedToDynamoAt = syncedToDynamoAt;
             this.SizeInBytes = sizeInBytes;
