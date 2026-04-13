@@ -19,13 +19,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("previousRule")]
-        public global::Vercel.UserEventPayloadVariant103PreviousRule? PreviousRule { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nextRule")]
-        public global::Vercel.UserEventPayloadVariant103NextRule? NextRule { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant103PreviousRule PreviousRule { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,18 +33,15 @@ namespace Vercel
         /// </summary>
         /// <param name="team"></param>
         /// <param name="previousRule"></param>
-        /// <param name="nextRule"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant103(
             global::Vercel.UserEventPayloadVariant103Team team,
-            global::Vercel.UserEventPayloadVariant103PreviousRule? previousRule,
-            global::Vercel.UserEventPayloadVariant103NextRule? nextRule)
+            global::Vercel.UserEventPayloadVariant103PreviousRule previousRule)
         {
             this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
-            this.PreviousRule = previousRule;
-            this.NextRule = nextRule;
+            this.PreviousRule = previousRule ?? throw new global::System.ArgumentNullException(nameof(previousRule));
         }
 
         /// <summary>

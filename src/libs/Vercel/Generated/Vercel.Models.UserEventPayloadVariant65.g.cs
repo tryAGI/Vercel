@@ -11,30 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("suffix")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("hookName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string HookName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Ref { get; set; }
+        public required string Suffix { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant65" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="hookName"></param>
-        /// <param name="ref"></param>
+        /// <param name="suffix"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant65(
-            string projectId,
-            string projectName,
-            string hookName,
-            string @ref)
+            string suffix)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.HookName = hookName ?? throw new global::System.ArgumentNullException(nameof(hookName));
-            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
+            this.Suffix = suffix ?? throw new global::System.ArgumentNullException(nameof(suffix));
         }
 
         /// <summary>

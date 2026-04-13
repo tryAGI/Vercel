@@ -11,23 +11,37 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant72Deployment Deployment { get; set; }
+        public required string Sha { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitUserPlatform")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DeploymentId { get; set; }
+        public required string GitUserPlatform { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitCommitterName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GitCommitterName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Source { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +52,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant72" /> class.
         /// </summary>
-        /// <param name="deployment"></param>
-        /// <param name="deploymentId"></param>
-        /// <param name="url"></param>
+        /// <param name="sha"></param>
+        /// <param name="gitUserPlatform"></param>
+        /// <param name="projectName"></param>
+        /// <param name="gitCommitterName"></param>
+        /// <param name="source"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant72(
-            global::Vercel.UserEventPayloadVariant72Deployment deployment,
-            string deploymentId,
-            string url)
+            string sha,
+            string gitUserPlatform,
+            string projectName,
+            string gitCommitterName,
+            string source)
         {
-            this.Deployment = deployment ?? throw new global::System.ArgumentNullException(nameof(deployment));
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
+            this.GitUserPlatform = gitUserPlatform ?? throw new global::System.ArgumentNullException(nameof(gitUserPlatform));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.GitCommitterName = gitCommitterName ?? throw new global::System.ArgumentNullException(nameof(gitCommitterName));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
         }
 
         /// <summary>

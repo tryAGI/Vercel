@@ -11,42 +11,36 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string UserId { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("fromDeploymentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationId { get; set; }
+        public required string FromDeploymentId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configurationId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("toDeploymentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ConfigurationId { get; set; }
+        public required string ToDeploymentId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationSlug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationSlug { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
-        public string? IntegrationName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newOwner")]
-        public global::Vercel.UserEventPayloadVariant115NewOwner? NewOwner { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -57,29 +51,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant115" /> class.
         /// </summary>
-        /// <param name="userId"></param>
-        /// <param name="integrationId"></param>
-        /// <param name="configurationId"></param>
-        /// <param name="integrationSlug"></param>
-        /// <param name="integrationName"></param>
-        /// <param name="newOwner"></param>
+        /// <param name="projectId"></param>
+        /// <param name="fromDeploymentId"></param>
+        /// <param name="toDeploymentId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant115(
-            string userId,
-            string integrationId,
-            string configurationId,
-            string integrationSlug,
-            string? integrationName,
-            global::Vercel.UserEventPayloadVariant115NewOwner? newOwner)
+            string projectId,
+            string fromDeploymentId,
+            string toDeploymentId,
+            string projectName,
+            string? reason)
         {
-            this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
-            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
-            this.ConfigurationId = configurationId ?? throw new global::System.ArgumentNullException(nameof(configurationId));
-            this.IntegrationSlug = integrationSlug ?? throw new global::System.ArgumentNullException(nameof(integrationSlug));
-            this.IntegrationName = integrationName;
-            this.NewOwner = newOwner;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.FromDeploymentId = fromDeploymentId ?? throw new global::System.ArgumentNullException(nameof(fromDeploymentId));
+            this.ToDeploymentId = toDeploymentId ?? throw new global::System.ArgumentNullException(nameof(toDeploymentId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.Reason = reason;
         }
 
         /// <summary>

@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Status { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("suffix")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Suffix { get; set; }
@@ -24,13 +31,16 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant64" /> class.
         /// </summary>
+        /// <param name="status"></param>
         /// <param name="suffix"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant64(
+            string status,
             string suffix)
         {
+            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
             this.Suffix = suffix ?? throw new global::System.ArgumentNullException(nameof(suffix));
         }
 

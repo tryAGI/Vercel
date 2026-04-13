@@ -11,36 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant114ActionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fromDeploymentId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string FromDeploymentId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("toDeploymentId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ToDeploymentId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        public string? Reason { get; set; }
+        public required global::Vercel.UserEventPayloadVariant114Action Action { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -51,26 +25,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant114" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="fromDeploymentId"></param>
-        /// <param name="toDeploymentId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="reason"></param>
+        /// <param name="action"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant114(
-            string projectId,
-            string fromDeploymentId,
-            string toDeploymentId,
-            string projectName,
-            string? reason)
+            global::Vercel.UserEventPayloadVariant114Action action)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.FromDeploymentId = fromDeploymentId ?? throw new global::System.ArgumentNullException(nameof(fromDeploymentId));
-            this.ToDeploymentId = toDeploymentId ?? throw new global::System.ArgumentNullException(nameof(toDeploymentId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Reason = reason;
+            this.Action = action;
         }
 
         /// <summary>

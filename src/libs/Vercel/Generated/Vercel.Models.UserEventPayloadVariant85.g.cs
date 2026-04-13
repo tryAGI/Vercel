@@ -16,13 +16,6 @@ namespace Vercel
         public required string Domain { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zone")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Zone { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -32,16 +25,13 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant85" /> class.
         /// </summary>
         /// <param name="domain"></param>
-        /// <param name="zone"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant85(
-            string domain,
-            bool zone)
+            string domain)
         {
             this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
-            this.Zone = zone;
         }
 
         /// <summary>

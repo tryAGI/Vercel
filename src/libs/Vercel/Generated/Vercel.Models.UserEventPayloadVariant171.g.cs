@@ -25,24 +25,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitProvider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant171GitProviderJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant171GitProvider GitProvider { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        public global::Vercel.UserEventPayloadVariant171Previous? Previous { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitRepoId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitRepoId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitRepositoryName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitRepositoryName { get; set; }
+        public required global::Vercel.UserEventPayloadVariant171Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -55,24 +46,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="gitProvider"></param>
-        /// <param name="gitRepoId"></param>
-        /// <param name="gitRepositoryName"></param>
+        /// <param name="next"></param>
+        /// <param name="previous"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant171(
             string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant171GitProvider gitProvider,
-            string gitRepoId,
-            string gitRepositoryName)
+            global::Vercel.UserEventPayloadVariant171Next next,
+            global::Vercel.UserEventPayloadVariant171Previous? previous)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.GitProvider = gitProvider;
-            this.GitRepoId = gitRepoId ?? throw new global::System.ArgumentNullException(nameof(gitRepoId));
-            this.GitRepositoryName = gitRepositoryName ?? throw new global::System.ArgumentNullException(nameof(gitRepositoryName));
+            this.Previous = previous;
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

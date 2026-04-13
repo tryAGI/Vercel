@@ -46,9 +46,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectIds")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::Vercel.UserEventPayloadVariant119ProjectIds?>))]
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.UserEventPayloadVariant119ProjectIds?>? ProjectIds { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("billingPlanId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string BillingPlanId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("billingPlanName")]
+        public string? BillingPlanName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -64,7 +70,8 @@ namespace Vercel
         /// <param name="integrationSlug"></param>
         /// <param name="integrationName"></param>
         /// <param name="ownerId"></param>
-        /// <param name="projectIds"></param>
+        /// <param name="billingPlanId"></param>
+        /// <param name="billingPlanName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -74,14 +81,16 @@ namespace Vercel
             string integrationSlug,
             string integrationName,
             string ownerId,
-            global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.UserEventPayloadVariant119ProjectIds?>? projectIds)
+            string billingPlanId,
+            string? billingPlanName)
         {
             this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
             this.ConfigurationId = configurationId ?? throw new global::System.ArgumentNullException(nameof(configurationId));
             this.IntegrationSlug = integrationSlug ?? throw new global::System.ArgumentNullException(nameof(integrationSlug));
             this.IntegrationName = integrationName ?? throw new global::System.ArgumentNullException(nameof(integrationName));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.ProjectIds = projectIds;
+            this.BillingPlanId = billingPlanId ?? throw new global::System.ArgumentNullException(nameof(billingPlanId));
+            this.BillingPlanName = billingPlanName;
         }
 
         /// <summary>

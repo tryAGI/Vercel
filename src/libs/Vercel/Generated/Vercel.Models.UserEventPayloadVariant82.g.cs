@@ -11,23 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousServiceType")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("domainId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PreviousServiceType { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("serviceType")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ServiceType { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required string DomainId { get; set; }
 
         /// <summary>
         /// 
@@ -35,13 +21,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nameservers")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Nameservers { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,26 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant82" /> class.
         /// </summary>
-        /// <param name="previousServiceType"></param>
-        /// <param name="serviceType"></param>
-        /// <param name="id"></param>
+        /// <param name="domainId"></param>
         /// <param name="name"></param>
-        /// <param name="nameservers"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant82(
-            string previousServiceType,
-            string serviceType,
-            string id,
-            string name,
-            global::System.Collections.Generic.IList<string> nameservers)
+            string domainId,
+            string name)
         {
-            this.PreviousServiceType = previousServiceType ?? throw new global::System.ArgumentNullException(nameof(previousServiceType));
-            this.ServiceType = serviceType ?? throw new global::System.ArgumentNullException(nameof(serviceType));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.DomainId = domainId ?? throw new global::System.ArgumentNullException(nameof(domainId));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Nameservers = nameservers ?? throw new global::System.ArgumentNullException(nameof(nameservers));
         }
 
         /// <summary>

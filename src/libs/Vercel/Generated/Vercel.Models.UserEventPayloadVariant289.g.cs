@@ -11,15 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("chatId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ChatId { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("chatTitle")]
-        public string? ChatTitle { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant289" /> class.
         /// </summary>
-        /// <param name="chatId"></param>
-        /// <param name="chatTitle"></param>
+        /// <param name="id"></param>
+        /// <param name="url"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant289(
-            string chatId,
-            string? chatTitle)
+            string id,
+            string url)
         {
-            this.ChatId = chatId ?? throw new global::System.ArgumentNullException(nameof(chatId));
-            this.ChatTitle = chatTitle;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

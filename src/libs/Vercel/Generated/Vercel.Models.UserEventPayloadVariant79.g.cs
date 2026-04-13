@@ -18,14 +18,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
-        public global::Vercel.UserEventPayloadVariant79OldTeam? OldTeam { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
-        public global::Vercel.UserEventPayloadVariant79NewTeam? NewTeam { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cdnEnabled")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool CdnEnabled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,19 +32,16 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant79" /> class.
         /// </summary>
         /// <param name="name"></param>
-        /// <param name="oldTeam"></param>
-        /// <param name="newTeam"></param>
+        /// <param name="cdnEnabled"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant79(
             string name,
-            global::Vercel.UserEventPayloadVariant79OldTeam? oldTeam,
-            global::Vercel.UserEventPayloadVariant79NewTeam? newTeam)
+            bool cdnEnabled)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.OldTeam = oldTeam;
-            this.NewTeam = newTeam;
+            this.CdnEnabled = cdnEnabled;
         }
 
         /// <summary>

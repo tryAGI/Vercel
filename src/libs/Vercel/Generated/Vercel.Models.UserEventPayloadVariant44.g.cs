@@ -11,27 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cn")]
-        public string? Cn { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cns")]
-        public global::System.Collections.Generic.IList<string>? Cns { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("custom")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Custom { get; set; }
+        public required global::Vercel.UserEventPayloadVariant44Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("versionId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string VersionId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -42,23 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant44" /> class.
         /// </summary>
-        /// <param name="custom"></param>
-        /// <param name="cn"></param>
-        /// <param name="cns"></param>
-        /// <param name="id"></param>
+        /// <param name="project"></param>
+        /// <param name="versionId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant44(
-            bool custom,
-            string? cn,
-            global::System.Collections.Generic.IList<string>? cns,
-            string? id)
+            global::Vercel.UserEventPayloadVariant44Project project,
+            string versionId)
         {
-            this.Cn = cn;
-            this.Cns = cns;
-            this.Custom = custom;
-            this.Id = id;
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.VersionId = versionId ?? throw new global::System.ArgumentNullException(nameof(versionId));
         }
 
         /// <summary>

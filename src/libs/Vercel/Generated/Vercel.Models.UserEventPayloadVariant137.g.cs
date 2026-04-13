@@ -11,14 +11,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentSuffix")]
-        public string? PreviewDeploymentSuffix { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("price")]
+        public double? Price { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousPreviewDeploymentSuffix")]
-        public string? PreviousPreviewDeploymentSuffix { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
+        public string? Currency { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        public bool? Enabled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +35,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant137" /> class.
         /// </summary>
-        /// <param name="previewDeploymentSuffix"></param>
-        /// <param name="previousPreviewDeploymentSuffix"></param>
+        /// <param name="price"></param>
+        /// <param name="currency"></param>
+        /// <param name="enabled"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant137(
-            string? previewDeploymentSuffix,
-            string? previousPreviewDeploymentSuffix)
+            double? price,
+            string? currency,
+            bool? enabled)
         {
-            this.PreviewDeploymentSuffix = previewDeploymentSuffix;
-            this.PreviousPreviewDeploymentSuffix = previousPreviewDeploymentSuffix;
+            this.Price = price;
+            this.Currency = currency;
+            this.Enabled = enabled;
         }
 
         /// <summary>

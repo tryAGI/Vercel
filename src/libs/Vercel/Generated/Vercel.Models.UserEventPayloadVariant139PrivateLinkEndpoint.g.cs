@@ -23,18 +23,6 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environmentIds")]
-        public global::System.Collections.Generic.IList<string>? EnvironmentIds { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("privateDnsNames")]
-        public global::System.Collections.Generic.IList<string>? PrivateDnsNames { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,21 +33,15 @@ namespace Vercel
         /// </summary>
         /// <param name="id"></param>
         /// <param name="name"></param>
-        /// <param name="environmentIds"></param>
-        /// <param name="privateDnsNames"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant139PrivateLinkEndpoint(
             string id,
-            string name,
-            global::System.Collections.Generic.IList<string>? environmentIds,
-            global::System.Collections.Generic.IList<string>? privateDnsNames)
+            string name)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.EnvironmentIds = environmentIds;
-            this.PrivateDnsNames = privateDnsNames;
         }
 
         /// <summary>

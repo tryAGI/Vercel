@@ -18,50 +18,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant9Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousName")]
-        public string? PreviousName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next_role")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant9NextRoleJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant9NextRole? NextRole { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousTeamRoles")]
-        public global::System.Collections.Generic.IList<string>? PreviousTeamRoles { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<string>? TeamPermissions { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousTeamPermissions")]
-        public global::System.Collections.Generic.IList<string>? PreviousTeamPermissions { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlementsAdded")]
-        public global::System.Collections.Generic.IList<string>? EntitlementsAdded { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlementsRemoved")]
-        public global::System.Collections.Generic.IList<string>? EntitlementsRemoved { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous_role")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant9PreviousRoleJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant9PreviousRole? PreviousRole { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -73,37 +46,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant9" /> class.
         /// </summary>
         /// <param name="accessGroup"></param>
-        /// <param name="name"></param>
-        /// <param name="previousName"></param>
-        /// <param name="teamRoles"></param>
-        /// <param name="previousTeamRoles"></param>
-        /// <param name="teamPermissions"></param>
-        /// <param name="previousTeamPermissions"></param>
-        /// <param name="entitlementsAdded"></param>
-        /// <param name="entitlementsRemoved"></param>
+        /// <param name="project"></param>
+        /// <param name="nextRole"></param>
+        /// <param name="previousRole"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant9(
             global::Vercel.UserEventPayloadVariant9AccessGroup accessGroup,
-            string? name,
-            string? previousName,
-            global::System.Collections.Generic.IList<string>? teamRoles,
-            global::System.Collections.Generic.IList<string>? previousTeamRoles,
-            global::System.Collections.Generic.IList<string>? teamPermissions,
-            global::System.Collections.Generic.IList<string>? previousTeamPermissions,
-            global::System.Collections.Generic.IList<string>? entitlementsAdded,
-            global::System.Collections.Generic.IList<string>? entitlementsRemoved)
+            global::Vercel.UserEventPayloadVariant9Project project,
+            global::Vercel.UserEventPayloadVariant9NextRole? nextRole,
+            global::Vercel.UserEventPayloadVariant9PreviousRole? previousRole)
         {
             this.AccessGroup = accessGroup ?? throw new global::System.ArgumentNullException(nameof(accessGroup));
-            this.Name = name;
-            this.PreviousName = previousName;
-            this.TeamRoles = teamRoles;
-            this.PreviousTeamRoles = previousTeamRoles;
-            this.TeamPermissions = teamPermissions;
-            this.PreviousTeamPermissions = previousTeamPermissions;
-            this.EntitlementsAdded = entitlementsAdded;
-            this.EntitlementsRemoved = entitlementsRemoved;
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.NextRole = nextRole;
+            this.PreviousRole = previousRole;
         }
 
         /// <summary>

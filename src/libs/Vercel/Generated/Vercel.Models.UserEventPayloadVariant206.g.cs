@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("protectedSourcemaps")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool PublicSource { get; set; }
+        public required bool ProtectedSourcemaps { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="publicSource"></param>
+        /// <param name="protectedSourcemaps"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant206(
             string projectId,
             string projectName,
-            bool publicSource)
+            bool protectedSourcemaps)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.PublicSource = publicSource;
+            this.ProtectedSourcemaps = protectedSourcemaps;
         }
 
         /// <summary>

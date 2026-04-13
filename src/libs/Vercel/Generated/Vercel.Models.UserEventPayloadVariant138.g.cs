@@ -11,16 +11,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("privateLinkEndpoint")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant138PrivateLinkEndpoint PrivateLinkEndpoint { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentSuffix")]
+        public string? PreviewDeploymentSuffix { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousPreviewDeploymentSuffix")]
+        public string? PreviousPreviewDeploymentSuffix { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant138" /> class.
         /// </summary>
-        /// <param name="privateLinkEndpoint"></param>
-        /// <param name="projectId"></param>
+        /// <param name="previewDeploymentSuffix"></param>
+        /// <param name="previousPreviewDeploymentSuffix"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant138(
-            global::Vercel.UserEventPayloadVariant138PrivateLinkEndpoint privateLinkEndpoint,
-            string projectId)
+            string? previewDeploymentSuffix,
+            string? previousPreviewDeploymentSuffix)
         {
-            this.PrivateLinkEndpoint = privateLinkEndpoint ?? throw new global::System.ArgumentNullException(nameof(privateLinkEndpoint));
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.PreviewDeploymentSuffix = previewDeploymentSuffix;
+            this.PreviousPreviewDeploymentSuffix = previousPreviewDeploymentSuffix;
         }
 
         /// <summary>

@@ -11,30 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant99EdgeConfig EdgeConfig { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSlug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("fromAccount")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigSlug { get; set; }
+        public required global::Vercel.UserEventPayloadVariant99FromAccount FromAccount { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("toAccount")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigTokenId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Label { get; set; }
+        public required global::Vercel.UserEventPayloadVariant99ToAccount ToAccount { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant99" /> class.
         /// </summary>
-        /// <param name="edgeConfigId"></param>
-        /// <param name="edgeConfigSlug"></param>
-        /// <param name="edgeConfigTokenId"></param>
-        /// <param name="label"></param>
+        /// <param name="edgeConfig"></param>
+        /// <param name="fromAccount"></param>
+        /// <param name="toAccount"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant99(
-            string edgeConfigId,
-            string edgeConfigSlug,
-            string edgeConfigTokenId,
-            string label)
+            global::Vercel.UserEventPayloadVariant99EdgeConfig edgeConfig,
+            global::Vercel.UserEventPayloadVariant99FromAccount fromAccount,
+            global::Vercel.UserEventPayloadVariant99ToAccount toAccount)
         {
-            this.EdgeConfigId = edgeConfigId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigId));
-            this.EdgeConfigSlug = edgeConfigSlug ?? throw new global::System.ArgumentNullException(nameof(edgeConfigSlug));
-            this.EdgeConfigTokenId = edgeConfigTokenId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigTokenId));
-            this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
+            this.EdgeConfig = edgeConfig ?? throw new global::System.ArgumentNullException(nameof(edgeConfig));
+            this.FromAccount = fromAccount ?? throw new global::System.ArgumentNullException(nameof(fromAccount));
+            this.ToAccount = toAccount ?? throw new global::System.ArgumentNullException(nameof(toAccount));
         }
 
         /// <summary>

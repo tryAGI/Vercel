@@ -19,35 +19,16 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("restore")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Restore { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("configVersion")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double ConfigVersion { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configChangeCount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double ConfigChangeCount { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configChanges")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<object> ConfigChanges { get; set; }
+        public required global::Vercel.OneOf<string, double?> ConfigVersion { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,28 +40,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant110" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="restore"></param>
-        /// <param name="configVersion"></param>
-        /// <param name="configChangeCount"></param>
-        /// <param name="configChanges"></param>
         /// <param name="projectName"></param>
+        /// <param name="configVersion"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant110(
             string projectId,
-            bool restore,
-            double configVersion,
-            double configChangeCount,
-            global::System.Collections.Generic.IList<object> configChanges,
-            string? projectName)
+            string projectName,
+            global::Vercel.OneOf<string, double?> configVersion)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName;
-            this.Restore = restore;
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
             this.ConfigVersion = configVersion;
-            this.ConfigChangeCount = configChangeCount;
-            this.ConfigChanges = configChanges ?? throw new global::System.ArgumentNullException(nameof(configChanges));
         }
 
         /// <summary>

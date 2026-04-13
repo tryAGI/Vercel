@@ -18,14 +18,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destinationId")]
-        public string? DestinationId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("fromId")]
+        public string? FromId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destinationName")]
-        public string? DestinationName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("fromName")]
+        public string? FromName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,19 +37,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant87" /> class.
         /// </summary>
         /// <param name="name"></param>
-        /// <param name="destinationId"></param>
-        /// <param name="destinationName"></param>
+        /// <param name="fromId"></param>
+        /// <param name="fromName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant87(
             string name,
-            string? destinationId,
-            string? destinationName)
+            string? fromId,
+            string? fromName)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.DestinationId = destinationId;
-            this.DestinationName = destinationName;
+            this.FromId = fromId;
+            this.FromName = fromName;
         }
 
         /// <summary>

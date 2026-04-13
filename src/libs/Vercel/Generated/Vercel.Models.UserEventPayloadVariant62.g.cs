@@ -11,15 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        public string? Reason { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketLogin")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string BitbucketLogin { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("suffix")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketAccountId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Suffix { get; set; }
+        public required string BitbucketAccountId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant62" /> class.
         /// </summary>
-        /// <param name="suffix"></param>
-        /// <param name="reason"></param>
+        /// <param name="bitbucketLogin"></param>
+        /// <param name="bitbucketAccountId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant62(
-            string suffix,
-            string? reason)
+            string bitbucketLogin,
+            string bitbucketAccountId)
         {
-            this.Reason = reason;
-            this.Suffix = suffix ?? throw new global::System.ArgumentNullException(nameof(suffix));
+            this.BitbucketLogin = bitbucketLogin ?? throw new global::System.ArgumentNullException(nameof(bitbucketLogin));
+            this.BitbucketAccountId = bitbucketAccountId ?? throw new global::System.ArgumentNullException(nameof(bitbucketAccountId));
         }
 
         /// <summary>

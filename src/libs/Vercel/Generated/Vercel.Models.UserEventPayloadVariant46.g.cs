@@ -11,20 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cn")]
-        public string? Cn { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cns")]
-        public global::System.Collections.Generic.IList<string>? Cns { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> Cns { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("custom")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Custom { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant46" /> class.
         /// </summary>
-        /// <param name="cn"></param>
-        /// <param name="cns"></param>
         /// <param name="id"></param>
+        /// <param name="cns"></param>
+        /// <param name="custom"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant46(
-            string? cn,
-            global::System.Collections.Generic.IList<string>? cns,
-            string? id)
+            string id,
+            global::System.Collections.Generic.IList<string> cns,
+            bool custom)
         {
-            this.Cn = cn;
-            this.Cns = cns;
-            this.Id = id;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Cns = cns ?? throw new global::System.ArgumentNullException(nameof(cns));
+            this.Custom = custom;
         }
 
         /// <summary>

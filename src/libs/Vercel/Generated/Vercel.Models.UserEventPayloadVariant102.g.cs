@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant102Team Team { get; set; }
+        public required string Email { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousRule")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant102PreviousRule PreviousRule { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant102" /> class.
         /// </summary>
-        /// <param name="team"></param>
-        /// <param name="previousRule"></param>
+        /// <param name="email"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant102(
-            global::Vercel.UserEventPayloadVariant102Team team,
-            global::Vercel.UserEventPayloadVariant102PreviousRule previousRule)
+            string email,
+            string name)
         {
-            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
-            this.PreviousRule = previousRule ?? throw new global::System.ArgumentNullException(nameof(previousRule));
+            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 
         /// <summary>

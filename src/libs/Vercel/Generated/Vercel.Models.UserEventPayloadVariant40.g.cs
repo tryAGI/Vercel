@@ -26,7 +26,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Data { get; set; }
+        public required global::Vercel.UserEventPayloadVariant40Data Data { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,7 +44,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant40(
-            object data,
+            global::Vercel.UserEventPayloadVariant40Data data,
             string? subscriptionId,
             global::Vercel.UserEventPayloadVariant40Action action)
         {

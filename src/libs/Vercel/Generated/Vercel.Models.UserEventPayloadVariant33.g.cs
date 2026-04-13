@@ -11,8 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
-        public string? Avatar { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("autoExposeSystemEnvs")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool AutoExposeSystemEnvs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant33" /> class.
         /// </summary>
-        /// <param name="avatar"></param>
+        /// <param name="projectName"></param>
+        /// <param name="autoExposeSystemEnvs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant33(
-            string? avatar)
+            string projectName,
+            bool autoExposeSystemEnvs)
         {
-            this.Avatar = avatar;
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.AutoExposeSystemEnvs = autoExposeSystemEnvs;
         }
 
         /// <summary>

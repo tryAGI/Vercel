@@ -11,16 +11,35 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant185Project> Projects { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Domain { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
+        public string? Redirect { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("redirectStatusCode")]
+        public double? RedirectStatusCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +50,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant185" /> class.
         /// </summary>
-        /// <param name="projects"></param>
-        /// <param name="uid"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="domain"></param>
+        /// <param name="redirect"></param>
+        /// <param name="redirectStatusCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant185(
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant185Project> projects,
-            string uid)
+            string projectId,
+            string projectName,
+            string domain,
+            string? redirect,
+            double? redirectStatusCode)
         {
-            this.Projects = projects ?? throw new global::System.ArgumentNullException(nameof(projects));
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
+            this.Redirect = redirect;
+            this.RedirectStatusCode = redirectStatusCode;
         }
 
         /// <summary>

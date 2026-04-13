@@ -11,39 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
-        public string? Role { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("entitlement")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
+        public required string Entitlement { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        public string? Origin { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant257User User { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<string>? TeamPermissions { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
-        public global::System.Collections.Generic.IList<string>? Entitlements { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousCanceledAt")]
+        public string? PreviousCanceledAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,29 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant257" /> class.
         /// </summary>
-        /// <param name="uid"></param>
-        /// <param name="role"></param>
-        /// <param name="origin"></param>
-        /// <param name="teamRoles"></param>
-        /// <param name="teamPermissions"></param>
-        /// <param name="entitlements"></param>
+        /// <param name="entitlement"></param>
+        /// <param name="user"></param>
+        /// <param name="previousCanceledAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant257(
-            string uid,
-            string? role,
-            string? origin,
-            global::System.Collections.Generic.IList<string>? teamRoles,
-            global::System.Collections.Generic.IList<string>? teamPermissions,
-            global::System.Collections.Generic.IList<string>? entitlements)
+            string entitlement,
+            global::Vercel.UserEventPayloadVariant257User user,
+            string? previousCanceledAt)
         {
-            this.Role = role;
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
-            this.Origin = origin;
-            this.TeamRoles = teamRoles;
-            this.TeamPermissions = teamPermissions;
-            this.Entitlements = entitlements;
+            this.Entitlement = entitlement ?? throw new global::System.ArgumentNullException(nameof(entitlement));
+            this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
+            this.PreviousCanceledAt = previousCanceledAt;
         }
 
         /// <summary>

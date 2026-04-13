@@ -52,6 +52,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayByokCredentialCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayByokCredentialDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayByokCredentialUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AlertRuleCreated,
         /// <summary>
         /// 
@@ -1733,6 +1745,9 @@ namespace Vercel
                 UserEventType.AiCodeReview => "ai-code-review",
                 UserEventType.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
                 UserEventType.AiGatewayApiKeyDeleted => "ai-gateway-api-key-deleted",
+                UserEventType.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
+                UserEventType.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
+                UserEventType.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
                 UserEventType.AlertRuleCreated => "alert-rule-created",
                 UserEventType.AlertRuleDeleted => "alert-rule-deleted",
                 UserEventType.AlertRuleUpdated => "alert-rule-updated",
@@ -2168,6 +2183,9 @@ namespace Vercel
                 "ai-code-review" => UserEventType.AiCodeReview,
                 "ai-gateway-api-key-created" => UserEventType.AiGatewayApiKeyCreated,
                 "ai-gateway-api-key-deleted" => UserEventType.AiGatewayApiKeyDeleted,
+                "ai-gateway-byok-credential-created" => UserEventType.AiGatewayByokCredentialCreated,
+                "ai-gateway-byok-credential-deleted" => UserEventType.AiGatewayByokCredentialDeleted,
+                "ai-gateway-byok-credential-updated" => UserEventType.AiGatewayByokCredentialUpdated,
                 "alert-rule-created" => UserEventType.AlertRuleCreated,
                 "alert-rule-deleted" => UserEventType.AlertRuleDeleted,
                 "alert-rule-updated" => UserEventType.AlertRuleUpdated,

@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewName { get; set; }
+        public required global::Vercel.UserEventPayloadVariant55Project Project { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="team"></param>
         /// <param name="configuration"></param>
-        /// <param name="newName"></param>
+        /// <param name="project"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant55(
             global::Vercel.UserEventPayloadVariant55Team team,
             global::Vercel.UserEventPayloadVariant55Configuration configuration,
-            string newName)
+            global::Vercel.UserEventPayloadVariant55Project project)
         {
             this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
             this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
-            this.NewName = newName ?? throw new global::System.ArgumentNullException(nameof(newName));
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
         }
 
         /// <summary>

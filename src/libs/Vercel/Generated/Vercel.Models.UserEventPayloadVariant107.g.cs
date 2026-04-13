@@ -11,29 +11,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldEnvVar")]
+        public global::Vercel.UserEventPayloadVariant107OldEnvVar? OldEnvVar { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Scope { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newEnvVar")]
+        public global::Vercel.UserEventPayloadVariant107NewEnvVar? NewEnvVar { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
-        public double? ExpiresAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("updateDiff")]
+        public global::Vercel.UserEventPayloadVariant107UpdateDiff? UpdateDiff { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,23 +35,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant107" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="scope"></param>
-        /// <param name="source"></param>
-        /// <param name="expiresAt"></param>
+        /// <param name="oldEnvVar"></param>
+        /// <param name="newEnvVar"></param>
+        /// <param name="updateDiff"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant107(
-            string projectId,
-            string scope,
-            string source,
-            double? expiresAt)
+            global::Vercel.UserEventPayloadVariant107OldEnvVar? oldEnvVar,
+            global::Vercel.UserEventPayloadVariant107NewEnvVar? newEnvVar,
+            global::Vercel.UserEventPayloadVariant107UpdateDiff? updateDiff)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Scope = scope ?? throw new global::System.ArgumentNullException(nameof(scope));
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
-            this.ExpiresAt = expiresAt;
+            this.OldEnvVar = oldEnvVar;
+            this.NewEnvVar = newEnvVar;
+            this.UpdateDiff = updateDiff;
         }
 
         /// <summary>

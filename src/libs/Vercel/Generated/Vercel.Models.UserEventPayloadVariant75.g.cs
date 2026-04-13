@@ -44,6 +44,12 @@ namespace Vercel
         public required string Type { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mxPriority")]
+        public double? MxPriority { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -57,6 +63,7 @@ namespace Vercel
         /// <param name="name"></param>
         /// <param name="domain"></param>
         /// <param name="type"></param>
+        /// <param name="mxPriority"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -65,13 +72,15 @@ namespace Vercel
             string value,
             string name,
             string domain,
-            string type)
+            string type,
+            double? mxPriority)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
             this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
+            this.MxPriority = mxPriority;
         }
 
         /// <summary>

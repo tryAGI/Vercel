@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OldName { get; set; }
+        public required string OwnerId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewName { get; set; }
+        public required string Source { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cause")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Cause { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant134" /> class.
         /// </summary>
-        /// <param name="oldName"></param>
-        /// <param name="newName"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="source"></param>
+        /// <param name="cause"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant134(
-            string oldName,
-            string newName)
+            string ownerId,
+            string source,
+            string cause)
         {
-            this.OldName = oldName ?? throw new global::System.ArgumentNullException(nameof(oldName));
-            this.NewName = newName ?? throw new global::System.ArgumentNullException(nameof(newName));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
         }
 
         /// <summary>

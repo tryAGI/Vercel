@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clientId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ClientId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
@@ -30,6 +23,14 @@ namespace Vercel
         public required string ProjectName { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant156ActionJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant156Action Action { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -38,20 +39,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant156" /> class.
         /// </summary>
-        /// <param name="clientId"></param>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
+        /// <param name="action"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant156(
-            string clientId,
             string projectId,
-            string projectName)
+            string projectName,
+            global::Vercel.UserEventPayloadVariant156Action action)
         {
-            this.ClientId = clientId ?? throw new global::System.ArgumentNullException(nameof(clientId));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.Action = action;
         }
 
         /// <summary>

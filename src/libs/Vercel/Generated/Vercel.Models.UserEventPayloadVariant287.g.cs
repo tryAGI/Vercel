@@ -11,10 +11,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tier")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant287TierJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant287Tier Tier { get; set; }
+        public required global::Vercel.UserEventPayloadVariant287Team Team { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant287Configuration Configuration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("peering")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant287Peering Peering { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
+        public string? NewName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,14 +44,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant287" /> class.
         /// </summary>
-        /// <param name="tier"></param>
+        /// <param name="team"></param>
+        /// <param name="configuration"></param>
+        /// <param name="peering"></param>
+        /// <param name="newName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant287(
-            global::Vercel.UserEventPayloadVariant287Tier tier)
+            global::Vercel.UserEventPayloadVariant287Team team,
+            global::Vercel.UserEventPayloadVariant287Configuration configuration,
+            global::Vercel.UserEventPayloadVariant287Peering peering,
+            string? newName)
         {
-            this.Tier = tier;
+            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
+            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.Peering = peering ?? throw new global::System.ArgumentNullException(nameof(peering));
+            this.NewName = newName;
         }
 
         /// <summary>
