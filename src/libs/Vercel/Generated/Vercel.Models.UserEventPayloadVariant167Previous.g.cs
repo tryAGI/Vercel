@@ -1,0 +1,43 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class UserEventPayloadVariant167Previous
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("functionZeroConfigFailover")]
+        public bool? FunctionZeroConfigFailover { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserEventPayloadVariant167Previous" /> class.
+        /// </summary>
+        /// <param name="functionZeroConfigFailover"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public UserEventPayloadVariant167Previous(
+            bool? functionZeroConfigFailover)
+        {
+            this.FunctionZeroConfigFailover = functionZeroConfigFailover;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserEventPayloadVariant167Previous" /> class.
+        /// </summary>
+        public UserEventPayloadVariant167Previous()
+        {
+        }
+    }
+}

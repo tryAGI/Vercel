@@ -11,30 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scalingRules")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("bio")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant223ScalingRules2> ScalingRules { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("min")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Min { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("max")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Max { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        public required string Bio { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant223" /> class.
         /// </summary>
-        /// <param name="scalingRules"></param>
-        /// <param name="min"></param>
-        /// <param name="max"></param>
-        /// <param name="url"></param>
+        /// <param name="bio"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant223(
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant223ScalingRules2> scalingRules,
-            double min,
-            double max,
-            string url)
+            string bio)
         {
-            this.ScalingRules = scalingRules ?? throw new global::System.ArgumentNullException(nameof(scalingRules));
-            this.Min = min;
-            this.Max = max;
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Bio = bio ?? throw new global::System.ArgumentNullException(nameof(bio));
         }
 
         /// <summary>

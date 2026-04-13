@@ -9,10 +9,12 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant266
     {
         /// <summary>
-        /// Represents configuration for remote caching
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("remoteCaching")]
-        public global::Vercel.UserEventPayloadVariant266RemoteCaching? RemoteCaching { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("consent")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant266ConsentJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant266Consent Consent { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,16 +25,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant266" /> class.
         /// </summary>
-        /// <param name="remoteCaching">
-        /// Represents configuration for remote caching
-        /// </param>
+        /// <param name="consent"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant266(
-            global::Vercel.UserEventPayloadVariant266RemoteCaching? remoteCaching)
+            global::Vercel.UserEventPayloadVariant266Consent consent)
         {
-            this.RemoteCaching = remoteCaching;
+            this.Consent = consent;
         }
 
         /// <summary>

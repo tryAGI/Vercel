@@ -11,16 +11,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant152Team Team { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant152Project Project { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        public global::System.Collections.Generic.IList<string>? Target { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updated")]
+        public bool? Updated { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +41,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant152" /> class.
         /// </summary>
-        /// <param name="team"></param>
-        /// <param name="project"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="target"></param>
+        /// <param name="updated"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant152(
-            global::Vercel.UserEventPayloadVariant152Team team,
-            global::Vercel.UserEventPayloadVariant152Project project)
+            string? projectId,
+            string? projectName,
+            global::System.Collections.Generic.IList<string>? target,
+            bool? updated)
         {
-            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.ProjectId = projectId;
+            this.ProjectName = projectName;
+            this.Target = target;
+            this.Updated = updated;
         }
 
         /// <summary>

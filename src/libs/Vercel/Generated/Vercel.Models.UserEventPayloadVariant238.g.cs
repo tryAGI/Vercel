@@ -11,15 +11,48 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant238Store Store { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        public string? OwnerId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("computeUnitsMax")]
+        public double? ComputeUnitsMax { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("computeUnitsMin")]
+        public double? ComputeUnitsMin { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("suspendTimeoutSeconds")]
+        public double? SuspendTimeoutSeconds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant238TypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant238Type Type { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("access")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant238AccessJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant238Access? Access { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +63,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant238" /> class.
         /// </summary>
-        /// <param name="store"></param>
-        /// <param name="ownerId"></param>
+        /// <param name="id"></param>
+        /// <param name="type"></param>
+        /// <param name="name"></param>
+        /// <param name="computeUnitsMax"></param>
+        /// <param name="computeUnitsMin"></param>
+        /// <param name="suspendTimeoutSeconds"></param>
+        /// <param name="access"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant238(
-            global::Vercel.UserEventPayloadVariant238Store store,
-            string? ownerId)
+            string id,
+            global::Vercel.UserEventPayloadVariant238Type type,
+            string? name,
+            double? computeUnitsMax,
+            double? computeUnitsMin,
+            double? suspendTimeoutSeconds,
+            global::Vercel.UserEventPayloadVariant238Access? access)
         {
-            this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
-            this.OwnerId = ownerId;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name;
+            this.ComputeUnitsMax = computeUnitsMax;
+            this.ComputeUnitsMin = computeUnitsMin;
+            this.SuspendTimeoutSeconds = suspendTimeoutSeconds;
+            this.Type = type;
+            this.Access = access;
         }
 
         /// <summary>

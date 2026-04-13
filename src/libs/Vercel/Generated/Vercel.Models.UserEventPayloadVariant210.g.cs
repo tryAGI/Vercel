@@ -12,27 +12,29 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ssoProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant210SsoProtectionEnum, global::Vercel.UserEventPayloadVariant210SsoProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant210SsoProtectionEnum, global::Vercel.UserEventPayloadVariant210SsoProtectionEnum2?>? SsoProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant210Next Next { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldSsoProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant210OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant210OldSsoProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant210OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant210OldSsoProtectionEnum2?>? OldSsoProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant210Previous Previous { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,21 +47,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="ssoProtection"></param>
-        /// <param name="oldSsoProtection"></param>
+        /// <param name="next"></param>
+        /// <param name="previous"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant210(
-            string? projectId,
-            string? projectName,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant210SsoProtectionEnum, global::Vercel.UserEventPayloadVariant210SsoProtectionEnum2?>? ssoProtection,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant210OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant210OldSsoProtectionEnum2?>? oldSsoProtection)
+            string projectId,
+            string projectName,
+            global::Vercel.UserEventPayloadVariant210Next next,
+            global::Vercel.UserEventPayloadVariant210Previous previous)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.SsoProtection = ssoProtection;
-            this.OldSsoProtection = oldSsoProtection;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
         }
 
         /// <summary>
