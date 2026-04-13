@@ -259,6 +259,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        FunctionArchivalRequired,
+        /// <summary>
+        /// 
+        /// </summary>
+        FunctionRemovalRequired,
+        /// <summary>
+        /// 
+        /// </summary>
         IntegrationConfigurationPermissionUpdatedHyphen,
         /// <summary>
         /// 
@@ -516,6 +524,8 @@ namespace Vercel
                 CreateWebhookRequestEvent.FlagSegmentDeleted => "flag.segment.deleted",
                 CreateWebhookRequestEvent.FlagSegmentUpdated => "flag.segment.updated",
                 CreateWebhookRequestEvent.FlagUpdated => "flag.updated",
+                CreateWebhookRequestEvent.FunctionArchivalRequired => "function.archival-required",
+                CreateWebhookRequestEvent.FunctionRemovalRequired => "function.removal-required",
                 CreateWebhookRequestEvent.IntegrationConfigurationPermissionUpdatedHyphen => "integration-configuration-permission-updated",
                 CreateWebhookRequestEvent.IntegrationConfigurationRemovedHyphen => "integration-configuration-removed",
                 CreateWebhookRequestEvent.IntegrationConfigurationScopeChangeConfirmedHyphen => "integration-configuration-scope-change-confirmed",
@@ -634,6 +644,8 @@ namespace Vercel
                 "flag.segment.deleted" => CreateWebhookRequestEvent.FlagSegmentDeleted,
                 "flag.segment.updated" => CreateWebhookRequestEvent.FlagSegmentUpdated,
                 "flag.updated" => CreateWebhookRequestEvent.FlagUpdated,
+                "function.archival-required" => CreateWebhookRequestEvent.FunctionArchivalRequired,
+                "function.removal-required" => CreateWebhookRequestEvent.FunctionRemovalRequired,
                 "integration-configuration-permission-updated" => CreateWebhookRequestEvent.IntegrationConfigurationPermissionUpdatedHyphen,
                 "integration-configuration-removed" => CreateWebhookRequestEvent.IntegrationConfigurationRemovedHyphen,
                 "integration-configuration-scope-change-confirmed" => CreateWebhookRequestEvent.IntegrationConfigurationScopeChangeConfirmedHyphen,

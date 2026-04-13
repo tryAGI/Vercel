@@ -260,6 +260,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        FunctionArchivalRequired,
+        /// <summary>
+        /// 
+        /// </summary>
+        FunctionRemovalRequired,
+        /// <summary>
+        /// 
+        /// </summary>
         IntegrationConfigurationPermissionUpdatedHyphen,
         /// <summary>
         /// 
@@ -517,6 +525,8 @@ namespace Vercel
                 GetWebhooksResponseVariant2ItemEvent.FlagSegmentDeleted => "flag.segment.deleted",
                 GetWebhooksResponseVariant2ItemEvent.FlagSegmentUpdated => "flag.segment.updated",
                 GetWebhooksResponseVariant2ItemEvent.FlagUpdated => "flag.updated",
+                GetWebhooksResponseVariant2ItemEvent.FunctionArchivalRequired => "function.archival-required",
+                GetWebhooksResponseVariant2ItemEvent.FunctionRemovalRequired => "function.removal-required",
                 GetWebhooksResponseVariant2ItemEvent.IntegrationConfigurationPermissionUpdatedHyphen => "integration-configuration-permission-updated",
                 GetWebhooksResponseVariant2ItemEvent.IntegrationConfigurationRemovedHyphen => "integration-configuration-removed",
                 GetWebhooksResponseVariant2ItemEvent.IntegrationConfigurationScopeChangeConfirmedHyphen => "integration-configuration-scope-change-confirmed",
@@ -635,6 +645,8 @@ namespace Vercel
                 "flag.segment.deleted" => GetWebhooksResponseVariant2ItemEvent.FlagSegmentDeleted,
                 "flag.segment.updated" => GetWebhooksResponseVariant2ItemEvent.FlagSegmentUpdated,
                 "flag.updated" => GetWebhooksResponseVariant2ItemEvent.FlagUpdated,
+                "function.archival-required" => GetWebhooksResponseVariant2ItemEvent.FunctionArchivalRequired,
+                "function.removal-required" => GetWebhooksResponseVariant2ItemEvent.FunctionRemovalRequired,
                 "integration-configuration-permission-updated" => GetWebhooksResponseVariant2ItemEvent.IntegrationConfigurationPermissionUpdatedHyphen,
                 "integration-configuration-removed" => GetWebhooksResponseVariant2ItemEvent.IntegrationConfigurationRemovedHyphen,
                 "integration-configuration-scope-change-confirmed" => GetWebhooksResponseVariant2ItemEvent.IntegrationConfigurationScopeChangeConfirmedHyphen,

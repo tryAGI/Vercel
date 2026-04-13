@@ -260,6 +260,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        FunctionArchivalRequired,
+        /// <summary>
+        /// 
+        /// </summary>
+        FunctionRemovalRequired,
+        /// <summary>
+        /// 
+        /// </summary>
         IntegrationConfigurationPermissionUpdatedHyphen,
         /// <summary>
         /// 
@@ -517,6 +525,8 @@ namespace Vercel
                 GetWebhookResponseEvent.FlagSegmentDeleted => "flag.segment.deleted",
                 GetWebhookResponseEvent.FlagSegmentUpdated => "flag.segment.updated",
                 GetWebhookResponseEvent.FlagUpdated => "flag.updated",
+                GetWebhookResponseEvent.FunctionArchivalRequired => "function.archival-required",
+                GetWebhookResponseEvent.FunctionRemovalRequired => "function.removal-required",
                 GetWebhookResponseEvent.IntegrationConfigurationPermissionUpdatedHyphen => "integration-configuration-permission-updated",
                 GetWebhookResponseEvent.IntegrationConfigurationRemovedHyphen => "integration-configuration-removed",
                 GetWebhookResponseEvent.IntegrationConfigurationScopeChangeConfirmedHyphen => "integration-configuration-scope-change-confirmed",
@@ -635,6 +645,8 @@ namespace Vercel
                 "flag.segment.deleted" => GetWebhookResponseEvent.FlagSegmentDeleted,
                 "flag.segment.updated" => GetWebhookResponseEvent.FlagSegmentUpdated,
                 "flag.updated" => GetWebhookResponseEvent.FlagUpdated,
+                "function.archival-required" => GetWebhookResponseEvent.FunctionArchivalRequired,
+                "function.removal-required" => GetWebhookResponseEvent.FunctionRemovalRequired,
                 "integration-configuration-permission-updated" => GetWebhookResponseEvent.IntegrationConfigurationPermissionUpdatedHyphen,
                 "integration-configuration-removed" => GetWebhookResponseEvent.IntegrationConfigurationRemovedHyphen,
                 "integration-configuration-scope-change-confirmed" => GetWebhookResponseEvent.IntegrationConfigurationScopeChangeConfirmedHyphen,
