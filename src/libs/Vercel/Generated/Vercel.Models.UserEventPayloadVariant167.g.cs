@@ -25,8 +25,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentSuffix")]
-        public string? PreviewDeploymentSuffix { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant167Previous Previous { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant167Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,18 +47,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="previewDeploymentSuffix"></param>
+        /// <param name="previous"></param>
+        /// <param name="next"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant167(
             string projectId,
             string projectName,
-            string? previewDeploymentSuffix)
+            global::Vercel.UserEventPayloadVariant167Previous previous,
+            global::Vercel.UserEventPayloadVariant167Next next)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.PreviewDeploymentSuffix = previewDeploymentSuffix;
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

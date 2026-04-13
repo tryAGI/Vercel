@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("functionZeroConfigFailover")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("functionDefaultRegions")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool FunctionZeroConfigFailover { get; set; }
+        public required global::System.Collections.Generic.IList<string> FunctionDefaultRegions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant166Next" /> class.
         /// </summary>
-        /// <param name="functionZeroConfigFailover"></param>
+        /// <param name="functionDefaultRegions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant166Next(
-            bool functionZeroConfigFailover)
+            global::System.Collections.Generic.IList<string> functionDefaultRegions)
         {
-            this.FunctionZeroConfigFailover = functionZeroConfigFailover;
+            this.FunctionDefaultRegions = functionDefaultRegions ?? throw new global::System.ArgumentNullException(nameof(functionDefaultRegions));
         }
 
         /// <summary>

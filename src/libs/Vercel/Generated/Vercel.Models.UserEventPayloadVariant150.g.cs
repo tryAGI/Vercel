@@ -18,19 +18,41 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("certId")]
-        public string? CertId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousBuildMachineType")]
+        public string? PreviousBuildMachineType { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        public string? Origin { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextBuildMachineType")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NextBuildMachineType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousBuildMachineSelection")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string PreviousBuildMachineSelection { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextBuildMachineSelection")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NextBuildMachineSelection { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isSystemInitiated")]
+        public bool? IsSystemInitiated { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,23 +63,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant150" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="certId"></param>
-        /// <param name="origin"></param>
+        /// <param name="nextBuildMachineType"></param>
+        /// <param name="previousBuildMachineSelection"></param>
+        /// <param name="nextBuildMachineSelection"></param>
+        /// <param name="projectId"></param>
+        /// <param name="previousBuildMachineType"></param>
+        /// <param name="isSystemInitiated"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant150(
+            string projectName,
+            string nextBuildMachineType,
+            string previousBuildMachineSelection,
+            string nextBuildMachineSelection,
             string? projectId,
-            string? projectName,
-            string? certId,
-            string? origin)
+            string? previousBuildMachineType,
+            bool? isSystemInitiated)
         {
             this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.CertId = certId;
-            this.Origin = origin;
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.PreviousBuildMachineType = previousBuildMachineType;
+            this.NextBuildMachineType = nextBuildMachineType ?? throw new global::System.ArgumentNullException(nameof(nextBuildMachineType));
+            this.PreviousBuildMachineSelection = previousBuildMachineSelection ?? throw new global::System.ArgumentNullException(nameof(previousBuildMachineSelection));
+            this.NextBuildMachineSelection = nextBuildMachineSelection ?? throw new global::System.ArgumentNullException(nameof(nextBuildMachineSelection));
+            this.IsSystemInitiated = isSystemInitiated;
         }
 
         /// <summary>

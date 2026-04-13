@@ -9,17 +9,11 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant240
     {
         /// <summary>
-        /// Automatic code review settings
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        public global::Vercel.UserEventPayloadVariant240Previous? Previous { get; set; }
-
-        /// <summary>
-        /// Automatic code review settings
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant240Next Next { get; set; }
+        public required string Slug { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,21 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant240" /> class.
         /// </summary>
-        /// <param name="next">
-        /// Automatic code review settings
-        /// </param>
-        /// <param name="previous">
-        /// Automatic code review settings
-        /// </param>
+        /// <param name="slug"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant240(
-            global::Vercel.UserEventPayloadVariant240Next next,
-            global::Vercel.UserEventPayloadVariant240Previous? previous)
+            string slug)
         {
-            this.Previous = previous;
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
         }
 
         /// <summary>

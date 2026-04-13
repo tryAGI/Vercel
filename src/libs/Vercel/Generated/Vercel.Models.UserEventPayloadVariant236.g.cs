@@ -25,16 +25,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("originTeamId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationTeamId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OriginTeamId { get; set; }
+        public required string DestinationTeamId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("originTeamName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationTeamName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OriginTeamName { get; set; }
+        public required string DestinationTeamName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,21 +47,21 @@ namespace Vercel
         /// </summary>
         /// <param name="transferRequestCode"></param>
         /// <param name="store"></param>
-        /// <param name="originTeamId"></param>
-        /// <param name="originTeamName"></param>
+        /// <param name="destinationTeamId"></param>
+        /// <param name="destinationTeamName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant236(
             string transferRequestCode,
             global::Vercel.UserEventPayloadVariant236Store store,
-            string originTeamId,
-            string originTeamName)
+            string destinationTeamId,
+            string destinationTeamName)
         {
             this.TransferRequestCode = transferRequestCode ?? throw new global::System.ArgumentNullException(nameof(transferRequestCode));
             this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
-            this.OriginTeamId = originTeamId ?? throw new global::System.ArgumentNullException(nameof(originTeamId));
-            this.OriginTeamName = originTeamName ?? throw new global::System.ArgumentNullException(nameof(originTeamName));
+            this.DestinationTeamId = destinationTeamId ?? throw new global::System.ArgumentNullException(nameof(destinationTeamId));
+            this.DestinationTeamName = destinationTeamName ?? throw new global::System.ArgumentNullException(nameof(destinationTeamName));
         }
 
         /// <summary>

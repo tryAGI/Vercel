@@ -11,30 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldProjectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OldProjectId { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldProjectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OldProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newProjectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newProjectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewProjectName { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
@@ -42,6 +28,25 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Domain { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Target { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
+        public string? Redirect { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("redirectStatusCode")]
+        public double? RedirectStatusCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,26 +57,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant182" /> class.
         /// </summary>
-        /// <param name="oldProjectId"></param>
-        /// <param name="oldProjectName"></param>
-        /// <param name="newProjectId"></param>
-        /// <param name="newProjectName"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
         /// <param name="domain"></param>
+        /// <param name="target"></param>
+        /// <param name="redirect"></param>
+        /// <param name="redirectStatusCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant182(
-            string oldProjectId,
-            string oldProjectName,
-            string newProjectId,
-            string newProjectName,
-            string domain)
+            string projectId,
+            string projectName,
+            string domain,
+            string target,
+            string? redirect,
+            double? redirectStatusCode)
         {
-            this.OldProjectId = oldProjectId ?? throw new global::System.ArgumentNullException(nameof(oldProjectId));
-            this.OldProjectName = oldProjectName ?? throw new global::System.ArgumentNullException(nameof(oldProjectName));
-            this.NewProjectId = newProjectId ?? throw new global::System.ArgumentNullException(nameof(newProjectId));
-            this.NewProjectName = newProjectName ?? throw new global::System.ArgumentNullException(nameof(newProjectName));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
             this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
+            this.Target = target ?? throw new global::System.ArgumentNullException(nameof(target));
+            this.Redirect = redirect;
+            this.RedirectStatusCode = redirectStatusCode;
         }
 
         /// <summary>

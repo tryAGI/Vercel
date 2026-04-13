@@ -11,16 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant243PreviousJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant243Previous? Previous { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("trialCreditsIssuedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double TrialCreditsIssuedAt { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant243NextJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant243Next? Next { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ExpiresAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Amount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Currency { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant243" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="trialCreditsIssuedAt"></param>
+        /// <param name="expiresAt"></param>
+        /// <param name="amount"></param>
+        /// <param name="currency"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant243(
-            global::Vercel.UserEventPayloadVariant243Previous? previous,
-            global::Vercel.UserEventPayloadVariant243Next? next)
+            double trialCreditsIssuedAt,
+            string expiresAt,
+            string amount,
+            string currency)
         {
-            this.Previous = previous;
-            this.Next = next;
+            this.TrialCreditsIssuedAt = trialCreditsIssuedAt;
+            this.ExpiresAt = expiresAt ?? throw new global::System.ArgumentNullException(nameof(expiresAt));
+            this.Amount = amount ?? throw new global::System.ArgumentNullException(nameof(amount));
+            this.Currency = currency ?? throw new global::System.ArgumentNullException(nameof(currency));
         }
 
         /// <summary>

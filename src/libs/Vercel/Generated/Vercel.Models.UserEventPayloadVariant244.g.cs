@@ -11,53 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant244PreviousJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant244Previous? Previous { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TeamId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("by")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string By { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("byUid")]
-        public string? ByUid { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reasons")]
-        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant244Reason>? Reasons { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedUsers")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant244RemovedUsers2>? RemovedUsers { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedMemberCount")]
-        public double? RemovedMemberCount { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
-        public double? Timestamp { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant244NextJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant244Next? Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -68,35 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant244" /> class.
         /// </summary>
-        /// <param name="slug"></param>
-        /// <param name="teamId"></param>
-        /// <param name="by"></param>
-        /// <param name="byUid"></param>
-        /// <param name="reasons"></param>
-        /// <param name="removedUsers"></param>
-        /// <param name="removedMemberCount"></param>
-        /// <param name="timestamp"></param>
+        /// <param name="previous"></param>
+        /// <param name="next"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant244(
-            string slug,
-            string teamId,
-            string by,
-            string? byUid,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant244Reason>? reasons,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant244RemovedUsers2>? removedUsers,
-            double? removedMemberCount,
-            double? timestamp)
+            global::Vercel.UserEventPayloadVariant244Previous? previous,
+            global::Vercel.UserEventPayloadVariant244Next? next)
         {
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
-            this.By = by ?? throw new global::System.ArgumentNullException(nameof(by));
-            this.ByUid = byUid;
-            this.Reasons = reasons;
-            this.RemovedUsers = removedUsers;
-            this.RemovedMemberCount = removedMemberCount;
-            this.Timestamp = timestamp;
+            this.Previous = previous;
+            this.Next = next;
         }
 
         /// <summary>
