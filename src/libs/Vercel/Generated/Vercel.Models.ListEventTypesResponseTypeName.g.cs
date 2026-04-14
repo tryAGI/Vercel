@@ -947,6 +947,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectDelegatedProtectionDisabled,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectDelegatedProtectionEnabled,
         /// <summary>
         /// 
@@ -1968,6 +1972,7 @@ namespace Vercel
                 ListEventTypesResponseTypeName.ProjectCustomEnvironmentDeleted => "project-custom-environment-deleted",
                 ListEventTypesResponseTypeName.ProjectCustomEnvironmentUpdated => "project-custom-environment-updated",
                 ListEventTypesResponseTypeName.ProjectCustomerSuccessCodeVisibilityUpdated => "project-customer-success-code-visibility-updated",
+                ListEventTypesResponseTypeName.ProjectDelegatedProtectionDisabled => "project-delegated-protection-disabled",
                 ListEventTypesResponseTypeName.ProjectDelegatedProtectionEnabled => "project-delegated-protection-enabled",
                 ListEventTypesResponseTypeName.ProjectDelegatedProtectionUpdated => "project-delegated-protection-updated",
                 ListEventTypesResponseTypeName.ProjectDelete => "project-delete",
@@ -2406,6 +2411,7 @@ namespace Vercel
                 "project-custom-environment-deleted" => ListEventTypesResponseTypeName.ProjectCustomEnvironmentDeleted,
                 "project-custom-environment-updated" => ListEventTypesResponseTypeName.ProjectCustomEnvironmentUpdated,
                 "project-customer-success-code-visibility-updated" => ListEventTypesResponseTypeName.ProjectCustomerSuccessCodeVisibilityUpdated,
+                "project-delegated-protection-disabled" => ListEventTypesResponseTypeName.ProjectDelegatedProtectionDisabled,
                 "project-delegated-protection-enabled" => ListEventTypesResponseTypeName.ProjectDelegatedProtectionEnabled,
                 "project-delegated-protection-updated" => ListEventTypesResponseTypeName.ProjectDelegatedProtectionUpdated,
                 "project-delete" => ListEventTypesResponseTypeName.ProjectDelete,
