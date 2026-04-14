@@ -81,6 +81,15 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
+        /// The last time the snapshot was used (e.g. to resume or create a sandbox), in milliseconds since the epoch. Falls back to `createdAt` for older snapshots that predate this field.<br/>
+        /// Example: 1750344501629L
+        /// </summary>
+        /// <example>1750344501629L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lastUsedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double LastUsedAt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -117,6 +126,10 @@ namespace Vercel
         /// The last time the snapshot was updated, in milliseconds since the epoch.<br/>
         /// Example: 1750344501629L
         /// </param>
+        /// <param name="lastUsedAt">
+        /// The last time the snapshot was used (e.g. to resume or create a sandbox), in milliseconds since the epoch. Falls back to `createdAt` for older snapshots that predate this field.<br/>
+        /// Example: 1750344501629L
+        /// </param>
         /// <param name="expiresAt">
         /// The time when the snapshot will expire, in milliseconds since the epoch. If not set, the snapshot does not have any expiration.<br/>
         /// Example: 1750344501629L
@@ -132,6 +145,7 @@ namespace Vercel
             double sizeBytes,
             double createdAt,
             double updatedAt,
+            double lastUsedAt,
             double? expiresAt)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
@@ -142,6 +156,7 @@ namespace Vercel
             this.ExpiresAt = expiresAt;
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
+            this.LastUsedAt = lastUsedAt;
         }
 
         /// <summary>
