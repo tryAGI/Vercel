@@ -11,17 +11,17 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("title")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Title { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("level")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetIntegrationResourceResponseNotificationLevelJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetIntegrationResourceResponseNotificationLevel Level { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("title")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Title { get; set; }
 
         /// <summary>
         /// 
@@ -44,21 +44,21 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetIntegrationResourceResponseNotification" /> class.
         /// </summary>
-        /// <param name="title"></param>
         /// <param name="level"></param>
+        /// <param name="title"></param>
         /// <param name="message"></param>
         /// <param name="href"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetIntegrationResourceResponseNotification(
-            string title,
             global::Vercel.GetIntegrationResourceResponseNotificationLevel level,
+            string title,
             string? message,
             string? href)
         {
-            this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
             this.Level = level;
+            this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
             this.Message = message;
             this.Href = href;
         }
