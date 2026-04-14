@@ -948,6 +948,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectDelegatedProtectionDisabled,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectDelegatedProtectionEnabled,
         /// <summary>
         /// 
@@ -1969,6 +1973,7 @@ namespace Vercel
                 UserEventType.ProjectCustomEnvironmentDeleted => "project-custom-environment-deleted",
                 UserEventType.ProjectCustomEnvironmentUpdated => "project-custom-environment-updated",
                 UserEventType.ProjectCustomerSuccessCodeVisibilityUpdated => "project-customer-success-code-visibility-updated",
+                UserEventType.ProjectDelegatedProtectionDisabled => "project-delegated-protection-disabled",
                 UserEventType.ProjectDelegatedProtectionEnabled => "project-delegated-protection-enabled",
                 UserEventType.ProjectDelegatedProtectionUpdated => "project-delegated-protection-updated",
                 UserEventType.ProjectDelete => "project-delete",
@@ -2407,6 +2412,7 @@ namespace Vercel
                 "project-custom-environment-deleted" => UserEventType.ProjectCustomEnvironmentDeleted,
                 "project-custom-environment-updated" => UserEventType.ProjectCustomEnvironmentUpdated,
                 "project-customer-success-code-visibility-updated" => UserEventType.ProjectCustomerSuccessCodeVisibilityUpdated,
+                "project-delegated-protection-disabled" => UserEventType.ProjectDelegatedProtectionDisabled,
                 "project-delegated-protection-enabled" => UserEventType.ProjectDelegatedProtectionEnabled,
                 "project-delegated-protection-updated" => UserEventType.ProjectDelegatedProtectionUpdated,
                 "project-delete" => UserEventType.ProjectDelete,
