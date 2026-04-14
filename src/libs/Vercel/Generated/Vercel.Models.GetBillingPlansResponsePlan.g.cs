@@ -19,13 +19,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Description { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
@@ -44,6 +37,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetBillingPlansResponsePlanScopeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetBillingPlansResponsePlanScope Scope { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Description { get; set; }
 
         /// <summary>
         /// 
@@ -128,10 +128,10 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetBillingPlansResponsePlan" /> class.
         /// </summary>
         /// <param name="type"></param>
-        /// <param name="description"></param>
         /// <param name="id"></param>
         /// <param name="name"></param>
         /// <param name="scope"></param>
+        /// <param name="description"></param>
         /// <param name="paymentMethodRequired"></param>
         /// <param name="preauthorizationAmount"></param>
         /// <param name="initialCharge"></param>
@@ -149,10 +149,10 @@ namespace Vercel
 #endif
         public GetBillingPlansResponsePlan(
             global::Vercel.GetBillingPlansResponsePlanType type,
-            string description,
             string id,
             string name,
             global::Vercel.GetBillingPlansResponsePlanScope scope,
+            string description,
             bool paymentMethodRequired,
             double? preauthorizationAmount,
             string? initialCharge,
@@ -167,10 +167,10 @@ namespace Vercel
             bool? disabled)
         {
             this.Type = type;
-            this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Scope = scope;
+            this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.PaymentMethodRequired = paymentMethodRequired;
             this.PreauthorizationAmount = preauthorizationAmount;
             this.InitialCharge = initialCharge;

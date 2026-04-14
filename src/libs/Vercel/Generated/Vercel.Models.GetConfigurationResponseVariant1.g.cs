@@ -56,23 +56,6 @@ namespace Vercel
         public global::Vercel.GetConfigurationResponseVariant1Type Type { get; set; }
 
         /// <summary>
-        /// A timestamp that tells you when the configuration was created<br/>
-        /// Example: 1558531915505L
-        /// </summary>
-        /// <example>1558531915505L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
-
-        /// <summary>
-        /// A timestamp that tells you when the configuration was deleted.<br/>
-        /// Example: 1558531915505L
-        /// </summary>
-        /// <example>1558531915505L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
-        public double? DeletedAt { get; set; }
-
-        /// <summary>
         /// The unique identifier of the configuration<br/>
         /// Example: icfg_3bwCLgxL8qt5kjRLcv2Dit7F
         /// </summary>
@@ -80,59 +63,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
-
-        /// <summary>
-        /// The slug of the integration the configuration is created for.<br/>
-        /// Example: slack
-        /// </summary>
-        /// <example>slack</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
-
-        /// <summary>
-        /// When the configuration was created for a team, this will show the ID of the team.<br/>
-        /// Example: team_nLlpyC6RE1qxydlFKbrxDlud
-        /// </summary>
-        /// <example>team_nLlpyC6RE1qxydlFKbrxDlud</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
-        public string? TeamId { get; set; }
-
-        /// <summary>
-        /// A timestamp that tells you when the configuration was updated.<br/>
-        /// Example: 1558531915505L
-        /// </summary>
-        /// <example>1558531915505L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double UpdatedAt { get; set; }
-
-        /// <summary>
-        /// The ID of the user that created the configuration.<br/>
-        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
-        /// </summary>
-        /// <example>kr1PsOIzqEL5Xg6M4VZcZosf</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string UserId { get; set; }
-
-        /// <summary>
-        /// The resources that are allowed to be accessed by the configuration.<br/>
-        /// Example: [read:project, read-write:log-drain]
-        /// </summary>
-        /// <example>[read:project, read-write:log-drain]</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Scopes { get; set; }
-
-        /// <summary>
-        /// Source defines where the configuration was installed from. It is used to analyze user engagement for integration installations in product metrics.<br/>
-        /// Example: marketplace
-        /// </summary>
-        /// <example>marketplace</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetConfigurationResponseVariant1SourceJsonConverter))]
-        public global::Vercel.GetConfigurationResponseVariant1Source? Source { get; set; }
 
         /// <summary>
         /// The unique identifier of the app the configuration was created for<br/>
@@ -144,6 +74,15 @@ namespace Vercel
         public required string IntegrationId { get; set; }
 
         /// <summary>
+        /// The ID of the user that created the configuration.<br/>
+        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
+        /// </summary>
+        /// <example>kr1PsOIzqEL5Xg6M4VZcZosf</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string UserId { get; set; }
+
+        /// <summary>
         /// The user or team ID that owns the configuration<br/>
         /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
         /// </summary>
@@ -151,6 +90,32 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OwnerId { get; set; }
+
+        /// <summary>
+        /// A timestamp that tells you when the configuration was created<br/>
+        /// Example: 1558531915505L
+        /// </summary>
+        /// <example>1558531915505L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        /// A timestamp that tells you when the configuration was updated.<br/>
+        /// Example: 1558531915505L
+        /// </summary>
+        /// <example>1558531915505L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double UpdatedAt { get; set; }
+
+        /// <summary>
+        /// A timestamp that tells you when the configuration was deleted.<br/>
+        /// Example: 1558531915505L
+        /// </summary>
+        /// <example>1558531915505L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
+        public double? DeletedAt { get; set; }
 
         /// <summary>
         /// 
@@ -171,6 +136,41 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalId")]
         public string? ExternalId { get; set; }
+
+        /// <summary>
+        /// Source defines where the configuration was installed from. It is used to analyze user engagement for integration installations in product metrics.<br/>
+        /// Example: marketplace
+        /// </summary>
+        /// <example>marketplace</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetConfigurationResponseVariant1SourceJsonConverter))]
+        public global::Vercel.GetConfigurationResponseVariant1Source? Source { get; set; }
+
+        /// <summary>
+        /// The slug of the integration the configuration is created for.<br/>
+        /// Example: slack
+        /// </summary>
+        /// <example>slack</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
+
+        /// <summary>
+        /// When the configuration was created for a team, this will show the ID of the team.<br/>
+        /// Example: team_nLlpyC6RE1qxydlFKbrxDlud
+        /// </summary>
+        /// <example>team_nLlpyC6RE1qxydlFKbrxDlud</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        public string? TeamId { get; set; }
+
+        /// <summary>
+        /// The resources that are allowed to be accessed by the configuration.<br/>
+        /// Example: [read:project, read-write:log-drain]
+        /// </summary>
+        /// <example>[read:project, read-write:log-drain]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> Scopes { get; set; }
 
         /// <summary>
         /// A timestamp that tells you when the configuration was disabled. Note: Configurations can be disabled when the associated user loses access to a team. They do not function during this time until the configuration is 'transferred', meaning the associated user is changed to one with access to the team.<br/>
@@ -223,37 +223,37 @@ namespace Vercel
         /// </param>
         /// <param name="notification"></param>
         /// <param name="transferRequest"></param>
-        /// <param name="createdAt">
-        /// A timestamp that tells you when the configuration was created<br/>
-        /// Example: 1558531915505L
-        /// </param>
         /// <param name="id">
         /// The unique identifier of the configuration<br/>
         /// Example: icfg_3bwCLgxL8qt5kjRLcv2Dit7F
-        /// </param>
-        /// <param name="slug">
-        /// The slug of the integration the configuration is created for.<br/>
-        /// Example: slack
-        /// </param>
-        /// <param name="updatedAt">
-        /// A timestamp that tells you when the configuration was updated.<br/>
-        /// Example: 1558531915505L
-        /// </param>
-        /// <param name="userId">
-        /// The ID of the user that created the configuration.<br/>
-        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
-        /// </param>
-        /// <param name="scopes">
-        /// The resources that are allowed to be accessed by the configuration.<br/>
-        /// Example: [read:project, read-write:log-drain]
         /// </param>
         /// <param name="integrationId">
         /// The unique identifier of the app the configuration was created for<br/>
         /// Example: oac_xzpVzcUOgcB1nrVlirtKhbWV
         /// </param>
+        /// <param name="userId">
+        /// The ID of the user that created the configuration.<br/>
+        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
+        /// </param>
         /// <param name="ownerId">
         /// The user or team ID that owns the configuration<br/>
         /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
+        /// </param>
+        /// <param name="createdAt">
+        /// A timestamp that tells you when the configuration was created<br/>
+        /// Example: 1558531915505L
+        /// </param>
+        /// <param name="updatedAt">
+        /// A timestamp that tells you when the configuration was updated.<br/>
+        /// Example: 1558531915505L
+        /// </param>
+        /// <param name="slug">
+        /// The slug of the integration the configuration is created for.<br/>
+        /// Example: slack
+        /// </param>
+        /// <param name="scopes">
+        /// The resources that are allowed to be accessed by the configuration.<br/>
+        /// Example: [read:project, read-write:log-drain]
         /// </param>
         /// <param name="projects">
         /// When a configuration is limited to access certain projects, this will contain each of the project ID it is allowed to access. If it is not defined, the configuration has full access.<br/>
@@ -267,14 +267,6 @@ namespace Vercel
         /// A timestamp that tells you when the configuration was deleted.<br/>
         /// Example: 1558531915505L
         /// </param>
-        /// <param name="teamId">
-        /// When the configuration was created for a team, this will show the ID of the team.<br/>
-        /// Example: team_nLlpyC6RE1qxydlFKbrxDlud
-        /// </param>
-        /// <param name="source">
-        /// Source defines where the configuration was installed from. It is used to analyze user engagement for integration installations in product metrics.<br/>
-        /// Example: marketplace
-        /// </param>
         /// <param name="canConfigureOpenTelemetry"></param>
         /// <param name="completedAt">
         /// A timestamp that tells you when the configuration was installed successfully<br/>
@@ -282,6 +274,14 @@ namespace Vercel
         /// </param>
         /// <param name="externalId">
         /// An external identifier defined by the integration vendor.
+        /// </param>
+        /// <param name="source">
+        /// Source defines where the configuration was installed from. It is used to analyze user engagement for integration installations in product metrics.<br/>
+        /// Example: marketplace
+        /// </param>
+        /// <param name="teamId">
+        /// When the configuration was created for a team, this will show the ID of the team.<br/>
+        /// Example: team_nLlpyC6RE1qxydlFKbrxDlud
         /// </param>
         /// <param name="disabledAt">
         /// A timestamp that tells you when the configuration was disabled. Note: Configurations can be disabled when the associated user loses access to a team. They do not function during this time until the configuration is 'transferred', meaning the associated user is changed to one with access to the team.<br/>
@@ -305,23 +305,23 @@ namespace Vercel
             global::Vercel.GetConfigurationResponseVariant1ProjectSelection projectSelection,
             global::Vercel.GetConfigurationResponseVariant1Notification notification,
             global::Vercel.OneOf<global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant1, global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant2> transferRequest,
-            double createdAt,
             string id,
-            string slug,
-            double updatedAt,
-            string userId,
-            global::System.Collections.Generic.IList<string> scopes,
             string integrationId,
+            string userId,
             string ownerId,
+            double createdAt,
+            double updatedAt,
+            string slug,
+            global::System.Collections.Generic.IList<string> scopes,
             global::System.Collections.Generic.IList<string>? projects,
             global::Vercel.GetConfigurationResponseVariant1Status? status,
             global::Vercel.GetConfigurationResponseVariant1Type type,
             double? deletedAt,
-            string? teamId,
-            global::Vercel.GetConfigurationResponseVariant1Source? source,
             bool? canConfigureOpenTelemetry,
             double? completedAt,
             string? externalId,
+            global::Vercel.GetConfigurationResponseVariant1Source? source,
+            string? teamId,
             double? disabledAt,
             double? deleteRequestedAt,
             double? customerDeleteRequestedAt,
@@ -334,20 +334,20 @@ namespace Vercel
             this.Projects = projects;
             this.Status = status;
             this.Type = type;
-            this.CreatedAt = createdAt;
-            this.DeletedAt = deletedAt;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.TeamId = teamId;
-            this.UpdatedAt = updatedAt;
-            this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
-            this.Scopes = scopes ?? throw new global::System.ArgumentNullException(nameof(scopes));
-            this.Source = source;
             this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
+            this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.CreatedAt = createdAt;
+            this.UpdatedAt = updatedAt;
+            this.DeletedAt = deletedAt;
             this.CanConfigureOpenTelemetry = canConfigureOpenTelemetry;
             this.CompletedAt = completedAt;
             this.ExternalId = externalId;
+            this.Source = source;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.TeamId = teamId;
+            this.Scopes = scopes ?? throw new global::System.ArgumentNullException(nameof(scopes));
             this.DisabledAt = disabledAt;
             this.DeleteRequestedAt = deleteRequestedAt;
             this.CustomerDeleteRequestedAt = customerDeleteRequestedAt;
