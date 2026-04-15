@@ -19,6 +19,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        BotProtection,
+        /// <summary>
+        /// 
+        /// </summary>
+        BotStatus,
+        /// <summary>
+        /// 
+        /// </summary>
         Cookie,
         /// <summary>
         /// 
@@ -128,6 +136,8 @@ namespace Vercel
             {
                 PutFirewallConfigRequestRuleConditionGroupItemConditionType.BotCategory => "bot_category",
                 PutFirewallConfigRequestRuleConditionGroupItemConditionType.BotName => "bot_name",
+                PutFirewallConfigRequestRuleConditionGroupItemConditionType.BotProtection => "bot_protection",
+                PutFirewallConfigRequestRuleConditionGroupItemConditionType.BotStatus => "bot_status",
                 PutFirewallConfigRequestRuleConditionGroupItemConditionType.Cookie => "cookie",
                 PutFirewallConfigRequestRuleConditionGroupItemConditionType.Environment => "environment",
                 PutFirewallConfigRequestRuleConditionGroupItemConditionType.GeoAsNumber => "geo_as_number",
@@ -164,6 +174,8 @@ namespace Vercel
             {
                 "bot_category" => PutFirewallConfigRequestRuleConditionGroupItemConditionType.BotCategory,
                 "bot_name" => PutFirewallConfigRequestRuleConditionGroupItemConditionType.BotName,
+                "bot_protection" => PutFirewallConfigRequestRuleConditionGroupItemConditionType.BotProtection,
+                "bot_status" => PutFirewallConfigRequestRuleConditionGroupItemConditionType.BotStatus,
                 "cookie" => PutFirewallConfigRequestRuleConditionGroupItemConditionType.Cookie,
                 "environment" => PutFirewallConfigRequestRuleConditionGroupItemConditionType.Environment,
                 "geo_as_number" => PutFirewallConfigRequestRuleConditionGroupItemConditionType.GeoAsNumber,

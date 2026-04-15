@@ -92,6 +92,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DeploymentBuildRequested,
+        /// <summary>
+        /// 
+        /// </summary>
         DeploymentCanceled,
         /// <summary>
         /// 
@@ -483,6 +487,7 @@ namespace Vercel
                 GetWebhookResponseEvent.DeploymentErrorHyphen => "deployment-error",
                 GetWebhookResponseEvent.DeploymentPreparedHyphen => "deployment-prepared",
                 GetWebhookResponseEvent.DeploymentReadyHyphen => "deployment-ready",
+                GetWebhookResponseEvent.DeploymentBuildRequested => "deployment.build-requested",
                 GetWebhookResponseEvent.DeploymentCanceled => "deployment.canceled",
                 GetWebhookResponseEvent.DeploymentCheckRerequested => "deployment.check-rerequested",
                 GetWebhookResponseEvent.DeploymentCheckrunCancel => "deployment.checkrun.cancel",
@@ -603,6 +608,7 @@ namespace Vercel
                 "deployment-error" => GetWebhookResponseEvent.DeploymentErrorHyphen,
                 "deployment-prepared" => GetWebhookResponseEvent.DeploymentPreparedHyphen,
                 "deployment-ready" => GetWebhookResponseEvent.DeploymentReadyHyphen,
+                "deployment.build-requested" => GetWebhookResponseEvent.DeploymentBuildRequested,
                 "deployment.canceled" => GetWebhookResponseEvent.DeploymentCanceled,
                 "deployment.check-rerequested" => GetWebhookResponseEvent.DeploymentCheckRerequested,
                 "deployment.checkrun.cancel" => GetWebhookResponseEvent.DeploymentCheckrunCancel,
