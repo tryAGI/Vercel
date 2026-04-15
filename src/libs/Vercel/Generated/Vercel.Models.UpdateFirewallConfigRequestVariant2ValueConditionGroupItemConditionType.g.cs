@@ -19,6 +19,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        BotProtection,
+        /// <summary>
+        /// 
+        /// </summary>
+        BotStatus,
+        /// <summary>
+        /// 
+        /// </summary>
         Cookie,
         /// <summary>
         /// 
@@ -128,6 +136,8 @@ namespace Vercel
             {
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.BotCategory => "bot_category",
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.BotName => "bot_name",
+                UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.BotProtection => "bot_protection",
+                UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.BotStatus => "bot_status",
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Cookie => "cookie",
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Environment => "environment",
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.GeoAsNumber => "geo_as_number",
@@ -164,6 +174,8 @@ namespace Vercel
             {
                 "bot_category" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.BotCategory,
                 "bot_name" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.BotName,
+                "bot_protection" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.BotProtection,
+                "bot_status" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.BotStatus,
                 "cookie" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Cookie,
                 "environment" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Environment,
                 "geo_as_number" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.GeoAsNumber,

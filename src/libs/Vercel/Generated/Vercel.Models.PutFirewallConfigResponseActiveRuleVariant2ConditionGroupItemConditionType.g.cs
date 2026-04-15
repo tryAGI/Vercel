@@ -19,6 +19,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        BotProtection,
+        /// <summary>
+        /// 
+        /// </summary>
+        BotStatus,
+        /// <summary>
+        /// 
+        /// </summary>
         Cookie,
         /// <summary>
         /// 
@@ -128,6 +136,8 @@ namespace Vercel
             {
                 PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.BotCategory => "bot_category",
                 PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.BotName => "bot_name",
+                PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.BotProtection => "bot_protection",
+                PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.BotStatus => "bot_status",
                 PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.Cookie => "cookie",
                 PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.Environment => "environment",
                 PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.GeoAsNumber => "geo_as_number",
@@ -164,6 +174,8 @@ namespace Vercel
             {
                 "bot_category" => PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.BotCategory,
                 "bot_name" => PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.BotName,
+                "bot_protection" => PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.BotProtection,
+                "bot_status" => PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.BotStatus,
                 "cookie" => PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.Cookie,
                 "environment" => PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.Environment,
                 "geo_as_number" => PutFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.GeoAsNumber,
