@@ -79,6 +79,12 @@ namespace Vercel
         public global::Vercel.UpdateProjectResponseDefaultResourceConfigBuildQueue? BuildQueue { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enableFunctionsBeta")]
+        public bool? EnableFunctionsBeta { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -98,6 +104,7 @@ namespace Vercel
         /// <param name="buildMachineElasticLastUpdated"></param>
         /// <param name="isNSNBDisabled"></param>
         /// <param name="buildQueue"></param>
+        /// <param name="enableFunctionsBeta"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -112,7 +119,8 @@ namespace Vercel
             global::Vercel.UpdateProjectResponseDefaultResourceConfigBuildMachineSelection? buildMachineSelection,
             double? buildMachineElasticLastUpdated,
             bool? isNSNBDisabled,
-            global::Vercel.UpdateProjectResponseDefaultResourceConfigBuildQueue? buildQueue)
+            global::Vercel.UpdateProjectResponseDefaultResourceConfigBuildQueue? buildQueue,
+            bool? enableFunctionsBeta)
         {
             this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
             this.Fluid = fluid;
@@ -125,6 +133,7 @@ namespace Vercel
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
             this.IsNSNBDisabled = isNSNBDisabled;
             this.BuildQueue = buildQueue;
+            this.EnableFunctionsBeta = enableFunctionsBeta;
         }
 
         /// <summary>

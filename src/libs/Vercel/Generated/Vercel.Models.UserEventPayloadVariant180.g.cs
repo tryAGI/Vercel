@@ -25,8 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("consolidatedGitCommitStatus")]
-        public global::Vercel.UserEventPayloadVariant180ConsolidatedGitCommitStatus? ConsolidatedGitCommitStatus { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitLFS")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool GitLFS { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="consolidatedGitCommitStatus"></param>
+        /// <param name="gitLFS"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant180(
             string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant180ConsolidatedGitCommitStatus? consolidatedGitCommitStatus)
+            bool gitLFS)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.ConsolidatedGitCommitStatus = consolidatedGitCommitStatus;
+            this.GitLFS = gitLFS;
         }
 
         /// <summary>

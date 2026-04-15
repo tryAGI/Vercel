@@ -11,10 +11,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("storeType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant235StoreTypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant235StoreType StoreType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("webhookUrl")]
+        public string? WebhookUrl { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,14 +23,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant235" /> class.
         /// </summary>
-        /// <param name="storeType"></param>
+        /// <param name="webhookUrl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant235(
-            global::Vercel.UserEventPayloadVariant235StoreType storeType)
+            string? webhookUrl)
         {
-            this.StoreType = storeType;
+            this.WebhookUrl = webhookUrl;
         }
 
         /// <summary>

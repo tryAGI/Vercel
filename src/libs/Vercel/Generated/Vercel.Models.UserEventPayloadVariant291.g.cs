@@ -11,16 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("model")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("chatId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Model { get; set; }
+        public required string ChatId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("useCase")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string UseCase { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("chatTitle")]
+        public string? ChatTitle { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant291" /> class.
         /// </summary>
-        /// <param name="model"></param>
-        /// <param name="useCase"></param>
+        /// <param name="chatId"></param>
+        /// <param name="chatTitle"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant291(
-            string model,
-            string useCase)
+            string chatId,
+            string? chatTitle)
         {
-            this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
-            this.UseCase = useCase ?? throw new global::System.ArgumentNullException(nameof(useCase));
+            this.ChatId = chatId ?? throw new global::System.ArgumentNullException(nameof(chatId));
+            this.ChatTitle = chatTitle;
         }
 
         /// <summary>

@@ -16,6 +16,13 @@ namespace Vercel
         public required string Email { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("verified")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Verified { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -25,13 +32,16 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant220" /> class.
         /// </summary>
         /// <param name="email"></param>
+        /// <param name="verified"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant220(
-            string email)
+            string email,
+            bool verified)
         {
             this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.Verified = verified;
         }
 
         /// <summary>

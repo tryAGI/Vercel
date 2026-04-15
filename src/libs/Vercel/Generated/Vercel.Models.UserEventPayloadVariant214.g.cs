@@ -25,28 +25,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("trustedIps")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant214TrustedIpsJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant214TrustedIps? TrustedIps { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant214Next Next { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldTrustedIps")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant214OldTrustedIpsJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant214OldTrustedIps? OldTrustedIps { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("addedAddresses")]
-        public global::System.Collections.Generic.IList<string>? AddedAddresses { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedAddresses")]
-        public global::System.Collections.Generic.IList<string>? RemovedAddresses { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant214Previous Previous { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,27 +47,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="trustedIps"></param>
-        /// <param name="oldTrustedIps"></param>
-        /// <param name="addedAddresses"></param>
-        /// <param name="removedAddresses"></param>
+        /// <param name="next"></param>
+        /// <param name="previous"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant214(
             string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant214TrustedIps? trustedIps,
-            global::Vercel.UserEventPayloadVariant214OldTrustedIps? oldTrustedIps,
-            global::System.Collections.Generic.IList<string>? addedAddresses,
-            global::System.Collections.Generic.IList<string>? removedAddresses)
+            global::Vercel.UserEventPayloadVariant214Next next,
+            global::Vercel.UserEventPayloadVariant214Previous previous)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.TrustedIps = trustedIps;
-            this.OldTrustedIps = oldTrustedIps;
-            this.AddedAddresses = addedAddresses;
-            this.RemovedAddresses = removedAddresses;
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
         }
 
         /// <summary>
