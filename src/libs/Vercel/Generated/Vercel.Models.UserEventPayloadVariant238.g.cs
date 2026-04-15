@@ -9,32 +9,17 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant238
     {
         /// <summary>
-        /// 
+        /// Represents a budget for tracking and notifying teams on their spending.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transferRequestCode")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("budget")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TransferRequestCode { get; set; }
+        public required global::Vercel.UserEventPayloadVariant238Budget Budget { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant238Store Store { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destinationTeamId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DestinationTeamId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destinationTeamName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DestinationTeamName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("webhookUrl")]
+        public string? WebhookUrl { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +30,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant238" /> class.
         /// </summary>
-        /// <param name="transferRequestCode"></param>
-        /// <param name="store"></param>
-        /// <param name="destinationTeamId"></param>
-        /// <param name="destinationTeamName"></param>
+        /// <param name="budget">
+        /// Represents a budget for tracking and notifying teams on their spending.
+        /// </param>
+        /// <param name="webhookUrl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant238(
-            string transferRequestCode,
-            global::Vercel.UserEventPayloadVariant238Store store,
-            string destinationTeamId,
-            string destinationTeamName)
+            global::Vercel.UserEventPayloadVariant238Budget budget,
+            string? webhookUrl)
         {
-            this.TransferRequestCode = transferRequestCode ?? throw new global::System.ArgumentNullException(nameof(transferRequestCode));
-            this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
-            this.DestinationTeamId = destinationTeamId ?? throw new global::System.ArgumentNullException(nameof(destinationTeamId));
-            this.DestinationTeamName = destinationTeamName ?? throw new global::System.ArgumentNullException(nameof(destinationTeamName));
+            this.Budget = budget ?? throw new global::System.ArgumentNullException(nameof(budget));
+            this.WebhookUrl = webhookUrl;
         }
 
         /// <summary>

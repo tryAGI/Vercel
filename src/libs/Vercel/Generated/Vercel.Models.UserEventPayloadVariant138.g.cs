@@ -11,14 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentSuffix")]
-        public string? PreviewDeploymentSuffix { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OldName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousPreviewDeploymentSuffix")]
-        public string? PreviousPreviewDeploymentSuffix { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NewName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant138" /> class.
         /// </summary>
-        /// <param name="previewDeploymentSuffix"></param>
-        /// <param name="previousPreviewDeploymentSuffix"></param>
+        /// <param name="oldName"></param>
+        /// <param name="newName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant138(
-            string? previewDeploymentSuffix,
-            string? previousPreviewDeploymentSuffix)
+            string oldName,
+            string newName)
         {
-            this.PreviewDeploymentSuffix = previewDeploymentSuffix;
-            this.PreviousPreviewDeploymentSuffix = previousPreviewDeploymentSuffix;
+            this.OldName = oldName ?? throw new global::System.ArgumentNullException(nameof(oldName));
+            this.NewName = newName ?? throw new global::System.ArgumentNullException(nameof(newName));
         }
 
         /// <summary>

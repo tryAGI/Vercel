@@ -11,8 +11,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("functionDefaultTimeout")]
-        public double? FunctionDefaultTimeout { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("branchMatcher")]
+        public global::Vercel.UserEventPayloadVariant166PreviousBranchMatcher? BranchMatcher { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +23,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant166Previous" /> class.
         /// </summary>
-        /// <param name="functionDefaultTimeout"></param>
+        /// <param name="branchMatcher"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant166Previous(
-            double? functionDefaultTimeout)
+            global::Vercel.UserEventPayloadVariant166PreviousBranchMatcher? branchMatcher)
         {
-            this.FunctionDefaultTimeout = functionDefaultTimeout;
+            this.BranchMatcher = branchMatcher;
         }
 
         /// <summary>

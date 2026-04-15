@@ -11,71 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedUser")]
-        public global::Vercel.UserEventPayloadVariant256DeletedUser? DeletedUser { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deletedCount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double DeletedCount { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedUid")]
-        public string? DeletedUid { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("githubUsername")]
-        public string? GithubUsername { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabUsername")]
-        public string? GitlabUsername { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketUsername")]
-        public string? BitbucketUsername { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
-        public string? DirectoryType { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant256RoleJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant256Role? Role { get; set; }
-
-        /// <summary>
-        /// Why the member was removed. When removed due to a plan downgrade, this is a {@link DowngradeReason} from `@api/pubsub-types` (e.g. `trial_expired`, `user_downgrade`).
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        public string? Reason { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousPlan")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant256PreviousPlanJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant256PreviousPlan? PreviousPlan { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newPlan")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant256NewPlanJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant256NewPlan? NewPlan { get; set; }
-
-        /// <summary>
-        /// Whether the removal was system-initiated rather than human-initiated.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("automated")]
-        public bool? Automated { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("inviteIds")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> InviteIds { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -86,48 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant256" /> class.
         /// </summary>
-        /// <param name="deletedUser"></param>
-        /// <param name="deletedUid"></param>
-        /// <param name="githubUsername"></param>
-        /// <param name="gitlabUsername"></param>
-        /// <param name="bitbucketUsername"></param>
-        /// <param name="directoryType"></param>
-        /// <param name="role"></param>
-        /// <param name="reason">
-        /// Why the member was removed. When removed due to a plan downgrade, this is a {@link DowngradeReason} from `@api/pubsub-types` (e.g. `trial_expired`, `user_downgrade`).
-        /// </param>
-        /// <param name="previousPlan"></param>
-        /// <param name="newPlan"></param>
-        /// <param name="automated">
-        /// Whether the removal was system-initiated rather than human-initiated.
-        /// </param>
+        /// <param name="deletedCount"></param>
+        /// <param name="inviteIds"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant256(
-            global::Vercel.UserEventPayloadVariant256DeletedUser? deletedUser,
-            string? deletedUid,
-            string? githubUsername,
-            string? gitlabUsername,
-            string? bitbucketUsername,
-            string? directoryType,
-            global::Vercel.UserEventPayloadVariant256Role? role,
-            string? reason,
-            global::Vercel.UserEventPayloadVariant256PreviousPlan? previousPlan,
-            global::Vercel.UserEventPayloadVariant256NewPlan? newPlan,
-            bool? automated)
+            double deletedCount,
+            global::System.Collections.Generic.IList<string> inviteIds)
         {
-            this.DeletedUser = deletedUser;
-            this.DeletedUid = deletedUid;
-            this.GithubUsername = githubUsername;
-            this.GitlabUsername = gitlabUsername;
-            this.BitbucketUsername = bitbucketUsername;
-            this.DirectoryType = directoryType;
-            this.Role = role;
-            this.Reason = reason;
-            this.PreviousPlan = previousPlan;
-            this.NewPlan = newPlan;
-            this.Automated = automated;
+            this.DeletedCount = deletedCount;
+            this.InviteIds = inviteIds ?? throw new global::System.ArgumentNullException(nameof(inviteIds));
         }
 
         /// <summary>

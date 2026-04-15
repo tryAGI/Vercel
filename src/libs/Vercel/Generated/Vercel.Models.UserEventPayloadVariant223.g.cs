@@ -11,22 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("instances")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OldName { get; set; }
+        public required double Instances { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        public string? Uid { get; set; }
+        public required string Url { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant223" /> class.
         /// </summary>
-        /// <param name="oldName"></param>
-        /// <param name="newName"></param>
-        /// <param name="uid"></param>
+        /// <param name="instances"></param>
+        /// <param name="url"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant223(
-            string oldName,
-            string newName,
-            string? uid)
+            double instances,
+            string url)
         {
-            this.OldName = oldName ?? throw new global::System.ArgumentNullException(nameof(oldName));
-            this.NewName = newName ?? throw new global::System.ArgumentNullException(nameof(newName));
-            this.Uid = uid;
+            this.Instances = instances;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

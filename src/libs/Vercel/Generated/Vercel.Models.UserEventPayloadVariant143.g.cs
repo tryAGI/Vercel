@@ -11,8 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("privateLinkEndpoint")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant143PrivateLinkEndpoint PrivateLinkEndpoint { get; set; }
 
         /// <summary>
         /// 
@@ -24,14 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalytics")]
-        public global::Vercel.UserEventPayloadVariant143ProjectAnalytics? ProjectAnalytics { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevProjectAnalytics")]
-        public global::Vercel.UserEventPayloadVariant143PrevProjectAnalytics? PrevProjectAnalytics { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousEndpoint")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant143PreviousEndpoint PreviousEndpoint { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -42,23 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant143" /> class.
         /// </summary>
+        /// <param name="privateLinkEndpoint"></param>
         /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="projectAnalytics"></param>
-        /// <param name="prevProjectAnalytics"></param>
+        /// <param name="previousEndpoint"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant143(
+            global::Vercel.UserEventPayloadVariant143PrivateLinkEndpoint privateLinkEndpoint,
             string projectId,
-            string? projectName,
-            global::Vercel.UserEventPayloadVariant143ProjectAnalytics? projectAnalytics,
-            global::Vercel.UserEventPayloadVariant143PrevProjectAnalytics? prevProjectAnalytics)
+            global::Vercel.UserEventPayloadVariant143PreviousEndpoint previousEndpoint)
         {
-            this.ProjectName = projectName;
+            this.PrivateLinkEndpoint = privateLinkEndpoint ?? throw new global::System.ArgumentNullException(nameof(privateLinkEndpoint));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectAnalytics = projectAnalytics;
-            this.PrevProjectAnalytics = prevProjectAnalytics;
+            this.PreviousEndpoint = previousEndpoint ?? throw new global::System.ArgumentNullException(nameof(previousEndpoint));
         }
 
         /// <summary>

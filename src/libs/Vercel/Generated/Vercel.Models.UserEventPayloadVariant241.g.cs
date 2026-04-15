@@ -11,15 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("transferRequestCode")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant241Store Store { get; set; }
+        public required string TransferRequestCode { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        public string? OwnerId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant241Store Store { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant241" /> class.
         /// </summary>
+        /// <param name="transferRequestCode"></param>
         /// <param name="store"></param>
-        /// <param name="ownerId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant241(
-            global::Vercel.UserEventPayloadVariant241Store store,
-            string? ownerId)
+            string transferRequestCode,
+            global::Vercel.UserEventPayloadVariant241Store store)
         {
+            this.TransferRequestCode = transferRequestCode ?? throw new global::System.ArgumentNullException(nameof(transferRequestCode));
             this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
-            this.OwnerId = ownerId;
         }
 
         /// <summary>

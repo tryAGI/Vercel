@@ -11,39 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
-        public string? DirectoryType { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedUser")]
-        public global::Vercel.UserEventPayloadVariant261UpdatedUser? UpdatedUser { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
-        public string? Role { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousRole")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("entitlement")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PreviousRole { get; set; }
+        public required string Entitlement { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedUid")]
-        public string? UpdatedUid { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        public string? Origin { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant261User User { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,29 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant261" /> class.
         /// </summary>
-        /// <param name="previousRole"></param>
-        /// <param name="directoryType"></param>
-        /// <param name="updatedUser"></param>
-        /// <param name="role"></param>
-        /// <param name="updatedUid"></param>
-        /// <param name="origin"></param>
+        /// <param name="entitlement"></param>
+        /// <param name="user"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant261(
-            string previousRole,
-            string? directoryType,
-            global::Vercel.UserEventPayloadVariant261UpdatedUser? updatedUser,
-            string? role,
-            string? updatedUid,
-            string? origin)
+            string entitlement,
+            global::Vercel.UserEventPayloadVariant261User user)
         {
-            this.DirectoryType = directoryType;
-            this.UpdatedUser = updatedUser;
-            this.Role = role;
-            this.PreviousRole = previousRole ?? throw new global::System.ArgumentNullException(nameof(previousRole));
-            this.UpdatedUid = updatedUid;
-            this.Origin = origin;
+            this.Entitlement = entitlement ?? throw new global::System.ArgumentNullException(nameof(entitlement));
+            this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
         }
 
         /// <summary>

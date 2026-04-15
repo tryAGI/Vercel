@@ -11,10 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("storeType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant236StoreTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("budget")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant236StoreType StoreType { get; set; }
+        public required global::Vercel.UserEventPayloadVariant236Budget Budget { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,14 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant236" /> class.
         /// </summary>
-        /// <param name="storeType"></param>
+        /// <param name="budget"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant236(
-            global::Vercel.UserEventPayloadVariant236StoreType storeType)
+            global::Vercel.UserEventPayloadVariant236Budget budget)
         {
-            this.StoreType = storeType;
+            this.Budget = budget ?? throw new global::System.ArgumentNullException(nameof(budget));
         }
 
         /// <summary>

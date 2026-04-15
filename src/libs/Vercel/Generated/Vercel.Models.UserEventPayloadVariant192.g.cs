@@ -19,8 +19,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectMembership")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant192ProjectMembership ProjectMembership { get; set; }
+        public global::Vercel.UserEventPayloadVariant192ProjectMembership? ProjectMembership { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,10 +37,10 @@ namespace Vercel
 #endif
         public UserEventPayloadVariant192(
             global::Vercel.UserEventPayloadVariant192Project project,
-            global::Vercel.UserEventPayloadVariant192ProjectMembership projectMembership)
+            global::Vercel.UserEventPayloadVariant192ProjectMembership? projectMembership)
         {
             this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.ProjectMembership = projectMembership ?? throw new global::System.ArgumentNullException(nameof(projectMembership));
+            this.ProjectMembership = projectMembership;
         }
 
         /// <summary>

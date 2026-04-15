@@ -25,16 +25,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant148ActionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Previous { get; set; }
+        public required global::Vercel.UserEventPayloadVariant148Action Action { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Next { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("isEnvVar")]
+        public bool? IsEnvVar { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("note")]
+        public string? Note { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,21 +53,24 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="action"></param>
+        /// <param name="isEnvVar"></param>
+        /// <param name="note"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant148(
             string projectId,
             string projectName,
-            object previous,
-            object next)
+            global::Vercel.UserEventPayloadVariant148Action action,
+            bool? isEnvVar,
+            string? note)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Action = action;
+            this.IsEnvVar = isEnvVar;
+            this.Note = note;
         }
 
         /// <summary>

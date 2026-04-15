@@ -11,30 +11,17 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scalingRules")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant226ScalingRules2> ScalingRules { get; set; }
+        public required string Uid { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("min")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UserEventPayloadVariant226Name>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Min { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("max")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Max { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        public required global::Vercel.OneOf<string, global::Vercel.UserEventPayloadVariant226Name> Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +32,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant226" /> class.
         /// </summary>
-        /// <param name="scalingRules"></param>
-        /// <param name="min"></param>
-        /// <param name="max"></param>
-        /// <param name="url"></param>
+        /// <param name="uid"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant226(
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant226ScalingRules2> scalingRules,
-            double min,
-            double max,
-            string url)
+            string uid,
+            global::Vercel.OneOf<string, global::Vercel.UserEventPayloadVariant226Name> name)
         {
-            this.ScalingRules = scalingRules ?? throw new global::System.ArgumentNullException(nameof(scalingRules));
-            this.Min = min;
-            this.Max = max;
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
+            this.Name = name;
         }
 
         /// <summary>

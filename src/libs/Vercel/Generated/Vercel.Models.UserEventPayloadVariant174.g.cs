@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("onPullRequest")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("newProjectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool OnPullRequest { get; set; }
+        public required string NewProjectName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="onPullRequest"></param>
+        /// <param name="newProjectName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant174(
             string projectId,
             string projectName,
-            bool onPullRequest)
+            string newProjectName)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.OnPullRequest = onPullRequest;
+            this.NewProjectName = newProjectName ?? throw new global::System.ArgumentNullException(nameof(newProjectName));
         }
 
         /// <summary>

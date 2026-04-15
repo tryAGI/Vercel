@@ -11,12 +11,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
@@ -24,9 +18,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enableFunctionsBeta")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool EnableFunctionsBeta { get; set; }
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentsEnabled")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool PreviewDeploymentsEnabled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,19 +39,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant165" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="enableFunctionsBeta"></param>
         /// <param name="projectName"></param>
+        /// <param name="previewDeploymentsEnabled"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant165(
             string projectId,
-            bool enableFunctionsBeta,
-            string? projectName)
+            string projectName,
+            bool previewDeploymentsEnabled)
         {
-            this.ProjectName = projectName;
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.EnableFunctionsBeta = enableFunctionsBeta;
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.PreviewDeploymentsEnabled = previewDeploymentsEnabled;
         }
 
         /// <summary>

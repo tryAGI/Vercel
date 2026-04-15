@@ -11,16 +11,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentSuffix")]
+        public string? PreviewDeploymentSuffix { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("branch")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Branch { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousPreviewDeploymentSuffix")]
+        public string? PreviousPreviewDeploymentSuffix { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant141" /> class.
         /// </summary>
-        /// <param name="projectName"></param>
-        /// <param name="branch"></param>
+        /// <param name="previewDeploymentSuffix"></param>
+        /// <param name="previousPreviewDeploymentSuffix"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant141(
-            string projectName,
-            string branch)
+            string? previewDeploymentSuffix,
+            string? previousPreviewDeploymentSuffix)
         {
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Branch = branch ?? throw new global::System.ArgumentNullException(nameof(branch));
+            this.PreviewDeploymentSuffix = previewDeploymentSuffix;
+            this.PreviousPreviewDeploymentSuffix = previousPreviewDeploymentSuffix;
         }
 
         /// <summary>

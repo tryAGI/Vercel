@@ -11,16 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedCount")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double DeletedCount { get; set; }
+        public required bool Enabled { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("inviteIds")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> InviteIds { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
+        public string? Domain { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant252" /> class.
         /// </summary>
-        /// <param name="deletedCount"></param>
-        /// <param name="inviteIds"></param>
+        /// <param name="enabled"></param>
+        /// <param name="domain"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant252(
-            double deletedCount,
-            global::System.Collections.Generic.IList<string> inviteIds)
+            bool enabled,
+            string? domain)
         {
-            this.DeletedCount = deletedCount;
-            this.InviteIds = inviteIds ?? throw new global::System.ArgumentNullException(nameof(inviteIds));
+            this.Enabled = enabled;
+            this.Domain = domain;
         }
 
         /// <summary>

@@ -13,32 +13,28 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192ProjectMembershipRoleJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant192ProjectMembershipRole? Role { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant192ProjectMembershipRole Role { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        public string? Uid { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Uid { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("username")]
         public string? Username { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousRole")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192ProjectMembershipPreviousRoleJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant192ProjectMembershipPreviousRole? PreviousRole { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,22 +49,19 @@ namespace Vercel
         /// <param name="uid"></param>
         /// <param name="createdAt"></param>
         /// <param name="username"></param>
-        /// <param name="previousRole"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant192ProjectMembership(
-            global::Vercel.UserEventPayloadVariant192ProjectMembershipRole? role,
-            string? uid,
-            double? createdAt,
-            string? username,
-            global::Vercel.UserEventPayloadVariant192ProjectMembershipPreviousRole? previousRole)
+            global::Vercel.UserEventPayloadVariant192ProjectMembershipRole role,
+            string uid,
+            double createdAt,
+            string? username)
         {
             this.Role = role;
-            this.Uid = uid;
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.CreatedAt = createdAt;
             this.Username = username;
-            this.PreviousRole = previousRole;
         }
 
         /// <summary>

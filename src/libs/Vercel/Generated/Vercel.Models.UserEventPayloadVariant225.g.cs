@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bio")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Bio { get; set; }
+        public required string Email { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant225" /> class.
         /// </summary>
-        /// <param name="bio"></param>
+        /// <param name="email"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant225(
-            string bio)
+            string email)
         {
-            this.Bio = bio ?? throw new global::System.ArgumentNullException(nameof(bio));
+            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
         }
 
         /// <summary>

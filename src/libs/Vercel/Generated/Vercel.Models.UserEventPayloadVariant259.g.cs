@@ -11,39 +11,39 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
-        public string? Role { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
+        public required string TeamName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        public string? Origin { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        public string? Username { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitUsername")]
+        public string? GitUsername { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<string>? TeamPermissions { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("githubUsername")]
+        public string? GithubUsername { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
-        public global::System.Collections.Generic.IList<string>? Entitlements { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabUsername")]
+        public string? GitlabUsername { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketUsername")]
+        public string? BitbucketUsername { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,29 +54,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant259" /> class.
         /// </summary>
-        /// <param name="uid"></param>
-        /// <param name="role"></param>
-        /// <param name="origin"></param>
-        /// <param name="teamRoles"></param>
-        /// <param name="teamPermissions"></param>
-        /// <param name="entitlements"></param>
+        /// <param name="teamName"></param>
+        /// <param name="username"></param>
+        /// <param name="gitUsername"></param>
+        /// <param name="githubUsername"></param>
+        /// <param name="gitlabUsername"></param>
+        /// <param name="bitbucketUsername"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant259(
-            string uid,
-            string? role,
-            string? origin,
-            global::System.Collections.Generic.IList<string>? teamRoles,
-            global::System.Collections.Generic.IList<string>? teamPermissions,
-            global::System.Collections.Generic.IList<string>? entitlements)
+            string teamName,
+            string? username,
+            string? gitUsername,
+            string? githubUsername,
+            string? gitlabUsername,
+            string? bitbucketUsername)
         {
-            this.Role = role;
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
-            this.Origin = origin;
-            this.TeamRoles = teamRoles;
-            this.TeamPermissions = teamPermissions;
-            this.Entitlements = entitlements;
+            this.TeamName = teamName ?? throw new global::System.ArgumentNullException(nameof(teamName));
+            this.Username = username;
+            this.GitUsername = gitUsername;
+            this.GithubUsername = githubUsername;
+            this.GitlabUsername = gitlabUsername;
+            this.BitbucketUsername = bitbucketUsername;
         }
 
         /// <summary>

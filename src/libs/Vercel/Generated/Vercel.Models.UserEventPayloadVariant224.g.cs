@@ -11,34 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Enabled { get; set; }
+        public required string Email { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("verified")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double UpdatedAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("firstEnabledAt")]
-        public double? FirstEnabledAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        public required bool Verified { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,26 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant224" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
-        /// <param name="updatedAt"></param>
-        /// <param name="firstEnabledAt"></param>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
+        /// <param name="email"></param>
+        /// <param name="verified"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant224(
-            bool enabled,
-            double updatedAt,
-            double? firstEnabledAt,
-            string? projectId,
-            string? projectName)
+            string email,
+            bool verified)
         {
-            this.Enabled = enabled;
-            this.UpdatedAt = updatedAt;
-            this.FirstEnabledAt = firstEnabledAt;
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
+            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.Verified = verified;
         }
 
         /// <summary>

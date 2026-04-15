@@ -59,6 +59,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        NsnbRedeployAttributionCard,
+        /// <summary>
+        /// 
+        /// </summary>
         NsnbRequestAccess,
         /// <summary>
         /// 
@@ -102,6 +106,7 @@ namespace Vercel
                 RequestAccessToTeamResponseJoinedFromOrigin.NsnbHobbyUpgrade => "nsnb-hobby-upgrade",
                 RequestAccessToTeamResponseJoinedFromOrigin.NsnbInvite => "nsnb-invite",
                 RequestAccessToTeamResponseJoinedFromOrigin.NsnbRedeploy => "nsnb-redeploy",
+                RequestAccessToTeamResponseJoinedFromOrigin.NsnbRedeployAttributionCard => "nsnb-redeploy-attribution-card",
                 RequestAccessToTeamResponseJoinedFromOrigin.NsnbRequestAccess => "nsnb-request-access",
                 RequestAccessToTeamResponseJoinedFromOrigin.NsnbViewerUpgrade => "nsnb-viewer-upgrade",
                 RequestAccessToTeamResponseJoinedFromOrigin.OrganizationTeams => "organization-teams",
@@ -129,6 +134,7 @@ namespace Vercel
                 "nsnb-hobby-upgrade" => RequestAccessToTeamResponseJoinedFromOrigin.NsnbHobbyUpgrade,
                 "nsnb-invite" => RequestAccessToTeamResponseJoinedFromOrigin.NsnbInvite,
                 "nsnb-redeploy" => RequestAccessToTeamResponseJoinedFromOrigin.NsnbRedeploy,
+                "nsnb-redeploy-attribution-card" => RequestAccessToTeamResponseJoinedFromOrigin.NsnbRedeployAttributionCard,
                 "nsnb-request-access" => RequestAccessToTeamResponseJoinedFromOrigin.NsnbRequestAccess,
                 "nsnb-viewer-upgrade" => RequestAccessToTeamResponseJoinedFromOrigin.NsnbViewerUpgrade,
                 "organization-teams" => RequestAccessToTeamResponseJoinedFromOrigin.OrganizationTeams,

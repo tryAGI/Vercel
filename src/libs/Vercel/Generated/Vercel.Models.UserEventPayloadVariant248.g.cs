@@ -16,12 +16,6 @@ namespace Vercel
         public required bool Enabled { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
-        public string? Domain { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -31,16 +25,13 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant248" /> class.
         /// </summary>
         /// <param name="enabled"></param>
-        /// <param name="domain"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant248(
-            bool enabled,
-            string? domain)
+            bool enabled)
         {
             this.Enabled = enabled;
-            this.Domain = domain;
         }
 
         /// <summary>

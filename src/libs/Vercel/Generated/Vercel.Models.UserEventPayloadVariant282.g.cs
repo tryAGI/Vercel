@@ -11,16 +11,35 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("totp")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Enabled { get; set; }
+        public required bool Totp { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("totpVerified")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("recoveryCodes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool TotpVerified { get; set; }
+        public required double RecoveryCodes { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("actorId")]
+        public string? ActorId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("actorType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant282ActorTypeJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant282ActorType? ActorType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +50,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant282" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
-        /// <param name="totpVerified"></param>
+        /// <param name="totp"></param>
+        /// <param name="recoveryCodes"></param>
+        /// <param name="actorId"></param>
+        /// <param name="actorType"></param>
+        /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant282(
-            bool enabled,
-            bool totpVerified)
+            bool totp,
+            double recoveryCodes,
+            string? actorId,
+            global::Vercel.UserEventPayloadVariant282ActorType? actorType,
+            string? reason)
         {
-            this.Enabled = enabled;
-            this.TotpVerified = totpVerified;
+            this.Totp = totp;
+            this.RecoveryCodes = recoveryCodes;
+            this.ActorId = actorId;
+            this.ActorType = actorType;
+            this.Reason = reason;
         }
 
         /// <summary>

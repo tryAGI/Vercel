@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Email { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("verified")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Verified { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasonCode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant220ReasonCodeJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant220ReasonCode? ReasonCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant220" /> class.
         /// </summary>
-        /// <param name="email"></param>
-        /// <param name="verified"></param>
+        /// <param name="projectId"></param>
+        /// <param name="reasonCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant220(
-            string email,
-            bool verified)
+            string projectId,
+            global::Vercel.UserEventPayloadVariant220ReasonCode? reasonCode)
         {
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.Verified = verified;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ReasonCode = reasonCode;
         }
 
         /// <summary>

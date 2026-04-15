@@ -11,28 +11,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousProjectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string PreviousProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newProjectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NewProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("passwordProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant199PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant199PasswordProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant199PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant199PasswordProtectionEnum2?>? PasswordProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationAccountName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DestinationAccountName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldPasswordProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant199OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant199OldPasswordProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant199OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant199OldPasswordProtectionEnum2?>? OldPasswordProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("transferId")]
+        public string? TransferId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,23 +44,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant199" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="passwordProtection"></param>
-        /// <param name="oldPasswordProtection"></param>
+        /// <param name="previousProjectName"></param>
+        /// <param name="newProjectName"></param>
+        /// <param name="destinationAccountName"></param>
+        /// <param name="transferId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant199(
-            string? projectId,
-            string? projectName,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant199PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant199PasswordProtectionEnum2?>? passwordProtection,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant199OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant199OldPasswordProtectionEnum2?>? oldPasswordProtection)
+            string previousProjectName,
+            string newProjectName,
+            string destinationAccountName,
+            string? transferId)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.PasswordProtection = passwordProtection;
-            this.OldPasswordProtection = oldPasswordProtection;
+            this.PreviousProjectName = previousProjectName ?? throw new global::System.ArgumentNullException(nameof(previousProjectName));
+            this.NewProjectName = newProjectName ?? throw new global::System.ArgumentNullException(nameof(newProjectName));
+            this.DestinationAccountName = destinationAccountName ?? throw new global::System.ArgumentNullException(nameof(destinationAccountName));
+            this.TransferId = transferId;
         }
 
         /// <summary>

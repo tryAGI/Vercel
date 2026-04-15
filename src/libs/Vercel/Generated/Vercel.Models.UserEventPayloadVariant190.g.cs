@@ -11,9 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant190Project Project { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant190Project> Projects { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Uid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant190" /> class.
         /// </summary>
-        /// <param name="project"></param>
+        /// <param name="projects"></param>
+        /// <param name="uid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant190(
-            global::Vercel.UserEventPayloadVariant190Project project)
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant190Project> projects,
+            string uid)
         {
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.Projects = projects ?? throw new global::System.ArgumentNullException(nameof(projects));
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
         }
 
         /// <summary>

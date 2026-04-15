@@ -11,18 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant250EnvironmentJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant250Environment Environment { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant250PreviousJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant250Previous? Previous { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant250EnabledJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant250Enabled Enabled { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant250NextJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant250Next? Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -33,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant250" /> class.
         /// </summary>
-        /// <param name="environment"></param>
-        /// <param name="enabled"></param>
+        /// <param name="previous"></param>
+        /// <param name="next"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant250(
-            global::Vercel.UserEventPayloadVariant250Environment environment,
-            global::Vercel.UserEventPayloadVariant250Enabled enabled)
+            global::Vercel.UserEventPayloadVariant250Previous? previous,
+            global::Vercel.UserEventPayloadVariant250Next? next)
         {
-            this.Environment = environment;
-            this.Enabled = enabled;
+            this.Previous = previous;
+            this.Next = next;
         }
 
         /// <summary>

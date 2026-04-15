@@ -11,16 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant246PreviousJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant246Previous? Previous { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant246NextJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant246Next? Next { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant246" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="slug"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant246(
-            global::Vercel.UserEventPayloadVariant246Previous? previous,
-            global::Vercel.UserEventPayloadVariant246Next? next)
+            string slug)
         {
-            this.Previous = previous;
-            this.Next = next;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
         }
 
         /// <summary>

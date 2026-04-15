@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destinationAccountName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("originAccountName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DestinationAccountName { get; set; }
+        public required string OriginAccountName { get; set; }
 
         /// <summary>
         /// 
@@ -46,7 +46,7 @@ namespace Vercel
         /// </summary>
         /// <param name="previousProjectName"></param>
         /// <param name="newProjectName"></param>
-        /// <param name="destinationAccountName"></param>
+        /// <param name="originAccountName"></param>
         /// <param name="transferId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -54,12 +54,12 @@ namespace Vercel
         public UserEventPayloadVariant196(
             string previousProjectName,
             string newProjectName,
-            string destinationAccountName,
+            string originAccountName,
             string? transferId)
         {
             this.PreviousProjectName = previousProjectName ?? throw new global::System.ArgumentNullException(nameof(previousProjectName));
             this.NewProjectName = newProjectName ?? throw new global::System.ArgumentNullException(nameof(newProjectName));
-            this.DestinationAccountName = destinationAccountName ?? throw new global::System.ArgumentNullException(nameof(destinationAccountName));
+            this.OriginAccountName = originAccountName ?? throw new global::System.ArgumentNullException(nameof(originAccountName));
             this.TransferId = transferId;
         }
 

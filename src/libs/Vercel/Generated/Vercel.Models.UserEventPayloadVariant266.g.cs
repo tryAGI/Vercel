@@ -11,8 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("inviteCode")]
-        public string? InviteCode { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("enforced")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Enforced { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant266" /> class.
         /// </summary>
-        /// <param name="inviteCode"></param>
+        /// <param name="enforced"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant266(
-            string? inviteCode)
+            bool enforced)
         {
-            this.InviteCode = inviteCode;
+            this.Enforced = enforced;
         }
 
         /// <summary>

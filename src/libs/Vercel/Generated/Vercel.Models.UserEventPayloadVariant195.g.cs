@@ -11,43 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant195Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectMembership")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("originAccountName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OriginAccountName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destinationAccountName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DestinationAccountName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destinationAccountId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DestinationAccountId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transferId")]
-        public string? TransferId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant195ProjectMembership ProjectMembership { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,29 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant195" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="originAccountName"></param>
-        /// <param name="destinationAccountName"></param>
-        /// <param name="destinationAccountId"></param>
-        /// <param name="transferId"></param>
+        /// <param name="project"></param>
+        /// <param name="projectMembership"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant195(
-            string projectId,
-            string projectName,
-            string originAccountName,
-            string destinationAccountName,
-            string destinationAccountId,
-            string? transferId)
+            global::Vercel.UserEventPayloadVariant195Project project,
+            global::Vercel.UserEventPayloadVariant195ProjectMembership projectMembership)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.OriginAccountName = originAccountName ?? throw new global::System.ArgumentNullException(nameof(originAccountName));
-            this.DestinationAccountName = destinationAccountName ?? throw new global::System.ArgumentNullException(nameof(destinationAccountName));
-            this.DestinationAccountId = destinationAccountId ?? throw new global::System.ArgumentNullException(nameof(destinationAccountId));
-            this.TransferId = transferId;
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.ProjectMembership = projectMembership ?? throw new global::System.ArgumentNullException(nameof(projectMembership));
         }
 
         /// <summary>

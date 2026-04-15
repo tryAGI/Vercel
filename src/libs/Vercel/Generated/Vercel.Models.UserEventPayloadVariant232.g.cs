@@ -11,9 +11,44 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("budget")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant232Budget Budget { get; set; }
+        public required string Email { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketLogin")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string BitbucketLogin { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketEmail")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string BitbucketEmail { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string BitbucketName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ZeitAccount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccountType")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ZeitAccountType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +59,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant232" /> class.
         /// </summary>
-        /// <param name="budget"></param>
+        /// <param name="email"></param>
+        /// <param name="bitbucketLogin"></param>
+        /// <param name="bitbucketEmail"></param>
+        /// <param name="bitbucketName"></param>
+        /// <param name="zeitAccount"></param>
+        /// <param name="zeitAccountType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant232(
-            global::Vercel.UserEventPayloadVariant232Budget budget)
+            string email,
+            string bitbucketLogin,
+            string bitbucketEmail,
+            string bitbucketName,
+            string zeitAccount,
+            string zeitAccountType)
         {
-            this.Budget = budget ?? throw new global::System.ArgumentNullException(nameof(budget));
+            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.BitbucketLogin = bitbucketLogin ?? throw new global::System.ArgumentNullException(nameof(bitbucketLogin));
+            this.BitbucketEmail = bitbucketEmail ?? throw new global::System.ArgumentNullException(nameof(bitbucketEmail));
+            this.BitbucketName = bitbucketName ?? throw new global::System.ArgumentNullException(nameof(bitbucketName));
+            this.ZeitAccount = zeitAccount ?? throw new global::System.ArgumentNullException(nameof(zeitAccount));
+            this.ZeitAccountType = zeitAccountType ?? throw new global::System.ArgumentNullException(nameof(zeitAccountType));
         }
 
         /// <summary>
