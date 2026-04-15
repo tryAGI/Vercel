@@ -11,39 +11,92 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("userAgent")]
+        public string? UserAgent { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("geolocation")]
+        public global::Vercel.UserEventPayloadVariant231Geolocation? Geolocation { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("analyticsId")]
-        public string? AnalyticsId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
+        public string? Env { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sampleRatePercent")]
-        public double? SampleRatePercent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("os")]
+        public string? Os { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("spendLimitInDollars")]
-        public double? SpendLimitInDollars { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        public string? Username { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant231Previous Previous { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ssoType")]
+        public string? SsoType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("factors")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant231Factor>? Factors { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaOTP")]
+        public bool? ViaOTP { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaGithub")]
+        public bool? ViaGithub { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaGitlab")]
+        public bool? ViaGitlab { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaBitbucket")]
+        public bool? ViaBitbucket { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaGoogle")]
+        public bool? ViaGoogle { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaApple")]
+        public bool? ViaApple { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaSamlSso")]
+        public bool? ViaSamlSso { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaPasskey")]
+        public bool? ViaPasskey { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,29 +107,56 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant231" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="analyticsId"></param>
-        /// <param name="sampleRatePercent"></param>
-        /// <param name="spendLimitInDollars"></param>
+        /// <param name="userAgent"></param>
+        /// <param name="geolocation"></param>
+        /// <param name="env"></param>
+        /// <param name="os"></param>
+        /// <param name="username"></param>
+        /// <param name="ssoType"></param>
+        /// <param name="factors"></param>
+        /// <param name="viaOTP"></param>
+        /// <param name="viaGithub"></param>
+        /// <param name="viaGitlab"></param>
+        /// <param name="viaBitbucket"></param>
+        /// <param name="viaGoogle"></param>
+        /// <param name="viaApple"></param>
+        /// <param name="viaSamlSso"></param>
+        /// <param name="viaPasskey"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant231(
-            global::Vercel.UserEventPayloadVariant231Previous previous,
-            string? projectId,
-            string? projectName,
-            string? analyticsId,
-            double? sampleRatePercent,
-            double? spendLimitInDollars)
+            string? userAgent,
+            global::Vercel.UserEventPayloadVariant231Geolocation? geolocation,
+            string? env,
+            string? os,
+            string? username,
+            string? ssoType,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant231Factor>? factors,
+            bool? viaOTP,
+            bool? viaGithub,
+            bool? viaGitlab,
+            bool? viaBitbucket,
+            bool? viaGoogle,
+            bool? viaApple,
+            bool? viaSamlSso,
+            bool? viaPasskey)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.AnalyticsId = analyticsId;
-            this.SampleRatePercent = sampleRatePercent;
-            this.SpendLimitInDollars = spendLimitInDollars;
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
+            this.UserAgent = userAgent;
+            this.Geolocation = geolocation;
+            this.Env = env;
+            this.Os = os;
+            this.Username = username;
+            this.SsoType = ssoType;
+            this.Factors = factors;
+            this.ViaOTP = viaOTP;
+            this.ViaGithub = viaGithub;
+            this.ViaGitlab = viaGitlab;
+            this.ViaBitbucket = viaBitbucket;
+            this.ViaGoogle = viaGoogle;
+            this.ViaApple = viaApple;
+            this.ViaSamlSso = viaSamlSso;
+            this.ViaPasskey = viaPasskey;
         }
 
         /// <summary>

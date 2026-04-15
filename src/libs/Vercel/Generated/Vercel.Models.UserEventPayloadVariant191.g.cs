@@ -11,16 +11,42 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant191Project Project { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedMembership")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant191RemovedMembership RemovedMembership { get; set; }
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Target { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Domain { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuredBy")]
+        public string? ConfiguredBy { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevConfiguredBy")]
+        public string? PrevConfiguredBy { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +57,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant191" /> class.
         /// </summary>
-        /// <param name="project"></param>
-        /// <param name="removedMembership"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="target"></param>
+        /// <param name="domain"></param>
+        /// <param name="configuredBy"></param>
+        /// <param name="prevConfiguredBy"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant191(
-            global::Vercel.UserEventPayloadVariant191Project project,
-            global::Vercel.UserEventPayloadVariant191RemovedMembership removedMembership)
+            string projectId,
+            string projectName,
+            string target,
+            string domain,
+            string? configuredBy,
+            string? prevConfiguredBy)
         {
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.RemovedMembership = removedMembership ?? throw new global::System.ArgumentNullException(nameof(removedMembership));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.Target = target ?? throw new global::System.ArgumentNullException(nameof(target));
+            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
+            this.ConfiguredBy = configuredBy;
+            this.PrevConfiguredBy = prevConfiguredBy;
         }
 
         /// <summary>

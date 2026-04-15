@@ -11,15 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
-        public double? DeletedAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("fileId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Username { get; set; }
+        public required string FileId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant279" /> class.
         /// </summary>
-        /// <param name="username"></param>
-        /// <param name="deletedAt"></param>
+        /// <param name="fileId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant279(
-            string username,
-            double? deletedAt)
+            string fileId)
         {
-            this.DeletedAt = deletedAt;
-            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
+            this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
         }
 
         /// <summary>

@@ -11,44 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("scalingRules")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Email { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant230ScalingRules2> ScalingRules { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabLogin")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("min")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitlabLogin { get; set; }
+        public required double Min { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabEmail")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("max")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitlabEmail { get; set; }
+        public required double Max { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitlabName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ZeitAccount { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccountType")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ZeitAccountType { get; set; }
+        public required string Url { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,29 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant230" /> class.
         /// </summary>
-        /// <param name="email"></param>
-        /// <param name="gitlabLogin"></param>
-        /// <param name="gitlabEmail"></param>
-        /// <param name="gitlabName"></param>
-        /// <param name="zeitAccount"></param>
-        /// <param name="zeitAccountType"></param>
+        /// <param name="scalingRules"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="url"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant230(
-            string email,
-            string gitlabLogin,
-            string gitlabEmail,
-            string gitlabName,
-            string zeitAccount,
-            string zeitAccountType)
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant230ScalingRules2> scalingRules,
+            double min,
+            double max,
+            string url)
         {
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.GitlabLogin = gitlabLogin ?? throw new global::System.ArgumentNullException(nameof(gitlabLogin));
-            this.GitlabEmail = gitlabEmail ?? throw new global::System.ArgumentNullException(nameof(gitlabEmail));
-            this.GitlabName = gitlabName ?? throw new global::System.ArgumentNullException(nameof(gitlabName));
-            this.ZeitAccount = zeitAccount ?? throw new global::System.ArgumentNullException(nameof(zeitAccount));
-            this.ZeitAccountType = zeitAccountType ?? throw new global::System.ArgumentNullException(nameof(zeitAccountType));
+            this.ScalingRules = scalingRules ?? throw new global::System.ArgumentNullException(nameof(scalingRules));
+            this.Min = min;
+            this.Max = max;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

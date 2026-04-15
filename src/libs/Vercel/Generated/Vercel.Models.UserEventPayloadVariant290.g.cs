@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required global::Vercel.UserEventPayloadVariant290Team Team { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        public required global::Vercel.UserEventPayloadVariant290Configuration Configuration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("peering")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant290Peering Peering { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant290" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="url"></param>
+        /// <param name="team"></param>
+        /// <param name="configuration"></param>
+        /// <param name="peering"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant290(
-            string id,
-            string url)
+            global::Vercel.UserEventPayloadVariant290Team team,
+            global::Vercel.UserEventPayloadVariant290Configuration configuration,
+            global::Vercel.UserEventPayloadVariant290Peering peering)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
+            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.Peering = peering ?? throw new global::System.ArgumentNullException(nameof(peering));
         }
 
         /// <summary>

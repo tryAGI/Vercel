@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
@@ -26,21 +26,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invitedUserName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("membershipCreatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string InvitedUserName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invitedUserId")]
-        public string? InvitedUserId { get; set; }
+        public required double MembershipCreatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -51,26 +39,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant190Project" /> class.
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="projectId"></param>
         /// <param name="role"></param>
-        /// <param name="invitedUserName"></param>
-        /// <param name="id"></param>
-        /// <param name="invitedUserId"></param>
+        /// <param name="membershipCreatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant190Project(
-            string name,
+            string projectId,
             global::Vercel.UserEventPayloadVariant190ProjectRole role,
-            string invitedUserName,
-            string? id,
-            string? invitedUserId)
+            double membershipCreatedAt)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Role = role;
-            this.InvitedUserName = invitedUserName ?? throw new global::System.ArgumentNullException(nameof(invitedUserName));
-            this.Id = id;
-            this.InvitedUserId = invitedUserId;
+            this.MembershipCreatedAt = membershipCreatedAt;
         }
 
         /// <summary>

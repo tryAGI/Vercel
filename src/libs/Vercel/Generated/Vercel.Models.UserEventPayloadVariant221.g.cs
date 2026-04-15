@@ -11,9 +11,28 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Email { get; set; }
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectWebAnalytics")]
+        public global::Vercel.UserEventPayloadVariant221ProjectWebAnalytics? ProjectWebAnalytics { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevProjectWebAnalytics")]
+        public global::Vercel.UserEventPayloadVariant221PrevProjectWebAnalytics? PrevProjectWebAnalytics { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +43,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant221" /> class.
         /// </summary>
-        /// <param name="email"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="projectWebAnalytics"></param>
+        /// <param name="prevProjectWebAnalytics"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant221(
-            string email)
+            string projectId,
+            string projectName,
+            global::Vercel.UserEventPayloadVariant221ProjectWebAnalytics? projectWebAnalytics,
+            global::Vercel.UserEventPayloadVariant221PrevProjectWebAnalytics? prevProjectWebAnalytics)
         {
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.ProjectWebAnalytics = projectWebAnalytics;
+            this.PrevProjectWebAnalytics = prevProjectWebAnalytics;
         }
 
         /// <summary>

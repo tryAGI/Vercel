@@ -59,6 +59,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        NsnbRedeployAttributionCard,
+        /// <summary>
+        /// 
+        /// </summary>
         NsnbRequestAccess,
         /// <summary>
         /// 
@@ -102,6 +106,7 @@ namespace Vercel
                 UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbHobbyUpgrade => "nsnb-hobby-upgrade",
                 UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbInvite => "nsnb-invite",
                 UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbRedeploy => "nsnb-redeploy",
+                UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbRedeployAttributionCard => "nsnb-redeploy-attribution-card",
                 UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbRequestAccess => "nsnb-request-access",
                 UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbViewerUpgrade => "nsnb-viewer-upgrade",
                 UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.OrganizationTeams => "organization-teams",
@@ -129,6 +134,7 @@ namespace Vercel
                 "nsnb-hobby-upgrade" => UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbHobbyUpgrade,
                 "nsnb-invite" => UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbInvite,
                 "nsnb-redeploy" => UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbRedeploy,
+                "nsnb-redeploy-attribution-card" => UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbRedeployAttributionCard,
                 "nsnb-request-access" => UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbRequestAccess,
                 "nsnb-viewer-upgrade" => UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.NsnbViewerUpgrade,
                 "organization-teams" => UserEventPayloadVariant116NewOwnerTeamJoinedFromOrigin.OrganizationTeams,

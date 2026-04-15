@@ -11,35 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("totp")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("exportId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Totp { get; set; }
+        public required string ExportId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("recoveryCodes")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("from")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double RecoveryCodes { get; set; }
+        public required double From { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("actorId")]
-        public string? ActorId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("to")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double To { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("actorType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant278ActorTypeJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant278ActorType? ActorType { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        public string? Reason { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("format")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Format { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,26 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant278" /> class.
         /// </summary>
-        /// <param name="totp"></param>
-        /// <param name="recoveryCodes"></param>
-        /// <param name="actorId"></param>
-        /// <param name="actorType"></param>
-        /// <param name="reason"></param>
+        /// <param name="exportId"></param>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
+        /// <param name="format"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant278(
-            bool totp,
-            double recoveryCodes,
-            string? actorId,
-            global::Vercel.UserEventPayloadVariant278ActorType? actorType,
-            string? reason)
+            string exportId,
+            double from,
+            double to,
+            string format)
         {
-            this.Totp = totp;
-            this.RecoveryCodes = recoveryCodes;
-            this.ActorId = actorId;
-            this.ActorType = actorType;
-            this.Reason = reason;
+            this.ExportId = exportId ?? throw new global::System.ArgumentNullException(nameof(exportId));
+            this.From = from;
+            this.To = to;
+            this.Format = format ?? throw new global::System.ArgumentNullException(nameof(format));
         }
 
         /// <summary>

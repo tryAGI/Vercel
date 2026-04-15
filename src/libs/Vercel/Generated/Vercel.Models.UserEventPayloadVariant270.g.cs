@@ -11,10 +11,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant270EnabledJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant270Enabled Enabled { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("inviteCode")]
+        public string? InviteCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,14 +23,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant270" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="inviteCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant270(
-            global::Vercel.UserEventPayloadVariant270Enabled enabled)
+            string? inviteCode)
         {
-            this.Enabled = enabled;
+            this.InviteCode = inviteCode;
         }
 
         /// <summary>

@@ -22,6 +22,12 @@ namespace Vercel
         public double? SupportUntil { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public bool? Default { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -32,15 +38,18 @@ namespace Vercel
         /// </summary>
         /// <param name="bucket"></param>
         /// <param name="supportUntil"></param>
+        /// <param name="default"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TeamIpBucket(
             string bucket,
-            double? supportUntil)
+            double? supportUntil,
+            bool? @default)
         {
             this.Bucket = bucket ?? throw new global::System.ArgumentNullException(nameof(bucket));
             this.SupportUntil = supportUntil;
+            this.Default = @default;
         }
 
         /// <summary>

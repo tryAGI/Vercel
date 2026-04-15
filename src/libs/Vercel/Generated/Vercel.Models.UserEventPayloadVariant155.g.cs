@@ -11,15 +11,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         public string? ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("certId")]
+        public string? CertId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
+        public string? Origin { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,15 +43,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
+        /// <param name="certId"></param>
+        /// <param name="origin"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant155(
-            string projectId,
-            string? projectName)
+            string? projectId,
+            string? projectName,
+            string? certId,
+            string? origin)
         {
+            this.ProjectId = projectId;
             this.ProjectName = projectName;
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.CertId = certId;
+            this.Origin = origin;
         }
 
         /// <summary>

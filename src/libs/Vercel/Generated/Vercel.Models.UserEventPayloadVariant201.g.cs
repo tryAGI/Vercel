@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectName { get; set; }
@@ -18,10 +25,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("consent")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant201ConsentJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant201Consent Consent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
+        public global::Vercel.UserEventPayloadVariant201OptionsAllowlist? OptionsAllowlist { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldOptionsAllowlist")]
+        public global::Vercel.UserEventPayloadVariant201OldOptionsAllowlist? OldOptionsAllowlist { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,17 +43,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant201" /> class.
         /// </summary>
+        /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="consent"></param>
+        /// <param name="optionsAllowlist"></param>
+        /// <param name="oldOptionsAllowlist"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant201(
+            string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant201Consent consent)
+            global::Vercel.UserEventPayloadVariant201OptionsAllowlist? optionsAllowlist,
+            global::Vercel.UserEventPayloadVariant201OldOptionsAllowlist? oldOptionsAllowlist)
         {
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Consent = consent;
+            this.OptionsAllowlist = optionsAllowlist;
+            this.OldOptionsAllowlist = oldOptionsAllowlist;
         }
 
         /// <summary>

@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("requireVerifiedCommits")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("onCommit")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool RequireVerifiedCommits { get; set; }
+        public required bool OnCommit { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="requireVerifiedCommits"></param>
+        /// <param name="onCommit"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant178(
             string projectId,
             string projectName,
-            bool requireVerifiedCommits)
+            bool onCommit)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.RequireVerifiedCommits = requireVerifiedCommits;
+            this.OnCommit = onCommit;
         }
 
         /// <summary>

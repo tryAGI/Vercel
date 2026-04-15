@@ -25,16 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("autoAssignCustomDomains")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CustomEnvironmentId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentSlug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CustomEnvironmentSlug { get; set; }
+        public required bool AutoAssignCustomDomains { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,21 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="customEnvironmentId"></param>
-        /// <param name="customEnvironmentSlug"></param>
+        /// <param name="autoAssignCustomDomains"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant164(
             string projectId,
             string projectName,
-            string customEnvironmentId,
-            string customEnvironmentSlug)
+            bool autoAssignCustomDomains)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.CustomEnvironmentId = customEnvironmentId ?? throw new global::System.ArgumentNullException(nameof(customEnvironmentId));
-            this.CustomEnvironmentSlug = customEnvironmentSlug ?? throw new global::System.ArgumentNullException(nameof(customEnvironmentSlug));
+            this.AutoAssignCustomDomains = autoAssignCustomDomains;
         }
 
         /// <summary>

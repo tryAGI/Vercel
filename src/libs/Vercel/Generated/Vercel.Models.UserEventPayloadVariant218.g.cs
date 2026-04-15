@@ -11,23 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitProvider")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitProvider { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitProviderGroupDescriptor")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitProviderGroupDescriptor { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitScope")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitScope { get; set; }
+        public required global::Vercel.UserEventPayloadVariant218Next Next { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant218Previous Previous { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant218" /> class.
         /// </summary>
-        /// <param name="gitProvider"></param>
-        /// <param name="gitProviderGroupDescriptor"></param>
-        /// <param name="gitScope"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="next"></param>
+        /// <param name="previous"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant218(
-            string gitProvider,
-            string gitProviderGroupDescriptor,
-            string gitScope)
+            string projectId,
+            string projectName,
+            global::Vercel.UserEventPayloadVariant218Next next,
+            global::Vercel.UserEventPayloadVariant218Previous previous)
         {
-            this.GitProvider = gitProvider ?? throw new global::System.ArgumentNullException(nameof(gitProvider));
-            this.GitProviderGroupDescriptor = gitProviderGroupDescriptor ?? throw new global::System.ArgumentNullException(nameof(gitProviderGroupDescriptor));
-            this.GitScope = gitScope ?? throw new global::System.ArgumentNullException(nameof(gitScope));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
         }
 
         /// <summary>

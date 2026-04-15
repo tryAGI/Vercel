@@ -11,22 +11,51 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlement")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Entitlement { get; set; }
+        public required string TeamName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant258User User { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        public string? Username { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousCanceledAt")]
-        public string? PreviousCanceledAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitUsername")]
+        public string? GitUsername { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("githubUsername")]
+        public string? GithubUsername { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabUsername")]
+        public string? GitlabUsername { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketUsername")]
+        public string? BitbucketUsername { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedUid")]
+        public string? UpdatedUid { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        public string? TeamId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +66,35 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant258" /> class.
         /// </summary>
-        /// <param name="entitlement"></param>
-        /// <param name="user"></param>
-        /// <param name="previousCanceledAt"></param>
+        /// <param name="teamName"></param>
+        /// <param name="username"></param>
+        /// <param name="gitUsername"></param>
+        /// <param name="githubUsername"></param>
+        /// <param name="gitlabUsername"></param>
+        /// <param name="bitbucketUsername"></param>
+        /// <param name="updatedUid"></param>
+        /// <param name="teamId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant258(
-            string entitlement,
-            global::Vercel.UserEventPayloadVariant258User user,
-            string? previousCanceledAt)
+            string teamName,
+            string? username,
+            string? gitUsername,
+            string? githubUsername,
+            string? gitlabUsername,
+            string? bitbucketUsername,
+            string? updatedUid,
+            string? teamId)
         {
-            this.Entitlement = entitlement ?? throw new global::System.ArgumentNullException(nameof(entitlement));
-            this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
-            this.PreviousCanceledAt = previousCanceledAt;
+            this.TeamName = teamName ?? throw new global::System.ArgumentNullException(nameof(teamName));
+            this.Username = username;
+            this.GitUsername = gitUsername;
+            this.GithubUsername = githubUsername;
+            this.GitlabUsername = gitlabUsername;
+            this.BitbucketUsername = bitbucketUsername;
+            this.UpdatedUid = updatedUid;
+            this.TeamId = teamId;
         }
 
         /// <summary>

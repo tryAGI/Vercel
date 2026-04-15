@@ -11,24 +11,39 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string InvoiceId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
+        public string? DirectoryType { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("convertedFromTrial")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool ConvertedFromTrial { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedUser")]
+        public global::Vercel.UserEventPayloadVariant265UpdatedUser? UpdatedUser { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant265PlanJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
+        public string? Role { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousRole")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant265Plan Plan { get; set; }
+        public required string PreviousRole { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedUid")]
+        public string? UpdatedUid { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
+        public string? Origin { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,20 +54,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant265" /> class.
         /// </summary>
-        /// <param name="invoiceId"></param>
-        /// <param name="convertedFromTrial"></param>
-        /// <param name="plan"></param>
+        /// <param name="previousRole"></param>
+        /// <param name="directoryType"></param>
+        /// <param name="updatedUser"></param>
+        /// <param name="role"></param>
+        /// <param name="updatedUid"></param>
+        /// <param name="origin"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant265(
-            string invoiceId,
-            bool convertedFromTrial,
-            global::Vercel.UserEventPayloadVariant265Plan plan)
+            string previousRole,
+            string? directoryType,
+            global::Vercel.UserEventPayloadVariant265UpdatedUser? updatedUser,
+            string? role,
+            string? updatedUid,
+            string? origin)
         {
-            this.InvoiceId = invoiceId ?? throw new global::System.ArgumentNullException(nameof(invoiceId));
-            this.ConvertedFromTrial = convertedFromTrial;
-            this.Plan = plan;
+            this.DirectoryType = directoryType;
+            this.UpdatedUser = updatedUser;
+            this.Role = role;
+            this.PreviousRole = previousRole ?? throw new global::System.ArgumentNullException(nameof(previousRole));
+            this.UpdatedUid = updatedUid;
+            this.Origin = origin;
         }
 
         /// <summary>

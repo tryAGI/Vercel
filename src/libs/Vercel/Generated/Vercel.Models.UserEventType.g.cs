@@ -800,6 +800,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        PageIntegrityConfigUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityHeaderApproved,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityResourceApproved,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityResourceRejected,
+        /// <summary>
+        /// 
+        /// </summary>
         PasskeyCreated,
         /// <summary>
         /// 
@@ -1201,6 +1217,10 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectRollingReleaseStarted,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectRollingReleaseSuggestedActionsGenerated,
         /// <summary>
         /// 
         /// </summary>
@@ -1940,6 +1960,10 @@ namespace Vercel
                 UserEventType.OwnerSoftBlocked => "owner-soft-blocked",
                 UserEventType.OwnerSoftUnblocked => "owner-soft-unblocked",
                 UserEventType.OwnerUnblocked => "owner-unblocked",
+                UserEventType.PageIntegrityConfigUpdated => "page-integrity-config-updated",
+                UserEventType.PageIntegrityHeaderApproved => "page-integrity-header-approved",
+                UserEventType.PageIntegrityResourceApproved => "page-integrity-resource-approved",
+                UserEventType.PageIntegrityResourceRejected => "page-integrity-resource-rejected",
                 UserEventType.PasskeyCreated => "passkey-created",
                 UserEventType.PasskeyDeleted => "passkey-deleted",
                 UserEventType.PasskeyUpdated => "passkey-updated",
@@ -2041,6 +2065,7 @@ namespace Vercel
                 UserEventType.ProjectRollingReleaseEnabled => "project-rolling-release-enabled",
                 UserEventType.ProjectRollingReleasePaused => "project-rolling-release-paused",
                 UserEventType.ProjectRollingReleaseStarted => "project-rolling-release-started",
+                UserEventType.ProjectRollingReleaseSuggestedActionsGenerated => "project-rolling-release-suggested-actions-generated",
                 UserEventType.ProjectRollingReleaseTimer => "project-rolling-release-timer",
                 UserEventType.ProjectRootDirectoryUpdated => "project-root-directory-updated",
                 UserEventType.ProjectRoutesVersionPromoted => "project-routes-version-promoted",
@@ -2380,6 +2405,10 @@ namespace Vercel
                 "owner-soft-blocked" => UserEventType.OwnerSoftBlocked,
                 "owner-soft-unblocked" => UserEventType.OwnerSoftUnblocked,
                 "owner-unblocked" => UserEventType.OwnerUnblocked,
+                "page-integrity-config-updated" => UserEventType.PageIntegrityConfigUpdated,
+                "page-integrity-header-approved" => UserEventType.PageIntegrityHeaderApproved,
+                "page-integrity-resource-approved" => UserEventType.PageIntegrityResourceApproved,
+                "page-integrity-resource-rejected" => UserEventType.PageIntegrityResourceRejected,
                 "passkey-created" => UserEventType.PasskeyCreated,
                 "passkey-deleted" => UserEventType.PasskeyDeleted,
                 "passkey-updated" => UserEventType.PasskeyUpdated,
@@ -2481,6 +2510,7 @@ namespace Vercel
                 "project-rolling-release-enabled" => UserEventType.ProjectRollingReleaseEnabled,
                 "project-rolling-release-paused" => UserEventType.ProjectRollingReleasePaused,
                 "project-rolling-release-started" => UserEventType.ProjectRollingReleaseStarted,
+                "project-rolling-release-suggested-actions-generated" => UserEventType.ProjectRollingReleaseSuggestedActionsGenerated,
                 "project-rolling-release-timer" => UserEventType.ProjectRollingReleaseTimer,
                 "project-root-directory-updated" => UserEventType.ProjectRootDirectoryUpdated,
                 "project-routes-version-promoted" => UserEventType.ProjectRoutesVersionPromoted,

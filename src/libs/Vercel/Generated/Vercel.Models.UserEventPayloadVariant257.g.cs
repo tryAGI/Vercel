@@ -11,16 +11,44 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlement")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Entitlement { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
+        public string? DirectoryType { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant257User User { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ssoType")]
+        public string? SsoType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitedUser")]
+        public global::Vercel.UserEventPayloadVariant257InvitedUser? InvitedUser { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitedEmail")]
+        public string? InvitedEmail { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitationRole")]
+        public string? InvitationRole { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
+        public global::System.Collections.Generic.IList<string>? Entitlements { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitedUid")]
+        public string? InvitedUid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +59,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant257" /> class.
         /// </summary>
-        /// <param name="entitlement"></param>
-        /// <param name="user"></param>
+        /// <param name="directoryType"></param>
+        /// <param name="ssoType"></param>
+        /// <param name="invitedUser"></param>
+        /// <param name="invitedEmail"></param>
+        /// <param name="invitationRole"></param>
+        /// <param name="entitlements"></param>
+        /// <param name="invitedUid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant257(
-            string entitlement,
-            global::Vercel.UserEventPayloadVariant257User user)
+            string? directoryType,
+            string? ssoType,
+            global::Vercel.UserEventPayloadVariant257InvitedUser? invitedUser,
+            string? invitedEmail,
+            string? invitationRole,
+            global::System.Collections.Generic.IList<string>? entitlements,
+            string? invitedUid)
         {
-            this.Entitlement = entitlement ?? throw new global::System.ArgumentNullException(nameof(entitlement));
-            this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
+            this.DirectoryType = directoryType;
+            this.SsoType = ssoType;
+            this.InvitedUser = invitedUser;
+            this.InvitedEmail = invitedEmail;
+            this.InvitationRole = invitationRole;
+            this.Entitlements = entitlements;
+            this.InvitedUid = invitedUid;
         }
 
         /// <summary>

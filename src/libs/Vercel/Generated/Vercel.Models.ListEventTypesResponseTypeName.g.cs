@@ -799,6 +799,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        PageIntegrityConfigUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityHeaderApproved,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityResourceApproved,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityResourceRejected,
+        /// <summary>
+        /// 
+        /// </summary>
         PasskeyCreated,
         /// <summary>
         /// 
@@ -1200,6 +1216,10 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectRollingReleaseStarted,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectRollingReleaseSuggestedActionsGenerated,
         /// <summary>
         /// 
         /// </summary>
@@ -1939,6 +1959,10 @@ namespace Vercel
                 ListEventTypesResponseTypeName.OwnerSoftBlocked => "owner-soft-blocked",
                 ListEventTypesResponseTypeName.OwnerSoftUnblocked => "owner-soft-unblocked",
                 ListEventTypesResponseTypeName.OwnerUnblocked => "owner-unblocked",
+                ListEventTypesResponseTypeName.PageIntegrityConfigUpdated => "page-integrity-config-updated",
+                ListEventTypesResponseTypeName.PageIntegrityHeaderApproved => "page-integrity-header-approved",
+                ListEventTypesResponseTypeName.PageIntegrityResourceApproved => "page-integrity-resource-approved",
+                ListEventTypesResponseTypeName.PageIntegrityResourceRejected => "page-integrity-resource-rejected",
                 ListEventTypesResponseTypeName.PasskeyCreated => "passkey-created",
                 ListEventTypesResponseTypeName.PasskeyDeleted => "passkey-deleted",
                 ListEventTypesResponseTypeName.PasskeyUpdated => "passkey-updated",
@@ -2040,6 +2064,7 @@ namespace Vercel
                 ListEventTypesResponseTypeName.ProjectRollingReleaseEnabled => "project-rolling-release-enabled",
                 ListEventTypesResponseTypeName.ProjectRollingReleasePaused => "project-rolling-release-paused",
                 ListEventTypesResponseTypeName.ProjectRollingReleaseStarted => "project-rolling-release-started",
+                ListEventTypesResponseTypeName.ProjectRollingReleaseSuggestedActionsGenerated => "project-rolling-release-suggested-actions-generated",
                 ListEventTypesResponseTypeName.ProjectRollingReleaseTimer => "project-rolling-release-timer",
                 ListEventTypesResponseTypeName.ProjectRootDirectoryUpdated => "project-root-directory-updated",
                 ListEventTypesResponseTypeName.ProjectRoutesVersionPromoted => "project-routes-version-promoted",
@@ -2379,6 +2404,10 @@ namespace Vercel
                 "owner-soft-blocked" => ListEventTypesResponseTypeName.OwnerSoftBlocked,
                 "owner-soft-unblocked" => ListEventTypesResponseTypeName.OwnerSoftUnblocked,
                 "owner-unblocked" => ListEventTypesResponseTypeName.OwnerUnblocked,
+                "page-integrity-config-updated" => ListEventTypesResponseTypeName.PageIntegrityConfigUpdated,
+                "page-integrity-header-approved" => ListEventTypesResponseTypeName.PageIntegrityHeaderApproved,
+                "page-integrity-resource-approved" => ListEventTypesResponseTypeName.PageIntegrityResourceApproved,
+                "page-integrity-resource-rejected" => ListEventTypesResponseTypeName.PageIntegrityResourceRejected,
                 "passkey-created" => ListEventTypesResponseTypeName.PasskeyCreated,
                 "passkey-deleted" => ListEventTypesResponseTypeName.PasskeyDeleted,
                 "passkey-updated" => ListEventTypesResponseTypeName.PasskeyUpdated,
@@ -2480,6 +2509,7 @@ namespace Vercel
                 "project-rolling-release-enabled" => ListEventTypesResponseTypeName.ProjectRollingReleaseEnabled,
                 "project-rolling-release-paused" => ListEventTypesResponseTypeName.ProjectRollingReleasePaused,
                 "project-rolling-release-started" => ListEventTypesResponseTypeName.ProjectRollingReleaseStarted,
+                "project-rolling-release-suggested-actions-generated" => ListEventTypesResponseTypeName.ProjectRollingReleaseSuggestedActionsGenerated,
                 "project-rolling-release-timer" => ListEventTypesResponseTypeName.ProjectRollingReleaseTimer,
                 "project-root-directory-updated" => ListEventTypesResponseTypeName.ProjectRootDirectoryUpdated,
                 "project-routes-version-promoted" => ListEventTypesResponseTypeName.ProjectRoutesVersionPromoted,

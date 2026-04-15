@@ -11,24 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitProvider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant172NextGitProviderJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("functionZeroConfigFailover")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant172NextGitProvider GitProvider { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitRepoId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitRepoId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitRepositoryName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitRepositoryName { get; set; }
+        public required bool FunctionZeroConfigFailover { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,20 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant172Next" /> class.
         /// </summary>
-        /// <param name="gitProvider"></param>
-        /// <param name="gitRepoId"></param>
-        /// <param name="gitRepositoryName"></param>
+        /// <param name="functionZeroConfigFailover"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant172Next(
-            global::Vercel.UserEventPayloadVariant172NextGitProvider gitProvider,
-            string gitRepoId,
-            string gitRepositoryName)
+            bool functionZeroConfigFailover)
         {
-            this.GitProvider = gitProvider;
-            this.GitRepoId = gitRepoId ?? throw new global::System.ArgumentNullException(nameof(gitRepoId));
-            this.GitRepositoryName = gitRepositoryName ?? throw new global::System.ArgumentNullException(nameof(gitRepositoryName));
+            this.FunctionZeroConfigFailover = functionZeroConfigFailover;
         }
 
         /// <summary>

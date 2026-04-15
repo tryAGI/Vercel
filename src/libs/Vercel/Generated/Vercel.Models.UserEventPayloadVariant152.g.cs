@@ -12,25 +12,22 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("certId")]
-        public string? CertId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        public string? Origin { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("productionDeploymentsFastLane")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool ProductionDeploymentsFastLane { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,21 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="certId"></param>
-        /// <param name="origin"></param>
+        /// <param name="productionDeploymentsFastLane"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant152(
-            string? projectId,
-            string? projectName,
-            string? certId,
-            string? origin)
+            string projectId,
+            string projectName,
+            bool productionDeploymentsFastLane)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.CertId = certId;
-            this.Origin = origin;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.ProductionDeploymentsFastLane = productionDeploymentsFastLane;
         }
 
         /// <summary>

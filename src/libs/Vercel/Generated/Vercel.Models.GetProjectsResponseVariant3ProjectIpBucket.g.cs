@@ -18,6 +18,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public bool? Default { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("supportUntil")]
         public double? SupportUntil { get; set; }
 
@@ -31,15 +37,18 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant3ProjectIpBucket" /> class.
         /// </summary>
         /// <param name="bucket"></param>
+        /// <param name="default"></param>
         /// <param name="supportUntil"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant3ProjectIpBucket(
             string bucket,
+            bool? @default,
             double? supportUntil)
         {
             this.Bucket = bucket ?? throw new global::System.ArgumentNullException(nameof(bucket));
+            this.Default = @default;
             this.SupportUntil = supportUntil;
         }
 

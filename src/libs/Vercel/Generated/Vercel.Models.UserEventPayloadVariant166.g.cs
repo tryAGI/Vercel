@@ -25,6 +25,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CustomEnvironmentId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentSlug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CustomEnvironmentSlug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UserEventPayloadVariant166Previous Previous { get; set; }
@@ -47,6 +61,8 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
+        /// <param name="customEnvironmentId"></param>
+        /// <param name="customEnvironmentSlug"></param>
         /// <param name="previous"></param>
         /// <param name="next"></param>
 #if NET7_0_OR_GREATER
@@ -55,11 +71,15 @@ namespace Vercel
         public UserEventPayloadVariant166(
             string projectId,
             string projectName,
+            string customEnvironmentId,
+            string customEnvironmentSlug,
             global::Vercel.UserEventPayloadVariant166Previous previous,
             global::Vercel.UserEventPayloadVariant166Next next)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.CustomEnvironmentId = customEnvironmentId ?? throw new global::System.ArgumentNullException(nameof(customEnvironmentId));
+            this.CustomEnvironmentSlug = customEnvironmentSlug ?? throw new global::System.ArgumentNullException(nameof(customEnvironmentSlug));
             this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
             this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }

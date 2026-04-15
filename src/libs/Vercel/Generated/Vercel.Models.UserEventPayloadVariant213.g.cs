@@ -23,16 +23,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ssoProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant213SsoProtectionEnum, global::Vercel.UserEventPayloadVariant213SsoProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant213SsoProtectionEnum, global::Vercel.UserEventPayloadVariant213SsoProtectionEnum2?>? SsoProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant213Previous Previous { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldSsoProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant213OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant213OldSsoProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant213OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant213OldSsoProtectionEnum2?>? OldSsoProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant213Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,23 +43,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant213" /> class.
         /// </summary>
+        /// <param name="previous"></param>
+        /// <param name="next"></param>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="ssoProtection"></param>
-        /// <param name="oldSsoProtection"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant213(
+            global::Vercel.UserEventPayloadVariant213Previous previous,
+            global::Vercel.UserEventPayloadVariant213Next next,
             string? projectId,
-            string? projectName,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant213SsoProtectionEnum, global::Vercel.UserEventPayloadVariant213SsoProtectionEnum2?>? ssoProtection,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant213OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant213OldSsoProtectionEnum2?>? oldSsoProtection)
+            string? projectName)
         {
             this.ProjectId = projectId;
             this.ProjectName = projectName;
-            this.SsoProtection = ssoProtection;
-            this.OldSsoProtection = oldSsoProtection;
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

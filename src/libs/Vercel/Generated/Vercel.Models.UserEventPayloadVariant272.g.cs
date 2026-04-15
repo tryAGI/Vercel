@@ -11,14 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        public object? Previous { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
-        public object? Next { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("consent")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant272ConsentJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant272Consent Consent { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +25,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant272" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="consent"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant272(
-            object? previous,
-            object? next)
+            global::Vercel.UserEventPayloadVariant272Consent consent)
         {
-            this.Previous = previous;
-            this.Next = next;
+            this.Consent = consent;
         }
 
         /// <summary>

@@ -11,9 +11,17 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fileId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string FileId { get; set; }
+        public required bool Enabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant275ScopeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant275Scope Scope { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +32,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant275" /> class.
         /// </summary>
-        /// <param name="fileId"></param>
+        /// <param name="enabled"></param>
+        /// <param name="scope"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant275(
-            string fileId)
+            bool enabled,
+            global::Vercel.UserEventPayloadVariant275Scope scope)
         {
-            this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
+            this.Enabled = enabled;
+            this.Scope = scope;
         }
 
         /// <summary>

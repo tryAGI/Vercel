@@ -25,9 +25,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitForkProtection")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool GitForkProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("targetDeploymentId")]
+        public string? TargetDeploymentId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newTargetPercentage")]
+        public double? NewTargetPercentage { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,18 +45,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="gitForkProtection"></param>
+        /// <param name="targetDeploymentId"></param>
+        /// <param name="newTargetPercentage"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant206(
             string projectId,
             string projectName,
-            bool gitForkProtection)
+            string? targetDeploymentId,
+            double? newTargetPercentage)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.GitForkProtection = gitForkProtection;
+            this.TargetDeploymentId = targetDeploymentId;
+            this.NewTargetPercentage = newTargetPercentage;
         }
 
         /// <summary>

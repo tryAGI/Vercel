@@ -11,44 +11,34 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Email { get; set; }
+        public required bool Enabled { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketLogin")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string BitbucketLogin { get; set; }
+        public required double UpdatedAt { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketEmail")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string BitbucketEmail { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("firstEnabledAt")]
+        public double? FirstEnabledAt { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string BitbucketName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ZeitAccount { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccountType")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ZeitAccountType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,29 +49,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant228" /> class.
         /// </summary>
-        /// <param name="email"></param>
-        /// <param name="bitbucketLogin"></param>
-        /// <param name="bitbucketEmail"></param>
-        /// <param name="bitbucketName"></param>
-        /// <param name="zeitAccount"></param>
-        /// <param name="zeitAccountType"></param>
+        /// <param name="enabled"></param>
+        /// <param name="updatedAt"></param>
+        /// <param name="firstEnabledAt"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant228(
-            string email,
-            string bitbucketLogin,
-            string bitbucketEmail,
-            string bitbucketName,
-            string zeitAccount,
-            string zeitAccountType)
+            bool enabled,
+            double updatedAt,
+            double? firstEnabledAt,
+            string? projectId,
+            string? projectName)
         {
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.BitbucketLogin = bitbucketLogin ?? throw new global::System.ArgumentNullException(nameof(bitbucketLogin));
-            this.BitbucketEmail = bitbucketEmail ?? throw new global::System.ArgumentNullException(nameof(bitbucketEmail));
-            this.BitbucketName = bitbucketName ?? throw new global::System.ArgumentNullException(nameof(bitbucketName));
-            this.ZeitAccount = zeitAccount ?? throw new global::System.ArgumentNullException(nameof(zeitAccount));
-            this.ZeitAccountType = zeitAccountType ?? throw new global::System.ArgumentNullException(nameof(zeitAccountType));
+            this.Enabled = enabled;
+            this.UpdatedAt = updatedAt;
+            this.FirstEnabledAt = firstEnabledAt;
+            this.ProjectId = projectId;
+            this.ProjectName = projectName;
         }
 
         /// <summary>
