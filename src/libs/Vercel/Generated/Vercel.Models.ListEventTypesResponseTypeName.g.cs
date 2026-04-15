@@ -1019,6 +1019,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectFunctionsBetaUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectFunctionsFluidDisabled,
         /// <summary>
         /// 
@@ -1990,6 +1994,7 @@ namespace Vercel
                 ListEventTypesResponseTypeName.ProjectFunctionFailover => "project-function-failover",
                 ListEventTypesResponseTypeName.ProjectFunctionMaxDuration => "project-function-max-duration",
                 ListEventTypesResponseTypeName.ProjectFunctionRegions => "project-function-regions",
+                ListEventTypesResponseTypeName.ProjectFunctionsBetaUpdated => "project-functions-beta-updated",
                 ListEventTypesResponseTypeName.ProjectFunctionsFluidDisabled => "project-functions-fluid-disabled",
                 ListEventTypesResponseTypeName.ProjectFunctionsFluidEnabled => "project-functions-fluid-enabled",
                 ListEventTypesResponseTypeName.ProjectGitCommitCommentsToggled => "project-git-commit-comments-toggled",
@@ -2429,6 +2434,7 @@ namespace Vercel
                 "project-function-failover" => ListEventTypesResponseTypeName.ProjectFunctionFailover,
                 "project-function-max-duration" => ListEventTypesResponseTypeName.ProjectFunctionMaxDuration,
                 "project-function-regions" => ListEventTypesResponseTypeName.ProjectFunctionRegions,
+                "project-functions-beta-updated" => ListEventTypesResponseTypeName.ProjectFunctionsBetaUpdated,
                 "project-functions-fluid-disabled" => ListEventTypesResponseTypeName.ProjectFunctionsFluidDisabled,
                 "project-functions-fluid-enabled" => ListEventTypesResponseTypeName.ProjectFunctionsFluidEnabled,
                 "project-git-commit-comments-toggled" => ListEventTypesResponseTypeName.ProjectGitCommitCommentsToggled,

@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant232
     {
         /// <summary>
-        /// Represents a budget for tracking and notifying teams on their spending.
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("budget")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -24,9 +24,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant232" /> class.
         /// </summary>
-        /// <param name="budget">
-        /// Represents a budget for tracking and notifying teams on their spending.
-        /// </param>
+        /// <param name="budget"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

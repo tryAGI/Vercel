@@ -16,12 +16,6 @@ namespace Vercel
         public required global::Vercel.UserEventPayloadVariant233Budget Budget { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("webhookUrl")]
-        public string? WebhookUrl { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -33,16 +27,13 @@ namespace Vercel
         /// <param name="budget">
         /// Represents a budget for tracking and notifying teams on their spending.
         /// </param>
-        /// <param name="webhookUrl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant233(
-            global::Vercel.UserEventPayloadVariant233Budget budget,
-            string? webhookUrl)
+            global::Vercel.UserEventPayloadVariant233Budget budget)
         {
             this.Budget = budget ?? throw new global::System.ArgumentNullException(nameof(budget));
-            this.WebhookUrl = webhookUrl;
         }
 
         /// <summary>

@@ -18,23 +18,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabLogin")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("githubLogin")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitlabLogin { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabEmail")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitlabEmail { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitlabName { get; set; }
+        public required string GithubLogin { get; set; }
 
         /// <summary>
         /// 
@@ -60,9 +46,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant229" /> class.
         /// </summary>
         /// <param name="email"></param>
-        /// <param name="gitlabLogin"></param>
-        /// <param name="gitlabEmail"></param>
-        /// <param name="gitlabName"></param>
+        /// <param name="githubLogin"></param>
         /// <param name="zeitAccount"></param>
         /// <param name="zeitAccountType"></param>
 #if NET7_0_OR_GREATER
@@ -70,16 +54,12 @@ namespace Vercel
 #endif
         public UserEventPayloadVariant229(
             string email,
-            string gitlabLogin,
-            string gitlabEmail,
-            string gitlabName,
+            string githubLogin,
             string zeitAccount,
             string zeitAccountType)
         {
             this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.GitlabLogin = gitlabLogin ?? throw new global::System.ArgumentNullException(nameof(gitlabLogin));
-            this.GitlabEmail = gitlabEmail ?? throw new global::System.ArgumentNullException(nameof(gitlabEmail));
-            this.GitlabName = gitlabName ?? throw new global::System.ArgumentNullException(nameof(gitlabName));
+            this.GithubLogin = githubLogin ?? throw new global::System.ArgumentNullException(nameof(githubLogin));
             this.ZeitAccount = zeitAccount ?? throw new global::System.ArgumentNullException(nameof(zeitAccount));
             this.ZeitAccountType = zeitAccountType ?? throw new global::System.ArgumentNullException(nameof(zeitAccountType));
         }

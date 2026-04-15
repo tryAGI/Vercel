@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("skewProtectionAllowedDomains")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("skewProtectionMaxAge")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> SkewProtectionAllowedDomains { get; set; }
+        public required double SkewProtectionMaxAge { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant211Next" /> class.
         /// </summary>
-        /// <param name="skewProtectionAllowedDomains"></param>
+        /// <param name="skewProtectionMaxAge"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant211Next(
-            global::System.Collections.Generic.IList<string> skewProtectionAllowedDomains)
+            double skewProtectionMaxAge)
         {
-            this.SkewProtectionAllowedDomains = skewProtectionAllowedDomains ?? throw new global::System.ArgumentNullException(nameof(skewProtectionAllowedDomains));
+            this.SkewProtectionMaxAge = skewProtectionMaxAge;
         }
 
         /// <summary>

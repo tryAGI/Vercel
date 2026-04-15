@@ -11,16 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transferRequestCode")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("storeType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant236StoreTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TransferRequestCode { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant236Store Store { get; set; }
+        public required global::Vercel.UserEventPayloadVariant236StoreType StoreType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +25,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant236" /> class.
         /// </summary>
-        /// <param name="transferRequestCode"></param>
-        /// <param name="store"></param>
+        /// <param name="storeType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant236(
-            string transferRequestCode,
-            global::Vercel.UserEventPayloadVariant236Store store)
+            global::Vercel.UserEventPayloadVariant236StoreType storeType)
         {
-            this.TransferRequestCode = transferRequestCode ?? throw new global::System.ArgumentNullException(nameof(transferRequestCode));
-            this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
+            this.StoreType = storeType;
         }
 
         /// <summary>

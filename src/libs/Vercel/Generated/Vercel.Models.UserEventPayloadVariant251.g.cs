@@ -11,16 +11,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedCount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double DeletedCount { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("inviteIds")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> InviteIds { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("emailDomain")]
+        public string? EmailDomain { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +23,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant251" /> class.
         /// </summary>
-        /// <param name="deletedCount"></param>
-        /// <param name="inviteIds"></param>
+        /// <param name="emailDomain"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant251(
-            double deletedCount,
-            global::System.Collections.Generic.IList<string> inviteIds)
+            string? emailDomain)
         {
-            this.DeletedCount = deletedCount;
-            this.InviteIds = inviteIds ?? throw new global::System.ArgumentNullException(nameof(inviteIds));
+            this.EmailDomain = emailDomain;
         }
 
         /// <summary>
