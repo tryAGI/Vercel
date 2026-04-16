@@ -90,6 +90,23 @@ namespace Vercel
         public required double LastUsedAt { get; set; }
 
         /// <summary>
+        /// The method used to create the snapshot.<br/>
+        /// Example: manual
+        /// </summary>
+        /// <example>manual</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("creationMethod")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SnapshotCreationMethodJsonConverter))]
+        public global::Vercel.SnapshotCreationMethod? CreationMethod { get; set; }
+
+        /// <summary>
+        /// The unique identifier of the parent snapshot, if this snapshot was created from another snapshot.<br/>
+        /// Example: snap_parent123
+        /// </summary>
+        /// <example>snap_parent123</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("parentId")]
+        public string? ParentId { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -134,6 +151,14 @@ namespace Vercel
         /// The time when the snapshot will expire, in milliseconds since the epoch. If not set, the snapshot does not have any expiration.<br/>
         /// Example: 1750344501629L
         /// </param>
+        /// <param name="creationMethod">
+        /// The method used to create the snapshot.<br/>
+        /// Example: manual
+        /// </param>
+        /// <param name="parentId">
+        /// The unique identifier of the parent snapshot, if this snapshot was created from another snapshot.<br/>
+        /// Example: snap_parent123
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -146,7 +171,9 @@ namespace Vercel
             double createdAt,
             double updatedAt,
             double lastUsedAt,
-            double? expiresAt)
+            double? expiresAt,
+            global::Vercel.SnapshotCreationMethod? creationMethod,
+            string? parentId)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.SourceSessionId = sourceSessionId ?? throw new global::System.ArgumentNullException(nameof(sourceSessionId));
@@ -157,6 +184,8 @@ namespace Vercel
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
             this.LastUsedAt = lastUsedAt;
+            this.CreationMethod = creationMethod;
+            this.ParentId = parentId;
         }
 
         /// <summary>

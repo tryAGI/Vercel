@@ -1109,6 +1109,10 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.SnapshotStatusNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.SnapshotCreationMethodJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.SnapshotCreationMethodNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.NamedSandboxStatusJsonConverter),
 
             typeof(global::Vercel.JsonConverters.NamedSandboxStatusNullableJsonConverter),
@@ -13609,6 +13613,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SandboxNetworkTransfer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Snapshot))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SnapshotStatus), TypeInfoPropertyName = "SnapshotStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SnapshotCreationMethod), TypeInfoPropertyName = "SnapshotCreationMethod2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SandboxPublicRoute))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SandboxCommand))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NamedSandbox))]
