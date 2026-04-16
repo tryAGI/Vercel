@@ -16,6 +16,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        CurrentSnapshotId,
+        /// <summary>
+        /// 
+        /// </summary>
         Name,
         /// <summary>
         /// 
@@ -36,6 +40,7 @@ namespace Vercel
             return value switch
             {
                 GetSandboxesV2SortBy.CreatedAt => "createdAt",
+                GetSandboxesV2SortBy.CurrentSnapshotId => "currentSnapshotId",
                 GetSandboxesV2SortBy.Name => "name",
                 GetSandboxesV2SortBy.StatusUpdatedAt => "statusUpdatedAt",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -49,6 +54,7 @@ namespace Vercel
             return value switch
             {
                 "createdAt" => GetSandboxesV2SortBy.CreatedAt,
+                "currentSnapshotId" => GetSandboxesV2SortBy.CurrentSnapshotId,
                 "name" => GetSandboxesV2SortBy.Name,
                 "statusUpdatedAt" => GetSandboxesV2SortBy.StatusUpdatedAt,
                 _ => null,

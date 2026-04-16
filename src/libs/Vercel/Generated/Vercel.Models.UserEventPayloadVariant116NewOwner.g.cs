@@ -475,6 +475,18 @@ namespace Vercel
         public bool? IsEnterpriseManaged { get; set; }
 
         /// <summary>
+        /// On a personal account, points to the managed account created during EMU account separation. Set by the split utility when an existing team member is converted into a separate managed account.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("linkedManagedAccountId")]
+        public string? LinkedManagedAccountId { get; set; }
+
+        /// <summary>
+        /// On a managed account, points back to the personal account it was split from during EMU account separation. When set together with `isEnterpriseManaged`, the managed account's email is excluded from global secondary-key indexing so it doesn't conflict with the personal account's email.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("linkedPersonalAccountId")]
+        public string? LinkedPersonalAccountId { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -588,6 +600,12 @@ namespace Vercel
         /// <param name="isEnterpriseManaged">
         /// Indicates that the underlying user entity is a managed user for the enterprise it's associated with The intention is that this field is only set to true for users that are provisioned by the enterprise which means that the domain associated with the user's email is the same domain associated with the team Allowing us to query information about the user's team at login time through the domain verification service
         /// </param>
+        /// <param name="linkedManagedAccountId">
+        /// On a personal account, points to the managed account created during EMU account separation. Set by the split utility when an existing team member is converted into a separate managed account.
+        /// </param>
+        /// <param name="linkedPersonalAccountId">
+        /// On a managed account, points back to the personal account it was split from during EMU account separation. When set together with `isEnterpriseManaged`, the managed account's email is excluded from global secondary-key indexing so it doesn't conflict with the personal account's email.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -666,7 +684,9 @@ namespace Vercel
             global::Vercel.UserEventPayloadVariant116NewOwnerNorthstarMigration? northstarMigration,
             string? opportunityId,
             global::Vercel.UserEventPayloadVariant116NewOwnerMfaConfiguration? mfaConfiguration,
-            bool? isEnterpriseManaged)
+            bool? isEnterpriseManaged,
+            string? linkedManagedAccountId,
+            string? linkedPersonalAccountId)
         {
             this.Abuse = abuse;
             this.AcceptanceState = acceptanceState;
@@ -743,6 +763,8 @@ namespace Vercel
             this.OpportunityId = opportunityId;
             this.MfaConfiguration = mfaConfiguration;
             this.IsEnterpriseManaged = isEnterpriseManaged;
+            this.LinkedManagedAccountId = linkedManagedAccountId;
+            this.LinkedPersonalAccountId = linkedPersonalAccountId;
         }
 
         /// <summary>

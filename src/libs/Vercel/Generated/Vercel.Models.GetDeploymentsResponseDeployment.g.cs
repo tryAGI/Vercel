@@ -251,6 +251,12 @@ namespace Vercel
         public bool? Prebuilt { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("manualProvisioning")]
+        public global::Vercel.GetDeploymentsResponseDeploymentManualProvisioning? ManualProvisioning { get; set; }
+
+        /// <summary>
         /// The project settings which was used for this deployment
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectSettings")]
@@ -428,6 +434,7 @@ namespace Vercel
         /// Deployment can be used for instant rollback
         /// </param>
         /// <param name="prebuilt"></param>
+        /// <param name="manualProvisioning"></param>
         /// <param name="projectSettings">
         /// The project settings which was used for this deployment
         /// </param>
@@ -493,6 +500,7 @@ namespace Vercel
             global::Vercel.GetDeploymentsResponseDeploymentOomReport? oomReport,
             bool? isRollbackCandidate,
             bool? prebuilt,
+            global::Vercel.GetDeploymentsResponseDeploymentManualProvisioning? manualProvisioning,
             global::Vercel.GetDeploymentsResponseDeploymentProjectSettings? projectSettings,
             bool? connectBuildsEnabled,
             string? connectConfigurationId,
@@ -535,6 +543,7 @@ namespace Vercel
             this.OomReport = oomReport;
             this.IsRollbackCandidate = isRollbackCandidate;
             this.Prebuilt = prebuilt;
+            this.ManualProvisioning = manualProvisioning;
             this.ProjectSettings = projectSettings;
             this.ConnectBuildsEnabled = connectBuildsEnabled;
             this.ConnectConfigurationId = connectConfigurationId;

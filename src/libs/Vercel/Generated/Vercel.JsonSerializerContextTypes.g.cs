@@ -31948,87 +31948,95 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettings? Type7980 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentManualProvisioning? Type7980 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsFramework? Type7981 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentManualProvisioningState? Type7981 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsNodeVersion? Type7982 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettings? Type7982 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsSpeedInsights? Type7983 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsFramework? Type7983 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsWebAnalytics? Type7984 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsNodeVersion? Type7984 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsGitComments? Type7985 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsSpeedInsights? Type7985 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentPlatform? Type7986 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsWebAnalytics? Type7986 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentPlatformSource? Type7987 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsGitComments? Type7987 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentPlatformOrigin? Type7988 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentPlatform? Type7988 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentPlatformOriginType? Type7989 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentPlatformSource? Type7989 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentPlatformCreator? Type7990 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentPlatformOrigin? Type7990 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentCustomEnvironment? Type7991 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentPlatformOriginType? Type7991 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlock? Type7992 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentPlatformCreator? Type7992 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlockBlockCode? Type7993 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentCustomEnvironment? Type7993 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlockGitProvider? Type7994 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlock? Type7994 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentAttribution? Type7995 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlockBlockCode? Type7995 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentAttributionCommitMeta? Type7996 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlockGitProvider? Type7996 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentAttributionGitUser? Type7997 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentAttribution? Type7997 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentAttributionVercelUser? Type7998 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentAttributionCommitMeta? Type7998 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.DeleteDeploymentResponse? Type7999 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentAttributionGitUser? Type7999 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.DeleteDeploymentResponseState? Type8000 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentAttributionVercelUser? Type8000 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vercel.DeleteDeploymentResponse? Type8001 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vercel.DeleteDeploymentResponseState? Type8002 { get; set; }
 
         /// <summary>
         /// 

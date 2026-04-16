@@ -10721,6 +10721,10 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentOomReportNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentManualProvisioningStateJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentManualProvisioningStateNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentProjectSettingsFrameworkJsonConverter),
 
             typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentProjectSettingsFrameworkNullableJsonConverter),
@@ -20829,6 +20833,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentChecksDeploymentAlias))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentChecksDeploymentAliasState), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentChecksDeploymentAliasState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentOomReport), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentOomReport2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentManualProvisioning))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentManualProvisioningState), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentManualProvisioningState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentProjectSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsFramework), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentProjectSettingsFramework2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsNodeVersion), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentProjectSettingsNodeVersion2")]
