@@ -61,6 +61,12 @@ namespace Vercel
         public global::System.Collections.Generic.Dictionary<string, string>? Env { get; set; }
 
         /// <summary>
+        /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project. Set to null to clear.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("currentSnapshotId")]
+        public string? CurrentSnapshotId { get; set; }
+
+        /// <summary>
         /// Key-value tags to associate with the sandbox. Replaces existing tags. Set to empty object to clear. Maximum 5 tags.<br/>
         /// Example: {"env":"staging","team":"platform"}
         /// </summary>
@@ -102,6 +108,9 @@ namespace Vercel
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </param>
+        /// <param name="currentSnapshotId">
+        /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project. Set to null to clear.
+        /// </param>
         /// <param name="tags">
         /// Key-value tags to associate with the sandbox. Replaces existing tags. Set to empty object to clear. Maximum 5 tags.<br/>
         /// Example: {"env":"staging","team":"platform"}
@@ -117,6 +126,7 @@ namespace Vercel
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
             global::Vercel.UpdateSandboxRequestNetworkPolicy? networkPolicy,
             global::System.Collections.Generic.Dictionary<string, string>? env,
+            string? currentSnapshotId,
             global::System.Collections.Generic.Dictionary<string, string>? tags)
         {
             this.Resources = resources;
@@ -126,6 +136,7 @@ namespace Vercel
             this.SnapshotExpiration = snapshotExpiration;
             this.NetworkPolicy = networkPolicy;
             this.Env = env;
+            this.CurrentSnapshotId = currentSnapshotId;
             this.Tags = tags;
         }
 

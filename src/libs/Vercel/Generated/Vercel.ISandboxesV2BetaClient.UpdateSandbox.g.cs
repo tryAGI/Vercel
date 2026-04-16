@@ -76,6 +76,9 @@ namespace Vercel
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </param>
+        /// <param name="currentSnapshotId">
+        /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project. Set to null to clear.
+        /// </param>
         /// <param name="tags">
         /// Key-value tags to associate with the sandbox. Replaces existing tags. Set to empty object to clear. Maximum 5 tags.<br/>
         /// Example: {"env":"staging","team":"platform"}
@@ -95,6 +98,7 @@ namespace Vercel
             global::Vercel.OneOf<object, int?>? snapshotExpiration = default,
             global::Vercel.UpdateSandboxRequestNetworkPolicy? networkPolicy = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
+            string? currentSnapshotId = default,
             global::System.Collections.Generic.Dictionary<string, string>? tags = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

@@ -74,6 +74,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("custom_environment_id")]
+        public string? CustomEnvironmentId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
         public string? Plan { get; set; }
 
@@ -95,6 +101,7 @@ namespace Vercel
         /// <param name="project"></param>
         /// <param name="projectId"></param>
         /// <param name="environment"></param>
+        /// <param name="customEnvironmentId"></param>
         /// <param name="plan"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -109,6 +116,7 @@ namespace Vercel
             string project,
             string projectId,
             string environment,
+            string? customEnvironmentId,
             string? plan)
         {
             this.Iss = iss ?? throw new global::System.ArgumentNullException(nameof(iss));
@@ -120,6 +128,7 @@ namespace Vercel
             this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Environment = environment ?? throw new global::System.ArgumentNullException(nameof(environment));
+            this.CustomEnvironmentId = customEnvironmentId;
             this.Plan = plan;
         }
 
