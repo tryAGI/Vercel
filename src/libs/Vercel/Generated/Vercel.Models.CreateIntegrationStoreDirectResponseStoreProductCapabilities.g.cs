@@ -100,6 +100,12 @@ namespace Vercel
         public bool? DatabaseUI { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("v0Flavors")]
+        public bool? V0Flavors { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -123,6 +129,7 @@ namespace Vercel
         /// <param name="connectedImportResource"></param>
         /// <param name="nativeImportResource"></param>
         /// <param name="databaseUI"></param>
+        /// <param name="v0Flavors"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -141,7 +148,8 @@ namespace Vercel
             bool? importResource,
             bool? connectedImportResource,
             bool? nativeImportResource,
-            bool? databaseUI)
+            bool? databaseUI,
+            bool? v0Flavors)
         {
             this.Mcp = mcp;
             this.McpReadonly = mcpReadonly;
@@ -158,6 +166,7 @@ namespace Vercel
             this.ConnectedImportResource = connectedImportResource;
             this.NativeImportResource = nativeImportResource;
             this.DatabaseUI = databaseUI;
+            this.V0Flavors = v0Flavors;
         }
 
         /// <summary>
