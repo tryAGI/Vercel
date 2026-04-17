@@ -11,23 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("vulnerabilities")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant290Team Team { get; set; }
+        public required global::System.Collections.Generic.IList<string> Vulnerabilities { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("protectionEnabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant290Configuration Configuration { get; set; }
+        public required bool ProtectionEnabled { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("peering")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("protectedProjectCount")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant290Peering Peering { get; set; }
+        public required double ProtectedProjectCount { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant290" /> class.
         /// </summary>
-        /// <param name="team"></param>
-        /// <param name="configuration"></param>
-        /// <param name="peering"></param>
+        /// <param name="vulnerabilities"></param>
+        /// <param name="protectionEnabled"></param>
+        /// <param name="protectedProjectCount"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant290(
-            global::Vercel.UserEventPayloadVariant290Team team,
-            global::Vercel.UserEventPayloadVariant290Configuration configuration,
-            global::Vercel.UserEventPayloadVariant290Peering peering)
+            global::System.Collections.Generic.IList<string> vulnerabilities,
+            bool protectionEnabled,
+            double protectedProjectCount)
         {
-            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
-            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
-            this.Peering = peering ?? throw new global::System.ArgumentNullException(nameof(peering));
+            this.Vulnerabilities = vulnerabilities ?? throw new global::System.ArgumentNullException(nameof(vulnerabilities));
+            this.ProtectionEnabled = protectionEnabled;
+            this.ProtectedProjectCount = protectedProjectCount;
         }
 
         /// <summary>

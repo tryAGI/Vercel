@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace Vercel.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToPresetNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToPreset?>
+    {
+        /// <inheritdoc />
+        public override global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToPreset? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToPresetExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToPreset)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToPreset?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToPreset? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToPresetExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

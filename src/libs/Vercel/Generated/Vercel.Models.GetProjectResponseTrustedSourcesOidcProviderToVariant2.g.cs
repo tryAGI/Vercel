@@ -9,6 +9,12 @@ namespace Vercel
     public sealed partial class GetProjectResponseTrustedSourcesOidcProviderToVariant2
     {
         /// <summary>
+        /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slugs")]
+        public global::System.Collections.Generic.IList<string>? Slugs { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preset")]
@@ -24,13 +30,18 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectResponseTrustedSourcesOidcProviderToVariant2" /> class.
         /// </summary>
+        /// <param name="slugs">
+        /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
+        /// </param>
         /// <param name="preset"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectResponseTrustedSourcesOidcProviderToVariant2(
+            global::System.Collections.Generic.IList<string>? slugs,
             global::Vercel.GetProjectResponseTrustedSourcesOidcProviderToVariant2Preset preset)
         {
+            this.Slugs = slugs;
             this.Preset = preset;
         }
 

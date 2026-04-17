@@ -16,6 +16,13 @@ namespace Vercel
         public required global::System.Collections.Generic.IList<string> Slugs { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("preset")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseTrustedSourcesOidcProviderToVariant1PresetJsonConverter))]
+        public global::Vercel.CreateProjectResponseTrustedSourcesOidcProviderToVariant1Preset? Preset { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -27,13 +34,16 @@ namespace Vercel
         /// <param name="slugs">
         /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
         /// </param>
+        /// <param name="preset"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectResponseTrustedSourcesOidcProviderToVariant1(
-            global::System.Collections.Generic.IList<string> slugs)
+            global::System.Collections.Generic.IList<string> slugs,
+            global::Vercel.CreateProjectResponseTrustedSourcesOidcProviderToVariant1Preset? preset)
         {
             this.Slugs = slugs ?? throw new global::System.ArgumentNullException(nameof(slugs));
+            this.Preset = preset;
         }
 
         /// <summary>

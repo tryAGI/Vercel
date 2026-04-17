@@ -15,12 +15,11 @@ namespace Vercel
         public string? Label { get; set; }
 
         /// <summary>
-        /// A set of environments, either as explicit slugs or a named preset
+        /// A set of environments, expressed as explicit slugs, a named preset, or both. At least one of `slugs` or `preset` must be set.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("to")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant2> To { get; set; }
+        public required global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderTo To { get; set; }
 
         /// <summary>
         /// 
@@ -39,7 +38,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateProjectRequestTrustedSourcesOidcProvider" /> class.
         /// </summary>
         /// <param name="to">
-        /// A set of environments, either as explicit slugs or a named preset
+        /// A set of environments, expressed as explicit slugs, a named preset, or both. At least one of `slugs` or `preset` must be set.
         /// </param>
         /// <param name="claims"></param>
         /// <param name="label">
@@ -49,12 +48,12 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectRequestTrustedSourcesOidcProvider(
-            global::Vercel.OneOf<global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant2> to,
+            global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderTo to,
             global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<string>> claims,
             string? label)
         {
             this.Label = label;
-            this.To = to;
+            this.To = to ?? throw new global::System.ArgumentNullException(nameof(to));
             this.Claims = claims ?? throw new global::System.ArgumentNullException(nameof(claims));
         }
 

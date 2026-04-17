@@ -11,23 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("chatId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DeploymentId { get; set; }
+        public required string ChatId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("chatTitle")]
+        public string? ChatTitle { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("runId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("messageId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RunId { get; set; }
+        public required string MessageId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant298" /> class.
         /// </summary>
-        /// <param name="deploymentId"></param>
-        /// <param name="projectId"></param>
-        /// <param name="runId"></param>
+        /// <param name="chatId"></param>
+        /// <param name="messageId"></param>
+        /// <param name="chatTitle"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant298(
-            string deploymentId,
-            string projectId,
-            string runId)
+            string chatId,
+            string messageId,
+            string? chatTitle)
         {
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.RunId = runId ?? throw new global::System.ArgumentNullException(nameof(runId));
+            this.ChatId = chatId ?? throw new global::System.ArgumentNullException(nameof(chatId));
+            this.ChatTitle = chatTitle;
+            this.MessageId = messageId ?? throw new global::System.ArgumentNullException(nameof(messageId));
         }
 
         /// <summary>
