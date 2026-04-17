@@ -11,11 +11,19 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ActixWeb,
+        /// <summary>
+        /// 
+        /// </summary>
         Angular,
         /// <summary>
         /// 
         /// </summary>
         Astro,
+        /// <summary>
+        /// 
+        /// </summary>
+        Axum,
         /// <summary>
         /// 
         /// </summary>
@@ -286,8 +294,10 @@ namespace Vercel
         {
             return value switch
             {
+                GetAllLogDrainsResponseItemProjectsMetadataItemFramework.ActixWeb => "actix-web",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Angular => "angular",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Astro => "astro",
+                GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Axum => "axum",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Blitzjs => "blitzjs",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Brunch => "brunch",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.CreateReactApp => "create-react-app",
@@ -362,8 +372,10 @@ namespace Vercel
         {
             return value switch
             {
+                "actix-web" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.ActixWeb,
                 "angular" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Angular,
                 "astro" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Astro,
+                "axum" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Axum,
                 "blitzjs" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Blitzjs,
                 "brunch" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Brunch,
                 "create-react-app" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.CreateReactApp,

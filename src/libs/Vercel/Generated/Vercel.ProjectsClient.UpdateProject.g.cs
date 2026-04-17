@@ -763,6 +763,9 @@ namespace Vercel
         /// <param name="trustedIps">
         /// Restricts access to deployments based on the incoming request IP address
         /// </param>
+        /// <param name="trustedSources">
+        /// Deployment Protection Trusted Sources
+        /// </param>
         /// <param name="optionsAllowlist">
         /// Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests
         /// </param>
@@ -816,6 +819,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestPasswordProtection? passwordProtection = default,
             global::Vercel.UpdateProjectRequestSsoProtection? ssoProtection = default,
             global::Vercel.UpdateProjectRequestTrustedIps? trustedIps = default,
+            global::Vercel.UpdateProjectRequestTrustedSources? trustedSources = default,
             global::Vercel.UpdateProjectRequestOptionsAllowlist? optionsAllowlist = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestConnectConfiguration>? connectConfigurations = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestDismissedToast>? dismissedToasts = default,
@@ -861,6 +865,7 @@ namespace Vercel
                 PasswordProtection = passwordProtection,
                 SsoProtection = ssoProtection,
                 TrustedIps = trustedIps,
+                TrustedSources = trustedSources,
                 OptionsAllowlist = optionsAllowlist,
                 ConnectConfigurations = connectConfigurations,
                 DismissedToasts = dismissedToasts,
