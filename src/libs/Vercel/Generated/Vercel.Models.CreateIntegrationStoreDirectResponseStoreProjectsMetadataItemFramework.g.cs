@@ -11,11 +11,19 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ActixWeb,
+        /// <summary>
+        /// 
+        /// </summary>
         Angular,
         /// <summary>
         /// 
         /// </summary>
         Astro,
+        /// <summary>
+        /// 
+        /// </summary>
+        Axum,
         /// <summary>
         /// 
         /// </summary>
@@ -286,8 +294,10 @@ namespace Vercel
         {
             return value switch
             {
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.ActixWeb => "actix-web",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Angular => "angular",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Astro => "astro",
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Axum => "axum",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Blitzjs => "blitzjs",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Brunch => "brunch",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.CreateReactApp => "create-react-app",
@@ -362,8 +372,10 @@ namespace Vercel
         {
             return value switch
             {
+                "actix-web" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.ActixWeb,
                 "angular" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Angular,
                 "astro" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Astro,
+                "axum" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Axum,
                 "blitzjs" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Blitzjs,
                 "brunch" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Brunch,
                 "create-react-app" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.CreateReactApp,

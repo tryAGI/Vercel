@@ -244,6 +244,12 @@ namespace Vercel
         public global::Vercel.UpdateProjectRequestTrustedIps? TrustedIps { get; set; }
 
         /// <summary>
+        /// Deployment Protection Trusted Sources
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
+        public global::Vercel.UpdateProjectRequestTrustedSources? TrustedSources { get; set; }
+
+        /// <summary>
         /// Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
@@ -370,6 +376,9 @@ namespace Vercel
         /// <param name="trustedIps">
         /// Restricts access to deployments based on the incoming request IP address
         /// </param>
+        /// <param name="trustedSources">
+        /// Deployment Protection Trusted Sources
+        /// </param>
         /// <param name="optionsAllowlist">
         /// Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests
         /// </param>
@@ -420,6 +429,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestPasswordProtection? passwordProtection,
             global::Vercel.UpdateProjectRequestSsoProtection? ssoProtection,
             global::Vercel.UpdateProjectRequestTrustedIps? trustedIps,
+            global::Vercel.UpdateProjectRequestTrustedSources? trustedSources,
             global::Vercel.UpdateProjectRequestOptionsAllowlist? optionsAllowlist,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestConnectConfiguration>? connectConfigurations,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestDismissedToast>? dismissedToasts)
@@ -461,6 +471,7 @@ namespace Vercel
             this.PasswordProtection = passwordProtection;
             this.SsoProtection = ssoProtection;
             this.TrustedIps = trustedIps;
+            this.TrustedSources = trustedSources;
             this.OptionsAllowlist = optionsAllowlist;
             this.ConnectConfigurations = connectConfigurations;
             this.DismissedToasts = dismissedToasts;

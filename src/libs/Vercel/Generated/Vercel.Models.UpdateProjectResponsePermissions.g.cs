@@ -1439,6 +1439,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TrustedSources { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("v0Chat")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? V0Chat { get; set; }
 
@@ -1695,6 +1701,7 @@ namespace Vercel
         /// <param name="skewProtection"></param>
         /// <param name="analytics"></param>
         /// <param name="trustedIps"></param>
+        /// <param name="trustedSources"></param>
         /// <param name="v0Chat"></param>
         /// <param name="webAnalytics"></param>
 #if NET7_0_OR_GREATER
@@ -1939,6 +1946,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? skewProtection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? analytics,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? trustedIps,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? trustedSources,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? v0Chat,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalytics)
         {
@@ -2180,6 +2188,7 @@ namespace Vercel
             this.SkewProtection = skewProtection;
             this.Analytics = analytics;
             this.TrustedIps = trustedIps;
+            this.TrustedSources = trustedSources;
             this.V0Chat = v0Chat;
             this.WebAnalytics = webAnalytics;
         }

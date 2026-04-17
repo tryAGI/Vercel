@@ -11,11 +11,19 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ActixWeb,
+        /// <summary>
+        /// 
+        /// </summary>
         Angular,
         /// <summary>
         /// 
         /// </summary>
         Astro,
+        /// <summary>
+        /// 
+        /// </summary>
+        Axum,
         /// <summary>
         /// 
         /// </summary>
@@ -286,8 +294,10 @@ namespace Vercel
         {
             return value switch
             {
+                GetProjectsResponseVariant1ItemFramework.ActixWeb => "actix-web",
                 GetProjectsResponseVariant1ItemFramework.Angular => "angular",
                 GetProjectsResponseVariant1ItemFramework.Astro => "astro",
+                GetProjectsResponseVariant1ItemFramework.Axum => "axum",
                 GetProjectsResponseVariant1ItemFramework.Blitzjs => "blitzjs",
                 GetProjectsResponseVariant1ItemFramework.Brunch => "brunch",
                 GetProjectsResponseVariant1ItemFramework.CreateReactApp => "create-react-app",
@@ -362,8 +372,10 @@ namespace Vercel
         {
             return value switch
             {
+                "actix-web" => GetProjectsResponseVariant1ItemFramework.ActixWeb,
                 "angular" => GetProjectsResponseVariant1ItemFramework.Angular,
                 "astro" => GetProjectsResponseVariant1ItemFramework.Astro,
+                "axum" => GetProjectsResponseVariant1ItemFramework.Axum,
                 "blitzjs" => GetProjectsResponseVariant1ItemFramework.Blitzjs,
                 "brunch" => GetProjectsResponseVariant1ItemFramework.Brunch,
                 "create-react-app" => GetProjectsResponseVariant1ItemFramework.CreateReactApp,

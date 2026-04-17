@@ -269,6 +269,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
+        public global::Vercel.GetProjectsResponseVariant1ItemTrustedSources? TrustedSources { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         public double? UpdatedAt { get; set; }
 
@@ -392,6 +398,7 @@ namespace Vercel
         /// <param name="transferStartedAt"></param>
         /// <param name="transferToAccountId"></param>
         /// <param name="transferredFromAccountId"></param>
+        /// <param name="trustedSources"></param>
         /// <param name="updatedAt"></param>
         /// <param name="live"></param>
         /// <param name="hasActiveBranches"></param>
@@ -449,6 +456,7 @@ namespace Vercel
             double? transferStartedAt,
             string? transferToAccountId,
             string? transferredFromAccountId,
+            global::Vercel.GetProjectsResponseVariant1ItemTrustedSources? trustedSources,
             double? updatedAt,
             bool? live,
             bool? hasActiveBranches,
@@ -503,6 +511,7 @@ namespace Vercel
             this.TransferStartedAt = transferStartedAt;
             this.TransferToAccountId = transferToAccountId;
             this.TransferredFromAccountId = transferredFromAccountId;
+            this.TrustedSources = trustedSources;
             this.UpdatedAt = updatedAt;
             this.Live = live;
             this.HasActiveBranches = hasActiveBranches;

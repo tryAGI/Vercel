@@ -444,6 +444,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
+        public global::Vercel.UpdateMicrofrontendsResponseTrustedSources? TrustedSources { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitComments")]
         public global::Vercel.UpdateMicrofrontendsResponseGitComments? GitComments { get; set; }
 
@@ -641,6 +647,7 @@ namespace Vercel
         /// <param name="protectionBypass"></param>
         /// <param name="hasActiveBranches"></param>
         /// <param name="trustedIps"></param>
+        /// <param name="trustedSources"></param>
         /// <param name="gitComments"></param>
         /// <param name="gitProviderOptions"></param>
         /// <param name="paused"></param>
@@ -734,6 +741,7 @@ namespace Vercel
             object? protectionBypass,
             bool? hasActiveBranches,
             global::Vercel.OneOf<global::Vercel.UpdateMicrofrontendsResponseTrustedIpsVariant1, global::Vercel.UpdateMicrofrontendsResponseTrustedIpsVariant2>? trustedIps,
+            global::Vercel.UpdateMicrofrontendsResponseTrustedSources? trustedSources,
             global::Vercel.UpdateMicrofrontendsResponseGitComments? gitComments,
             global::Vercel.UpdateMicrofrontendsResponseGitProviderOptions? gitProviderOptions,
             bool? paused,
@@ -824,6 +832,7 @@ namespace Vercel
             this.ProtectionBypass = protectionBypass;
             this.HasActiveBranches = hasActiveBranches;
             this.TrustedIps = trustedIps;
+            this.TrustedSources = trustedSources;
             this.GitComments = gitComments;
             this.GitProviderOptions = gitProviderOptions;
             this.Paused = paused;
