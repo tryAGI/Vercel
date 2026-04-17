@@ -1732,6 +1732,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        VulnerabilityBannerDismissed,
+        /// <summary>
+        /// 
+        /// </summary>
         WebAnalyticsTierUpdated,
         /// <summary>
         /// 
@@ -2193,6 +2197,7 @@ namespace Vercel
                 UserEventType.VpcPeeringConnectionDeleted => "vpc-peering-connection-deleted",
                 UserEventType.VpcPeeringConnectionRejected => "vpc-peering-connection-rejected",
                 UserEventType.VpcPeeringConnectionUpdated => "vpc-peering-connection-updated",
+                UserEventType.VulnerabilityBannerDismissed => "vulnerability-banner-dismissed",
                 UserEventType.WebAnalyticsTierUpdated => "web-analytics-tier-updated",
                 UserEventType.WebhookCreated => "webhook-created",
                 UserEventType.WebhookDeleted => "webhook-deleted",
@@ -2638,6 +2643,7 @@ namespace Vercel
                 "vpc-peering-connection-deleted" => UserEventType.VpcPeeringConnectionDeleted,
                 "vpc-peering-connection-rejected" => UserEventType.VpcPeeringConnectionRejected,
                 "vpc-peering-connection-updated" => UserEventType.VpcPeeringConnectionUpdated,
+                "vulnerability-banner-dismissed" => UserEventType.VulnerabilityBannerDismissed,
                 "web-analytics-tier-updated" => UserEventType.WebAnalyticsTierUpdated,
                 "webhook-created" => UserEventType.WebhookCreated,
                 "webhook-deleted" => UserEventType.WebhookDeleted,

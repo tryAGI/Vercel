@@ -9,20 +9,18 @@ namespace Vercel
     public sealed partial class UpdateProjectRequestTrustedSourcesProjectsCustomAllowItem
     {
         /// <summary>
-        /// A set of environments, either as explicit slugs or a named preset
+        /// A set of environments, expressed as explicit slugs, a named preset, or both. At least one of `slugs` or `preset` must be set.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("to")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToVariant2> To { get; set; }
+        public required global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemTo To { get; set; }
 
         /// <summary>
-        /// A set of environments, either as explicit slugs or a named preset
+        /// A set of environments, expressed as explicit slugs, a named preset, or both. At least one of `slugs` or `preset` must be set.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("from")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemFromVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemFromVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemFromVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemFromVariant2> From { get; set; }
+        public required global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemFrom From { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -34,20 +32,20 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateProjectRequestTrustedSourcesProjectsCustomAllowItem" /> class.
         /// </summary>
         /// <param name="to">
-        /// A set of environments, either as explicit slugs or a named preset
+        /// A set of environments, expressed as explicit slugs, a named preset, or both. At least one of `slugs` or `preset` must be set.
         /// </param>
         /// <param name="from">
-        /// A set of environments, either as explicit slugs or a named preset
+        /// A set of environments, expressed as explicit slugs, a named preset, or both. At least one of `slugs` or `preset` must be set.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectRequestTrustedSourcesProjectsCustomAllowItem(
-            global::Vercel.OneOf<global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToVariant2> to,
-            global::Vercel.OneOf<global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemFromVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemFromVariant2> from)
+            global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemTo to,
+            global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemFrom from)
         {
-            this.To = to;
-            this.From = from;
+            this.To = to ?? throw new global::System.ArgumentNullException(nameof(to));
+            this.From = from ?? throw new global::System.ArgumentNullException(nameof(from));
         }
 
         /// <summary>
