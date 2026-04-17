@@ -15,11 +15,12 @@ namespace Vercel
         public string? Label { get; set; }
 
         /// <summary>
-        /// 
+        /// A set of environments, either as explicit slugs or a named preset
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("to")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Environments { get; set; }
+        public required global::Vercel.OneOf<global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant2> To { get; set; }
 
         /// <summary>
         /// 
@@ -37,7 +38,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateProjectRequestTrustedSourcesOidcProvider" /> class.
         /// </summary>
-        /// <param name="environments"></param>
+        /// <param name="to">
+        /// A set of environments, either as explicit slugs or a named preset
+        /// </param>
         /// <param name="claims"></param>
         /// <param name="label">
         /// The label or description of the trusted source
@@ -46,12 +49,12 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectRequestTrustedSourcesOidcProvider(
-            global::System.Collections.Generic.IList<string> environments,
+            global::Vercel.OneOf<global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant1, global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderToVariant2> to,
             global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<string>> claims,
             string? label)
         {
             this.Label = label;
-            this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
+            this.To = to;
             this.Claims = claims ?? throw new global::System.ArgumentNullException(nameof(claims));
         }
 

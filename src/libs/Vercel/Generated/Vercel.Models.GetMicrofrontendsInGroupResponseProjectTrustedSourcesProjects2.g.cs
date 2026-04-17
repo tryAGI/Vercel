@@ -15,11 +15,10 @@ namespace Vercel
         public string? Label { get; set; }
 
         /// <summary>
-        /// 
+        /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Environments { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("customAllow")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedSourcesProjectsCustomAllowItem>? CustomAllow { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +29,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetMicrofrontendsInGroupResponseProjectTrustedSourcesProjects2" /> class.
         /// </summary>
-        /// <param name="environments"></param>
         /// <param name="label"></param>
+        /// <param name="customAllow">
+        /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetMicrofrontendsInGroupResponseProjectTrustedSourcesProjects2(
-            global::System.Collections.Generic.IList<string> environments,
-            string? label)
+            string? label,
+            global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedSourcesProjectsCustomAllowItem>? customAllow)
         {
             this.Label = label;
-            this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
+            this.CustomAllow = customAllow;
         }
 
         /// <summary>

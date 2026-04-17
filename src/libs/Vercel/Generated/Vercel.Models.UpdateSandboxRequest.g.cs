@@ -61,7 +61,7 @@ namespace Vercel
         public global::System.Collections.Generic.Dictionary<string, string>? Env { get; set; }
 
         /// <summary>
-        /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project. Set to null to clear.
+        /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("currentSnapshotId")]
         public string? CurrentSnapshotId { get; set; }
@@ -109,7 +109,7 @@ namespace Vercel
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </param>
         /// <param name="currentSnapshotId">
-        /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project. Set to null to clear.
+        /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project.
         /// </param>
         /// <param name="tags">
         /// Key-value tags to associate with the sandbox. Replaces existing tags. Set to empty object to clear. Maximum 5 tags.<br/>

@@ -15,11 +15,10 @@ namespace Vercel
         public string? Label { get; set; }
 
         /// <summary>
-        /// 
+        /// Optional overrides for the default same-env-by-slug matching.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Environments { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("customAllow")]
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItem>? CustomAllow { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,19 +29,21 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateProjectRequestTrustedSourcesProjects2" /> class.
         /// </summary>
-        /// <param name="environments"></param>
         /// <param name="label">
         /// The label or description of the trusted source
+        /// </param>
+        /// <param name="customAllow">
+        /// Optional overrides for the default same-env-by-slug matching.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectRequestTrustedSourcesProjects2(
-            global::System.Collections.Generic.IList<string> environments,
-            string? label)
+            string? label,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItem>? customAllow)
         {
             this.Label = label;
-            this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
+            this.CustomAllow = customAllow;
         }
 
         /// <summary>

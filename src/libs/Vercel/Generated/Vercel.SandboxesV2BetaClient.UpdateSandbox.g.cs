@@ -732,7 +732,7 @@ namespace Vercel
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </param>
         /// <param name="currentSnapshotId">
-        /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project. Set to null to clear.
+        /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project.
         /// </param>
         /// <param name="tags">
         /// Key-value tags to associate with the sandbox. Replaces existing tags. Set to empty object to clear. Maximum 5 tags.<br/>
