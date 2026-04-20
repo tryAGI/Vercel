@@ -58578,10 +58578,10 @@
                                   "type": "string",
                                   "enum": [
                                     "secret",
+                                    "sensitive",
                                     "system",
                                     "encrypted",
-                                    "plain",
-                                    "sensitive"
+                                    "plain"
                                   ]
                                 },
                                 "sunsetSecretId": {
@@ -70914,10 +70914,10 @@
                                   "type": "string",
                                   "enum": [
                                     "secret",
+                                    "sensitive",
                                     "system",
                                     "encrypted",
-                                    "plain",
-                                    "sensitive"
+                                    "plain"
                                   ]
                                 },
                                 "sunsetSecretId": {
@@ -74435,10 +74435,10 @@
                                       "type": "string",
                                       "enum": [
                                         "secret",
+                                        "sensitive",
                                         "system",
                                         "encrypted",
-                                        "plain",
-                                        "sensitive"
+                                        "plain"
                                       ]
                                     },
                                     "sunsetSecretId": {
@@ -77969,10 +77969,10 @@
                                       "type": "string",
                                       "enum": [
                                         "secret",
+                                        "sensitive",
                                         "system",
                                         "encrypted",
-                                        "plain",
-                                        "sensitive"
+                                        "plain"
                                       ]
                                     },
                                     "sunsetSecretId": {
@@ -83805,10 +83805,10 @@
                             "type": "string",
                             "enum": [
                               "secret",
+                              "sensitive",
                               "system",
                               "encrypted",
-                              "plain",
-                              "sensitive"
+                              "plain"
                             ]
                           },
                           "sunsetSecretId": {
@@ -89874,10 +89874,10 @@
                             "type": "string",
                             "enum": [
                               "secret",
+                              "sensitive",
                               "system",
                               "encrypted",
-                              "plain",
-                              "sensitive"
+                              "plain"
                             ]
                           },
                           "sunsetSecretId": {
@@ -95524,10 +95524,10 @@
                             "type": "string",
                             "enum": [
                               "secret",
+                              "sensitive",
                               "system",
                               "encrypted",
-                              "plain",
-                              "sensitive"
+                              "plain"
                             ]
                           },
                           "sunsetSecretId": {
@@ -104679,10 +104679,10 @@
                           "type": "string",
                           "enum": [
                             "secret",
+                            "sensitive",
                             "system",
                             "encrypted",
-                            "plain",
-                            "sensitive"
+                            "plain"
                           ]
                         },
                         "sunsetSecretId": {
@@ -105109,10 +105109,10 @@
                                 "type": "string",
                                 "enum": [
                                   "secret",
+                                  "sensitive",
                                   "system",
                                   "encrypted",
-                                  "plain",
-                                  "sensitive"
+                                  "plain"
                                 ]
                               },
                               "sunsetSecretId": {
@@ -105551,10 +105551,10 @@
                                 "type": "string",
                                 "enum": [
                                   "secret",
+                                  "sensitive",
                                   "system",
                                   "encrypted",
-                                  "plain",
-                                  "sensitive"
+                                  "plain"
                                 ]
                               },
                               "sunsetSecretId": {
@@ -106128,10 +106128,10 @@
                               "type": "string",
                               "enum": [
                                 "secret",
+                                "sensitive",
                                 "system",
                                 "encrypted",
-                                "plain",
-                                "sensitive"
+                                "plain"
                               ]
                             },
                             "sunsetSecretId": {
@@ -106547,10 +106547,10 @@
                                 "type": "string",
                                 "enum": [
                                   "secret",
+                                  "sensitive",
                                   "system",
                                   "encrypted",
-                                  "plain",
-                                  "sensitive"
+                                  "plain"
                                 ]
                               },
                               "sunsetSecretId": {
@@ -107324,10 +107324,10 @@
                           "type": "string",
                           "enum": [
                             "secret",
+                            "sensitive",
                             "system",
                             "encrypted",
-                            "plain",
-                            "sensitive"
+                            "plain"
                           ]
                         },
                         "edgeConfigId": {
@@ -107729,10 +107729,10 @@
                           "type": "string",
                           "enum": [
                             "secret",
+                            "sensitive",
                             "system",
                             "encrypted",
-                            "plain",
-                            "sensitive"
+                            "plain"
                           ]
                         },
                         "value": {
@@ -108231,10 +108231,10 @@
                             "type": "string",
                             "enum": [
                               "secret",
+                              "sensitive",
                               "system",
                               "encrypted",
-                              "plain",
-                              "sensitive"
+                              "plain"
                             ]
                           },
                           "value": {
@@ -108655,10 +108655,10 @@
                           "type": "string",
                           "enum": [
                             "secret",
+                            "sensitive",
                             "system",
                             "encrypted",
-                            "plain",
-                            "sensitive"
+                            "plain"
                           ]
                         },
                         "value": {
@@ -109071,10 +109071,10 @@
                           "type": "string",
                           "enum": [
                             "secret",
+                            "sensitive",
                             "system",
                             "encrypted",
-                            "plain",
-                            "sensitive"
+                            "plain"
                           ]
                         },
                         "value": {
@@ -109589,10 +109589,10 @@
                       "type": "string",
                       "enum": [
                         "secret",
+                        "sensitive",
                         "system",
                         "encrypted",
-                        "plain",
-                        "sensitive"
+                        "plain"
                       ]
                     },
                     "value": {
@@ -113573,10 +113573,10 @@
                             "type": "string",
                             "enum": [
                               "secret",
+                              "sensitive",
                               "system",
                               "encrypted",
-                              "plain",
-                              "sensitive"
+                              "plain"
                             ]
                           },
                           "sunsetSecretId": {
@@ -148539,10 +148539,10 @@
                   "type": {
                     "type": "string",
                     "enum": [
+                      "sensitive",
                       "system",
                       "encrypted",
-                      "plain",
-                      "sensitive"
+                      "plain"
                     ],
                     "description": "The type of this cosmos doc instance, if blank, assume secret.",
                     "example": "encrypted"
@@ -148676,10 +148676,10 @@
                       "type": {
                         "type": "string",
                         "enum": [
+                          "sensitive",
                           "system",
                           "encrypted",
-                          "plain",
-                          "sensitive"
+                          "plain"
                         ],
                         "description": "The type of this cosmos doc instance, if blank, assume secret.",
                         "example": "encrypted"
@@ -148801,10 +148801,10 @@
                       "type": {
                         "type": "string",
                         "enum": [
+                          "sensitive",
                           "system",
                           "encrypted",
-                          "plain",
-                          "sensitive"
+                          "plain"
                         ],
                         "description": "The type of this cosmos doc instance, if blank, assume secret.",
                         "example": "encrypted"
