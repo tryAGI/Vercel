@@ -24,6 +24,13 @@ namespace Vercel
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectSsoProtectionCve55182MigrationAppliedFrom? Cve55182MigrationAppliedFrom { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("april2026SecurityIncidentMigrationAppliedFrom")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectSsoProtectionApril2026SecurityIncidentMigrationAppliedFromJsonConverter))]
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? April2026SecurityIncidentMigrationAppliedFrom { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -34,15 +41,18 @@ namespace Vercel
         /// </summary>
         /// <param name="deploymentType"></param>
         /// <param name="cve55182MigrationAppliedFrom"></param>
+        /// <param name="april2026SecurityIncidentMigrationAppliedFrom"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetMicrofrontendsInGroupResponseProjectSsoProtection(
             global::Vercel.GetMicrofrontendsInGroupResponseProjectSsoProtectionDeploymentType deploymentType,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectSsoProtectionCve55182MigrationAppliedFrom? cve55182MigrationAppliedFrom)
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectSsoProtectionCve55182MigrationAppliedFrom? cve55182MigrationAppliedFrom,
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? april2026SecurityIncidentMigrationAppliedFrom)
         {
             this.DeploymentType = deploymentType;
             this.Cve55182MigrationAppliedFrom = cve55182MigrationAppliedFrom;
+            this.April2026SecurityIncidentMigrationAppliedFrom = april2026SecurityIncidentMigrationAppliedFrom;
         }
 
         /// <summary>
