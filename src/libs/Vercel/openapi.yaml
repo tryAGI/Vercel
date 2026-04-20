@@ -40902,6 +40902,7 @@
                               "user-mfa-totp-verification-started",
                               "user-mfa-totp-verified",
                               "user-primary-email-updated",
+                              "user-token-created",
                               "username",
                               "alert-rule-created",
                               "alert-rule-updated",
@@ -143020,6 +143021,7 @@
               "user-mfa-totp-verification-started",
               "user-mfa-totp-verified",
               "user-primary-email-updated",
+              "user-token-created",
               "username",
               "alert-rule-created",
               "alert-rule-updated",
@@ -158946,6 +158948,163 @@
                 ],
                 "type": "object",
                 "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "tokenId": {
+                    "type": "string",
+                    "description": "The token's public ID."
+                  },
+                  "tokenName": {
+                    "type": "string",
+                    "description": "User-supplied name of the token."
+                  },
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "email",
+                      "saml",
+                      "app",
+                      "github",
+                      "gitlab",
+                      "bitbucket",
+                      "google",
+                      "apple",
+                      "chatgpt",
+                      "github-webhook",
+                      "manual",
+                      "passkey",
+                      "otp",
+                      "sms",
+                      "invite",
+                      "emu"
+                    ],
+                    "description": "How the token was issued. Always `'manual'` for explicit PAT creation."
+                  },
+                  "scope": {
+                    "type": "string",
+                    "enum": [
+                      "user",
+                      "team",
+                      "project"
+                    ],
+                    "description": "Scope of the token: - `'user'`: full-account token (not tied to any team). - `'team'`: scoped to a single team. - `'project'`: scoped to a single project within a team."
+                  },
+                  "teamId": {
+                    "type": "string",
+                    "description": "Present when `scope` is `'team'` or `'project'`."
+                  },
+                  "teamSlug": {
+                    "type": "string",
+                    "description": "Present when `scope` is `'team'` or `'project'`."
+                  },
+                  "projectId": {
+                    "type": "string",
+                    "description": "Present when `scope` is `'project'`."
+                  },
+                  "expiresAt": {
+                    "type": "number",
+                    "description": "Unix epoch milliseconds. Absent when the token never expires."
+                  },
+                  "hasAuthorizationDetails": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ],
+                    "description": "Whether the token was issued with RFC 9396 authorization details."
+                  },
+                  "ip": {
+                    "nullable": true,
+                    "type": "string"
+                  },
+                  "geolocation": {
+                    "nullable": true,
+                    "properties": {
+                      "city": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "country": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "most_specific_subdivision": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "regionName": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "country"
+                    ],
+                    "type": "object"
+                  },
+                  "userAgent": {
+                    "type": "string"
+                  },
+                  "reqId": {
+                    "type": "string"
+                  },
+                  "reqUrl": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "origin",
+                  "scope",
+                  "tokenId",
+                  "tokenName"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
               }
             ]
           }
@@ -160762,6 +160921,35 @@
             "type": "number",
             "description": "Default snapshot expiration time in milliseconds. 0 means no expiration.",
             "example": 604800000
+          },
+          "snapshotKeepLast": {
+            "properties": {
+              "count": {
+                "type": "number",
+                "description": "Number of most recent snapshots to keep.",
+                "example": 5
+              },
+              "expiration": {
+                "type": "number",
+                "description": "Expiration time in milliseconds for kept snapshots.",
+                "example": 604800000
+              },
+              "deleteEvicted": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether to immediately delete evicted snapshots.",
+                "example": true
+              }
+            },
+            "required": [
+              "count",
+              "deleteEvicted"
+            ],
+            "type": "object",
+            "description": "Keep-last snapshot configuration."
           },
           "networkPolicy": {
             "properties": {
