@@ -12,8 +12,13 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tokens")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Tokens { get; set; }
+        public global::System.Collections.Generic.IList<string>? Tokens { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ids")]
+        public global::System.Collections.Generic.IList<string>? Ids { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,13 +30,16 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="DeleteEdgeConfigTokensRequest" /> class.
         /// </summary>
         /// <param name="tokens"></param>
+        /// <param name="ids"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public DeleteEdgeConfigTokensRequest(
-            global::System.Collections.Generic.IList<string> tokens)
+            global::System.Collections.Generic.IList<string>? tokens,
+            global::System.Collections.Generic.IList<string>? ids)
         {
-            this.Tokens = tokens ?? throw new global::System.ArgumentNullException(nameof(tokens));
+            this.Tokens = tokens;
+            this.Ids = ids;
         }
 
         /// <summary>
