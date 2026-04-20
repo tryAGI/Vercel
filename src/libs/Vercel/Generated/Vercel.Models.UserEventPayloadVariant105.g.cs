@@ -70,6 +70,12 @@ namespace Vercel
         public string? Source { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ipAddress")]
+        public string? IpAddress { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -88,6 +94,7 @@ namespace Vercel
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigTokenId"></param>
         /// <param name="source"></param>
+        /// <param name="ipAddress"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -101,7 +108,8 @@ namespace Vercel
             string? gitBranch,
             string? edgeConfigId,
             string? edgeConfigTokenId,
-            string? source)
+            string? source,
+            string? ipAddress)
         {
             this.Key = key;
             this.ProjectId = projectId;
@@ -113,6 +121,7 @@ namespace Vercel
             this.EdgeConfigId = edgeConfigId;
             this.EdgeConfigTokenId = edgeConfigTokenId;
             this.Source = source;
+            this.IpAddress = ipAddress;
         }
 
         /// <summary>

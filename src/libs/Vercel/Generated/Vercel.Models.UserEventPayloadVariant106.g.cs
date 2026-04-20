@@ -150,6 +150,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? ProjectNames { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ipAddress")]
+        public string? IpAddress { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -226,6 +232,7 @@ namespace Vercel
         /// The last editor full name or username.
         /// </param>
         /// <param name="projectNames"></param>
+        /// <param name="ipAddress"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -248,7 +255,8 @@ namespace Vercel
             bool? decrypted,
             string? comment,
             string? lastEditedByDisplayName,
-            global::System.Collections.Generic.IList<string>? projectNames)
+            global::System.Collections.Generic.IList<string>? projectNames,
+            string? ipAddress)
         {
             this.Created = created;
             this.Key = key;
@@ -269,6 +277,7 @@ namespace Vercel
             this.Comment = comment;
             this.LastEditedByDisplayName = lastEditedByDisplayName;
             this.ProjectNames = projectNames;
+            this.IpAddress = ipAddress;
         }
 
         /// <summary>

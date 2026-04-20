@@ -60684,6 +60684,16 @@
                                   "prod_deployment_urls_and_all_previews",
                                   "all_except_custom_domains"
                                 ]
+                              },
+                              "april2026SecurityIncidentMigrationAppliedFrom": {
+                                "nullable": true,
+                                "type": "string",
+                                "enum": [
+                                  "preview",
+                                  "all",
+                                  "prod_deployment_urls_and_all_previews",
+                                  "all_except_custom_domains"
+                                ]
                               }
                             },
                             "required": [
@@ -72294,6 +72304,16 @@
                                   "prod_deployment_urls_and_all_previews",
                                   "all_except_custom_domains"
                                 ]
+                              },
+                              "april2026SecurityIncidentMigrationAppliedFrom": {
+                                "nullable": true,
+                                "type": "string",
+                                "enum": [
+                                  "preview",
+                                  "all",
+                                  "prod_deployment_urls_and_all_previews",
+                                  "all_except_custom_domains"
+                                ]
                               }
                             },
                             "required": [
@@ -75797,6 +75817,16 @@
                                     ]
                                   },
                                   "cve55182MigrationAppliedFrom": {
+                                    "nullable": true,
+                                    "type": "string",
+                                    "enum": [
+                                      "preview",
+                                      "all",
+                                      "prod_deployment_urls_and_all_previews",
+                                      "all_except_custom_domains"
+                                    ]
+                                  },
+                                  "april2026SecurityIncidentMigrationAppliedFrom": {
                                     "nullable": true,
                                     "type": "string",
                                     "enum": [
@@ -79867,6 +79897,16 @@
                                     ]
                                   },
                                   "cve55182MigrationAppliedFrom": {
+                                    "nullable": true,
+                                    "type": "string",
+                                    "enum": [
+                                      "preview",
+                                      "all",
+                                      "prod_deployment_urls_and_all_previews",
+                                      "all_except_custom_domains"
+                                    ]
+                                  },
+                                  "april2026SecurityIncidentMigrationAppliedFrom": {
                                     "nullable": true,
                                     "type": "string",
                                     "enum": [
@@ -85693,6 +85733,16 @@
                           ]
                         },
                         "cve55182MigrationAppliedFrom": {
+                          "nullable": true,
+                          "type": "string",
+                          "enum": [
+                            "preview",
+                            "all",
+                            "prod_deployment_urls_and_all_previews",
+                            "all_except_custom_domains"
+                          ]
+                        },
+                        "april2026SecurityIncidentMigrationAppliedFrom": {
                           "nullable": true,
                           "type": "string",
                           "enum": [
@@ -91760,6 +91810,16 @@
                             "prod_deployment_urls_and_all_previews",
                             "all_except_custom_domains"
                           ]
+                        },
+                        "april2026SecurityIncidentMigrationAppliedFrom": {
+                          "nullable": true,
+                          "type": "string",
+                          "enum": [
+                            "preview",
+                            "all",
+                            "prod_deployment_urls_and_all_previews",
+                            "all_except_custom_domains"
+                          ]
                         }
                       },
                       "required": [
@@ -97392,6 +97452,16 @@
                           ]
                         },
                         "cve55182MigrationAppliedFrom": {
+                          "nullable": true,
+                          "type": "string",
+                          "enum": [
+                            "preview",
+                            "all",
+                            "prod_deployment_urls_and_all_previews",
+                            "all_except_custom_domains"
+                          ]
+                        },
+                        "april2026SecurityIncidentMigrationAppliedFrom": {
                           "nullable": true,
                           "type": "string",
                           "enum": [
@@ -115431,6 +115501,16 @@
                           ]
                         },
                         "cve55182MigrationAppliedFrom": {
+                          "nullable": true,
+                          "type": "string",
+                          "enum": [
+                            "preview",
+                            "all",
+                            "prod_deployment_urls_and_all_previews",
+                            "all_except_custom_domains"
+                          ]
+                        },
+                        "april2026SecurityIncidentMigrationAppliedFrom": {
                           "nullable": true,
                           "type": "string",
                           "enum": [
@@ -148376,6 +148456,9 @@
                   },
                   "source": {
                     "type": "string"
+                  },
+                  "ipAddress": {
+                    "type": "string"
                   }
                 },
                 "type": "object",
@@ -148508,6 +148591,9 @@
                       "type": "string"
                     },
                     "type": "array"
+                  },
+                  "ipAddress": {
+                    "type": "string"
                   }
                 },
                 "type": "object",
@@ -155789,6 +155875,16 @@
                               "prod_deployment_urls_and_all_previews",
                               "all_except_custom_domains"
                             ]
+                          },
+                          "april2026SecurityIncidentMigrationAppliedFrom": {
+                            "nullable": true,
+                            "type": "string",
+                            "enum": [
+                              "all",
+                              "preview",
+                              "prod_deployment_urls_and_all_previews",
+                              "all_except_custom_domains"
+                            ]
                           }
                         },
                         "required": [
@@ -155822,6 +155918,16 @@
                             ]
                           },
                           "cve55182MigrationAppliedFrom": {
+                            "nullable": true,
+                            "type": "string",
+                            "enum": [
+                              "all",
+                              "preview",
+                              "prod_deployment_urls_and_all_previews",
+                              "all_except_custom_domains"
+                            ]
+                          },
+                          "april2026SecurityIncidentMigrationAppliedFrom": {
                             "nullable": true,
                             "type": "string",
                             "enum": [
