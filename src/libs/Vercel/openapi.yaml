@@ -40849,6 +40849,7 @@
                               "storage-resource-repl-command",
                               "storage-disconnect-projects",
                               "storage-access-token-set",
+                              "storage-set-sensitive",
                               "ai-code-review",
                               "ai-alert-investigation",
                               "vercel-agent-team-trial-credits-applied",
@@ -40890,6 +40891,7 @@
                               "team-saml-roles",
                               "team-ip-blocking-rules-created",
                               "team-ip-blocking-rules-removed",
+                              "team-tokens-invalidated",
                               "audit-log-export-requested",
                               "audit-log-export-downloaded",
                               "team-slug-update",
@@ -61916,6 +61918,12 @@
                                 },
                                 "type": "array"
                               },
+                              "storeIsSensitive": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "storeTransfer": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -61995,6 +62003,12 @@
                                 "type": "array"
                               },
                               "teamOwnMembershipDisconnectSAML": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
+                              "teamTokenInvalidation": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
                                 },
@@ -80967,6 +80981,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "storeIsSensitive": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "storeTransfer": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -81046,6 +81066,12 @@
                                     "type": "array"
                                   },
                                   "teamOwnMembershipDisconnectSAML": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "teamTokenInvalidation": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
                                     },
@@ -86803,6 +86829,12 @@
                           },
                           "type": "array"
                         },
+                        "storeIsSensitive": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "storeTransfer": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -86882,6 +86914,12 @@
                           "type": "array"
                         },
                         "teamOwnMembershipDisconnectSAML": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "teamTokenInvalidation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -92872,6 +92910,12 @@
                           },
                           "type": "array"
                         },
+                        "storeIsSensitive": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "storeTransfer": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -92951,6 +92995,12 @@
                           "type": "array"
                         },
                         "teamOwnMembershipDisconnectSAML": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "teamTokenInvalidation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -98522,6 +98572,12 @@
                           },
                           "type": "array"
                         },
+                        "storeIsSensitive": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "storeTransfer": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -98601,6 +98657,12 @@
                           "type": "array"
                         },
                         "teamOwnMembershipDisconnectSAML": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "teamTokenInvalidation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -116571,6 +116633,12 @@
                           },
                           "type": "array"
                         },
+                        "storeIsSensitive": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "storeTransfer": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -116650,6 +116718,12 @@
                           "type": "array"
                         },
                         "teamOwnMembershipDisconnectSAML": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "teamTokenInvalidation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -142968,6 +143042,7 @@
               "storage-resource-repl-command",
               "storage-disconnect-projects",
               "storage-access-token-set",
+              "storage-set-sensitive",
               "ai-code-review",
               "ai-alert-investigation",
               "vercel-agent-team-trial-credits-applied",
@@ -143009,6 +143084,7 @@
               "team-saml-roles",
               "team-ip-blocking-rules-created",
               "team-ip-blocking-rules-removed",
+              "team-tokens-invalidated",
               "audit-log-export-requested",
               "audit-log-export-downloaded",
               "team-slug-update",
@@ -157289,6 +157365,56 @@
               },
               {
                 "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "computeUnitsMax": {
+                    "type": "number"
+                  },
+                  "computeUnitsMin": {
+                    "type": "number"
+                  },
+                  "suspendTimeoutSeconds": {
+                    "type": "number"
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "integration",
+                      "redis",
+                      "postgres",
+                      "edge-config",
+                      "blob"
+                    ]
+                  },
+                  "access": {
+                    "type": "string",
+                    "enum": [
+                      "public",
+                      "private"
+                    ]
+                  },
+                  "sensitive": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "sensitive",
+                  "type"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
                   "slug": {
                     "type": "string"
                   }
@@ -158274,6 +158400,21 @@
                 "required": [
                   "domain",
                   "ips"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "tokenTypes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "tokenTypes"
                 ],
                 "type": "object",
                 "description": "The payload of the event, if requested."
@@ -161925,6 +162066,22 @@
             ],
             "type": "object",
             "description": "NSNB configuration for the team."
+          },
+          "personalAccessTokensInvalidatedAt": {
+            "type": "number",
+            "description": "Timestamp (ms) after which personal access tokens created at or before this time are considered invalid for this team."
+          },
+          "appTokensInvalidatedAt": {
+            "type": "number",
+            "description": "Timestamp (ms) after which Vercel App tokens created at or before this time are considered invalid for this team."
+          },
+          "apiKeysInvalidatedAt": {
+            "type": "number",
+            "description": "Timestamp (ms) after which API keys created at or before this time are considered invalid for this team."
+          },
+          "integrationTokensInvalidatedAt": {
+            "type": "number",
+            "description": "Timestamp (ms) after which integration tokens created at or before this time are considered invalid for this team."
           },
           "id": {
             "type": "string",

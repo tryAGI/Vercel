@@ -11,15 +11,17 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
-        public double? DeletedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant283ProviderJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant283Provider Provider { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("login")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Username { get; set; }
+        public required string Login { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +32,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant283" /> class.
         /// </summary>
-        /// <param name="username"></param>
-        /// <param name="deletedAt"></param>
+        /// <param name="provider"></param>
+        /// <param name="login"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant283(
-            string username,
-            double? deletedAt)
+            global::Vercel.UserEventPayloadVariant283Provider provider,
+            string login)
         {
-            this.DeletedAt = deletedAt;
-            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
+            this.Provider = provider;
+            this.Login = login ?? throw new global::System.ArgumentNullException(nameof(login));
         }
 
         /// <summary>

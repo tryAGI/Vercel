@@ -11,23 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DeploymentId { get; set; }
+        public required string Model { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("useCase")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("runId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RunId { get; set; }
+        public required string UseCase { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant299" /> class.
         /// </summary>
-        /// <param name="deploymentId"></param>
-        /// <param name="projectId"></param>
-        /// <param name="runId"></param>
+        /// <param name="model"></param>
+        /// <param name="useCase"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant299(
-            string deploymentId,
-            string projectId,
-            string runId)
+            string model,
+            string useCase)
         {
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.RunId = runId ?? throw new global::System.ArgumentNullException(nameof(runId));
+            this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
+            this.UseCase = useCase ?? throw new global::System.ArgumentNullException(nameof(useCase));
         }
 
         /// <summary>

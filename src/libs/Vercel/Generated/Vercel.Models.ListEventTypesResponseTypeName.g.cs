@@ -1447,6 +1447,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        StorageSetSensitive,
+        /// <summary>
+        /// 
+        /// </summary>
         StorageTransferInSuccess,
         /// <summary>
         /// 
@@ -1628,6 +1632,10 @@ namespace Vercel
         /// 
         /// </summary>
         TeamSlugUpdate,
+        /// <summary>
+        /// 
+        /// </summary>
+        TeamTokensInvalidated,
         /// <summary>
         /// 
         /// </summary>
@@ -2129,6 +2137,7 @@ namespace Vercel
                 ListEventTypesResponseTypeName.StorageInactiveStoreDeleted => "storage-inactive-store-deleted",
                 ListEventTypesResponseTypeName.StorageResetCredentials => "storage-reset-credentials",
                 ListEventTypesResponseTypeName.StorageResourceReplCommand => "storage-resource-repl-command",
+                ListEventTypesResponseTypeName.StorageSetSensitive => "storage-set-sensitive",
                 ListEventTypesResponseTypeName.StorageTransferInSuccess => "storage-transfer-in-success",
                 ListEventTypesResponseTypeName.StorageTransferOutSuccess => "storage-transfer-out-success",
                 ListEventTypesResponseTypeName.StorageTransferRequestCreated => "storage-transfer-request-created",
@@ -2175,6 +2184,7 @@ namespace Vercel
                 ListEventTypesResponseTypeName.TeamSamlEnforced => "team-saml-enforced",
                 ListEventTypesResponseTypeName.TeamSamlRoles => "team-saml-roles",
                 ListEventTypesResponseTypeName.TeamSlugUpdate => "team-slug-update",
+                ListEventTypesResponseTypeName.TeamTokensInvalidated => "team-tokens-invalidated",
                 ListEventTypesResponseTypeName.UnlinkLoginConnection => "unlink-login-connection",
                 ListEventTypesResponseTypeName.UserDelete => "user-delete",
                 ListEventTypesResponseTypeName.UserMfaChallengeVerified => "user-mfa-challenge-verified",
@@ -2576,6 +2586,7 @@ namespace Vercel
                 "storage-inactive-store-deleted" => ListEventTypesResponseTypeName.StorageInactiveStoreDeleted,
                 "storage-reset-credentials" => ListEventTypesResponseTypeName.StorageResetCredentials,
                 "storage-resource-repl-command" => ListEventTypesResponseTypeName.StorageResourceReplCommand,
+                "storage-set-sensitive" => ListEventTypesResponseTypeName.StorageSetSensitive,
                 "storage-transfer-in-success" => ListEventTypesResponseTypeName.StorageTransferInSuccess,
                 "storage-transfer-out-success" => ListEventTypesResponseTypeName.StorageTransferOutSuccess,
                 "storage-transfer-request-created" => ListEventTypesResponseTypeName.StorageTransferRequestCreated,
@@ -2622,6 +2633,7 @@ namespace Vercel
                 "team-saml-enforced" => ListEventTypesResponseTypeName.TeamSamlEnforced,
                 "team-saml-roles" => ListEventTypesResponseTypeName.TeamSamlRoles,
                 "team-slug-update" => ListEventTypesResponseTypeName.TeamSlugUpdate,
+                "team-tokens-invalidated" => ListEventTypesResponseTypeName.TeamTokensInvalidated,
                 "unlink-login-connection" => ListEventTypesResponseTypeName.UnlinkLoginConnection,
                 "user-delete" => ListEventTypesResponseTypeName.UserDelete,
                 "user-mfa-challenge-verified" => ListEventTypesResponseTypeName.UserMfaChallengeVerified,

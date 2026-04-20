@@ -46,6 +46,18 @@ namespace Vercel
         public string? BitbucketUsername { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedUid")]
+        public string? UpdatedUid { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        public string? TeamId { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -60,6 +72,8 @@ namespace Vercel
         /// <param name="githubUsername"></param>
         /// <param name="gitlabUsername"></param>
         /// <param name="bitbucketUsername"></param>
+        /// <param name="updatedUid"></param>
+        /// <param name="teamId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -69,7 +83,9 @@ namespace Vercel
             string? gitUsername,
             string? githubUsername,
             string? gitlabUsername,
-            string? bitbucketUsername)
+            string? bitbucketUsername,
+            string? updatedUid,
+            string? teamId)
         {
             this.TeamName = teamName ?? throw new global::System.ArgumentNullException(nameof(teamName));
             this.Username = username;
@@ -77,6 +93,8 @@ namespace Vercel
             this.GithubUsername = githubUsername;
             this.GitlabUsername = gitlabUsername;
             this.BitbucketUsername = bitbucketUsername;
+            this.UpdatedUid = updatedUid;
+            this.TeamId = teamId;
         }
 
         /// <summary>
