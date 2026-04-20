@@ -186,6 +186,30 @@ namespace Vercel
         public global::Vercel.TeamNsnbConfig? NsnbConfig { get; set; }
 
         /// <summary>
+        /// Timestamp (ms) after which personal access tokens created at or before this time are considered invalid for this team.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("personalAccessTokensInvalidatedAt")]
+        public double? PersonalAccessTokensInvalidatedAt { get; set; }
+
+        /// <summary>
+        /// Timestamp (ms) after which Vercel App tokens created at or before this time are considered invalid for this team.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("appTokensInvalidatedAt")]
+        public double? AppTokensInvalidatedAt { get; set; }
+
+        /// <summary>
+        /// Timestamp (ms) after which API keys created at or before this time are considered invalid for this team.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("apiKeysInvalidatedAt")]
+        public double? ApiKeysInvalidatedAt { get; set; }
+
+        /// <summary>
+        /// Timestamp (ms) after which integration tokens created at or before this time are considered invalid for this team.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationTokensInvalidatedAt")]
+        public double? IntegrationTokensInvalidatedAt { get; set; }
+
+        /// <summary>
         /// The Team's unique identifier.<br/>
         /// Example: team_nllPyCtREAqxxdyFKbbMDlxd
         /// </summary>
@@ -336,6 +360,18 @@ namespace Vercel
         /// <param name="nsnbConfig">
         /// NSNB configuration for the team.
         /// </param>
+        /// <param name="personalAccessTokensInvalidatedAt">
+        /// Timestamp (ms) after which personal access tokens created at or before this time are considered invalid for this team.
+        /// </param>
+        /// <param name="appTokensInvalidatedAt">
+        /// Timestamp (ms) after which Vercel App tokens created at or before this time are considered invalid for this team.
+        /// </param>
+        /// <param name="apiKeysInvalidatedAt">
+        /// Timestamp (ms) after which API keys created at or before this time are considered invalid for this team.
+        /// </param>
+        /// <param name="integrationTokensInvalidatedAt">
+        /// Timestamp (ms) after which integration tokens created at or before this time are considered invalid for this team.
+        /// </param>
         /// <param name="name">
         /// Name associated with the Team account, or `null` if none has been provided.<br/>
         /// Example: My Team
@@ -378,6 +414,10 @@ namespace Vercel
             global::Vercel.TeamStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.TeamStrictShareableLinks? strictShareableLinks,
             global::Vercel.TeamNsnbConfig? nsnbConfig,
+            double? personalAccessTokensInvalidatedAt,
+            double? appTokensInvalidatedAt,
+            double? apiKeysInvalidatedAt,
+            double? integrationTokensInvalidatedAt,
             string? name,
             string? avatar)
         {
@@ -407,6 +447,10 @@ namespace Vercel
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
             this.StrictShareableLinks = strictShareableLinks;
             this.NsnbConfig = nsnbConfig;
+            this.PersonalAccessTokensInvalidatedAt = personalAccessTokensInvalidatedAt;
+            this.AppTokensInvalidatedAt = appTokensInvalidatedAt;
+            this.ApiKeysInvalidatedAt = apiKeysInvalidatedAt;
+            this.IntegrationTokensInvalidatedAt = integrationTokensInvalidatedAt;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Name = name;

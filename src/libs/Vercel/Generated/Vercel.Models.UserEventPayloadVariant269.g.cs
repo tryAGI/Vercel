@@ -11,24 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string InvoiceId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("convertedFromTrial")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool ConvertedFromTrial { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant269PlanJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UserEventPayloadVariant269Plan Plan { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trial")]
+        public global::Vercel.UserEventPayloadVariant269Trial? Trial { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant269" /> class.
         /// </summary>
-        /// <param name="invoiceId"></param>
-        /// <param name="convertedFromTrial"></param>
         /// <param name="plan"></param>
+        /// <param name="trial"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant269(
-            string invoiceId,
-            bool convertedFromTrial,
-            global::Vercel.UserEventPayloadVariant269Plan plan)
+            global::Vercel.UserEventPayloadVariant269Plan plan,
+            global::Vercel.UserEventPayloadVariant269Trial? trial)
         {
-            this.InvoiceId = invoiceId ?? throw new global::System.ArgumentNullException(nameof(invoiceId));
-            this.ConvertedFromTrial = convertedFromTrial;
             this.Plan = plan;
+            this.Trial = trial;
         }
 
         /// <summary>

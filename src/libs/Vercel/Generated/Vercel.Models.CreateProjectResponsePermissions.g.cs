@@ -857,6 +857,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("storeIsSensitive")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? StoreIsSensitive { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("storeTransfer")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? StoreTransfer { get; set; }
 
@@ -937,6 +943,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamOwnMembershipDisconnectSAML")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamOwnMembershipDisconnectSAML { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamTokenInvalidation")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamTokenInvalidation { get; set; }
 
         /// <summary>
         /// 
@@ -1604,6 +1616,7 @@ namespace Vercel
         /// <param name="sharedEnvVarsProduction"></param>
         /// <param name="space"></param>
         /// <param name="spaceRun"></param>
+        /// <param name="storeIsSensitive"></param>
         /// <param name="storeTransfer"></param>
         /// <param name="supportCase"></param>
         /// <param name="supportCaseComment"></param>
@@ -1618,6 +1631,7 @@ namespace Vercel
         /// <param name="teamMicrofrontends"></param>
         /// <param name="teamOwnMembership"></param>
         /// <param name="teamOwnMembershipDisconnectSAML"></param>
+        /// <param name="teamTokenInvalidation"></param>
         /// <param name="token"></param>
         /// <param name="toolbarComment"></param>
         /// <param name="usage"></param>
@@ -1849,6 +1863,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVarsProduction,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? space,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? spaceRun,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? storeIsSensitive,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? storeTransfer,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? supportCase,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? supportCaseComment,
@@ -1863,6 +1878,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamMicrofrontends,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamOwnMembership,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamOwnMembershipDisconnectSAML,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamTokenInvalidation,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? token,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? toolbarComment,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? usage,
@@ -2091,6 +2107,7 @@ namespace Vercel
             this.SharedEnvVarsProduction = sharedEnvVarsProduction;
             this.Space = space;
             this.SpaceRun = spaceRun;
+            this.StoreIsSensitive = storeIsSensitive;
             this.StoreTransfer = storeTransfer;
             this.SupportCase = supportCase;
             this.SupportCaseComment = supportCaseComment;
@@ -2105,6 +2122,7 @@ namespace Vercel
             this.TeamMicrofrontends = teamMicrofrontends;
             this.TeamOwnMembership = teamOwnMembership;
             this.TeamOwnMembershipDisconnectSAML = teamOwnMembershipDisconnectSAML;
+            this.TeamTokenInvalidation = teamTokenInvalidation;
             this.Token = token;
             this.ToolbarComment = toolbarComment;
             this.Usage = usage;
