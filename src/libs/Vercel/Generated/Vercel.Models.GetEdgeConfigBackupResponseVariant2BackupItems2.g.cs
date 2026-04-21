@@ -11,12 +11,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
@@ -36,6 +30,12 @@ namespace Vercel
         public global::Vercel.EdgeConfigItemValue? Value { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -46,21 +46,21 @@ namespace Vercel
         /// </summary>
         /// <param name="createdAt"></param>
         /// <param name="updatedAt"></param>
-        /// <param name="description"></param>
         /// <param name="value"></param>
+        /// <param name="description"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetEdgeConfigBackupResponseVariant2BackupItems2(
             double createdAt,
             double updatedAt,
-            string? description,
-            global::Vercel.EdgeConfigItemValue? value)
+            global::Vercel.EdgeConfigItemValue? value,
+            string? description)
         {
-            this.Description = description;
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
             this.Value = value;
+            this.Description = description;
         }
 
         /// <summary>

@@ -38357,12 +38357,16 @@
                         },
                         "backup": {
                           "properties": {
+                            "slug": {
+                              "type": "string",
+                              "description": "Name for the Edge Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
+                            },
+                            "updatedAt": {
+                              "type": "number"
+                            },
                             "items": {
                               "additionalProperties": {
                                 "properties": {
-                                  "description": {
-                                    "type": "string"
-                                  },
                                   "createdAt": {
                                     "type": "number"
                                   },
@@ -38371,6 +38375,9 @@
                                   },
                                   "value": {
                                     "$ref": "#/components/schemas/EdgeConfigItemValue"
+                                  },
+                                  "description": {
+                                    "type": "string"
                                   }
                                 },
                                 "required": [
@@ -38381,13 +38388,6 @@
                                 "type": "object"
                               },
                               "type": "object"
-                            },
-                            "slug": {
-                              "type": "string",
-                              "description": "Name for the Edge Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
-                            },
-                            "updatedAt": {
-                              "type": "number"
                             },
                             "digest": {
                               "type": "string"
@@ -38488,12 +38488,16 @@
                         },
                         "backup": {
                           "properties": {
+                            "slug": {
+                              "type": "string",
+                              "description": "Name for the Edge Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
+                            },
+                            "updatedAt": {
+                              "type": "number"
+                            },
                             "items": {
                               "additionalProperties": {
                                 "properties": {
-                                  "description": {
-                                    "type": "string"
-                                  },
                                   "createdAt": {
                                     "type": "number"
                                   },
@@ -38502,6 +38506,9 @@
                                   },
                                   "value": {
                                     "$ref": "#/components/schemas/EdgeConfigItemValue"
+                                  },
+                                  "description": {
+                                    "type": "string"
                                   }
                                 },
                                 "required": [
@@ -38512,13 +38519,6 @@
                                 "type": "object"
                               },
                               "type": "object"
-                            },
-                            "slug": {
-                              "type": "string",
-                              "description": "Name for the Edge Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
-                            },
-                            "updatedAt": {
-                              "type": "number"
                             },
                             "digest": {
                               "type": "string"
@@ -123018,6 +123018,7 @@
             "schema": {
               "type": "string",
               "description": "The sandbox name to delete.",
+              "pattern": "^[a-zA-Z0-9_-]+$",
               "maxLength": 128,
               "example": "my-sandbox"
             }
@@ -142650,6 +142651,10 @@
           "token": {
             "type": "string"
           },
+          "partialToken": {
+            "type": "string",
+            "description": "A partially-masked representation of the token, safe to display in UIs. The format is the first 4 characters of the token followed by a fixed 8-character `*` mask (e.g. `550e8400-e29b-41d4-a716-446655440000` \u2192 `550e********`). The mask length is intentionally fixed (not proportional to the original token length) to avoid leaking the token length."
+          },
           "label": {
             "type": "string"
           },
@@ -142669,6 +142674,7 @@
           "edgeConfigId",
           "id",
           "label",
+          "partialToken",
           "token"
         ],
         "type": "object",
