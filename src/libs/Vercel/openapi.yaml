@@ -151770,6 +151770,14 @@
                           "northstar"
                         ]
                       },
+                      "isMFAEnforced": {
+                        "type": "boolean",
+                        "enum": [
+                          false,
+                          true
+                        ],
+                        "description": "Whether MFA is enforced for this user. Set to true when the user has a"
+                      },
                       "northstarMigration": {
                         "properties": {
                           "teamId": {
