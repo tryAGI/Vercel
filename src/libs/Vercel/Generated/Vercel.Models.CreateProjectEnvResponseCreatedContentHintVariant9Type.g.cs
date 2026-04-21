@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        PostgresUser,
+        PostgresPrismaUrl,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                CreateProjectEnvResponseCreatedContentHintVariant9Type.PostgresUser => "postgres-user",
+                CreateProjectEnvResponseCreatedContentHintVariant9Type.PostgresPrismaUrl => "postgres-prisma-url",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "postgres-user" => CreateProjectEnvResponseCreatedContentHintVariant9Type.PostgresUser,
+                "postgres-prisma-url" => CreateProjectEnvResponseCreatedContentHintVariant9Type.PostgresPrismaUrl,
                 _ => null,
             };
         }

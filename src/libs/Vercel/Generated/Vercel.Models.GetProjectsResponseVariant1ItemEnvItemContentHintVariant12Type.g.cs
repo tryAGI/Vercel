@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        PostgresDatabase,
+        PostgresPassword,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                GetProjectsResponseVariant1ItemEnvItemContentHintVariant12Type.PostgresDatabase => "postgres-database",
+                GetProjectsResponseVariant1ItemEnvItemContentHintVariant12Type.PostgresPassword => "postgres-password",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "postgres-database" => GetProjectsResponseVariant1ItemEnvItemContentHintVariant12Type.PostgresDatabase,
+                "postgres-password" => GetProjectsResponseVariant1ItemEnvItemContentHintVariant12Type.PostgresPassword,
                 _ => null,
             };
         }

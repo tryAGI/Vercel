@@ -58758,6 +58758,24 @@
                                         "type": {
                                           "type": "string",
                                           "enum": [
+                                            "blob-store-id"
+                                          ]
+                                        },
+                                        "storeId": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "storeId",
+                                        "type"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
                                             "postgres-url"
                                           ]
                                         },
@@ -71112,6 +71130,24 @@
                                         "type": {
                                           "type": "string",
                                           "enum": [
+                                            "blob-store-id"
+                                          ]
+                                        },
+                                        "storeId": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "storeId",
+                                        "type"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
                                             "postgres-url"
                                           ]
                                         },
@@ -74616,6 +74652,24 @@
                                               "type": "string",
                                               "enum": [
                                                 "blob-read-write-token"
+                                              ]
+                                            },
+                                            "storeId": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "storeId",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "blob-store-id"
                                               ]
                                             },
                                             "storeId": {
@@ -78150,6 +78204,24 @@
                                               "type": "string",
                                               "enum": [
                                                 "blob-read-write-token"
+                                              ]
+                                            },
+                                            "storeId": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "storeId",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "blob-store-id"
                                               ]
                                             },
                                             "storeId": {
@@ -84004,6 +84076,24 @@
                                     "type": "string",
                                     "enum": [
                                       "blob-read-write-token"
+                                    ]
+                                  },
+                                  "storeId": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "storeId",
+                                  "type"
+                                ],
+                                "type": "object"
+                              },
+                              {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "blob-store-id"
                                     ]
                                   },
                                   "storeId": {
@@ -90108,6 +90198,24 @@
                                   "type": {
                                     "type": "string",
                                     "enum": [
+                                      "blob-store-id"
+                                    ]
+                                  },
+                                  "storeId": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "storeId",
+                                  "type"
+                                ],
+                                "type": "object"
+                              },
+                              {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
                                       "postgres-url"
                                     ]
                                   },
@@ -95759,6 +95867,24 @@
                                     "type": "string",
                                     "enum": [
                                       "blob-read-write-token"
+                                    ]
+                                  },
+                                  "storeId": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "storeId",
+                                  "type"
+                                ],
+                                "type": "object"
+                              },
+                              {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "blob-store-id"
                                     ]
                                   },
                                   "storeId": {
@@ -104949,6 +105075,24 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
+                                    "blob-store-id"
+                                  ]
+                                },
+                                "storeId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "storeId",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
                                     "postgres-url"
                                   ]
                                 },
@@ -105362,6 +105506,24 @@
                                         "type": "string",
                                         "enum": [
                                           "blob-read-write-token"
+                                        ]
+                                      },
+                                      "storeId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "storeId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "blob-store-id"
                                         ]
                                       },
                                       "storeId": {
@@ -105804,6 +105966,24 @@
                                         "type": "string",
                                         "enum": [
                                           "blob-read-write-token"
+                                        ]
+                                      },
+                                      "storeId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "storeId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "blob-store-id"
                                         ]
                                       },
                                       "storeId": {
@@ -106398,6 +106578,24 @@
                                     "type": {
                                       "type": "string",
                                       "enum": [
+                                        "blob-store-id"
+                                      ]
+                                    },
+                                    "storeId": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "storeId",
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                },
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
                                         "postgres-url"
                                       ]
                                     },
@@ -106800,6 +106998,24 @@
                                         "type": "string",
                                         "enum": [
                                           "blob-read-write-token"
+                                        ]
+                                      },
+                                      "storeId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "storeId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "blob-store-id"
                                         ]
                                       },
                                       "storeId": {
@@ -107606,6 +107822,24 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
+                                    "blob-store-id"
+                                  ]
+                                },
+                                "storeId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "storeId",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
                                     "postgres-url"
                                   ]
                                 },
@@ -108002,6 +108236,24 @@
                                   "type": "string",
                                   "enum": [
                                     "blob-read-write-token"
+                                  ]
+                                },
+                                "storeId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "storeId",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "blob-store-id"
                                   ]
                                 },
                                 "storeId": {
@@ -108523,6 +108775,24 @@
                                   "type": {
                                     "type": "string",
                                     "enum": [
+                                      "blob-store-id"
+                                    ]
+                                  },
+                                  "storeId": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "storeId",
+                                  "type"
+                                ],
+                                "type": "object"
+                              },
+                              {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
                                       "postgres-url"
                                     ]
                                   },
@@ -108947,6 +109217,24 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
+                                    "blob-store-id"
+                                  ]
+                                },
+                                "storeId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "storeId",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
                                     "postgres-url"
                                   ]
                                 },
@@ -109346,6 +109634,24 @@
                                   "type": "string",
                                   "enum": [
                                     "blob-read-write-token"
+                                  ]
+                                },
+                                "storeId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "storeId",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "blob-store-id"
                                   ]
                                 },
                                 "storeId": {
@@ -109866,6 +110172,24 @@
                               "type": "string",
                               "enum": [
                                 "blob-read-write-token"
+                              ]
+                            },
+                            "storeId": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "storeId",
+                            "type"
+                          ],
+                          "type": "object"
+                        },
+                        {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "blob-store-id"
                               ]
                             },
                             "storeId": {
@@ -113826,6 +114150,24 @@
                                     "type": "string",
                                     "enum": [
                                       "blob-read-write-token"
+                                    ]
+                                  },
+                                  "storeId": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "storeId",
+                                  "type"
+                                ],
+                                "type": "object"
+                              },
+                              {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "blob-store-id"
                                     ]
                                   },
                                   "storeId": {

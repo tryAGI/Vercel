@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        PostgresUrlNoSsl,
+        PostgresDatabase,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                CreateProjectEnvResponseCreatedContentHintVariant13Type.PostgresUrlNoSsl => "postgres-url-no-ssl",
+                CreateProjectEnvResponseCreatedContentHintVariant13Type.PostgresDatabase => "postgres-database",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "postgres-url-no-ssl" => CreateProjectEnvResponseCreatedContentHintVariant13Type.PostgresUrlNoSsl,
+                "postgres-database" => CreateProjectEnvResponseCreatedContentHintVariant13Type.PostgresDatabase,
                 _ => null,
             };
         }

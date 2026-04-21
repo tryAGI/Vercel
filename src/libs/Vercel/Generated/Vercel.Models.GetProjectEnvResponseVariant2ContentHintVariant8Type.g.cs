@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        PostgresPrismaUrl,
+        PostgresUrlNonPooling,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                GetProjectEnvResponseVariant2ContentHintVariant8Type.PostgresPrismaUrl => "postgres-prisma-url",
+                GetProjectEnvResponseVariant2ContentHintVariant8Type.PostgresUrlNonPooling => "postgres-url-non-pooling",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "postgres-prisma-url" => GetProjectEnvResponseVariant2ContentHintVariant8Type.PostgresPrismaUrl,
+                "postgres-url-non-pooling" => GetProjectEnvResponseVariant2ContentHintVariant8Type.PostgresUrlNonPooling,
                 _ => null,
             };
         }
