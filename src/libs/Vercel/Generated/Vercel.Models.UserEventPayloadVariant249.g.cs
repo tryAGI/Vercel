@@ -9,11 +9,17 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant249
     {
         /// <summary>
-        /// 
+        /// Automatic code review settings
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        public global::Vercel.UserEventPayloadVariant249Previous? Previous { get; set; }
+
+        /// <summary>
+        /// Automatic code review settings
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Enabled { get; set; }
+        public required global::Vercel.UserEventPayloadVariant249Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +30,21 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant249" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="next">
+        /// Automatic code review settings
+        /// </param>
+        /// <param name="previous">
+        /// Automatic code review settings
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant249(
-            bool enabled)
+            global::Vercel.UserEventPayloadVariant249Next next,
+            global::Vercel.UserEventPayloadVariant249Previous? previous)
         {
-            this.Enabled = enabled;
+            this.Previous = previous;
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

@@ -40821,6 +40821,7 @@
                               "project-sso-protection",
                               "project-static-ips-updated",
                               "project-trusted-ips",
+                              "project-trusted-sources",
                               "project-unpaused",
                               "project-web-analytics-disabled",
                               "project-web-analytics-enabled",
@@ -101417,20 +101418,20 @@
                     "properties": {
                       "projects": {
                         "type": "object",
-                        "maxProperties": 10,
+                        "maxProperties": 100,
                         "additionalProperties": {
                           "type": "object",
                           "additionalProperties": false,
                           "properties": {
                             "label": {
                               "type": "string",
-                              "maxLength": 256,
+                              "maxLength": 100,
                               "description": "The label or description of the trusted source"
                             },
                             "customAllow": {
                               "type": "array",
                               "minItems": 1,
-                              "maxItems": 10,
+                              "maxItems": 20,
                               "items": {
                                 "type": "object",
                                 "additionalProperties": false,
@@ -101463,7 +101464,7 @@
                                         "uniqueItems": true,
                                         "items": {
                                           "type": "string",
-                                          "maxLength": 256,
+                                          "maxLength": 64,
                                           "description": "A system environment (\\\"production\\\", \\\"preview\\\", or \\\"development\\\") or a custom environment slug"
                                         }
                                       },
@@ -101499,7 +101500,7 @@
                                         "uniqueItems": true,
                                         "items": {
                                           "type": "string",
-                                          "maxLength": 256,
+                                          "maxLength": 64,
                                           "description": "A system environment (\\\"production\\\", \\\"preview\\\", or \\\"development\\\") or a custom environment slug"
                                         }
                                       },
@@ -101520,11 +101521,11 @@
                       },
                       "oidcProviders": {
                         "type": "object",
-                        "maxProperties": 10,
+                        "maxProperties": 50,
                         "additionalProperties": {
                           "type": "array",
                           "minItems": 1,
-                          "maxItems": 5,
+                          "maxItems": 10,
                           "items": {
                             "type": "object",
                             "additionalProperties": false,
@@ -101535,7 +101536,7 @@
                             "properties": {
                               "label": {
                                 "type": "string",
-                                "maxLength": 256,
+                                "maxLength": 100,
                                 "description": "The label or description of the trusted source"
                               },
                               "to": {
@@ -101562,7 +101563,7 @@
                                     "uniqueItems": true,
                                     "items": {
                                       "type": "string",
-                                      "maxLength": 256,
+                                      "maxLength": 64,
                                       "description": "A system environment (\\\"production\\\", \\\"preview\\\", or \\\"development\\\") or a custom environment slug"
                                     }
                                   },
@@ -101577,14 +101578,14 @@
                               "claims": {
                                 "type": "object",
                                 "minProperties": 1,
-                                "maxProperties": 10,
+                                "maxProperties": 20,
                                 "additionalProperties": {
                                   "type": "array",
                                   "minItems": 1,
-                                  "maxItems": 10,
+                                  "maxItems": 20,
                                   "items": {
                                     "type": "string",
-                                    "maxLength": 512
+                                    "maxLength": 256
                                   }
                                 }
                               }
@@ -143064,6 +143065,7 @@
               "project-sso-protection",
               "project-static-ips-updated",
               "project-trusted-ips",
+              "project-trusted-sources",
               "project-unpaused",
               "project-web-analytics-disabled",
               "project-web-analytics-enabled",
@@ -156266,6 +156268,74 @@
                 "required": [
                   "projectId",
                   "projectName"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "projectId": {
+                    "type": "string"
+                  },
+                  "projectName": {
+                    "type": "string"
+                  },
+                  "addedProjects": {
+                    "items": {
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  },
+                  "removedProjects": {
+                    "items": {
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  },
+                  "addedProviders": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "removedProviders": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "addedProjects",
+                  "addedProviders",
+                  "projectId",
+                  "projectName",
+                  "removedProjects",
+                  "removedProviders"
                 ],
                 "type": "object",
                 "description": "The payload of the event, if requested."
