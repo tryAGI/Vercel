@@ -1276,6 +1276,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectTrustedSources,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectUnpaused,
         /// <summary>
         /// 
@@ -2095,6 +2099,7 @@ namespace Vercel
                 UserEventType.ProjectSsoProtection => "project-sso-protection",
                 UserEventType.ProjectStaticIpsUpdated => "project-static-ips-updated",
                 UserEventType.ProjectTrustedIps => "project-trusted-ips",
+                UserEventType.ProjectTrustedSources => "project-trusted-sources",
                 UserEventType.ProjectUnpaused => "project-unpaused",
                 UserEventType.ProjectWebAnalyticsDisabled => "project-web-analytics-disabled",
                 UserEventType.ProjectWebAnalyticsEnabled => "project-web-analytics-enabled",
@@ -2544,6 +2549,7 @@ namespace Vercel
                 "project-sso-protection" => UserEventType.ProjectSsoProtection,
                 "project-static-ips-updated" => UserEventType.ProjectStaticIpsUpdated,
                 "project-trusted-ips" => UserEventType.ProjectTrustedIps,
+                "project-trusted-sources" => UserEventType.ProjectTrustedSources,
                 "project-unpaused" => UserEventType.ProjectUnpaused,
                 "project-web-analytics-disabled" => UserEventType.ProjectWebAnalyticsDisabled,
                 "project-web-analytics-enabled" => UserEventType.ProjectWebAnalyticsEnabled,

@@ -9,94 +9,71 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant303
     {
         /// <summary>
-        /// The token's public ID.
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("grantType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant303GrantTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TokenId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant303GrantType GrantType { get; set; }
 
         /// <summary>
-        /// User-supplied name of the token.
+        /// the app's name at the time the event was published (it could have changed since then)
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TokenName { get; set; }
+        public required string AppName { get; set; }
 
         /// <summary>
-        /// How the token was issued. Always `'manual'` for explicit PAT creation.
+        /// access_token TTL
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant303OriginJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("atTTL")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant303Origin Origin { get; set; }
+        public required double AtTTL { get; set; }
 
         /// <summary>
-        /// Scope of the token: - `'user'`: full-account token (not tied to any team). - `'team'`: scoped to a single team. - `'project'`: scoped to a single project within a team.
+        /// refresh_token TTL
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rtTTL")]
+        public double? RtTTL { get; set; }
+
+        /// <summary>
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant303ScopeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant303Scope Scope { get; set; }
-
-        /// <summary>
-        /// Present when `scope` is `'team'` or `'project'`.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
-        public string? TeamId { get; set; }
-
-        /// <summary>
-        /// Present when `scope` is `'team'` or `'project'`.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamSlug")]
-        public string? TeamSlug { get; set; }
-
-        /// <summary>
-        /// Present when `scope` is `'project'`.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
-
-        /// <summary>
-        /// Unix epoch milliseconds. Absent when the token never expires.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
-        public double? ExpiresAt { get; set; }
-
-        /// <summary>
-        /// Whether the token was issued with RFC 9396 authorization details.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("hasAuthorizationDetails")]
-        public bool? HasAuthorizationDetails { get; set; }
+        public required string Scope { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ip")]
-        public string? Ip { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("authMethod")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant303AuthMethodJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant303AuthMethod AuthMethod { get; set; }
 
         /// <summary>
-        /// 
+        /// optional since entries prior to 2025-10-13 do not contain app information
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("geolocation")]
-        public global::Vercel.UserEventPayloadVariant303Geolocation? Geolocation { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("app")]
+        public global::Vercel.UserEventPayloadVariant303App? App { get; set; }
 
         /// <summary>
-        /// 
+        /// optional since entries prior to 2025-10-13 do not contain this field
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userAgent")]
-        public string? UserAgent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("includesRefreshToken")]
+        public bool? IncludesRefreshToken { get; set; }
 
         /// <summary>
-        /// 
+        /// optional since entries prior to 2025-10-13 do not contain this field
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reqId")]
-        public string? ReqId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("publicId")]
+        public string? PublicId { get; set; }
 
         /// <summary>
-        /// 
+        /// optional since entries prior to 2025-10-13 do not contain this field
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reqUrl")]
-        public string? ReqUrl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sessionId")]
+        public string? SessionId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -107,71 +84,55 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant303" /> class.
         /// </summary>
-        /// <param name="tokenId">
-        /// The token's public ID.
+        /// <param name="grantType"></param>
+        /// <param name="appName">
+        /// the app's name at the time the event was published (it could have changed since then)
         /// </param>
-        /// <param name="tokenName">
-        /// User-supplied name of the token.
+        /// <param name="atTTL">
+        /// access_token TTL
         /// </param>
-        /// <param name="origin">
-        /// How the token was issued. Always `'manual'` for explicit PAT creation.
+        /// <param name="scope"></param>
+        /// <param name="authMethod"></param>
+        /// <param name="rtTTL">
+        /// refresh_token TTL
         /// </param>
-        /// <param name="scope">
-        /// Scope of the token: - `'user'`: full-account token (not tied to any team). - `'team'`: scoped to a single team. - `'project'`: scoped to a single project within a team.
+        /// <param name="app">
+        /// optional since entries prior to 2025-10-13 do not contain app information
         /// </param>
-        /// <param name="teamId">
-        /// Present when `scope` is `'team'` or `'project'`.
+        /// <param name="includesRefreshToken">
+        /// optional since entries prior to 2025-10-13 do not contain this field
         /// </param>
-        /// <param name="teamSlug">
-        /// Present when `scope` is `'team'` or `'project'`.
+        /// <param name="publicId">
+        /// optional since entries prior to 2025-10-13 do not contain this field
         /// </param>
-        /// <param name="projectId">
-        /// Present when `scope` is `'project'`.
+        /// <param name="sessionId">
+        /// optional since entries prior to 2025-10-13 do not contain this field
         /// </param>
-        /// <param name="expiresAt">
-        /// Unix epoch milliseconds. Absent when the token never expires.
-        /// </param>
-        /// <param name="hasAuthorizationDetails">
-        /// Whether the token was issued with RFC 9396 authorization details.
-        /// </param>
-        /// <param name="ip"></param>
-        /// <param name="geolocation"></param>
-        /// <param name="userAgent"></param>
-        /// <param name="reqId"></param>
-        /// <param name="reqUrl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant303(
-            string tokenId,
-            string tokenName,
-            global::Vercel.UserEventPayloadVariant303Origin origin,
-            global::Vercel.UserEventPayloadVariant303Scope scope,
-            string? teamId,
-            string? teamSlug,
-            string? projectId,
-            double? expiresAt,
-            bool? hasAuthorizationDetails,
-            string? ip,
-            global::Vercel.UserEventPayloadVariant303Geolocation? geolocation,
-            string? userAgent,
-            string? reqId,
-            string? reqUrl)
+            global::Vercel.UserEventPayloadVariant303GrantType grantType,
+            string appName,
+            double atTTL,
+            string scope,
+            global::Vercel.UserEventPayloadVariant303AuthMethod authMethod,
+            double? rtTTL,
+            global::Vercel.UserEventPayloadVariant303App? app,
+            bool? includesRefreshToken,
+            string? publicId,
+            string? sessionId)
         {
-            this.TokenId = tokenId ?? throw new global::System.ArgumentNullException(nameof(tokenId));
-            this.TokenName = tokenName ?? throw new global::System.ArgumentNullException(nameof(tokenName));
-            this.Origin = origin;
-            this.Scope = scope;
-            this.TeamId = teamId;
-            this.TeamSlug = teamSlug;
-            this.ProjectId = projectId;
-            this.ExpiresAt = expiresAt;
-            this.HasAuthorizationDetails = hasAuthorizationDetails;
-            this.Ip = ip;
-            this.Geolocation = geolocation;
-            this.UserAgent = userAgent;
-            this.ReqId = reqId;
-            this.ReqUrl = reqUrl;
+            this.GrantType = grantType;
+            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
+            this.AtTTL = atTTL;
+            this.RtTTL = rtTTL;
+            this.Scope = scope ?? throw new global::System.ArgumentNullException(nameof(scope));
+            this.AuthMethod = authMethod;
+            this.App = app;
+            this.IncludesRefreshToken = includesRefreshToken;
+            this.PublicId = publicId;
+            this.SessionId = sessionId;
         }
 
         /// <summary>
