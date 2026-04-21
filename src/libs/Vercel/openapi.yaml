@@ -123658,15 +123658,34 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "session": {
-                      "$ref": "#/components/schemas/Session"
+                  "oneOf": [
+                    {
+                      "properties": {
+                        "session": {
+                          "$ref": "#/components/schemas/Session"
+                        }
+                      },
+                      "required": [
+                        "session"
+                      ],
+                      "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "sandbox": {
+                          "$ref": "#/components/schemas/NamedSandbox"
+                        },
+                        "session": {
+                          "$ref": "#/components/schemas/Session"
+                        }
+                      },
+                      "required": [
+                        "sandbox",
+                        "session"
+                      ],
+                      "type": "object"
                     }
-                  },
-                  "required": [
-                    "session"
-                  ],
-                  "type": "object"
+                  ]
                 }
               }
             }
