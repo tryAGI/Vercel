@@ -380,7 +380,7 @@ namespace Vercel
         public global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseGitSourceVariant1, global::Vercel.CreateDeploymentResponseGitSourceVariant2, global::Vercel.CreateDeploymentResponseGitSourceVariant3, global::Vercel.CreateDeploymentResponseGitSourceVariant4, global::Vercel.CreateDeploymentResponseGitSourceVariant5, global::Vercel.CreateDeploymentResponseGitSourceVariant6, global::Vercel.CreateDeploymentResponseGitSourceVariant7, global::Vercel.CreateDeploymentResponseGitSourceVariant8, global::Vercel.CreateDeploymentResponseGitSourceVariant9, global::Vercel.CreateDeploymentResponseGitSourceVariant10, global::Vercel.CreateDeploymentResponseGitSourceVariant11, global::Vercel.CreateDeploymentResponseGitSourceVariant12, global::Vercel.CreateDeploymentResponseGitSourceVariant13, global::Vercel.CreateDeploymentResponseGitSourceVariant14, global::Vercel.CreateDeploymentResponseGitSourceVariant15, global::Vercel.CreateDeploymentResponseGitSourceVariant16, global::Vercel.CreateDeploymentResponseGitSourceVariant17>? GitSource { get; set; }
 
         /// <summary>
-        /// Present when deployment was created with VERCEL_MANUAL_PROVISIONING=true. The deployment stays in INITIALIZING until /continue is called.
+        /// Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manualProvisioning")]
         public global::Vercel.CreateDeploymentResponseManualProvisioning? ManualProvisioning { get; set; }
@@ -747,7 +747,7 @@ namespace Vercel
         /// </param>
         /// <param name="gitSource"></param>
         /// <param name="manualProvisioning">
-        /// Present when deployment was created with VERCEL_MANUAL_PROVISIONING=true. The deployment stays in INITIALIZING until /continue is called.
+        /// Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called.
         /// </param>
         /// <param name="originCacheRegion"></param>
         /// <param name="nodeVersion">
