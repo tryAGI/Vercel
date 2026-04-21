@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        PostgresUrl,
+        BlobStoreId,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                RemoveProjectEnvResponseVariant2ContentHintVariant6Type.PostgresUrl => "postgres-url",
+                RemoveProjectEnvResponseVariant2ContentHintVariant6Type.BlobStoreId => "blob-store-id",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "postgres-url" => RemoveProjectEnvResponseVariant2ContentHintVariant6Type.PostgresUrl,
+                "blob-store-id" => RemoveProjectEnvResponseVariant2ContentHintVariant6Type.BlobStoreId,
                 _ => null,
             };
         }
