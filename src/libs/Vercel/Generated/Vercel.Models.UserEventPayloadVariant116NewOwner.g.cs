@@ -451,6 +451,12 @@ namespace Vercel
         public global::Vercel.UserEventPayloadVariant116NewOwnerVersion Version { get; set; }
 
         /// <summary>
+        /// Whether MFA is enforced for this user. Set to true when the user has a
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isMFAEnforced")]
+        public bool? IsMFAEnforced { get; set; }
+
+        /// <summary>
         /// An archive of information about the Northstar migration, derived from the old (deprecated) property, `northstarMigrationEvents`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("northstarMigration")]
@@ -588,6 +594,9 @@ namespace Vercel
         /// </param>
         /// <param name="defaultTeamId"></param>
         /// <param name="version"></param>
+        /// <param name="isMFAEnforced">
+        /// Whether MFA is enforced for this user. Set to true when the user has a
+        /// </param>
         /// <param name="northstarMigration">
         /// An archive of information about the Northstar migration, derived from the old (deprecated) property, `northstarMigrationEvents`.
         /// </param>
@@ -681,6 +690,7 @@ namespace Vercel
             global::Vercel.UserEventPayloadVariant116NewOwnerFeatureBlocks? featureBlocks,
             string? defaultTeamId,
             global::Vercel.UserEventPayloadVariant116NewOwnerVersion version,
+            bool? isMFAEnforced,
             global::Vercel.UserEventPayloadVariant116NewOwnerNorthstarMigration? northstarMigration,
             string? opportunityId,
             global::Vercel.UserEventPayloadVariant116NewOwnerMfaConfiguration? mfaConfiguration,
@@ -759,6 +769,7 @@ namespace Vercel
             this.FeatureBlocks = featureBlocks;
             this.DefaultTeamId = defaultTeamId;
             this.Version = version;
+            this.IsMFAEnforced = isMFAEnforced;
             this.NorthstarMigration = northstarMigration;
             this.OpportunityId = opportunityId;
             this.MfaConfiguration = mfaConfiguration;
