@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class StopSessionResponse
+    public sealed partial class StopSessionResponseVariant1
     {
         /// <summary>
         /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
@@ -22,7 +22,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="StopSessionResponse" /> class.
+        /// Initializes a new instance of the <see cref="StopSessionResponseVariant1" /> class.
         /// </summary>
         /// <param name="session">
         /// This object contains information related to a Vercel Sandbox Session. v2 endpoints return "session" instead of "sandbox" as the response wrapper key.
@@ -30,16 +30,16 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public StopSessionResponse(
+        public StopSessionResponseVariant1(
             global::Vercel.Session session)
         {
             this.Session = session ?? throw new global::System.ArgumentNullException(nameof(session));
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="StopSessionResponse" /> class.
+        /// Initializes a new instance of the <see cref="StopSessionResponseVariant1" /> class.
         /// </summary>
-        public StopSessionResponse()
+        public StopSessionResponseVariant1()
         {
         }
     }
