@@ -12988,7 +12988,7 @@
                             "state"
                           ],
                           "type": "object",
-                          "description": "Present when deployment was created with VERCEL_MANUAL_PROVISIONING=true. The deployment stays in INITIALIZING until /continue is called."
+                          "description": "Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called."
                         },
                         "meta": {
                           "additionalProperties": {
@@ -15823,7 +15823,7 @@
                             "state"
                           ],
                           "type": "object",
-                          "description": "Present when deployment was created with VERCEL_MANUAL_PROVISIONING=true. The deployment stays in INITIALIZING until /continue is called."
+                          "description": "Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called."
                         },
                         "meta": {
                           "additionalProperties": {
@@ -17628,7 +17628,7 @@
                         "state"
                       ],
                       "type": "object",
-                      "description": "Present when deployment was created with VERCEL_MANUAL_PROVISIONING=true. The deployment stays in INITIALIZING until /continue is called."
+                      "description": "Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called."
                     },
                     "meta": {
                       "additionalProperties": {
@@ -21552,7 +21552,7 @@
                         "state"
                       ],
                       "type": "object",
-                      "description": "Present when deployment was created with VERCEL_MANUAL_PROVISIONING=true. The deployment stays in INITIALIZING until /continue is called."
+                      "description": "Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called."
                     },
                     "meta": {
                       "additionalProperties": {
@@ -119756,7 +119756,7 @@
                         ],
                         "items": {
                           "type": "string",
-                          "description": "An IP address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\" for IPv4 or \\\"2001:db8::/32\\\" for IPv6)."
+                          "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
                         }
                       },
                       "deniedCIDRs": {
@@ -120681,7 +120681,7 @@
                     ],
                     "items": {
                       "type": "string",
-                      "description": "An IP address range in CIDR notation (e.g., \"35.192.0.0/12\" for IPv4 or \"2001:db8::/32\" for IPv6)."
+                      "description": "An IPv4 address range in CIDR notation (e.g., \"35.192.0.0/12\")."
                     }
                   },
                   "deniedCIDRs": {
@@ -121956,7 +121956,7 @@
                         ],
                         "items": {
                           "type": "string",
-                          "description": "An IP address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\" for IPv4 or \\\"2001:db8::/32\\\" for IPv6)."
+                          "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
                         }
                       },
                       "deniedCIDRs": {
@@ -122908,7 +122908,7 @@
                         ],
                         "items": {
                           "type": "string",
-                          "description": "An IP address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\" for IPv4 or \\\"2001:db8::/32\\\" for IPv6)."
+                          "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
                         }
                       },
                       "deniedCIDRs": {
@@ -123672,6 +123672,9 @@
                     },
                     {
                       "properties": {
+                        "snapshot": {
+                          "$ref": "#/components/schemas/Snapshot"
+                        },
                         "sandbox": {
                           "$ref": "#/components/schemas/NamedSandbox"
                         },
@@ -123681,7 +123684,8 @@
                       },
                       "required": [
                         "sandbox",
-                        "session"
+                        "session",
+                        "snapshot"
                       ],
                       "type": "object"
                     }
@@ -123982,7 +123986,7 @@
                     ],
                     "items": {
                       "type": "string",
-                      "description": "An IP address range in CIDR notation (e.g., \"35.192.0.0/12\" for IPv4 or \"2001:db8::/32\" for IPv6)."
+                      "description": "An IPv4 address range in CIDR notation (e.g., \"35.192.0.0/12\")."
                     }
                   },
                   "deniedCIDRs": {
@@ -134283,6 +134287,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "503": {
             "description": ""
           }
         },

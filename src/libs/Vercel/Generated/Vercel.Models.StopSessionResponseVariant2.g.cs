@@ -9,6 +9,13 @@ namespace Vercel
     public sealed partial class StopSessionResponseVariant2
     {
         /// <summary>
+        /// This object contains information related to a Snapshot of a Vercel Sandbox session (v2 API).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("snapshot")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.Snapshot Snapshot { get; set; }
+
+        /// <summary>
         /// This object contains information related to a Vercel NamedSandbox.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sandbox")]
@@ -31,6 +38,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="StopSessionResponseVariant2" /> class.
         /// </summary>
+        /// <param name="snapshot">
+        /// This object contains information related to a Snapshot of a Vercel Sandbox session (v2 API).
+        /// </param>
         /// <param name="sandbox">
         /// This object contains information related to a Vercel NamedSandbox.
         /// </param>
@@ -41,9 +51,11 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public StopSessionResponseVariant2(
+            global::Vercel.Snapshot snapshot,
             global::Vercel.NamedSandbox sandbox,
             global::Vercel.Session session)
         {
+            this.Snapshot = snapshot ?? throw new global::System.ArgumentNullException(nameof(snapshot));
             this.Sandbox = sandbox ?? throw new global::System.ArgumentNullException(nameof(sandbox));
             this.Session = session ?? throw new global::System.ArgumentNullException(nameof(session));
         }
