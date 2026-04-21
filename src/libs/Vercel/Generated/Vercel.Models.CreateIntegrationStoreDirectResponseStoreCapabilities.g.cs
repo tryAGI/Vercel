@@ -64,6 +64,12 @@ namespace Vercel
         public bool? V0 { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("autoSensitive")]
+        public bool? AutoSensitive { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -81,6 +87,7 @@ namespace Vercel
         /// <param name="secretRotation"></param>
         /// <param name="projects"></param>
         /// <param name="v0"></param>
+        /// <param name="autoSensitive"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -93,7 +100,8 @@ namespace Vercel
             bool? secretsSync,
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation, bool?>? secretRotation,
             bool? projects,
-            bool? v0)
+            bool? v0,
+            bool? autoSensitive)
         {
             this.Mcp = mcp;
             this.McpReadonly = mcpReadonly;
@@ -104,6 +112,7 @@ namespace Vercel
             this.SecretRotation = secretRotation;
             this.Projects = projects;
             this.V0 = v0;
+            this.AutoSensitive = autoSensitive;
         }
 
         /// <summary>

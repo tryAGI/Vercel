@@ -61940,6 +61940,12 @@
                                 },
                                 "type": "array"
                               },
+                              "storeTokenSetSensitive": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "storeTransfer": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -81003,6 +81009,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "storeTokenSetSensitive": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "storeTransfer": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -86846,6 +86858,12 @@
                           "type": "array"
                         },
                         "storeIsSensitive": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "storeTokenSetSensitive": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -92932,6 +92950,12 @@
                           },
                           "type": "array"
                         },
+                        "storeTokenSetSensitive": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "storeTransfer": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -98589,6 +98613,12 @@
                           "type": "array"
                         },
                         "storeIsSensitive": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "storeTokenSetSensitive": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -116655,6 +116685,12 @@
                           },
                           "type": "array"
                         },
+                        "storeTokenSetSensitive": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "storeTransfer": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -129569,6 +129605,13 @@
                                 false,
                                 true
                               ]
+                            },
+                            "autoSensitive": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
                             }
                           },
                           "type": "object"
@@ -129760,6 +129803,13 @@
                                   ]
                                 },
                                 "v0Flavors": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false,
+                                    true
+                                  ]
+                                },
+                                "autoSensitive": {
                                   "type": "boolean",
                                   "enum": [
                                     false,
