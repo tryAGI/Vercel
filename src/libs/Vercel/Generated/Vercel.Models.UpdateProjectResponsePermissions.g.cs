@@ -863,6 +863,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("storeTokenSetSensitive")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? StoreTokenSetSensitive { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("storeTransfer")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? StoreTransfer { get; set; }
 
@@ -1617,6 +1623,7 @@ namespace Vercel
         /// <param name="space"></param>
         /// <param name="spaceRun"></param>
         /// <param name="storeIsSensitive"></param>
+        /// <param name="storeTokenSetSensitive"></param>
         /// <param name="storeTransfer"></param>
         /// <param name="supportCase"></param>
         /// <param name="supportCaseComment"></param>
@@ -1864,6 +1871,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? space,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? spaceRun,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? storeIsSensitive,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? storeTokenSetSensitive,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? storeTransfer,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? supportCase,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? supportCaseComment,
@@ -2108,6 +2116,7 @@ namespace Vercel
             this.Space = space;
             this.SpaceRun = spaceRun;
             this.StoreIsSensitive = storeIsSensitive;
+            this.StoreTokenSetSensitive = storeTokenSetSensitive;
             this.StoreTransfer = storeTransfer;
             this.SupportCase = supportCase;
             this.SupportCaseComment = supportCaseComment;

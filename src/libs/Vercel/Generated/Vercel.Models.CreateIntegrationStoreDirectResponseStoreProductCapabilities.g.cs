@@ -106,6 +106,12 @@ namespace Vercel
         public bool? V0Flavors { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("autoSensitive")]
+        public bool? AutoSensitive { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -130,6 +136,7 @@ namespace Vercel
         /// <param name="nativeImportResource"></param>
         /// <param name="databaseUI"></param>
         /// <param name="v0Flavors"></param>
+        /// <param name="autoSensitive"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -149,7 +156,8 @@ namespace Vercel
             bool? connectedImportResource,
             bool? nativeImportResource,
             bool? databaseUI,
-            bool? v0Flavors)
+            bool? v0Flavors,
+            bool? autoSensitive)
         {
             this.Mcp = mcp;
             this.McpReadonly = mcpReadonly;
@@ -167,6 +175,7 @@ namespace Vercel
             this.NativeImportResource = nativeImportResource;
             this.DatabaseUI = databaseUI;
             this.V0Flavors = v0Flavors;
+            this.AutoSensitive = autoSensitive;
         }
 
         /// <summary>
