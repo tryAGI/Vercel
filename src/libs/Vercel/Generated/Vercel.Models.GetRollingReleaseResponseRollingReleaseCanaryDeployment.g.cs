@@ -10,6 +10,15 @@ namespace Vercel
     public sealed partial class GetRollingReleaseResponseRollingReleaseCanaryDeployment
     {
         /// <summary>
+        /// A string holding the unique ID of the deployment<br/>
+        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
+        /// </summary>
+        /// <example>dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
         /// The name of the project associated with the deployment at the time that the deployment was created<br/>
         /// Example: my-project
         /// </summary>
@@ -26,15 +35,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
-
-        /// <summary>
-        /// A string holding the unique ID of the deployment<br/>
-        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
-        /// </summary>
-        /// <example>dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
 
         /// <summary>
         /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state<br/>
@@ -88,6 +88,10 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetRollingReleaseResponseRollingReleaseCanaryDeployment" /> class.
         /// </summary>
+        /// <param name="id">
+        /// A string holding the unique ID of the deployment<br/>
+        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
+        /// </param>
         /// <param name="name">
         /// The name of the project associated with the deployment at the time that the deployment was created<br/>
         /// Example: my-project
@@ -95,10 +99,6 @@ namespace Vercel
         /// <param name="createdAt">
         /// A number containing the date when the deployment was created in milliseconds<br/>
         /// Example: 1540257589405L
-        /// </param>
-        /// <param name="id">
-        /// A string holding the unique ID of the deployment<br/>
-        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
         /// </param>
         /// <param name="readyState">
         /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state<br/>
@@ -121,18 +121,18 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetRollingReleaseResponseRollingReleaseCanaryDeployment(
+            string id,
             string name,
             double createdAt,
-            string id,
             global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentReadyState readyState,
             string url,
             double? readyStateAt,
             global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentSource? source,
             global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentTarget? target)
         {
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.CreatedAt = createdAt;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ReadyState = readyState;
             this.ReadyStateAt = readyStateAt;
             this.Source = source;
