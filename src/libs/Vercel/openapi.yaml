@@ -143761,6 +143761,21 @@
                 ],
                 "type": "object",
                 "description": "Metadata for {@link principalId}."
+              },
+              {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "system"
+                    ]
+                  }
+                },
+                "required": [
+                  "type"
+                ],
+                "type": "object",
+                "description": "Metadata for {@link principalId}."
               }
             ]
           },
@@ -143818,6 +143833,21 @@
                   "required": [
                     "clientId",
                     "name",
+                    "type"
+                  ],
+                  "type": "object",
+                  "description": "Metadata for {@link viaIds}."
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "system"
+                      ]
+                    }
+                  },
+                  "required": [
                     "type"
                   ],
                   "type": "object",
