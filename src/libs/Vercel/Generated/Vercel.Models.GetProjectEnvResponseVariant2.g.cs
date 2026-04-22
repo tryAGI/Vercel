@@ -38,26 +38,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        public double? UpdatedAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         public string? Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        public double? CreatedAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
         public string? CreatedBy { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        public double? UpdatedAt { get; set; }
 
         /// <summary>
         /// 
@@ -148,10 +148,10 @@ namespace Vercel
         /// <param name="key"></param>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigTokenId"></param>
-        /// <param name="createdAt"></param>
-        /// <param name="updatedAt"></param>
         /// <param name="id"></param>
+        /// <param name="createdAt"></param>
         /// <param name="createdBy"></param>
+        /// <param name="updatedAt"></param>
         /// <param name="target"></param>
         /// <param name="gitBranch"></param>
         /// <param name="updatedBy"></param>
@@ -178,10 +178,10 @@ namespace Vercel
             string key,
             string? edgeConfigId,
             string? edgeConfigTokenId,
-            double? createdAt,
-            double? updatedAt,
             string? id,
+            double? createdAt,
             string? createdBy,
+            double? updatedAt,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>, global::Vercel.GetProjectEnvResponseVariant2Target?>? target,
             string? gitBranch,
             string? updatedBy,
@@ -198,10 +198,10 @@ namespace Vercel
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.EdgeConfigId = edgeConfigId;
             this.EdgeConfigTokenId = edgeConfigTokenId;
-            this.CreatedAt = createdAt;
-            this.UpdatedAt = updatedAt;
             this.Id = id;
+            this.CreatedAt = createdAt;
             this.CreatedBy = createdBy;
+            this.UpdatedAt = updatedAt;
             this.Target = target;
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.GitBranch = gitBranch;

@@ -11655,7 +11655,8 @@
                                 "node",
                                 "go",
                                 "services",
-                                "mastra"
+                                "mastra",
+                                null
                               ]
                             },
                             "commandForIgnoringBuildStep": {
@@ -12131,7 +12132,8 @@
                                           307,
                                           301,
                                           302,
-                                          308
+                                          308,
+                                          null
                                         ]
                                       },
                                       "gitBranch": {
@@ -13089,7 +13091,8 @@
                           "type": "string",
                           "enum": [
                             "staging",
-                            "production"
+                            "production",
+                            null
                           ],
                           "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
                           "example": null
@@ -14480,7 +14483,8 @@
                                       "enum": [
                                         "enhanced",
                                         "turbo",
-                                        "standard"
+                                        "standard",
+                                        null
                                       ],
                                       "description": "Machine type that was used for the build."
                                     }
@@ -14966,7 +14970,8 @@
                                           307,
                                           301,
                                           302,
-                                          308
+                                          308,
+                                          null
                                         ]
                                       },
                                       "gitBranch": {
@@ -15924,7 +15929,8 @@
                           "type": "string",
                           "enum": [
                             "staging",
-                            "production"
+                            "production",
+                            null
                           ],
                           "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
                           "example": null
@@ -16295,7 +16301,8 @@
                             "node",
                             "go",
                             "services",
-                            "mastra"
+                            "mastra",
+                            null
                           ]
                         },
                         "commandForIgnoringBuildStep": {
@@ -16771,7 +16778,8 @@
                                       307,
                                       301,
                                       302,
-                                      308
+                                      308,
+                                      null
                                     ]
                                   },
                                   "gitBranch": {
@@ -17729,7 +17737,8 @@
                       "type": "string",
                       "enum": [
                         "staging",
-                        "production"
+                        "production",
+                        null
                       ],
                       "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
                       "example": null
@@ -19120,7 +19129,8 @@
                                   "enum": [
                                     "enhanced",
                                     "turbo",
-                                    "standard"
+                                    "standard",
+                                    null
                                   ],
                                   "description": "Machine type that was used for the build."
                                 }
@@ -20219,7 +20229,8 @@
                             "node",
                             "go",
                             "services",
-                            "mastra"
+                            "mastra",
+                            null
                           ]
                         },
                         "commandForIgnoringBuildStep": {
@@ -20695,7 +20706,8 @@
                                       307,
                                       301,
                                       302,
-                                      308
+                                      308,
+                                      null
                                     ]
                                   },
                                   "gitBranch": {
@@ -21653,7 +21665,8 @@
                       "type": "string",
                       "enum": [
                         "staging",
-                        "production"
+                        "production",
+                        null
                       ],
                       "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
                       "example": null
@@ -23044,7 +23057,8 @@
                                   "enum": [
                                     "enhanced",
                                     "turbo",
-                                    "standard"
+                                    "standard",
+                                    null
                                   ],
                                   "description": "Machine type that was used for the build."
                                 }
@@ -24401,7 +24415,8 @@
                       "MX",
                       "SRV",
                       "TXT",
-                      "NS"
+                      "NS",
+                      null
                     ],
                     "type": "string",
                     "description": "The type of the DNS record",
@@ -28242,7 +28257,8 @@
                         "A",
                         "CNAME",
                         "http",
-                        "dns-01"
+                        "dns-01",
+                        null
                       ],
                       "description": "How we see the domain's configuration. - `CNAME`: Domain has a CNAME pointing to Vercel. - `A`: Domain's A record is resolving to Vercel. - `http`: Domain is resolving to Vercel but may be behind a Proxy. - `dns-01`: Domain is not resolving to Vercel but dns-01 challenge is enabled. - `null`: Domain is not resolving to Vercel."
                     },
@@ -29606,7 +29622,8 @@
                               "node",
                               "go",
                               "services",
-                              "mastra"
+                              "mastra",
+                              null
                             ]
                           },
                           "latestDeployment": {
@@ -29853,7 +29870,8 @@
                                     "node",
                                     "go",
                                     "services",
-                                    "mastra"
+                                    "mastra",
+                                    null
                                   ]
                                 },
                                 "latestDeployment": {
@@ -59075,7 +59093,8 @@
                                           307,
                                           301,
                                           302,
-                                          308
+                                          308,
+                                          null
                                         ]
                                       },
                                       "gitBranch": {
@@ -59240,7 +59259,8 @@
                               "axum",
                               "actix-web",
                               "go",
-                              "mastra"
+                              "mastra",
+                              null
                             ]
                           },
                           "gitForkProtection": {
@@ -60343,7 +60363,8 @@
                             "type": "boolean",
                             "enum": [
                               false,
-                              true
+                              true,
+                              null
                             ]
                           },
                           "resourceConfig": {
@@ -60720,7 +60741,8 @@
                                   "preview",
                                   "all",
                                   "prod_deployment_urls_and_all_previews",
-                                  "all_except_custom_domains"
+                                  "all_except_custom_domains",
+                                  null
                                 ]
                               },
                               "april2026SecurityIncidentMigrationAppliedFrom": {
@@ -60730,7 +60752,8 @@
                                   "preview",
                                   "all",
                                   "prod_deployment_urls_and_all_previews",
-                                  "all_except_custom_domains"
+                                  "all_except_custom_domains",
+                                  null
                                 ]
                               }
                             },
@@ -61094,7 +61117,8 @@
                             "type": "boolean",
                             "enum": [
                               false,
-                              true
+                              true,
+                              null
                             ]
                           },
                           "enableProductionFeedback": {
@@ -61102,7 +61126,8 @@
                             "type": "boolean",
                             "enum": [
                               false,
-                              true
+                              true,
+                              null
                             ]
                           },
                           "permissions": {
@@ -70582,7 +70607,8 @@
                                     "A",
                                     "CNAME",
                                     "http",
-                                    "dns-01"
+                                    "dns-01",
+                                    null
                                   ]
                                 },
                                 "configuredChangedAt": {
@@ -70773,7 +70799,8 @@
                                     301,
                                     302,
                                     307,
-                                    308
+                                    308,
+                                    null
                                   ]
                                 },
                                 "target": {
@@ -71448,7 +71475,8 @@
                               "actix-web",
                               "node",
                               "go",
-                              "mastra"
+                              "mastra",
+                              null
                             ]
                           },
                           "gitForkProtection": {
@@ -72140,7 +72168,8 @@
                             "type": "boolean",
                             "enum": [
                               false,
-                              true
+                              true,
+                              null
                             ]
                           },
                           "resourceConfig": {
@@ -72376,7 +72405,8 @@
                                   "preview",
                                   "all",
                                   "prod_deployment_urls_and_all_previews",
-                                  "all_except_custom_domains"
+                                  "all_except_custom_domains",
+                                  null
                                 ]
                               },
                               "april2026SecurityIncidentMigrationAppliedFrom": {
@@ -72386,7 +72416,8 @@
                                   "preview",
                                   "all",
                                   "prod_deployment_urls_and_all_previews",
-                                  "all_except_custom_domains"
+                                  "all_except_custom_domains",
+                                  null
                                 ]
                               }
                             },
@@ -74121,7 +74152,8 @@
                                         "A",
                                         "CNAME",
                                         "http",
-                                        "dns-01"
+                                        "dns-01",
+                                        null
                                       ]
                                     },
                                     "configuredChangedAt": {
@@ -74312,7 +74344,8 @@
                                         301,
                                         302,
                                         307,
-                                        308
+                                        308,
+                                        null
                                       ]
                                     },
                                     "target": {
@@ -74987,7 +75020,8 @@
                                   "actix-web",
                                   "node",
                                   "go",
-                                  "mastra"
+                                  "mastra",
+                                  null
                                 ]
                               },
                               "gitForkProtection": {
@@ -75679,7 +75713,8 @@
                                 "type": "boolean",
                                 "enum": [
                                   false,
-                                  true
+                                  true,
+                                  null
                                 ]
                               },
                               "resourceConfig": {
@@ -75915,7 +75950,8 @@
                                       "preview",
                                       "all",
                                       "prod_deployment_urls_and_all_previews",
-                                      "all_except_custom_domains"
+                                      "all_except_custom_domains",
+                                      null
                                     ]
                                   },
                                   "april2026SecurityIncidentMigrationAppliedFrom": {
@@ -75925,7 +75961,8 @@
                                       "preview",
                                       "all",
                                       "prod_deployment_urls_and_all_previews",
-                                      "all_except_custom_domains"
+                                      "all_except_custom_domains",
+                                      null
                                     ]
                                   }
                                 },
@@ -78538,7 +78575,8 @@
                                               301,
                                               302,
                                               307,
-                                              308
+                                              308,
+                                              null
                                             ]
                                           },
                                           "gitBranch": {
@@ -78703,7 +78741,8 @@
                                   "actix-web",
                                   "node",
                                   "go",
-                                  "mastra"
+                                  "mastra",
+                                  null
                                 ]
                               },
                               "gitForkProtection": {
@@ -79636,7 +79675,8 @@
                                 "type": "boolean",
                                 "enum": [
                                   false,
-                                  true
+                                  true,
+                                  null
                                 ]
                               },
                               "resourceConfig": {
@@ -80013,7 +80053,8 @@
                                       "preview",
                                       "all",
                                       "prod_deployment_urls_and_all_previews",
-                                      "all_except_custom_domains"
+                                      "all_except_custom_domains",
+                                      null
                                     ]
                                   },
                                   "april2026SecurityIncidentMigrationAppliedFrom": {
@@ -80023,7 +80064,8 @@
                                       "preview",
                                       "all",
                                       "prod_deployment_urls_and_all_previews",
-                                      "all_except_custom_domains"
+                                      "all_except_custom_domains",
+                                      null
                                     ]
                                   }
                                 },
@@ -80217,7 +80259,8 @@
                                 "type": "boolean",
                                 "enum": [
                                   false,
-                                  true
+                                  true,
+                                  null
                                 ]
                               },
                               "enableProductionFeedback": {
@@ -80225,7 +80268,8 @@
                                 "type": "boolean",
                                 "enum": [
                                   false,
-                                  true
+                                  true,
+                                  null
                                 ]
                               },
                               "permissions": {
@@ -84410,7 +84454,8 @@
                                     301,
                                     302,
                                     307,
-                                    308
+                                    308,
+                                    null
                                   ]
                                 },
                                 "gitBranch": {
@@ -84575,7 +84620,8 @@
                         "actix-web",
                         "node",
                         "go",
-                        "mastra"
+                        "mastra",
+                        null
                       ]
                     },
                     "gitForkProtection": {
@@ -85508,7 +85554,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "resourceConfig": {
@@ -85885,7 +85932,8 @@
                             "preview",
                             "all",
                             "prod_deployment_urls_and_all_previews",
-                            "all_except_custom_domains"
+                            "all_except_custom_domains",
+                            null
                           ]
                         },
                         "april2026SecurityIncidentMigrationAppliedFrom": {
@@ -85895,7 +85943,8 @@
                             "preview",
                             "all",
                             "prod_deployment_urls_and_all_previews",
-                            "all_except_custom_domains"
+                            "all_except_custom_domains",
+                            null
                           ]
                         }
                       },
@@ -86089,7 +86138,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "enableProductionFeedback": {
@@ -86097,7 +86147,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "permissions": {
@@ -90515,7 +90566,8 @@
                                     301,
                                     302,
                                     307,
-                                    308
+                                    308,
+                                    null
                                   ]
                                 },
                                 "gitBranch": {
@@ -90680,7 +90732,8 @@
                         "actix-web",
                         "node",
                         "go",
-                        "mastra"
+                        "mastra",
+                        null
                       ]
                     },
                     "gitForkProtection": {
@@ -91613,7 +91666,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "resourceConfig": {
@@ -91990,7 +92044,8 @@
                             "preview",
                             "all",
                             "prod_deployment_urls_and_all_previews",
-                            "all_except_custom_domains"
+                            "all_except_custom_domains",
+                            null
                           ]
                         },
                         "april2026SecurityIncidentMigrationAppliedFrom": {
@@ -92000,7 +92055,8 @@
                             "preview",
                             "all",
                             "prod_deployment_urls_and_all_previews",
-                            "all_except_custom_domains"
+                            "all_except_custom_domains",
+                            null
                           ]
                         }
                       },
@@ -92194,7 +92250,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "enableProductionFeedback": {
@@ -92202,7 +92259,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "permissions": {
@@ -96201,7 +96259,8 @@
                                     301,
                                     302,
                                     307,
-                                    308
+                                    308,
+                                    null
                                   ]
                                 },
                                 "gitBranch": {
@@ -96366,7 +96425,8 @@
                         "actix-web",
                         "node",
                         "go",
-                        "mastra"
+                        "mastra",
+                        null
                       ]
                     },
                     "gitForkProtection": {
@@ -97299,7 +97359,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "resourceConfig": {
@@ -97676,7 +97737,8 @@
                             "preview",
                             "all",
                             "prod_deployment_urls_and_all_previews",
-                            "all_except_custom_domains"
+                            "all_except_custom_domains",
+                            null
                           ]
                         },
                         "april2026SecurityIncidentMigrationAppliedFrom": {
@@ -97686,7 +97748,8 @@
                             "preview",
                             "all",
                             "prod_deployment_urls_and_all_previews",
-                            "all_except_custom_domains"
+                            "all_except_custom_domains",
+                            null
                           ]
                         }
                       },
@@ -97880,7 +97943,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "enableProductionFeedback": {
@@ -97888,7 +97952,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "permissions": {
@@ -102233,7 +102298,8 @@
                               301,
                               302,
                               307,
-                              308
+                              308,
+                              null
                             ]
                           },
                           "gitBranch": {
@@ -102470,21 +102536,21 @@
                             "type": "string",
                             "description": "Optional description of the environment's purpose"
                           },
-                          "createdAt": {
-                            "type": "number",
-                            "description": "Timestamp when the environment was created"
-                          },
-                          "updatedAt": {
-                            "type": "number",
-                            "description": "Timestamp when the environment was last updated"
-                          },
                           "id": {
                             "type": "string",
                             "description": "Unique identifier for the custom environment (format: env_*)"
                           },
+                          "createdAt": {
+                            "type": "number",
+                            "description": "Timestamp when the environment was created"
+                          },
                           "slug": {
                             "type": "string",
                             "description": "URL-friendly name of the environment"
+                          },
+                          "updatedAt": {
+                            "type": "number",
+                            "description": "Timestamp when the environment was last updated"
                           },
                           "domains": {
                             "items": {
@@ -102509,7 +102575,8 @@
                                     301,
                                     302,
                                     307,
-                                    308
+                                    308,
+                                    null
                                   ]
                                 },
                                 "gitBranch": {
@@ -102766,7 +102833,8 @@
                               301,
                               302,
                               307,
-                              308
+                              308,
+                              null
                             ]
                           },
                           "gitBranch": {
@@ -103001,7 +103069,8 @@
                               301,
                               302,
                               307,
-                              308
+                              308,
+                              null
                             ]
                           },
                           "gitBranch": {
@@ -103284,7 +103353,8 @@
                               301,
                               302,
                               307,
-                              308
+                              308,
+                              null
                             ]
                           },
                           "gitBranch": {
@@ -103491,7 +103561,8 @@
                                   301,
                                   302,
                                   307,
-                                  308
+                                  308,
+                                  null
                                 ]
                               },
                               "gitBranch": {
@@ -103608,7 +103679,8 @@
                                   301,
                                   302,
                                   307,
-                                  308
+                                  308,
+                                  null
                                 ]
                               },
                               "gitBranch": {
@@ -103907,7 +103979,8 @@
                         301,
                         302,
                         307,
-                        308
+                        308,
+                        null
                       ]
                     },
                     "gitBranch": {
@@ -104063,7 +104136,8 @@
                         301,
                         302,
                         307,
-                        308
+                        308,
+                        null
                       ]
                     },
                     "gitBranch": {
@@ -104358,7 +104432,8 @@
                         301,
                         302,
                         307,
-                        308
+                        308,
+                        null
                       ]
                     },
                     "gitBranch": {
@@ -104561,7 +104636,8 @@
                         301,
                         302,
                         307,
-                        308
+                        308,
+                        null
                       ]
                     },
                     "gitBranch": {
@@ -104771,7 +104847,8 @@
                         301,
                         302,
                         307,
-                        308
+                        308,
+                        null
                       ]
                     },
                     "gitBranch": {
@@ -107664,18 +107741,18 @@
                           "nullable": true,
                           "type": "string"
                         },
-                        "createdAt": {
-                          "type": "number"
-                        },
-                        "updatedAt": {
-                          "type": "number"
-                        },
                         "id": {
                           "type": "string"
+                        },
+                        "createdAt": {
+                          "type": "number"
                         },
                         "createdBy": {
                           "nullable": true,
                           "type": "string"
+                        },
+                        "updatedAt": {
+                          "type": "number"
                         },
                         "target": {
                           "oneOf": [
@@ -108090,18 +108167,18 @@
                           "nullable": true,
                           "type": "string"
                         },
-                        "createdAt": {
-                          "type": "number"
-                        },
-                        "updatedAt": {
-                          "type": "number"
-                        },
                         "id": {
                           "type": "string"
+                        },
+                        "createdAt": {
+                          "type": "number"
                         },
                         "createdBy": {
                           "nullable": true,
                           "type": "string"
+                        },
+                        "updatedAt": {
+                          "type": "number"
                         },
                         "target": {
                           "oneOf": [
@@ -108610,18 +108687,18 @@
                             "nullable": true,
                             "type": "string"
                           },
-                          "createdAt": {
-                            "type": "number"
-                          },
-                          "updatedAt": {
-                            "type": "number"
-                          },
                           "id": {
                             "type": "string"
+                          },
+                          "createdAt": {
+                            "type": "number"
                           },
                           "createdBy": {
                             "nullable": true,
                             "type": "string"
+                          },
+                          "updatedAt": {
+                            "type": "number"
                           },
                           "target": {
                             "oneOf": [
@@ -109052,18 +109129,18 @@
                           "nullable": true,
                           "type": "string"
                         },
-                        "createdAt": {
-                          "type": "number"
-                        },
-                        "updatedAt": {
-                          "type": "number"
-                        },
                         "id": {
                           "type": "string"
+                        },
+                        "createdAt": {
+                          "type": "number"
                         },
                         "createdBy": {
                           "nullable": true,
                           "type": "string"
+                        },
+                        "updatedAt": {
+                          "type": "number"
                         },
                         "target": {
                           "oneOf": [
@@ -109486,18 +109563,18 @@
                           "nullable": true,
                           "type": "string"
                         },
-                        "createdAt": {
-                          "type": "number"
-                        },
-                        "updatedAt": {
-                          "type": "number"
-                        },
                         "id": {
                           "type": "string"
+                        },
+                        "createdAt": {
+                          "type": "number"
                         },
                         "createdBy": {
                           "nullable": true,
                           "type": "string"
+                        },
+                        "updatedAt": {
+                          "type": "number"
                         },
                         "target": {
                           "oneOf": [
@@ -110022,18 +110099,18 @@
                       "nullable": true,
                       "type": "string"
                     },
-                    "createdAt": {
-                      "type": "number"
-                    },
-                    "updatedAt": {
-                      "type": "number"
-                    },
                     "id": {
                       "type": "string"
+                    },
+                    "createdAt": {
+                      "type": "number"
                     },
                     "createdBy": {
                       "nullable": true,
                       "type": "string"
+                    },
+                    "updatedAt": {
+                      "type": "number"
                     },
                     "target": {
                       "oneOf": [
@@ -111255,13 +111332,19 @@
                           "nullable": true,
                           "type": "string",
                           "enum": [
-                            "PAUSED"
+                            "PAUSED",
+                            null
                           ],
                           "description": "When set to `PAUSED`, the rollout is frozen at the current percentage until continued."
                         },
                         "currentDeployment": {
                           "nullable": true,
                           "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -111271,11 +111354,6 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
                             },
                             "readyState": {
                               "type": "string",
@@ -111313,7 +111391,8 @@
                               "type": "string",
                               "enum": [
                                 "staging",
-                                "production"
+                                "production",
+                                null
                               ],
                               "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
                               "example": null
@@ -111347,6 +111426,11 @@
                         "canaryDeployment": {
                           "nullable": true,
                           "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -111356,11 +111440,6 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
                             },
                             "readyState": {
                               "type": "string",
@@ -111398,7 +111477,8 @@
                               "type": "string",
                               "enum": [
                                 "staging",
-                                "production"
+                                "production",
+                                null
                               ],
                               "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
                               "example": null
@@ -111827,13 +111907,19 @@
                           "nullable": true,
                           "type": "string",
                           "enum": [
-                            "PAUSED"
+                            "PAUSED",
+                            null
                           ],
                           "description": "When set to `PAUSED`, the rollout is frozen at the current percentage until continued."
                         },
                         "currentDeployment": {
                           "nullable": true,
                           "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -111843,11 +111929,6 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
                             },
                             "readyState": {
                               "type": "string",
@@ -111885,7 +111966,8 @@
                               "type": "string",
                               "enum": [
                                 "staging",
-                                "production"
+                                "production",
+                                null
                               ],
                               "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
                               "example": null
@@ -111919,6 +112001,11 @@
                         "canaryDeployment": {
                           "nullable": true,
                           "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -111928,11 +112015,6 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
                             },
                             "readyState": {
                               "type": "string",
@@ -111970,7 +112052,8 @@
                               "type": "string",
                               "enum": [
                                 "staging",
-                                "production"
+                                "production",
+                                null
                               ],
                               "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
                               "example": null
@@ -112410,13 +112493,19 @@
                           "nullable": true,
                           "type": "string",
                           "enum": [
-                            "PAUSED"
+                            "PAUSED",
+                            null
                           ],
                           "description": "When set to `PAUSED`, the rollout is frozen at the current percentage until continued."
                         },
                         "currentDeployment": {
                           "nullable": true,
                           "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -112426,11 +112515,6 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
                             },
                             "readyState": {
                               "type": "string",
@@ -112468,7 +112552,8 @@
                               "type": "string",
                               "enum": [
                                 "staging",
-                                "production"
+                                "production",
+                                null
                               ],
                               "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
                               "example": null
@@ -112502,6 +112587,11 @@
                         "canaryDeployment": {
                           "nullable": true,
                           "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -112511,11 +112601,6 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
                             },
                             "readyState": {
                               "type": "string",
@@ -112553,7 +112638,8 @@
                               "type": "string",
                               "enum": [
                                 "staging",
-                                "production"
+                                "production",
+                                null
                               ],
                               "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
                               "example": null
@@ -114484,7 +114570,8 @@
                                     301,
                                     302,
                                     307,
-                                    308
+                                    308,
+                                    null
                                   ]
                                 },
                                 "gitBranch": {
@@ -114649,7 +114736,8 @@
                         "actix-web",
                         "node",
                         "go",
-                        "mastra"
+                        "mastra",
+                        null
                       ]
                     },
                     "gitForkProtection": {
@@ -115582,7 +115670,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "resourceConfig": {
@@ -115959,7 +116048,8 @@
                             "preview",
                             "all",
                             "prod_deployment_urls_and_all_previews",
-                            "all_except_custom_domains"
+                            "all_except_custom_domains",
+                            null
                           ]
                         },
                         "april2026SecurityIncidentMigrationAppliedFrom": {
@@ -115969,7 +116059,8 @@
                             "preview",
                             "all",
                             "prod_deployment_urls_and_all_previews",
-                            "all_except_custom_domains"
+                            "all_except_custom_domains",
+                            null
                           ]
                         }
                       },
@@ -116163,7 +116254,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "enableProductionFeedback": {
@@ -116171,7 +116263,8 @@
                       "type": "boolean",
                       "enum": [
                         false,
-                        true
+                        true,
+                        null
                       ]
                     },
                     "permissions": {
@@ -125362,7 +125455,8 @@
                                                   "deny",
                                                   "log",
                                                   "challenge",
-                                                  "rate_limit"
+                                                  "rate_limit",
+                                                  null
                                                 ]
                                               }
                                             },
@@ -125403,7 +125497,8 @@
                                             "type": "boolean",
                                             "enum": [
                                               false,
-                                              true
+                                              true,
+                                              null
                                             ]
                                           },
                                           "logHeaders": {
@@ -125615,7 +125710,8 @@
                                                   "deny",
                                                   "log",
                                                   "challenge",
-                                                  "rate_limit"
+                                                  "rate_limit",
+                                                  null
                                                 ]
                                               }
                                             },
@@ -125656,7 +125752,8 @@
                                             "type": "boolean",
                                             "enum": [
                                               false,
-                                              true
+                                              true,
+                                              null
                                             ]
                                           },
                                           "logHeaders": {
@@ -128117,7 +128214,8 @@
                                               "deny",
                                               "log",
                                               "challenge",
-                                              "rate_limit"
+                                              "rate_limit",
+                                              null
                                             ]
                                           }
                                         },
@@ -128158,7 +128256,8 @@
                                         "type": "boolean",
                                         "enum": [
                                           false,
-                                          true
+                                          true,
+                                          null
                                         ]
                                       },
                                       "logHeaders": {
@@ -128370,7 +128469,8 @@
                                               "deny",
                                               "log",
                                               "challenge",
-                                              "rate_limit"
+                                              "rate_limit",
+                                              null
                                             ]
                                           }
                                         },
@@ -128411,7 +128511,8 @@
                                         "type": "boolean",
                                         "enum": [
                                           false,
-                                          true
+                                          true,
+                                          null
                                         ]
                                       },
                                       "logHeaders": {
@@ -129734,7 +129835,8 @@
                                   "node",
                                   "go",
                                   "services",
-                                  "mastra"
+                                  "mastra",
+                                  null
                                 ]
                               },
                               "latestDeployment": {
@@ -129883,7 +129985,8 @@
                             "limits-exceeded-suspended-store-count",
                             "initializing",
                             "onboarding",
-                            "uninstalled"
+                            "uninstalled",
+                            null
                           ]
                         },
                         "ownership": {
@@ -130028,7 +130131,8 @@
                             "uninstalled",
                             "ready",
                             "pending",
-                            "resumed"
+                            "resumed",
+                            null
                           ]
                         },
                         "directPartnerConsoleUrl": {
@@ -137434,7 +137538,8 @@
                                     "node",
                                     "go",
                                     "services",
-                                    "mastra"
+                                    "mastra",
+                                    null
                                   ]
                                 },
                                 "latestDeployment": {
@@ -138830,7 +138935,8 @@
                               301,
                               302,
                               307,
-                              308
+                              308,
+                              null
                             ],
                             "description": "Status code to be used on redirect"
                           },
@@ -139339,7 +139445,8 @@
                         301,
                         302,
                         307,
-                        308
+                        308,
+                        null
                       ],
                       "description": "Status code to be used on redirect"
                     },
@@ -140729,7 +140836,8 @@
                             "type": "string",
                             "enum": [
                               "production",
-                              "staging"
+                              "staging",
+                              null
                             ],
                             "description": "On which environment has the deployment been deployed to.",
                             "example": "production"
@@ -140872,7 +140980,8 @@
                             "type": "boolean",
                             "enum": [
                               false,
-                              true
+                              true,
+                              null
                             ],
                             "description": "Deployment can be used for instant rollback"
                           },
@@ -140977,7 +141086,8 @@
                                   "node",
                                   "go",
                                   "services",
-                                  "mastra"
+                                  "mastra",
+                                  null
                                 ]
                               },
                               "gitForkProtection": {
@@ -141036,7 +141146,8 @@
                                 "type": "boolean",
                                 "enum": [
                                   false,
-                                  true
+                                  true,
+                                  null
                                 ]
                               },
                               "rootDirectory": {
@@ -143991,7 +144102,8 @@
                       "ADMIN",
                       "PROJECT_DEVELOPER",
                       "PROJECT_VIEWER",
-                      "PROJECT_GUEST"
+                      "PROJECT_GUEST",
+                      null
                     ]
                   },
                   "previous_role": {
@@ -150047,7 +150159,8 @@
                           "github-limited",
                           "github-custom-host",
                           "gitlab",
-                          "bitbucket"
+                          "bitbucket",
+                          null
                         ]
                       },
                       "preferredScopesAndGitNamespaces": {
@@ -150366,7 +150479,8 @@
                               "type": "string",
                               "enum": [
                                 "list",
-                                "cards"
+                                "cards",
+                                null
                               ]
                             },
                             "favoritesViewPreference": {
@@ -150374,7 +150488,8 @@
                               "type": "string",
                               "enum": [
                                 "open",
-                                "closed"
+                                "closed",
+                                null
                               ]
                             },
                             "recentsViewPreference": {
@@ -150382,7 +150497,8 @@
                               "type": "string",
                               "enum": [
                                 "open",
-                                "closed"
+                                "closed",
+                                null
                               ]
                             }
                           },
@@ -154874,7 +154990,8 @@
                         "type": "boolean",
                         "enum": [
                           false,
-                          true
+                          true,
+                          null
                         ]
                       }
                     },
@@ -156401,7 +156518,8 @@
                               "all",
                               "preview",
                               "prod_deployment_urls_and_all_previews",
-                              "all_except_custom_domains"
+                              "all_except_custom_domains",
+                              null
                             ]
                           },
                           "april2026SecurityIncidentMigrationAppliedFrom": {
@@ -156411,7 +156529,8 @@
                               "all",
                               "preview",
                               "prod_deployment_urls_and_all_previews",
-                              "all_except_custom_domains"
+                              "all_except_custom_domains",
+                              null
                             ]
                           }
                         },
@@ -156452,7 +156571,8 @@
                               "all",
                               "preview",
                               "prod_deployment_urls_and_all_previews",
-                              "all_except_custom_domains"
+                              "all_except_custom_domains",
+                              null
                             ]
                           },
                           "april2026SecurityIncidentMigrationAppliedFrom": {
@@ -156462,7 +156582,8 @@
                               "all",
                               "preview",
                               "prod_deployment_urls_and_all_previews",
-                              "all_except_custom_domains"
+                              "all_except_custom_domains",
+                              null
                             ]
                           }
                         },
@@ -156618,7 +156739,8 @@
                       "all",
                       "preview",
                       "prod_deployment_urls_and_all_previews",
-                      "all_except_custom_domains"
+                      "all_except_custom_domains",
+                      null
                     ]
                   },
                   "oldTrustedIps": {
@@ -156629,7 +156751,8 @@
                       "all",
                       "preview",
                       "prod_deployment_urls_and_all_previews",
-                      "all_except_custom_domains"
+                      "all_except_custom_domains",
+                      null
                     ]
                   },
                   "addedAddresses": {
@@ -158220,7 +158343,8 @@
                     "type": "boolean",
                     "enum": [
                       false,
-                      true
+                      true,
+                      null
                     ]
                   },
                   "environment": {
@@ -162459,7 +162583,8 @@
               "off",
               "on-force",
               "off-force",
-              "default-force"
+              "default-force",
+              null
             ],
             "description": "Whether toolbar is enabled on preview deployments"
           },
@@ -162472,7 +162597,8 @@
               "off",
               "on-force",
               "off-force",
-              "default-force"
+              "default-force",
+              null
             ],
             "description": "Whether toolbar is enabled on production deployments"
           },
@@ -162482,7 +162608,8 @@
             "enum": [
               "default",
               "on",
-              "off"
+              "off",
+              null
             ],
             "description": "Sensitive environment variable policy for this team"
           },
@@ -162491,7 +162618,8 @@
             "type": "boolean",
             "enum": [
               false,
-              true
+              true,
+              null
             ],
             "description": "Indicates if IP addresses should be accessible in observability (o11y) tooling"
           },
@@ -162500,7 +162628,8 @@
             "type": "boolean",
             "enum": [
               false,
-              true
+              true,
+              null
             ],
             "description": "Indicates if IP addresses should be accessible in log drains"
           },
@@ -163633,7 +163762,8 @@
                   "type": "string",
                   "enum": [
                     "list",
-                    "cards"
+                    "cards",
+                    null
                   ]
                 },
                 "favoritesViewPreference": {
@@ -163641,7 +163771,8 @@
                   "type": "string",
                   "enum": [
                     "open",
-                    "closed"
+                    "closed",
+                    null
                   ]
                 },
                 "recentsViewPreference": {
@@ -163649,7 +163780,8 @@
                   "type": "string",
                   "enum": [
                     "open",
-                    "closed"
+                    "closed",
+                    null
                   ]
                 }
               },
@@ -163693,7 +163825,8 @@
               "bitbucket",
               "github",
               "github-limited",
-              "github-custom-host"
+              "github-custom-host",
+              null
             ]
           },
           "preferredScopesAndGitNamespaces": {
