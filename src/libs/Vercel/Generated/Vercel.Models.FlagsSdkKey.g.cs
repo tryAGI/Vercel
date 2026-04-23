@@ -71,6 +71,13 @@ namespace Vercel
         public double? DeletedAt { get; set; }
 
         /// <summary>
+        /// Partially-masked representation of the SDK key value, safe to display in UIs. The value is the `vf_&lt;type&gt;_` prefix followed by the first 3 characters of the secret portion and a fixed 8-character `*` mask (e.g. `vf_server_abc********`).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("partialKeyValue")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string PartialKeyValue { get; set; }
+
+        /// <summary>
         /// Cleartext value of the SDK key
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyValue")]
@@ -104,6 +111,9 @@ namespace Vercel
         /// <param name="createdBy"></param>
         /// <param name="createdAt"></param>
         /// <param name="updatedAt"></param>
+        /// <param name="partialKeyValue">
+        /// Partially-masked representation of the SDK key value, safe to display in UIs. The value is the `vf_&lt;type&gt;_` prefix followed by the first 3 characters of the secret portion and a fixed 8-character `*` mask (e.g. `vf_server_abc********`).
+        /// </param>
         /// <param name="label"></param>
         /// <param name="deletedAt"></param>
         /// <param name="keyValue">
@@ -126,6 +136,7 @@ namespace Vercel
             string createdBy,
             double createdAt,
             double updatedAt,
+            string partialKeyValue,
             string? label,
             double? deletedAt,
             string? keyValue,
@@ -141,6 +152,7 @@ namespace Vercel
             this.UpdatedAt = updatedAt;
             this.Label = label;
             this.DeletedAt = deletedAt;
+            this.PartialKeyValue = partialKeyValue ?? throw new global::System.ArgumentNullException(nameof(partialKeyValue));
             this.KeyValue = keyValue;
             this.TokenValue = tokenValue;
             this.ConnectionString = connectionString;

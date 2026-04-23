@@ -9,17 +9,11 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant239
     {
         /// <summary>
-        /// Represents a budget for tracking and notifying teams on their spending.
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("budget")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UserEventPayloadVariant239Budget Budget { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("webhookUrl")]
-        public string? WebhookUrl { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,19 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant239" /> class.
         /// </summary>
-        /// <param name="budget">
-        /// Represents a budget for tracking and notifying teams on their spending.
-        /// </param>
-        /// <param name="webhookUrl"></param>
+        /// <param name="budget"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant239(
-            global::Vercel.UserEventPayloadVariant239Budget budget,
-            string? webhookUrl)
+            global::Vercel.UserEventPayloadVariant239Budget budget)
         {
             this.Budget = budget ?? throw new global::System.ArgumentNullException(nameof(budget));
-            this.WebhookUrl = webhookUrl;
         }
 
         /// <summary>

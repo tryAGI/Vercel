@@ -16,13 +16,6 @@ namespace Vercel
         public required global::Vercel.UserEventPayloadVariant195Project Project { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectMembership")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant195ProjectMembership ProjectMembership { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -32,16 +25,13 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant195" /> class.
         /// </summary>
         /// <param name="project"></param>
-        /// <param name="projectMembership"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant195(
-            global::Vercel.UserEventPayloadVariant195Project project,
-            global::Vercel.UserEventPayloadVariant195ProjectMembership projectMembership)
+            global::Vercel.UserEventPayloadVariant195Project project)
         {
             this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.ProjectMembership = projectMembership ?? throw new global::System.ArgumentNullException(nameof(projectMembership));
         }
 
         /// <summary>

@@ -11,23 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitProvider")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitProvider { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitProviderGroupDescriptor")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitProviderGroupDescriptor { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitScope")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitScope { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasonCode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant223ReasonCodeJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant223ReasonCode? ReasonCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant223" /> class.
         /// </summary>
-        /// <param name="gitProvider"></param>
-        /// <param name="gitProviderGroupDescriptor"></param>
-        /// <param name="gitScope"></param>
+        /// <param name="projectId"></param>
+        /// <param name="reasonCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant223(
-            string gitProvider,
-            string gitProviderGroupDescriptor,
-            string gitScope)
+            string projectId,
+            global::Vercel.UserEventPayloadVariant223ReasonCode? reasonCode)
         {
-            this.GitProvider = gitProvider ?? throw new global::System.ArgumentNullException(nameof(gitProvider));
-            this.GitProviderGroupDescriptor = gitProviderGroupDescriptor ?? throw new global::System.ArgumentNullException(nameof(gitProviderGroupDescriptor));
-            this.GitScope = gitScope ?? throw new global::System.ArgumentNullException(nameof(gitScope));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ReasonCode = reasonCode;
         }
 
         /// <summary>

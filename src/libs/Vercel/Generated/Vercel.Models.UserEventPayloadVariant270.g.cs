@@ -11,15 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("enforced")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PublicId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        public required bool Enforced { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant270" /> class.
         /// </summary>
-        /// <param name="publicId"></param>
-        /// <param name="name"></param>
+        /// <param name="enforced"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant270(
-            string publicId,
-            string? name)
+            bool enforced)
         {
-            this.PublicId = publicId ?? throw new global::System.ArgumentNullException(nameof(publicId));
-            this.Name = name;
+            this.Enforced = enforced;
         }
 
         /// <summary>

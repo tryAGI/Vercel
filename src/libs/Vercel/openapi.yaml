@@ -40695,8 +40695,16 @@
                               "firewall-managed-ruleset-updated",
                               "flags-segment",
                               "flags-settings",
+                              "flag-created",
+                              "flag-updated",
+                              "flag-deleted",
+                              "flag-archived",
+                              "flag-unarchived",
                               "flags-explorer-subscription",
                               "flags-sdk-key",
+                              "flags-sdk-key-added",
+                              "flags-sdk-key-deleted",
+                              "flags-sdk-key-read",
                               "instant-rollback-created",
                               "integration-configuration-owner-changed",
                               "integration-configuration-scope-change-confirmed",
@@ -40731,6 +40739,7 @@
                               "page-integrity-config-updated",
                               "page-integrity-header-approved",
                               "page-integrity-resource-approved",
+                              "page-integrity-resource-deleted",
                               "page-integrity-resource-rejected",
                               "passkey-created",
                               "passkey-deleted",
@@ -143167,7 +143176,7 @@
         "properties": {
           "partialToken": {
             "type": "string",
-            "description": "A partially-masked representation of the token, safe to display in UIs. The format is the first 4 characters of the token followed by a fixed 8-character `*` mask (e.g. `550e8400-e29b-41d4-a716-446655440000` \u2192 `550e********`). The mask length is intentionally fixed (not proportional to the original token length) to avoid leaking the token length. Prefer this field for display/reference in UIs and logs. The full, plaintext token is only disclosed once at creation time via `POST /v1/edge-config/:edgeConfigId/token`; use `id` to reference a token in subsequent calls (e.g. when deleting)."
+            "description": "A partially-masked representation of the token, safe to display in UIs. The format is the first 3 characters of the token followed by a fixed 8-character `*` mask (e.g. `550e8400-e29b-41d4-a716-446655440000` \u2192 `550********`). The mask length is intentionally fixed (not proportional to the original token length) to avoid leaking the token length. Prefer this field for display/reference in UIs and logs. The full, plaintext token is only disclosed once at creation time via `POST /v1/edge-config/:edgeConfigId/token`; use `id` to reference a token in subsequent calls (e.g. when deleting)."
           },
           "label": {
             "type": "string"
@@ -143444,8 +143453,16 @@
               "firewall-managed-ruleset-updated",
               "flags-segment",
               "flags-settings",
+              "flag-created",
+              "flag-updated",
+              "flag-deleted",
+              "flag-archived",
+              "flag-unarchived",
               "flags-explorer-subscription",
               "flags-sdk-key",
+              "flags-sdk-key-added",
+              "flags-sdk-key-deleted",
+              "flags-sdk-key-read",
               "instant-rollback-created",
               "integration-configuration-owner-changed",
               "integration-configuration-scope-change-confirmed",
@@ -143480,6 +143497,7 @@
               "page-integrity-config-updated",
               "page-integrity-header-approved",
               "page-integrity-resource-approved",
+              "page-integrity-resource-deleted",
               "page-integrity-resource-rejected",
               "passkey-created",
               "passkey-deleted",
@@ -153666,6 +153684,52 @@
               },
               {
                 "properties": {
+                  "projectId": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "script"
+                    ]
+                  },
+                  "resourceUrl": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "projectId",
+                  "resourceUrl",
+                  "type"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "projectId": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "header"
+                    ]
+                  },
+                  "headerName": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "headerName",
+                  "projectId",
+                  "type"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
                   "oldName": {
                     "type": "string"
                   },
@@ -154130,10 +154194,10 @@
                   "action": {
                     "type": "string",
                     "enum": [
+                      "updated",
                       "enabled",
                       "disabled",
-                      "regenerated",
-                      "updated"
+                      "regenerated"
                     ]
                   },
                   "isEnvVar": {
@@ -161318,6 +161382,10 @@
           "deletedAt": {
             "type": "number"
           },
+          "partialKeyValue": {
+            "type": "string",
+            "description": "Partially-masked representation of the SDK key value, safe to display in UIs. The value is the `vf_<type>_` prefix followed by the first 3 characters of the secret portion and a fixed 8-character `*` mask (e.g. `vf_server_abc********`)."
+          },
           "keyValue": {
             "type": "string",
             "description": "Cleartext value of the SDK key"
@@ -161336,6 +161404,7 @@
           "createdBy",
           "environment",
           "hashKey",
+          "partialKeyValue",
           "projectId",
           "type",
           "updatedAt"

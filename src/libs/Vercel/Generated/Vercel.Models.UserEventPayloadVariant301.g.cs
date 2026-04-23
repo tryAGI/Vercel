@@ -11,15 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("chatId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("tier")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant301TierJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ChatId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("chatTitle")]
-        public string? ChatTitle { get; set; }
+        public required global::Vercel.UserEventPayloadVariant301Tier Tier { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +25,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant301" /> class.
         /// </summary>
-        /// <param name="chatId"></param>
-        /// <param name="chatTitle"></param>
+        /// <param name="tier"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant301(
-            string chatId,
-            string? chatTitle)
+            global::Vercel.UserEventPayloadVariant301Tier tier)
         {
-            this.ChatId = chatId ?? throw new global::System.ArgumentNullException(nameof(chatId));
-            this.ChatTitle = chatTitle;
+            this.Tier = tier;
         }
 
         /// <summary>

@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fileId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenTypes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string FileId { get; set; }
+        public required global::System.Collections.Generic.IList<string> TokenTypes { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant284" /> class.
         /// </summary>
-        /// <param name="fileId"></param>
+        /// <param name="tokenTypes"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant284(
-            string fileId)
+            global::System.Collections.Generic.IList<string> tokenTypes)
         {
-            this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
+            this.TokenTypes = tokenTypes ?? throw new global::System.ArgumentNullException(nameof(tokenTypes));
         }
 
         /// <summary>

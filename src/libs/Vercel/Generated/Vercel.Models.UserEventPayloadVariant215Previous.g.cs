@@ -11,8 +11,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("skewProtectionMaxAge")]
-        public double? SkewProtectionMaxAge { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiration")]
+        public string? Expiration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expirationProduction")]
+        public string? ExpirationProduction { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expirationCanceled")]
+        public string? ExpirationCanceled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expirationErrored")]
+        public string? ExpirationErrored { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +41,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant215Previous" /> class.
         /// </summary>
-        /// <param name="skewProtectionMaxAge"></param>
+        /// <param name="expiration"></param>
+        /// <param name="expirationProduction"></param>
+        /// <param name="expirationCanceled"></param>
+        /// <param name="expirationErrored"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant215Previous(
-            double? skewProtectionMaxAge)
+            string? expiration,
+            string? expirationProduction,
+            string? expirationCanceled,
+            string? expirationErrored)
         {
-            this.SkewProtectionMaxAge = skewProtectionMaxAge;
+            this.Expiration = expiration;
+            this.ExpirationProduction = expirationProduction;
+            this.ExpirationCanceled = expirationCanceled;
+            this.ExpirationErrored = expirationErrored;
         }
 
         /// <summary>

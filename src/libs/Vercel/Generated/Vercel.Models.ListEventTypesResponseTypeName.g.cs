@@ -615,11 +615,43 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        FlagArchived,
+        /// <summary>
+        /// 
+        /// </summary>
+        FlagCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        FlagDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        FlagUnarchived,
+        /// <summary>
+        /// 
+        /// </summary>
+        FlagUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         FlagsExplorerSubscription,
         /// <summary>
         /// 
         /// </summary>
         FlagsSdkKey,
+        /// <summary>
+        /// 
+        /// </summary>
+        FlagsSdkKeyAdded,
+        /// <summary>
+        /// 
+        /// </summary>
+        FlagsSdkKeyDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        FlagsSdkKeyRead,
         /// <summary>
         /// 
         /// </summary>
@@ -808,6 +840,10 @@ namespace Vercel
         /// 
         /// </summary>
         PageIntegrityResourceApproved,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityResourceDeleted,
         /// <summary>
         /// 
         /// </summary>
@@ -1941,8 +1977,16 @@ namespace Vercel
                 ListEventTypesResponseTypeName.FirewallManagedRulegroupUpdated => "firewall-managed-rulegroup-updated",
                 ListEventTypesResponseTypeName.FirewallManagedRulesetUpdated => "firewall-managed-ruleset-updated",
                 ListEventTypesResponseTypeName.Flag => "flag",
+                ListEventTypesResponseTypeName.FlagArchived => "flag-archived",
+                ListEventTypesResponseTypeName.FlagCreated => "flag-created",
+                ListEventTypesResponseTypeName.FlagDeleted => "flag-deleted",
+                ListEventTypesResponseTypeName.FlagUnarchived => "flag-unarchived",
+                ListEventTypesResponseTypeName.FlagUpdated => "flag-updated",
                 ListEventTypesResponseTypeName.FlagsExplorerSubscription => "flags-explorer-subscription",
                 ListEventTypesResponseTypeName.FlagsSdkKey => "flags-sdk-key",
+                ListEventTypesResponseTypeName.FlagsSdkKeyAdded => "flags-sdk-key-added",
+                ListEventTypesResponseTypeName.FlagsSdkKeyDeleted => "flags-sdk-key-deleted",
+                ListEventTypesResponseTypeName.FlagsSdkKeyRead => "flags-sdk-key-read",
                 ListEventTypesResponseTypeName.FlagsSegment => "flags-segment",
                 ListEventTypesResponseTypeName.FlagsSettings => "flags-settings",
                 ListEventTypesResponseTypeName.InstantRollbackCreated => "instant-rollback-created",
@@ -1990,6 +2034,7 @@ namespace Vercel
                 ListEventTypesResponseTypeName.PageIntegrityConfigUpdated => "page-integrity-config-updated",
                 ListEventTypesResponseTypeName.PageIntegrityHeaderApproved => "page-integrity-header-approved",
                 ListEventTypesResponseTypeName.PageIntegrityResourceApproved => "page-integrity-resource-approved",
+                ListEventTypesResponseTypeName.PageIntegrityResourceDeleted => "page-integrity-resource-deleted",
                 ListEventTypesResponseTypeName.PageIntegrityResourceRejected => "page-integrity-resource-rejected",
                 ListEventTypesResponseTypeName.PasskeyCreated => "passkey-created",
                 ListEventTypesResponseTypeName.PasskeyDeleted => "passkey-deleted",
@@ -2393,8 +2438,16 @@ namespace Vercel
                 "firewall-managed-rulegroup-updated" => ListEventTypesResponseTypeName.FirewallManagedRulegroupUpdated,
                 "firewall-managed-ruleset-updated" => ListEventTypesResponseTypeName.FirewallManagedRulesetUpdated,
                 "flag" => ListEventTypesResponseTypeName.Flag,
+                "flag-archived" => ListEventTypesResponseTypeName.FlagArchived,
+                "flag-created" => ListEventTypesResponseTypeName.FlagCreated,
+                "flag-deleted" => ListEventTypesResponseTypeName.FlagDeleted,
+                "flag-unarchived" => ListEventTypesResponseTypeName.FlagUnarchived,
+                "flag-updated" => ListEventTypesResponseTypeName.FlagUpdated,
                 "flags-explorer-subscription" => ListEventTypesResponseTypeName.FlagsExplorerSubscription,
                 "flags-sdk-key" => ListEventTypesResponseTypeName.FlagsSdkKey,
+                "flags-sdk-key-added" => ListEventTypesResponseTypeName.FlagsSdkKeyAdded,
+                "flags-sdk-key-deleted" => ListEventTypesResponseTypeName.FlagsSdkKeyDeleted,
+                "flags-sdk-key-read" => ListEventTypesResponseTypeName.FlagsSdkKeyRead,
                 "flags-segment" => ListEventTypesResponseTypeName.FlagsSegment,
                 "flags-settings" => ListEventTypesResponseTypeName.FlagsSettings,
                 "instant-rollback-created" => ListEventTypesResponseTypeName.InstantRollbackCreated,
@@ -2442,6 +2495,7 @@ namespace Vercel
                 "page-integrity-config-updated" => ListEventTypesResponseTypeName.PageIntegrityConfigUpdated,
                 "page-integrity-header-approved" => ListEventTypesResponseTypeName.PageIntegrityHeaderApproved,
                 "page-integrity-resource-approved" => ListEventTypesResponseTypeName.PageIntegrityResourceApproved,
+                "page-integrity-resource-deleted" => ListEventTypesResponseTypeName.PageIntegrityResourceDeleted,
                 "page-integrity-resource-rejected" => ListEventTypesResponseTypeName.PageIntegrityResourceRejected,
                 "passkey-created" => ListEventTypesResponseTypeName.PasskeyCreated,
                 "passkey-deleted" => ListEventTypesResponseTypeName.PasskeyDeleted,

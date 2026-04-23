@@ -25,16 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitLFS")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant185Previous Previous { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant185Next Next { get; set; }
+        public required bool GitLFS { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,21 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="gitLFS"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant185(
             string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant185Previous previous,
-            global::Vercel.UserEventPayloadVariant185Next next)
+            bool gitLFS)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.GitLFS = gitLFS;
         }
 
         /// <summary>

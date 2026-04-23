@@ -25,9 +25,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitCommitStatus")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("createDeployments")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant182CreateDeploymentsJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool GitCommitStatus { get; set; }
+        public required global::Vercel.UserEventPayloadVariant182CreateDeployments CreateDeployments { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,18 +41,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="gitCommitStatus"></param>
+        /// <param name="createDeployments"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant182(
             string projectId,
             string projectName,
-            bool gitCommitStatus)
+            global::Vercel.UserEventPayloadVariant182CreateDeployments createDeployments)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.GitCommitStatus = gitCommitStatus;
+            this.CreateDeployments = createDeployments;
         }
 
         /// <summary>

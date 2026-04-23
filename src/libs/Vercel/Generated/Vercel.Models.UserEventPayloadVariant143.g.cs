@@ -11,23 +11,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("privateLinkEndpoint")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant143PrivateLinkEndpoint PrivateLinkEndpoint { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentSuffix")]
+        public string? PreviewDeploymentSuffix { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousEndpoint")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant143PreviousEndpoint PreviousEndpoint { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousPreviewDeploymentSuffix")]
+        public string? PreviousPreviewDeploymentSuffix { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant143" /> class.
         /// </summary>
-        /// <param name="privateLinkEndpoint"></param>
-        /// <param name="projectId"></param>
-        /// <param name="previousEndpoint"></param>
+        /// <param name="previewDeploymentSuffix"></param>
+        /// <param name="previousPreviewDeploymentSuffix"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant143(
-            global::Vercel.UserEventPayloadVariant143PrivateLinkEndpoint privateLinkEndpoint,
-            string projectId,
-            global::Vercel.UserEventPayloadVariant143PreviousEndpoint previousEndpoint)
+            string? previewDeploymentSuffix,
+            string? previousPreviewDeploymentSuffix)
         {
-            this.PrivateLinkEndpoint = privateLinkEndpoint ?? throw new global::System.ArgumentNullException(nameof(privateLinkEndpoint));
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.PreviousEndpoint = previousEndpoint ?? throw new global::System.ArgumentNullException(nameof(previousEndpoint));
+            this.PreviewDeploymentSuffix = previewDeploymentSuffix;
+            this.PreviousPreviewDeploymentSuffix = previousPreviewDeploymentSuffix;
         }
 
         /// <summary>

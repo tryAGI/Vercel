@@ -11,16 +11,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant157Team Team { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant157Project Project { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("certId")]
+        public string? CertId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
+        public string? Origin { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +41,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant157" /> class.
         /// </summary>
-        /// <param name="team"></param>
-        /// <param name="project"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="certId"></param>
+        /// <param name="origin"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant157(
-            global::Vercel.UserEventPayloadVariant157Team team,
-            global::Vercel.UserEventPayloadVariant157Project project)
+            string? projectId,
+            string? projectName,
+            string? certId,
+            string? origin)
         {
-            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.ProjectId = projectId;
+            this.ProjectName = projectName;
+            this.CertId = certId;
+            this.Origin = origin;
         }
 
         /// <summary>

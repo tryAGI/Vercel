@@ -55,13 +55,6 @@ namespace Vercel
         public global::Vercel.UserEventPayloadVariant247Access? Access { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sensitive")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Sensitive { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -72,7 +65,6 @@ namespace Vercel
         /// </summary>
         /// <param name="id"></param>
         /// <param name="type"></param>
-        /// <param name="sensitive"></param>
         /// <param name="name"></param>
         /// <param name="computeUnitsMax"></param>
         /// <param name="computeUnitsMin"></param>
@@ -84,7 +76,6 @@ namespace Vercel
         public UserEventPayloadVariant247(
             string id,
             global::Vercel.UserEventPayloadVariant247Type type,
-            bool sensitive,
             string? name,
             double? computeUnitsMax,
             double? computeUnitsMin,
@@ -98,7 +89,6 @@ namespace Vercel
             this.SuspendTimeoutSeconds = suspendTimeoutSeconds;
             this.Type = type;
             this.Access = access;
-            this.Sensitive = sensitive;
         }
 
         /// <summary>

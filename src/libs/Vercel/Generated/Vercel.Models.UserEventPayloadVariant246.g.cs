@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transferRequestCode")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TransferRequestCode { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("store")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UserEventPayloadVariant246Store Store { get; set; }
@@ -18,8 +25,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        public string? OwnerId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("originTeamId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OriginTeamId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("originTeamName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OriginTeamName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant246" /> class.
         /// </summary>
+        /// <param name="transferRequestCode"></param>
         /// <param name="store"></param>
-        /// <param name="ownerId"></param>
+        /// <param name="originTeamId"></param>
+        /// <param name="originTeamName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant246(
+            string transferRequestCode,
             global::Vercel.UserEventPayloadVariant246Store store,
-            string? ownerId)
+            string originTeamId,
+            string originTeamName)
         {
+            this.TransferRequestCode = transferRequestCode ?? throw new global::System.ArgumentNullException(nameof(transferRequestCode));
             this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
-            this.OwnerId = ownerId;
+            this.OriginTeamId = originTeamId ?? throw new global::System.ArgumentNullException(nameof(originTeamId));
+            this.OriginTeamName = originTeamName ?? throw new global::System.ArgumentNullException(nameof(originTeamName));
         }
 
         /// <summary>

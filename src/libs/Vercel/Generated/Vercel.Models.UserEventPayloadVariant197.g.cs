@@ -11,21 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        public required global::Vercel.UserEventPayloadVariant197Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destinationAccountName")]
-        public string? DestinationAccountName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transferId")]
-        public string? TransferId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectMembership")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant197ProjectMembership ProjectMembership { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant197" /> class.
         /// </summary>
-        /// <param name="projectName"></param>
-        /// <param name="destinationAccountName"></param>
-        /// <param name="transferId"></param>
+        /// <param name="project"></param>
+        /// <param name="projectMembership"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant197(
-            string projectName,
-            string? destinationAccountName,
-            string? transferId)
+            global::Vercel.UserEventPayloadVariant197Project project,
+            global::Vercel.UserEventPayloadVariant197ProjectMembership projectMembership)
         {
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.DestinationAccountName = destinationAccountName;
-            this.TransferId = transferId;
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.ProjectMembership = projectMembership ?? throw new global::System.ArgumentNullException(nameof(projectMembership));
         }
 
         /// <summary>

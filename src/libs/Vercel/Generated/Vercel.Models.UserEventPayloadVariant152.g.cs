@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("productionDeploymentsFastLane")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("enableExternalRewriteCaching")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool ProductionDeploymentsFastLane { get; set; }
+        public required bool EnableExternalRewriteCaching { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="productionDeploymentsFastLane"></param>
+        /// <param name="enableExternalRewriteCaching"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant152(
             string projectId,
             string projectName,
-            bool productionDeploymentsFastLane)
+            bool enableExternalRewriteCaching)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.ProductionDeploymentsFastLane = productionDeploymentsFastLane;
+            this.EnableExternalRewriteCaching = enableExternalRewriteCaching;
         }
 
         /// <summary>
