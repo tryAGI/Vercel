@@ -18,9 +18,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamMembership")]
+        public global::Vercel.UserEventPayloadVariant193TeamMembership? TeamMembership { get; set; }
 
         /// <summary>
         /// 
@@ -38,18 +37,18 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant193" /> class.
         /// </summary>
         /// <param name="projects"></param>
-        /// <param name="uid"></param>
+        /// <param name="teamMembership"></param>
         /// <param name="directoryType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant193(
             global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant193Project> projects,
-            string uid,
+            global::Vercel.UserEventPayloadVariant193TeamMembership? teamMembership,
             string? directoryType)
         {
             this.Projects = projects ?? throw new global::System.ArgumentNullException(nameof(projects));
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
+            this.TeamMembership = teamMembership;
             this.DirectoryType = directoryType;
         }
 

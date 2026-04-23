@@ -43,6 +43,14 @@ namespace Vercel
         public global::Vercel.UserEventType? Type { get; set; }
 
         /// <summary>
+        /// The categories that group this event with related event types. An event can belong to multiple categories (e.g. a firewall event is both Firewall and Security). The first entry is the "primary" category. Use the `/events/types` endpoint to discover the full list of categories.<br/>
+        /// Example: [deployment]
+        /// </summary>
+        /// <example>[deployment]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("categories")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventCategorie>? Categories { get; set; }
+
+        /// <summary>
         /// Timestamp (in milliseconds) of when the event was generated.<br/>
         /// Example: 1632859321020L
         /// </summary>
@@ -134,6 +142,10 @@ namespace Vercel
         /// The type of the event.<br/>
         /// Example: login
         /// </param>
+        /// <param name="categories">
+        /// The categories that group this event with related event types. An event can belong to multiple categories (e.g. a firewall event is both Firewall and Security). The first entry is the "primary" category. Use the `/events/types` endpoint to discover the full list of categories.<br/>
+        /// Example: [deployment]
+        /// </param>
         /// <param name="user">
         /// Metadata for {@link userId}.
         /// </param>
@@ -156,6 +168,7 @@ namespace Vercel
             string userId,
             string principalId,
             global::Vercel.UserEventType? type,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventCategorie>? categories,
             global::Vercel.UserEventUser? user,
             global::Vercel.OneOf<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3>? principal,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3>>? via,
@@ -166,6 +179,7 @@ namespace Vercel
             this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.Entities = entities ?? throw new global::System.ArgumentNullException(nameof(entities));
             this.Type = type;
+            this.Categories = categories;
             this.CreatedAt = createdAt;
             this.User = user;
             this.Principal = principal;

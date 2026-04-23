@@ -857,8 +857,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("storeIsSensitive")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? StoreIsSensitive { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("storeIsLocked")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? StoreIsLocked { get; set; }
 
         /// <summary>
         /// 
@@ -1628,7 +1628,7 @@ namespace Vercel
         /// <param name="sharedEnvVarsProduction"></param>
         /// <param name="space"></param>
         /// <param name="spaceRun"></param>
-        /// <param name="storeIsSensitive"></param>
+        /// <param name="storeIsLocked"></param>
         /// <param name="storeTokenSetSensitive"></param>
         /// <param name="storeTransfer"></param>
         /// <param name="supportCase"></param>
@@ -1877,7 +1877,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVarsProduction,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? space,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? spaceRun,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? storeIsSensitive,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? storeIsLocked,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? storeTokenSetSensitive,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? storeTransfer,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? supportCase,
@@ -2123,7 +2123,7 @@ namespace Vercel
             this.SharedEnvVarsProduction = sharedEnvVarsProduction;
             this.Space = space;
             this.SpaceRun = spaceRun;
-            this.StoreIsSensitive = storeIsSensitive;
+            this.StoreIsLocked = storeIsLocked;
             this.StoreTokenSetSensitive = storeTokenSetSensitive;
             this.StoreTransfer = storeTransfer;
             this.SupportCase = supportCase;
