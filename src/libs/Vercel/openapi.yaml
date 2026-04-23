@@ -143165,12 +143165,9 @@
       },
       "EdgeConfigToken": {
         "properties": {
-          "token": {
-            "type": "string"
-          },
           "partialToken": {
             "type": "string",
-            "description": "A partially-masked representation of the token, safe to display in UIs. The format is the first 4 characters of the token followed by a fixed 8-character `*` mask (e.g. `550e8400-e29b-41d4-a716-446655440000` \u2192 `550e********`). The mask length is intentionally fixed (not proportional to the original token length) to avoid leaking the token length."
+            "description": "A partially-masked representation of the token, safe to display in UIs. The format is the first 4 characters of the token followed by a fixed 8-character `*` mask (e.g. `550e8400-e29b-41d4-a716-446655440000` \u2192 `550e********`). The mask length is intentionally fixed (not proportional to the original token length) to avoid leaking the token length. Prefer this field for display/reference in UIs and logs. The full, plaintext token is only disclosed once at creation time via `POST /v1/edge-config/:edgeConfigId/token`; use `id` to reference a token in subsequent calls (e.g. when deleting)."
           },
           "label": {
             "type": "string"
@@ -143184,6 +143181,10 @@
           },
           "createdAt": {
             "type": "number"
+          },
+          "token": {
+            "type": "string",
+            "description": "Deprecated: the full, plaintext token. - Returned once by `POST /v1/edge-config/:edgeConfigId/token` (create). - Still returned by `GET /v1/edge-config/:edgeConfigId/token/:token` (detail) for backwards compatibility, but scheduled for removal. - **Not** returned by `GET /v1/edge-config/:edgeConfigId/tokens` (list); use `partialToken` for display and `id` to reference tokens. Do not rely on this field being present on read operations. Prefer `partialToken` for display and `id` for references."
           }
         },
         "required": [
@@ -143191,8 +143192,7 @@
           "edgeConfigId",
           "id",
           "label",
-          "partialToken",
-          "token"
+          "partialToken"
         ],
         "type": "object",
         "description": "The EdgeConfig."
