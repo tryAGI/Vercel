@@ -40682,6 +40682,7 @@
                               "env-variable-read:cli:pull",
                               "env-variable-read:unknown-source",
                               "env-variable-read:v0:env:pull",
+                              "env-variable-rotated",
                               "shared-env-variable-create",
                               "shared-env-variable-delete",
                               "shared-env-variable-read",
@@ -40799,6 +40800,7 @@
                               "project-git-repository-dispatch-events-toggled",
                               "project-git-create-deployments-toggled",
                               "project-git-require-verified-commits-toggled",
+                              "team-git-require-verified-commits-toggled",
                               "project-git-commit-status-toggled",
                               "project-git-lfs-toggled",
                               "project-consolidated-git-commit-status-updated",
@@ -63060,7 +63062,7 @@
                                   false,
                                   true
                                 ],
-                                "description": "Whether the project requires commits to be signed before deployments will be created."
+                                "description": "Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`."
                               },
                               "gitCommitStatus": {
                                 "type": "boolean",
@@ -72881,7 +72883,7 @@
                                   false,
                                   true
                                 ],
-                                "description": "Whether the project requires commits to be signed before deployments will be created."
+                                "description": "Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`."
                               },
                               "gitCommitStatus": {
                                 "type": "boolean",
@@ -76426,7 +76428,7 @@
                                       false,
                                       true
                                     ],
-                                    "description": "Whether the project requires commits to be signed before deployments will be created."
+                                    "description": "Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`."
                                   },
                                   "gitCommitStatus": {
                                     "type": "boolean",
@@ -82208,7 +82210,7 @@
                                       false,
                                       true
                                     ],
-                                    "description": "Whether the project requires commits to be signed before deployments will be created."
+                                    "description": "Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`."
                                   },
                                   "gitCommitStatus": {
                                     "type": "boolean",
@@ -88093,7 +88095,7 @@
                             false,
                             true
                           ],
-                          "description": "Whether the project requires commits to be signed before deployments will be created."
+                          "description": "Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`."
                         },
                         "gitCommitStatus": {
                           "type": "boolean",
@@ -94211,7 +94213,7 @@
                             false,
                             true
                           ],
-                          "description": "Whether the project requires commits to be signed before deployments will be created."
+                          "description": "Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`."
                         },
                         "gitCommitStatus": {
                           "type": "boolean",
@@ -99910,7 +99912,7 @@
                             false,
                             true
                           ],
-                          "description": "Whether the project requires commits to be signed before deployments will be created."
+                          "description": "Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`."
                         },
                         "gitCommitStatus": {
                           "type": "boolean",
@@ -118227,7 +118229,7 @@
                             false,
                             true
                           ],
-                          "description": "Whether the project requires commits to be signed before deployments will be created."
+                          "description": "Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`."
                         },
                         "gitCommitStatus": {
                           "type": "boolean",
@@ -135335,6 +135337,11 @@
                     "example": false,
                     "description": "Display or hide IP addresses in Log Drains."
                   },
+                  "requireVerifiedCommits": {
+                    "type": "boolean",
+                    "example": true,
+                    "description": "When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created."
+                  },
                   "defaultDeploymentProtection": {
                     "type": "object",
                     "description": "Default deployment protection settings for new projects.",
@@ -143440,6 +143447,7 @@
               "env-variable-read:cli:pull",
               "env-variable-read:unknown-source",
               "env-variable-read:v0:env:pull",
+              "env-variable-rotated",
               "shared-env-variable-create",
               "shared-env-variable-delete",
               "shared-env-variable-read",
@@ -143557,6 +143565,7 @@
               "project-git-repository-dispatch-events-toggled",
               "project-git-create-deployments-toggled",
               "project-git-require-verified-commits-toggled",
+              "team-git-require-verified-commits-toggled",
               "project-git-commit-status-toggled",
               "project-git-lfs-toggled",
               "project-consolidated-git-commit-status-updated",
@@ -150706,6 +150715,7 @@
                           "reason": {
                             "type": "string",
                             "enum": [
+                              "ENTERPRISE_UNPAID_INVOICE",
                               "SUBSCRIPTION_CANCELED",
                               "SUBSCRIPTION_EXPIRED",
                               "UNPAID_INVOICE",
@@ -155412,6 +155422,26 @@
                     "type": "string"
                   },
                   "requireVerifiedCommits": {
+                    "nullable": true,
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true,
+                      null
+                    ]
+                  }
+                },
+                "required": [
+                  "projectId",
+                  "projectName",
+                  "requireVerifiedCommits"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "requireVerifiedCommits": {
                     "type": "boolean",
                     "enum": [
                       false,
@@ -155420,8 +155450,6 @@
                   }
                 },
                 "required": [
-                  "projectId",
-                  "projectName",
                   "requireVerifiedCommits"
                 ],
                 "type": "object",
@@ -155711,6 +155739,9 @@
                     "type": "array"
                   },
                   "uid": {
+                    "type": "string"
+                  },
+                  "directoryType": {
                     "type": "string"
                   }
                 },
@@ -162838,6 +162869,14 @@
             },
             "type": "array"
           },
+          "requireVerifiedCommits": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created. Projects may override this via `project.gitProviderOptions.requireVerifiedCommits` (gated by `Project:Update`)."
+          },
           "strictDeploymentProtectionSettings": {
             "properties": {
               "enabled": {
@@ -163654,6 +163693,7 @@
               "reason": {
                 "type": "string",
                 "enum": [
+                  "ENTERPRISE_UNPAID_INVOICE",
                   "SUBSCRIPTION_CANCELED",
                   "SUBSCRIPTION_EXPIRED",
                   "UNPAID_INVOICE",

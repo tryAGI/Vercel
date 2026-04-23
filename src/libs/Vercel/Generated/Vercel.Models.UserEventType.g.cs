@@ -584,6 +584,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        EnvVariableRotated,
+        /// <summary>
+        /// 
+        /// </summary>
         FirewallBypassCreated,
         /// <summary>
         /// 
@@ -1580,6 +1584,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamGitRequireVerifiedCommitsToggled,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamInviteBulkDelete,
         /// <summary>
         /// 
@@ -1970,6 +1978,7 @@ namespace Vercel
                 UserEventType.EnvVariableRead_cli_pull => "env-variable-read:cli:pull",
                 UserEventType.EnvVariableRead_unknownSource => "env-variable-read:unknown-source",
                 UserEventType.EnvVariableRead_v0_env_pull => "env-variable-read:v0:env:pull",
+                UserEventType.EnvVariableRotated => "env-variable-rotated",
                 UserEventType.FirewallBypassCreated => "firewall-bypass-created",
                 UserEventType.FirewallBypassDeleted => "firewall-bypass-deleted",
                 UserEventType.FirewallConfigModified => "firewall-config-modified",
@@ -2219,6 +2228,7 @@ namespace Vercel
                 UserEventType.TeamEmailDomainUpdate => "team-email-domain-update",
                 UserEventType.TeamEmuUpdated => "team-emu-updated",
                 UserEventType.TeamEndedTrial => "team-ended-trial",
+                UserEventType.TeamGitRequireVerifiedCommitsToggled => "team-git-require-verified-commits-toggled",
                 UserEventType.TeamInviteBulkDelete => "team-invite-bulk-delete",
                 UserEventType.TeamInviteCodeReset => "team-invite-code-reset",
                 UserEventType.TeamInviteLinkCreated => "team-invite-link-created",
@@ -2431,6 +2441,7 @@ namespace Vercel
                 "env-variable-read:cli:pull" => UserEventType.EnvVariableRead_cli_pull,
                 "env-variable-read:unknown-source" => UserEventType.EnvVariableRead_unknownSource,
                 "env-variable-read:v0:env:pull" => UserEventType.EnvVariableRead_v0_env_pull,
+                "env-variable-rotated" => UserEventType.EnvVariableRotated,
                 "firewall-bypass-created" => UserEventType.FirewallBypassCreated,
                 "firewall-bypass-deleted" => UserEventType.FirewallBypassDeleted,
                 "firewall-config-modified" => UserEventType.FirewallConfigModified,
@@ -2680,6 +2691,7 @@ namespace Vercel
                 "team-email-domain-update" => UserEventType.TeamEmailDomainUpdate,
                 "team-emu-updated" => UserEventType.TeamEmuUpdated,
                 "team-ended-trial" => UserEventType.TeamEndedTrial,
+                "team-git-require-verified-commits-toggled" => UserEventType.TeamGitRequireVerifiedCommitsToggled,
                 "team-invite-bulk-delete" => UserEventType.TeamInviteBulkDelete,
                 "team-invite-code-reset" => UserEventType.TeamInviteCodeReset,
                 "team-invite-link-created" => UserEventType.TeamInviteLinkCreated,

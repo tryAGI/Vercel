@@ -23,7 +23,7 @@ namespace Vercel
         public bool? DisableRepositoryDispatchEvents { get; set; }
 
         /// <summary>
-        /// Whether the project requires commits to be signed before deployments will be created.
+        /// Whether the project requires commits to be signed &amp; verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requireVerifiedCommits")]
         public bool? RequireVerifiedCommits { get; set; }
@@ -56,7 +56,7 @@ namespace Vercel
         /// Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events
         /// </param>
         /// <param name="requireVerifiedCommits">
-        /// Whether the project requires commits to be signed before deployments will be created.
+        /// Whether the project requires commits to be signed &amp; verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`.
         /// </param>
         /// <param name="gitCommitStatus">
         /// Whether Vercel should post commit statuses for this project. When omitted, commit statuses remain enabled.
