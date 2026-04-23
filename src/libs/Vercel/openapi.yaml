@@ -40888,6 +40888,7 @@
                               "storage-connect-project",
                               "storage-disconnect-project",
                               "storage-update-project-connection",
+                              "storage-upgrade-project-connection-to-oidc",
                               "storage-delete",
                               "storage-accessed-data-browser",
                               "storage-view-secret",
@@ -40895,7 +40896,7 @@
                               "storage-resource-repl-command",
                               "storage-disconnect-projects",
                               "storage-access-token-set",
-                              "storage-set-sensitive",
+                              "storage-set-locked",
                               "ai-code-review",
                               "ai-alert-investigation",
                               "vercel-agent-team-trial-credits-applied",
@@ -40974,9 +40975,40 @@
                           },
                           "description": {
                             "type": "string"
+                          },
+                          "categories": {
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "account",
+                                "ai",
+                                "ai-gateway",
+                                "billing",
+                                "deployment",
+                                "domain",
+                                "edge",
+                                "env-variable",
+                                "feature-flags",
+                                "firewall",
+                                "integration",
+                                "microfrontends",
+                                "network",
+                                "observability",
+                                "project",
+                                "security",
+                                "storage",
+                                "team",
+                                "v0",
+                                "vercel-app",
+                                "workflow",
+                                "other"
+                              ]
+                            },
+                            "type": "array"
                           }
                         },
                         "required": [
+                          "categories",
                           "deprecated",
                           "description",
                           "name",
@@ -40985,9 +41017,52 @@
                         "type": "object"
                       },
                       "type": "array"
+                    },
+                    "categories": {
+                      "items": {
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "enum": [
+                              "account",
+                              "ai",
+                              "ai-gateway",
+                              "billing",
+                              "deployment",
+                              "domain",
+                              "edge",
+                              "env-variable",
+                              "feature-flags",
+                              "firewall",
+                              "integration",
+                              "microfrontends",
+                              "network",
+                              "observability",
+                              "project",
+                              "security",
+                              "storage",
+                              "team",
+                              "v0",
+                              "vercel-app",
+                              "workflow",
+                              "other"
+                            ]
+                          },
+                          "label": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "name"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
                     }
                   },
                   "required": [
+                    "categories",
                     "types"
                   ],
                   "type": "object"
@@ -58629,10 +58704,10 @@
                                   "type": "string",
                                   "enum": [
                                     "secret",
-                                    "sensitive",
                                     "system",
                                     "encrypted",
-                                    "plain"
+                                    "plain",
+                                    "sensitive"
                                   ]
                                 },
                                 "sunsetSecretId": {
@@ -61991,7 +62066,7 @@
                                 },
                                 "type": "array"
                               },
-                              "storeIsSensitive": {
+                              "storeIsLocked": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
                                 },
@@ -71016,10 +71091,10 @@
                                   "type": "string",
                                   "enum": [
                                     "secret",
-                                    "sensitive",
                                     "system",
                                     "encrypted",
-                                    "plain"
+                                    "plain",
+                                    "sensitive"
                                   ]
                                 },
                                 "sunsetSecretId": {
@@ -74561,10 +74636,10 @@
                                       "type": "string",
                                       "enum": [
                                         "secret",
-                                        "sensitive",
                                         "system",
                                         "encrypted",
-                                        "plain"
+                                        "plain",
+                                        "sensitive"
                                       ]
                                     },
                                     "sunsetSecretId": {
@@ -78117,10 +78192,10 @@
                                       "type": "string",
                                       "enum": [
                                         "secret",
-                                        "sensitive",
                                         "system",
                                         "encrypted",
-                                        "plain"
+                                        "plain",
+                                        "sensitive"
                                       ]
                                     },
                                     "sunsetSecretId": {
@@ -81139,7 +81214,7 @@
                                     },
                                     "type": "array"
                                   },
-                                  "storeIsSensitive": {
+                                  "storeIsLocked": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
                                     },
@@ -84002,10 +84077,10 @@
                             "type": "string",
                             "enum": [
                               "secret",
-                              "sensitive",
                               "system",
                               "encrypted",
-                              "plain"
+                              "plain",
+                              "sensitive"
                             ]
                           },
                           "sunsetSecretId": {
@@ -87024,7 +87099,7 @@
                           },
                           "type": "array"
                         },
-                        "storeIsSensitive": {
+                        "storeIsLocked": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -90120,10 +90195,10 @@
                             "type": "string",
                             "enum": [
                               "secret",
-                              "sensitive",
                               "system",
                               "encrypted",
-                              "plain"
+                              "plain",
+                              "sensitive"
                             ]
                           },
                           "sunsetSecretId": {
@@ -93142,7 +93217,7 @@
                           },
                           "type": "array"
                         },
-                        "storeIsSensitive": {
+                        "storeIsLocked": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -95819,10 +95894,10 @@
                             "type": "string",
                             "enum": [
                               "secret",
-                              "sensitive",
                               "system",
                               "encrypted",
-                              "plain"
+                              "plain",
+                              "sensitive"
                             ]
                           },
                           "sunsetSecretId": {
@@ -98841,7 +98916,7 @@
                           },
                           "type": "array"
                         },
-                        "storeIsSensitive": {
+                        "storeIsLocked": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -105035,10 +105110,10 @@
                           "type": "string",
                           "enum": [
                             "secret",
-                            "sensitive",
                             "system",
                             "encrypted",
-                            "plain"
+                            "plain",
+                            "sensitive"
                           ]
                         },
                         "sunsetSecretId": {
@@ -105483,10 +105558,10 @@
                                 "type": "string",
                                 "enum": [
                                   "secret",
-                                  "sensitive",
                                   "system",
                                   "encrypted",
-                                  "plain"
+                                  "plain",
+                                  "sensitive"
                                 ]
                               },
                               "sunsetSecretId": {
@@ -105943,10 +106018,10 @@
                                 "type": "string",
                                 "enum": [
                                   "secret",
-                                  "sensitive",
                                   "system",
                                   "encrypted",
-                                  "plain"
+                                  "plain",
+                                  "sensitive"
                                 ]
                               },
                               "sunsetSecretId": {
@@ -106538,10 +106613,10 @@
                               "type": "string",
                               "enum": [
                                 "secret",
-                                "sensitive",
                                 "system",
                                 "encrypted",
-                                "plain"
+                                "plain",
+                                "sensitive"
                               ]
                             },
                             "sunsetSecretId": {
@@ -106975,10 +107050,10 @@
                                 "type": "string",
                                 "enum": [
                                   "secret",
-                                  "sensitive",
                                   "system",
                                   "encrypted",
-                                  "plain"
+                                  "plain",
+                                  "sensitive"
                                 ]
                               },
                               "sunsetSecretId": {
@@ -107770,10 +107845,10 @@
                           "type": "string",
                           "enum": [
                             "secret",
-                            "sensitive",
                             "system",
                             "encrypted",
-                            "plain"
+                            "plain",
+                            "sensitive"
                           ]
                         },
                         "edgeConfigId": {
@@ -108193,10 +108268,10 @@
                           "type": "string",
                           "enum": [
                             "secret",
-                            "sensitive",
                             "system",
                             "encrypted",
-                            "plain"
+                            "plain",
+                            "sensitive"
                           ]
                         },
                         "value": {
@@ -108713,10 +108788,10 @@
                             "type": "string",
                             "enum": [
                               "secret",
-                              "sensitive",
                               "system",
                               "encrypted",
-                              "plain"
+                              "plain",
+                              "sensitive"
                             ]
                           },
                           "value": {
@@ -109155,10 +109230,10 @@
                           "type": "string",
                           "enum": [
                             "secret",
-                            "sensitive",
                             "system",
                             "encrypted",
-                            "plain"
+                            "plain",
+                            "sensitive"
                           ]
                         },
                         "value": {
@@ -109589,10 +109664,10 @@
                           "type": "string",
                           "enum": [
                             "secret",
-                            "sensitive",
                             "system",
                             "encrypted",
-                            "plain"
+                            "plain",
+                            "sensitive"
                           ]
                         },
                         "value": {
@@ -110125,10 +110200,10 @@
                       "type": "string",
                       "enum": [
                         "secret",
-                        "sensitive",
                         "system",
                         "encrypted",
-                        "plain"
+                        "plain",
+                        "sensitive"
                       ]
                     },
                     "value": {
@@ -114136,10 +114211,10 @@
                             "type": "string",
                             "enum": [
                               "secret",
-                              "sensitive",
                               "system",
                               "encrypted",
-                              "plain"
+                              "plain",
+                              "sensitive"
                             ]
                           },
                           "sunsetSecretId": {
@@ -117158,7 +117233,7 @@
                           },
                           "type": "array"
                         },
-                        "storeIsSensitive": {
+                        "storeIsLocked": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -143653,6 +143728,7 @@
               "storage-connect-project",
               "storage-disconnect-project",
               "storage-update-project-connection",
+              "storage-upgrade-project-connection-to-oidc",
               "storage-delete",
               "storage-accessed-data-browser",
               "storage-view-secret",
@@ -143660,7 +143736,7 @@
               "storage-resource-repl-command",
               "storage-disconnect-projects",
               "storage-access-token-set",
-              "storage-set-sensitive",
+              "storage-set-locked",
               "ai-code-review",
               "ai-alert-investigation",
               "vercel-agent-team-trial-credits-applied",
@@ -143738,6 +143814,44 @@
             ],
             "description": "The type of the event.",
             "example": "login"
+          },
+          "categories": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "account",
+                "ai",
+                "ai-gateway",
+                "billing",
+                "deployment",
+                "domain",
+                "edge",
+                "env-variable",
+                "feature-flags",
+                "firewall",
+                "integration",
+                "microfrontends",
+                "network",
+                "observability",
+                "project",
+                "security",
+                "storage",
+                "team",
+                "v0",
+                "vercel-app",
+                "workflow",
+                "other"
+              ],
+              "example": [
+                "deployment"
+              ],
+              "description": "The categories that group this event with related event types. An event can belong to multiple categories (e.g. a firewall event is both Firewall and Security). The first entry is the \"primary\" category. Use the `/events/types` endpoint to discover the full list of categories."
+            },
+            "type": "array",
+            "description": "The categories that group this event with related event types. An event can belong to multiple categories (e.g. a firewall event is both Firewall and Security). The first entry is the \"primary\" category. Use the `/events/types` endpoint to discover the full list of categories.",
+            "example": [
+              "deployment"
+            ]
           },
           "createdAt": {
             "type": "number",
@@ -149268,10 +149382,10 @@
                   "type": {
                     "type": "string",
                     "enum": [
-                      "sensitive",
                       "system",
                       "encrypted",
-                      "plain"
+                      "plain",
+                      "sensitive"
                     ],
                     "description": "The type of this cosmos doc instance, if blank, assume secret.",
                     "example": "encrypted"
@@ -149405,10 +149519,10 @@
                       "type": {
                         "type": "string",
                         "enum": [
-                          "sensitive",
                           "system",
                           "encrypted",
-                          "plain"
+                          "plain",
+                          "sensitive"
                         ],
                         "description": "The type of this cosmos doc instance, if blank, assume secret.",
                         "example": "encrypted"
@@ -149530,10 +149644,10 @@
                       "type": {
                         "type": "string",
                         "enum": [
-                          "sensitive",
                           "system",
                           "encrypted",
-                          "plain"
+                          "plain",
+                          "sensitive"
                         ],
                         "description": "The type of this cosmos doc instance, if blank, assume secret.",
                         "example": "encrypted"
@@ -155738,16 +155852,26 @@
                     },
                     "type": "array"
                   },
-                  "uid": {
-                    "type": "string"
+                  "teamMembership": {
+                    "properties": {
+                      "uid": {
+                        "type": "string"
+                      },
+                      "username": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "uid"
+                    ],
+                    "type": "object"
                   },
                   "directoryType": {
                     "type": "string"
                   }
                 },
                 "required": [
-                  "projects",
-                  "uid"
+                  "projects"
                 ],
                 "type": "object",
                 "description": "The payload of the event, if requested."
@@ -158203,7 +158327,7 @@
                       "private"
                     ]
                   },
-                  "sensitive": {
+                  "locked": {
                     "type": "boolean",
                     "enum": [
                       false,
@@ -158213,7 +158337,7 @@
                 },
                 "required": [
                   "id",
-                  "sensitive",
+                  "locked",
                   "type"
                 ],
                 "type": "object",

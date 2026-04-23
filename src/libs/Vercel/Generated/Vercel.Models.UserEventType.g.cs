@@ -1492,7 +1492,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        StorageSetSensitive,
+        StorageSetLocked,
         /// <summary>
         /// 
         /// </summary>
@@ -1513,6 +1513,10 @@ namespace Vercel
         /// 
         /// </summary>
         StorageUpdateProjectConnection,
+        /// <summary>
+        /// 
+        /// </summary>
+        StorageUpgradeProjectConnectionToOidc,
         /// <summary>
         /// 
         /// </summary>
@@ -2205,12 +2209,13 @@ namespace Vercel
                 UserEventType.StorageInactiveStoreDeleted => "storage-inactive-store-deleted",
                 UserEventType.StorageResetCredentials => "storage-reset-credentials",
                 UserEventType.StorageResourceReplCommand => "storage-resource-repl-command",
-                UserEventType.StorageSetSensitive => "storage-set-sensitive",
+                UserEventType.StorageSetLocked => "storage-set-locked",
                 UserEventType.StorageTransferInSuccess => "storage-transfer-in-success",
                 UserEventType.StorageTransferOutSuccess => "storage-transfer-out-success",
                 UserEventType.StorageTransferRequestCreated => "storage-transfer-request-created",
                 UserEventType.StorageUpdate => "storage-update",
                 UserEventType.StorageUpdateProjectConnection => "storage-update-project-connection",
+                UserEventType.StorageUpgradeProjectConnectionToOidc => "storage-upgrade-project-connection-to-oidc",
                 UserEventType.StorageViewSecret => "storage-view-secret",
                 UserEventType.StrictDeploymentProtectionSettings => "strict-deployment-protection-settings",
                 UserEventType.StrictShareableLinks => "strict-shareable-links",
@@ -2668,12 +2673,13 @@ namespace Vercel
                 "storage-inactive-store-deleted" => UserEventType.StorageInactiveStoreDeleted,
                 "storage-reset-credentials" => UserEventType.StorageResetCredentials,
                 "storage-resource-repl-command" => UserEventType.StorageResourceReplCommand,
-                "storage-set-sensitive" => UserEventType.StorageSetSensitive,
+                "storage-set-locked" => UserEventType.StorageSetLocked,
                 "storage-transfer-in-success" => UserEventType.StorageTransferInSuccess,
                 "storage-transfer-out-success" => UserEventType.StorageTransferOutSuccess,
                 "storage-transfer-request-created" => UserEventType.StorageTransferRequestCreated,
                 "storage-update" => UserEventType.StorageUpdate,
                 "storage-update-project-connection" => UserEventType.StorageUpdateProjectConnection,
+                "storage-upgrade-project-connection-to-oidc" => UserEventType.StorageUpgradeProjectConnectionToOidc,
                 "storage-view-secret" => UserEventType.StorageViewSecret,
                 "strict-deployment-protection-settings" => UserEventType.StrictDeploymentProtectionSettings,
                 "strict-shareable-links" => UserEventType.StrictShareableLinks,

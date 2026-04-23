@@ -1491,7 +1491,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        StorageSetSensitive,
+        StorageSetLocked,
         /// <summary>
         /// 
         /// </summary>
@@ -1512,6 +1512,10 @@ namespace Vercel
         /// 
         /// </summary>
         StorageUpdateProjectConnection,
+        /// <summary>
+        /// 
+        /// </summary>
+        StorageUpgradeProjectConnectionToOidc,
         /// <summary>
         /// 
         /// </summary>
@@ -2204,12 +2208,13 @@ namespace Vercel
                 ListEventTypesResponseTypeName.StorageInactiveStoreDeleted => "storage-inactive-store-deleted",
                 ListEventTypesResponseTypeName.StorageResetCredentials => "storage-reset-credentials",
                 ListEventTypesResponseTypeName.StorageResourceReplCommand => "storage-resource-repl-command",
-                ListEventTypesResponseTypeName.StorageSetSensitive => "storage-set-sensitive",
+                ListEventTypesResponseTypeName.StorageSetLocked => "storage-set-locked",
                 ListEventTypesResponseTypeName.StorageTransferInSuccess => "storage-transfer-in-success",
                 ListEventTypesResponseTypeName.StorageTransferOutSuccess => "storage-transfer-out-success",
                 ListEventTypesResponseTypeName.StorageTransferRequestCreated => "storage-transfer-request-created",
                 ListEventTypesResponseTypeName.StorageUpdate => "storage-update",
                 ListEventTypesResponseTypeName.StorageUpdateProjectConnection => "storage-update-project-connection",
+                ListEventTypesResponseTypeName.StorageUpgradeProjectConnectionToOidc => "storage-upgrade-project-connection-to-oidc",
                 ListEventTypesResponseTypeName.StorageViewSecret => "storage-view-secret",
                 ListEventTypesResponseTypeName.StrictDeploymentProtectionSettings => "strict-deployment-protection-settings",
                 ListEventTypesResponseTypeName.StrictShareableLinks => "strict-shareable-links",
@@ -2667,12 +2672,13 @@ namespace Vercel
                 "storage-inactive-store-deleted" => ListEventTypesResponseTypeName.StorageInactiveStoreDeleted,
                 "storage-reset-credentials" => ListEventTypesResponseTypeName.StorageResetCredentials,
                 "storage-resource-repl-command" => ListEventTypesResponseTypeName.StorageResourceReplCommand,
-                "storage-set-sensitive" => ListEventTypesResponseTypeName.StorageSetSensitive,
+                "storage-set-locked" => ListEventTypesResponseTypeName.StorageSetLocked,
                 "storage-transfer-in-success" => ListEventTypesResponseTypeName.StorageTransferInSuccess,
                 "storage-transfer-out-success" => ListEventTypesResponseTypeName.StorageTransferOutSuccess,
                 "storage-transfer-request-created" => ListEventTypesResponseTypeName.StorageTransferRequestCreated,
                 "storage-update" => ListEventTypesResponseTypeName.StorageUpdate,
                 "storage-update-project-connection" => ListEventTypesResponseTypeName.StorageUpdateProjectConnection,
+                "storage-upgrade-project-connection-to-oidc" => ListEventTypesResponseTypeName.StorageUpgradeProjectConnectionToOidc,
                 "storage-view-secret" => ListEventTypesResponseTypeName.StorageViewSecret,
                 "strict-deployment-protection-settings" => ListEventTypesResponseTypeName.StrictDeploymentProtectionSettings,
                 "strict-shareable-links" => ListEventTypesResponseTypeName.StrictShareableLinks,

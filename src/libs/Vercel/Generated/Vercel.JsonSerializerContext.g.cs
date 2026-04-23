@@ -141,6 +141,10 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.UserEventTypeNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.UserEventCategorieJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventCategorieNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.UserEventPrincipalVariant1TypeJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPrincipalVariant1TypeNullableJsonConverter),
@@ -5308,6 +5312,14 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.ListEventTypesResponseTypeNameJsonConverter),
 
             typeof(global::Vercel.JsonConverters.ListEventTypesResponseTypeNameNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.ListEventTypesResponseTypeCategorieJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.ListEventTypesResponseTypeCategorieNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.ListEventTypesResponseCategorieNameJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.ListEventTypesResponseCategorieNameNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.CreateFlagResponseExperimentGuardrailMetricMetricTypeJsonConverter),
 
@@ -12970,6 +12982,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventEntitie))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventEntitieType), TypeInfoPropertyName = "UserEventEntitieType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventType), TypeInfoPropertyName = "UserEventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventCategorie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventCategorie), TypeInfoPropertyName = "UserEventCategorie2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventUser))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3>), TypeInfoPropertyName = "OneOfUserEventPrincipalVariant1UserEventPrincipalVariant2UserEventPrincipalVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPrincipalVariant1))]
@@ -13638,6 +13652,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant193Project>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193Project))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193ProjectRole), TypeInfoPropertyName = "UserEventPayloadVariant193ProjectRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant193TeamMembership))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant194))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant195))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant195Project))]
@@ -17086,6 +17101,11 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseType>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseType))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseTypeName), TypeInfoPropertyName = "ListEventTypesResponseTypeName2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseTypeCategorie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseTypeCategorie), TypeInfoPropertyName = "ListEventTypesResponseTypeCategorie2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseCategorie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseCategorie))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseCategorieName), TypeInfoPropertyName = "ListEventTypesResponseCategorieName2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.Flag>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagsResponsePagination))]
@@ -21547,6 +21567,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.RegistrantFieldVariant2Option>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.EdgeConfigItemValue>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventEntitie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventCategorie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant25Scope>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEventPayloadVariant25Permission>))]
@@ -21937,6 +21958,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetSharedEnvVarResponseTargetItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEvent>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListEventTypesResponseType>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListEventTypesResponseTypeCategorie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListEventTypesResponseCategorie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.Flag>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateFlagResponseExperimentGuardrailMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateFlagResponseExperimentPrimaryMetric>))]
