@@ -40913,6 +40913,8 @@
                               "team-member-request-access",
                               "team-member-role-update",
                               "team-mfa-enforcement-updated",
+                              "team-invite-link-created",
+                              "team-invite-link-deleted",
                               "concurrent-builds-update",
                               "team-ended-trial",
                               "team-paid-invoice",
@@ -62044,6 +62046,12 @@
                                 },
                                 "type": "array"
                               },
+                              "teamInviteLink": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "teamJoin": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -81186,6 +81194,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "teamInviteLink": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "teamJoin": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -87060,6 +87074,12 @@
                           "type": "array"
                         },
                         "teamInviteCode": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "teamInviteLink": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -93177,6 +93197,12 @@
                           },
                           "type": "array"
                         },
+                        "teamInviteLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "teamJoin": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -98865,6 +98891,12 @@
                           "type": "array"
                         },
                         "teamInviteCode": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "teamInviteLink": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -117176,6 +117208,12 @@
                           "type": "array"
                         },
                         "teamInviteCode": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "teamInviteLink": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -143624,6 +143662,8 @@
               "team-member-request-access",
               "team-member-role-update",
               "team-mfa-enforcement-updated",
+              "team-invite-link-created",
+              "team-invite-link-deleted",
               "concurrent-builds-update",
               "team-ended-trial",
               "team-paid-invoice",
@@ -150722,18 +150762,6 @@
                             "teamId": {
                               "type": "string"
                             },
-                            "confirmed": {
-                              "type": "boolean",
-                              "enum": [
-                                true
-                              ]
-                            },
-                            "confirmedAt": {
-                              "type": "number"
-                            },
-                            "accessRequestedAt": {
-                              "type": "number"
-                            },
                             "role": {
                               "type": "string",
                               "enum": [
@@ -150746,6 +150774,18 @@
                                 "VIEWER_FOR_PLUS",
                                 "CONTRIBUTOR"
                               ]
+                            },
+                            "confirmed": {
+                              "type": "boolean",
+                              "enum": [
+                                true
+                              ]
+                            },
+                            "confirmedAt": {
+                              "type": "number"
+                            },
+                            "accessRequestedAt": {
+                              "type": "number"
                             },
                             "teamRoles": {
                               "items": {
@@ -158813,6 +158853,48 @@
                 },
                 "required": [
                   "enforced"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "publicId": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": "string"
+                  },
+                  "maxUses": {
+                    "type": "number"
+                  },
+                  "expiresAt": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "expiresAt",
+                  "maxUses",
+                  "publicId",
+                  "role"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "publicId": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "publicId"
                 ],
                 "type": "object",
                 "description": "The payload of the event, if requested."

@@ -11,8 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("inviteCode")]
-        public string? InviteCode { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant272PlanJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant272Plan Plan { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trial")]
+        public global::Vercel.UserEventPayloadVariant272Trial? Trial { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant272" /> class.
         /// </summary>
-        /// <param name="inviteCode"></param>
+        /// <param name="plan"></param>
+        /// <param name="trial"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant272(
-            string? inviteCode)
+            global::Vercel.UserEventPayloadVariant272Plan plan,
+            global::Vercel.UserEventPayloadVariant272Trial? trial)
         {
-            this.InviteCode = inviteCode;
+            this.Plan = plan;
+            this.Trial = trial;
         }
 
         /// <summary>

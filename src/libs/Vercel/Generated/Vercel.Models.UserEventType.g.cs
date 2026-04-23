@@ -1552,6 +1552,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamInviteLinkCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        TeamInviteLinkDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamIpBlockingRulesCreated,
         /// <summary>
         /// 
@@ -2168,6 +2176,8 @@ namespace Vercel
                 UserEventType.TeamEndedTrial => "team-ended-trial",
                 UserEventType.TeamInviteBulkDelete => "team-invite-bulk-delete",
                 UserEventType.TeamInviteCodeReset => "team-invite-code-reset",
+                UserEventType.TeamInviteLinkCreated => "team-invite-link-created",
+                UserEventType.TeamInviteLinkDeleted => "team-invite-link-deleted",
                 UserEventType.TeamIpBlockingRulesCreated => "team-ip-blocking-rules-created",
                 UserEventType.TeamIpBlockingRulesRemoved => "team-ip-blocking-rules-removed",
                 UserEventType.TeamMemberAdd => "team-member-add",
@@ -2618,6 +2628,8 @@ namespace Vercel
                 "team-ended-trial" => UserEventType.TeamEndedTrial,
                 "team-invite-bulk-delete" => UserEventType.TeamInviteBulkDelete,
                 "team-invite-code-reset" => UserEventType.TeamInviteCodeReset,
+                "team-invite-link-created" => UserEventType.TeamInviteLinkCreated,
+                "team-invite-link-deleted" => UserEventType.TeamInviteLinkDeleted,
                 "team-ip-blocking-rules-created" => UserEventType.TeamIpBlockingRulesCreated,
                 "team-ip-blocking-rules-removed" => UserEventType.TeamIpBlockingRulesRemoved,
                 "team-member-add" => UserEventType.TeamMemberAdd,

@@ -25,6 +25,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant116NewOwnerTeamRoleJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant116NewOwnerTeamRole Role { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confirmed")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Confirmed { get; set; }
@@ -41,14 +49,6 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accessRequestedAt")]
         public double? AccessRequestedAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant116NewOwnerTeamRoleJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant116NewOwnerTeamRole Role { get; set; }
 
         /// <summary>
         /// 
@@ -86,9 +86,9 @@ namespace Vercel
         /// </summary>
         /// <param name="createdAt"></param>
         /// <param name="teamId"></param>
+        /// <param name="role"></param>
         /// <param name="confirmed"></param>
         /// <param name="confirmedAt"></param>
-        /// <param name="role"></param>
         /// <param name="created"></param>
         /// <param name="accessRequestedAt"></param>
         /// <param name="teamRoles"></param>
@@ -100,9 +100,9 @@ namespace Vercel
         public UserEventPayloadVariant116NewOwnerTeam(
             double createdAt,
             string teamId,
+            global::Vercel.UserEventPayloadVariant116NewOwnerTeamRole role,
             bool confirmed,
             double confirmedAt,
-            global::Vercel.UserEventPayloadVariant116NewOwnerTeamRole role,
             double created,
             double? accessRequestedAt,
             global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant116NewOwnerTeamTeamRole>? teamRoles,
@@ -111,10 +111,10 @@ namespace Vercel
         {
             this.CreatedAt = createdAt;
             this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
+            this.Role = role;
             this.Confirmed = confirmed;
             this.ConfirmedAt = confirmedAt;
             this.AccessRequestedAt = accessRequestedAt;
-            this.Role = role;
             this.TeamRoles = teamRoles;
             this.TeamPermissions = teamPermissions;
             this.Created = created;
