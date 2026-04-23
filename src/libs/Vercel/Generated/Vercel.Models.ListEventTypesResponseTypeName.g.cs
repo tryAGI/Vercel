@@ -1551,6 +1551,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamInviteLinkCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        TeamInviteLinkDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamIpBlockingRulesCreated,
         /// <summary>
         /// 
@@ -2167,6 +2175,8 @@ namespace Vercel
                 ListEventTypesResponseTypeName.TeamEndedTrial => "team-ended-trial",
                 ListEventTypesResponseTypeName.TeamInviteBulkDelete => "team-invite-bulk-delete",
                 ListEventTypesResponseTypeName.TeamInviteCodeReset => "team-invite-code-reset",
+                ListEventTypesResponseTypeName.TeamInviteLinkCreated => "team-invite-link-created",
+                ListEventTypesResponseTypeName.TeamInviteLinkDeleted => "team-invite-link-deleted",
                 ListEventTypesResponseTypeName.TeamIpBlockingRulesCreated => "team-ip-blocking-rules-created",
                 ListEventTypesResponseTypeName.TeamIpBlockingRulesRemoved => "team-ip-blocking-rules-removed",
                 ListEventTypesResponseTypeName.TeamMemberAdd => "team-member-add",
@@ -2617,6 +2627,8 @@ namespace Vercel
                 "team-ended-trial" => ListEventTypesResponseTypeName.TeamEndedTrial,
                 "team-invite-bulk-delete" => ListEventTypesResponseTypeName.TeamInviteBulkDelete,
                 "team-invite-code-reset" => ListEventTypesResponseTypeName.TeamInviteCodeReset,
+                "team-invite-link-created" => ListEventTypesResponseTypeName.TeamInviteLinkCreated,
+                "team-invite-link-deleted" => ListEventTypesResponseTypeName.TeamInviteLinkDeleted,
                 "team-ip-blocking-rules-created" => ListEventTypesResponseTypeName.TeamIpBlockingRulesCreated,
                 "team-ip-blocking-rules-removed" => ListEventTypesResponseTypeName.TeamIpBlockingRulesRemoved,
                 "team-member-add" => ListEventTypesResponseTypeName.TeamMemberAdd,

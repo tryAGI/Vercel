@@ -11,16 +11,35 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("totp")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant287Previous Previous { get; set; }
+        public required bool Totp { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("recoveryCodes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant287Next Next { get; set; }
+        public required double RecoveryCodes { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("actorId")]
+        public string? ActorId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("actorType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant287ActorTypeJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant287ActorType? ActorType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +50,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant287" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="totp"></param>
+        /// <param name="recoveryCodes"></param>
+        /// <param name="actorId"></param>
+        /// <param name="actorType"></param>
+        /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant287(
-            global::Vercel.UserEventPayloadVariant287Previous previous,
-            global::Vercel.UserEventPayloadVariant287Next next)
+            bool totp,
+            double recoveryCodes,
+            string? actorId,
+            global::Vercel.UserEventPayloadVariant287ActorType? actorType,
+            string? reason)
         {
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Totp = totp;
+            this.RecoveryCodes = recoveryCodes;
+            this.ActorId = actorId;
+            this.ActorType = actorType;
+            this.Reason = reason;
         }
 
         /// <summary>

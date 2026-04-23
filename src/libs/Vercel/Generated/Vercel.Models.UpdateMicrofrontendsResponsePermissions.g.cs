@@ -923,6 +923,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamInviteLink")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamInviteLink { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamJoin")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamJoin { get; set; }
 
@@ -1633,6 +1639,7 @@ namespace Vercel
         /// <param name="teamGitExclusivity"></param>
         /// <param name="teamInvite"></param>
         /// <param name="teamInviteCode"></param>
+        /// <param name="teamInviteLink"></param>
         /// <param name="teamJoin"></param>
         /// <param name="teamMemberMfaStatus"></param>
         /// <param name="teamMicrofrontends"></param>
@@ -1881,6 +1888,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamGitExclusivity,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamInvite,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamInviteCode,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamInviteLink,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamJoin,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamMemberMfaStatus,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamMicrofrontends,
@@ -2126,6 +2134,7 @@ namespace Vercel
             this.TeamGitExclusivity = teamGitExclusivity;
             this.TeamInvite = teamInvite;
             this.TeamInviteCode = teamInviteCode;
+            this.TeamInviteLink = teamInviteLink;
             this.TeamJoin = teamJoin;
             this.TeamMemberMfaStatus = teamMemberMfaStatus;
             this.TeamMicrofrontends = teamMicrofrontends;

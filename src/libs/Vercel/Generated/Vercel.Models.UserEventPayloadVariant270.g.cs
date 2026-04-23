@@ -11,16 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant270PlanJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("publicId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant270Plan Plan { get; set; }
+        public required string PublicId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("trial")]
-        public global::Vercel.UserEventPayloadVariant270Trial? Trial { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant270" /> class.
         /// </summary>
-        /// <param name="plan"></param>
-        /// <param name="trial"></param>
+        /// <param name="publicId"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant270(
-            global::Vercel.UserEventPayloadVariant270Plan plan,
-            global::Vercel.UserEventPayloadVariant270Trial? trial)
+            string publicId,
+            string? name)
         {
-            this.Plan = plan;
-            this.Trial = trial;
+            this.PublicId = publicId ?? throw new global::System.ArgumentNullException(nameof(publicId));
+            this.Name = name;
         }
 
         /// <summary>
