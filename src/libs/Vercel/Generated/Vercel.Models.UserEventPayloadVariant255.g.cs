@@ -11,30 +11,53 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string Slug { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        public required string TeamId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
-        public bool? Enabled { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("by")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string By { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant255EnvironmentJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant255Environment Environment { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("byUid")]
+        public string? ByUid { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasons")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant255Reason>? Reasons { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("removedUsers")]
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant255RemovedUsers2>? RemovedUsers { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("removedMemberCount")]
+        public double? RemovedMemberCount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
+        public double? Timestamp { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +68,35 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant255" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="environment"></param>
-        /// <param name="enabled"></param>
+        /// <param name="slug"></param>
+        /// <param name="teamId"></param>
+        /// <param name="by"></param>
+        /// <param name="byUid"></param>
+        /// <param name="reasons"></param>
+        /// <param name="removedUsers"></param>
+        /// <param name="removedMemberCount"></param>
+        /// <param name="timestamp"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant255(
-            string projectId,
-            string projectName,
-            global::Vercel.UserEventPayloadVariant255Environment environment,
-            bool? enabled)
+            string slug,
+            string teamId,
+            string by,
+            string? byUid,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant255Reason>? reasons,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant255RemovedUsers2>? removedUsers,
+            double? removedMemberCount,
+            double? timestamp)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Enabled = enabled;
-            this.Environment = environment;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
+            this.By = by ?? throw new global::System.ArgumentNullException(nameof(by));
+            this.ByUid = byUid;
+            this.Reasons = reasons;
+            this.RemovedUsers = removedUsers;
+            this.RemovedMemberCount = removedMemberCount;
+            this.Timestamp = timestamp;
         }
 
         /// <summary>

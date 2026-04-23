@@ -9,94 +9,25 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant306
     {
         /// <summary>
-        /// The token's public ID.
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TokenId { get; set; }
+        public required string DeploymentId { get; set; }
 
         /// <summary>
-        /// User-supplied name of the token.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TokenName { get; set; }
-
-        /// <summary>
-        /// How the token was issued. Always `'manual'` for explicit PAT creation.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant306OriginJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant306Origin Origin { get; set; }
-
-        /// <summary>
-        /// Scope of the token: - `'user'`: full-account token (not tied to any team). - `'team'`: scoped to a single team. - `'project'`: scoped to a single project within a team.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant306ScopeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant306Scope Scope { get; set; }
-
-        /// <summary>
-        /// Present when `scope` is `'team'` or `'project'`.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
-        public string? TeamId { get; set; }
-
-        /// <summary>
-        /// Present when `scope` is `'team'` or `'project'`.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamSlug")]
-        public string? TeamSlug { get; set; }
-
-        /// <summary>
-        /// Present when `scope` is `'project'`.
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
-
-        /// <summary>
-        /// Unix epoch milliseconds. Absent when the token never expires.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
-        public double? ExpiresAt { get; set; }
-
-        /// <summary>
-        /// Whether the token was issued with RFC 9396 authorization details.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("hasAuthorizationDetails")]
-        public bool? HasAuthorizationDetails { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ip")]
-        public string? Ip { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("geolocation")]
-        public global::Vercel.UserEventPayloadVariant306Geolocation? Geolocation { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userAgent")]
-        public string? UserAgent { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reqId")]
-        public string? ReqId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reqUrl")]
-        public string? ReqUrl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("runId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RunId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -107,71 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant306" /> class.
         /// </summary>
-        /// <param name="tokenId">
-        /// The token's public ID.
-        /// </param>
-        /// <param name="tokenName">
-        /// User-supplied name of the token.
-        /// </param>
-        /// <param name="origin">
-        /// How the token was issued. Always `'manual'` for explicit PAT creation.
-        /// </param>
-        /// <param name="scope">
-        /// Scope of the token: - `'user'`: full-account token (not tied to any team). - `'team'`: scoped to a single team. - `'project'`: scoped to a single project within a team.
-        /// </param>
-        /// <param name="teamId">
-        /// Present when `scope` is `'team'` or `'project'`.
-        /// </param>
-        /// <param name="teamSlug">
-        /// Present when `scope` is `'team'` or `'project'`.
-        /// </param>
-        /// <param name="projectId">
-        /// Present when `scope` is `'project'`.
-        /// </param>
-        /// <param name="expiresAt">
-        /// Unix epoch milliseconds. Absent when the token never expires.
-        /// </param>
-        /// <param name="hasAuthorizationDetails">
-        /// Whether the token was issued with RFC 9396 authorization details.
-        /// </param>
-        /// <param name="ip"></param>
-        /// <param name="geolocation"></param>
-        /// <param name="userAgent"></param>
-        /// <param name="reqId"></param>
-        /// <param name="reqUrl"></param>
+        /// <param name="deploymentId"></param>
+        /// <param name="projectId"></param>
+        /// <param name="runId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant306(
-            string tokenId,
-            string tokenName,
-            global::Vercel.UserEventPayloadVariant306Origin origin,
-            global::Vercel.UserEventPayloadVariant306Scope scope,
-            string? teamId,
-            string? teamSlug,
-            string? projectId,
-            double? expiresAt,
-            bool? hasAuthorizationDetails,
-            string? ip,
-            global::Vercel.UserEventPayloadVariant306Geolocation? geolocation,
-            string? userAgent,
-            string? reqId,
-            string? reqUrl)
+            string deploymentId,
+            string projectId,
+            string runId)
         {
-            this.TokenId = tokenId ?? throw new global::System.ArgumentNullException(nameof(tokenId));
-            this.TokenName = tokenName ?? throw new global::System.ArgumentNullException(nameof(tokenName));
-            this.Origin = origin;
-            this.Scope = scope;
-            this.TeamId = teamId;
-            this.TeamSlug = teamSlug;
-            this.ProjectId = projectId;
-            this.ExpiresAt = expiresAt;
-            this.HasAuthorizationDetails = hasAuthorizationDetails;
-            this.Ip = ip;
-            this.Geolocation = geolocation;
-            this.UserAgent = userAgent;
-            this.ReqId = reqId;
-            this.ReqUrl = reqUrl;
+            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.RunId = runId ?? throw new global::System.ArgumentNullException(nameof(runId));
         }
 
         /// <summary>

@@ -9,19 +9,10 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant279
     {
         /// <summary>
-        /// 
+        /// Represents configuration for remote caching
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Enabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant279ScopeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant279Scope Scope { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("remoteCaching")]
+        public global::Vercel.UserEventPayloadVariant279RemoteCaching? RemoteCaching { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,17 +23,16 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant279" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
-        /// <param name="scope"></param>
+        /// <param name="remoteCaching">
+        /// Represents configuration for remote caching
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant279(
-            bool enabled,
-            global::Vercel.UserEventPayloadVariant279Scope scope)
+            global::Vercel.UserEventPayloadVariant279RemoteCaching? remoteCaching)
         {
-            this.Enabled = enabled;
-            this.Scope = scope;
+            this.RemoteCaching = remoteCaching;
         }
 
         /// <summary>

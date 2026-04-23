@@ -11,16 +11,28 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("instances")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Instances { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectWebAnalytics")]
+        public global::Vercel.UserEventPayloadVariant224ProjectWebAnalytics? ProjectWebAnalytics { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevProjectWebAnalytics")]
+        public global::Vercel.UserEventPayloadVariant224PrevProjectWebAnalytics? PrevProjectWebAnalytics { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +43,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant224" /> class.
         /// </summary>
-        /// <param name="instances"></param>
-        /// <param name="url"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="projectWebAnalytics"></param>
+        /// <param name="prevProjectWebAnalytics"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant224(
-            double instances,
-            string url)
+            string projectId,
+            string projectName,
+            global::Vercel.UserEventPayloadVariant224ProjectWebAnalytics? projectWebAnalytics,
+            global::Vercel.UserEventPayloadVariant224PrevProjectWebAnalytics? prevProjectWebAnalytics)
         {
-            this.Instances = instances;
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.ProjectWebAnalytics = projectWebAnalytics;
+            this.PrevProjectWebAnalytics = prevProjectWebAnalytics;
         }
 
         /// <summary>

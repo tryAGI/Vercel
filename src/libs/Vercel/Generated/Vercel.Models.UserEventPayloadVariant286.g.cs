@@ -11,17 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant286ProviderJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("fileId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant286Provider Provider { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("login")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Login { get; set; }
+        public required string FileId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,17 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant286" /> class.
         /// </summary>
-        /// <param name="provider"></param>
-        /// <param name="login"></param>
+        /// <param name="fileId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant286(
-            global::Vercel.UserEventPayloadVariant286Provider provider,
-            string login)
+            string fileId)
         {
-            this.Provider = provider;
-            this.Login = login ?? throw new global::System.ArgumentNullException(nameof(login));
+            this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
         }
 
         /// <summary>

@@ -11,15 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Enabled { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant254PreviousJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant254Previous? Previous { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
-        public string? Domain { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant254NextJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant254Next? Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant254" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
-        /// <param name="domain"></param>
+        /// <param name="previous"></param>
+        /// <param name="next"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant254(
-            bool enabled,
-            string? domain)
+            global::Vercel.UserEventPayloadVariant254Previous? previous,
+            global::Vercel.UserEventPayloadVariant254Next? next)
         {
-            this.Enabled = enabled;
-            this.Domain = domain;
+            this.Previous = previous;
+            this.Next = next;
         }
 
         /// <summary>

@@ -11,15 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant192Project Project { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant192Project> Projects { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectMembership")]
-        public global::Vercel.UserEventPayloadVariant192ProjectMembership? ProjectMembership { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Uid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant192" /> class.
         /// </summary>
-        /// <param name="project"></param>
-        /// <param name="projectMembership"></param>
+        /// <param name="projects"></param>
+        /// <param name="uid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant192(
-            global::Vercel.UserEventPayloadVariant192Project project,
-            global::Vercel.UserEventPayloadVariant192ProjectMembership? projectMembership)
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant192Project> projects,
+            string uid)
         {
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.ProjectMembership = projectMembership;
+            this.Projects = projects ?? throw new global::System.ArgumentNullException(nameof(projects));
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
         }
 
         /// <summary>

@@ -11,12 +11,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
@@ -24,9 +18,37 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enableFunctionsBeta")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool EnableFunctionsBeta { get; set; }
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CustomEnvironmentId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentSlug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CustomEnvironmentSlug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant168Previous Previous { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant168Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,19 +60,28 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant168" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="enableFunctionsBeta"></param>
         /// <param name="projectName"></param>
+        /// <param name="customEnvironmentId"></param>
+        /// <param name="customEnvironmentSlug"></param>
+        /// <param name="previous"></param>
+        /// <param name="next"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant168(
             string projectId,
-            bool enableFunctionsBeta,
-            string? projectName)
+            string projectName,
+            string customEnvironmentId,
+            string customEnvironmentSlug,
+            global::Vercel.UserEventPayloadVariant168Previous previous,
+            global::Vercel.UserEventPayloadVariant168Next next)
         {
-            this.ProjectName = projectName;
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.EnableFunctionsBeta = enableFunctionsBeta;
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.CustomEnvironmentId = customEnvironmentId ?? throw new global::System.ArgumentNullException(nameof(customEnvironmentId));
+            this.CustomEnvironmentSlug = customEnvironmentSlug ?? throw new global::System.ArgumentNullException(nameof(customEnvironmentSlug));
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

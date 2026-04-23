@@ -11,10 +11,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("consent")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant276ConsentJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant276Consent Consent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("inviteCode")]
+        public string? InviteCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,14 +23,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant276" /> class.
         /// </summary>
-        /// <param name="consent"></param>
+        /// <param name="inviteCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant276(
-            global::Vercel.UserEventPayloadVariant276Consent consent)
+            string? inviteCode)
         {
-            this.Consent = consent;
+            this.InviteCode = inviteCode;
         }
 
         /// <summary>

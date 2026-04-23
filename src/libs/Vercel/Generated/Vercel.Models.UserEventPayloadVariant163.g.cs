@@ -11,6 +11,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant163Next Next { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant163Previous Previous { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
@@ -25,30 +39,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("elasticConcurrencyEnabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("updates")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool ElasticConcurrencyEnabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldElasticConcurrencyEnabled")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool OldElasticConcurrencyEnabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildQueueConfiguration")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant163BuildQueueConfigurationJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant163BuildQueueConfiguration? BuildQueueConfiguration { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldBuildQueueConfiguration")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant163OldBuildQueueConfigurationJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant163OldBuildQueueConfiguration? OldBuildQueueConfiguration { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant163Update> Updates { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,29 +52,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant163" /> class.
         /// </summary>
+        /// <param name="next"></param>
+        /// <param name="previous"></param>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="elasticConcurrencyEnabled"></param>
-        /// <param name="oldElasticConcurrencyEnabled"></param>
-        /// <param name="buildQueueConfiguration"></param>
-        /// <param name="oldBuildQueueConfiguration"></param>
+        /// <param name="updates"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant163(
+            global::Vercel.UserEventPayloadVariant163Next next,
+            global::Vercel.UserEventPayloadVariant163Previous previous,
             string projectId,
             string projectName,
-            bool elasticConcurrencyEnabled,
-            bool oldElasticConcurrencyEnabled,
-            global::Vercel.UserEventPayloadVariant163BuildQueueConfiguration? buildQueueConfiguration,
-            global::Vercel.UserEventPayloadVariant163OldBuildQueueConfiguration? oldBuildQueueConfiguration)
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant163Update> updates)
         {
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
-            this.OldElasticConcurrencyEnabled = oldElasticConcurrencyEnabled;
-            this.BuildQueueConfiguration = buildQueueConfiguration;
-            this.OldBuildQueueConfiguration = oldBuildQueueConfiguration;
+            this.Updates = updates ?? throw new global::System.ArgumentNullException(nameof(updates));
         }
 
         /// <summary>
