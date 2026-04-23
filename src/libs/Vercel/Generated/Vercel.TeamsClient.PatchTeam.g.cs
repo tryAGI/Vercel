@@ -631,6 +631,10 @@ namespace Vercel
         /// Display or hide IP addresses in Log Drains.<br/>
         /// Example: false
         /// </param>
+        /// <param name="requireVerifiedCommits">
+        /// When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created.<br/>
+        /// Example: true
+        /// </param>
         /// <param name="defaultDeploymentProtection">
         /// Default deployment protection settings for new projects.
         /// </param>
@@ -666,6 +670,7 @@ namespace Vercel
             global::Vercel.PatchTeamRequestRemoteCaching? remoteCaching = default,
             bool? hideIpAddresses = default,
             bool? hideIpAddressesInLogDrains = default,
+            bool? requireVerifiedCommits = default,
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection = default,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings = default,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings = default,
@@ -692,6 +697,7 @@ namespace Vercel
                 RemoteCaching = remoteCaching,
                 HideIpAddresses = hideIpAddresses,
                 HideIpAddressesInLogDrains = hideIpAddressesInLogDrains,
+                RequireVerifiedCommits = requireVerifiedCommits,
                 DefaultDeploymentProtection = defaultDeploymentProtection,
                 DefaultExpirationSettings = defaultExpirationSettings,
                 StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings,

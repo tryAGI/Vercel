@@ -19,6 +19,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        EnterpriseUnpaidInvoice,
+        /// <summary>
+        /// 
+        /// </summary>
         FairUseLimitsExceeded,
         /// <summary>
         /// 
@@ -48,6 +52,7 @@ namespace Vercel
             {
                 UserEventPayloadVariant116NewOwnerSoftBlockReason.BlockedForPlatformAbuse => "BLOCKED_FOR_PLATFORM_ABUSE",
                 UserEventPayloadVariant116NewOwnerSoftBlockReason.EnterpriseTrialEnded => "ENTERPRISE_TRIAL_ENDED",
+                UserEventPayloadVariant116NewOwnerSoftBlockReason.EnterpriseUnpaidInvoice => "ENTERPRISE_UNPAID_INVOICE",
                 UserEventPayloadVariant116NewOwnerSoftBlockReason.FairUseLimitsExceeded => "FAIR_USE_LIMITS_EXCEEDED",
                 UserEventPayloadVariant116NewOwnerSoftBlockReason.SubscriptionCanceled => "SUBSCRIPTION_CANCELED",
                 UserEventPayloadVariant116NewOwnerSoftBlockReason.SubscriptionExpired => "SUBSCRIPTION_EXPIRED",
@@ -64,6 +69,7 @@ namespace Vercel
             {
                 "BLOCKED_FOR_PLATFORM_ABUSE" => UserEventPayloadVariant116NewOwnerSoftBlockReason.BlockedForPlatformAbuse,
                 "ENTERPRISE_TRIAL_ENDED" => UserEventPayloadVariant116NewOwnerSoftBlockReason.EnterpriseTrialEnded,
+                "ENTERPRISE_UNPAID_INVOICE" => UserEventPayloadVariant116NewOwnerSoftBlockReason.EnterpriseUnpaidInvoice,
                 "FAIR_USE_LIMITS_EXCEEDED" => UserEventPayloadVariant116NewOwnerSoftBlockReason.FairUseLimitsExceeded,
                 "SUBSCRIPTION_CANCELED" => UserEventPayloadVariant116NewOwnerSoftBlockReason.SubscriptionCanceled,
                 "SUBSCRIPTION_EXPIRED" => UserEventPayloadVariant116NewOwnerSoftBlockReason.SubscriptionExpired,

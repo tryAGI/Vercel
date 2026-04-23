@@ -168,6 +168,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.TeamIpBucket>? IpBuckets { get; set; }
 
         /// <summary>
+        /// When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created. Projects may override this via `project.gitProviderOptions.requireVerifiedCommits` (gated by `Project:Update`).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("requireVerifiedCommits")]
+        public bool? RequireVerifiedCommits { get; set; }
+
+        /// <summary>
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("strictDeploymentProtectionSettings")]
@@ -351,6 +357,9 @@ namespace Vercel
         /// Indicates if IP addresses should be accessible in log drains
         /// </param>
         /// <param name="ipBuckets"></param>
+        /// <param name="requireVerifiedCommits">
+        /// When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created. Projects may override this via `project.gitProviderOptions.requireVerifiedCommits` (gated by `Project:Update`).
+        /// </param>
         /// <param name="strictDeploymentProtectionSettings">
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </param>
@@ -411,6 +420,7 @@ namespace Vercel
             bool? hideIpAddresses,
             bool? hideIpAddressesInLogDrains,
             global::System.Collections.Generic.IList<global::Vercel.TeamIpBucket>? ipBuckets,
+            bool? requireVerifiedCommits,
             global::Vercel.TeamStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.TeamStrictShareableLinks? strictShareableLinks,
             global::Vercel.TeamNsnbConfig? nsnbConfig,
@@ -444,6 +454,7 @@ namespace Vercel
             this.HideIpAddresses = hideIpAddresses;
             this.HideIpAddressesInLogDrains = hideIpAddressesInLogDrains;
             this.IpBuckets = ipBuckets;
+            this.RequireVerifiedCommits = requireVerifiedCommits;
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
             this.StrictShareableLinks = strictShareableLinks;
             this.NsnbConfig = nsnbConfig;
