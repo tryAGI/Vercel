@@ -104,7 +104,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<object, global::Vercel.ListUserEventsResponseVariant2>> ListUserEventsAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.ListUserEventsResponse> ListUserEventsAsync(
             double? limit = default,
             string? since = default,
             string? until = default,
@@ -502,7 +502,7 @@ namespace Vercel
                                     __response.EnsureSuccessStatusCode();
 
                                     return
-                                        global::Vercel.OneOf<object, global::Vercel.ListUserEventsResponseVariant2>.FromJson(__content, JsonSerializerContext) ??
+                                        global::Vercel.ListUserEventsResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                                 }
                                 catch (global::System.Exception __ex)
@@ -532,7 +532,7 @@ namespace Vercel
                                     ).ConfigureAwait(false);
 
                                     return
-                                        await global::Vercel.OneOf<object, global::Vercel.ListUserEventsResponseVariant2>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                        await global::Vercel.ListUserEventsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                                 }
                                 catch (global::System.Exception __ex)
