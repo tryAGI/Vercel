@@ -49,7 +49,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<object, global::Vercel.ListUserEventsResponseVariant2>> ListUserEventsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.ListUserEventsResponse> ListUserEventsAsync(
             double? limit = default,
             string? since = default,
             string? until = default,
