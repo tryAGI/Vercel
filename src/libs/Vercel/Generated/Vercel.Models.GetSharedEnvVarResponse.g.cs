@@ -126,6 +126,12 @@ namespace Vercel
         public bool? ApplyToAllCustomEnvironments { get; set; }
 
         /// <summary>
+        /// The custom environment IDs that this Shared Env Var is scoped to.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentIds")]
+        public global::System.Collections.Generic.IList<string>? CustomEnvironmentIds { get; set; }
+
+        /// <summary>
         /// whether or not this env variable is decrypted
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("decrypted")]
@@ -210,6 +216,9 @@ namespace Vercel
         /// <param name="applyToAllCustomEnvironments">
         /// whether or not this env varible applies to custom environments
         /// </param>
+        /// <param name="customEnvironmentIds">
+        /// The custom environment IDs that this Shared Env Var is scoped to.
+        /// </param>
         /// <param name="decrypted">
         /// whether or not this env variable is decrypted
         /// </param>
@@ -238,6 +247,7 @@ namespace Vercel
             global::Vercel.GetSharedEnvVarResponseType? type,
             global::System.Collections.Generic.IList<global::Vercel.GetSharedEnvVarResponseTargetItem>? target,
             bool? applyToAllCustomEnvironments,
+            global::System.Collections.Generic.IList<string>? customEnvironmentIds,
             bool? decrypted,
             string? comment,
             string? lastEditedByDisplayName)
@@ -257,6 +267,7 @@ namespace Vercel
             this.Type = type;
             this.Target = target;
             this.ApplyToAllCustomEnvironments = applyToAllCustomEnvironments;
+            this.CustomEnvironmentIds = customEnvironmentIds;
             this.Decrypted = decrypted;
             this.Comment = comment;
             this.LastEditedByDisplayName = lastEditedByDisplayName;
