@@ -189,6 +189,14 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant9PreviousRoleNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant13DeploymentAllowListedReadyStateReasonInternalJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant13DeploymentAllowListedReadyStateReasonInternalNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant14DeploymentAllowListedReadyStateReasonInternalJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant14DeploymentAllowListedReadyStateReasonInternalNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant21ActionJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant21ActionNullableJsonConverter),
@@ -272,6 +280,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant41ActionJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant41ActionNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant69DeploymentAllowListedReadyStateReasonInternalJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant69DeploymentAllowListedReadyStateReasonInternalNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant70JobVariant1TypeJsonConverter),
 
@@ -13031,8 +13043,10 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant13))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant13Deployment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant13DeploymentAllowListedReadyStateReasonInternal), TypeInfoPropertyName = "UserEventPayloadVariant13DeploymentAllowListedReadyStateReasonInternal2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant14))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant14Deployment))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant14DeploymentAllowListedReadyStateReasonInternal), TypeInfoPropertyName = "UserEventPayloadVariant14DeploymentAllowListedReadyStateReasonInternal2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant15))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant15OldTeam))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant15NewTeam))]
@@ -13152,6 +13166,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant68))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant69))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant69Deployment))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant69DeploymentAllowListedReadyStateReasonInternal), TypeInfoPropertyName = "UserEventPayloadVariant69DeploymentAllowListedReadyStateReasonInternal2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant70))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant70JobVariant1, global::Vercel.UserEventPayloadVariant70JobVariant2, global::Vercel.UserEventPayloadVariant70JobVariant3, global::Vercel.UserEventPayloadVariant70JobVariant4, global::Vercel.UserEventPayloadVariant70JobVariant5, global::Vercel.UserEventPayloadVariant70JobVariant6, global::Vercel.UserEventPayloadVariant70JobVariant7, global::Vercel.UserEventPayloadVariant70JobVariant8>), TypeInfoPropertyName = "UserEventPayloadVariant70JobVariant8_6d1de5d59f1c2953")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant70JobVariant1))]
