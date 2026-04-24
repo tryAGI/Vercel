@@ -143934,6 +143934,20 @@
                           "type": "string"
                         },
                         "type": "object"
+                      },
+                      "readyState": {
+                        "type": "string"
+                      },
+                      "allowListedReadyStateReasonInternal": {
+                        "type": "string",
+                        "enum": [
+                          "EARLY_IGNORE_STEP",
+                          "IGNORE_STEP",
+                          "NAMESPACE_PRUNED",
+                          "UNAFFECTED_PROJECT",
+                          "UNVERIFIED_COMMIT"
+                        ],
+                        "description": "A narrowed subset of the deployment's `readyStateReasonInternal` \u2014 only values in the public allowlist are permitted here. Callers should run their raw reason through `toAllowListedReadyStateReasonInternal` from `@api/events` before assigning. This keeps abuse / moderation / admin reasons out of the public activity log."
                       }
                     },
                     "required": [
@@ -144011,6 +144025,20 @@
                           "type": "string"
                         },
                         "type": "object"
+                      },
+                      "readyState": {
+                        "type": "string"
+                      },
+                      "allowListedReadyStateReasonInternal": {
+                        "type": "string",
+                        "enum": [
+                          "EARLY_IGNORE_STEP",
+                          "IGNORE_STEP",
+                          "NAMESPACE_PRUNED",
+                          "UNAFFECTED_PROJECT",
+                          "UNVERIFIED_COMMIT"
+                        ],
+                        "description": "A narrowed subset of the deployment's `readyStateReasonInternal` \u2014 only values in the public allowlist are permitted here. Callers should run their raw reason through `toAllowListedReadyStateReasonInternal` from `@api/events` before assigning. This keeps abuse / moderation / admin reasons out of the public activity log."
                       }
                     },
                     "required": [
@@ -145742,6 +145770,20 @@
                           "type": "string"
                         },
                         "type": "object"
+                      },
+                      "readyState": {
+                        "type": "string"
+                      },
+                      "allowListedReadyStateReasonInternal": {
+                        "type": "string",
+                        "enum": [
+                          "EARLY_IGNORE_STEP",
+                          "IGNORE_STEP",
+                          "NAMESPACE_PRUNED",
+                          "UNAFFECTED_PROJECT",
+                          "UNVERIFIED_COMMIT"
+                        ],
+                        "description": "A narrowed subset of the deployment's `readyStateReasonInternal` \u2014 only values in the public allowlist are permitted here. Callers should run their raw reason through `toAllowListedReadyStateReasonInternal` from `@api/events` before assigning. This keeps abuse / moderation / admin reasons out of the public activity log."
                       }
                     },
                     "required": [

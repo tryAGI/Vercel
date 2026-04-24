@@ -37,6 +37,19 @@ namespace Vercel
         public required global::System.Collections.Generic.Dictionary<string, string> Meta { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("readyState")]
+        public string? ReadyState { get; set; }
+
+        /// <summary>
+        /// A narrowed subset of the deployment's `readyStateReasonInternal` — only values in the public allowlist are permitted here. Callers should run their raw reason through `toAllowListedReadyStateReasonInternal` from `@api/events` before assigning. This keeps abuse / moderation / admin reasons out of the public activity log.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("allowListedReadyStateReasonInternal")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant13DeploymentAllowListedReadyStateReasonInternalJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant13DeploymentAllowListedReadyStateReasonInternal? AllowListedReadyStateReasonInternal { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -49,6 +62,10 @@ namespace Vercel
         /// <param name="name"></param>
         /// <param name="url"></param>
         /// <param name="meta"></param>
+        /// <param name="readyState"></param>
+        /// <param name="allowListedReadyStateReasonInternal">
+        /// A narrowed subset of the deployment's `readyStateReasonInternal` — only values in the public allowlist are permitted here. Callers should run their raw reason through `toAllowListedReadyStateReasonInternal` from `@api/events` before assigning. This keeps abuse / moderation / admin reasons out of the public activity log.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -56,12 +73,16 @@ namespace Vercel
             string id,
             string name,
             string url,
-            global::System.Collections.Generic.Dictionary<string, string> meta)
+            global::System.Collections.Generic.Dictionary<string, string> meta,
+            string? readyState,
+            global::Vercel.UserEventPayloadVariant13DeploymentAllowListedReadyStateReasonInternal? allowListedReadyStateReasonInternal)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Meta = meta ?? throw new global::System.ArgumentNullException(nameof(meta));
+            this.ReadyState = readyState;
+            this.AllowListedReadyStateReasonInternal = allowListedReadyStateReasonInternal;
         }
 
         /// <summary>
