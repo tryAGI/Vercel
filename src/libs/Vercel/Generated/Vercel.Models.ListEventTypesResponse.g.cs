@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    /// Response returned by the List Event Types endpoint.
     /// </summary>
     public sealed partial class ListEventTypesResponse
     {
@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("types")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseType> Types { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.ListEventType> Types { get; set; }
 
         /// <summary>
         /// 
@@ -37,7 +37,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListEventTypesResponse(
-            global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseType> types,
+            global::System.Collections.Generic.IList<global::Vercel.ListEventType> types,
             global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseCategorie> categories)
         {
             this.Types = types ?? throw new global::System.ArgumentNullException(nameof(types));
