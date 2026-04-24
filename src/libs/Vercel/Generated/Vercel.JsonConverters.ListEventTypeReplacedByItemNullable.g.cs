@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class ListEventTypesResponseTypeNameNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.ListEventTypesResponseTypeName?>
+    public sealed class ListEventTypeReplacedByItemNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.ListEventTypeReplacedByItem?>
     {
         /// <inheritdoc />
-        public override global::Vercel.ListEventTypesResponseTypeName? Read(
+        public override global::Vercel.ListEventTypeReplacedByItem? Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.ListEventTypesResponseTypeNameExtensions.ToEnum(stringValue);
+                        return global::Vercel.ListEventTypeReplacedByItemExtensions.ToEnum(stringValue);
                     }
                     
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.ListEventTypesResponseTypeName)numValue;
+                    return (global::Vercel.ListEventTypeReplacedByItem)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.ListEventTypesResponseTypeName?);
+                    return default(global::Vercel.ListEventTypeReplacedByItem?);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,7 +42,7 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.ListEventTypesResponseTypeName? value,
+            global::Vercel.ListEventTypeReplacedByItem? value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
@@ -53,7 +53,7 @@ namespace Vercel.JsonConverters
             }
             else
             {
-                writer.WriteStringValue(global::Vercel.ListEventTypesResponseTypeNameExtensions.ToValueString(value.Value));
+                writer.WriteStringValue(global::Vercel.ListEventTypeReplacedByItemExtensions.ToValueString(value.Value));
             }
         }
     }
