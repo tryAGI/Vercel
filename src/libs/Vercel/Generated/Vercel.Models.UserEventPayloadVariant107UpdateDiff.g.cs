@@ -66,6 +66,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldCustomEnvironmentIds")]
+        public global::System.Collections.Generic.IList<string>? OldCustomEnvironmentIds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newCustomEnvironmentIds")]
+        public global::System.Collections.Generic.IList<string>? NewCustomEnvironmentIds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("changedValue")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool ChangedValue { get; set; }
@@ -89,6 +101,8 @@ namespace Vercel
         /// <param name="newType"></param>
         /// <param name="oldProjects"></param>
         /// <param name="newProjects"></param>
+        /// <param name="oldCustomEnvironmentIds"></param>
+        /// <param name="newCustomEnvironmentIds"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -102,7 +116,9 @@ namespace Vercel
             string? oldType,
             string? newType,
             global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant107UpdateDiffOldProject>? oldProjects,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant107UpdateDiffNewProject>? newProjects)
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant107UpdateDiffNewProject>? newProjects,
+            global::System.Collections.Generic.IList<string>? oldCustomEnvironmentIds,
+            global::System.Collections.Generic.IList<string>? newCustomEnvironmentIds)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Key = key;
@@ -113,6 +129,8 @@ namespace Vercel
             this.NewType = newType;
             this.OldProjects = oldProjects;
             this.NewProjects = newProjects;
+            this.OldCustomEnvironmentIds = oldCustomEnvironmentIds;
+            this.NewCustomEnvironmentIds = newCustomEnvironmentIds;
             this.ChangedValue = changedValue;
         }
 

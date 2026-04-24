@@ -38913,6 +38913,13 @@
                             ],
                             "description": "whether or not this env varible applies to custom environments"
                           },
+                          "customEnvironmentIds": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array",
+                            "description": "The custom environment IDs that this Shared Env Var is scoped to."
+                          },
                           "decrypted": {
                             "type": "boolean",
                             "enum": [
@@ -39092,6 +39099,11 @@
                   {
                     "required": [
                       "applyToAllCustomEnvironments"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "customEnvironmentIds"
                     ]
                   }
                 ],
@@ -39293,6 +39305,13 @@
                               true
                             ],
                             "description": "whether or not this env varible applies to custom environments"
+                          },
+                          "customEnvironmentIds": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array",
+                            "description": "The custom environment IDs that this Shared Env Var is scoped to."
                           },
                           "decrypted": {
                             "type": "boolean",
@@ -39562,6 +39581,13 @@
                               true
                             ],
                             "description": "whether or not this env varible applies to custom environments"
+                          },
+                          "customEnvironmentIds": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array",
+                            "description": "The custom environment IDs that this Shared Env Var is scoped to."
                           },
                           "decrypted": {
                             "type": "boolean",
@@ -40162,6 +40188,13 @@
                         true
                       ],
                       "description": "whether or not this env varible applies to custom environments"
+                    },
+                    "customEnvironmentIds": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array",
+                      "description": "The custom environment IDs that this Shared Env Var is scoped to."
                     },
                     "decrypted": {
                       "type": "boolean",
@@ -149413,6 +149446,13 @@
                     ],
                     "description": "whether or not this env varible applies to custom environments"
                   },
+                  "customEnvironmentIds": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array",
+                    "description": "The custom environment IDs that this Shared Env Var is scoped to."
+                  },
                   "decrypted": {
                     "type": "boolean",
                     "enum": [
@@ -149550,6 +149590,13 @@
                         ],
                         "description": "whether or not this env varible applies to custom environments"
                       },
+                      "customEnvironmentIds": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "description": "The custom environment IDs that this Shared Env Var is scoped to."
+                      },
                       "decrypted": {
                         "type": "boolean",
                         "enum": [
@@ -149675,6 +149722,13 @@
                         ],
                         "description": "whether or not this env varible applies to custom environments"
                       },
+                      "customEnvironmentIds": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "description": "The custom environment IDs that this Shared Env Var is scoped to."
+                      },
                       "decrypted": {
                         "type": "boolean",
                         "enum": [
@@ -149764,6 +149818,18 @@
                             "projectId"
                           ],
                           "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "oldCustomEnvironmentIds": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "newCustomEnvironmentIds": {
+                        "items": {
+                          "type": "string"
                         },
                         "type": "array"
                       },
