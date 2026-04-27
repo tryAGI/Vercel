@@ -11,9 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenTypes")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> TokenTypes { get; set; }
+        public required string Domain { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ips")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> Ips { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant285" /> class.
         /// </summary>
-        /// <param name="tokenTypes"></param>
+        /// <param name="domain"></param>
+        /// <param name="ips"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant285(
-            global::System.Collections.Generic.IList<string> tokenTypes)
+            string domain,
+            global::System.Collections.Generic.IList<string> ips)
         {
-            this.TokenTypes = tokenTypes ?? throw new global::System.ArgumentNullException(nameof(tokenTypes));
+            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
+            this.Ips = ips ?? throw new global::System.ArgumentNullException(nameof(ips));
         }
 
         /// <summary>

@@ -153390,6 +153390,28 @@
               },
               {
                 "properties": {
+                  "projectId": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "headerName": {
+                    "type": "string"
+                  },
+                  "previousStatus": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "previousStatus",
+                  "projectId"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
                   "oldName": {
                     "type": "string"
                   },

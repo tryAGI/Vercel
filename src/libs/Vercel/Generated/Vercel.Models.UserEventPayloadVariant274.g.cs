@@ -11,16 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousConcurrentBuilds")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("publicId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double PreviousConcurrentBuilds { get; set; }
+        public required string PublicId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nextConcurrentBuilds")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double NextConcurrentBuilds { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant274" /> class.
         /// </summary>
-        /// <param name="previousConcurrentBuilds"></param>
-        /// <param name="nextConcurrentBuilds"></param>
+        /// <param name="publicId"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant274(
-            double previousConcurrentBuilds,
-            double nextConcurrentBuilds)
+            string publicId,
+            string? name)
         {
-            this.PreviousConcurrentBuilds = previousConcurrentBuilds;
-            this.NextConcurrentBuilds = nextConcurrentBuilds;
+            this.PublicId = publicId ?? throw new global::System.ArgumentNullException(nameof(publicId));
+            this.Name = name;
         }
 
         /// <summary>
