@@ -143253,6 +143253,8 @@
               "user-mfa-totp-verified",
               "user-primary-email-updated",
               "user-token-created",
+              "user-token-deleted",
+              "user-tokens-deleted",
               "username",
               "alert-rule-created",
               "alert-rule-updated",
@@ -159753,6 +159755,255 @@
                 ],
                 "type": "object",
                 "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "tokenId": {
+                    "type": "string"
+                  },
+                  "tokenType": {
+                    "type": "string"
+                  },
+                  "tokenName": {
+                    "type": "string"
+                  },
+                  "actorTokenId": {
+                    "type": "string"
+                  },
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "email",
+                      "saml",
+                      "app",
+                      "github",
+                      "gitlab",
+                      "bitbucket",
+                      "google",
+                      "apple",
+                      "chatgpt",
+                      "github-webhook",
+                      "manual",
+                      "passkey",
+                      "otp",
+                      "sms",
+                      "invite",
+                      "emu"
+                    ]
+                  },
+                  "teamId": {
+                    "type": "string"
+                  },
+                  "expired": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  },
+                  "leaked": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  },
+                  "revoked": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  },
+                  "ip": {
+                    "nullable": true,
+                    "type": "string"
+                  },
+                  "geolocation": {
+                    "nullable": true,
+                    "properties": {
+                      "city": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "country": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "most_specific_subdivision": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "regionName": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "country"
+                    ],
+                    "type": "object"
+                  },
+                  "userAgent": {
+                    "type": "string"
+                  },
+                  "reqId": {
+                    "type": "string"
+                  },
+                  "reqUrl": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "actorTokenId",
+                  "tokenId",
+                  "tokenName",
+                  "tokenType"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "deletedCount": {
+                    "type": "number"
+                  },
+                  "actorTokenId": {
+                    "type": "string"
+                  },
+                  "ip": {
+                    "nullable": true,
+                    "type": "string"
+                  },
+                  "geolocation": {
+                    "nullable": true,
+                    "properties": {
+                      "city": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "country": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "most_specific_subdivision": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "regionName": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "country"
+                    ],
+                    "type": "object"
+                  },
+                  "userAgent": {
+                    "type": "string"
+                  },
+                  "reqId": {
+                    "type": "string"
+                  },
+                  "reqUrl": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "actorTokenId",
+                  "deletedCount"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
               }
             ]
           }
@@ -160210,6 +160461,8 @@
               "user-mfa-totp-verified",
               "user-primary-email-updated",
               "user-token-created",
+              "user-token-deleted",
+              "user-tokens-deleted",
               "username",
               "alert-rule-created",
               "alert-rule-updated",
@@ -160722,6 +160975,8 @@
                 "user-mfa-totp-verified",
                 "user-primary-email-updated",
                 "user-token-created",
+                "user-token-deleted",
+                "user-tokens-deleted",
                 "username",
                 "alert-rule-created",
                 "alert-rule-updated",

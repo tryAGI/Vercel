@@ -1740,6 +1740,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserTokenDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserTokensDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         Username,
         /// <summary>
         /// 
@@ -2271,6 +2279,8 @@ namespace Vercel
                 UserEventType.UserMfaTotpVerified => "user-mfa-totp-verified",
                 UserEventType.UserPrimaryEmailUpdated => "user-primary-email-updated",
                 UserEventType.UserTokenCreated => "user-token-created",
+                UserEventType.UserTokenDeleted => "user-token-deleted",
+                UserEventType.UserTokensDeleted => "user-tokens-deleted",
                 UserEventType.Username => "username",
                 UserEventType.V0ChatAiUsage => "v0-chat-ai-usage",
                 UserEventType.V0ChatCreated => "v0-chat-created",
@@ -2735,6 +2745,8 @@ namespace Vercel
                 "user-mfa-totp-verified" => UserEventType.UserMfaTotpVerified,
                 "user-primary-email-updated" => UserEventType.UserPrimaryEmailUpdated,
                 "user-token-created" => UserEventType.UserTokenCreated,
+                "user-token-deleted" => UserEventType.UserTokenDeleted,
+                "user-tokens-deleted" => UserEventType.UserTokensDeleted,
                 "username" => UserEventType.Username,
                 "v0-chat-ai-usage" => UserEventType.V0ChatAiUsage,
                 "v0-chat-created" => UserEventType.V0ChatCreated,
