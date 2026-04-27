@@ -14121,7 +14121,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SandboxCommand))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NamedSandbox))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NamedSandboxStatus), TypeInfoPropertyName = "NamedSandboxStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NamedSandboxSnapshotKeepLast))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NamedSandboxKeepLastSnapshots))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NamedSandboxNetworkPolicy))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NamedSandboxNetworkPolicyMode), TypeInfoPropertyName = "NamedSandboxNetworkPolicyMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Session))]

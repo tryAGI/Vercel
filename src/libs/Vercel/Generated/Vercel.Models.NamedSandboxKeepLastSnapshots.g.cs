@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// Keep-last snapshot configuration.
     /// </summary>
-    public sealed partial class NamedSandboxSnapshotKeepLast
+    public sealed partial class NamedSandboxKeepLastSnapshots
     {
         /// <summary>
         /// Number of most recent snapshots to keep.<br/>
@@ -41,7 +41,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NamedSandboxSnapshotKeepLast" /> class.
+        /// Initializes a new instance of the <see cref="NamedSandboxKeepLastSnapshots" /> class.
         /// </summary>
         /// <param name="count">
         /// Number of most recent snapshots to keep.<br/>
@@ -58,7 +58,7 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public NamedSandboxSnapshotKeepLast(
+        public NamedSandboxKeepLastSnapshots(
             double count,
             bool deleteEvicted,
             double? expiration)
@@ -69,9 +69,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NamedSandboxSnapshotKeepLast" /> class.
+        /// Initializes a new instance of the <see cref="NamedSandboxKeepLastSnapshots" /> class.
         /// </summary>
-        public NamedSandboxSnapshotKeepLast()
+        public NamedSandboxKeepLastSnapshots()
         {
         }
     }
