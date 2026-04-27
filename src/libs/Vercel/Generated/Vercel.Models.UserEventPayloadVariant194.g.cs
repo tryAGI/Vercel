@@ -11,42 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant194Project> Projects { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamMembership")]
+        public global::Vercel.UserEventPayloadVariant194TeamMembership? TeamMembership { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Target { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Domain { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuredBy")]
-        public string? ConfiguredBy { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevConfiguredBy")]
-        public string? PrevConfiguredBy { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
+        public string? DirectoryType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -57,29 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant194" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="target"></param>
-        /// <param name="domain"></param>
-        /// <param name="configuredBy"></param>
-        /// <param name="prevConfiguredBy"></param>
+        /// <param name="projects"></param>
+        /// <param name="teamMembership"></param>
+        /// <param name="directoryType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant194(
-            string projectId,
-            string projectName,
-            string target,
-            string domain,
-            string? configuredBy,
-            string? prevConfiguredBy)
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant194Project> projects,
+            global::Vercel.UserEventPayloadVariant194TeamMembership? teamMembership,
+            string? directoryType)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Target = target ?? throw new global::System.ArgumentNullException(nameof(target));
-            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
-            this.ConfiguredBy = configuredBy;
-            this.PrevConfiguredBy = prevConfiguredBy;
+            this.Projects = projects ?? throw new global::System.ArgumentNullException(nameof(projects));
+            this.TeamMembership = teamMembership;
+            this.DirectoryType = directoryType;
         }
 
         /// <summary>

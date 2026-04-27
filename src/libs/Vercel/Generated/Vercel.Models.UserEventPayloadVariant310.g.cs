@@ -9,63 +9,64 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant310
     {
         /// <summary>
-        /// 
+        /// The token's public ID.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tokenId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TokenId { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenType")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TokenType { get; set; }
-
-        /// <summary>
-        /// 
+        /// User-supplied name of the token.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tokenName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TokenName { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("actorTokenId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ActorTokenId { get; set; }
-
-        /// <summary>
-        /// 
+        /// How the token was issued. Always `'manual'` for explicit PAT creation.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant310OriginJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant310Origin? Origin { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant310Origin Origin { get; set; }
 
         /// <summary>
-        /// 
+        /// Scope of the token: - `'user'`: full-account token (not tied to any team). - `'team'`: scoped to a single team. - `'project'`: scoped to a single project within a team.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant310ScopeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant310Scope Scope { get; set; }
+
+        /// <summary>
+        /// Present when `scope` is `'team'` or `'project'`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
         public string? TeamId { get; set; }
 
         /// <summary>
-        /// 
+        /// Present when `scope` is `'team'` or `'project'`.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expired")]
-        public bool? Expired { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamSlug")]
+        public string? TeamSlug { get; set; }
 
         /// <summary>
-        /// 
+        /// Present when `scope` is `'project'`.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("leaked")]
-        public bool? Leaked { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
 
         /// <summary>
-        /// 
+        /// Unix epoch milliseconds. Absent when the token never expires.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("revoked")]
-        public bool? Revoked { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        public double? ExpiresAt { get; set; }
+
+        /// <summary>
+        /// Whether the token was issued with RFC 9396 authorization details.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("hasAuthorizationDetails")]
+        public bool? HasAuthorizationDetails { get; set; }
 
         /// <summary>
         /// 
@@ -106,15 +107,33 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant310" /> class.
         /// </summary>
-        /// <param name="tokenId"></param>
-        /// <param name="tokenType"></param>
-        /// <param name="tokenName"></param>
-        /// <param name="actorTokenId"></param>
-        /// <param name="origin"></param>
-        /// <param name="teamId"></param>
-        /// <param name="expired"></param>
-        /// <param name="leaked"></param>
-        /// <param name="revoked"></param>
+        /// <param name="tokenId">
+        /// The token's public ID.
+        /// </param>
+        /// <param name="tokenName">
+        /// User-supplied name of the token.
+        /// </param>
+        /// <param name="origin">
+        /// How the token was issued. Always `'manual'` for explicit PAT creation.
+        /// </param>
+        /// <param name="scope">
+        /// Scope of the token: - `'user'`: full-account token (not tied to any team). - `'team'`: scoped to a single team. - `'project'`: scoped to a single project within a team.
+        /// </param>
+        /// <param name="teamId">
+        /// Present when `scope` is `'team'` or `'project'`.
+        /// </param>
+        /// <param name="teamSlug">
+        /// Present when `scope` is `'team'` or `'project'`.
+        /// </param>
+        /// <param name="projectId">
+        /// Present when `scope` is `'project'`.
+        /// </param>
+        /// <param name="expiresAt">
+        /// Unix epoch milliseconds. Absent when the token never expires.
+        /// </param>
+        /// <param name="hasAuthorizationDetails">
+        /// Whether the token was issued with RFC 9396 authorization details.
+        /// </param>
         /// <param name="ip"></param>
         /// <param name="geolocation"></param>
         /// <param name="userAgent"></param>
@@ -125,14 +144,14 @@ namespace Vercel
 #endif
         public UserEventPayloadVariant310(
             string tokenId,
-            string tokenType,
             string tokenName,
-            string actorTokenId,
-            global::Vercel.UserEventPayloadVariant310Origin? origin,
+            global::Vercel.UserEventPayloadVariant310Origin origin,
+            global::Vercel.UserEventPayloadVariant310Scope scope,
             string? teamId,
-            bool? expired,
-            bool? leaked,
-            bool? revoked,
+            string? teamSlug,
+            string? projectId,
+            double? expiresAt,
+            bool? hasAuthorizationDetails,
             string? ip,
             global::Vercel.UserEventPayloadVariant310Geolocation? geolocation,
             string? userAgent,
@@ -140,14 +159,14 @@ namespace Vercel
             string? reqUrl)
         {
             this.TokenId = tokenId ?? throw new global::System.ArgumentNullException(nameof(tokenId));
-            this.TokenType = tokenType ?? throw new global::System.ArgumentNullException(nameof(tokenType));
             this.TokenName = tokenName ?? throw new global::System.ArgumentNullException(nameof(tokenName));
-            this.ActorTokenId = actorTokenId ?? throw new global::System.ArgumentNullException(nameof(actorTokenId));
             this.Origin = origin;
+            this.Scope = scope;
             this.TeamId = teamId;
-            this.Expired = expired;
-            this.Leaked = leaked;
-            this.Revoked = revoked;
+            this.TeamSlug = teamSlug;
+            this.ProjectId = projectId;
+            this.ExpiresAt = expiresAt;
+            this.HasAuthorizationDetails = hasAuthorizationDetails;
             this.Ip = ip;
             this.Geolocation = geolocation;
             this.UserAgent = userAgent;

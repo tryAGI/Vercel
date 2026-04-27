@@ -25,30 +25,28 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("addedProjects")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant223AddedProject> AddedProjects { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("trustedIps")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant223TrustedIpsJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant223TrustedIps? TrustedIps { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedProjects")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant223RemovedProject> RemovedProjects { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldTrustedIps")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant223OldTrustedIpsJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant223OldTrustedIps? OldTrustedIps { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("addedProviders")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> AddedProviders { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("addedAddresses")]
+        public global::System.Collections.Generic.IList<string>? AddedAddresses { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedProviders")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> RemovedProviders { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("removedAddresses")]
+        public global::System.Collections.Generic.IList<string>? RemovedAddresses { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,27 +59,27 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="addedProjects"></param>
-        /// <param name="removedProjects"></param>
-        /// <param name="addedProviders"></param>
-        /// <param name="removedProviders"></param>
+        /// <param name="trustedIps"></param>
+        /// <param name="oldTrustedIps"></param>
+        /// <param name="addedAddresses"></param>
+        /// <param name="removedAddresses"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant223(
             string projectId,
             string projectName,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant223AddedProject> addedProjects,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant223RemovedProject> removedProjects,
-            global::System.Collections.Generic.IList<string> addedProviders,
-            global::System.Collections.Generic.IList<string> removedProviders)
+            global::Vercel.UserEventPayloadVariant223TrustedIps? trustedIps,
+            global::Vercel.UserEventPayloadVariant223OldTrustedIps? oldTrustedIps,
+            global::System.Collections.Generic.IList<string>? addedAddresses,
+            global::System.Collections.Generic.IList<string>? removedAddresses)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.AddedProjects = addedProjects ?? throw new global::System.ArgumentNullException(nameof(addedProjects));
-            this.RemovedProjects = removedProjects ?? throw new global::System.ArgumentNullException(nameof(removedProjects));
-            this.AddedProviders = addedProviders ?? throw new global::System.ArgumentNullException(nameof(addedProviders));
-            this.RemovedProviders = removedProviders ?? throw new global::System.ArgumentNullException(nameof(removedProviders));
+            this.TrustedIps = trustedIps;
+            this.OldTrustedIps = oldTrustedIps;
+            this.AddedAddresses = addedAddresses;
+            this.RemovedAddresses = removedAddresses;
         }
 
         /// <summary>
