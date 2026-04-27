@@ -109,8 +109,8 @@ namespace Vercel
         /// <summary>
         /// Keep-last snapshot configuration.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("snapshotKeepLast")]
-        public global::Vercel.NamedSandboxSnapshotKeepLast? SnapshotKeepLast { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("keepLastSnapshots")]
+        public global::Vercel.NamedSandboxKeepLastSnapshots? KeepLastSnapshots { get; set; }
 
         /// <summary>
         /// Network policy configuration.
@@ -247,7 +247,7 @@ namespace Vercel
         /// Default snapshot expiration time in milliseconds. 0 means no expiration.<br/>
         /// Example: 604800000
         /// </param>
-        /// <param name="snapshotKeepLast">
+        /// <param name="keepLastSnapshots">
         /// Keep-last snapshot configuration.
         /// </param>
         /// <param name="networkPolicy">
@@ -295,7 +295,7 @@ namespace Vercel
             string? runtime,
             double? timeout,
             double? snapshotExpiration,
-            global::Vercel.NamedSandboxSnapshotKeepLast? snapshotKeepLast,
+            global::Vercel.NamedSandboxKeepLastSnapshots? keepLastSnapshots,
             global::Vercel.NamedSandboxNetworkPolicy? networkPolicy,
             double? totalEgressBytes,
             double? totalIngressBytes,
@@ -316,7 +316,7 @@ namespace Vercel
             this.Runtime = runtime;
             this.Timeout = timeout;
             this.SnapshotExpiration = snapshotExpiration;
-            this.SnapshotKeepLast = snapshotKeepLast;
+            this.KeepLastSnapshots = keepLastSnapshots;
             this.NetworkPolicy = networkPolicy;
             this.TotalEgressBytes = totalEgressBytes;
             this.TotalIngressBytes = totalIngressBytes;

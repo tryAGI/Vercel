@@ -4876,7 +4876,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public global::Vercel.NamedSandboxSnapshotKeepLast? Type1212 { get; set; }
+        public global::Vercel.NamedSandboxKeepLastSnapshots? Type1212 { get; set; }
         /// <summary>
         /// 
         /// </summary>

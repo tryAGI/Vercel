@@ -2,7 +2,7 @@
 
 namespace Vercel
 {
-    public sealed partial class NamedSandboxSnapshotKeepLast
+    public sealed partial class NamedSandboxKeepLastSnapshots
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -34,14 +34,14 @@ namespace Vercel
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::Vercel.NamedSandboxSnapshotKeepLast? FromJson(
+        public static global::Vercel.NamedSandboxKeepLastSnapshots? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::Vercel.NamedSandboxSnapshotKeepLast),
-                jsonSerializerContext) as global::Vercel.NamedSandboxSnapshotKeepLast;
+                typeof(global::Vercel.NamedSandboxKeepLastSnapshots),
+                jsonSerializerContext) as global::Vercel.NamedSandboxKeepLastSnapshots;
         }
 
         /// <summary>
@@ -51,11 +51,11 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::Vercel.NamedSandboxSnapshotKeepLast? FromJson(
+        public static global::Vercel.NamedSandboxKeepLastSnapshots? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::Vercel.NamedSandboxSnapshotKeepLast>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::Vercel.NamedSandboxKeepLastSnapshots>(
                 json,
                 jsonSerializerOptions);
         }
@@ -63,14 +63,14 @@ namespace Vercel
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::Vercel.NamedSandboxSnapshotKeepLast?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::Vercel.NamedSandboxKeepLastSnapshots?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::Vercel.NamedSandboxSnapshotKeepLast),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Vercel.NamedSandboxSnapshotKeepLast;
+                typeof(global::Vercel.NamedSandboxKeepLastSnapshots),
+                jsonSerializerContext).ConfigureAwait(false)) as global::Vercel.NamedSandboxKeepLastSnapshots;
         }
 
         /// <summary>
@@ -80,11 +80,11 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::Vercel.NamedSandboxSnapshotKeepLast?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Vercel.NamedSandboxKeepLastSnapshots?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Vercel.NamedSandboxSnapshotKeepLast?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Vercel.NamedSandboxKeepLastSnapshots?>(
                 jsonStream,
                 jsonSerializerOptions);
         }

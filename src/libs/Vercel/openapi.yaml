@@ -162874,7 +162874,7 @@
             "description": "Default snapshot expiration time in milliseconds. 0 means no expiration.",
             "example": 604800000
           },
-          "snapshotKeepLast": {
+          "keepLastSnapshots": {
             "properties": {
               "count": {
                 "type": "number",
