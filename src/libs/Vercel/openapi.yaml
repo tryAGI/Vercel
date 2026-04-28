@@ -119552,6 +119552,9 @@
           "404": {
             "description": ""
           },
+          "409": {
+            "description": ""
+          },
           "410": {
             "description": ""
           },
@@ -121752,6 +121755,9 @@
           "404": {
             "description": ""
           },
+          "409": {
+            "description": ""
+          },
           "410": {
             "description": ""
           },
@@ -122665,6 +122671,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "409": {
             "description": ""
           },
           "429": {
