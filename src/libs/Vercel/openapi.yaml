@@ -49387,7 +49387,8 @@
                           },
                           "href": {
                             "type": "string",
-                            "format": "uri"
+                            "format": "uri",
+                            "pattern": "^https?://|^sso:"
                           }
                         }
                       },
@@ -50298,7 +50299,8 @@
                       },
                       "href": {
                         "type": "string",
-                        "format": "uri"
+                        "format": "uri",
+                        "pattern": "^https?://|^sso:"
                       }
                     }
                   },
@@ -50551,7 +50553,8 @@
                           },
                           "href": {
                             "type": "string",
-                            "format": "uri"
+                            "format": "uri",
+                            "pattern": "^https?://|^sso:"
                           }
                         }
                       },
