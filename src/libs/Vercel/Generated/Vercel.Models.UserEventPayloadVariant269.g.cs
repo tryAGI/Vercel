@@ -46,6 +46,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? Entitlements { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitedBy")]
+        public global::Vercel.UserEventPayloadVariant269InvitedBy? InvitedBy { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -60,6 +66,7 @@ namespace Vercel
         /// <param name="teamRoles"></param>
         /// <param name="teamPermissions"></param>
         /// <param name="entitlements"></param>
+        /// <param name="invitedBy"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -69,7 +76,8 @@ namespace Vercel
             string? origin,
             global::System.Collections.Generic.IList<string>? teamRoles,
             global::System.Collections.Generic.IList<string>? teamPermissions,
-            global::System.Collections.Generic.IList<string>? entitlements)
+            global::System.Collections.Generic.IList<string>? entitlements,
+            global::Vercel.UserEventPayloadVariant269InvitedBy? invitedBy)
         {
             this.Role = role;
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
@@ -77,6 +85,7 @@ namespace Vercel
             this.TeamRoles = teamRoles;
             this.TeamPermissions = teamPermissions;
             this.Entitlements = entitlements;
+            this.InvitedBy = invitedBy;
         }
 
         /// <summary>

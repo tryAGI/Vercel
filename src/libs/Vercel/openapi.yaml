@@ -61628,6 +61628,12 @@
                                 },
                                 "type": "array"
                               },
+                              "teamSudo": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "teamTokenInvalidation": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -80776,6 +80782,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "teamSudo": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "teamTokenInvalidation": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -86656,6 +86668,12 @@
                           "type": "array"
                         },
                         "teamOwnMembershipDisconnectSAML": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "teamSudo": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -92779,6 +92797,12 @@
                           },
                           "type": "array"
                         },
+                        "teamSudo": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "teamTokenInvalidation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -98473,6 +98497,12 @@
                           "type": "array"
                         },
                         "teamOwnMembershipDisconnectSAML": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "teamSudo": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -116795,6 +116825,12 @@
                           },
                           "type": "array"
                         },
+                        "teamSudo": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "teamTokenInvalidation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -120663,15 +120699,9 @@
           "content": {
             "application/json": {
               "schema": {
-                "description": "Network access policy for the sandbox.\n    Controls which external hosts the sandbox can communicate with.\n    Use \"allow-all\" mode to allow all traffic, \"deny-all\" to block all traffic or \"custom\" to provide specific rules.",
-                "type": "object",
-                "additionalProperties": false,
-                "required": [
-                  "mode"
-                ],
                 "properties": {
                   "mode": {
-                    "description": "The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.",
+                    "description": "The network access policy mode. Use \\\"allow-all\\\" to permit all outbound traffic. Use \\\"deny-all\\\" to block all outbound traffic. Use \\\"custom\\\" to specify explicit allow/deny rules.",
                     "type": "string",
                     "enum": [
                       "allow-all",
@@ -120683,7 +120713,7 @@
                     "example": "custom"
                   },
                   "allowedDomains": {
-                    "description": "List of domain names the sandbox is allowed to connect to. Only applies when mode is \"custom\". Supports wildcard patterns (e.g., \"*.example.com\" matches all subdomains).",
+                    "description": "List of domain names the sandbox is allowed to connect to. Only applies when mode is \\\"custom\\\". Supports wildcard patterns (e.g., \\\"*.example.com\\\" matches all subdomains).",
                     "type": "array",
                     "example": [
                       "api.github.com",
@@ -120691,7 +120721,7 @@
                     ],
                     "items": {
                       "type": "string",
-                      "description": "A domain name pattern. Use \"*\" for wildcard matching of subdomains (e.g., \"*.example.com\")."
+                      "description": "A domain name pattern. Use \\\"*\\\" for wildcard matching of subdomains (e.g., \\\"*.example.com\\\")."
                     }
                   },
                   "allowedCIDRs": {
@@ -120703,7 +120733,7 @@
                     ],
                     "items": {
                       "type": "string",
-                      "description": "An IPv4 address range in CIDR notation (e.g., \"35.192.0.0/12\")."
+                      "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
                     }
                   },
                   "deniedCIDRs": {
@@ -120717,7 +120747,13 @@
                       "description": "An IP address range in CIDR notation to block."
                     }
                   }
-                }
+                },
+                "description": "Network access policy for the sandbox.\\n    Controls which external hosts the sandbox can communicate with.\\n    Use \\\"allow-all\\\" mode to allow all traffic, \\\"deny-all\\\" to block all traffic or \\\"custom\\\" to provide specific rules.",
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "mode"
+                ]
               }
             }
           }
@@ -123974,15 +124010,9 @@
           "content": {
             "application/json": {
               "schema": {
-                "description": "Network access policy for the sandbox.\n    Controls which external hosts the sandbox can communicate with.\n    Use \"allow-all\" mode to allow all traffic, \"deny-all\" to block all traffic or \"custom\" to provide specific rules.",
-                "type": "object",
-                "additionalProperties": false,
-                "required": [
-                  "mode"
-                ],
                 "properties": {
                   "mode": {
-                    "description": "The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.",
+                    "description": "The network access policy mode. Use \\\"allow-all\\\" to permit all outbound traffic. Use \\\"deny-all\\\" to block all outbound traffic. Use \\\"custom\\\" to specify explicit allow/deny rules.",
                     "type": "string",
                     "enum": [
                       "allow-all",
@@ -123994,7 +124024,7 @@
                     "example": "custom"
                   },
                   "allowedDomains": {
-                    "description": "List of domain names the sandbox is allowed to connect to. Only applies when mode is \"custom\". Supports wildcard patterns (e.g., \"*.example.com\" matches all subdomains).",
+                    "description": "List of domain names the sandbox is allowed to connect to. Only applies when mode is \\\"custom\\\". Supports wildcard patterns (e.g., \\\"*.example.com\\\" matches all subdomains).",
                     "type": "array",
                     "example": [
                       "api.github.com",
@@ -124002,7 +124032,7 @@
                     ],
                     "items": {
                       "type": "string",
-                      "description": "A domain name pattern. Use \"*\" for wildcard matching of subdomains (e.g., \"*.example.com\")."
+                      "description": "A domain name pattern. Use \\\"*\\\" for wildcard matching of subdomains (e.g., \\\"*.example.com\\\")."
                     }
                   },
                   "allowedCIDRs": {
@@ -124014,7 +124044,7 @@
                     ],
                     "items": {
                       "type": "string",
-                      "description": "An IPv4 address range in CIDR notation (e.g., \"35.192.0.0/12\")."
+                      "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
                     }
                   },
                   "deniedCIDRs": {
@@ -124028,7 +124058,13 @@
                       "description": "An IP address range in CIDR notation to block."
                     }
                   }
-                }
+                },
+                "description": "Network access policy for the sandbox.\\n    Controls which external hosts the sandbox can communicate with.\\n    Use \\\"allow-all\\\" mode to allow all traffic, \\\"deny-all\\\" to block all traffic or \\\"custom\\\" to provide specific rules.",
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "mode"
+                ]
               }
             }
           }
@@ -158554,6 +158590,23 @@
                       "type": "string"
                     },
                     "type": "array"
+                  },
+                  "invitedBy": {
+                    "properties": {
+                      "email": {
+                        "type": "string"
+                      },
+                      "userId": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "email"
+                    ],
+                    "type": "object"
                   }
                 },
                 "required": [

@@ -959,6 +959,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamSudo")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamSudo { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamTokenInvalidation")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamTokenInvalidation { get; set; }
 
@@ -1645,6 +1651,7 @@ namespace Vercel
         /// <param name="teamMicrofrontends"></param>
         /// <param name="teamOwnMembership"></param>
         /// <param name="teamOwnMembershipDisconnectSAML"></param>
+        /// <param name="teamSudo"></param>
         /// <param name="teamTokenInvalidation"></param>
         /// <param name="token"></param>
         /// <param name="toolbarComment"></param>
@@ -1894,6 +1901,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamMicrofrontends,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamOwnMembership,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamOwnMembershipDisconnectSAML,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamSudo,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? teamTokenInvalidation,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? token,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? toolbarComment,
@@ -2140,6 +2148,7 @@ namespace Vercel
             this.TeamMicrofrontends = teamMicrofrontends;
             this.TeamOwnMembership = teamOwnMembership;
             this.TeamOwnMembershipDisconnectSAML = teamOwnMembershipDisconnectSAML;
+            this.TeamSudo = teamSudo;
             this.TeamTokenInvalidation = teamTokenInvalidation;
             this.Token = token;
             this.ToolbarComment = toolbarComment;
