@@ -11,23 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("logDrainUrl")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string LogDrainUrl { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("toDeploymentId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ToDeploymentId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
+        public string? IntegrationName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant131" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="toDeploymentId"></param>
-        /// <param name="projectName"></param>
+        /// <param name="logDrainUrl"></param>
+        /// <param name="integrationName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant131(
-            string projectId,
-            string toDeploymentId,
-            string projectName)
+            string logDrainUrl,
+            string? integrationName)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ToDeploymentId = toDeploymentId ?? throw new global::System.ArgumentNullException(nameof(toDeploymentId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.LogDrainUrl = logDrainUrl ?? throw new global::System.ArgumentNullException(nameof(logDrainUrl));
+            this.IntegrationName = integrationName;
         }
 
         /// <summary>

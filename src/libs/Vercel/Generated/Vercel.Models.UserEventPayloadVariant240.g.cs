@@ -11,9 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bio")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Bio { get; set; }
+        public required string OldName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NewName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        public string? Uid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant240" /> class.
         /// </summary>
-        /// <param name="bio"></param>
+        /// <param name="oldName"></param>
+        /// <param name="newName"></param>
+        /// <param name="uid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant240(
-            string bio)
+            string oldName,
+            string newName,
+            string? uid)
         {
-            this.Bio = bio ?? throw new global::System.ArgumentNullException(nameof(bio));
+            this.OldName = oldName ?? throw new global::System.ArgumentNullException(nameof(oldName));
+            this.NewName = newName ?? throw new global::System.ArgumentNullException(nameof(newName));
+            this.Uid = uid;
         }
 
         /// <summary>

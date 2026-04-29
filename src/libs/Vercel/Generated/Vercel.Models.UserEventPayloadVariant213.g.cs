@@ -18,9 +18,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reasonCode")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant213ReasonCodeJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant213ReasonCode? ReasonCode { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
+        public global::Vercel.UserEventPayloadVariant213OptionsAllowlist? OptionsAllowlist { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldOptionsAllowlist")]
+        public global::Vercel.UserEventPayloadVariant213OldOptionsAllowlist? OldOptionsAllowlist { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,16 +44,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant213" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="reasonCode"></param>
+        /// <param name="projectName"></param>
+        /// <param name="optionsAllowlist"></param>
+        /// <param name="oldOptionsAllowlist"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant213(
             string projectId,
-            global::Vercel.UserEventPayloadVariant213ReasonCode? reasonCode)
+            string projectName,
+            global::Vercel.UserEventPayloadVariant213OptionsAllowlist? optionsAllowlist,
+            global::Vercel.UserEventPayloadVariant213OldOptionsAllowlist? oldOptionsAllowlist)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ReasonCode = reasonCode;
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.OptionsAllowlist = optionsAllowlist;
+            this.OldOptionsAllowlist = oldOptionsAllowlist;
         }
 
         /// <summary>

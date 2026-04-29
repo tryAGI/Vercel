@@ -9,17 +9,57 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant259
     {
         /// <summary>
-        /// Automatic code review settings
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        public global::Vercel.UserEventPayloadVariant259Previous? Previous { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
-        /// Automatic code review settings
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("computeUnitsMax")]
+        public double? ComputeUnitsMax { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("computeUnitsMin")]
+        public double? ComputeUnitsMin { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("suspendTimeoutSeconds")]
+        public double? SuspendTimeoutSeconds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant259TypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant259Next Next { get; set; }
+        public required global::Vercel.UserEventPayloadVariant259Type Type { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("access")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant259AccessJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant259Access? Access { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("locked")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Locked { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,21 +70,35 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant259" /> class.
         /// </summary>
-        /// <param name="next">
-        /// Automatic code review settings
-        /// </param>
-        /// <param name="previous">
-        /// Automatic code review settings
-        /// </param>
+        /// <param name="id"></param>
+        /// <param name="type"></param>
+        /// <param name="locked"></param>
+        /// <param name="name"></param>
+        /// <param name="computeUnitsMax"></param>
+        /// <param name="computeUnitsMin"></param>
+        /// <param name="suspendTimeoutSeconds"></param>
+        /// <param name="access"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant259(
-            global::Vercel.UserEventPayloadVariant259Next next,
-            global::Vercel.UserEventPayloadVariant259Previous? previous)
+            string id,
+            global::Vercel.UserEventPayloadVariant259Type type,
+            bool locked,
+            string? name,
+            double? computeUnitsMax,
+            double? computeUnitsMin,
+            double? suspendTimeoutSeconds,
+            global::Vercel.UserEventPayloadVariant259Access? access)
         {
-            this.Previous = previous;
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name;
+            this.ComputeUnitsMax = computeUnitsMax;
+            this.ComputeUnitsMin = computeUnitsMin;
+            this.SuspendTimeoutSeconds = suspendTimeoutSeconds;
+            this.Type = type;
+            this.Access = access;
+            this.Locked = locked;
         }
 
         /// <summary>

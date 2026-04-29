@@ -11,16 +11,36 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousConcurrentBuilds")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("publicId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double PreviousConcurrentBuilds { get; set; }
+        public required string PublicId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nextConcurrentBuilds")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double NextConcurrentBuilds { get; set; }
+        public required string Role { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("maxUses")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double MaxUses { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ExpiresAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +51,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant281" /> class.
         /// </summary>
-        /// <param name="previousConcurrentBuilds"></param>
-        /// <param name="nextConcurrentBuilds"></param>
+        /// <param name="publicId"></param>
+        /// <param name="role"></param>
+        /// <param name="maxUses"></param>
+        /// <param name="expiresAt"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant281(
-            double previousConcurrentBuilds,
-            double nextConcurrentBuilds)
+            string publicId,
+            string role,
+            double maxUses,
+            string expiresAt,
+            string? name)
         {
-            this.PreviousConcurrentBuilds = previousConcurrentBuilds;
-            this.NextConcurrentBuilds = nextConcurrentBuilds;
+            this.PublicId = publicId ?? throw new global::System.ArgumentNullException(nameof(publicId));
+            this.Role = role ?? throw new global::System.ArgumentNullException(nameof(role));
+            this.MaxUses = maxUses;
+            this.ExpiresAt = expiresAt ?? throw new global::System.ArgumentNullException(nameof(expiresAt));
+            this.Name = name;
         }
 
         /// <summary>

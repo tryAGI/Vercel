@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant134Project Project { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("group")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant134Group Group { get; set; }
+        public required string Slug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant134" /> class.
         /// </summary>
-        /// <param name="project"></param>
-        /// <param name="group"></param>
+        /// <param name="id"></param>
+        /// <param name="slug"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant134(
-            global::Vercel.UserEventPayloadVariant134Project project,
-            global::Vercel.UserEventPayloadVariant134Group group)
+            string id,
+            string slug,
+            string name)
         {
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.Group = group ?? throw new global::System.ArgumentNullException(nameof(group));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 
         /// <summary>

@@ -11,18 +11,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Blob,
-        /// <summary>
-        /// 
-        /// </summary>
-        EdgeConfig,
-        /// <summary>
-        /// 
-        /// </summary>
-        Integration,
-        /// <summary>
-        /// 
-        /// </summary>
         Postgres,
         /// <summary>
         /// 
@@ -42,9 +30,6 @@ namespace Vercel
         {
             return value switch
             {
-                UserEventPayloadVariant253StoreType.Blob => "blob",
-                UserEventPayloadVariant253StoreType.EdgeConfig => "edge-config",
-                UserEventPayloadVariant253StoreType.Integration => "integration",
                 UserEventPayloadVariant253StoreType.Postgres => "postgres",
                 UserEventPayloadVariant253StoreType.Redis => "redis",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -57,9 +42,6 @@ namespace Vercel
         {
             return value switch
             {
-                "blob" => UserEventPayloadVariant253StoreType.Blob,
-                "edge-config" => UserEventPayloadVariant253StoreType.EdgeConfig,
-                "integration" => UserEventPayloadVariant253StoreType.Integration,
                 "postgres" => UserEventPayloadVariant253StoreType.Postgres,
                 "redis" => UserEventPayloadVariant253StoreType.Redis,
                 _ => null,

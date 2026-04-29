@@ -11,23 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousProjectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PreviousProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newProjectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewProjectName { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("destinationAccountName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DestinationAccountName { get; set; }
+        public string? DestinationAccountName { get; set; }
 
         /// <summary>
         /// 
@@ -44,22 +36,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant209" /> class.
         /// </summary>
-        /// <param name="previousProjectName"></param>
-        /// <param name="newProjectName"></param>
+        /// <param name="projectName"></param>
         /// <param name="destinationAccountName"></param>
         /// <param name="transferId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant209(
-            string previousProjectName,
-            string newProjectName,
-            string destinationAccountName,
+            string projectName,
+            string? destinationAccountName,
             string? transferId)
         {
-            this.PreviousProjectName = previousProjectName ?? throw new global::System.ArgumentNullException(nameof(previousProjectName));
-            this.NewProjectName = newProjectName ?? throw new global::System.ArgumentNullException(nameof(newProjectName));
-            this.DestinationAccountName = destinationAccountName ?? throw new global::System.ArgumentNullException(nameof(destinationAccountName));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.DestinationAccountName = destinationAccountName;
             this.TransferId = transferId;
         }
 

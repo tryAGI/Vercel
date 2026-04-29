@@ -11,30 +11,92 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Email { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("userAgent")]
+        public string? UserAgent { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("githubLogin")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GithubLogin { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("geolocation")]
+        public global::Vercel.UserEventPayloadVariant244Geolocation? Geolocation { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ZeitAccount { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
+        public string? Env { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccountType")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ZeitAccountType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("os")]
+        public string? Os { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        public string? Username { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ssoType")]
+        public string? SsoType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("factors")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant244Factor>? Factors { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaOTP")]
+        public bool? ViaOTP { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaGithub")]
+        public bool? ViaGithub { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaGitlab")]
+        public bool? ViaGitlab { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaBitbucket")]
+        public bool? ViaBitbucket { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaGoogle")]
+        public bool? ViaGoogle { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaApple")]
+        public bool? ViaApple { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaSamlSso")]
+        public bool? ViaSamlSso { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viaPasskey")]
+        public bool? ViaPasskey { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +107,56 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant244" /> class.
         /// </summary>
-        /// <param name="email"></param>
-        /// <param name="githubLogin"></param>
-        /// <param name="zeitAccount"></param>
-        /// <param name="zeitAccountType"></param>
+        /// <param name="userAgent"></param>
+        /// <param name="geolocation"></param>
+        /// <param name="env"></param>
+        /// <param name="os"></param>
+        /// <param name="username"></param>
+        /// <param name="ssoType"></param>
+        /// <param name="factors"></param>
+        /// <param name="viaOTP"></param>
+        /// <param name="viaGithub"></param>
+        /// <param name="viaGitlab"></param>
+        /// <param name="viaBitbucket"></param>
+        /// <param name="viaGoogle"></param>
+        /// <param name="viaApple"></param>
+        /// <param name="viaSamlSso"></param>
+        /// <param name="viaPasskey"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant244(
-            string email,
-            string githubLogin,
-            string zeitAccount,
-            string zeitAccountType)
+            string? userAgent,
+            global::Vercel.UserEventPayloadVariant244Geolocation? geolocation,
+            string? env,
+            string? os,
+            string? username,
+            string? ssoType,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant244Factor>? factors,
+            bool? viaOTP,
+            bool? viaGithub,
+            bool? viaGitlab,
+            bool? viaBitbucket,
+            bool? viaGoogle,
+            bool? viaApple,
+            bool? viaSamlSso,
+            bool? viaPasskey)
         {
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.GithubLogin = githubLogin ?? throw new global::System.ArgumentNullException(nameof(githubLogin));
-            this.ZeitAccount = zeitAccount ?? throw new global::System.ArgumentNullException(nameof(zeitAccount));
-            this.ZeitAccountType = zeitAccountType ?? throw new global::System.ArgumentNullException(nameof(zeitAccountType));
+            this.UserAgent = userAgent;
+            this.Geolocation = geolocation;
+            this.Env = env;
+            this.Os = os;
+            this.Username = username;
+            this.SsoType = ssoType;
+            this.Factors = factors;
+            this.ViaOTP = viaOTP;
+            this.ViaGithub = viaGithub;
+            this.ViaGitlab = viaGitlab;
+            this.ViaBitbucket = viaBitbucket;
+            this.ViaGoogle = viaGoogle;
+            this.ViaApple = viaApple;
+            this.ViaSamlSso = viaSamlSso;
+            this.ViaPasskey = viaPasskey;
         }
 
         /// <summary>

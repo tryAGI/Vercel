@@ -9,32 +9,17 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant261
     {
         /// <summary>
-        /// 
+        /// Automatic code review settings
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("trialCreditsIssuedAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double TrialCreditsIssuedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        public global::Vercel.UserEventPayloadVariant261Previous? Previous { get; set; }
 
         /// <summary>
-        /// 
+        /// Automatic code review settings
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ExpiresAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Amount { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Currency { get; set; }
+        public required global::Vercel.UserEventPayloadVariant261Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +30,21 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant261" /> class.
         /// </summary>
-        /// <param name="trialCreditsIssuedAt"></param>
-        /// <param name="expiresAt"></param>
-        /// <param name="amount"></param>
-        /// <param name="currency"></param>
+        /// <param name="next">
+        /// Automatic code review settings
+        /// </param>
+        /// <param name="previous">
+        /// Automatic code review settings
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant261(
-            double trialCreditsIssuedAt,
-            string expiresAt,
-            string amount,
-            string currency)
+            global::Vercel.UserEventPayloadVariant261Next next,
+            global::Vercel.UserEventPayloadVariant261Previous? previous)
         {
-            this.TrialCreditsIssuedAt = trialCreditsIssuedAt;
-            this.ExpiresAt = expiresAt ?? throw new global::System.ArgumentNullException(nameof(expiresAt));
-            this.Amount = amount ?? throw new global::System.ArgumentNullException(nameof(amount));
-            this.Currency = currency ?? throw new global::System.ArgumentNullException(nameof(currency));
+            this.Previous = previous;
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

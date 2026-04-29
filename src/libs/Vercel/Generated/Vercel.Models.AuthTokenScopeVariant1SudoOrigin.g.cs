@@ -4,10 +4,14 @@
 namespace Vercel
 {
     /// <summary>
-    /// Possible multi-factor origins
+    /// Possible step-up auth origins
     /// </summary>
     public enum AuthTokenScopeVariant1SudoOrigin
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        Otp,
         /// <summary>
         /// 
         /// </summary>
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                AuthTokenScopeVariant1SudoOrigin.Otp => "otp",
                 AuthTokenScopeVariant1SudoOrigin.RecoveryCode => "recovery-code",
                 AuthTokenScopeVariant1SudoOrigin.Totp => "totp",
                 AuthTokenScopeVariant1SudoOrigin.Webauthn => "webauthn",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "otp" => AuthTokenScopeVariant1SudoOrigin.Otp,
                 "recovery-code" => AuthTokenScopeVariant1SudoOrigin.RecoveryCode,
                 "totp" => AuthTokenScopeVariant1SudoOrigin.Totp,
                 "webauthn" => AuthTokenScopeVariant1SudoOrigin.Webauthn,

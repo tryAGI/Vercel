@@ -708,6 +708,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        IntegrationConfigurationTransferInSuccess,
+        /// <summary>
+        /// 
+        /// </summary>
+        IntegrationConfigurationTransferOutSuccess,
+        /// <summary>
+        /// 
+        /// </summary>
         IntegrationConfigurationsDisabled,
         /// <summary>
         /// 
@@ -2049,6 +2057,8 @@ namespace Vercel
                 ListEventTypeName.InstantRollbackCreated => "instant-rollback-created",
                 ListEventTypeName.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
                 ListEventTypeName.IntegrationConfigurationScopeChangeConfirmed => "integration-configuration-scope-change-confirmed",
+                ListEventTypeName.IntegrationConfigurationTransferInSuccess => "integration-configuration-transfer-in-success",
+                ListEventTypeName.IntegrationConfigurationTransferOutSuccess => "integration-configuration-transfer-out-success",
                 ListEventTypeName.IntegrationConfigurationsDisabled => "integration-configurations-disabled",
                 ListEventTypeName.IntegrationInstallationBillingPlanUpdated => "integration-installation-billing-plan-updated",
                 ListEventTypeName.IntegrationInstallationCompleted => "integration-installation-completed",
@@ -2522,6 +2532,8 @@ namespace Vercel
                 "instant-rollback-created" => ListEventTypeName.InstantRollbackCreated,
                 "integration-configuration-owner-changed" => ListEventTypeName.IntegrationConfigurationOwnerChanged,
                 "integration-configuration-scope-change-confirmed" => ListEventTypeName.IntegrationConfigurationScopeChangeConfirmed,
+                "integration-configuration-transfer-in-success" => ListEventTypeName.IntegrationConfigurationTransferInSuccess,
+                "integration-configuration-transfer-out-success" => ListEventTypeName.IntegrationConfigurationTransferOutSuccess,
                 "integration-configurations-disabled" => ListEventTypeName.IntegrationConfigurationsDisabled,
                 "integration-installation-billing-plan-updated" => ListEventTypeName.IntegrationInstallationBillingPlanUpdated,
                 "integration-installation-completed" => ListEventTypeName.IntegrationInstallationCompleted,
