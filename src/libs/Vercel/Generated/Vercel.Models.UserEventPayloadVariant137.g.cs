@@ -11,35 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant137Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("prev")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
+        public required global::Vercel.UserEventPayloadVariant137Prev Prev { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cause")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("group")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Cause { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("blockReason")]
-        public string? BlockReason { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("siftRoute")]
-        public global::Vercel.UserEventPayloadVariant137SiftRoute? SiftRoute { get; set; }
+        public required global::Vercel.UserEventPayloadVariant137Group Group { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,26 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant137" /> class.
         /// </summary>
-        /// <param name="ownerId"></param>
-        /// <param name="source"></param>
-        /// <param name="cause"></param>
-        /// <param name="blockReason"></param>
-        /// <param name="siftRoute"></param>
+        /// <param name="project"></param>
+        /// <param name="prev"></param>
+        /// <param name="group"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant137(
-            string ownerId,
-            string source,
-            string cause,
-            string? blockReason,
-            global::Vercel.UserEventPayloadVariant137SiftRoute? siftRoute)
+            global::Vercel.UserEventPayloadVariant137Project project,
+            global::Vercel.UserEventPayloadVariant137Prev prev,
+            global::Vercel.UserEventPayloadVariant137Group group)
         {
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
-            this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
-            this.BlockReason = blockReason;
-            this.SiftRoute = siftRoute;
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.Prev = prev ?? throw new global::System.ArgumentNullException(nameof(prev));
+            this.Group = group ?? throw new global::System.ArgumentNullException(nameof(group));
         }
 
         /// <summary>

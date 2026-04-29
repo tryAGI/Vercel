@@ -11,15 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant202Project Project { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant202Project> Projects { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectMembership")]
-        public global::Vercel.UserEventPayloadVariant202ProjectMembership? ProjectMembership { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamMembership")]
+        public global::Vercel.UserEventPayloadVariant202TeamMembership? TeamMembership { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
+        public string? DirectoryType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant202" /> class.
         /// </summary>
-        /// <param name="project"></param>
-        /// <param name="projectMembership"></param>
+        /// <param name="projects"></param>
+        /// <param name="teamMembership"></param>
+        /// <param name="directoryType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant202(
-            global::Vercel.UserEventPayloadVariant202Project project,
-            global::Vercel.UserEventPayloadVariant202ProjectMembership? projectMembership)
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant202Project> projects,
+            global::Vercel.UserEventPayloadVariant202TeamMembership? teamMembership,
+            string? directoryType)
         {
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.ProjectMembership = projectMembership;
+            this.Projects = projects ?? throw new global::System.ArgumentNullException(nameof(projects));
+            this.TeamMembership = teamMembership;
+            this.DirectoryType = directoryType;
         }
 
         /// <summary>

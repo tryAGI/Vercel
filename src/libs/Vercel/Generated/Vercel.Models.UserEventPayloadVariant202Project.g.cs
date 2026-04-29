@@ -11,15 +11,24 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant202ProjectRoleJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant202ProjectRole Role { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("membershipCreatedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double MembershipCreatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +39,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant202Project" /> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="id"></param>
+        /// <param name="projectId"></param>
+        /// <param name="role"></param>
+        /// <param name="membershipCreatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant202Project(
-            string name,
-            string? id)
+            string projectId,
+            global::Vercel.UserEventPayloadVariant202ProjectRole role,
+            double membershipCreatedAt)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Id = id;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.Role = role;
+            this.MembershipCreatedAt = membershipCreatedAt;
         }
 
         /// <summary>

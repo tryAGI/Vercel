@@ -11,50 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("integration")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant125Integration Integration { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configurationId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("originTeamId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ConfigurationId { get; set; }
+        public required string OriginTeamId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationSlug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("originTeamName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationSlug { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("billingPlanId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string BillingPlanId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("billingPlanName")]
-        public string? BillingPlanName { get; set; }
+        public required string OriginTeamName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,32 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant125" /> class.
         /// </summary>
-        /// <param name="integrationId"></param>
-        /// <param name="configurationId"></param>
-        /// <param name="integrationSlug"></param>
-        /// <param name="integrationName"></param>
-        /// <param name="ownerId"></param>
-        /// <param name="billingPlanId"></param>
-        /// <param name="billingPlanName"></param>
+        /// <param name="integration"></param>
+        /// <param name="originTeamId"></param>
+        /// <param name="originTeamName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant125(
-            string integrationId,
-            string configurationId,
-            string integrationSlug,
-            string integrationName,
-            string ownerId,
-            string billingPlanId,
-            string? billingPlanName)
+            global::Vercel.UserEventPayloadVariant125Integration integration,
+            string originTeamId,
+            string originTeamName)
         {
-            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
-            this.ConfigurationId = configurationId ?? throw new global::System.ArgumentNullException(nameof(configurationId));
-            this.IntegrationSlug = integrationSlug ?? throw new global::System.ArgumentNullException(nameof(integrationSlug));
-            this.IntegrationName = integrationName ?? throw new global::System.ArgumentNullException(nameof(integrationName));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.BillingPlanId = billingPlanId ?? throw new global::System.ArgumentNullException(nameof(billingPlanId));
-            this.BillingPlanName = billingPlanName;
+            this.Integration = integration ?? throw new global::System.ArgumentNullException(nameof(integration));
+            this.OriginTeamId = originTeamId ?? throw new global::System.ArgumentNullException(nameof(originTeamId));
+            this.OriginTeamName = originTeamName ?? throw new global::System.ArgumentNullException(nameof(originTeamName));
         }
 
         /// <summary>

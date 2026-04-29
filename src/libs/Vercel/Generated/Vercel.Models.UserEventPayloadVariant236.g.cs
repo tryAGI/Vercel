@@ -11,9 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("instances")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Email { get; set; }
+        public required double Instances { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant236" /> class.
         /// </summary>
-        /// <param name="email"></param>
+        /// <param name="instances"></param>
+        /// <param name="url"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant236(
-            string email)
+            double instances,
+            string url)
         {
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.Instances = instances;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

@@ -143140,6 +143140,8 @@
               "instant-rollback-created",
               "integration-configuration-owner-changed",
               "integration-configuration-scope-change-confirmed",
+              "integration-configuration-transfer-out-success",
+              "integration-configuration-transfer-in-success",
               "integration-configurations-disabled",
               "integration-installation-billing-plan-updated",
               "integration-installation-completed",
@@ -152473,6 +152475,86 @@
               },
               {
                 "properties": {
+                  "integration": {
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "configurationId": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "configurationId",
+                      "id",
+                      "name",
+                      "slug"
+                    ],
+                    "type": "object"
+                  },
+                  "destinationTeamId": {
+                    "type": "string"
+                  },
+                  "destinationTeamName": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "destinationTeamId",
+                  "destinationTeamName",
+                  "integration"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "integration": {
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "configurationId": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "configurationId",
+                      "id",
+                      "name",
+                      "slug"
+                    ],
+                    "type": "object"
+                  },
+                  "originTeamId": {
+                    "type": "string"
+                  },
+                  "originTeamName": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "integration",
+                  "originTeamId",
+                  "originTeamName"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
                   "configurations": {
                     "items": {
                       "properties": {
@@ -160634,6 +160716,8 @@
               "instant-rollback-created",
               "integration-configuration-owner-changed",
               "integration-configuration-scope-change-confirmed",
+              "integration-configuration-transfer-out-success",
+              "integration-configuration-transfer-in-success",
               "integration-configurations-disabled",
               "integration-installation-billing-plan-updated",
               "integration-installation-completed",
@@ -161155,6 +161239,8 @@
                 "instant-rollback-created",
                 "integration-configuration-owner-changed",
                 "integration-configuration-scope-change-confirmed",
+                "integration-configuration-transfer-out-success",
+                "integration-configuration-transfer-in-success",
                 "integration-configurations-disabled",
                 "integration-installation-billing-plan-updated",
                 "integration-installation-completed",
@@ -164914,11 +165000,12 @@
                         "origin": {
                           "type": "string",
                           "enum": [
+                            "otp",
                             "totp",
                             "webauthn",
                             "recovery-code"
                           ],
-                          "description": "Possible multi-factor origins"
+                          "description": "Possible step-up auth origins"
                         },
                         "expiresAt": {
                           "type": "number"

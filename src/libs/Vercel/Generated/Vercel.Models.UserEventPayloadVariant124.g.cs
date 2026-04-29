@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configurations")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("integration")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant124Configuration> Configurations { get; set; }
+        public required global::Vercel.UserEventPayloadVariant124Integration Integration { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationTeamId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
+        public required string DestinationTeamId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationTeamName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DestinationTeamName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant124" /> class.
         /// </summary>
-        /// <param name="configurations"></param>
-        /// <param name="ownerId"></param>
+        /// <param name="integration"></param>
+        /// <param name="destinationTeamId"></param>
+        /// <param name="destinationTeamName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant124(
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant124Configuration> configurations,
-            string ownerId)
+            global::Vercel.UserEventPayloadVariant124Integration integration,
+            string destinationTeamId,
+            string destinationTeamName)
         {
-            this.Configurations = configurations ?? throw new global::System.ArgumentNullException(nameof(configurations));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.Integration = integration ?? throw new global::System.ArgumentNullException(nameof(integration));
+            this.DestinationTeamId = destinationTeamId ?? throw new global::System.ArgumentNullException(nameof(destinationTeamId));
+            this.DestinationTeamName = destinationTeamName ?? throw new global::System.ArgumentNullException(nameof(destinationTeamName));
         }
 
         /// <summary>

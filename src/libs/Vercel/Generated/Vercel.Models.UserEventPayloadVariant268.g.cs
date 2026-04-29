@@ -11,16 +11,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedCount")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant268EnvironmentJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double DeletedCount { get; set; }
+        public required global::Vercel.UserEventPayloadVariant268Environment Environment { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("inviteIds")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant268EnabledJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> InviteIds { get; set; }
+        public required global::Vercel.UserEventPayloadVariant268Enabled Enabled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +33,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant268" /> class.
         /// </summary>
-        /// <param name="deletedCount"></param>
-        /// <param name="inviteIds"></param>
+        /// <param name="environment"></param>
+        /// <param name="enabled"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant268(
-            double deletedCount,
-            global::System.Collections.Generic.IList<string> inviteIds)
+            global::Vercel.UserEventPayloadVariant268Environment environment,
+            global::Vercel.UserEventPayloadVariant268Enabled enabled)
         {
-            this.DeletedCount = deletedCount;
-            this.InviteIds = inviteIds ?? throw new global::System.ArgumentNullException(nameof(inviteIds));
+            this.Environment = environment;
+            this.Enabled = enabled;
         }
 
         /// <summary>

@@ -11,28 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Source { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("passwordProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant212PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant212PasswordProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant212PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant212PasswordProtectionEnum2?>? PasswordProtection { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldPasswordProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant212OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant212OldPasswordProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant212OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant212OldPasswordProtectionEnum2?>? OldPasswordProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,23 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant212" /> class.
         /// </summary>
+        /// <param name="source"></param>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="passwordProtection"></param>
-        /// <param name="oldPasswordProtection"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant212(
-            string? projectId,
-            string? projectName,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant212PasswordProtectionEnum, global::Vercel.UserEventPayloadVariant212PasswordProtectionEnum2?>? passwordProtection,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant212OldPasswordProtectionEnum, global::Vercel.UserEventPayloadVariant212OldPasswordProtectionEnum2?>? oldPasswordProtection)
+            string source,
+            string projectId,
+            string projectName)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.PasswordProtection = passwordProtection;
-            this.OldPasswordProtection = oldPasswordProtection;
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
         }
 
         /// <summary>

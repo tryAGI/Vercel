@@ -11,39 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("analyticsId")]
-        public string? AnalyticsId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sampleRatePercent")]
-        public double? SampleRatePercent { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("spendLimitInDollars")]
-        public double? SpendLimitInDollars { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant246Previous Previous { get; set; }
+        public required string Email { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("githubLogin")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GithubLogin { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ZeitAccount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccountType")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ZeitAccountType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,29 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant246" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="analyticsId"></param>
-        /// <param name="sampleRatePercent"></param>
-        /// <param name="spendLimitInDollars"></param>
+        /// <param name="email"></param>
+        /// <param name="githubLogin"></param>
+        /// <param name="zeitAccount"></param>
+        /// <param name="zeitAccountType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant246(
-            global::Vercel.UserEventPayloadVariant246Previous previous,
-            string? projectId,
-            string? projectName,
-            string? analyticsId,
-            double? sampleRatePercent,
-            double? spendLimitInDollars)
+            string email,
+            string githubLogin,
+            string zeitAccount,
+            string zeitAccountType)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.AnalyticsId = analyticsId;
-            this.SampleRatePercent = sampleRatePercent;
-            this.SpendLimitInDollars = spendLimitInDollars;
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
+            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.GithubLogin = githubLogin ?? throw new global::System.ArgumentNullException(nameof(githubLogin));
+            this.ZeitAccount = zeitAccount ?? throw new global::System.ArgumentNullException(nameof(zeitAccount));
+            this.ZeitAccountType = zeitAccountType ?? throw new global::System.ArgumentNullException(nameof(zeitAccountType));
         }
 
         /// <summary>

@@ -18,16 +18,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant145TypeJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant145Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("headerName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousStatus")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string HeaderName { get; set; }
+        public required string PreviousStatus { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,19 +39,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant145" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="headerName"></param>
-        /// <param name="type"></param>
+        /// <param name="url"></param>
+        /// <param name="previousStatus"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant145(
             string projectId,
-            string headerName,
-            global::Vercel.UserEventPayloadVariant145Type type)
+            string url,
+            string previousStatus)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Type = type;
-            this.HeaderName = headerName ?? throw new global::System.ArgumentNullException(nameof(headerName));
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.PreviousStatus = previousStatus ?? throw new global::System.ArgumentNullException(nameof(previousStatus));
         }
 
         /// <summary>

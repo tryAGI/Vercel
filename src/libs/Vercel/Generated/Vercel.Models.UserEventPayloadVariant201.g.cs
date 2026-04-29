@@ -25,13 +25,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Target { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Domain { get; set; }
@@ -39,14 +32,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuredBy")]
-        public string? ConfiguredBy { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
+        public string? Redirect { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevConfiguredBy")]
-        public string? PrevConfiguredBy { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("redirectStatusCode")]
+        public double? RedirectStatusCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,27 +52,24 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="target"></param>
         /// <param name="domain"></param>
-        /// <param name="configuredBy"></param>
-        /// <param name="prevConfiguredBy"></param>
+        /// <param name="redirect"></param>
+        /// <param name="redirectStatusCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant201(
             string projectId,
             string projectName,
-            string target,
             string domain,
-            string? configuredBy,
-            string? prevConfiguredBy)
+            string? redirect,
+            double? redirectStatusCode)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Target = target ?? throw new global::System.ArgumentNullException(nameof(target));
             this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
-            this.ConfiguredBy = configuredBy;
-            this.PrevConfiguredBy = prevConfiguredBy;
+            this.Redirect = redirect;
+            this.RedirectStatusCode = redirectStatusCode;
         }
 
         /// <summary>

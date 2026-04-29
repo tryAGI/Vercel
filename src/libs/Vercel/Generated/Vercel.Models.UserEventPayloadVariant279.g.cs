@@ -11,36 +11,39 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PublicId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
+        public string? DirectoryType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedUser")]
+        public global::Vercel.UserEventPayloadVariant279UpdatedUser? UpdatedUser { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Role { get; set; }
+        public string? Role { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maxUses")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousRole")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double MaxUses { get; set; }
+        public required string PreviousRole { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ExpiresAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedUid")]
+        public string? UpdatedUid { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
+        public string? Origin { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -51,26 +54,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant279" /> class.
         /// </summary>
-        /// <param name="publicId"></param>
+        /// <param name="previousRole"></param>
+        /// <param name="directoryType"></param>
+        /// <param name="updatedUser"></param>
         /// <param name="role"></param>
-        /// <param name="maxUses"></param>
-        /// <param name="expiresAt"></param>
-        /// <param name="name"></param>
+        /// <param name="updatedUid"></param>
+        /// <param name="origin"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant279(
-            string publicId,
-            string role,
-            double maxUses,
-            string expiresAt,
-            string? name)
+            string previousRole,
+            string? directoryType,
+            global::Vercel.UserEventPayloadVariant279UpdatedUser? updatedUser,
+            string? role,
+            string? updatedUid,
+            string? origin)
         {
-            this.PublicId = publicId ?? throw new global::System.ArgumentNullException(nameof(publicId));
-            this.Role = role ?? throw new global::System.ArgumentNullException(nameof(role));
-            this.MaxUses = maxUses;
-            this.ExpiresAt = expiresAt ?? throw new global::System.ArgumentNullException(nameof(expiresAt));
-            this.Name = name;
+            this.DirectoryType = directoryType;
+            this.UpdatedUser = updatedUser;
+            this.Role = role;
+            this.PreviousRole = previousRole ?? throw new global::System.ArgumentNullException(nameof(previousRole));
+            this.UpdatedUid = updatedUid;
+            this.Origin = origin;
         }
 
         /// <summary>

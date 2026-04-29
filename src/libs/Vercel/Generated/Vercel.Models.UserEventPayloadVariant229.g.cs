@@ -12,41 +12,27 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public string? ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        public string? ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("trustedIps")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant229TrustedIpsJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant229TrustedIps? TrustedIps { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ssoProtection")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant229SsoProtectionEnum, global::Vercel.UserEventPayloadVariant229SsoProtectionEnum2?>))]
+        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant229SsoProtectionEnum, global::Vercel.UserEventPayloadVariant229SsoProtectionEnum2?>? SsoProtection { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldTrustedIps")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant229OldTrustedIpsJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant229OldTrustedIps? OldTrustedIps { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("addedAddresses")]
-        public global::System.Collections.Generic.IList<string>? AddedAddresses { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedAddresses")]
-        public global::System.Collections.Generic.IList<string>? RemovedAddresses { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldSsoProtection")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant229OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant229OldSsoProtectionEnum2?>))]
+        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant229OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant229OldSsoProtectionEnum2?>? OldSsoProtection { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,27 +45,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="trustedIps"></param>
-        /// <param name="oldTrustedIps"></param>
-        /// <param name="addedAddresses"></param>
-        /// <param name="removedAddresses"></param>
+        /// <param name="ssoProtection"></param>
+        /// <param name="oldSsoProtection"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant229(
-            string projectId,
-            string projectName,
-            global::Vercel.UserEventPayloadVariant229TrustedIps? trustedIps,
-            global::Vercel.UserEventPayloadVariant229OldTrustedIps? oldTrustedIps,
-            global::System.Collections.Generic.IList<string>? addedAddresses,
-            global::System.Collections.Generic.IList<string>? removedAddresses)
+            string? projectId,
+            string? projectName,
+            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant229SsoProtectionEnum, global::Vercel.UserEventPayloadVariant229SsoProtectionEnum2?>? ssoProtection,
+            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant229OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant229OldSsoProtectionEnum2?>? oldSsoProtection)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.TrustedIps = trustedIps;
-            this.OldTrustedIps = oldTrustedIps;
-            this.AddedAddresses = addedAddresses;
-            this.RemovedAddresses = removedAddresses;
+            this.ProjectId = projectId;
+            this.ProjectName = projectName;
+            this.SsoProtection = ssoProtection;
+            this.OldSsoProtection = oldSsoProtection;
         }
 
         /// <summary>

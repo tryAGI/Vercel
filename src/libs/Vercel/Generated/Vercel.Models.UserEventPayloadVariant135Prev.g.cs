@@ -11,9 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant135PrevProject Project { get; set; }
+        public required string Name { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fallbackEnvironment")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string FallbackEnvironment { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant135Prev" /> class.
         /// </summary>
-        /// <param name="project"></param>
+        /// <param name="name"></param>
+        /// <param name="slug"></param>
+        /// <param name="fallbackEnvironment"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant135Prev(
-            global::Vercel.UserEventPayloadVariant135PrevProject project)
+            string name,
+            string slug,
+            string fallbackEnvironment)
         {
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.FallbackEnvironment = fallbackEnvironment ?? throw new global::System.ArgumentNullException(nameof(fallbackEnvironment));
         }
 
         /// <summary>

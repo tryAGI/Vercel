@@ -11,14 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        public object? Previous { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
-        public object? Next { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant290EnabledJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant290Enabled Enabled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +25,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant290" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="enabled"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant290(
-            object? previous,
-            object? next)
+            global::Vercel.UserEventPayloadVariant290Enabled enabled)
         {
-            this.Previous = previous;
-            this.Next = next;
+            this.Enabled = enabled;
         }
 
         /// <summary>

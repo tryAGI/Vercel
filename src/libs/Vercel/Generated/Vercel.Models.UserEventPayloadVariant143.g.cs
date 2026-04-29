@@ -18,16 +18,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        public global::Vercel.UserEventPayloadVariant143Previous? Previous { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousStatus")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PreviousStatus { get; set; }
+        public required global::Vercel.UserEventPayloadVariant143Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,19 +38,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant143" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="url"></param>
-        /// <param name="previousStatus"></param>
+        /// <param name="next"></param>
+        /// <param name="previous"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant143(
             string projectId,
-            string url,
-            string previousStatus)
+            global::Vercel.UserEventPayloadVariant143Next next,
+            global::Vercel.UserEventPayloadVariant143Previous? previous)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.PreviousStatus = previousStatus ?? throw new global::System.ArgumentNullException(nameof(previousStatus));
+            this.Previous = previous;
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

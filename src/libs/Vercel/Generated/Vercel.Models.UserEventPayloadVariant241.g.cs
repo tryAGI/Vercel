@@ -11,30 +11,34 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scalingRules")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant241ScalingRules2> ScalingRules { get; set; }
+        public required bool Enabled { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("min")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Min { get; set; }
+        public required double UpdatedAt { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("max")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Max { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("firstEnabledAt")]
+        public double? FirstEnabledAt { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +49,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant241" /> class.
         /// </summary>
-        /// <param name="scalingRules"></param>
-        /// <param name="min"></param>
-        /// <param name="max"></param>
-        /// <param name="url"></param>
+        /// <param name="enabled"></param>
+        /// <param name="updatedAt"></param>
+        /// <param name="firstEnabledAt"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant241(
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant241ScalingRules2> scalingRules,
-            double min,
-            double max,
-            string url)
+            bool enabled,
+            double updatedAt,
+            double? firstEnabledAt,
+            string? projectId,
+            string? projectName)
         {
-            this.ScalingRules = scalingRules ?? throw new global::System.ArgumentNullException(nameof(scalingRules));
-            this.Min = min;
-            this.Max = max;
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Enabled = enabled;
+            this.UpdatedAt = updatedAt;
+            this.FirstEnabledAt = firstEnabledAt;
+            this.ProjectId = projectId;
+            this.ProjectName = projectName;
         }
 
         /// <summary>

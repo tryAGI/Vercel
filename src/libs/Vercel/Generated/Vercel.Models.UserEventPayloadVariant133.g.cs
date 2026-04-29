@@ -11,34 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        public string? Slug { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fallbackEnvironment")]
-        public string? FallbackEnvironment { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prev")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("toDeploymentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant133Prev Prev { get; set; }
+        public required string ToDeploymentId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,26 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant133" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="prev"></param>
-        /// <param name="slug"></param>
-        /// <param name="name"></param>
-        /// <param name="fallbackEnvironment"></param>
+        /// <param name="projectId"></param>
+        /// <param name="toDeploymentId"></param>
+        /// <param name="projectName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant133(
-            string id,
-            global::Vercel.UserEventPayloadVariant133Prev prev,
-            string? slug,
-            string? name,
-            string? fallbackEnvironment)
+            string projectId,
+            string toDeploymentId,
+            string projectName)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Slug = slug;
-            this.Name = name;
-            this.FallbackEnvironment = fallbackEnvironment;
-            this.Prev = prev ?? throw new global::System.ArgumentNullException(nameof(prev));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ToDeploymentId = toDeploymentId ?? throw new global::System.ArgumentNullException(nameof(toDeploymentId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
         }
 
         /// <summary>

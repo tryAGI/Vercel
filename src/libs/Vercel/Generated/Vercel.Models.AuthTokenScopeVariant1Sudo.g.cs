@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class AuthTokenScopeVariant1Sudo
     {
         /// <summary>
-        /// Possible multi-factor origins
+        /// Possible step-up auth origins
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthTokenScopeVariant1SudoOriginJsonConverter))]
@@ -33,7 +33,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="AuthTokenScopeVariant1Sudo" /> class.
         /// </summary>
         /// <param name="origin">
-        /// Possible multi-factor origins
+        /// Possible step-up auth origins
         /// </param>
         /// <param name="expiresAt"></param>
 #if NET7_0_OR_GREATER

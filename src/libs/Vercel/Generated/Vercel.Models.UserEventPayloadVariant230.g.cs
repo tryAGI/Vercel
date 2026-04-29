@@ -25,30 +25,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("addedProjects")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant230AddedProject> AddedProjects { get; set; }
+        public required global::Vercel.UserEventPayloadVariant230Next Next { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedProjects")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant230RemovedProject> RemovedProjects { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("addedProviders")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> AddedProviders { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedProviders")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> RemovedProviders { get; set; }
+        public required global::Vercel.UserEventPayloadVariant230Previous Previous { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,27 +47,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="addedProjects"></param>
-        /// <param name="removedProjects"></param>
-        /// <param name="addedProviders"></param>
-        /// <param name="removedProviders"></param>
+        /// <param name="next"></param>
+        /// <param name="previous"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant230(
             string projectId,
             string projectName,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant230AddedProject> addedProjects,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant230RemovedProject> removedProjects,
-            global::System.Collections.Generic.IList<string> addedProviders,
-            global::System.Collections.Generic.IList<string> removedProviders)
+            global::Vercel.UserEventPayloadVariant230Next next,
+            global::Vercel.UserEventPayloadVariant230Previous previous)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.AddedProjects = addedProjects ?? throw new global::System.ArgumentNullException(nameof(addedProjects));
-            this.RemovedProjects = removedProjects ?? throw new global::System.ArgumentNullException(nameof(removedProjects));
-            this.AddedProviders = addedProviders ?? throw new global::System.ArgumentNullException(nameof(addedProviders));
-            this.RemovedProviders = removedProviders ?? throw new global::System.ArgumentNullException(nameof(removedProviders));
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
         }
 
         /// <summary>
