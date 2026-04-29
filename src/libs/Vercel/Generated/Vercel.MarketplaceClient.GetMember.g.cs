@@ -130,8 +130,8 @@ namespace Vercel
                 PrepareGetMemberRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationConfigurationId: integrationConfigurationId,
-                    memberId: memberId);
+                    integrationConfigurationId: integrationConfigurationId!,
+                    memberId: memberId!);
 
                 return __httpRequest;
             }

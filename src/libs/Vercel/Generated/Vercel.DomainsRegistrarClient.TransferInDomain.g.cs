@@ -151,7 +151,7 @@ namespace Vercel
                 PrepareTransferInDomainRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domain: domain,
+                    domain: domain!,
                     teamId: teamId,
                     request: request);
 

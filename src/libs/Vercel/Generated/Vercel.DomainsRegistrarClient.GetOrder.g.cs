@@ -137,7 +137,7 @@ namespace Vercel
                 PrepareGetOrderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    orderId: orderId,
+                    orderId: orderId!,
                     teamId: teamId);
 
                 return __httpRequest;

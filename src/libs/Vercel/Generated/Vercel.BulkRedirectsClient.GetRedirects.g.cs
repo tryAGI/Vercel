@@ -186,7 +186,7 @@ namespace Vercel
                 PrepareGetRedirectsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     versionId: versionId,
                     q: q,
                     diff: diff,

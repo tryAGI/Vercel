@@ -204,7 +204,7 @@ namespace Vercel
                     role: role,
                     excludeProject: excludeProject,
                     eligibleMembersForProjectId: eligibleMembersForProjectId,
-                    teamId: teamId,
+                    teamId: teamId!,
                     slug: slug);
 
                 return __httpRequest;

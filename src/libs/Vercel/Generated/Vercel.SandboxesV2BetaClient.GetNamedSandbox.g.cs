@@ -164,7 +164,7 @@ namespace Vercel
                 PrepareGetNamedSandboxRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    name: name,
+                    name: name!,
                     projectId: projectId,
                     resume: resume,
                     teamId: teamId,

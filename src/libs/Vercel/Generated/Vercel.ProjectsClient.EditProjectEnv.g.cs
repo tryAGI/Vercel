@@ -168,8 +168,8 @@ namespace Vercel
                 PrepareEditProjectEnvRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
-                    id: id,
+                    idOrName: idOrName!,
+                    id: id!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

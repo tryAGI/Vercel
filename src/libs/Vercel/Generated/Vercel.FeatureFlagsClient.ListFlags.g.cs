@@ -193,7 +193,7 @@ namespace Vercel
                 PrepareListFlagsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName,
+                    projectIdOrName: projectIdOrName!,
                     state: state,
                     withMetadata: withMetadata,
                     limit: limit,

@@ -158,7 +158,7 @@ namespace Vercel
                 PrepareGetConfigurationsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    view: view,
+                    view: view!,
                     installationType: installationType,
                     integrationIdOrSlug: integrationIdOrSlug,
                     teamId: teamId,

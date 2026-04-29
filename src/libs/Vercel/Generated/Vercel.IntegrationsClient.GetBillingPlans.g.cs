@@ -166,9 +166,9 @@ namespace Vercel
                 PrepareGetBillingPlansRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationIdOrSlug: integrationIdOrSlug,
+                    integrationIdOrSlug: integrationIdOrSlug!,
                     integrationConfigurationId: integrationConfigurationId,
-                    productIdOrSlug: productIdOrSlug,
+                    productIdOrSlug: productIdOrSlug!,
                     metadata: metadata,
                     source: source,
                     teamId: teamId,

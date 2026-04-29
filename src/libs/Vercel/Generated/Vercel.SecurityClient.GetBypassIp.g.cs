@@ -184,7 +184,7 @@ namespace Vercel
                 PrepareGetBypassIpRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     limit: limit,
                     sourceIp: sourceIp,
                     domain: domain,

@@ -161,7 +161,7 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     newDefaultTeamId: newDefaultTeamId,
-                    teamId: teamId,
+                    teamId: teamId!,
                     slug: slug,
                     request: request);
 

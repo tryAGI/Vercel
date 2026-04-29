@@ -172,7 +172,7 @@ namespace Vercel
                 PrepareGetRecordsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domain: domain,
+                    domain: domain!,
                     limit: limit,
                     since: since,
                     until: until,

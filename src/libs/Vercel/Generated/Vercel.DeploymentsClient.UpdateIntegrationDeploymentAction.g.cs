@@ -149,10 +149,10 @@ namespace Vercel
                 PrepareUpdateIntegrationDeploymentActionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    deploymentId: deploymentId,
-                    integrationConfigurationId: integrationConfigurationId,
-                    resourceId: resourceId,
-                    action: action,
+                    deploymentId: deploymentId!,
+                    integrationConfigurationId: integrationConfigurationId!,
+                    resourceId: resourceId!,
+                    action: action!,
                     request: request);
 
                 return __httpRequest;

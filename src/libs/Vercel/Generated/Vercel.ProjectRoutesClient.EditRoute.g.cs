@@ -162,8 +162,8 @@ namespace Vercel
                 PrepareEditRouteRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    routeId: routeId,
+                    projectId: projectId!,
+                    routeId: routeId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

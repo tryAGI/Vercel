@@ -155,8 +155,8 @@ namespace Vercel
                 PrepareGetDeploymentFileContentsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    fileId: fileId,
+                    id: id!,
+                    fileId: fileId!,
                     path: path,
                     teamId: teamId,
                     slug: slug);

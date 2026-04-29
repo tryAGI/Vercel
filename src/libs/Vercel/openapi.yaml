@@ -49221,6 +49221,20 @@
                 "properties": {
                   "projectId": {
                     "type": "string"
+                  },
+                  "envVarEnvironments": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "production",
+                        "preview",
+                        "development"
+                      ]
+                    }
+                  },
+                  "makeEnvVarsSensitive": {
+                    "type": "boolean"
                   }
                 }
               }
@@ -129536,6 +129550,13 @@
                                   "required"
                                 ],
                                 "type": "object"
+                              },
+                              "makeEnvVarsSensitive": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
                               }
                             },
                             "required": [

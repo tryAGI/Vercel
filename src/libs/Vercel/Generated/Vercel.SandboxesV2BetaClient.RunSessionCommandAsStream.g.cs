@@ -155,7 +155,7 @@ namespace Vercel
                 PrepareRunSessionCommandAsStreamRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sessionId: sessionId,
+                    sessionId: sessionId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

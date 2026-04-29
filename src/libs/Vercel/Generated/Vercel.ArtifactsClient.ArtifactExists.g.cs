@@ -141,7 +141,7 @@ namespace Vercel
                 PrepareArtifactExistsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    hash: hash,
+                    hash: hash!,
                     teamId: teamId,
                     slug: slug);
 

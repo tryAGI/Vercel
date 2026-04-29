@@ -143,7 +143,7 @@ namespace Vercel
                 PrepareGetEdgeConfigTokensRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    edgeConfigId: edgeConfigId,
+                    edgeConfigId: edgeConfigId!,
                     teamId: teamId,
                     slug: slug);
 

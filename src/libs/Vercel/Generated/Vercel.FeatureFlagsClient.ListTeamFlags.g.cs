@@ -201,7 +201,7 @@ namespace Vercel
                     search: search,
                     kind: kind,
                     tags: tags,
-                    teamId: teamId,
+                    teamId: teamId!,
                     slug: slug);
 
                 return __httpRequest;

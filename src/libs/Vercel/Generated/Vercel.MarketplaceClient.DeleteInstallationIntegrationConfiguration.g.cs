@@ -130,9 +130,9 @@ namespace Vercel
                 PrepareDeleteInstallationIntegrationConfigurationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationConfigurationId: integrationConfigurationId,
-                    resourceId: resourceId,
-                    itemId: itemId);
+                    integrationConfigurationId: integrationConfigurationId!,
+                    resourceId: resourceId!,
+                    itemId: itemId!);
 
                 return __httpRequest;
             }

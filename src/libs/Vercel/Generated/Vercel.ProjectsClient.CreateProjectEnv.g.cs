@@ -167,7 +167,7 @@ namespace Vercel
                 PrepareCreateProjectEnvRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
+                    idOrName: idOrName!,
                     upsert: upsert,
                     teamId: teamId,
                     slug: slug,

@@ -153,8 +153,8 @@ namespace Vercel
                 PrepareRequestRollbackRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    deploymentId: deploymentId,
+                    projectId: projectId!,
+                    deploymentId: deploymentId!,
                     description: description,
                     teamId: teamId,
                     slug: slug);

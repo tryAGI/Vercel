@@ -146,7 +146,7 @@ namespace Vercel
                 PrepareListCommandsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sandboxId: sandboxId,
+                    sandboxId: sandboxId!,
                     teamId: teamId,
                     slug: slug);
 

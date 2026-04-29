@@ -125,7 +125,7 @@ namespace Vercel
                 PrepareGetIntegrationResourcesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationConfigurationId: integrationConfigurationId);
+                    integrationConfigurationId: integrationConfigurationId!);
 
                 return __httpRequest;
             }

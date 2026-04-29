@@ -146,7 +146,7 @@ namespace Vercel
                 PrepareDeleteSnapshotRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    snapshotId: snapshotId,
+                    snapshotId: snapshotId!,
                     teamId: teamId,
                     slug: slug);
 

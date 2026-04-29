@@ -146,7 +146,7 @@ namespace Vercel
                 PrepareCancelDeploymentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     teamId: teamId,
                     slug: slug);
 

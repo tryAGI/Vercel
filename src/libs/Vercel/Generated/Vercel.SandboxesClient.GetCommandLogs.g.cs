@@ -149,8 +149,8 @@ namespace Vercel
                 PrepareGetCommandLogsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sandboxId: sandboxId,
-                    cmdId: cmdId,
+                    sandboxId: sandboxId!,
+                    cmdId: cmdId!,
                     teamId: teamId,
                     slug: slug);
 

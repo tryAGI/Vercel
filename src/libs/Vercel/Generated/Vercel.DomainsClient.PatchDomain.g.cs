@@ -155,7 +155,7 @@ namespace Vercel
                 PreparePatchDomainRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domain: domain,
+                    domain: domain!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

@@ -168,8 +168,8 @@ namespace Vercel
                 PrepareKillSessionCommandRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    cmdId: cmdId,
-                    sessionId: sessionId,
+                    cmdId: cmdId!,
+                    sessionId: sessionId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

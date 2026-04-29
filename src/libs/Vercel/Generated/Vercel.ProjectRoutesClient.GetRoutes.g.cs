@@ -167,7 +167,7 @@ namespace Vercel
                 PrepareGetRoutesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     versionId: versionId,
                     q: q,
                     filter: filter,

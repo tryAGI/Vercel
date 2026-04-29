@@ -156,8 +156,8 @@ namespace Vercel
                 PrepareUpdateMicrofrontendsGroupRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    groupId: groupId,
-                    teamId: teamId,
+                    groupId: groupId!,
+                    teamId: teamId!,
                     slug: slug,
                     request: request);
 

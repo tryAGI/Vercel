@@ -182,8 +182,8 @@ namespace Vercel
                 PrepareUpdateFlagRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName,
-                    flagIdOrSlug: flagIdOrSlug,
+                    projectIdOrName: projectIdOrName!,
+                    flagIdOrSlug: flagIdOrSlug!,
                     ifMatch: ifMatch,
                     withMetadata: withMetadata,
                     teamId: teamId,

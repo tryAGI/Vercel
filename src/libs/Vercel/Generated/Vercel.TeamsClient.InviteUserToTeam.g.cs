@@ -151,7 +151,7 @@ namespace Vercel
                 PrepareInviteUserToTeamRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    teamId: teamId,
+                    teamId: teamId!,
                     slug: slug,
                     request: request);
 

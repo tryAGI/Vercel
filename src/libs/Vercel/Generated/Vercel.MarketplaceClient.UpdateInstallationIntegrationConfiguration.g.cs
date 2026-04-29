@@ -144,9 +144,9 @@ namespace Vercel
                 PrepareUpdateInstallationIntegrationConfigurationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationConfigurationId: integrationConfigurationId,
-                    resourceId: resourceId,
-                    itemId: itemId,
+                    integrationConfigurationId: integrationConfigurationId!,
+                    resourceId: resourceId!,
+                    itemId: itemId!,
                     request: request);
 
                 return __httpRequest;

@@ -163,7 +163,7 @@ namespace Vercel
                 PrepareListAccessGroupProjectsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
+                    idOrName: idOrName!,
                     limit: limit,
                     next: next,
                     teamId: teamId,

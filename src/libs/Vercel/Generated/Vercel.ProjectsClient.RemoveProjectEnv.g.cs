@@ -163,8 +163,8 @@ namespace Vercel
                 PrepareRemoveProjectEnvRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
-                    id: id,
+                    idOrName: idOrName!,
+                    id: id!,
                     customEnvironmentId: customEnvironmentId,
                     teamId: teamId,
                     slug: slug);

@@ -160,7 +160,7 @@ namespace Vercel
                 PrepareUpdateRecordRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    recordId: recordId,
+                    recordId: recordId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

@@ -193,7 +193,7 @@ namespace Vercel
                 PrepareFilterProjectEnvsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
+                    idOrName: idOrName!,
                     gitBranch: gitBranch,
                     decrypt: decrypt,
                     source: source,

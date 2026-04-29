@@ -159,7 +159,7 @@ namespace Vercel
                 PrepareAcceptProjectTransferRequestRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    code: code,
+                    code: code!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

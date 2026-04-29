@@ -145,7 +145,7 @@ namespace Vercel
                 PrepareGetProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
+                    idOrName: idOrName!,
                     teamId: teamId,
                     slug: slug);
 

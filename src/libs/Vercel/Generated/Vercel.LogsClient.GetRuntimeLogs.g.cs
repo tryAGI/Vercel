@@ -148,8 +148,8 @@ namespace Vercel
                 PrepareGetRuntimeLogsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    deploymentId: deploymentId,
+                    projectId: projectId!,
+                    deploymentId: deploymentId!,
                     teamId: teamId,
                     slug: slug);
 

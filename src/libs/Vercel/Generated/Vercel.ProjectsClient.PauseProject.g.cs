@@ -140,7 +140,7 @@ namespace Vercel
                 PreparePauseProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     teamId: teamId,
                     slug: slug);
 

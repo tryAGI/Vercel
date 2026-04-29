@@ -163,7 +163,7 @@ namespace Vercel
                 PreparePatchEdgeConfigSchemaRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    edgeConfigId: edgeConfigId,
+                    edgeConfigId: edgeConfigId!,
                     dryRun: dryRun,
                     teamId: teamId,
                     slug: slug,

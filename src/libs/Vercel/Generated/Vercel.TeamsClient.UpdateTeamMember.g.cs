@@ -150,8 +150,8 @@ namespace Vercel
                 PrepareUpdateTeamMemberRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    uid: uid,
-                    teamId: teamId,
+                    uid: uid!,
+                    teamId: teamId!,
                     request: request);
 
                 return __httpRequest;

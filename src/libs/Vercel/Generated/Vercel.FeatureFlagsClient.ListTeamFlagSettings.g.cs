@@ -156,7 +156,7 @@ namespace Vercel
                     httpRequestMessage: __httpRequest,
                     limit: limit,
                     cursor: cursor,
-                    teamId: teamId,
+                    teamId: teamId!,
                     slug: slug);
 
                 return __httpRequest;

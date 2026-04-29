@@ -145,7 +145,7 @@ namespace Vercel
                 PrepareGetTldPriceRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    tld: tld,
+                    tld: tld!,
                     years: years,
                     teamId: teamId);
 

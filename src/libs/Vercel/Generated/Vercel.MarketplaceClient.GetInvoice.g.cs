@@ -130,8 +130,8 @@ namespace Vercel
                 PrepareGetInvoiceRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationConfigurationId: integrationConfigurationId,
-                    invoiceId: invoiceId);
+                    integrationConfigurationId: integrationConfigurationId!,
+                    invoiceId: invoiceId!);
 
                 return __httpRequest;
             }

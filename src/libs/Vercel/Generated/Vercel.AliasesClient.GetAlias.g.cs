@@ -185,7 +185,7 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     from: from,
-                    idOrAlias: idOrAlias,
+                    idOrAlias: idOrAlias!,
                     projectId: projectId,
                     since: since,
                     until: until,

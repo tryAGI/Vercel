@@ -161,7 +161,7 @@ namespace Vercel
                 PrepareGetEdgeConfigBackupsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    edgeConfigId: edgeConfigId,
+                    edgeConfigId: edgeConfigId!,
                     next: next,
                     limit: limit,
                     metadata: metadata,

@@ -150,8 +150,8 @@ namespace Vercel
                 PrepareUnlinkSharedEnvVariableRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    projectId: projectId,
+                    id: id!,
+                    projectId: projectId!,
                     teamId: teamId,
                     slug: slug);
 

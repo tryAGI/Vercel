@@ -157,8 +157,8 @@ namespace Vercel
                 PrepareConnectIntegrationResourceToProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationConfigurationId: integrationConfigurationId,
-                    resourceId: resourceId,
+                    integrationConfigurationId: integrationConfigurationId!,
+                    resourceId: resourceId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);
@@ -543,6 +543,8 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="projectId"></param>
+        /// <param name="envVarEnvironments"></param>
+        /// <param name="makeEnvVarsSensitive"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -552,12 +554,16 @@ namespace Vercel
             string projectId,
             string? teamId = default,
             string? slug = default,
+            global::System.Collections.Generic.IList<global::Vercel.ConnectIntegrationResourceToProjectRequestEnvVarEnvironment>? envVarEnvironments = default,
+            bool? makeEnvVarsSensitive = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __request = new global::Vercel.ConnectIntegrationResourceToProjectRequest
             {
                 ProjectId = projectId,
+                EnvVarEnvironments = envVarEnvironments,
+                MakeEnvVarsSensitive = makeEnvVarsSensitive,
             };
 
             await ConnectIntegrationResourceToProjectAsync(

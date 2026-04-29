@@ -161,7 +161,7 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     x_xCwd_: x_xCwd_,
-                    sandboxId: sandboxId,
+                    sandboxId: sandboxId!,
                     teamId: teamId,
                     slug: slug);
 

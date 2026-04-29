@@ -150,7 +150,7 @@ namespace Vercel
                 PrepareGetActiveAttackStatusRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     since: since,
                     teamId: teamId,
                     slug: slug);

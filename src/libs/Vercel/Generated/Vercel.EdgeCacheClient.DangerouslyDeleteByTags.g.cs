@@ -153,7 +153,7 @@ namespace Vercel
                 PrepareDangerouslyDeleteByTagsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName,
+                    projectIdOrName: projectIdOrName!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

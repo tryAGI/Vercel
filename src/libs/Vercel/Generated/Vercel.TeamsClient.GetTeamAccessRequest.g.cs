@@ -135,8 +135,8 @@ namespace Vercel
                 PrepareGetTeamAccessRequestRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    userId: userId,
-                    teamId: teamId);
+                    userId: userId!,
+                    teamId: teamId!);
 
                 return __httpRequest;
             }

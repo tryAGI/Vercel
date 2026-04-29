@@ -120,7 +120,7 @@ namespace Vercel
                 PrepareFinalizeInstallationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationConfigurationId: integrationConfigurationId);
+                    integrationConfigurationId: integrationConfigurationId!);
 
                 return __httpRequest;
             }

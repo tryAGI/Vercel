@@ -162,8 +162,8 @@ namespace Vercel
                 PrepareUpdateProjectCheckRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName,
-                    checkId: checkId,
+                    projectIdOrName: projectIdOrName!,
+                    checkId: checkId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

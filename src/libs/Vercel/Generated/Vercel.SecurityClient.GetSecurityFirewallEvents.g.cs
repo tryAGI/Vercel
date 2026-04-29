@@ -146,7 +146,7 @@ namespace Vercel
                 PrepareGetSecurityFirewallEventsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     startTimestamp: startTimestamp,
                     endTimestamp: endTimestamp,
                     hosts: hosts);

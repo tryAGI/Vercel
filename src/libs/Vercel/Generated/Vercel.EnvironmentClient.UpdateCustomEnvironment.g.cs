@@ -166,8 +166,8 @@ namespace Vercel
                 PrepareUpdateCustomEnvironmentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
-                    environmentSlugOrId: environmentSlugOrId,
+                    idOrName: idOrName!,
+                    environmentSlugOrId: environmentSlugOrId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

@@ -148,8 +148,8 @@ namespace Vercel
                 PrepareReadAccessGroupProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    accessGroupIdOrName: accessGroupIdOrName,
-                    projectId: projectId,
+                    accessGroupIdOrName: accessGroupIdOrName!,
+                    projectId: projectId!,
                     teamId: teamId,
                     slug: slug);
 
