@@ -25,16 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentsEnabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant174Previous Previous { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant174Next Next { get; set; }
+        public required bool PreviewDeploymentsEnabled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,21 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="previewDeploymentsEnabled"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant174(
             string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant174Previous previous,
-            global::Vercel.UserEventPayloadVariant174Next next)
+            bool previewDeploymentsEnabled)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.PreviewDeploymentsEnabled = previewDeploymentsEnabled;
         }
 
         /// <summary>

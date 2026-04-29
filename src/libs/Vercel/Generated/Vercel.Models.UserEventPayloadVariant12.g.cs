@@ -11,14 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("price")]
-        public double? Price { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
-        public string? Currency { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("credential")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant12Credential Credential { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant12" /> class.
         /// </summary>
-        /// <param name="price"></param>
-        /// <param name="currency"></param>
+        /// <param name="credential"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant12(
-            double? price,
-            string? currency)
+            global::Vercel.UserEventPayloadVariant12Credential credential)
         {
-            this.Price = price;
-            this.Currency = currency;
+            this.Credential = credential ?? throw new global::System.ArgumentNullException(nameof(credential));
         }
 
         /// <summary>

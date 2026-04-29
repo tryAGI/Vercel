@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitCommitStatus")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("onPullRequest")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool GitCommitStatus { get; set; }
+        public required bool OnPullRequest { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="gitCommitStatus"></param>
+        /// <param name="onPullRequest"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant186(
             string projectId,
             string projectName,
-            bool gitCommitStatus)
+            bool onPullRequest)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.GitCommitStatus = gitCommitStatus;
+            this.OnPullRequest = onPullRequest;
         }
 
         /// <summary>

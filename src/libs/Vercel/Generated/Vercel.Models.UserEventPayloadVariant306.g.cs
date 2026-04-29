@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("model")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Model { get; set; }
+        public required global::Vercel.UserEventPayloadVariant306Team Team { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("useCase")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string UseCase { get; set; }
+        public required global::Vercel.UserEventPayloadVariant306Configuration Configuration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("peering")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant306Peering Peering { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant306" /> class.
         /// </summary>
-        /// <param name="model"></param>
-        /// <param name="useCase"></param>
+        /// <param name="team"></param>
+        /// <param name="configuration"></param>
+        /// <param name="peering"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant306(
-            string model,
-            string useCase)
+            global::Vercel.UserEventPayloadVariant306Team team,
+            global::Vercel.UserEventPayloadVariant306Configuration configuration,
+            global::Vercel.UserEventPayloadVariant306Peering peering)
         {
-            this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
-            this.UseCase = useCase ?? throw new global::System.ArgumentNullException(nameof(useCase));
+            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
+            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.Peering = peering ?? throw new global::System.ArgumentNullException(nameof(peering));
         }
 
         /// <summary>

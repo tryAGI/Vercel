@@ -11,16 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant256PreviousJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant256Previous? Previous { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant256Store Store { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant256NextJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant256Next? Next { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        public string? OwnerId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant256" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="store"></param>
+        /// <param name="ownerId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant256(
-            global::Vercel.UserEventPayloadVariant256Previous? previous,
-            global::Vercel.UserEventPayloadVariant256Next? next)
+            global::Vercel.UserEventPayloadVariant256Store store,
+            string? ownerId)
         {
-            this.Previous = previous;
-            this.Next = next;
+            this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
+            this.OwnerId = ownerId;
         }
 
         /// <summary>

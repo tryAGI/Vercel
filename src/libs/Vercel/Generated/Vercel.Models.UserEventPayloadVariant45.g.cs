@@ -11,27 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cn")]
-        public string? Cn { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionId")]
+        public string? SubscriptionId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cns")]
-        public global::System.Collections.Generic.IList<string>? Cns { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant45ActionJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant45Action Action { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("custom")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Custom { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
+        public required global::Vercel.UserEventPayloadVariant45Data Data { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -42,23 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant45" /> class.
         /// </summary>
-        /// <param name="custom"></param>
-        /// <param name="cn"></param>
-        /// <param name="cns"></param>
-        /// <param name="id"></param>
+        /// <param name="data"></param>
+        /// <param name="subscriptionId"></param>
+        /// <param name="action"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant45(
-            bool custom,
-            string? cn,
-            global::System.Collections.Generic.IList<string>? cns,
-            string? id)
+            global::Vercel.UserEventPayloadVariant45Data data,
+            string? subscriptionId,
+            global::Vercel.UserEventPayloadVariant45Action action)
         {
-            this.Cn = cn;
-            this.Cns = cns;
-            this.Custom = custom;
-            this.Id = id;
+            this.SubscriptionId = subscriptionId;
+            this.Action = action;
+            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
         }
 
         /// <summary>

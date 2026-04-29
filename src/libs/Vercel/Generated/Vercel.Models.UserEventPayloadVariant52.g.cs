@@ -11,9 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant52Configuration Configuration { get; set; }
+        public required string Id { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cns")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> Cns { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("custom")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Custom { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant52" /> class.
         /// </summary>
-        /// <param name="configuration"></param>
+        /// <param name="id"></param>
+        /// <param name="cns"></param>
+        /// <param name="custom"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant52(
-            global::Vercel.UserEventPayloadVariant52Configuration configuration)
+            string id,
+            global::System.Collections.Generic.IList<string> cns,
+            bool custom)
         {
-            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Cns = cns ?? throw new global::System.ArgumentNullException(nameof(cns));
+            this.Custom = custom;
         }
 
         /// <summary>

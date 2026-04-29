@@ -11,16 +11,17 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant296ProviderJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Email { get; set; }
+        public required global::Vercel.UserEventPayloadVariant296Provider Provider { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevEmail")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("login")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PrevEmail { get; set; }
+        public required string Login { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +32,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant296" /> class.
         /// </summary>
-        /// <param name="email"></param>
-        /// <param name="prevEmail"></param>
+        /// <param name="provider"></param>
+        /// <param name="login"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant296(
-            string email,
-            string prevEmail)
+            global::Vercel.UserEventPayloadVariant296Provider provider,
+            string login)
         {
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.PrevEmail = prevEmail ?? throw new global::System.ArgumentNullException(nameof(prevEmail));
+            this.Provider = provider;
+            this.Login = login ?? throw new global::System.ArgumentNullException(nameof(login));
         }
 
         /// <summary>

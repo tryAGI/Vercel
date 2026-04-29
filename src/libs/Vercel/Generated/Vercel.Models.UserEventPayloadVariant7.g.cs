@@ -11,27 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroup")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant7AccessGroup AccessGroup { get; set; }
+        public required string TeamId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamSlug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TeamSlug { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<string>? TeamPermissions { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
-        public global::System.Collections.Generic.IList<string>? Entitlements { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("stripeAccount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string StripeAccount { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -42,23 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant7" /> class.
         /// </summary>
-        /// <param name="accessGroup"></param>
-        /// <param name="teamRoles"></param>
-        /// <param name="teamPermissions"></param>
-        /// <param name="entitlements"></param>
+        /// <param name="teamId"></param>
+        /// <param name="teamSlug"></param>
+        /// <param name="stripeAccount"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant7(
-            global::Vercel.UserEventPayloadVariant7AccessGroup accessGroup,
-            global::System.Collections.Generic.IList<string>? teamRoles,
-            global::System.Collections.Generic.IList<string>? teamPermissions,
-            global::System.Collections.Generic.IList<string>? entitlements)
+            string teamId,
+            string teamSlug,
+            string stripeAccount)
         {
-            this.AccessGroup = accessGroup ?? throw new global::System.ArgumentNullException(nameof(accessGroup));
-            this.TeamRoles = teamRoles;
-            this.TeamPermissions = teamPermissions;
-            this.Entitlements = entitlements;
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
+            this.TeamSlug = teamSlug ?? throw new global::System.ArgumentNullException(nameof(teamSlug));
+            this.StripeAccount = stripeAccount ?? throw new global::System.ArgumentNullException(nameof(stripeAccount));
         }
 
         /// <summary>

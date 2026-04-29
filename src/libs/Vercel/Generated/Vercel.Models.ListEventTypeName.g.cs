@@ -36,6 +36,34 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AgenticProvisioningAccountBlocked,
+        /// <summary>
+        /// 
+        /// </summary>
+        AgenticProvisioningAccountLinked,
+        /// <summary>
+        /// 
+        /// </summary>
+        AgenticProvisioningAccountRelinked,
+        /// <summary>
+        /// 
+        /// </summary>
+        AgenticProvisioningAccountUnlinked,
+        /// <summary>
+        /// 
+        /// </summary>
+        AgenticProvisioningCredentialsRotated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AgenticProvisioningPlanChanged,
+        /// <summary>
+        /// 
+        /// </summary>
+        AgenticProvisioningTeamCreated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiAlertInvestigation,
         /// <summary>
         /// 
@@ -1853,6 +1881,13 @@ namespace Vercel
                 ListEventTypeName.AccessGroupUpdated => "access-group-updated",
                 ListEventTypeName.AccessGroupUserAdded => "access-group-user-added",
                 ListEventTypeName.AccessGroupUserRemoved => "access-group-user-removed",
+                ListEventTypeName.AgenticProvisioningAccountBlocked => "agentic-provisioning-account-blocked",
+                ListEventTypeName.AgenticProvisioningAccountLinked => "agentic-provisioning-account-linked",
+                ListEventTypeName.AgenticProvisioningAccountRelinked => "agentic-provisioning-account-relinked",
+                ListEventTypeName.AgenticProvisioningAccountUnlinked => "agentic-provisioning-account-unlinked",
+                ListEventTypeName.AgenticProvisioningCredentialsRotated => "agentic-provisioning-credentials-rotated",
+                ListEventTypeName.AgenticProvisioningPlanChanged => "agentic-provisioning-plan-changed",
+                ListEventTypeName.AgenticProvisioningTeamCreated => "agentic-provisioning-team-created",
                 ListEventTypeName.AiAlertInvestigation => "ai-alert-investigation",
                 ListEventTypeName.AiCodeReview => "ai-code-review",
                 ListEventTypeName.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
@@ -2319,6 +2354,13 @@ namespace Vercel
                 "access-group-updated" => ListEventTypeName.AccessGroupUpdated,
                 "access-group-user-added" => ListEventTypeName.AccessGroupUserAdded,
                 "access-group-user-removed" => ListEventTypeName.AccessGroupUserRemoved,
+                "agentic-provisioning-account-blocked" => ListEventTypeName.AgenticProvisioningAccountBlocked,
+                "agentic-provisioning-account-linked" => ListEventTypeName.AgenticProvisioningAccountLinked,
+                "agentic-provisioning-account-relinked" => ListEventTypeName.AgenticProvisioningAccountRelinked,
+                "agentic-provisioning-account-unlinked" => ListEventTypeName.AgenticProvisioningAccountUnlinked,
+                "agentic-provisioning-credentials-rotated" => ListEventTypeName.AgenticProvisioningCredentialsRotated,
+                "agentic-provisioning-plan-changed" => ListEventTypeName.AgenticProvisioningPlanChanged,
+                "agentic-provisioning-team-created" => ListEventTypeName.AgenticProvisioningTeamCreated,
                 "ai-alert-investigation" => ListEventTypeName.AiAlertInvestigation,
                 "ai-code-review" => ListEventTypeName.AiCodeReview,
                 "ai-gateway-api-key-created" => ListEventTypeName.AiGatewayApiKeyCreated,

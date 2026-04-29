@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
@@ -18,16 +24,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("enableFunctionsBeta")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newProjectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewProjectName { get; set; }
+        public required bool EnableFunctionsBeta { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,19 +38,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant177" /> class.
         /// </summary>
         /// <param name="projectId"></param>
+        /// <param name="enableFunctionsBeta"></param>
         /// <param name="projectName"></param>
-        /// <param name="newProjectName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant177(
             string projectId,
-            string projectName,
-            string newProjectName)
+            bool enableFunctionsBeta,
+            string? projectName)
         {
+            this.ProjectName = projectName;
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.NewProjectName = newProjectName ?? throw new global::System.ArgumentNullException(nameof(newProjectName));
+            this.EnableFunctionsBeta = enableFunctionsBeta;
         }
 
         /// <summary>

@@ -11,29 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
+        public required string Slug { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cause")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Cause { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        public string? Reason { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,23 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant132" /> class.
         /// </summary>
-        /// <param name="ownerId"></param>
-        /// <param name="source"></param>
-        /// <param name="cause"></param>
-        /// <param name="reason"></param>
+        /// <param name="id"></param>
+        /// <param name="slug"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant132(
-            string ownerId,
-            string source,
-            string cause,
-            string? reason)
+            string id,
+            string slug,
+            string name)
         {
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
-            this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
-            this.Reason = reason;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 
         /// <summary>

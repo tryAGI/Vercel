@@ -11,30 +11,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigId { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSlug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigSlug { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigTokenId { get; set; }
+        public required global::System.Collections.Generic.IList<string> Tags { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Label { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        public string? Target { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +44,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant100" /> class.
         /// </summary>
-        /// <param name="edgeConfigId"></param>
-        /// <param name="edgeConfigSlug"></param>
-        /// <param name="edgeConfigTokenId"></param>
-        /// <param name="label"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="tags"></param>
+        /// <param name="target"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant100(
-            string edgeConfigId,
-            string edgeConfigSlug,
-            string edgeConfigTokenId,
-            string label)
+            string projectId,
+            string projectName,
+            global::System.Collections.Generic.IList<string> tags,
+            string? target)
         {
-            this.EdgeConfigId = edgeConfigId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigId));
-            this.EdgeConfigSlug = edgeConfigSlug ?? throw new global::System.ArgumentNullException(nameof(edgeConfigSlug));
-            this.EdgeConfigTokenId = edgeConfigTokenId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigTokenId));
-            this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
+            this.Target = target;
         }
 
         /// <summary>

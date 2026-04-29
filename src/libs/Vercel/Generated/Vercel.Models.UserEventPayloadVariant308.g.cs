@@ -11,23 +11,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DeploymentId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant308Team Team { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant308Configuration Configuration { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("runId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("peering")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RunId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant308Peering Peering { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
+        public string? NewName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +44,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant308" /> class.
         /// </summary>
-        /// <param name="deploymentId"></param>
-        /// <param name="projectId"></param>
-        /// <param name="runId"></param>
+        /// <param name="team"></param>
+        /// <param name="configuration"></param>
+        /// <param name="peering"></param>
+        /// <param name="newName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant308(
-            string deploymentId,
-            string projectId,
-            string runId)
+            global::Vercel.UserEventPayloadVariant308Team team,
+            global::Vercel.UserEventPayloadVariant308Configuration configuration,
+            global::Vercel.UserEventPayloadVariant308Peering peering,
+            string? newName)
         {
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.RunId = runId ?? throw new global::System.ArgumentNullException(nameof(runId));
+            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
+            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.Peering = peering ?? throw new global::System.ArgumentNullException(nameof(peering));
+            this.NewName = newName;
         }
 
         /// <summary>

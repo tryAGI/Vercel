@@ -11,30 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transferRequestCode")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("budget")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TransferRequestCode { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant247Store Store { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destinationTeamId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DestinationTeamId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("destinationTeamName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DestinationTeamName { get; set; }
+        public required global::Vercel.UserEventPayloadVariant247Budget Budget { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant247" /> class.
         /// </summary>
-        /// <param name="transferRequestCode"></param>
-        /// <param name="store"></param>
-        /// <param name="destinationTeamId"></param>
-        /// <param name="destinationTeamName"></param>
+        /// <param name="budget"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant247(
-            string transferRequestCode,
-            global::Vercel.UserEventPayloadVariant247Store store,
-            string destinationTeamId,
-            string destinationTeamName)
+            global::Vercel.UserEventPayloadVariant247Budget budget)
         {
-            this.TransferRequestCode = transferRequestCode ?? throw new global::System.ArgumentNullException(nameof(transferRequestCode));
-            this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
-            this.DestinationTeamId = destinationTeamId ?? throw new global::System.ArgumentNullException(nameof(destinationTeamId));
-            this.DestinationTeamName = destinationTeamName ?? throw new global::System.ArgumentNullException(nameof(destinationTeamName));
+            this.Budget = budget ?? throw new global::System.ArgumentNullException(nameof(budget));
         }
 
         /// <summary>

@@ -11,9 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Domain { get; set; }
+        public required string Name { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cdnEnabled")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool CdnEnabled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant85" /> class.
         /// </summary>
-        /// <param name="domain"></param>
+        /// <param name="name"></param>
+        /// <param name="cdnEnabled"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant85(
-            string domain)
+            string name,
+            bool cdnEnabled)
         {
-            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.CdnEnabled = cdnEnabled;
         }
 
         /// <summary>

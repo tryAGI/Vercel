@@ -11,23 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant109Team Team { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousRule")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Scope { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
+        public required global::Vercel.UserEventPayloadVariant109PreviousRule PreviousRule { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant109" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="scope"></param>
-        /// <param name="source"></param>
+        /// <param name="team"></param>
+        /// <param name="previousRule"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant109(
-            string projectId,
-            string scope,
-            string source)
+            global::Vercel.UserEventPayloadVariant109Team team,
+            global::Vercel.UserEventPayloadVariant109PreviousRule previousRule)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Scope = scope ?? throw new global::System.ArgumentNullException(nameof(scope));
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
+            this.PreviousRule = previousRule ?? throw new global::System.ArgumentNullException(nameof(previousRule));
         }
 
         /// <summary>

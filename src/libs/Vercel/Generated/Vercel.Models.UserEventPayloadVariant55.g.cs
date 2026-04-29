@@ -11,23 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("src")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant55Team Team { get; set; }
+        public required string Src { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("dst")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant55Configuration Configuration { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant55Project Project { get; set; }
+        public required string Dst { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant55" /> class.
         /// </summary>
-        /// <param name="team"></param>
-        /// <param name="configuration"></param>
-        /// <param name="project"></param>
+        /// <param name="src"></param>
+        /// <param name="dst"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant55(
-            global::Vercel.UserEventPayloadVariant55Team team,
-            global::Vercel.UserEventPayloadVariant55Configuration configuration,
-            global::Vercel.UserEventPayloadVariant55Project project)
+            string src,
+            string dst)
         {
-            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
-            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.Src = src ?? throw new global::System.ArgumentNullException(nameof(src));
+            this.Dst = dst ?? throw new global::System.ArgumentNullException(nameof(dst));
         }
 
         /// <summary>

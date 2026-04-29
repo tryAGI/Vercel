@@ -12,27 +12,27 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant217Previous Previous { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("targetDeploymentId")]
+        public string? TargetDeploymentId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant217Next Next { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        public string? Action { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,23 +43,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant217" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
+        /// <param name="targetDeploymentId"></param>
+        /// <param name="action"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant217(
-            global::Vercel.UserEventPayloadVariant217Previous previous,
-            global::Vercel.UserEventPayloadVariant217Next next,
-            string? projectId,
-            string? projectName)
+            string projectId,
+            string projectName,
+            string? targetDeploymentId,
+            string? action)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.TargetDeploymentId = targetDeploymentId;
+            this.Action = action;
         }
 
         /// <summary>

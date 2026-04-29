@@ -18,14 +18,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fromId")]
-        public string? FromId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string UserId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fromName")]
-        public string? FromName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TeamId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OwnerName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,19 +46,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant87" /> class.
         /// </summary>
         /// <param name="name"></param>
-        /// <param name="fromId"></param>
-        /// <param name="fromName"></param>
+        /// <param name="userId"></param>
+        /// <param name="teamId"></param>
+        /// <param name="ownerName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant87(
             string name,
-            string? fromId,
-            string? fromName)
+            string userId,
+            string teamId,
+            string ownerName)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.FromId = fromId;
-            this.FromName = fromName;
+            this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
+            this.OwnerName = ownerName ?? throw new global::System.ArgumentNullException(nameof(ownerName));
         }
 
         /// <summary>

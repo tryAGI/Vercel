@@ -11,53 +11,55 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("computeUnitsMax")]
+        public double? ComputeUnitsMax { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("computeUnitsMin")]
+        public double? ComputeUnitsMin { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("suspendTimeoutSeconds")]
+        public double? SuspendTimeoutSeconds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant257TypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TeamId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant257Type Type { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("by")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("access")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant257AccessJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant257Access? Access { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("locked")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string By { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("byUid")]
-        public string? ByUid { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reasons")]
-        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant257Reason>? Reasons { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedUsers")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant257RemovedUsers2>? RemovedUsers { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedMemberCount")]
-        public double? RemovedMemberCount { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
-        public double? Timestamp { get; set; }
+        public required bool Locked { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -68,35 +70,35 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant257" /> class.
         /// </summary>
-        /// <param name="slug"></param>
-        /// <param name="teamId"></param>
-        /// <param name="by"></param>
-        /// <param name="byUid"></param>
-        /// <param name="reasons"></param>
-        /// <param name="removedUsers"></param>
-        /// <param name="removedMemberCount"></param>
-        /// <param name="timestamp"></param>
+        /// <param name="id"></param>
+        /// <param name="type"></param>
+        /// <param name="locked"></param>
+        /// <param name="name"></param>
+        /// <param name="computeUnitsMax"></param>
+        /// <param name="computeUnitsMin"></param>
+        /// <param name="suspendTimeoutSeconds"></param>
+        /// <param name="access"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant257(
-            string slug,
-            string teamId,
-            string by,
-            string? byUid,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant257Reason>? reasons,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant257RemovedUsers2>? removedUsers,
-            double? removedMemberCount,
-            double? timestamp)
+            string id,
+            global::Vercel.UserEventPayloadVariant257Type type,
+            bool locked,
+            string? name,
+            double? computeUnitsMax,
+            double? computeUnitsMin,
+            double? suspendTimeoutSeconds,
+            global::Vercel.UserEventPayloadVariant257Access? access)
         {
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
-            this.By = by ?? throw new global::System.ArgumentNullException(nameof(by));
-            this.ByUid = byUid;
-            this.Reasons = reasons;
-            this.RemovedUsers = removedUsers;
-            this.RemovedMemberCount = removedMemberCount;
-            this.Timestamp = timestamp;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name;
+            this.ComputeUnitsMax = computeUnitsMax;
+            this.ComputeUnitsMin = computeUnitsMin;
+            this.SuspendTimeoutSeconds = suspendTimeoutSeconds;
+            this.Type = type;
+            this.Access = access;
+            this.Locked = locked;
         }
 
         /// <summary>

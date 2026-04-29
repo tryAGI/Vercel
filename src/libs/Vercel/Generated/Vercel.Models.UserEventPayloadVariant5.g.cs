@@ -11,9 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("apiKey")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant5ApiKey ApiKey { get; set; }
+        public required string TeamId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("stripeAccount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string StripeAccount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("stripeOrganisation")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string StripeOrganisation { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("accountRequestId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string AccountRequestId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant5" /> class.
         /// </summary>
-        /// <param name="apiKey"></param>
+        /// <param name="teamId"></param>
+        /// <param name="stripeAccount"></param>
+        /// <param name="stripeOrganisation"></param>
+        /// <param name="accountRequestId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant5(
-            global::Vercel.UserEventPayloadVariant5ApiKey apiKey)
+            string teamId,
+            string stripeAccount,
+            string stripeOrganisation,
+            string accountRequestId)
         {
-            this.ApiKey = apiKey ?? throw new global::System.ArgumentNullException(nameof(apiKey));
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
+            this.StripeAccount = stripeAccount ?? throw new global::System.ArgumentNullException(nameof(stripeAccount));
+            this.StripeOrganisation = stripeOrganisation ?? throw new global::System.ArgumentNullException(nameof(stripeOrganisation));
+            this.AccountRequestId = accountRequestId ?? throw new global::System.ArgumentNullException(nameof(accountRequestId));
         }
 
         /// <summary>

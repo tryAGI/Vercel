@@ -11,16 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Sha { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitUserPlatform")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitUserPlatform { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
@@ -32,16 +25,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitCommitterName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("hookName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitCommitterName { get; set; }
+        public required string HookName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
+        public required string Ref { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,26 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant72" /> class.
         /// </summary>
-        /// <param name="sha"></param>
-        /// <param name="gitUserPlatform"></param>
+        /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="gitCommitterName"></param>
-        /// <param name="source"></param>
+        /// <param name="hookName"></param>
+        /// <param name="ref"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant72(
-            string sha,
-            string gitUserPlatform,
+            string projectId,
             string projectName,
-            string gitCommitterName,
-            string source)
+            string hookName,
+            string @ref)
         {
-            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
-            this.GitUserPlatform = gitUserPlatform ?? throw new global::System.ArgumentNullException(nameof(gitUserPlatform));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.GitCommitterName = gitCommitterName ?? throw new global::System.ArgumentNullException(nameof(gitCommitterName));
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.HookName = hookName ?? throw new global::System.ArgumentNullException(nameof(hookName));
+            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
         }
 
         /// <summary>

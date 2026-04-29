@@ -11,15 +11,34 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionId")]
-        public string? SubscriptionId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("planSlug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevAttackModeEnabled")]
+        public bool? PrevAttackModeEnabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevAttackModeActiveUntil")]
+        public double? PrevAttackModeActiveUntil { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("attackModeEnabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PlanSlug { get; set; }
+        public required bool AttackModeEnabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("attackModeActiveUntil")]
+        public double? AttackModeActiveUntil { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +49,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant38" /> class.
         /// </summary>
-        /// <param name="planSlug"></param>
-        /// <param name="subscriptionId"></param>
+        /// <param name="projectId"></param>
+        /// <param name="attackModeEnabled"></param>
+        /// <param name="prevAttackModeEnabled"></param>
+        /// <param name="prevAttackModeActiveUntil"></param>
+        /// <param name="attackModeActiveUntil"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant38(
-            string planSlug,
-            string? subscriptionId)
+            string projectId,
+            bool attackModeEnabled,
+            bool? prevAttackModeEnabled,
+            double? prevAttackModeActiveUntil,
+            double? attackModeActiveUntil)
         {
-            this.SubscriptionId = subscriptionId;
-            this.PlanSlug = planSlug ?? throw new global::System.ArgumentNullException(nameof(planSlug));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.PrevAttackModeEnabled = prevAttackModeEnabled;
+            this.PrevAttackModeActiveUntil = prevAttackModeActiveUntil;
+            this.AttackModeEnabled = attackModeEnabled;
+            this.AttackModeActiveUntil = attackModeActiveUntil;
         }
 
         /// <summary>

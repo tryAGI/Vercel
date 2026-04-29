@@ -11,30 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabLogin")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string GitlabLogin { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabUserId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("hookName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string HookName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Ref { get; set; }
+        public required double GitlabUserId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant66" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="hookName"></param>
-        /// <param name="ref"></param>
+        /// <param name="gitlabLogin"></param>
+        /// <param name="gitlabUserId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant66(
-            string projectId,
-            string projectName,
-            string hookName,
-            string @ref)
+            string gitlabLogin,
+            double gitlabUserId)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.HookName = hookName ?? throw new global::System.ArgumentNullException(nameof(hookName));
-            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
+            this.GitlabLogin = gitlabLogin ?? throw new global::System.ArgumentNullException(nameof(gitlabLogin));
+            this.GitlabUserId = gitlabUserId;
         }
 
         /// <summary>

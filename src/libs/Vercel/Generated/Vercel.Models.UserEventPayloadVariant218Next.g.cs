@@ -11,9 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("skewProtectionBoundaryAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("issuerMode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant218NextIssuerModeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double SkewProtectionBoundaryAt { get; set; }
+        public required global::Vercel.UserEventPayloadVariant218NextIssuerMode IssuerMode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +25,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant218Next" /> class.
         /// </summary>
-        /// <param name="skewProtectionBoundaryAt"></param>
+        /// <param name="issuerMode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant218Next(
-            double skewProtectionBoundaryAt)
+            global::Vercel.UserEventPayloadVariant218NextIssuerMode issuerMode)
         {
-            this.SkewProtectionBoundaryAt = skewProtectionBoundaryAt;
+            this.IssuerMode = issuerMode;
         }
 
         /// <summary>

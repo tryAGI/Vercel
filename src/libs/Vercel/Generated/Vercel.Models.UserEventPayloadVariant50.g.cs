@@ -11,21 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required global::Vercel.UserEventPayloadVariant50Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cn")]
-        public string? Cn { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cns")]
-        public global::System.Collections.Generic.IList<string>? Cns { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("versionId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string VersionId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant50" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="cn"></param>
-        /// <param name="cns"></param>
+        /// <param name="project"></param>
+        /// <param name="versionId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant50(
-            string id,
-            string? cn,
-            global::System.Collections.Generic.IList<string>? cns)
+            global::Vercel.UserEventPayloadVariant50Project project,
+            string versionId)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Cn = cn;
-            this.Cns = cns;
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.VersionId = versionId ?? throw new global::System.ArgumentNullException(nameof(versionId));
         }
 
         /// <summary>

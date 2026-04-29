@@ -68346,6 +68346,12 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "409": {
+            "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -142941,6 +142947,13 @@
               "plan",
               "flag",
               "deployment",
+              "agentic-provisioning-account-linked",
+              "agentic-provisioning-account-relinked",
+              "agentic-provisioning-team-created",
+              "agentic-provisioning-account-blocked",
+              "agentic-provisioning-credentials-rotated",
+              "agentic-provisioning-account-unlinked",
+              "agentic-provisioning-plan-changed",
               "ai-gateway-api-key-created",
               "ai-gateway-api-key-deleted",
               "ai-gateway-byok-credential-created",
@@ -143729,6 +143742,130 @@
                 "required": [
                   "action",
                   "environment"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "teamId": {
+                    "type": "string"
+                  },
+                  "stripeAccount": {
+                    "type": "string"
+                  },
+                  "stripeOrganisation": {
+                    "type": "string"
+                  },
+                  "accountRequestId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "accountRequestId",
+                  "stripeAccount",
+                  "stripeOrganisation",
+                  "teamId"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "teamId": {
+                    "type": "string"
+                  },
+                  "stripeAccount": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "stripeAccount",
+                  "teamId"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "teamId": {
+                    "type": "string"
+                  },
+                  "teamSlug": {
+                    "type": "string"
+                  },
+                  "stripeAccount": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "stripeAccount",
+                  "teamId",
+                  "teamSlug"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "reason": {
+                    "type": "string"
+                  },
+                  "blockCode": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "blockCode",
+                  "reason"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "resourceId": {
+                    "type": "string"
+                  },
+                  "projectName": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "projectName",
+                  "resourceId"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
+                  "teamId": {
+                    "type": "string"
+                  },
+                  "resourceId": {
+                    "type": "string"
+                  },
+                  "fromPlan": {
+                    "type": "string",
+                    "enum": [
+                      "pro",
+                      "hobby"
+                    ]
+                  },
+                  "toPlan": {
+                    "type": "string",
+                    "enum": [
+                      "pro",
+                      "hobby"
+                    ]
+                  }
+                },
+                "required": [
+                  "fromPlan",
+                  "resourceId",
+                  "teamId",
+                  "toPlan"
                 ],
                 "type": "object",
                 "description": "The payload of the event, if requested."
@@ -160304,6 +160441,13 @@
               "plan",
               "flag",
               "deployment",
+              "agentic-provisioning-account-linked",
+              "agentic-provisioning-account-relinked",
+              "agentic-provisioning-team-created",
+              "agentic-provisioning-account-blocked",
+              "agentic-provisioning-credentials-rotated",
+              "agentic-provisioning-account-unlinked",
+              "agentic-provisioning-plan-changed",
               "ai-gateway-api-key-created",
               "ai-gateway-api-key-deleted",
               "ai-gateway-byok-credential-created",
@@ -160818,6 +160962,13 @@
                 "plan",
                 "flag",
                 "deployment",
+                "agentic-provisioning-account-linked",
+                "agentic-provisioning-account-relinked",
+                "agentic-provisioning-team-created",
+                "agentic-provisioning-account-blocked",
+                "agentic-provisioning-credentials-rotated",
+                "agentic-provisioning-account-unlinked",
+                "agentic-provisioning-plan-changed",
                 "ai-gateway-api-key-created",
                 "ai-gateway-api-key-deleted",
                 "ai-gateway-byok-credential-created",

@@ -11,9 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenTypes")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("consent")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant286ConsentJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> TokenTypes { get; set; }
+        public required global::Vercel.UserEventPayloadVariant286Consent Consent { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +25,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant286" /> class.
         /// </summary>
-        /// <param name="tokenTypes"></param>
+        /// <param name="consent"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant286(
-            global::System.Collections.Generic.IList<string> tokenTypes)
+            global::Vercel.UserEventPayloadVariant286Consent consent)
         {
-            this.TokenTypes = tokenTypes ?? throw new global::System.ArgumentNullException(nameof(tokenTypes));
+            this.Consent = consent;
         }
 
         /// <summary>

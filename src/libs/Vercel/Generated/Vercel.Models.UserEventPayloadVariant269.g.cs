@@ -11,33 +11,32 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
-        public string? Role { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
+        public string? DirectoryType { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ssoType")]
+        public string? SsoType { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        public string? Origin { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitedUser")]
+        public global::Vercel.UserEventPayloadVariant269InvitedUser? InvitedUser { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitedEmail")]
+        public string? InvitedEmail { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<string>? TeamPermissions { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitationRole")]
+        public string? InvitationRole { get; set; }
 
         /// <summary>
         /// 
@@ -48,8 +47,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invitedBy")]
-        public global::Vercel.UserEventPayloadVariant269InvitedBy? InvitedBy { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("invitedUid")]
+        public string? InvitedUid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -60,32 +59,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant269" /> class.
         /// </summary>
-        /// <param name="uid"></param>
-        /// <param name="role"></param>
-        /// <param name="origin"></param>
-        /// <param name="teamRoles"></param>
-        /// <param name="teamPermissions"></param>
+        /// <param name="directoryType"></param>
+        /// <param name="ssoType"></param>
+        /// <param name="invitedUser"></param>
+        /// <param name="invitedEmail"></param>
+        /// <param name="invitationRole"></param>
         /// <param name="entitlements"></param>
-        /// <param name="invitedBy"></param>
+        /// <param name="invitedUid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant269(
-            string uid,
-            string? role,
-            string? origin,
-            global::System.Collections.Generic.IList<string>? teamRoles,
-            global::System.Collections.Generic.IList<string>? teamPermissions,
+            string? directoryType,
+            string? ssoType,
+            global::Vercel.UserEventPayloadVariant269InvitedUser? invitedUser,
+            string? invitedEmail,
+            string? invitationRole,
             global::System.Collections.Generic.IList<string>? entitlements,
-            global::Vercel.UserEventPayloadVariant269InvitedBy? invitedBy)
+            string? invitedUid)
         {
-            this.Role = role;
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
-            this.Origin = origin;
-            this.TeamRoles = teamRoles;
-            this.TeamPermissions = teamPermissions;
+            this.DirectoryType = directoryType;
+            this.SsoType = ssoType;
+            this.InvitedUser = invitedUser;
+            this.InvitedEmail = invitedEmail;
+            this.InvitationRole = invitationRole;
             this.Entitlements = entitlements;
-            this.InvitedBy = invitedBy;
+            this.InvitedUid = invitedUid;
         }
 
         /// <summary>

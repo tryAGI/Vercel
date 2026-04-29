@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Alias { get; set; }
@@ -18,9 +24,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentUrl")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DeploymentUrl { get; set; }
+        public required string AliasId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
+        public string? DeploymentId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,16 +44,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant22" /> class.
         /// </summary>
         /// <param name="alias"></param>
-        /// <param name="deploymentUrl"></param>
+        /// <param name="aliasId"></param>
+        /// <param name="name"></param>
+        /// <param name="deploymentId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant22(
             string alias,
-            string deploymentUrl)
+            string aliasId,
+            string? name,
+            string? deploymentId)
         {
+            this.Name = name;
             this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
-            this.DeploymentUrl = deploymentUrl ?? throw new global::System.ArgumentNullException(nameof(deploymentUrl));
+            this.AliasId = aliasId ?? throw new global::System.ArgumentNullException(nameof(aliasId));
+            this.DeploymentId = deploymentId;
         }
 
         /// <summary>

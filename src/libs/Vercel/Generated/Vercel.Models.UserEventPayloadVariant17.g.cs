@@ -11,20 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
-        public string? Alias { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroup")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant17AccessGroup AccessGroup { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
-        public string? Email { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant17User User { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
-        public string? Username { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
+        public string? DirectoryType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,20 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant17" /> class.
         /// </summary>
-        /// <param name="alias"></param>
-        /// <param name="email"></param>
-        /// <param name="username"></param>
+        /// <param name="accessGroup"></param>
+        /// <param name="user"></param>
+        /// <param name="directoryType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant17(
-            string? alias,
-            string? email,
-            string? username)
+            global::Vercel.UserEventPayloadVariant17AccessGroup accessGroup,
+            global::Vercel.UserEventPayloadVariant17User user,
+            string? directoryType)
         {
-            this.Alias = alias;
-            this.Email = email;
-            this.Username = username;
+            this.AccessGroup = accessGroup ?? throw new global::System.ArgumentNullException(nameof(accessGroup));
+            this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
+            this.DirectoryType = directoryType;
         }
 
         /// <summary>

@@ -11,30 +11,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldEnvVar")]
+        public global::Vercel.UserEventPayloadVariant113OldEnvVar? OldEnvVar { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rulesetName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RulesetName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newEnvVar")]
+        public global::Vercel.UserEventPayloadVariant113NewEnvVar? NewEnvVar { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Active { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant113ActionJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant113Action? Action { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("updateDiff")]
+        public global::Vercel.UserEventPayloadVariant113UpdateDiff? UpdateDiff { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +35,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant113" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="rulesetName"></param>
-        /// <param name="active"></param>
-        /// <param name="action"></param>
+        /// <param name="oldEnvVar"></param>
+        /// <param name="newEnvVar"></param>
+        /// <param name="updateDiff"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant113(
-            string projectId,
-            string rulesetName,
-            bool active,
-            global::Vercel.UserEventPayloadVariant113Action? action)
+            global::Vercel.UserEventPayloadVariant113OldEnvVar? oldEnvVar,
+            global::Vercel.UserEventPayloadVariant113NewEnvVar? newEnvVar,
+            global::Vercel.UserEventPayloadVariant113UpdateDiff? updateDiff)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.RulesetName = rulesetName ?? throw new global::System.ArgumentNullException(nameof(rulesetName));
-            this.Active = active;
-            this.Action = action;
+            this.OldEnvVar = oldEnvVar;
+            this.NewEnvVar = newEnvVar;
+            this.UpdateDiff = updateDiff;
         }
 
         /// <summary>

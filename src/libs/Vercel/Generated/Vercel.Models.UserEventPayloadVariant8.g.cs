@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("author")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Author { get; set; }
+        public required string Reason { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroup")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("blockCode")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant8AccessGroup AccessGroup { get; set; }
+        public required string BlockCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant8" /> class.
         /// </summary>
-        /// <param name="author"></param>
-        /// <param name="accessGroup"></param>
+        /// <param name="reason"></param>
+        /// <param name="blockCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant8(
-            string author,
-            global::Vercel.UserEventPayloadVariant8AccessGroup accessGroup)
+            string reason,
+            string blockCode)
         {
-            this.Author = author ?? throw new global::System.ArgumentNullException(nameof(author));
-            this.AccessGroup = accessGroup ?? throw new global::System.ArgumentNullException(nameof(accessGroup));
+            this.Reason = reason ?? throw new global::System.ArgumentNullException(nameof(reason));
+            this.BlockCode = blockCode ?? throw new global::System.ArgumentNullException(nameof(blockCode));
         }
 
         /// <summary>

@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketLogin")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string BitbucketLogin { get; set; }
+        public required global::Vercel.UserEventPayloadVariant62Team Team { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketAccountId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string BitbucketAccountId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant62Configuration Configuration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NewName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant62" /> class.
         /// </summary>
-        /// <param name="bitbucketLogin"></param>
-        /// <param name="bitbucketAccountId"></param>
+        /// <param name="team"></param>
+        /// <param name="configuration"></param>
+        /// <param name="newName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant62(
-            string bitbucketLogin,
-            string bitbucketAccountId)
+            global::Vercel.UserEventPayloadVariant62Team team,
+            global::Vercel.UserEventPayloadVariant62Configuration configuration,
+            string newName)
         {
-            this.BitbucketLogin = bitbucketLogin ?? throw new global::System.ArgumentNullException(nameof(bitbucketLogin));
-            this.BitbucketAccountId = bitbucketAccountId ?? throw new global::System.ArgumentNullException(nameof(bitbucketAccountId));
+            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
+            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.NewName = newName ?? throw new global::System.ArgumentNullException(nameof(newName));
         }
 
         /// <summary>

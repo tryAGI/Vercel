@@ -11,16 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant44Project Project { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionId")]
+        public string? SubscriptionId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("versionId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("planSlug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string VersionId { get; set; }
+        public required string PlanSlug { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant44" /> class.
         /// </summary>
-        /// <param name="project"></param>
-        /// <param name="versionId"></param>
+        /// <param name="planSlug"></param>
+        /// <param name="subscriptionId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant44(
-            global::Vercel.UserEventPayloadVariant44Project project,
-            string versionId)
+            string planSlug,
+            string? subscriptionId)
         {
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.VersionId = versionId ?? throw new global::System.ArgumentNullException(nameof(versionId));
+            this.SubscriptionId = subscriptionId;
+            this.PlanSlug = planSlug ?? throw new global::System.ArgumentNullException(nameof(planSlug));
         }
 
         /// <summary>

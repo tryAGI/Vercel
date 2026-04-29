@@ -11,21 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("suffix")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
-        public global::Vercel.UserEventPayloadVariant71OldTeam? OldTeam { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
-        public global::Vercel.UserEventPayloadVariant71NewTeam? NewTeam { get; set; }
+        public required string Suffix { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,20 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant71" /> class.
         /// </summary>
-        /// <param name="url"></param>
-        /// <param name="oldTeam"></param>
-        /// <param name="newTeam"></param>
+        /// <param name="suffix"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant71(
-            string url,
-            global::Vercel.UserEventPayloadVariant71OldTeam? oldTeam,
-            global::Vercel.UserEventPayloadVariant71NewTeam? newTeam)
+            string suffix)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.OldTeam = oldTeam;
-            this.NewTeam = newTeam;
+            this.Suffix = suffix ?? throw new global::System.ArgumentNullException(nameof(suffix));
         }
 
         /// <summary>

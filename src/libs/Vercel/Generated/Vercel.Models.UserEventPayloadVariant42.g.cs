@@ -11,15 +11,31 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionId")]
-        public string? SubscriptionId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string InvoiceId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("productAliases")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("newInvoiceId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> ProductAliases { get; set; }
+        public required string NewInvoiceId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("settlementMethod")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant42SettlementMethodJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant42SettlementMethod SettlementMethod { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Amount { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +46,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant42" /> class.
         /// </summary>
-        /// <param name="productAliases"></param>
-        /// <param name="subscriptionId"></param>
+        /// <param name="invoiceId"></param>
+        /// <param name="newInvoiceId"></param>
+        /// <param name="settlementMethod"></param>
+        /// <param name="amount"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant42(
-            global::System.Collections.Generic.IList<string> productAliases,
-            string? subscriptionId)
+            string invoiceId,
+            string newInvoiceId,
+            global::Vercel.UserEventPayloadVariant42SettlementMethod settlementMethod,
+            double amount)
         {
-            this.SubscriptionId = subscriptionId;
-            this.ProductAliases = productAliases ?? throw new global::System.ArgumentNullException(nameof(productAliases));
+            this.InvoiceId = invoiceId ?? throw new global::System.ArgumentNullException(nameof(invoiceId));
+            this.NewInvoiceId = newInvoiceId ?? throw new global::System.ArgumentNullException(nameof(newInvoiceId));
+            this.SettlementMethod = settlementMethod;
+            this.Amount = amount;
         }
 
         /// <summary>

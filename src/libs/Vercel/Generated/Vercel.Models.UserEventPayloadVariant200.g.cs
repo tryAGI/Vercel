@@ -11,29 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousProjectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PreviousProjectName { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant200Project> Projects { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newProjectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamMembership")]
+        public global::Vercel.UserEventPayloadVariant200TeamMembership? TeamMembership { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("originAccountName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OriginAccountName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transferId")]
-        public string? TransferId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
+        public string? DirectoryType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,23 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant200" /> class.
         /// </summary>
-        /// <param name="previousProjectName"></param>
-        /// <param name="newProjectName"></param>
-        /// <param name="originAccountName"></param>
-        /// <param name="transferId"></param>
+        /// <param name="projects"></param>
+        /// <param name="teamMembership"></param>
+        /// <param name="directoryType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant200(
-            string previousProjectName,
-            string newProjectName,
-            string originAccountName,
-            string? transferId)
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant200Project> projects,
+            global::Vercel.UserEventPayloadVariant200TeamMembership? teamMembership,
+            string? directoryType)
         {
-            this.PreviousProjectName = previousProjectName ?? throw new global::System.ArgumentNullException(nameof(previousProjectName));
-            this.NewProjectName = newProjectName ?? throw new global::System.ArgumentNullException(nameof(newProjectName));
-            this.OriginAccountName = originAccountName ?? throw new global::System.ArgumentNullException(nameof(originAccountName));
-            this.TransferId = transferId;
+            this.Projects = projects ?? throw new global::System.ArgumentNullException(nameof(projects));
+            this.TeamMembership = teamMembership;
+            this.DirectoryType = directoryType;
         }
 
         /// <summary>

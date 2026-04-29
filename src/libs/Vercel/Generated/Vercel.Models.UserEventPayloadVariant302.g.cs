@@ -11,29 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant302Team Team { get; set; }
+        public required string Email { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevEmail")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant302Configuration Configuration { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("peering")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant302Peering Peering { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
-        public string? NewName { get; set; }
+        public required string PrevEmail { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,23 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant302" /> class.
         /// </summary>
-        /// <param name="team"></param>
-        /// <param name="configuration"></param>
-        /// <param name="peering"></param>
-        /// <param name="newName"></param>
+        /// <param name="email"></param>
+        /// <param name="prevEmail"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant302(
-            global::Vercel.UserEventPayloadVariant302Team team,
-            global::Vercel.UserEventPayloadVariant302Configuration configuration,
-            global::Vercel.UserEventPayloadVariant302Peering peering,
-            string? newName)
+            string email,
+            string prevEmail)
         {
-            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
-            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
-            this.Peering = peering ?? throw new global::System.ArgumentNullException(nameof(peering));
-            this.NewName = newName;
+            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.PrevEmail = prevEmail ?? throw new global::System.ArgumentNullException(nameof(prevEmail));
         }
 
         /// <summary>

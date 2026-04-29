@@ -11,21 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionId")]
+        public string? SubscriptionId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("productAliases")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
-        public global::Vercel.UserEventPayloadVariant48OldTeam? OldTeam { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
-        public global::Vercel.UserEventPayloadVariant48NewTeam? NewTeam { get; set; }
+        public required global::System.Collections.Generic.IList<string> ProductAliases { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,20 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant48" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="oldTeam"></param>
-        /// <param name="newTeam"></param>
+        /// <param name="productAliases"></param>
+        /// <param name="subscriptionId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant48(
-            string id,
-            global::Vercel.UserEventPayloadVariant48OldTeam? oldTeam,
-            global::Vercel.UserEventPayloadVariant48NewTeam? newTeam)
+            global::System.Collections.Generic.IList<string> productAliases,
+            string? subscriptionId)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.OldTeam = oldTeam;
-            this.NewTeam = newTeam;
+            this.SubscriptionId = subscriptionId;
+            this.ProductAliases = productAliases ?? throw new global::System.ArgumentNullException(nameof(productAliases));
         }
 
         /// <summary>

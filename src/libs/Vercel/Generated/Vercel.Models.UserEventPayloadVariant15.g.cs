@@ -11,27 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroup")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Alias { get; set; }
+        public required global::Vercel.UserEventPayloadVariant15AccessGroup AccessGroup { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
-        public global::Vercel.UserEventPayloadVariant15OldTeam? OldTeam { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant15Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
-        public global::Vercel.UserEventPayloadVariant15NewTeam? NewTeam { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next_role")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant15NextRoleJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant15NextRole? NextRole { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous_role")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant15PreviousRoleJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant15PreviousRole? PreviousRole { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -42,23 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant15" /> class.
         /// </summary>
-        /// <param name="alias"></param>
-        /// <param name="name"></param>
-        /// <param name="oldTeam"></param>
-        /// <param name="newTeam"></param>
+        /// <param name="accessGroup"></param>
+        /// <param name="project"></param>
+        /// <param name="nextRole"></param>
+        /// <param name="previousRole"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant15(
-            string alias,
-            string? name,
-            global::Vercel.UserEventPayloadVariant15OldTeam? oldTeam,
-            global::Vercel.UserEventPayloadVariant15NewTeam? newTeam)
+            global::Vercel.UserEventPayloadVariant15AccessGroup accessGroup,
+            global::Vercel.UserEventPayloadVariant15Project project,
+            global::Vercel.UserEventPayloadVariant15NextRole? nextRole,
+            global::Vercel.UserEventPayloadVariant15PreviousRole? previousRole)
         {
-            this.Name = name;
-            this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
-            this.OldTeam = oldTeam;
-            this.NewTeam = newTeam;
+            this.AccessGroup = accessGroup ?? throw new global::System.ArgumentNullException(nameof(accessGroup));
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.NextRole = nextRole;
+            this.PreviousRole = previousRole;
         }
 
         /// <summary>

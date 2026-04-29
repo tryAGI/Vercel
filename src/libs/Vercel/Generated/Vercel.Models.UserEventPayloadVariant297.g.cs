@@ -11,9 +11,35 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("totp")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Username { get; set; }
+        public required bool Totp { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("recoveryCodes")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double RecoveryCodes { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("actorId")]
+        public string? ActorId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("actorType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant297ActorTypeJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant297ActorType? ActorType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +50,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant297" /> class.
         /// </summary>
-        /// <param name="username"></param>
+        /// <param name="totp"></param>
+        /// <param name="recoveryCodes"></param>
+        /// <param name="actorId"></param>
+        /// <param name="actorType"></param>
+        /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant297(
-            string username)
+            bool totp,
+            double recoveryCodes,
+            string? actorId,
+            global::Vercel.UserEventPayloadVariant297ActorType? actorType,
+            string? reason)
         {
-            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
+            this.Totp = totp;
+            this.RecoveryCodes = recoveryCodes;
+            this.ActorId = actorId;
+            this.ActorType = actorType;
+            this.Reason = reason;
         }
 
         /// <summary>

@@ -11,24 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant110Team Team { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousRule")]
+        public global::Vercel.UserEventPayloadVariant110PreviousRule? PreviousRule { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configVersion")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<string, double?> ConfigVersion { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextRule")]
+        public global::Vercel.UserEventPayloadVariant110NextRule? NextRule { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,20 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant110" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="configVersion"></param>
+        /// <param name="team"></param>
+        /// <param name="previousRule"></param>
+        /// <param name="nextRule"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant110(
-            string projectId,
-            string projectName,
-            global::Vercel.OneOf<string, double?> configVersion)
+            global::Vercel.UserEventPayloadVariant110Team team,
+            global::Vercel.UserEventPayloadVariant110PreviousRule? previousRule,
+            global::Vercel.UserEventPayloadVariant110NextRule? nextRule)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.ConfigVersion = configVersion;
+            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
+            this.PreviousRule = previousRule;
+            this.NextRule = nextRule;
         }
 
         /// <summary>

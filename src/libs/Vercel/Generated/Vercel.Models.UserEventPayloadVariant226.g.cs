@@ -25,14 +25,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectWebAnalytics")]
-        public global::Vercel.UserEventPayloadVariant226ProjectWebAnalytics? ProjectWebAnalytics { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant226Next Next { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevProjectWebAnalytics")]
-        public global::Vercel.UserEventPayloadVariant226PrevProjectWebAnalytics? PrevProjectWebAnalytics { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant226Previous Previous { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,21 +47,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="projectWebAnalytics"></param>
-        /// <param name="prevProjectWebAnalytics"></param>
+        /// <param name="next"></param>
+        /// <param name="previous"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant226(
             string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant226ProjectWebAnalytics? projectWebAnalytics,
-            global::Vercel.UserEventPayloadVariant226PrevProjectWebAnalytics? prevProjectWebAnalytics)
+            global::Vercel.UserEventPayloadVariant226Next next,
+            global::Vercel.UserEventPayloadVariant226Previous previous)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.ProjectWebAnalytics = projectWebAnalytics;
-            this.PrevProjectWebAnalytics = prevProjectWebAnalytics;
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
         }
 
         /// <summary>

@@ -11,34 +11,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabLogin")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitlabLogin { get; set; }
+        public required global::Vercel.UserEventPayloadVariant59Team Team { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabEmail")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitlabEmail { get; set; }
+        public required global::Vercel.UserEventPayloadVariant59Configuration Configuration { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitlabName")]
-        public string? GitlabName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant59Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccount")]
-        public string? ZeitAccount { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zeitAccountType")]
-        public string? ZeitAccountType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildsEnabled")]
+        public bool? BuildsEnabled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,26 +44,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant59" /> class.
         /// </summary>
-        /// <param name="gitlabLogin"></param>
-        /// <param name="gitlabEmail"></param>
-        /// <param name="gitlabName"></param>
-        /// <param name="zeitAccount"></param>
-        /// <param name="zeitAccountType"></param>
+        /// <param name="team"></param>
+        /// <param name="configuration"></param>
+        /// <param name="project"></param>
+        /// <param name="buildsEnabled"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant59(
-            string gitlabLogin,
-            string gitlabEmail,
-            string? gitlabName,
-            string? zeitAccount,
-            string? zeitAccountType)
+            global::Vercel.UserEventPayloadVariant59Team team,
+            global::Vercel.UserEventPayloadVariant59Configuration configuration,
+            global::Vercel.UserEventPayloadVariant59Project project,
+            bool? buildsEnabled)
         {
-            this.GitlabLogin = gitlabLogin ?? throw new global::System.ArgumentNullException(nameof(gitlabLogin));
-            this.GitlabEmail = gitlabEmail ?? throw new global::System.ArgumentNullException(nameof(gitlabEmail));
-            this.GitlabName = gitlabName;
-            this.ZeitAccount = zeitAccount;
-            this.ZeitAccountType = zeitAccountType;
+            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
+            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.BuildsEnabled = buildsEnabled;
         }
 
         /// <summary>

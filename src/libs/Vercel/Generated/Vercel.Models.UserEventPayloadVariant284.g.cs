@@ -11,14 +11,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        public object? Previous { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
-        public object? Next { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("inviteCode")]
+        public string? InviteCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +23,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant284" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="inviteCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant284(
-            object? previous,
-            object? next)
+            string? inviteCode)
         {
-            this.Previous = previous;
-            this.Next = next;
+            this.InviteCode = inviteCode;
         }
 
         /// <summary>

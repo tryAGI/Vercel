@@ -11,15 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("entitlement")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PublicId { get; set; }
+        public required string Entitlement { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant274User User { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousCanceledAt")]
+        public string? PreviousCanceledAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant274" /> class.
         /// </summary>
-        /// <param name="publicId"></param>
-        /// <param name="name"></param>
+        /// <param name="entitlement"></param>
+        /// <param name="user"></param>
+        /// <param name="previousCanceledAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant274(
-            string publicId,
-            string? name)
+            string entitlement,
+            global::Vercel.UserEventPayloadVariant274User user,
+            string? previousCanceledAt)
         {
-            this.PublicId = publicId ?? throw new global::System.ArgumentNullException(nameof(publicId));
-            this.Name = name;
+            this.Entitlement = entitlement ?? throw new global::System.ArgumentNullException(nameof(entitlement));
+            this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
+            this.PreviousCanceledAt = previousCanceledAt;
         }
 
         /// <summary>

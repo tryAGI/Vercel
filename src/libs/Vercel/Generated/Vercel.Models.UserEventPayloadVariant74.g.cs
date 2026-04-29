@@ -11,43 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationId { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configurationId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ConfigurationId { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationSlug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("checkId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationSlug { get; set; }
+        public required string CheckId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("checkName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectIds")]
-        public global::System.Collections.Generic.IList<string>? ProjectIds { get; set; }
+        public required string CheckName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,29 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant74" /> class.
         /// </summary>
-        /// <param name="integrationId"></param>
-        /// <param name="configurationId"></param>
-        /// <param name="integrationSlug"></param>
-        /// <param name="integrationName"></param>
-        /// <param name="ownerId"></param>
-        /// <param name="projectIds"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="checkId"></param>
+        /// <param name="checkName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant74(
-            string integrationId,
-            string configurationId,
-            string integrationSlug,
-            string integrationName,
-            string ownerId,
-            global::System.Collections.Generic.IList<string>? projectIds)
+            string projectId,
+            string projectName,
+            string checkId,
+            string checkName)
         {
-            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
-            this.ConfigurationId = configurationId ?? throw new global::System.ArgumentNullException(nameof(configurationId));
-            this.IntegrationSlug = integrationSlug ?? throw new global::System.ArgumentNullException(nameof(integrationSlug));
-            this.IntegrationName = integrationName ?? throw new global::System.ArgumentNullException(nameof(integrationName));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.ProjectIds = projectIds;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.CheckId = checkId ?? throw new global::System.ArgumentNullException(nameof(checkId));
+            this.CheckName = checkName ?? throw new global::System.ArgumentNullException(nameof(checkName));
         }
 
         /// <summary>

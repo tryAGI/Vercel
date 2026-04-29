@@ -18,29 +18,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fromDeploymentId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string FromDeploymentId { get; set; }
+        public required string Scope { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("toDeploymentId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ToDeploymentId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        public string? Reason { get; set; }
+        public required string Source { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,25 +39,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant115" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="fromDeploymentId"></param>
-        /// <param name="toDeploymentId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="reason"></param>
+        /// <param name="scope"></param>
+        /// <param name="source"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant115(
             string projectId,
-            string fromDeploymentId,
-            string toDeploymentId,
-            string projectName,
-            string? reason)
+            string scope,
+            string source)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.FromDeploymentId = fromDeploymentId ?? throw new global::System.ArgumentNullException(nameof(fromDeploymentId));
-            this.ToDeploymentId = toDeploymentId ?? throw new global::System.ArgumentNullException(nameof(toDeploymentId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Reason = reason;
+            this.Scope = scope ?? throw new global::System.ArgumentNullException(nameof(scope));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
         }
 
         /// <summary>

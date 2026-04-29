@@ -11,8 +11,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("functionZeroConfigFailover")]
-        public bool? FunctionZeroConfigFailover { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("branchMatcher")]
+        public global::Vercel.UserEventPayloadVariant175PreviousBranchMatcher? BranchMatcher { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +23,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant175Previous" /> class.
         /// </summary>
-        /// <param name="functionZeroConfigFailover"></param>
+        /// <param name="branchMatcher"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant175Previous(
-            bool? functionZeroConfigFailover)
+            global::Vercel.UserEventPayloadVariant175PreviousBranchMatcher? branchMatcher)
         {
-            this.FunctionZeroConfigFailover = functionZeroConfigFailover;
+            this.BranchMatcher = branchMatcher;
         }
 
         /// <summary>

@@ -25,16 +25,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("elasticConcurrencyEnabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant172Previous Previous { get; set; }
+        public required bool ElasticConcurrencyEnabled { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldElasticConcurrencyEnabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant172Next Next { get; set; }
+        public required bool OldElasticConcurrencyEnabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildQueueConfiguration")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant172BuildQueueConfigurationJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant172BuildQueueConfiguration? BuildQueueConfiguration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldBuildQueueConfiguration")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant172OldBuildQueueConfigurationJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant172OldBuildQueueConfiguration? OldBuildQueueConfiguration { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,21 +61,27 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="elasticConcurrencyEnabled"></param>
+        /// <param name="oldElasticConcurrencyEnabled"></param>
+        /// <param name="buildQueueConfiguration"></param>
+        /// <param name="oldBuildQueueConfiguration"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant172(
             string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant172Previous previous,
-            global::Vercel.UserEventPayloadVariant172Next next)
+            bool elasticConcurrencyEnabled,
+            bool oldElasticConcurrencyEnabled,
+            global::Vercel.UserEventPayloadVariant172BuildQueueConfiguration? buildQueueConfiguration,
+            global::Vercel.UserEventPayloadVariant172OldBuildQueueConfiguration? oldBuildQueueConfiguration)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
+            this.OldElasticConcurrencyEnabled = oldElasticConcurrencyEnabled;
+            this.BuildQueueConfiguration = buildQueueConfiguration;
+            this.OldBuildQueueConfiguration = oldBuildQueueConfiguration;
         }
 
         /// <summary>

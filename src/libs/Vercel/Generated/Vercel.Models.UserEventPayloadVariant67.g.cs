@@ -11,16 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketEmail")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant67Project Project { get; set; }
+        public required string BitbucketEmail { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("job")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketLogin")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant67Job Job { get; set; }
+        public required string BitbucketLogin { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketName")]
+        public string? BitbucketName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant67" /> class.
         /// </summary>
-        /// <param name="project"></param>
-        /// <param name="job"></param>
+        /// <param name="bitbucketEmail"></param>
+        /// <param name="bitbucketLogin"></param>
+        /// <param name="bitbucketName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant67(
-            global::Vercel.UserEventPayloadVariant67Project project,
-            global::Vercel.UserEventPayloadVariant67Job job)
+            string bitbucketEmail,
+            string bitbucketLogin,
+            string? bitbucketName)
         {
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.Job = job ?? throw new global::System.ArgumentNullException(nameof(job));
+            this.BitbucketEmail = bitbucketEmail ?? throw new global::System.ArgumentNullException(nameof(bitbucketEmail));
+            this.BitbucketLogin = bitbucketLogin ?? throw new global::System.ArgumentNullException(nameof(bitbucketLogin));
+            this.BitbucketName = bitbucketName;
         }
 
         /// <summary>

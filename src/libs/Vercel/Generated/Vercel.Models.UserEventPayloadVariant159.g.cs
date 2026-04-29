@@ -12,25 +12,22 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        public global::System.Collections.Generic.IList<string>? Target { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updated")]
-        public bool? Updated { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("enableExternalRewriteCaching")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool EnableExternalRewriteCaching { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,21 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="target"></param>
-        /// <param name="updated"></param>
+        /// <param name="enableExternalRewriteCaching"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant159(
-            string? projectId,
-            string? projectName,
-            global::System.Collections.Generic.IList<string>? target,
-            bool? updated)
+            string projectId,
+            string projectName,
+            bool enableExternalRewriteCaching)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.Target = target;
-            this.Updated = updated;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.EnableExternalRewriteCaching = enableExternalRewriteCaching;
         }
 
         /// <summary>

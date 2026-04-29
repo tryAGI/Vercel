@@ -11,10 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant282EnabledJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant282PlanJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant282Enabled Enabled { get; set; }
+        public required global::Vercel.UserEventPayloadVariant282Plan Plan { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trial")]
+        public global::Vercel.UserEventPayloadVariant282Trial? Trial { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,14 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant282" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
+        /// <param name="plan"></param>
+        /// <param name="trial"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant282(
-            global::Vercel.UserEventPayloadVariant282Enabled enabled)
+            global::Vercel.UserEventPayloadVariant282Plan plan,
+            global::Vercel.UserEventPayloadVariant282Trial? trial)
         {
-            this.Enabled = enabled;
+            this.Plan = plan;
+            this.Trial = trial;
         }
 
         /// <summary>

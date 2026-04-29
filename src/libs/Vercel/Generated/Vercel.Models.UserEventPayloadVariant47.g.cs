@@ -11,20 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cn")]
-        public string? Cn { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionId")]
+        public string? SubscriptionId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cns")]
-        public global::System.Collections.Generic.IList<string>? Cns { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant47ActionJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant47Action Action { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required object Data { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,20 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant47" /> class.
         /// </summary>
-        /// <param name="cn"></param>
-        /// <param name="cns"></param>
-        /// <param name="id"></param>
+        /// <param name="data"></param>
+        /// <param name="subscriptionId"></param>
+        /// <param name="action"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant47(
-            string? cn,
-            global::System.Collections.Generic.IList<string>? cns,
-            string? id)
+            object data,
+            string? subscriptionId,
+            global::Vercel.UserEventPayloadVariant47Action action)
         {
-            this.Cn = cn;
-            this.Cns = cns;
-            this.Id = id;
+            this.SubscriptionId = subscriptionId;
+            this.Action = action;
+            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
         }
 
         /// <summary>

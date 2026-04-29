@@ -11,9 +11,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        public string? Key { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public string? ProjectId { get; set; }
 
         /// <summary>
         /// 
@@ -24,30 +29,51 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("restore")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Restore { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>))]
+        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? Target { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configVersion")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double ConfigVersion { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentSlugs")]
+        public global::System.Collections.Generic.IList<string>? CustomEnvironmentSlugs { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configChangeCount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double ConfigChangeCount { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        public string? Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configChanges")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<object> ConfigChanges { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitBranch")]
+        public string? GitBranch { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
+        public string? EdgeConfigId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenId")]
+        public string? EdgeConfigTokenId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        public string? Source { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ipAddress")]
+        public string? IpAddress { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,29 +84,44 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant111" /> class.
         /// </summary>
+        /// <param name="key"></param>
         /// <param name="projectId"></param>
-        /// <param name="restore"></param>
-        /// <param name="configVersion"></param>
-        /// <param name="configChangeCount"></param>
-        /// <param name="configChanges"></param>
         /// <param name="projectName"></param>
+        /// <param name="target"></param>
+        /// <param name="customEnvironmentSlugs"></param>
+        /// <param name="id"></param>
+        /// <param name="gitBranch"></param>
+        /// <param name="edgeConfigId"></param>
+        /// <param name="edgeConfigTokenId"></param>
+        /// <param name="source"></param>
+        /// <param name="ipAddress"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant111(
-            string projectId,
-            bool restore,
-            double configVersion,
-            double configChangeCount,
-            global::System.Collections.Generic.IList<object> configChanges,
-            string? projectName)
+            string? key,
+            string? projectId,
+            string? projectName,
+            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? target,
+            global::System.Collections.Generic.IList<string>? customEnvironmentSlugs,
+            string? id,
+            string? gitBranch,
+            string? edgeConfigId,
+            string? edgeConfigTokenId,
+            string? source,
+            string? ipAddress)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.Key = key;
+            this.ProjectId = projectId;
             this.ProjectName = projectName;
-            this.Restore = restore;
-            this.ConfigVersion = configVersion;
-            this.ConfigChangeCount = configChangeCount;
-            this.ConfigChanges = configChanges ?? throw new global::System.ArgumentNullException(nameof(configChanges));
+            this.Target = target;
+            this.CustomEnvironmentSlugs = customEnvironmentSlugs;
+            this.Id = id;
+            this.GitBranch = gitBranch;
+            this.EdgeConfigId = edgeConfigId;
+            this.EdgeConfigTokenId = edgeConfigTokenId;
+            this.Source = source;
+            this.IpAddress = ipAddress;
         }
 
         /// <summary>

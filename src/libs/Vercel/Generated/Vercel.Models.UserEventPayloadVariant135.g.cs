@@ -11,22 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant135Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        public global::Vercel.UserEventPayloadVariant135Previous? Previous { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("prev")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant135Prev Prev { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("group")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant135Next Next { get; set; }
+        public required global::Vercel.UserEventPayloadVariant135Group Group { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant135" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="next"></param>
-        /// <param name="previous"></param>
+        /// <param name="project"></param>
+        /// <param name="prev"></param>
+        /// <param name="group"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant135(
-            string projectId,
-            global::Vercel.UserEventPayloadVariant135Next next,
-            global::Vercel.UserEventPayloadVariant135Previous? previous)
+            global::Vercel.UserEventPayloadVariant135Project project,
+            global::Vercel.UserEventPayloadVariant135Prev prev,
+            global::Vercel.UserEventPayloadVariant135Group group)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Previous = previous;
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.Prev = prev ?? throw new global::System.ArgumentNullException(nameof(prev));
+            this.Group = group ?? throw new global::System.ArgumentNullException(nameof(group));
         }
 
         /// <summary>

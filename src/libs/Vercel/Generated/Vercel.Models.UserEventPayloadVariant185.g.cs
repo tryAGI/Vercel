@@ -11,9 +11,38 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("requireVerifiedCommits")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool RequireVerifiedCommits { get; set; }
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitProvider")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant185GitProviderJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant185GitProvider GitProvider { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitRepoId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GitRepoId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitRepositoryName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GitRepositoryName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +53,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant185" /> class.
         /// </summary>
-        /// <param name="requireVerifiedCommits"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="gitProvider"></param>
+        /// <param name="gitRepoId"></param>
+        /// <param name="gitRepositoryName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant185(
-            bool requireVerifiedCommits)
+            string projectId,
+            string projectName,
+            global::Vercel.UserEventPayloadVariant185GitProvider gitProvider,
+            string gitRepoId,
+            string gitRepositoryName)
         {
-            this.RequireVerifiedCommits = requireVerifiedCommits;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.GitProvider = gitProvider;
+            this.GitRepoId = gitRepoId ?? throw new global::System.ArgumentNullException(nameof(gitRepoId));
+            this.GitRepositoryName = gitRepositoryName ?? throw new global::System.ArgumentNullException(nameof(gitRepositoryName));
         }
 
         /// <summary>

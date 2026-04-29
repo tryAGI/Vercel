@@ -11,34 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string AppName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevAttackModeEnabled")]
-        public bool? PrevAttackModeEnabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevAttackModeActiveUntil")]
-        public double? PrevAttackModeActiveUntil { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("attackModeEnabled")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool AttackModeEnabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("attackModeActiveUntil")]
-        public double? AttackModeActiveUntil { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("appId")]
+        public string? AppId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,26 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant32" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="attackModeEnabled"></param>
-        /// <param name="prevAttackModeEnabled"></param>
-        /// <param name="prevAttackModeActiveUntil"></param>
-        /// <param name="attackModeActiveUntil"></param>
+        /// <param name="appName"></param>
+        /// <param name="appId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant32(
-            string projectId,
-            bool attackModeEnabled,
-            bool? prevAttackModeEnabled,
-            double? prevAttackModeActiveUntil,
-            double? attackModeActiveUntil)
+            string appName,
+            string? appId)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.PrevAttackModeEnabled = prevAttackModeEnabled;
-            this.PrevAttackModeActiveUntil = prevAttackModeActiveUntil;
-            this.AttackModeEnabled = attackModeEnabled;
-            this.AttackModeActiveUntil = attackModeActiveUntil;
+            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
+            this.AppId = appId;
         }
 
         /// <summary>

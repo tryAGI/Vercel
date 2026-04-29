@@ -11,16 +11,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        public global::System.Collections.Generic.IList<string>? Target { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updated")]
+        public bool? Updated { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +41,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant165" /> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="ownerId"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="target"></param>
+        /// <param name="updated"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant165(
-            string name,
-            string ownerId)
+            string? projectId,
+            string? projectName,
+            global::System.Collections.Generic.IList<string>? target,
+            bool? updated)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.ProjectId = projectId;
+            this.ProjectName = projectName;
+            this.Target = target;
+            this.Updated = updated;
         }
 
         /// <summary>

@@ -11,33 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AppName { get; set; }
+        public required string Alias { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("appId")]
-        public string? AppId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("installationId")]
-        public string? InstallationId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("before")]
-        public global::Vercel.UserEventPayloadVariant28Before? Before { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("after")]
-        public global::Vercel.UserEventPayloadVariant28After? After { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentUrl")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DeploymentUrl { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,26 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant28" /> class.
         /// </summary>
-        /// <param name="appName"></param>
-        /// <param name="appId"></param>
-        /// <param name="installationId"></param>
-        /// <param name="before"></param>
-        /// <param name="after"></param>
+        /// <param name="alias"></param>
+        /// <param name="deploymentUrl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant28(
-            string appName,
-            string? appId,
-            string? installationId,
-            global::Vercel.UserEventPayloadVariant28Before? before,
-            global::Vercel.UserEventPayloadVariant28After? after)
+            string alias,
+            string deploymentUrl)
         {
-            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
-            this.AppId = appId;
-            this.InstallationId = installationId;
-            this.Before = before;
-            this.After = after;
+            this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
+            this.DeploymentUrl = deploymentUrl ?? throw new global::System.ArgumentNullException(nameof(deploymentUrl));
         }
 
         /// <summary>

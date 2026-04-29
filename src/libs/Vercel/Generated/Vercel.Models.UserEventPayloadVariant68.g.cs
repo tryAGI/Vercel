@@ -11,30 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketLogin")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string BitbucketLogin { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucketAccountId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("checkId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CheckId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("checkName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CheckName { get; set; }
+        public required string BitbucketAccountId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant68" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="checkId"></param>
-        /// <param name="checkName"></param>
+        /// <param name="bitbucketLogin"></param>
+        /// <param name="bitbucketAccountId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant68(
-            string projectId,
-            string projectName,
-            string checkId,
-            string checkName)
+            string bitbucketLogin,
+            string bitbucketAccountId)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.CheckId = checkId ?? throw new global::System.ArgumentNullException(nameof(checkId));
-            this.CheckName = checkName ?? throw new global::System.ArgumentNullException(nameof(checkName));
+            this.BitbucketLogin = bitbucketLogin ?? throw new global::System.ArgumentNullException(nameof(bitbucketLogin));
+            this.BitbucketAccountId = bitbucketAccountId ?? throw new global::System.ArgumentNullException(nameof(bitbucketAccountId));
         }
 
         /// <summary>

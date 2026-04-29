@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required global::Vercel.UserEventPayloadVariant79Deployment Deployment { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cdnEnabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool CdnEnabled { get; set; }
+        public required string DeploymentId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant79" /> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="cdnEnabled"></param>
+        /// <param name="deployment"></param>
+        /// <param name="deploymentId"></param>
+        /// <param name="url"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant79(
-            string name,
-            bool cdnEnabled)
+            global::Vercel.UserEventPayloadVariant79Deployment deployment,
+            string deploymentId,
+            string url)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.CdnEnabled = cdnEnabled;
+            this.Deployment = deployment ?? throw new global::System.ArgumentNullException(nameof(deployment));
+            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

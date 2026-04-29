@@ -11,16 +11,28 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        public required string AppName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("autoExposeSystemEnvs")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("appId")]
+        public string? AppId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextScopes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool AutoExposeSystemEnvs { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant33NextScope> NextScopes { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextPermissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant33NextPermission>? NextPermissions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +43,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant33" /> class.
         /// </summary>
-        /// <param name="projectName"></param>
-        /// <param name="autoExposeSystemEnvs"></param>
+        /// <param name="appName"></param>
+        /// <param name="nextScopes"></param>
+        /// <param name="appId"></param>
+        /// <param name="nextPermissions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant33(
-            string projectName,
-            bool autoExposeSystemEnvs)
+            string appName,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant33NextScope> nextScopes,
+            string? appId,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant33NextPermission>? nextPermissions)
         {
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.AutoExposeSystemEnvs = autoExposeSystemEnvs;
+            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
+            this.AppId = appId;
+            this.NextScopes = nextScopes ?? throw new global::System.ArgumentNullException(nameof(nextScopes));
+            this.NextPermissions = nextPermissions;
         }
 
         /// <summary>

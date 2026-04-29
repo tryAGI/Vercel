@@ -26,7 +26,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        public global::Vercel.UserEventPayloadVariant178Previous? Previous { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant178Previous Previous { get; set; }
 
         /// <summary>
         /// 
@@ -46,20 +47,20 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="next"></param>
         /// <param name="previous"></param>
+        /// <param name="next"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant178(
             string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant178Next next,
-            global::Vercel.UserEventPayloadVariant178Previous? previous)
+            global::Vercel.UserEventPayloadVariant178Previous previous,
+            global::Vercel.UserEventPayloadVariant178Next next)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Previous = previous;
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
             this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 

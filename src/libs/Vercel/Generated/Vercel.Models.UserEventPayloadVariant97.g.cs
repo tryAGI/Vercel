@@ -11,22 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigId { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSlug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigSlug { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("price")]
+        public double? Price { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSchema")]
-        public object? EdgeConfigSchema { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
+        public string? Currency { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant97" /> class.
         /// </summary>
-        /// <param name="edgeConfigId"></param>
-        /// <param name="edgeConfigSlug"></param>
-        /// <param name="edgeConfigSchema"></param>
+        /// <param name="name"></param>
+        /// <param name="price"></param>
+        /// <param name="currency"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant97(
-            string edgeConfigId,
-            string edgeConfigSlug,
-            object? edgeConfigSchema)
+            string name,
+            double? price,
+            string? currency)
         {
-            this.EdgeConfigId = edgeConfigId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigId));
-            this.EdgeConfigSlug = edgeConfigSlug ?? throw new global::System.ArgumentNullException(nameof(edgeConfigSlug));
-            this.EdgeConfigSchema = edgeConfigSchema;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Price = price;
+            this.Currency = currency;
         }
 
         /// <summary>

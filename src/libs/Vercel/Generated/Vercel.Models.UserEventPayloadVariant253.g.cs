@@ -9,17 +9,32 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant253
     {
         /// <summary>
-        /// Automatic code review settings
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
-        public global::Vercel.UserEventPayloadVariant253Previous? Previous { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("transferRequestCode")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TransferRequestCode { get; set; }
 
         /// <summary>
-        /// Automatic code review settings
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant253Next Next { get; set; }
+        public required global::Vercel.UserEventPayloadVariant253Store Store { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationTeamId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DestinationTeamId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationTeamName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DestinationTeamName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,21 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant253" /> class.
         /// </summary>
-        /// <param name="next">
-        /// Automatic code review settings
-        /// </param>
-        /// <param name="previous">
-        /// Automatic code review settings
-        /// </param>
+        /// <param name="transferRequestCode"></param>
+        /// <param name="store"></param>
+        /// <param name="destinationTeamId"></param>
+        /// <param name="destinationTeamName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant253(
-            global::Vercel.UserEventPayloadVariant253Next next,
-            global::Vercel.UserEventPayloadVariant253Previous? previous)
+            string transferRequestCode,
+            global::Vercel.UserEventPayloadVariant253Store store,
+            string destinationTeamId,
+            string destinationTeamName)
         {
-            this.Previous = previous;
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.TransferRequestCode = transferRequestCode ?? throw new global::System.ArgumentNullException(nameof(transferRequestCode));
+            this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
+            this.DestinationTeamId = destinationTeamId ?? throw new global::System.ArgumentNullException(nameof(destinationTeamId));
+            this.DestinationTeamName = destinationTeamName ?? throw new global::System.ArgumentNullException(nameof(destinationTeamName));
         }
 
         /// <summary>

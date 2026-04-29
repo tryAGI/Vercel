@@ -11,22 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlement")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("deletedCount")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Entitlement { get; set; }
+        public required double DeletedCount { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("inviteIds")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant268User User { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousCanceledAt")]
-        public string? PreviousCanceledAt { get; set; }
+        public required global::System.Collections.Generic.IList<string> InviteIds { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant268" /> class.
         /// </summary>
-        /// <param name="entitlement"></param>
-        /// <param name="user"></param>
-        /// <param name="previousCanceledAt"></param>
+        /// <param name="deletedCount"></param>
+        /// <param name="inviteIds"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant268(
-            string entitlement,
-            global::Vercel.UserEventPayloadVariant268User user,
-            string? previousCanceledAt)
+            double deletedCount,
+            global::System.Collections.Generic.IList<string> inviteIds)
         {
-            this.Entitlement = entitlement ?? throw new global::System.ArgumentNullException(nameof(entitlement));
-            this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
-            this.PreviousCanceledAt = previousCanceledAt;
+            this.DeletedCount = deletedCount;
+            this.InviteIds = inviteIds ?? throw new global::System.ArgumentNullException(nameof(inviteIds));
         }
 
         /// <summary>

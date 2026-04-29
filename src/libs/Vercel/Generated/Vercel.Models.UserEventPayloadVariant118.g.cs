@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configurations")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant118Configuration> Configurations { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("rulesetName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
+        public required string RulesetName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ruleGroups")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant118RuleGroups2> RuleGroups { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant118" /> class.
         /// </summary>
-        /// <param name="configurations"></param>
-        /// <param name="ownerId"></param>
+        /// <param name="projectId"></param>
+        /// <param name="rulesetName"></param>
+        /// <param name="ruleGroups"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant118(
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant118Configuration> configurations,
-            string ownerId)
+            string projectId,
+            string rulesetName,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant118RuleGroups2> ruleGroups)
         {
-            this.Configurations = configurations ?? throw new global::System.ArgumentNullException(nameof(configurations));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.RulesetName = rulesetName ?? throw new global::System.ArgumentNullException(nameof(rulesetName));
+            this.RuleGroups = ruleGroups ?? throw new global::System.ArgumentNullException(nameof(ruleGroups));
         }
 
         /// <summary>

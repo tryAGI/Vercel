@@ -11,27 +11,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentSuffix")]
+        public string? PreviewDeploymentSuffix { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalytics")]
-        public object? ProjectAnalytics { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevProjectAnalytics")]
-        public object? PrevProjectAnalytics { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousPreviewDeploymentSuffix")]
+        public string? PreviousPreviewDeploymentSuffix { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -42,23 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant150" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="projectAnalytics"></param>
-        /// <param name="prevProjectAnalytics"></param>
+        /// <param name="previewDeploymentSuffix"></param>
+        /// <param name="previousPreviewDeploymentSuffix"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant150(
-            string projectId,
-            string? projectName,
-            object? projectAnalytics,
-            object? prevProjectAnalytics)
+            string? previewDeploymentSuffix,
+            string? previousPreviewDeploymentSuffix)
         {
-            this.ProjectName = projectName;
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectAnalytics = projectAnalytics;
-            this.PrevProjectAnalytics = prevProjectAnalytics;
+            this.PreviewDeploymentSuffix = previewDeploymentSuffix;
+            this.PreviousPreviewDeploymentSuffix = previousPreviewDeploymentSuffix;
         }
 
         /// <summary>

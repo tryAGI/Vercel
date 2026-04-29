@@ -11,10 +11,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant114ActionJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant114Action Action { get; set; }
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Scope { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Source { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        public double? ExpiresAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,14 +44,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant114" /> class.
         /// </summary>
-        /// <param name="action"></param>
+        /// <param name="projectId"></param>
+        /// <param name="scope"></param>
+        /// <param name="source"></param>
+        /// <param name="expiresAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant114(
-            global::Vercel.UserEventPayloadVariant114Action action)
+            string projectId,
+            string scope,
+            string source,
+            double? expiresAt)
         {
-            this.Action = action;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.Scope = scope ?? throw new global::System.ArgumentNullException(nameof(scope));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.ExpiresAt = expiresAt;
         }
 
         /// <summary>

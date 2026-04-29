@@ -11,22 +11,37 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required string Sha { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("price")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitUserPlatform")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Price { get; set; }
+        public required string GitUserPlatform { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
-        public string? Currency { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitCommitterName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GitCommitterName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Source { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +52,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant78" /> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="price"></param>
-        /// <param name="currency"></param>
+        /// <param name="sha"></param>
+        /// <param name="gitUserPlatform"></param>
+        /// <param name="projectName"></param>
+        /// <param name="gitCommitterName"></param>
+        /// <param name="source"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant78(
-            string name,
-            double price,
-            string? currency)
+            string sha,
+            string gitUserPlatform,
+            string projectName,
+            string gitCommitterName,
+            string source)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Price = price;
-            this.Currency = currency;
+            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
+            this.GitUserPlatform = gitUserPlatform ?? throw new global::System.ArgumentNullException(nameof(gitUserPlatform));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.GitCommitterName = gitCommitterName ?? throw new global::System.ArgumentNullException(nameof(gitCommitterName));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
         }
 
         /// <summary>

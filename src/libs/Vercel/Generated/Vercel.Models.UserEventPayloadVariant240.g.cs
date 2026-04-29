@@ -11,39 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("analyticsId")]
-        public string? AnalyticsId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sampleRatePercent")]
-        public double? SampleRatePercent { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("spendLimitInDollars")]
-        public double? SpendLimitInDollars { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("bio")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant240Previous Previous { get; set; }
+        public required string Bio { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,29 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant240" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="analyticsId"></param>
-        /// <param name="sampleRatePercent"></param>
-        /// <param name="spendLimitInDollars"></param>
+        /// <param name="bio"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant240(
-            global::Vercel.UserEventPayloadVariant240Previous previous,
-            string? projectId,
-            string? projectName,
-            string? analyticsId,
-            double? sampleRatePercent,
-            double? spendLimitInDollars)
+            string bio)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.AnalyticsId = analyticsId;
-            this.SampleRatePercent = sampleRatePercent;
-            this.SpendLimitInDollars = spendLimitInDollars;
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
+            this.Bio = bio ?? throw new global::System.ArgumentNullException(nameof(bio));
         }
 
         /// <summary>

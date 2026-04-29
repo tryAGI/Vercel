@@ -11,10 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("consent")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant280ConsentJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("publicId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant280Consent Consent { get; set; }
+        public required string PublicId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -25,14 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant280" /> class.
         /// </summary>
-        /// <param name="consent"></param>
+        /// <param name="publicId"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant280(
-            global::Vercel.UserEventPayloadVariant280Consent consent)
+            string publicId,
+            string? name)
         {
-            this.Consent = consent;
+            this.PublicId = publicId ?? throw new global::System.ArgumentNullException(nameof(publicId));
+            this.Name = name;
         }
 
         /// <summary>
