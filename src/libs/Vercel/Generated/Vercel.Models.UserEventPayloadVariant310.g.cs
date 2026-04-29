@@ -16,6 +16,19 @@ namespace Vercel
         public required string TokenId { get; set; }
 
         /// <summary>
+        /// The token prefix used when showing a safe checksum-style fingerprint.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenPrefix")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant310TokenPrefixJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant310TokenPrefix? TokenPrefix { get; set; }
+
+        /// <summary>
+        /// The token checksum suffix.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenSuffix")]
+        public string? TokenSuffix { get; set; }
+
+        /// <summary>
         /// User-supplied name of the token.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tokenName")]
@@ -119,6 +132,12 @@ namespace Vercel
         /// <param name="scope">
         /// Scope of the token: - `'user'`: full-account token (not tied to any team). - `'team'`: scoped to a single team. - `'project'`: scoped to a single project within a team.
         /// </param>
+        /// <param name="tokenPrefix">
+        /// The token prefix used when showing a safe checksum-style fingerprint.
+        /// </param>
+        /// <param name="tokenSuffix">
+        /// The token checksum suffix.
+        /// </param>
         /// <param name="teamId">
         /// Present when `scope` is `'team'` or `'project'`.
         /// </param>
@@ -147,6 +166,8 @@ namespace Vercel
             string tokenName,
             global::Vercel.UserEventPayloadVariant310Origin origin,
             global::Vercel.UserEventPayloadVariant310Scope scope,
+            global::Vercel.UserEventPayloadVariant310TokenPrefix? tokenPrefix,
+            string? tokenSuffix,
             string? teamId,
             string? teamSlug,
             string? projectId,
@@ -159,6 +180,8 @@ namespace Vercel
             string? reqUrl)
         {
             this.TokenId = tokenId ?? throw new global::System.ArgumentNullException(nameof(tokenId));
+            this.TokenPrefix = tokenPrefix;
+            this.TokenSuffix = tokenSuffix;
             this.TokenName = tokenName ?? throw new global::System.ArgumentNullException(nameof(tokenName));
             this.Origin = origin;
             this.Scope = scope;

@@ -985,6 +985,18 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant309AppClientAuthenticationUsedMethodNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant309TokenPrefixJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant309TokenPrefixNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant309RefreshTokenPrefixJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant309RefreshTokenPrefixNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant310TokenPrefixJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant310TokenPrefixNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant310OriginJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant310OriginNullableJsonConverter),
@@ -1165,9 +1177,9 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.SegmentDataRuleConditionCmpNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.FlagsSdkKeyTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.FlagsSdkKeyWithSecretsTypeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.FlagsSdkKeyTypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.FlagsSdkKeyWithSecretsTypeNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.ACLActionJsonConverter),
 
@@ -5772,6 +5784,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateFlagSegmentResponseDataRuleConditionCmpJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UpdateFlagSegmentResponseDataRuleConditionCmpNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.GetSdkKeysResponseDataItemTypeJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.GetSdkKeysResponseDataItemTypeNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.SearchRepoResponseVariant2GitAccountProviderJsonConverter),
 
@@ -13954,7 +13970,17 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309App))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309AppClientAuthenticationUsed))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309AppClientAuthenticationUsedMethod), TypeInfoPropertyName = "UserEventPayloadVariant309AppClientAuthenticationUsedMethod2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309TokenPrefix), TypeInfoPropertyName = "UserEventPayloadVariant309TokenPrefix2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309RefreshTokenPrefix), TypeInfoPropertyName = "UserEventPayloadVariant309RefreshTokenPrefix2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309Geolocation))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309GeolocationCity))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309GeolocationCityNames))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309GeolocationCountry))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309GeolocationCountryNames))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309GeolocationMostSpecificSubdivision))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant309GeolocationMostSpecificSubdivisionNames))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant310))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant310TokenPrefix), TypeInfoPropertyName = "UserEventPayloadVariant310TokenPrefix2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant310Origin), TypeInfoPropertyName = "UserEventPayloadVariant310Origin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant310Scope), TypeInfoPropertyName = "UserEventPayloadVariant310Scope2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant310Geolocation))]
@@ -14110,8 +14136,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SegmentDataExcludeItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SegmentMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SegmentMetadataCreator))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagsSdkKey))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagsSdkKeyType), TypeInfoPropertyName = "FlagsSdkKeyType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagsSdkKeyWithSecrets))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagsSdkKeyWithSecretsType), TypeInfoPropertyName = "FlagsSdkKeyWithSecretsType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ACLAction), TypeInfoPropertyName = "ACLAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SandboxInjectionRule))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SandboxNetworkPolicy))]
@@ -17517,7 +17543,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentFeatureFlagsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentFeatureFlagsResponseStatus))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSdkKeysResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagsSdkKey>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetSdkKeysResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSdkKeysResponseDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSdkKeysResponseDataItemType), TypeInfoPropertyName = "GetSdkKeysResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GitNamespacesResponseItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GitNamespacesResponseItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<object, global::Vercel.SearchRepoResponseVariant2>), TypeInfoPropertyName = "OneOfObjectSearchRepoResponseVariant22")]
@@ -22080,7 +22108,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.UpdateFlagSegmentResponseDataExcludeItem>>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.UpdateFlagSegmentResponseDataExcludeItem>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateFlagSegmentResponseDataExcludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.FlagsSdkKey>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetSdkKeysResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GitNamespacesResponseItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.SearchRepoResponseVariant2Repo>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetBillingPlansResponsePlan>))]
