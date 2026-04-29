@@ -163,8 +163,8 @@ namespace Vercel
                 PrepareGetSessionCommandRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sessionId: sessionId,
-                    cmdId: cmdId,
+                    sessionId: sessionId!,
+                    cmdId: cmdId!,
                     wait: wait,
                     teamId: teamId,
                     slug: slug);

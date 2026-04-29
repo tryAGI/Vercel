@@ -154,8 +154,8 @@ namespace Vercel
                 PrepareRemoveProjectMemberRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
-                    uid: uid,
+                    idOrName: idOrName!,
+                    uid: uid!,
                     teamId: teamId,
                     slug: slug);
 

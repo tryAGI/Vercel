@@ -138,7 +138,7 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     slug: slug,
-                    teamId: teamId);
+                    teamId: teamId!);
 
                 return __httpRequest;
             }

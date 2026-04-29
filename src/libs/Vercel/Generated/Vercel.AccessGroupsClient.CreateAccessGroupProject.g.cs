@@ -157,7 +157,7 @@ namespace Vercel
                 PrepareCreateAccessGroupProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    accessGroupIdOrName: accessGroupIdOrName,
+                    accessGroupIdOrName: accessGroupIdOrName!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

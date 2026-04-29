@@ -152,7 +152,7 @@ namespace Vercel
                 PrepareDeleteEdgeConfigTokensRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    edgeConfigId: edgeConfigId,
+                    edgeConfigId: edgeConfigId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

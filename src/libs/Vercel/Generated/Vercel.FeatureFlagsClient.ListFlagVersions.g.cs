@@ -181,8 +181,8 @@ namespace Vercel
                 PrepareListFlagVersionsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName,
-                    flagIdOrSlug: flagIdOrSlug,
+                    projectIdOrName: projectIdOrName!,
+                    flagIdOrSlug: flagIdOrSlug!,
                     limit: limit,
                     cursor: cursor,
                     environment: environment,

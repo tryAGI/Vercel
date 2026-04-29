@@ -151,7 +151,7 @@ namespace Vercel
                 PreparePostTeamDsyncRolesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    teamId: teamId,
+                    teamId: teamId!,
                     slug: slug,
                     request: request);
 

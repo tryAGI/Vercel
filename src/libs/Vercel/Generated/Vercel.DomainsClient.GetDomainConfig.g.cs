@@ -162,7 +162,7 @@ namespace Vercel
                 PrepareGetDomainConfigRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domain: domain,
+                    domain: domain!,
                     projectIdOrName: projectIdOrName,
                     strict: strict,
                     teamId: teamId,

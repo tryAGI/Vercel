@@ -174,7 +174,7 @@ namespace Vercel
                     httpRequestMessage: __httpRequest,
                     x_xArtifactClientCi_: x_xArtifactClientCi_,
                     x_xArtifactClientInteractive_: x_xArtifactClientInteractive_,
-                    hash: hash,
+                    hash: hash!,
                     teamId: teamId,
                     slug: slug);
 

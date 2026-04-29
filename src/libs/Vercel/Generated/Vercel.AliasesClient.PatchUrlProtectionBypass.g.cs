@@ -157,7 +157,7 @@ namespace Vercel
                 PreparePatchUrlProtectionBypassRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

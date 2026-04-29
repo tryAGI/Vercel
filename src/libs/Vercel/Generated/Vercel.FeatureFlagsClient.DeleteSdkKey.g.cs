@@ -147,8 +147,8 @@ namespace Vercel
                 PrepareDeleteSdkKeyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName,
-                    hashKey: hashKey,
+                    projectIdOrName: projectIdOrName!,
+                    hashKey: hashKey!,
                     teamId: teamId,
                     slug: slug);
 

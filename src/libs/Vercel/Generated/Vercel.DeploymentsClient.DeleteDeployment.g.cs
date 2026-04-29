@@ -155,7 +155,7 @@ namespace Vercel
                 PrepareDeleteDeploymentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     url: url,
                     teamId: teamId,
                     slug: slug);

@@ -128,7 +128,7 @@ namespace Vercel
                 PrepareDeleteAuthTokenRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    tokenId: tokenId);
+                    tokenId: tokenId!);
 
                 return __httpRequest;
             }

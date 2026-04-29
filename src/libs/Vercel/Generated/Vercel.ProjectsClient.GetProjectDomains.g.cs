@@ -241,7 +241,7 @@ namespace Vercel
                 PrepareGetProjectDomainsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
+                    idOrName: idOrName!,
                     production: production,
                     target: target,
                     customEnvironmentId: customEnvironmentId,

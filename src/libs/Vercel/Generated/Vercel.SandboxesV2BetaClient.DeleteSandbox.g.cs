@@ -154,7 +154,7 @@ namespace Vercel
                 PrepareDeleteSandboxRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    name: name,
+                    name: name!,
                     projectId: projectId,
                     teamId: teamId,
                     slug: slug);

@@ -155,7 +155,7 @@ namespace Vercel
                 PrepareGetDeploymentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrUrl: idOrUrl,
+                    idOrUrl: idOrUrl!,
                     withGitRepoInfo: withGitRepoInfo,
                     teamId: teamId,
                     slug: slug);

@@ -134,7 +134,7 @@ namespace Vercel
                 PrepareSubmitPrepaymentBalancesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationConfigurationId: integrationConfigurationId,
+                    integrationConfigurationId: integrationConfigurationId!,
                     request: request);
 
                 return __httpRequest;

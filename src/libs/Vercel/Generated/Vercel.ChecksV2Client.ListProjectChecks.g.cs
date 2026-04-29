@@ -149,7 +149,7 @@ namespace Vercel
                 PrepareListProjectChecksRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName,
+                    projectIdOrName: projectIdOrName!,
                     blocks: blocks,
                     teamId: teamId,
                     slug: slug);

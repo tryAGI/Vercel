@@ -160,7 +160,7 @@ namespace Vercel
                 PrepareUpdateNetworkRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    networkId: networkId,
+                    networkId: networkId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

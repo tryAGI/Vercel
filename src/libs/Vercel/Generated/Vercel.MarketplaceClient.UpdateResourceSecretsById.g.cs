@@ -139,8 +139,8 @@ namespace Vercel
                 PrepareUpdateResourceSecretsByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationConfigurationId: integrationConfigurationId,
-                    resourceId: resourceId,
+                    integrationConfigurationId: integrationConfigurationId!,
+                    resourceId: resourceId!,
                     request: request);
 
                 return __httpRequest;

@@ -167,8 +167,8 @@ namespace Vercel
                 PrepareRemoveProjectDomainRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
-                    domain: domain,
+                    idOrName: idOrName!,
+                    domain: domain!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

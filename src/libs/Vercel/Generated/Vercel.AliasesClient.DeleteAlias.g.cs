@@ -146,7 +146,7 @@ namespace Vercel
                 PrepareDeleteAliasRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    aliasId: aliasId,
+                    aliasId: aliasId!,
                     teamId: teamId,
                     slug: slug);
 

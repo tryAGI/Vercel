@@ -149,8 +149,8 @@ namespace Vercel
                 PrepareGetSessionCommandLogsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sessionId: sessionId,
-                    cmdId: cmdId,
+                    sessionId: sessionId!,
+                    cmdId: cmdId!,
                     teamId: teamId,
                     slug: slug);
 

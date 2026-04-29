@@ -153,7 +153,7 @@ namespace Vercel
                 PrepareGetProjectsByIdOrNameCustomEnvironmentsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
+                    idOrName: idOrName!,
                     gitBranch: gitBranch,
                     teamId: teamId,
                     slug: slug);

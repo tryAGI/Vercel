@@ -145,8 +145,8 @@ namespace Vercel
                 PrepareDeleteMicrofrontendsGroupRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    groupId: groupId,
-                    teamId: teamId,
+                    groupId: groupId!,
+                    teamId: teamId!,
                     slug: slug);
 
                 return __httpRequest;

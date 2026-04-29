@@ -149,10 +149,10 @@ namespace Vercel
                 PrepareGetFirewallConfigRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     teamId: teamId,
                     slug: slug,
-                    configVersion: configVersion);
+                    configVersion: configVersion!);
 
                 return __httpRequest;
             }

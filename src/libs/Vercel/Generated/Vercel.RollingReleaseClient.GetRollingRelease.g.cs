@@ -153,7 +153,7 @@ namespace Vercel
                 PrepareGetRollingReleaseRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
+                    idOrName: idOrName!,
                     state: state,
                     teamId: teamId,
                     slug: slug);

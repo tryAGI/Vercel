@@ -146,7 +146,7 @@ namespace Vercel
                 PrepareGetSessionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sessionId: sessionId,
+                    sessionId: sessionId!,
                     teamId: teamId,
                     slug: slug);
 

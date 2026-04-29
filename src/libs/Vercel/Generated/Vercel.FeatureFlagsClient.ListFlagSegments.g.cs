@@ -154,7 +154,7 @@ namespace Vercel
                 PrepareListFlagSegmentsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName,
+                    projectIdOrName: projectIdOrName!,
                     withMetadata: withMetadata,
                     teamId: teamId,
                     slug: slug);

@@ -143,7 +143,7 @@ namespace Vercel
                 PrepareGetDeploymentFeatureFlagsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    deploymentId: deploymentId,
+                    deploymentId: deploymentId!,
                     teamId: teamId,
                     slug: slug);
 

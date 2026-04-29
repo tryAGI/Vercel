@@ -181,7 +181,7 @@ namespace Vercel
                 PrepareGetProjectMembersRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
+                    idOrName: idOrName!,
                     limit: limit,
                     since: since,
                     until: until,

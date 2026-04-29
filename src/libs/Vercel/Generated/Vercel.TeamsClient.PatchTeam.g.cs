@@ -151,7 +151,7 @@ namespace Vercel
                 PreparePatchTeamRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    teamId: teamId,
+                    teamId: teamId!,
                     slug: slug,
                     request: request);
 

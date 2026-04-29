@@ -152,8 +152,8 @@ namespace Vercel
                 PrepareRemoveRecordRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domain: domain,
-                    recordId: recordId,
+                    domain: domain!,
+                    recordId: recordId!,
                     teamId: teamId,
                     slug: slug);
 

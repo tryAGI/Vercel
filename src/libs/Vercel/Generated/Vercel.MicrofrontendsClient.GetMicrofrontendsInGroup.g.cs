@@ -143,7 +143,7 @@ namespace Vercel
                 PrepareGetMicrofrontendsInGroupRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    groupId: groupId,
+                    groupId: groupId!,
                     teamId: teamId,
                     slug: slug);
 

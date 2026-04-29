@@ -248,7 +248,7 @@ namespace Vercel
                     x_xArtifactTag_: x_xArtifactTag_,
                     x_xArtifactSha_: x_xArtifactSha_,
                     x_xArtifactDirtyHash_: x_xArtifactDirtyHash_,
-                    hash: hash,
+                    hash: hash!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

@@ -157,7 +157,7 @@ namespace Vercel
                 PrepareCreateDeploymentCheckRunRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    deploymentId: deploymentId,
+                    deploymentId: deploymentId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);

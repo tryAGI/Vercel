@@ -168,7 +168,7 @@ namespace Vercel
                 PrepareUpdateSandboxRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    name: name,
+                    name: name!,
                     projectId: projectId,
                     teamId: teamId,
                     slug: slug,

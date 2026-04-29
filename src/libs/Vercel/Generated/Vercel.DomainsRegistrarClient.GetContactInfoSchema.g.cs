@@ -137,7 +137,7 @@ namespace Vercel
                 PrepareGetContactInfoSchemaRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domain: domain,
+                    domain: domain!,
                     teamId: teamId);
 
                 return __httpRequest;

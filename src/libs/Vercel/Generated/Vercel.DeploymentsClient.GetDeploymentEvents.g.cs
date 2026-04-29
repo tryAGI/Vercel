@@ -226,7 +226,7 @@ namespace Vercel
                 PrepareGetDeploymentEventsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrUrl: idOrUrl,
+                    idOrUrl: idOrUrl!,
                     direction: direction,
                     follow: follow,
                     limit: limit,

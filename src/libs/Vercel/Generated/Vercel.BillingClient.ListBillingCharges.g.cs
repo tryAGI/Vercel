@@ -158,8 +158,8 @@ namespace Vercel
                 PrepareListBillingChargesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    from: from,
-                    to: to,
+                    from: from!,
+                    to: to!,
                     teamId: teamId,
                     slug: slug);
 

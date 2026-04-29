@@ -69,6 +69,12 @@ namespace Vercel
         public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeployments? Deployments { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("makeEnvVarsSensitive")]
+        public bool? MakeEnvVarsSensitive { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -86,6 +92,7 @@ namespace Vercel
         /// <param name="latestDeployment"></param>
         /// <param name="envVarPrefix"></param>
         /// <param name="deployments"></param>
+        /// <param name="makeEnvVarsSensitive"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -98,7 +105,8 @@ namespace Vercel
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework? framework,
             string? latestDeployment,
             string? envVarPrefix,
-            global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeployments? deployments)
+            global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeployments? deployments,
+            bool? makeEnvVarsSensitive)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
@@ -109,6 +117,7 @@ namespace Vercel
             this.EnvVarPrefix = envVarPrefix;
             this.EnvironmentVariables = environmentVariables ?? throw new global::System.ArgumentNullException(nameof(environmentVariables));
             this.Deployments = deployments;
+            this.MakeEnvVarsSensitive = makeEnvVarsSensitive;
         }
 
         /// <summary>

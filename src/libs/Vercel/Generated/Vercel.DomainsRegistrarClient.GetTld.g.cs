@@ -137,7 +137,7 @@ namespace Vercel
                 PrepareGetTldRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    tld: tld,
+                    tld: tld!,
                     teamId: teamId);
 
                 return __httpRequest;

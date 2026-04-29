@@ -175,8 +175,8 @@ namespace Vercel
                 PrepareUpdateFlagSegmentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName,
-                    segmentIdOrSlug: segmentIdOrSlug,
+                    projectIdOrName: projectIdOrName!,
+                    segmentIdOrSlug: segmentIdOrSlug!,
                     withMetadata: withMetadata,
                     teamId: teamId,
                     slug: slug,

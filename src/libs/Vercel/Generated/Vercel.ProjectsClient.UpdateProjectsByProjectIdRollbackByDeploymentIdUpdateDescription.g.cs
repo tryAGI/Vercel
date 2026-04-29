@@ -139,8 +139,8 @@ namespace Vercel
                 PrepareUpdateProjectsByProjectIdRollbackByDeploymentIdUpdateDescriptionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    deploymentId: deploymentId,
+                    projectId: projectId!,
+                    deploymentId: deploymentId!,
                     request: request);
 
                 return __httpRequest;

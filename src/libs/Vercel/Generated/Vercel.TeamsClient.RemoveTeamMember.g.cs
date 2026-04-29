@@ -147,9 +147,9 @@ namespace Vercel
                 PrepareRemoveTeamMemberRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    uid: uid,
+                    uid: uid!,
                     newDefaultTeamId: newDefaultTeamId,
-                    teamId: teamId);
+                    teamId: teamId!);
 
                 return __httpRequest;
             }

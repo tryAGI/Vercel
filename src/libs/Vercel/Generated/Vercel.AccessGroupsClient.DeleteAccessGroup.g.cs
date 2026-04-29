@@ -138,7 +138,7 @@ namespace Vercel
                 PrepareDeleteAccessGroupRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName,
+                    idOrName: idOrName!,
                     teamId: teamId,
                     slug: slug);
 

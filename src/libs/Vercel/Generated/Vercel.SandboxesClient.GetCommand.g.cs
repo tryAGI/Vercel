@@ -163,8 +163,8 @@ namespace Vercel
                 PrepareGetCommandRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sandboxId: sandboxId,
-                    cmdId: cmdId,
+                    sandboxId: sandboxId!,
+                    cmdId: cmdId!,
                     wait: wait,
                     teamId: teamId,
                     slug: slug);

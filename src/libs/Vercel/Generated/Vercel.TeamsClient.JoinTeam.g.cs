@@ -142,7 +142,7 @@ namespace Vercel
                 PrepareJoinTeamRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    teamId: teamId,
+                    teamId: teamId!,
                     request: request);
 
                 return __httpRequest;

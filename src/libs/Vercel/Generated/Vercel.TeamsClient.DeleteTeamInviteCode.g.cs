@@ -136,8 +136,8 @@ namespace Vercel
                 PrepareDeleteTeamInviteCodeRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    inviteId: inviteId,
-                    teamId: teamId);
+                    inviteId: inviteId!,
+                    teamId: teamId!);
 
                 return __httpRequest;
             }

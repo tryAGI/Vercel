@@ -145,7 +145,7 @@ namespace Vercel
                 PrepareGetDomainPriceRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domain: domain,
+                    domain: domain!,
                     years: years,
                     teamId: teamId);
 
