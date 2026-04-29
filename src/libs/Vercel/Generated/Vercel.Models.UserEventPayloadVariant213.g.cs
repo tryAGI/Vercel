@@ -18,16 +18,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("customerSupportCodeVisibility")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool CustomerSupportCodeVisibility { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasonCode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant213ReasonCodeJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant213ReasonCode? ReasonCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,19 +32,16 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant213" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="customerSupportCodeVisibility"></param>
+        /// <param name="reasonCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant213(
             string projectId,
-            string projectName,
-            bool customerSupportCodeVisibility)
+            global::Vercel.UserEventPayloadVariant213ReasonCode? reasonCode)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.CustomerSupportCodeVisibility = customerSupportCodeVisibility;
+            this.ReasonCode = reasonCode;
         }
 
         /// <summary>

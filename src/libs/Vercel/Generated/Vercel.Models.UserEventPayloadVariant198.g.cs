@@ -11,16 +11,37 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldProjectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant198Project Project { get; set; }
+        public required string OldProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedMembership")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldProjectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant198RemovedMembership RemovedMembership { get; set; }
+        public required string OldProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newProjectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NewProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newProjectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NewProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Domain { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +52,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant198" /> class.
         /// </summary>
-        /// <param name="project"></param>
-        /// <param name="removedMembership"></param>
+        /// <param name="oldProjectId"></param>
+        /// <param name="oldProjectName"></param>
+        /// <param name="newProjectId"></param>
+        /// <param name="newProjectName"></param>
+        /// <param name="domain"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant198(
-            global::Vercel.UserEventPayloadVariant198Project project,
-            global::Vercel.UserEventPayloadVariant198RemovedMembership removedMembership)
+            string oldProjectId,
+            string oldProjectName,
+            string newProjectId,
+            string newProjectName,
+            string domain)
         {
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.RemovedMembership = removedMembership ?? throw new global::System.ArgumentNullException(nameof(removedMembership));
+            this.OldProjectId = oldProjectId ?? throw new global::System.ArgumentNullException(nameof(oldProjectId));
+            this.OldProjectName = oldProjectName ?? throw new global::System.ArgumentNullException(nameof(oldProjectName));
+            this.NewProjectId = newProjectId ?? throw new global::System.ArgumentNullException(nameof(newProjectId));
+            this.NewProjectName = newProjectName ?? throw new global::System.ArgumentNullException(nameof(newProjectName));
+            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
         }
 
         /// <summary>

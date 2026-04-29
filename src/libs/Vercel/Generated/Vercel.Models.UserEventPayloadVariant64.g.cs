@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("githubLogin")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Status { get; set; }
+        public required string GithubLogin { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("suffix")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("host")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Suffix { get; set; }
+        public required string Host { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant64" /> class.
         /// </summary>
-        /// <param name="status"></param>
-        /// <param name="suffix"></param>
+        /// <param name="githubLogin"></param>
+        /// <param name="host"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant64(
-            string status,
-            string suffix)
+            string githubLogin,
+            string host)
         {
-            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
-            this.Suffix = suffix ?? throw new global::System.ArgumentNullException(nameof(suffix));
+            this.GithubLogin = githubLogin ?? throw new global::System.ArgumentNullException(nameof(githubLogin));
+            this.Host = host ?? throw new global::System.ArgumentNullException(nameof(host));
         }
 
         /// <summary>

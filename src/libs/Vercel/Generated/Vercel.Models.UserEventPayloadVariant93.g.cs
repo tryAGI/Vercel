@@ -11,23 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("fromId")]
+        public string? FromId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("srcImages")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> SrcImages { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("fromName")]
+        public string? FromName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant93" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="srcImages"></param>
+        /// <param name="name"></param>
+        /// <param name="fromId"></param>
+        /// <param name="fromName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant93(
-            string projectId,
-            string projectName,
-            global::System.Collections.Generic.IList<string> srcImages)
+            string name,
+            string? fromId,
+            string? fromName)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.SrcImages = srcImages ?? throw new global::System.ArgumentNullException(nameof(srcImages));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.FromId = fromId;
+            this.FromName = fromName;
         }
 
         /// <summary>

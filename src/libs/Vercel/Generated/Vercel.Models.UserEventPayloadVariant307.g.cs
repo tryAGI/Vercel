@@ -11,22 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("chatId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ChatId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant307Team Team { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("chatTitle")]
-        public string? ChatTitle { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant307Configuration Configuration { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("messageId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("peering")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string MessageId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant307Peering Peering { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant307" /> class.
         /// </summary>
-        /// <param name="chatId"></param>
-        /// <param name="messageId"></param>
-        /// <param name="chatTitle"></param>
+        /// <param name="team"></param>
+        /// <param name="configuration"></param>
+        /// <param name="peering"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant307(
-            string chatId,
-            string messageId,
-            string? chatTitle)
+            global::Vercel.UserEventPayloadVariant307Team team,
+            global::Vercel.UserEventPayloadVariant307Configuration configuration,
+            global::Vercel.UserEventPayloadVariant307Peering peering)
         {
-            this.ChatId = chatId ?? throw new global::System.ArgumentNullException(nameof(chatId));
-            this.ChatTitle = chatTitle;
-            this.MessageId = messageId ?? throw new global::System.ArgumentNullException(nameof(messageId));
+            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
+            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.Peering = peering ?? throw new global::System.ArgumentNullException(nameof(peering));
         }
 
         /// <summary>

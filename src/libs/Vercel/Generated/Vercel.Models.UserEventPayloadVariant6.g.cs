@@ -11,9 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("credential")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant6Credential Credential { get; set; }
+        public required string TeamId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("stripeAccount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string StripeAccount { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant6" /> class.
         /// </summary>
-        /// <param name="credential"></param>
+        /// <param name="teamId"></param>
+        /// <param name="stripeAccount"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant6(
-            global::Vercel.UserEventPayloadVariant6Credential credential)
+            string teamId,
+            string stripeAccount)
         {
-            this.Credential = credential ?? throw new global::System.ArgumentNullException(nameof(credential));
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
+            this.StripeAccount = stripeAccount ?? throw new global::System.ArgumentNullException(nameof(stripeAccount));
         }
 
         /// <summary>

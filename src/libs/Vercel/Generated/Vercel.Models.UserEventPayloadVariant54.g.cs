@@ -11,35 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant54Team Team { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant54Configuration Configuration { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
+        public global::Vercel.UserEventPayloadVariant54OldTeam? OldTeam { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant54Project Project { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildsEnabled")]
-        public bool? BuildsEnabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("passive")]
-        public bool? Passive { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
+        public global::Vercel.UserEventPayloadVariant54NewTeam? NewTeam { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,26 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant54" /> class.
         /// </summary>
-        /// <param name="team"></param>
-        /// <param name="configuration"></param>
-        /// <param name="project"></param>
-        /// <param name="buildsEnabled"></param>
-        /// <param name="passive"></param>
+        /// <param name="id"></param>
+        /// <param name="oldTeam"></param>
+        /// <param name="newTeam"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant54(
-            global::Vercel.UserEventPayloadVariant54Team team,
-            global::Vercel.UserEventPayloadVariant54Configuration configuration,
-            global::Vercel.UserEventPayloadVariant54Project project,
-            bool? buildsEnabled,
-            bool? passive)
+            string id,
+            global::Vercel.UserEventPayloadVariant54OldTeam? oldTeam,
+            global::Vercel.UserEventPayloadVariant54NewTeam? newTeam)
         {
-            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
-            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.BuildsEnabled = buildsEnabled;
-            this.Passive = passive;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.OldTeam = oldTeam;
+            this.NewTeam = newTeam;
         }
 
         /// <summary>

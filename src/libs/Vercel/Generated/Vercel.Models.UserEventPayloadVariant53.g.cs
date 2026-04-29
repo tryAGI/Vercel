@@ -11,29 +11,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant53Team Team { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cn")]
+        public string? Cn { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant53Configuration Configuration { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cns")]
+        public global::System.Collections.Generic.IList<string>? Cns { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant53Project Project { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildsEnabled")]
-        public bool? BuildsEnabled { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        public string? Id { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,23 +35,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant53" /> class.
         /// </summary>
-        /// <param name="team"></param>
-        /// <param name="configuration"></param>
-        /// <param name="project"></param>
-        /// <param name="buildsEnabled"></param>
+        /// <param name="cn"></param>
+        /// <param name="cns"></param>
+        /// <param name="id"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant53(
-            global::Vercel.UserEventPayloadVariant53Team team,
-            global::Vercel.UserEventPayloadVariant53Configuration configuration,
-            global::Vercel.UserEventPayloadVariant53Project project,
-            bool? buildsEnabled)
+            string? cn,
+            global::System.Collections.Generic.IList<string>? cns,
+            string? id)
         {
-            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
-            this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.BuildsEnabled = buildsEnabled;
+            this.Cn = cn;
+            this.Cns = cns;
+            this.Id = id;
         }
 
         /// <summary>

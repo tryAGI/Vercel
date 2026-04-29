@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mfaEnabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("fileId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool MfaEnabled { get; set; }
+        public required string FileId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant294" /> class.
         /// </summary>
-        /// <param name="mfaEnabled"></param>
+        /// <param name="fileId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant294(
-            bool mfaEnabled)
+            string fileId)
         {
-            this.MfaEnabled = mfaEnabled;
+            this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
         }
 
         /// <summary>

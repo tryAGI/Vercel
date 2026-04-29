@@ -11,34 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required string IntegrationId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        public string? Slug { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fallbackEnvironment")]
-        public string? FallbackEnvironment { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prev")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationSlug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant127Prev Prev { get; set; }
+        public required string IntegrationSlug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IntegrationName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,26 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant127" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="prev"></param>
-        /// <param name="slug"></param>
-        /// <param name="name"></param>
-        /// <param name="fallbackEnvironment"></param>
+        /// <param name="integrationId"></param>
+        /// <param name="integrationSlug"></param>
+        /// <param name="integrationName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant127(
-            string id,
-            global::Vercel.UserEventPayloadVariant127Prev prev,
-            string? slug,
-            string? name,
-            string? fallbackEnvironment)
+            string integrationId,
+            string integrationSlug,
+            string integrationName)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Slug = slug;
-            this.Name = name;
-            this.FallbackEnvironment = fallbackEnvironment;
-            this.Prev = prev ?? throw new global::System.ArgumentNullException(nameof(prev));
+            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
+            this.IntegrationSlug = integrationSlug ?? throw new global::System.ArgumentNullException(nameof(integrationSlug));
+            this.IntegrationName = integrationName ?? throw new global::System.ArgumentNullException(nameof(integrationName));
         }
 
         /// <summary>

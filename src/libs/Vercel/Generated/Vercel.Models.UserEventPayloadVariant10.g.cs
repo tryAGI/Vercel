@@ -11,57 +11,32 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroup")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant10AccessGroup AccessGroup { get; set; }
+        public required string TeamId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("resourceId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ResourceId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousName")]
-        public string? PreviousName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("fromPlan")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant10FromPlanJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant10FromPlan FromPlan { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousTeamRoles")]
-        public global::System.Collections.Generic.IList<string>? PreviousTeamRoles { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<string>? TeamPermissions { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousTeamPermissions")]
-        public global::System.Collections.Generic.IList<string>? PreviousTeamPermissions { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlementsAdded")]
-        public global::System.Collections.Generic.IList<string>? EntitlementsAdded { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlementsRemoved")]
-        public global::System.Collections.Generic.IList<string>? EntitlementsRemoved { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("toPlan")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant10ToPlanJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant10ToPlan ToPlan { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -72,38 +47,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant10" /> class.
         /// </summary>
-        /// <param name="accessGroup"></param>
-        /// <param name="name"></param>
-        /// <param name="previousName"></param>
-        /// <param name="teamRoles"></param>
-        /// <param name="previousTeamRoles"></param>
-        /// <param name="teamPermissions"></param>
-        /// <param name="previousTeamPermissions"></param>
-        /// <param name="entitlementsAdded"></param>
-        /// <param name="entitlementsRemoved"></param>
+        /// <param name="teamId"></param>
+        /// <param name="resourceId"></param>
+        /// <param name="fromPlan"></param>
+        /// <param name="toPlan"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant10(
-            global::Vercel.UserEventPayloadVariant10AccessGroup accessGroup,
-            string? name,
-            string? previousName,
-            global::System.Collections.Generic.IList<string>? teamRoles,
-            global::System.Collections.Generic.IList<string>? previousTeamRoles,
-            global::System.Collections.Generic.IList<string>? teamPermissions,
-            global::System.Collections.Generic.IList<string>? previousTeamPermissions,
-            global::System.Collections.Generic.IList<string>? entitlementsAdded,
-            global::System.Collections.Generic.IList<string>? entitlementsRemoved)
+            string teamId,
+            string resourceId,
+            global::Vercel.UserEventPayloadVariant10FromPlan fromPlan,
+            global::Vercel.UserEventPayloadVariant10ToPlan toPlan)
         {
-            this.AccessGroup = accessGroup ?? throw new global::System.ArgumentNullException(nameof(accessGroup));
-            this.Name = name;
-            this.PreviousName = previousName;
-            this.TeamRoles = teamRoles;
-            this.PreviousTeamRoles = previousTeamRoles;
-            this.TeamPermissions = teamPermissions;
-            this.PreviousTeamPermissions = previousTeamPermissions;
-            this.EntitlementsAdded = entitlementsAdded;
-            this.EntitlementsRemoved = entitlementsRemoved;
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
+            this.ResourceId = resourceId ?? throw new global::System.ArgumentNullException(nameof(resourceId));
+            this.FromPlan = fromPlan;
+            this.ToPlan = toPlan;
         }
 
         /// <summary>

@@ -11,22 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enableFunctionsBeta")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool EnableFunctionsBeta { get; set; }
+        public required string OwnerId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant171" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="enableFunctionsBeta"></param>
-        /// <param name="projectName"></param>
+        /// <param name="name"></param>
+        /// <param name="ownerId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant171(
-            string projectId,
-            bool enableFunctionsBeta,
-            string? projectName)
+            string name,
+            string ownerId)
         {
-            this.ProjectName = projectName;
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.EnableFunctionsBeta = enableFunctionsBeta;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
         }
 
         /// <summary>

@@ -11,27 +11,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("price")]
+        public double? Price { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
+        public string? Currency { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalytics")]
-        public global::Vercel.UserEventPayloadVariant149ProjectAnalytics? ProjectAnalytics { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prevProjectAnalytics")]
-        public global::Vercel.UserEventPayloadVariant149PrevProjectAnalytics? PrevProjectAnalytics { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        public bool? Enabled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -42,23 +35,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant149" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="projectAnalytics"></param>
-        /// <param name="prevProjectAnalytics"></param>
+        /// <param name="price"></param>
+        /// <param name="currency"></param>
+        /// <param name="enabled"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant149(
-            string projectId,
-            string? projectName,
-            global::Vercel.UserEventPayloadVariant149ProjectAnalytics? projectAnalytics,
-            global::Vercel.UserEventPayloadVariant149PrevProjectAnalytics? prevProjectAnalytics)
+            double? price,
+            string? currency,
+            bool? enabled)
         {
-            this.ProjectName = projectName;
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectAnalytics = projectAnalytics;
-            this.PrevProjectAnalytics = prevProjectAnalytics;
+            this.Price = price;
+            this.Currency = currency;
+            this.Enabled = enabled;
         }
 
         /// <summary>

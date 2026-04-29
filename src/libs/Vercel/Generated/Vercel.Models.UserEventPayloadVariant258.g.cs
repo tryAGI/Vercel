@@ -11,15 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Enabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
-        public string? Domain { get; set; }
+        public required string Slug { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant258" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
-        /// <param name="domain"></param>
+        /// <param name="slug"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant258(
-            bool enabled,
-            string? domain)
+            string slug)
         {
-            this.Enabled = enabled;
-            this.Domain = domain;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
         }
 
         /// <summary>

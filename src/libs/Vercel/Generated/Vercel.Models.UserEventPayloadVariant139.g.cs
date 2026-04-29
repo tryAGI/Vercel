@@ -11,23 +11,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string OwnerId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant139TypeJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant139Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Source { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("headerName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("cause")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string HeaderName { get; set; }
+        public required string Cause { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("blockReason")]
+        public string? BlockReason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +44,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant139" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="headerName"></param>
-        /// <param name="type"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="source"></param>
+        /// <param name="cause"></param>
+        /// <param name="blockReason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant139(
-            string projectId,
-            string headerName,
-            global::Vercel.UserEventPayloadVariant139Type type)
+            string ownerId,
+            string source,
+            string cause,
+            string? blockReason)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Type = type;
-            this.HeaderName = headerName ?? throw new global::System.ArgumentNullException(nameof(headerName));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
+            this.BlockReason = blockReason;
         }
 
         /// <summary>

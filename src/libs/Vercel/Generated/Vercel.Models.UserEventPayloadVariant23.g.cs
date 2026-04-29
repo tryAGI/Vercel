@@ -17,8 +17,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
-        public string? UserId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        public string? Email { get; set; }
 
         /// <summary>
         /// 
@@ -36,18 +36,18 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant23" /> class.
         /// </summary>
         /// <param name="alias"></param>
-        /// <param name="userId"></param>
+        /// <param name="email"></param>
         /// <param name="username"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant23(
             string? alias,
-            string? userId,
+            string? email,
             string? username)
         {
             this.Alias = alias;
-            this.UserId = userId;
+            this.Email = email;
             this.Username = username;
         }
 

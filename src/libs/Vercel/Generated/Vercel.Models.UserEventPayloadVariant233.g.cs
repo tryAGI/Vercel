@@ -11,34 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitProvider")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Enabled { get; set; }
+        public required string GitProvider { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitProviderGroupDescriptor")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double UpdatedAt { get; set; }
+        public required string GitProviderGroupDescriptor { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("firstEnabledAt")]
-        public double? FirstEnabledAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitScope")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GitScope { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,26 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant233" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
-        /// <param name="updatedAt"></param>
-        /// <param name="firstEnabledAt"></param>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
+        /// <param name="gitProvider"></param>
+        /// <param name="gitProviderGroupDescriptor"></param>
+        /// <param name="gitScope"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant233(
-            bool enabled,
-            double updatedAt,
-            double? firstEnabledAt,
-            string? projectId,
-            string? projectName)
+            string gitProvider,
+            string gitProviderGroupDescriptor,
+            string gitScope)
         {
-            this.Enabled = enabled;
-            this.UpdatedAt = updatedAt;
-            this.FirstEnabledAt = firstEnabledAt;
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
+            this.GitProvider = gitProvider ?? throw new global::System.ArgumentNullException(nameof(gitProvider));
+            this.GitProviderGroupDescriptor = gitProviderGroupDescriptor ?? throw new global::System.ArgumentNullException(nameof(gitProviderGroupDescriptor));
+            this.GitScope = gitScope ?? throw new global::System.ArgumentNullException(nameof(gitScope));
         }
 
         /// <summary>

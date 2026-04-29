@@ -11,9 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("transferRequestCode")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
+        public required string TransferRequestCode { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("store")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant252Store Store { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant252" /> class.
         /// </summary>
-        /// <param name="slug"></param>
+        /// <param name="transferRequestCode"></param>
+        /// <param name="store"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant252(
-            string slug)
+            string transferRequestCode,
+            global::Vercel.UserEventPayloadVariant252Store store)
         {
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.TransferRequestCode = transferRequestCode ?? throw new global::System.ArgumentNullException(nameof(transferRequestCode));
+            this.Store = store ?? throw new global::System.ArgumentNullException(nameof(store));
         }
 
         /// <summary>

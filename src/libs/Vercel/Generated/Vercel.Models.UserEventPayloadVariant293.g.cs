@@ -11,16 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("exportId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant293Previous Previous { get; set; }
+        public required string ExportId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("from")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant293Next Next { get; set; }
+        public required double From { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("to")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double To { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("format")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Format { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant293" /> class.
         /// </summary>
-        /// <param name="previous"></param>
-        /// <param name="next"></param>
+        /// <param name="exportId"></param>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
+        /// <param name="format"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant293(
-            global::Vercel.UserEventPayloadVariant293Previous previous,
-            global::Vercel.UserEventPayloadVariant293Next next)
+            string exportId,
+            double from,
+            double to,
+            string format)
         {
-            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
-            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
+            this.ExportId = exportId ?? throw new global::System.ArgumentNullException(nameof(exportId));
+            this.From = from;
+            this.To = to;
+            this.Format = format ?? throw new global::System.ArgumentNullException(nameof(format));
         }
 
         /// <summary>

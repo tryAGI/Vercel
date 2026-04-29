@@ -11,22 +11,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionId")]
-        public string? SubscriptionId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant40ActionJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant40Action Action { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant40Data Data { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
+        public string? Avatar { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +23,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant40" /> class.
         /// </summary>
-        /// <param name="data"></param>
-        /// <param name="subscriptionId"></param>
-        /// <param name="action"></param>
+        /// <param name="avatar"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant40(
-            global::Vercel.UserEventPayloadVariant40Data data,
-            string? subscriptionId,
-            global::Vercel.UserEventPayloadVariant40Action action)
+            string? avatar)
         {
-            this.SubscriptionId = subscriptionId;
-            this.Action = action;
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
+            this.Avatar = avatar;
         }
 
         /// <summary>

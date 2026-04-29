@@ -11,69 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
-        public string? Key { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfig")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant105EdgeConfig EdgeConfig { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("fromAccount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant105FromAccount FromAccount { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>))]
-        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? Target { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentSlugs")]
-        public global::System.Collections.Generic.IList<string>? CustomEnvironmentSlugs { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitBranch")]
-        public string? GitBranch { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
-        public string? EdgeConfigId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenId")]
-        public string? EdgeConfigTokenId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        public string? Source { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ipAddress")]
-        public string? IpAddress { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("toAccount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant105ToAccount ToAccount { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -84,44 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant105" /> class.
         /// </summary>
-        /// <param name="key"></param>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="target"></param>
-        /// <param name="customEnvironmentSlugs"></param>
-        /// <param name="id"></param>
-        /// <param name="gitBranch"></param>
-        /// <param name="edgeConfigId"></param>
-        /// <param name="edgeConfigTokenId"></param>
-        /// <param name="source"></param>
-        /// <param name="ipAddress"></param>
+        /// <param name="edgeConfig"></param>
+        /// <param name="fromAccount"></param>
+        /// <param name="toAccount"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant105(
-            string? key,
-            string? projectId,
-            string? projectName,
-            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? target,
-            global::System.Collections.Generic.IList<string>? customEnvironmentSlugs,
-            string? id,
-            string? gitBranch,
-            string? edgeConfigId,
-            string? edgeConfigTokenId,
-            string? source,
-            string? ipAddress)
+            global::Vercel.UserEventPayloadVariant105EdgeConfig edgeConfig,
+            global::Vercel.UserEventPayloadVariant105FromAccount fromAccount,
+            global::Vercel.UserEventPayloadVariant105ToAccount toAccount)
         {
-            this.Key = key;
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.Target = target;
-            this.CustomEnvironmentSlugs = customEnvironmentSlugs;
-            this.Id = id;
-            this.GitBranch = gitBranch;
-            this.EdgeConfigId = edgeConfigId;
-            this.EdgeConfigTokenId = edgeConfigTokenId;
-            this.Source = source;
-            this.IpAddress = ipAddress;
+            this.EdgeConfig = edgeConfig ?? throw new global::System.ArgumentNullException(nameof(edgeConfig));
+            this.FromAccount = fromAccount ?? throw new global::System.ArgumentNullException(nameof(fromAccount));
+            this.ToAccount = toAccount ?? throw new global::System.ArgumentNullException(nameof(toAccount));
         }
 
         /// <summary>

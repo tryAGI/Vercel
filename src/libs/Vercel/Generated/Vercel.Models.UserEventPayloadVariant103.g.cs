@@ -11,16 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant103Team Team { get; set; }
+        public required string EdgeConfigId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousRule")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSlug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant103PreviousRule PreviousRule { get; set; }
+        public required string EdgeConfigSlug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSchema")]
+        public object? EdgeConfigSchema { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant103" /> class.
         /// </summary>
-        /// <param name="team"></param>
-        /// <param name="previousRule"></param>
+        /// <param name="edgeConfigId"></param>
+        /// <param name="edgeConfigSlug"></param>
+        /// <param name="edgeConfigSchema"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant103(
-            global::Vercel.UserEventPayloadVariant103Team team,
-            global::Vercel.UserEventPayloadVariant103PreviousRule previousRule)
+            string edgeConfigId,
+            string edgeConfigSlug,
+            object? edgeConfigSchema)
         {
-            this.Team = team ?? throw new global::System.ArgumentNullException(nameof(team));
-            this.PreviousRule = previousRule ?? throw new global::System.ArgumentNullException(nameof(previousRule));
+            this.EdgeConfigId = edgeConfigId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigId));
+            this.EdgeConfigSlug = edgeConfigSlug ?? throw new global::System.ArgumentNullException(nameof(edgeConfigSlug));
+            this.EdgeConfigSchema = edgeConfigSchema;
         }
 
         /// <summary>

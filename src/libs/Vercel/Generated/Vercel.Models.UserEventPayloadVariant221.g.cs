@@ -12,27 +12,22 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ssoProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant221SsoProtectionEnum, global::Vercel.UserEventPayloadVariant221SsoProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant221SsoProtectionEnum, global::Vercel.UserEventPayloadVariant221SsoProtectionEnum2?>? SsoProtection { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldSsoProtection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant221OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant221OldSsoProtectionEnum2?>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant221OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant221OldSsoProtectionEnum2?>? OldSsoProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("protectedSourcemaps")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool ProtectedSourcemaps { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,21 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="ssoProtection"></param>
-        /// <param name="oldSsoProtection"></param>
+        /// <param name="protectedSourcemaps"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant221(
-            string? projectId,
-            string? projectName,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant221SsoProtectionEnum, global::Vercel.UserEventPayloadVariant221SsoProtectionEnum2?>? ssoProtection,
-            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant221OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant221OldSsoProtectionEnum2?>? oldSsoProtection)
+            string projectId,
+            string projectName,
+            bool protectedSourcemaps)
         {
-            this.ProjectId = projectId;
-            this.ProjectName = projectName;
-            this.SsoProtection = ssoProtection;
-            this.OldSsoProtection = oldSsoProtection;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.ProtectedSourcemaps = protectedSourcemaps;
         }
 
         /// <summary>

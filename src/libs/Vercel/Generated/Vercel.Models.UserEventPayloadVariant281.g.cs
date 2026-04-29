@@ -9,10 +9,18 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant281
     {
         /// <summary>
-        /// Represents configuration for remote caching
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("remoteCaching")]
-        public global::Vercel.UserEventPayloadVariant281RemoteCaching? RemoteCaching { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousConcurrentBuilds")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double PreviousConcurrentBuilds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextConcurrentBuilds")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double NextConcurrentBuilds { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,16 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant281" /> class.
         /// </summary>
-        /// <param name="remoteCaching">
-        /// Represents configuration for remote caching
-        /// </param>
+        /// <param name="previousConcurrentBuilds"></param>
+        /// <param name="nextConcurrentBuilds"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant281(
-            global::Vercel.UserEventPayloadVariant281RemoteCaching? remoteCaching)
+            double previousConcurrentBuilds,
+            double nextConcurrentBuilds)
         {
-            this.RemoteCaching = remoteCaching;
+            this.PreviousConcurrentBuilds = previousConcurrentBuilds;
+            this.NextConcurrentBuilds = nextConcurrentBuilds;
         }
 
         /// <summary>

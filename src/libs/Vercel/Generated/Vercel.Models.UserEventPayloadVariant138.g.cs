@@ -11,23 +11,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string OwnerId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant138TypeJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant138Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Source { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("resourceUrl")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("cause")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ResourceUrl { get; set; }
+        public required string Cause { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +44,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant138" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="resourceUrl"></param>
-        /// <param name="type"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="source"></param>
+        /// <param name="cause"></param>
+        /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant138(
-            string projectId,
-            string resourceUrl,
-            global::Vercel.UserEventPayloadVariant138Type type)
+            string ownerId,
+            string source,
+            string cause,
+            string? reason)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Type = type;
-            this.ResourceUrl = resourceUrl ?? throw new global::System.ArgumentNullException(nameof(resourceUrl));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
+            this.Reason = reason;
         }
 
         /// <summary>

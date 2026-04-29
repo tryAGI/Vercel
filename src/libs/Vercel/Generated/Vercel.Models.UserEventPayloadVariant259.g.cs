@@ -9,32 +9,17 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant259
     {
         /// <summary>
-        /// 
+        /// Automatic code review settings
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        public global::Vercel.UserEventPayloadVariant259Previous? Previous { get; set; }
 
         /// <summary>
-        /// 
+        /// Automatic code review settings
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
-        public bool? Enabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant259EnvironmentJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant259Environment Environment { get; set; }
+        public required global::Vercel.UserEventPayloadVariant259Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +30,21 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant259" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="environment"></param>
-        /// <param name="enabled"></param>
+        /// <param name="next">
+        /// Automatic code review settings
+        /// </param>
+        /// <param name="previous">
+        /// Automatic code review settings
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant259(
-            string projectId,
-            string projectName,
-            global::Vercel.UserEventPayloadVariant259Environment environment,
-            bool? enabled)
+            global::Vercel.UserEventPayloadVariant259Next next,
+            global::Vercel.UserEventPayloadVariant259Previous? previous)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Enabled = enabled;
-            this.Environment = environment;
+            this.Previous = previous;
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

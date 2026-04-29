@@ -11,23 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant134Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("group")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cause")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Cause { get; set; }
+        public required global::Vercel.UserEventPayloadVariant134Group Group { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant134" /> class.
         /// </summary>
-        /// <param name="ownerId"></param>
-        /// <param name="source"></param>
-        /// <param name="cause"></param>
+        /// <param name="project"></param>
+        /// <param name="group"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant134(
-            string ownerId,
-            string source,
-            string cause)
+            global::Vercel.UserEventPayloadVariant134Project project,
+            global::Vercel.UserEventPayloadVariant134Group group)
         {
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
-            this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.Group = group ?? throw new global::System.ArgumentNullException(nameof(group));
         }
 
         /// <summary>

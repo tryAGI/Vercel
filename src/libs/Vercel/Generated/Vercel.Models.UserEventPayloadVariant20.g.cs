@@ -11,20 +11,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("aliasId")]
-        public string? AliasId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
-        public string? Alias { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasCount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double AliasCount { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        public string? ProjectName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
+        public global::Vercel.UserEventPayloadVariant20Deployment? Deployment { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,20 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant20" /> class.
         /// </summary>
-        /// <param name="aliasId"></param>
-        /// <param name="alias"></param>
-        /// <param name="projectName"></param>
+        /// <param name="projectId"></param>
+        /// <param name="aliasCount"></param>
+        /// <param name="deployment"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant20(
-            string? aliasId,
-            string? alias,
-            string? projectName)
+            string projectId,
+            double aliasCount,
+            global::Vercel.UserEventPayloadVariant20Deployment? deployment)
         {
-            this.AliasId = aliasId;
-            this.Alias = alias;
-            this.ProjectName = projectName;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.AliasCount = aliasCount;
+            this.Deployment = deployment;
         }
 
         /// <summary>

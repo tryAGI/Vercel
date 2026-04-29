@@ -11,8 +11,17 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        public string? Slug { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Enabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant289ScopeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant289Scope Scope { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +32,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant289" /> class.
         /// </summary>
-        /// <param name="slug"></param>
+        /// <param name="enabled"></param>
+        /// <param name="scope"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant289(
-            string? slug)
+            bool enabled,
+            global::Vercel.UserEventPayloadVariant289Scope scope)
         {
-            this.Slug = slug;
+            this.Enabled = enabled;
+            this.Scope = scope;
         }
 
         /// <summary>

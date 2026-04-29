@@ -11,8 +11,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
-        public string? Alias { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("price")]
+        public double? Price { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
+        public string? Currency { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant18" /> class.
         /// </summary>
-        /// <param name="alias"></param>
+        /// <param name="price"></param>
+        /// <param name="currency"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant18(
-            string? alias)
+            double? price,
+            string? currency)
         {
-            this.Alias = alias;
+            this.Price = price;
+            this.Currency = currency;
         }
 
         /// <summary>

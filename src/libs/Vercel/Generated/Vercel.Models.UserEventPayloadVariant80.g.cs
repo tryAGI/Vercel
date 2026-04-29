@@ -11,21 +11,43 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required string IntegrationId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
-        public global::Vercel.UserEventPayloadVariant80OldTeam? OldTeam { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("configurationId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ConfigurationId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
-        public global::Vercel.UserEventPayloadVariant80NewTeam? NewTeam { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationSlug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IntegrationSlug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IntegrationName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OwnerId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectIds")]
+        public global::System.Collections.Generic.IList<string>? ProjectIds { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,20 +58,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant80" /> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="oldTeam"></param>
-        /// <param name="newTeam"></param>
+        /// <param name="integrationId"></param>
+        /// <param name="configurationId"></param>
+        /// <param name="integrationSlug"></param>
+        /// <param name="integrationName"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="projectIds"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant80(
-            string name,
-            global::Vercel.UserEventPayloadVariant80OldTeam? oldTeam,
-            global::Vercel.UserEventPayloadVariant80NewTeam? newTeam)
+            string integrationId,
+            string configurationId,
+            string integrationSlug,
+            string integrationName,
+            string ownerId,
+            global::System.Collections.Generic.IList<string>? projectIds)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.OldTeam = oldTeam;
-            this.NewTeam = newTeam;
+            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
+            this.ConfigurationId = configurationId ?? throw new global::System.ArgumentNullException(nameof(configurationId));
+            this.IntegrationSlug = integrationSlug ?? throw new global::System.ArgumentNullException(nameof(integrationSlug));
+            this.IntegrationName = integrationName ?? throw new global::System.ArgumentNullException(nameof(integrationName));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.ProjectIds = projectIds;
         }
 
         /// <summary>

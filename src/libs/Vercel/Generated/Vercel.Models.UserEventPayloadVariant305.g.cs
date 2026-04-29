@@ -11,15 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("chatId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("vulnerabilities")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ChatId { get; set; }
+        public required global::System.Collections.Generic.IList<string> Vulnerabilities { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("chatTitle")]
-        public string? ChatTitle { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("protectionEnabled")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool ProtectionEnabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("protectedProjectCount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double ProtectedProjectCount { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant305" /> class.
         /// </summary>
-        /// <param name="chatId"></param>
-        /// <param name="chatTitle"></param>
+        /// <param name="vulnerabilities"></param>
+        /// <param name="protectionEnabled"></param>
+        /// <param name="protectedProjectCount"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant305(
-            string chatId,
-            string? chatTitle)
+            global::System.Collections.Generic.IList<string> vulnerabilities,
+            bool protectionEnabled,
+            double protectedProjectCount)
         {
-            this.ChatId = chatId ?? throw new global::System.ArgumentNullException(nameof(chatId));
-            this.ChatTitle = chatTitle;
+            this.Vulnerabilities = vulnerabilities ?? throw new global::System.ArgumentNullException(nameof(vulnerabilities));
+            this.ProtectionEnabled = protectionEnabled;
+            this.ProtectedProjectCount = protectedProjectCount;
         }
 
         /// <summary>

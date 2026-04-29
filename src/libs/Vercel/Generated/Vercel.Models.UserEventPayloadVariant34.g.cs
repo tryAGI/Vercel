@@ -11,8 +11,33 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
-        public string? Avatar { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string AppName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("appId")]
+        public string? AppId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("installationId")]
+        public string? InstallationId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("before")]
+        public global::Vercel.UserEventPayloadVariant34Before? Before { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("after")]
+        public global::Vercel.UserEventPayloadVariant34After? After { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +48,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant34" /> class.
         /// </summary>
-        /// <param name="avatar"></param>
+        /// <param name="appName"></param>
+        /// <param name="appId"></param>
+        /// <param name="installationId"></param>
+        /// <param name="before"></param>
+        /// <param name="after"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant34(
-            string? avatar)
+            string appName,
+            string? appId,
+            string? installationId,
+            global::Vercel.UserEventPayloadVariant34Before? before,
+            global::Vercel.UserEventPayloadVariant34After? after)
         {
-            this.Avatar = avatar;
+            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
+            this.AppId = appId;
+            this.InstallationId = installationId;
+            this.Before = before;
+            this.After = after;
         }
 
         /// <summary>

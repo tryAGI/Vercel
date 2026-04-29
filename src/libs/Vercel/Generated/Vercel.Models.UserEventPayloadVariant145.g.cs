@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("privateLinkEndpoint")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant145PrivateLinkEndpoint PrivateLinkEndpoint { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant145TypeJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant145Type Type { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("headerName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string HeaderName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant145" /> class.
         /// </summary>
-        /// <param name="privateLinkEndpoint"></param>
         /// <param name="projectId"></param>
+        /// <param name="headerName"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant145(
-            global::Vercel.UserEventPayloadVariant145PrivateLinkEndpoint privateLinkEndpoint,
-            string projectId)
+            string projectId,
+            string headerName,
+            global::Vercel.UserEventPayloadVariant145Type type)
         {
-            this.PrivateLinkEndpoint = privateLinkEndpoint ?? throw new global::System.ArgumentNullException(nameof(privateLinkEndpoint));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.Type = type;
+            this.HeaderName = headerName ?? throw new global::System.ArgumentNullException(nameof(headerName));
         }
 
         /// <summary>

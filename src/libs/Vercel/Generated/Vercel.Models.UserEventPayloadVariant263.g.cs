@@ -11,44 +11,53 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("directoryType")]
-        public string? DirectoryType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ssoType")]
-        public string? SsoType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TeamId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invitedUser")]
-        public global::Vercel.UserEventPayloadVariant263InvitedUser? InvitedUser { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("by")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string By { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invitedEmail")]
-        public string? InvitedEmail { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("byUid")]
+        public string? ByUid { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invitationRole")]
-        public string? InvitationRole { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasons")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant263Reason>? Reasons { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
-        public global::System.Collections.Generic.IList<string>? Entitlements { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("removedUsers")]
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant263RemovedUsers2>? RemovedUsers { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invitedUid")]
-        public string? InvitedUid { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("removedMemberCount")]
+        public double? RemovedMemberCount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
+        public double? Timestamp { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,32 +68,35 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant263" /> class.
         /// </summary>
-        /// <param name="directoryType"></param>
-        /// <param name="ssoType"></param>
-        /// <param name="invitedUser"></param>
-        /// <param name="invitedEmail"></param>
-        /// <param name="invitationRole"></param>
-        /// <param name="entitlements"></param>
-        /// <param name="invitedUid"></param>
+        /// <param name="slug"></param>
+        /// <param name="teamId"></param>
+        /// <param name="by"></param>
+        /// <param name="byUid"></param>
+        /// <param name="reasons"></param>
+        /// <param name="removedUsers"></param>
+        /// <param name="removedMemberCount"></param>
+        /// <param name="timestamp"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant263(
-            string? directoryType,
-            string? ssoType,
-            global::Vercel.UserEventPayloadVariant263InvitedUser? invitedUser,
-            string? invitedEmail,
-            string? invitationRole,
-            global::System.Collections.Generic.IList<string>? entitlements,
-            string? invitedUid)
+            string slug,
+            string teamId,
+            string by,
+            string? byUid,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant263Reason>? reasons,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant263RemovedUsers2>? removedUsers,
+            double? removedMemberCount,
+            double? timestamp)
         {
-            this.DirectoryType = directoryType;
-            this.SsoType = ssoType;
-            this.InvitedUser = invitedUser;
-            this.InvitedEmail = invitedEmail;
-            this.InvitationRole = invitationRole;
-            this.Entitlements = entitlements;
-            this.InvitedUid = invitedUid;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
+            this.By = by ?? throw new global::System.ArgumentNullException(nameof(by));
+            this.ByUid = byUid;
+            this.Reasons = reasons;
+            this.RemovedUsers = removedUsers;
+            this.RemovedMemberCount = removedMemberCount;
+            this.Timestamp = timestamp;
         }
 
         /// <summary>

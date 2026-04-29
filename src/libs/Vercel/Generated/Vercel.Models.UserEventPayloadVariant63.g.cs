@@ -11,15 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        public string? Reason { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("suffix")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("githubLogin")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Suffix { get; set; }
+        public required string GithubLogin { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant63" /> class.
         /// </summary>
-        /// <param name="suffix"></param>
-        /// <param name="reason"></param>
+        /// <param name="githubLogin"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant63(
-            string suffix,
-            string? reason)
+            string githubLogin)
         {
-            this.Reason = reason;
-            this.Suffix = suffix ?? throw new global::System.ArgumentNullException(nameof(suffix));
+            this.GithubLogin = githubLogin ?? throw new global::System.ArgumentNullException(nameof(githubLogin));
         }
 
         /// <summary>

@@ -12,41 +12,27 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public string? ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
+        public required global::Vercel.UserEventPayloadVariant223Previous Previous { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("trustedIps")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant223TrustedIpsJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant223TrustedIps? TrustedIps { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldTrustedIps")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant223OldTrustedIpsJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant223OldTrustedIps? OldTrustedIps { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("addedAddresses")]
-        public global::System.Collections.Generic.IList<string>? AddedAddresses { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedAddresses")]
-        public global::System.Collections.Generic.IList<string>? RemovedAddresses { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant223Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -57,29 +43,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant223" /> class.
         /// </summary>
+        /// <param name="previous"></param>
+        /// <param name="next"></param>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="trustedIps"></param>
-        /// <param name="oldTrustedIps"></param>
-        /// <param name="addedAddresses"></param>
-        /// <param name="removedAddresses"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant223(
-            string projectId,
-            string projectName,
-            global::Vercel.UserEventPayloadVariant223TrustedIps? trustedIps,
-            global::Vercel.UserEventPayloadVariant223OldTrustedIps? oldTrustedIps,
-            global::System.Collections.Generic.IList<string>? addedAddresses,
-            global::System.Collections.Generic.IList<string>? removedAddresses)
+            global::Vercel.UserEventPayloadVariant223Previous previous,
+            global::Vercel.UserEventPayloadVariant223Next next,
+            string? projectId,
+            string? projectName)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.TrustedIps = trustedIps;
-            this.OldTrustedIps = oldTrustedIps;
-            this.AddedAddresses = addedAddresses;
-            this.RemovedAddresses = removedAddresses;
+            this.ProjectId = projectId;
+            this.ProjectName = projectName;
+            this.Previous = previous ?? throw new global::System.ArgumentNullException(nameof(previous));
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

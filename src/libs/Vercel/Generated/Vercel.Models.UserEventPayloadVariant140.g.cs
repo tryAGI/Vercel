@@ -11,28 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string OwnerId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        public string? Url { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("headerName")]
-        public string? HeaderName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousStatus")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PreviousStatus { get; set; }
+        public required string Source { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cause")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Cause { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,23 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant140" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="previousStatus"></param>
-        /// <param name="url"></param>
-        /// <param name="headerName"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="source"></param>
+        /// <param name="cause"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant140(
-            string projectId,
-            string previousStatus,
-            string? url,
-            string? headerName)
+            string ownerId,
+            string source,
+            string cause)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Url = url;
-            this.HeaderName = headerName;
-            this.PreviousStatus = previousStatus ?? throw new global::System.ArgumentNullException(nameof(previousStatus));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
         }
 
         /// <summary>

@@ -11,23 +11,28 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitProvider")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitProvider { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitProviderGroupDescriptor")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitProviderGroupDescriptor { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitScope")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitScope { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ssoProtection")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant227SsoProtectionEnum, global::Vercel.UserEventPayloadVariant227SsoProtectionEnum2?>))]
+        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant227SsoProtectionEnum, global::Vercel.UserEventPayloadVariant227SsoProtectionEnum2?>? SsoProtection { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldSsoProtection")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPayloadVariant227OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant227OldSsoProtectionEnum2?>))]
+        public global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant227OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant227OldSsoProtectionEnum2?>? OldSsoProtection { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +43,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant227" /> class.
         /// </summary>
-        /// <param name="gitProvider"></param>
-        /// <param name="gitProviderGroupDescriptor"></param>
-        /// <param name="gitScope"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="ssoProtection"></param>
+        /// <param name="oldSsoProtection"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant227(
-            string gitProvider,
-            string gitProviderGroupDescriptor,
-            string gitScope)
+            string? projectId,
+            string? projectName,
+            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant227SsoProtectionEnum, global::Vercel.UserEventPayloadVariant227SsoProtectionEnum2?>? ssoProtection,
+            global::Vercel.OneOf<global::Vercel.UserEventPayloadVariant227OldSsoProtectionEnum, global::Vercel.UserEventPayloadVariant227OldSsoProtectionEnum2?>? oldSsoProtection)
         {
-            this.GitProvider = gitProvider ?? throw new global::System.ArgumentNullException(nameof(gitProvider));
-            this.GitProviderGroupDescriptor = gitProviderGroupDescriptor ?? throw new global::System.ArgumentNullException(nameof(gitProviderGroupDescriptor));
-            this.GitScope = gitScope ?? throw new global::System.ArgumentNullException(nameof(gitScope));
+            this.ProjectId = projectId;
+            this.ProjectName = projectName;
+            this.SsoProtection = ssoProtection;
+            this.OldSsoProtection = oldSsoProtection;
         }
 
         /// <summary>

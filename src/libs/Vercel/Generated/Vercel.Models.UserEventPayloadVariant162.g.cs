@@ -25,10 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant162ActionJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("sourceFilesOutsideRootDirectory")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant162Action Action { get; set; }
+        public required bool SourceFilesOutsideRootDirectory { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="action"></param>
+        /// <param name="sourceFilesOutsideRootDirectory"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant162(
             string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant162Action action)
+            bool sourceFilesOutsideRootDirectory)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Action = action;
+            this.SourceFilesOutsideRootDirectory = sourceFilesOutsideRootDirectory;
         }
 
         /// <summary>

@@ -11,29 +11,34 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        public string? Slug { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cause")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Cause { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("blockReason")]
-        public string? BlockReason { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("fallbackEnvironment")]
+        public string? FallbackEnvironment { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prev")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant133Prev Prev { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,23 +49,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant133" /> class.
         /// </summary>
-        /// <param name="ownerId"></param>
-        /// <param name="source"></param>
-        /// <param name="cause"></param>
-        /// <param name="blockReason"></param>
+        /// <param name="id"></param>
+        /// <param name="prev"></param>
+        /// <param name="slug"></param>
+        /// <param name="name"></param>
+        /// <param name="fallbackEnvironment"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant133(
-            string ownerId,
-            string source,
-            string cause,
-            string? blockReason)
+            string id,
+            global::Vercel.UserEventPayloadVariant133Prev prev,
+            string? slug,
+            string? name,
+            string? fallbackEnvironment)
         {
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
-            this.Cause = cause ?? throw new global::System.ArgumentNullException(nameof(cause));
-            this.BlockReason = blockReason;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Slug = slug;
+            this.Name = name;
+            this.FallbackEnvironment = fallbackEnvironment;
+            this.Prev = prev ?? throw new global::System.ArgumentNullException(nameof(prev));
         }
 
         /// <summary>

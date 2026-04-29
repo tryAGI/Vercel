@@ -11,15 +11,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AppName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasId")]
+        public string? AliasId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("appId")]
-        public string? AppId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
+        public string? Alias { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        public string? ProjectName { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +35,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant26" /> class.
         /// </summary>
-        /// <param name="appName"></param>
-        /// <param name="appId"></param>
+        /// <param name="aliasId"></param>
+        /// <param name="alias"></param>
+        /// <param name="projectName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant26(
-            string appName,
-            string? appId)
+            string? aliasId,
+            string? alias,
+            string? projectName)
         {
-            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
-            this.AppId = appId;
+            this.AliasId = aliasId;
+            this.Alias = alias;
+            this.ProjectName = projectName;
         }
 
         /// <summary>

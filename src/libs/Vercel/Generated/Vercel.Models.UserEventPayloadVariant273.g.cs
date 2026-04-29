@@ -11,36 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("entitlement")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PublicId { get; set; }
+        public required string Entitlement { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Role { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maxUses")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double MaxUses { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ExpiresAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        public required global::Vercel.UserEventPayloadVariant273User User { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -51,26 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant273" /> class.
         /// </summary>
-        /// <param name="publicId"></param>
-        /// <param name="role"></param>
-        /// <param name="maxUses"></param>
-        /// <param name="expiresAt"></param>
-        /// <param name="name"></param>
+        /// <param name="entitlement"></param>
+        /// <param name="user"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant273(
-            string publicId,
-            string role,
-            double maxUses,
-            string expiresAt,
-            string? name)
+            string entitlement,
+            global::Vercel.UserEventPayloadVariant273User user)
         {
-            this.PublicId = publicId ?? throw new global::System.ArgumentNullException(nameof(publicId));
-            this.Role = role ?? throw new global::System.ArgumentNullException(nameof(role));
-            this.MaxUses = maxUses;
-            this.ExpiresAt = expiresAt ?? throw new global::System.ArgumentNullException(nameof(expiresAt));
-            this.Name = name;
+            this.Entitlement = entitlement ?? throw new global::System.ArgumentNullException(nameof(entitlement));
+            this.User = user ?? throw new global::System.ArgumentNullException(nameof(user));
         }
 
         /// <summary>

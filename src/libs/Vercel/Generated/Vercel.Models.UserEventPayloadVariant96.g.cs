@@ -11,23 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("renew")]
+        public bool? Renew { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSlug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigSlug { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigDigest")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EdgeConfigDigest { get; set; }
+        public required string Domain { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant96" /> class.
         /// </summary>
-        /// <param name="edgeConfigId"></param>
-        /// <param name="edgeConfigSlug"></param>
-        /// <param name="edgeConfigDigest"></param>
+        /// <param name="domain"></param>
+        /// <param name="renew"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant96(
-            string edgeConfigId,
-            string edgeConfigSlug,
-            string edgeConfigDigest)
+            string domain,
+            bool? renew)
         {
-            this.EdgeConfigId = edgeConfigId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigId));
-            this.EdgeConfigSlug = edgeConfigSlug ?? throw new global::System.ArgumentNullException(nameof(edgeConfigSlug));
-            this.EdgeConfigDigest = edgeConfigDigest ?? throw new global::System.ArgumentNullException(nameof(edgeConfigDigest));
+            this.Renew = renew;
+            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
         }
 
         /// <summary>

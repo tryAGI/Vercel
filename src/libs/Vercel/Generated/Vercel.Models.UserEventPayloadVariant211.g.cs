@@ -25,14 +25,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("targetDeploymentId")]
-        public string? TargetDeploymentId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
+        public global::Vercel.UserEventPayloadVariant211OptionsAllowlist? OptionsAllowlist { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        public string? Action { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldOptionsAllowlist")]
+        public global::Vercel.UserEventPayloadVariant211OldOptionsAllowlist? OldOptionsAllowlist { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,21 +45,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="targetDeploymentId"></param>
-        /// <param name="action"></param>
+        /// <param name="optionsAllowlist"></param>
+        /// <param name="oldOptionsAllowlist"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant211(
             string projectId,
             string projectName,
-            string? targetDeploymentId,
-            string? action)
+            global::Vercel.UserEventPayloadVariant211OptionsAllowlist? optionsAllowlist,
+            global::Vercel.UserEventPayloadVariant211OldOptionsAllowlist? oldOptionsAllowlist)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.TargetDeploymentId = targetDeploymentId;
-            this.Action = action;
+            this.OptionsAllowlist = optionsAllowlist;
+            this.OldOptionsAllowlist = oldOptionsAllowlist;
         }
 
         /// <summary>

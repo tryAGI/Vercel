@@ -25,8 +25,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("requireVerifiedCommits")]
-        public bool? RequireVerifiedCommits { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
+        public global::Vercel.UserEventPayloadVariant184Previous? Previous { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("next")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant184Next Next { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,18 +46,21 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="requireVerifiedCommits"></param>
+        /// <param name="next"></param>
+        /// <param name="previous"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant184(
             string projectId,
             string projectName,
-            bool? requireVerifiedCommits)
+            global::Vercel.UserEventPayloadVariant184Next next,
+            global::Vercel.UserEventPayloadVariant184Previous? previous)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.RequireVerifiedCommits = requireVerifiedCommits;
+            this.Previous = previous;
+            this.Next = next ?? throw new global::System.ArgumentNullException(nameof(next));
         }
 
         /// <summary>

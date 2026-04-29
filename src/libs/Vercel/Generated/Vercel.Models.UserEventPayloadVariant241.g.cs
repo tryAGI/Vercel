@@ -11,9 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("budget")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("scalingRules")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant241Budget Budget { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant241ScalingRules2> ScalingRules { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("min")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Min { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("max")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Max { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant241" /> class.
         /// </summary>
-        /// <param name="budget"></param>
+        /// <param name="scalingRules"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <param name="url"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant241(
-            global::Vercel.UserEventPayloadVariant241Budget budget)
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.UserEventPayloadVariant241ScalingRules2> scalingRules,
+            double min,
+            double max,
+            string url)
         {
-            this.Budget = budget ?? throw new global::System.ArgumentNullException(nameof(budget));
+            this.ScalingRules = scalingRules ?? throw new global::System.ArgumentNullException(nameof(scalingRules));
+            this.Min = min;
+            this.Max = max;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

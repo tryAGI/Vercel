@@ -11,16 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Domain { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zone")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Zone { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oldTeam")]
+        public global::Vercel.UserEventPayloadVariant86OldTeam? OldTeam { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newTeam")]
+        public global::Vercel.UserEventPayloadVariant86NewTeam? NewTeam { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant86" /> class.
         /// </summary>
-        /// <param name="domain"></param>
-        /// <param name="zone"></param>
+        /// <param name="name"></param>
+        /// <param name="oldTeam"></param>
+        /// <param name="newTeam"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant86(
-            string domain,
-            bool zone)
+            string name,
+            global::Vercel.UserEventPayloadVariant86OldTeam? oldTeam,
+            global::Vercel.UserEventPayloadVariant86NewTeam? newTeam)
         {
-            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
-            this.Zone = zone;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.OldTeam = oldTeam;
+            this.NewTeam = newTeam;
         }
 
         /// <summary>

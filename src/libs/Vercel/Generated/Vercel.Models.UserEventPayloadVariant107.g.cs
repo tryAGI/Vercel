@@ -11,20 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldEnvVar")]
-        public global::Vercel.UserEventPayloadVariant107OldEnvVar? OldEnvVar { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string EdgeConfigId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newEnvVar")]
-        public global::Vercel.UserEventPayloadVariant107NewEnvVar? NewEnvVar { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSlug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string EdgeConfigSlug { get; set; }
 
         /// <summary>
-        /// 
+        /// ids of deleted tokens
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updateDiff")]
-        public global::Vercel.UserEventPayloadVariant107UpdateDiff? UpdateDiff { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenIds")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> EdgeConfigTokenIds { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,20 +38,22 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant107" /> class.
         /// </summary>
-        /// <param name="oldEnvVar"></param>
-        /// <param name="newEnvVar"></param>
-        /// <param name="updateDiff"></param>
+        /// <param name="edgeConfigId"></param>
+        /// <param name="edgeConfigSlug"></param>
+        /// <param name="edgeConfigTokenIds">
+        /// ids of deleted tokens
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant107(
-            global::Vercel.UserEventPayloadVariant107OldEnvVar? oldEnvVar,
-            global::Vercel.UserEventPayloadVariant107NewEnvVar? newEnvVar,
-            global::Vercel.UserEventPayloadVariant107UpdateDiff? updateDiff)
+            string edgeConfigId,
+            string edgeConfigSlug,
+            global::System.Collections.Generic.IList<string> edgeConfigTokenIds)
         {
-            this.OldEnvVar = oldEnvVar;
-            this.NewEnvVar = newEnvVar;
-            this.UpdateDiff = updateDiff;
+            this.EdgeConfigId = edgeConfigId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigId));
+            this.EdgeConfigSlug = edgeConfigSlug ?? throw new global::System.ArgumentNullException(nameof(edgeConfigSlug));
+            this.EdgeConfigTokenIds = edgeConfigTokenIds ?? throw new global::System.ArgumentNullException(nameof(edgeConfigTokenIds));
         }
 
         /// <summary>

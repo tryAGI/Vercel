@@ -11,8 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("emailDomain")]
-        public string? EmailDomain { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("trialCreditsIssuedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double TrialCreditsIssuedAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ExpiresAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Amount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Currency { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant261" /> class.
         /// </summary>
-        /// <param name="emailDomain"></param>
+        /// <param name="trialCreditsIssuedAt"></param>
+        /// <param name="expiresAt"></param>
+        /// <param name="amount"></param>
+        /// <param name="currency"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant261(
-            string? emailDomain)
+            double trialCreditsIssuedAt,
+            string expiresAt,
+            string amount,
+            string currency)
         {
-            this.EmailDomain = emailDomain;
+            this.TrialCreditsIssuedAt = trialCreditsIssuedAt;
+            this.ExpiresAt = expiresAt ?? throw new global::System.ArgumentNullException(nameof(expiresAt));
+            this.Amount = amount ?? throw new global::System.ArgumentNullException(nameof(amount));
+            this.Currency = currency ?? throw new global::System.ArgumentNullException(nameof(currency));
         }
 
         /// <summary>

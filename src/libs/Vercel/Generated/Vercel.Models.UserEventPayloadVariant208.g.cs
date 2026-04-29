@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectName { get; set; }
@@ -18,10 +25,29 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("consent")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant208ConsentJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("originAccountName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant208Consent Consent { get; set; }
+        public required string OriginAccountName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationAccountName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DestinationAccountName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("destinationAccountId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DestinationAccountId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transferId")]
+        public string? TransferId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,17 +58,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant208" /> class.
         /// </summary>
+        /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="consent"></param>
+        /// <param name="originAccountName"></param>
+        /// <param name="destinationAccountName"></param>
+        /// <param name="destinationAccountId"></param>
+        /// <param name="transferId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant208(
+            string projectId,
             string projectName,
-            global::Vercel.UserEventPayloadVariant208Consent consent)
+            string originAccountName,
+            string destinationAccountName,
+            string destinationAccountId,
+            string? transferId)
         {
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.Consent = consent;
+            this.OriginAccountName = originAccountName ?? throw new global::System.ArgumentNullException(nameof(originAccountName));
+            this.DestinationAccountName = destinationAccountName ?? throw new global::System.ArgumentNullException(nameof(destinationAccountName));
+            this.DestinationAccountId = destinationAccountId ?? throw new global::System.ArgumentNullException(nameof(destinationAccountId));
+            this.TransferId = transferId;
         }
 
         /// <summary>

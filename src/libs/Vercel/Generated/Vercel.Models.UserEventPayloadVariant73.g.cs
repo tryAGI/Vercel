@@ -11,23 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant73Deployment Deployment { get; set; }
+        public required global::Vercel.UserEventPayloadVariant73Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("job")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DeploymentId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        public required global::Vercel.UserEventPayloadVariant73Job Job { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant73" /> class.
         /// </summary>
-        /// <param name="deployment"></param>
-        /// <param name="deploymentId"></param>
-        /// <param name="url"></param>
+        /// <param name="project"></param>
+        /// <param name="job"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant73(
-            global::Vercel.UserEventPayloadVariant73Deployment deployment,
-            string deploymentId,
-            string url)
+            global::Vercel.UserEventPayloadVariant73Project project,
+            global::Vercel.UserEventPayloadVariant73Job job)
         {
-            this.Deployment = deployment ?? throw new global::System.ArgumentNullException(nameof(deployment));
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.Job = job ?? throw new global::System.ArgumentNullException(nameof(job));
         }
 
         /// <summary>

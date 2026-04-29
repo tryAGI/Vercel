@@ -11,28 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required global::Vercel.UserEventPayloadVariant205Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectMembership")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
-        public global::Vercel.UserEventPayloadVariant205OptionsAllowlist? OptionsAllowlist { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldOptionsAllowlist")]
-        public global::Vercel.UserEventPayloadVariant205OldOptionsAllowlist? OldOptionsAllowlist { get; set; }
+        public required global::Vercel.UserEventPayloadVariant205ProjectMembership ProjectMembership { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,23 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant205" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="optionsAllowlist"></param>
-        /// <param name="oldOptionsAllowlist"></param>
+        /// <param name="project"></param>
+        /// <param name="projectMembership"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant205(
-            string projectId,
-            string projectName,
-            global::Vercel.UserEventPayloadVariant205OptionsAllowlist? optionsAllowlist,
-            global::Vercel.UserEventPayloadVariant205OldOptionsAllowlist? oldOptionsAllowlist)
+            global::Vercel.UserEventPayloadVariant205Project project,
+            global::Vercel.UserEventPayloadVariant205ProjectMembership projectMembership)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.OptionsAllowlist = optionsAllowlist;
-            this.OldOptionsAllowlist = oldOptionsAllowlist;
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.ProjectMembership = projectMembership ?? throw new global::System.ArgumentNullException(nameof(projectMembership));
         }
 
         /// <summary>

@@ -9,32 +9,10 @@ namespace Vercel
     public sealed partial class UserEventPayloadVariant287
     {
         /// <summary>
-        /// 
+        /// Represents configuration for remote caching
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("exportId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ExportId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("from")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double From { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("to")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double To { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("format")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Format { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("remoteCaching")]
+        public global::Vercel.UserEventPayloadVariant287RemoteCaching? RemoteCaching { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +23,16 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant287" /> class.
         /// </summary>
-        /// <param name="exportId"></param>
-        /// <param name="from"></param>
-        /// <param name="to"></param>
-        /// <param name="format"></param>
+        /// <param name="remoteCaching">
+        /// Represents configuration for remote caching
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant287(
-            string exportId,
-            double from,
-            double to,
-            string format)
+            global::Vercel.UserEventPayloadVariant287RemoteCaching? remoteCaching)
         {
-            this.ExportId = exportId ?? throw new global::System.ArgumentNullException(nameof(exportId));
-            this.From = from;
-            this.To = to;
-            this.Format = format ?? throw new global::System.ArgumentNullException(nameof(format));
+            this.RemoteCaching = remoteCaching;
         }
 
         /// <summary>

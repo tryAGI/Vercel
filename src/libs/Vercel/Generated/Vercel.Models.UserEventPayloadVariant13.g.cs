@@ -11,74 +11,27 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
-        public string? Alias { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroup")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant13AccessGroup AccessGroup { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
-        public global::Vercel.UserEventPayloadVariant13Deployment? Deployment { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
+        public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ruleCount")]
-        public double? RuleCount { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
+        public global::System.Collections.Generic.IList<string>? TeamPermissions { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentUrl")]
-        public string? DeploymentUrl { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("aliasId")]
-        public string? AliasId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
-        public string? DeploymentId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldDeploymentId")]
-        public string? OldDeploymentId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
-        public string? Redirect { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("redirectStatusCode")]
-        public double? RedirectStatusCode { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        public string? Target { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("system")]
-        public bool? System { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("aliasUpdatedAt")]
-        public double? AliasUpdatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
+        public global::System.Collections.Generic.IList<string>? Entitlements { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -89,47 +42,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant13" /> class.
         /// </summary>
-        /// <param name="alias"></param>
-        /// <param name="deployment"></param>
-        /// <param name="ruleCount"></param>
-        /// <param name="deploymentUrl"></param>
-        /// <param name="aliasId"></param>
-        /// <param name="deploymentId"></param>
-        /// <param name="oldDeploymentId"></param>
-        /// <param name="redirect"></param>
-        /// <param name="redirectStatusCode"></param>
-        /// <param name="target"></param>
-        /// <param name="system"></param>
-        /// <param name="aliasUpdatedAt"></param>
+        /// <param name="accessGroup"></param>
+        /// <param name="teamRoles"></param>
+        /// <param name="teamPermissions"></param>
+        /// <param name="entitlements"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant13(
-            string? alias,
-            global::Vercel.UserEventPayloadVariant13Deployment? deployment,
-            double? ruleCount,
-            string? deploymentUrl,
-            string? aliasId,
-            string? deploymentId,
-            string? oldDeploymentId,
-            string? redirect,
-            double? redirectStatusCode,
-            string? target,
-            bool? system,
-            double? aliasUpdatedAt)
+            global::Vercel.UserEventPayloadVariant13AccessGroup accessGroup,
+            global::System.Collections.Generic.IList<string>? teamRoles,
+            global::System.Collections.Generic.IList<string>? teamPermissions,
+            global::System.Collections.Generic.IList<string>? entitlements)
         {
-            this.Alias = alias;
-            this.Deployment = deployment;
-            this.RuleCount = ruleCount;
-            this.DeploymentUrl = deploymentUrl;
-            this.AliasId = aliasId;
-            this.DeploymentId = deploymentId;
-            this.OldDeploymentId = oldDeploymentId;
-            this.Redirect = redirect;
-            this.RedirectStatusCode = redirectStatusCode;
-            this.Target = target;
-            this.System = system;
-            this.AliasUpdatedAt = aliasUpdatedAt;
+            this.AccessGroup = accessGroup ?? throw new global::System.ArgumentNullException(nameof(accessGroup));
+            this.TeamRoles = teamRoles;
+            this.TeamPermissions = teamPermissions;
+            this.Entitlements = entitlements;
         }
 
         /// <summary>

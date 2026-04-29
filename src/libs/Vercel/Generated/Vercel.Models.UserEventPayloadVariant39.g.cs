@@ -11,22 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionId")]
-        public string? SubscriptionId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant39ActionJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant39Action Action { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventPayloadVariant39Data Data { get; set; }
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("autoExposeSystemEnvs")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool AutoExposeSystemEnvs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant39" /> class.
         /// </summary>
-        /// <param name="data"></param>
-        /// <param name="subscriptionId"></param>
-        /// <param name="action"></param>
+        /// <param name="projectName"></param>
+        /// <param name="autoExposeSystemEnvs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant39(
-            global::Vercel.UserEventPayloadVariant39Data data,
-            string? subscriptionId,
-            global::Vercel.UserEventPayloadVariant39Action action)
+            string projectName,
+            bool autoExposeSystemEnvs)
         {
-            this.SubscriptionId = subscriptionId;
-            this.Action = action;
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.AutoExposeSystemEnvs = autoExposeSystemEnvs;
         }
 
         /// <summary>

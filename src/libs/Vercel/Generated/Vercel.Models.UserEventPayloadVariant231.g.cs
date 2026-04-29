@@ -11,17 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UserEventPayloadVariant231Name>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<string, global::Vercel.UserEventPayloadVariant231Name> Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasonCode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant231ReasonCodeJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant231ReasonCode? ReasonCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant231" /> class.
         /// </summary>
-        /// <param name="uid"></param>
-        /// <param name="name"></param>
+        /// <param name="projectId"></param>
+        /// <param name="reasonCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant231(
-            string uid,
-            global::Vercel.OneOf<string, global::Vercel.UserEventPayloadVariant231Name> name)
+            string projectId,
+            global::Vercel.UserEventPayloadVariant231ReasonCode? reasonCode)
         {
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
-            this.Name = name;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ReasonCode = reasonCode;
         }
 
         /// <summary>

@@ -11,22 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionId")]
-        public string? SubscriptionId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant41ActionJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant41Action Action { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Data { get; set; }
+        public required string InvoiceId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Amount { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("refundReason")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RefundReason { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lineItemCount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double LineItemCount { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant41" /> class.
         /// </summary>
-        /// <param name="data"></param>
-        /// <param name="subscriptionId"></param>
-        /// <param name="action"></param>
+        /// <param name="invoiceId"></param>
+        /// <param name="amount"></param>
+        /// <param name="refundReason"></param>
+        /// <param name="lineItemCount"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant41(
-            object data,
-            string? subscriptionId,
-            global::Vercel.UserEventPayloadVariant41Action action)
+            string invoiceId,
+            double amount,
+            string refundReason,
+            double lineItemCount)
         {
-            this.SubscriptionId = subscriptionId;
-            this.Action = action;
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
+            this.InvoiceId = invoiceId ?? throw new global::System.ArgumentNullException(nameof(invoiceId));
+            this.Amount = amount;
+            this.RefundReason = refundReason ?? throw new global::System.ArgumentNullException(nameof(refundReason));
+            this.LineItemCount = lineItemCount;
         }
 
         /// <summary>

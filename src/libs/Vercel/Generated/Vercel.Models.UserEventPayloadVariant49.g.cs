@@ -11,16 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("src")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Src { get; set; }
+        public required global::Vercel.UserEventPayloadVariant49Project Project { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dst")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("bulkRedirectsLimit")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Dst { get; set; }
+        public required double BulkRedirectsLimit { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevBulkRedirectsLimit")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double PrevBulkRedirectsLimit { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant49" /> class.
         /// </summary>
-        /// <param name="src"></param>
-        /// <param name="dst"></param>
+        /// <param name="project"></param>
+        /// <param name="bulkRedirectsLimit"></param>
+        /// <param name="prevBulkRedirectsLimit"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant49(
-            string src,
-            string dst)
+            global::Vercel.UserEventPayloadVariant49Project project,
+            double bulkRedirectsLimit,
+            double prevBulkRedirectsLimit)
         {
-            this.Src = src ?? throw new global::System.ArgumentNullException(nameof(src));
-            this.Dst = dst ?? throw new global::System.ArgumentNullException(nameof(dst));
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
+            this.BulkRedirectsLimit = bulkRedirectsLimit;
+            this.PrevBulkRedirectsLimit = prevBulkRedirectsLimit;
         }
 
         /// <summary>

@@ -11,30 +11,27 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string InvoiceId { get; set; }
+        public required string AppName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Amount { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("appId")]
+        public string? AppId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("refundReason")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RefundReason { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("resources")]
+        public global::Vercel.UserEventPayloadVariant35Resources? Resources { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("lineItemCount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double LineItemCount { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant35Permission>? Permissions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +42,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant35" /> class.
         /// </summary>
-        /// <param name="invoiceId"></param>
-        /// <param name="amount"></param>
-        /// <param name="refundReason"></param>
-        /// <param name="lineItemCount"></param>
+        /// <param name="appName"></param>
+        /// <param name="appId"></param>
+        /// <param name="resources"></param>
+        /// <param name="permissions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant35(
-            string invoiceId,
-            double amount,
-            string refundReason,
-            double lineItemCount)
+            string appName,
+            string? appId,
+            global::Vercel.UserEventPayloadVariant35Resources? resources,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant35Permission>? permissions)
         {
-            this.InvoiceId = invoiceId ?? throw new global::System.ArgumentNullException(nameof(invoiceId));
-            this.Amount = amount;
-            this.RefundReason = refundReason ?? throw new global::System.ArgumentNullException(nameof(refundReason));
-            this.LineItemCount = lineItemCount;
+            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
+            this.AppId = appId;
+            this.Resources = resources;
+            this.Permissions = permissions;
         }
 
         /// <summary>

@@ -11,22 +11,28 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oldName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OldName { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string NewName { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        public string? Uid { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectWebAnalytics")]
+        public global::Vercel.UserEventPayloadVariant232ProjectWebAnalytics? ProjectWebAnalytics { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prevProjectWebAnalytics")]
+        public global::Vercel.UserEventPayloadVariant232PrevProjectWebAnalytics? PrevProjectWebAnalytics { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +43,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant232" /> class.
         /// </summary>
-        /// <param name="oldName"></param>
-        /// <param name="newName"></param>
-        /// <param name="uid"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="projectWebAnalytics"></param>
+        /// <param name="prevProjectWebAnalytics"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant232(
-            string oldName,
-            string newName,
-            string? uid)
+            string projectId,
+            string projectName,
+            global::Vercel.UserEventPayloadVariant232ProjectWebAnalytics? projectWebAnalytics,
+            global::Vercel.UserEventPayloadVariant232PrevProjectWebAnalytics? prevProjectWebAnalytics)
         {
-            this.OldName = oldName ?? throw new global::System.ArgumentNullException(nameof(oldName));
-            this.NewName = newName ?? throw new global::System.ArgumentNullException(nameof(newName));
-            this.Uid = uid;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.ProjectWebAnalytics = projectWebAnalytics;
+            this.PrevProjectWebAnalytics = prevProjectWebAnalytics;
         }
 
         /// <summary>

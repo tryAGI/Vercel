@@ -11,28 +11,24 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AppName { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("appId")]
-        public string? AppId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nextScopes")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant27NextScope> NextScopes { get; set; }
+        public required string Alias { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nextPermissions")]
-        public global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant27NextPermission>? NextPermissions { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant27ActionJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant27Action Action { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,23 +39,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant27" /> class.
         /// </summary>
-        /// <param name="appName"></param>
-        /// <param name="nextScopes"></param>
-        /// <param name="appId"></param>
-        /// <param name="nextPermissions"></param>
+        /// <param name="projectName"></param>
+        /// <param name="alias"></param>
+        /// <param name="action"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant27(
-            string appName,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant27NextScope> nextScopes,
-            string? appId,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventPayloadVariant27NextPermission>? nextPermissions)
+            string projectName,
+            string alias,
+            global::Vercel.UserEventPayloadVariant27Action action)
         {
-            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
-            this.AppId = appId;
-            this.NextScopes = nextScopes ?? throw new global::System.ArgumentNullException(nameof(nextScopes));
-            this.NextPermissions = nextPermissions;
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
+            this.Action = action;
         }
 
         /// <summary>

@@ -11,42 +11,24 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string UserId { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationId { get; set; }
+        public required string ProjectName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configurationId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("configVersion")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ConfigurationId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationSlug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationSlug { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationName")]
-        public string? IntegrationName { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("newOwner")]
-        public global::Vercel.UserEventPayloadVariant116NewOwner? NewOwner { get; set; }
+        public required global::Vercel.OneOf<string, double?> ConfigVersion { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -57,29 +39,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant116" /> class.
         /// </summary>
-        /// <param name="userId"></param>
-        /// <param name="integrationId"></param>
-        /// <param name="configurationId"></param>
-        /// <param name="integrationSlug"></param>
-        /// <param name="integrationName"></param>
-        /// <param name="newOwner"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="configVersion"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant116(
-            string userId,
-            string integrationId,
-            string configurationId,
-            string integrationSlug,
-            string? integrationName,
-            global::Vercel.UserEventPayloadVariant116NewOwner? newOwner)
+            string projectId,
+            string projectName,
+            global::Vercel.OneOf<string, double?> configVersion)
         {
-            this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
-            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
-            this.ConfigurationId = configurationId ?? throw new global::System.ArgumentNullException(nameof(configurationId));
-            this.IntegrationSlug = integrationSlug ?? throw new global::System.ArgumentNullException(nameof(integrationSlug));
-            this.IntegrationName = integrationName;
-            this.NewOwner = newOwner;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.ConfigVersion = configVersion;
         }
 
         /// <summary>
