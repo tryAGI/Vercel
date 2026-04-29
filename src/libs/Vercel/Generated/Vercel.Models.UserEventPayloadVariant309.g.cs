@@ -70,10 +70,60 @@ namespace Vercel
         public string? PublicId { get; set; }
 
         /// <summary>
+        /// optional since entries prior to 2026-04-23 do not contain this field
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenPrefix")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant309TokenPrefixJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant309TokenPrefix? TokenPrefix { get; set; }
+
+        /// <summary>
+        /// optional since entries prior to 2026-04-23 do not contain this field
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenSuffix")]
+        public string? TokenSuffix { get; set; }
+
+        /// <summary>
+        /// optional; only present when a refresh token was issued (offline_access).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("refreshTokenPublicId")]
+        public string? RefreshTokenPublicId { get; set; }
+
+        /// <summary>
+        /// optional; only present when a refresh token was issued (offline_access).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("refreshTokenPrefix")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant309RefreshTokenPrefixJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant309RefreshTokenPrefix? RefreshTokenPrefix { get; set; }
+
+        /// <summary>
+        /// optional; only present when a refresh token was issued (offline_access).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("refreshTokenSuffix")]
+        public string? RefreshTokenSuffix { get; set; }
+
+        /// <summary>
         /// optional since entries prior to 2025-10-13 do not contain this field
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sessionId")]
         public string? SessionId { get; set; }
+
+        /// <summary>
+        /// optional since entries prior to 2026-04-23 do not contain this field
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ip")]
+        public string? Ip { get; set; }
+
+        /// <summary>
+        /// optional since entries prior to 2026-04-23 do not contain this field
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("geolocation")]
+        public global::Vercel.UserEventPayloadVariant309Geolocation? Geolocation { get; set; }
+
+        /// <summary>
+        /// optional since entries prior to 2026-04-23 do not contain this field
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("userAgent")]
+        public string? UserAgent { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -105,8 +155,32 @@ namespace Vercel
         /// <param name="publicId">
         /// optional since entries prior to 2025-10-13 do not contain this field
         /// </param>
+        /// <param name="tokenPrefix">
+        /// optional since entries prior to 2026-04-23 do not contain this field
+        /// </param>
+        /// <param name="tokenSuffix">
+        /// optional since entries prior to 2026-04-23 do not contain this field
+        /// </param>
+        /// <param name="refreshTokenPublicId">
+        /// optional; only present when a refresh token was issued (offline_access).
+        /// </param>
+        /// <param name="refreshTokenPrefix">
+        /// optional; only present when a refresh token was issued (offline_access).
+        /// </param>
+        /// <param name="refreshTokenSuffix">
+        /// optional; only present when a refresh token was issued (offline_access).
+        /// </param>
         /// <param name="sessionId">
         /// optional since entries prior to 2025-10-13 do not contain this field
+        /// </param>
+        /// <param name="ip">
+        /// optional since entries prior to 2026-04-23 do not contain this field
+        /// </param>
+        /// <param name="geolocation">
+        /// optional since entries prior to 2026-04-23 do not contain this field
+        /// </param>
+        /// <param name="userAgent">
+        /// optional since entries prior to 2026-04-23 do not contain this field
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -121,7 +195,15 @@ namespace Vercel
             global::Vercel.UserEventPayloadVariant309App? app,
             bool? includesRefreshToken,
             string? publicId,
-            string? sessionId)
+            global::Vercel.UserEventPayloadVariant309TokenPrefix? tokenPrefix,
+            string? tokenSuffix,
+            string? refreshTokenPublicId,
+            global::Vercel.UserEventPayloadVariant309RefreshTokenPrefix? refreshTokenPrefix,
+            string? refreshTokenSuffix,
+            string? sessionId,
+            string? ip,
+            global::Vercel.UserEventPayloadVariant309Geolocation? geolocation,
+            string? userAgent)
         {
             this.GrantType = grantType;
             this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
@@ -132,7 +214,15 @@ namespace Vercel
             this.App = app;
             this.IncludesRefreshToken = includesRefreshToken;
             this.PublicId = publicId;
+            this.TokenPrefix = tokenPrefix;
+            this.TokenSuffix = tokenSuffix;
+            this.RefreshTokenPublicId = refreshTokenPublicId;
+            this.RefreshTokenPrefix = refreshTokenPrefix;
+            this.RefreshTokenSuffix = refreshTokenSuffix;
             this.SessionId = sessionId;
+            this.Ip = ip;
+            this.Geolocation = geolocation;
+            this.UserAgent = userAgent;
         }
 
         /// <summary>

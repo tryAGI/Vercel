@@ -21,7 +21,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.FlagsSdkKey> CreateSdkKeyAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.FlagsSdkKeyWithSecrets> CreateSdkKeyAsync(
             string projectIdOrName,
 
             global::Vercel.CreateSdkKeyRequest request,
@@ -48,7 +48,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.FlagsSdkKey> CreateSdkKeyAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.FlagsSdkKeyWithSecrets> CreateSdkKeyAsync(
             string projectIdOrName,
             global::Vercel.CreateSdkKeyRequestSdkKeyType sdkKeyType,
             string environment,

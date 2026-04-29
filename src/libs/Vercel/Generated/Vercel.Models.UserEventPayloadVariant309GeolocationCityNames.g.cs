@@ -6,14 +6,14 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class GetSdkKeysResponse
+    public sealed partial class UserEventPayloadVariant309GeolocationCityNames
     {
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("en")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GetSdkKeysResponseDataItem> Data { get; set; }
+        public required string En { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -22,22 +22,22 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetSdkKeysResponse" /> class.
+        /// Initializes a new instance of the <see cref="UserEventPayloadVariant309GeolocationCityNames" /> class.
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="en"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public GetSdkKeysResponse(
-            global::System.Collections.Generic.IList<global::Vercel.GetSdkKeysResponseDataItem> data)
+        public UserEventPayloadVariant309GeolocationCityNames(
+            string en)
         {
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
+            this.En = en ?? throw new global::System.ArgumentNullException(nameof(en));
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetSdkKeysResponse" /> class.
+        /// Initializes a new instance of the <see cref="UserEventPayloadVariant309GeolocationCityNames" /> class.
         /// </summary>
-        public GetSdkKeysResponse()
+        public UserEventPayloadVariant309GeolocationCityNames()
         {
         }
     }

@@ -4,9 +4,9 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    /// Shared metadata for a Flags SDK key, safe to return on both LIST and CREATE. Never contains cleartext secrets.
     /// </summary>
-    public sealed partial class FlagsSdkKey
+    public sealed partial class GetSdkKeysResponseDataItem
     {
         /// <summary>
         /// 
@@ -26,9 +26,9 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.FlagsSdkKeyTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetSdkKeysResponseDataItemTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.FlagsSdkKeyType Type { get; set; }
+        public required global::Vercel.GetSdkKeysResponseDataItemType Type { get; set; }
 
         /// <summary>
         /// 
@@ -78,31 +78,13 @@ namespace Vercel
         public required string PartialKeyValue { get; set; }
 
         /// <summary>
-        /// Cleartext value of the SDK key
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("keyValue")]
-        public string? KeyValue { get; set; }
-
-        /// <summary>
-        /// Cleartext value of the Edge Config token
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenValue")]
-        public string? TokenValue { get; set; }
-
-        /// <summary>
-        /// Connection string for the SDK
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("connectionString")]
-        public string? ConnectionString { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FlagsSdkKey" /> class.
+        /// Initializes a new instance of the <see cref="GetSdkKeysResponseDataItem" /> class.
         /// </summary>
         /// <param name="hashKey"></param>
         /// <param name="projectId"></param>
@@ -116,32 +98,20 @@ namespace Vercel
         /// </param>
         /// <param name="label"></param>
         /// <param name="deletedAt"></param>
-        /// <param name="keyValue">
-        /// Cleartext value of the SDK key
-        /// </param>
-        /// <param name="tokenValue">
-        /// Cleartext value of the Edge Config token
-        /// </param>
-        /// <param name="connectionString">
-        /// Connection string for the SDK
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public FlagsSdkKey(
+        public GetSdkKeysResponseDataItem(
             string hashKey,
             string projectId,
-            global::Vercel.FlagsSdkKeyType type,
+            global::Vercel.GetSdkKeysResponseDataItemType type,
             string environment,
             string createdBy,
             double createdAt,
             double updatedAt,
             string partialKeyValue,
             string? label,
-            double? deletedAt,
-            string? keyValue,
-            string? tokenValue,
-            string? connectionString)
+            double? deletedAt)
         {
             this.HashKey = hashKey ?? throw new global::System.ArgumentNullException(nameof(hashKey));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
@@ -153,15 +123,12 @@ namespace Vercel
             this.Label = label;
             this.DeletedAt = deletedAt;
             this.PartialKeyValue = partialKeyValue ?? throw new global::System.ArgumentNullException(nameof(partialKeyValue));
-            this.KeyValue = keyValue;
-            this.TokenValue = tokenValue;
-            this.ConnectionString = connectionString;
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FlagsSdkKey" /> class.
+        /// Initializes a new instance of the <see cref="GetSdkKeysResponseDataItem" /> class.
         /// </summary>
-        public FlagsSdkKey()
+        public GetSdkKeysResponseDataItem()
         {
         }
     }

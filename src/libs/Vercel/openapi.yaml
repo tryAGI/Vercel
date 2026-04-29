@@ -48285,7 +48285,56 @@
                   "properties": {
                     "data": {
                       "items": {
-                        "$ref": "#/components/schemas/FlagsSdkKey"
+                        "properties": {
+                          "hashKey": {
+                            "type": "string"
+                          },
+                          "projectId": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "server",
+                              "mobile",
+                              "client"
+                            ]
+                          },
+                          "environment": {
+                            "type": "string"
+                          },
+                          "createdBy": {
+                            "type": "string"
+                          },
+                          "createdAt": {
+                            "type": "number"
+                          },
+                          "updatedAt": {
+                            "type": "number"
+                          },
+                          "label": {
+                            "type": "string"
+                          },
+                          "deletedAt": {
+                            "type": "number"
+                          },
+                          "partialKeyValue": {
+                            "type": "string",
+                            "description": "Partially-masked representation of the SDK key value, safe to display in UIs. The value is the `vf_<type>_` prefix followed by the first 3 characters of the secret portion and a fixed 8-character `*` mask (e.g. `vf_server_abc********`)."
+                          }
+                        },
+                        "required": [
+                          "createdAt",
+                          "createdBy",
+                          "environment",
+                          "hashKey",
+                          "partialKeyValue",
+                          "projectId",
+                          "type",
+                          "updatedAt"
+                        ],
+                        "type": "object",
+                        "description": "Shared metadata for a Flags SDK key, safe to return on both LIST and CREATE. Never contains cleartext secrets."
                       },
                       "type": "array"
                     }
@@ -48363,7 +48412,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/FlagsSdkKey"
+                  "$ref": "#/components/schemas/FlagsSdkKeyWithSecrets"
                 }
               }
             }
@@ -159693,9 +159742,114 @@
                     "type": "string",
                     "description": "optional since entries prior to 2025-10-13 do not contain this field"
                   },
+                  "tokenPrefix": {
+                    "type": "string",
+                    "enum": [
+                      "vca_"
+                    ],
+                    "description": "optional since entries prior to 2026-04-23 do not contain this field"
+                  },
+                  "tokenSuffix": {
+                    "type": "string",
+                    "description": "optional since entries prior to 2026-04-23 do not contain this field"
+                  },
+                  "refreshTokenPublicId": {
+                    "type": "string",
+                    "description": "optional; only present when a refresh token was issued (offline_access)."
+                  },
+                  "refreshTokenPrefix": {
+                    "type": "string",
+                    "enum": [
+                      "vcr_"
+                    ],
+                    "description": "optional; only present when a refresh token was issued (offline_access)."
+                  },
+                  "refreshTokenSuffix": {
+                    "type": "string",
+                    "description": "optional; only present when a refresh token was issued (offline_access)."
+                  },
                   "sessionId": {
                     "type": "string",
                     "description": "optional since entries prior to 2025-10-13 do not contain this field"
+                  },
+                  "ip": {
+                    "nullable": true,
+                    "type": "string",
+                    "description": "optional since entries prior to 2026-04-23 do not contain this field"
+                  },
+                  "geolocation": {
+                    "nullable": true,
+                    "properties": {
+                      "city": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "country": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "most_specific_subdivision": {
+                        "properties": {
+                          "names": {
+                            "properties": {
+                              "en": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "en"
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "names"
+                        ],
+                        "type": "object"
+                      },
+                      "regionName": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "country"
+                    ],
+                    "type": "object",
+                    "description": "optional since entries prior to 2026-04-23 do not contain this field"
+                  },
+                  "userAgent": {
+                    "type": "string",
+                    "description": "optional since entries prior to 2026-04-23 do not contain this field"
                   }
                 },
                 "required": [
@@ -159713,6 +159867,17 @@
                   "tokenId": {
                     "type": "string",
                     "description": "The token's public ID."
+                  },
+                  "tokenPrefix": {
+                    "type": "string",
+                    "enum": [
+                      "vcp_"
+                    ],
+                    "description": "The token prefix used when showing a safe checksum-style fingerprint."
+                  },
+                  "tokenSuffix": {
+                    "type": "string",
+                    "description": "The token checksum suffix."
                   },
                   "tokenName": {
                     "type": "string",
@@ -162445,7 +162610,7 @@
         ],
         "type": "object"
       },
-      "FlagsSdkKey": {
+      "FlagsSdkKeyWithSecrets": {
         "properties": {
           "hashKey": {
             "type": "string"
@@ -162485,15 +162650,11 @@
           },
           "keyValue": {
             "type": "string",
-            "description": "Cleartext value of the SDK key"
+            "description": "Cleartext value of the SDK key."
           },
           "tokenValue": {
             "type": "string",
-            "description": "Cleartext value of the Edge Config token"
-          },
-          "connectionString": {
-            "type": "string",
-            "description": "Connection string for the SDK"
+            "description": "Cleartext value of the Edge Config token, when the project has an Edge Config connection."
           }
         },
         "required": [
@@ -162501,12 +162662,14 @@
           "createdBy",
           "environment",
           "hashKey",
+          "keyValue",
           "partialKeyValue",
           "projectId",
           "type",
           "updatedAt"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Representation of a Flags SDK key returned by CREATE. Includes cleartext secrets (`keyValue`, `tokenValue`, `connectionString`) which are only ever disclosed once, on creation."
       },
       "ACLAction": {
         "type": "string",

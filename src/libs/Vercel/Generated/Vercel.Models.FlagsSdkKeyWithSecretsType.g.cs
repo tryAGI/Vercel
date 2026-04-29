@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public enum FlagsSdkKeyType
+    public enum FlagsSdkKeyWithSecretsType
     {
         /// <summary>
         /// 
@@ -25,31 +25,31 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class FlagsSdkKeyTypeExtensions
+    public static class FlagsSdkKeyWithSecretsTypeExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this FlagsSdkKeyType value)
+        public static string ToValueString(this FlagsSdkKeyWithSecretsType value)
         {
             return value switch
             {
-                FlagsSdkKeyType.Client => "client",
-                FlagsSdkKeyType.Mobile => "mobile",
-                FlagsSdkKeyType.Server => "server",
+                FlagsSdkKeyWithSecretsType.Client => "client",
+                FlagsSdkKeyWithSecretsType.Mobile => "mobile",
+                FlagsSdkKeyWithSecretsType.Server => "server",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static FlagsSdkKeyType? ToEnum(string value)
+        public static FlagsSdkKeyWithSecretsType? ToEnum(string value)
         {
             return value switch
             {
-                "client" => FlagsSdkKeyType.Client,
-                "mobile" => FlagsSdkKeyType.Mobile,
-                "server" => FlagsSdkKeyType.Server,
+                "client" => FlagsSdkKeyWithSecretsType.Client,
+                "mobile" => FlagsSdkKeyWithSecretsType.Mobile,
+                "server" => FlagsSdkKeyWithSecretsType.Server,
                 _ => null,
             };
         }

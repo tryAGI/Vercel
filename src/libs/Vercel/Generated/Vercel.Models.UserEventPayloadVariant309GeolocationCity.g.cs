@@ -6,14 +6,14 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class GetSdkKeysResponse
+    public sealed partial class UserEventPayloadVariant309GeolocationCity
     {
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("names")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GetSdkKeysResponseDataItem> Data { get; set; }
+        public required global::Vercel.UserEventPayloadVariant309GeolocationCityNames Names { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -22,22 +22,22 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetSdkKeysResponse" /> class.
+        /// Initializes a new instance of the <see cref="UserEventPayloadVariant309GeolocationCity" /> class.
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="names"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public GetSdkKeysResponse(
-            global::System.Collections.Generic.IList<global::Vercel.GetSdkKeysResponseDataItem> data)
+        public UserEventPayloadVariant309GeolocationCity(
+            global::Vercel.UserEventPayloadVariant309GeolocationCityNames names)
         {
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
+            this.Names = names ?? throw new global::System.ArgumentNullException(nameof(names));
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetSdkKeysResponse" /> class.
+        /// Initializes a new instance of the <see cref="UserEventPayloadVariant309GeolocationCity" /> class.
         /// </summary>
-        public GetSdkKeysResponse()
+        public UserEventPayloadVariant309GeolocationCity()
         {
         }
     }
