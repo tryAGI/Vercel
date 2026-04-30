@@ -68647,6 +68647,12 @@
           },
           "404": {
             "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -69415,6 +69421,12 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
