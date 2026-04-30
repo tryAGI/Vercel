@@ -28,6 +28,12 @@ namespace Vercel
         public double? BypassThrottleUntil { get; set; }
 
         /// <summary>
+        /// Whether the project is currently throttled.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("throttled")]
+        public bool? Throttled { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,17 +51,22 @@ namespace Vercel
         /// <param name="bypassThrottleUntil">
         /// Timestamp until which throttling is bypassed (project pays list rates for overage).
         /// </param>
+        /// <param name="throttled">
+        /// Whether the project is currently throttled.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectResponseUsageStatus(
             global::Vercel.GetProjectResponseUsageStatusKind kind,
             double? exceededAllowanceUntil,
-            double? bypassThrottleUntil)
+            double? bypassThrottleUntil,
+            bool? throttled)
         {
             this.Kind = kind;
             this.ExceededAllowanceUntil = exceededAllowanceUntil;
             this.BypassThrottleUntil = bypassThrottleUntil;
+            this.Throttled = throttled;
         }
 
         /// <summary>

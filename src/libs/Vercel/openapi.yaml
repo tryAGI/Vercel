@@ -63012,6 +63012,14 @@
                               "bypassThrottleUntil": {
                                 "type": "number",
                                 "description": "Timestamp until which throttling is bypassed (project pays list rates for overage)."
+                              },
+                              "throttled": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ],
+                                "description": "Whether the project is currently throttled."
                               }
                             },
                             "required": [
@@ -82184,6 +82192,14 @@
                                   "bypassThrottleUntil": {
                                     "type": "number",
                                     "description": "Timestamp until which throttling is bypassed (project pays list rates for overage)."
+                                  },
+                                  "throttled": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ],
+                                    "description": "Whether the project is currently throttled."
                                   }
                                 },
                                 "required": [
@@ -88075,6 +88091,14 @@
                         "bypassThrottleUntil": {
                           "type": "number",
                           "description": "Timestamp until which throttling is bypassed (project pays list rates for overage)."
+                        },
+                        "throttled": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Whether the project is currently throttled."
                         }
                       },
                       "required": [
@@ -94199,6 +94223,14 @@
                         "bypassThrottleUntil": {
                           "type": "number",
                           "description": "Timestamp until which throttling is bypassed (project pays list rates for overage)."
+                        },
+                        "throttled": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Whether the project is currently throttled."
                         }
                       },
                       "required": [
@@ -99904,6 +99936,14 @@
                         "bypassThrottleUntil": {
                           "type": "number",
                           "description": "Timestamp until which throttling is bypassed (project pays list rates for overage)."
+                        },
+                        "throttled": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Whether the project is currently throttled."
                         }
                       },
                       "required": [
@@ -118227,6 +118267,14 @@
                         "bypassThrottleUntil": {
                           "type": "number",
                           "description": "Timestamp until which throttling is bypassed (project pays list rates for overage)."
+                        },
+                        "throttled": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Whether the project is currently throttled."
                         }
                       },
                       "required": [
