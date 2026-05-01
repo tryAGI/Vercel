@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        PostgresUrl,
+        BlobWebhookPublicKey,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                CreateProjectEnvResponseCreatedContentHintVariant7Type.PostgresUrl => "postgres-url",
+                CreateProjectEnvResponseCreatedContentHintVariant7Type.BlobWebhookPublicKey => "blob-webhook-public-key",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "postgres-url" => CreateProjectEnvResponseCreatedContentHintVariant7Type.PostgresUrl,
+                "blob-webhook-public-key" => CreateProjectEnvResponseCreatedContentHintVariant7Type.BlobWebhookPublicKey,
                 _ => null,
             };
         }
