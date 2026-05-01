@@ -31,8 +31,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        public string? Action { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("newTargetPercentage")]
+        public double? NewTargetPercentage { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,7 +46,7 @@ namespace Vercel
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
         /// <param name="targetDeploymentId"></param>
-        /// <param name="action"></param>
+        /// <param name="newTargetPercentage"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -54,12 +54,12 @@ namespace Vercel
             string projectId,
             string projectName,
             string? targetDeploymentId,
-            string? action)
+            double? newTargetPercentage)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
             this.TargetDeploymentId = targetDeploymentId;
-            this.Action = action;
+            this.NewTargetPercentage = newTargetPercentage;
         }
 
         /// <summary>

@@ -1,0 +1,51 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public enum UserEventPayloadVariant175BuildQueueConfiguration
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        SkipNamespaceQueue,
+        /// <summary>
+        /// 
+        /// </summary>
+        WaitForNamespaceQueue,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class UserEventPayloadVariant175BuildQueueConfigurationExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this UserEventPayloadVariant175BuildQueueConfiguration value)
+        {
+            return value switch
+            {
+                UserEventPayloadVariant175BuildQueueConfiguration.SkipNamespaceQueue => "SKIP_NAMESPACE_QUEUE",
+                UserEventPayloadVariant175BuildQueueConfiguration.WaitForNamespaceQueue => "WAIT_FOR_NAMESPACE_QUEUE",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static UserEventPayloadVariant175BuildQueueConfiguration? ToEnum(string value)
+        {
+            return value switch
+            {
+                "SKIP_NAMESPACE_QUEUE" => UserEventPayloadVariant175BuildQueueConfiguration.SkipNamespaceQueue,
+                "WAIT_FOR_NAMESPACE_QUEUE" => UserEventPayloadVariant175BuildQueueConfiguration.WaitForNamespaceQueue,
+                _ => null,
+            };
+        }
+    }
+}

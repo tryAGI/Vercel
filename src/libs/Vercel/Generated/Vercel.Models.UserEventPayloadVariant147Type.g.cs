@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Header,
+        Script,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                UserEventPayloadVariant147Type.Header => "header",
+                UserEventPayloadVariant147Type.Script => "script",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "header" => UserEventPayloadVariant147Type.Header,
+                "script" => UserEventPayloadVariant147Type.Script,
                 _ => null,
             };
         }

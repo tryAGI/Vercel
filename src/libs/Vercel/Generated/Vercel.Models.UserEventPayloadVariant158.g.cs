@@ -25,13 +25,13 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalytics")]
-        public object? ProjectAnalytics { get; set; }
+        public global::Vercel.UserEventPayloadVariant158ProjectAnalytics? ProjectAnalytics { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prevProjectAnalytics")]
-        public object? PrevProjectAnalytics { get; set; }
+        public global::Vercel.UserEventPayloadVariant158PrevProjectAnalytics? PrevProjectAnalytics { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,8 +52,8 @@ namespace Vercel
         public UserEventPayloadVariant158(
             string projectId,
             string? projectName,
-            object? projectAnalytics,
-            object? prevProjectAnalytics)
+            global::Vercel.UserEventPayloadVariant158ProjectAnalytics? projectAnalytics,
+            global::Vercel.UserEventPayloadVariant158PrevProjectAnalytics? prevProjectAnalytics)
         {
             this.ProjectName = projectName;
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
