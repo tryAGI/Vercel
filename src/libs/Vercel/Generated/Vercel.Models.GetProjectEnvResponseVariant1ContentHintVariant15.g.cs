@@ -23,27 +23,6 @@ namespace Vercel
         public required string StoreId { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationProductId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationProductId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationConfigurationId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationConfigurationId { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -53,25 +32,16 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetProjectEnvResponseVariant1ContentHintVariant15" /> class.
         /// </summary>
         /// <param name="storeId"></param>
-        /// <param name="integrationId"></param>
-        /// <param name="integrationProductId"></param>
-        /// <param name="integrationConfigurationId"></param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectEnvResponseVariant1ContentHintVariant15(
             string storeId,
-            string integrationId,
-            string integrationProductId,
-            string integrationConfigurationId,
             global::Vercel.GetProjectEnvResponseVariant1ContentHintVariant15Type type)
         {
             this.Type = type;
             this.StoreId = storeId ?? throw new global::System.ArgumentNullException(nameof(storeId));
-            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
-            this.IntegrationProductId = integrationProductId ?? throw new global::System.ArgumentNullException(nameof(integrationProductId));
-            this.IntegrationConfigurationId = integrationConfigurationId ?? throw new global::System.ArgumentNullException(nameof(integrationConfigurationId));
         }
 
         /// <summary>

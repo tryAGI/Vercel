@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        IntegrationStoreSecret,
+        PostgresUrlNoSsl,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                GetProjectsResponseVariant3ProjectEnvItemContentHintVariant15Type.IntegrationStoreSecret => "integration-store-secret",
+                GetProjectsResponseVariant3ProjectEnvItemContentHintVariant15Type.PostgresUrlNoSsl => "postgres-url-no-ssl",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "integration-store-secret" => GetProjectsResponseVariant3ProjectEnvItemContentHintVariant15Type.IntegrationStoreSecret,
+                "postgres-url-no-ssl" => GetProjectsResponseVariant3ProjectEnvItemContentHintVariant15Type.PostgresUrlNoSsl,
                 _ => null,
             };
         }

@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        FlagsConnectionString,
+        IntegrationStoreSecret,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                FilterProjectEnvsResponseVariant1ContentHintVariant16Type.FlagsConnectionString => "flags-connection-string",
+                FilterProjectEnvsResponseVariant1ContentHintVariant16Type.IntegrationStoreSecret => "integration-store-secret",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "flags-connection-string" => FilterProjectEnvsResponseVariant1ContentHintVariant16Type.FlagsConnectionString,
+                "integration-store-secret" => FilterProjectEnvsResponseVariant1ContentHintVariant16Type.IntegrationStoreSecret,
                 _ => null,
             };
         }

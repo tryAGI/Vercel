@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        PostgresHost,
+        PostgresUser,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                GetProjectResponseEnvItemContentHintVariant11Type.PostgresHost => "postgres-host",
+                GetProjectResponseEnvItemContentHintVariant11Type.PostgresUser => "postgres-user",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "postgres-host" => GetProjectResponseEnvItemContentHintVariant11Type.PostgresHost,
+                "postgres-user" => GetProjectResponseEnvItemContentHintVariant11Type.PostgresUser,
                 _ => null,
             };
         }
