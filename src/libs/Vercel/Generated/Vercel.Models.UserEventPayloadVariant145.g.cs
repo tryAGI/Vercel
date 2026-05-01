@@ -18,9 +18,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("headerName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        public required string HeaderName { get; set; }
 
         /// <summary>
         /// 
@@ -39,18 +39,18 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant145" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="url"></param>
+        /// <param name="headerName"></param>
         /// <param name="previousStatus"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant145(
             string projectId,
-            string url,
+            string headerName,
             string previousStatus)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.HeaderName = headerName ?? throw new global::System.ArgumentNullException(nameof(headerName));
             this.PreviousStatus = previousStatus ?? throw new global::System.ArgumentNullException(nameof(previousStatus));
         }
 

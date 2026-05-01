@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    /// How the token was issued. Always `'manual'` for explicit PAT creation.
     /// </summary>
     public enum UserEventPayloadVariant319Origin
     {

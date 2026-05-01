@@ -18,16 +18,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant146TypeJsonConverter))]
-        public global::Vercel.UserEventPayloadVariant146Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("resourceUrl")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousStatus")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ResourceUrl { get; set; }
+        public required string PreviousStatus { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,19 +39,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant146" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="resourceUrl"></param>
-        /// <param name="type"></param>
+        /// <param name="url"></param>
+        /// <param name="previousStatus"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant146(
             string projectId,
-            string resourceUrl,
-            global::Vercel.UserEventPayloadVariant146Type type)
+            string url,
+            string previousStatus)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Type = type;
-            this.ResourceUrl = resourceUrl ?? throw new global::System.ArgumentNullException(nameof(resourceUrl));
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.PreviousStatus = previousStatus ?? throw new global::System.ArgumentNullException(nameof(previousStatus));
         }
 
         /// <summary>

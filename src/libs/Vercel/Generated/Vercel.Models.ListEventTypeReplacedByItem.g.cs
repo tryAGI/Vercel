@@ -771,6 +771,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        MarketplaceIntegrationAllowlistUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         MicrofrontendGroupAdded,
         /// <summary>
         /// 
@@ -2072,6 +2076,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.LogDrainEnabled => "log-drain-enabled",
                 ListEventTypeReplacedByItem.Login => "login",
                 ListEventTypeReplacedByItem.ManualDeploymentPromotionCreated => "manual-deployment-promotion-created",
+                ListEventTypeReplacedByItem.MarketplaceIntegrationAllowlistUpdated => "marketplace-integration-allowlist-updated",
                 ListEventTypeReplacedByItem.MicrofrontendGroupAdded => "microfrontend-group-added",
                 ListEventTypeReplacedByItem.MicrofrontendGroupDeleted => "microfrontend-group-deleted",
                 ListEventTypeReplacedByItem.MicrofrontendGroupUpdated => "microfrontend-group-updated",
@@ -2547,6 +2552,7 @@ namespace Vercel
                 "log-drain-enabled" => ListEventTypeReplacedByItem.LogDrainEnabled,
                 "login" => ListEventTypeReplacedByItem.Login,
                 "manual-deployment-promotion-created" => ListEventTypeReplacedByItem.ManualDeploymentPromotionCreated,
+                "marketplace-integration-allowlist-updated" => ListEventTypeReplacedByItem.MarketplaceIntegrationAllowlistUpdated,
                 "microfrontend-group-added" => ListEventTypeReplacedByItem.MicrofrontendGroupAdded,
                 "microfrontend-group-deleted" => ListEventTypeReplacedByItem.MicrofrontendGroupDeleted,
                 "microfrontend-group-updated" => ListEventTypeReplacedByItem.MicrofrontendGroupUpdated,

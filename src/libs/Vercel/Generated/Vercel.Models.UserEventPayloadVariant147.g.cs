@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("headerName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("resourceUrl")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string HeaderName { get; set; }
+        public required string ResourceUrl { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,19 +39,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant147" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="headerName"></param>
+        /// <param name="resourceUrl"></param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant147(
             string projectId,
-            string headerName,
+            string resourceUrl,
             global::Vercel.UserEventPayloadVariant147Type type)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Type = type;
-            this.HeaderName = headerName ?? throw new global::System.ArgumentNullException(nameof(headerName));
+            this.ResourceUrl = resourceUrl ?? throw new global::System.ArgumentNullException(nameof(resourceUrl));
         }
 
         /// <summary>

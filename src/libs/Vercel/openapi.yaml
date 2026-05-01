@@ -143214,6 +143214,7 @@
               "log-drain-enabled",
               "login",
               "manual-deployment-promotion-created",
+              "marketplace-integration-allowlist-updated",
               "microfrontend-group-added",
               "microfrontend-group-deleted",
               "microfrontend-group-updated",
@@ -153071,6 +153072,31 @@
               },
               {
                 "properties": {
+                  "enabled": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  },
+                  "allowedIntegrationCount": {
+                    "type": "number"
+                  },
+                  "allowedIntegrationIds": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "enabled"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
                   "id": {
                     "type": "string"
                   },
@@ -160790,6 +160816,7 @@
               "log-drain-enabled",
               "login",
               "manual-deployment-promotion-created",
+              "marketplace-integration-allowlist-updated",
               "microfrontend-group-added",
               "microfrontend-group-deleted",
               "microfrontend-group-updated",
@@ -161313,6 +161340,7 @@
                 "log-drain-enabled",
                 "login",
                 "manual-deployment-promotion-created",
+                "marketplace-integration-allowlist-updated",
                 "microfrontend-group-added",
                 "microfrontend-group-deleted",
                 "microfrontend-group-updated",

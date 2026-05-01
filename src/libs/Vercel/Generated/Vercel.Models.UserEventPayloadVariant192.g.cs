@@ -25,8 +25,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("requireVerifiedCommits")]
-        public bool? RequireVerifiedCommits { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("createDeployments")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant192CreateDeploymentsJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant192CreateDeployments CreateDeployments { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,18 +41,18 @@ namespace Vercel
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
-        /// <param name="requireVerifiedCommits"></param>
+        /// <param name="createDeployments"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant192(
             string projectId,
             string projectName,
-            bool? requireVerifiedCommits)
+            global::Vercel.UserEventPayloadVariant192CreateDeployments createDeployments)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.RequireVerifiedCommits = requireVerifiedCommits;
+            this.CreateDeployments = createDeployments;
         }
 
         /// <summary>

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    /// optional since entries prior to 2026-04-23 do not contain this field
     /// </summary>
     public sealed partial class UserEventPayloadVariant318Geolocation
     {
