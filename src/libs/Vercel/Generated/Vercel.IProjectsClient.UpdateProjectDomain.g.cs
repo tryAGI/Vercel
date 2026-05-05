@@ -51,6 +51,36 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateProjectDomainResponse>> UpdateProjectDomainAsResponseAsync(
+            string idOrName,
+            string domain,
+
+            global::Vercel.UpdateProjectDomainRequest request,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Update a project domain<br/>
+        /// Update a project domain's configuration, including the name, git branch and redirect of the domain.
+        /// </summary>
+        /// <param name="idOrName">
+        /// The unique project identifier or the project name
+        /// </param>
+        /// <param name="domain">
+        /// The project domain name<br/>
+        /// Example: www.example.com
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="gitBranch">
         /// Git branch to link the project domain<br/>
         /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464

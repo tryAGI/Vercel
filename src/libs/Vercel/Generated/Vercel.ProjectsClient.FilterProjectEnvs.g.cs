@@ -106,6 +106,70 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await FilterProjectEnvsAsResponseAsync(
+                idOrName: idOrName,
+                gitBranch: gitBranch,
+                decrypt: decrypt,
+                source: source,
+                customEnvironmentId: customEnvironmentId,
+                customEnvironmentSlug: customEnvironmentSlug,
+                teamId: teamId,
+                slug: slug,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Retrieve the environment variables of a project by id or name<br/>
+        /// Retrieve the environment variables for a given project by passing either the project `id` or `name` in the URL.
+        /// </summary>
+        /// <param name="idOrName">
+        /// The unique project identifier or the project name<br/>
+        /// Example: prj_XLKmu1DyR1eY7zq8UgeRKbA7yVLA
+        /// </param>
+        /// <param name="gitBranch">
+        /// If defined, the git branch of the environment variable to filter the results (must have target=preview)<br/>
+        /// Example: feature-1
+        /// </param>
+        /// <param name="decrypt">
+        /// If true, the environment variable value will be decrypted<br/>
+        /// Example: true
+        /// </param>
+        /// <param name="source">
+        /// The source that is calling the endpoint.<br/>
+        /// Example: vercel-cli:pull
+        /// </param>
+        /// <param name="customEnvironmentId">
+        /// The unique custom environment identifier within the project<br/>
+        /// Example: env_123abc4567
+        /// </param>
+        /// <param name="customEnvironmentSlug">
+        /// The custom environment slug (name) within the project<br/>
+        /// Example: my-custom-env
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant1, global::Vercel.FilterProjectEnvsResponseVariant2, global::Vercel.FilterProjectEnvsResponseVariant3>>> FilterProjectEnvsAsResponseAsync(
+            string idOrName,
+            string? gitBranch = default,
+            global::Vercel.FilterProjectEnvsDecrypt? decrypt = default,
+            string? source = default,
+            string? customEnvironmentId = default,
+            string? customEnvironmentSlug = default,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareFilterProjectEnvsArguments(
@@ -141,9 +205,10 @@ namespace Vercel
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Vercel.PathBuilder(
                                 path: $"/v10/projects/{idOrName}/env",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("gitBranch", gitBranch)
                                 .AddOptionalParameter("decrypt", decrypt?.ToValueString())
@@ -151,7 +216,7 @@ namespace Vercel
                                 .AddOptionalParameter("customEnvironmentId", customEnvironmentId)
                                 .AddOptionalParameter("customEnvironmentSlug", customEnvironmentSlug)
                                 .AddOptionalParameter("teamId", teamId)
-                                .AddOptionalParameter("slug", slug) 
+                                .AddOptionalParameter("slug", slug)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -230,6 +295,8 @@ namespace Vercel
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -240,6 +307,11 @@ namespace Vercel
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Vercel.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -257,6 +329,8 @@ namespace Vercel
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -266,8 +340,7 @@ namespace Vercel
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Vercel.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -276,6 +349,11 @@ namespace Vercel
                         __attempt < __maxAttempts &&
                         global::Vercel.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Vercel.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -292,14 +370,15 @@ namespace Vercel
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Vercel.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -339,6 +418,8 @@ namespace Vercel
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -359,6 +440,8 @@ namespace Vercel
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // 
@@ -482,9 +565,13 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant1, global::Vercel.FilterProjectEnvsResponseVariant2, global::Vercel.FilterProjectEnvsResponseVariant3>.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant1, global::Vercel.FilterProjectEnvsResponseVariant2, global::Vercel.FilterProjectEnvsResponseVariant3>.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant1, global::Vercel.FilterProjectEnvsResponseVariant2, global::Vercel.FilterProjectEnvsResponseVariant3>>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -512,9 +599,13 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant1, global::Vercel.FilterProjectEnvsResponseVariant2, global::Vercel.FilterProjectEnvsResponseVariant3>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant1, global::Vercel.FilterProjectEnvsResponseVariant2, global::Vercel.FilterProjectEnvsResponseVariant3>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant1, global::Vercel.FilterProjectEnvsResponseVariant2, global::Vercel.FilterProjectEnvsResponseVariant3>>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

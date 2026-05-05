@@ -27,6 +27,23 @@ namespace Vercel
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="resourceId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ImportResourceResponse>> ImportResourceAsResponseAsync(
+            string integrationConfigurationId,
+            string resourceId,
+
+            global::Vercel.ImportResourceRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Import Resource<br/>
+        /// This endpoint imports (upserts) a resource to Vercel's installation. This may be needed if resources can be independently created on the partner's side and need to be synchronized to Vercel.
+        /// </summary>
+        /// <param name="integrationConfigurationId"></param>
+        /// <param name="resourceId"></param>
         /// <param name="ownership"></param>
         /// <param name="productId"></param>
         /// <param name="name"></param>

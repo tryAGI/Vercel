@@ -21,6 +21,19 @@ namespace Vercel
         /// Create a Team<br/>
         /// Create a new Team under your account. You need to send a POST request with the desired Team slug, and optionally the Team name.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateTeamResponse>> CreateTeamAsResponseAsync(
+
+            global::Vercel.CreateTeamRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create a Team<br/>
+        /// Create a new Team under your account. You need to send a POST request with the desired Team slug, and optionally the Team name.
+        /// </summary>
         /// <param name="slug">
         /// The desired slug for the Team<br/>
         /// Example: a-random-team

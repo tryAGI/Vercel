@@ -2073,25 +2073,25 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.UpdateNetworkPolicyRequestModeNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.CreateSandboxesRequestNetworkPolicyVariant1ModeJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.CreateSandboxesRequestNetworkPolicyVariant1ModeNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.CreateSandboxesRequestRuntimeJsonConverter),
 
             typeof(global::Vercel.JsonConverters.CreateSandboxesRequestRuntimeNullableJsonConverter),
-
-            typeof(global::Vercel.JsonConverters.CreateSandboxesRequestNetworkPolicyModeJsonConverter),
-
-            typeof(global::Vercel.JsonConverters.CreateSandboxesRequestNetworkPolicyModeNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestRuntimeJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestRuntimeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UpdateSandboxRequestNetworkPolicyModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateSandboxRequestNetworkPolicyVariant1ModeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UpdateSandboxRequestNetworkPolicyModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateSandboxRequestNetworkPolicyVariant1ModeNullableJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UpdateSessionNetworkPolicyRequestModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateSessionNetworkPolicyRequestVariant1ModeJsonConverter),
 
-            typeof(global::Vercel.JsonConverters.UpdateSessionNetworkPolicyRequestModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateSessionNetworkPolicyRequestVariant1ModeNullableJsonConverter),
 
             typeof(global::Vercel.JsonConverters.PutFirewallConfigRequestCrsSdActionJsonConverter),
 
@@ -11465,11 +11465,23 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>),
 
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>),
+
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItem>>>),
+
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesRequestSourceVariant1, global::Vercel.CreateSandboxesRequestSourceVariant2, global::Vercel.CreateSandboxesRequestSourceVariant3>),
 
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>),
 
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>),
+
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>),
+
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItem>>>),
+
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2>),
+
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItem>>>),
 
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>),
 
@@ -15128,24 +15140,81 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSnapshotRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<object, int?>), TypeInfoPropertyName = "OneOfObjectInt322")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>), TypeInfoPropertyName = "OneOfCreateSandboxesRequestNetworkPolicyVariant1CreateSandboxesRequestNetworkPolicyVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1Mode), TypeInfoPropertyName = "CreateSandboxesRequestNetworkPolicyVariant1Mode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItem>>>), TypeInfoPropertyName = "OneOfIListStringDictionaryStringIListCreateSandboxesRequestNetworkPolicyVariant2AllowItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItem>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatch))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchPath))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchQueryStringItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchQueryStringItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchQueryStringItemKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchQueryStringItemValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchHeader>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchHeader))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchHeaderKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchHeaderValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemTransformItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemTransformItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2Subnets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestResources))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestRuntime), TypeInfoPropertyName = "CreateSandboxesRequestRuntime2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestSourceVariant1, global::Vercel.CreateSandboxesRequestSourceVariant2, global::Vercel.CreateSandboxesRequestSourceVariant3>), TypeInfoPropertyName = "OneOfCreateSandboxesRequestSourceVariant1CreateSandboxesRequestSourceVariant2CreateSandboxesRequestSourceVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestSourceVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestSourceVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestSourceVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicy))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesRequestNetworkPolicyMode), TypeInfoPropertyName = "CreateSandboxesRequestNetworkPolicyMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestResources))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestRuntime), TypeInfoPropertyName = "UpdateSandboxRequestRuntime2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicy))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyMode), TypeInfoPropertyName = "UpdateSandboxRequestNetworkPolicyMode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>), TypeInfoPropertyName = "OneOfUpdateSandboxRequestNetworkPolicyVariant1UpdateSandboxRequestNetworkPolicyVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1Mode), TypeInfoPropertyName = "UpdateSandboxRequestNetworkPolicyVariant1Mode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItem>>>), TypeInfoPropertyName = "OneOfIListStringDictionaryStringIListUpdateSandboxRequestNetworkPolicyVariant2AllowItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItem>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatch))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchPath))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchQueryStringItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchQueryStringItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchQueryStringItemKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchQueryStringItemValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchHeader>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchHeader))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchHeaderKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchHeaderValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemTransformItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemTransformItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2Subnets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RunSessionCommandRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.KillSessionCommandRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ExtendSessionTimeoutRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestMode), TypeInfoPropertyName = "UpdateSessionNetworkPolicyRequestMode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2>), TypeInfoPropertyName = "OneOfUpdateSessionNetworkPolicyRequestVariant1UpdateSessionNetworkPolicyRequestVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant1Mode), TypeInfoPropertyName = "UpdateSessionNetworkPolicyRequestVariant1Mode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItem>>>), TypeInfoPropertyName = "OneOfIListStringDictionaryStringIListUpdateSessionNetworkPolicyRequestVariant2AllowItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItem>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatch))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchPath))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchQueryStringItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchQueryStringItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchQueryStringItemKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchQueryStringItemValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchHeader>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchHeader))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchHeaderKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchHeaderValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemTransformItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemTransformItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2Subnets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ReadSessionFileRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSessionDirectoryRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSessionSnapshotRequest))]
@@ -21997,6 +22066,24 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateProjectEnvRequestItemTargetItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.EditProjectEnvRequestTargetItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<int>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItem>>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItem>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchQueryStringItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchHeader>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItemTransformItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItem>>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItem>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchQueryStringItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemMatchHeader>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemTransformItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItem>>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItem>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchQueryStringItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchHeader>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemTransformItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.PutFirewallConfigRequestRule>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.PutFirewallConfigRequestRuleConditionGroupItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.PutFirewallConfigRequestRuleConditionGroupItemCondition>))]

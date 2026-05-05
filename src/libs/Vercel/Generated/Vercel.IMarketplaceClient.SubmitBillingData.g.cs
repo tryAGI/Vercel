@@ -24,6 +24,21 @@ namespace Vercel
         /// Sends the billing and usage data. The partner should do this at least once a day and ideally once per hour. &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request.
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse> SubmitBillingDataAsResponseAsync(
+            string integrationConfigurationId,
+
+            global::Vercel.SubmitBillingDataRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Submit Billing Data<br/>
+        /// Sends the billing and usage data. The partner should do this at least once a day and ideally once per hour. &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request.
+        /// </summary>
+        /// <param name="integrationConfigurationId"></param>
         /// <param name="timestamp">
         /// Server time of your integration, used to determine the most recent data for race conditions &amp; updates. Only the latest usage data for a given day, week, and month will be kept.
         /// </param>

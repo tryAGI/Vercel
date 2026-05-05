@@ -63,6 +63,43 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateFlagResponse2, global::Vercel.Flag>>> UpdateFlagAsResponseAsync(
+            string projectIdOrName,
+            string flagIdOrSlug,
+
+            global::Vercel.UpdateFlagRequest request,
+            string? ifMatch = default,
+            bool? withMetadata = default,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Update a flag<br/>
+        /// Update an existing feature flag. This endpoint supports partial updates, allowing you to modify specific properties like variants, environments, or state without providing the full flag configuration.
+        /// </summary>
+        /// <param name="projectIdOrName">
+        /// The project id or name
+        /// </param>
+        /// <param name="flagIdOrSlug">
+        /// The flag id or name
+        /// </param>
+        /// <param name="ifMatch">
+        /// Etag to match, can be used interchangeably with the `if-match` header
+        /// </param>
+        /// <param name="withMetadata">
+        /// Whether to include metadata in the response
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="createdBy">
         /// The user who created this patch
         /// </param>

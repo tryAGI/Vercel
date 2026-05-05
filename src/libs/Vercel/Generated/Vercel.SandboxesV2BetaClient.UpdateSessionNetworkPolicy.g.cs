@@ -30,14 +30,14 @@ namespace Vercel
             ref string sessionId,
             ref string? teamId,
             ref string? slug,
-            global::Vercel.UpdateSessionNetworkPolicyRequest request);
+            global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2> request);
         partial void PrepareUpdateSessionNetworkPolicyRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string sessionId,
             string? teamId,
             string? slug,
-            global::Vercel.UpdateSessionNetworkPolicyRequest request);
+            global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2> request);
         partial void ProcessUpdateSessionNetworkPolicyResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -68,14 +68,51 @@ namespace Vercel
         public async global::System.Threading.Tasks.Task<global::Vercel.UpdateSessionNetworkPolicyResponse> UpdateSessionNetworkPolicyAsync(
             string sessionId,
 
-            global::Vercel.UpdateSessionNetworkPolicyRequest request,
+            global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2> request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+            var __response = await UpdateSessionNetworkPolicyAsResponseAsync(
+                sessionId: sessionId,
 
+                request: request,
+                teamId: teamId,
+                slug: slug,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Update network policy<br/>
+        /// Replaces the network access policy of a running session. Use this to control which external hosts the session can communicate with. This is a full replacement. Any previously configured network rules will be overwritten.
+        /// </summary>
+        /// <param name="sessionId">
+        /// The unique identifier of the session to update the network policy for.<br/>
+        /// Example: sbx_abc123
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateSessionNetworkPolicyResponse>> UpdateSessionNetworkPolicyAsResponseAsync(
+            string sessionId,
+
+            global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2> request,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareUpdateSessionNetworkPolicyArguments(
@@ -107,12 +144,13 @@ namespace Vercel
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Vercel.PathBuilder(
                                 path: $"/v2/sandboxes/sessions/{sessionId}/network-policy",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("teamId", teamId)
-                                .AddOptionalParameter("slug", slug) 
+                                .AddOptionalParameter("slug", slug)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -193,6 +231,8 @@ namespace Vercel
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -203,6 +243,11 @@ namespace Vercel
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Vercel.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -220,6 +265,8 @@ namespace Vercel
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -229,8 +276,7 @@ namespace Vercel
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Vercel.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -239,6 +285,11 @@ namespace Vercel
                         __attempt < __maxAttempts &&
                         global::Vercel.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Vercel.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -255,14 +306,15 @@ namespace Vercel
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Vercel.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -302,6 +354,8 @@ namespace Vercel
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -322,6 +376,8 @@ namespace Vercel
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // 
@@ -610,9 +666,13 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::Vercel.UpdateSessionNetworkPolicyResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.UpdateSessionNetworkPolicyResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateSessionNetworkPolicyResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -640,9 +700,13 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::Vercel.UpdateSessionNetworkPolicyResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.UpdateSessionNetworkPolicyResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateSessionNetworkPolicyResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -694,42 +758,18 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
-        /// <param name="mode">
-        /// The network access policy mode. Use \"allow-all\" to permit all outbound traffic. Use \"deny-all\" to block all outbound traffic. Use \"custom\" to specify explicit allow/deny rules.<br/>
-        /// Example: custom
-        /// </param>
-        /// <param name="allowedDomains">
-        /// List of domain names the sandbox is allowed to connect to. Only applies when mode is \"custom\". Supports wildcard patterns (e.g., \"*.example.com\" matches all subdomains).<br/>
-        /// Example: [api.github.com, *.npmjs.org]
-        /// </param>
-        /// <param name="allowedCIDRs">
-        /// List of IP address ranges (in CIDR notation) the sandbox is allowed to connect to. Traffic to these addresses bypasses domain-based restrictions.<br/>
-        /// Example: [35.192.0.0/12, 104.16.0.0/12]
-        /// </param>
-        /// <param name="deniedCIDRs">
-        /// List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.<br/>
-        /// Example: [35.192.0.0/12]
-        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.UpdateSessionNetworkPolicyResponse> UpdateSessionNetworkPolicyAsync(
             string sessionId,
-            global::Vercel.UpdateSessionNetworkPolicyRequestMode mode,
             string? teamId = default,
             string? slug = default,
-            global::System.Collections.Generic.IList<string>? allowedDomains = default,
-            global::System.Collections.Generic.IList<string>? allowedCIDRs = default,
-            global::System.Collections.Generic.IList<string>? deniedCIDRs = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Vercel.UpdateSessionNetworkPolicyRequest
+            var __request = new global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2>
             {
-                Mode = mode,
-                AllowedDomains = allowedDomains,
-                AllowedCIDRs = allowedCIDRs,
-                DeniedCIDRs = deniedCIDRs,
             };
 
             return await UpdateSessionNetworkPolicyAsync(

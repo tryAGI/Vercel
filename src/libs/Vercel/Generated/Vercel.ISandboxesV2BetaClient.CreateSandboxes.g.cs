@@ -35,6 +35,28 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSandboxesResponse>> CreateSandboxesAsResponseAsync(
+
+            global::Vercel.CreateSandboxesRequest request,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create a named sandbox<br/>
+        /// Creates a named sandbox environment. Named sandboxes have a unique name within a project and support automatic snapshotting on shutdown.
+        /// </summary>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="networkPolicy"></param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
@@ -57,9 +79,6 @@ namespace Vercel
         /// <param name="timeout">
         /// Maximum duration in milliseconds that the sandbox can run before being automatically stopped.<br/>
         /// Example: 300000
-        /// </param>
-        /// <param name="networkPolicy">
-        /// Network access policy for the sandbox.\n    Controls which external hosts the sandbox can communicate with.\n    Use \"allow-all\" mode to allow all traffic, \"deny-all\" to block all traffic or \"custom\" to provide specific rules.
         /// </param>
         /// <param name="env">
         /// Default environment variables for the sandbox. These are inherited by all commands unless overridden.<br/>
@@ -88,13 +107,13 @@ namespace Vercel
         global::System.Threading.Tasks.Task<global::Vercel.CreateSandboxesResponse> CreateSandboxesAsync(
             string? teamId = default,
             string? slug = default,
+            global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>? networkPolicy = default,
             global::Vercel.CreateSandboxesRequestResources? resources = default,
             global::Vercel.CreateSandboxesRequestRuntime? runtime = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestSourceVariant1, global::Vercel.CreateSandboxesRequestSourceVariant2, global::Vercel.CreateSandboxesRequestSourceVariant3>? source = default,
             string? projectId = default,
             global::System.Collections.Generic.IList<int>? ports = default,
             int? timeout = default,
-            global::Vercel.CreateSandboxesRequestNetworkPolicy? networkPolicy = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
             string? name = default,
             bool? persistent = default,

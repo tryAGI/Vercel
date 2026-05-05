@@ -35,6 +35,27 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSandboxResponse>> CreateSandboxAsResponseAsync(
+
+            global::Vercel.CreateSandboxRequest request,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create a sandbox<br/>
+        /// Creates a new sandbox environment for executing code in an isolated virtual machine. A sandbox can be initialized from various sources including Git repositories, tarballs, or existing snapshots. Once created, you can execute commands, read/write files, and manage the sandbox lifecycle.
+        /// </summary>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>

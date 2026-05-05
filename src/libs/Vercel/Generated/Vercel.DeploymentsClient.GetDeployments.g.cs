@@ -159,6 +159,115 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await GetDeploymentsAsResponseAsync(
+                app: app,
+                from: from,
+                limit: limit,
+                projectId: projectId,
+                projectIds: projectIds,
+                target: target,
+                to: to,
+                users: users,
+                since: since,
+                until: until,
+                state: state,
+                rollbackCandidate: rollbackCandidate,
+                branch: branch,
+                sha: sha,
+                teamId: teamId,
+                slug: slug,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// List deployments<br/>
+        /// List deployments under the authenticated user or team. If a deployment hasn't finished uploading (is incomplete), the `url` property will have a value of `null`.
+        /// </summary>
+        /// <param name="app">
+        /// Name of the deployment.<br/>
+        /// Example: docs
+        /// </param>
+        /// <param name="from">
+        /// Gets the deployment created after this Date timestamp. (default: current time)<br/>
+        /// Example: 1612948664566L
+        /// </param>
+        /// <param name="limit">
+        /// Maximum number of deployments to list from a request.<br/>
+        /// Example: 10
+        /// </param>
+        /// <param name="projectId">
+        /// Filter deployments from the given ID or name.<br/>
+        /// Example: QmXGTs7mvAMMC7WW5ebrM33qKG32QK3h4vmQMjmY
+        /// </param>
+        /// <param name="projectIds">
+        /// Filter deployments from the given project IDs. Cannot be used when projectId is specified.<br/>
+        /// Example: [prj_123, prj_456]
+        /// </param>
+        /// <param name="target">
+        /// Filter deployments based on the environment.<br/>
+        /// Example: production
+        /// </param>
+        /// <param name="to">
+        /// Gets the deployment created before this Date timestamp. (default: current time)<br/>
+        /// Example: 1612948664566L
+        /// </param>
+        /// <param name="users">
+        /// Filter out deployments based on users who have created the deployment.<br/>
+        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf,K4amb7K9dAt5R2vBJWF32bmY
+        /// </param>
+        /// <param name="since">
+        /// Get Deployments created after this JavaScript timestamp.<br/>
+        /// Example: 1540095775941L
+        /// </param>
+        /// <param name="until">
+        /// Get Deployments created before this JavaScript timestamp.<br/>
+        /// Example: 1540095775951L
+        /// </param>
+        /// <param name="state">
+        /// Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`)<br/>
+        /// Example: BUILDING,READY
+        /// </param>
+        /// <param name="rollbackCandidate">
+        /// Filter deployments based on their rollback candidacy
+        /// </param>
+        /// <param name="branch">
+        /// Filter deployments based on the branch name
+        /// </param>
+        /// <param name="sha">
+        /// Filter deployments based on the SHA
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetDeploymentsResponse>> GetDeploymentsAsResponseAsync(
+            string? app = default,
+            double? from = default,
+            double? limit = default,
+            string? projectId = default,
+            global::System.Collections.Generic.IList<string>? projectIds = default,
+            string? target = default,
+            double? to = default,
+            string? users = default,
+            double? since = default,
+            double? until = default,
+            string? state = default,
+            bool? rollbackCandidate = default,
+            string? branch = default,
+            string? sha = default,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareGetDeploymentsArguments(
@@ -202,9 +311,10 @@ namespace Vercel
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Vercel.PathBuilder(
                                 path: "/v6/deployments",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("app", app)
                                 .AddOptionalParameter("from", from?.ToString())
@@ -221,7 +331,7 @@ namespace Vercel
                                 .AddOptionalParameter("branch", branch)
                                 .AddOptionalParameter("sha", sha)
                                 .AddOptionalParameter("teamId", teamId)
-                                .AddOptionalParameter("slug", slug) 
+                                .AddOptionalParameter("slug", slug)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -308,6 +418,8 @@ namespace Vercel
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -318,6 +430,11 @@ namespace Vercel
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Vercel.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -335,6 +452,8 @@ namespace Vercel
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -344,8 +463,7 @@ namespace Vercel
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Vercel.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -354,6 +472,11 @@ namespace Vercel
                         __attempt < __maxAttempts &&
                         global::Vercel.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Vercel.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -370,14 +493,15 @@ namespace Vercel
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Vercel.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -417,6 +541,8 @@ namespace Vercel
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -437,6 +563,8 @@ namespace Vercel
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // 
@@ -626,9 +754,13 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::Vercel.GetDeploymentsResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.GetDeploymentsResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetDeploymentsResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -656,9 +788,13 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::Vercel.GetDeploymentsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.GetDeploymentsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetDeploymentsResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

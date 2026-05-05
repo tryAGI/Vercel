@@ -122317,6 +122317,241 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
+                  "networkPolicy": {
+                    "oneOf": [
+                      {
+                        "description": "Network access policy for the sandbox.\\n    Controls which external hosts the sandbox can communicate with.\\n    Use \\\"allow-all\\\" mode to allow all traffic, \\\"deny-all\\\" to block all traffic or \\\"custom\\\" to provide specific rules.",
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "mode"
+                        ],
+                        "properties": {
+                          "mode": {
+                            "description": "The network access policy mode. Use \\\"allow-all\\\" to permit all outbound traffic. Use \\\"deny-all\\\" to block all outbound traffic. Use \\\"custom\\\" to specify explicit allow/deny rules.",
+                            "type": "string",
+                            "enum": [
+                              "allow-all",
+                              "deny-all",
+                              "custom",
+                              "default-allow",
+                              "default-deny"
+                            ],
+                            "example": "custom"
+                          },
+                          "allowedDomains": {
+                            "description": "List of domain names the sandbox is allowed to connect to. Only applies when mode is \\\"custom\\\". Supports wildcard patterns (e.g., \\\"*.example.com\\\" matches all subdomains).",
+                            "type": "array",
+                            "example": [
+                              "api.github.com",
+                              "*.npmjs.org"
+                            ],
+                            "items": {
+                              "type": "string",
+                              "description": "A domain name pattern. Use \\\"*\\\" for wildcard matching of subdomains (e.g., \\\"*.example.com\\\")."
+                            }
+                          },
+                          "allowedCIDRs": {
+                            "description": "List of IP address ranges (in CIDR notation) the sandbox is allowed to connect to. Traffic to these addresses bypasses domain-based restrictions.",
+                            "type": "array",
+                            "example": [
+                              "35.192.0.0/12",
+                              "104.16.0.0/12"
+                            ],
+                            "items": {
+                              "type": "string",
+                              "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
+                            }
+                          },
+                          "deniedCIDRs": {
+                            "description": "List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.",
+                            "type": "array",
+                            "example": [
+                              "35.192.0.0/12"
+                            ],
+                            "items": {
+                              "type": "string",
+                              "description": "An IP address range in CIDR notation to block."
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "allow": {
+                            "oneOf": [
+                              {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              {
+                                "type": "object",
+                                "additionalProperties": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "match": {
+                                        "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "path": {
+                                            "description": "Match on the request path. Comparison is case-sensitive.",
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                              "exact": {
+                                                "type": "string",
+                                                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                              },
+                                              "startsWith": {
+                                                "type": "string",
+                                                "description": "Match values that start with the given prefix."
+                                              }
+                                            }
+                                          },
+                                          "method": {
+                                            "type": "array",
+                                            "description": "HTTP methods to match. Any single match succeeds (OR semantics).",
+                                            "items": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "queryString": {
+                                            "type": "array",
+                                            "description": "Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.",
+                                            "items": {
+                                              "type": "object",
+                                              "additionalProperties": false,
+                                              "properties": {
+                                                "key": {
+                                                  "description": "Matcher for the entry key (header name or query key).",
+                                                  "type": "object",
+                                                  "additionalProperties": false,
+                                                  "properties": {
+                                                    "exact": {
+                                                      "type": "string",
+                                                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                    },
+                                                    "startsWith": {
+                                                      "type": "string",
+                                                      "description": "Match values that start with the given prefix."
+                                                    }
+                                                  }
+                                                },
+                                                "value": {
+                                                  "description": "Matcher for the entry value.",
+                                                  "type": "object",
+                                                  "additionalProperties": false,
+                                                  "properties": {
+                                                    "exact": {
+                                                      "type": "string",
+                                                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                    },
+                                                    "startsWith": {
+                                                      "type": "string",
+                                                      "description": "Match values that start with the given prefix."
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "headers": {
+                                            "type": "array",
+                                            "description": "Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.",
+                                            "items": {
+                                              "type": "object",
+                                              "additionalProperties": false,
+                                              "properties": {
+                                                "key": {
+                                                  "description": "Matcher for the entry key (header name or query key).",
+                                                  "type": "object",
+                                                  "additionalProperties": false,
+                                                  "properties": {
+                                                    "exact": {
+                                                      "type": "string",
+                                                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                    },
+                                                    "startsWith": {
+                                                      "type": "string",
+                                                      "description": "Match values that start with the given prefix."
+                                                    }
+                                                  }
+                                                },
+                                                "value": {
+                                                  "description": "Matcher for the entry value.",
+                                                  "type": "object",
+                                                  "additionalProperties": false,
+                                                  "properties": {
+                                                    "exact": {
+                                                      "type": "string",
+                                                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                    },
+                                                    "startsWith": {
+                                                      "type": "string",
+                                                      "description": "Match values that start with the given prefix."
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "transform": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "properties": {
+                                            "headers": {
+                                              "type": "object",
+                                              "additionalProperties": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "forwardURL": {
+                                        "type": "string",
+                                        "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "subnets": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "allow": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "deny": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
                   "resources": {
                     "description": "Resources to define the VM",
                     "additionalProperties": false,
@@ -122458,63 +122693,6 @@
                     "description": "Maximum duration in milliseconds that the sandbox can run before being automatically stopped.",
                     "minimum": 1000,
                     "example": 300000
-                  },
-                  "networkPolicy": {
-                    "description": "Network access policy for the sandbox.\\n    Controls which external hosts the sandbox can communicate with.\\n    Use \\\"allow-all\\\" mode to allow all traffic, \\\"deny-all\\\" to block all traffic or \\\"custom\\\" to provide specific rules.",
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": [
-                      "mode"
-                    ],
-                    "properties": {
-                      "mode": {
-                        "description": "The network access policy mode. Use \\\"allow-all\\\" to permit all outbound traffic. Use \\\"deny-all\\\" to block all outbound traffic. Use \\\"custom\\\" to specify explicit allow/deny rules.",
-                        "type": "string",
-                        "enum": [
-                          "allow-all",
-                          "deny-all",
-                          "custom",
-                          "default-allow",
-                          "default-deny"
-                        ],
-                        "example": "custom"
-                      },
-                      "allowedDomains": {
-                        "description": "List of domain names the sandbox is allowed to connect to. Only applies when mode is \\\"custom\\\". Supports wildcard patterns (e.g., \\\"*.example.com\\\" matches all subdomains).",
-                        "type": "array",
-                        "example": [
-                          "api.github.com",
-                          "*.npmjs.org"
-                        ],
-                        "items": {
-                          "type": "string",
-                          "description": "A domain name pattern. Use \\\"*\\\" for wildcard matching of subdomains (e.g., \\\"*.example.com\\\")."
-                        }
-                      },
-                      "allowedCIDRs": {
-                        "description": "List of IP address ranges (in CIDR notation) the sandbox is allowed to connect to. Traffic to these addresses bypasses domain-based restrictions.",
-                        "type": "array",
-                        "example": [
-                          "35.192.0.0/12",
-                          "104.16.0.0/12"
-                        ],
-                        "items": {
-                          "type": "string",
-                          "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
-                        }
-                      },
-                      "deniedCIDRs": {
-                        "description": "List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.",
-                        "type": "array",
-                        "example": [
-                          "35.192.0.0/12"
-                        ],
-                        "items": {
-                          "type": "string",
-                          "description": "An IP address range in CIDR notation to block."
-                        }
-                      }
-                    }
                   },
                   "env": {
                     "type": "object",
@@ -123415,61 +123593,239 @@
                     "example": 604800000
                   },
                   "networkPolicy": {
-                    "description": "Network access policy for the sandbox.\\n    Controls which external hosts the sandbox can communicate with.\\n    Use \\\"allow-all\\\" mode to allow all traffic, \\\"deny-all\\\" to block all traffic or \\\"custom\\\" to provide specific rules.",
-                    "type": "object",
-                    "additionalProperties": false,
-                    "required": [
-                      "mode"
-                    ],
-                    "properties": {
-                      "mode": {
-                        "description": "The network access policy mode. Use \\\"allow-all\\\" to permit all outbound traffic. Use \\\"deny-all\\\" to block all outbound traffic. Use \\\"custom\\\" to specify explicit allow/deny rules.",
-                        "type": "string",
-                        "enum": [
-                          "allow-all",
-                          "deny-all",
-                          "custom",
-                          "default-allow",
-                          "default-deny"
+                    "oneOf": [
+                      {
+                        "description": "Network access policy for the sandbox.\\n    Controls which external hosts the sandbox can communicate with.\\n    Use \\\"allow-all\\\" mode to allow all traffic, \\\"deny-all\\\" to block all traffic or \\\"custom\\\" to provide specific rules.",
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "mode"
                         ],
-                        "example": "custom"
-                      },
-                      "allowedDomains": {
-                        "description": "List of domain names the sandbox is allowed to connect to. Only applies when mode is \\\"custom\\\". Supports wildcard patterns (e.g., \\\"*.example.com\\\" matches all subdomains).",
-                        "type": "array",
-                        "example": [
-                          "api.github.com",
-                          "*.npmjs.org"
-                        ],
-                        "items": {
-                          "type": "string",
-                          "description": "A domain name pattern. Use \\\"*\\\" for wildcard matching of subdomains (e.g., \\\"*.example.com\\\")."
+                        "properties": {
+                          "mode": {
+                            "description": "The network access policy mode. Use \\\"allow-all\\\" to permit all outbound traffic. Use \\\"deny-all\\\" to block all outbound traffic. Use \\\"custom\\\" to specify explicit allow/deny rules.",
+                            "type": "string",
+                            "enum": [
+                              "allow-all",
+                              "deny-all",
+                              "custom",
+                              "default-allow",
+                              "default-deny"
+                            ],
+                            "example": "custom"
+                          },
+                          "allowedDomains": {
+                            "description": "List of domain names the sandbox is allowed to connect to. Only applies when mode is \\\"custom\\\". Supports wildcard patterns (e.g., \\\"*.example.com\\\" matches all subdomains).",
+                            "type": "array",
+                            "example": [
+                              "api.github.com",
+                              "*.npmjs.org"
+                            ],
+                            "items": {
+                              "type": "string",
+                              "description": "A domain name pattern. Use \\\"*\\\" for wildcard matching of subdomains (e.g., \\\"*.example.com\\\")."
+                            }
+                          },
+                          "allowedCIDRs": {
+                            "description": "List of IP address ranges (in CIDR notation) the sandbox is allowed to connect to. Traffic to these addresses bypasses domain-based restrictions.",
+                            "type": "array",
+                            "example": [
+                              "35.192.0.0/12",
+                              "104.16.0.0/12"
+                            ],
+                            "items": {
+                              "type": "string",
+                              "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
+                            }
+                          },
+                          "deniedCIDRs": {
+                            "description": "List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.",
+                            "type": "array",
+                            "example": [
+                              "35.192.0.0/12"
+                            ],
+                            "items": {
+                              "type": "string",
+                              "description": "An IP address range in CIDR notation to block."
+                            }
+                          }
                         }
                       },
-                      "allowedCIDRs": {
-                        "description": "List of IP address ranges (in CIDR notation) the sandbox is allowed to connect to. Traffic to these addresses bypasses domain-based restrictions.",
-                        "type": "array",
-                        "example": [
-                          "35.192.0.0/12",
-                          "104.16.0.0/12"
-                        ],
-                        "items": {
-                          "type": "string",
-                          "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
-                        }
-                      },
-                      "deniedCIDRs": {
-                        "description": "List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.",
-                        "type": "array",
-                        "example": [
-                          "35.192.0.0/12"
-                        ],
-                        "items": {
-                          "type": "string",
-                          "description": "An IP address range in CIDR notation to block."
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "allow": {
+                            "oneOf": [
+                              {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              {
+                                "type": "object",
+                                "additionalProperties": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "match": {
+                                        "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "path": {
+                                            "description": "Match on the request path. Comparison is case-sensitive.",
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                              "exact": {
+                                                "type": "string",
+                                                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                              },
+                                              "startsWith": {
+                                                "type": "string",
+                                                "description": "Match values that start with the given prefix."
+                                              }
+                                            }
+                                          },
+                                          "method": {
+                                            "type": "array",
+                                            "description": "HTTP methods to match. Any single match succeeds (OR semantics).",
+                                            "items": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "queryString": {
+                                            "type": "array",
+                                            "description": "Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.",
+                                            "items": {
+                                              "type": "object",
+                                              "additionalProperties": false,
+                                              "properties": {
+                                                "key": {
+                                                  "description": "Matcher for the entry key (header name or query key).",
+                                                  "type": "object",
+                                                  "additionalProperties": false,
+                                                  "properties": {
+                                                    "exact": {
+                                                      "type": "string",
+                                                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                    },
+                                                    "startsWith": {
+                                                      "type": "string",
+                                                      "description": "Match values that start with the given prefix."
+                                                    }
+                                                  }
+                                                },
+                                                "value": {
+                                                  "description": "Matcher for the entry value.",
+                                                  "type": "object",
+                                                  "additionalProperties": false,
+                                                  "properties": {
+                                                    "exact": {
+                                                      "type": "string",
+                                                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                    },
+                                                    "startsWith": {
+                                                      "type": "string",
+                                                      "description": "Match values that start with the given prefix."
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "headers": {
+                                            "type": "array",
+                                            "description": "Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.",
+                                            "items": {
+                                              "type": "object",
+                                              "additionalProperties": false,
+                                              "properties": {
+                                                "key": {
+                                                  "description": "Matcher for the entry key (header name or query key).",
+                                                  "type": "object",
+                                                  "additionalProperties": false,
+                                                  "properties": {
+                                                    "exact": {
+                                                      "type": "string",
+                                                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                    },
+                                                    "startsWith": {
+                                                      "type": "string",
+                                                      "description": "Match values that start with the given prefix."
+                                                    }
+                                                  }
+                                                },
+                                                "value": {
+                                                  "description": "Matcher for the entry value.",
+                                                  "type": "object",
+                                                  "additionalProperties": false,
+                                                  "properties": {
+                                                    "exact": {
+                                                      "type": "string",
+                                                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                    },
+                                                    "startsWith": {
+                                                      "type": "string",
+                                                      "description": "Match values that start with the given prefix."
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "transform": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "properties": {
+                                            "headers": {
+                                              "type": "object",
+                                              "additionalProperties": {
+                                                "type": "string"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "forwardURL": {
+                                        "type": "string",
+                                        "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "subnets": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "allow": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "deny": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
                         }
                       }
-                    }
+                    ]
                   },
                   "env": {
                     "type": "object",
@@ -124493,60 +124849,238 @@
           "content": {
             "application/json": {
               "schema": {
-                "properties": {
-                  "mode": {
-                    "description": "The network access policy mode. Use \\\"allow-all\\\" to permit all outbound traffic. Use \\\"deny-all\\\" to block all outbound traffic. Use \\\"custom\\\" to specify explicit allow/deny rules.",
-                    "type": "string",
-                    "enum": [
-                      "allow-all",
-                      "deny-all",
-                      "custom",
-                      "default-allow",
-                      "default-deny"
-                    ],
-                    "example": "custom"
+                "oneOf": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "description": "The network access policy mode. Use \\\"allow-all\\\" to permit all outbound traffic. Use \\\"deny-all\\\" to block all outbound traffic. Use \\\"custom\\\" to specify explicit allow/deny rules.",
+                        "type": "string",
+                        "enum": [
+                          "allow-all",
+                          "deny-all",
+                          "custom",
+                          "default-allow",
+                          "default-deny"
+                        ],
+                        "example": "custom"
+                      },
+                      "allowedDomains": {
+                        "description": "List of domain names the sandbox is allowed to connect to. Only applies when mode is \\\"custom\\\". Supports wildcard patterns (e.g., \\\"*.example.com\\\" matches all subdomains).",
+                        "type": "array",
+                        "example": [
+                          "api.github.com",
+                          "*.npmjs.org"
+                        ],
+                        "items": {
+                          "type": "string",
+                          "description": "A domain name pattern. Use \\\"*\\\" for wildcard matching of subdomains (e.g., \\\"*.example.com\\\")."
+                        }
+                      },
+                      "allowedCIDRs": {
+                        "description": "List of IP address ranges (in CIDR notation) the sandbox is allowed to connect to. Traffic to these addresses bypasses domain-based restrictions.",
+                        "type": "array",
+                        "example": [
+                          "35.192.0.0/12",
+                          "104.16.0.0/12"
+                        ],
+                        "items": {
+                          "type": "string",
+                          "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
+                        }
+                      },
+                      "deniedCIDRs": {
+                        "description": "List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.",
+                        "type": "array",
+                        "example": [
+                          "35.192.0.0/12"
+                        ],
+                        "items": {
+                          "type": "string",
+                          "description": "An IP address range in CIDR notation to block."
+                        }
+                      }
+                    },
+                    "description": "Network access policy for the sandbox.\\n    Controls which external hosts the sandbox can communicate with.\\n    Use \\\"allow-all\\\" mode to allow all traffic, \\\"deny-all\\\" to block all traffic or \\\"custom\\\" to provide specific rules.",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "mode"
+                    ]
                   },
-                  "allowedDomains": {
-                    "description": "List of domain names the sandbox is allowed to connect to. Only applies when mode is \\\"custom\\\". Supports wildcard patterns (e.g., \\\"*.example.com\\\" matches all subdomains).",
-                    "type": "array",
-                    "example": [
-                      "api.github.com",
-                      "*.npmjs.org"
-                    ],
-                    "items": {
-                      "type": "string",
-                      "description": "A domain name pattern. Use \\\"*\\\" for wildcard matching of subdomains (e.g., \\\"*.example.com\\\")."
-                    }
-                  },
-                  "allowedCIDRs": {
-                    "description": "List of IP address ranges (in CIDR notation) the sandbox is allowed to connect to. Traffic to these addresses bypasses domain-based restrictions.",
-                    "type": "array",
-                    "example": [
-                      "35.192.0.0/12",
-                      "104.16.0.0/12"
-                    ],
-                    "items": {
-                      "type": "string",
-                      "description": "An IPv4 address range in CIDR notation (e.g., \\\"35.192.0.0/12\\\")."
-                    }
-                  },
-                  "deniedCIDRs": {
-                    "description": "List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.",
-                    "type": "array",
-                    "example": [
-                      "35.192.0.0/12"
-                    ],
-                    "items": {
-                      "type": "string",
-                      "description": "An IP address range in CIDR notation to block."
-                    }
+                  {
+                    "properties": {
+                      "allow": {
+                        "oneOf": [
+                          {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                  "match": {
+                                    "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "path": {
+                                        "description": "Match on the request path. Comparison is case-sensitive.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "exact": {
+                                            "type": "string",
+                                            "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                          },
+                                          "startsWith": {
+                                            "type": "string",
+                                            "description": "Match values that start with the given prefix."
+                                          }
+                                        }
+                                      },
+                                      "method": {
+                                        "type": "array",
+                                        "description": "HTTP methods to match. Any single match succeeds (OR semantics).",
+                                        "items": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "queryString": {
+                                        "type": "array",
+                                        "description": "Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.",
+                                        "items": {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "properties": {
+                                            "key": {
+                                              "description": "Matcher for the entry key (header name or query key).",
+                                              "type": "object",
+                                              "additionalProperties": false,
+                                              "properties": {
+                                                "exact": {
+                                                  "type": "string",
+                                                  "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                },
+                                                "startsWith": {
+                                                  "type": "string",
+                                                  "description": "Match values that start with the given prefix."
+                                                }
+                                              }
+                                            },
+                                            "value": {
+                                              "description": "Matcher for the entry value.",
+                                              "type": "object",
+                                              "additionalProperties": false,
+                                              "properties": {
+                                                "exact": {
+                                                  "type": "string",
+                                                  "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                },
+                                                "startsWith": {
+                                                  "type": "string",
+                                                  "description": "Match values that start with the given prefix."
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "headers": {
+                                        "type": "array",
+                                        "description": "Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.",
+                                        "items": {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "properties": {
+                                            "key": {
+                                              "description": "Matcher for the entry key (header name or query key).",
+                                              "type": "object",
+                                              "additionalProperties": false,
+                                              "properties": {
+                                                "exact": {
+                                                  "type": "string",
+                                                  "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                },
+                                                "startsWith": {
+                                                  "type": "string",
+                                                  "description": "Match values that start with the given prefix."
+                                                }
+                                              }
+                                            },
+                                            "value": {
+                                              "description": "Matcher for the entry value.",
+                                              "type": "object",
+                                              "additionalProperties": false,
+                                              "properties": {
+                                                "exact": {
+                                                  "type": "string",
+                                                  "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                                },
+                                                "startsWith": {
+                                                  "type": "string",
+                                                  "description": "Match values that start with the given prefix."
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "transform": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "additionalProperties": false,
+                                      "properties": {
+                                        "headers": {
+                                          "type": "object",
+                                          "additionalProperties": {
+                                            "type": "string"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "forwardURL": {
+                                    "type": "string",
+                                    "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "subnets": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "allow": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "deny": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "type": "object",
+                    "additionalProperties": false
                   }
-                },
-                "description": "Network access policy for the sandbox.\\n    Controls which external hosts the sandbox can communicate with.\\n    Use \\\"allow-all\\\" mode to allow all traffic, \\\"deny-all\\\" to block all traffic or \\\"custom\\\" to provide specific rules.",
-                "type": "object",
-                "additionalProperties": false,
-                "required": [
-                  "mode"
                 ]
               }
             }

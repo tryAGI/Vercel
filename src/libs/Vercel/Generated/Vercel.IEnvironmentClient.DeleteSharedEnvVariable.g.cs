@@ -35,6 +35,27 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteSharedEnvVariableResponse>> DeleteSharedEnvVariableAsResponseAsync(
+
+            global::Vercel.DeleteSharedEnvVariableRequest request,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Delete one or more Env Var<br/>
+        /// Deletes one or many Shared Environment Variables for a given team.
+        /// </summary>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="ids">
         /// IDs of the Shared Environment Variables to delete<br/>
         /// Example: [env_abc123, env_abc124]

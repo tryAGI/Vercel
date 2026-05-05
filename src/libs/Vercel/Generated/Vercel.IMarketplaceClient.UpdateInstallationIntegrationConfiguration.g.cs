@@ -30,6 +30,25 @@ namespace Vercel
         /// <param name="integrationConfigurationId"></param>
         /// <param name="resourceId"></param>
         /// <param name="itemId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse> UpdateInstallationIntegrationConfigurationAsResponseAsync(
+            string integrationConfigurationId,
+            string resourceId,
+            string itemId,
+
+            global::Vercel.UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Patch an existing experimentation item<br/>
+        /// Patch an existing experimentation item
+        /// </summary>
+        /// <param name="integrationConfigurationId"></param>
+        /// <param name="resourceId"></param>
+        /// <param name="itemId"></param>
         /// <param name="slug"></param>
         /// <param name="origin"></param>
         /// <param name="name"></param>

@@ -47,10 +47,11 @@ namespace Vercel
         public global::Vercel.OneOf<object, int?>? SnapshotExpiration { get; set; }
 
         /// <summary>
-        /// Network access policy for the sandbox.\n    Controls which external hosts the sandbox can communicate with.\n    Use \"allow-all\" mode to allow all traffic, \"deny-all\" to block all traffic or \"custom\" to provide specific rules.
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("networkPolicy")]
-        public global::Vercel.UpdateSandboxRequestNetworkPolicy? NetworkPolicy { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>))]
+        public global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
 
         /// <summary>
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
@@ -101,9 +102,7 @@ namespace Vercel
         /// Default snapshot expiration time in milliseconds. Set to 0 to disable expiration. When set, this value is used as the default expiration for all snapshots created for this sandbox.<br/>
         /// Example: 604800000
         /// </param>
-        /// <param name="networkPolicy">
-        /// Network access policy for the sandbox.\n    Controls which external hosts the sandbox can communicate with.\n    Use \"allow-all\" mode to allow all traffic, \"deny-all\" to block all traffic or \"custom\" to provide specific rules.
-        /// </param>
+        /// <param name="networkPolicy"></param>
         /// <param name="env">
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
@@ -124,7 +123,7 @@ namespace Vercel
             int? timeout,
             bool? persistent,
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
-            global::Vercel.UpdateSandboxRequestNetworkPolicy? networkPolicy,
+            global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? networkPolicy,
             global::System.Collections.Generic.Dictionary<string, string>? env,
             string? currentSnapshotId,
             global::System.Collections.Generic.Dictionary<string, string>? tags)
