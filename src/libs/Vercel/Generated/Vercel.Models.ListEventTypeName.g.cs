@@ -1628,6 +1628,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamGitRepositoryDispatchEventsToggled,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamGitRequireVerifiedCommitsToggled,
         /// <summary>
         /// 
@@ -2291,6 +2295,7 @@ namespace Vercel
                 ListEventTypeName.TeamEmailDomainUpdate => "team-email-domain-update",
                 ListEventTypeName.TeamEmuUpdated => "team-emu-updated",
                 ListEventTypeName.TeamEndedTrial => "team-ended-trial",
+                ListEventTypeName.TeamGitRepositoryDispatchEventsToggled => "team-git-repository-dispatch-events-toggled",
                 ListEventTypeName.TeamGitRequireVerifiedCommitsToggled => "team-git-require-verified-commits-toggled",
                 ListEventTypeName.TeamInviteBulkDelete => "team-invite-bulk-delete",
                 ListEventTypeName.TeamInviteCodeReset => "team-invite-code-reset",
@@ -2767,6 +2772,7 @@ namespace Vercel
                 "team-email-domain-update" => ListEventTypeName.TeamEmailDomainUpdate,
                 "team-emu-updated" => ListEventTypeName.TeamEmuUpdated,
                 "team-ended-trial" => ListEventTypeName.TeamEndedTrial,
+                "team-git-repository-dispatch-events-toggled" => ListEventTypeName.TeamGitRepositoryDispatchEventsToggled,
                 "team-git-require-verified-commits-toggled" => ListEventTypeName.TeamGitRequireVerifiedCommitsToggled,
                 "team-invite-bulk-delete" => ListEventTypeName.TeamInviteBulkDelete,
                 "team-invite-code-reset" => ListEventTypeName.TeamInviteCodeReset,

@@ -174,6 +174,12 @@ namespace Vercel
         public bool? RequireVerifiedCommits { get; set; }
 
         /// <summary>
+        /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting via `project.gitProviderOptions.disableRepositoryDispatchEvents`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("disableRepositoryDispatchEvents")]
+        public bool? DisableRepositoryDispatchEvents { get; set; }
+
+        /// <summary>
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("strictDeploymentProtectionSettings")]
@@ -360,6 +366,9 @@ namespace Vercel
         /// <param name="requireVerifiedCommits">
         /// When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created. Projects may override this via `project.gitProviderOptions.requireVerifiedCommits` (gated by `Project:Update`).
         /// </param>
+        /// <param name="disableRepositoryDispatchEvents">
+        /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting via `project.gitProviderOptions.disableRepositoryDispatchEvents`.
+        /// </param>
         /// <param name="strictDeploymentProtectionSettings">
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </param>
@@ -421,6 +430,7 @@ namespace Vercel
             bool? hideIpAddressesInLogDrains,
             global::System.Collections.Generic.IList<global::Vercel.TeamIpBucket>? ipBuckets,
             bool? requireVerifiedCommits,
+            bool? disableRepositoryDispatchEvents,
             global::Vercel.TeamStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.TeamStrictShareableLinks? strictShareableLinks,
             global::Vercel.TeamNsnbConfig? nsnbConfig,
@@ -455,6 +465,7 @@ namespace Vercel
             this.HideIpAddressesInLogDrains = hideIpAddressesInLogDrains;
             this.IpBuckets = ipBuckets;
             this.RequireVerifiedCommits = requireVerifiedCommits;
+            this.DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents;
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
             this.StrictShareableLinks = strictShareableLinks;
             this.NsnbConfig = nsnbConfig;

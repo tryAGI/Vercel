@@ -4,14 +4,14 @@
 namespace Vercel
 {
     /// <summary>
-    /// The token prefix used when showing a safe checksum-style fingerprint.
+    /// optional since entries prior to 2026-04-23 do not contain this field
     /// </summary>
     public enum UserEventPayloadVariant319TokenPrefix
     {
         /// <summary>
         /// 
         /// </summary>
-        Vcp,
+        Vca,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                UserEventPayloadVariant319TokenPrefix.Vcp => "vcp_",
+                UserEventPayloadVariant319TokenPrefix.Vca => "vca_",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "vcp_" => UserEventPayloadVariant319TokenPrefix.Vcp,
+                "vca_" => UserEventPayloadVariant319TokenPrefix.Vca,
                 _ => null,
             };
         }

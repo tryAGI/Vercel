@@ -49,6 +49,18 @@ namespace Vercel
         public double? RedirectStatusCode { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitBranch")]
+        public string? GitBranch { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuredBy")]
+        public string? ConfiguredBy { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -63,6 +75,8 @@ namespace Vercel
         /// <param name="target"></param>
         /// <param name="redirect"></param>
         /// <param name="redirectStatusCode"></param>
+        /// <param name="gitBranch"></param>
+        /// <param name="configuredBy"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -72,7 +86,9 @@ namespace Vercel
             string domain,
             string target,
             string? redirect,
-            double? redirectStatusCode)
+            double? redirectStatusCode,
+            string? gitBranch,
+            string? configuredBy)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
@@ -80,6 +96,8 @@ namespace Vercel
             this.Target = target ?? throw new global::System.ArgumentNullException(nameof(target));
             this.Redirect = redirect;
             this.RedirectStatusCode = redirectStatusCode;
+            this.GitBranch = gitBranch;
+            this.ConfiguredBy = configuredBy;
         }
 
         /// <summary>

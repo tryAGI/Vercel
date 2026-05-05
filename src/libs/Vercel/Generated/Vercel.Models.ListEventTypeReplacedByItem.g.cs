@@ -1627,6 +1627,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamGitRepositoryDispatchEventsToggled,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamGitRequireVerifiedCommitsToggled,
         /// <summary>
         /// 
@@ -2290,6 +2294,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.TeamEmailDomainUpdate => "team-email-domain-update",
                 ListEventTypeReplacedByItem.TeamEmuUpdated => "team-emu-updated",
                 ListEventTypeReplacedByItem.TeamEndedTrial => "team-ended-trial",
+                ListEventTypeReplacedByItem.TeamGitRepositoryDispatchEventsToggled => "team-git-repository-dispatch-events-toggled",
                 ListEventTypeReplacedByItem.TeamGitRequireVerifiedCommitsToggled => "team-git-require-verified-commits-toggled",
                 ListEventTypeReplacedByItem.TeamInviteBulkDelete => "team-invite-bulk-delete",
                 ListEventTypeReplacedByItem.TeamInviteCodeReset => "team-invite-code-reset",
@@ -2766,6 +2771,7 @@ namespace Vercel
                 "team-email-domain-update" => ListEventTypeReplacedByItem.TeamEmailDomainUpdate,
                 "team-emu-updated" => ListEventTypeReplacedByItem.TeamEmuUpdated,
                 "team-ended-trial" => ListEventTypeReplacedByItem.TeamEndedTrial,
+                "team-git-repository-dispatch-events-toggled" => ListEventTypeReplacedByItem.TeamGitRepositoryDispatchEventsToggled,
                 "team-git-require-verified-commits-toggled" => ListEventTypeReplacedByItem.TeamGitRequireVerifiedCommitsToggled,
                 "team-invite-bulk-delete" => ListEventTypeReplacedByItem.TeamInviteBulkDelete,
                 "team-invite-code-reset" => ListEventTypeReplacedByItem.TeamInviteCodeReset,
