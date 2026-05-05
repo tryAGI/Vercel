@@ -24,6 +24,21 @@ namespace Vercel
         /// This endpoint allows the partner to submit an invoice to Vercel. The invoice is created in Vercel's billing system and sent to the customer. Depending on the type of billing plan, the invoice can be sent at a time of signup, at the start of the billing period, or at the end of the billing period.&lt;br/&gt; &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request. &lt;br/&gt; There are several limitations to the invoice submission:&lt;br/&gt; &lt;br/&gt; 1. A resource can only be billed once per the billing period and the billing plan.&lt;br/&gt; 2. The billing plan used to bill the resource must have been active for this resource during the billing period.&lt;br/&gt; 3. The billing plan used must be a subscription plan.&lt;br/&gt; 4. The interim usage data must be sent hourly for all types of subscriptions. See [Send subscription billing and usage data](#send-subscription-billing-and-usage-data) API on how to send interim billing and usage data.&lt;br/&gt;
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.SubmitInvoiceResponse>> SubmitInvoiceAsResponseAsync(
+            string integrationConfigurationId,
+
+            global::Vercel.SubmitInvoiceRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Submit Invoice<br/>
+        /// This endpoint allows the partner to submit an invoice to Vercel. The invoice is created in Vercel's billing system and sent to the customer. Depending on the type of billing plan, the invoice can be sent at a time of signup, at the start of the billing period, or at the end of the billing period.&lt;br/&gt; &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request. &lt;br/&gt; There are several limitations to the invoice submission:&lt;br/&gt; &lt;br/&gt; 1. A resource can only be billed once per the billing period and the billing plan.&lt;br/&gt; 2. The billing plan used to bill the resource must have been active for this resource during the billing period.&lt;br/&gt; 3. The billing plan used must be a subscription plan.&lt;br/&gt; 4. The interim usage data must be sent hourly for all types of subscriptions. See [Send subscription billing and usage data](#send-subscription-billing-and-usage-data) API on how to send interim billing and usage data.&lt;br/&gt;
+        /// </summary>
+        /// <param name="integrationConfigurationId"></param>
         /// <param name="externalId"></param>
         /// <param name="invoiceDate">
         /// Invoice date. Must be within the period's start and end.

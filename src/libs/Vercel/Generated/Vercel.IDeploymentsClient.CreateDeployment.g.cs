@@ -49,6 +49,35 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateDeploymentResponse>> CreateDeploymentAsResponseAsync(
+
+            global::Vercel.CreateDeploymentRequest request,
+            global::Vercel.CreateDeploymentForceNew? forceNew = default,
+            global::Vercel.CreateDeploymentSkipAutoDetectionConfirmation? skipAutoDetectionConfirmation = default,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create a new deployment<br/>
+        /// Create a new deployment with all the required and intended data. If the deployment is not a git deployment, all files must be provided with the request, either referenced or inlined. Additionally, a deployment id can be specified to redeploy a previous deployment.
+        /// </summary>
+        /// <param name="forceNew">
+        /// Forces a new deployment even if there is a previous similar deployment
+        /// </param>
+        /// <param name="skipAutoDetectionConfirmation">
+        /// Allows to skip framework detection so the API would not fail to ask for confirmation
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="customEnvironmentSlugOrId">
         /// Deploy to a custom environment, which will override the default environment
         /// </param>

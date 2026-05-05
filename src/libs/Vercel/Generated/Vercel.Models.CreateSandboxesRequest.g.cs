@@ -9,6 +9,13 @@ namespace Vercel
     public sealed partial class CreateSandboxesRequest
     {
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("networkPolicy")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>))]
+        public global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
+
+        /// <summary>
         /// Resources to define the VM
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resources")]
@@ -54,12 +61,6 @@ namespace Vercel
         /// <example>300000</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("timeout")]
         public int? Timeout { get; set; }
-
-        /// <summary>
-        /// Network access policy for the sandbox.\n    Controls which external hosts the sandbox can communicate with.\n    Use \"allow-all\" mode to allow all traffic, \"deny-all\" to block all traffic or \"custom\" to provide specific rules.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("networkPolicy")]
-        public global::Vercel.CreateSandboxesRequestNetworkPolicy? NetworkPolicy { get; set; }
 
         /// <summary>
         /// Default environment variables for the sandbox. These are inherited by all commands unless overridden.<br/>
@@ -111,6 +112,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateSandboxesRequest" /> class.
         /// </summary>
+        /// <param name="networkPolicy"></param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
@@ -133,9 +135,6 @@ namespace Vercel
         /// <param name="timeout">
         /// Maximum duration in milliseconds that the sandbox can run before being automatically stopped.<br/>
         /// Example: 300000
-        /// </param>
-        /// <param name="networkPolicy">
-        /// Network access policy for the sandbox.\n    Controls which external hosts the sandbox can communicate with.\n    Use \"allow-all\" mode to allow all traffic, \"deny-all\" to block all traffic or \"custom\" to provide specific rules.
         /// </param>
         /// <param name="env">
         /// Default environment variables for the sandbox. These are inherited by all commands unless overridden.<br/>
@@ -162,26 +161,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSandboxesRequest(
+            global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>? networkPolicy,
             global::Vercel.CreateSandboxesRequestResources? resources,
             global::Vercel.CreateSandboxesRequestRuntime? runtime,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestSourceVariant1, global::Vercel.CreateSandboxesRequestSourceVariant2, global::Vercel.CreateSandboxesRequestSourceVariant3>? source,
             string? projectId,
             global::System.Collections.Generic.IList<int>? ports,
             int? timeout,
-            global::Vercel.CreateSandboxesRequestNetworkPolicy? networkPolicy,
             global::System.Collections.Generic.Dictionary<string, string>? env,
             string? name,
             bool? persistent,
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
             global::System.Collections.Generic.Dictionary<string, string>? tags)
         {
+            this.NetworkPolicy = networkPolicy;
             this.Resources = resources;
             this.Runtime = runtime;
             this.Source = source;
             this.ProjectId = projectId;
             this.Ports = ports;
             this.Timeout = timeout;
-            this.NetworkPolicy = networkPolicy;
             this.Env = env;
             this.Name = name;
             this.Persistent = persistent;

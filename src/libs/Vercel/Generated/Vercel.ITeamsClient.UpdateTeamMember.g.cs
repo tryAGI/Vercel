@@ -39,6 +39,29 @@ namespace Vercel
         /// The unique team identifier<br/>
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateTeamMemberResponse>> UpdateTeamMemberAsResponseAsync(
+            string uid,
+            string teamId,
+
+            global::Vercel.UpdateTeamMemberRequest request,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Update a Team Member<br/>
+        /// Update the membership of a Team Member on the Team specified by `teamId`, such as changing the _role_ of the member, or confirming a request to join the Team for an unconfirmed member. The authenticated user must be an `OWNER` of the Team.
+        /// </summary>
+        /// <param name="uid">
+        /// The ID of the member.<br/>
+        /// Example: ndfasllgPyCtREAqxxdyFKb
+        /// </param>
+        /// <param name="teamId">
+        /// The unique team identifier<br/>
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
         /// <param name="confirmed">
         /// Accept a user who requested access to the team.<br/>
         /// Example: true
