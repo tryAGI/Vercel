@@ -62679,7 +62679,7 @@
                                   false,
                                   true
                                 ],
-                                "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events"
+                                "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`."
                               },
                               "requireVerifiedCommits": {
                                 "type": "boolean",
@@ -72553,7 +72553,7 @@
                                   false,
                                   true
                                 ],
-                                "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events"
+                                "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`."
                               },
                               "requireVerifiedCommits": {
                                 "type": "boolean",
@@ -76116,7 +76116,7 @@
                                       false,
                                       true
                                     ],
-                                    "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events"
+                                    "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`."
                                   },
                                   "requireVerifiedCommits": {
                                     "type": "boolean",
@@ -81922,7 +81922,7 @@
                                       false,
                                       true
                                     ],
-                                    "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events"
+                                    "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`."
                                   },
                                   "requireVerifiedCommits": {
                                     "type": "boolean",
@@ -87839,7 +87839,7 @@
                             false,
                             true
                           ],
-                          "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events"
+                          "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`."
                         },
                         "requireVerifiedCommits": {
                           "type": "boolean",
@@ -93989,7 +93989,7 @@
                             false,
                             true
                           ],
-                          "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events"
+                          "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`."
                         },
                         "requireVerifiedCommits": {
                           "type": "boolean",
@@ -99720,7 +99720,7 @@
                             false,
                             true
                           ],
-                          "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events"
+                          "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`."
                         },
                         "requireVerifiedCommits": {
                           "type": "boolean",
@@ -118267,7 +118267,7 @@
                             false,
                             true
                           ],
-                          "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events"
+                          "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`."
                         },
                         "requireVerifiedCommits": {
                           "type": "boolean",
@@ -135946,6 +135946,11 @@
                     "example": true,
                     "description": "When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created."
                   },
+                  "disableRepositoryDispatchEvents": {
+                    "type": "boolean",
+                    "example": false,
+                    "description": "Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting."
+                  },
                   "defaultDeploymentProtection": {
                     "type": "object",
                     "description": "Default deployment protection settings for new projects.",
@@ -144180,6 +144185,7 @@
               "project-git-create-deployments-toggled",
               "project-git-require-verified-commits-toggled",
               "team-git-require-verified-commits-toggled",
+              "team-git-repository-dispatch-events-toggled",
               "project-git-commit-status-toggled",
               "project-git-lfs-toggled",
               "project-consolidated-git-commit-status-updated",
@@ -156454,6 +156460,22 @@
               },
               {
                 "properties": {
+                  "disableRepositoryDispatchEvents": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  }
+                },
+                "required": [
+                  "disableRepositoryDispatchEvents"
+                ],
+                "type": "object",
+                "description": "The payload of the event, if requested."
+              },
+              {
+                "properties": {
                   "projectId": {
                     "type": "string"
                   },
@@ -161798,6 +161820,7 @@
               "project-git-create-deployments-toggled",
               "project-git-require-verified-commits-toggled",
               "team-git-require-verified-commits-toggled",
+              "team-git-repository-dispatch-events-toggled",
               "project-git-commit-status-toggled",
               "project-git-lfs-toggled",
               "project-consolidated-git-commit-status-updated",
@@ -162322,6 +162345,7 @@
                 "project-git-create-deployments-toggled",
                 "project-git-require-verified-commits-toggled",
                 "team-git-require-verified-commits-toggled",
+                "team-git-repository-dispatch-events-toggled",
                 "project-git-commit-status-toggled",
                 "project-git-lfs-toggled",
                 "project-consolidated-git-commit-status-updated",
@@ -165331,6 +165355,14 @@
               true
             ],
             "description": "When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created. Projects may override this via `project.gitProviderOptions.requireVerifiedCommits` (gated by `Project:Update`)."
+          },
+          "disableRepositoryDispatchEvents": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting via `project.gitProviderOptions.disableRepositoryDispatchEvents`."
           },
           "strictDeploymentProtectionSettings": {
             "properties": {

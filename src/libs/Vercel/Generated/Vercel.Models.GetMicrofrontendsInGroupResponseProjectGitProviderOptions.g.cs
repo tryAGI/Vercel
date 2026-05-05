@@ -17,7 +17,7 @@ namespace Vercel
         public required global::Vercel.GetMicrofrontendsInGroupResponseProjectGitProviderOptionsCreateDeployments CreateDeployments { get; set; }
 
         /// <summary>
-        /// Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events
+        /// Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("disableRepositoryDispatchEvents")]
         public bool? DisableRepositoryDispatchEvents { get; set; }
@@ -53,7 +53,7 @@ namespace Vercel
         /// Whether the Vercel bot should automatically create GitHub deployments https://docs.github.com/en/rest/deployments/deployments#about-deployments NOTE: repository-dispatch events should be used instead
         /// </param>
         /// <param name="disableRepositoryDispatchEvents">
-        /// Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events
+        /// Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`.
         /// </param>
         /// <param name="requireVerifiedCommits">
         /// Whether the project requires commits to be signed &amp; verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`.

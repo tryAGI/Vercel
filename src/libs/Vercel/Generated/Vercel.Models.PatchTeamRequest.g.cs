@@ -122,6 +122,14 @@ namespace Vercel
         public bool? RequireVerifiedCommits { get; set; }
 
         /// <summary>
+        /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting.<br/>
+        /// Example: false
+        /// </summary>
+        /// <example>false</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("disableRepositoryDispatchEvents")]
+        public bool? DisableRepositoryDispatchEvents { get; set; }
+
+        /// <summary>
         /// Default deployment protection settings for new projects.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultDeploymentProtection")]
@@ -228,6 +236,10 @@ namespace Vercel
         /// When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created.<br/>
         /// Example: true
         /// </param>
+        /// <param name="disableRepositoryDispatchEvents">
+        /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting.<br/>
+        /// Example: false
+        /// </param>
         /// <param name="defaultDeploymentProtection">
         /// Default deployment protection settings for new projects.
         /// </param>
@@ -262,6 +274,7 @@ namespace Vercel
             bool? hideIpAddresses,
             bool? hideIpAddressesInLogDrains,
             bool? requireVerifiedCommits,
+            bool? disableRepositoryDispatchEvents,
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
@@ -285,6 +298,7 @@ namespace Vercel
             this.HideIpAddresses = hideIpAddresses;
             this.HideIpAddressesInLogDrains = hideIpAddressesInLogDrains;
             this.RequireVerifiedCommits = requireVerifiedCommits;
+            this.DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
             this.DefaultExpirationSettings = defaultExpirationSettings;
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;

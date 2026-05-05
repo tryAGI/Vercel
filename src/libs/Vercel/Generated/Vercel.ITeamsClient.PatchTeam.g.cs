@@ -110,6 +110,10 @@ namespace Vercel
         /// When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created.<br/>
         /// Example: true
         /// </param>
+        /// <param name="disableRepositoryDispatchEvents">
+        /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting.<br/>
+        /// Example: false
+        /// </param>
         /// <param name="defaultDeploymentProtection">
         /// Default deployment protection settings for new projects.
         /// </param>
@@ -146,6 +150,7 @@ namespace Vercel
             bool? hideIpAddresses = default,
             bool? hideIpAddressesInLogDrains = default,
             bool? requireVerifiedCommits = default,
+            bool? disableRepositoryDispatchEvents = default,
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection = default,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings = default,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings = default,
