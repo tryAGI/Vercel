@@ -669,6 +669,14 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant132FactorsVariant2ItemVariant2OriginNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant144PreviousNewResourceBlockingPolicyJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant144PreviousNewResourceBlockingPolicyNullableJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant144NextNewResourceBlockingPolicyJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant144NextNewResourceBlockingPolicyNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant147TypeJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant147TypeNullableJsonConverter),
@@ -13685,7 +13693,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant143))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant144))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant144Previous))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant144PreviousNewResourceBlockingPolicy), TypeInfoPropertyName = "UserEventPayloadVariant144PreviousNewResourceBlockingPolicy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant144Next))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant144NextNewResourceBlockingPolicy), TypeInfoPropertyName = "UserEventPayloadVariant144NextNewResourceBlockingPolicy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant145))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant146))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant147))]

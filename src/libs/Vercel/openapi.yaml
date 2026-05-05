@@ -154570,12 +154570,20 @@
                       },
                       "enforcePercentage": {
                         "type": "number"
+                      },
+                      "newResourceBlockingPolicy": {
+                        "type": "string",
+                        "enum": [
+                          "block",
+                          "allow"
+                        ]
                       }
                     },
                     "required": [
                       "enabled",
                       "enforcePercentage",
-                      "mode"
+                      "mode",
+                      "newResourceBlockingPolicy"
                     ],
                     "type": "object"
                   },
@@ -154593,12 +154601,20 @@
                       },
                       "enforcePercentage": {
                         "type": "number"
+                      },
+                      "newResourceBlockingPolicy": {
+                        "type": "string",
+                        "enum": [
+                          "block",
+                          "allow"
+                        ]
                       }
                     },
                     "required": [
                       "enabled",
                       "enforcePercentage",
-                      "mode"
+                      "mode",
+                      "newResourceBlockingPolicy"
                     ],
                     "type": "object"
                   }

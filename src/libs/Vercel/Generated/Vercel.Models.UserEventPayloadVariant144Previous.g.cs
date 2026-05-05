@@ -30,6 +30,14 @@ namespace Vercel
         public required double EnforcePercentage { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("newResourceBlockingPolicy")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant144PreviousNewResourceBlockingPolicyJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UserEventPayloadVariant144PreviousNewResourceBlockingPolicy NewResourceBlockingPolicy { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -41,17 +49,20 @@ namespace Vercel
         /// <param name="enabled"></param>
         /// <param name="mode"></param>
         /// <param name="enforcePercentage"></param>
+        /// <param name="newResourceBlockingPolicy"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant144Previous(
             bool enabled,
             string mode,
-            double enforcePercentage)
+            double enforcePercentage,
+            global::Vercel.UserEventPayloadVariant144PreviousNewResourceBlockingPolicy newResourceBlockingPolicy)
         {
             this.Enabled = enabled;
             this.Mode = mode ?? throw new global::System.ArgumentNullException(nameof(mode));
             this.EnforcePercentage = enforcePercentage;
+            this.NewResourceBlockingPolicy = newResourceBlockingPolicy;
         }
 
         /// <summary>
