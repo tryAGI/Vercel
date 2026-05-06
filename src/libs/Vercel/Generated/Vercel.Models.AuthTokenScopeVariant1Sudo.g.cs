@@ -19,6 +19,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("verifiedAt")]
+        public double? VerifiedAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double ExpiresAt { get; set; }
@@ -36,14 +42,17 @@ namespace Vercel
         /// Possible step-up auth origins
         /// </param>
         /// <param name="expiresAt"></param>
+        /// <param name="verifiedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthTokenScopeVariant1Sudo(
             global::Vercel.AuthTokenScopeVariant1SudoOrigin origin,
-            double expiresAt)
+            double expiresAt,
+            double? verifiedAt)
         {
             this.Origin = origin;
+            this.VerifiedAt = verifiedAt;
             this.ExpiresAt = expiresAt;
         }
 
