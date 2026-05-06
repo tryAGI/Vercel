@@ -949,6 +949,10 @@ namespace Vercel
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant276NewPlanNullableJsonConverter),
 
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant280SourceJsonConverter),
+
+            typeof(global::Vercel.JsonConverters.UserEventPayloadVariant280SourceNullableJsonConverter),
+
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant286PlanJsonConverter),
 
             typeof(global::Vercel.JsonConverters.UserEventPayloadVariant286PlanNullableJsonConverter),
@@ -14018,6 +14022,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant279))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant279InvitedBy))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant280))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant280Source), TypeInfoPropertyName = "UserEventPayloadVariant280Source2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant281))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant281UpdatedUser))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventPayloadVariant282))]

@@ -18,6 +18,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("requestedTeamSlug")]
+        public string? RequestedTeamSlug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestedUserName")]
         public string? RequestedUserName { get; set; }
 
@@ -46,6 +52,13 @@ namespace Vercel
         public string? BitbucketUsername { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPayloadVariant280SourceJsonConverter))]
+        public global::Vercel.UserEventPayloadVariant280Source? Source { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -55,28 +68,34 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventPayloadVariant280" /> class.
         /// </summary>
         /// <param name="requestedTeamName"></param>
+        /// <param name="requestedTeamSlug"></param>
         /// <param name="requestedUserName"></param>
         /// <param name="gitUsername"></param>
         /// <param name="githubUsername"></param>
         /// <param name="gitlabUsername"></param>
         /// <param name="bitbucketUsername"></param>
+        /// <param name="source"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPayloadVariant280(
             string requestedTeamName,
+            string? requestedTeamSlug,
             string? requestedUserName,
             string? gitUsername,
             string? githubUsername,
             string? gitlabUsername,
-            string? bitbucketUsername)
+            string? bitbucketUsername,
+            global::Vercel.UserEventPayloadVariant280Source? source)
         {
             this.RequestedTeamName = requestedTeamName ?? throw new global::System.ArgumentNullException(nameof(requestedTeamName));
+            this.RequestedTeamSlug = requestedTeamSlug;
             this.RequestedUserName = requestedUserName;
             this.GitUsername = gitUsername;
             this.GithubUsername = githubUsername;
             this.GitlabUsername = gitlabUsername;
             this.BitbucketUsername = bitbucketUsername;
+            this.Source = source;
         }
 
         /// <summary>

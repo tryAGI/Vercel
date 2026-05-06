@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        EmailOtp,
+        /// <summary>
+        /// 
+        /// </summary>
         Otp,
         /// <summary>
         /// 
@@ -38,6 +42,7 @@ namespace Vercel
         {
             return value switch
             {
+                AuthTokenScopeVariant1SudoOrigin.EmailOtp => "email-otp",
                 AuthTokenScopeVariant1SudoOrigin.Otp => "otp",
                 AuthTokenScopeVariant1SudoOrigin.RecoveryCode => "recovery-code",
                 AuthTokenScopeVariant1SudoOrigin.Totp => "totp",
@@ -52,6 +57,7 @@ namespace Vercel
         {
             return value switch
             {
+                "email-otp" => AuthTokenScopeVariant1SudoOrigin.EmailOtp,
                 "otp" => AuthTokenScopeVariant1SudoOrigin.Otp,
                 "recovery-code" => AuthTokenScopeVariant1SudoOrigin.RecoveryCode,
                 "totp" => AuthTokenScopeVariant1SudoOrigin.Totp,

@@ -30,6 +30,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamSlug")]
+        public string? TeamSlug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
         public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
 
@@ -63,6 +69,7 @@ namespace Vercel
         /// <param name="uid"></param>
         /// <param name="role"></param>
         /// <param name="origin"></param>
+        /// <param name="teamSlug"></param>
         /// <param name="teamRoles"></param>
         /// <param name="teamPermissions"></param>
         /// <param name="entitlements"></param>
@@ -74,6 +81,7 @@ namespace Vercel
             string uid,
             string? role,
             string? origin,
+            string? teamSlug,
             global::System.Collections.Generic.IList<string>? teamRoles,
             global::System.Collections.Generic.IList<string>? teamPermissions,
             global::System.Collections.Generic.IList<string>? entitlements,
@@ -82,6 +90,7 @@ namespace Vercel
             this.Role = role;
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Origin = origin;
+            this.TeamSlug = teamSlug;
             this.TeamRoles = teamRoles;
             this.TeamPermissions = teamPermissions;
             this.Entitlements = entitlements;

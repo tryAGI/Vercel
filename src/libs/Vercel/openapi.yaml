@@ -159874,6 +159874,9 @@
                   "origin": {
                     "type": "string"
                   },
+                  "teamSlug": {
+                    "type": "string"
+                  },
                   "teamRoles": {
                     "items": {
                       "type": "string"
@@ -159921,6 +159924,9 @@
                   "requestedTeamName": {
                     "type": "string"
                   },
+                  "requestedTeamSlug": {
+                    "type": "string"
+                  },
                   "requestedUserName": {
                     "type": "string"
                   },
@@ -159935,6 +159941,29 @@
                   },
                   "bitbucketUsername": {
                     "type": "string"
+                  },
+                  "source": {
+                    "type": "string",
+                    "enum": [
+                      "link",
+                      "import",
+                      "teams",
+                      "saml",
+                      "github",
+                      "gitlab",
+                      "bitbucket",
+                      "mail",
+                      "dsync",
+                      "feedback",
+                      "organization-teams",
+                      "nsnb-auto-approve",
+                      "nsnb-hobby-upgrade",
+                      "nsnb-request-access",
+                      "nsnb-viewer-upgrade",
+                      "nsnb-invite",
+                      "nsnb-redeploy",
+                      "nsnb-redeploy-attribution-card"
+                    ]
                   }
                 },
                 "required": [
@@ -159946,6 +159975,9 @@
               {
                 "properties": {
                   "directoryType": {
+                    "type": "string"
+                  },
+                  "ssoType": {
                     "type": "string"
                   },
                   "updatedUser": {
@@ -159973,6 +160005,9 @@
                     "type": "string"
                   },
                   "origin": {
+                    "type": "string"
+                  },
+                  "teamSlug": {
                     "type": "string"
                   }
                 },
@@ -166024,9 +166059,13 @@
                             "otp",
                             "totp",
                             "webauthn",
-                            "recovery-code"
+                            "recovery-code",
+                            "email-otp"
                           ],
                           "description": "Possible step-up auth origins"
+                        },
+                        "verifiedAt": {
+                          "type": "number"
                         },
                         "expiresAt": {
                           "type": "number"
