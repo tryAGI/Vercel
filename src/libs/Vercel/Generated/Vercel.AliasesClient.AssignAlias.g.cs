@@ -49,10 +49,10 @@ namespace Vercel
 
         /// <summary>
         /// Assign an Alias<br/>
-        /// Creates a new alias for the deployment with the given deployment ID. The authenticated user or team must own this deployment. If the desired alias is already assigned to another deployment, then it will be removed from the old deployment and assigned to the new one.
+        /// Creates a new alias for the deployment resolved from the given deployment or alias ID or URL. The authenticated user or team must own this deployment. If the desired alias is already assigned to another deployment, then it will be removed from the old deployment and assigned to the new one.
         /// </summary>
         /// <param name="id">
-        /// The ID of the deployment the aliases should be listed for<br/>
+        /// The deployment or alias ID or URL to assign from<br/>
         /// Example: dpl_FjvFJncQHQcZMznrUm9EoB8sFuPa
         /// </param>
         /// <param name="teamId">
@@ -88,10 +88,10 @@ namespace Vercel
         }
         /// <summary>
         /// Assign an Alias<br/>
-        /// Creates a new alias for the deployment with the given deployment ID. The authenticated user or team must own this deployment. If the desired alias is already assigned to another deployment, then it will be removed from the old deployment and assigned to the new one.
+        /// Creates a new alias for the deployment resolved from the given deployment or alias ID or URL. The authenticated user or team must own this deployment. If the desired alias is already assigned to another deployment, then it will be removed from the old deployment and assigned to the new one.
         /// </summary>
         /// <param name="id">
-        /// The ID of the deployment the aliases should be listed for<br/>
+        /// The deployment or alias ID or URL to assign from<br/>
         /// Example: dpl_FjvFJncQHQcZMznrUm9EoB8sFuPa
         /// </param>
         /// <param name="teamId">
@@ -682,10 +682,10 @@ namespace Vercel
         }
         /// <summary>
         /// Assign an Alias<br/>
-        /// Creates a new alias for the deployment with the given deployment ID. The authenticated user or team must own this deployment. If the desired alias is already assigned to another deployment, then it will be removed from the old deployment and assigned to the new one.
+        /// Creates a new alias for the deployment resolved from the given deployment or alias ID or URL. The authenticated user or team must own this deployment. If the desired alias is already assigned to another deployment, then it will be removed from the old deployment and assigned to the new one.
         /// </summary>
         /// <param name="id">
-        /// The ID of the deployment the aliases should be listed for<br/>
+        /// The deployment or alias ID or URL to assign from<br/>
         /// Example: dpl_FjvFJncQHQcZMznrUm9EoB8sFuPa
         /// </param>
         /// <param name="teamId">
