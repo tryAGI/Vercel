@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Blocked,
+        /// <summary>
+        /// 
+        /// </summary>
         Building,
         /// <summary>
         /// 
@@ -46,6 +50,7 @@ namespace Vercel
         {
             return value switch
             {
+                GetMicrofrontendsInGroupResponseProjectTargetsReadyState.Blocked => "BLOCKED",
                 GetMicrofrontendsInGroupResponseProjectTargetsReadyState.Building => "BUILDING",
                 GetMicrofrontendsInGroupResponseProjectTargetsReadyState.Canceled => "CANCELED",
                 GetMicrofrontendsInGroupResponseProjectTargetsReadyState.Error => "ERROR",
@@ -62,6 +67,7 @@ namespace Vercel
         {
             return value switch
             {
+                "BLOCKED" => GetMicrofrontendsInGroupResponseProjectTargetsReadyState.Blocked,
                 "BUILDING" => GetMicrofrontendsInGroupResponseProjectTargetsReadyState.Building,
                 "CANCELED" => GetMicrofrontendsInGroupResponseProjectTargetsReadyState.Canceled,
                 "ERROR" => GetMicrofrontendsInGroupResponseProjectTargetsReadyState.Error,

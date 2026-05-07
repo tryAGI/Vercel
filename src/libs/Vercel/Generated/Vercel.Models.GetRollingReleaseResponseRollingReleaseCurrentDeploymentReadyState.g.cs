@@ -12,6 +12,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Blocked,
+        /// <summary>
+        /// 
+        /// </summary>
         Building,
         /// <summary>
         /// 
@@ -47,6 +51,7 @@ namespace Vercel
         {
             return value switch
             {
+                GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState.Blocked => "BLOCKED",
                 GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState.Building => "BUILDING",
                 GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState.Canceled => "CANCELED",
                 GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState.Error => "ERROR",
@@ -63,6 +68,7 @@ namespace Vercel
         {
             return value switch
             {
+                "BLOCKED" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState.Blocked,
                 "BUILDING" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState.Building,
                 "CANCELED" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState.Canceled,
                 "ERROR" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState.Error,

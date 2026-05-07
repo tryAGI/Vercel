@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Blocked,
+        /// <summary>
+        /// 
+        /// </summary>
         Building,
         /// <summary>
         /// 
@@ -46,6 +50,7 @@ namespace Vercel
         {
             return value switch
             {
+                GetDeploymentResponseVariant1Status.Blocked => "BLOCKED",
                 GetDeploymentResponseVariant1Status.Building => "BUILDING",
                 GetDeploymentResponseVariant1Status.Canceled => "CANCELED",
                 GetDeploymentResponseVariant1Status.Error => "ERROR",
@@ -62,6 +67,7 @@ namespace Vercel
         {
             return value switch
             {
+                "BLOCKED" => GetDeploymentResponseVariant1Status.Blocked,
                 "BUILDING" => GetDeploymentResponseVariant1Status.Building,
                 "CANCELED" => GetDeploymentResponseVariant1Status.Canceled,
                 "ERROR" => GetDeploymentResponseVariant1Status.Error,
