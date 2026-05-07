@@ -1,5 +1,6 @@
 #nullable enable
 
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
@@ -11,6 +12,7 @@ namespace Vercel;
 /// </summary>
 public sealed class SourceGenerationContext : JsonSerializerContext
 {
+    [UnconditionalSuppressMessage("Trimming", "IL2026", Justification = "Vercel's generated OpenAPI model graph currently exceeds source-generation limits; this fallback preserves buildability until the spec can be narrowed.")]
     private static JsonSerializerOptions CreateDefaultOptions()
     {
         var options = new JsonSerializerOptions
@@ -38,6 +40,7 @@ public sealed class SourceGenerationContext : JsonSerializerContext
     /// <summary>
     /// Creates a serializer context with custom options.
     /// </summary>
+    [UnconditionalSuppressMessage("Trimming", "IL2026", Justification = "Vercel's generated OpenAPI model graph currently exceeds source-generation limits; this fallback preserves buildability until the spec can be narrowed.")]
     public SourceGenerationContext(JsonSerializerOptions? options)
         : base(options ?? CreateDefaultOptions())
     {
@@ -48,6 +51,7 @@ public sealed class SourceGenerationContext : JsonSerializerContext
     protected override JsonSerializerOptions? GeneratedSerializerOptions => Options;
 
     /// <inheritdoc />
+    [UnconditionalSuppressMessage("Trimming", "IL2026", Justification = "Vercel's generated OpenAPI model graph currently exceeds source-generation limits; this fallback preserves buildability until the spec can be narrowed.")]
     public override JsonTypeInfo? GetTypeInfo(Type type)
     {
         ArgumentNullException.ThrowIfNull(type);
