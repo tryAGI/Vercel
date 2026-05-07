@@ -116,11 +116,10 @@ namespace Vercel
         public string? ConfigurationId { get; set; }
 
         /// <summary>
-        /// 
+        /// Provider-specific content hint metadata.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contentHint")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant1, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant2, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant3, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant4, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant5, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant6, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant7, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant8, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant9, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant10, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant11, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant12, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant13, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant14, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant15, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant16, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant17>))]
-        public global::Vercel.OneOf<global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant1, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant2, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant3, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant4, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant5, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant6, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant7, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant8, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant9, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant10, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant11, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant12, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant13, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant14, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant15, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant16, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant17>? ContentHint { get; set; }
+        public object? ContentHint { get; set; }
 
         /// <summary>
         /// Similar to `contentHints`, but should not be exposed to the user.
@@ -170,7 +169,9 @@ namespace Vercel
         /// </param>
         /// <param name="decrypted"></param>
         /// <param name="configurationId"></param>
-        /// <param name="contentHint"></param>
+        /// <param name="contentHint">
+        /// Provider-specific content hint metadata.
+        /// </param>
         /// <param name="internalContentHint">
         /// Similar to `contentHints`, but should not be exposed to the user.
         /// </param>
@@ -197,7 +198,7 @@ namespace Vercel
             string? legacyValue,
             bool? decrypted,
             string? configurationId,
-            global::Vercel.OneOf<global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant1, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant2, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant3, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant4, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant5, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant6, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant7, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant8, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant9, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant10, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant11, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant12, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant13, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant14, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant15, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant16, global::Vercel.RemoveProjectEnvResponseVariant2ContentHintVariant17>? contentHint,
+            object? contentHint,
             global::Vercel.RemoveProjectEnvResponseVariant2InternalContentHint? internalContentHint,
             string? comment,
             global::System.Collections.Generic.IList<string>? customEnvironmentIds)

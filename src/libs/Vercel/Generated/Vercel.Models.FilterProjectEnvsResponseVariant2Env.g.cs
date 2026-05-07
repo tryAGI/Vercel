@@ -116,11 +116,10 @@ namespace Vercel
         public string? EdgeConfigTokenId { get; set; }
 
         /// <summary>
-        /// 
+        /// Provider-specific content hint metadata.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contentHint")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant1, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant2, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant3, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant4, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant5, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant6, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant7, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant8, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant9, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant10, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant11, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant12, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant13, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant14, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant15, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant16, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant17>))]
-        public global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant1, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant2, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant3, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant4, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant5, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant6, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant7, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant8, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant9, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant10, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant11, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant12, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant13, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant14, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant15, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant16, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant17>? ContentHint { get; set; }
+        public object? ContentHint { get; set; }
 
         /// <summary>
         /// Similar to `contentHints`, but should not be exposed to the user.
@@ -176,7 +175,9 @@ namespace Vercel
         /// <param name="gitBranch"></param>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigTokenId"></param>
-        /// <param name="contentHint"></param>
+        /// <param name="contentHint">
+        /// Provider-specific content hint metadata.
+        /// </param>
         /// <param name="internalContentHint">
         /// Similar to `contentHints`, but should not be exposed to the user.
         /// </param>
@@ -204,7 +205,7 @@ namespace Vercel
             string? gitBranch,
             string? edgeConfigId,
             string? edgeConfigTokenId,
-            global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant1, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant2, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant3, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant4, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant5, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant6, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant7, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant8, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant9, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant10, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant11, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant12, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant13, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant14, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant15, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant16, global::Vercel.FilterProjectEnvsResponseVariant2EnvContentHintVariant17>? contentHint,
+            object? contentHint,
             global::Vercel.FilterProjectEnvsResponseVariant2EnvInternalContentHint? internalContentHint,
             string? comment,
             global::System.Collections.Generic.IList<string>? customEnvironmentIds,

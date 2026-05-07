@@ -116,11 +116,10 @@ namespace Vercel
         public string? EdgeConfigTokenId { get; set; }
 
         /// <summary>
-        /// 
+        /// Provider-specific content hint metadata.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contentHint")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant1, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant2, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant3, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant4, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant5, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant6, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant7, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant8, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant9, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant10, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant11, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant12, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant13, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant14, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant15, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant16, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant17>))]
-        public global::Vercel.OneOf<global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant1, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant2, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant3, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant4, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant5, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant6, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant7, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant8, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant9, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant10, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant11, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant12, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant13, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant14, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant15, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant16, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant17>? ContentHint { get; set; }
+        public object? ContentHint { get; set; }
 
         /// <summary>
         /// Similar to `contentHints`, but should not be exposed to the user.
@@ -170,7 +169,9 @@ namespace Vercel
         /// <param name="gitBranch"></param>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigTokenId"></param>
-        /// <param name="contentHint"></param>
+        /// <param name="contentHint">
+        /// Provider-specific content hint metadata.
+        /// </param>
         /// <param name="internalContentHint">
         /// Similar to `contentHints`, but should not be exposed to the user.
         /// </param>
@@ -197,7 +198,7 @@ namespace Vercel
             string? gitBranch,
             string? edgeConfigId,
             string? edgeConfigTokenId,
-            global::Vercel.OneOf<global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant1, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant2, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant3, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant4, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant5, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant6, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant7, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant8, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant9, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant10, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant11, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant12, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant13, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant14, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant15, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant16, global::Vercel.UpdateMicrofrontendsResponseEnvItemContentHintVariant17>? contentHint,
+            object? contentHint,
             global::Vercel.UpdateMicrofrontendsResponseEnvItemInternalContentHint? internalContentHint,
             string? comment,
             global::System.Collections.Generic.IList<string>? customEnvironmentIds)
