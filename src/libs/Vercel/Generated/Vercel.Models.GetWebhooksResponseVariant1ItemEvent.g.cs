@@ -92,6 +92,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DeploymentBlocked,
+        /// <summary>
+        /// 
+        /// </summary>
         DeploymentBuildRequested,
         /// <summary>
         /// 
@@ -487,6 +491,7 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemEvent.DeploymentErrorHyphen => "deployment-error",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentPreparedHyphen => "deployment-prepared",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentReadyHyphen => "deployment-ready",
+                GetWebhooksResponseVariant1ItemEvent.DeploymentBlocked => "deployment.blocked",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentBuildRequested => "deployment.build-requested",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentCanceled => "deployment.canceled",
                 GetWebhooksResponseVariant1ItemEvent.DeploymentCheckRerequested => "deployment.check-rerequested",
@@ -608,6 +613,7 @@ namespace Vercel
                 "deployment-error" => GetWebhooksResponseVariant1ItemEvent.DeploymentErrorHyphen,
                 "deployment-prepared" => GetWebhooksResponseVariant1ItemEvent.DeploymentPreparedHyphen,
                 "deployment-ready" => GetWebhooksResponseVariant1ItemEvent.DeploymentReadyHyphen,
+                "deployment.blocked" => GetWebhooksResponseVariant1ItemEvent.DeploymentBlocked,
                 "deployment.build-requested" => GetWebhooksResponseVariant1ItemEvent.DeploymentBuildRequested,
                 "deployment.canceled" => GetWebhooksResponseVariant1ItemEvent.DeploymentCanceled,
                 "deployment.check-rerequested" => GetWebhooksResponseVariant1ItemEvent.DeploymentCheckRerequested,

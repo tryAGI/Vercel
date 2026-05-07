@@ -12007,6 +12007,7 @@
                             "QUEUED",
                             "BUILDING",
                             "ERROR",
+                            "BLOCKED",
                             "INITIALIZING",
                             "READY",
                             "CANCELED"
@@ -12287,6 +12288,7 @@
                             "QUEUED",
                             "BUILDING",
                             "ERROR",
+                            "BLOCKED",
                             "INITIALIZING",
                             "READY",
                             "CANCELED"
@@ -14845,6 +14847,7 @@
                             "QUEUED",
                             "BUILDING",
                             "ERROR",
+                            "BLOCKED",
                             "INITIALIZING",
                             "READY",
                             "CANCELED"
@@ -15125,6 +15128,7 @@
                             "QUEUED",
                             "BUILDING",
                             "ERROR",
+                            "BLOCKED",
                             "INITIALIZING",
                             "READY",
                             "CANCELED"
@@ -16653,6 +16657,7 @@
                         "QUEUED",
                         "BUILDING",
                         "ERROR",
+                        "BLOCKED",
                         "INITIALIZING",
                         "READY",
                         "CANCELED"
@@ -16933,6 +16938,7 @@
                         "QUEUED",
                         "BUILDING",
                         "ERROR",
+                        "BLOCKED",
                         "INITIALIZING",
                         "READY",
                         "CANCELED"
@@ -20581,6 +20587,7 @@
                         "QUEUED",
                         "BUILDING",
                         "ERROR",
+                        "BLOCKED",
                         "INITIALIZING",
                         "READY",
                         "CANCELED"
@@ -20861,6 +20868,7 @@
                         "QUEUED",
                         "BUILDING",
                         "ERROR",
+                        "BLOCKED",
                         "INITIALIZING",
                         "READY",
                         "CANCELED"
@@ -59233,6 +59241,7 @@
                                   "enum": [
                                     "BUILDING",
                                     "ERROR",
+                                    "BLOCKED",
                                     "INITIALIZING",
                                     "QUEUED",
                                     "READY",
@@ -60659,6 +60668,7 @@
                                   "enum": [
                                     "BUILDING",
                                     "ERROR",
+                                    "BLOCKED",
                                     "INITIALIZING",
                                     "QUEUED",
                                     "READY",
@@ -111425,6 +111435,7 @@
                               "enum": [
                                 "BUILDING",
                                 "ERROR",
+                                "BLOCKED",
                                 "INITIALIZING",
                                 "QUEUED",
                                 "READY",
@@ -111511,6 +111522,7 @@
                               "enum": [
                                 "BUILDING",
                                 "ERROR",
+                                "BLOCKED",
                                 "INITIALIZING",
                                 "QUEUED",
                                 "READY",
@@ -112000,6 +112012,7 @@
                               "enum": [
                                 "BUILDING",
                                 "ERROR",
+                                "BLOCKED",
                                 "INITIALIZING",
                                 "QUEUED",
                                 "READY",
@@ -112086,6 +112099,7 @@
                               "enum": [
                                 "BUILDING",
                                 "ERROR",
+                                "BLOCKED",
                                 "INITIALIZING",
                                 "QUEUED",
                                 "READY",
@@ -112586,6 +112600,7 @@
                               "enum": [
                                 "BUILDING",
                                 "ERROR",
+                                "BLOCKED",
                                 "INITIALIZING",
                                 "QUEUED",
                                 "READY",
@@ -112672,6 +112687,7 @@
                               "enum": [
                                 "BUILDING",
                                 "ERROR",
+                                "BLOCKED",
                                 "INITIALIZING",
                                 "QUEUED",
                                 "READY",
@@ -137621,6 +137637,7 @@
                           "deployment.build-requested",
                           "deployment.cleanup",
                           "deployment.error",
+                          "deployment.blocked",
                           "deployment.canceled",
                           "deployment.succeeded",
                           "deployment.ready",
@@ -137914,6 +137931,7 @@
                         "deployment.build-requested",
                         "deployment.cleanup",
                         "deployment.error",
+                        "deployment.blocked",
                         "deployment.canceled",
                         "deployment.succeeded",
                         "deployment.ready",
@@ -138239,6 +138257,7 @@
                                 "deployment.build-requested",
                                 "deployment.cleanup",
                                 "deployment.error",
+                                "deployment.blocked",
                                 "deployment.canceled",
                                 "deployment.succeeded",
                                 "deployment.ready",
@@ -138486,6 +138505,7 @@
                                 "deployment.build-requested",
                                 "deployment.cleanup",
                                 "deployment.error",
+                                "deployment.blocked",
                                 "deployment.canceled",
                                 "deployment.succeeded",
                                 "deployment.ready",
@@ -138794,6 +138814,7 @@
                           "deployment.build-requested",
                           "deployment.cleanup",
                           "deployment.error",
+                          "deployment.blocked",
                           "deployment.canceled",
                           "deployment.succeeded",
                           "deployment.ready",
@@ -141421,6 +141442,7 @@
                             "enum": [
                               "BUILDING",
                               "ERROR",
+                              "BLOCKED",
                               "INITIALIZING",
                               "QUEUED",
                               "READY",
@@ -141435,6 +141457,7 @@
                             "enum": [
                               "BUILDING",
                               "ERROR",
+                              "BLOCKED",
                               "INITIALIZING",
                               "QUEUED",
                               "READY",
