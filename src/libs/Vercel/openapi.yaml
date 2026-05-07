@@ -60745,6 +60745,12 @@
                                 },
                                 "type": "array"
                               },
+                              "deploymentPolicy": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "domain": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -79037,6 +79043,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "deploymentPolicy": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "domain": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -84632,6 +84644,12 @@
                           "type": "array"
                         },
                         "defaultDeploymentProtection": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "deploymentPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -90470,6 +90488,12 @@
                           },
                           "type": "array"
                         },
+                        "deploymentPolicy": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "domain": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -95879,6 +95903,12 @@
                           "type": "array"
                         },
                         "defaultDeploymentProtection": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "deploymentPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -110628,6 +110658,12 @@
                           "type": "array"
                         },
                         "defaultDeploymentProtection": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "deploymentPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -138295,6 +138331,7 @@
               "team-default-build-machine-updated",
               "team-delete",
               "strict-deployment-protection-settings",
+              "team-deployment-policy-updated",
               "strict-shareable-links",
               "team-domain-verification-created",
               "team-domain-verification-deleted",
@@ -139028,6 +139065,7 @@
               "team-default-build-machine-updated",
               "team-delete",
               "strict-deployment-protection-settings",
+              "team-deployment-policy-updated",
               "strict-shareable-links",
               "team-domain-verification-created",
               "team-domain-verification-deleted",
@@ -139553,6 +139591,7 @@
                 "team-default-build-machine-updated",
                 "team-delete",
                 "strict-deployment-protection-settings",
+                "team-deployment-policy-updated",
                 "strict-shareable-links",
                 "team-domain-verification-created",
                 "team-domain-verification-deleted",

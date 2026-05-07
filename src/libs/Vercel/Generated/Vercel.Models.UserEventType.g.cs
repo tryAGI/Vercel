@@ -1604,6 +1604,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamDeploymentPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamDomainVerificationCreated,
         /// <summary>
         /// 
@@ -2289,6 +2293,7 @@ namespace Vercel
                 UserEventType.TeamAvatarUpdate => "team-avatar-update",
                 UserEventType.TeamDefaultBuildMachineUpdated => "team-default-build-machine-updated",
                 UserEventType.TeamDelete => "team-delete",
+                UserEventType.TeamDeploymentPolicyUpdated => "team-deployment-policy-updated",
                 UserEventType.TeamDomainVerificationCreated => "team-domain-verification-created",
                 UserEventType.TeamDomainVerificationDeleted => "team-domain-verification-deleted",
                 UserEventType.TeamDomainVerificationVerified => "team-domain-verification-verified",
@@ -2766,6 +2771,7 @@ namespace Vercel
                 "team-avatar-update" => UserEventType.TeamAvatarUpdate,
                 "team-default-build-machine-updated" => UserEventType.TeamDefaultBuildMachineUpdated,
                 "team-delete" => UserEventType.TeamDelete,
+                "team-deployment-policy-updated" => UserEventType.TeamDeploymentPolicyUpdated,
                 "team-domain-verification-created" => UserEventType.TeamDomainVerificationCreated,
                 "team-domain-verification-deleted" => UserEventType.TeamDomainVerificationDeleted,
                 "team-domain-verification-verified" => UserEventType.TeamDomainVerificationVerified,
