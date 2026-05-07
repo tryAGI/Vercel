@@ -136384,6 +136384,12 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -154606,9 +154612,17 @@
                           "block",
                           "allow"
                         ]
+                      },
+                      "allowUnsafeScriptSrcKeywords": {
+                        "type": "boolean",
+                        "enum": [
+                          false,
+                          true
+                        ]
                       }
                     },
                     "required": [
+                      "allowUnsafeScriptSrcKeywords",
                       "enabled",
                       "enforcePercentage",
                       "mode",
@@ -154637,9 +154651,17 @@
                           "block",
                           "allow"
                         ]
+                      },
+                      "allowUnsafeScriptSrcKeywords": {
+                        "type": "boolean",
+                        "enum": [
+                          false,
+                          true
+                        ]
                       }
                     },
                     "required": [
+                      "allowUnsafeScriptSrcKeywords",
                       "enabled",
                       "enforcePercentage",
                       "mode",

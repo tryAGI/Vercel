@@ -38,6 +38,13 @@ namespace Vercel
         public required global::Vercel.UserEventPayloadVariant144PreviousNewResourceBlockingPolicy NewResourceBlockingPolicy { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("allowUnsafeScriptSrcKeywords")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool AllowUnsafeScriptSrcKeywords { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -50,6 +57,7 @@ namespace Vercel
         /// <param name="mode"></param>
         /// <param name="enforcePercentage"></param>
         /// <param name="newResourceBlockingPolicy"></param>
+        /// <param name="allowUnsafeScriptSrcKeywords"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -57,12 +65,14 @@ namespace Vercel
             bool enabled,
             string mode,
             double enforcePercentage,
-            global::Vercel.UserEventPayloadVariant144PreviousNewResourceBlockingPolicy newResourceBlockingPolicy)
+            global::Vercel.UserEventPayloadVariant144PreviousNewResourceBlockingPolicy newResourceBlockingPolicy,
+            bool allowUnsafeScriptSrcKeywords)
         {
             this.Enabled = enabled;
             this.Mode = mode ?? throw new global::System.ArgumentNullException(nameof(mode));
             this.EnforcePercentage = enforcePercentage;
             this.NewResourceBlockingPolicy = newResourceBlockingPolicy;
+            this.AllowUnsafeScriptSrcKeywords = allowUnsafeScriptSrcKeywords;
         }
 
         /// <summary>
