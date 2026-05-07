@@ -149,7 +149,7 @@ for index, chunk in enumerate(chunks):
         encoding="utf-8")
 
 resolver_initializers = ",\n".join(
-    f"            new global::Vercel.SourceGenerationContextChunk{index:03d}(Options)"
+    f"            new global::Vercel.SourceGenerationContextChunk{index:03d}(CreateChildOptions(Options))"
     for index in range(len(chunks))
 )
 
@@ -166,7 +166,7 @@ namespace Vercel;
 /// </summary>
 public sealed class SourceGenerationContext : JsonSerializerContext
 {{
-    private readonly IJsonTypeInfoResolver[] _resolvers;
+    private readonly JsonSerializerContext[] _contexts;
 
     /// <summary>
     /// Default serializer context instance.
@@ -187,7 +187,7 @@ public sealed class SourceGenerationContext : JsonSerializerContext
     public SourceGenerationContext(JsonSerializerOptions options)
         : base(options)
     {{
-        _resolvers =
+        _contexts =
         [
 {resolver_initializers}
         ];
@@ -201,9 +201,9 @@ public sealed class SourceGenerationContext : JsonSerializerContext
     {{
         ArgumentNullException.ThrowIfNull(type);
 
-        foreach (var resolver in _resolvers)
+        foreach (var context in _contexts)
         {{
-            var typeInfo = resolver.GetTypeInfo(type, Options);
+            var typeInfo = context.GetTypeInfo(type);
             if (typeInfo is not null)
             {{
                 return typeInfo;
@@ -219,6 +219,11 @@ public sealed class SourceGenerationContext : JsonSerializerContext
         {{
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         }};
+    }}
+
+    private static JsonSerializerOptions CreateChildOptions(JsonSerializerOptions options)
+    {{
+        return new JsonSerializerOptions(options);
     }}
 }}
 """, encoding="utf-8")

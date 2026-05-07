@@ -11,7 +11,7 @@ namespace Vercel;
 /// </summary>
 public sealed class SourceGenerationContext : JsonSerializerContext
 {
-    private readonly IJsonTypeInfoResolver[] _resolvers;
+    private readonly JsonSerializerContext[] _contexts;
 
     /// <summary>
     /// Default serializer context instance.
@@ -32,25 +32,25 @@ public sealed class SourceGenerationContext : JsonSerializerContext
     public SourceGenerationContext(JsonSerializerOptions options)
         : base(options)
     {
-        _resolvers =
+        _contexts =
         [
-            new global::Vercel.SourceGenerationContextChunk000(Options),
-            new global::Vercel.SourceGenerationContextChunk001(Options),
-            new global::Vercel.SourceGenerationContextChunk002(Options),
-            new global::Vercel.SourceGenerationContextChunk003(Options),
-            new global::Vercel.SourceGenerationContextChunk004(Options),
-            new global::Vercel.SourceGenerationContextChunk005(Options),
-            new global::Vercel.SourceGenerationContextChunk006(Options),
-            new global::Vercel.SourceGenerationContextChunk007(Options),
-            new global::Vercel.SourceGenerationContextChunk008(Options),
-            new global::Vercel.SourceGenerationContextChunk009(Options),
-            new global::Vercel.SourceGenerationContextChunk010(Options),
-            new global::Vercel.SourceGenerationContextChunk011(Options),
-            new global::Vercel.SourceGenerationContextChunk012(Options),
-            new global::Vercel.SourceGenerationContextChunk013(Options),
-            new global::Vercel.SourceGenerationContextChunk014(Options),
-            new global::Vercel.SourceGenerationContextChunk015(Options),
-            new global::Vercel.SourceGenerationContextChunk016(Options)
+            new global::Vercel.SourceGenerationContextChunk000(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk001(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk002(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk003(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk004(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk005(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk006(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk007(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk008(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk009(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk010(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk011(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk012(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk013(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk014(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk015(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk016(CreateChildOptions(Options))
         ];
     }
 
@@ -62,9 +62,9 @@ public sealed class SourceGenerationContext : JsonSerializerContext
     {
         ArgumentNullException.ThrowIfNull(type);
 
-        foreach (var resolver in _resolvers)
+        foreach (var context in _contexts)
         {
-            var typeInfo = resolver.GetTypeInfo(type, Options);
+            var typeInfo = context.GetTypeInfo(type);
             if (typeInfo is not null)
             {
                 return typeInfo;
@@ -80,5 +80,10 @@ public sealed class SourceGenerationContext : JsonSerializerContext
         {
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         };
+    }
+
+    private static JsonSerializerOptions CreateChildOptions(JsonSerializerOptions options)
+    {
+        return new JsonSerializerOptions(options);
     }
 }
