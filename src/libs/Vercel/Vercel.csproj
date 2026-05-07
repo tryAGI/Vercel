@@ -14,4 +14,9 @@
     <PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="10.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Generated/Vercel.JsonSerializerContext.g.cs" />
+    <Compile Remove="Generated/Vercel.JsonSerializerContextTypes.g.cs" />
+  </ItemGroup>
+
 </Project>
