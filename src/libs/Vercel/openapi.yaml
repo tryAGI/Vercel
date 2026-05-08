@@ -118146,15 +118146,56 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "sandbox": {
-                      "$ref": "#/components/schemas/NamedSandbox"
+                  "oneOf": [
+                    {
+                      "properties": {
+                        "routes": {
+                          "items": {
+                            "$ref": "#/components/schemas/SandboxPublicRoute"
+                          },
+                          "type": "array"
+                        },
+                        "sandbox": {
+                          "$ref": "#/components/schemas/NamedSandbox"
+                        }
+                      },
+                      "required": [
+                        "routes",
+                        "sandbox"
+                      ],
+                      "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "sandbox": {
+                          "$ref": "#/components/schemas/NamedSandbox"
+                        },
+                        "session": {
+                          "$ref": "#/components/schemas/Session"
+                        },
+                        "routes": {
+                          "items": {
+                            "$ref": "#/components/schemas/SandboxPublicRoute"
+                          },
+                          "type": "array"
+                        },
+                        "resumed": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        }
+                      },
+                      "required": [
+                        "resumed",
+                        "routes",
+                        "sandbox",
+                        "session"
+                      ],
+                      "type": "object"
                     }
-                  },
-                  "required": [
-                    "sandbox"
-                  ],
-                  "type": "object"
+                  ]
                 }
               }
             }
@@ -118166,7 +118207,7 @@
             "description": "The request is not authorized."
           },
           "402": {
-            "description": ""
+            "description": "The account is missing a payment so payment method must be updated"
           },
           "403": {
             "description": "You do not have permission to access this resource."
@@ -118174,11 +118215,17 @@
           "404": {
             "description": ""
           },
+          "409": {
+            "description": ""
+          },
           "410": {
             "description": ""
           },
           "422": {
             "description": ""
+          },
+          "429": {
+            "description": "The concurrency limit has been exceeded."
           },
           "500": {
             "description": ""
@@ -118207,6 +118254,17 @@
               "type": "string",
               "description": "The project ID that owns the named sandbox. When provided, takes precedence over OIDC project context.",
               "maxLength": 128
+            }
+          },
+          {
+            "name": "resume",
+            "description": "Whether to automatically resume a stopped named sandbox by creating a new instance from its snapshot. Defaults to false.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "description": "Whether to automatically resume a stopped named sandbox by creating a new instance from its snapshot. Defaults to false."
             }
           },
           {
@@ -118662,6 +118720,23 @@
                     "example": {
                       "NODE_ENV": "production",
                       "HELLO": "world"
+                    }
+                  },
+                  "ports": {
+                    "description": "List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.",
+                    "type": "array",
+                    "maxItems": 15,
+                    "uniqueItems": true,
+                    "example": [
+                      3000,
+                      4000
+                    ],
+                    "items": {
+                      "type": "integer",
+                      "description": "A port number to expose from the sandbox. Must be between 1024 and 65535.",
+                      "not": {},
+                      "maximum": 65535,
+                      "minimum": 1024
                     }
                   },
                   "currentSnapshotId": {

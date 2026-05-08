@@ -15,6 +15,10 @@ namespace Vercel
         /// <param name="projectId">
         /// The project ID that owns the named sandbox. When provided, takes precedence over OIDC project context.
         /// </param>
+        /// <param name="resume">
+        /// Whether to automatically resume a stopped named sandbox by creating a new instance from its snapshot. Defaults to false.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -25,11 +29,12 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.UpdateSandboxResponse> UpdateSandboxAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>> UpdateSandboxAsync(
             string name,
 
             global::Vercel.UpdateSandboxRequest request,
             string? projectId = default,
+            bool? resume = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -45,6 +50,10 @@ namespace Vercel
         /// <param name="projectId">
         /// The project ID that owns the named sandbox. When provided, takes precedence over OIDC project context.
         /// </param>
+        /// <param name="resume">
+        /// Whether to automatically resume a stopped named sandbox by creating a new instance from its snapshot. Defaults to false.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -55,11 +64,12 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateSandboxResponse>> UpdateSandboxAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>>> UpdateSandboxAsResponseAsync(
             string name,
 
             global::Vercel.UpdateSandboxRequest request,
             string? projectId = default,
+            bool? resume = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -74,6 +84,10 @@ namespace Vercel
         /// </param>
         /// <param name="projectId">
         /// The project ID that owns the named sandbox. When provided, takes precedence over OIDC project context.
+        /// </param>
+        /// <param name="resume">
+        /// Whether to automatically resume a stopped named sandbox by creating a new instance from its snapshot. Defaults to false.<br/>
+        /// Default Value: false
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -104,6 +118,10 @@ namespace Vercel
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </param>
+        /// <param name="ports">
+        /// List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.<br/>
+        /// Example: [3000, 4000]
+        /// </param>
         /// <param name="currentSnapshotId">
         /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project.
         /// </param>
@@ -114,9 +132,10 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.UpdateSandboxResponse> UpdateSandboxAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>> UpdateSandboxAsync(
             string name,
             string? projectId = default,
+            bool? resume = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.UpdateSandboxRequestResources? resources = default,
@@ -126,6 +145,7 @@ namespace Vercel
             global::Vercel.OneOf<object, int?>? snapshotExpiration = default,
             global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? networkPolicy = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
+            global::System.Collections.Generic.IList<int>? ports = default,
             string? currentSnapshotId = default,
             global::System.Collections.Generic.Dictionary<string, string>? tags = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
