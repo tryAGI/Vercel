@@ -703,6 +703,7 @@ namespace Vercel
         /// Default deployment protection settings for new projects.
         /// </param>
         /// <param name="defaultExpirationSettings"></param>
+        /// <param name="deploymentPolicy"></param>
         /// <param name="strictDeploymentProtectionSettings">
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </param>
@@ -738,6 +739,7 @@ namespace Vercel
             bool? disableRepositoryDispatchEvents = default,
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection = default,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings = default,
+            global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicy, string>? deploymentPolicy = default,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings = default,
             global::Vercel.PatchTeamRequestStrictShareableLinks? strictShareableLinks = default,
             global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>? nsnbConfig = default,
@@ -766,6 +768,7 @@ namespace Vercel
                 DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents,
                 DefaultDeploymentProtection = defaultDeploymentProtection,
                 DefaultExpirationSettings = defaultExpirationSettings,
+                DeploymentPolicy = deploymentPolicy,
                 StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings,
                 StrictShareableLinks = strictShareableLinks,
                 NsnbConfig = nsnbConfig,

@@ -29,6 +29,19 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickEdgeConfigItemValueVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = EdgeConfigItemValueVariant1;
+            return IsEdgeConfigItemValueVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? EdgeConfigItemValueVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(EdgeConfigItemValueVariant2))]
 #endif
         public bool IsEdgeConfigItemValueVariant2 => EdgeConfigItemValueVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickEdgeConfigItemValueVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out double? value)
+        {
+            value = EdgeConfigItemValueVariant2;
+            return IsEdgeConfigItemValueVariant2;
+        }
 
         /// <summary>
         /// 
@@ -63,6 +89,19 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickEdgeConfigItemValueVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>? value)
+        {
+            value = EdgeConfigItemValueVariant3;
+            return IsEdgeConfigItemValueVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>? EdgeConfigItemValueVariant4 { get; init; }
 #else
@@ -80,6 +119,19 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickEdgeConfigItemValueVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>? value)
+        {
+            value = EdgeConfigItemValueVariant4;
+            return IsEdgeConfigItemValueVariant4;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public bool? EdgeConfigItemValueVariant5 { get; init; }
 #else
@@ -93,6 +145,19 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(EdgeConfigItemValueVariant5))]
 #endif
         public bool IsEdgeConfigItemValueVariant5 => EdgeConfigItemValueVariant5 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickEdgeConfigItemValueVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out bool? value)
+        {
+            value = EdgeConfigItemValueVariant5;
+            return IsEdgeConfigItemValueVariant5;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -217,10 +282,10 @@ namespace Vercel
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? edgeConfigItemValueVariant1 = null,
+            global::System.Func<string, TResult>? edgeConfigItemValueVariant1 = null,
             global::System.Func<double?, TResult>? edgeConfigItemValueVariant2 = null,
-            global::System.Func<global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>?, TResult>? edgeConfigItemValueVariant3 = null,
-            global::System.Func<global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>?, TResult>? edgeConfigItemValueVariant4 = null,
+            global::System.Func<global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>, TResult>? edgeConfigItemValueVariant3 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>, TResult>? edgeConfigItemValueVariant4 = null,
             global::System.Func<bool?, TResult>? edgeConfigItemValueVariant5 = null,
             bool validate = true)
         {
@@ -257,10 +322,52 @@ namespace Vercel
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? edgeConfigItemValueVariant1 = null,
+            global::System.Action<string>? edgeConfigItemValueVariant1 = null,
+
             global::System.Action<double?>? edgeConfigItemValueVariant2 = null,
-            global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>?>? edgeConfigItemValueVariant3 = null,
-            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>?>? edgeConfigItemValueVariant4 = null,
+
+            global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>>? edgeConfigItemValueVariant3 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>>? edgeConfigItemValueVariant4 = null,
+
+            global::System.Action<bool?>? edgeConfigItemValueVariant5 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsEdgeConfigItemValueVariant1)
+            {
+                edgeConfigItemValueVariant1?.Invoke(EdgeConfigItemValueVariant1!);
+            }
+            else if (IsEdgeConfigItemValueVariant2)
+            {
+                edgeConfigItemValueVariant2?.Invoke(EdgeConfigItemValueVariant2!);
+            }
+            else if (IsEdgeConfigItemValueVariant3)
+            {
+                edgeConfigItemValueVariant3?.Invoke(EdgeConfigItemValueVariant3!);
+            }
+            else if (IsEdgeConfigItemValueVariant4)
+            {
+                edgeConfigItemValueVariant4?.Invoke(EdgeConfigItemValueVariant4!);
+            }
+            else if (IsEdgeConfigItemValueVariant5)
+            {
+                edgeConfigItemValueVariant5?.Invoke(EdgeConfigItemValueVariant5!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? edgeConfigItemValueVariant1 = null,
+            global::System.Action<double?>? edgeConfigItemValueVariant2 = null,
+            global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>>? edgeConfigItemValueVariant3 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>>? edgeConfigItemValueVariant4 = null,
             global::System.Action<bool?>? edgeConfigItemValueVariant5 = null,
             bool validate = true)
         {

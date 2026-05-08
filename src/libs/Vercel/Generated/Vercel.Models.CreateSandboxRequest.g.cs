@@ -9,6 +9,12 @@ namespace Vercel
     public sealed partial class CreateSandboxRequest
     {
         /// <summary>
+        /// List of forwarding rules for network requests. Each rule specifies a domain pattern to match and a proxy URL to forward matching requests to.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("__networkPolicyForwardRules")]
+        public global::System.Collections.Generic.IList<global::Vercel.CreateSandboxRequestNetworkPolicyForwardRule>? NetworkPolicyForwardRules { get; set; }
+
+        /// <summary>
         /// Resources to define the VM
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resources")]
@@ -79,6 +85,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateSandboxRequest" /> class.
         /// </summary>
+        /// <param name="networkPolicyForwardRules">
+        /// List of forwarding rules for network requests. Each rule specifies a domain pattern to match and a proxy URL to forward matching requests to.
+        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
@@ -114,6 +123,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSandboxRequest(
+            global::System.Collections.Generic.IList<global::Vercel.CreateSandboxRequestNetworkPolicyForwardRule>? networkPolicyForwardRules,
             global::Vercel.CreateSandboxRequestResources? resources,
             global::Vercel.CreateSandboxRequestRuntime? runtime,
             global::Vercel.OneOf<global::Vercel.CreateSandboxRequestSourceVariant1, global::Vercel.CreateSandboxRequestSourceVariant2, global::Vercel.CreateSandboxRequestSourceVariant3>? source,
@@ -123,6 +133,7 @@ namespace Vercel
             global::Vercel.CreateSandboxRequestNetworkPolicy? networkPolicy,
             global::System.Collections.Generic.Dictionary<string, string>? env)
         {
+            this.NetworkPolicyForwardRules = networkPolicyForwardRules;
             this.Resources = resources;
             this.Runtime = runtime;
             this.Source = source;

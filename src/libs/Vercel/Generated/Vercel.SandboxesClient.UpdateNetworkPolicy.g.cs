@@ -743,6 +743,9 @@ namespace Vercel
         /// List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.<br/>
         /// Example: [35.192.0.0/12]
         /// </param>
+        /// <param name="injectionRules">
+        /// HTTP header injection rules for outgoing requests matching specific domains. Traffic to matching domains will be intercepted instead of proxied through encrypted connections.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -754,6 +757,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? allowedDomains = default,
             global::System.Collections.Generic.IList<string>? allowedCIDRs = default,
             global::System.Collections.Generic.IList<string>? deniedCIDRs = default,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateNetworkPolicyRequestInjectionRule>? injectionRules = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -763,6 +767,7 @@ namespace Vercel
                 AllowedDomains = allowedDomains,
                 AllowedCIDRs = allowedCIDRs,
                 DeniedCIDRs = deniedCIDRs,
+                InjectionRules = injectionRules,
             };
 
             return await UpdateNetworkPolicyAsync(
