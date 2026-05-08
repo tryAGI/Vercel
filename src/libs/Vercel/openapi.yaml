@@ -58189,6 +58189,23 @@
                             "type": "object",
                             "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
                           },
+                          "expiration": {
+                            "properties": {
+                              "expiresAt": {
+                                "type": "number",
+                                "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                              },
+                              "lockedAt": {
+                                "type": "number",
+                                "description": "Unix ms timestamp when the project was locked."
+                              },
+                              "lockedBy": {
+                                "type": "string",
+                                "description": "userId of the actor that triggered the lock (system or admin)."
+                              }
+                            },
+                            "type": "object"
+                          },
                           "devCommand": {
                             "nullable": true,
                             "type": "string"
@@ -76829,6 +76846,23 @@
                                 "type": "object",
                                 "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
                               },
+                              "expiration": {
+                                "properties": {
+                                  "expiresAt": {
+                                    "type": "number",
+                                    "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                                  },
+                                  "lockedAt": {
+                                    "type": "number",
+                                    "description": "Unix ms timestamp when the project was locked."
+                                  },
+                                  "lockedBy": {
+                                    "type": "string",
+                                    "description": "userId of the actor that triggered the lock (system or admin)."
+                                  }
+                                },
+                                "type": "object"
+                              },
                               "devCommand": {
                                 "nullable": true,
                                 "type": "string"
@@ -82434,6 +82468,23 @@
                       },
                       "type": "object",
                       "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
+                    },
+                    "expiration": {
+                      "properties": {
+                        "expiresAt": {
+                          "type": "number",
+                          "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                        },
+                        "lockedAt": {
+                          "type": "number",
+                          "description": "Unix ms timestamp when the project was locked."
+                        },
+                        "lockedBy": {
+                          "type": "string",
+                          "description": "userId of the actor that triggered the lock (system or admin)."
+                        }
+                      },
+                      "type": "object"
                     },
                     "devCommand": {
                       "nullable": true,
@@ -88276,6 +88327,23 @@
                       "type": "object",
                       "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
                     },
+                    "expiration": {
+                      "properties": {
+                        "expiresAt": {
+                          "type": "number",
+                          "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                        },
+                        "lockedAt": {
+                          "type": "number",
+                          "description": "Unix ms timestamp when the project was locked."
+                        },
+                        "lockedBy": {
+                          "type": "string",
+                          "description": "userId of the actor that triggered the lock (system or admin)."
+                        }
+                      },
+                      "type": "object"
+                    },
                     "devCommand": {
                       "nullable": true,
                       "type": "string"
@@ -93702,6 +93770,23 @@
                       },
                       "type": "object",
                       "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
+                    },
+                    "expiration": {
+                      "properties": {
+                        "expiresAt": {
+                          "type": "number",
+                          "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                        },
+                        "lockedAt": {
+                          "type": "number",
+                          "description": "Unix ms timestamp when the project was locked."
+                        },
+                        "lockedBy": {
+                          "type": "string",
+                          "description": "userId of the actor that triggered the lock (system or admin)."
+                        }
+                      },
+                      "type": "object"
                     },
                     "devCommand": {
                       "nullable": true,
@@ -99474,6 +99559,121 @@
                       }
                     },
                     "nullable": true
+                  },
+                  "deploymentPolicy": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "description": "Composable deployment-time policy. Each rule key controls an independent restriction.",
+                        "additionalProperties": false,
+                        "properties": {
+                          "gitSources": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "enabled",
+                                  "sources"
+                                ],
+                                "properties": {
+                                  "enabled": {
+                                    "type": "boolean"
+                                  },
+                                  "sources": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "additionalProperties": false,
+                                      "required": [
+                                        "provider",
+                                        "org"
+                                      ],
+                                      "properties": {
+                                        "provider": {
+                                          "type": "string",
+                                          "enum": [
+                                            "github",
+                                            "gitlab",
+                                            "bitbucket"
+                                          ]
+                                        },
+                                        "org": {
+                                          "type": "string"
+                                        },
+                                        "repo": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ]
+                          },
+                          "deploymentSources": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "enabled",
+                                  "sources"
+                                ],
+                                "properties": {
+                                  "enabled": {
+                                    "type": "boolean"
+                                  },
+                                  "sources": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string",
+                                      "enum": [
+                                        "git",
+                                        "cli",
+                                        "api"
+                                      ]
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ]
+                          },
+                          "publicDeployments": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "enabled",
+                                  "allowPublicDeployments"
+                                ],
+                                "properties": {
+                                  "enabled": {
+                                    "type": "boolean"
+                                  },
+                                  "allowPublicDeployments": {
+                                    "type": "boolean"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
                   },
                   "optionsAllowlist": {
                     "additionalProperties": false,
@@ -108449,6 +108649,23 @@
                       "type": "object",
                       "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
                     },
+                    "expiration": {
+                      "properties": {
+                        "expiresAt": {
+                          "type": "number",
+                          "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                        },
+                        "lockedAt": {
+                          "type": "number",
+                          "description": "Unix ms timestamp when the project was locked."
+                        },
+                        "lockedBy": {
+                          "type": "string",
+                          "description": "userId of the actor that triggered the lock (system or admin)."
+                        }
+                      },
+                      "type": "object"
+                    },
                     "devCommand": {
                       "nullable": true,
                       "type": "string"
@@ -114143,6 +114360,28 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
+                  "__networkPolicyForwardRules": {
+                    "description": "List of forwarding rules for network requests. Each rule specifies a domain pattern to match and a proxy URL to forward matching requests to.",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "domain",
+                        "forwardURL"
+                      ],
+                      "properties": {
+                        "domain": {
+                          "type": "string",
+                          "description": "The domain (or pattern) of requests to forward. Supports wildcards like *.example.com."
+                        },
+                        "forwardURL": {
+                          "type": "string",
+                          "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
+                        }
+                      }
+                    }
+                  },
                   "resources": {
                     "description": "Resources to define the VM",
                     "additionalProperties": false,
@@ -114338,6 +114577,140 @@
                         "items": {
                           "type": "string",
                           "description": "An IP address range in CIDR notation to block."
+                        }
+                      },
+                      "injectionRules": {
+                        "description": "HTTP header injection rules for outgoing requests matching specific domains. Traffic to matching domains will be intercepted instead of proxied through encrypted connections.",
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "domain",
+                            "headers"
+                          ],
+                          "properties": {
+                            "domain": {
+                              "description": "The domain (or pattern) of requests to add headers for. Supports wildcards like *.example.com.",
+                              "type": "string"
+                            },
+                            "headers": {
+                              "description": "HTTP headers to inject into requests for this domain. Existing headers with the same name will be overridden.",
+                              "type": "object",
+                              "additionalProperties": {
+                                "type": "string"
+                              }
+                            },
+                            "match": {
+                              "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "path": {
+                                  "description": "Match on the request path. Comparison is case-sensitive.",
+                                  "type": "object",
+                                  "additionalProperties": false,
+                                  "properties": {
+                                    "exact": {
+                                      "type": "string",
+                                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                    },
+                                    "startsWith": {
+                                      "type": "string",
+                                      "description": "Match values that start with the given prefix."
+                                    }
+                                  }
+                                },
+                                "method": {
+                                  "type": "array",
+                                  "description": "HTTP methods to match. Any single match succeeds (OR semantics).",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                "queryString": {
+                                  "type": "array",
+                                  "description": "Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.",
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "key": {
+                                        "description": "Matcher for the entry key (header name or query key).",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "exact": {
+                                            "type": "string",
+                                            "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                          },
+                                          "startsWith": {
+                                            "type": "string",
+                                            "description": "Match values that start with the given prefix."
+                                          }
+                                        }
+                                      },
+                                      "value": {
+                                        "description": "Matcher for the entry value.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "exact": {
+                                            "type": "string",
+                                            "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                          },
+                                          "startsWith": {
+                                            "type": "string",
+                                            "description": "Match values that start with the given prefix."
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "headers": {
+                                  "type": "array",
+                                  "description": "Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.",
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "key": {
+                                        "description": "Matcher for the entry key (header name or query key).",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "exact": {
+                                            "type": "string",
+                                            "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                          },
+                                          "startsWith": {
+                                            "type": "string",
+                                            "description": "Match values that start with the given prefix."
+                                          }
+                                        }
+                                      },
+                                      "value": {
+                                        "description": "Matcher for the entry value.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "exact": {
+                                            "type": "string",
+                                            "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                          },
+                                          "startsWith": {
+                                            "type": "string",
+                                            "description": "Match values that start with the given prefix."
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
                         }
                       }
                     }
@@ -115257,6 +115630,140 @@
                     "items": {
                       "type": "string",
                       "description": "An IP address range in CIDR notation to block."
+                    }
+                  },
+                  "injectionRules": {
+                    "description": "HTTP header injection rules for outgoing requests matching specific domains. Traffic to matching domains will be intercepted instead of proxied through encrypted connections.",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "domain",
+                        "headers"
+                      ],
+                      "properties": {
+                        "domain": {
+                          "description": "The domain (or pattern) of requests to add headers for. Supports wildcards like *.example.com.",
+                          "type": "string"
+                        },
+                        "headers": {
+                          "description": "HTTP headers to inject into requests for this domain. Existing headers with the same name will be overridden.",
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        },
+                        "match": {
+                          "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "path": {
+                              "description": "Match on the request path. Comparison is case-sensitive.",
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "exact": {
+                                  "type": "string",
+                                  "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                },
+                                "startsWith": {
+                                  "type": "string",
+                                  "description": "Match values that start with the given prefix."
+                                }
+                              }
+                            },
+                            "method": {
+                              "type": "array",
+                              "description": "HTTP methods to match. Any single match succeeds (OR semantics).",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "queryString": {
+                              "type": "array",
+                              "description": "Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.",
+                              "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                  "key": {
+                                    "description": "Matcher for the entry key (header name or query key).",
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "exact": {
+                                        "type": "string",
+                                        "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                      },
+                                      "startsWith": {
+                                        "type": "string",
+                                        "description": "Match values that start with the given prefix."
+                                      }
+                                    }
+                                  },
+                                  "value": {
+                                    "description": "Matcher for the entry value.",
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "exact": {
+                                        "type": "string",
+                                        "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                      },
+                                      "startsWith": {
+                                        "type": "string",
+                                        "description": "Match values that start with the given prefix."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "headers": {
+                              "type": "array",
+                              "description": "Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.",
+                              "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                  "key": {
+                                    "description": "Matcher for the entry key (header name or query key).",
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "exact": {
+                                        "type": "string",
+                                        "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                      },
+                                      "startsWith": {
+                                        "type": "string",
+                                        "description": "Match values that start with the given prefix."
+                                      }
+                                    }
+                                  },
+                                  "value": {
+                                    "description": "Matcher for the entry value.",
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "exact": {
+                                        "type": "string",
+                                        "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                      },
+                                      "startsWith": {
+                                        "type": "string",
+                                        "description": "Match values that start with the given prefix."
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 },
@@ -116402,6 +116909,140 @@
                               "type": "string",
                               "description": "An IP address range in CIDR notation to block."
                             }
+                          },
+                          "injectionRules": {
+                            "description": "HTTP header injection rules for outgoing requests matching specific domains. Traffic to matching domains will be intercepted instead of proxied through encrypted connections.",
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "domain",
+                                "headers"
+                              ],
+                              "properties": {
+                                "domain": {
+                                  "description": "The domain (or pattern) of requests to add headers for. Supports wildcards like *.example.com.",
+                                  "type": "string"
+                                },
+                                "headers": {
+                                  "description": "HTTP headers to inject into requests for this domain. Existing headers with the same name will be overridden.",
+                                  "type": "object",
+                                  "additionalProperties": {
+                                    "type": "string"
+                                  }
+                                },
+                                "match": {
+                                  "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
+                                  "type": "object",
+                                  "additionalProperties": false,
+                                  "properties": {
+                                    "path": {
+                                      "description": "Match on the request path. Comparison is case-sensitive.",
+                                      "type": "object",
+                                      "additionalProperties": false,
+                                      "properties": {
+                                        "exact": {
+                                          "type": "string",
+                                          "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                        },
+                                        "startsWith": {
+                                          "type": "string",
+                                          "description": "Match values that start with the given prefix."
+                                        }
+                                      }
+                                    },
+                                    "method": {
+                                      "type": "array",
+                                      "description": "HTTP methods to match. Any single match succeeds (OR semantics).",
+                                      "items": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "queryString": {
+                                      "type": "array",
+                                      "description": "Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.",
+                                      "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "key": {
+                                            "description": "Matcher for the entry key (header name or query key).",
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                              "exact": {
+                                                "type": "string",
+                                                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                              },
+                                              "startsWith": {
+                                                "type": "string",
+                                                "description": "Match values that start with the given prefix."
+                                              }
+                                            }
+                                          },
+                                          "value": {
+                                            "description": "Matcher for the entry value.",
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                              "exact": {
+                                                "type": "string",
+                                                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                              },
+                                              "startsWith": {
+                                                "type": "string",
+                                                "description": "Match values that start with the given prefix."
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "headers": {
+                                      "type": "array",
+                                      "description": "Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.",
+                                      "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "key": {
+                                            "description": "Matcher for the entry key (header name or query key).",
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                              "exact": {
+                                                "type": "string",
+                                                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                              },
+                                              "startsWith": {
+                                                "type": "string",
+                                                "description": "Match values that start with the given prefix."
+                                              }
+                                            }
+                                          },
+                                          "value": {
+                                            "description": "Matcher for the entry value.",
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                              "exact": {
+                                                "type": "string",
+                                                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                              },
+                                              "startsWith": {
+                                                "type": "string",
+                                                "description": "Match values that start with the given prefix."
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           }
                         }
                       },
@@ -116580,6 +117221,28 @@
                         }
                       }
                     ]
+                  },
+                  "__networkPolicyForwardRules": {
+                    "description": "List of forwarding rules for network requests. Each rule specifies a domain pattern to match and a proxy URL to forward matching requests to.",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "domain",
+                        "forwardURL"
+                      ],
+                      "properties": {
+                        "domain": {
+                          "type": "string",
+                          "description": "The domain (or pattern) of requests to forward. Supports wildcards like *.example.com."
+                        },
+                        "forwardURL": {
+                          "type": "string",
+                          "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
+                        }
+                      }
+                    }
                   },
                   "resources": {
                     "description": "Resources to define the VM",
@@ -117676,6 +118339,140 @@
                             "items": {
                               "type": "string",
                               "description": "An IP address range in CIDR notation to block."
+                            }
+                          },
+                          "injectionRules": {
+                            "description": "HTTP header injection rules for outgoing requests matching specific domains. Traffic to matching domains will be intercepted instead of proxied through encrypted connections.",
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "domain",
+                                "headers"
+                              ],
+                              "properties": {
+                                "domain": {
+                                  "description": "The domain (or pattern) of requests to add headers for. Supports wildcards like *.example.com.",
+                                  "type": "string"
+                                },
+                                "headers": {
+                                  "description": "HTTP headers to inject into requests for this domain. Existing headers with the same name will be overridden.",
+                                  "type": "object",
+                                  "additionalProperties": {
+                                    "type": "string"
+                                  }
+                                },
+                                "match": {
+                                  "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
+                                  "type": "object",
+                                  "additionalProperties": false,
+                                  "properties": {
+                                    "path": {
+                                      "description": "Match on the request path. Comparison is case-sensitive.",
+                                      "type": "object",
+                                      "additionalProperties": false,
+                                      "properties": {
+                                        "exact": {
+                                          "type": "string",
+                                          "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                        },
+                                        "startsWith": {
+                                          "type": "string",
+                                          "description": "Match values that start with the given prefix."
+                                        }
+                                      }
+                                    },
+                                    "method": {
+                                      "type": "array",
+                                      "description": "HTTP methods to match. Any single match succeeds (OR semantics).",
+                                      "items": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "queryString": {
+                                      "type": "array",
+                                      "description": "Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.",
+                                      "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "key": {
+                                            "description": "Matcher for the entry key (header name or query key).",
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                              "exact": {
+                                                "type": "string",
+                                                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                              },
+                                              "startsWith": {
+                                                "type": "string",
+                                                "description": "Match values that start with the given prefix."
+                                              }
+                                            }
+                                          },
+                                          "value": {
+                                            "description": "Matcher for the entry value.",
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                              "exact": {
+                                                "type": "string",
+                                                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                              },
+                                              "startsWith": {
+                                                "type": "string",
+                                                "description": "Match values that start with the given prefix."
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "headers": {
+                                      "type": "array",
+                                      "description": "Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.",
+                                      "items": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "key": {
+                                            "description": "Matcher for the entry key (header name or query key).",
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                              "exact": {
+                                                "type": "string",
+                                                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                              },
+                                              "startsWith": {
+                                                "type": "string",
+                                                "description": "Match values that start with the given prefix."
+                                              }
+                                            }
+                                          },
+                                          "value": {
+                                            "description": "Matcher for the entry value.",
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "properties": {
+                                              "exact": {
+                                                "type": "string",
+                                                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                              },
+                                              "startsWith": {
+                                                "type": "string",
+                                                "description": "Match values that start with the given prefix."
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
                             }
                           }
                         }
@@ -118926,6 +119723,140 @@
                         "items": {
                           "type": "string",
                           "description": "An IP address range in CIDR notation to block."
+                        }
+                      },
+                      "injectionRules": {
+                        "description": "HTTP header injection rules for outgoing requests matching specific domains. Traffic to matching domains will be intercepted instead of proxied through encrypted connections.",
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "domain",
+                            "headers"
+                          ],
+                          "properties": {
+                            "domain": {
+                              "description": "The domain (or pattern) of requests to add headers for. Supports wildcards like *.example.com.",
+                              "type": "string"
+                            },
+                            "headers": {
+                              "description": "HTTP headers to inject into requests for this domain. Existing headers with the same name will be overridden.",
+                              "type": "object",
+                              "additionalProperties": {
+                                "type": "string"
+                              }
+                            },
+                            "match": {
+                              "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "path": {
+                                  "description": "Match on the request path. Comparison is case-sensitive.",
+                                  "type": "object",
+                                  "additionalProperties": false,
+                                  "properties": {
+                                    "exact": {
+                                      "type": "string",
+                                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                    },
+                                    "startsWith": {
+                                      "type": "string",
+                                      "description": "Match values that start with the given prefix."
+                                    }
+                                  }
+                                },
+                                "method": {
+                                  "type": "array",
+                                  "description": "HTTP methods to match. Any single match succeeds (OR semantics).",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                "queryString": {
+                                  "type": "array",
+                                  "description": "Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.",
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "key": {
+                                        "description": "Matcher for the entry key (header name or query key).",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "exact": {
+                                            "type": "string",
+                                            "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                          },
+                                          "startsWith": {
+                                            "type": "string",
+                                            "description": "Match values that start with the given prefix."
+                                          }
+                                        }
+                                      },
+                                      "value": {
+                                        "description": "Matcher for the entry value.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "exact": {
+                                            "type": "string",
+                                            "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                          },
+                                          "startsWith": {
+                                            "type": "string",
+                                            "description": "Match values that start with the given prefix."
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "headers": {
+                                  "type": "array",
+                                  "description": "Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.",
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "key": {
+                                        "description": "Matcher for the entry key (header name or query key).",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "exact": {
+                                            "type": "string",
+                                            "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                          },
+                                          "startsWith": {
+                                            "type": "string",
+                                            "description": "Match values that start with the given prefix."
+                                          }
+                                        }
+                                      },
+                                      "value": {
+                                        "description": "Matcher for the entry value.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "exact": {
+                                            "type": "string",
+                                            "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                                          },
+                                          "startsWith": {
+                                            "type": "string",
+                                            "description": "Match values that start with the given prefix."
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
                         }
                       }
                     },
@@ -130110,6 +131041,121 @@
                     "type": "object",
                     "additionalProperties": false
                   },
+                  "deploymentPolicy": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "description": "Composable deployment-time policy. Each rule key controls an independent restriction.",
+                        "additionalProperties": false,
+                        "properties": {
+                          "gitSources": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "enabled",
+                                  "sources"
+                                ],
+                                "properties": {
+                                  "enabled": {
+                                    "type": "boolean"
+                                  },
+                                  "sources": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "additionalProperties": false,
+                                      "required": [
+                                        "provider",
+                                        "org"
+                                      ],
+                                      "properties": {
+                                        "provider": {
+                                          "type": "string",
+                                          "enum": [
+                                            "github",
+                                            "gitlab",
+                                            "bitbucket"
+                                          ]
+                                        },
+                                        "org": {
+                                          "type": "string"
+                                        },
+                                        "repo": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ]
+                          },
+                          "deploymentSources": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "enabled",
+                                  "sources"
+                                ],
+                                "properties": {
+                                  "enabled": {
+                                    "type": "boolean"
+                                  },
+                                  "sources": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string",
+                                      "enum": [
+                                        "git",
+                                        "cli",
+                                        "api"
+                                      ]
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ]
+                          },
+                          "publicDeployments": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "enabled",
+                                  "allowPublicDeployments"
+                                ],
+                                "properties": {
+                                  "enabled": {
+                                    "type": "boolean"
+                                  },
+                                  "allowPublicDeployments": {
+                                    "type": "boolean"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "string"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  },
                   "strictDeploymentProtectionSettings": {
                     "type": "object",
                     "description": "When enabled, deployment protection settings require stricter permissions (owner-only).",
@@ -138250,6 +139296,8 @@
               "project-oidc-token-created",
               "project-options-allowlist",
               "project-password-protection",
+              "project-expiration-locked",
+              "project-expiration-scheduled",
               "project-paused",
               "project-program-enrollment-changed",
               "project-rolling-release-enabled",
@@ -138265,6 +139313,7 @@
               "project-rolling-release-suggested-actions-generated",
               "project-routes-version-promoted",
               "project-routes-version-restored",
+              "project-deployment-policy-updated",
               "project-oidc-issuer-mode-updated",
               "project-customer-success-code-visibility-updated",
               "project-git-fork-protection-updated",
@@ -138984,6 +140033,8 @@
               "project-oidc-token-created",
               "project-options-allowlist",
               "project-password-protection",
+              "project-expiration-locked",
+              "project-expiration-scheduled",
               "project-paused",
               "project-program-enrollment-changed",
               "project-rolling-release-enabled",
@@ -138999,6 +140050,7 @@
               "project-rolling-release-suggested-actions-generated",
               "project-routes-version-promoted",
               "project-routes-version-restored",
+              "project-deployment-policy-updated",
               "project-oidc-issuer-mode-updated",
               "project-customer-success-code-visibility-updated",
               "project-git-fork-protection-updated",
@@ -139510,6 +140562,8 @@
                 "project-oidc-token-created",
                 "project-options-allowlist",
                 "project-password-protection",
+                "project-expiration-locked",
+                "project-expiration-scheduled",
                 "project-paused",
                 "project-program-enrollment-changed",
                 "project-rolling-release-enabled",
@@ -139525,6 +140579,7 @@
                 "project-rolling-release-suggested-actions-generated",
                 "project-routes-version-promoted",
                 "project-routes-version-restored",
+                "project-deployment-policy-updated",
                 "project-oidc-issuer-mode-updated",
                 "project-customer-success-code-visibility-updated",
                 "project-git-fork-protection-updated",
@@ -143329,6 +144384,7 @@
                 "type": "string",
                 "enum": [
                   "ENTERPRISE_UNPAID_INVOICE",
+                  "EXPOSURE_CAP_EXCEEDED",
                   "SUBSCRIPTION_CANCELED",
                   "SUBSCRIPTION_EXPIRED",
                   "UNPAID_INVOICE",

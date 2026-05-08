@@ -1060,6 +1060,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectDeploymentPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectDeploymentRetentionUpdated,
         /// <summary>
         /// 
@@ -1089,6 +1093,14 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectElasticConcurrencyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectExpirationLocked,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectExpirationScheduled,
         /// <summary>
         /// 
         /// </summary>
@@ -2157,6 +2169,7 @@ namespace Vercel
                 ListEventTypeName.ProjectDelegatedProtectionEnabled => "project-delegated-protection-enabled",
                 ListEventTypeName.ProjectDelegatedProtectionUpdated => "project-delegated-protection-updated",
                 ListEventTypeName.ProjectDelete => "project-delete",
+                ListEventTypeName.ProjectDeploymentPolicyUpdated => "project-deployment-policy-updated",
                 ListEventTypeName.ProjectDeploymentRetentionUpdated => "project-deployment-retention-updated",
                 ListEventTypeName.ProjectDirectoryListing => "project-directory-listing",
                 ListEventTypeName.ProjectDomainDeleted => "project-domain-deleted",
@@ -2165,6 +2178,8 @@ namespace Vercel
                 ListEventTypeName.ProjectDomainUpdated => "project-domain-updated",
                 ListEventTypeName.ProjectDomainVerified => "project-domain-verified",
                 ListEventTypeName.ProjectElasticConcurrencyUpdated => "project-elastic-concurrency-updated",
+                ListEventTypeName.ProjectExpirationLocked => "project-expiration-locked",
+                ListEventTypeName.ProjectExpirationScheduled => "project-expiration-scheduled",
                 ListEventTypeName.ProjectExternalRewriteCachingUpdated => "project-external-rewrite-caching-updated",
                 ListEventTypeName.ProjectFrameworkUpdated => "project-framework-updated",
                 ListEventTypeName.ProjectFunctionCpuMemory => "project-function-cpu-memory",
@@ -2635,6 +2650,7 @@ namespace Vercel
                 "project-delegated-protection-enabled" => ListEventTypeName.ProjectDelegatedProtectionEnabled,
                 "project-delegated-protection-updated" => ListEventTypeName.ProjectDelegatedProtectionUpdated,
                 "project-delete" => ListEventTypeName.ProjectDelete,
+                "project-deployment-policy-updated" => ListEventTypeName.ProjectDeploymentPolicyUpdated,
                 "project-deployment-retention-updated" => ListEventTypeName.ProjectDeploymentRetentionUpdated,
                 "project-directory-listing" => ListEventTypeName.ProjectDirectoryListing,
                 "project-domain-deleted" => ListEventTypeName.ProjectDomainDeleted,
@@ -2643,6 +2659,8 @@ namespace Vercel
                 "project-domain-updated" => ListEventTypeName.ProjectDomainUpdated,
                 "project-domain-verified" => ListEventTypeName.ProjectDomainVerified,
                 "project-elastic-concurrency-updated" => ListEventTypeName.ProjectElasticConcurrencyUpdated,
+                "project-expiration-locked" => ListEventTypeName.ProjectExpirationLocked,
+                "project-expiration-scheduled" => ListEventTypeName.ProjectExpirationScheduled,
                 "project-external-rewrite-caching-updated" => ListEventTypeName.ProjectExternalRewriteCachingUpdated,
                 "project-framework-updated" => ListEventTypeName.ProjectFrameworkUpdated,
                 "project-function-cpu-memory" => ListEventTypeName.ProjectFunctionCpuMemory,

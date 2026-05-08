@@ -250,6 +250,13 @@ namespace Vercel
         public global::Vercel.UpdateProjectRequestTrustedSources? TrustedSources { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateProjectRequestDeploymentPolicy, string>))]
+        public global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicy, string>? DeploymentPolicy { get; set; }
+
+        /// <summary>
         /// Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
@@ -379,6 +386,7 @@ namespace Vercel
         /// <param name="trustedSources">
         /// Deployment Protection Trusted Sources
         /// </param>
+        /// <param name="deploymentPolicy"></param>
         /// <param name="optionsAllowlist">
         /// Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests
         /// </param>
@@ -430,6 +438,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestSsoProtection? ssoProtection,
             global::Vercel.UpdateProjectRequestTrustedIps? trustedIps,
             global::Vercel.UpdateProjectRequestTrustedSources? trustedSources,
+            global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicy, string>? deploymentPolicy,
             global::Vercel.UpdateProjectRequestOptionsAllowlist? optionsAllowlist,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestConnectConfiguration>? connectConfigurations,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestDismissedToast>? dismissedToasts)
@@ -472,6 +481,7 @@ namespace Vercel
             this.SsoProtection = ssoProtection;
             this.TrustedIps = trustedIps;
             this.TrustedSources = trustedSources;
+            this.DeploymentPolicy = deploymentPolicy;
             this.OptionsAllowlist = optionsAllowlist;
             this.ConnectConfigurations = connectConfigurations;
             this.DismissedToasts = dismissedToasts;

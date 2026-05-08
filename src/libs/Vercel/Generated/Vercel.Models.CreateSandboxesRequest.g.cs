@@ -16,6 +16,12 @@ namespace Vercel
         public global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
 
         /// <summary>
+        /// List of forwarding rules for network requests. Each rule specifies a domain pattern to match and a proxy URL to forward matching requests to.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("__networkPolicyForwardRules")]
+        public global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyForwardRule>? NetworkPolicyForwardRules { get; set; }
+
+        /// <summary>
         /// Resources to define the VM
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resources")]
@@ -113,6 +119,9 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateSandboxesRequest" /> class.
         /// </summary>
         /// <param name="networkPolicy"></param>
+        /// <param name="networkPolicyForwardRules">
+        /// List of forwarding rules for network requests. Each rule specifies a domain pattern to match and a proxy URL to forward matching requests to.
+        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
@@ -162,6 +171,7 @@ namespace Vercel
 #endif
         public CreateSandboxesRequest(
             global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>? networkPolicy,
+            global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyForwardRule>? networkPolicyForwardRules,
             global::Vercel.CreateSandboxesRequestResources? resources,
             global::Vercel.CreateSandboxesRequestRuntime? runtime,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestSourceVariant1, global::Vercel.CreateSandboxesRequestSourceVariant2, global::Vercel.CreateSandboxesRequestSourceVariant3>? source,
@@ -175,6 +185,7 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, string>? tags)
         {
             this.NetworkPolicy = networkPolicy;
+            this.NetworkPolicyForwardRules = networkPolicyForwardRules;
             this.Resources = resources;
             this.Runtime = runtime;
             this.Source = source;

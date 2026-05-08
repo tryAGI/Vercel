@@ -127,6 +127,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiration")]
+        public global::Vercel.GetProjectsResponseVariant3ProjectExpiration? Expiration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("devCommand")]
         public string? DevCommand { get; set; }
 
@@ -598,6 +604,7 @@ namespace Vercel
         /// <param name="crons"></param>
         /// <param name="dataCache"></param>
         /// <param name="delegatedProtection"></param>
+        /// <param name="expiration"></param>
         /// <param name="devCommand"></param>
         /// <param name="installCommand"></param>
         /// <param name="env"></param>
@@ -696,6 +703,7 @@ namespace Vercel
             global::Vercel.GetProjectsResponseVariant3ProjectCrons? crons,
             global::Vercel.GetProjectsResponseVariant3ProjectDataCache? dataCache,
             object? delegatedProtection,
+            global::Vercel.GetProjectsResponseVariant3ProjectExpiration? expiration,
             string? devCommand,
             string? installCommand,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant3ProjectEnvItem>? env,
@@ -781,6 +789,7 @@ namespace Vercel
             this.DataCache = dataCache;
             this.DelegatedProtection = delegatedProtection;
             this.DeploymentExpiration = deploymentExpiration ?? throw new global::System.ArgumentNullException(nameof(deploymentExpiration));
+            this.Expiration = expiration;
             this.DevCommand = devCommand;
             this.DirectoryListing = directoryListing;
             this.InstallCommand = installCommand;

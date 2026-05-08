@@ -142,6 +142,13 @@ namespace Vercel
         public global::Vercel.PatchTeamRequestDefaultExpirationSettings? DefaultExpirationSettings { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestDeploymentPolicy, string>))]
+        public global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicy, string>? DeploymentPolicy { get; set; }
+
+        /// <summary>
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("strictDeploymentProtectionSettings")]
@@ -244,6 +251,7 @@ namespace Vercel
         /// Default deployment protection settings for new projects.
         /// </param>
         /// <param name="defaultExpirationSettings"></param>
+        /// <param name="deploymentPolicy"></param>
         /// <param name="strictDeploymentProtectionSettings">
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
         /// </param>
@@ -277,6 +285,7 @@ namespace Vercel
             bool? disableRepositoryDispatchEvents,
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings,
+            global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicy, string>? deploymentPolicy,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.PatchTeamRequestStrictShareableLinks? strictShareableLinks,
             global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>? nsnbConfig,
@@ -301,6 +310,7 @@ namespace Vercel
             this.DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
             this.DefaultExpirationSettings = defaultExpirationSettings;
+            this.DeploymentPolicy = deploymentPolicy;
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
             this.StrictShareableLinks = strictShareableLinks;
             this.NsnbConfig = nsnbConfig;

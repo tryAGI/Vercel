@@ -23,6 +23,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ExposureCapExceeded,
+        /// <summary>
+        /// 
+        /// </summary>
         FairUseLimitsExceeded,
         /// <summary>
         /// 
@@ -53,6 +57,7 @@ namespace Vercel
                 AuthUserSoftBlockReason.BlockedForPlatformAbuse => "BLOCKED_FOR_PLATFORM_ABUSE",
                 AuthUserSoftBlockReason.EnterpriseTrialEnded => "ENTERPRISE_TRIAL_ENDED",
                 AuthUserSoftBlockReason.EnterpriseUnpaidInvoice => "ENTERPRISE_UNPAID_INVOICE",
+                AuthUserSoftBlockReason.ExposureCapExceeded => "EXPOSURE_CAP_EXCEEDED",
                 AuthUserSoftBlockReason.FairUseLimitsExceeded => "FAIR_USE_LIMITS_EXCEEDED",
                 AuthUserSoftBlockReason.SubscriptionCanceled => "SUBSCRIPTION_CANCELED",
                 AuthUserSoftBlockReason.SubscriptionExpired => "SUBSCRIPTION_EXPIRED",
@@ -70,6 +75,7 @@ namespace Vercel
                 "BLOCKED_FOR_PLATFORM_ABUSE" => AuthUserSoftBlockReason.BlockedForPlatformAbuse,
                 "ENTERPRISE_TRIAL_ENDED" => AuthUserSoftBlockReason.EnterpriseTrialEnded,
                 "ENTERPRISE_UNPAID_INVOICE" => AuthUserSoftBlockReason.EnterpriseUnpaidInvoice,
+                "EXPOSURE_CAP_EXCEEDED" => AuthUserSoftBlockReason.ExposureCapExceeded,
                 "FAIR_USE_LIMITS_EXCEEDED" => AuthUserSoftBlockReason.FairUseLimitsExceeded,
                 "SUBSCRIPTION_CANCELED" => AuthUserSoftBlockReason.SubscriptionCanceled,
                 "SUBSCRIPTION_EXPIRED" => AuthUserSoftBlockReason.SubscriptionExpired,
