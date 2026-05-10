@@ -42,6 +42,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public string PickEdgeConfigItemValueVariant1() => IsEdgeConfigItemValueVariant1
+            ? EdgeConfigItemValueVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'EdgeConfigItemValueVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? EdgeConfigItemValueVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vercel
             value = EdgeConfigItemValueVariant2;
             return IsEdgeConfigItemValueVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public double PickEdgeConfigItemValueVariant2() => IsEdgeConfigItemValueVariant2
+            ? EdgeConfigItemValueVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'EdgeConfigItemValueVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?> PickEdgeConfigItemValueVariant3() => IsEdgeConfigItemValueVariant3
+            ? EdgeConfigItemValueVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'EdgeConfigItemValueVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>? EdgeConfigItemValueVariant4 { get; init; }
 #else
@@ -132,6 +153,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue> PickEdgeConfigItemValueVariant4() => IsEdgeConfigItemValueVariant4
+            ? EdgeConfigItemValueVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'EdgeConfigItemValueVariant4' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public bool? EdgeConfigItemValueVariant5 { get; init; }
 #else
@@ -158,6 +186,13 @@ namespace Vercel
             value = EdgeConfigItemValueVariant5;
             return IsEdgeConfigItemValueVariant5;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PickEdgeConfigItemValueVariant5() => IsEdgeConfigItemValueVariant5
+            ? EdgeConfigItemValueVariant5!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'EdgeConfigItemValueVariant5' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -175,6 +210,11 @@ namespace Vercel
         {
             EdgeConfigItemValueVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static EdgeConfigItemValue FromEdgeConfigItemValueVariant1(string? value) => new EdgeConfigItemValue(value);
 
         /// <summary>
         /// 
@@ -197,6 +237,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static EdgeConfigItemValue FromEdgeConfigItemValueVariant2(double? value) => new EdgeConfigItemValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator EdgeConfigItemValue(global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?> value) => new EdgeConfigItemValue((global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>?)value);
 
         /// <summary>
@@ -215,6 +260,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static EdgeConfigItemValue FromEdgeConfigItemValueVariant3(global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>? value) => new EdgeConfigItemValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator EdgeConfigItemValue(bool value) => new EdgeConfigItemValue((bool?)value);
 
         /// <summary>
@@ -229,6 +279,11 @@ namespace Vercel
         {
             EdgeConfigItemValueVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static EdgeConfigItemValue FromEdgeConfigItemValueVariant5(bool? value) => new EdgeConfigItemValue(value);
 
         /// <summary>
         /// 
