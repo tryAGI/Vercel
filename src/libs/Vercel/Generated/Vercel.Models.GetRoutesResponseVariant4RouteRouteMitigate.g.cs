@@ -41,5 +41,6 @@ namespace Vercel
         public GetRoutesResponseVariant4RouteRouteMitigate()
         {
         }
+
     }
 }

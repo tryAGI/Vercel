@@ -2253,5 +2253,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectPermissions()
         {
         }
+
     }
 }

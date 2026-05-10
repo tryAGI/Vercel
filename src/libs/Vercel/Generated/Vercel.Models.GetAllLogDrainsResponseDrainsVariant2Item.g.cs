@@ -242,5 +242,6 @@ namespace Vercel
         public GetAllLogDrainsResponseDrainsVariant2Item()
         {
         }
+
     }
 }

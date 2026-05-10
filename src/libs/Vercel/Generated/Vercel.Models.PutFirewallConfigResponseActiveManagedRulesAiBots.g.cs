@@ -77,5 +77,6 @@ namespace Vercel
         public PutFirewallConfigResponseActiveManagedRulesAiBots()
         {
         }
+
     }
 }

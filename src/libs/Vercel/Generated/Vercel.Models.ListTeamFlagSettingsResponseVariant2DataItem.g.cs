@@ -126,5 +126,6 @@ namespace Vercel
         public ListTeamFlagSettingsResponseVariant2DataItem()
         {
         }
+
     }
 }

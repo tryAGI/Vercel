@@ -143,5 +143,6 @@ namespace Vercel
         public SearchRepoResponseVariant2Repo()
         {
         }
+
     }
 }

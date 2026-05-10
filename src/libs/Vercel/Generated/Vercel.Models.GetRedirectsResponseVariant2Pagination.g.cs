@@ -60,5 +60,6 @@ namespace Vercel
         public GetRedirectsResponseVariant2Pagination()
         {
         }
+
     }
 }

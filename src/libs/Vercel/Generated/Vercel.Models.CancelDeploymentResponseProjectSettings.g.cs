@@ -113,5 +113,6 @@ namespace Vercel
         public CancelDeploymentResponseProjectSettings()
         {
         }
+
     }
 }

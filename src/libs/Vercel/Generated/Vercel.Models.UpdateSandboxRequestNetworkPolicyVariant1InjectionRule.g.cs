@@ -65,5 +65,6 @@ namespace Vercel
         public UpdateSandboxRequestNetworkPolicyVariant1InjectionRule()
         {
         }
+
     }
 }

@@ -49,5 +49,6 @@ namespace Vercel
         public GetOrderResponseErrorVariant3Details()
         {
         }
+
     }
 }

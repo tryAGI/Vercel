@@ -191,5 +191,6 @@ namespace Vercel
         public CreateIntegrationStoreDirectResponseStoreBillingPlan()
         {
         }
+
     }
 }

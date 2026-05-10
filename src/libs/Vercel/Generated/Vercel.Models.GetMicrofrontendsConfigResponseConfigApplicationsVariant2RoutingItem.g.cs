@@ -64,5 +64,6 @@ namespace Vercel
         public GetMicrofrontendsConfigResponseConfigApplicationsVariant2RoutingItem()
         {
         }
+
     }
 }

@@ -145,5 +145,6 @@ namespace Vercel
         public CreateProjectRequestResourceConfig()
         {
         }
+
     }
 }

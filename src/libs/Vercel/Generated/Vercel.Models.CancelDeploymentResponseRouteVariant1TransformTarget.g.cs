@@ -41,5 +41,6 @@ namespace Vercel
         public CancelDeploymentResponseRouteVariant1TransformTarget()
         {
         }
+
     }
 }

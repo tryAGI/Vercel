@@ -63,5 +63,6 @@ namespace Vercel
         public GetDeploymentResponseVariant1AttributionCommitMeta()
         {
         }
+
     }
 }

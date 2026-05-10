@@ -58,5 +58,6 @@ namespace Vercel
         public CreateDeploymentResponseBuild2()
         {
         }
+
     }
 }

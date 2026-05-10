@@ -60,5 +60,6 @@ namespace Vercel
         public SegmentDataRuleConditionLhsVariant2()
         {
         }
+
     }
 }

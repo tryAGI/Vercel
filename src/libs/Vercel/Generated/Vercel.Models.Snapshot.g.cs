@@ -194,5 +194,6 @@ namespace Vercel
         public Snapshot()
         {
         }
+
     }
 }

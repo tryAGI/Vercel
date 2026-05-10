@@ -61,5 +61,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectSsoProtection()
         {
         }
+
     }
 }

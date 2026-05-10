@@ -94,5 +94,6 @@ namespace Vercel
         public CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant9Items()
         {
         }
+
     }
 }

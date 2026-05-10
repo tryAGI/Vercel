@@ -225,5 +225,6 @@ namespace Vercel
         public ListCheckRunsResponseRun()
         {
         }
+
     }
 }

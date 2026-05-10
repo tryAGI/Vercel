@@ -90,5 +90,6 @@ namespace Vercel
         public GetDomainConfigResponse()
         {
         }
+
     }
 }

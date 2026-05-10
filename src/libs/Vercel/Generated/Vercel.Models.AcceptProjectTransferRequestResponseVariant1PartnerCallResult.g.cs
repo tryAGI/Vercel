@@ -59,5 +59,6 @@ namespace Vercel
         public AcceptProjectTransferRequestResponseVariant1PartnerCallResult()
         {
         }
+
     }
 }

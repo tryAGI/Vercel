@@ -104,5 +104,6 @@ namespace Vercel
         public GetRedirectsResponseVariant3Redirect()
         {
         }
+
     }
 }

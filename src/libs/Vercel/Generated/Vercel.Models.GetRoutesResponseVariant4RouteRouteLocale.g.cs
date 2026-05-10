@@ -48,5 +48,6 @@ namespace Vercel
         public GetRoutesResponseVariant4RouteRouteLocale()
         {
         }
+
     }
 }

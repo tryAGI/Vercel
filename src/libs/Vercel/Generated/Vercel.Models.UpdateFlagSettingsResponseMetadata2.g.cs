@@ -88,5 +88,6 @@ namespace Vercel
         public UpdateFlagSettingsResponseMetadata2()
         {
         }
+
     }
 }

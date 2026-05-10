@@ -376,5 +376,6 @@ namespace Vercel
         public GetMicrofrontendsInGroupResponseProjectLatestDeployment()
         {
         }
+
     }
 }

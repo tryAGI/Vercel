@@ -40,5 +40,6 @@ namespace Vercel
         public GetOrderResponseDomainVariant1ErrorVariant2Details()
         {
         }
+
     }
 }

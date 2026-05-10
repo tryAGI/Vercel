@@ -191,5 +191,6 @@ namespace Vercel
         public GetBillingPlansResponsePlan()
         {
         }
+
     }
 }

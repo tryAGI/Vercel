@@ -40,5 +40,6 @@ namespace Vercel
         public GetDeploymentResponseVariant2CustomEnvironmentVariant2()
         {
         }
+
     }
 }

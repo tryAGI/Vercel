@@ -58,5 +58,6 @@ namespace Vercel
         public ListFlagVersionsResponseVersionDataEnvironmentsRuleConditionRhsVariant3ItemVariant2()
         {
         }
+
     }
 }

@@ -146,5 +146,6 @@ namespace Vercel
         public GetProjectsResponseVariant1ItemLinkVariant3()
         {
         }
+
     }
 }

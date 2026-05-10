@@ -156,5 +156,6 @@ namespace Vercel
         public CreateFlagSegmentResponse()
         {
         }
+
     }
 }

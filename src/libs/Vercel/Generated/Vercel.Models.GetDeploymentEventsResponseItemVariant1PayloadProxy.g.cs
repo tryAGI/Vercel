@@ -210,5 +210,6 @@ namespace Vercel
         public GetDeploymentEventsResponseItemVariant1PayloadProxy()
         {
         }
+
     }
 }

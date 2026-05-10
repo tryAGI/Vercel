@@ -50,5 +50,6 @@ namespace Vercel
         public GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant1()
         {
         }
+
     }
 }

@@ -46,5 +46,6 @@ namespace Vercel
         public UpdateProjectRequestSsoProtection()
         {
         }
+
     }
 }

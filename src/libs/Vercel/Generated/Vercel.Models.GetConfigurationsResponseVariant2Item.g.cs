@@ -325,5 +325,6 @@ namespace Vercel
         public GetConfigurationsResponseVariant2Item()
         {
         }
+
     }
 }

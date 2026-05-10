@@ -122,5 +122,6 @@ namespace Vercel
         public GetDeploymentResponseVariant1Functions2()
         {
         }
+
     }
 }

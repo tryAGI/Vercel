@@ -74,5 +74,6 @@ namespace Vercel
         public CreateSandboxesRequestNetworkPolicyVariant1InjectionRuleMatch()
         {
         }
+
     }
 }

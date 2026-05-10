@@ -997,5 +997,6 @@ namespace Vercel
         public CancelDeploymentResponse()
         {
         }
+
     }
 }

@@ -99,5 +99,6 @@ namespace Vercel
         public UpdateSessionNetworkPolicyRequestVariant1()
         {
         }
+
     }
 }

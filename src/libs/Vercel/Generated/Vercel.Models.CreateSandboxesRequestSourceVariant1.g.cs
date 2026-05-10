@@ -107,5 +107,6 @@ namespace Vercel
         public CreateSandboxesRequestSourceVariant1()
         {
         }
+
     }
 }

@@ -99,5 +99,6 @@ namespace Vercel
         public CreateSandboxesRequestNetworkPolicyVariant1()
         {
         }
+
     }
 }

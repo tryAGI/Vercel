@@ -55,5 +55,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectCustomEnvironmentBranchMatcher()
         {
         }
+
     }
 }

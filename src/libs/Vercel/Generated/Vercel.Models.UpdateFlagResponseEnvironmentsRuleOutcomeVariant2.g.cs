@@ -70,5 +70,6 @@ namespace Vercel
         public UpdateFlagResponseEnvironmentsRuleOutcomeVariant2()
         {
         }
+
     }
 }

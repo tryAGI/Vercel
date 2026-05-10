@@ -79,5 +79,6 @@ namespace Vercel
         public GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant9UiOptionVariant1()
         {
         }
+
     }
 }

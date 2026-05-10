@@ -50,5 +50,6 @@ namespace Vercel
         public FlagEnvironmentsRuleOutcomeVariant3Slot()
         {
         }
+
     }
 }

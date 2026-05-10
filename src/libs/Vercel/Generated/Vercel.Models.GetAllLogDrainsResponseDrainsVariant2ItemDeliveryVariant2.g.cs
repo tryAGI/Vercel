@@ -81,5 +81,6 @@ namespace Vercel
         public GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2()
         {
         }
+
     }
 }

@@ -54,5 +54,6 @@ namespace Vercel
         public PatchUrlProtectionBypassRequestVariant1Revoke()
         {
         }
+
     }
 }

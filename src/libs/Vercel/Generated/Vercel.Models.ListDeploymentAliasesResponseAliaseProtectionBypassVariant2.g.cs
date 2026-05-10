@@ -81,5 +81,6 @@ namespace Vercel
         public ListDeploymentAliasesResponseAliaseProtectionBypassVariant2()
         {
         }
+
     }
 }

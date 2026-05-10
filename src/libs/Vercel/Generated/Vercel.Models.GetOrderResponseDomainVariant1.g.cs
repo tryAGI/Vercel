@@ -105,5 +105,6 @@ namespace Vercel
         public GetOrderResponseDomainVariant1()
         {
         }
+
     }
 }

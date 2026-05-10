@@ -52,5 +52,6 @@ namespace Vercel
         public UpdateProjectRequestTrustedSourcesProjects2()
         {
         }
+
     }
 }

@@ -162,5 +162,6 @@ namespace Vercel
         public GetFirewallConfigResponseCrs()
         {
         }
+
     }
 }

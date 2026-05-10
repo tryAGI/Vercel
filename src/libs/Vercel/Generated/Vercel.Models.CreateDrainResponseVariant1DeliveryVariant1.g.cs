@@ -91,5 +91,6 @@ namespace Vercel
         public CreateDrainResponseVariant1DeliveryVariant1()
         {
         }
+
     }
 }

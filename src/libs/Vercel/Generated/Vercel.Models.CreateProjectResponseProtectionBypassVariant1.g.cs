@@ -80,5 +80,6 @@ namespace Vercel
         public CreateProjectResponseProtectionBypassVariant1()
         {
         }
+
     }
 }

@@ -115,5 +115,6 @@ namespace Vercel
         public CreateProjectResponseAbuseBlockHistoryItemVariant1()
         {
         }
+
     }
 }

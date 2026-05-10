@@ -74,5 +74,6 @@ namespace Vercel
         public GetDeploymentResponseVariant1MicrofrontendsVariant1()
         {
         }
+
     }
 }

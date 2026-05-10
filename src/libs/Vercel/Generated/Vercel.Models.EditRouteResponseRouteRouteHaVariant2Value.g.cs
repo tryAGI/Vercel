@@ -130,5 +130,6 @@ namespace Vercel
         public EditRouteResponseRouteRouteHaVariant2Value()
         {
         }
+
     }
 }

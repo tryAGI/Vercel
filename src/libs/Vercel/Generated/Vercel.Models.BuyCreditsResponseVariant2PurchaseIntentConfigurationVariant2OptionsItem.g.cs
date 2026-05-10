@@ -75,5 +75,6 @@ namespace Vercel
         public BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant2OptionsItem()
         {
         }
+
     }
 }

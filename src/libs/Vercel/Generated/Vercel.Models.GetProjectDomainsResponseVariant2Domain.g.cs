@@ -137,5 +137,6 @@ namespace Vercel
         public GetProjectDomainsResponseVariant2Domain()
         {
         }
+
     }
 }

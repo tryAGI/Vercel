@@ -75,5 +75,6 @@ namespace Vercel
         public GetDeploymentResponseVariant1AttributionGitUser()
         {
         }
+
     }
 }

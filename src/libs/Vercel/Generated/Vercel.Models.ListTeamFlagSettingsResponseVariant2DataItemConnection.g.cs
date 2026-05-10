@@ -50,5 +50,6 @@ namespace Vercel
         public ListTeamFlagSettingsResponseVariant2DataItemConnection()
         {
         }
+
     }
 }

@@ -100,5 +100,6 @@ namespace Vercel
         public GetSecurityFirewallEventsResponseAction()
         {
         }
+
     }
 }

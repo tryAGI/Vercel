@@ -40,5 +40,6 @@ namespace Vercel
         public PutFirewallConfigResponseActiveRuleVariant1ConditionGroupItem()
         {
         }
+
     }
 }

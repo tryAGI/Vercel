@@ -136,5 +136,6 @@ namespace Vercel
         public CreateProjectResponseLinkVariant1()
         {
         }
+
     }
 }

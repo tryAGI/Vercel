@@ -68,5 +68,6 @@ namespace Vercel
         public UpdateCheckRequestOutputMetricsLcp()
         {
         }
+
     }
 }

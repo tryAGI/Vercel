@@ -361,5 +361,6 @@ namespace Vercel
         public GetConfigurationResponseVariant1()
         {
         }
+
     }
 }

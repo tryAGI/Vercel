@@ -49,5 +49,6 @@ namespace Vercel
         public ListSessionsResponseVariant2Pagination()
         {
         }
+
     }
 }

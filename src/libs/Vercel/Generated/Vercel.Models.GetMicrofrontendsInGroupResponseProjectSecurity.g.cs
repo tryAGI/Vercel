@@ -177,5 +177,6 @@ namespace Vercel
         public GetMicrofrontendsInGroupResponseProjectSecurity()
         {
         }
+
     }
 }
