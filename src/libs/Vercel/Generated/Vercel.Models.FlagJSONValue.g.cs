@@ -42,6 +42,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public string PickFlagJSONValueVariant1() => IsFlagJSONValueVariant1
+            ? FlagJSONValueVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? FlagJSONValueVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vercel
             value = FlagJSONValueVariant2;
             return IsFlagJSONValueVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public double PickFlagJSONValueVariant2() => IsFlagJSONValueVariant2
+            ? FlagJSONValueVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// TODO: The following types will eventually be exported by a more relevant package.
@@ -102,6 +116,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue> PickFlagJSONValueVariant3() => IsFlagJSONValueVariant3
+            ? FlagJSONValueVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>? FlagJSONValueVariant4 { get; init; }
 #else
@@ -132,6 +153,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?> PickFlagJSONValueVariant4() => IsFlagJSONValueVariant4
+            ? FlagJSONValueVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant4' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public bool? FlagJSONValueVariant5 { get; init; }
 #else
@@ -158,6 +186,13 @@ namespace Vercel
             value = FlagJSONValueVariant5;
             return IsFlagJSONValueVariant5;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool PickFlagJSONValueVariant5() => IsFlagJSONValueVariant5
+            ? FlagJSONValueVariant5!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant5' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -175,6 +210,11 @@ namespace Vercel
         {
             FlagJSONValueVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FlagJSONValue FromFlagJSONValueVariant1(string? value) => new FlagJSONValue(value);
 
         /// <summary>
         /// 
@@ -197,6 +237,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static FlagJSONValue FromFlagJSONValueVariant2(double? value) => new FlagJSONValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FlagJSONValue(global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?> value) => new FlagJSONValue((global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>?)value);
 
         /// <summary>
@@ -215,6 +260,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static FlagJSONValue FromFlagJSONValueVariant4(global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>? value) => new FlagJSONValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FlagJSONValue(bool value) => new FlagJSONValue((bool?)value);
 
         /// <summary>
@@ -229,6 +279,11 @@ namespace Vercel
         {
             FlagJSONValueVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FlagJSONValue FromFlagJSONValueVariant5(bool? value) => new FlagJSONValue(value);
 
         /// <summary>
         /// 

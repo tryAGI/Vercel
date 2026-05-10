@@ -42,6 +42,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public string PickPropertyKeyVariant1() => IsPropertyKeyVariant1
+            ? PropertyKeyVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PropertyKeyVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? PropertyKeyVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vercel
             value = PropertyKeyVariant2;
             return IsPropertyKeyVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public double PickPropertyKeyVariant2() => IsPropertyKeyVariant2
+            ? PropertyKeyVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PropertyKeyVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// an object to be decoded into a globally shared symbol
@@ -98,6 +112,13 @@ namespace Vercel
             value = PropertyKeyVariant3;
             return IsPropertyKeyVariant3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vercel.PropertyKeyVariant3 PickPropertyKeyVariant3() => IsPropertyKeyVariant3
+            ? PropertyKeyVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PropertyKeyVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Vercel
         {
             PropertyKeyVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PropertyKey FromPropertyKeyVariant1(string? value) => new PropertyKey(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static PropertyKey FromPropertyKeyVariant2(double? value) => new PropertyKey(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PropertyKey(global::Vercel.PropertyKeyVariant3 value) => new PropertyKey((global::Vercel.PropertyKeyVariant3?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Vercel
         {
             PropertyKeyVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PropertyKey FromPropertyKeyVariant3(global::Vercel.PropertyKeyVariant3? value) => new PropertyKey(value);
 
         /// <summary>
         /// 

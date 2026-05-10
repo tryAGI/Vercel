@@ -42,6 +42,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public global::Vercel.RegistrantFieldVariant1 PickRegistrantFieldVariant1() => IsRegistrantFieldVariant1
+            ? RegistrantFieldVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.RegistrantFieldVariant2? RegistrantFieldVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vercel
             value = RegistrantFieldVariant2;
             return IsRegistrantFieldVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vercel.RegistrantFieldVariant2 PickRegistrantFieldVariant2() => IsRegistrantFieldVariant2
+            ? RegistrantFieldVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public global::Vercel.RegistrantFieldVariant3 PickRegistrantFieldVariant3() => IsRegistrantFieldVariant3
+            ? RegistrantFieldVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.RegistrantFieldVariant4? RegistrantFieldVariant4 { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Vercel
             value = RegistrantFieldVariant4;
             return IsRegistrantFieldVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vercel.RegistrantFieldVariant4 PickRegistrantFieldVariant4() => IsRegistrantFieldVariant4
+            ? RegistrantFieldVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant4' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -145,6 +173,11 @@ namespace Vercel
         {
             RegistrantFieldVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RegistrantField FromRegistrantFieldVariant1(global::Vercel.RegistrantFieldVariant1? value) => new RegistrantField(value);
 
         /// <summary>
         /// 
@@ -167,6 +200,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static RegistrantField FromRegistrantFieldVariant2(global::Vercel.RegistrantFieldVariant2? value) => new RegistrantField(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RegistrantField(global::Vercel.RegistrantFieldVariant3 value) => new RegistrantField((global::Vercel.RegistrantFieldVariant3?)value);
 
         /// <summary>
@@ -185,6 +223,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static RegistrantField FromRegistrantFieldVariant3(global::Vercel.RegistrantFieldVariant3? value) => new RegistrantField(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RegistrantField(global::Vercel.RegistrantFieldVariant4 value) => new RegistrantField((global::Vercel.RegistrantFieldVariant4?)value);
 
         /// <summary>
@@ -199,6 +242,11 @@ namespace Vercel
         {
             RegistrantFieldVariant4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RegistrantField FromRegistrantFieldVariant4(global::Vercel.RegistrantFieldVariant4? value) => new RegistrantField(value);
 
         /// <summary>
         /// 
