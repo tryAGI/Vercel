@@ -50,5 +50,6 @@ namespace Vercel
         public PutFirewallConfigResponseActiveRuleVariant2ActionMitigateRedirect()
         {
         }
+
     }
 }

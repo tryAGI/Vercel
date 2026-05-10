@@ -89,5 +89,6 @@ namespace Vercel
         public CancelDeploymentResponseGitSourceVariant17()
         {
         }
+
     }
 }

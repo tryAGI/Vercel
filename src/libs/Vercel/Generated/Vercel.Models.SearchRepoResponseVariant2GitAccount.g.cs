@@ -51,5 +51,6 @@ namespace Vercel
         public SearchRepoResponseVariant2GitAccount()
         {
         }
+
     }
 }

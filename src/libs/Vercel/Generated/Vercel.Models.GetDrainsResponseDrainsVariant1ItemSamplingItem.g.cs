@@ -69,5 +69,6 @@ namespace Vercel
         public GetDrainsResponseDrainsVariant1ItemSamplingItem()
         {
         }
+
     }
 }

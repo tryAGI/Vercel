@@ -246,5 +246,6 @@ namespace Vercel
         public CreateDeploymentResponseRouteVariant1()
         {
         }
+
     }
 }

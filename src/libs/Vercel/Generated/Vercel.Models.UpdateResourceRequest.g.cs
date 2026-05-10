@@ -106,5 +106,6 @@ namespace Vercel
         public UpdateResourceRequest()
         {
         }
+
     }
 }

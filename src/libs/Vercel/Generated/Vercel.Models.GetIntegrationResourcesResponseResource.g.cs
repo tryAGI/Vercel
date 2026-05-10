@@ -134,5 +134,6 @@ namespace Vercel
         public GetIntegrationResourcesResponseResource()
         {
         }
+
     }
 }

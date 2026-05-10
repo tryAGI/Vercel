@@ -51,5 +51,6 @@ namespace Vercel
         public UpdateFirewallConfigRequestVariant6Value()
         {
         }
+
     }
 }

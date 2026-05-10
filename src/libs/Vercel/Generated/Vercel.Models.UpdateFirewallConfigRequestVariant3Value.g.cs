@@ -98,5 +98,6 @@ namespace Vercel
         public UpdateFirewallConfigRequestVariant3Value()
         {
         }
+
     }
 }

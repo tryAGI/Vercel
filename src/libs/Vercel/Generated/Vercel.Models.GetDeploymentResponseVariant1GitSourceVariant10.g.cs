@@ -95,5 +95,6 @@ namespace Vercel
         public GetDeploymentResponseVariant1GitSourceVariant10()
         {
         }
+
     }
 }

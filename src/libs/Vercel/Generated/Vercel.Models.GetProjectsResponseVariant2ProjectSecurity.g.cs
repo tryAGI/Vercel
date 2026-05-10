@@ -195,5 +195,6 @@ namespace Vercel
         public GetProjectsResponseVariant2ProjectSecurity()
         {
         }
+
     }
 }

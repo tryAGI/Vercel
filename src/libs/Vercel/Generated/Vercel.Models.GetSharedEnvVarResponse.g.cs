@@ -279,5 +279,6 @@ namespace Vercel
         public GetSharedEnvVarResponse()
         {
         }
+
     }
 }

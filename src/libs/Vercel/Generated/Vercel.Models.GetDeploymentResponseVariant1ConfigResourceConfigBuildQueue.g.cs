@@ -42,5 +42,6 @@ namespace Vercel
         public GetDeploymentResponseVariant1ConfigResourceConfigBuildQueue()
         {
         }
+
     }
 }

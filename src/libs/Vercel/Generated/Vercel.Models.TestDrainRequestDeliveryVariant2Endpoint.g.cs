@@ -40,5 +40,6 @@ namespace Vercel
         public TestDrainRequestDeliveryVariant2Endpoint()
         {
         }
+
     }
 }

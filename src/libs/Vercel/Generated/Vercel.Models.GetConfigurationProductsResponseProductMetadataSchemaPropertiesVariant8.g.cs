@@ -190,5 +190,6 @@ namespace Vercel
         public GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant8()
         {
         }
+
     }
 }

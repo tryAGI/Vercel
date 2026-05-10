@@ -59,5 +59,6 @@ namespace Vercel
         public RegistrantFieldVariant1Option()
         {
         }
+
     }
 }

@@ -49,5 +49,6 @@ namespace Vercel
         public GetConfigurationResponseVariant1TransferRequestVariant1Requester()
         {
         }
+
     }
 }

@@ -173,5 +173,6 @@ namespace Vercel
         public GetEdgeConfigResponse()
         {
         }
+
     }
 }

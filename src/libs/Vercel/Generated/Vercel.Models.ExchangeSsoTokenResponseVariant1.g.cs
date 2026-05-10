@@ -76,5 +76,6 @@ namespace Vercel
         public ExchangeSsoTokenResponseVariant1()
         {
         }
+
     }
 }

@@ -40,5 +40,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectResourceConfigBuildQueue()
         {
         }
+
     }
 }

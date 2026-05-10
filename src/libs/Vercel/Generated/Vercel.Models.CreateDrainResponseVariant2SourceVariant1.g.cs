@@ -40,5 +40,6 @@ namespace Vercel
         public CreateDrainResponseVariant2SourceVariant1()
         {
         }
+
     }
 }

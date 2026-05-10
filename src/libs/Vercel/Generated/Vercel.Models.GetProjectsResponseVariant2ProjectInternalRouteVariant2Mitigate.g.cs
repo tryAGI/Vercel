@@ -40,5 +40,6 @@ namespace Vercel
         public GetProjectsResponseVariant2ProjectInternalRouteVariant2Mitigate()
         {
         }
+
     }
 }

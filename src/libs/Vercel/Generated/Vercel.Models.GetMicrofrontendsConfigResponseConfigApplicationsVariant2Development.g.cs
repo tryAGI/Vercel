@@ -62,5 +62,6 @@ namespace Vercel
         public GetMicrofrontendsConfigResponseConfigApplicationsVariant2Development()
         {
         }
+
     }
 }

@@ -195,5 +195,6 @@ namespace Vercel
         public ListAccessGroupsResponseVariant2AccessGroup()
         {
         }
+
     }
 }

@@ -50,5 +50,6 @@ namespace Vercel
         public GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapDdosAlerts2()
         {
         }
+
     }
 }

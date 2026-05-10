@@ -95,5 +95,6 @@ namespace Vercel
         public UpdateMicrofrontendsResponseAbuseBlockHistoryItemVariant2()
         {
         }
+
     }
 }

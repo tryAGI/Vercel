@@ -238,5 +238,6 @@ namespace Vercel
         public ListBillingChargesResponse()
         {
         }
+
     }
 }

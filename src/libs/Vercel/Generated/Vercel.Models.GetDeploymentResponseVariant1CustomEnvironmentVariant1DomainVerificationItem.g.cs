@@ -70,5 +70,6 @@ namespace Vercel
         public GetDeploymentResponseVariant1CustomEnvironmentVariant1DomainVerificationItem()
         {
         }
+
     }
 }

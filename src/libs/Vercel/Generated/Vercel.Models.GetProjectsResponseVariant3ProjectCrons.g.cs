@@ -84,5 +84,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectCrons()
         {
         }
+
     }
 }

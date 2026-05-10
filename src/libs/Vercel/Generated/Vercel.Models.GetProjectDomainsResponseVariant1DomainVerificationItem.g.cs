@@ -70,5 +70,6 @@ namespace Vercel
         public GetProjectDomainsResponseVariant1DomainVerificationItem()
         {
         }
+
     }
 }

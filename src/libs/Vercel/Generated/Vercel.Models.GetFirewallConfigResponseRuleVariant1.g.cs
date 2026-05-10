@@ -108,5 +108,6 @@ namespace Vercel
         public GetFirewallConfigResponseRuleVariant1()
         {
         }
+
     }
 }

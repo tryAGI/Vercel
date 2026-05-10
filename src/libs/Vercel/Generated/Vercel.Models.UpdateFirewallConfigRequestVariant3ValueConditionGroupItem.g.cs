@@ -40,5 +40,6 @@ namespace Vercel
         public UpdateFirewallConfigRequestVariant3ValueConditionGroupItem()
         {
         }
+
     }
 }

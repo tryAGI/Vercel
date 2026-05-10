@@ -327,5 +327,6 @@ namespace Vercel
         public AuthUserResourceConfig()
         {
         }
+
     }
 }

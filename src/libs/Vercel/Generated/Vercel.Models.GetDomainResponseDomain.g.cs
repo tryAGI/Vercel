@@ -261,5 +261,6 @@ namespace Vercel
         public GetDomainResponseDomain()
         {
         }
+
     }
 }

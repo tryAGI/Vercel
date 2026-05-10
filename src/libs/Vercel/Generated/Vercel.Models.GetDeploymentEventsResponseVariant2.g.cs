@@ -120,5 +120,6 @@ namespace Vercel
         public GetDeploymentEventsResponseVariant2()
         {
         }
+
     }
 }

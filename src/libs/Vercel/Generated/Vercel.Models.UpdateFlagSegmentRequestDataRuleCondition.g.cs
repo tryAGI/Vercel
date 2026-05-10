@@ -71,5 +71,6 @@ namespace Vercel
         public UpdateFlagSegmentRequestDataRuleCondition()
         {
         }
+
     }
 }

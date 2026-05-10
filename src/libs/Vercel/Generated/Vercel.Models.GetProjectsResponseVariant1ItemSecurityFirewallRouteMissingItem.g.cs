@@ -60,5 +60,6 @@ namespace Vercel
         public GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItem()
         {
         }
+
     }
 }

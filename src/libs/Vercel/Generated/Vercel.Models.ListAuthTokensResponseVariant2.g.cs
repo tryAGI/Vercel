@@ -52,5 +52,6 @@ namespace Vercel
         public ListAuthTokensResponseVariant2()
         {
         }
+
     }
 }

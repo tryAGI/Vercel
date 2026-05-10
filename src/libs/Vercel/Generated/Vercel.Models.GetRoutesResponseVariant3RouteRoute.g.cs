@@ -246,5 +246,6 @@ namespace Vercel
         public GetRoutesResponseVariant3RouteRoute()
         {
         }
+
     }
 }

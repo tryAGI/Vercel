@@ -50,5 +50,6 @@ namespace Vercel
         public GetSandboxesV1Response()
         {
         }
+
     }
 }

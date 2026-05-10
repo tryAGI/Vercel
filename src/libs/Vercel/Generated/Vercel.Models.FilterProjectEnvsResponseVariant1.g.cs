@@ -241,5 +241,6 @@ namespace Vercel
         public FilterProjectEnvsResponseVariant1()
         {
         }
+
     }
 }

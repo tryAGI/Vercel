@@ -76,5 +76,6 @@ namespace Vercel
         public GetProjectsResponseVariant1ItemWebAnalytics()
         {
         }
+
     }
 }

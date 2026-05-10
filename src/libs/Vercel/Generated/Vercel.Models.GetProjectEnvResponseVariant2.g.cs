@@ -223,5 +223,6 @@ namespace Vercel
         public GetProjectEnvResponseVariant2()
         {
         }
+
     }
 }

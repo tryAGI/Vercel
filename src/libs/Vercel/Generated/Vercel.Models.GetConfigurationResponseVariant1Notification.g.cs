@@ -69,5 +69,6 @@ namespace Vercel
         public GetConfigurationResponseVariant1Notification()
         {
         }
+
     }
 }

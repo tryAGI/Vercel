@@ -40,5 +40,6 @@ namespace Vercel
         public GetProjectsResponseVariant1ItemAbuseBlockHistoryItemVariant3RouteVariant2Mitigate()
         {
         }
+
     }
 }

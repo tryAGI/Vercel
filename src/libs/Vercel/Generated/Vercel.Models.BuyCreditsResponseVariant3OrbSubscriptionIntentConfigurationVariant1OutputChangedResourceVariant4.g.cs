@@ -100,5 +100,6 @@ namespace Vercel
         public BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1OutputChangedResourceVariant4()
         {
         }
+
     }
 }

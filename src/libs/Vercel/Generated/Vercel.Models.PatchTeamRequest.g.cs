@@ -324,5 +324,6 @@ namespace Vercel
         public PatchTeamRequest()
         {
         }
+
     }
 }

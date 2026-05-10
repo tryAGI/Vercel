@@ -60,5 +60,6 @@ namespace Vercel
         public UpdateProjectResponseInternalRouteVariant2HaVariant1()
         {
         }
+
     }
 }

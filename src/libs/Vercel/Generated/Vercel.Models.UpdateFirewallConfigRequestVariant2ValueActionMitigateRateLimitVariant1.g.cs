@@ -81,5 +81,6 @@ namespace Vercel
         public UpdateFirewallConfigRequestVariant2ValueActionMitigateRateLimitVariant1()
         {
         }
+
     }
 }

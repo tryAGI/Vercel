@@ -79,5 +79,6 @@ namespace Vercel
         public GetProjectsResponseVariant2ProjectSecurityFirewallRouteMitigate()
         {
         }
+
     }
 }

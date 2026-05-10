@@ -532,5 +532,6 @@ namespace Vercel
         public GetProjectsResponseVariant1Item()
         {
         }
+
     }
 }

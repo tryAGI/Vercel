@@ -176,5 +176,6 @@ namespace Vercel
         public CreateIntegrationStoreDirectRequest()
         {
         }
+
     }
 }

@@ -166,5 +166,6 @@ namespace Vercel
         public GetProjectMembersResponseVariant2Member()
         {
         }
+
     }
 }

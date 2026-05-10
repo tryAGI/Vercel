@@ -79,5 +79,6 @@ namespace Vercel
         public UpdateMicrofrontendsResponseLinkVariant2DeployHook()
         {
         }
+
     }
 }

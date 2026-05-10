@@ -142,5 +142,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectResourceConfig()
         {
         }
+
     }
 }

@@ -51,5 +51,6 @@ namespace Vercel
         public GetRoutesResponseVariant4RouteRouteHaVariant1()
         {
         }
+
     }
 }

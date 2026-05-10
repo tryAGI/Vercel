@@ -50,5 +50,6 @@ namespace Vercel
         public GetMicrofrontendsInGroupResponseProjectInternalRouteVariant2HaVariant2()
         {
         }
+
     }
 }

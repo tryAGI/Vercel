@@ -165,5 +165,6 @@ namespace Vercel
         public Segment()
         {
         }
+
     }
 }

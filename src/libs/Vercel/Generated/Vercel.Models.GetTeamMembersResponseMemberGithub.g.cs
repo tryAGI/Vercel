@@ -39,5 +39,6 @@ namespace Vercel
         public GetTeamMembersResponseMemberGithub()
         {
         }
+
     }
 }

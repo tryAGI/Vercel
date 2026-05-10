@@ -58,5 +58,6 @@ namespace Vercel
         public UpdateFlagSegmentRequestDataRuleConditionRhsVariant1ItemVariant2()
         {
         }
+
     }
 }

@@ -48,5 +48,6 @@ namespace Vercel
         public CancelDeploymentResponseRouteVariant1Locale()
         {
         }
+
     }
 }

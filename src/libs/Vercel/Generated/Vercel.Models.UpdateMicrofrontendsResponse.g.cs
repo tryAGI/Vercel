@@ -869,5 +869,6 @@ namespace Vercel
         public UpdateMicrofrontendsResponse()
         {
         }
+
     }
 }

@@ -878,5 +878,6 @@ namespace Vercel
         public GetProjectResponse()
         {
         }
+
     }
 }

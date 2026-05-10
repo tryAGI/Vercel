@@ -86,5 +86,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectAbuse()
         {
         }
+
     }
 }

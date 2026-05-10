@@ -59,5 +59,6 @@ namespace Vercel
         public GetProjectsResponseVariant1ItemInternalRouteVariant2()
         {
         }
+
     }
 }

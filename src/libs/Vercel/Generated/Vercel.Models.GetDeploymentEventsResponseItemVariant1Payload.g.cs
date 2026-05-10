@@ -124,5 +124,6 @@ namespace Vercel
         public GetDeploymentEventsResponseItemVariant1Payload()
         {
         }
+
     }
 }

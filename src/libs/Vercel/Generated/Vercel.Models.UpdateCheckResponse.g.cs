@@ -184,5 +184,6 @@ namespace Vercel
         public UpdateCheckResponse()
         {
         }
+
     }
 }

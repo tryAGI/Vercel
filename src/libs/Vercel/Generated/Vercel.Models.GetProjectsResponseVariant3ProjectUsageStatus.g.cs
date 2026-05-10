@@ -75,5 +75,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectUsageStatus()
         {
         }
+
     }
 }

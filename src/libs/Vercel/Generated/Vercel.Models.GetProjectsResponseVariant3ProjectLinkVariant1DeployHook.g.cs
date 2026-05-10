@@ -79,5 +79,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectLinkVariant1DeployHook()
         {
         }
+
     }
 }

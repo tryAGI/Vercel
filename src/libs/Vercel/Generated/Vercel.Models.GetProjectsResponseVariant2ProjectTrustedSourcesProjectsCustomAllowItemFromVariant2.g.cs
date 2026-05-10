@@ -51,5 +51,6 @@ namespace Vercel
         public GetProjectsResponseVariant2ProjectTrustedSourcesProjectsCustomAllowItemFromVariant2()
         {
         }
+
     }
 }

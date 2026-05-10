@@ -135,5 +135,6 @@ namespace Vercel
         public GetConfigurationResponseVariant1TransferRequestVariant2()
         {
         }
+
     }
 }

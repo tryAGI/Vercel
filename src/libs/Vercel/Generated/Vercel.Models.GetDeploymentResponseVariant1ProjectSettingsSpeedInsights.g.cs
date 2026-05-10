@@ -85,5 +85,6 @@ namespace Vercel
         public GetDeploymentResponseVariant1ProjectSettingsSpeedInsights()
         {
         }
+
     }
 }

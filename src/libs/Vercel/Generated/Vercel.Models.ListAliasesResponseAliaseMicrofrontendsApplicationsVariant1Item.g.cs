@@ -54,5 +54,6 @@ namespace Vercel
         public ListAliasesResponseAliaseMicrofrontendsApplicationsVariant1Item()
         {
         }
+
     }
 }

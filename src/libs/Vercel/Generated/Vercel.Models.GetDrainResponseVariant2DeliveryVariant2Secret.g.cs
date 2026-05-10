@@ -40,5 +40,6 @@ namespace Vercel
         public GetDrainResponseVariant2DeliveryVariant2Secret()
         {
         }
+
     }
 }

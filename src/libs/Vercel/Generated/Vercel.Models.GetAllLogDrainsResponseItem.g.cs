@@ -94,5 +94,6 @@ namespace Vercel
         public GetAllLogDrainsResponseItem()
         {
         }
+
     }
 }

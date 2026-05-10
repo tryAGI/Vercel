@@ -52,5 +52,6 @@ namespace Vercel
         public GetProjectsResponseVariant2ProjectTrustedSourcesOidcProviderToVariant1()
         {
         }
+
     }
 }

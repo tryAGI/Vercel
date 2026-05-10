@@ -50,5 +50,6 @@ namespace Vercel
         public ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant1()
         {
         }
+
     }
 }
