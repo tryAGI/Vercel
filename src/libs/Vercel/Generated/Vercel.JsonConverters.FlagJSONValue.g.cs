@@ -198,7 +198,10 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (flagJSONValueVariant1 == null && flagJSONValueVariant2 == null && flagJSONValueVariant3 == null && flagJSONValueVariant4 == null && flagJSONValueVariant5 == null)
+            {
                 try
                 {
 
@@ -212,7 +215,10 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (flagJSONValueVariant1 == null && flagJSONValueVariant2 == null && flagJSONValueVariant3 == null && flagJSONValueVariant4 == null && flagJSONValueVariant5 == null)
+            {
                 try
                 {
 
@@ -226,7 +232,10 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (flagJSONValueVariant1 == null && flagJSONValueVariant2 == null && flagJSONValueVariant3 == null && flagJSONValueVariant4 == null && flagJSONValueVariant5 == null)
+            {
                 try
                 {
 
@@ -240,7 +249,10 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (flagJSONValueVariant1 == null && flagJSONValueVariant2 == null && flagJSONValueVariant3 == null && flagJSONValueVariant4 == null && flagJSONValueVariant5 == null)
+            {
                 try
                 {
 

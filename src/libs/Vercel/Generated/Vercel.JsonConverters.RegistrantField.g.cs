@@ -139,6 +139,7 @@ namespace Vercel.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.RegistrantFieldVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.RegistrantFieldVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.RegistrantFieldVariant1).Name}");
                     registrantFieldVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -149,9 +150,13 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (registrantFieldVariant1 == null && registrantFieldVariant2 == null && registrantFieldVariant3 == null && registrantFieldVariant4 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.RegistrantFieldVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.RegistrantFieldVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.RegistrantFieldVariant2).Name}");
                     registrantFieldVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -162,9 +167,13 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (registrantFieldVariant1 == null && registrantFieldVariant2 == null && registrantFieldVariant3 == null && registrantFieldVariant4 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.RegistrantFieldVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.RegistrantFieldVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.RegistrantFieldVariant3).Name}");
                     registrantFieldVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -175,9 +184,13 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (registrantFieldVariant1 == null && registrantFieldVariant2 == null && registrantFieldVariant3 == null && registrantFieldVariant4 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.RegistrantFieldVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.RegistrantFieldVariant4> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.RegistrantFieldVariant4).Name}");
                     registrantFieldVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
