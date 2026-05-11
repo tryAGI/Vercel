@@ -1103,6 +1103,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectExpirationUnlocked,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectExternalRewriteCachingUpdated,
         /// <summary>
         /// 
@@ -2179,6 +2183,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectElasticConcurrencyUpdated => "project-elastic-concurrency-updated",
                 ListEventTypeReplacedByItem.ProjectExpirationLocked => "project-expiration-locked",
                 ListEventTypeReplacedByItem.ProjectExpirationScheduled => "project-expiration-scheduled",
+                ListEventTypeReplacedByItem.ProjectExpirationUnlocked => "project-expiration-unlocked",
                 ListEventTypeReplacedByItem.ProjectExternalRewriteCachingUpdated => "project-external-rewrite-caching-updated",
                 ListEventTypeReplacedByItem.ProjectFrameworkUpdated => "project-framework-updated",
                 ListEventTypeReplacedByItem.ProjectFunctionCpuMemory => "project-function-cpu-memory",
@@ -2660,6 +2665,7 @@ namespace Vercel
                 "project-elastic-concurrency-updated" => ListEventTypeReplacedByItem.ProjectElasticConcurrencyUpdated,
                 "project-expiration-locked" => ListEventTypeReplacedByItem.ProjectExpirationLocked,
                 "project-expiration-scheduled" => ListEventTypeReplacedByItem.ProjectExpirationScheduled,
+                "project-expiration-unlocked" => ListEventTypeReplacedByItem.ProjectExpirationUnlocked,
                 "project-external-rewrite-caching-updated" => ListEventTypeReplacedByItem.ProjectExternalRewriteCachingUpdated,
                 "project-framework-updated" => ListEventTypeReplacedByItem.ProjectFrameworkUpdated,
                 "project-function-cpu-memory" => ListEventTypeReplacedByItem.ProjectFunctionCpuMemory,

@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectRequestResourceConfigBuildMachineTypeJsonConverter))]
+        public global::Vercel.CreateProjectRequestResourceConfigBuildMachineType? BuildMachineType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fluid")]
         public bool? Fluid { get; set; }
 
@@ -44,13 +51,6 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("elasticConcurrencyEnabled")]
         public bool? ElasticConcurrencyEnabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectRequestResourceConfigBuildMachineTypeJsonConverter))]
-        public global::Vercel.CreateProjectRequestResourceConfigBuildMachineType? BuildMachineType { get; set; }
 
         /// <summary>
         /// 
@@ -92,6 +92,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectRequestResourceConfig" /> class.
         /// </summary>
+        /// <param name="buildMachineType"></param>
         /// <param name="fluid"></param>
         /// <param name="functionDefaultRegions">
         /// The regions to deploy Vercel Functions to for this project
@@ -102,7 +103,6 @@ namespace Vercel
         /// Specifies whether Zero Config Failover is enabled for this project.
         /// </param>
         /// <param name="elasticConcurrencyEnabled"></param>
-        /// <param name="buildMachineType"></param>
         /// <param name="buildMachineSelection"></param>
         /// <param name="buildMachineElasticLastUpdated"></param>
         /// <param name="isNSNBDisabled"></param>
@@ -112,26 +112,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectRequestResourceConfig(
+            global::Vercel.CreateProjectRequestResourceConfigBuildMachineType? buildMachineType,
             bool? fluid,
             global::System.Collections.Generic.IList<string>? functionDefaultRegions,
             double? functionDefaultTimeout,
             global::Vercel.CreateProjectRequestResourceConfigFunctionDefaultMemoryType? functionDefaultMemoryType,
             bool? functionZeroConfigFailover,
             bool? elasticConcurrencyEnabled,
-            global::Vercel.CreateProjectRequestResourceConfigBuildMachineType? buildMachineType,
             global::Vercel.CreateProjectRequestResourceConfigBuildMachineSelection? buildMachineSelection,
             double? buildMachineElasticLastUpdated,
             bool? isNSNBDisabled,
             global::Vercel.CreateProjectRequestResourceConfigBuildQueue? buildQueue,
             bool? enableFunctionsBeta)
         {
+            this.BuildMachineType = buildMachineType;
             this.Fluid = fluid;
             this.FunctionDefaultRegions = functionDefaultRegions;
             this.FunctionDefaultTimeout = functionDefaultTimeout;
             this.FunctionDefaultMemoryType = functionDefaultMemoryType;
             this.FunctionZeroConfigFailover = functionZeroConfigFailover;
             this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
-            this.BuildMachineType = buildMachineType;
             this.BuildMachineSelection = buildMachineSelection;
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
             this.IsNSNBDisabled = isNSNBDisabled;

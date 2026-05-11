@@ -128,7 +128,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expiration")]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectExpiration? Expiration { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetMicrofrontendsInGroupResponseProjectExpirationVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectExpirationVariant2>))]
+        public global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectExpirationVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectExpirationVariant2>? Expiration { get; set; }
 
         /// <summary>
         /// 
@@ -703,7 +704,7 @@ namespace Vercel
             global::Vercel.GetMicrofrontendsInGroupResponseProjectCrons? crons,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectDataCache? dataCache,
             object? delegatedProtection,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectExpiration? expiration,
+            global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectExpirationVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectExpirationVariant2>? expiration,
             string? devCommand,
             string? installCommand,
             global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectEnvItem>? env,

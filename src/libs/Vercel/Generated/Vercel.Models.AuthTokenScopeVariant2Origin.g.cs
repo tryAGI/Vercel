@@ -72,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Sms,
+        /// <summary>
+        /// 
+        /// </summary>
+        TokenExchangeOidc,
     }
 
     /// <summary>
@@ -102,6 +106,7 @@ namespace Vercel
                 AuthTokenScopeVariant2Origin.Passkey => "passkey",
                 AuthTokenScopeVariant2Origin.Saml => "saml",
                 AuthTokenScopeVariant2Origin.Sms => "sms",
+                AuthTokenScopeVariant2Origin.TokenExchangeOidc => "token-exchange-oidc",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -128,6 +133,7 @@ namespace Vercel
                 "passkey" => AuthTokenScopeVariant2Origin.Passkey,
                 "saml" => AuthTokenScopeVariant2Origin.Saml,
                 "sms" => AuthTokenScopeVariant2Origin.Sms,
+                "token-exchange-oidc" => AuthTokenScopeVariant2Origin.TokenExchangeOidc,
                 _ => null,
             };
         }

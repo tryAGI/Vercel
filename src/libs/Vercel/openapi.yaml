@@ -58190,21 +58190,47 @@
                             "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
                           },
                           "expiration": {
-                            "properties": {
-                              "expiresAt": {
-                                "type": "number",
-                                "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                            "oneOf": [
+                              {
+                                "properties": {
+                                  "expiresAt": {
+                                    "type": "number",
+                                    "description": "Unix ms timestamp when the project is scheduled to expire."
+                                  },
+                                  "version": {
+                                    "type": "number",
+                                    "description": "Version stamped on the in-flight `ExpireProject` event."
+                                  }
+                                },
+                                "required": [
+                                  "expiresAt",
+                                  "version"
+                                ],
+                                "type": "object"
                               },
-                              "lockedAt": {
-                                "type": "number",
-                                "description": "Unix ms timestamp when the project was locked."
-                              },
-                              "lockedBy": {
-                                "type": "string",
-                                "description": "userId of the actor that triggered the lock (system or admin)."
+                              {
+                                "properties": {
+                                  "lockedAt": {
+                                    "type": "number",
+                                    "description": "Unix ms timestamp when the project was locked."
+                                  },
+                                  "lockedBy": {
+                                    "type": "string",
+                                    "description": "userId of the actor that triggered the lock (system or admin)."
+                                  },
+                                  "version": {
+                                    "type": "number",
+                                    "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
+                                  }
+                                },
+                                "required": [
+                                  "lockedAt",
+                                  "lockedBy",
+                                  "version"
+                                ],
+                                "type": "object"
                               }
-                            },
-                            "type": "object"
+                            ]
                           },
                           "devCommand": {
                             "nullable": true,
@@ -76847,21 +76873,47 @@
                                 "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
                               },
                               "expiration": {
-                                "properties": {
-                                  "expiresAt": {
-                                    "type": "number",
-                                    "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "expiresAt": {
+                                        "type": "number",
+                                        "description": "Unix ms timestamp when the project is scheduled to expire."
+                                      },
+                                      "version": {
+                                        "type": "number",
+                                        "description": "Version stamped on the in-flight `ExpireProject` event."
+                                      }
+                                    },
+                                    "required": [
+                                      "expiresAt",
+                                      "version"
+                                    ],
+                                    "type": "object"
                                   },
-                                  "lockedAt": {
-                                    "type": "number",
-                                    "description": "Unix ms timestamp when the project was locked."
-                                  },
-                                  "lockedBy": {
-                                    "type": "string",
-                                    "description": "userId of the actor that triggered the lock (system or admin)."
+                                  {
+                                    "properties": {
+                                      "lockedAt": {
+                                        "type": "number",
+                                        "description": "Unix ms timestamp when the project was locked."
+                                      },
+                                      "lockedBy": {
+                                        "type": "string",
+                                        "description": "userId of the actor that triggered the lock (system or admin)."
+                                      },
+                                      "version": {
+                                        "type": "number",
+                                        "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
+                                      }
+                                    },
+                                    "required": [
+                                      "lockedAt",
+                                      "lockedBy",
+                                      "version"
+                                    ],
+                                    "type": "object"
                                   }
-                                },
-                                "type": "object"
+                                ]
                               },
                               "devCommand": {
                                 "nullable": true,
@@ -82470,21 +82522,47 @@
                       "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
                     },
                     "expiration": {
-                      "properties": {
-                        "expiresAt": {
-                          "type": "number",
-                          "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "expiresAt": {
+                              "type": "number",
+                              "description": "Unix ms timestamp when the project is scheduled to expire."
+                            },
+                            "version": {
+                              "type": "number",
+                              "description": "Version stamped on the in-flight `ExpireProject` event."
+                            }
+                          },
+                          "required": [
+                            "expiresAt",
+                            "version"
+                          ],
+                          "type": "object"
                         },
-                        "lockedAt": {
-                          "type": "number",
-                          "description": "Unix ms timestamp when the project was locked."
-                        },
-                        "lockedBy": {
-                          "type": "string",
-                          "description": "userId of the actor that triggered the lock (system or admin)."
+                        {
+                          "properties": {
+                            "lockedAt": {
+                              "type": "number",
+                              "description": "Unix ms timestamp when the project was locked."
+                            },
+                            "lockedBy": {
+                              "type": "string",
+                              "description": "userId of the actor that triggered the lock (system or admin)."
+                            },
+                            "version": {
+                              "type": "number",
+                              "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
+                            }
+                          },
+                          "required": [
+                            "lockedAt",
+                            "lockedBy",
+                            "version"
+                          ],
+                          "type": "object"
                         }
-                      },
-                      "type": "object"
+                      ]
                     },
                     "devCommand": {
                       "nullable": true,
@@ -87857,9 +87935,15 @@
                     "type": "boolean"
                   },
                   "resourceConfig": {
-                    "type": "object",
-                    "description": "Specifies resource override configuration for the project",
                     "properties": {
+                      "buildMachineType": {
+                        "enum": [
+                          "enhanced",
+                          "turbo",
+                          "standard",
+                          "elastic"
+                        ]
+                      },
                       "fluid": {
                         "type": "boolean"
                       },
@@ -87896,13 +87980,6 @@
                       "elasticConcurrencyEnabled": {
                         "type": "boolean"
                       },
-                      "buildMachineType": {
-                        "enum": [
-                          "enhanced",
-                          "turbo",
-                          "standard"
-                        ]
-                      },
                       "buildMachineSelection": {
                         "enum": [
                           "elastic",
@@ -87931,6 +88008,8 @@
                         "type": "boolean"
                       }
                     },
+                    "type": "object",
+                    "description": "Specifies resource override configuration for the project",
                     "additionalProperties": false
                   }
                 },
@@ -88328,21 +88407,47 @@
                       "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
                     },
                     "expiration": {
-                      "properties": {
-                        "expiresAt": {
-                          "type": "number",
-                          "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "expiresAt": {
+                              "type": "number",
+                              "description": "Unix ms timestamp when the project is scheduled to expire."
+                            },
+                            "version": {
+                              "type": "number",
+                              "description": "Version stamped on the in-flight `ExpireProject` event."
+                            }
+                          },
+                          "required": [
+                            "expiresAt",
+                            "version"
+                          ],
+                          "type": "object"
                         },
-                        "lockedAt": {
-                          "type": "number",
-                          "description": "Unix ms timestamp when the project was locked."
-                        },
-                        "lockedBy": {
-                          "type": "string",
-                          "description": "userId of the actor that triggered the lock (system or admin)."
+                        {
+                          "properties": {
+                            "lockedAt": {
+                              "type": "number",
+                              "description": "Unix ms timestamp when the project was locked."
+                            },
+                            "lockedBy": {
+                              "type": "string",
+                              "description": "userId of the actor that triggered the lock (system or admin)."
+                            },
+                            "version": {
+                              "type": "number",
+                              "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
+                            }
+                          },
+                          "required": [
+                            "lockedAt",
+                            "lockedBy",
+                            "version"
+                          ],
+                          "type": "object"
                         }
-                      },
-                      "type": "object"
+                      ]
                     },
                     "devCommand": {
                       "nullable": true,
@@ -93772,21 +93877,47 @@
                       "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
                     },
                     "expiration": {
-                      "properties": {
-                        "expiresAt": {
-                          "type": "number",
-                          "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "expiresAt": {
+                              "type": "number",
+                              "description": "Unix ms timestamp when the project is scheduled to expire."
+                            },
+                            "version": {
+                              "type": "number",
+                              "description": "Version stamped on the in-flight `ExpireProject` event."
+                            }
+                          },
+                          "required": [
+                            "expiresAt",
+                            "version"
+                          ],
+                          "type": "object"
                         },
-                        "lockedAt": {
-                          "type": "number",
-                          "description": "Unix ms timestamp when the project was locked."
-                        },
-                        "lockedBy": {
-                          "type": "string",
-                          "description": "userId of the actor that triggered the lock (system or admin)."
+                        {
+                          "properties": {
+                            "lockedAt": {
+                              "type": "number",
+                              "description": "Unix ms timestamp when the project was locked."
+                            },
+                            "lockedBy": {
+                              "type": "string",
+                              "description": "userId of the actor that triggered the lock (system or admin)."
+                            },
+                            "version": {
+                              "type": "number",
+                              "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
+                            }
+                          },
+                          "required": [
+                            "lockedAt",
+                            "lockedBy",
+                            "version"
+                          ],
+                          "type": "object"
                         }
-                      },
-                      "type": "object"
+                      ]
                     },
                     "devCommand": {
                       "nullable": true,
@@ -108650,21 +108781,47 @@
                       "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
                     },
                     "expiration": {
-                      "properties": {
-                        "expiresAt": {
-                          "type": "number",
-                          "description": "Unix ms timestamp when the project is scheduled to expire. Absent when the project is locked without a pending schedule."
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "expiresAt": {
+                              "type": "number",
+                              "description": "Unix ms timestamp when the project is scheduled to expire."
+                            },
+                            "version": {
+                              "type": "number",
+                              "description": "Version stamped on the in-flight `ExpireProject` event."
+                            }
+                          },
+                          "required": [
+                            "expiresAt",
+                            "version"
+                          ],
+                          "type": "object"
                         },
-                        "lockedAt": {
-                          "type": "number",
-                          "description": "Unix ms timestamp when the project was locked."
-                        },
-                        "lockedBy": {
-                          "type": "string",
-                          "description": "userId of the actor that triggered the lock (system or admin)."
+                        {
+                          "properties": {
+                            "lockedAt": {
+                              "type": "number",
+                              "description": "Unix ms timestamp when the project was locked."
+                            },
+                            "lockedBy": {
+                              "type": "string",
+                              "description": "userId of the actor that triggered the lock (system or admin)."
+                            },
+                            "version": {
+                              "type": "number",
+                              "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
+                            }
+                          },
+                          "required": [
+                            "lockedAt",
+                            "lockedBy",
+                            "version"
+                          ],
+                          "type": "object"
                         }
-                      },
-                      "type": "object"
+                      ]
                     },
                     "devCommand": {
                       "nullable": true,
@@ -139430,6 +139587,7 @@
               "project-password-protection",
               "project-expiration-locked",
               "project-expiration-scheduled",
+              "project-expiration-unlocked",
               "project-paused",
               "project-program-enrollment-changed",
               "project-rolling-release-enabled",
@@ -140167,6 +140325,7 @@
               "project-password-protection",
               "project-expiration-locked",
               "project-expiration-scheduled",
+              "project-expiration-unlocked",
               "project-paused",
               "project-program-enrollment-changed",
               "project-rolling-release-enabled",
@@ -140696,6 +140855,7 @@
                 "project-password-protection",
                 "project-expiration-locked",
                 "project-expiration-scheduled",
+                "project-expiration-unlocked",
                 "project-paused",
                 "project-program-enrollment-changed",
                 "project-rolling-release-enabled",
@@ -144390,6 +144550,7 @@
                         "google",
                         "apple",
                         "chatgpt",
+                        "token-exchange-oidc",
                         "emu"
                       ]
                     },
@@ -144436,6 +144597,7 @@
                         "google",
                         "apple",
                         "chatgpt",
+                        "token-exchange-oidc",
                         "emu"
                       ]
                     },
