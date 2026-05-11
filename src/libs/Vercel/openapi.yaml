@@ -114408,6 +114408,7 @@
                     "enum": [
                       "node22",
                       "node24",
+                      "node26",
                       "python3.13"
                     ],
                     "default": "node24",
@@ -114928,6 +114929,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "429": {
             "description": ""
           }
@@ -115008,6 +115012,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           }
         },
         "parameters": [
@@ -115094,6 +115101,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -115349,6 +115359,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -115820,6 +115833,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "410": {
             "description": ""
           },
@@ -115967,6 +115983,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -116154,6 +116173,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "410": {
             "description": ""
           },
@@ -116256,6 +116278,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -116508,6 +116533,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -117270,6 +117298,7 @@
                     "enum": [
                       "node22",
                       "node24",
+                      "node26",
                       "python3.13"
                     ],
                     "default": "node24",
@@ -117959,6 +117988,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -118318,6 +118350,7 @@
                     "enum": [
                       "node22",
                       "node24",
+                      "node26",
                       "python3.13"
                     ],
                     "example": "node24"
@@ -118902,6 +118935,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           }
         },
         "parameters": [
@@ -118988,6 +119024,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -119128,6 +119167,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -119392,6 +119434,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "410": {
             "description": ""
           },
@@ -119506,6 +119551,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -120258,6 +120306,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "410": {
             "description": ""
           },
@@ -120361,6 +120412,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "410": {
             "description": ""
           },
@@ -120458,6 +120512,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -139058,6 +139115,7 @@
               "avatar",
               "alias",
               "plan",
+              "domain",
               "flag",
               "deployment",
               "agentic-provisioning-account-linked",
@@ -139173,7 +139231,6 @@
               "dns-add",
               "dns-delete",
               "dns-update",
-              "domain",
               "domain-buy",
               "domain-cdn",
               "domain-chown",
@@ -139580,13 +139637,13 @@
               "avatar": {
                 "type": "string"
               },
+              "uid": {
+                "type": "string"
+              },
               "email": {
                 "type": "string"
               },
               "username": {
-                "type": "string"
-              },
-              "uid": {
                 "type": "string"
               }
             },
@@ -139795,6 +139852,7 @@
               "avatar",
               "alias",
               "plan",
+              "domain",
               "flag",
               "deployment",
               "agentic-provisioning-account-linked",
@@ -139910,7 +139968,6 @@
               "dns-add",
               "dns-delete",
               "dns-update",
-              "domain",
               "domain-buy",
               "domain-cdn",
               "domain-chown",
@@ -140324,6 +140381,7 @@
                 "avatar",
                 "alias",
                 "plan",
+                "domain",
                 "flag",
                 "deployment",
                 "agentic-provisioning-account-linked",
@@ -140439,7 +140497,6 @@
                 "dns-add",
                 "dns-delete",
                 "dns-update",
-                "domain",
                 "domain-buy",
                 "domain-cdn",
                 "domain-chown",
