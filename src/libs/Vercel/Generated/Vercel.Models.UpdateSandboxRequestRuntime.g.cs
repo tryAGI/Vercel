@@ -20,6 +20,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Node26,
+        /// <summary>
+        /// 
+        /// </summary>
         Python313,
     }
 
@@ -37,6 +41,7 @@ namespace Vercel
             {
                 UpdateSandboxRequestRuntime.Node22 => "node22",
                 UpdateSandboxRequestRuntime.Node24 => "node24",
+                UpdateSandboxRequestRuntime.Node26 => "node26",
                 UpdateSandboxRequestRuntime.Python313 => "python3.13",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -50,6 +55,7 @@ namespace Vercel
             {
                 "node22" => UpdateSandboxRequestRuntime.Node22,
                 "node24" => UpdateSandboxRequestRuntime.Node24,
+                "node26" => UpdateSandboxRequestRuntime.Node26,
                 "python3.13" => UpdateSandboxRequestRuntime.Python313,
                 _ => null,
             };
