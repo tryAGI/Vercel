@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Elastic,
+        /// <summary>
+        /// 
+        /// </summary>
         Enhanced,
         /// <summary>
         /// 
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                CreateProjectRequestResourceConfigBuildMachineType.Elastic => "elastic",
                 CreateProjectRequestResourceConfigBuildMachineType.Enhanced => "enhanced",
                 CreateProjectRequestResourceConfigBuildMachineType.Standard => "standard",
                 CreateProjectRequestResourceConfigBuildMachineType.Turbo => "turbo",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "elastic" => CreateProjectRequestResourceConfigBuildMachineType.Elastic,
                 "enhanced" => CreateProjectRequestResourceConfigBuildMachineType.Enhanced,
                 "standard" => CreateProjectRequestResourceConfigBuildMachineType.Standard,
                 "turbo" => CreateProjectRequestResourceConfigBuildMachineType.Turbo,

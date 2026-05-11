@@ -1,0 +1,71 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class UpdateMicrofrontendsResponseExpirationVariant2
+    {
+        /// <summary>
+        /// Unix ms timestamp when the project was locked.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lockedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double LockedAt { get; set; }
+
+        /// <summary>
+        /// userId of the actor that triggered the lock (system or admin).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lockedBy")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string LockedBy { get; set; }
+
+        /// <summary>
+        /// Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter — but the field is retained so a later re-schedule increments from a known number.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Version { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UpdateMicrofrontendsResponseExpirationVariant2" /> class.
+        /// </summary>
+        /// <param name="lockedAt">
+        /// Unix ms timestamp when the project was locked.
+        /// </param>
+        /// <param name="lockedBy">
+        /// userId of the actor that triggered the lock (system or admin).
+        /// </param>
+        /// <param name="version">
+        /// Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter — but the field is retained so a later re-schedule increments from a known number.
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public UpdateMicrofrontendsResponseExpirationVariant2(
+            double lockedAt,
+            string lockedBy,
+            double version)
+        {
+            this.LockedAt = lockedAt;
+            this.LockedBy = lockedBy ?? throw new global::System.ArgumentNullException(nameof(lockedBy));
+            this.Version = version;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UpdateMicrofrontendsResponseExpirationVariant2" /> class.
+        /// </summary>
+        public UpdateMicrofrontendsResponseExpirationVariant2()
+        {
+        }
+
+    }
+}
