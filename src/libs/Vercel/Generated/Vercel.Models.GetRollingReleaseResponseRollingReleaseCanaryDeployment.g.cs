@@ -10,15 +10,6 @@ namespace Vercel
     public sealed partial class GetRollingReleaseResponseRollingReleaseCanaryDeployment
     {
         /// <summary>
-        /// A string holding the unique ID of the deployment<br/>
-        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
-        /// </summary>
-        /// <example>dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
         /// The name of the project associated with the deployment at the time that the deployment was created<br/>
         /// Example: my-project
         /// </summary>
@@ -35,6 +26,24 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
+
+        /// <summary>
+        /// A string holding the unique ID of the deployment<br/>
+        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
+        /// </summary>
+        /// <example>dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.<br/>
+        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        /// <example>openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRollingReleaseResponseRollingReleaseCanaryDeploymentTargetJsonConverter))]
+        public global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentTarget? Target { get; set; }
 
         /// <summary>
         /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state<br/>
@@ -62,15 +71,6 @@ namespace Vercel
         public global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentSource? Source { get; set; }
 
         /// <summary>
-        /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.<br/>
-        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        /// <example>openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRollingReleaseResponseRollingReleaseCanaryDeploymentTargetJsonConverter))]
-        public global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentTarget? Target { get; set; }
-
-        /// <summary>
         /// A string with the unique URL of the deployment<br/>
         /// Example: my-instant-deployment-3ij3cxz9qr.now.sh
         /// </summary>
@@ -88,10 +88,6 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetRollingReleaseResponseRollingReleaseCanaryDeployment" /> class.
         /// </summary>
-        /// <param name="id">
-        /// A string holding the unique ID of the deployment<br/>
-        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
-        /// </param>
         /// <param name="name">
         /// The name of the project associated with the deployment at the time that the deployment was created<br/>
         /// Example: my-project
@@ -99,6 +95,10 @@ namespace Vercel
         /// <param name="createdAt">
         /// A number containing the date when the deployment was created in milliseconds<br/>
         /// Example: 1540257589405L
+        /// </param>
+        /// <param name="id">
+        /// A string holding the unique ID of the deployment<br/>
+        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
         /// </param>
         /// <param name="readyState">
         /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state<br/>
@@ -108,35 +108,35 @@ namespace Vercel
         /// A string with the unique URL of the deployment<br/>
         /// Example: my-instant-deployment-3ij3cxz9qr.now.sh
         /// </param>
+        /// <param name="target">
+        /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.<br/>
+        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
         /// <param name="readyStateAt"></param>
         /// <param name="source">
         /// Where was the deployment created from<br/>
         /// Example: cli
         /// </param>
-        /// <param name="target">
-        /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.<br/>
-        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetRollingReleaseResponseRollingReleaseCanaryDeployment(
-            string id,
             string name,
             double createdAt,
+            string id,
             global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentReadyState readyState,
             string url,
+            global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentTarget? target,
             double? readyStateAt,
-            global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentSource? source,
-            global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentTarget? target)
+            global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentSource? source)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.CreatedAt = createdAt;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Target = target;
             this.ReadyState = readyState;
             this.ReadyStateAt = readyStateAt;
             this.Source = source;
-            this.Target = target;
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 

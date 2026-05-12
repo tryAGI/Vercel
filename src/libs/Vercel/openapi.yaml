@@ -58286,11 +58286,11 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
-                                    "secret",
                                     "system",
                                     "encrypted",
                                     "plain",
-                                    "sensitive"
+                                    "sensitive",
+                                    "secret"
                                   ]
                                 },
                                 "sunsetSecretId": {
@@ -58424,9 +58424,9 @@
                                     "type": {
                                       "type": "string",
                                       "enum": [
-                                        "endsWith",
                                         "startsWith",
-                                        "equals"
+                                        "equals",
+                                        "endsWith"
                                       ],
                                       "description": "The type of matching to perform"
                                     },
@@ -58564,9 +58564,6 @@
                             "nullable": true,
                             "type": "string",
                             "enum": [
-                              "services",
-                              "node",
-                              "python",
                               "blitzjs",
                               "nextjs",
                               "gatsby",
@@ -58627,11 +58624,14 @@
                               "elysia",
                               "fastify",
                               "xmcp",
+                              "python",
                               "ruby",
                               "rust",
                               "axum",
                               "actix-web",
+                              "node",
                               "go",
+                              "services",
                               "mastra",
                               null
                             ]
@@ -58768,9 +58768,9 @@
                                     "type": {
                                       "type": "string",
                                       "enum": [
-                                        "endsWith",
                                         "startsWith",
-                                        "equals"
+                                        "equals",
+                                        "endsWith"
                                       ],
                                       "description": "The type of matching to perform"
                                     },
@@ -59743,25 +59743,6 @@
                           },
                           "resourceConfig": {
                             "properties": {
-                              "elasticConcurrencyEnabled": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "buildQueue": {
-                                "properties": {
-                                  "configuration": {
-                                    "type": "string",
-                                    "enum": [
-                                      "SKIP_NAMESPACE_QUEUE",
-                                      "WAIT_FOR_NAMESPACE_QUEUE"
-                                    ]
-                                  }
-                                },
-                                "type": "object"
-                              },
                               "fluid": {
                                 "type": "boolean",
                                 "enum": [
@@ -59781,8 +59762,8 @@
                               "functionDefaultMemoryType": {
                                 "type": "string",
                                 "enum": [
-                                  "standard",
                                   "standard_legacy",
+                                  "standard",
                                   "performance"
                                 ]
                               },
@@ -59793,12 +59774,19 @@
                                   true
                                 ]
                               },
+                              "elasticConcurrencyEnabled": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
+                              },
                               "buildMachineType": {
                                 "type": "string",
                                 "enum": [
+                                  "standard",
                                   "enhanced",
-                                  "turbo",
-                                  "standard"
+                                  "turbo"
                                 ]
                               },
                               "buildMachineSelection": {
@@ -59817,6 +59805,18 @@
                                   false,
                                   true
                                 ]
+                              },
+                              "buildQueue": {
+                                "properties": {
+                                  "configuration": {
+                                    "type": "string",
+                                    "enum": [
+                                      "SKIP_NAMESPACE_QUEUE",
+                                      "WAIT_FOR_NAMESPACE_QUEUE"
+                                    ]
+                                  }
+                                },
+                                "type": "object"
                               },
                               "enableFunctionsBeta": {
                                 "type": "boolean",
@@ -59927,25 +59927,6 @@
                           },
                           "defaultResourceConfig": {
                             "properties": {
-                              "elasticConcurrencyEnabled": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "buildQueue": {
-                                "properties": {
-                                  "configuration": {
-                                    "type": "string",
-                                    "enum": [
-                                      "SKIP_NAMESPACE_QUEUE",
-                                      "WAIT_FOR_NAMESPACE_QUEUE"
-                                    ]
-                                  }
-                                },
-                                "type": "object"
-                              },
                               "fluid": {
                                 "type": "boolean",
                                 "enum": [
@@ -59965,8 +59946,8 @@
                               "functionDefaultMemoryType": {
                                 "type": "string",
                                 "enum": [
-                                  "standard",
                                   "standard_legacy",
+                                  "standard",
                                   "performance"
                                 ]
                               },
@@ -59977,12 +59958,19 @@
                                   true
                                 ]
                               },
+                              "elasticConcurrencyEnabled": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
+                              },
                               "buildMachineType": {
                                 "type": "string",
                                 "enum": [
+                                  "standard",
                                   "enhanced",
-                                  "turbo",
-                                  "standard"
+                                  "turbo"
                                 ]
                               },
                               "buildMachineSelection": {
@@ -60001,6 +59989,18 @@
                                   false,
                                   true
                                 ]
+                              },
+                              "buildQueue": {
+                                "properties": {
+                                  "configuration": {
+                                    "type": "string",
+                                    "enum": [
+                                      "SKIP_NAMESPACE_QUEUE",
+                                      "WAIT_FOR_NAMESPACE_QUEUE"
+                                    ]
+                                  }
+                                },
+                                "type": "object"
                               },
                               "enableFunctionsBeta": {
                                 "type": "boolean",
@@ -60195,9 +60195,9 @@
                                     "type": {
                                       "type": "string",
                                       "enum": [
-                                        "endsWith",
                                         "startsWith",
-                                        "equals"
+                                        "equals",
+                                        "endsWith"
                                       ],
                                       "description": "The type of matching to perform"
                                     },
@@ -63464,9 +63464,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "delete",
                                     "cancel",
-                                    "accept"
+                                    "accept",
+                                    "delete"
                                   ]
                                 },
                                 "value": {
@@ -70032,8 +70032,8 @@
                                   "nullable": true,
                                   "type": "string",
                                   "enum": [
-                                    "A",
                                     "CNAME",
+                                    "A",
                                     "http",
                                     "dns-01",
                                     null
@@ -70424,11 +70424,11 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
-                                    "secret",
                                     "system",
                                     "encrypted",
                                     "plain",
-                                    "sensitive"
+                                    "sensitive",
+                                    "secret"
                                   ]
                                 },
                                 "sunsetSecretId": {
@@ -70537,7 +70537,6 @@
                             "nullable": true,
                             "type": "string",
                             "enum": [
-                              "services",
                               "blitzjs",
                               "nextjs",
                               "gatsby",
@@ -70605,6 +70604,7 @@
                               "actix-web",
                               "node",
                               "go",
+                              "services",
                               "mastra",
                               null
                             ]
@@ -72158,12 +72158,12 @@
                                           "type": {
                                             "type": "string",
                                             "enum": [
-                                              "path",
-                                              "query",
                                               "host",
                                               "method",
+                                              "path",
                                               "header",
                                               "cookie",
+                                              "query",
                                               "ip_address",
                                               "protocol",
                                               "scheme",
@@ -72240,12 +72240,12 @@
                                           "type": {
                                             "type": "string",
                                             "enum": [
-                                              "path",
-                                              "query",
                                               "host",
                                               "method",
+                                              "path",
                                               "header",
                                               "cookie",
+                                              "query",
                                               "ip_address",
                                               "protocol",
                                               "scheme",
@@ -72334,9 +72334,9 @@
                                         "action": {
                                           "type": "string",
                                           "enum": [
-                                            "log",
                                             "deny",
                                             "challenge",
+                                            "log",
                                             "bypass",
                                             "rate_limit",
                                             "redirect"
@@ -72448,9 +72448,9 @@
                                       "action": {
                                         "type": "string",
                                         "enum": [
-                                          "log",
                                           "deny",
-                                          "challenge"
+                                          "challenge",
+                                          "log"
                                         ]
                                       }
                                     },
@@ -72471,9 +72471,9 @@
                                       "action": {
                                         "type": "string",
                                         "enum": [
-                                          "log",
                                           "deny",
-                                          "challenge"
+                                          "challenge",
+                                          "log"
                                         ]
                                       }
                                     },
@@ -72494,9 +72494,9 @@
                                       "action": {
                                         "type": "string",
                                         "enum": [
-                                          "log",
                                           "deny",
-                                          "challenge"
+                                          "challenge",
+                                          "log"
                                         ]
                                       }
                                     },
@@ -72517,9 +72517,9 @@
                                       "action": {
                                         "type": "string",
                                         "enum": [
-                                          "log",
                                           "deny",
-                                          "challenge"
+                                          "challenge",
+                                          "log"
                                         ]
                                       }
                                     },
@@ -73279,8 +73279,8 @@
                                       "nullable": true,
                                       "type": "string",
                                       "enum": [
-                                        "A",
                                         "CNAME",
+                                        "A",
                                         "http",
                                         "dns-01",
                                         null
@@ -73671,11 +73671,11 @@
                                     "type": {
                                       "type": "string",
                                       "enum": [
-                                        "secret",
                                         "system",
                                         "encrypted",
                                         "plain",
-                                        "sensitive"
+                                        "sensitive",
+                                        "secret"
                                       ]
                                     },
                                     "sunsetSecretId": {
@@ -73784,7 +73784,6 @@
                                 "nullable": true,
                                 "type": "string",
                                 "enum": [
-                                  "services",
                                   "blitzjs",
                                   "nextjs",
                                   "gatsby",
@@ -73852,6 +73851,7 @@
                                   "actix-web",
                                   "node",
                                   "go",
+                                  "services",
                                   "mastra",
                                   null
                                 ]
@@ -75405,12 +75405,12 @@
                                               "type": {
                                                 "type": "string",
                                                 "enum": [
-                                                  "path",
-                                                  "query",
                                                   "host",
                                                   "method",
+                                                  "path",
                                                   "header",
                                                   "cookie",
+                                                  "query",
                                                   "ip_address",
                                                   "protocol",
                                                   "scheme",
@@ -75487,12 +75487,12 @@
                                               "type": {
                                                 "type": "string",
                                                 "enum": [
-                                                  "path",
-                                                  "query",
                                                   "host",
                                                   "method",
+                                                  "path",
                                                   "header",
                                                   "cookie",
+                                                  "query",
                                                   "ip_address",
                                                   "protocol",
                                                   "scheme",
@@ -75581,9 +75581,9 @@
                                             "action": {
                                               "type": "string",
                                               "enum": [
-                                                "log",
                                                 "deny",
                                                 "challenge",
+                                                "log",
                                                 "bypass",
                                                 "rate_limit",
                                                 "redirect"
@@ -75695,9 +75695,9 @@
                                           "action": {
                                             "type": "string",
                                             "enum": [
-                                              "log",
                                               "deny",
-                                              "challenge"
+                                              "challenge",
+                                              "log"
                                             ]
                                           }
                                         },
@@ -75718,9 +75718,9 @@
                                           "action": {
                                             "type": "string",
                                             "enum": [
-                                              "log",
                                               "deny",
-                                              "challenge"
+                                              "challenge",
+                                              "log"
                                             ]
                                           }
                                         },
@@ -75741,9 +75741,9 @@
                                           "action": {
                                             "type": "string",
                                             "enum": [
-                                              "log",
                                               "deny",
-                                              "challenge"
+                                              "challenge",
+                                              "log"
                                             ]
                                           }
                                         },
@@ -75764,9 +75764,9 @@
                                           "action": {
                                             "type": "string",
                                             "enum": [
-                                              "log",
                                               "deny",
-                                              "challenge"
+                                              "challenge",
+                                              "log"
                                             ]
                                           }
                                         },
@@ -76972,11 +76972,11 @@
                                     "type": {
                                       "type": "string",
                                       "enum": [
-                                        "secret",
                                         "system",
                                         "encrypted",
                                         "plain",
-                                        "sensitive"
+                                        "sensitive",
+                                        "secret"
                                       ]
                                     },
                                     "sunsetSecretId": {
@@ -77250,7 +77250,6 @@
                                 "nullable": true,
                                 "type": "string",
                                 "enum": [
-                                  "services",
                                   "blitzjs",
                                   "nextjs",
                                   "gatsby",
@@ -77318,6 +77317,7 @@
                                   "actix-web",
                                   "node",
                                   "go",
+                                  "services",
                                   "mastra",
                                   null
                                 ]
@@ -80357,11 +80357,11 @@
                                   "jobStatus": {
                                     "type": "string",
                                     "enum": [
+                                      "pending",
+                                      "in-progress",
                                       "succeeded",
                                       "failed",
-                                      "skipped",
-                                      "pending",
-                                      "in-progress"
+                                      "skipped"
                                     ]
                                   },
                                   "requestedAt": {
@@ -80929,9 +80929,9 @@
                                           "action": {
                                             "type": "string",
                                             "enum": [
-                                              "log",
                                               "deny",
-                                              "challenge"
+                                              "challenge",
+                                              "log"
                                             ]
                                           }
                                         },
@@ -80952,9 +80952,9 @@
                                           "action": {
                                             "type": "string",
                                             "enum": [
-                                              "log",
                                               "deny",
-                                              "challenge"
+                                              "challenge",
+                                              "log"
                                             ]
                                           }
                                         },
@@ -80975,9 +80975,9 @@
                                           "action": {
                                             "type": "string",
                                             "enum": [
-                                              "log",
                                               "deny",
-                                              "challenge"
+                                              "challenge",
+                                              "log"
                                             ]
                                           }
                                         },
@@ -80998,9 +80998,9 @@
                                           "action": {
                                             "type": "string",
                                             "enum": [
-                                              "log",
                                               "deny",
-                                              "challenge"
+                                              "challenge",
+                                              "log"
                                             ]
                                           }
                                         },
@@ -81808,9 +81808,9 @@
                                     "action": {
                                       "type": "string",
                                       "enum": [
-                                        "delete",
                                         "cancel",
-                                        "accept"
+                                        "accept",
+                                        "delete"
                                       ]
                                     },
                                     "value": {
@@ -82622,11 +82622,11 @@
                           "type": {
                             "type": "string",
                             "enum": [
-                              "secret",
                               "system",
                               "encrypted",
                               "plain",
-                              "sensitive"
+                              "sensitive",
+                              "secret"
                             ]
                           },
                           "sunsetSecretId": {
@@ -82900,7 +82900,6 @@
                       "nullable": true,
                       "type": "string",
                       "enum": [
-                        "services",
                         "blitzjs",
                         "nextjs",
                         "gatsby",
@@ -82968,6 +82967,7 @@
                         "actix-web",
                         "node",
                         "go",
+                        "services",
                         "mastra",
                         null
                       ]
@@ -86007,11 +86007,11 @@
                         "jobStatus": {
                           "type": "string",
                           "enum": [
+                            "pending",
+                            "in-progress",
                             "succeeded",
                             "failed",
-                            "skipped",
-                            "pending",
-                            "in-progress"
+                            "skipped"
                           ]
                         },
                         "requestedAt": {
@@ -86579,9 +86579,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -86602,9 +86602,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -86625,9 +86625,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -86648,9 +86648,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -87458,9 +87458,9 @@
                           "action": {
                             "type": "string",
                             "enum": [
-                              "delete",
                               "cancel",
-                              "accept"
+                              "accept",
+                              "delete"
                             ]
                           },
                           "value": {
@@ -87758,7 +87758,6 @@
                     "description": "The framework that is being used for this project. When `null` is used no framework is selected",
                     "enum": [
                       null,
-                      "services",
                       "blitzjs",
                       "nextjs",
                       "gatsby",
@@ -87826,6 +87825,7 @@
                       "actix-web",
                       "node",
                       "go",
+                      "services",
                       "mastra"
                     ]
                   },
@@ -88507,11 +88507,11 @@
                           "type": {
                             "type": "string",
                             "enum": [
-                              "secret",
                               "system",
                               "encrypted",
                               "plain",
-                              "sensitive"
+                              "sensitive",
+                              "secret"
                             ]
                           },
                           "sunsetSecretId": {
@@ -88785,7 +88785,6 @@
                       "nullable": true,
                       "type": "string",
                       "enum": [
-                        "services",
                         "blitzjs",
                         "nextjs",
                         "gatsby",
@@ -88853,6 +88852,7 @@
                         "actix-web",
                         "node",
                         "go",
+                        "services",
                         "mastra",
                         null
                       ]
@@ -91892,11 +91892,11 @@
                         "jobStatus": {
                           "type": "string",
                           "enum": [
+                            "pending",
+                            "in-progress",
                             "succeeded",
                             "failed",
-                            "skipped",
-                            "pending",
-                            "in-progress"
+                            "skipped"
                           ]
                         },
                         "requestedAt": {
@@ -92464,9 +92464,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -92487,9 +92487,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -92510,9 +92510,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -92533,9 +92533,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -93343,9 +93343,9 @@
                           "action": {
                             "type": "string",
                             "enum": [
-                              "delete",
                               "cancel",
-                              "accept"
+                              "accept",
+                              "delete"
                             ]
                           },
                           "value": {
@@ -93971,11 +93971,11 @@
                           "type": {
                             "type": "string",
                             "enum": [
-                              "secret",
                               "system",
                               "encrypted",
                               "plain",
-                              "sensitive"
+                              "sensitive",
+                              "secret"
                             ]
                           },
                           "sunsetSecretId": {
@@ -94249,7 +94249,6 @@
                       "nullable": true,
                       "type": "string",
                       "enum": [
-                        "services",
                         "blitzjs",
                         "nextjs",
                         "gatsby",
@@ -94317,6 +94316,7 @@
                         "actix-web",
                         "node",
                         "go",
+                        "services",
                         "mastra",
                         null
                       ]
@@ -97356,11 +97356,11 @@
                         "jobStatus": {
                           "type": "string",
                           "enum": [
+                            "pending",
+                            "in-progress",
                             "succeeded",
                             "failed",
-                            "skipped",
-                            "pending",
-                            "in-progress"
+                            "skipped"
                           ]
                         },
                         "requestedAt": {
@@ -97928,9 +97928,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -97951,9 +97951,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -97974,9 +97974,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -97997,9 +97997,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -98807,9 +98807,9 @@
                           "action": {
                             "type": "string",
                             "enum": [
-                              "delete",
                               "cancel",
-                              "accept"
+                              "accept",
+                              "delete"
                             ]
                           },
                           "value": {
@@ -99054,7 +99054,6 @@
                     "description": "The framework that is being used for this project. When `null` is used no framework is selected",
                     "enum": [
                       null,
-                      "services",
                       "blitzjs",
                       "nextjs",
                       "gatsby",
@@ -99122,6 +99121,7 @@
                       "actix-web",
                       "node",
                       "go",
+                      "services",
                       "mastra"
                     ],
                     "type": "string",
@@ -100570,21 +100570,21 @@
                             "type": "string",
                             "description": "Optional description of the environment's purpose"
                           },
-                          "id": {
-                            "type": "string",
-                            "description": "Unique identifier for the custom environment (format: env_*)"
-                          },
                           "createdAt": {
                             "type": "number",
                             "description": "Timestamp when the environment was created"
+                          },
+                          "updatedAt": {
+                            "type": "number",
+                            "description": "Timestamp when the environment was last updated"
                           },
                           "slug": {
                             "type": "string",
                             "description": "URL-friendly name of the environment"
                           },
-                          "updatedAt": {
-                            "type": "number",
-                            "description": "Timestamp when the environment was last updated"
+                          "id": {
+                            "type": "string",
+                            "description": "Unique identifier for the custom environment (format: env_*)"
                           },
                           "domains": {
                             "items": {
@@ -103025,11 +103025,11 @@
                         "type": {
                           "type": "string",
                           "enum": [
-                            "secret",
                             "system",
                             "encrypted",
                             "plain",
-                            "sensitive"
+                            "sensitive",
+                            "secret"
                           ]
                         },
                         "sunsetSecretId": {
@@ -103174,11 +103174,11 @@
                               "type": {
                                 "type": "string",
                                 "enum": [
-                                  "secret",
                                   "system",
                                   "encrypted",
                                   "plain",
-                                  "sensitive"
+                                  "sensitive",
+                                  "secret"
                                 ]
                               },
                               "sunsetSecretId": {
@@ -103335,11 +103335,11 @@
                               "type": {
                                 "type": "string",
                                 "enum": [
-                                  "secret",
                                   "system",
                                   "encrypted",
                                   "plain",
-                                  "sensitive"
+                                  "sensitive",
+                                  "secret"
                                 ]
                               },
                               "sunsetSecretId": {
@@ -103631,11 +103631,11 @@
                             "type": {
                               "type": "string",
                               "enum": [
-                                "secret",
                                 "system",
                                 "encrypted",
                                 "plain",
-                                "sensitive"
+                                "sensitive",
+                                "secret"
                               ]
                             },
                             "sunsetSecretId": {
@@ -103769,11 +103769,11 @@
                               "type": {
                                 "type": "string",
                                 "enum": [
-                                  "secret",
                                   "system",
                                   "encrypted",
                                   "plain",
-                                  "sensitive"
+                                  "sensitive",
+                                  "secret"
                                 ]
                               },
                               "sunsetSecretId": {
@@ -104265,11 +104265,11 @@
                         "type": {
                           "type": "string",
                           "enum": [
-                            "secret",
                             "system",
                             "encrypted",
                             "plain",
-                            "sensitive"
+                            "sensitive",
+                            "secret"
                           ]
                         },
                         "edgeConfigId": {
@@ -104280,18 +104280,17 @@
                           "nullable": true,
                           "type": "string"
                         },
-                        "id": {
-                          "type": "string"
-                        },
                         "createdAt": {
                           "type": "number"
                         },
-                        "createdBy": {
-                          "nullable": true,
-                          "type": "string"
-                        },
                         "updatedAt": {
                           "type": "number"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "key": {
+                          "type": "string"
                         },
                         "target": {
                           "oneOf": [
@@ -104318,10 +104317,11 @@
                             }
                           ]
                         },
-                        "key": {
+                        "gitBranch": {
                           "type": "string"
                         },
-                        "gitBranch": {
+                        "createdBy": {
+                          "nullable": true,
                           "type": "string"
                         },
                         "updatedBy": {
@@ -104389,11 +104389,11 @@
                         "type": {
                           "type": "string",
                           "enum": [
-                            "secret",
                             "system",
                             "encrypted",
                             "plain",
-                            "sensitive"
+                            "sensitive",
+                            "secret"
                           ]
                         },
                         "value": {
@@ -104407,18 +104407,17 @@
                           "nullable": true,
                           "type": "string"
                         },
-                        "id": {
-                          "type": "string"
-                        },
                         "createdAt": {
                           "type": "number"
                         },
-                        "createdBy": {
-                          "nullable": true,
-                          "type": "string"
-                        },
                         "updatedAt": {
                           "type": "number"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "key": {
+                          "type": "string"
                         },
                         "target": {
                           "oneOf": [
@@ -104443,10 +104442,11 @@
                             }
                           ]
                         },
-                        "key": {
+                        "gitBranch": {
                           "type": "string"
                         },
-                        "gitBranch": {
+                        "createdBy": {
+                          "nullable": true,
                           "type": "string"
                         },
                         "updatedBy": {
@@ -104610,11 +104610,11 @@
                           "type": {
                             "type": "string",
                             "enum": [
-                              "secret",
                               "system",
                               "encrypted",
                               "plain",
-                              "sensitive"
+                              "sensitive",
+                              "secret"
                             ]
                           },
                           "value": {
@@ -104628,18 +104628,17 @@
                             "nullable": true,
                             "type": "string"
                           },
-                          "id": {
-                            "type": "string"
-                          },
                           "createdAt": {
                             "type": "number"
                           },
-                          "createdBy": {
-                            "nullable": true,
-                            "type": "string"
-                          },
                           "updatedAt": {
                             "type": "number"
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "key": {
+                            "type": "string"
                           },
                           "target": {
                             "oneOf": [
@@ -104666,10 +104665,11 @@
                               }
                             ]
                           },
-                          "key": {
+                          "gitBranch": {
                             "type": "string"
                           },
-                          "gitBranch": {
+                          "createdBy": {
+                            "nullable": true,
                             "type": "string"
                           },
                           "updatedBy": {
@@ -104753,11 +104753,11 @@
                         "type": {
                           "type": "string",
                           "enum": [
-                            "secret",
                             "system",
                             "encrypted",
                             "plain",
-                            "sensitive"
+                            "sensitive",
+                            "secret"
                           ]
                         },
                         "value": {
@@ -104771,18 +104771,17 @@
                           "nullable": true,
                           "type": "string"
                         },
-                        "id": {
-                          "type": "string"
-                        },
                         "createdAt": {
                           "type": "number"
                         },
-                        "createdBy": {
-                          "nullable": true,
-                          "type": "string"
-                        },
                         "updatedAt": {
                           "type": "number"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "key": {
+                          "type": "string"
                         },
                         "target": {
                           "oneOf": [
@@ -104809,10 +104808,11 @@
                             }
                           ]
                         },
-                        "key": {
+                        "gitBranch": {
                           "type": "string"
                         },
-                        "gitBranch": {
+                        "createdBy": {
+                          "nullable": true,
                           "type": "string"
                         },
                         "updatedBy": {
@@ -104888,11 +104888,11 @@
                         "type": {
                           "type": "string",
                           "enum": [
-                            "secret",
                             "system",
                             "encrypted",
                             "plain",
-                            "sensitive"
+                            "sensitive",
+                            "secret"
                           ]
                         },
                         "value": {
@@ -104906,18 +104906,17 @@
                           "nullable": true,
                           "type": "string"
                         },
-                        "id": {
-                          "type": "string"
-                        },
                         "createdAt": {
                           "type": "number"
                         },
-                        "createdBy": {
-                          "nullable": true,
-                          "type": "string"
-                        },
                         "updatedAt": {
                           "type": "number"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "key": {
+                          "type": "string"
                         },
                         "target": {
                           "oneOf": [
@@ -104944,10 +104943,11 @@
                             }
                           ]
                         },
-                        "key": {
+                        "gitBranch": {
                           "type": "string"
                         },
-                        "gitBranch": {
+                        "createdBy": {
+                          "nullable": true,
                           "type": "string"
                         },
                         "updatedBy": {
@@ -105125,11 +105125,11 @@
                     "type": {
                       "type": "string",
                       "enum": [
-                        "secret",
                         "system",
                         "encrypted",
                         "plain",
-                        "sensitive"
+                        "sensitive",
+                        "secret"
                       ]
                     },
                     "value": {
@@ -105143,18 +105143,17 @@
                       "nullable": true,
                       "type": "string"
                     },
-                    "id": {
-                      "type": "string"
-                    },
                     "createdAt": {
                       "type": "number"
                     },
-                    "createdBy": {
-                      "nullable": true,
-                      "type": "string"
-                    },
                     "updatedAt": {
                       "type": "number"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "key": {
+                      "type": "string"
                     },
                     "target": {
                       "oneOf": [
@@ -105183,10 +105182,11 @@
                         }
                       ]
                     },
-                    "key": {
+                    "gitBranch": {
                       "type": "string"
                     },
-                    "gitBranch": {
+                    "createdBy": {
+                      "nullable": true,
                       "type": "string"
                     },
                     "updatedBy": {
@@ -106085,11 +106085,6 @@
                         "currentDeployment": {
                           "nullable": true,
                           "properties": {
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
-                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -106099,6 +106094,22 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
+                            },
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
+                            "target": {
+                              "nullable": true,
+                              "type": "string",
+                              "enum": [
+                                "production",
+                                "staging",
+                                null
+                              ],
+                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
+                              "example": null
                             },
                             "readyState": {
                               "type": "string",
@@ -106131,17 +106142,6 @@
                               ],
                               "description": "Where was the deployment created from",
                               "example": "cli"
-                            },
-                            "target": {
-                              "nullable": true,
-                              "type": "string",
-                              "enum": [
-                                "staging",
-                                "production",
-                                null
-                              ],
-                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
-                              "example": null
                             },
                             "url": {
                               "type": "string",
@@ -106172,11 +106172,6 @@
                         "canaryDeployment": {
                           "nullable": true,
                           "properties": {
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
-                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -106186,6 +106181,22 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
+                            },
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
+                            "target": {
+                              "nullable": true,
+                              "type": "string",
+                              "enum": [
+                                "production",
+                                "staging",
+                                null
+                              ],
+                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
+                              "example": null
                             },
                             "readyState": {
                               "type": "string",
@@ -106218,17 +106229,6 @@
                               ],
                               "description": "Where was the deployment created from",
                               "example": "cli"
-                            },
-                            "target": {
-                              "nullable": true,
-                              "type": "string",
-                              "enum": [
-                                "staging",
-                                "production",
-                                null
-                              ],
-                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
-                              "example": null
                             },
                             "url": {
                               "type": "string",
@@ -106662,11 +106662,6 @@
                         "currentDeployment": {
                           "nullable": true,
                           "properties": {
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
-                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -106676,6 +106671,22 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
+                            },
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
+                            "target": {
+                              "nullable": true,
+                              "type": "string",
+                              "enum": [
+                                "production",
+                                "staging",
+                                null
+                              ],
+                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
+                              "example": null
                             },
                             "readyState": {
                               "type": "string",
@@ -106708,17 +106719,6 @@
                               ],
                               "description": "Where was the deployment created from",
                               "example": "cli"
-                            },
-                            "target": {
-                              "nullable": true,
-                              "type": "string",
-                              "enum": [
-                                "staging",
-                                "production",
-                                null
-                              ],
-                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
-                              "example": null
                             },
                             "url": {
                               "type": "string",
@@ -106749,11 +106749,6 @@
                         "canaryDeployment": {
                           "nullable": true,
                           "properties": {
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
-                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -106763,6 +106758,22 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
+                            },
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
+                            "target": {
+                              "nullable": true,
+                              "type": "string",
+                              "enum": [
+                                "production",
+                                "staging",
+                                null
+                              ],
+                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
+                              "example": null
                             },
                             "readyState": {
                               "type": "string",
@@ -106795,17 +106806,6 @@
                               ],
                               "description": "Where was the deployment created from",
                               "example": "cli"
-                            },
-                            "target": {
-                              "nullable": true,
-                              "type": "string",
-                              "enum": [
-                                "staging",
-                                "production",
-                                null
-                              ],
-                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
-                              "example": null
                             },
                             "url": {
                               "type": "string",
@@ -107250,11 +107250,6 @@
                         "currentDeployment": {
                           "nullable": true,
                           "properties": {
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
-                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -107264,6 +107259,22 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
+                            },
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
+                            "target": {
+                              "nullable": true,
+                              "type": "string",
+                              "enum": [
+                                "production",
+                                "staging",
+                                null
+                              ],
+                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
+                              "example": null
                             },
                             "readyState": {
                               "type": "string",
@@ -107296,17 +107307,6 @@
                               ],
                               "description": "Where was the deployment created from",
                               "example": "cli"
-                            },
-                            "target": {
-                              "nullable": true,
-                              "type": "string",
-                              "enum": [
-                                "staging",
-                                "production",
-                                null
-                              ],
-                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
-                              "example": null
                             },
                             "url": {
                               "type": "string",
@@ -107337,11 +107337,6 @@
                         "canaryDeployment": {
                           "nullable": true,
                           "properties": {
-                            "id": {
-                              "type": "string",
-                              "description": "A string holding the unique ID of the deployment",
-                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
-                            },
                             "name": {
                               "type": "string",
                               "description": "The name of the project associated with the deployment at the time that the deployment was created",
@@ -107351,6 +107346,22 @@
                               "type": "number",
                               "description": "A number containing the date when the deployment was created in milliseconds",
                               "example": 1540257589405
+                            },
+                            "id": {
+                              "type": "string",
+                              "description": "A string holding the unique ID of the deployment",
+                              "example": "dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ"
+                            },
+                            "target": {
+                              "nullable": true,
+                              "type": "string",
+                              "enum": [
+                                "production",
+                                "staging",
+                                null
+                              ],
+                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
+                              "example": null
                             },
                             "readyState": {
                               "type": "string",
@@ -107383,17 +107394,6 @@
                               ],
                               "description": "Where was the deployment created from",
                               "example": "cli"
-                            },
-                            "target": {
-                              "nullable": true,
-                              "type": "string",
-                              "enum": [
-                                "staging",
-                                "production",
-                                null
-                              ],
-                              "description": "If defined, either `staging` if a staging alias in the format `<project>.<team>.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the \"preview\" deployment.",
-                              "example": null
                             },
                             "url": {
                               "type": "string",
@@ -107919,8 +107919,8 @@
                                   "status": {
                                     "type": "string",
                                     "enum": [
-                                      "errored",
-                                      "fulfilled"
+                                      "fulfilled",
+                                      "errored"
                                     ]
                                   },
                                   "error": {
@@ -108886,11 +108886,11 @@
                           "type": {
                             "type": "string",
                             "enum": [
-                              "secret",
                               "system",
                               "encrypted",
                               "plain",
-                              "sensitive"
+                              "sensitive",
+                              "secret"
                             ]
                           },
                           "sunsetSecretId": {
@@ -109164,7 +109164,6 @@
                       "nullable": true,
                       "type": "string",
                       "enum": [
-                        "services",
                         "blitzjs",
                         "nextjs",
                         "gatsby",
@@ -109232,6 +109231,7 @@
                         "actix-web",
                         "node",
                         "go",
+                        "services",
                         "mastra",
                         null
                       ]
@@ -112271,11 +112271,11 @@
                         "jobStatus": {
                           "type": "string",
                           "enum": [
+                            "pending",
+                            "in-progress",
                             "succeeded",
                             "failed",
-                            "skipped",
-                            "pending",
-                            "in-progress"
+                            "skipped"
                           ]
                         },
                         "requestedAt": {
@@ -112843,9 +112843,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -112866,9 +112866,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -112889,9 +112889,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -112912,9 +112912,9 @@
                                 "action": {
                                   "type": "string",
                                   "enum": [
-                                    "log",
                                     "deny",
-                                    "challenge"
+                                    "challenge",
+                                    "log"
                                   ]
                                 }
                               },
@@ -113722,9 +113722,9 @@
                           "action": {
                             "type": "string",
                             "enum": [
-                              "delete",
                               "cancel",
-                              "accept"
+                              "accept",
+                              "delete"
                             ]
                           },
                           "value": {
