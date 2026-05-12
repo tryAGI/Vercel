@@ -19,6 +19,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Ash,
+        /// <summary>
+        /// 
+        /// </summary>
         Astro,
         /// <summary>
         /// 
@@ -296,6 +300,7 @@ namespace Vercel
             {
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.ActixWeb => "actix-web",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Angular => "angular",
+                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Ash => "ash",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Astro => "astro",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Axum => "axum",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Blitzjs => "blitzjs",
@@ -374,6 +379,7 @@ namespace Vercel
             {
                 "actix-web" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.ActixWeb,
                 "angular" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Angular,
+                "ash" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Ash,
                 "astro" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Astro,
                 "axum" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Axum,
                 "blitzjs" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Blitzjs,

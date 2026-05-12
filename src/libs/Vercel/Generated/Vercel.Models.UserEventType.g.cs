@@ -1100,6 +1100,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectExpirationReached,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectExpirationScheduled,
         /// <summary>
         /// 
@@ -2183,6 +2187,7 @@ namespace Vercel
                 UserEventType.ProjectDomainVerified => "project-domain-verified",
                 UserEventType.ProjectElasticConcurrencyUpdated => "project-elastic-concurrency-updated",
                 UserEventType.ProjectExpirationLocked => "project-expiration-locked",
+                UserEventType.ProjectExpirationReached => "project-expiration-reached",
                 UserEventType.ProjectExpirationScheduled => "project-expiration-scheduled",
                 UserEventType.ProjectExpirationUnlocked => "project-expiration-unlocked",
                 UserEventType.ProjectExternalRewriteCachingUpdated => "project-external-rewrite-caching-updated",
@@ -2665,6 +2670,7 @@ namespace Vercel
                 "project-domain-verified" => UserEventType.ProjectDomainVerified,
                 "project-elastic-concurrency-updated" => UserEventType.ProjectElasticConcurrencyUpdated,
                 "project-expiration-locked" => UserEventType.ProjectExpirationLocked,
+                "project-expiration-reached" => UserEventType.ProjectExpirationReached,
                 "project-expiration-scheduled" => UserEventType.ProjectExpirationScheduled,
                 "project-expiration-unlocked" => UserEventType.ProjectExpirationUnlocked,
                 "project-external-rewrite-caching-updated" => UserEventType.ProjectExternalRewriteCachingUpdated,

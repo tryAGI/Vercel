@@ -1099,6 +1099,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectExpirationReached,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectExpirationScheduled,
         /// <summary>
         /// 
@@ -2182,6 +2186,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectDomainVerified => "project-domain-verified",
                 ListEventTypeReplacedByItem.ProjectElasticConcurrencyUpdated => "project-elastic-concurrency-updated",
                 ListEventTypeReplacedByItem.ProjectExpirationLocked => "project-expiration-locked",
+                ListEventTypeReplacedByItem.ProjectExpirationReached => "project-expiration-reached",
                 ListEventTypeReplacedByItem.ProjectExpirationScheduled => "project-expiration-scheduled",
                 ListEventTypeReplacedByItem.ProjectExpirationUnlocked => "project-expiration-unlocked",
                 ListEventTypeReplacedByItem.ProjectExternalRewriteCachingUpdated => "project-external-rewrite-caching-updated",
@@ -2664,6 +2669,7 @@ namespace Vercel
                 "project-domain-verified" => ListEventTypeReplacedByItem.ProjectDomainVerified,
                 "project-elastic-concurrency-updated" => ListEventTypeReplacedByItem.ProjectElasticConcurrencyUpdated,
                 "project-expiration-locked" => ListEventTypeReplacedByItem.ProjectExpirationLocked,
+                "project-expiration-reached" => ListEventTypeReplacedByItem.ProjectExpirationReached,
                 "project-expiration-scheduled" => ListEventTypeReplacedByItem.ProjectExpirationScheduled,
                 "project-expiration-unlocked" => ListEventTypeReplacedByItem.ProjectExpirationUnlocked,
                 "project-external-rewrite-caching-updated" => ListEventTypeReplacedByItem.ProjectExternalRewriteCachingUpdated,
