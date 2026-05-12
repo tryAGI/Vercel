@@ -19,6 +19,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Ash,
+        /// <summary>
+        /// 
+        /// </summary>
         Astro,
         /// <summary>
         /// 
@@ -296,6 +300,7 @@ namespace Vercel
             {
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.ActixWeb => "actix-web",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Angular => "angular",
+                GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Ash => "ash",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Astro => "astro",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Axum => "axum",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Blitzjs => "blitzjs",
@@ -374,6 +379,7 @@ namespace Vercel
             {
                 "actix-web" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.ActixWeb,
                 "angular" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Angular,
+                "ash" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Ash,
                 "astro" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Astro,
                 "axum" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Axum,
                 "blitzjs" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Blitzjs,
