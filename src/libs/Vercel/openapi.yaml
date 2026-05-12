@@ -144174,7 +144174,8 @@
               "type": "string",
               "enum": [
                 "mfa",
-                "scope"
+                "scope",
+                "invalidated"
               ]
             },
             "type": "array"

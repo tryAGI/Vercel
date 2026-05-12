@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Invalidated,
+        /// <summary>
+        /// 
+        /// </summary>
         Mfa,
         /// <summary>
         /// 
@@ -30,6 +34,7 @@ namespace Vercel
         {
             return value switch
             {
+                TeamLimitedLimitedByItem.Invalidated => "invalidated",
                 TeamLimitedLimitedByItem.Mfa => "mfa",
                 TeamLimitedLimitedByItem.Scope => "scope",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -42,6 +47,7 @@ namespace Vercel
         {
             return value switch
             {
+                "invalidated" => TeamLimitedLimitedByItem.Invalidated,
                 "mfa" => TeamLimitedLimitedByItem.Mfa,
                 "scope" => TeamLimitedLimitedByItem.Scope,
                 _ => null,
