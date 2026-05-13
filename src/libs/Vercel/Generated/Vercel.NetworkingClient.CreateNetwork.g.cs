@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class ConnectClient
+    public partial class NetworkingClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_UpdateStaticIpsSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_CreateNetworkSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,39 +21,34 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_UpdateStaticIpsSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_CreateNetworkSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_UpdateStaticIpsSecurityRequirement0,
+            {                s_CreateNetworkSecurityRequirement0,
             };
-        partial void PrepareUpdateStaticIpsArguments(
+        partial void PrepareCreateNetworkArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string idOrName,
             ref string? teamId,
             ref string? slug,
-            global::Vercel.UpdateStaticIpsRequest request);
-        partial void PrepareUpdateStaticIpsRequest(
+            global::Vercel.CreateNetworkRequest request);
+        partial void PrepareCreateNetworkRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string idOrName,
             string? teamId,
             string? slug,
-            global::Vercel.UpdateStaticIpsRequest request);
-        partial void ProcessUpdateStaticIpsResponse(
+            global::Vercel.CreateNetworkRequest request);
+        partial void ProcessCreateNetworkResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessUpdateStaticIpsResponseContent(
+        partial void ProcessCreateNetworkResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Configures Static IPs for a project<br/>
-        /// Allows configuring Static IPs for a project
+        /// Create a Secure Compute network<br/>
+        /// Allows to create a Secure Compute network.
         /// </summary>
-        /// <param name="idOrName">
-        /// The unique project identifier or the project name
-        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -64,17 +59,15 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>> UpdateStaticIpsAsync(
-            string idOrName,
+        public async global::System.Threading.Tasks.Task<global::Vercel.Network> CreateNetworkAsync(
 
-            global::Vercel.UpdateStaticIpsRequest request,
+            global::Vercel.CreateNetworkRequest request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await UpdateStaticIpsAsResponseAsync(
-                idOrName: idOrName,
+            var __response = await CreateNetworkAsResponseAsync(
 
                 request: request,
                 teamId: teamId,
@@ -86,12 +79,9 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Configures Static IPs for a project<br/>
-        /// Allows configuring Static IPs for a project
+        /// Create a Secure Compute network<br/>
+        /// Allows to create a Secure Compute network.
         /// </summary>
-        /// <param name="idOrName">
-        /// The unique project identifier or the project name
-        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -102,10 +92,9 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>>> UpdateStaticIpsAsResponseAsync(
-            string idOrName,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.Network>> CreateNetworkAsResponseAsync(
 
-            global::Vercel.UpdateStaticIpsRequest request,
+            global::Vercel.CreateNetworkRequest request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -115,9 +104,8 @@ namespace Vercel
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareUpdateStaticIpsArguments(
+            PrepareCreateNetworkArguments(
                 httpClient: HttpClient,
-                idOrName: ref idOrName,
                 teamId: ref teamId,
                 slug: ref slug,
                 request: request);
@@ -125,8 +113,8 @@ namespace Vercel
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_UpdateStaticIpsSecurityRequirements,
-                operationName: "UpdateStaticIpsAsync");
+                securityRequirements: s_CreateNetworkSecurityRequirements,
+                operationName: "CreateNetworkAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -146,7 +134,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v1/projects/{idOrName}/shared-connect-links",
+                                path: "/v1/connect/networks",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("teamId", teamId)
@@ -158,7 +146,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: new global::System.Net.Http.HttpMethod("PATCH"),
+                    method: global::System.Net.Http.HttpMethod.Post,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -195,10 +183,9 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareUpdateStaticIpsRequest(
+                PrepareCreateNetworkRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    idOrName: idOrName!,
                     teamId: teamId,
                     slug: slug,
                     request: request);
@@ -218,10 +205,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateStaticIps",
-                                methodName: "UpdateStaticIpsAsync",
-                                pathTemplate: "$\"/v1/projects/{idOrName}/shared-connect-links\"",
-                                httpMethod: "PATCH",
+                                operationId: "CreateNetwork",
+                                methodName: "CreateNetworkAsync",
+                                pathTemplate: "\"/v1/connect/networks\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -252,10 +239,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateStaticIps",
-                                methodName: "UpdateStaticIpsAsync",
-                                pathTemplate: "$\"/v1/projects/{idOrName}/shared-connect-links\"",
-                                httpMethod: "PATCH",
+                                operationId: "CreateNetwork",
+                                methodName: "CreateNetworkAsync",
+                                pathTemplate: "\"/v1/connect/networks\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -293,10 +280,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateStaticIps",
-                                methodName: "UpdateStaticIpsAsync",
-                                pathTemplate: "$\"/v1/projects/{idOrName}/shared-connect-links\"",
-                                httpMethod: "PATCH",
+                                operationId: "CreateNetwork",
+                                methodName: "CreateNetworkAsync",
+                                pathTemplate: "\"/v1/connect/networks\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -333,7 +320,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessUpdateStaticIpsResponse(
+                ProcessCreateNetworkResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -341,10 +328,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateStaticIps",
-                                methodName: "UpdateStaticIpsAsync",
-                                pathTemplate: "$\"/v1/projects/{idOrName}/shared-connect-links\"",
-                                httpMethod: "PATCH",
+                                operationId: "CreateNetwork",
+                                methodName: "CreateNetworkAsync",
+                                pathTemplate: "\"/v1/connect/networks\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -363,10 +350,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateStaticIps",
-                                methodName: "UpdateStaticIpsAsync",
-                                pathTemplate: "$\"/v1/projects/{idOrName}/shared-connect-links\"",
-                                httpMethod: "PATCH",
+                                operationId: "CreateNetwork",
+                                methodName: "CreateNetworkAsync",
+                                pathTemplate: "\"/v1/connect/networks\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -513,39 +500,6 @@ namespace Vercel
                                 };
                             }
                             // 
-                            if ((int)__response.StatusCode == 404)
-                            {
-                                string? __content_404 = null;
-                                global::System.Exception? __exception_404 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_404 = __ex;
-                                }
-
-                                throw new global::Vercel.ApiException(
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_404,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_404,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value),
-                                };
-                            }
-                            // 
                             if ((int)__response.StatusCode == 409)
                             {
                                 string? __content_409 = null;
@@ -578,39 +532,6 @@ namespace Vercel
                                         h => h.Value),
                                 };
                             }
-                            // 
-                            if ((int)__response.StatusCode == 500)
-                            {
-                                string? __content_500 = null;
-                                global::System.Exception? __exception_500 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_500 = __ex;
-                                }
-
-                                throw new global::Vercel.ApiException(
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_500,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_500,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value),
-                                };
-                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -624,7 +545,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessUpdateStaticIpsResponseContent(
+                                ProcessCreateNetworkResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -633,9 +554,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>), JsonSerializerContext) ??
+                                    var __value = global::Vercel.Network.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.Network>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -667,9 +588,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.Network.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.Network>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -712,42 +633,49 @@ namespace Vercel
             }
         }
         /// <summary>
-        /// Configures Static IPs for a project<br/>
-        /// Allows configuring Static IPs for a project
+        /// Create a Secure Compute network<br/>
+        /// Allows to create a Secure Compute network.
         /// </summary>
-        /// <param name="idOrName">
-        /// The unique project identifier or the project name
-        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
-        /// <param name="builds">
-        /// Whether to use Static IPs for builds.
+        /// <param name="awsAvailabilityZoneIds"></param>
+        /// <param name="cidr">
+        /// The CIDR block of the network<br/>
+        /// Example: 192.168.0.0/16
         /// </param>
-        /// <param name="regions"></param>
+        /// <param name="name">
+        /// The name of the network
+        /// </param>
+        /// <param name="region">
+        /// The region where the network will be created<br/>
+        /// Example: iad1
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>> UpdateStaticIpsAsync(
-            string idOrName,
+        public async global::System.Threading.Tasks.Task<global::Vercel.Network> CreateNetworkAsync(
+            string cidr,
+            string name,
+            string region,
             string? teamId = default,
             string? slug = default,
-            bool? builds = default,
-            global::System.Collections.Generic.IList<string>? regions = default,
+            global::System.Collections.Generic.IList<string>? awsAvailabilityZoneIds = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Vercel.UpdateStaticIpsRequest
+            var __request = new global::Vercel.CreateNetworkRequest
             {
-                Builds = builds,
-                Regions = regions,
+                AwsAvailabilityZoneIds = awsAvailabilityZoneIds,
+                Cidr = cidr,
+                Name = name,
+                Region = region,
             };
 
-            return await UpdateStaticIpsAsync(
-                idOrName: idOrName,
+            return await CreateNetworkAsync(
                 teamId: teamId,
                 slug: slug,
                 request: __request,

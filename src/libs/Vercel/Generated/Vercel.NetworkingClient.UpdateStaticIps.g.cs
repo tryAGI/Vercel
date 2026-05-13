@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class ConnectClient
+    public partial class NetworkingClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_ListNetworksSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_UpdateStaticIpsSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,54 +21,38 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_ListNetworksSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_UpdateStaticIpsSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_ListNetworksSecurityRequirement0,
+            {                s_UpdateStaticIpsSecurityRequirement0,
             };
-        partial void PrepareListNetworksArguments(
+        partial void PrepareUpdateStaticIpsArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref bool? includeHostedZones,
-            ref bool? includePeeringConnections,
-            ref bool? includeProjects,
-            ref string? search,
+            ref string idOrName,
             ref string? teamId,
-            ref string? slug);
-        partial void PrepareListNetworksRequest(
+            ref string? slug,
+            global::Vercel.UpdateStaticIpsRequest request);
+        partial void PrepareUpdateStaticIpsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            bool? includeHostedZones,
-            bool? includePeeringConnections,
-            bool? includeProjects,
-            string? search,
+            string idOrName,
             string? teamId,
-            string? slug);
-        partial void ProcessListNetworksResponse(
+            string? slug,
+            global::Vercel.UpdateStaticIpsRequest request);
+        partial void ProcessUpdateStaticIpsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessListNetworksResponseContent(
+        partial void ProcessUpdateStaticIpsResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// List Secure Compute networks<br/>
-        /// Allows to list Secure Compute networks.
+        /// Configures Static IPs for a project<br/>
+        /// Allows configuring Static IPs for a project
         /// </summary>
-        /// <param name="includeHostedZones">
-        /// Whether to include Hosted Zones in the response<br/>
-        /// Default Value: true
-        /// </param>
-        /// <param name="includePeeringConnections">
-        /// Whether to include VPC Peering connections in the response<br/>
-        /// Default Value: true
-        /// </param>
-        /// <param name="includeProjects">
-        /// Whether to include projects in the response<br/>
-        /// Default Value: true
-        /// </param>
-        /// <param name="search">
-        /// The query to use as a filter for returned networks
+        /// <param name="idOrName">
+        /// The unique project identifier or the project name
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -76,24 +60,23 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Vercel.Network>> ListNetworksAsync(
-            bool? includeHostedZones = default,
-            bool? includePeeringConnections = default,
-            bool? includeProjects = default,
-            string? search = default,
+        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>> UpdateStaticIpsAsync(
+            string idOrName,
+
+            global::Vercel.UpdateStaticIpsRequest request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await ListNetworksAsResponseAsync(
-                includeHostedZones: includeHostedZones,
-                includePeeringConnections: includePeeringConnections,
-                includeProjects: includeProjects,
-                search: search,
+            var __response = await UpdateStaticIpsAsResponseAsync(
+                idOrName: idOrName,
+
+                request: request,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -103,23 +86,11 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// List Secure Compute networks<br/>
-        /// Allows to list Secure Compute networks.
+        /// Configures Static IPs for a project<br/>
+        /// Allows configuring Static IPs for a project
         /// </summary>
-        /// <param name="includeHostedZones">
-        /// Whether to include Hosted Zones in the response<br/>
-        /// Default Value: true
-        /// </param>
-        /// <param name="includePeeringConnections">
-        /// Whether to include VPC Peering connections in the response<br/>
-        /// Default Value: true
-        /// </param>
-        /// <param name="includeProjects">
-        /// Whether to include projects in the response<br/>
-        /// Default Value: true
-        /// </param>
-        /// <param name="search">
-        /// The query to use as a filter for returned networks
+        /// <param name="idOrName">
+        /// The unique project identifier or the project name
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -127,35 +98,35 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.Network>>> ListNetworksAsResponseAsync(
-            bool? includeHostedZones = default,
-            bool? includePeeringConnections = default,
-            bool? includeProjects = default,
-            string? search = default,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>>> UpdateStaticIpsAsResponseAsync(
+            string idOrName,
+
+            global::Vercel.UpdateStaticIpsRequest request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+
             PrepareArguments(
                 client: HttpClient);
-            PrepareListNetworksArguments(
+            PrepareUpdateStaticIpsArguments(
                 httpClient: HttpClient,
-                includeHostedZones: ref includeHostedZones,
-                includePeeringConnections: ref includePeeringConnections,
-                includeProjects: ref includeProjects,
-                search: ref search,
+                idOrName: ref idOrName,
                 teamId: ref teamId,
-                slug: ref slug);
+                slug: ref slug,
+                request: request);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_ListNetworksSecurityRequirements,
-                operationName: "ListNetworksAsync");
+                securityRequirements: s_UpdateStaticIpsSecurityRequirements,
+                operationName: "UpdateStaticIpsAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -175,13 +146,9 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: "/v1/connect/networks",
+                                path: $"/v1/projects/{idOrName}/shared-connect-links",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("includeHostedZones", includeHostedZones?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("includePeeringConnections", includePeeringConnections?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("includeProjects", includeProjects?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("search", search)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -191,7 +158,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Get,
+                    method: new global::System.Net.Http.HttpMethod("PATCH"),
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -214,6 +181,12 @@ namespace Vercel
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 } 
             }
+                            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
+                            var __httpRequestContent = new global::System.Net.Http.StringContent(
+                                content: __httpRequestContentBody,
+                                encoding: global::System.Text.Encoding.UTF8,
+                                mediaType: "application/json");
+                            __httpRequest.Content = __httpRequestContent;
                 global::Vercel.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -222,15 +195,13 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareListNetworksRequest(
+                PrepareUpdateStaticIpsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    includeHostedZones: includeHostedZones,
-                    includePeeringConnections: includePeeringConnections,
-                    includeProjects: includeProjects,
-                    search: search,
+                    idOrName: idOrName!,
                     teamId: teamId,
-                    slug: slug);
+                    slug: slug,
+                    request: request);
 
                 return __httpRequest;
             }
@@ -247,10 +218,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "ListNetworks",
-                                methodName: "ListNetworksAsync",
-                                pathTemplate: "\"/v1/connect/networks\"",
-                                httpMethod: "GET",
+                                operationId: "UpdateStaticIps",
+                                methodName: "UpdateStaticIpsAsync",
+                                pathTemplate: "$\"/v1/projects/{idOrName}/shared-connect-links\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -281,10 +252,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "ListNetworks",
-                                methodName: "ListNetworksAsync",
-                                pathTemplate: "\"/v1/connect/networks\"",
-                                httpMethod: "GET",
+                                operationId: "UpdateStaticIps",
+                                methodName: "UpdateStaticIpsAsync",
+                                pathTemplate: "$\"/v1/projects/{idOrName}/shared-connect-links\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -322,10 +293,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "ListNetworks",
-                                methodName: "ListNetworksAsync",
-                                pathTemplate: "\"/v1/connect/networks\"",
-                                httpMethod: "GET",
+                                operationId: "UpdateStaticIps",
+                                methodName: "UpdateStaticIpsAsync",
+                                pathTemplate: "$\"/v1/projects/{idOrName}/shared-connect-links\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -362,7 +333,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessListNetworksResponse(
+                ProcessUpdateStaticIpsResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -370,10 +341,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "ListNetworks",
-                                methodName: "ListNetworksAsync",
-                                pathTemplate: "\"/v1/connect/networks\"",
-                                httpMethod: "GET",
+                                operationId: "UpdateStaticIps",
+                                methodName: "UpdateStaticIpsAsync",
+                                pathTemplate: "$\"/v1/projects/{idOrName}/shared-connect-links\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -392,10 +363,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "ListNetworks",
-                                methodName: "ListNetworksAsync",
-                                pathTemplate: "\"/v1/connect/networks\"",
-                                httpMethod: "GET",
+                                operationId: "UpdateStaticIps",
+                                methodName: "UpdateStaticIpsAsync",
+                                pathTemplate: "$\"/v1/projects/{idOrName}/shared-connect-links\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -476,6 +447,39 @@ namespace Vercel
                                 };
                             }
                             // 
+                            if ((int)__response.StatusCode == 402)
+                            {
+                                string? __content_402 = null;
+                                global::System.Exception? __exception_402 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_402 = __ex;
+                                }
+
+                                throw new global::Vercel.ApiException(
+                                    message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_402,
+                                    statusCode: __response.StatusCode)
+                                {
+                                    ResponseBody = __content_402,
+                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value),
+                                };
+                            }
+                            // 
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
@@ -508,6 +512,105 @@ namespace Vercel
                                         h => h.Value),
                                 };
                             }
+                            // 
+                            if ((int)__response.StatusCode == 404)
+                            {
+                                string? __content_404 = null;
+                                global::System.Exception? __exception_404 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_404 = __ex;
+                                }
+
+                                throw new global::Vercel.ApiException(
+                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_404,
+                                    statusCode: __response.StatusCode)
+                                {
+                                    ResponseBody = __content_404,
+                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value),
+                                };
+                            }
+                            // 
+                            if ((int)__response.StatusCode == 409)
+                            {
+                                string? __content_409 = null;
+                                global::System.Exception? __exception_409 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_409 = __ex;
+                                }
+
+                                throw new global::Vercel.ApiException(
+                                    message: __content_409 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_409,
+                                    statusCode: __response.StatusCode)
+                                {
+                                    ResponseBody = __content_409,
+                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value),
+                                };
+                            }
+                            // 
+                            if ((int)__response.StatusCode == 500)
+                            {
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_500 = __ex;
+                                }
+
+                                throw new global::Vercel.ApiException(
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    statusCode: __response.StatusCode)
+                                {
+                                    ResponseBody = __content_500,
+                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value),
+                                };
+                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -521,7 +624,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessListNetworksResponseContent(
+                                ProcessUpdateStaticIpsResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -530,9 +633,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Vercel.Network>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Vercel.Network>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.Network>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -564,9 +667,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Vercel.Network>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Vercel.Network>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.Network>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -607,6 +710,49 @@ namespace Vercel
             {
                 __httpRequest?.Dispose();
             }
+        }
+        /// <summary>
+        /// Configures Static IPs for a project<br/>
+        /// Allows configuring Static IPs for a project
+        /// </summary>
+        /// <param name="idOrName">
+        /// The unique project identifier or the project name
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="builds">
+        /// Whether to use Static IPs for builds.
+        /// </param>
+        /// <param name="regions"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>> UpdateStaticIpsAsync(
+            string idOrName,
+            string? teamId = default,
+            string? slug = default,
+            bool? builds = default,
+            global::System.Collections.Generic.IList<string>? regions = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var __request = new global::Vercel.UpdateStaticIpsRequest
+            {
+                Builds = builds,
+                Regions = regions,
+            };
+
+            return await UpdateStaticIpsAsync(
+                idOrName: idOrName,
+                teamId: teamId,
+                slug: slug,
+                request: __request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken).ConfigureAwait(false);
         }
     }
 }

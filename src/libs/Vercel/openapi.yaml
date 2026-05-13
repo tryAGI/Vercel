@@ -10185,7 +10185,7 @@
         ],
         "summary": "List Secure Compute networks",
         "tags": [
-          "connect"
+          "networking"
         ],
         "responses": {
           "200": {
@@ -10282,7 +10282,7 @@
         ],
         "summary": "Create a Secure Compute network",
         "tags": [
-          "connect"
+          "networking"
         ],
         "responses": {
           "201": {
@@ -10386,7 +10386,7 @@
         ],
         "summary": "Delete a Secure Compute network",
         "tags": [
-          "connect"
+          "networking"
         ],
         "responses": {
           "204": {
@@ -10450,7 +10450,7 @@
         ],
         "summary": "Update a Secure Compute network",
         "tags": [
-          "connect"
+          "networking"
         ],
         "responses": {
           "200": {
@@ -10535,7 +10535,7 @@
         ],
         "summary": "Read a Secure Compute network",
         "tags": [
-          "connect"
+          "networking"
         ],
         "responses": {
           "200": {
@@ -100068,7 +100068,7 @@
         ],
         "summary": "Configures Static IPs for a project",
         "tags": [
-          "connect",
+          "networking",
           "static-ips"
         ],
         "responses": {

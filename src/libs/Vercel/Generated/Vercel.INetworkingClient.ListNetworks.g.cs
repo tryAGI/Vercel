@@ -2,7 +2,7 @@
 
 namespace Vercel
 {
-    public partial interface IConnectClient
+    public partial interface INetworkingClient
     {
         /// <summary>
         /// List Secure Compute networks<br/>
