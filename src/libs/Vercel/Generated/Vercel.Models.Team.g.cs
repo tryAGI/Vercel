@@ -259,8 +259,7 @@ namespace Vercel
         /// The membership of the authenticated User in relation to the Team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("membership")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.TeamMembership Membership { get; set; }
+        public global::Vercel.TeamMembership? Membership { get; set; }
 
         /// <summary>
         /// UNIX timestamp (in milliseconds) when the Team was created.<br/>
@@ -298,9 +297,6 @@ namespace Vercel
         /// <param name="slug">
         /// The Team's slug, which is unique across the Vercel platform.<br/>
         /// Example: my-team
-        /// </param>
-        /// <param name="membership">
-        /// The membership of the authenticated User in relation to the Team.
         /// </param>
         /// <param name="createdAt">
         /// UNIX timestamp (in milliseconds) when the Team was created.<br/>
@@ -398,6 +394,9 @@ namespace Vercel
         /// The ID of the file used as avatar for this Team.<br/>
         /// Example: 6eb07268bcfadd309905ffb1579354084c24655c
         /// </param>
+        /// <param name="membership">
+        /// The membership of the authenticated User in relation to the Team.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -407,7 +406,6 @@ namespace Vercel
             string stagingPrefix,
             string id,
             string slug,
-            global::Vercel.TeamMembership membership,
             double createdAt,
             global::Vercel.TeamConnect? connect,
             string? emailDomain,
@@ -439,7 +437,8 @@ namespace Vercel
             double? apiKeysInvalidatedAt,
             double? integrationTokensInvalidatedAt,
             string? name,
-            string? avatar)
+            string? avatar,
+            global::Vercel.TeamMembership? membership)
         {
             this.Connect = connect;
             this.CreatorId = creatorId ?? throw new global::System.ArgumentNullException(nameof(creatorId));
@@ -477,7 +476,7 @@ namespace Vercel
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Name = name;
             this.Avatar = avatar;
-            this.Membership = membership ?? throw new global::System.ArgumentNullException(nameof(membership));
+            this.Membership = membership;
             this.CreatedAt = createdAt;
         }
 

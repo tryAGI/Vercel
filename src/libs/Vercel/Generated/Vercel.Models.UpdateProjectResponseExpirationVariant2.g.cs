@@ -23,13 +23,6 @@ namespace Vercel
         public required string LockedBy { get; set; }
 
         /// <summary>
-        /// Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter — but the field is retained so a later re-schedule increments from a known number.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Version { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -44,20 +37,15 @@ namespace Vercel
         /// <param name="lockedBy">
         /// userId of the actor that triggered the lock (system or admin).
         /// </param>
-        /// <param name="version">
-        /// Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter — but the field is retained so a later re-schedule increments from a known number.
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectResponseExpirationVariant2(
             double lockedAt,
-            string lockedBy,
-            double version)
+            string lockedBy)
         {
             this.LockedAt = lockedAt;
             this.LockedBy = lockedBy ?? throw new global::System.ArgumentNullException(nameof(lockedBy));
-            this.Version = version;
         }
 
         /// <summary>

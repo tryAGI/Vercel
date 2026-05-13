@@ -58202,15 +58202,10 @@
                                   "expiresAt": {
                                     "type": "number",
                                     "description": "Unix ms timestamp when the project is scheduled to expire."
-                                  },
-                                  "version": {
-                                    "type": "number",
-                                    "description": "Version stamped on the in-flight `ExpireProject` event."
                                   }
                                 },
                                 "required": [
-                                  "expiresAt",
-                                  "version"
+                                  "expiresAt"
                                 ],
                                 "type": "object"
                               },
@@ -58223,16 +58218,11 @@
                                   "lockedBy": {
                                     "type": "string",
                                     "description": "userId of the actor that triggered the lock (system or admin)."
-                                  },
-                                  "version": {
-                                    "type": "number",
-                                    "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
                                   }
                                 },
                                 "required": [
                                   "lockedAt",
-                                  "lockedBy",
-                                  "version"
+                                  "lockedBy"
                                 ],
                                 "type": "object"
                               }
@@ -76894,15 +76884,10 @@
                                       "expiresAt": {
                                         "type": "number",
                                         "description": "Unix ms timestamp when the project is scheduled to expire."
-                                      },
-                                      "version": {
-                                        "type": "number",
-                                        "description": "Version stamped on the in-flight `ExpireProject` event."
                                       }
                                     },
                                     "required": [
-                                      "expiresAt",
-                                      "version"
+                                      "expiresAt"
                                     ],
                                     "type": "object"
                                   },
@@ -76915,16 +76900,11 @@
                                       "lockedBy": {
                                         "type": "string",
                                         "description": "userId of the actor that triggered the lock (system or admin)."
-                                      },
-                                      "version": {
-                                        "type": "number",
-                                        "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
                                       }
                                     },
                                     "required": [
                                       "lockedAt",
-                                      "lockedBy",
-                                      "version"
+                                      "lockedBy"
                                     ],
                                     "type": "object"
                                   }
@@ -82550,15 +82530,10 @@
                             "expiresAt": {
                               "type": "number",
                               "description": "Unix ms timestamp when the project is scheduled to expire."
-                            },
-                            "version": {
-                              "type": "number",
-                              "description": "Version stamped on the in-flight `ExpireProject` event."
                             }
                           },
                           "required": [
-                            "expiresAt",
-                            "version"
+                            "expiresAt"
                           ],
                           "type": "object"
                         },
@@ -82571,16 +82546,11 @@
                             "lockedBy": {
                               "type": "string",
                               "description": "userId of the actor that triggered the lock (system or admin)."
-                            },
-                            "version": {
-                              "type": "number",
-                              "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
                             }
                           },
                           "required": [
                             "lockedAt",
-                            "lockedBy",
-                            "version"
+                            "lockedBy"
                           ],
                           "type": "object"
                         }
@@ -88443,15 +88413,10 @@
                             "expiresAt": {
                               "type": "number",
                               "description": "Unix ms timestamp when the project is scheduled to expire."
-                            },
-                            "version": {
-                              "type": "number",
-                              "description": "Version stamped on the in-flight `ExpireProject` event."
                             }
                           },
                           "required": [
-                            "expiresAt",
-                            "version"
+                            "expiresAt"
                           ],
                           "type": "object"
                         },
@@ -88464,16 +88429,11 @@
                             "lockedBy": {
                               "type": "string",
                               "description": "userId of the actor that triggered the lock (system or admin)."
-                            },
-                            "version": {
-                              "type": "number",
-                              "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
                             }
                           },
                           "required": [
                             "lockedAt",
-                            "lockedBy",
-                            "version"
+                            "lockedBy"
                           ],
                           "type": "object"
                         }
@@ -93920,15 +93880,10 @@
                             "expiresAt": {
                               "type": "number",
                               "description": "Unix ms timestamp when the project is scheduled to expire."
-                            },
-                            "version": {
-                              "type": "number",
-                              "description": "Version stamped on the in-flight `ExpireProject` event."
                             }
                           },
                           "required": [
-                            "expiresAt",
-                            "version"
+                            "expiresAt"
                           ],
                           "type": "object"
                         },
@@ -93941,16 +93896,11 @@
                             "lockedBy": {
                               "type": "string",
                               "description": "userId of the actor that triggered the lock (system or admin)."
-                            },
-                            "version": {
-                              "type": "number",
-                              "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
                             }
                           },
                           "required": [
                             "lockedAt",
-                            "lockedBy",
-                            "version"
+                            "lockedBy"
                           ],
                           "type": "object"
                         }
@@ -108832,15 +108782,10 @@
                             "expiresAt": {
                               "type": "number",
                               "description": "Unix ms timestamp when the project is scheduled to expire."
-                            },
-                            "version": {
-                              "type": "number",
-                              "description": "Version stamped on the in-flight `ExpireProject` event."
                             }
                           },
                           "required": [
-                            "expiresAt",
-                            "version"
+                            "expiresAt"
                           ],
                           "type": "object"
                         },
@@ -108853,16 +108798,11 @@
                             "lockedBy": {
                               "type": "string",
                               "description": "userId of the actor that triggered the lock (system or admin)."
-                            },
-                            "version": {
-                              "type": "number",
-                              "description": "Last version observed at lock time, carried forward unchanged. Lock is terminal and does not produce a new event, so it does not bump the counter \u2014 but the field is retained so a later re-schedule increments from a known number."
                             }
                           },
                           "required": [
                             "lockedAt",
-                            "lockedBy",
-                            "version"
+                            "lockedBy"
                           ],
                           "type": "object"
                         }
@@ -144142,7 +144082,6 @@
           "creatorId",
           "description",
           "id",
-          "membership",
           "name",
           "slug",
           "stagingPrefix",
@@ -144478,7 +144417,6 @@
           "id",
           "limited",
           "limitedBy",
-          "membership",
           "name",
           "slug"
         ],
