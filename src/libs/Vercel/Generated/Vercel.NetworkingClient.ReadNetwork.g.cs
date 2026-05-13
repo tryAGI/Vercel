@@ -3,7 +3,7 @@
 
 namespace Vercel
 {
-    public partial class ConnectClient
+    public partial class NetworkingClient
     {
 
 

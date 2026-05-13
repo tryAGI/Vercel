@@ -7,7 +7,7 @@ namespace Vercel
     /// If no httpClient is provided, a new one will be created.<br/>
     /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
     /// </summary>
-    public partial interface IConnectClient : global::System.IDisposable
+    public partial interface INetworkingClient : global::System.IDisposable
     {
         /// <summary>
         /// The HttpClient instance.

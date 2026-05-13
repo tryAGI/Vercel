@@ -2,7 +2,7 @@
 
 namespace Vercel
 {
-    public partial interface IConnectClient
+    public partial interface INetworkingClient
     {
         /// <summary>
         /// Delete a Secure Compute network<br/>
