@@ -57,9 +57,6 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="networkPolicy"></param>
-        /// <param name="networkPolicyForwardRules">
-        /// List of forwarding rules for network requests. Each rule specifies a domain pattern to match and a proxy URL to forward matching requests to.
-        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
@@ -111,7 +108,6 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>? networkPolicy = default,
-            global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyForwardRule>? networkPolicyForwardRules = default,
             global::Vercel.CreateSandboxesRequestResources? resources = default,
             global::Vercel.CreateSandboxesRequestRuntime? runtime = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestSourceVariant1, global::Vercel.CreateSandboxesRequestSourceVariant2, global::Vercel.CreateSandboxesRequestSourceVariant3>? source = default,

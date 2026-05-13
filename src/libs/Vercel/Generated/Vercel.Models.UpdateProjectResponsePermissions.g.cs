@@ -299,6 +299,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("delegatedProtectionClient")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DelegatedProtectionClient { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPolicy { get; set; }
 
@@ -1547,6 +1553,7 @@ namespace Vercel
         /// <param name="buildMachineDefault"></param>
         /// <param name="dataCacheBillingSettings"></param>
         /// <param name="defaultDeploymentProtection"></param>
+        /// <param name="delegatedProtectionClient"></param>
         /// <param name="deploymentPolicy"></param>
         /// <param name="domain"></param>
         /// <param name="domainAcceptDelegation"></param>
@@ -1798,6 +1805,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? buildMachineDefault,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? dataCacheBillingSettings,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? defaultDeploymentProtection,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? delegatedProtectionClient,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentPolicy,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? domain,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? domainAcceptDelegation,
@@ -2046,6 +2054,7 @@ namespace Vercel
             this.BuildMachineDefault = buildMachineDefault;
             this.DataCacheBillingSettings = dataCacheBillingSettings;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
+            this.DelegatedProtectionClient = delegatedProtectionClient;
             this.DeploymentPolicy = deploymentPolicy;
             this.Domain = domain;
             this.DomainAcceptDelegation = domainAcceptDelegation;
