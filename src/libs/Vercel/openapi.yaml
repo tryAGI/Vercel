@@ -60795,6 +60795,12 @@
                                 },
                                 "type": "array"
                               },
+                              "delegatedProtectionClient": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "deploymentPolicy": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -79139,6 +79145,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "delegatedProtectionClient": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "deploymentPolicy": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -84784,6 +84796,12 @@
                           "type": "array"
                         },
                         "defaultDeploymentProtection": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "delegatedProtectionClient": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -90674,6 +90692,12 @@
                           },
                           "type": "array"
                         },
+                        "delegatedProtectionClient": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "deploymentPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -96133,6 +96157,12 @@
                           "type": "array"
                         },
                         "defaultDeploymentProtection": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "delegatedProtectionClient": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -111053,6 +111083,12 @@
                           },
                           "type": "array"
                         },
+                        "delegatedProtectionClient": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "deploymentPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -114533,28 +114569,6 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                  "__networkPolicyForwardRules": {
-                    "description": "List of forwarding rules for network requests. Each rule specifies a domain pattern to match and a proxy URL to forward matching requests to.",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "additionalProperties": false,
-                      "required": [
-                        "domain",
-                        "forwardURL"
-                      ],
-                      "properties": {
-                        "domain": {
-                          "type": "string",
-                          "description": "The domain (or pattern) of requests to forward. Supports wildcards like *.example.com."
-                        },
-                        "forwardURL": {
-                          "type": "string",
-                          "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
-                        }
-                      }
-                    }
-                  },
                   "resources": {
                     "description": "Resources to define the VM",
                     "additionalProperties": false,
@@ -117422,28 +117436,6 @@
                         }
                       }
                     ]
-                  },
-                  "__networkPolicyForwardRules": {
-                    "description": "List of forwarding rules for network requests. Each rule specifies a domain pattern to match and a proxy URL to forward matching requests to.",
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "additionalProperties": false,
-                      "required": [
-                        "domain",
-                        "forwardURL"
-                      ],
-                      "properties": {
-                        "domain": {
-                          "type": "string",
-                          "description": "The domain (or pattern) of requests to forward. Supports wildcards like *.example.com."
-                        },
-                        "forwardURL": {
-                          "type": "string",
-                          "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
-                        }
-                      }
-                    }
                   },
                   "resources": {
                     "description": "Resources to define the VM",
