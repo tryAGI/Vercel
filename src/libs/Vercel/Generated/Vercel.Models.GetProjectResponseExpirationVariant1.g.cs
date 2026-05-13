@@ -16,13 +16,6 @@ namespace Vercel
         public required double ExpiresAt { get; set; }
 
         /// <summary>
-        /// Version stamped on the in-flight `ExpireProject` event.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Version { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -34,18 +27,13 @@ namespace Vercel
         /// <param name="expiresAt">
         /// Unix ms timestamp when the project is scheduled to expire.
         /// </param>
-        /// <param name="version">
-        /// Version stamped on the in-flight `ExpireProject` event.
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectResponseExpirationVariant1(
-            double expiresAt,
-            double version)
+            double expiresAt)
         {
             this.ExpiresAt = expiresAt;
-            this.Version = version;
         }
 
         /// <summary>
