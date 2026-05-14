@@ -1007,6 +1007,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vcrRepository")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VcrRepository { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vercelRun")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelRun { get; set; }
 
@@ -1671,6 +1677,7 @@ namespace Vercel
         /// <param name="toolbarComment"></param>
         /// <param name="usage"></param>
         /// <param name="usageCycle"></param>
+        /// <param name="vcrRepository"></param>
         /// <param name="vercelRun"></param>
         /// <param name="vpcPeeringConnection"></param>
         /// <param name="webAnalyticsPlan"></param>
@@ -1923,6 +1930,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? toolbarComment,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? usage,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? usageCycle,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vcrRepository,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelRun,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vpcPeeringConnection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalyticsPlan,
@@ -2172,6 +2180,7 @@ namespace Vercel
             this.ToolbarComment = toolbarComment;
             this.Usage = usage;
             this.UsageCycle = usageCycle;
+            this.VcrRepository = vcrRepository;
             this.VercelRun = vercelRun;
             this.VpcPeeringConnection = vpcPeeringConnection;
             this.WebAnalyticsPlan = webAnalyticsPlan;

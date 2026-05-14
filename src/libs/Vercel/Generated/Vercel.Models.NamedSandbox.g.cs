@@ -167,6 +167,12 @@ namespace Vercel
         public global::System.Collections.Generic.Dictionary<string, string>? Tags { get; set; }
 
         /// <summary>
+        /// Key-value pairs of mount path and volume.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mounts")]
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.NamedSandboxMounts2>? Mounts { get; set; }
+
+        /// <summary>
         /// The time when the named sandbox was created, in milliseconds since the epoch.<br/>
         /// Example: 1750344501629L
         /// </summary>
@@ -277,6 +283,9 @@ namespace Vercel
         /// Key-value tags attached to the named sandbox.<br/>
         /// Example: {"team":"hive","user":"bob"}
         /// </param>
+        /// <param name="mounts">
+        /// Key-value pairs of mount path and volume.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -302,7 +311,8 @@ namespace Vercel
             double? totalActiveCpuDurationMs,
             double? totalDurationMs,
             string? cwd,
-            global::System.Collections.Generic.Dictionary<string, string>? tags)
+            global::System.Collections.Generic.Dictionary<string, string>? tags,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.NamedSandboxMounts2>? mounts)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.CurrentSnapshotId = currentSnapshotId;
@@ -324,6 +334,7 @@ namespace Vercel
             this.TotalDurationMs = totalDurationMs;
             this.Cwd = cwd;
             this.Tags = tags;
+            this.Mounts = mounts;
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
         }

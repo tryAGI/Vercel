@@ -61493,6 +61493,12 @@
                                 },
                                 "type": "array"
                               },
+                              "vcrRepository": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "vercelRun": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -79833,6 +79839,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "vcrRepository": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "vercelRun": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -85474,6 +85486,12 @@
                           "type": "array"
                         },
                         "usageCycle": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "vcrRepository": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -91360,6 +91378,12 @@
                           },
                           "type": "array"
                         },
+                        "vcrRepository": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "vercelRun": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -96815,6 +96839,12 @@
                           "type": "array"
                         },
                         "usageCycle": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "vcrRepository": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -111726,6 +111756,12 @@
                           "type": "array"
                         },
                         "usageCycle": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "vcrRepository": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -142950,6 +142986,29 @@
               "team": "hive",
               "user": "bob"
             }
+          },
+          "mounts": {
+            "additionalProperties": {
+              "properties": {
+                "volume": {
+                  "type": "string"
+                },
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "read-only",
+                    "read-write"
+                  ]
+                }
+              },
+              "required": [
+                "volume"
+              ],
+              "type": "object",
+              "description": "Key-value pairs of mount path and volume."
+            },
+            "type": "object",
+            "description": "Key-value pairs of mount path and volume."
           },
           "createdAt": {
             "type": "number",
