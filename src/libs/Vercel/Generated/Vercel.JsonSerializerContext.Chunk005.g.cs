@@ -188,6 +188,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.NamedSandboxStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.NamedSandboxNetworkPolicyModeJsonConverter),
             typeof(global::Vercel.JsonConverters.NamedSandboxNetworkPolicyModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.NamedSandboxMountsModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.NamedSandboxMountsModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.SessionStatusJsonConverter),
             typeof(global::Vercel.JsonConverters.SessionStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.InvitedTeamMemberRoleJsonConverter),
@@ -5258,6 +5260,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.CancelDeploymentResponseFunctions2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseFunctions2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseFunctionsArchitecture), TypeInfoPropertyName = "CancelDeploymentResponseFunctionsArchitecture2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<double?, global::Vercel.CancelDeploymentResponseFunctionsMaxDuration?>), TypeInfoPropertyName = "OneOfDoubleCancelDeploymentResponseFunctionsMaxDuration2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseFunctionsMaxDuration), TypeInfoPropertyName = "CancelDeploymentResponseFunctionsMaxDuration2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant1, global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant2>>), TypeInfoPropertyName = "CancelDeploymentResponseFunctionsExperimentalTriggerVariant2_96b5a7031aeea732")]
@@ -5755,9 +5760,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2FilterV2Variant2FilterVariant1Project))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2FilterV2Variant2FilterVariant1Log))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateDrainResponseVariant2FilterV2Variant2FilterVariant1LogSource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2FilterV2Variant2FilterVariant1LogSource), TypeInfoPropertyName = "CreateDrainResponseVariant2FilterV2Variant2FilterVariant1LogSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2FilterV2Variant2FilterVariant1Deployment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateDrainResponseVariant2FilterV2Variant2FilterVariant1DeploymentEnvironment>))]
     internal sealed partial class SourceGenerationContextChunk005 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

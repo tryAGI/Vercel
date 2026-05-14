@@ -188,6 +188,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.NamedSandboxStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.NamedSandboxNetworkPolicyModeJsonConverter),
             typeof(global::Vercel.JsonConverters.NamedSandboxNetworkPolicyModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.NamedSandboxMountsModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.NamedSandboxMountsModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.SessionStatusJsonConverter),
             typeof(global::Vercel.JsonConverters.SessionStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.InvitedTeamMemberRoleJsonConverter),
@@ -5258,6 +5260,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant5Type), TypeInfoPropertyName = "CreateDeploymentRequestGitSourceVariant5Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant6))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant6Type), TypeInfoPropertyName = "CreateDeploymentRequestGitSourceVariant6Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant7))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant7Type), TypeInfoPropertyName = "CreateDeploymentRequestGitSourceVariant7Type2")]
@@ -5755,9 +5760,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EditRouteRequestRouteSrcSyntax), TypeInfoPropertyName = "EditRouteRequestRouteSrcSyntax2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EditRouteRequestRouteRoute))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.EditRouteRequestRouteRouteHa>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EditRouteRequestRouteRouteHa))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EditRouteRequestRouteRouteHaType), TypeInfoPropertyName = "EditRouteRequestRouteRouteHaType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.EditRouteRequestRouteRouteMissingItem>))]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

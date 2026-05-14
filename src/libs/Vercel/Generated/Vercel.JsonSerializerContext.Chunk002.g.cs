@@ -188,6 +188,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.NamedSandboxStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.NamedSandboxNetworkPolicyModeJsonConverter),
             typeof(global::Vercel.JsonConverters.NamedSandboxNetworkPolicyModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.NamedSandboxMountsModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.NamedSandboxMountsModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.SessionStatusJsonConverter),
             typeof(global::Vercel.JsonConverters.SessionStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.InvitedTeamMemberRoleJsonConverter),
@@ -5258,6 +5260,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EditRouteRequestRouteRouteHa))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EditRouteRequestRouteRouteHaType), TypeInfoPropertyName = "EditRouteRequestRouteRouteHaType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.EditRouteRequestRouteRouteMissingItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EditRouteRequestRouteRouteMissingItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EditRouteRequestRouteRouteMissingItemType), TypeInfoPropertyName = "EditRouteRequestRouteRouteMissingItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.EditRouteRequestRouteRouteTransform>))]
@@ -5755,9 +5760,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PostTeamDsyncRolesRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PostTeamDsyncRolesRequestRolesEnum?, global::Vercel.PostTeamDsyncRolesRequestRolesEnum2>), TypeInfoPropertyName = "AnyOfPostTeamDsyncRolesRequestRolesEnumPostTeamDsyncRolesRequestRolesEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PostTeamDsyncRolesRequestRolesEnum), TypeInfoPropertyName = "PostTeamDsyncRolesRequestRolesEnum2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PostTeamDsyncRolesRequestRolesEnum2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteTeamRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.DeleteTeamRequestReason>))]
     internal sealed partial class SourceGenerationContextChunk002 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
