@@ -62,6 +62,12 @@ namespace Vercel
         public bool? RequireReauth { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("viewer")]
+        public global::Vercel.GitNamespacesResponseItemViewer? Viewer { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -78,6 +84,7 @@ namespace Vercel
         /// <param name="isAccessRestricted"></param>
         /// <param name="installationId"></param>
         /// <param name="requireReauth"></param>
+        /// <param name="viewer"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -89,7 +96,8 @@ namespace Vercel
             string? name,
             bool? isAccessRestricted,
             double? installationId,
-            bool? requireReauth)
+            bool? requireReauth,
+            global::Vercel.GitNamespacesResponseItemViewer? viewer)
         {
             this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
@@ -99,6 +107,7 @@ namespace Vercel
             this.IsAccessRestricted = isAccessRestricted;
             this.InstallationId = installationId;
             this.RequireReauth = requireReauth;
+            this.Viewer = viewer;
         }
 
         /// <summary>
