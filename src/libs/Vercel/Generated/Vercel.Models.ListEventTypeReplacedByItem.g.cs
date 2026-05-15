@@ -303,6 +303,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        CustomAlertUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         CustomSuffixClear,
         /// <summary>
         /// 
@@ -1995,6 +1999,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ConnectGitlabApp => "connect-gitlab-app",
                 ListEventTypeReplacedByItem.CustomAlertCreated => "custom-alert-created",
                 ListEventTypeReplacedByItem.CustomAlertDeleted => "custom-alert-deleted",
+                ListEventTypeReplacedByItem.CustomAlertUpdated => "custom-alert-updated",
                 ListEventTypeReplacedByItem.CustomSuffixClear => "custom-suffix-clear",
                 ListEventTypeReplacedByItem.CustomSuffixDisable => "custom-suffix-disable",
                 ListEventTypeReplacedByItem.CustomSuffixEnable => "custom-suffix-enable",
@@ -2480,6 +2485,7 @@ namespace Vercel
                 "connect-gitlab-app" => ListEventTypeReplacedByItem.ConnectGitlabApp,
                 "custom-alert-created" => ListEventTypeReplacedByItem.CustomAlertCreated,
                 "custom-alert-deleted" => ListEventTypeReplacedByItem.CustomAlertDeleted,
+                "custom-alert-updated" => ListEventTypeReplacedByItem.CustomAlertUpdated,
                 "custom-suffix-clear" => ListEventTypeReplacedByItem.CustomSuffixClear,
                 "custom-suffix-disable" => ListEventTypeReplacedByItem.CustomSuffixDisable,
                 "custom-suffix-enable" => ListEventTypeReplacedByItem.CustomSuffixEnable,

@@ -48649,6 +48649,28 @@
                           false,
                           true
                         ]
+                      },
+                      "viewer": {
+                        "properties": {
+                          "canCreateApp": {
+                            "type": "boolean",
+                            "enum": [
+                              false,
+                              true
+                            ]
+                          },
+                          "role": {
+                            "oneOf": [
+                              {
+                                "type": "string"
+                              },
+                              {
+                                "type": "number"
+                              }
+                            ]
+                          }
+                        },
+                        "type": "object"
                       }
                     },
                     "required": [
@@ -48705,6 +48727,15 @@
                 "gitlab",
                 "bitbucket"
               ]
+            }
+          },
+          {
+            "name": "viewerMetadata",
+            "description": "When true, includes the viewer object for each namespace.",
+            "in": "query",
+            "schema": {
+              "description": "When true, includes the viewer object for each namespace.",
+              "type": "boolean"
             }
           }
         ]
@@ -139720,6 +139751,7 @@
               "alert-rule-deleted",
               "custom-alert-created",
               "custom-alert-deleted",
+              "custom-alert-updated",
               "vulnerability-banner-dismissed",
               "vpc-peering-connection-accepted",
               "vpc-peering-connection-deleted",
@@ -140461,6 +140493,7 @@
               "alert-rule-deleted",
               "custom-alert-created",
               "custom-alert-deleted",
+              "custom-alert-updated",
               "vulnerability-banner-dismissed",
               "vpc-peering-connection-accepted",
               "vpc-peering-connection-deleted",
@@ -140994,6 +141027,7 @@
                 "alert-rule-deleted",
                 "custom-alert-created",
                 "custom-alert-deleted",
+                "custom-alert-updated",
                 "vulnerability-banner-dismissed",
                 "vpc-peering-connection-accepted",
                 "vpc-peering-connection-deleted",
