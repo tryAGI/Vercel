@@ -62784,6 +62784,137 @@
                             },
                             "type": "object"
                           },
+                          "deploymentPolicy": {
+                            "nullable": true,
+                            "properties": {
+                              "gitSources": {
+                                "nullable": true,
+                                "properties": {
+                                  "sources": {
+                                    "items": {
+                                      "oneOf": [
+                                        {
+                                          "properties": {
+                                            "provider": {
+                                              "type": "string",
+                                              "enum": [
+                                                "github",
+                                                "gitlab",
+                                                "bitbucket"
+                                              ]
+                                            },
+                                            "org": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "org",
+                                            "provider"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "provider": {
+                                              "type": "string",
+                                              "enum": [
+                                                "github",
+                                                "gitlab",
+                                                "bitbucket"
+                                              ]
+                                            },
+                                            "org": {
+                                              "type": "string"
+                                            },
+                                            "repo": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "org",
+                                            "provider",
+                                            "repo"
+                                          ],
+                                          "type": "object"
+                                        }
+                                      ]
+                                    },
+                                    "type": "array"
+                                  },
+                                  "enabled": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "enabled",
+                                  "sources"
+                                ],
+                                "type": "object",
+                                "description": "Restricts inbound Git deployments to an allowlist of orgs and/or repos. `enabled: true` with an empty `sources` list is treated as deny-all."
+                              },
+                              "deploymentSources": {
+                                "nullable": true,
+                                "properties": {
+                                  "sources": {
+                                    "items": {
+                                      "type": "string",
+                                      "enum": [
+                                        "api",
+                                        "git",
+                                        "cli"
+                                      ],
+                                      "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "enabled": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "enabled",
+                                  "sources"
+                                ],
+                                "type": "object",
+                                "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
+                              },
+                              "publicDeployments": {
+                                "nullable": true,
+                                "properties": {
+                                  "allowPublicDeployments": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  },
+                                  "enabled": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "allowPublicDeployments",
+                                  "enabled"
+                                ],
+                                "type": "object",
+                                "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
+                              }
+                            },
+                            "type": "object",
+                            "description": "Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type \u2014 the underlying data lives in separate stores."
+                          },
                           "tier": {
                             "type": "string"
                           },
@@ -81130,6 +81261,137 @@
                                 },
                                 "type": "object"
                               },
+                              "deploymentPolicy": {
+                                "nullable": true,
+                                "properties": {
+                                  "gitSources": {
+                                    "nullable": true,
+                                    "properties": {
+                                      "sources": {
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "properties": {
+                                                "provider": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "github",
+                                                    "gitlab",
+                                                    "bitbucket"
+                                                  ]
+                                                },
+                                                "org": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "org",
+                                                "provider"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            {
+                                              "properties": {
+                                                "provider": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "github",
+                                                    "gitlab",
+                                                    "bitbucket"
+                                                  ]
+                                                },
+                                                "org": {
+                                                  "type": "string"
+                                                },
+                                                "repo": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "org",
+                                                "provider",
+                                                "repo"
+                                              ],
+                                              "type": "object"
+                                            }
+                                          ]
+                                        },
+                                        "type": "array"
+                                      },
+                                      "enabled": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "enabled",
+                                      "sources"
+                                    ],
+                                    "type": "object",
+                                    "description": "Restricts inbound Git deployments to an allowlist of orgs and/or repos. `enabled: true` with an empty `sources` list is treated as deny-all."
+                                  },
+                                  "deploymentSources": {
+                                    "nullable": true,
+                                    "properties": {
+                                      "sources": {
+                                        "items": {
+                                          "type": "string",
+                                          "enum": [
+                                            "api",
+                                            "git",
+                                            "cli"
+                                          ],
+                                          "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                                        },
+                                        "type": "array"
+                                      },
+                                      "enabled": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "enabled",
+                                      "sources"
+                                    ],
+                                    "type": "object",
+                                    "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
+                                  },
+                                  "publicDeployments": {
+                                    "nullable": true,
+                                    "properties": {
+                                      "allowPublicDeployments": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ]
+                                      },
+                                      "enabled": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "allowPublicDeployments",
+                                      "enabled"
+                                    ],
+                                    "type": "object",
+                                    "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
+                                  }
+                                },
+                                "type": "object",
+                                "description": "Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type \u2014 the underlying data lives in separate stores."
+                              },
                               "tier": {
                                 "type": "string"
                               },
@@ -86781,6 +87043,137 @@
                         }
                       },
                       "type": "object"
+                    },
+                    "deploymentPolicy": {
+                      "nullable": true,
+                      "properties": {
+                        "gitSources": {
+                          "nullable": true,
+                          "properties": {
+                            "sources": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "provider": {
+                                        "type": "string",
+                                        "enum": [
+                                          "github",
+                                          "gitlab",
+                                          "bitbucket"
+                                        ]
+                                      },
+                                      "org": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "org",
+                                      "provider"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "provider": {
+                                        "type": "string",
+                                        "enum": [
+                                          "github",
+                                          "gitlab",
+                                          "bitbucket"
+                                        ]
+                                      },
+                                      "org": {
+                                        "type": "string"
+                                      },
+                                      "repo": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "org",
+                                      "provider",
+                                      "repo"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "enabled",
+                            "sources"
+                          ],
+                          "type": "object",
+                          "description": "Restricts inbound Git deployments to an allowlist of orgs and/or repos. `enabled: true` with an empty `sources` list is treated as deny-all."
+                        },
+                        "deploymentSources": {
+                          "nullable": true,
+                          "properties": {
+                            "sources": {
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "api",
+                                  "git",
+                                  "cli"
+                                ],
+                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                              },
+                              "type": "array"
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "enabled",
+                            "sources"
+                          ],
+                          "type": "object",
+                          "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
+                        },
+                        "publicDeployments": {
+                          "nullable": true,
+                          "properties": {
+                            "allowPublicDeployments": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "allowPublicDeployments",
+                            "enabled"
+                          ],
+                          "type": "object",
+                          "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
+                        }
+                      },
+                      "type": "object",
+                      "description": "Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type \u2014 the underlying data lives in separate stores."
                     },
                     "tier": {
                       "type": "string"
@@ -92669,6 +93062,137 @@
                       },
                       "type": "object"
                     },
+                    "deploymentPolicy": {
+                      "nullable": true,
+                      "properties": {
+                        "gitSources": {
+                          "nullable": true,
+                          "properties": {
+                            "sources": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "provider": {
+                                        "type": "string",
+                                        "enum": [
+                                          "github",
+                                          "gitlab",
+                                          "bitbucket"
+                                        ]
+                                      },
+                                      "org": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "org",
+                                      "provider"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "provider": {
+                                        "type": "string",
+                                        "enum": [
+                                          "github",
+                                          "gitlab",
+                                          "bitbucket"
+                                        ]
+                                      },
+                                      "org": {
+                                        "type": "string"
+                                      },
+                                      "repo": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "org",
+                                      "provider",
+                                      "repo"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "enabled",
+                            "sources"
+                          ],
+                          "type": "object",
+                          "description": "Restricts inbound Git deployments to an allowlist of orgs and/or repos. `enabled: true` with an empty `sources` list is treated as deny-all."
+                        },
+                        "deploymentSources": {
+                          "nullable": true,
+                          "properties": {
+                            "sources": {
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "api",
+                                  "git",
+                                  "cli"
+                                ],
+                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                              },
+                              "type": "array"
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "enabled",
+                            "sources"
+                          ],
+                          "type": "object",
+                          "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
+                        },
+                        "publicDeployments": {
+                          "nullable": true,
+                          "properties": {
+                            "allowPublicDeployments": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "allowPublicDeployments",
+                            "enabled"
+                          ],
+                          "type": "object",
+                          "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
+                        }
+                      },
+                      "type": "object",
+                      "description": "Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type \u2014 the underlying data lives in separate stores."
+                    },
                     "tier": {
                       "type": "string"
                     },
@@ -98134,6 +98658,137 @@
                         }
                       },
                       "type": "object"
+                    },
+                    "deploymentPolicy": {
+                      "nullable": true,
+                      "properties": {
+                        "gitSources": {
+                          "nullable": true,
+                          "properties": {
+                            "sources": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "provider": {
+                                        "type": "string",
+                                        "enum": [
+                                          "github",
+                                          "gitlab",
+                                          "bitbucket"
+                                        ]
+                                      },
+                                      "org": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "org",
+                                      "provider"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "provider": {
+                                        "type": "string",
+                                        "enum": [
+                                          "github",
+                                          "gitlab",
+                                          "bitbucket"
+                                        ]
+                                      },
+                                      "org": {
+                                        "type": "string"
+                                      },
+                                      "repo": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "org",
+                                      "provider",
+                                      "repo"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "enabled",
+                            "sources"
+                          ],
+                          "type": "object",
+                          "description": "Restricts inbound Git deployments to an allowlist of orgs and/or repos. `enabled: true` with an empty `sources` list is treated as deny-all."
+                        },
+                        "deploymentSources": {
+                          "nullable": true,
+                          "properties": {
+                            "sources": {
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "api",
+                                  "git",
+                                  "cli"
+                                ],
+                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                              },
+                              "type": "array"
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "enabled",
+                            "sources"
+                          ],
+                          "type": "object",
+                          "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
+                        },
+                        "publicDeployments": {
+                          "nullable": true,
+                          "properties": {
+                            "allowPublicDeployments": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "allowPublicDeployments",
+                            "enabled"
+                          ],
+                          "type": "object",
+                          "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
+                        }
+                      },
+                      "type": "object",
+                      "description": "Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type \u2014 the underlying data lives in separate stores."
                     },
                     "tier": {
                       "type": "string"
@@ -106172,11 +106827,11 @@
                             "source": {
                               "type": "string",
                               "enum": [
+                                "git",
+                                "cli",
                                 "import",
                                 "api-trigger-git-deploy",
-                                "cli",
                                 "clone/repo",
-                                "git",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -106259,11 +106914,11 @@
                             "source": {
                               "type": "string",
                               "enum": [
+                                "git",
+                                "cli",
                                 "import",
                                 "api-trigger-git-deploy",
-                                "cli",
                                 "clone/repo",
-                                "git",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -106749,11 +107404,11 @@
                             "source": {
                               "type": "string",
                               "enum": [
+                                "git",
+                                "cli",
                                 "import",
                                 "api-trigger-git-deploy",
-                                "cli",
                                 "clone/repo",
-                                "git",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -106836,11 +107491,11 @@
                             "source": {
                               "type": "string",
                               "enum": [
+                                "git",
+                                "cli",
                                 "import",
                                 "api-trigger-git-deploy",
-                                "cli",
                                 "clone/repo",
-                                "git",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -107337,11 +107992,11 @@
                             "source": {
                               "type": "string",
                               "enum": [
+                                "git",
+                                "cli",
                                 "import",
                                 "api-trigger-git-deploy",
-                                "cli",
                                 "clone/repo",
-                                "git",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -107424,11 +108079,11 @@
                             "source": {
                               "type": "string",
                               "enum": [
+                                "git",
+                                "cli",
                                 "import",
                                 "api-trigger-git-deploy",
-                                "cli",
                                 "clone/repo",
-                                "git",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -113051,6 +113706,137 @@
                         }
                       },
                       "type": "object"
+                    },
+                    "deploymentPolicy": {
+                      "nullable": true,
+                      "properties": {
+                        "gitSources": {
+                          "nullable": true,
+                          "properties": {
+                            "sources": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "provider": {
+                                        "type": "string",
+                                        "enum": [
+                                          "github",
+                                          "gitlab",
+                                          "bitbucket"
+                                        ]
+                                      },
+                                      "org": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "org",
+                                      "provider"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "provider": {
+                                        "type": "string",
+                                        "enum": [
+                                          "github",
+                                          "gitlab",
+                                          "bitbucket"
+                                        ]
+                                      },
+                                      "org": {
+                                        "type": "string"
+                                      },
+                                      "repo": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "org",
+                                      "provider",
+                                      "repo"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "enabled",
+                            "sources"
+                          ],
+                          "type": "object",
+                          "description": "Restricts inbound Git deployments to an allowlist of orgs and/or repos. `enabled: true` with an empty `sources` list is treated as deny-all."
+                        },
+                        "deploymentSources": {
+                          "nullable": true,
+                          "properties": {
+                            "sources": {
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "api",
+                                  "git",
+                                  "cli"
+                                ],
+                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                              },
+                              "type": "array"
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "enabled",
+                            "sources"
+                          ],
+                          "type": "object",
+                          "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
+                        },
+                        "publicDeployments": {
+                          "nullable": true,
+                          "properties": {
+                            "allowPublicDeployments": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            },
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "allowPublicDeployments",
+                            "enabled"
+                          ],
+                          "type": "object",
+                          "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
+                        }
+                      },
+                      "type": "object",
+                      "description": "Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type \u2014 the underlying data lives in separate stores."
                     },
                     "tier": {
                       "type": "string"
@@ -143967,6 +144753,133 @@
             "type": "object",
             "description": "NSNB configuration for the team."
           },
+          "deploymentPolicy": {
+            "properties": {
+              "gitSources": {
+                "properties": {
+                  "sources": {
+                    "items": {
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "provider": {
+                              "type": "string",
+                              "enum": [
+                                "github",
+                                "gitlab",
+                                "bitbucket"
+                              ]
+                            },
+                            "org": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "org",
+                            "provider"
+                          ],
+                          "type": "object"
+                        },
+                        {
+                          "properties": {
+                            "provider": {
+                              "type": "string",
+                              "enum": [
+                                "github",
+                                "gitlab",
+                                "bitbucket"
+                              ]
+                            },
+                            "org": {
+                              "type": "string"
+                            },
+                            "repo": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "org",
+                            "provider",
+                            "repo"
+                          ],
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "type": "array"
+                  },
+                  "enabled": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  }
+                },
+                "required": [
+                  "enabled",
+                  "sources"
+                ],
+                "type": "object",
+                "description": "Restricts inbound Git deployments to an allowlist of orgs and/or repos. `enabled: true` with an empty `sources` list is treated as deny-all."
+              },
+              "deploymentSources": {
+                "properties": {
+                  "sources": {
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "git",
+                        "cli",
+                        "api"
+                      ],
+                      "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                    },
+                    "type": "array"
+                  },
+                  "enabled": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  }
+                },
+                "required": [
+                  "enabled",
+                  "sources"
+                ],
+                "type": "object",
+                "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
+              },
+              "publicDeployments": {
+                "properties": {
+                  "allowPublicDeployments": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  },
+                  "enabled": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  }
+                },
+                "required": [
+                  "allowPublicDeployments",
+                  "enabled"
+                ],
+                "type": "object",
+                "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
+              }
+            },
+            "type": "object",
+            "description": "Composable deployment-time policy for the team. Used as the default for every project on the team, with optional per-project overrides on `project.deploymentPolicy`."
+          },
           "personalAccessTokensInvalidatedAt": {
             "type": "number",
             "description": "Timestamp (ms) after which personal access tokens created at or before this time are considered invalid for this team."
@@ -144095,12 +145008,12 @@
                     "enum": [
                       "link",
                       "saml",
-                      "mail",
-                      "import",
-                      "teams",
                       "github",
                       "gitlab",
                       "bitbucket",
+                      "mail",
+                      "import",
+                      "teams",
                       "dsync",
                       "feedback",
                       "organization-teams",
@@ -144430,12 +145343,12 @@
                     "enum": [
                       "link",
                       "saml",
-                      "mail",
-                      "import",
-                      "teams",
                       "github",
                       "gitlab",
                       "bitbucket",
+                      "mail",
+                      "import",
+                      "teams",
                       "dsync",
                       "feedback",
                       "organization-teams",

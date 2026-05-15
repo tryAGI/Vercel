@@ -497,6 +497,12 @@ namespace Vercel
         public global::Vercel.UpdateProjectResponseOidcTokenConfig? OidcTokenConfig { get; set; }
 
         /// <summary>
+        /// Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type — the underlying data lives in separate stores.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
+        public global::Vercel.UpdateProjectResponseDeploymentPolicy? DeploymentPolicy { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tier")]
@@ -663,6 +669,9 @@ namespace Vercel
         /// <param name="webAnalytics"></param>
         /// <param name="security"></param>
         /// <param name="oidcTokenConfig"></param>
+        /// <param name="deploymentPolicy">
+        /// Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type — the underlying data lives in separate stores.
+        /// </param>
         /// <param name="tier"></param>
         /// <param name="flatRateTier"></param>
         /// <param name="usageStatus"></param>
@@ -758,6 +767,7 @@ namespace Vercel
             global::Vercel.UpdateProjectResponseWebAnalytics? webAnalytics,
             global::Vercel.UpdateProjectResponseSecurity? security,
             global::Vercel.UpdateProjectResponseOidcTokenConfig? oidcTokenConfig,
+            global::Vercel.UpdateProjectResponseDeploymentPolicy? deploymentPolicy,
             string? tier,
             global::Vercel.UpdateProjectResponseFlatRateTier? flatRateTier,
             global::Vercel.UpdateProjectResponseUsageStatus? usageStatus,
@@ -850,6 +860,7 @@ namespace Vercel
             this.WebAnalytics = webAnalytics;
             this.Security = security;
             this.OidcTokenConfig = oidcTokenConfig;
+            this.DeploymentPolicy = deploymentPolicy;
             this.Tier = tier;
             this.FlatRateTier = flatRateTier;
             this.UsageStatus = usageStatus;
