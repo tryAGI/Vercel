@@ -198,6 +198,12 @@ namespace Vercel
         public global::Vercel.TeamNsnbConfig? NsnbConfig { get; set; }
 
         /// <summary>
+        /// Composable deployment-time policy for the team. Used as the default for every project on the team, with optional per-project overrides on `project.deploymentPolicy`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
+        public global::Vercel.TeamDeploymentPolicy? DeploymentPolicy { get; set; }
+
+        /// <summary>
         /// Timestamp (ms) after which personal access tokens created at or before this time are considered invalid for this team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("personalAccessTokensInvalidatedAt")]
@@ -374,6 +380,9 @@ namespace Vercel
         /// <param name="nsnbConfig">
         /// NSNB configuration for the team.
         /// </param>
+        /// <param name="deploymentPolicy">
+        /// Composable deployment-time policy for the team. Used as the default for every project on the team, with optional per-project overrides on `project.deploymentPolicy`.
+        /// </param>
         /// <param name="personalAccessTokensInvalidatedAt">
         /// Timestamp (ms) after which personal access tokens created at or before this time are considered invalid for this team.
         /// </param>
@@ -432,6 +441,7 @@ namespace Vercel
             global::Vercel.TeamStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.TeamStrictShareableLinks? strictShareableLinks,
             global::Vercel.TeamNsnbConfig? nsnbConfig,
+            global::Vercel.TeamDeploymentPolicy? deploymentPolicy,
             double? personalAccessTokensInvalidatedAt,
             double? appTokensInvalidatedAt,
             double? apiKeysInvalidatedAt,
@@ -468,6 +478,7 @@ namespace Vercel
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
             this.StrictShareableLinks = strictShareableLinks;
             this.NsnbConfig = nsnbConfig;
+            this.DeploymentPolicy = deploymentPolicy;
             this.PersonalAccessTokensInvalidatedAt = personalAccessTokensInvalidatedAt;
             this.AppTokensInvalidatedAt = appTokensInvalidatedAt;
             this.ApiKeysInvalidatedAt = apiKeysInvalidatedAt;
