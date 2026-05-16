@@ -92,6 +92,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiOmniagent,
+        /// <summary>
+        /// 
+        /// </summary>
         AlertRuleCreated,
         /// <summary>
         /// 
@@ -1947,6 +1951,7 @@ namespace Vercel
                 ListEventTypeName.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeName.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeName.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                ListEventTypeName.AiOmniagent => "ai-omniagent",
                 ListEventTypeName.AlertRuleCreated => "alert-rule-created",
                 ListEventTypeName.AlertRuleDeleted => "alert-rule-deleted",
                 ListEventTypeName.AlertRuleUpdated => "alert-rule-updated",
@@ -2433,6 +2438,7 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => ListEventTypeName.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeName.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeName.AiGatewayByokCredentialUpdated,
+                "ai-omniagent" => ListEventTypeName.AiOmniagent,
                 "alert-rule-created" => ListEventTypeName.AlertRuleCreated,
                 "alert-rule-deleted" => ListEventTypeName.AlertRuleDeleted,
                 "alert-rule-updated" => ListEventTypeName.AlertRuleUpdated,
