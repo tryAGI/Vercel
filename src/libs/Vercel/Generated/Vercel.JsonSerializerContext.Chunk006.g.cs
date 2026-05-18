@@ -1740,6 +1740,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.GetDomainConfigResponseConfiguredByNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDomainConfigResponseAcceptedChallengeJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDomainConfigResponseAcceptedChallengeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ClaimDomainOwnershipResponseDomainServiceTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.ClaimDomainOwnershipResponseDomainServiceTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDomainResponseDomainServiceTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDomainResponseDomainServiceTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDomainsResponseDomainServiceTypeJsonConverter),
@@ -5309,6 +5311,11 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2SamplingItemEnv), TypeInfoPropertyName = "CreateDrainResponseVariant2SamplingItemEnv2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDrainResponseVariant2SourceVariant1, global::Vercel.CreateDrainResponseVariant2SourceVariant2>), TypeInfoPropertyName = "OneOfCreateDrainResponseVariant2SourceVariant1CreateDrainResponseVariant2SourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2SourceVariant1Kind), TypeInfoPropertyName = "CreateDrainResponseVariant2SourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2SourceVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2SourceVariant2Kind), TypeInfoPropertyName = "CreateDrainResponseVariant2SourceVariant2Kind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDrainResponseVariant2FilterV2Variant1, global::Vercel.CreateDrainResponseVariant2FilterV2Variant2>), TypeInfoPropertyName = "OneOfCreateDrainResponseVariant2FilterV2Variant1CreateDrainResponseVariant2FilterV2Variant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2FilterV2Variant1))]
@@ -5804,11 +5811,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant2BaseType), TypeInfoPropertyName = "CreateFlagResponseEnvironmentsFallthroughVariant2BaseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant3Type), TypeInfoPropertyName = "CreateFlagResponseEnvironmentsFallthroughVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant3Base))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant3BaseType), TypeInfoPropertyName = "CreateFlagResponseEnvironmentsFallthroughVariant3BaseType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant3Slot>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant3Slot))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateFlagResponseEnvironmentsRule>))]
     internal sealed partial class SourceGenerationContextChunk006 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

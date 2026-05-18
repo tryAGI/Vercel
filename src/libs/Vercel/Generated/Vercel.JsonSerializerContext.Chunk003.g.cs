@@ -1740,6 +1740,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.GetDomainConfigResponseConfiguredByNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDomainConfigResponseAcceptedChallengeJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDomainConfigResponseAcceptedChallengeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ClaimDomainOwnershipResponseDomainServiceTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.ClaimDomainOwnershipResponseDomainServiceTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDomainResponseDomainServiceTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDomainResponseDomainServiceTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDomainsResponseDomainServiceTypeJsonConverter),

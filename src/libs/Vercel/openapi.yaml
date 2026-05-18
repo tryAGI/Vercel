@@ -28417,6 +28417,323 @@
         ]
       }
     },
+    "/v9/domains/{domain}/verification": {
+      "get": {
+        "description": "Get the TXT verification record needed to claim ownership of a domain for the authenticated team. The caller must add this TXT record to `_vercel.{domain}` in their DNS configuration, then call POST /domains/:domain/claim to complete the ownership transfer.",
+        "operationId": "getDomainVerificationRecord",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Get Domain Verification Record",
+        "tags": [
+          "domains"
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns the TXT record needed to verify domain ownership.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "txtRecord": {
+                      "type": "string"
+                    },
+                    "verificationDomain": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "txtRecord",
+                    "verificationDomain"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "The domain name to get the verification record for",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "description": "The domain name to get the verification record for",
+              "type": "string",
+              "example": "example.com"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
+    "/v9/domains/{domain}/claim": {
+      "post": {
+        "description": "Claim ownership of a domain for the authenticated team by verifying a TXT record. The caller must first add a TXT record to `_vercel.{domain}` (obtained from GET /domains/:domain/verification), then call this endpoint to complete the ownership transfer. If the TXT record is verified, the domain ownership will be transferred to the caller's team, even if the domain is currently owned by another user or team.",
+        "operationId": "claimDomainOwnership",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Claim Domain Ownership",
+        "tags": [
+          "domains"
+        ],
+        "responses": {
+          "200": {
+            "description": "Domain ownership successfully claimed.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "domain": {
+                      "properties": {
+                        "expiresAt": {
+                          "nullable": true,
+                          "type": "number",
+                          "description": "Timestamp in milliseconds at which the domain is set to expire. null if not bought with Vercel."
+                        },
+                        "verified": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "If the domain has the ownership verified.",
+                          "example": true
+                        },
+                        "nameservers": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array",
+                          "description": "A list of the current nameservers of the domain.",
+                          "example": [
+                            "ns1.nameserver.net",
+                            "ns2.nameserver.net"
+                          ]
+                        },
+                        "intendedNameservers": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array",
+                          "description": "A list of the intended nameservers for the domain to point to Vercel DNS.",
+                          "example": [
+                            "ns1.vercel-dns.com",
+                            "ns2.vercel-dns.com"
+                          ]
+                        },
+                        "customNameservers": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array",
+                          "description": "A list of custom nameservers for the domain to point to. Only applies to domains purchased with Vercel.",
+                          "example": [
+                            "ns1.nameserver.net",
+                            "ns2.nameserver.net"
+                          ]
+                        },
+                        "creator": {
+                          "properties": {
+                            "username": {
+                              "type": "string"
+                            },
+                            "email": {
+                              "type": "string"
+                            },
+                            "customerId": {
+                              "nullable": true,
+                              "type": "string"
+                            },
+                            "isDomainReseller": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            },
+                            "id": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "email",
+                            "id",
+                            "username"
+                          ],
+                          "type": "object",
+                          "description": "An object containing information of the domain creator, including the user's id, username, and email.",
+                          "example": {
+                            "id": "ZspSRT4ljIEEmMHgoDwKWDei",
+                            "username": "vercel_user",
+                            "email": "demo@example.com"
+                          }
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": "The domain name.",
+                          "example": "example.com"
+                        },
+                        "teamId": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "boughtAt": {
+                          "nullable": true,
+                          "type": "number",
+                          "description": "If it was purchased through Vercel, the timestamp in milliseconds when it was purchased.",
+                          "example": 1613602938882
+                        },
+                        "createdAt": {
+                          "type": "number",
+                          "description": "Timestamp in milliseconds when the domain was created in the registry.",
+                          "example": 1613602938882
+                        },
+                        "id": {
+                          "type": "string",
+                          "description": "The unique identifier of the domain.",
+                          "example": "EmTbe5CEJyTk2yVAHBUWy4A3sRusca3GCwRjTC1bpeVnt1"
+                        },
+                        "renew": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Indicates whether the domain is set to automatically renew.",
+                          "example": true
+                        },
+                        "serviceType": {
+                          "type": "string",
+                          "enum": [
+                            "zeit.world",
+                            "external",
+                            "na"
+                          ],
+                          "description": "The type of service the domain is handled by. `external` if the DNS is externally handled, `zeit.world` if handled with Vercel, or `na` if the service is not available.",
+                          "example": "zeit.world"
+                        },
+                        "transferredAt": {
+                          "nullable": true,
+                          "type": "number",
+                          "description": "Timestamp in milliseconds at which the domain was successfully transferred into Vercel. `null` if the transfer is still processing or was never transferred in.",
+                          "example": 1613602938882
+                        },
+                        "transferStartedAt": {
+                          "type": "number",
+                          "description": "If transferred into Vercel, timestamp in milliseconds when the domain transfer was initiated.",
+                          "example": 1613602938882
+                        },
+                        "userId": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "boughtAt",
+                        "createdAt",
+                        "creator",
+                        "expiresAt",
+                        "id",
+                        "intendedNameservers",
+                        "name",
+                        "nameservers",
+                        "serviceType",
+                        "teamId",
+                        "userId",
+                        "verified"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "domain"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "The domain name to claim ownership of",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "description": "The domain name to claim ownership of",
+              "type": "string",
+              "example": "example.com"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
     "/v5/domains/{domain}": {
       "get": {
         "description": "Get information for a single domain in an account or team.",
