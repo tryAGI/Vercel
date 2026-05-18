@@ -11,15 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Api,
-        /// <summary>
-        /// 
-        /// </summary>
         Cli,
         /// <summary>
         /// 
         /// </summary>
+        DeployHook,
+        /// <summary>
+        /// 
+        /// </summary>
         Git,
+        /// <summary>
+        /// 
+        /// </summary>
+        Integration,
+        /// <summary>
+        /// 
+        /// </summary>
+        RestApi,
     }
 
     /// <summary>
@@ -34,9 +42,11 @@ namespace Vercel
         {
             return value switch
             {
-                PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.Api => "api",
                 PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.Cli => "cli",
+                PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.DeployHook => "deploy-hook",
                 PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.Git => "git",
+                PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.Integration => "integration",
+                PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.RestApi => "rest-api",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +57,11 @@ namespace Vercel
         {
             return value switch
             {
-                "api" => PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.Api,
                 "cli" => PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.Cli,
+                "deploy-hook" => PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.DeployHook,
                 "git" => PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.Git,
+                "integration" => PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.Integration,
+                "rest-api" => PatchTeamRequestDeploymentPolicyDeploymentSourcesSource.RestApi,
                 _ => null,
             };
         }

@@ -11,15 +11,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Api,
-        /// <summary>
-        /// 
-        /// </summary>
         Cli,
         /// <summary>
         /// 
         /// </summary>
+        DeployHook,
+        /// <summary>
+        /// 
+        /// </summary>
         Git,
+        /// <summary>
+        /// 
+        /// </summary>
+        Integration,
+        /// <summary>
+        /// 
+        /// </summary>
+        RestApi,
     }
 
     /// <summary>
@@ -34,9 +42,11 @@ namespace Vercel
         {
             return value switch
             {
-                UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.Api => "api",
                 UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.Cli => "cli",
+                UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.DeployHook => "deploy-hook",
                 UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.Git => "git",
+                UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.Integration => "integration",
+                UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.RestApi => "rest-api",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +57,11 @@ namespace Vercel
         {
             return value switch
             {
-                "api" => UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.Api,
                 "cli" => UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.Cli,
+                "deploy-hook" => UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.DeployHook,
                 "git" => UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.Git,
+                "integration" => UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.Integration,
+                "rest-api" => UpdateProjectRequestDeploymentPolicyDeploymentSourcesSource.RestApi,
                 _ => null,
             };
         }

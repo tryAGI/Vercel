@@ -63180,11 +63180,13 @@
                                     "items": {
                                       "type": "string",
                                       "enum": [
-                                        "api",
                                         "git",
-                                        "cli"
+                                        "cli",
+                                        "rest-api",
+                                        "deploy-hook",
+                                        "integration"
                                       ],
-                                      "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                                      "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook (GitHub / GitLab / Bitbucket) - `'cli'`: an upload via the Vercel CLI - `'rest-api'`: a first-party REST API upload \u2014 a user or team token POSTing directly. Does NOT cover deploy-hook URLs or OAuth2 integration tokens; those are their own sources. - `'deploy-hook'`: a trigger via a project deploy-hook URL. The URL itself is the credential, so the request has no authenticated principal. - `'integration'`: an OAuth2 actor \u2014 a Marketplace integration token, a Vercel App token, or a user-delegated OAuth flow where an integration is acting on a user's behalf. Every deployment classifies to exactly one source; the values are mutually exclusive. See `classify-source` (in the policy package's consumers) for the canonical classification order. The split between `'rest-api'` and `'integration'` is intentional so a team can permit their own automation while blocking third-party integrators \u2014 or vice versa."
                                     },
                                     "type": "array"
                                   },
@@ -81657,11 +81659,13 @@
                                         "items": {
                                           "type": "string",
                                           "enum": [
-                                            "api",
                                             "git",
-                                            "cli"
+                                            "cli",
+                                            "rest-api",
+                                            "deploy-hook",
+                                            "integration"
                                           ],
-                                          "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                                          "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook (GitHub / GitLab / Bitbucket) - `'cli'`: an upload via the Vercel CLI - `'rest-api'`: a first-party REST API upload \u2014 a user or team token POSTing directly. Does NOT cover deploy-hook URLs or OAuth2 integration tokens; those are their own sources. - `'deploy-hook'`: a trigger via a project deploy-hook URL. The URL itself is the credential, so the request has no authenticated principal. - `'integration'`: an OAuth2 actor \u2014 a Marketplace integration token, a Vercel App token, or a user-delegated OAuth flow where an integration is acting on a user's behalf. Every deployment classifies to exactly one source; the values are mutually exclusive. See `classify-source` (in the policy package's consumers) for the canonical classification order. The split between `'rest-api'` and `'integration'` is intentional so a team can permit their own automation while blocking third-party integrators \u2014 or vice versa."
                                         },
                                         "type": "array"
                                       },
@@ -87440,11 +87444,13 @@
                               "items": {
                                 "type": "string",
                                 "enum": [
-                                  "api",
                                   "git",
-                                  "cli"
+                                  "cli",
+                                  "rest-api",
+                                  "deploy-hook",
+                                  "integration"
                                 ],
-                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook (GitHub / GitLab / Bitbucket) - `'cli'`: an upload via the Vercel CLI - `'rest-api'`: a first-party REST API upload \u2014 a user or team token POSTing directly. Does NOT cover deploy-hook URLs or OAuth2 integration tokens; those are their own sources. - `'deploy-hook'`: a trigger via a project deploy-hook URL. The URL itself is the credential, so the request has no authenticated principal. - `'integration'`: an OAuth2 actor \u2014 a Marketplace integration token, a Vercel App token, or a user-delegated OAuth flow where an integration is acting on a user's behalf. Every deployment classifies to exactly one source; the values are mutually exclusive. See `classify-source` (in the policy package's consumers) for the canonical classification order. The split between `'rest-api'` and `'integration'` is intentional so a team can permit their own automation while blocking third-party integrators \u2014 or vice versa."
                               },
                               "type": "array"
                             },
@@ -93458,11 +93464,13 @@
                               "items": {
                                 "type": "string",
                                 "enum": [
-                                  "api",
                                   "git",
-                                  "cli"
+                                  "cli",
+                                  "rest-api",
+                                  "deploy-hook",
+                                  "integration"
                                 ],
-                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook (GitHub / GitLab / Bitbucket) - `'cli'`: an upload via the Vercel CLI - `'rest-api'`: a first-party REST API upload \u2014 a user or team token POSTing directly. Does NOT cover deploy-hook URLs or OAuth2 integration tokens; those are their own sources. - `'deploy-hook'`: a trigger via a project deploy-hook URL. The URL itself is the credential, so the request has no authenticated principal. - `'integration'`: an OAuth2 actor \u2014 a Marketplace integration token, a Vercel App token, or a user-delegated OAuth flow where an integration is acting on a user's behalf. Every deployment classifies to exactly one source; the values are mutually exclusive. See `classify-source` (in the policy package's consumers) for the canonical classification order. The split between `'rest-api'` and `'integration'` is intentional so a team can permit their own automation while blocking third-party integrators \u2014 or vice versa."
                               },
                               "type": "array"
                             },
@@ -99055,11 +99063,13 @@
                               "items": {
                                 "type": "string",
                                 "enum": [
-                                  "api",
                                   "git",
-                                  "cli"
+                                  "cli",
+                                  "rest-api",
+                                  "deploy-hook",
+                                  "integration"
                                 ],
-                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook (GitHub / GitLab / Bitbucket) - `'cli'`: an upload via the Vercel CLI - `'rest-api'`: a first-party REST API upload \u2014 a user or team token POSTing directly. Does NOT cover deploy-hook URLs or OAuth2 integration tokens; those are their own sources. - `'deploy-hook'`: a trigger via a project deploy-hook URL. The URL itself is the credential, so the request has no authenticated principal. - `'integration'`: an OAuth2 actor \u2014 a Marketplace integration token, a Vercel App token, or a user-delegated OAuth flow where an integration is acting on a user's behalf. Every deployment classifies to exactly one source; the values are mutually exclusive. See `classify-source` (in the policy package's consumers) for the canonical classification order. The split between `'rest-api'` and `'integration'` is intentional so a team can permit their own automation while blocking third-party integrators \u2014 or vice versa."
                               },
                               "type": "array"
                             },
@@ -100793,7 +100803,9 @@
                                       "enum": [
                                         "git",
                                         "cli",
-                                        "api"
+                                        "rest-api",
+                                        "deploy-hook",
+                                        "integration"
                                       ]
                                     }
                                   }
@@ -114103,11 +114115,13 @@
                               "items": {
                                 "type": "string",
                                 "enum": [
-                                  "api",
                                   "git",
-                                  "cli"
+                                  "cli",
+                                  "rest-api",
+                                  "deploy-hook",
+                                  "integration"
                                 ],
-                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                                "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook (GitHub / GitLab / Bitbucket) - `'cli'`: an upload via the Vercel CLI - `'rest-api'`: a first-party REST API upload \u2014 a user or team token POSTing directly. Does NOT cover deploy-hook URLs or OAuth2 integration tokens; those are their own sources. - `'deploy-hook'`: a trigger via a project deploy-hook URL. The URL itself is the credential, so the request has no authenticated principal. - `'integration'`: an OAuth2 actor \u2014 a Marketplace integration token, a Vercel App token, or a user-delegated OAuth flow where an integration is acting on a user's behalf. Every deployment classifies to exactly one source; the values are mutually exclusive. See `classify-source` (in the policy package's consumers) for the canonical classification order. The split between `'rest-api'` and `'integration'` is intentional so a team can permit their own automation while blocking third-party integrators \u2014 or vice versa."
                               },
                               "type": "array"
                             },
@@ -132526,7 +132540,9 @@
                                       "enum": [
                                         "git",
                                         "cli",
-                                        "api"
+                                        "rest-api",
+                                        "deploy-hook",
+                                        "integration"
                                       ]
                                     }
                                   }
@@ -145149,11 +145165,13 @@
                     "items": {
                       "type": "string",
                       "enum": [
+                        "integration",
                         "git",
                         "cli",
-                        "api"
+                        "rest-api",
+                        "deploy-hook"
                       ],
-                      "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook or other Git-source-driven deployment - `'cli'`: an upload via the Vercel CLI - `'api'`: a programmatic upload via the REST API"
+                      "description": "The mechanism that produced a deployment. - `'git'`: a Git provider webhook (GitHub / GitLab / Bitbucket) - `'cli'`: an upload via the Vercel CLI - `'rest-api'`: a first-party REST API upload \u2014 a user or team token POSTing directly. Does NOT cover deploy-hook URLs or OAuth2 integration tokens; those are their own sources. - `'deploy-hook'`: a trigger via a project deploy-hook URL. The URL itself is the credential, so the request has no authenticated principal. - `'integration'`: an OAuth2 actor \u2014 a Marketplace integration token, a Vercel App token, or a user-delegated OAuth flow where an integration is acting on a user's behalf. Every deployment classifies to exactly one source; the values are mutually exclusive. See `classify-source` (in the policy package's consumers) for the canonical classification order. The split between `'rest-api'` and `'integration'` is intentional so a team can permit their own automation while blocking third-party integrators \u2014 or vice versa."
                     },
                     "type": "array"
                   },
