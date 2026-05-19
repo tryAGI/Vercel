@@ -247,6 +247,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ConnectAttachProject,
+        /// <summary>
+        /// 
+        /// </summary>
         ConnectBitbucket,
         /// <summary>
         /// 
@@ -279,6 +283,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ConnectCreateConnector,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectDeleteConnector,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectDeleteInstallation,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectDetachProject,
+        /// <summary>
+        /// 
+        /// </summary>
         ConnectGithub,
         /// <summary>
         /// 
@@ -296,6 +316,22 @@ namespace Vercel
         /// 
         /// </summary>
         ConnectGitlabApp,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectRevokeAllTokens,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectUpdateConnector,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectUpdateTriggerDestinations,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectUpsertInstallation,
         /// <summary>
         /// 
         /// </summary>
@@ -1989,6 +2025,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.CertReplace => "cert-replace",
                 ListEventTypeReplacedByItem.CertSystemCreate => "cert-system-create",
                 ListEventTypeReplacedByItem.ConcurrentBuildsUpdate => "concurrent-builds-update",
+                ListEventTypeReplacedByItem.ConnectAttachProject => "connect-attach-project",
                 ListEventTypeReplacedByItem.ConnectBitbucket => "connect-bitbucket",
                 ListEventTypeReplacedByItem.ConnectBitbucketApp => "connect-bitbucket-app",
                 ListEventTypeReplacedByItem.ConnectConfigurationCreated => "connect-configuration-created",
@@ -1997,11 +2034,19 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ConnectConfigurationLinked => "connect-configuration-linked",
                 ListEventTypeReplacedByItem.ConnectConfigurationUnlinked => "connect-configuration-unlinked",
                 ListEventTypeReplacedByItem.ConnectConfigurationUpdated => "connect-configuration-updated",
+                ListEventTypeReplacedByItem.ConnectCreateConnector => "connect-create-connector",
+                ListEventTypeReplacedByItem.ConnectDeleteConnector => "connect-delete-connector",
+                ListEventTypeReplacedByItem.ConnectDeleteInstallation => "connect-delete-installation",
+                ListEventTypeReplacedByItem.ConnectDetachProject => "connect-detach-project",
                 ListEventTypeReplacedByItem.ConnectGithub => "connect-github",
                 ListEventTypeReplacedByItem.ConnectGithubCustomHost => "connect-github-custom-host",
                 ListEventTypeReplacedByItem.ConnectGithubLimited => "connect-github-limited",
                 ListEventTypeReplacedByItem.ConnectGitlab => "connect-gitlab",
                 ListEventTypeReplacedByItem.ConnectGitlabApp => "connect-gitlab-app",
+                ListEventTypeReplacedByItem.ConnectRevokeAllTokens => "connect-revoke-all-tokens",
+                ListEventTypeReplacedByItem.ConnectUpdateConnector => "connect-update-connector",
+                ListEventTypeReplacedByItem.ConnectUpdateTriggerDestinations => "connect-update-trigger-destinations",
+                ListEventTypeReplacedByItem.ConnectUpsertInstallation => "connect-upsert-installation",
                 ListEventTypeReplacedByItem.CustomAlertCreated => "custom-alert-created",
                 ListEventTypeReplacedByItem.CustomAlertDeleted => "custom-alert-deleted",
                 ListEventTypeReplacedByItem.CustomAlertUpdated => "custom-alert-updated",
@@ -2476,6 +2521,7 @@ namespace Vercel
                 "cert-replace" => ListEventTypeReplacedByItem.CertReplace,
                 "cert-system-create" => ListEventTypeReplacedByItem.CertSystemCreate,
                 "concurrent-builds-update" => ListEventTypeReplacedByItem.ConcurrentBuildsUpdate,
+                "connect-attach-project" => ListEventTypeReplacedByItem.ConnectAttachProject,
                 "connect-bitbucket" => ListEventTypeReplacedByItem.ConnectBitbucket,
                 "connect-bitbucket-app" => ListEventTypeReplacedByItem.ConnectBitbucketApp,
                 "connect-configuration-created" => ListEventTypeReplacedByItem.ConnectConfigurationCreated,
@@ -2484,11 +2530,19 @@ namespace Vercel
                 "connect-configuration-linked" => ListEventTypeReplacedByItem.ConnectConfigurationLinked,
                 "connect-configuration-unlinked" => ListEventTypeReplacedByItem.ConnectConfigurationUnlinked,
                 "connect-configuration-updated" => ListEventTypeReplacedByItem.ConnectConfigurationUpdated,
+                "connect-create-connector" => ListEventTypeReplacedByItem.ConnectCreateConnector,
+                "connect-delete-connector" => ListEventTypeReplacedByItem.ConnectDeleteConnector,
+                "connect-delete-installation" => ListEventTypeReplacedByItem.ConnectDeleteInstallation,
+                "connect-detach-project" => ListEventTypeReplacedByItem.ConnectDetachProject,
                 "connect-github" => ListEventTypeReplacedByItem.ConnectGithub,
                 "connect-github-custom-host" => ListEventTypeReplacedByItem.ConnectGithubCustomHost,
                 "connect-github-limited" => ListEventTypeReplacedByItem.ConnectGithubLimited,
                 "connect-gitlab" => ListEventTypeReplacedByItem.ConnectGitlab,
                 "connect-gitlab-app" => ListEventTypeReplacedByItem.ConnectGitlabApp,
+                "connect-revoke-all-tokens" => ListEventTypeReplacedByItem.ConnectRevokeAllTokens,
+                "connect-update-connector" => ListEventTypeReplacedByItem.ConnectUpdateConnector,
+                "connect-update-trigger-destinations" => ListEventTypeReplacedByItem.ConnectUpdateTriggerDestinations,
+                "connect-upsert-installation" => ListEventTypeReplacedByItem.ConnectUpsertInstallation,
                 "custom-alert-created" => ListEventTypeReplacedByItem.CustomAlertCreated,
                 "custom-alert-deleted" => ListEventTypeReplacedByItem.CustomAlertDeleted,
                 "custom-alert-updated" => ListEventTypeReplacedByItem.CustomAlertUpdated,
