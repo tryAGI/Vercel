@@ -115825,7 +115825,12 @@
                     "items": {
                       "type": "integer",
                       "description": "A port number to expose from the sandbox. Must be between 1024 and 65535.",
-                      "not": {},
+                      "not": {
+                        "enum": [
+                          8080,
+                          23456
+                        ]
+                      },
                       "maximum": 65535,
                       "minimum": 1024
                     }
@@ -116421,6 +116426,9 @@
           },
           "422": {
             "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -116564,6 +116572,9 @@
           },
           "422": {
             "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -116679,6 +116690,9 @@
           },
           "422": {
             "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -116762,6 +116776,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -116870,6 +116887,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -117152,6 +117172,9 @@
           },
           "422": {
             "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -117303,6 +117326,9 @@
           },
           "422": {
             "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -117390,6 +117416,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -117491,6 +117520,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -117597,6 +117629,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -117852,6 +117887,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -118693,7 +118731,12 @@
                     "items": {
                       "type": "integer",
                       "description": "A port number to expose from the sandbox. Must be between 1024 and 65535.",
-                      "not": {},
+                      "not": {
+                        "enum": [
+                          8080,
+                          23456
+                        ]
+                      },
                       "maximum": 65535,
                       "minimum": 1024
                     }
@@ -120059,7 +120102,12 @@
                     "items": {
                       "type": "integer",
                       "description": "A port number to expose from the sandbox. Must be between 1024 and 65535.",
-                      "not": {},
+                      "not": {
+                        "enum": [
+                          8080,
+                          23456
+                        ]
+                      },
                       "maximum": 65535,
                       "minimum": 1024
                     }
@@ -120135,6 +120183,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -120325,6 +120376,9 @@
           },
           "422": {
             "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -120468,6 +120522,9 @@
           },
           "422": {
             "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -120577,6 +120634,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -120733,6 +120793,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -121505,6 +121568,9 @@
           },
           "422": {
             "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -121605,6 +121671,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -121711,6 +121780,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
