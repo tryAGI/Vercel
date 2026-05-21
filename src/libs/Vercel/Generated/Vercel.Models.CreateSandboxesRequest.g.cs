@@ -96,6 +96,12 @@ namespace Vercel
         public global::Vercel.OneOf<object, int?>? SnapshotExpiration { get; set; }
 
         /// <summary>
+        /// Protect the N most recent snapshots with different expiration/deletion behavior.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("keepLastSnapshots")]
+        public global::Vercel.CreateSandboxesRequestKeepLastSnapshots? KeepLastSnapshots { get; set; }
+
+        /// <summary>
         /// Key-value tags to associate with the sandbox. Maximum 5 tags.<br/>
         /// Example: {"env":"staging","team":"platform"}
         /// </summary>
@@ -153,6 +159,9 @@ namespace Vercel
         /// Default snapshot expiration time in milliseconds. Set to 0 to disable expiration. When set, this value is used as the default expiration for all snapshots created for this sandbox.<br/>
         /// Example: 604800000
         /// </param>
+        /// <param name="keepLastSnapshots">
+        /// Protect the N most recent snapshots with different expiration/deletion behavior.
+        /// </param>
         /// <param name="tags">
         /// Key-value tags to associate with the sandbox. Maximum 5 tags.<br/>
         /// Example: {"env":"staging","team":"platform"}
@@ -172,6 +181,7 @@ namespace Vercel
             string? name,
             bool? persistent,
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
+            global::Vercel.CreateSandboxesRequestKeepLastSnapshots? keepLastSnapshots,
             global::System.Collections.Generic.Dictionary<string, string>? tags)
         {
             this.NetworkPolicy = networkPolicy;
@@ -185,6 +195,7 @@ namespace Vercel
             this.Name = name;
             this.Persistent = persistent;
             this.SnapshotExpiration = snapshotExpiration;
+            this.KeepLastSnapshots = keepLastSnapshots;
             this.Tags = tags;
         }
 

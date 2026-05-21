@@ -47,6 +47,13 @@ namespace Vercel
         public global::Vercel.OneOf<object, int?>? SnapshotExpiration { get; set; }
 
         /// <summary>
+        /// Protect the N most recent snapshots with different expiration/deletion behavior. Set to null to clear.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("keepLastSnapshots")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UpdateSandboxRequestKeepLastSnapshots>))]
+        public global::Vercel.OneOf<string, global::Vercel.UpdateSandboxRequestKeepLastSnapshots>? KeepLastSnapshots { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("networkPolicy")]
@@ -110,6 +117,9 @@ namespace Vercel
         /// Default snapshot expiration time in milliseconds. Set to 0 to disable expiration. When set, this value is used as the default expiration for all snapshots created for this sandbox.<br/>
         /// Example: 604800000
         /// </param>
+        /// <param name="keepLastSnapshots">
+        /// Protect the N most recent snapshots with different expiration/deletion behavior. Set to null to clear.
+        /// </param>
         /// <param name="networkPolicy"></param>
         /// <param name="env">
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
@@ -135,6 +145,7 @@ namespace Vercel
             int? timeout,
             bool? persistent,
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
+            global::Vercel.OneOf<string, global::Vercel.UpdateSandboxRequestKeepLastSnapshots>? keepLastSnapshots,
             global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? networkPolicy,
             global::System.Collections.Generic.Dictionary<string, string>? env,
             global::System.Collections.Generic.IList<int>? ports,
@@ -146,6 +157,7 @@ namespace Vercel
             this.Timeout = timeout;
             this.Persistent = persistent;
             this.SnapshotExpiration = snapshotExpiration;
+            this.KeepLastSnapshots = keepLastSnapshots;
             this.NetworkPolicy = networkPolicy;
             this.Env = env;
             this.Ports = ports;

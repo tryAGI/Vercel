@@ -304,15 +304,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public SandboxesV2BetaClient SandboxesV2Beta => new SandboxesV2BetaClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
         public SecurityClient Security => new SecurityClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

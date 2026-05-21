@@ -193,11 +193,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public SandboxesV2BetaClient SandboxesV2Beta { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public SecurityClient Security { get; }
 
         /// <summary>
