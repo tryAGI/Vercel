@@ -39,6 +39,12 @@ namespace Vercel
         public object? AiGateway { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ai_gateway_trace")]
+        public object? AiGatewayTrace { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -52,6 +58,7 @@ namespace Vercel
         /// <param name="analytics"></param>
         /// <param name="speedInsights"></param>
         /// <param name="aiGateway"></param>
+        /// <param name="aiGatewayTrace"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -60,13 +67,15 @@ namespace Vercel
             object? trace,
             object? analytics,
             object? speedInsights,
-            object? aiGateway)
+            object? aiGateway,
+            object? aiGatewayTrace)
         {
             this.Log = log;
             this.Trace = trace;
             this.Analytics = analytics;
             this.SpeedInsights = speedInsights;
             this.AiGateway = aiGateway;
+            this.AiGatewayTrace = aiGatewayTrace;
         }
 
         /// <summary>
