@@ -180,5 +180,6 @@ namespace Vercel
         public BuyDomainsRequestContactInformation()
         {
         }
+
     }
 }

@@ -129,5 +129,6 @@ namespace Vercel
         public GetRedirectsResponseVariant3Version()
         {
         }
+
     }
 }

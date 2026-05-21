@@ -109,5 +109,6 @@ namespace Vercel
         public UpdateStaticIpsResponseItem()
         {
         }
+
     }
 }

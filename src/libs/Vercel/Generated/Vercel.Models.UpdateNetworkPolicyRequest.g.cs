@@ -43,6 +43,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? DeniedCIDRs { get; set; }
 
         /// <summary>
+        /// HTTP header injection rules for outgoing requests matching specific domains. Traffic to matching domains will be intercepted instead of proxied through encrypted connections.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("injectionRules")]
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateNetworkPolicyRequestInjectionRule>? InjectionRules { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -67,6 +73,9 @@ namespace Vercel
         /// List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.<br/>
         /// Example: [35.192.0.0/12]
         /// </param>
+        /// <param name="injectionRules">
+        /// HTTP header injection rules for outgoing requests matching specific domains. Traffic to matching domains will be intercepted instead of proxied through encrypted connections.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -74,12 +83,14 @@ namespace Vercel
             global::Vercel.UpdateNetworkPolicyRequestMode mode,
             global::System.Collections.Generic.IList<string>? allowedDomains,
             global::System.Collections.Generic.IList<string>? allowedCIDRs,
-            global::System.Collections.Generic.IList<string>? deniedCIDRs)
+            global::System.Collections.Generic.IList<string>? deniedCIDRs,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateNetworkPolicyRequestInjectionRule>? injectionRules)
         {
             this.Mode = mode;
             this.AllowedDomains = allowedDomains;
             this.AllowedCIDRs = allowedCIDRs;
             this.DeniedCIDRs = deniedCIDRs;
+            this.InjectionRules = injectionRules;
         }
 
         /// <summary>
@@ -88,5 +99,6 @@ namespace Vercel
         public UpdateNetworkPolicyRequest()
         {
         }
+
     }
 }

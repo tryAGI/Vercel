@@ -75,5 +75,6 @@ namespace Vercel
         public GetAllLogDrainsResponseDrainsVariant2ItemSchemas()
         {
         }
+
     }
 }

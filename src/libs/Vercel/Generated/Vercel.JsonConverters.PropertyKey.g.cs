@@ -94,6 +94,7 @@ namespace Vercel.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
                     propertyKeyVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -104,9 +105,13 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (propertyKeyVariant1 == null && propertyKeyVariant2 == null && propertyKeyVariant3 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(double), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<double> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(double).Name}");
                     propertyKeyVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -117,9 +122,13 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (propertyKeyVariant1 == null && propertyKeyVariant2 == null && propertyKeyVariant3 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.PropertyKeyVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.PropertyKeyVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.PropertyKeyVariant3).Name}");
                     propertyKeyVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

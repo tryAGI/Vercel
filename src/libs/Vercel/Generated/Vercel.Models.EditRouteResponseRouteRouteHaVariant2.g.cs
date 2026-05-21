@@ -61,5 +61,6 @@ namespace Vercel
         public EditRouteResponseRouteRouteHaVariant2()
         {
         }
+
     }
 }

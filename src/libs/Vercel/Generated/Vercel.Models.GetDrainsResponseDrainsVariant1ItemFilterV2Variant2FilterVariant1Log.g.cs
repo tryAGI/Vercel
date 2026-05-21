@@ -48,5 +48,6 @@ namespace Vercel
         public GetDrainsResponseDrainsVariant1ItemFilterV2Variant2FilterVariant1Log()
         {
         }
+
     }
 }

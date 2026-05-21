@@ -19,6 +19,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Ash,
+        /// <summary>
+        /// 
+        /// </summary>
         Astro,
         /// <summary>
         /// 
@@ -296,6 +300,7 @@ namespace Vercel
             {
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.ActixWeb => "actix-web",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Angular => "angular",
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Ash => "ash",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Astro => "astro",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Axum => "axum",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Blitzjs => "blitzjs",
@@ -374,6 +379,7 @@ namespace Vercel
             {
                 "actix-web" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.ActixWeb,
                 "angular" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Angular,
+                "ash" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Ash,
                 "astro" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Astro,
                 "axum" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Axum,
                 "blitzjs" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Blitzjs,

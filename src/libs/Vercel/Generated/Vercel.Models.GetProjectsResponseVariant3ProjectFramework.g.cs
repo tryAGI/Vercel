@@ -19,6 +19,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Ash,
+        /// <summary>
+        /// 
+        /// </summary>
         Astro,
         /// <summary>
         /// 
@@ -296,6 +300,7 @@ namespace Vercel
             {
                 GetProjectsResponseVariant3ProjectFramework.ActixWeb => "actix-web",
                 GetProjectsResponseVariant3ProjectFramework.Angular => "angular",
+                GetProjectsResponseVariant3ProjectFramework.Ash => "ash",
                 GetProjectsResponseVariant3ProjectFramework.Astro => "astro",
                 GetProjectsResponseVariant3ProjectFramework.Axum => "axum",
                 GetProjectsResponseVariant3ProjectFramework.Blitzjs => "blitzjs",
@@ -374,6 +379,7 @@ namespace Vercel
             {
                 "actix-web" => GetProjectsResponseVariant3ProjectFramework.ActixWeb,
                 "angular" => GetProjectsResponseVariant3ProjectFramework.Angular,
+                "ash" => GetProjectsResponseVariant3ProjectFramework.Ash,
                 "astro" => GetProjectsResponseVariant3ProjectFramework.Astro,
                 "axum" => GetProjectsResponseVariant3ProjectFramework.Axum,
                 "blitzjs" => GetProjectsResponseVariant3ProjectFramework.Blitzjs,

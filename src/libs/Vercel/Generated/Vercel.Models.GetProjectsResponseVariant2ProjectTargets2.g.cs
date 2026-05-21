@@ -231,5 +231,6 @@ namespace Vercel
         public GetProjectsResponseVariant2ProjectTargets2()
         {
         }
+
     }
 }

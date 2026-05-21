@@ -307,5 +307,6 @@ namespace Vercel
         public GetConfigurationResponseVariant3()
         {
         }
+
     }
 }

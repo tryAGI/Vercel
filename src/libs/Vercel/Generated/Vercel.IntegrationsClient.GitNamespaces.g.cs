@@ -28,12 +28,14 @@ namespace Vercel
         partial void PrepareGitNamespacesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? host,
-            ref global::Vercel.GitNamespacesProvider? provider);
+            ref global::Vercel.GitNamespacesProvider? provider,
+            ref bool? viewerMetadata);
         partial void PrepareGitNamespacesRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string? host,
-            global::Vercel.GitNamespacesProvider? provider);
+            global::Vercel.GitNamespacesProvider? provider,
+            bool? viewerMetadata);
         partial void ProcessGitNamespacesResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -52,18 +54,23 @@ namespace Vercel
         /// Example: ghes-test.now.systems
         /// </param>
         /// <param name="provider"></param>
+        /// <param name="viewerMetadata">
+        /// When true, includes the viewer object for each namespace.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Vercel.GitNamespacesResponseItem>> GitNamespacesAsync(
             string? host = default,
             global::Vercel.GitNamespacesProvider? provider = default,
+            bool? viewerMetadata = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await GitNamespacesAsResponseAsync(
                 host: host,
                 provider: provider,
+                viewerMetadata: viewerMetadata,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -79,12 +86,16 @@ namespace Vercel
         /// Example: ghes-test.now.systems
         /// </param>
         /// <param name="provider"></param>
+        /// <param name="viewerMetadata">
+        /// When true, includes the viewer object for each namespace.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.GitNamespacesResponseItem>>> GitNamespacesAsResponseAsync(
             string? host = default,
             global::Vercel.GitNamespacesProvider? provider = default,
+            bool? viewerMetadata = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -93,7 +104,8 @@ namespace Vercel
             PrepareGitNamespacesArguments(
                 httpClient: HttpClient,
                 host: ref host,
-                provider: ref provider);
+                provider: ref provider,
+                viewerMetadata: ref viewerMetadata);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
@@ -124,6 +136,7 @@ namespace Vercel
                             __pathBuilder
                                 .AddOptionalParameter("host", host)
                                 .AddOptionalParameter("provider", provider?.ToValueString())
+                                .AddOptionalParameter("viewerMetadata", viewerMetadata?.ToString().ToLowerInvariant())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -166,7 +179,8 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     host: host,
-                    provider: provider);
+                    provider: provider,
+                    viewerMetadata: viewerMetadata);
 
                 return __httpRequest;
             }

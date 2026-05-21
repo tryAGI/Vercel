@@ -133,6 +133,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiration")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetProjectResponseExpirationVariant1, global::Vercel.GetProjectResponseExpirationVariant2>))]
+        public global::Vercel.OneOf<global::Vercel.GetProjectResponseExpirationVariant1, global::Vercel.GetProjectResponseExpirationVariant2>? Expiration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("devCommand")]
         public string? DevCommand { get; set; }
 
@@ -496,6 +503,12 @@ namespace Vercel
         public global::Vercel.GetProjectResponseOidcTokenConfig? OidcTokenConfig { get; set; }
 
         /// <summary>
+        /// Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type — the underlying data lives in separate stores.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
+        public global::Vercel.GetProjectResponseDeploymentPolicy? DeploymentPolicy { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tier")]
@@ -605,6 +618,7 @@ namespace Vercel
         /// <param name="crons"></param>
         /// <param name="dataCache"></param>
         /// <param name="delegatedProtection"></param>
+        /// <param name="expiration"></param>
         /// <param name="devCommand"></param>
         /// <param name="installCommand"></param>
         /// <param name="env"></param>
@@ -662,6 +676,9 @@ namespace Vercel
         /// <param name="webAnalytics"></param>
         /// <param name="security"></param>
         /// <param name="oidcTokenConfig"></param>
+        /// <param name="deploymentPolicy">
+        /// Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type — the underlying data lives in separate stores.
+        /// </param>
         /// <param name="tier"></param>
         /// <param name="flatRateTier"></param>
         /// <param name="usageStatus"></param>
@@ -704,6 +721,7 @@ namespace Vercel
             global::Vercel.GetProjectResponseCrons? crons,
             global::Vercel.GetProjectResponseDataCache? dataCache,
             object? delegatedProtection,
+            global::Vercel.OneOf<global::Vercel.GetProjectResponseExpirationVariant1, global::Vercel.GetProjectResponseExpirationVariant2>? expiration,
             string? devCommand,
             string? installCommand,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseEnvItem>? env,
@@ -757,6 +775,7 @@ namespace Vercel
             global::Vercel.GetProjectResponseWebAnalytics? webAnalytics,
             global::Vercel.GetProjectResponseSecurity? security,
             global::Vercel.GetProjectResponseOidcTokenConfig? oidcTokenConfig,
+            global::Vercel.GetProjectResponseDeploymentPolicy? deploymentPolicy,
             string? tier,
             global::Vercel.GetProjectResponseFlatRateTier? flatRateTier,
             global::Vercel.GetProjectResponseUsageStatus? usageStatus,
@@ -790,6 +809,7 @@ namespace Vercel
             this.DataCache = dataCache;
             this.DelegatedProtection = delegatedProtection;
             this.DeploymentExpiration = deploymentExpiration ?? throw new global::System.ArgumentNullException(nameof(deploymentExpiration));
+            this.Expiration = expiration;
             this.DevCommand = devCommand;
             this.DirectoryListing = directoryListing;
             this.InstallCommand = installCommand;
@@ -849,6 +869,7 @@ namespace Vercel
             this.WebAnalytics = webAnalytics;
             this.Security = security;
             this.OidcTokenConfig = oidcTokenConfig;
+            this.DeploymentPolicy = deploymentPolicy;
             this.Tier = tier;
             this.FlatRateTier = flatRateTier;
             this.UsageStatus = usageStatus;
@@ -869,5 +890,6 @@ namespace Vercel
         public GetProjectResponse()
         {
         }
+
     }
 }

@@ -75,5 +75,6 @@ namespace Vercel
         public GetDrainResponseVariant2Schemas()
         {
         }
+
     }
 }

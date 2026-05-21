@@ -29,6 +29,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickRegistrantFieldVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vercel.RegistrantFieldVariant1? value)
+        {
+            value = RegistrantFieldVariant1;
+            return IsRegistrantFieldVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vercel.RegistrantFieldVariant1 PickRegistrantFieldVariant1() => IsRegistrantFieldVariant1
+            ? RegistrantFieldVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.RegistrantFieldVariant2? RegistrantFieldVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RegistrantFieldVariant2))]
 #endif
         public bool IsRegistrantFieldVariant2 => RegistrantFieldVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRegistrantFieldVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vercel.RegistrantFieldVariant2? value)
+        {
+            value = RegistrantFieldVariant2;
+            return IsRegistrantFieldVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vercel.RegistrantFieldVariant2 PickRegistrantFieldVariant2() => IsRegistrantFieldVariant2
+            ? RegistrantFieldVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickRegistrantFieldVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vercel.RegistrantFieldVariant3? value)
+        {
+            value = RegistrantFieldVariant3;
+            return IsRegistrantFieldVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vercel.RegistrantFieldVariant3 PickRegistrantFieldVariant3() => IsRegistrantFieldVariant3
+            ? RegistrantFieldVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.RegistrantFieldVariant4? RegistrantFieldVariant4 { get; init; }
 #else
@@ -76,6 +136,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RegistrantFieldVariant4))]
 #endif
         public bool IsRegistrantFieldVariant4 => RegistrantFieldVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRegistrantFieldVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vercel.RegistrantFieldVariant4? value)
+        {
+            value = RegistrantFieldVariant4;
+            return IsRegistrantFieldVariant4;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vercel.RegistrantFieldVariant4 PickRegistrantFieldVariant4() => IsRegistrantFieldVariant4
+            ? RegistrantFieldVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant4' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -93,6 +173,11 @@ namespace Vercel
         {
             RegistrantFieldVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RegistrantField FromRegistrantFieldVariant1(global::Vercel.RegistrantFieldVariant1? value) => new RegistrantField(value);
 
         /// <summary>
         /// 
@@ -115,6 +200,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static RegistrantField FromRegistrantFieldVariant2(global::Vercel.RegistrantFieldVariant2? value) => new RegistrantField(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RegistrantField(global::Vercel.RegistrantFieldVariant3 value) => new RegistrantField((global::Vercel.RegistrantFieldVariant3?)value);
 
         /// <summary>
@@ -133,6 +223,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static RegistrantField FromRegistrantFieldVariant3(global::Vercel.RegistrantFieldVariant3? value) => new RegistrantField(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RegistrantField(global::Vercel.RegistrantFieldVariant4 value) => new RegistrantField((global::Vercel.RegistrantFieldVariant4?)value);
 
         /// <summary>
@@ -147,6 +242,11 @@ namespace Vercel
         {
             RegistrantFieldVariant4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RegistrantField FromRegistrantFieldVariant4(global::Vercel.RegistrantFieldVariant4? value) => new RegistrantField(value);
 
         /// <summary>
         /// 
@@ -196,10 +296,10 @@ namespace Vercel
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vercel.RegistrantFieldVariant1?, TResult>? registrantFieldVariant1 = null,
-            global::System.Func<global::Vercel.RegistrantFieldVariant2?, TResult>? registrantFieldVariant2 = null,
-            global::System.Func<global::Vercel.RegistrantFieldVariant3?, TResult>? registrantFieldVariant3 = null,
-            global::System.Func<global::Vercel.RegistrantFieldVariant4?, TResult>? registrantFieldVariant4 = null,
+            global::System.Func<global::Vercel.RegistrantFieldVariant1, TResult>? registrantFieldVariant1 = null,
+            global::System.Func<global::Vercel.RegistrantFieldVariant2, TResult>? registrantFieldVariant2 = null,
+            global::System.Func<global::Vercel.RegistrantFieldVariant3, TResult>? registrantFieldVariant3 = null,
+            global::System.Func<global::Vercel.RegistrantFieldVariant4, TResult>? registrantFieldVariant4 = null,
             bool validate = true)
         {
             if (validate)
@@ -231,10 +331,46 @@ namespace Vercel
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vercel.RegistrantFieldVariant1?>? registrantFieldVariant1 = null,
-            global::System.Action<global::Vercel.RegistrantFieldVariant2?>? registrantFieldVariant2 = null,
-            global::System.Action<global::Vercel.RegistrantFieldVariant3?>? registrantFieldVariant3 = null,
-            global::System.Action<global::Vercel.RegistrantFieldVariant4?>? registrantFieldVariant4 = null,
+            global::System.Action<global::Vercel.RegistrantFieldVariant1>? registrantFieldVariant1 = null,
+
+            global::System.Action<global::Vercel.RegistrantFieldVariant2>? registrantFieldVariant2 = null,
+
+            global::System.Action<global::Vercel.RegistrantFieldVariant3>? registrantFieldVariant3 = null,
+
+            global::System.Action<global::Vercel.RegistrantFieldVariant4>? registrantFieldVariant4 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsRegistrantFieldVariant1)
+            {
+                registrantFieldVariant1?.Invoke(RegistrantFieldVariant1!);
+            }
+            else if (IsRegistrantFieldVariant2)
+            {
+                registrantFieldVariant2?.Invoke(RegistrantFieldVariant2!);
+            }
+            else if (IsRegistrantFieldVariant3)
+            {
+                registrantFieldVariant3?.Invoke(RegistrantFieldVariant3!);
+            }
+            else if (IsRegistrantFieldVariant4)
+            {
+                registrantFieldVariant4?.Invoke(RegistrantFieldVariant4!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vercel.RegistrantFieldVariant1>? registrantFieldVariant1 = null,
+            global::System.Action<global::Vercel.RegistrantFieldVariant2>? registrantFieldVariant2 = null,
+            global::System.Action<global::Vercel.RegistrantFieldVariant3>? registrantFieldVariant3 = null,
+            global::System.Action<global::Vercel.RegistrantFieldVariant4>? registrantFieldVariant4 = null,
             bool validate = true)
         {
             if (validate)

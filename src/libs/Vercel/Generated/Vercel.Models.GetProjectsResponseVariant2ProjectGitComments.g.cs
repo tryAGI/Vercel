@@ -54,5 +54,6 @@ namespace Vercel
         public GetProjectsResponseVariant2ProjectGitComments()
         {
         }
+
     }
 }

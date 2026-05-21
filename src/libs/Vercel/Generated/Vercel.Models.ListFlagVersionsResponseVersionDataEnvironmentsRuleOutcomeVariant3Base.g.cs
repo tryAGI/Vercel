@@ -60,5 +60,6 @@ namespace Vercel
         public ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3Base()
         {
         }
+
     }
 }

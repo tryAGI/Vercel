@@ -44,5 +44,6 @@ namespace Vercel
         public JoinTeamRequest()
         {
         }
+
     }
 }

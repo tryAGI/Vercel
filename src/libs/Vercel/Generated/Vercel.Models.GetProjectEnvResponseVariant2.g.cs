@@ -38,20 +38,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         public double? CreatedAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
-        public string? CreatedBy { get; set; }
 
         /// <summary>
         /// 
@@ -62,9 +50,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>, global::Vercel.GetProjectEnvResponseVariant2Target?>))]
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>, global::Vercel.GetProjectEnvResponseVariant2Target?>? Target { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        public string? Id { get; set; }
 
         /// <summary>
         /// 
@@ -76,8 +63,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>, global::Vercel.GetProjectEnvResponseVariant2Target?>))]
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>, global::Vercel.GetProjectEnvResponseVariant2Target?>? Target { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitBranch")]
         public string? GitBranch { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
+        public string? CreatedBy { get; set; }
 
         /// <summary>
         /// 
@@ -147,12 +147,12 @@ namespace Vercel
         /// <param name="key"></param>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigTokenId"></param>
-        /// <param name="id"></param>
         /// <param name="createdAt"></param>
-        /// <param name="createdBy"></param>
         /// <param name="updatedAt"></param>
+        /// <param name="id"></param>
         /// <param name="target"></param>
         /// <param name="gitBranch"></param>
+        /// <param name="createdBy"></param>
         /// <param name="updatedBy"></param>
         /// <param name="sunsetSecretId">
         /// This is used to identify variables that have been migrated from type secret to sensitive.
@@ -179,12 +179,12 @@ namespace Vercel
             string key,
             string? edgeConfigId,
             string? edgeConfigTokenId,
-            string? id,
             double? createdAt,
-            string? createdBy,
             double? updatedAt,
+            string? id,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>, global::Vercel.GetProjectEnvResponseVariant2Target?>? target,
             string? gitBranch,
+            string? createdBy,
             string? updatedBy,
             string? sunsetSecretId,
             string? legacyValue,
@@ -199,13 +199,13 @@ namespace Vercel
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.EdgeConfigId = edgeConfigId;
             this.EdgeConfigTokenId = edgeConfigTokenId;
-            this.Id = id;
             this.CreatedAt = createdAt;
-            this.CreatedBy = createdBy;
             this.UpdatedAt = updatedAt;
-            this.Target = target;
+            this.Id = id;
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
+            this.Target = target;
             this.GitBranch = gitBranch;
+            this.CreatedBy = createdBy;
             this.UpdatedBy = updatedBy;
             this.SunsetSecretId = sunsetSecretId;
             this.LegacyValue = legacyValue;
@@ -223,5 +223,6 @@ namespace Vercel
         public GetProjectEnvResponseVariant2()
         {
         }
+
     }
 }

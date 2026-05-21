@@ -62,6 +62,14 @@ namespace Vercel
         public global::System.Collections.Generic.Dictionary<string, string>? Env { get; set; }
 
         /// <summary>
+        /// List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.<br/>
+        /// Example: [3000, 4000]
+        /// </summary>
+        /// <example>[3000, 4000]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ports")]
+        public global::System.Collections.Generic.IList<int>? Ports { get; set; }
+
+        /// <summary>
         /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("currentSnapshotId")]
@@ -107,6 +115,10 @@ namespace Vercel
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </param>
+        /// <param name="ports">
+        /// List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.<br/>
+        /// Example: [3000, 4000]
+        /// </param>
         /// <param name="currentSnapshotId">
         /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project.
         /// </param>
@@ -125,6 +137,7 @@ namespace Vercel
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
             global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? networkPolicy,
             global::System.Collections.Generic.Dictionary<string, string>? env,
+            global::System.Collections.Generic.IList<int>? ports,
             string? currentSnapshotId,
             global::System.Collections.Generic.Dictionary<string, string>? tags)
         {
@@ -135,6 +148,7 @@ namespace Vercel
             this.SnapshotExpiration = snapshotExpiration;
             this.NetworkPolicy = networkPolicy;
             this.Env = env;
+            this.Ports = ports;
             this.CurrentSnapshotId = currentSnapshotId;
             this.Tags = tags;
         }
@@ -145,5 +159,6 @@ namespace Vercel
         public UpdateSandboxRequest()
         {
         }
+
     }
 }

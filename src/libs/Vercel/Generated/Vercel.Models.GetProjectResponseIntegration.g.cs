@@ -56,5 +56,6 @@ namespace Vercel
         public GetProjectResponseIntegration()
         {
         }
+
     }
 }

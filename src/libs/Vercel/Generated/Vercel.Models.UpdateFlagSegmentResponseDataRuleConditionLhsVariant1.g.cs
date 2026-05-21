@@ -40,5 +40,6 @@ namespace Vercel
         public UpdateFlagSegmentResponseDataRuleConditionLhsVariant1()
         {
         }
+
     }
 }

@@ -64,5 +64,6 @@ namespace Vercel
         public BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2()
         {
         }
+
     }
 }

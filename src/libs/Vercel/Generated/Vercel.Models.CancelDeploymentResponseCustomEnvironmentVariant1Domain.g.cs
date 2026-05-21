@@ -137,5 +137,6 @@ namespace Vercel
         public CancelDeploymentResponseCustomEnvironmentVariant1Domain()
         {
         }
+
     }
 }

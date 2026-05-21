@@ -40,5 +40,6 @@ namespace Vercel
         public GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1()
         {
         }
+
     }
 }

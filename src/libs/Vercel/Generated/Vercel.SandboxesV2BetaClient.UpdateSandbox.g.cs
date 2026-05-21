@@ -29,6 +29,7 @@ namespace Vercel
             global::System.Net.Http.HttpClient httpClient,
             ref string name,
             ref string? projectId,
+            ref bool? resume,
             ref string? teamId,
             ref string? slug,
             global::Vercel.UpdateSandboxRequest request);
@@ -37,6 +38,7 @@ namespace Vercel
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string name,
             string? projectId,
+            bool? resume,
             string? teamId,
             string? slug,
             global::Vercel.UpdateSandboxRequest request);
@@ -60,6 +62,10 @@ namespace Vercel
         /// <param name="projectId">
         /// The project ID that owns the named sandbox. When provided, takes precedence over OIDC project context.
         /// </param>
+        /// <param name="resume">
+        /// Whether to automatically resume a stopped named sandbox by creating a new instance from its snapshot. Defaults to false.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -70,11 +76,12 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.UpdateSandboxResponse> UpdateSandboxAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>> UpdateSandboxAsync(
             string name,
 
             global::Vercel.UpdateSandboxRequest request,
             string? projectId = default,
+            bool? resume = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -85,6 +92,7 @@ namespace Vercel
 
                 request: request,
                 projectId: projectId,
+                resume: resume,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -104,6 +112,10 @@ namespace Vercel
         /// <param name="projectId">
         /// The project ID that owns the named sandbox. When provided, takes precedence over OIDC project context.
         /// </param>
+        /// <param name="resume">
+        /// Whether to automatically resume a stopped named sandbox by creating a new instance from its snapshot. Defaults to false.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -114,11 +126,12 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateSandboxResponse>> UpdateSandboxAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>>> UpdateSandboxAsResponseAsync(
             string name,
 
             global::Vercel.UpdateSandboxRequest request,
             string? projectId = default,
+            bool? resume = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -132,6 +145,7 @@ namespace Vercel
                 httpClient: HttpClient,
                 name: ref name,
                 projectId: ref projectId,
+                resume: ref resume,
                 teamId: ref teamId,
                 slug: ref slug,
                 request: request);
@@ -164,6 +178,7 @@ namespace Vercel
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("projectId", projectId)
+                                .AddOptionalParameter("resume", resume?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -215,6 +230,7 @@ namespace Vercel
                     httpRequestMessage: __httpRequest,
                     name: name!,
                     projectId: projectId,
+                    resume: resume,
                     teamId: teamId,
                     slug: slug,
                     request: request);
@@ -562,6 +578,39 @@ namespace Vercel
                                 };
                             }
                             // 
+                            if ((int)__response.StatusCode == 409)
+                            {
+                                string? __content_409 = null;
+                                global::System.Exception? __exception_409 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_409 = __ex;
+                                }
+
+                                throw new global::Vercel.ApiException(
+                                    message: __content_409 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_409,
+                                    statusCode: __response.StatusCode)
+                                {
+                                    ResponseBody = __content_409,
+                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value),
+                                };
+                            }
+                            // 
                             if ((int)__response.StatusCode == 410)
                             {
                                 string? __content_410 = null;
@@ -628,6 +677,39 @@ namespace Vercel
                                 };
                             }
                             // 
+                            if ((int)__response.StatusCode == 429)
+                            {
+                                string? __content_429 = null;
+                                global::System.Exception? __exception_429 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_429 = __ex;
+                                }
+
+                                throw new global::Vercel.ApiException(
+                                    message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_429,
+                                    statusCode: __response.StatusCode)
+                                {
+                                    ResponseBody = __content_429,
+                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value),
+                                };
+                            }
+                            // 
                             if ((int)__response.StatusCode == 500)
                             {
                                 string? __content_500 = null;
@@ -682,9 +764,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.UpdateSandboxResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateSandboxResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -716,9 +798,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.UpdateSandboxResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateSandboxResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -771,6 +853,10 @@ namespace Vercel
         /// <param name="projectId">
         /// The project ID that owns the named sandbox. When provided, takes precedence over OIDC project context.
         /// </param>
+        /// <param name="resume">
+        /// Whether to automatically resume a stopped named sandbox by creating a new instance from its snapshot. Defaults to false.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -800,6 +886,10 @@ namespace Vercel
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </param>
+        /// <param name="ports">
+        /// List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.<br/>
+        /// Example: [3000, 4000]
+        /// </param>
         /// <param name="currentSnapshotId">
         /// The snapshot ID to set as the current snapshot. Must be active and belong to the same project.
         /// </param>
@@ -810,9 +900,10 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.UpdateSandboxResponse> UpdateSandboxAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>> UpdateSandboxAsync(
             string name,
             string? projectId = default,
+            bool? resume = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.UpdateSandboxRequestResources? resources = default,
@@ -822,6 +913,7 @@ namespace Vercel
             global::Vercel.OneOf<object, int?>? snapshotExpiration = default,
             global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? networkPolicy = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
+            global::System.Collections.Generic.IList<int>? ports = default,
             string? currentSnapshotId = default,
             global::System.Collections.Generic.Dictionary<string, string>? tags = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -836,6 +928,7 @@ namespace Vercel
                 SnapshotExpiration = snapshotExpiration,
                 NetworkPolicy = networkPolicy,
                 Env = env,
+                Ports = ports,
                 CurrentSnapshotId = currentSnapshotId,
                 Tags = tags,
             };
@@ -843,6 +936,7 @@ namespace Vercel
             return await UpdateSandboxAsync(
                 name: name,
                 projectId: projectId,
+                resume: resume,
                 teamId: teamId,
                 slug: slug,
                 request: __request,

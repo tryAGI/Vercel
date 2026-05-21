@@ -164,5 +164,6 @@ namespace Vercel
         public AddBypassIpResponseVariant2ResultItem()
         {
         }
+
     }
 }

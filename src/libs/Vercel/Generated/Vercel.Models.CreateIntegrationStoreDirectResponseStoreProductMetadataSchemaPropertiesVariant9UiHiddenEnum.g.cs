@@ -40,5 +40,6 @@ namespace Vercel
         public CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant9UiHiddenEnum()
         {
         }
+
     }
 }

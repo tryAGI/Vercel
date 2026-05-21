@@ -86,5 +86,6 @@ namespace Vercel
         public GetDeploymentEventsResponseVariant2Info()
         {
         }
+
     }
 }

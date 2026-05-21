@@ -42,5 +42,6 @@ namespace Vercel
         public GetSessionSnapshotResponse()
         {
         }
+
     }
 }

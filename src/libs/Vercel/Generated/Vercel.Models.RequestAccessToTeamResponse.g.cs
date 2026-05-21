@@ -104,5 +104,6 @@ namespace Vercel
         public RequestAccessToTeamResponse()
         {
         }
+
     }
 }

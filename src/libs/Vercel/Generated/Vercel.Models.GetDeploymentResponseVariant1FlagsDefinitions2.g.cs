@@ -57,5 +57,6 @@ namespace Vercel
         public GetDeploymentResponseVariant1FlagsDefinitions2()
         {
         }
+
     }
 }

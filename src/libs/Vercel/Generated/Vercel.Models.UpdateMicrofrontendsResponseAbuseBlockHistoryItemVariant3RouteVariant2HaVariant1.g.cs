@@ -60,5 +60,6 @@ namespace Vercel
         public UpdateMicrofrontendsResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1()
         {
         }
+
     }
 }

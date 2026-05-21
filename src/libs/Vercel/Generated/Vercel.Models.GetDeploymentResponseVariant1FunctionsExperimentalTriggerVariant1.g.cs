@@ -110,5 +110,6 @@ namespace Vercel
         public GetDeploymentResponseVariant1FunctionsExperimentalTriggerVariant1()
         {
         }
+
     }
 }

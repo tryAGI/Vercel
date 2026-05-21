@@ -66,5 +66,6 @@ namespace Vercel
         public GetEdgeConfigBackupResponseVariant2Metadata()
         {
         }
+
     }
 }

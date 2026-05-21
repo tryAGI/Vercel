@@ -226,5 +226,6 @@ namespace Vercel
         public GetInvoiceResponse()
         {
         }
+
     }
 }

@@ -74,5 +74,6 @@ namespace Vercel
         public CreateFlagRequestEnvironmentsRuleOutcomeVariant2()
         {
         }
+
     }
 }

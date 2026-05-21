@@ -98,5 +98,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectMicrofrontendsVariant1()
         {
         }
+
     }
 }

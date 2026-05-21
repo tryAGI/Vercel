@@ -78,5 +78,6 @@ namespace Vercel
         public CreateDeploymentCheckRunResponseSourceVariant1()
         {
         }
+
     }
 }

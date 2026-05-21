@@ -110,5 +110,6 @@ namespace Vercel
         public GetInvoiceResponseDiscount()
         {
         }
+
     }
 }

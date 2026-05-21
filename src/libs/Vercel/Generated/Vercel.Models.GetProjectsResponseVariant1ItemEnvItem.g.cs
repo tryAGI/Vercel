@@ -232,5 +232,6 @@ namespace Vercel
         public GetProjectsResponseVariant1ItemEnvItem()
         {
         }
+
     }
 }

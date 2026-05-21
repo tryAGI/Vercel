@@ -299,6 +299,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("delegatedProtectionClient")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DelegatedProtectionClient { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPolicy { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Domain { get; set; }
 
@@ -995,6 +1007,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vcrRepository")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VcrRepository { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vercelRun")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelRun { get; set; }
 
@@ -1541,6 +1559,8 @@ namespace Vercel
         /// <param name="buildMachineDefault"></param>
         /// <param name="dataCacheBillingSettings"></param>
         /// <param name="defaultDeploymentProtection"></param>
+        /// <param name="delegatedProtectionClient"></param>
+        /// <param name="deploymentPolicy"></param>
         /// <param name="domain"></param>
         /// <param name="domainAcceptDelegation"></param>
         /// <param name="domainAuthCodes"></param>
@@ -1657,6 +1677,7 @@ namespace Vercel
         /// <param name="toolbarComment"></param>
         /// <param name="usage"></param>
         /// <param name="usageCycle"></param>
+        /// <param name="vcrRepository"></param>
         /// <param name="vercelRun"></param>
         /// <param name="vpcPeeringConnection"></param>
         /// <param name="webAnalyticsPlan"></param>
@@ -1791,6 +1812,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? buildMachineDefault,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? dataCacheBillingSettings,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? defaultDeploymentProtection,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? delegatedProtectionClient,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentPolicy,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? domain,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? domainAcceptDelegation,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? domainAuthCodes,
@@ -1907,6 +1930,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? toolbarComment,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? usage,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? usageCycle,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vcrRepository,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelRun,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vpcPeeringConnection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalyticsPlan,
@@ -2038,6 +2062,8 @@ namespace Vercel
             this.BuildMachineDefault = buildMachineDefault;
             this.DataCacheBillingSettings = dataCacheBillingSettings;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
+            this.DelegatedProtectionClient = delegatedProtectionClient;
+            this.DeploymentPolicy = deploymentPolicy;
             this.Domain = domain;
             this.DomainAcceptDelegation = domainAcceptDelegation;
             this.DomainAuthCodes = domainAuthCodes;
@@ -2154,6 +2180,7 @@ namespace Vercel
             this.ToolbarComment = toolbarComment;
             this.Usage = usage;
             this.UsageCycle = usageCycle;
+            this.VcrRepository = vcrRepository;
             this.VercelRun = vercelRun;
             this.VpcPeeringConnection = vpcPeeringConnection;
             this.WebAnalyticsPlan = webAnalyticsPlan;
@@ -2244,5 +2271,6 @@ namespace Vercel
         public GetProjectResponsePermissions()
         {
         }
+
     }
 }

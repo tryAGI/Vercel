@@ -231,5 +231,6 @@ namespace Vercel
         public UpdateProjectResponseLatestDeployment()
         {
         }
+
     }
 }

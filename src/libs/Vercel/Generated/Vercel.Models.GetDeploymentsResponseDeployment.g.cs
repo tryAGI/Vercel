@@ -562,5 +562,6 @@ namespace Vercel
         public GetDeploymentsResponseDeployment()
         {
         }
+
     }
 }

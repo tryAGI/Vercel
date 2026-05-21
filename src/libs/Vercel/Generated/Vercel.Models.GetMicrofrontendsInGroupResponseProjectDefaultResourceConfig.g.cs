@@ -11,18 +11,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("elasticConcurrencyEnabled")]
-        public bool? ElasticConcurrencyEnabled { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildQueue")]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildQueue? BuildQueue { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fluid")]
         public bool? Fluid { get; set; }
 
@@ -55,6 +43,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("elasticConcurrencyEnabled")]
+        public bool? ElasticConcurrencyEnabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineTypeJsonConverter))]
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineType? BuildMachineType { get; set; }
@@ -81,6 +75,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildQueue")]
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildQueue? BuildQueue { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enableFunctionsBeta")]
         public bool? EnableFunctionsBeta { get; set; }
 
@@ -94,45 +94,45 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetMicrofrontendsInGroupResponseProjectDefaultResourceConfig" /> class.
         /// </summary>
         /// <param name="functionDefaultRegions"></param>
-        /// <param name="elasticConcurrencyEnabled"></param>
-        /// <param name="buildQueue"></param>
         /// <param name="fluid"></param>
         /// <param name="functionDefaultTimeout"></param>
         /// <param name="functionDefaultMemoryType"></param>
         /// <param name="functionZeroConfigFailover"></param>
+        /// <param name="elasticConcurrencyEnabled"></param>
         /// <param name="buildMachineType"></param>
         /// <param name="buildMachineSelection"></param>
         /// <param name="buildMachineElasticLastUpdated"></param>
         /// <param name="isNSNBDisabled"></param>
+        /// <param name="buildQueue"></param>
         /// <param name="enableFunctionsBeta"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetMicrofrontendsInGroupResponseProjectDefaultResourceConfig(
             global::System.Collections.Generic.IList<string> functionDefaultRegions,
-            bool? elasticConcurrencyEnabled,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildQueue? buildQueue,
             bool? fluid,
             double? functionDefaultTimeout,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigFunctionDefaultMemoryType? functionDefaultMemoryType,
             bool? functionZeroConfigFailover,
+            bool? elasticConcurrencyEnabled,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineType? buildMachineType,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineSelection? buildMachineSelection,
             double? buildMachineElasticLastUpdated,
             bool? isNSNBDisabled,
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildQueue? buildQueue,
             bool? enableFunctionsBeta)
         {
-            this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
-            this.BuildQueue = buildQueue;
             this.Fluid = fluid;
             this.FunctionDefaultRegions = functionDefaultRegions ?? throw new global::System.ArgumentNullException(nameof(functionDefaultRegions));
             this.FunctionDefaultTimeout = functionDefaultTimeout;
             this.FunctionDefaultMemoryType = functionDefaultMemoryType;
             this.FunctionZeroConfigFailover = functionZeroConfigFailover;
+            this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
             this.BuildMachineType = buildMachineType;
             this.BuildMachineSelection = buildMachineSelection;
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
             this.IsNSNBDisabled = isNSNBDisabled;
+            this.BuildQueue = buildQueue;
             this.EnableFunctionsBeta = enableFunctionsBeta;
         }
 
@@ -142,5 +142,6 @@ namespace Vercel
         public GetMicrofrontendsInGroupResponseProjectDefaultResourceConfig()
         {
         }
+
     }
 }

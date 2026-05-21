@@ -40,5 +40,6 @@ namespace Vercel
         public RegistrantFieldVariant2RequiredWhen()
         {
         }
+
     }
 }

@@ -81,5 +81,6 @@ namespace Vercel
         public PutFirewallConfigResponseActiveRuleVariant1ActionMitigateRateLimit()
         {
         }
+
     }
 }

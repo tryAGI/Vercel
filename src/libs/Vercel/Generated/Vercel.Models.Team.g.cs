@@ -198,6 +198,12 @@ namespace Vercel
         public global::Vercel.TeamNsnbConfig? NsnbConfig { get; set; }
 
         /// <summary>
+        /// Composable deployment-time policy for the team. Used as the default for every project on the team, with optional per-project overrides on `project.deploymentPolicy`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
+        public global::Vercel.TeamDeploymentPolicy? DeploymentPolicy { get; set; }
+
+        /// <summary>
         /// Timestamp (ms) after which personal access tokens created at or before this time are considered invalid for this team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("personalAccessTokensInvalidatedAt")]
@@ -259,8 +265,7 @@ namespace Vercel
         /// The membership of the authenticated User in relation to the Team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("membership")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.TeamMembership Membership { get; set; }
+        public global::Vercel.TeamMembership? Membership { get; set; }
 
         /// <summary>
         /// UNIX timestamp (in milliseconds) when the Team was created.<br/>
@@ -298,9 +303,6 @@ namespace Vercel
         /// <param name="slug">
         /// The Team's slug, which is unique across the Vercel platform.<br/>
         /// Example: my-team
-        /// </param>
-        /// <param name="membership">
-        /// The membership of the authenticated User in relation to the Team.
         /// </param>
         /// <param name="createdAt">
         /// UNIX timestamp (in milliseconds) when the Team was created.<br/>
@@ -378,6 +380,9 @@ namespace Vercel
         /// <param name="nsnbConfig">
         /// NSNB configuration for the team.
         /// </param>
+        /// <param name="deploymentPolicy">
+        /// Composable deployment-time policy for the team. Used as the default for every project on the team, with optional per-project overrides on `project.deploymentPolicy`.
+        /// </param>
         /// <param name="personalAccessTokensInvalidatedAt">
         /// Timestamp (ms) after which personal access tokens created at or before this time are considered invalid for this team.
         /// </param>
@@ -398,6 +403,9 @@ namespace Vercel
         /// The ID of the file used as avatar for this Team.<br/>
         /// Example: 6eb07268bcfadd309905ffb1579354084c24655c
         /// </param>
+        /// <param name="membership">
+        /// The membership of the authenticated User in relation to the Team.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -407,7 +415,6 @@ namespace Vercel
             string stagingPrefix,
             string id,
             string slug,
-            global::Vercel.TeamMembership membership,
             double createdAt,
             global::Vercel.TeamConnect? connect,
             string? emailDomain,
@@ -434,12 +441,14 @@ namespace Vercel
             global::Vercel.TeamStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.TeamStrictShareableLinks? strictShareableLinks,
             global::Vercel.TeamNsnbConfig? nsnbConfig,
+            global::Vercel.TeamDeploymentPolicy? deploymentPolicy,
             double? personalAccessTokensInvalidatedAt,
             double? appTokensInvalidatedAt,
             double? apiKeysInvalidatedAt,
             double? integrationTokensInvalidatedAt,
             string? name,
-            string? avatar)
+            string? avatar,
+            global::Vercel.TeamMembership? membership)
         {
             this.Connect = connect;
             this.CreatorId = creatorId ?? throw new global::System.ArgumentNullException(nameof(creatorId));
@@ -469,6 +478,7 @@ namespace Vercel
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
             this.StrictShareableLinks = strictShareableLinks;
             this.NsnbConfig = nsnbConfig;
+            this.DeploymentPolicy = deploymentPolicy;
             this.PersonalAccessTokensInvalidatedAt = personalAccessTokensInvalidatedAt;
             this.AppTokensInvalidatedAt = appTokensInvalidatedAt;
             this.ApiKeysInvalidatedAt = apiKeysInvalidatedAt;
@@ -477,7 +487,7 @@ namespace Vercel
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Name = name;
             this.Avatar = avatar;
-            this.Membership = membership ?? throw new global::System.ArgumentNullException(nameof(membership));
+            this.Membership = membership;
             this.CreatedAt = createdAt;
         }
 
@@ -487,5 +497,6 @@ namespace Vercel
         public Team()
         {
         }
+
     }
 }

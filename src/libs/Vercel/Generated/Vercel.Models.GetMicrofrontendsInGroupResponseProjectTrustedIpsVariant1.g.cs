@@ -62,5 +62,6 @@ namespace Vercel
         public GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1()
         {
         }
+
     }
 }

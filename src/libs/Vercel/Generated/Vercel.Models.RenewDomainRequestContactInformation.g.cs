@@ -171,5 +171,6 @@ namespace Vercel
         public RenewDomainRequestContactInformation()
         {
         }
+
     }
 }

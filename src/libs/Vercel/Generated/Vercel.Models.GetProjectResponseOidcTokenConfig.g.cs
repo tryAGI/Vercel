@@ -53,5 +53,6 @@ namespace Vercel
         public GetProjectResponseOidcTokenConfig()
         {
         }
+
     }
 }

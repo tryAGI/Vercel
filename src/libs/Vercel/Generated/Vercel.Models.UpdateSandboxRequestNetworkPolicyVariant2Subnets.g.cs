@@ -48,5 +48,6 @@ namespace Vercel
         public UpdateSandboxRequestNetworkPolicyVariant2Subnets()
         {
         }
+
     }
 }

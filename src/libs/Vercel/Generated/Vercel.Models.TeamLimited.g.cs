@@ -66,8 +66,7 @@ namespace Vercel
         /// The membership of the authenticated User in relation to the Team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("membership")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.TeamLimitedMembership Membership { get; set; }
+        public global::Vercel.TeamLimitedMembership? Membership { get; set; }
 
         /// <summary>
         /// UNIX timestamp (in milliseconds) when the Team was created.<br/>
@@ -99,9 +98,6 @@ namespace Vercel
         /// The Team's slug, which is unique across the Vercel platform.<br/>
         /// Example: my-team
         /// </param>
-        /// <param name="membership">
-        /// The membership of the authenticated User in relation to the Team.
-        /// </param>
         /// <param name="createdAt">
         /// UNIX timestamp (in milliseconds) when the Team was created.<br/>
         /// Example: 1630748523395L
@@ -117,6 +113,9 @@ namespace Vercel
         /// The ID of the file used as avatar for this Team.<br/>
         /// Example: 6eb07268bcfadd309905ffb1579354084c24655c
         /// </param>
+        /// <param name="membership">
+        /// The membership of the authenticated User in relation to the Team.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -125,11 +124,11 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.TeamLimitedLimitedByItem> limitedBy,
             string id,
             string slug,
-            global::Vercel.TeamLimitedMembership membership,
             double createdAt,
             global::Vercel.TeamLimitedSaml? saml,
             string? name,
-            string? avatar)
+            string? avatar,
+            global::Vercel.TeamLimitedMembership? membership)
         {
             this.Limited = limited;
             this.LimitedBy = limitedBy ?? throw new global::System.ArgumentNullException(nameof(limitedBy));
@@ -138,7 +137,7 @@ namespace Vercel
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Name = name;
             this.Avatar = avatar;
-            this.Membership = membership ?? throw new global::System.ArgumentNullException(nameof(membership));
+            this.Membership = membership;
             this.CreatedAt = createdAt;
         }
 
@@ -148,5 +147,6 @@ namespace Vercel
         public TeamLimited()
         {
         }
+
     }
 }

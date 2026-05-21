@@ -135,5 +135,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectCustomEnvironment()
         {
         }
+
     }
 }

@@ -40,5 +40,6 @@ namespace Vercel
         public UpdateDrainResponseVariant2DeliveryVariant2Endpoint()
         {
         }
+
     }
 }

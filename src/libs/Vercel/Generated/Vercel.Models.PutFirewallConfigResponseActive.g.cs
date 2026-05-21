@@ -160,5 +160,6 @@ namespace Vercel
         public PutFirewallConfigResponseActive()
         {
         }
+
     }
 }

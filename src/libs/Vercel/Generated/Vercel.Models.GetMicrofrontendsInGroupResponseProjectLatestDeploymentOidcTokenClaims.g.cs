@@ -138,5 +138,6 @@ namespace Vercel
         public GetMicrofrontendsInGroupResponseProjectLatestDeploymentOidcTokenClaims()
         {
         }
+
     }
 }

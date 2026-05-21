@@ -41,5 +41,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectTrustedIpsVariant2()
         {
         }
+
     }
 }

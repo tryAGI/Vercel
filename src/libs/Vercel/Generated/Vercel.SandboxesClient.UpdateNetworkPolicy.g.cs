@@ -613,6 +613,39 @@ namespace Vercel
                                         h => h.Value),
                                 };
                             }
+                            // 
+                            if ((int)__response.StatusCode == 500)
+                            {
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_500 = __ex;
+                                }
+
+                                throw new global::Vercel.ApiException(
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    statusCode: __response.StatusCode)
+                                {
+                                    ResponseBody = __content_500,
+                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value),
+                                };
+                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -743,6 +776,9 @@ namespace Vercel
         /// List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.<br/>
         /// Example: [35.192.0.0/12]
         /// </param>
+        /// <param name="injectionRules">
+        /// HTTP header injection rules for outgoing requests matching specific domains. Traffic to matching domains will be intercepted instead of proxied through encrypted connections.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -754,6 +790,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? allowedDomains = default,
             global::System.Collections.Generic.IList<string>? allowedCIDRs = default,
             global::System.Collections.Generic.IList<string>? deniedCIDRs = default,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateNetworkPolicyRequestInjectionRule>? injectionRules = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -763,6 +800,7 @@ namespace Vercel
                 AllowedDomains = allowedDomains,
                 AllowedCIDRs = allowedCIDRs,
                 DeniedCIDRs = deniedCIDRs,
+                InjectionRules = injectionRules,
             };
 
             return await UpdateNetworkPolicyAsync(

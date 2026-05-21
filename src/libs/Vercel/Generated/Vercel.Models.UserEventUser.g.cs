@@ -24,6 +24,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Uid { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Email { get; set; }
@@ -36,13 +43,6 @@ namespace Vercel
         public required string Username { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -52,25 +52,25 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UserEventUser" /> class.
         /// </summary>
         /// <param name="avatar"></param>
+        /// <param name="uid"></param>
         /// <param name="email"></param>
         /// <param name="username"></param>
-        /// <param name="uid"></param>
         /// <param name="slug"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventUser(
             string avatar,
+            string uid,
             string email,
             string username,
-            string uid,
             string? slug)
         {
             this.Slug = slug;
             this.Avatar = avatar ?? throw new global::System.ArgumentNullException(nameof(avatar));
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
             this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
         }
 
         /// <summary>
@@ -79,5 +79,6 @@ namespace Vercel
         public UserEventUser()
         {
         }
+
     }
 }

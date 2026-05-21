@@ -154,5 +154,6 @@ namespace Vercel
         public FlagsSdkKeyWithSecrets()
         {
         }
+
     }
 }

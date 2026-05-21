@@ -52,5 +52,6 @@ namespace Vercel
         public CreateSandboxesRequestNetworkPolicyVariant2AllowItemMatchHeader()
         {
         }
+
     }
 }

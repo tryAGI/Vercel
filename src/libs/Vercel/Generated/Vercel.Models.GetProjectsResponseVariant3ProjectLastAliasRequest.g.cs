@@ -92,5 +92,6 @@ namespace Vercel
         public GetProjectsResponseVariant3ProjectLastAliasRequest()
         {
         }
+
     }
 }

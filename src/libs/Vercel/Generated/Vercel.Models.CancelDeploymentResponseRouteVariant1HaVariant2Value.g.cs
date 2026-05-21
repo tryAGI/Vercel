@@ -130,5 +130,6 @@ namespace Vercel
         public CancelDeploymentResponseRouteVariant1HaVariant2Value()
         {
         }
+
     }
 }

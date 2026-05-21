@@ -73,5 +73,6 @@ namespace Vercel
         public Pagination()
         {
         }
+
     }
 }

@@ -270,5 +270,6 @@ namespace Vercel
         public CreateLogDrainResponse()
         {
         }
+
     }
 }

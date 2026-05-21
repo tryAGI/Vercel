@@ -196,5 +196,6 @@ namespace Vercel
         public GetDeploymentsResponseDeploymentProjectSettings()
         {
         }
+
     }
 }

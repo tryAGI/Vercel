@@ -55,5 +55,6 @@ namespace Vercel
         public GetDeploymentResponseVariant2CustomEnvironmentVariant1BranchMatcher()
         {
         }
+
     }
 }

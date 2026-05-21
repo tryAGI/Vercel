@@ -51,5 +51,6 @@ namespace Vercel
         public CancelDeploymentResponseAliasError()
         {
         }
+
     }
 }

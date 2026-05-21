@@ -694,5 +694,6 @@ namespace Vercel
         public GetDeploymentResponseVariant2()
         {
         }
+
     }
 }

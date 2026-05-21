@@ -91,6 +91,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiOmniagent,
+        /// <summary>
+        /// 
+        /// </summary>
         AlertRuleCreated,
         /// <summary>
         /// 
@@ -243,6 +247,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ConnectAttachProject,
+        /// <summary>
+        /// 
+        /// </summary>
         ConnectBitbucket,
         /// <summary>
         /// 
@@ -275,6 +283,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ConnectCreateConnector,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectDeleteConnector,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectDeleteInstallation,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectDetachProject,
+        /// <summary>
+        /// 
+        /// </summary>
         ConnectGithub,
         /// <summary>
         /// 
@@ -292,6 +316,34 @@ namespace Vercel
         /// 
         /// </summary>
         ConnectGitlabApp,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectRevokeAllTokens,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectUpdateConnector,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectUpdateTriggerDestinations,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectUpsertInstallation,
+        /// <summary>
+        /// 
+        /// </summary>
+        CustomAlertCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        CustomAlertDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        CustomAlertUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -1059,6 +1111,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectDeploymentPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectDeploymentRetentionUpdated,
         /// <summary>
         /// 
@@ -1088,6 +1144,22 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectElasticConcurrencyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectExpirationLocked,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectExpirationReached,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectExpirationScheduled,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectExpirationUnlocked,
         /// <summary>
         /// 
         /// </summary>
@@ -1603,6 +1675,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamDeploymentPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamDomainVerificationCreated,
         /// <summary>
         /// 
@@ -1910,6 +1986,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                ListEventTypeReplacedByItem.AiOmniagent => "ai-omniagent",
                 ListEventTypeReplacedByItem.AlertRuleCreated => "alert-rule-created",
                 ListEventTypeReplacedByItem.AlertRuleDeleted => "alert-rule-deleted",
                 ListEventTypeReplacedByItem.AlertRuleUpdated => "alert-rule-updated",
@@ -1948,6 +2025,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.CertReplace => "cert-replace",
                 ListEventTypeReplacedByItem.CertSystemCreate => "cert-system-create",
                 ListEventTypeReplacedByItem.ConcurrentBuildsUpdate => "concurrent-builds-update",
+                ListEventTypeReplacedByItem.ConnectAttachProject => "connect-attach-project",
                 ListEventTypeReplacedByItem.ConnectBitbucket => "connect-bitbucket",
                 ListEventTypeReplacedByItem.ConnectBitbucketApp => "connect-bitbucket-app",
                 ListEventTypeReplacedByItem.ConnectConfigurationCreated => "connect-configuration-created",
@@ -1956,11 +2034,22 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ConnectConfigurationLinked => "connect-configuration-linked",
                 ListEventTypeReplacedByItem.ConnectConfigurationUnlinked => "connect-configuration-unlinked",
                 ListEventTypeReplacedByItem.ConnectConfigurationUpdated => "connect-configuration-updated",
+                ListEventTypeReplacedByItem.ConnectCreateConnector => "connect-create-connector",
+                ListEventTypeReplacedByItem.ConnectDeleteConnector => "connect-delete-connector",
+                ListEventTypeReplacedByItem.ConnectDeleteInstallation => "connect-delete-installation",
+                ListEventTypeReplacedByItem.ConnectDetachProject => "connect-detach-project",
                 ListEventTypeReplacedByItem.ConnectGithub => "connect-github",
                 ListEventTypeReplacedByItem.ConnectGithubCustomHost => "connect-github-custom-host",
                 ListEventTypeReplacedByItem.ConnectGithubLimited => "connect-github-limited",
                 ListEventTypeReplacedByItem.ConnectGitlab => "connect-gitlab",
                 ListEventTypeReplacedByItem.ConnectGitlabApp => "connect-gitlab-app",
+                ListEventTypeReplacedByItem.ConnectRevokeAllTokens => "connect-revoke-all-tokens",
+                ListEventTypeReplacedByItem.ConnectUpdateConnector => "connect-update-connector",
+                ListEventTypeReplacedByItem.ConnectUpdateTriggerDestinations => "connect-update-trigger-destinations",
+                ListEventTypeReplacedByItem.ConnectUpsertInstallation => "connect-upsert-installation",
+                ListEventTypeReplacedByItem.CustomAlertCreated => "custom-alert-created",
+                ListEventTypeReplacedByItem.CustomAlertDeleted => "custom-alert-deleted",
+                ListEventTypeReplacedByItem.CustomAlertUpdated => "custom-alert-updated",
                 ListEventTypeReplacedByItem.CustomSuffixClear => "custom-suffix-clear",
                 ListEventTypeReplacedByItem.CustomSuffixDisable => "custom-suffix-disable",
                 ListEventTypeReplacedByItem.CustomSuffixEnable => "custom-suffix-enable",
@@ -2152,6 +2241,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectDelegatedProtectionEnabled => "project-delegated-protection-enabled",
                 ListEventTypeReplacedByItem.ProjectDelegatedProtectionUpdated => "project-delegated-protection-updated",
                 ListEventTypeReplacedByItem.ProjectDelete => "project-delete",
+                ListEventTypeReplacedByItem.ProjectDeploymentPolicyUpdated => "project-deployment-policy-updated",
                 ListEventTypeReplacedByItem.ProjectDeploymentRetentionUpdated => "project-deployment-retention-updated",
                 ListEventTypeReplacedByItem.ProjectDirectoryListing => "project-directory-listing",
                 ListEventTypeReplacedByItem.ProjectDomainDeleted => "project-domain-deleted",
@@ -2160,6 +2250,10 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectDomainUpdated => "project-domain-updated",
                 ListEventTypeReplacedByItem.ProjectDomainVerified => "project-domain-verified",
                 ListEventTypeReplacedByItem.ProjectElasticConcurrencyUpdated => "project-elastic-concurrency-updated",
+                ListEventTypeReplacedByItem.ProjectExpirationLocked => "project-expiration-locked",
+                ListEventTypeReplacedByItem.ProjectExpirationReached => "project-expiration-reached",
+                ListEventTypeReplacedByItem.ProjectExpirationScheduled => "project-expiration-scheduled",
+                ListEventTypeReplacedByItem.ProjectExpirationUnlocked => "project-expiration-unlocked",
                 ListEventTypeReplacedByItem.ProjectExternalRewriteCachingUpdated => "project-external-rewrite-caching-updated",
                 ListEventTypeReplacedByItem.ProjectFrameworkUpdated => "project-framework-updated",
                 ListEventTypeReplacedByItem.ProjectFunctionCpuMemory => "project-function-cpu-memory",
@@ -2288,6 +2382,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.TeamAvatarUpdate => "team-avatar-update",
                 ListEventTypeReplacedByItem.TeamDefaultBuildMachineUpdated => "team-default-build-machine-updated",
                 ListEventTypeReplacedByItem.TeamDelete => "team-delete",
+                ListEventTypeReplacedByItem.TeamDeploymentPolicyUpdated => "team-deployment-policy-updated",
                 ListEventTypeReplacedByItem.TeamDomainVerificationCreated => "team-domain-verification-created",
                 ListEventTypeReplacedByItem.TeamDomainVerificationDeleted => "team-domain-verification-deleted",
                 ListEventTypeReplacedByItem.TeamDomainVerificationVerified => "team-domain-verification-verified",
@@ -2387,6 +2482,7 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated,
+                "ai-omniagent" => ListEventTypeReplacedByItem.AiOmniagent,
                 "alert-rule-created" => ListEventTypeReplacedByItem.AlertRuleCreated,
                 "alert-rule-deleted" => ListEventTypeReplacedByItem.AlertRuleDeleted,
                 "alert-rule-updated" => ListEventTypeReplacedByItem.AlertRuleUpdated,
@@ -2425,6 +2521,7 @@ namespace Vercel
                 "cert-replace" => ListEventTypeReplacedByItem.CertReplace,
                 "cert-system-create" => ListEventTypeReplacedByItem.CertSystemCreate,
                 "concurrent-builds-update" => ListEventTypeReplacedByItem.ConcurrentBuildsUpdate,
+                "connect-attach-project" => ListEventTypeReplacedByItem.ConnectAttachProject,
                 "connect-bitbucket" => ListEventTypeReplacedByItem.ConnectBitbucket,
                 "connect-bitbucket-app" => ListEventTypeReplacedByItem.ConnectBitbucketApp,
                 "connect-configuration-created" => ListEventTypeReplacedByItem.ConnectConfigurationCreated,
@@ -2433,11 +2530,22 @@ namespace Vercel
                 "connect-configuration-linked" => ListEventTypeReplacedByItem.ConnectConfigurationLinked,
                 "connect-configuration-unlinked" => ListEventTypeReplacedByItem.ConnectConfigurationUnlinked,
                 "connect-configuration-updated" => ListEventTypeReplacedByItem.ConnectConfigurationUpdated,
+                "connect-create-connector" => ListEventTypeReplacedByItem.ConnectCreateConnector,
+                "connect-delete-connector" => ListEventTypeReplacedByItem.ConnectDeleteConnector,
+                "connect-delete-installation" => ListEventTypeReplacedByItem.ConnectDeleteInstallation,
+                "connect-detach-project" => ListEventTypeReplacedByItem.ConnectDetachProject,
                 "connect-github" => ListEventTypeReplacedByItem.ConnectGithub,
                 "connect-github-custom-host" => ListEventTypeReplacedByItem.ConnectGithubCustomHost,
                 "connect-github-limited" => ListEventTypeReplacedByItem.ConnectGithubLimited,
                 "connect-gitlab" => ListEventTypeReplacedByItem.ConnectGitlab,
                 "connect-gitlab-app" => ListEventTypeReplacedByItem.ConnectGitlabApp,
+                "connect-revoke-all-tokens" => ListEventTypeReplacedByItem.ConnectRevokeAllTokens,
+                "connect-update-connector" => ListEventTypeReplacedByItem.ConnectUpdateConnector,
+                "connect-update-trigger-destinations" => ListEventTypeReplacedByItem.ConnectUpdateTriggerDestinations,
+                "connect-upsert-installation" => ListEventTypeReplacedByItem.ConnectUpsertInstallation,
+                "custom-alert-created" => ListEventTypeReplacedByItem.CustomAlertCreated,
+                "custom-alert-deleted" => ListEventTypeReplacedByItem.CustomAlertDeleted,
+                "custom-alert-updated" => ListEventTypeReplacedByItem.CustomAlertUpdated,
                 "custom-suffix-clear" => ListEventTypeReplacedByItem.CustomSuffixClear,
                 "custom-suffix-disable" => ListEventTypeReplacedByItem.CustomSuffixDisable,
                 "custom-suffix-enable" => ListEventTypeReplacedByItem.CustomSuffixEnable,
@@ -2629,6 +2737,7 @@ namespace Vercel
                 "project-delegated-protection-enabled" => ListEventTypeReplacedByItem.ProjectDelegatedProtectionEnabled,
                 "project-delegated-protection-updated" => ListEventTypeReplacedByItem.ProjectDelegatedProtectionUpdated,
                 "project-delete" => ListEventTypeReplacedByItem.ProjectDelete,
+                "project-deployment-policy-updated" => ListEventTypeReplacedByItem.ProjectDeploymentPolicyUpdated,
                 "project-deployment-retention-updated" => ListEventTypeReplacedByItem.ProjectDeploymentRetentionUpdated,
                 "project-directory-listing" => ListEventTypeReplacedByItem.ProjectDirectoryListing,
                 "project-domain-deleted" => ListEventTypeReplacedByItem.ProjectDomainDeleted,
@@ -2637,6 +2746,10 @@ namespace Vercel
                 "project-domain-updated" => ListEventTypeReplacedByItem.ProjectDomainUpdated,
                 "project-domain-verified" => ListEventTypeReplacedByItem.ProjectDomainVerified,
                 "project-elastic-concurrency-updated" => ListEventTypeReplacedByItem.ProjectElasticConcurrencyUpdated,
+                "project-expiration-locked" => ListEventTypeReplacedByItem.ProjectExpirationLocked,
+                "project-expiration-reached" => ListEventTypeReplacedByItem.ProjectExpirationReached,
+                "project-expiration-scheduled" => ListEventTypeReplacedByItem.ProjectExpirationScheduled,
+                "project-expiration-unlocked" => ListEventTypeReplacedByItem.ProjectExpirationUnlocked,
                 "project-external-rewrite-caching-updated" => ListEventTypeReplacedByItem.ProjectExternalRewriteCachingUpdated,
                 "project-framework-updated" => ListEventTypeReplacedByItem.ProjectFrameworkUpdated,
                 "project-function-cpu-memory" => ListEventTypeReplacedByItem.ProjectFunctionCpuMemory,
@@ -2765,6 +2878,7 @@ namespace Vercel
                 "team-avatar-update" => ListEventTypeReplacedByItem.TeamAvatarUpdate,
                 "team-default-build-machine-updated" => ListEventTypeReplacedByItem.TeamDefaultBuildMachineUpdated,
                 "team-delete" => ListEventTypeReplacedByItem.TeamDelete,
+                "team-deployment-policy-updated" => ListEventTypeReplacedByItem.TeamDeploymentPolicyUpdated,
                 "team-domain-verification-created" => ListEventTypeReplacedByItem.TeamDomainVerificationCreated,
                 "team-domain-verification-deleted" => ListEventTypeReplacedByItem.TeamDomainVerificationDeleted,
                 "team-domain-verification-verified" => ListEventTypeReplacedByItem.TeamDomainVerificationVerified,

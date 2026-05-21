@@ -142,5 +142,6 @@ namespace Vercel
         public UpdateMicrofrontendsResponseResourceConfig()
         {
         }
+
     }
 }

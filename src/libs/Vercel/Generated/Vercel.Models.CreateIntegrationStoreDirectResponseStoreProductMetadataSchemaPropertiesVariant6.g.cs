@@ -190,5 +190,6 @@ namespace Vercel
         public CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6()
         {
         }
+
     }
 }

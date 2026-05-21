@@ -146,5 +146,6 @@ namespace Vercel
         public GetMicrofrontendsInGroupResponseProjectLinkVariant3()
         {
         }
+
     }
 }

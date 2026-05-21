@@ -28,6 +28,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickValue1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T1? value)
+        {
+            value = Value1;
+            return IsValue1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T1 PickValue1() => IsValue1
+            ? Value1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public T2? Value2 { get; init; }
 #else
@@ -41,6 +61,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
 #endif
         public bool IsValue2 => Value2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickValue2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T2? value)
+        {
+            value = Value2;
+            return IsValue2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T2 PickValue2() => IsValue2
+            ? Value2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -62,6 +102,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickValue3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T3? value)
+        {
+            value = Value3;
+            return IsValue3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T3 PickValue3() => IsValue3
+            ? Value3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public T4? Value4 { get; init; }
 #else
@@ -75,6 +135,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value4))]
 #endif
         public bool IsValue4 => Value4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickValue4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T4? value)
+        {
+            value = Value4;
+            return IsValue4;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T4 PickValue4() => IsValue4
+            ? Value4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value4' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -96,6 +176,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickValue5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T5? value)
+        {
+            value = Value5;
+            return IsValue5;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T5 PickValue5() => IsValue5
+            ? Value5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value5' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public T6? Value6 { get; init; }
 #else
@@ -109,6 +209,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value6))]
 #endif
         public bool IsValue6 => Value6 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickValue6(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T6? value)
+        {
+            value = Value6;
+            return IsValue6;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T6 PickValue6() => IsValue6
+            ? Value6!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value6' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -130,6 +250,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickValue7(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T7? value)
+        {
+            value = Value7;
+            return IsValue7;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T7 PickValue7() => IsValue7
+            ? Value7!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value7' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public T8? Value8 { get; init; }
 #else
@@ -143,6 +283,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value8))]
 #endif
         public bool IsValue8 => Value8 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickValue8(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T8? value)
+        {
+            value = Value8;
+            return IsValue8;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T8 PickValue8() => IsValue8
+            ? Value8!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value8' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -164,6 +324,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickValue9(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T9? value)
+        {
+            value = Value9;
+            return IsValue9;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T9 PickValue9() => IsValue9
+            ? Value9!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value9' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public T10? Value10 { get; init; }
 #else
@@ -177,6 +357,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value10))]
 #endif
         public bool IsValue10 => Value10 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickValue10(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T10? value)
+        {
+            value = Value10;
+            return IsValue10;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T10 PickValue10() => IsValue10
+            ? Value10!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value10' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -198,6 +398,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickValue11(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T11? value)
+        {
+            value = Value11;
+            return IsValue11;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T11 PickValue11() => IsValue11
+            ? Value11!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value11' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public T12? Value12 { get; init; }
 #else
@@ -211,6 +431,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value12))]
 #endif
         public bool IsValue12 => Value12 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickValue12(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T12? value)
+        {
+            value = Value12;
+            return IsValue12;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T12 PickValue12() => IsValue12
+            ? Value12!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value12' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -232,6 +472,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickValue13(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T13? value)
+        {
+            value = Value13;
+            return IsValue13;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T13 PickValue13() => IsValue13
+            ? Value13!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value13' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public T14? Value14 { get; init; }
 #else
@@ -245,6 +505,26 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value14))]
 #endif
         public bool IsValue14 => Value14 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickValue14(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out T14? value)
+        {
+            value = Value14;
+            return IsValue14;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public T14 PickValue14() => IsValue14
+            ? Value14!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Value14' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -262,6 +542,11 @@ namespace Vercel
         {
             Value1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue1(T1? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
 
         /// <summary>
         /// 
@@ -284,6 +569,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue2(T2? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(T3 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>((T3?)value);
 
         /// <summary>
@@ -298,6 +588,11 @@ namespace Vercel
         {
             Value3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue3(T3? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
 
         /// <summary>
         /// 
@@ -320,6 +615,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue4(T4? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(T5 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>((T5?)value);
 
         /// <summary>
@@ -334,6 +634,11 @@ namespace Vercel
         {
             Value5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue5(T5? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
 
         /// <summary>
         /// 
@@ -356,6 +661,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue6(T6? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(T7 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>((T7?)value);
 
         /// <summary>
@@ -370,6 +680,11 @@ namespace Vercel
         {
             Value7 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue7(T7? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
 
         /// <summary>
         /// 
@@ -392,6 +707,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue8(T8? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(T9 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>((T9?)value);
 
         /// <summary>
@@ -406,6 +726,11 @@ namespace Vercel
         {
             Value9 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue9(T9? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
 
         /// <summary>
         /// 
@@ -428,6 +753,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue10(T10? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(T11 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>((T11?)value);
 
         /// <summary>
@@ -442,6 +772,11 @@ namespace Vercel
         {
             Value11 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue11(T11? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
 
         /// <summary>
         /// 
@@ -464,6 +799,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue12(T12? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(T13 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>((T13?)value);
 
         /// <summary>
@@ -482,6 +822,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue13(T13? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(T14 value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>((T14?)value);
 
         /// <summary>
@@ -496,6 +841,11 @@ namespace Vercel
         {
             Value14 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> FromValue14(T14? value) => new OneOf<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>(value);
 
         /// <summary>
         /// 
@@ -670,6 +1020,102 @@ namespace Vercel
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<T1>? value1 = null,
+
+            global::System.Action<T2>? value2 = null,
+
+            global::System.Action<T3>? value3 = null,
+
+            global::System.Action<T4>? value4 = null,
+
+            global::System.Action<T5>? value5 = null,
+
+            global::System.Action<T6>? value6 = null,
+
+            global::System.Action<T7>? value7 = null,
+
+            global::System.Action<T8>? value8 = null,
+
+            global::System.Action<T9>? value9 = null,
+
+            global::System.Action<T10>? value10 = null,
+
+            global::System.Action<T11>? value11 = null,
+
+            global::System.Action<T12>? value12 = null,
+
+            global::System.Action<T13>? value13 = null,
+
+            global::System.Action<T14>? value14 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsValue1)
+            {
+                value1?.Invoke(Value1!);
+            }
+            else if (IsValue2)
+            {
+                value2?.Invoke(Value2!);
+            }
+            else if (IsValue3)
+            {
+                value3?.Invoke(Value3!);
+            }
+            else if (IsValue4)
+            {
+                value4?.Invoke(Value4!);
+            }
+            else if (IsValue5)
+            {
+                value5?.Invoke(Value5!);
+            }
+            else if (IsValue6)
+            {
+                value6?.Invoke(Value6!);
+            }
+            else if (IsValue7)
+            {
+                value7?.Invoke(Value7!);
+            }
+            else if (IsValue8)
+            {
+                value8?.Invoke(Value8!);
+            }
+            else if (IsValue9)
+            {
+                value9?.Invoke(Value9!);
+            }
+            else if (IsValue10)
+            {
+                value10?.Invoke(Value10!);
+            }
+            else if (IsValue11)
+            {
+                value11?.Invoke(Value11!);
+            }
+            else if (IsValue12)
+            {
+                value12?.Invoke(Value12!);
+            }
+            else if (IsValue13)
+            {
+                value13?.Invoke(Value13!);
+            }
+            else if (IsValue14)
+            {
+                value14?.Invoke(Value14!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<T1>? value1 = null,
             global::System.Action<T2>? value2 = null,
             global::System.Action<T3>? value3 = null,

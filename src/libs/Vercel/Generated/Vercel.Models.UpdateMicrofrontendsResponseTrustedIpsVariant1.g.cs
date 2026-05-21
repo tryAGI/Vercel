@@ -62,5 +62,6 @@ namespace Vercel
         public UpdateMicrofrontendsResponseTrustedIpsVariant1()
         {
         }
+
     }
 }

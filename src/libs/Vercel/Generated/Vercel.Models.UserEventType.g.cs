@@ -92,6 +92,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiOmniagent,
+        /// <summary>
+        /// 
+        /// </summary>
         AlertRuleCreated,
         /// <summary>
         /// 
@@ -244,6 +248,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ConnectAttachProject,
+        /// <summary>
+        /// 
+        /// </summary>
         ConnectBitbucket,
         /// <summary>
         /// 
@@ -276,6 +284,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ConnectCreateConnector,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectDeleteConnector,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectDeleteInstallation,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectDetachProject,
+        /// <summary>
+        /// 
+        /// </summary>
         ConnectGithub,
         /// <summary>
         /// 
@@ -293,6 +317,34 @@ namespace Vercel
         /// 
         /// </summary>
         ConnectGitlabApp,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectRevokeAllTokens,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectUpdateConnector,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectUpdateTriggerDestinations,
+        /// <summary>
+        /// 
+        /// </summary>
+        ConnectUpsertInstallation,
+        /// <summary>
+        /// 
+        /// </summary>
+        CustomAlertCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        CustomAlertDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        CustomAlertUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -1060,6 +1112,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectDeploymentPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectDeploymentRetentionUpdated,
         /// <summary>
         /// 
@@ -1089,6 +1145,22 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectElasticConcurrencyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectExpirationLocked,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectExpirationReached,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectExpirationScheduled,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectExpirationUnlocked,
         /// <summary>
         /// 
         /// </summary>
@@ -1604,6 +1676,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamDeploymentPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamDomainVerificationCreated,
         /// <summary>
         /// 
@@ -1911,6 +1987,7 @@ namespace Vercel
                 UserEventType.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 UserEventType.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 UserEventType.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                UserEventType.AiOmniagent => "ai-omniagent",
                 UserEventType.AlertRuleCreated => "alert-rule-created",
                 UserEventType.AlertRuleDeleted => "alert-rule-deleted",
                 UserEventType.AlertRuleUpdated => "alert-rule-updated",
@@ -1949,6 +2026,7 @@ namespace Vercel
                 UserEventType.CertReplace => "cert-replace",
                 UserEventType.CertSystemCreate => "cert-system-create",
                 UserEventType.ConcurrentBuildsUpdate => "concurrent-builds-update",
+                UserEventType.ConnectAttachProject => "connect-attach-project",
                 UserEventType.ConnectBitbucket => "connect-bitbucket",
                 UserEventType.ConnectBitbucketApp => "connect-bitbucket-app",
                 UserEventType.ConnectConfigurationCreated => "connect-configuration-created",
@@ -1957,11 +2035,22 @@ namespace Vercel
                 UserEventType.ConnectConfigurationLinked => "connect-configuration-linked",
                 UserEventType.ConnectConfigurationUnlinked => "connect-configuration-unlinked",
                 UserEventType.ConnectConfigurationUpdated => "connect-configuration-updated",
+                UserEventType.ConnectCreateConnector => "connect-create-connector",
+                UserEventType.ConnectDeleteConnector => "connect-delete-connector",
+                UserEventType.ConnectDeleteInstallation => "connect-delete-installation",
+                UserEventType.ConnectDetachProject => "connect-detach-project",
                 UserEventType.ConnectGithub => "connect-github",
                 UserEventType.ConnectGithubCustomHost => "connect-github-custom-host",
                 UserEventType.ConnectGithubLimited => "connect-github-limited",
                 UserEventType.ConnectGitlab => "connect-gitlab",
                 UserEventType.ConnectGitlabApp => "connect-gitlab-app",
+                UserEventType.ConnectRevokeAllTokens => "connect-revoke-all-tokens",
+                UserEventType.ConnectUpdateConnector => "connect-update-connector",
+                UserEventType.ConnectUpdateTriggerDestinations => "connect-update-trigger-destinations",
+                UserEventType.ConnectUpsertInstallation => "connect-upsert-installation",
+                UserEventType.CustomAlertCreated => "custom-alert-created",
+                UserEventType.CustomAlertDeleted => "custom-alert-deleted",
+                UserEventType.CustomAlertUpdated => "custom-alert-updated",
                 UserEventType.CustomSuffixClear => "custom-suffix-clear",
                 UserEventType.CustomSuffixDisable => "custom-suffix-disable",
                 UserEventType.CustomSuffixEnable => "custom-suffix-enable",
@@ -2153,6 +2242,7 @@ namespace Vercel
                 UserEventType.ProjectDelegatedProtectionEnabled => "project-delegated-protection-enabled",
                 UserEventType.ProjectDelegatedProtectionUpdated => "project-delegated-protection-updated",
                 UserEventType.ProjectDelete => "project-delete",
+                UserEventType.ProjectDeploymentPolicyUpdated => "project-deployment-policy-updated",
                 UserEventType.ProjectDeploymentRetentionUpdated => "project-deployment-retention-updated",
                 UserEventType.ProjectDirectoryListing => "project-directory-listing",
                 UserEventType.ProjectDomainDeleted => "project-domain-deleted",
@@ -2161,6 +2251,10 @@ namespace Vercel
                 UserEventType.ProjectDomainUpdated => "project-domain-updated",
                 UserEventType.ProjectDomainVerified => "project-domain-verified",
                 UserEventType.ProjectElasticConcurrencyUpdated => "project-elastic-concurrency-updated",
+                UserEventType.ProjectExpirationLocked => "project-expiration-locked",
+                UserEventType.ProjectExpirationReached => "project-expiration-reached",
+                UserEventType.ProjectExpirationScheduled => "project-expiration-scheduled",
+                UserEventType.ProjectExpirationUnlocked => "project-expiration-unlocked",
                 UserEventType.ProjectExternalRewriteCachingUpdated => "project-external-rewrite-caching-updated",
                 UserEventType.ProjectFrameworkUpdated => "project-framework-updated",
                 UserEventType.ProjectFunctionCpuMemory => "project-function-cpu-memory",
@@ -2289,6 +2383,7 @@ namespace Vercel
                 UserEventType.TeamAvatarUpdate => "team-avatar-update",
                 UserEventType.TeamDefaultBuildMachineUpdated => "team-default-build-machine-updated",
                 UserEventType.TeamDelete => "team-delete",
+                UserEventType.TeamDeploymentPolicyUpdated => "team-deployment-policy-updated",
                 UserEventType.TeamDomainVerificationCreated => "team-domain-verification-created",
                 UserEventType.TeamDomainVerificationDeleted => "team-domain-verification-deleted",
                 UserEventType.TeamDomainVerificationVerified => "team-domain-verification-verified",
@@ -2388,6 +2483,7 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => UserEventType.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => UserEventType.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => UserEventType.AiGatewayByokCredentialUpdated,
+                "ai-omniagent" => UserEventType.AiOmniagent,
                 "alert-rule-created" => UserEventType.AlertRuleCreated,
                 "alert-rule-deleted" => UserEventType.AlertRuleDeleted,
                 "alert-rule-updated" => UserEventType.AlertRuleUpdated,
@@ -2426,6 +2522,7 @@ namespace Vercel
                 "cert-replace" => UserEventType.CertReplace,
                 "cert-system-create" => UserEventType.CertSystemCreate,
                 "concurrent-builds-update" => UserEventType.ConcurrentBuildsUpdate,
+                "connect-attach-project" => UserEventType.ConnectAttachProject,
                 "connect-bitbucket" => UserEventType.ConnectBitbucket,
                 "connect-bitbucket-app" => UserEventType.ConnectBitbucketApp,
                 "connect-configuration-created" => UserEventType.ConnectConfigurationCreated,
@@ -2434,11 +2531,22 @@ namespace Vercel
                 "connect-configuration-linked" => UserEventType.ConnectConfigurationLinked,
                 "connect-configuration-unlinked" => UserEventType.ConnectConfigurationUnlinked,
                 "connect-configuration-updated" => UserEventType.ConnectConfigurationUpdated,
+                "connect-create-connector" => UserEventType.ConnectCreateConnector,
+                "connect-delete-connector" => UserEventType.ConnectDeleteConnector,
+                "connect-delete-installation" => UserEventType.ConnectDeleteInstallation,
+                "connect-detach-project" => UserEventType.ConnectDetachProject,
                 "connect-github" => UserEventType.ConnectGithub,
                 "connect-github-custom-host" => UserEventType.ConnectGithubCustomHost,
                 "connect-github-limited" => UserEventType.ConnectGithubLimited,
                 "connect-gitlab" => UserEventType.ConnectGitlab,
                 "connect-gitlab-app" => UserEventType.ConnectGitlabApp,
+                "connect-revoke-all-tokens" => UserEventType.ConnectRevokeAllTokens,
+                "connect-update-connector" => UserEventType.ConnectUpdateConnector,
+                "connect-update-trigger-destinations" => UserEventType.ConnectUpdateTriggerDestinations,
+                "connect-upsert-installation" => UserEventType.ConnectUpsertInstallation,
+                "custom-alert-created" => UserEventType.CustomAlertCreated,
+                "custom-alert-deleted" => UserEventType.CustomAlertDeleted,
+                "custom-alert-updated" => UserEventType.CustomAlertUpdated,
                 "custom-suffix-clear" => UserEventType.CustomSuffixClear,
                 "custom-suffix-disable" => UserEventType.CustomSuffixDisable,
                 "custom-suffix-enable" => UserEventType.CustomSuffixEnable,
@@ -2630,6 +2738,7 @@ namespace Vercel
                 "project-delegated-protection-enabled" => UserEventType.ProjectDelegatedProtectionEnabled,
                 "project-delegated-protection-updated" => UserEventType.ProjectDelegatedProtectionUpdated,
                 "project-delete" => UserEventType.ProjectDelete,
+                "project-deployment-policy-updated" => UserEventType.ProjectDeploymentPolicyUpdated,
                 "project-deployment-retention-updated" => UserEventType.ProjectDeploymentRetentionUpdated,
                 "project-directory-listing" => UserEventType.ProjectDirectoryListing,
                 "project-domain-deleted" => UserEventType.ProjectDomainDeleted,
@@ -2638,6 +2747,10 @@ namespace Vercel
                 "project-domain-updated" => UserEventType.ProjectDomainUpdated,
                 "project-domain-verified" => UserEventType.ProjectDomainVerified,
                 "project-elastic-concurrency-updated" => UserEventType.ProjectElasticConcurrencyUpdated,
+                "project-expiration-locked" => UserEventType.ProjectExpirationLocked,
+                "project-expiration-reached" => UserEventType.ProjectExpirationReached,
+                "project-expiration-scheduled" => UserEventType.ProjectExpirationScheduled,
+                "project-expiration-unlocked" => UserEventType.ProjectExpirationUnlocked,
                 "project-external-rewrite-caching-updated" => UserEventType.ProjectExternalRewriteCachingUpdated,
                 "project-framework-updated" => UserEventType.ProjectFrameworkUpdated,
                 "project-function-cpu-memory" => UserEventType.ProjectFunctionCpuMemory,
@@ -2766,6 +2879,7 @@ namespace Vercel
                 "team-avatar-update" => UserEventType.TeamAvatarUpdate,
                 "team-default-build-machine-updated" => UserEventType.TeamDefaultBuildMachineUpdated,
                 "team-delete" => UserEventType.TeamDelete,
+                "team-deployment-policy-updated" => UserEventType.TeamDeploymentPolicyUpdated,
                 "team-domain-verification-created" => UserEventType.TeamDomainVerificationCreated,
                 "team-domain-verification-deleted" => UserEventType.TeamDomainVerificationDeleted,
                 "team-domain-verification-verified" => UserEventType.TeamDomainVerificationVerified,

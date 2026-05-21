@@ -23,18 +23,18 @@ namespace Vercel
         public string? Description { get; set; }
 
         /// <summary>
-        /// Unique identifier for the custom environment (format: env_*)
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
         /// Timestamp when the environment was created
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
+
+        /// <summary>
+        /// Timestamp when the environment was last updated
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double UpdatedAt { get; set; }
 
         /// <summary>
         /// URL-friendly name of the environment
@@ -44,11 +44,11 @@ namespace Vercel
         public required string Slug { get; set; }
 
         /// <summary>
-        /// Timestamp when the environment was last updated
+        /// Unique identifier for the custom environment (format: env_*)
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double UpdatedAt { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         /// List of domains associated with this environment
@@ -80,17 +80,17 @@ namespace Vercel
         /// <param name="type">
         /// The type of environment (production, preview, or development)
         /// </param>
-        /// <param name="id">
-        /// Unique identifier for the custom environment (format: env_*)
-        /// </param>
         /// <param name="createdAt">
         /// Timestamp when the environment was created
+        /// </param>
+        /// <param name="updatedAt">
+        /// Timestamp when the environment was last updated
         /// </param>
         /// <param name="slug">
         /// URL-friendly name of the environment
         /// </param>
-        /// <param name="updatedAt">
-        /// Timestamp when the environment was last updated
+        /// <param name="id">
+        /// Unique identifier for the custom environment (format: env_*)
         /// </param>
         /// <param name="description">
         /// Optional description of the environment's purpose
@@ -109,10 +109,10 @@ namespace Vercel
 #endif
         public GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment(
             global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType type,
-            string id,
             double createdAt,
-            string slug,
             double updatedAt,
+            string slug,
+            string id,
             string? description,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain>? domains,
             global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcher? branchMatcher,
@@ -120,10 +120,10 @@ namespace Vercel
         {
             this.Type = type;
             this.Description = description;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.CreatedAt = createdAt;
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.UpdatedAt = updatedAt;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Domains = domains;
             this.BranchMatcher = branchMatcher;
             this.CurrentDeploymentAliases = currentDeploymentAliases;
@@ -135,5 +135,6 @@ namespace Vercel
         public GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment()
         {
         }
+
     }
 }
