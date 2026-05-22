@@ -31171,6 +31171,9 @@
                                       },
                                       "ai_gateway_trace": {
                                         "type": "object"
+                                      },
+                                      "audit_log": {
+                                        "type": "object"
                                       }
                                     },
                                     "type": "object"
@@ -31634,6 +31637,9 @@
                                         "type": "object"
                                       },
                                       "ai_gateway_trace": {
+                                        "type": "object"
+                                      },
+                                      "audit_log": {
                                         "type": "object"
                                       }
                                     },
@@ -32398,6 +32404,9 @@
                             },
                             "ai_gateway_trace": {
                               "type": "object"
+                            },
+                            "audit_log": {
+                              "type": "object"
                             }
                           },
                           "type": "object"
@@ -32858,6 +32867,9 @@
                               "type": "object"
                             },
                             "ai_gateway_trace": {
+                              "type": "object"
+                            },
+                            "audit_log": {
                               "type": "object"
                             }
                           },
@@ -33795,6 +33807,9 @@
                                   },
                                   "ai_gateway_trace": {
                                     "type": "object"
+                                  },
+                                  "audit_log": {
+                                    "type": "object"
                                   }
                                 },
                                 "type": "object"
@@ -34258,6 +34273,9 @@
                                     "type": "object"
                                   },
                                   "ai_gateway_trace": {
+                                    "type": "object"
+                                  },
+                                  "audit_log": {
                                     "type": "object"
                                   }
                                 },
@@ -34925,6 +34943,9 @@
                             },
                             "ai_gateway_trace": {
                               "type": "object"
+                            },
+                            "audit_log": {
+                              "type": "object"
                             }
                           },
                           "type": "object"
@@ -35385,6 +35406,9 @@
                               "type": "object"
                             },
                             "ai_gateway_trace": {
+                              "type": "object"
+                            },
+                            "audit_log": {
                               "type": "object"
                             }
                           },
@@ -35977,6 +36001,9 @@
                             },
                             "ai_gateway_trace": {
                               "type": "object"
+                            },
+                            "audit_log": {
+                              "type": "object"
                             }
                           },
                           "type": "object"
@@ -36437,6 +36464,9 @@
                               "type": "object"
                             },
                             "ai_gateway_trace": {
+                              "type": "object"
+                            },
+                            "audit_log": {
                               "type": "object"
                             }
                           },
@@ -41911,7 +41941,8 @@
             "required": false,
             "schema": {
               "description": "Search flags by their slug or description. Case-insensitive.",
-              "type": "string"
+              "type": "string",
+              "maxLength": 256
             }
           },
           {
@@ -47422,7 +47453,8 @@
             "required": false,
             "schema": {
               "description": "Search flags by their slug or description. Case-insensitive.",
-              "type": "string"
+              "type": "string",
+              "maxLength": 256
             }
           },
           {
@@ -64094,31 +64126,6 @@
                                 ],
                                 "type": "object",
                                 "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
-                              },
-                              "publicDeployments": {
-                                "nullable": true,
-                                "properties": {
-                                  "allowPublicDeployments": {
-                                    "type": "boolean",
-                                    "enum": [
-                                      false,
-                                      true
-                                    ]
-                                  },
-                                  "enabled": {
-                                    "type": "boolean",
-                                    "enum": [
-                                      false,
-                                      true
-                                    ]
-                                  }
-                                },
-                                "required": [
-                                  "allowPublicDeployments",
-                                  "enabled"
-                                ],
-                                "type": "object",
-                                "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
                               }
                             },
                             "type": "object",
@@ -82573,31 +82580,6 @@
                                     ],
                                     "type": "object",
                                     "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
-                                  },
-                                  "publicDeployments": {
-                                    "nullable": true,
-                                    "properties": {
-                                      "allowPublicDeployments": {
-                                        "type": "boolean",
-                                        "enum": [
-                                          false,
-                                          true
-                                        ]
-                                      },
-                                      "enabled": {
-                                        "type": "boolean",
-                                        "enum": [
-                                          false,
-                                          true
-                                        ]
-                                      }
-                                    },
-                                    "required": [
-                                      "allowPublicDeployments",
-                                      "enabled"
-                                    ],
-                                    "type": "object",
-                                    "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
                                   }
                                 },
                                 "type": "object",
@@ -88358,31 +88340,6 @@
                           ],
                           "type": "object",
                           "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
-                        },
-                        "publicDeployments": {
-                          "nullable": true,
-                          "properties": {
-                            "allowPublicDeployments": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            },
-                            "enabled": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            }
-                          },
-                          "required": [
-                            "allowPublicDeployments",
-                            "enabled"
-                          ],
-                          "type": "object",
-                          "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
                         }
                       },
                       "type": "object",
@@ -94378,31 +94335,6 @@
                           ],
                           "type": "object",
                           "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
-                        },
-                        "publicDeployments": {
-                          "nullable": true,
-                          "properties": {
-                            "allowPublicDeployments": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            },
-                            "enabled": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            }
-                          },
-                          "required": [
-                            "allowPublicDeployments",
-                            "enabled"
-                          ],
-                          "type": "object",
-                          "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
                         }
                       },
                       "type": "object",
@@ -99977,31 +99909,6 @@
                           ],
                           "type": "object",
                           "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
-                        },
-                        "publicDeployments": {
-                          "nullable": true,
-                          "properties": {
-                            "allowPublicDeployments": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            },
-                            "enabled": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            }
-                          },
-                          "required": [
-                            "allowPublicDeployments",
-                            "enabled"
-                          ],
-                          "type": "object",
-                          "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
                         }
                       },
                       "type": "object",
@@ -101698,29 +101605,6 @@
                                         "integration"
                                       ]
                                     }
-                                  }
-                                }
-                              },
-                              {
-                                "type": "string"
-                              }
-                            ]
-                          },
-                          "publicDeployments": {
-                            "anyOf": [
-                              {
-                                "type": "object",
-                                "additionalProperties": false,
-                                "required": [
-                                  "enabled",
-                                  "allowPublicDeployments"
-                                ],
-                                "properties": {
-                                  "enabled": {
-                                    "type": "boolean"
-                                  },
-                                  "allowPublicDeployments": {
-                                    "type": "boolean"
                                   }
                                 }
                               },
@@ -115029,31 +114913,6 @@
                           ],
                           "type": "object",
                           "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
-                        },
-                        "publicDeployments": {
-                          "nullable": true,
-                          "properties": {
-                            "allowPublicDeployments": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            },
-                            "enabled": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            }
-                          },
-                          "required": [
-                            "allowPublicDeployments",
-                            "enabled"
-                          ],
-                          "type": "object",
-                          "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
                         }
                       },
                       "type": "object",
@@ -131084,29 +130943,6 @@
                                 "type": "string"
                               }
                             ]
-                          },
-                          "publicDeployments": {
-                            "anyOf": [
-                              {
-                                "type": "object",
-                                "additionalProperties": false,
-                                "required": [
-                                  "enabled",
-                                  "allowPublicDeployments"
-                                ],
-                                "properties": {
-                                  "enabled": {
-                                    "type": "boolean"
-                                  },
-                                  "allowPublicDeployments": {
-                                    "type": "boolean"
-                                  }
-                                }
-                              },
-                              {
-                                "type": "string"
-                              }
-                            ]
                           }
                         }
                       },
@@ -139112,6 +138948,7 @@
               "env-variable-add",
               "env-variable-delete",
               "env-variable-edit",
+              "env-variable-masked",
               "env-variable-read",
               "env-variable-read:cli:dev",
               "env-variable-read:cli:env:add",
@@ -139863,6 +139700,7 @@
               "env-variable-add",
               "env-variable-delete",
               "env-variable-edit",
+              "env-variable-masked",
               "env-variable-read",
               "env-variable-read:cli:dev",
               "env-variable-read:cli:env:add",
@@ -140407,6 +140245,7 @@
                 "env-variable-add",
                 "env-variable-delete",
                 "env-variable-edit",
+                "env-variable-masked",
                 "env-variable-read",
                 "env-variable-read:cli:dev",
                 "env-variable-read:cli:env:add",
@@ -143544,30 +143383,6 @@
                 ],
                 "type": "object",
                 "description": "Restricts which deployment sources are allowed. A deployment passes if its source is in `sources`. Multiple entries are evaluated as OR. `enabled: true` with an empty `sources` list is treated as deny-all."
-              },
-              "publicDeployments": {
-                "properties": {
-                  "allowPublicDeployments": {
-                    "type": "boolean",
-                    "enum": [
-                      false,
-                      true
-                    ]
-                  },
-                  "enabled": {
-                    "type": "boolean",
-                    "enum": [
-                      false,
-                      true
-                    ]
-                  }
-                },
-                "required": [
-                  "allowPublicDeployments",
-                  "enabled"
-                ],
-                "type": "object",
-                "description": "Controls whether deployments may have their source and logs available publicly (i.e. the deployment's `public` boolean set to `true`). This rule does NOT control whether the deployment URL itself requires authentication \u2014 see deployment protection settings for that. - `allowPublicDeployments: false`: deployments must be created with `public: false`. Public deployments are blocked. - `allowPublicDeployments: true`: equivalent to `enabled: false`; here only so the field is always present on an enabled rule."
               }
             },
             "type": "object",

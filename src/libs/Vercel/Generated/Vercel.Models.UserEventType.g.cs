@@ -628,6 +628,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        EnvVariableMasked,
+        /// <summary>
+        /// 
+        /// </summary>
         EnvVariableRead,
         /// <summary>
         /// 
@@ -2121,6 +2125,7 @@ namespace Vercel
                 UserEventType.EnvVariableAdd => "env-variable-add",
                 UserEventType.EnvVariableDelete => "env-variable-delete",
                 UserEventType.EnvVariableEdit => "env-variable-edit",
+                UserEventType.EnvVariableMasked => "env-variable-masked",
                 UserEventType.EnvVariableRead => "env-variable-read",
                 UserEventType.EnvVariableRead_cli_dev => "env-variable-read:cli:dev",
                 UserEventType.EnvVariableRead_cli_env_add => "env-variable-read:cli:env:add",
@@ -2617,6 +2622,7 @@ namespace Vercel
                 "env-variable-add" => UserEventType.EnvVariableAdd,
                 "env-variable-delete" => UserEventType.EnvVariableDelete,
                 "env-variable-edit" => UserEventType.EnvVariableEdit,
+                "env-variable-masked" => UserEventType.EnvVariableMasked,
                 "env-variable-read" => UserEventType.EnvVariableRead,
                 "env-variable-read:cli:dev" => UserEventType.EnvVariableRead_cli_dev,
                 "env-variable-read:cli:env:add" => UserEventType.EnvVariableRead_cli_env_add,

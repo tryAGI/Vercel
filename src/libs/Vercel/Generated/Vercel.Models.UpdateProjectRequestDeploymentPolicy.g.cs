@@ -23,13 +23,6 @@ namespace Vercel
         public global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicyDeploymentSources, string>? DeploymentSources { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicDeployments")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateProjectRequestDeploymentPolicyPublicDeployments, string>))]
-        public global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicyPublicDeployments, string>? PublicDeployments { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -40,18 +33,15 @@ namespace Vercel
         /// </summary>
         /// <param name="gitSources"></param>
         /// <param name="deploymentSources"></param>
-        /// <param name="publicDeployments"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectRequestDeploymentPolicy(
             global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicyGitSources, string>? gitSources,
-            global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicyDeploymentSources, string>? deploymentSources,
-            global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicyPublicDeployments, string>? publicDeployments)
+            global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicyDeploymentSources, string>? deploymentSources)
         {
             this.GitSources = gitSources;
             this.DeploymentSources = deploymentSources;
-            this.PublicDeployments = publicDeployments;
         }
 
         /// <summary>
