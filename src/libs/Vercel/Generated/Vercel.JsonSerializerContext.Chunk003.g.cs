@@ -990,86 +990,186 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateProjectCheckResponseBlocksNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateProjectCheckResponseSourceKindJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateProjectCheckResponseSourceKindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunSourceVariant1KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunSourceVariant1KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunSourceVariant2KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunSourceVariant2KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunSourceVariant3KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunSourceVariant3KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunSourceVariant3ProviderJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunSourceVariant3ProviderNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunRequiresJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunRequiresNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunBlocksJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunBlocksNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunStatusJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunStatusNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunConclusionJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunConclusionNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunSourceVariant1KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunSourceVariant1KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunSourceVariant2KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunSourceVariant2KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunSourceVariant3KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunSourceVariant3KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunSourceVariant3ProviderJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunSourceVariant3ProviderNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunRequiresJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunRequiresNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunBlocksJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunBlocksNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunStatusJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunStatusNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunConclusionJsonConverter),
-            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunConclusionNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseSourceVariant1KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseSourceVariant1KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseSourceVariant2KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseSourceVariant2KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseSourceVariant3KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseSourceVariant3KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseSourceVariant3ProviderJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseSourceVariant3ProviderNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseRequiresJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseRequiresNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseBlocksJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseBlocksNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseStatusJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseStatusNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseConclusionJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseConclusionNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseSourceVariant1KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseSourceVariant1KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseSourceVariant2KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseSourceVariant2KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseSourceVariant3KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseSourceVariant3KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseSourceVariant3ProviderJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseSourceVariant3ProviderNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseRequiresJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseRequiresNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseBlocksJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseBlocksNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseStatusJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseStatusNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseConclusionJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseConclusionNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseSourceVariant1KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseSourceVariant1KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseSourceVariant2KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseSourceVariant2KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseSourceVariant3KindJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseSourceVariant3KindNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseSourceVariant3ProviderJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseSourceVariant3ProviderNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseRequiresJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseRequiresNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseBlocksJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseBlocksNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseStatusJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseStatusNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseConclusionJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1RequiresJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1RequiresNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1BlocksJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1BlocksNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1StatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1StatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1ConclusionJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1ConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant1KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant1KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant2KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant2KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant3KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant3KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant3ProviderJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant3ProviderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant4SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant4SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant4OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant1SourceVariant4OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2RequiresJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2RequiresNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2BlocksJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2BlocksNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2StatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2StatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2ConclusionJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2ConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2SourceVariant1SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2SourceVariant1SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2SourceVariant1OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2SourceVariant1OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2SourceVariant2SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2SourceVariant2SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2SourceVariant2OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListCheckRunsResponseRunVariant2SourceVariant2OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1RequiresJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1RequiresNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1BlocksJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1BlocksNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1StatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1StatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1ConclusionJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1ConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant1KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant1KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant2KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant2KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant3KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant3KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant3ProviderJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant3ProviderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2RequiresJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2RequiresNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2BlocksJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2BlocksNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2StatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2StatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2ConclusionJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2ConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1RequiresJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1RequiresNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1BlocksJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1BlocksNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1StatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1StatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1ConclusionJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1ConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant1KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant1KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant2KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant2KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant3KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant3KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant3ProviderJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant3ProviderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant4SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant4SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant4OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant1SourceVariant4OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2RequiresJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2RequiresNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2BlocksJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2BlocksNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2StatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2StatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2ConclusionJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2ConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2SourceVariant1SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2SourceVariant1SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2SourceVariant1OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2SourceVariant1OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2SourceVariant2SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2SourceVariant2SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2SourceVariant2OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentCheckRunResponseVariant2SourceVariant2OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1RequiresJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1RequiresNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1BlocksJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1BlocksNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1StatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1StatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1ConclusionJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1ConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant1KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant1KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant2KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant2KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant3KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant3KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant3ProviderJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant3ProviderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant4SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant4SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant4OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant4OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2RequiresJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2RequiresNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2BlocksJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2BlocksNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2StatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2StatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2ConclusionJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2ConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant1OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant1OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant2SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant2SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant2OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant2OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1RequiresJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1RequiresNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1BlocksJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1BlocksNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1StatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1StatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1ConclusionJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1ConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant1KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant1KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant2KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant2KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant3KindJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant3KindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant3ProviderJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant3ProviderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant4SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant4SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant4OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant1SourceVariant4OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2RequiresJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2RequiresNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2BlocksJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2BlocksNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2StatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2StatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2ConclusionJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2ConclusionNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2SourceVariant1SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2SourceVariant1SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2SourceVariant1OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2SourceVariant1OriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2SourceVariant2SubKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2SourceVariant2SubKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2SourceVariant2OriginJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2SourceVariant2OriginNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateCheckResponseStatusJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateCheckResponseStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateCheckResponseConclusionJsonConverter),
@@ -4728,11 +4828,21 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateProjectCheckResponseSourceVariant1, global::Vercel.CreateProjectCheckResponseSourceVariant2, global::Vercel.CreateProjectCheckResponseSourceVariant3>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetProjectCheckResponseSourceVariant1, global::Vercel.GetProjectCheckResponseSourceVariant2, global::Vercel.GetProjectCheckResponseSourceVariant3>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectCheckResponseSourceVariant1, global::Vercel.UpdateProjectCheckResponseSourceVariant2, global::Vercel.UpdateProjectCheckResponseSourceVariant3>),
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListCheckRunsResponseRunSourceVariant1, global::Vercel.ListCheckRunsResponseRunSourceVariant2, global::Vercel.ListCheckRunsResponseRunSourceVariant3>),
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant2, global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant3>),
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDeploymentCheckRunResponseSourceVariant1, global::Vercel.CreateDeploymentCheckRunResponseSourceVariant2, global::Vercel.CreateDeploymentCheckRunResponseSourceVariant3>),
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentCheckRunResponseSourceVariant1, global::Vercel.GetDeploymentCheckRunResponseSourceVariant2, global::Vercel.GetDeploymentCheckRunResponseSourceVariant3>),
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant1, global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant2, global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant3>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListCheckRunsResponseRunVariant1, global::Vercel.ListCheckRunsResponseRunVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant1, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant2, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant3, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant4>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant1, global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListDeploymentCheckRunsResponseRunVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant2, global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant3, global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDeploymentCheckRunResponseVariant1, global::Vercel.CreateDeploymentCheckRunResponseVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant1, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant2, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant3, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant4>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant1, global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentCheckRunResponseVariant1, global::Vercel.GetDeploymentCheckRunResponseVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant1, global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant2, global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant3, global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant4>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1, global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateDeploymentCheckRunResponseVariant1, global::Vercel.UpdateDeploymentCheckRunResponseVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant1, global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant2, global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant3, global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant4>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant1, global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant2>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentEventsResponseItemVariant1, global::Vercel.GetDeploymentEventsResponseItemVariant2>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentEventsResponseVariant1, global::Vercel.GetDeploymentEventsResponseVariant2>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant1, global::Vercel.GetDeploymentResponseVariant2>),
@@ -5573,74 +5683,154 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectCheckResponseSourceKind), TypeInfoPropertyName = "UpdateProjectCheckResponseSourceKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteProjectCheckResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListCheckRunsResponseRun>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRun))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListCheckRunsResponseRunSourceVariant1, global::Vercel.ListCheckRunsResponseRunSourceVariant2, global::Vercel.ListCheckRunsResponseRunSourceVariant3>), TypeInfoPropertyName = "OneOfListCheckRunsResponseRunSourceVariant1ListCheckRunsResponseRunSourceVariant2ListCheckRunsResponseRunSourceVariant32")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunSourceVariant1Kind), TypeInfoPropertyName = "ListCheckRunsResponseRunSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunSourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunSourceVariant2Kind), TypeInfoPropertyName = "ListCheckRunsResponseRunSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunSourceVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunSourceVariant3Kind), TypeInfoPropertyName = "ListCheckRunsResponseRunSourceVariant3Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunSourceVariant3Provider), TypeInfoPropertyName = "ListCheckRunsResponseRunSourceVariant3Provider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunRequires), TypeInfoPropertyName = "ListCheckRunsResponseRunRequires2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunBlocks), TypeInfoPropertyName = "ListCheckRunsResponseRunBlocks2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunStatus), TypeInfoPropertyName = "ListCheckRunsResponseRunStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunConclusion), TypeInfoPropertyName = "ListCheckRunsResponseRunConclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.ListCheckRunsResponseRunVariant1, global::Vercel.ListCheckRunsResponseRunVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListCheckRunsResponseRunVariant1, global::Vercel.ListCheckRunsResponseRunVariant2>), TypeInfoPropertyName = "OneOfListCheckRunsResponseRunVariant1ListCheckRunsResponseRunVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1Requires), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1Requires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1Blocks), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1Status), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1Conclusion), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant1, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant2, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant3, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant4>), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1SourceVariant4_63a5231457d83806")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant1Kind), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1SourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant2Kind), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1SourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant3Kind), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1SourceVariant3Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant3Provider), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1SourceVariant3Provider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant4SubKind), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1SourceVariant4SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant4Origin), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1SourceVariant4Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2Requires), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant2Requires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2Blocks), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant2Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2Status), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant2Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2Conclusion), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant2Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant1, global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant2>), TypeInfoPropertyName = "OneOfListCheckRunsResponseRunVariant2SourceVariant1ListCheckRunsResponseRunVariant2SourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant1SubKind), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant2SourceVariant1SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant1Origin), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant2SourceVariant1Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant2SubKind), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant2SourceVariant2SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant2Origin), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant2SourceVariant2Origin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListDeploymentCheckRunsResponseRun>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRun))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant2, global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant3>), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunSourceVariant3_366357299b77d84e")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant1Kind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant2Kind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant3Kind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunSourceVariant3Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunSourceVariant3Provider), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunSourceVariant3Provider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunRequires), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunRequires2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunBlocks), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunBlocks2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunStatus), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunConclusion), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunConclusion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentCheckRunResponseSourceVariant1, global::Vercel.CreateDeploymentCheckRunResponseSourceVariant2, global::Vercel.CreateDeploymentCheckRunResponseSourceVariant3>), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseSourceVariant3_fe578a35c1e07c84")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseSourceVariant1Kind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseSourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseSourceVariant2Kind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseSourceVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseSourceVariant3Kind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseSourceVariant3Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseSourceVariant3Provider), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseSourceVariant3Provider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseRequires), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseRequires2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseBlocks), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseBlocks2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseStatus), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseConclusion), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseConclusion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentCheckRunResponseSourceVariant1, global::Vercel.GetDeploymentCheckRunResponseSourceVariant2, global::Vercel.GetDeploymentCheckRunResponseSourceVariant3>), TypeInfoPropertyName = "GetDeploymentCheckRunResponseSourceVariant3_61c6e29137b5ac27")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseSourceVariant1Kind), TypeInfoPropertyName = "GetDeploymentCheckRunResponseSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseSourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseSourceVariant2Kind), TypeInfoPropertyName = "GetDeploymentCheckRunResponseSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseSourceVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseSourceVariant3Kind), TypeInfoPropertyName = "GetDeploymentCheckRunResponseSourceVariant3Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseSourceVariant3Provider), TypeInfoPropertyName = "GetDeploymentCheckRunResponseSourceVariant3Provider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseRequires), TypeInfoPropertyName = "GetDeploymentCheckRunResponseRequires2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseBlocks), TypeInfoPropertyName = "GetDeploymentCheckRunResponseBlocks2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseStatus), TypeInfoPropertyName = "GetDeploymentCheckRunResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseConclusion), TypeInfoPropertyName = "GetDeploymentCheckRunResponseConclusion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant1, global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant2, global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant3>), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseSourceVariant3_900aec35d2694641")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant1Kind), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant2Kind), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant3Kind), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseSourceVariant3Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseSourceVariant3Provider), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseSourceVariant3Provider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseRequires), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseRequires2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseBlocks), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseBlocks2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseStatus), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseConclusion), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseConclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.ListDeploymentCheckRunsResponseRunVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListDeploymentCheckRunsResponseRunVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunVariant2>), TypeInfoPropertyName = "OneOfListDeploymentCheckRunsResponseRunVariant1ListDeploymentCheckRunsResponseRunVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1Requires), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1Requires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1Blocks), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1Status), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1Conclusion), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant2, global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant3, global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4>), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1SourceVariant4_07f97a87155d0e7e")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant1Kind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1SourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant2Kind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1SourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant3Kind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1SourceVariant3Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant3Provider), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1SourceVariant3Provider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4SubKind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1SourceVariant4SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4Origin), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant1SourceVariant4Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2Requires), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2Requires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2Blocks), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2Status), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2Conclusion), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2>), TypeInfoPropertyName = "OneOfListDeploymentCheckRunsResponseRunVariant2SourceVariant1ListDeploymentCheckRunsResponseRunVariant2SourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1SubKind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2SourceVariant1SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1Origin), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2SourceVariant1Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2SubKind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2SourceVariant2SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2Origin), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2SourceVariant2Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentCheckRunResponseVariant1, global::Vercel.CreateDeploymentCheckRunResponseVariant2>), TypeInfoPropertyName = "OneOfCreateDeploymentCheckRunResponseVariant1CreateDeploymentCheckRunResponseVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1Requires), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1Requires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1Blocks), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1Status), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1Conclusion), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant1, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant2, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant3, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant4>), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant4_ad84c822855afa4d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant1Kind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant2Kind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant3Kind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant3Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant3Provider), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant3Provider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant4SubKind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant4SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant4Origin), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant4Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2Requires), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant2Requires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2Blocks), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant2Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2Status), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant2Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2Conclusion), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant2Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant1, global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant2>), TypeInfoPropertyName = "OneOfCreateDeploymentCheckRunResponseVariant2SourceVariant1CreateDeploymentCheckRunResponseVariant2SourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant1SubKind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant2SourceVariant1SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant1Origin), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant2SourceVariant1Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant2SubKind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant2SourceVariant2SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant2Origin), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant2SourceVariant2Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentCheckRunResponseVariant1, global::Vercel.GetDeploymentCheckRunResponseVariant2>), TypeInfoPropertyName = "OneOfGetDeploymentCheckRunResponseVariant1GetDeploymentCheckRunResponseVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1Requires), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1Requires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1Blocks), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1Status), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1Conclusion), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant1, global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant2, global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant3, global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant4>), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1SourceVariant4_f887211c1272aa25")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant1Kind), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1SourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant2Kind), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1SourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant3Kind), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1SourceVariant3Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant3Provider), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1SourceVariant3Provider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant4SubKind), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1SourceVariant4SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant4Origin), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1SourceVariant4Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2Requires), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant2Requires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2Blocks), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant2Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2Status), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant2Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2Conclusion), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant2Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1, global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2>), TypeInfoPropertyName = "OneOfGetDeploymentCheckRunResponseVariant2SourceVariant1GetDeploymentCheckRunResponseVariant2SourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKind), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant2SourceVariant1SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1Origin), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant2SourceVariant1Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2SubKind), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant2SourceVariant2SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2Origin), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant2SourceVariant2Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateDeploymentCheckRunResponseVariant1, global::Vercel.UpdateDeploymentCheckRunResponseVariant2>), TypeInfoPropertyName = "OneOfUpdateDeploymentCheckRunResponseVariant1UpdateDeploymentCheckRunResponseVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1Requires), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1Requires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1Blocks), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1Status), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1Conclusion), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant1, global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant2, global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant3, global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant4>), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1SourceVariant4_d90a47fab9f59811")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant1Kind), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1SourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant2Kind), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1SourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant3Kind), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1SourceVariant3Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant3Provider), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1SourceVariant3Provider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant4SubKind), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1SourceVariant4SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1SourceVariant4Origin), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant1SourceVariant4Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2Requires), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant2Requires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2Blocks), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant2Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2Status), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant2Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2Conclusion), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant2Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant1, global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant2>), TypeInfoPropertyName = "OneOfUpdateDeploymentCheckRunResponseVariant2SourceVariant1UpdateDeploymentCheckRunResponseVariant2SourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant1SubKind), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant2SourceVariant1SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant1Origin), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant2SourceVariant1Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant2SubKind), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant2SourceVariant2SubKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant2Origin), TypeInfoPropertyName = "UpdateDeploymentCheckRunResponseVariant2SourceVariant2Origin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCheckResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCheckResponseStatus), TypeInfoPropertyName = "CreateCheckResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCheckResponseConclusion), TypeInfoPropertyName = "CreateCheckResponseConclusion2")]
@@ -5716,86 +5906,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseItemVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseItemVariant2Info))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseItemVariant2Type), TypeInfoPropertyName = "GetDeploymentEventsResponseItemVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseItemVariant2Level), TypeInfoPropertyName = "GetDeploymentEventsResponseItemVariant2Level2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentEventsResponseVariant1, global::Vercel.GetDeploymentEventsResponseVariant2>), TypeInfoPropertyName = "OneOfGetDeploymentEventsResponseVariant1GetDeploymentEventsResponseVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant1Type), TypeInfoPropertyName = "GetDeploymentEventsResponseVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant1Payload))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant1PayloadInfo))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant1PayloadProxy))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant1PayloadProxyVercelCache), TypeInfoPropertyName = "GetDeploymentEventsResponseVariant1PayloadProxyVercelCache2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant1PayloadProxyWafAction), TypeInfoPropertyName = "GetDeploymentEventsResponseVariant1PayloadProxyWafAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant2Info))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant2Type), TypeInfoPropertyName = "GetDeploymentEventsResponseVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentEventsResponseVariant2Level), TypeInfoPropertyName = "GetDeploymentEventsResponseVariant2Level2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1, global::Vercel.GetDeploymentResponseVariant2>), TypeInfoPropertyName = "OneOfGetDeploymentResponseVariant1GetDeploymentResponseVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1Build))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant1Build2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1Build2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ProjectSettings))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ProjectSettingsNodeVersion), TypeInfoPropertyName = "GetDeploymentResponseVariant1ProjectSettingsNodeVersion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ProjectSettingsFramework), TypeInfoPropertyName = "GetDeploymentResponseVariant1ProjectSettingsFramework2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ProjectSettingsSpeedInsights))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ProjectSettingsWebAnalytics))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1Integrations))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1IntegrationsStatus), TypeInfoPropertyName = "GetDeploymentResponseVariant1IntegrationsStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1Images))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant1ImagesRemotePattern>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ImagesRemotePattern))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ImagesRemotePatternProtocol), TypeInfoPropertyName = "GetDeploymentResponseVariant1ImagesRemotePatternProtocol2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant1ImagesLocalPattern>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ImagesLocalPattern))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant1ImagesFormat>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ImagesFormat), TypeInfoPropertyName = "GetDeploymentResponseVariant1ImagesFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ImagesContentDispositionType), TypeInfoPropertyName = "GetDeploymentResponseVariant1ImagesContentDispositionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1Creator))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant1Lambda>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1Lambda))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1LambdaReadyState), TypeInfoPropertyName = "GetDeploymentResponseVariant1LambdaReadyState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant1LambdaOutputItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1LambdaOutputItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1Status), TypeInfoPropertyName = "GetDeploymentResponseVariant1Status2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1Team))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant2>), TypeInfoPropertyName = "OneOfGetDeploymentResponseVariant1CustomEnvironmentVariant1GetDeploymentResponseVariant1CustomEnvironmentVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant1Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1CustomEnvironmentVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant1BranchMatcher))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant1BranchMatcherType), TypeInfoPropertyName = "GetDeploymentResponseVariant1CustomEnvironmentVariant1BranchMatcherType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant1Domain>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant1Domain))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant1DomainVerificationItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant1DomainVerificationItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1CustomEnvironmentVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1OomReport), TypeInfoPropertyName = "GetDeploymentResponseVariant1OomReport2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1AliasWarning))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ReadyState), TypeInfoPropertyName = "GetDeploymentResponseVariant1ReadyState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1AliasError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ChecksState), TypeInfoPropertyName = "GetDeploymentResponseVariant1ChecksState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ChecksConclusion), TypeInfoPropertyName = "GetDeploymentResponseVariant1ChecksConclusion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1GitSourceVariant1, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant2, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant3, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant4, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant5, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant6, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant7, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant8, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant9, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant10, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant11, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant12, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant13, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant14, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant15, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant16, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant17>), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant17_22bd2b469c635465")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant1Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant2Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant3Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant4Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant4Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant5))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant5Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant5Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant6))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant6Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant6Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant7))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant7Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant7Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant8))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant8Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant8Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant9))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant9Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant9Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant10))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1GitSourceVariant10Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1GitSourceVariant10Type2")]
     internal sealed partial class SourceGenerationContextChunk003 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
