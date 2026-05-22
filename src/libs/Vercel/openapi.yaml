@@ -31169,9 +31169,6 @@
                                       "ai_gateway": {
                                         "type": "object"
                                       },
-                                      "ai_gateway_trace": {
-                                        "type": "object"
-                                      },
                                       "audit_log": {
                                         "type": "object"
                                       }
@@ -31634,9 +31631,6 @@
                                         "type": "object"
                                       },
                                       "ai_gateway": {
-                                        "type": "object"
-                                      },
-                                      "ai_gateway_trace": {
                                         "type": "object"
                                       },
                                       "audit_log": {
@@ -32402,9 +32396,6 @@
                             "ai_gateway": {
                               "type": "object"
                             },
-                            "ai_gateway_trace": {
-                              "type": "object"
-                            },
                             "audit_log": {
                               "type": "object"
                             }
@@ -32864,9 +32855,6 @@
                               "type": "object"
                             },
                             "ai_gateway": {
-                              "type": "object"
-                            },
-                            "ai_gateway_trace": {
                               "type": "object"
                             },
                             "audit_log": {
@@ -33805,9 +33793,6 @@
                                   "ai_gateway": {
                                     "type": "object"
                                   },
-                                  "ai_gateway_trace": {
-                                    "type": "object"
-                                  },
                                   "audit_log": {
                                     "type": "object"
                                   }
@@ -34270,9 +34255,6 @@
                                     "type": "object"
                                   },
                                   "ai_gateway": {
-                                    "type": "object"
-                                  },
-                                  "ai_gateway_trace": {
                                     "type": "object"
                                   },
                                   "audit_log": {
@@ -34941,9 +34923,6 @@
                             "ai_gateway": {
                               "type": "object"
                             },
-                            "ai_gateway_trace": {
-                              "type": "object"
-                            },
                             "audit_log": {
                               "type": "object"
                             }
@@ -35403,9 +35382,6 @@
                               "type": "object"
                             },
                             "ai_gateway": {
-                              "type": "object"
-                            },
-                            "ai_gateway_trace": {
                               "type": "object"
                             },
                             "audit_log": {
@@ -35999,9 +35975,6 @@
                             "ai_gateway": {
                               "type": "object"
                             },
-                            "ai_gateway_trace": {
-                              "type": "object"
-                            },
                             "audit_log": {
                               "type": "object"
                             }
@@ -36461,9 +36434,6 @@
                               "type": "object"
                             },
                             "ai_gateway": {
-                              "type": "object"
-                            },
-                            "ai_gateway_trace": {
                               "type": "object"
                             },
                             "audit_log": {
@@ -143591,6 +143561,11 @@
             "type": "number",
             "description": "UNIX timestamp (in milliseconds) when the Team was created.",
             "example": 1630748523395
+          },
+          "parentId": {
+            "type": "string",
+            "description": "The organizationId for child teams created under an organization.",
+            "example": "org_nllPyCtREAqxxdyFKbbMDlxd"
           }
         },
         "required": [
@@ -143926,6 +143901,11 @@
             "type": "number",
             "description": "UNIX timestamp (in milliseconds) when the Team was created.",
             "example": 1630748523395
+          },
+          "parentId": {
+            "type": "string",
+            "description": "The organizationId for child teams created under an organization.",
+            "example": "org_nllPyCtREAqxxdyFKbbMDlxd"
           }
         },
         "required": [
