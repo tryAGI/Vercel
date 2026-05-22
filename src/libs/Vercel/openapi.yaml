@@ -7386,183 +7386,355 @@
                   "properties": {
                     "runs": {
                       "items": {
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "checkId": {
-                            "type": "string"
-                          },
-                          "ownerId": {
-                            "type": "string"
-                          },
-                          "deploymentId": {
-                            "type": "string"
-                          },
-                          "projectId": {
-                            "type": "string"
-                          },
-                          "source": {
-                            "oneOf": [
-                              {
-                                "properties": {
-                                  "kind": {
-                                    "type": "string",
-                                    "enum": [
-                                      "integration"
-                                    ]
-                                  },
-                                  "integrationId": {
-                                    "type": "string"
-                                  },
-                                  "integrationConfigurationId": {
-                                    "type": "string"
-                                  },
-                                  "resourceId": {
-                                    "type": "string"
-                                  },
-                                  "externalResourceId": {
-                                    "type": "string"
-                                  }
+                        "oneOf": [
+                          {
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "ownerId": {
+                                "type": "string"
+                              },
+                              "deploymentId": {
+                                "type": "string"
+                              },
+                              "projectId": {
+                                "type": "string"
+                              },
+                              "requires": {
+                                "type": "string",
+                                "enum": [
+                                  "build-ready",
+                                  "deployment-url",
+                                  "none"
+                                ]
+                              },
+                              "blocks": {
+                                "type": "string",
+                                "enum": [
+                                  "none",
+                                  "build-start",
+                                  "deployment-start",
+                                  "deployment-alias",
+                                  "deployment-promotion"
+                                ]
+                              },
+                              "targets": {
+                                "items": {
+                                  "type": "string"
                                 },
-                                "required": [
-                                  "integrationConfigurationId",
-                                  "integrationId",
-                                  "kind"
-                                ],
+                                "type": "array"
+                              },
+                              "status": {
+                                "type": "string",
+                                "enum": [
+                                  "queued",
+                                  "running",
+                                  "completed"
+                                ]
+                              },
+                              "conclusion": {
+                                "type": "string",
+                                "enum": [
+                                  "timeout",
+                                  "canceled",
+                                  "skipped",
+                                  "failed",
+                                  "neutral",
+                                  "succeeded"
+                                ]
+                              },
+                              "conclusionText": {
+                                "type": "string"
+                              },
+                              "externalId": {
+                                "type": "string"
+                              },
+                              "externalUrl": {
+                                "type": "string"
+                              },
+                              "output": {
+                                "additionalProperties": true,
                                 "type": "object"
                               },
-                              {
-                                "properties": {
-                                  "kind": {
-                                    "type": "string",
-                                    "enum": [
-                                      "webhook"
-                                    ]
-                                  },
-                                  "webhookId": {
-                                    "type": "string"
-                                  }
-                                },
-                                "required": [
-                                  "kind"
-                                ],
-                                "type": "object"
+                              "timeout": {
+                                "type": "number"
                               },
-                              {
-                                "properties": {
-                                  "kind": {
-                                    "type": "string",
-                                    "enum": [
-                                      "git-provider"
-                                    ]
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "updatedAt": {
+                                "type": "number"
+                              },
+                              "completedAt": {
+                                "type": "number"
+                              },
+                              "checkId": {
+                                "type": "string"
+                              },
+                              "source": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "integration"
+                                        ]
+                                      },
+                                      "integrationId": {
+                                        "type": "string"
+                                      },
+                                      "integrationConfigurationId": {
+                                        "type": "string"
+                                      },
+                                      "resourceId": {
+                                        "type": "string"
+                                      },
+                                      "externalResourceId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "integrationConfigurationId",
+                                      "integrationId",
+                                      "kind"
+                                    ],
+                                    "type": "object"
                                   },
-                                  "provider": {
-                                    "type": "string",
-                                    "enum": [
-                                      "github",
-                                      "gitlab",
-                                      "bitbucket"
-                                    ]
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "webhook"
+                                        ]
+                                      },
+                                      "webhookId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind"
+                                    ],
+                                    "type": "object"
                                   },
-                                  "externalCheckName": {
-                                    "type": "string"
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "git-provider"
+                                        ]
+                                      },
+                                      "provider": {
+                                        "type": "string",
+                                        "enum": [
+                                          "github",
+                                          "gitlab",
+                                          "bitbucket"
+                                        ]
+                                      },
+                                      "externalCheckName": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "externalCheckName",
+                                      "kind",
+                                      "provider"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "subKind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "vercel-native-check"
+                                        ]
+                                      },
+                                      "origin": {
+                                        "type": "string",
+                                        "enum": [
+                                          "platform",
+                                          "api"
+                                        ]
+                                      }
+                                    },
+                                    "type": "object",
+                                    "description": "Native lint/typecheck \u2014 check definition and check run `source`."
                                   }
-                                },
-                                "required": [
-                                  "externalCheckName",
-                                  "kind",
-                                  "provider"
-                                ],
-                                "type": "object"
+                                ]
                               }
-                            ]
-                          },
-                          "requires": {
-                            "type": "string",
-                            "enum": [
-                              "build-ready",
-                              "deployment-url",
-                              "none"
-                            ]
-                          },
-                          "blocks": {
-                            "type": "string",
-                            "enum": [
-                              "none",
-                              "build-start",
-                              "deployment-start",
-                              "deployment-alias",
-                              "deployment-promotion"
-                            ]
-                          },
-                          "targets": {
-                            "items": {
-                              "type": "string"
                             },
-                            "type": "array"
-                          },
-                          "status": {
-                            "type": "string",
-                            "enum": [
-                              "queued",
-                              "running",
-                              "completed"
-                            ]
-                          },
-                          "conclusion": {
-                            "type": "string",
-                            "enum": [
+                            "required": [
+                              "checkId",
+                              "createdAt",
+                              "deploymentId",
+                              "id",
+                              "name",
+                              "ownerId",
+                              "source",
+                              "status",
                               "timeout",
-                              "canceled",
-                              "skipped",
-                              "failed",
-                              "neutral",
-                              "succeeded"
-                            ]
+                              "updatedAt"
+                            ],
+                            "type": "object",
+                            "description": "Check run backed by a project-level `check` definition."
                           },
-                          "conclusionText": {
-                            "type": "string"
-                          },
-                          "externalId": {
-                            "type": "string"
-                          },
-                          "externalUrl": {
-                            "type": "string"
-                          },
-                          "output": {
-                            "additionalProperties": true,
-                            "type": "object"
-                          },
-                          "timeout": {
-                            "type": "number"
-                          },
-                          "createdAt": {
-                            "type": "number"
-                          },
-                          "updatedAt": {
-                            "type": "number"
-                          },
-                          "completedAt": {
-                            "type": "number"
+                          {
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "ownerId": {
+                                "type": "string"
+                              },
+                              "deploymentId": {
+                                "type": "string"
+                              },
+                              "projectId": {
+                                "type": "string"
+                              },
+                              "requires": {
+                                "type": "string",
+                                "enum": [
+                                  "build-ready",
+                                  "deployment-url",
+                                  "none"
+                                ]
+                              },
+                              "blocks": {
+                                "type": "string",
+                                "enum": [
+                                  "none",
+                                  "build-start",
+                                  "deployment-start",
+                                  "deployment-alias",
+                                  "deployment-promotion"
+                                ]
+                              },
+                              "targets": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
+                              "status": {
+                                "type": "string",
+                                "enum": [
+                                  "queued",
+                                  "running",
+                                  "completed"
+                                ]
+                              },
+                              "conclusion": {
+                                "type": "string",
+                                "enum": [
+                                  "timeout",
+                                  "canceled",
+                                  "skipped",
+                                  "failed",
+                                  "neutral",
+                                  "succeeded"
+                                ]
+                              },
+                              "conclusionText": {
+                                "type": "string"
+                              },
+                              "externalId": {
+                                "type": "string"
+                              },
+                              "externalUrl": {
+                                "type": "string"
+                              },
+                              "output": {
+                                "additionalProperties": true,
+                                "type": "object"
+                              },
+                              "timeout": {
+                                "type": "number"
+                              },
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "updatedAt": {
+                                "type": "number"
+                              },
+                              "completedAt": {
+                                "type": "number"
+                              },
+                              "source": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "subKind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "vercel-ci"
+                                        ]
+                                      },
+                                      "origin": {
+                                        "type": "string",
+                                        "enum": [
+                                          "config"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "origin",
+                                      "subKind"
+                                    ],
+                                    "type": "object",
+                                    "description": "Config-driven CI task \u2014 check run `source` only (no parent check)."
+                                  },
+                                  {
+                                    "properties": {
+                                      "subKind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "vercel-ci-sentinel"
+                                        ]
+                                      },
+                                      "origin": {
+                                        "type": "string",
+                                        "enum": [
+                                          "platform"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "origin",
+                                      "subKind"
+                                    ],
+                                    "type": "object",
+                                    "description": "CI sentinel \u2014 check run `source` only (no parent check)."
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "createdAt",
+                              "deploymentId",
+                              "id",
+                              "name",
+                              "ownerId",
+                              "source",
+                              "status",
+                              "timeout",
+                              "updatedAt"
+                            ],
+                            "type": "object",
+                            "description": "Vercel CI check run without a parent `check` (no `checkId` field)."
                           }
-                        },
-                        "required": [
-                          "checkId",
-                          "createdAt",
-                          "deploymentId",
-                          "id",
-                          "name",
-                          "ownerId",
-                          "source",
-                          "status",
-                          "timeout",
-                          "updatedAt"
-                        ],
-                        "type": "object"
+                        ]
                       },
                       "type": "array"
                     }
@@ -7651,183 +7823,355 @@
                   "properties": {
                     "runs": {
                       "items": {
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "checkId": {
-                            "type": "string"
-                          },
-                          "ownerId": {
-                            "type": "string"
-                          },
-                          "deploymentId": {
-                            "type": "string"
-                          },
-                          "projectId": {
-                            "type": "string"
-                          },
-                          "source": {
-                            "oneOf": [
-                              {
-                                "properties": {
-                                  "kind": {
-                                    "type": "string",
-                                    "enum": [
-                                      "integration"
-                                    ]
-                                  },
-                                  "integrationId": {
-                                    "type": "string"
-                                  },
-                                  "integrationConfigurationId": {
-                                    "type": "string"
-                                  },
-                                  "resourceId": {
-                                    "type": "string"
-                                  },
-                                  "externalResourceId": {
-                                    "type": "string"
-                                  }
+                        "oneOf": [
+                          {
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "ownerId": {
+                                "type": "string"
+                              },
+                              "deploymentId": {
+                                "type": "string"
+                              },
+                              "projectId": {
+                                "type": "string"
+                              },
+                              "requires": {
+                                "type": "string",
+                                "enum": [
+                                  "build-ready",
+                                  "deployment-url",
+                                  "none"
+                                ]
+                              },
+                              "blocks": {
+                                "type": "string",
+                                "enum": [
+                                  "none",
+                                  "build-start",
+                                  "deployment-start",
+                                  "deployment-alias",
+                                  "deployment-promotion"
+                                ]
+                              },
+                              "targets": {
+                                "items": {
+                                  "type": "string"
                                 },
-                                "required": [
-                                  "integrationConfigurationId",
-                                  "integrationId",
-                                  "kind"
-                                ],
+                                "type": "array"
+                              },
+                              "status": {
+                                "type": "string",
+                                "enum": [
+                                  "queued",
+                                  "running",
+                                  "completed"
+                                ]
+                              },
+                              "conclusion": {
+                                "type": "string",
+                                "enum": [
+                                  "timeout",
+                                  "canceled",
+                                  "skipped",
+                                  "failed",
+                                  "neutral",
+                                  "succeeded"
+                                ]
+                              },
+                              "conclusionText": {
+                                "type": "string"
+                              },
+                              "externalId": {
+                                "type": "string"
+                              },
+                              "externalUrl": {
+                                "type": "string"
+                              },
+                              "output": {
+                                "additionalProperties": true,
                                 "type": "object"
                               },
-                              {
-                                "properties": {
-                                  "kind": {
-                                    "type": "string",
-                                    "enum": [
-                                      "webhook"
-                                    ]
-                                  },
-                                  "webhookId": {
-                                    "type": "string"
-                                  }
-                                },
-                                "required": [
-                                  "kind"
-                                ],
-                                "type": "object"
+                              "timeout": {
+                                "type": "number"
                               },
-                              {
-                                "properties": {
-                                  "kind": {
-                                    "type": "string",
-                                    "enum": [
-                                      "git-provider"
-                                    ]
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "updatedAt": {
+                                "type": "number"
+                              },
+                              "completedAt": {
+                                "type": "number"
+                              },
+                              "checkId": {
+                                "type": "string"
+                              },
+                              "source": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "integration"
+                                        ]
+                                      },
+                                      "integrationId": {
+                                        "type": "string"
+                                      },
+                                      "integrationConfigurationId": {
+                                        "type": "string"
+                                      },
+                                      "resourceId": {
+                                        "type": "string"
+                                      },
+                                      "externalResourceId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "integrationConfigurationId",
+                                      "integrationId",
+                                      "kind"
+                                    ],
+                                    "type": "object"
                                   },
-                                  "provider": {
-                                    "type": "string",
-                                    "enum": [
-                                      "github",
-                                      "gitlab",
-                                      "bitbucket"
-                                    ]
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "webhook"
+                                        ]
+                                      },
+                                      "webhookId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind"
+                                    ],
+                                    "type": "object"
                                   },
-                                  "externalCheckName": {
-                                    "type": "string"
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "git-provider"
+                                        ]
+                                      },
+                                      "provider": {
+                                        "type": "string",
+                                        "enum": [
+                                          "github",
+                                          "gitlab",
+                                          "bitbucket"
+                                        ]
+                                      },
+                                      "externalCheckName": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "externalCheckName",
+                                      "kind",
+                                      "provider"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "subKind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "vercel-native-check"
+                                        ]
+                                      },
+                                      "origin": {
+                                        "type": "string",
+                                        "enum": [
+                                          "platform",
+                                          "api"
+                                        ]
+                                      }
+                                    },
+                                    "type": "object",
+                                    "description": "Native lint/typecheck \u2014 check definition and check run `source`."
                                   }
-                                },
-                                "required": [
-                                  "externalCheckName",
-                                  "kind",
-                                  "provider"
-                                ],
-                                "type": "object"
+                                ]
                               }
-                            ]
-                          },
-                          "requires": {
-                            "type": "string",
-                            "enum": [
-                              "build-ready",
-                              "deployment-url",
-                              "none"
-                            ]
-                          },
-                          "blocks": {
-                            "type": "string",
-                            "enum": [
-                              "none",
-                              "build-start",
-                              "deployment-start",
-                              "deployment-alias",
-                              "deployment-promotion"
-                            ]
-                          },
-                          "targets": {
-                            "items": {
-                              "type": "string"
                             },
-                            "type": "array"
-                          },
-                          "status": {
-                            "type": "string",
-                            "enum": [
-                              "queued",
-                              "running",
-                              "completed"
-                            ]
-                          },
-                          "conclusion": {
-                            "type": "string",
-                            "enum": [
+                            "required": [
+                              "checkId",
+                              "createdAt",
+                              "deploymentId",
+                              "id",
+                              "name",
+                              "ownerId",
+                              "source",
+                              "status",
                               "timeout",
-                              "canceled",
-                              "skipped",
-                              "failed",
-                              "neutral",
-                              "succeeded"
-                            ]
+                              "updatedAt"
+                            ],
+                            "type": "object",
+                            "description": "Check run backed by a project-level `check` definition."
                           },
-                          "conclusionText": {
-                            "type": "string"
-                          },
-                          "externalId": {
-                            "type": "string"
-                          },
-                          "externalUrl": {
-                            "type": "string"
-                          },
-                          "output": {
-                            "additionalProperties": true,
-                            "type": "object"
-                          },
-                          "timeout": {
-                            "type": "number"
-                          },
-                          "createdAt": {
-                            "type": "number"
-                          },
-                          "updatedAt": {
-                            "type": "number"
-                          },
-                          "completedAt": {
-                            "type": "number"
+                          {
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "ownerId": {
+                                "type": "string"
+                              },
+                              "deploymentId": {
+                                "type": "string"
+                              },
+                              "projectId": {
+                                "type": "string"
+                              },
+                              "requires": {
+                                "type": "string",
+                                "enum": [
+                                  "build-ready",
+                                  "deployment-url",
+                                  "none"
+                                ]
+                              },
+                              "blocks": {
+                                "type": "string",
+                                "enum": [
+                                  "none",
+                                  "build-start",
+                                  "deployment-start",
+                                  "deployment-alias",
+                                  "deployment-promotion"
+                                ]
+                              },
+                              "targets": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
+                              "status": {
+                                "type": "string",
+                                "enum": [
+                                  "queued",
+                                  "running",
+                                  "completed"
+                                ]
+                              },
+                              "conclusion": {
+                                "type": "string",
+                                "enum": [
+                                  "timeout",
+                                  "canceled",
+                                  "skipped",
+                                  "failed",
+                                  "neutral",
+                                  "succeeded"
+                                ]
+                              },
+                              "conclusionText": {
+                                "type": "string"
+                              },
+                              "externalId": {
+                                "type": "string"
+                              },
+                              "externalUrl": {
+                                "type": "string"
+                              },
+                              "output": {
+                                "additionalProperties": true,
+                                "type": "object"
+                              },
+                              "timeout": {
+                                "type": "number"
+                              },
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "updatedAt": {
+                                "type": "number"
+                              },
+                              "completedAt": {
+                                "type": "number"
+                              },
+                              "source": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "subKind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "vercel-ci"
+                                        ]
+                                      },
+                                      "origin": {
+                                        "type": "string",
+                                        "enum": [
+                                          "config"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "origin",
+                                      "subKind"
+                                    ],
+                                    "type": "object",
+                                    "description": "Config-driven CI task \u2014 check run `source` only (no parent check)."
+                                  },
+                                  {
+                                    "properties": {
+                                      "subKind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "vercel-ci-sentinel"
+                                        ]
+                                      },
+                                      "origin": {
+                                        "type": "string",
+                                        "enum": [
+                                          "platform"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "origin",
+                                      "subKind"
+                                    ],
+                                    "type": "object",
+                                    "description": "CI sentinel \u2014 check run `source` only (no parent check)."
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "createdAt",
+                              "deploymentId",
+                              "id",
+                              "name",
+                              "ownerId",
+                              "source",
+                              "status",
+                              "timeout",
+                              "updatedAt"
+                            ],
+                            "type": "object",
+                            "description": "Vercel CI check run without a parent `check` (no `checkId` field)."
                           }
-                        },
-                        "required": [
-                          "checkId",
-                          "createdAt",
-                          "deploymentId",
-                          "id",
-                          "name",
-                          "ownerId",
-                          "source",
-                          "status",
-                          "timeout",
-                          "updatedAt"
-                        ],
-                        "type": "object"
+                        ]
                       },
                       "type": "array"
                     }
@@ -7900,183 +8244,355 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "checkId": {
-                      "type": "string"
-                    },
-                    "ownerId": {
-                      "type": "string"
-                    },
-                    "deploymentId": {
-                      "type": "string"
-                    },
-                    "projectId": {
-                      "type": "string"
-                    },
-                    "source": {
-                      "oneOf": [
-                        {
-                          "properties": {
-                            "kind": {
-                              "type": "string",
-                              "enum": [
-                                "integration"
-                              ]
-                            },
-                            "integrationId": {
-                              "type": "string"
-                            },
-                            "integrationConfigurationId": {
-                              "type": "string"
-                            },
-                            "resourceId": {
-                              "type": "string"
-                            },
-                            "externalResourceId": {
-                              "type": "string"
-                            }
+                  "oneOf": [
+                    {
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "ownerId": {
+                          "type": "string"
+                        },
+                        "deploymentId": {
+                          "type": "string"
+                        },
+                        "projectId": {
+                          "type": "string"
+                        },
+                        "requires": {
+                          "type": "string",
+                          "enum": [
+                            "build-ready",
+                            "deployment-url",
+                            "none"
+                          ]
+                        },
+                        "blocks": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "build-start",
+                            "deployment-start",
+                            "deployment-alias",
+                            "deployment-promotion"
+                          ]
+                        },
+                        "targets": {
+                          "items": {
+                            "type": "string"
                           },
-                          "required": [
-                            "integrationConfigurationId",
-                            "integrationId",
-                            "kind"
-                          ],
+                          "type": "array"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "queued",
+                            "running",
+                            "completed"
+                          ]
+                        },
+                        "conclusion": {
+                          "type": "string",
+                          "enum": [
+                            "timeout",
+                            "canceled",
+                            "skipped",
+                            "failed",
+                            "neutral",
+                            "succeeded"
+                          ]
+                        },
+                        "conclusionText": {
+                          "type": "string"
+                        },
+                        "externalId": {
+                          "type": "string"
+                        },
+                        "externalUrl": {
+                          "type": "string"
+                        },
+                        "output": {
+                          "additionalProperties": true,
                           "type": "object"
                         },
-                        {
-                          "properties": {
-                            "kind": {
-                              "type": "string",
-                              "enum": [
-                                "webhook"
-                              ]
-                            },
-                            "webhookId": {
-                              "type": "string"
-                            }
-                          },
-                          "required": [
-                            "kind"
-                          ],
-                          "type": "object"
+                        "timeout": {
+                          "type": "number"
                         },
-                        {
-                          "properties": {
-                            "kind": {
-                              "type": "string",
-                              "enum": [
-                                "git-provider"
-                              ]
+                        "createdAt": {
+                          "type": "number"
+                        },
+                        "updatedAt": {
+                          "type": "number"
+                        },
+                        "completedAt": {
+                          "type": "number"
+                        },
+                        "checkId": {
+                          "type": "string"
+                        },
+                        "source": {
+                          "oneOf": [
+                            {
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "integration"
+                                  ]
+                                },
+                                "integrationId": {
+                                  "type": "string"
+                                },
+                                "integrationConfigurationId": {
+                                  "type": "string"
+                                },
+                                "resourceId": {
+                                  "type": "string"
+                                },
+                                "externalResourceId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "integrationConfigurationId",
+                                "integrationId",
+                                "kind"
+                              ],
+                              "type": "object"
                             },
-                            "provider": {
-                              "type": "string",
-                              "enum": [
-                                "github",
-                                "gitlab",
-                                "bitbucket"
-                              ]
+                            {
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "webhook"
+                                  ]
+                                },
+                                "webhookId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "kind"
+                              ],
+                              "type": "object"
                             },
-                            "externalCheckName": {
-                              "type": "string"
+                            {
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "git-provider"
+                                  ]
+                                },
+                                "provider": {
+                                  "type": "string",
+                                  "enum": [
+                                    "github",
+                                    "gitlab",
+                                    "bitbucket"
+                                  ]
+                                },
+                                "externalCheckName": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "externalCheckName",
+                                "kind",
+                                "provider"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "subKind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "vercel-native-check"
+                                  ]
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "enum": [
+                                    "platform",
+                                    "api"
+                                  ]
+                                }
+                              },
+                              "type": "object",
+                              "description": "Native lint/typecheck \u2014 check definition and check run `source`."
                             }
-                          },
-                          "required": [
-                            "externalCheckName",
-                            "kind",
-                            "provider"
-                          ],
-                          "type": "object"
+                          ]
                         }
-                      ]
-                    },
-                    "requires": {
-                      "type": "string",
-                      "enum": [
-                        "build-ready",
-                        "deployment-url",
-                        "none"
-                      ]
-                    },
-                    "blocks": {
-                      "type": "string",
-                      "enum": [
-                        "none",
-                        "build-start",
-                        "deployment-start",
-                        "deployment-alias",
-                        "deployment-promotion"
-                      ]
-                    },
-                    "targets": {
-                      "items": {
-                        "type": "string"
                       },
-                      "type": "array"
-                    },
-                    "status": {
-                      "type": "string",
-                      "enum": [
-                        "queued",
-                        "running",
-                        "completed"
-                      ]
-                    },
-                    "conclusion": {
-                      "type": "string",
-                      "enum": [
+                      "required": [
+                        "checkId",
+                        "createdAt",
+                        "deploymentId",
+                        "id",
+                        "name",
+                        "ownerId",
+                        "source",
+                        "status",
                         "timeout",
-                        "canceled",
-                        "skipped",
-                        "failed",
-                        "neutral",
-                        "succeeded"
-                      ]
+                        "updatedAt"
+                      ],
+                      "type": "object",
+                      "description": "Check run backed by a project-level `check` definition."
                     },
-                    "conclusionText": {
-                      "type": "string"
-                    },
-                    "externalId": {
-                      "type": "string"
-                    },
-                    "externalUrl": {
-                      "type": "string"
-                    },
-                    "output": {
-                      "additionalProperties": true,
-                      "type": "object"
-                    },
-                    "timeout": {
-                      "type": "number"
-                    },
-                    "createdAt": {
-                      "type": "number"
-                    },
-                    "updatedAt": {
-                      "type": "number"
-                    },
-                    "completedAt": {
-                      "type": "number"
+                    {
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "ownerId": {
+                          "type": "string"
+                        },
+                        "deploymentId": {
+                          "type": "string"
+                        },
+                        "projectId": {
+                          "type": "string"
+                        },
+                        "requires": {
+                          "type": "string",
+                          "enum": [
+                            "build-ready",
+                            "deployment-url",
+                            "none"
+                          ]
+                        },
+                        "blocks": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "build-start",
+                            "deployment-start",
+                            "deployment-alias",
+                            "deployment-promotion"
+                          ]
+                        },
+                        "targets": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "queued",
+                            "running",
+                            "completed"
+                          ]
+                        },
+                        "conclusion": {
+                          "type": "string",
+                          "enum": [
+                            "timeout",
+                            "canceled",
+                            "skipped",
+                            "failed",
+                            "neutral",
+                            "succeeded"
+                          ]
+                        },
+                        "conclusionText": {
+                          "type": "string"
+                        },
+                        "externalId": {
+                          "type": "string"
+                        },
+                        "externalUrl": {
+                          "type": "string"
+                        },
+                        "output": {
+                          "additionalProperties": true,
+                          "type": "object"
+                        },
+                        "timeout": {
+                          "type": "number"
+                        },
+                        "createdAt": {
+                          "type": "number"
+                        },
+                        "updatedAt": {
+                          "type": "number"
+                        },
+                        "completedAt": {
+                          "type": "number"
+                        },
+                        "source": {
+                          "oneOf": [
+                            {
+                              "properties": {
+                                "subKind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "vercel-ci"
+                                  ]
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "enum": [
+                                    "config"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "origin",
+                                "subKind"
+                              ],
+                              "type": "object",
+                              "description": "Config-driven CI task \u2014 check run `source` only (no parent check)."
+                            },
+                            {
+                              "properties": {
+                                "subKind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "vercel-ci-sentinel"
+                                  ]
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "enum": [
+                                    "platform"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "origin",
+                                "subKind"
+                              ],
+                              "type": "object",
+                              "description": "CI sentinel \u2014 check run `source` only (no parent check)."
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "createdAt",
+                        "deploymentId",
+                        "id",
+                        "name",
+                        "ownerId",
+                        "source",
+                        "status",
+                        "timeout",
+                        "updatedAt"
+                      ],
+                      "type": "object",
+                      "description": "Vercel CI check run without a parent `check` (no `checkId` field)."
                     }
-                  },
-                  "required": [
-                    "checkId",
-                    "createdAt",
-                    "deploymentId",
-                    "id",
-                    "name",
-                    "ownerId",
-                    "source",
-                    "status",
-                    "timeout",
-                    "updatedAt"
-                  ],
-                  "type": "object"
+                  ]
                 }
               }
             }
@@ -8163,183 +8679,355 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "checkId": {
-                      "type": "string"
-                    },
-                    "ownerId": {
-                      "type": "string"
-                    },
-                    "deploymentId": {
-                      "type": "string"
-                    },
-                    "projectId": {
-                      "type": "string"
-                    },
-                    "source": {
-                      "oneOf": [
-                        {
-                          "properties": {
-                            "kind": {
-                              "type": "string",
-                              "enum": [
-                                "integration"
-                              ]
-                            },
-                            "integrationId": {
-                              "type": "string"
-                            },
-                            "integrationConfigurationId": {
-                              "type": "string"
-                            },
-                            "resourceId": {
-                              "type": "string"
-                            },
-                            "externalResourceId": {
-                              "type": "string"
-                            }
+                  "oneOf": [
+                    {
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "ownerId": {
+                          "type": "string"
+                        },
+                        "deploymentId": {
+                          "type": "string"
+                        },
+                        "projectId": {
+                          "type": "string"
+                        },
+                        "requires": {
+                          "type": "string",
+                          "enum": [
+                            "build-ready",
+                            "deployment-url",
+                            "none"
+                          ]
+                        },
+                        "blocks": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "build-start",
+                            "deployment-start",
+                            "deployment-alias",
+                            "deployment-promotion"
+                          ]
+                        },
+                        "targets": {
+                          "items": {
+                            "type": "string"
                           },
-                          "required": [
-                            "integrationConfigurationId",
-                            "integrationId",
-                            "kind"
-                          ],
+                          "type": "array"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "queued",
+                            "running",
+                            "completed"
+                          ]
+                        },
+                        "conclusion": {
+                          "type": "string",
+                          "enum": [
+                            "timeout",
+                            "canceled",
+                            "skipped",
+                            "failed",
+                            "neutral",
+                            "succeeded"
+                          ]
+                        },
+                        "conclusionText": {
+                          "type": "string"
+                        },
+                        "externalId": {
+                          "type": "string"
+                        },
+                        "externalUrl": {
+                          "type": "string"
+                        },
+                        "output": {
+                          "additionalProperties": true,
                           "type": "object"
                         },
-                        {
-                          "properties": {
-                            "kind": {
-                              "type": "string",
-                              "enum": [
-                                "webhook"
-                              ]
-                            },
-                            "webhookId": {
-                              "type": "string"
-                            }
-                          },
-                          "required": [
-                            "kind"
-                          ],
-                          "type": "object"
+                        "timeout": {
+                          "type": "number"
                         },
-                        {
-                          "properties": {
-                            "kind": {
-                              "type": "string",
-                              "enum": [
-                                "git-provider"
-                              ]
+                        "createdAt": {
+                          "type": "number"
+                        },
+                        "updatedAt": {
+                          "type": "number"
+                        },
+                        "completedAt": {
+                          "type": "number"
+                        },
+                        "checkId": {
+                          "type": "string"
+                        },
+                        "source": {
+                          "oneOf": [
+                            {
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "integration"
+                                  ]
+                                },
+                                "integrationId": {
+                                  "type": "string"
+                                },
+                                "integrationConfigurationId": {
+                                  "type": "string"
+                                },
+                                "resourceId": {
+                                  "type": "string"
+                                },
+                                "externalResourceId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "integrationConfigurationId",
+                                "integrationId",
+                                "kind"
+                              ],
+                              "type": "object"
                             },
-                            "provider": {
-                              "type": "string",
-                              "enum": [
-                                "github",
-                                "gitlab",
-                                "bitbucket"
-                              ]
+                            {
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "webhook"
+                                  ]
+                                },
+                                "webhookId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "kind"
+                              ],
+                              "type": "object"
                             },
-                            "externalCheckName": {
-                              "type": "string"
+                            {
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "git-provider"
+                                  ]
+                                },
+                                "provider": {
+                                  "type": "string",
+                                  "enum": [
+                                    "github",
+                                    "gitlab",
+                                    "bitbucket"
+                                  ]
+                                },
+                                "externalCheckName": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "externalCheckName",
+                                "kind",
+                                "provider"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "subKind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "vercel-native-check"
+                                  ]
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "enum": [
+                                    "platform",
+                                    "api"
+                                  ]
+                                }
+                              },
+                              "type": "object",
+                              "description": "Native lint/typecheck \u2014 check definition and check run `source`."
                             }
-                          },
-                          "required": [
-                            "externalCheckName",
-                            "kind",
-                            "provider"
-                          ],
-                          "type": "object"
+                          ]
                         }
-                      ]
-                    },
-                    "requires": {
-                      "type": "string",
-                      "enum": [
-                        "build-ready",
-                        "deployment-url",
-                        "none"
-                      ]
-                    },
-                    "blocks": {
-                      "type": "string",
-                      "enum": [
-                        "none",
-                        "build-start",
-                        "deployment-start",
-                        "deployment-alias",
-                        "deployment-promotion"
-                      ]
-                    },
-                    "targets": {
-                      "items": {
-                        "type": "string"
                       },
-                      "type": "array"
-                    },
-                    "status": {
-                      "type": "string",
-                      "enum": [
-                        "queued",
-                        "running",
-                        "completed"
-                      ]
-                    },
-                    "conclusion": {
-                      "type": "string",
-                      "enum": [
+                      "required": [
+                        "checkId",
+                        "createdAt",
+                        "deploymentId",
+                        "id",
+                        "name",
+                        "ownerId",
+                        "source",
+                        "status",
                         "timeout",
-                        "canceled",
-                        "skipped",
-                        "failed",
-                        "neutral",
-                        "succeeded"
-                      ]
+                        "updatedAt"
+                      ],
+                      "type": "object",
+                      "description": "Check run backed by a project-level `check` definition."
                     },
-                    "conclusionText": {
-                      "type": "string"
-                    },
-                    "externalId": {
-                      "type": "string"
-                    },
-                    "externalUrl": {
-                      "type": "string"
-                    },
-                    "output": {
-                      "additionalProperties": true,
-                      "type": "object"
-                    },
-                    "timeout": {
-                      "type": "number"
-                    },
-                    "createdAt": {
-                      "type": "number"
-                    },
-                    "updatedAt": {
-                      "type": "number"
-                    },
-                    "completedAt": {
-                      "type": "number"
+                    {
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "ownerId": {
+                          "type": "string"
+                        },
+                        "deploymentId": {
+                          "type": "string"
+                        },
+                        "projectId": {
+                          "type": "string"
+                        },
+                        "requires": {
+                          "type": "string",
+                          "enum": [
+                            "build-ready",
+                            "deployment-url",
+                            "none"
+                          ]
+                        },
+                        "blocks": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "build-start",
+                            "deployment-start",
+                            "deployment-alias",
+                            "deployment-promotion"
+                          ]
+                        },
+                        "targets": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "queued",
+                            "running",
+                            "completed"
+                          ]
+                        },
+                        "conclusion": {
+                          "type": "string",
+                          "enum": [
+                            "timeout",
+                            "canceled",
+                            "skipped",
+                            "failed",
+                            "neutral",
+                            "succeeded"
+                          ]
+                        },
+                        "conclusionText": {
+                          "type": "string"
+                        },
+                        "externalId": {
+                          "type": "string"
+                        },
+                        "externalUrl": {
+                          "type": "string"
+                        },
+                        "output": {
+                          "additionalProperties": true,
+                          "type": "object"
+                        },
+                        "timeout": {
+                          "type": "number"
+                        },
+                        "createdAt": {
+                          "type": "number"
+                        },
+                        "updatedAt": {
+                          "type": "number"
+                        },
+                        "completedAt": {
+                          "type": "number"
+                        },
+                        "source": {
+                          "oneOf": [
+                            {
+                              "properties": {
+                                "subKind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "vercel-ci"
+                                  ]
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "enum": [
+                                    "config"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "origin",
+                                "subKind"
+                              ],
+                              "type": "object",
+                              "description": "Config-driven CI task \u2014 check run `source` only (no parent check)."
+                            },
+                            {
+                              "properties": {
+                                "subKind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "vercel-ci-sentinel"
+                                  ]
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "enum": [
+                                    "platform"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "origin",
+                                "subKind"
+                              ],
+                              "type": "object",
+                              "description": "CI sentinel \u2014 check run `source` only (no parent check)."
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "createdAt",
+                        "deploymentId",
+                        "id",
+                        "name",
+                        "ownerId",
+                        "source",
+                        "status",
+                        "timeout",
+                        "updatedAt"
+                      ],
+                      "type": "object",
+                      "description": "Vercel CI check run without a parent `check` (no `checkId` field)."
                     }
-                  },
-                  "required": [
-                    "checkId",
-                    "createdAt",
-                    "deploymentId",
-                    "id",
-                    "name",
-                    "ownerId",
-                    "source",
-                    "status",
-                    "timeout",
-                    "updatedAt"
-                  ],
-                  "type": "object"
+                  ]
                 }
               }
             }
@@ -8418,183 +9106,355 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "checkId": {
-                      "type": "string"
-                    },
-                    "ownerId": {
-                      "type": "string"
-                    },
-                    "deploymentId": {
-                      "type": "string"
-                    },
-                    "projectId": {
-                      "type": "string"
-                    },
-                    "source": {
-                      "oneOf": [
-                        {
-                          "properties": {
-                            "kind": {
-                              "type": "string",
-                              "enum": [
-                                "integration"
-                              ]
-                            },
-                            "integrationId": {
-                              "type": "string"
-                            },
-                            "integrationConfigurationId": {
-                              "type": "string"
-                            },
-                            "resourceId": {
-                              "type": "string"
-                            },
-                            "externalResourceId": {
-                              "type": "string"
-                            }
+                  "oneOf": [
+                    {
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "ownerId": {
+                          "type": "string"
+                        },
+                        "deploymentId": {
+                          "type": "string"
+                        },
+                        "projectId": {
+                          "type": "string"
+                        },
+                        "requires": {
+                          "type": "string",
+                          "enum": [
+                            "build-ready",
+                            "deployment-url",
+                            "none"
+                          ]
+                        },
+                        "blocks": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "build-start",
+                            "deployment-start",
+                            "deployment-alias",
+                            "deployment-promotion"
+                          ]
+                        },
+                        "targets": {
+                          "items": {
+                            "type": "string"
                           },
-                          "required": [
-                            "integrationConfigurationId",
-                            "integrationId",
-                            "kind"
-                          ],
+                          "type": "array"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "queued",
+                            "running",
+                            "completed"
+                          ]
+                        },
+                        "conclusion": {
+                          "type": "string",
+                          "enum": [
+                            "timeout",
+                            "canceled",
+                            "skipped",
+                            "failed",
+                            "neutral",
+                            "succeeded"
+                          ]
+                        },
+                        "conclusionText": {
+                          "type": "string"
+                        },
+                        "externalId": {
+                          "type": "string"
+                        },
+                        "externalUrl": {
+                          "type": "string"
+                        },
+                        "output": {
+                          "additionalProperties": true,
                           "type": "object"
                         },
-                        {
-                          "properties": {
-                            "kind": {
-                              "type": "string",
-                              "enum": [
-                                "webhook"
-                              ]
-                            },
-                            "webhookId": {
-                              "type": "string"
-                            }
-                          },
-                          "required": [
-                            "kind"
-                          ],
-                          "type": "object"
+                        "timeout": {
+                          "type": "number"
                         },
-                        {
-                          "properties": {
-                            "kind": {
-                              "type": "string",
-                              "enum": [
-                                "git-provider"
-                              ]
+                        "createdAt": {
+                          "type": "number"
+                        },
+                        "updatedAt": {
+                          "type": "number"
+                        },
+                        "completedAt": {
+                          "type": "number"
+                        },
+                        "checkId": {
+                          "type": "string"
+                        },
+                        "source": {
+                          "oneOf": [
+                            {
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "integration"
+                                  ]
+                                },
+                                "integrationId": {
+                                  "type": "string"
+                                },
+                                "integrationConfigurationId": {
+                                  "type": "string"
+                                },
+                                "resourceId": {
+                                  "type": "string"
+                                },
+                                "externalResourceId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "integrationConfigurationId",
+                                "integrationId",
+                                "kind"
+                              ],
+                              "type": "object"
                             },
-                            "provider": {
-                              "type": "string",
-                              "enum": [
-                                "github",
-                                "gitlab",
-                                "bitbucket"
-                              ]
+                            {
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "webhook"
+                                  ]
+                                },
+                                "webhookId": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "kind"
+                              ],
+                              "type": "object"
                             },
-                            "externalCheckName": {
-                              "type": "string"
+                            {
+                              "properties": {
+                                "kind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "git-provider"
+                                  ]
+                                },
+                                "provider": {
+                                  "type": "string",
+                                  "enum": [
+                                    "github",
+                                    "gitlab",
+                                    "bitbucket"
+                                  ]
+                                },
+                                "externalCheckName": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "externalCheckName",
+                                "kind",
+                                "provider"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "subKind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "vercel-native-check"
+                                  ]
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "enum": [
+                                    "platform",
+                                    "api"
+                                  ]
+                                }
+                              },
+                              "type": "object",
+                              "description": "Native lint/typecheck \u2014 check definition and check run `source`."
                             }
-                          },
-                          "required": [
-                            "externalCheckName",
-                            "kind",
-                            "provider"
-                          ],
-                          "type": "object"
+                          ]
                         }
-                      ]
-                    },
-                    "requires": {
-                      "type": "string",
-                      "enum": [
-                        "build-ready",
-                        "deployment-url",
-                        "none"
-                      ]
-                    },
-                    "blocks": {
-                      "type": "string",
-                      "enum": [
-                        "none",
-                        "build-start",
-                        "deployment-start",
-                        "deployment-alias",
-                        "deployment-promotion"
-                      ]
-                    },
-                    "targets": {
-                      "items": {
-                        "type": "string"
                       },
-                      "type": "array"
-                    },
-                    "status": {
-                      "type": "string",
-                      "enum": [
-                        "queued",
-                        "running",
-                        "completed"
-                      ]
-                    },
-                    "conclusion": {
-                      "type": "string",
-                      "enum": [
+                      "required": [
+                        "checkId",
+                        "createdAt",
+                        "deploymentId",
+                        "id",
+                        "name",
+                        "ownerId",
+                        "source",
+                        "status",
                         "timeout",
-                        "canceled",
-                        "skipped",
-                        "failed",
-                        "neutral",
-                        "succeeded"
-                      ]
+                        "updatedAt"
+                      ],
+                      "type": "object",
+                      "description": "Check run backed by a project-level `check` definition."
                     },
-                    "conclusionText": {
-                      "type": "string"
-                    },
-                    "externalId": {
-                      "type": "string"
-                    },
-                    "externalUrl": {
-                      "type": "string"
-                    },
-                    "output": {
-                      "additionalProperties": true,
-                      "type": "object"
-                    },
-                    "timeout": {
-                      "type": "number"
-                    },
-                    "createdAt": {
-                      "type": "number"
-                    },
-                    "updatedAt": {
-                      "type": "number"
-                    },
-                    "completedAt": {
-                      "type": "number"
+                    {
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "ownerId": {
+                          "type": "string"
+                        },
+                        "deploymentId": {
+                          "type": "string"
+                        },
+                        "projectId": {
+                          "type": "string"
+                        },
+                        "requires": {
+                          "type": "string",
+                          "enum": [
+                            "build-ready",
+                            "deployment-url",
+                            "none"
+                          ]
+                        },
+                        "blocks": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "build-start",
+                            "deployment-start",
+                            "deployment-alias",
+                            "deployment-promotion"
+                          ]
+                        },
+                        "targets": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "queued",
+                            "running",
+                            "completed"
+                          ]
+                        },
+                        "conclusion": {
+                          "type": "string",
+                          "enum": [
+                            "timeout",
+                            "canceled",
+                            "skipped",
+                            "failed",
+                            "neutral",
+                            "succeeded"
+                          ]
+                        },
+                        "conclusionText": {
+                          "type": "string"
+                        },
+                        "externalId": {
+                          "type": "string"
+                        },
+                        "externalUrl": {
+                          "type": "string"
+                        },
+                        "output": {
+                          "additionalProperties": true,
+                          "type": "object"
+                        },
+                        "timeout": {
+                          "type": "number"
+                        },
+                        "createdAt": {
+                          "type": "number"
+                        },
+                        "updatedAt": {
+                          "type": "number"
+                        },
+                        "completedAt": {
+                          "type": "number"
+                        },
+                        "source": {
+                          "oneOf": [
+                            {
+                              "properties": {
+                                "subKind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "vercel-ci"
+                                  ]
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "enum": [
+                                    "config"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "origin",
+                                "subKind"
+                              ],
+                              "type": "object",
+                              "description": "Config-driven CI task \u2014 check run `source` only (no parent check)."
+                            },
+                            {
+                              "properties": {
+                                "subKind": {
+                                  "type": "string",
+                                  "enum": [
+                                    "vercel-ci-sentinel"
+                                  ]
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "enum": [
+                                    "platform"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "origin",
+                                "subKind"
+                              ],
+                              "type": "object",
+                              "description": "CI sentinel \u2014 check run `source` only (no parent check)."
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "createdAt",
+                        "deploymentId",
+                        "id",
+                        "name",
+                        "ownerId",
+                        "source",
+                        "status",
+                        "timeout",
+                        "updatedAt"
+                      ],
+                      "type": "object",
+                      "description": "Vercel CI check run without a parent `check` (no `checkId` field)."
                     }
-                  },
-                  "required": [
-                    "checkId",
-                    "createdAt",
-                    "deploymentId",
-                    "id",
-                    "name",
-                    "ownerId",
-                    "source",
-                    "status",
-                    "timeout",
-                    "updatedAt"
-                  ],
-                  "type": "object"
+                  ]
                 }
               }
             }

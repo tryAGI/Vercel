@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("runs")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.ListDeploymentCheckRunsResponseRun> Runs { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.ListDeploymentCheckRunsResponseRunVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunVariant2>> Runs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,7 +29,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListDeploymentCheckRunsResponse(
-            global::System.Collections.Generic.IList<global::Vercel.ListDeploymentCheckRunsResponseRun> runs)
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.ListDeploymentCheckRunsResponseRunVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunVariant2>> runs)
         {
             this.Runs = runs ?? throw new global::System.ArgumentNullException(nameof(runs));
         }
