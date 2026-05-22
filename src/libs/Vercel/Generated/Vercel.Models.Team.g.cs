@@ -277,6 +277,14 @@ namespace Vercel
         public required double CreatedAt { get; set; }
 
         /// <summary>
+        /// The organizationId for child teams created under an organization.<br/>
+        /// Example: org_nllPyCtREAqxxdyFKbbMDlxd
+        /// </summary>
+        /// <example>org_nllPyCtREAqxxdyFKbbMDlxd</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("parentId")]
+        public string? ParentId { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -406,6 +414,10 @@ namespace Vercel
         /// <param name="membership">
         /// The membership of the authenticated User in relation to the Team.
         /// </param>
+        /// <param name="parentId">
+        /// The organizationId for child teams created under an organization.<br/>
+        /// Example: org_nllPyCtREAqxxdyFKbbMDlxd
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -448,7 +460,8 @@ namespace Vercel
             double? integrationTokensInvalidatedAt,
             string? name,
             string? avatar,
-            global::Vercel.TeamMembership? membership)
+            global::Vercel.TeamMembership? membership,
+            string? parentId)
         {
             this.Connect = connect;
             this.CreatorId = creatorId ?? throw new global::System.ArgumentNullException(nameof(creatorId));
@@ -489,6 +502,7 @@ namespace Vercel
             this.Avatar = avatar;
             this.Membership = membership;
             this.CreatedAt = createdAt;
+            this.ParentId = parentId;
         }
 
         /// <summary>
