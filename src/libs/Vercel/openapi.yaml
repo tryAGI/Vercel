@@ -7686,9 +7686,17 @@
                                         "enum": [
                                           "config"
                                         ]
+                                      },
+                                      "invocationId": {
+                                        "type": "string"
+                                      },
+                                      "jobDefinitionId": {
+                                        "type": "string"
                                       }
                                     },
                                     "required": [
+                                      "invocationId",
+                                      "jobDefinitionId",
                                       "origin",
                                       "subKind"
                                     ],
@@ -8123,9 +8131,17 @@
                                         "enum": [
                                           "config"
                                         ]
+                                      },
+                                      "invocationId": {
+                                        "type": "string"
+                                      },
+                                      "jobDefinitionId": {
+                                        "type": "string"
                                       }
                                     },
                                     "required": [
+                                      "invocationId",
+                                      "jobDefinitionId",
                                       "origin",
                                       "subKind"
                                     ],
@@ -8544,9 +8560,17 @@
                                   "enum": [
                                     "config"
                                   ]
+                                },
+                                "invocationId": {
+                                  "type": "string"
+                                },
+                                "jobDefinitionId": {
+                                  "type": "string"
                                 }
                               },
                               "required": [
+                                "invocationId",
+                                "jobDefinitionId",
                                 "origin",
                                 "subKind"
                               ],
@@ -8979,9 +9003,17 @@
                                   "enum": [
                                     "config"
                                   ]
+                                },
+                                "invocationId": {
+                                  "type": "string"
+                                },
+                                "jobDefinitionId": {
+                                  "type": "string"
                                 }
                               },
                               "required": [
+                                "invocationId",
+                                "jobDefinitionId",
                                 "origin",
                                 "subKind"
                               ],
@@ -9406,9 +9438,17 @@
                                   "enum": [
                                     "config"
                                   ]
+                                },
+                                "invocationId": {
+                                  "type": "string"
+                                },
+                                "jobDefinitionId": {
+                                  "type": "string"
                                 }
                               },
                               "required": [
+                                "invocationId",
+                                "jobDefinitionId",
                                 "origin",
                                 "subKind"
                               ],
