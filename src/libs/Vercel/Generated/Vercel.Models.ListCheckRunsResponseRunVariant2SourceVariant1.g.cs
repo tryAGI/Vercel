@@ -23,6 +23,20 @@ namespace Vercel
         public global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant1Origin Origin { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("invocationId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string InvocationId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("jobDefinitionId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string JobDefinitionId { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -31,17 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListCheckRunsResponseRunVariant2SourceVariant1" /> class.
         /// </summary>
+        /// <param name="invocationId"></param>
+        /// <param name="jobDefinitionId"></param>
         /// <param name="subKind"></param>
         /// <param name="origin"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListCheckRunsResponseRunVariant2SourceVariant1(
+            string invocationId,
+            string jobDefinitionId,
             global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant1SubKind subKind,
             global::Vercel.ListCheckRunsResponseRunVariant2SourceVariant1Origin origin)
         {
             this.SubKind = subKind;
             this.Origin = origin;
+            this.InvocationId = invocationId ?? throw new global::System.ArgumentNullException(nameof(invocationId));
+            this.JobDefinitionId = jobDefinitionId ?? throw new global::System.ArgumentNullException(nameof(jobDefinitionId));
         }
 
         /// <summary>
