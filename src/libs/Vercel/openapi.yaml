@@ -62317,6 +62317,18 @@
                                 },
                                 "type": "array"
                               },
+                              "kmsIssuer": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
+                              "kmsProjectGrant": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "logDrain": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -80771,6 +80783,18 @@
                                     },
                                     "type": "array"
                                   },
+                                  "kmsIssuer": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "kmsProjectGrant": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "logDrain": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -86526,6 +86550,18 @@
                           "type": "array"
                         },
                         "jobGlobal": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "kmsIssuer": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "kmsProjectGrant": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -92526,6 +92562,18 @@
                           },
                           "type": "array"
                         },
+                        "kmsIssuer": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "kmsProjectGrant": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "logDrain": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -98095,6 +98143,18 @@
                           "type": "array"
                         },
                         "jobGlobal": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "kmsIssuer": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "kmsProjectGrant": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -107942,9 +108002,9 @@
                               "enum": [
                                 "git",
                                 "cli",
-                                "import",
                                 "api-trigger-git-deploy",
                                 "clone/repo",
+                                "import",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -108029,9 +108089,9 @@
                               "enum": [
                                 "git",
                                 "cli",
-                                "import",
                                 "api-trigger-git-deploy",
                                 "clone/repo",
+                                "import",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -108519,9 +108579,9 @@
                               "enum": [
                                 "git",
                                 "cli",
-                                "import",
                                 "api-trigger-git-deploy",
                                 "clone/repo",
+                                "import",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -108606,9 +108666,9 @@
                               "enum": [
                                 "git",
                                 "cli",
-                                "import",
                                 "api-trigger-git-deploy",
                                 "clone/repo",
+                                "import",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -109107,9 +109167,9 @@
                               "enum": [
                                 "git",
                                 "cli",
-                                "import",
                                 "api-trigger-git-deploy",
                                 "clone/repo",
+                                "import",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -109194,9 +109254,9 @@
                               "enum": [
                                 "git",
                                 "cli",
-                                "import",
                                 "api-trigger-git-deploy",
                                 "clone/repo",
+                                "import",
                                 "import/repo",
                                 "redeploy",
                                 "v0-web"
@@ -113099,6 +113159,18 @@
                           "type": "array"
                         },
                         "jobGlobal": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "kmsIssuer": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "kmsProjectGrant": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -129122,8 +129194,8 @@
                                 "enum": [
                                   "teams",
                                   "link",
-                                  "import",
                                   "mail",
+                                  "import",
                                   "github",
                                   "gitlab",
                                   "bitbucket",
@@ -129703,8 +129775,8 @@
                           "enum": [
                             "teams",
                             "link",
-                            "import",
                             "mail",
+                            "import",
                             "github",
                             "gitlab",
                             "bitbucket",
@@ -129957,8 +130029,8 @@
                           "enum": [
                             "teams",
                             "link",
-                            "import",
                             "mail",
+                            "import",
                             "github",
                             "gitlab",
                             "bitbucket",
@@ -138791,8 +138863,6 @@
               "alias",
               "plan",
               "domain",
-              "flag",
-              "deployment",
               "agentic-provisioning-account-linked",
               "agentic-provisioning-account-relinked",
               "agentic-provisioning-team-created",
@@ -138907,6 +138977,7 @@
               "deployment-check-created",
               "deployment-check-updated",
               "deployment-check-deleted",
+              "deployment",
               "authorize-git-deployment",
               "deployment-chown",
               "deployment-creation-blocked",
@@ -138980,6 +139051,7 @@
               "firewall-config-removed",
               "firewall-managed-rulegroup-updated",
               "firewall-managed-ruleset-updated",
+              "flag",
               "flags-segment",
               "flags-settings",
               "flag-created",
@@ -139543,8 +139615,6 @@
               "alias",
               "plan",
               "domain",
-              "flag",
-              "deployment",
               "agentic-provisioning-account-linked",
               "agentic-provisioning-account-relinked",
               "agentic-provisioning-team-created",
@@ -139659,6 +139729,7 @@
               "deployment-check-created",
               "deployment-check-updated",
               "deployment-check-deleted",
+              "deployment",
               "authorize-git-deployment",
               "deployment-chown",
               "deployment-creation-blocked",
@@ -139732,6 +139803,7 @@
               "firewall-config-removed",
               "firewall-managed-rulegroup-updated",
               "firewall-managed-ruleset-updated",
+              "flag",
               "flags-segment",
               "flags-settings",
               "flag-created",
@@ -140088,8 +140160,6 @@
                 "alias",
                 "plan",
                 "domain",
-                "flag",
-                "deployment",
                 "agentic-provisioning-account-linked",
                 "agentic-provisioning-account-relinked",
                 "agentic-provisioning-team-created",
@@ -140204,6 +140274,7 @@
                 "deployment-check-created",
                 "deployment-check-updated",
                 "deployment-check-deleted",
+                "deployment",
                 "authorize-git-deployment",
                 "deployment-chown",
                 "deployment-creation-blocked",
@@ -140277,6 +140348,7 @@
                 "firewall-config-removed",
                 "firewall-managed-rulegroup-updated",
                 "firewall-managed-ruleset-updated",
+                "flag",
                 "flags-segment",
                 "flags-settings",
                 "flag-created",
@@ -144522,12 +144594,12 @@
             "nullable": true,
             "type": "string",
             "enum": [
-              "vercel",
               "gitlab",
               "bitbucket",
               "github",
               "github-limited",
               "github-custom-host",
+              "vercel",
               null
             ]
           },

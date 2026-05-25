@@ -551,6 +551,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("kmsIssuer")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? KmsIssuer { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("kmsProjectGrant")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? KmsProjectGrant { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logDrain")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? LogDrain { get; set; }
 
@@ -1601,6 +1613,8 @@ namespace Vercel
         /// <param name="integrationPullRequest"></param>
         /// <param name="ipBlocking"></param>
         /// <param name="jobGlobal"></param>
+        /// <param name="kmsIssuer"></param>
+        /// <param name="kmsProjectGrant"></param>
         /// <param name="logDrain"></param>
         /// <param name="marketplaceBillingData"></param>
         /// <param name="marketplaceExperimentationEdgeConfigData"></param>
@@ -1854,6 +1868,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? integrationPullRequest,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ipBlocking,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? jobGlobal,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? kmsIssuer,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? kmsProjectGrant,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? logDrain,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? marketplaceBillingData,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? marketplaceExperimentationEdgeConfigData,
@@ -2104,6 +2120,8 @@ namespace Vercel
             this.IntegrationPullRequest = integrationPullRequest;
             this.IpBlocking = ipBlocking;
             this.JobGlobal = jobGlobal;
+            this.KmsIssuer = kmsIssuer;
+            this.KmsProjectGrant = kmsProjectGrant;
             this.LogDrain = logDrain;
             this.MarketplaceBillingData = marketplaceBillingData;
             this.MarketplaceExperimentationEdgeConfigData = marketplaceExperimentationEdgeConfigData;
