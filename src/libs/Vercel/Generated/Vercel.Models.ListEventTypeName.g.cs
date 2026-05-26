@@ -792,6 +792,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        IntegrationResourceSqlQueryExecuted,
+        /// <summary>
+        /// 
+        /// </summary>
         IntegrationScopeChanged,
         /// <summary>
         /// 
@@ -2166,6 +2170,7 @@ namespace Vercel
                 ListEventTypeName.IntegrationInstallationCompleted => "integration-installation-completed",
                 ListEventTypeName.IntegrationInstallationPermissionUpdated => "integration-installation-permission-updated",
                 ListEventTypeName.IntegrationInstallationRemoved => "integration-installation-removed",
+                ListEventTypeName.IntegrationResourceSqlQueryExecuted => "integration-resource-sql-query-executed",
                 ListEventTypeName.IntegrationScopeChanged => "integration-scope-changed",
                 ListEventTypeName.InvoiceModified => "invoice-modified",
                 ListEventTypeName.InvoiceRefunded => "invoice-refunded",
@@ -2663,6 +2668,7 @@ namespace Vercel
                 "integration-installation-completed" => ListEventTypeName.IntegrationInstallationCompleted,
                 "integration-installation-permission-updated" => ListEventTypeName.IntegrationInstallationPermissionUpdated,
                 "integration-installation-removed" => ListEventTypeName.IntegrationInstallationRemoved,
+                "integration-resource-sql-query-executed" => ListEventTypeName.IntegrationResourceSqlQueryExecuted,
                 "integration-scope-changed" => ListEventTypeName.IntegrationScopeChanged,
                 "invoice-modified" => ListEventTypeName.InvoiceModified,
                 "invoice-refunded" => ListEventTypeName.InvoiceRefunded,
