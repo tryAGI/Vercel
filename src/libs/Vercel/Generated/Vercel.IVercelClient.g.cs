@@ -188,11 +188,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public SandboxesClient Sandboxes { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public SecurityClient Security { get; }
 
         /// <summary>

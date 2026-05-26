@@ -116283,19 +116283,12 @@
         ]
       }
     },
-    "/v2/sandboxes": {
+    "/sandboxes": {
       "get": {
-        "description": "Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix.",
-        "operationId": "listSandboxes",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "List sandboxes",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "getSandboxes",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -116345,6 +116338,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "429": {
             "description": ""
           }
         },
@@ -116445,39 +116441,14 @@
                 }
               ]
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       },
       "post": {
-        "description": "Creates a named sandbox environment. Named sandboxes have a unique name within a project and support automatic snapshotting on shutdown.",
+        "description": "",
         "operationId": "createSandboxes",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Create a named sandbox",
-        "tags": [
-          "sandboxes"
-        ],
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -116539,26 +116510,7 @@
             "description": ""
           }
         },
-        "parameters": [
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
-          }
-        ],
+        "parameters": [],
         "requestBody": {
           "content": {
             "application/json": {
@@ -117166,19 +117118,12 @@
         }
       }
     },
-    "/v2/sandboxes/snapshots": {
+    "/sandboxes/snapshots": {
       "get": {
-        "description": "Retrieves a paginated list of snapshots for a specific project.",
-        "operationId": "listSessionSnapshots",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "List snapshots",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "getSandboxesSnapshots",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -117235,6 +117180,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "429": {
             "description": ""
           }
         },
@@ -117301,41 +117249,16 @@
               ],
               "default": "desc"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       }
     },
-    "/v2/sandboxes/snapshots/{snapshotId}": {
+    "/sandboxes/snapshots/{snapshotId}": {
       "get": {
-        "description": "Retrieves detailed information about a specific snapshot, including its creation time, size, expiration date, and the source session it was created from.",
-        "operationId": "getSessionSnapshot",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Get a snapshot",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "getSandboxesSnapshotsBySnapshotId",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -117365,6 +117288,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "429": {
             "description": ""
           }
         },
@@ -117379,39 +117305,14 @@
               "description": "The unique identifier of the snapshot to retrieve.",
               "example": "snap_abc123"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       },
       "delete": {
-        "description": "Permanently deletes a snapshot and frees its associated storage. This action cannot be undone. After deletion, the snapshot can no longer be used to create new sessions.",
-        "operationId": "deleteSessionSnapshot",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Delete a snapshot",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "deleteSandboxesSnapshotsBySnapshotId",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -117442,6 +117343,9 @@
           },
           "404": {
             "description": ""
+          },
+          "429": {
+            "description": ""
           }
         },
         "parameters": [
@@ -117455,41 +117359,16 @@
               "description": "The unique identifier of the snapshot to delete.",
               "example": "snap_abc123"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       }
     },
-    "/v2/sandboxes/sessions": {
+    "/sandboxes/sessions": {
       "get": {
-        "description": "Retrieves a paginated list of sessions belonging to a specific sandbox. Results are sorted by creation time and paginated using an opaque cursor.",
-        "operationId": "listSessions",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "List sessions",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "getSandboxesSessions",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "The list of sessions matching the request filters.",
@@ -117546,6 +117425,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "429": {
             "description": ""
           },
           "500": {
@@ -117615,41 +117497,16 @@
               ],
               "default": "desc"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}": {
+    "/sandboxes/sessions/{sessionId}": {
       "get": {
-        "description": "Retrieves detailed information about a specific session, including its current status, resource configuration, and exposed routes.",
-        "operationId": "getSession",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Get a session",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "getSandboxesSessionsBySessionId",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "The session was retrieved successfully.",
@@ -117688,6 +117545,9 @@
           "404": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -117703,41 +117563,16 @@
               "description": "The unique identifier of the session to retrieve.",
               "example": "sbx_abc123"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       }
     },
-    "/v2/sandboxes/{name}": {
+    "/sandboxes/{name}": {
       "get": {
-        "description": "Retrieves a named sandbox by name, including its current sandbox and routes. If the sandbox is stopped and resume is true, a new sandbox will be created from the most recent snapshot.",
-        "operationId": "getNamedSandbox",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Get a named sandbox",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "getSandboxesByName",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -117839,39 +117674,14 @@
               "default": false,
               "description": "Whether to automatically resume a stopped named sandbox by creating a new instance from its snapshot. Defaults to false."
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       },
       "patch": {
-        "description": "Updates the configuration of a sandbox. Only the provided fields will be modified; omitted fields remain unchanged.",
-        "operationId": "updateSandbox",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Update a sandbox",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "updateSandboxesByName",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -117997,24 +117807,6 @@
               "type": "boolean",
               "default": false,
               "description": "Whether to automatically resume a stopped named sandbox by creating a new instance from its snapshot. Defaults to false."
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
             }
           }
         ],
@@ -118538,17 +118330,10 @@
         }
       },
       "delete": {
-        "description": "Deletes a sandbox by name. If sandboxes are currently running, they will be stopped first. This operation deletes all sandbox entities with the given name and the named sandbox metadata.",
-        "operationId": "deleteSandbox",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Delete a sandbox",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "deleteSandboxesByName",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -118586,6 +118371,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -118614,41 +118402,16 @@
               "description": "The project ID that owns the named sandbox. When provided, takes precedence over OIDC project context.",
               "maxLength": 128
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/cmd": {
+    "/sandboxes/sessions/{sessionId}/cmd": {
       "get": {
-        "description": "Retrieves a list of all commands that have been executed in a session, including their current status, exit codes, and execution times, ordered from the most recent to the oldest.",
-        "operationId": "listSessionCommands",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "List commands",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "getSandboxesSessionsBySessionIdCmd",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "The list of commands executed in the session.",
@@ -118682,6 +118445,9 @@
           },
           "404": {
             "description": ""
+          },
+          "429": {
+            "description": ""
           }
         },
         "parameters": [
@@ -118695,39 +118461,14 @@
               "description": "The unique identifier of the session to list commands for.",
               "example": "sbx_abc123"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       },
       "post": {
-        "description": "Executes a shell command inside a running session. The command runs asynchronously and returns immediately with a command ID that can be used to track its progress and retrieve its output. Optionally, use the `wait` parameter to stream the command status until completion.",
-        "operationId": "runSessionCommand",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Execute a command",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "createSandboxesSessionsBySessionIdCmd",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -118778,6 +118519,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -118792,24 +118536,6 @@
               "type": "string",
               "description": "The unique identifier of the session in which to execute the command.",
               "example": "sbx_abc123"
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
             }
           }
         ],
@@ -118874,19 +118600,12 @@
         }
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}": {
+    "/sandboxes/sessions/{sessionId}/cmd/{cmdId}": {
       "get": {
-        "description": "Retrieves the current status and details of a command executed in a session. Use the `wait` parameter to block until the command finishes execution.",
-        "operationId": "getSessionCommand",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Get a command",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "getSandboxesSessionsBySessionIdCmdByCmdId",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "The command data along with the exit code if the command did finish.",
@@ -118922,6 +118641,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "429": {
             "description": ""
           },
           "500": {
@@ -118965,41 +118687,16 @@
               ],
               "default": "false"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}/kill": {
+    "/sandboxes/sessions/{sessionId}/cmd/{cmdId}/kill": {
       "post": {
-        "description": "Sends a signal to terminate a running command in a session. The signal can be used to gracefully stop (SIGTERM) or forcefully kill (SIGKILL) the process. The command must still be running for this operation to succeed.",
-        "operationId": "killSessionCommand",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Kill a command",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "createSandboxesSessionsBySessionIdCmdByCmdIdKill",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "The command was terminated successfully.",
@@ -119037,6 +118734,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -119063,24 +118763,6 @@
               "description": "The unique identifier of the session containing the command.",
               "example": "sbx_abc123"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ],
         "requestBody": {
@@ -119105,19 +118787,12 @@
         }
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}/logs": {
+    "/sandboxes/sessions/{sessionId}/cmd/{cmdId}/logs": {
       "get": {
-        "description": "Streams the output of a command in real-time using newline-delimited JSON (ND-JSON). Each entry includes the output data and stream type. Stream types include `stdout`, `stderr`, and `error` (for stream failures).",
-        "operationId": "getSessionCommandLogs",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Stream command logs",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "getSandboxesSessionsBySessionIdCmdByCmdIdLogs",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -119196,6 +118871,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -119222,41 +118900,16 @@
               "description": "The unique identifier of the command to stream logs for.",
               "example": "cmd_abc123"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/stop": {
+    "/sandboxes/sessions/{sessionId}/stop": {
       "post": {
-        "description": "Stops a running session and releases its allocated resources. All running processes within the session will be terminated. This action cannot be undone. A stopped session cannot be restarted.",
-        "operationId": "stopSession",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Stop a session",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "createSandboxesSessionsBySessionIdStop",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "The session was stopped successfully.",
@@ -119317,6 +118970,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -119332,41 +118988,16 @@
               "description": "The unique identifier of the session to stop.",
               "example": "sbx_abc123"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/extend-timeout": {
+    "/sandboxes/sessions/{sessionId}/extend-timeout": {
       "post": {
-        "description": "Extends the maximum execution time of a running session. The session must be active and able to accept commands. The total timeout cannot exceed the maximum allowed limit for your account.",
-        "operationId": "extendSessionTimeout",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Extend session timeout",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "createSandboxesSessionsBySessionIdExtendTimeout",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "The session timeout was extended successfully.",
@@ -119404,6 +119035,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -119418,24 +119052,6 @@
               "type": "string",
               "description": "The unique identifier of the session to extend the timeout for.",
               "example": "sbx_abc123"
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
             }
           }
         ],
@@ -119462,19 +119078,12 @@
         }
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/network-policy": {
+    "/sandboxes/sessions/{sessionId}/network-policy": {
       "post": {
-        "description": "Replaces the network access policy of a running session. Use this to control which external hosts the session can communicate with. This is a full replacement. Any previously configured network rules will be overwritten.",
-        "operationId": "updateSessionNetworkPolicy",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Update network policy",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "createSandboxesSessionsBySessionIdNetworkPolicy",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "The session network policy was updated successfully.",
@@ -119515,6 +119124,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -119529,24 +119141,6 @@
               "type": "string",
               "description": "The unique identifier of the session to update the network policy for.",
               "example": "sbx_abc123"
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
             }
           }
         ],
@@ -119927,19 +119521,12 @@
         }
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/fs/read": {
+    "/sandboxes/sessions/{sessionId}/fs/read": {
       "post": {
-        "description": "Downloads the contents of a file from a session's filesystem. The file content is returned as a binary stream with appropriate Content-Disposition headers for file download.",
-        "operationId": "readSessionFile",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Read a file",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "createSandboxesSessionsBySessionIdFsRead",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -119970,6 +119557,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -119984,24 +119574,6 @@
               "type": "string",
               "description": "The unique identifier of the session to read the file from.",
               "example": "sbx_abc123"
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
             }
           }
         ],
@@ -120032,19 +119604,12 @@
         }
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/fs/mkdir": {
+    "/sandboxes/sessions/{sessionId}/fs/mkdir": {
       "post": {
-        "description": "Creates a new directory in a session's filesystem. By default, parent directories are created recursively if they don't exist (similar to `mkdir -p`).",
-        "operationId": "createSessionDirectory",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Create a directory",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "createSandboxesSessionsBySessionIdFsMkdir",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "The directory was created successfully.",
@@ -120074,6 +119639,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -120088,24 +119656,6 @@
               "type": "string",
               "description": "The unique identifier of the session to create the directory in.",
               "example": "sbx_abc123"
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
             }
           }
         ],
@@ -120141,19 +119691,12 @@
         }
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/fs/write": {
+    "/sandboxes/sessions/{sessionId}/fs/write": {
       "post": {
-        "description": "Uploads and extracts files to a session's filesystem. Files must be uploaded as a gzipped tarball (`.tar.gz`) with the `Content-Type` header set to `application/gzip`. The tarball contents are extracted to the session's working directory, or to a custom directory specified via the `x-cwd` header.",
-        "operationId": "writeSessionFiles",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Write files",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "createSandboxesSessionsBySessionIdFsWrite",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "The files were successfully written to the session.",
@@ -120183,6 +119726,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -120208,41 +119754,16 @@
               "description": "The unique identifier of the session to write files to.",
               "example": "sbx_abc123"
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
       }
     },
-    "/v2/sandboxes/sessions/{sessionId}/snapshot": {
+    "/sandboxes/sessions/{sessionId}/snapshot": {
       "post": {
-        "description": "Creates a point-in-time snapshot of a running session's filesystem. Snapshots can be used to quickly restore a session to a previous state or to create new sessions with pre-configured environments. The session must be running and able to accept commands for a snapshot to be created. The session will be terminated after the snapshot is created.",
-        "operationId": "createSessionSnapshot",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Create a snapshot",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "createSandboxesSessionsBySessionIdSnapshot",
+        "security": [],
+        "tags": [],
         "responses": {
           "201": {
             "description": "",
@@ -120287,6 +119808,9 @@
           "422": {
             "description": ""
           },
+          "429": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -120301,24 +119825,6 @@
               "type": "string",
               "description": "The unique identifier of the session to snapshot.",
               "example": "sbx_abc123"
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
             }
           }
         ],
