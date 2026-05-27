@@ -576,6 +576,12 @@ namespace Vercel
         public global::Vercel.CreateProjectResponseTracing? Tracing { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
+        public string? Avatar { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -684,6 +690,7 @@ namespace Vercel
         /// <param name="dismissedToasts"></param>
         /// <param name="protectedSourcemaps"></param>
         /// <param name="tracing"></param>
+        /// <param name="avatar"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -779,7 +786,8 @@ namespace Vercel
             bool? hasDeployments,
             global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseDismissedToast>? dismissedToasts,
             bool? protectedSourcemaps,
-            global::Vercel.CreateProjectResponseTracing? tracing)
+            global::Vercel.CreateProjectResponseTracing? tracing,
+            string? avatar)
         {
             this.AccountId = accountId ?? throw new global::System.ArgumentNullException(nameof(accountId));
             this.Analytics = analytics;
@@ -873,6 +881,7 @@ namespace Vercel
             this.DismissedToasts = dismissedToasts;
             this.ProtectedSourcemaps = protectedSourcemaps;
             this.Tracing = tracing;
+            this.Avatar = avatar;
         }
 
         /// <summary>

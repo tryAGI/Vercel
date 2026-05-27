@@ -11,9 +11,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        public string? Id { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Enabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
+        public global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesEnvironmentVariant1, global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesEnvironmentVariant2>>? Environments { get; set; }
 
         /// <summary>
         /// 
@@ -33,14 +45,20 @@ namespace Vercel
         /// </summary>
         /// <param name="enabled"></param>
         /// <param name="sources"></param>
+        /// <param name="id"></param>
+        /// <param name="environments"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PatchTeamRequestDeploymentPolicyGitSources(
             bool enabled,
-            global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesSource> sources)
+            global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesSource> sources,
+            string? id,
+            global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesEnvironmentVariant1, global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesEnvironmentVariant2>>? environments)
         {
+            this.Id = id;
             this.Enabled = enabled;
+            this.Environments = environments;
             this.Sources = sources ?? throw new global::System.ArgumentNullException(nameof(sources));
         }
 

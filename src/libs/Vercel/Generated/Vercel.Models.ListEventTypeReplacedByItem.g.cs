@@ -1051,6 +1051,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectAvatarUpdate,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectBuildCommandUpdated,
         /// <summary>
         /// 
@@ -2234,6 +2238,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectAnalyticsEnabled => "project-analytics-enabled",
                 ListEventTypeReplacedByItem.ProjectAutoAssignCustomProductionDomainsUpdated => "project-auto-assign-custom-production-domains-updated",
                 ListEventTypeReplacedByItem.ProjectAutomationBypass => "project-automation-bypass",
+                ListEventTypeReplacedByItem.ProjectAvatarUpdate => "project-avatar-update",
                 ListEventTypeReplacedByItem.ProjectBuildCommandUpdated => "project-build-command-updated",
                 ListEventTypeReplacedByItem.ProjectBuildLogsAndSourceProtectionUpdated => "project-build-logs-and-source-protection-updated",
                 ListEventTypeReplacedByItem.ProjectBuildMachineUpdated => "project-build-machine-updated",
@@ -2732,6 +2737,7 @@ namespace Vercel
                 "project-analytics-enabled" => ListEventTypeReplacedByItem.ProjectAnalyticsEnabled,
                 "project-auto-assign-custom-production-domains-updated" => ListEventTypeReplacedByItem.ProjectAutoAssignCustomProductionDomainsUpdated,
                 "project-automation-bypass" => ListEventTypeReplacedByItem.ProjectAutomationBypass,
+                "project-avatar-update" => ListEventTypeReplacedByItem.ProjectAvatarUpdate,
                 "project-build-command-updated" => ListEventTypeReplacedByItem.ProjectBuildCommandUpdated,
                 "project-build-logs-and-source-protection-updated" => ListEventTypeReplacedByItem.ProjectBuildLogsAndSourceProtectionUpdated,
                 "project-build-machine-updated" => ListEventTypeReplacedByItem.ProjectBuildMachineUpdated,

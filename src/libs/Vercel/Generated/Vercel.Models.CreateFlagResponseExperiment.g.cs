@@ -11,14 +11,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        public string? Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         /// 
@@ -147,8 +147,8 @@ namespace Vercel
         /// <param name="allocationUnit"></param>
         /// <param name="primaryMetrics"></param>
         /// <param name="status"></param>
-        /// <param name="name"></param>
         /// <param name="id"></param>
+        /// <param name="name"></param>
         /// <param name="numVariants"></param>
         /// <param name="surfaceArea"></param>
         /// <param name="stickyRequirement"></param>
@@ -171,8 +171,8 @@ namespace Vercel
             global::Vercel.CreateFlagResponseExperimentAllocationUnit allocationUnit,
             global::System.Collections.Generic.IList<global::Vercel.CreateFlagResponseExperimentPrimaryMetric> primaryMetrics,
             global::Vercel.CreateFlagResponseExperimentStatus status,
-            string? name,
             string? id,
+            string? name,
             double? numVariants,
             string? surfaceArea,
             bool? stickyRequirement,
@@ -189,8 +189,8 @@ namespace Vercel
             global::Vercel.CreateFlagResponseExperimentDurationUnit? durationUnit,
             double? allocationPercent)
         {
-            this.Name = name;
             this.Id = id;
+            this.Name = name;
             this.NumVariants = numVariants;
             this.SurfaceArea = surfaceArea;
             this.StickyRequirement = stickyRequirement;
