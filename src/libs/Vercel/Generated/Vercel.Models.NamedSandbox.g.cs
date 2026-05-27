@@ -167,7 +167,7 @@ namespace Vercel
         public global::System.Collections.Generic.Dictionary<string, string>? Tags { get; set; }
 
         /// <summary>
-        /// Key-value pairs of mount path and volume.
+        /// Key-value pairs of mount path and drive.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mounts")]
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.NamedSandboxMounts2>? Mounts { get; set; }
@@ -284,7 +284,7 @@ namespace Vercel
         /// Example: {"team":"hive","user":"bob"}
         /// </param>
         /// <param name="mounts">
-        /// Key-value pairs of mount path and volume.
+        /// Key-value pairs of mount path and drive.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

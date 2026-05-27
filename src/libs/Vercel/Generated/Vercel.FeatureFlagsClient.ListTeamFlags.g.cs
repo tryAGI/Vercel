@@ -1,6 +1,8 @@
 
 #nullable enable
 
+#pragma warning disable CS0618 // Type or member is obsolete
+
 namespace Vercel
 {
     public partial class FeatureFlagsClient
@@ -65,7 +67,7 @@ namespace Vercel
         /// The state of the flags to retrieve. Defaults to `active`.
         /// </param>
         /// <param name="withMetadata">
-        /// Whether to include metadata in the response
+        /// Deprecated. Whether to include creator metadata in each flag in the response. Resolve creator identity client-side (e.g. via the team members endpoint) instead; this parameter will be removed in a future release.
         /// </param>
         /// <param name="limit">
         /// Maximum number of flags to return.<br/>
@@ -129,7 +131,7 @@ namespace Vercel
         /// The state of the flags to retrieve. Defaults to `active`.
         /// </param>
         /// <param name="withMetadata">
-        /// Whether to include metadata in the response
+        /// Deprecated. Whether to include creator metadata in each flag in the response. Resolve creator identity client-side (e.g. via the team members endpoint) instead; this parameter will be removed in a future release.
         /// </param>
         /// <param name="limit">
         /// Maximum number of flags to return.<br/>
