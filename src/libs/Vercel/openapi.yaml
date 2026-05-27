@@ -41823,6 +41823,163 @@
         ]
       }
     },
+    "/v2/projects/{projectIdOrName}/feature-flags/flags": {
+      "get": {
+        "description": "Retrieve feature flags for a project. Returns an opaque cursor for pagination.",
+        "operationId": "listFlagsV2",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List flags",
+        "tags": [
+          "feature-flags"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "$ref": "#/components/schemas/Flag"
+                      },
+                      "type": "array"
+                    },
+                    "pagination": {
+                      "properties": {
+                        "next": {
+                          "nullable": true,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "next"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "pagination"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": "The account is missing a payment so payment method must be updated"
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectIdOrName",
+            "description": "The project id or name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "description": "The project id or name",
+              "type": "string"
+            }
+          },
+          {
+            "name": "state",
+            "description": "The state of the flags to retrieve. Defaults to `active`.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "active",
+                "archived"
+              ],
+              "description": "The state of the flags to retrieve. Defaults to `active`."
+            }
+          },
+          {
+            "name": "limit",
+            "description": "Maximum number of flags to return.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Maximum number of flags to return.",
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 25
+            }
+          },
+          {
+            "name": "cursor",
+            "description": "Pagination cursor to continue from.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Pagination cursor to continue from.",
+              "type": "string"
+            }
+          },
+          {
+            "name": "search",
+            "description": "Search flags by their slug or description. Case-insensitive.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Search flags by their slug or description. Case-insensitive.",
+              "type": "string",
+              "maxLength": 256
+            }
+          },
+          {
+            "name": "tags",
+            "description": "Filter flags by tag. Repeat the parameter for multiple tags (all must match).",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Filter flags by tag. Repeat the parameter for multiple tags (all must match).",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
     "/v1/projects/{projectIdOrName}/feature-flags/flags": {
       "get": {
         "description": "Retrieve feature flags for a project. The list can be filtered by state and supports pagination.",
@@ -42032,10 +42189,10 @@
                     },
                     "experiment": {
                       "properties": {
-                        "name": {
+                        "id": {
                           "type": "string"
                         },
-                        "id": {
+                        "name": {
                           "type": "string"
                         },
                         "numVariants": {
@@ -43587,163 +43744,6 @@
         }
       }
     },
-    "/v2/projects/{projectIdOrName}/feature-flags/flags": {
-      "get": {
-        "description": "Retrieve feature flags for a project. Returns an opaque cursor for pagination.",
-        "operationId": "listFlagsV2",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "List flags",
-        "tags": [
-          "feature-flags"
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "data": {
-                      "items": {
-                        "$ref": "#/components/schemas/Flag"
-                      },
-                      "type": "array"
-                    },
-                    "pagination": {
-                      "properties": {
-                        "next": {
-                          "nullable": true,
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "next"
-                      ],
-                      "type": "object"
-                    }
-                  },
-                  "required": [
-                    "data",
-                    "pagination"
-                  ],
-                  "type": "object"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "One of the provided values in the request query is invalid."
-          },
-          "401": {
-            "description": "The request is not authorized."
-          },
-          "402": {
-            "description": "The account is missing a payment so payment method must be updated"
-          },
-          "403": {
-            "description": "You do not have permission to access this resource."
-          },
-          "404": {
-            "description": ""
-          }
-        },
-        "parameters": [
-          {
-            "name": "projectIdOrName",
-            "description": "The project id or name",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "description": "The project id or name",
-              "type": "string"
-            }
-          },
-          {
-            "name": "state",
-            "description": "The state of the flags to retrieve. Defaults to `active`.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "active",
-                "archived"
-              ],
-              "description": "The state of the flags to retrieve. Defaults to `active`."
-            }
-          },
-          {
-            "name": "limit",
-            "description": "Maximum number of flags to return.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "description": "Maximum number of flags to return.",
-              "type": "integer",
-              "minimum": 1,
-              "maximum": 100,
-              "default": 25
-            }
-          },
-          {
-            "name": "cursor",
-            "description": "Pagination cursor to continue from.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "description": "Pagination cursor to continue from.",
-              "type": "string"
-            }
-          },
-          {
-            "name": "search",
-            "description": "Search flags by their slug or description. Case-insensitive.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "description": "Search flags by their slug or description. Case-insensitive.",
-              "type": "string",
-              "maxLength": 256
-            }
-          },
-          {
-            "name": "tags",
-            "description": "Filter flags by tag. Repeat the parameter for multiple tags (all must match).",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "description": "Filter flags by tag. Repeat the parameter for multiple tags (all must match).",
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
-          }
-        ]
-      }
-    },
     "/v1/projects/{projectIdOrName}/feature-flags/flags/{flagIdOrSlug}": {
       "get": {
         "description": "Retrieve a specific feature flag by its ID or slug.",
@@ -43893,10 +43893,10 @@
                         },
                         "experiment": {
                           "properties": {
-                            "name": {
+                            "id": {
                               "type": "string"
                             },
-                            "id": {
+                            "name": {
                               "type": "string"
                             },
                             "numVariants": {
@@ -45641,10 +45641,10 @@
                               },
                               "experiment": {
                                 "properties": {
-                                  "name": {
+                                  "id": {
                                     "type": "string"
                                   },
-                                  "id": {
+                                  "name": {
                                     "type": "string"
                                   },
                                   "numVariants": {
@@ -47508,6 +47508,164 @@
         ]
       }
     },
+    "/v2/teams/{teamId}/feature-flags/flags": {
+      "get": {
+        "description": "Retrieve all feature flags for a team across all projects. Returns an opaque cursor for pagination.",
+        "operationId": "listTeamFlagsV2",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List all flags for a team",
+        "tags": [
+          "feature-flags"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "$ref": "#/components/schemas/Flag"
+                      },
+                      "type": "array"
+                    },
+                    "pagination": {
+                      "properties": {
+                        "next": {
+                          "nullable": true,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "next"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "pagination"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          }
+        },
+        "parameters": [
+          {
+            "name": "state",
+            "description": "The state of the flags to retrieve. Defaults to `active`.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "active",
+                "archived"
+              ],
+              "description": "The state of the flags to retrieve. Defaults to `active`."
+            }
+          },
+          {
+            "name": "limit",
+            "description": "Maximum number of flags to return.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Maximum number of flags to return.",
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 25
+            }
+          },
+          {
+            "name": "cursor",
+            "description": "Pagination cursor to continue from.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Pagination cursor to continue from.",
+              "type": "string"
+            }
+          },
+          {
+            "name": "search",
+            "description": "Search flags by their slug or description. Case-insensitive.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Search flags by their slug or description. Case-insensitive.",
+              "type": "string",
+              "maxLength": 256
+            }
+          },
+          {
+            "name": "kind",
+            "description": "The kind of flags to retrieve.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "The kind of flags to retrieve.",
+              "type": "string",
+              "enum": [
+                "boolean",
+                "string",
+                "number",
+                "json"
+              ]
+            }
+          },
+          {
+            "name": "tags",
+            "description": "Filter flags by tag. Repeat the parameter for multiple tags (all must match).",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Filter flags by tag. Repeat the parameter for multiple tags (all must match).",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "path",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            },
+            "required": true
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
     "/v1/teams/{teamId}/feature-flags/flags": {
       "get": {
         "description": "Retrieve all feature flags for a team across all projects. The list can be filtered by state and supports pagination.",
@@ -47603,164 +47761,6 @@
               "minimum": 1,
               "maximum": 100,
               "default": 20
-            }
-          },
-          {
-            "name": "cursor",
-            "description": "Pagination cursor to continue from.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "description": "Pagination cursor to continue from.",
-              "type": "string"
-            }
-          },
-          {
-            "name": "search",
-            "description": "Search flags by their slug or description. Case-insensitive.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "description": "Search flags by their slug or description. Case-insensitive.",
-              "type": "string",
-              "maxLength": 256
-            }
-          },
-          {
-            "name": "kind",
-            "description": "The kind of flags to retrieve.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "description": "The kind of flags to retrieve.",
-              "type": "string",
-              "enum": [
-                "boolean",
-                "string",
-                "number",
-                "json"
-              ]
-            }
-          },
-          {
-            "name": "tags",
-            "description": "Filter flags by tag. Repeat the parameter for multiple tags (all must match).",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "description": "Filter flags by tag. Repeat the parameter for multiple tags (all must match).",
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "path",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            },
-            "required": true
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
-          }
-        ]
-      }
-    },
-    "/v2/teams/{teamId}/feature-flags/flags": {
-      "get": {
-        "description": "Retrieve all feature flags for a team across all projects. Returns an opaque cursor for pagination.",
-        "operationId": "listTeamFlagsV2",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "List all flags for a team",
-        "tags": [
-          "feature-flags"
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "data": {
-                      "items": {
-                        "$ref": "#/components/schemas/Flag"
-                      },
-                      "type": "array"
-                    },
-                    "pagination": {
-                      "properties": {
-                        "next": {
-                          "nullable": true,
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "next"
-                      ],
-                      "type": "object"
-                    }
-                  },
-                  "required": [
-                    "data",
-                    "pagination"
-                  ],
-                  "type": "object"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "One of the provided values in the request query is invalid."
-          },
-          "401": {
-            "description": "The request is not authorized."
-          },
-          "403": {
-            "description": "You do not have permission to access this resource."
-          }
-        },
-        "parameters": [
-          {
-            "name": "state",
-            "description": "The state of the flags to retrieve. Defaults to `active`.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": [
-                "active",
-                "archived"
-              ],
-              "description": "The state of the flags to retrieve. Defaults to `active`."
-            }
-          },
-          {
-            "name": "limit",
-            "description": "Maximum number of flags to return.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "description": "Maximum number of flags to return.",
-              "type": "integer",
-              "minimum": 1,
-              "maximum": 100,
-              "default": 25
             }
           },
           {
@@ -64419,12 +64419,62 @@
                                     },
                                     "type": "array"
                                   },
+                                  "id": {
+                                    "type": "string"
+                                  },
                                   "enabled": {
                                     "type": "boolean",
                                     "enum": [
                                       false,
                                       true
                                     ]
+                                  },
+                                  "environments": {
+                                    "items": {
+                                      "oneOf": [
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "system"
+                                              ]
+                                            },
+                                            "target": {
+                                              "type": "string",
+                                              "enum": [
+                                                "production",
+                                                "preview"
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "target",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "custom"
+                                              ]
+                                            },
+                                            "environmentId": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "environmentId",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        }
+                                      ]
+                                    },
+                                    "type": "array"
                                   }
                                 },
                                 "required": [
@@ -64451,12 +64501,62 @@
                                     },
                                     "type": "array"
                                   },
+                                  "id": {
+                                    "type": "string"
+                                  },
                                   "enabled": {
                                     "type": "boolean",
                                     "enum": [
                                       false,
                                       true
                                     ]
+                                  },
+                                  "environments": {
+                                    "items": {
+                                      "oneOf": [
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "system"
+                                              ]
+                                            },
+                                            "target": {
+                                              "type": "string",
+                                              "enum": [
+                                                "production",
+                                                "preview"
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "target",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "custom"
+                                              ]
+                                            },
+                                            "environmentId": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "environmentId",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        }
+                                      ]
+                                    },
+                                    "type": "array"
                                   }
                                 },
                                 "required": [
@@ -65304,6 +65404,9 @@
                               }
                             },
                             "type": "object"
+                          },
+                          "avatar": {
+                            "type": "string"
                           }
                         },
                         "required": [
@@ -82885,12 +82988,62 @@
                                         },
                                         "type": "array"
                                       },
+                                      "id": {
+                                        "type": "string"
+                                      },
                                       "enabled": {
                                         "type": "boolean",
                                         "enum": [
                                           false,
                                           true
                                         ]
+                                      },
+                                      "environments": {
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "properties": {
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "system"
+                                                  ]
+                                                },
+                                                "target": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "production",
+                                                    "preview"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "target",
+                                                "type"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            {
+                                              "properties": {
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "custom"
+                                                  ]
+                                                },
+                                                "environmentId": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "environmentId",
+                                                "type"
+                                              ],
+                                              "type": "object"
+                                            }
+                                          ]
+                                        },
+                                        "type": "array"
                                       }
                                     },
                                     "required": [
@@ -82917,12 +83070,62 @@
                                         },
                                         "type": "array"
                                       },
+                                      "id": {
+                                        "type": "string"
+                                      },
                                       "enabled": {
                                         "type": "boolean",
                                         "enum": [
                                           false,
                                           true
                                         ]
+                                      },
+                                      "environments": {
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "properties": {
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "system"
+                                                  ]
+                                                },
+                                                "target": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "production",
+                                                    "preview"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "target",
+                                                "type"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            {
+                                              "properties": {
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "custom"
+                                                  ]
+                                                },
+                                                "environmentId": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "environmentId",
+                                                "type"
+                                              ],
+                                              "type": "object"
+                                            }
+                                          ]
+                                        },
+                                        "type": "array"
                                       }
                                     },
                                     "required": [
@@ -83770,6 +83973,9 @@
                                   }
                                 },
                                 "type": "object"
+                              },
+                              "avatar": {
+                                "type": "string"
                               }
                             },
                             "required": [
@@ -88657,12 +88863,62 @@
                               },
                               "type": "array"
                             },
+                            "id": {
+                              "type": "string"
+                            },
                             "enabled": {
                               "type": "boolean",
                               "enum": [
                                 false,
                                 true
                               ]
+                            },
+                            "environments": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "system"
+                                        ]
+                                      },
+                                      "target": {
+                                        "type": "string",
+                                        "enum": [
+                                          "production",
+                                          "preview"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "target",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "custom"
+                                        ]
+                                      },
+                                      "environmentId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "environmentId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
                             }
                           },
                           "required": [
@@ -88689,12 +88945,62 @@
                               },
                               "type": "array"
                             },
+                            "id": {
+                              "type": "string"
+                            },
                             "enabled": {
                               "type": "boolean",
                               "enum": [
                                 false,
                                 true
                               ]
+                            },
+                            "environments": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "system"
+                                        ]
+                                      },
+                                      "target": {
+                                        "type": "string",
+                                        "enum": [
+                                          "production",
+                                          "preview"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "target",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "custom"
+                                        ]
+                                      },
+                                      "environmentId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "environmentId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
                             }
                           },
                           "required": [
@@ -89542,6 +89848,9 @@
                         }
                       },
                       "type": "object"
+                    },
+                    "avatar": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -94664,12 +94973,62 @@
                               },
                               "type": "array"
                             },
+                            "id": {
+                              "type": "string"
+                            },
                             "enabled": {
                               "type": "boolean",
                               "enum": [
                                 false,
                                 true
                               ]
+                            },
+                            "environments": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "system"
+                                        ]
+                                      },
+                                      "target": {
+                                        "type": "string",
+                                        "enum": [
+                                          "production",
+                                          "preview"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "target",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "custom"
+                                        ]
+                                      },
+                                      "environmentId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "environmentId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
                             }
                           },
                           "required": [
@@ -94696,12 +95055,62 @@
                               },
                               "type": "array"
                             },
+                            "id": {
+                              "type": "string"
+                            },
                             "enabled": {
                               "type": "boolean",
                               "enum": [
                                 false,
                                 true
                               ]
+                            },
+                            "environments": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "system"
+                                        ]
+                                      },
+                                      "target": {
+                                        "type": "string",
+                                        "enum": [
+                                          "production",
+                                          "preview"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "target",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "custom"
+                                        ]
+                                      },
+                                      "environmentId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "environmentId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
                             }
                           },
                           "required": [
@@ -95549,6 +95958,9 @@
                         }
                       },
                       "type": "object"
+                    },
+                    "avatar": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -100250,12 +100662,62 @@
                               },
                               "type": "array"
                             },
+                            "id": {
+                              "type": "string"
+                            },
                             "enabled": {
                               "type": "boolean",
                               "enum": [
                                 false,
                                 true
                               ]
+                            },
+                            "environments": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "system"
+                                        ]
+                                      },
+                                      "target": {
+                                        "type": "string",
+                                        "enum": [
+                                          "production",
+                                          "preview"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "target",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "custom"
+                                        ]
+                                      },
+                                      "environmentId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "environmentId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
                             }
                           },
                           "required": [
@@ -100282,12 +100744,62 @@
                               },
                               "type": "array"
                             },
+                            "id": {
+                              "type": "string"
+                            },
                             "enabled": {
                               "type": "boolean",
                               "enum": [
                                 false,
                                 true
                               ]
+                            },
+                            "environments": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "system"
+                                        ]
+                                      },
+                                      "target": {
+                                        "type": "string",
+                                        "enum": [
+                                          "production",
+                                          "preview"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "target",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "custom"
+                                        ]
+                                      },
+                                      "environmentId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "environmentId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
                             }
                           },
                           "required": [
@@ -101135,6 +101647,9 @@
                         }
                       },
                       "type": "object"
+                    },
+                    "avatar": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -101930,8 +102445,60 @@
                                   "sources"
                                 ],
                                 "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
                                   "enabled": {
                                     "type": "boolean"
+                                  },
+                                  "environments": {
+                                    "type": "array",
+                                    "items": {
+                                      "anyOf": [
+                                        {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "required": [
+                                            "type",
+                                            "target"
+                                          ],
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "system"
+                                              ]
+                                            },
+                                            "target": {
+                                              "type": "string",
+                                              "enum": [
+                                                "production",
+                                                "preview"
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "required": [
+                                            "type",
+                                            "environmentId"
+                                          ],
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "custom"
+                                              ]
+                                            },
+                                            "environmentId": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
                                   },
                                   "sources": {
                                     "type": "array",
@@ -101977,8 +102544,60 @@
                                   "sources"
                                 ],
                                 "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
                                   "enabled": {
                                     "type": "boolean"
+                                  },
+                                  "environments": {
+                                    "type": "array",
+                                    "items": {
+                                      "anyOf": [
+                                        {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "required": [
+                                            "type",
+                                            "target"
+                                          ],
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "system"
+                                              ]
+                                            },
+                                            "target": {
+                                              "type": "string",
+                                              "enum": [
+                                                "production",
+                                                "preview"
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "required": [
+                                            "type",
+                                            "environmentId"
+                                          ],
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "custom"
+                                              ]
+                                            },
+                                            "environmentId": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
                                   },
                                   "sources": {
                                     "type": "array",
@@ -115266,12 +115885,62 @@
                               },
                               "type": "array"
                             },
+                            "id": {
+                              "type": "string"
+                            },
                             "enabled": {
                               "type": "boolean",
                               "enum": [
                                 false,
                                 true
                               ]
+                            },
+                            "environments": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "system"
+                                        ]
+                                      },
+                                      "target": {
+                                        "type": "string",
+                                        "enum": [
+                                          "production",
+                                          "preview"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "target",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "custom"
+                                        ]
+                                      },
+                                      "environmentId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "environmentId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
                             }
                           },
                           "required": [
@@ -115298,12 +115967,62 @@
                               },
                               "type": "array"
                             },
+                            "id": {
+                              "type": "string"
+                            },
                             "enabled": {
                               "type": "boolean",
                               "enum": [
                                 false,
                                 true
                               ]
+                            },
+                            "environments": {
+                              "items": {
+                                "oneOf": [
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "system"
+                                        ]
+                                      },
+                                      "target": {
+                                        "type": "string",
+                                        "enum": [
+                                          "production",
+                                          "preview"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "target",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "custom"
+                                        ]
+                                      },
+                                      "environmentId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "environmentId",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
+                              },
+                              "type": "array"
                             }
                           },
                           "required": [
@@ -116151,6 +116870,9 @@
                         }
                       },
                       "type": "object"
+                    },
+                    "avatar": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -131321,8 +132043,60 @@
                                   "sources"
                                 ],
                                 "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
                                   "enabled": {
                                     "type": "boolean"
+                                  },
+                                  "environments": {
+                                    "type": "array",
+                                    "items": {
+                                      "anyOf": [
+                                        {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "required": [
+                                            "type",
+                                            "target"
+                                          ],
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "system"
+                                              ]
+                                            },
+                                            "target": {
+                                              "type": "string",
+                                              "enum": [
+                                                "production",
+                                                "preview"
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "required": [
+                                            "type",
+                                            "environmentId"
+                                          ],
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "custom"
+                                              ]
+                                            },
+                                            "environmentId": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
                                   },
                                   "sources": {
                                     "type": "array",
@@ -131368,8 +132142,60 @@
                                   "sources"
                                 ],
                                 "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
                                   "enabled": {
                                     "type": "boolean"
+                                  },
+                                  "environments": {
+                                    "type": "array",
+                                    "items": {
+                                      "anyOf": [
+                                        {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "required": [
+                                            "type",
+                                            "target"
+                                          ],
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "system"
+                                              ]
+                                            },
+                                            "target": {
+                                              "type": "string",
+                                              "enum": [
+                                                "production",
+                                                "preview"
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "required": [
+                                            "type",
+                                            "environmentId"
+                                          ],
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "custom"
+                                              ]
+                                            },
+                                            "environmentId": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
                                   },
                                   "sources": {
                                     "type": "array",
@@ -139478,6 +140304,7 @@
               "project-analytics-enabled",
               "project-speed-insights-enabled",
               "project-automation-bypass",
+              "project-avatar-update",
               "project-affected-projects-deployments-updated",
               "project-external-rewrite-caching-updated",
               "project-build-command-updated",
@@ -140231,6 +141058,7 @@
               "project-analytics-enabled",
               "project-speed-insights-enabled",
               "project-automation-bypass",
+              "project-avatar-update",
               "project-affected-projects-deployments-updated",
               "project-external-rewrite-caching-updated",
               "project-build-command-updated",
@@ -140777,6 +141605,7 @@
                 "project-analytics-enabled",
                 "project-speed-insights-enabled",
                 "project-automation-bypass",
+                "project-avatar-update",
                 "project-affected-projects-deployments-updated",
                 "project-external-rewrite-caching-updated",
                 "project-build-command-updated",
@@ -141104,10 +141933,10 @@
           },
           "experiment": {
             "properties": {
-              "name": {
+              "id": {
                 "type": "string"
               },
-              "id": {
+              "name": {
                 "type": "string"
               },
               "numVariants": {
@@ -143783,12 +144612,62 @@
                     },
                     "type": "array"
                   },
+                  "id": {
+                    "type": "string"
+                  },
                   "enabled": {
                     "type": "boolean",
                     "enum": [
                       false,
                       true
                     ]
+                  },
+                  "environments": {
+                    "items": {
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "system"
+                              ]
+                            },
+                            "target": {
+                              "type": "string",
+                              "enum": [
+                                "production",
+                                "preview"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "target",
+                            "type"
+                          ],
+                          "type": "object"
+                        },
+                        {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "custom"
+                              ]
+                            },
+                            "environmentId": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "environmentId",
+                            "type"
+                          ],
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "type": "array"
                   }
                 },
                 "required": [
@@ -143814,12 +144693,62 @@
                     },
                     "type": "array"
                   },
+                  "id": {
+                    "type": "string"
+                  },
                   "enabled": {
                     "type": "boolean",
                     "enum": [
                       false,
                       true
                     ]
+                  },
+                  "environments": {
+                    "items": {
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "system"
+                              ]
+                            },
+                            "target": {
+                              "type": "string",
+                              "enum": [
+                                "production",
+                                "preview"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "target",
+                            "type"
+                          ],
+                          "type": "object"
+                        },
+                        {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "custom"
+                              ]
+                            },
+                            "environmentId": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "environmentId",
+                            "type"
+                          ],
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "type": "array"
                   }
                 },
                 "required": [
