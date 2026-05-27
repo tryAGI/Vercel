@@ -118,7 +118,7 @@ namespace Vercel
         /// Example: 1540095775951L
         /// </param>
         /// <param name="state">
-        /// Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`)<br/>
+        /// Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`, `BLOCKED`)<br/>
         /// Example: BUILDING,READY
         /// </param>
         /// <param name="rollbackCandidate">
@@ -227,7 +227,7 @@ namespace Vercel
         /// Example: 1540095775951L
         /// </param>
         /// <param name="state">
-        /// Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`)<br/>
+        /// Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`, `BLOCKED`)<br/>
         /// Example: BUILDING,READY
         /// </param>
         /// <param name="rollbackCandidate">
@@ -313,7 +313,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: "/v6/deployments",
+                                path: "/v7/deployments",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("app", app)
@@ -407,7 +407,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "GetDeployments",
                                 methodName: "GetDeploymentsAsync",
-                                pathTemplate: "\"/v6/deployments\"",
+                                pathTemplate: "\"/v7/deployments\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -441,7 +441,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "GetDeployments",
                                 methodName: "GetDeploymentsAsync",
-                                pathTemplate: "\"/v6/deployments\"",
+                                pathTemplate: "\"/v7/deployments\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -482,7 +482,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "GetDeployments",
                                 methodName: "GetDeploymentsAsync",
-                                pathTemplate: "\"/v6/deployments\"",
+                                pathTemplate: "\"/v7/deployments\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -530,7 +530,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "GetDeployments",
                                 methodName: "GetDeploymentsAsync",
-                                pathTemplate: "\"/v6/deployments\"",
+                                pathTemplate: "\"/v7/deployments\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -552,7 +552,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "GetDeployments",
                                 methodName: "GetDeploymentsAsync",
-                                pathTemplate: "\"/v6/deployments\"",
+                                pathTemplate: "\"/v7/deployments\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,

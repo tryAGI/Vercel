@@ -135797,7 +135797,7 @@
         ]
       }
     },
-    "/v6/deployments": {
+    "/v7/deployments": {
       "get": {
         "description": "List deployments under the authenticated user or team. If a deployment hasn't finished uploading (is incomplete), the `url` property will have a value of `null`.",
         "operationId": "getDeployments",
@@ -136801,10 +136801,10 @@
           },
           {
             "name": "state",
-            "description": "Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`)",
+            "description": "Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`, `BLOCKED`)",
             "in": "query",
             "schema": {
-              "description": "Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`)",
+              "description": "Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`, `BLOCKED`)",
               "type": "string",
               "example": "BUILDING,READY"
             }
@@ -136854,12 +136854,7 @@
               "example": "my-team-url-slug"
             }
           }
-        ],
-        "x-speakeasy-usage-example": {
-          "title": "List deployments",
-          "description": "List deployments under the authenticated user or team.",
-          "position": 1
-        }
+        ]
       }
     },
     "/v13/deployments/{id}": {
