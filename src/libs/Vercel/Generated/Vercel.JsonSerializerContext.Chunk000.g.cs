@@ -216,6 +216,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.TeamEnableProductionFeedbackNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSensitiveEnvironmentVariablePolicyJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSensitiveEnvironmentVariablePolicyNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamDpAccessRequestsModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamDpAccessRequestsModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamNsnbConfigPreferenceJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamNsnbConfigPreferenceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDeploymentPolicyGitSourcesSourceVariant1ProviderJsonConverter),
@@ -760,6 +762,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateTeamMemberRequestProjectRoleNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestSamlRolesEnumJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestSamlRolesEnumNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.PatchTeamRequestDpAccessRequestsModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.PatchTeamRequestDpAccessRequestsModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDefaultDeploymentProtectionPasswordProtectionDeploymentTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDefaultDeploymentProtectionPasswordProtectionDeploymentTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDefaultDeploymentProtectionSsoProtectionDeploymentTypeJsonConverter),
@@ -5848,6 +5852,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamEnablePreviewFeedback), TypeInfoPropertyName = "TeamEnablePreviewFeedback2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamEnableProductionFeedback), TypeInfoPropertyName = "TeamEnableProductionFeedback2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamSensitiveEnvironmentVariablePolicy), TypeInfoPropertyName = "TeamSensitiveEnvironmentVariablePolicy2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamDpAccessRequestsMode), TypeInfoPropertyName = "TeamDpAccessRequestsMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.TeamIpBucket>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamIpBucket))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamStrictDeploymentProtectionSettings))]
@@ -6035,7 +6040,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckRequestOutputMetricsVirtualExperienceScoreSource), TypeInfoPropertyName = "UpdateCheckRequestOutputMetricsVirtualExperienceScoreSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateNetworkRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateNetworkRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequest))]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

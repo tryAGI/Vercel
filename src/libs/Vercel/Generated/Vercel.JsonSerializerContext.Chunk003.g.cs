@@ -216,6 +216,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.TeamEnableProductionFeedbackNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSensitiveEnvironmentVariablePolicyJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSensitiveEnvironmentVariablePolicyNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamDpAccessRequestsModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamDpAccessRequestsModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamNsnbConfigPreferenceJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamNsnbConfigPreferenceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDeploymentPolicyGitSourcesSourceVariant1ProviderJsonConverter),
@@ -760,6 +762,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateTeamMemberRequestProjectRoleNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestSamlRolesEnumJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestSamlRolesEnumNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.PatchTeamRequestDpAccessRequestsModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.PatchTeamRequestDpAccessRequestsModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDefaultDeploymentProtectionPasswordProtectionDeploymentTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDefaultDeploymentProtectionPasswordProtectionDeploymentTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDefaultDeploymentProtectionSsoProtectionDeploymentTypeJsonConverter),
@@ -5536,6 +5540,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestResourceConfig))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestResourceConfigBuildMachine))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestResourceConfigBuildMachineDefault), TypeInfoPropertyName = "PatchTeamRequestResourceConfigBuildMachineDefault2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateTeamRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateTeamRequestAttribution))]
@@ -6034,8 +6040,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsVirtualExperienceScoreSource), TypeInfoPropertyName = "GetAllChecksResponseCheckOutputMetricsVirtualExperienceScoreSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckStatus), TypeInfoPropertyName = "GetAllChecksResponseCheckStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCheckResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCheckResponseStatus), TypeInfoPropertyName = "GetCheckResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCheckResponseConclusion), TypeInfoPropertyName = "GetCheckResponseConclusion2")]
     internal sealed partial class SourceGenerationContextChunk003 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

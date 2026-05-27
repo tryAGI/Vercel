@@ -162,6 +162,13 @@ namespace Vercel
         public bool? HideIpAddressesInLogDrains { get; set; }
 
         /// <summary>
+        /// Controls who can request access to protected deployments.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dpAccessRequestsMode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamDpAccessRequestsModeJsonConverter))]
+        public global::Vercel.TeamDpAccessRequestsMode? DpAccessRequestsMode { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ipBuckets")]
@@ -372,6 +379,9 @@ namespace Vercel
         /// <param name="hideIpAddressesInLogDrains">
         /// Indicates if IP addresses should be accessible in log drains
         /// </param>
+        /// <param name="dpAccessRequestsMode">
+        /// Controls who can request access to protected deployments.
+        /// </param>
         /// <param name="ipBuckets"></param>
         /// <param name="requireVerifiedCommits">
         /// When enabled, all projects in the team require commits to be signed and verified by the git provider before deployments will be created. Projects may override this via `project.gitProviderOptions.requireVerifiedCommits` (gated by `Project:Update`).
@@ -447,6 +457,7 @@ namespace Vercel
             global::Vercel.TeamSensitiveEnvironmentVariablePolicy? sensitiveEnvironmentVariablePolicy,
             bool? hideIpAddresses,
             bool? hideIpAddressesInLogDrains,
+            global::Vercel.TeamDpAccessRequestsMode? dpAccessRequestsMode,
             global::System.Collections.Generic.IList<global::Vercel.TeamIpBucket>? ipBuckets,
             bool? requireVerifiedCommits,
             bool? disableRepositoryDispatchEvents,
@@ -485,6 +496,7 @@ namespace Vercel
             this.SensitiveEnvironmentVariablePolicy = sensitiveEnvironmentVariablePolicy;
             this.HideIpAddresses = hideIpAddresses;
             this.HideIpAddressesInLogDrains = hideIpAddressesInLogDrains;
+            this.DpAccessRequestsMode = dpAccessRequestsMode;
             this.IpBuckets = ipBuckets;
             this.RequireVerifiedCommits = requireVerifiedCommits;
             this.DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents;
