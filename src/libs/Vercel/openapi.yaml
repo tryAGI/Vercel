@@ -131886,6 +131886,16 @@
                     "example": false,
                     "description": "Display or hide IP addresses in Log Drains."
                   },
+                  "dpAccessRequestsMode": {
+                    "type": "string",
+                    "enum": [
+                      "all",
+                      "none",
+                      "email-domain"
+                    ],
+                    "example": "none",
+                    "description": "Controls who can request access to protected deployments."
+                  },
                   "requireVerifiedCommits": {
                     "type": "boolean",
                     "example": true,
@@ -144459,6 +144469,15 @@
               null
             ],
             "description": "Indicates if IP addresses should be accessible in log drains"
+          },
+          "dpAccessRequestsMode": {
+            "type": "string",
+            "enum": [
+              "all",
+              "none",
+              "email-domain"
+            ],
+            "description": "Controls who can request access to protected deployments."
           },
           "ipBuckets": {
             "items": {
