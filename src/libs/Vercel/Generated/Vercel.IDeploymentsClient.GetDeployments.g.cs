@@ -51,7 +51,7 @@ namespace Vercel
         /// Example: 1540095775951L
         /// </param>
         /// <param name="state">
-        /// Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`)<br/>
+        /// Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`, `BLOCKED`)<br/>
         /// Example: BUILDING,READY
         /// </param>
         /// <param name="rollbackCandidate">
@@ -136,7 +136,7 @@ namespace Vercel
         /// Example: 1540095775951L
         /// </param>
         /// <param name="state">
-        /// Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`)<br/>
+        /// Filter deployments based on their state (`BUILDING`, `ERROR`, `INITIALIZING`, `QUEUED`, `READY`, `CANCELED`, `BLOCKED`)<br/>
         /// Example: BUILDING,READY
         /// </param>
         /// <param name="rollbackCandidate">
