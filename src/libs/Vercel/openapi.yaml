@@ -118915,16 +118915,7 @@
           "404": {
             "description": ""
           },
-          "410": {
-            "description": ""
-          },
-          "422": {
-            "description": ""
-          },
           "429": {
-            "description": ""
-          },
-          "500": {
             "description": ""
           }
         },
