@@ -295,6 +295,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public SandboxesClient Sandboxes => new SandboxesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
+        /// 
+        /// </summary>
         public SecurityClient Security => new SecurityClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

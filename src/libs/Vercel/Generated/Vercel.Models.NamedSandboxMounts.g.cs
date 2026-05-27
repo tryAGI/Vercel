@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Key-value pairs of mount path and volume.
+    /// Key-value pairs of mount path and drive.
     /// </summary>
     public sealed partial class NamedSandboxMounts
     {
