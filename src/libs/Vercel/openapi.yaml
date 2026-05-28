@@ -62802,6 +62802,12 @@
                                 },
                                 "type": "array"
                               },
+                              "oidcFederationPolicy": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "observabilityConfiguration": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -81371,6 +81377,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "oidcFederationPolicy": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "observabilityConfiguration": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -87241,6 +87253,12 @@
                           "type": "array"
                         },
                         "notificationUsageAlert": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "oidcFederationPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -93356,6 +93374,12 @@
                           },
                           "type": "array"
                         },
+                        "oidcFederationPolicy": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "observabilityConfiguration": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -99040,6 +99064,12 @@
                           "type": "array"
                         },
                         "notificationUsageAlert": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "oidcFederationPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -114268,6 +114298,12 @@
                           },
                           "type": "array"
                         },
+                        "oidcFederationPolicy": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "observabilityConfiguration": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -118111,7 +118147,6 @@
                       "description": "A port number to expose from the sandbox. Must be between 1024 and 65535.",
                       "not": {
                         "enum": [
-                          8080,
                           23456
                         ]
                       },
@@ -119562,7 +119597,6 @@
                       "description": "A port number to expose from the sandbox. Must be between 1024 and 65535.",
                       "not": {
                         "enum": [
-                          8080,
                           23456
                         ]
                       },
@@ -140215,8 +140249,8 @@
               "drain-created",
               "drain-deleted",
               "drain-disabled",
-              "drain-enabled",
               "drain-updated",
+              "drain-enabled",
               "edge-cache-dangerously-delete-by-src-images",
               "edge-cache-dangerously-delete-by-tags",
               "edge-cache-invalidate-by-src-images",
@@ -140969,8 +141003,8 @@
               "drain-created",
               "drain-deleted",
               "drain-disabled",
-              "drain-enabled",
               "drain-updated",
+              "drain-enabled",
               "edge-cache-dangerously-delete-by-src-images",
               "edge-cache-dangerously-delete-by-tags",
               "edge-cache-invalidate-by-src-images",
@@ -141516,8 +141550,8 @@
                 "drain-created",
                 "drain-deleted",
                 "drain-disabled",
-                "drain-enabled",
                 "drain-updated",
+                "drain-enabled",
                 "edge-cache-dangerously-delete-by-src-images",
                 "edge-cache-dangerously-delete-by-tags",
                 "edge-cache-invalidate-by-src-images",
