@@ -35,6 +35,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("userMfaConfiguration")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? UserMfaConfiguration { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userPreference")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? UserPreference { get; set; }
 
@@ -1533,6 +1539,7 @@ namespace Vercel
         /// <param name="organization"></param>
         /// <param name="user"></param>
         /// <param name="userConnection"></param>
+        /// <param name="userMfaConfiguration"></param>
         /// <param name="userPreference"></param>
         /// <param name="userSudo"></param>
         /// <param name="webAuthn"></param>
@@ -1789,6 +1796,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? organization,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? user,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userConnection,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userMfaConfiguration,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userPreference,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userSudo,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAuthn,
@@ -2042,6 +2050,7 @@ namespace Vercel
             this.Organization = organization;
             this.User = user;
             this.UserConnection = userConnection;
+            this.UserMfaConfiguration = userMfaConfiguration;
             this.UserPreference = userPreference;
             this.UserSudo = userSudo;
             this.WebAuthn = webAuthn;
