@@ -112,6 +112,12 @@ namespace Vercel
         public bool? AutoSensitive { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("agentTools")]
+        public bool? AgentTools { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -137,6 +143,7 @@ namespace Vercel
         /// <param name="databaseUI"></param>
         /// <param name="v0Flavors"></param>
         /// <param name="autoSensitive"></param>
+        /// <param name="agentTools"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -157,7 +164,8 @@ namespace Vercel
             bool? nativeImportResource,
             bool? databaseUI,
             bool? v0Flavors,
-            bool? autoSensitive)
+            bool? autoSensitive,
+            bool? agentTools)
         {
             this.Mcp = mcp;
             this.McpReadonly = mcpReadonly;
@@ -176,6 +184,7 @@ namespace Vercel
             this.DatabaseUI = databaseUI;
             this.V0Flavors = v0Flavors;
             this.AutoSensitive = autoSensitive;
+            this.AgentTools = agentTools;
         }
 
         /// <summary>
