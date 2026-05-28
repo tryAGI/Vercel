@@ -47,7 +47,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemEnvironment> Environments { get; set; }
+        public required global::System.Collections.Generic.IList<string> Environments { get; set; }
 
         /// <summary>
         /// 
@@ -100,7 +100,7 @@ namespace Vercel
             string id,
             string projectId,
             string name,
-            global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemEnvironment> environments,
+            global::System.Collections.Generic.IList<string> environments,
             global::System.Collections.Generic.IList<string> environmentVariables,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework? framework,
             string? latestDeployment,
