@@ -24,6 +24,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Drop,
+        /// <summary>
+        /// 
+        /// </summary>
         Git,
         /// <summary>
         /// 
@@ -58,6 +62,7 @@ namespace Vercel
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.ApiTriggerGitDeploy => "api-trigger-git-deploy",
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Cli => "cli",
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.CloneRepo => "clone/repo",
+                CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Drop => "drop",
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Git => "git",
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Import => "import",
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.ImportRepo => "import/repo",
@@ -76,6 +81,7 @@ namespace Vercel
                 "api-trigger-git-deploy" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.ApiTriggerGitDeploy,
                 "cli" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Cli,
                 "clone/repo" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.CloneRepo,
+                "drop" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Drop,
                 "git" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Git,
                 "import" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Import,
                 "import/repo" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.ImportRepo,

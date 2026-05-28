@@ -24,6 +24,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Drop,
+        /// <summary>
+        /// 
+        /// </summary>
         Git,
         /// <summary>
         /// 
@@ -58,6 +62,7 @@ namespace Vercel
                 CancelDeploymentResponseSource.ApiTriggerGitDeploy => "api-trigger-git-deploy",
                 CancelDeploymentResponseSource.Cli => "cli",
                 CancelDeploymentResponseSource.CloneRepo => "clone/repo",
+                CancelDeploymentResponseSource.Drop => "drop",
                 CancelDeploymentResponseSource.Git => "git",
                 CancelDeploymentResponseSource.Import => "import",
                 CancelDeploymentResponseSource.ImportRepo => "import/repo",
@@ -76,6 +81,7 @@ namespace Vercel
                 "api-trigger-git-deploy" => CancelDeploymentResponseSource.ApiTriggerGitDeploy,
                 "cli" => CancelDeploymentResponseSource.Cli,
                 "clone/repo" => CancelDeploymentResponseSource.CloneRepo,
+                "drop" => CancelDeploymentResponseSource.Drop,
                 "git" => CancelDeploymentResponseSource.Git,
                 "import" => CancelDeploymentResponseSource.Import,
                 "import/repo" => CancelDeploymentResponseSource.ImportRepo,

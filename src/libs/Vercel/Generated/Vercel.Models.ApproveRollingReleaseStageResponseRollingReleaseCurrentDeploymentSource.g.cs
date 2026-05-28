@@ -24,6 +24,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Drop,
+        /// <summary>
+        /// 
+        /// </summary>
         Git,
         /// <summary>
         /// 
@@ -58,6 +62,7 @@ namespace Vercel
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.ApiTriggerGitDeploy => "api-trigger-git-deploy",
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Cli => "cli",
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.CloneRepo => "clone/repo",
+                ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Drop => "drop",
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Git => "git",
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Import => "import",
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.ImportRepo => "import/repo",
@@ -76,6 +81,7 @@ namespace Vercel
                 "api-trigger-git-deploy" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.ApiTriggerGitDeploy,
                 "cli" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Cli,
                 "clone/repo" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.CloneRepo,
+                "drop" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Drop,
                 "git" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Git,
                 "import" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Import,
                 "import/repo" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.ImportRepo,
