@@ -719,6 +719,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oidcFederationPolicy")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OidcFederationPolicy { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("observabilityConfiguration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ObservabilityConfiguration { get; set; }
 
@@ -1641,6 +1647,7 @@ namespace Vercel
         /// <param name="notificationPreferences"></param>
         /// <param name="notificationStatementOfReasons"></param>
         /// <param name="notificationUsageAlert"></param>
+        /// <param name="oidcFederationPolicy"></param>
         /// <param name="observabilityConfiguration"></param>
         /// <param name="observabilityFunnel"></param>
         /// <param name="observabilityNotebook"></param>
@@ -1896,6 +1903,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? notificationPreferences,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? notificationStatementOfReasons,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? notificationUsageAlert,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? oidcFederationPolicy,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? observabilityConfiguration,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? observabilityFunnel,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? observabilityNotebook,
@@ -2148,6 +2156,7 @@ namespace Vercel
             this.NotificationPreferences = notificationPreferences;
             this.NotificationStatementOfReasons = notificationStatementOfReasons;
             this.NotificationUsageAlert = notificationUsageAlert;
+            this.OidcFederationPolicy = oidcFederationPolicy;
             this.ObservabilityConfiguration = observabilityConfiguration;
             this.ObservabilityFunnel = observabilityFunnel;
             this.ObservabilityNotebook = observabilityNotebook;
