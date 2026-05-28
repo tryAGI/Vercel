@@ -497,7 +497,7 @@ namespace Vercel
         public global::Vercel.UploadProjectAvatarResponseOidcTokenConfig? OidcTokenConfig { get; set; }
 
         /// <summary>
-        /// Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type — the underlying data lives in separate stores.
+        /// Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
         public global::Vercel.UploadProjectAvatarResponseDeploymentPolicy? DeploymentPolicy { get; set; }
@@ -676,7 +676,7 @@ namespace Vercel
         /// <param name="security"></param>
         /// <param name="oidcTokenConfig"></param>
         /// <param name="deploymentPolicy">
-        /// Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type — the underlying data lives in separate stores.
+        /// Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident.
         /// </param>
         /// <param name="tier"></param>
         /// <param name="flatRateTier"></param>
