@@ -62118,6 +62118,12 @@
                                 },
                                 "type": "array"
                               },
+                              "userMfaConfiguration": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "userPreference": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -80693,6 +80699,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "userMfaConfiguration": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "userPreference": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -86569,6 +86581,12 @@
                           "type": "array"
                         },
                         "userConnection": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "userMfaConfiguration": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -92690,6 +92708,12 @@
                           },
                           "type": "array"
                         },
+                        "userMfaConfiguration": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "userPreference": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -98380,6 +98404,12 @@
                           "type": "array"
                         },
                         "userConnection": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "userMfaConfiguration": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -113614,6 +113644,12 @@
                           },
                           "type": "array"
                         },
+                        "userMfaConfiguration": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "userPreference": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -119957,6 +119993,13 @@
                     "type": "boolean",
                     "description": "If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.",
                     "default": false
+                  },
+                  "timeout": {
+                    "type": "integer",
+                    "description": "Maximum duration in milliseconds to wait for the command to finish. When elapsed, the process is killed with SIGKILL. Requires `wait` to be true.",
+                    "minimum": 100,
+                    "maximum": 18000000,
+                    "example": 30000
                   }
                 }
               }
@@ -140565,6 +140608,7 @@
               "user-mfa-challenge-verified",
               "user-mfa-configuration-updated",
               "user-mfa-recovery-codes-regenerated",
+              "user-mfa-setup-skipped",
               "user-mfa-totp-verification-started",
               "user-mfa-totp-verified",
               "user-primary-email-updated",
@@ -141319,6 +141363,7 @@
               "user-mfa-challenge-verified",
               "user-mfa-configuration-updated",
               "user-mfa-recovery-codes-regenerated",
+              "user-mfa-setup-skipped",
               "user-mfa-totp-verification-started",
               "user-mfa-totp-verified",
               "user-primary-email-updated",
@@ -141866,6 +141911,7 @@
                 "user-mfa-challenge-verified",
                 "user-mfa-configuration-updated",
                 "user-mfa-recovery-codes-regenerated",
+                "user-mfa-setup-skipped",
                 "user-mfa-totp-verification-started",
                 "user-mfa-totp-verified",
                 "user-primary-email-updated",

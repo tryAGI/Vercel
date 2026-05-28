@@ -1856,6 +1856,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserMfaSetupSkipped,
+        /// <summary>
+        /// 
+        /// </summary>
         UserMfaTotpVerificationStarted,
         /// <summary>
         /// 
@@ -2440,6 +2444,7 @@ namespace Vercel
                 ListEventTypeName.UserMfaConfigurationUpdated => "user-mfa-configuration-updated",
                 ListEventTypeName.UserMfaRecoveryCodesRegenerated => "user-mfa-recovery-codes-regenerated",
                 ListEventTypeName.UserMfaRemoved => "user-mfa-removed",
+                ListEventTypeName.UserMfaSetupSkipped => "user-mfa-setup-skipped",
                 ListEventTypeName.UserMfaTotpVerificationStarted => "user-mfa-totp-verification-started",
                 ListEventTypeName.UserMfaTotpVerified => "user-mfa-totp-verified",
                 ListEventTypeName.UserPrimaryEmailUpdated => "user-primary-email-updated",
@@ -2939,6 +2944,7 @@ namespace Vercel
                 "user-mfa-configuration-updated" => ListEventTypeName.UserMfaConfigurationUpdated,
                 "user-mfa-recovery-codes-regenerated" => ListEventTypeName.UserMfaRecoveryCodesRegenerated,
                 "user-mfa-removed" => ListEventTypeName.UserMfaRemoved,
+                "user-mfa-setup-skipped" => ListEventTypeName.UserMfaSetupSkipped,
                 "user-mfa-totp-verification-started" => ListEventTypeName.UserMfaTotpVerificationStarted,
                 "user-mfa-totp-verified" => ListEventTypeName.UserMfaTotpVerified,
                 "user-primary-email-updated" => ListEventTypeName.UserPrimaryEmailUpdated,
