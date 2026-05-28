@@ -126680,6 +126680,13 @@
                                 false,
                                 true
                               ]
+                            },
+                            "agentTools": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
                             }
                           },
                           "type": "object"
@@ -126879,6 +126886,13 @@
                                   ]
                                 },
                                 "autoSensitive": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false,
+                                    true
+                                  ]
+                                },
+                                "agentTools": {
                                   "type": "boolean",
                                   "enum": [
                                     false,
