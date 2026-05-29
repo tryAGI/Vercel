@@ -59766,10 +59766,6 @@
                             ],
                             "type": "object"
                           },
-                          "delegatedProtection": {
-                            "nullable": true,
-                            "type": "object"
-                          },
                           "deploymentExpiration": {
                             "properties": {
                               "expirationDays": {
@@ -60721,9 +60717,6 @@
                                   "createdAt": {
                                     "type": "number"
                                   },
-                                  "updatedAt": {
-                                    "type": "number"
-                                  },
                                   "org": {
                                     "type": "string"
                                   },
@@ -60768,6 +60761,9 @@
                                   },
                                   "gitCredentialId": {
                                     "type": "string"
+                                  },
+                                  "updatedAt": {
+                                    "type": "number"
                                   },
                                   "sourceless": {
                                     "type": "boolean",
@@ -62392,12 +62388,6 @@
                                 },
                                 "type": "array"
                               },
-                              "delegatedProtectionClient": {
-                                "items": {
-                                  "$ref": "#/components/schemas/ACLAction"
-                                },
-                                "type": "array"
-                              },
                               "deploymentPolicy": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -63359,12 +63349,6 @@
                                 "type": "array"
                               },
                               "projectCheckRun": {
-                                "items": {
-                                  "$ref": "#/components/schemas/ACLAction"
-                                },
-                                "type": "array"
-                              },
-                              "projectDelegatedProtection": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
                                 },
@@ -78691,10 +78675,6 @@
                                 ],
                                 "type": "object"
                               },
-                              "delegatedProtection": {
-                                "nullable": true,
-                                "type": "object"
-                              },
                               "deploymentExpiration": {
                                 "properties": {
                                   "expirationDays": {
@@ -80975,12 +80955,6 @@
                                     },
                                     "type": "array"
                                   },
-                                  "delegatedProtectionClient": {
-                                    "items": {
-                                      "$ref": "#/components/schemas/ACLAction"
-                                    },
-                                    "type": "array"
-                                  },
                                   "deploymentPolicy": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -81942,12 +81916,6 @@
                                     "type": "array"
                                   },
                                   "projectCheckRun": {
-                                    "items": {
-                                      "$ref": "#/components/schemas/ACLAction"
-                                    },
-                                    "type": "array"
-                                  },
-                                  "projectDelegatedProtection": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
                                     },
@@ -84580,10 +84548,6 @@
                       ],
                       "type": "object"
                     },
-                    "delegatedProtection": {
-                      "nullable": true,
-                      "type": "object"
-                    },
                     "deploymentExpiration": {
                       "properties": {
                         "expirationDays": {
@@ -86864,12 +86828,6 @@
                           },
                           "type": "array"
                         },
-                        "delegatedProtectionClient": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
                         "deploymentPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -87831,12 +87789,6 @@
                           "type": "array"
                         },
                         "projectCheckRun": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
-                        "projectDelegatedProtection": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -90706,10 +90658,6 @@
                       ],
                       "type": "object"
                     },
-                    "delegatedProtection": {
-                      "nullable": true,
-                      "type": "object"
-                    },
                     "deploymentExpiration": {
                       "properties": {
                         "expirationDays": {
@@ -92988,12 +92936,6 @@
                           },
                           "type": "array"
                         },
-                        "delegatedProtectionClient": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
                         "deploymentPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -93955,12 +93897,6 @@
                           "type": "array"
                         },
                         "projectCheckRun": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
-                        "projectDelegatedProtection": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -96416,10 +96352,6 @@
                       ],
                       "type": "object"
                     },
-                    "delegatedProtection": {
-                      "nullable": true,
-                      "type": "object"
-                    },
                     "deploymentExpiration": {
                       "properties": {
                         "expirationDays": {
@@ -98691,12 +98623,6 @@
                           },
                           "type": "array"
                         },
-                        "delegatedProtectionClient": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
                         "deploymentPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -99658,12 +99584,6 @@
                           "type": "array"
                         },
                         "projectCheckRun": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
-                        "projectDelegatedProtection": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -103258,10 +103178,6 @@
                       ],
                       "type": "object"
                     },
-                    "delegatedProtection": {
-                      "nullable": true,
-                      "type": "object"
-                    },
                     "deploymentExpiration": {
                       "properties": {
                         "expirationDays": {
@@ -105542,12 +105458,6 @@
                           },
                           "type": "array"
                         },
-                        "delegatedProtectionClient": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
                         "deploymentPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -106509,12 +106419,6 @@
                           "type": "array"
                         },
                         "projectCheckRun": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
-                        "projectDelegatedProtection": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -117364,10 +117268,6 @@
                       ],
                       "type": "object"
                     },
-                    "delegatedProtection": {
-                      "nullable": true,
-                      "type": "object"
-                    },
                     "deploymentExpiration": {
                       "properties": {
                         "expirationDays": {
@@ -119648,12 +119548,6 @@
                           },
                           "type": "array"
                         },
-                        "delegatedProtectionClient": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
                         "deploymentPolicy": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -120615,12 +120509,6 @@
                           "type": "array"
                         },
                         "projectCheckRun": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
-                        "projectDelegatedProtection": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -125729,12 +125617,6 @@
                     "type": "boolean",
                     "description": "If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.",
                     "default": false
-                  },
-                  "timeout": {
-                    "type": "integer",
-                    "description": "Maximum duration in milliseconds to wait for the command to finish. When elapsed, the process is killed with SIGKILL. Requires `wait` to be true.",
-                    "minimum": 100,
-                    "example": 30000
                   }
                 }
               }
@@ -146156,9 +146038,6 @@
               "project-connect-configurations",
               "project-created",
               "project-cron-jobs-toggled",
-              "project-delegated-protection-enabled",
-              "project-delegated-protection-updated",
-              "project-delegated-protection-disabled",
               "project-delete",
               "project-domain-unverified",
               "project-domain-verified",
@@ -146912,9 +146791,6 @@
               "project-connect-configurations",
               "project-created",
               "project-cron-jobs-toggled",
-              "project-delegated-protection-enabled",
-              "project-delegated-protection-updated",
-              "project-delegated-protection-disabled",
               "project-delete",
               "project-domain-unverified",
               "project-domain-verified",
@@ -147461,9 +147337,6 @@
                 "project-connect-configurations",
                 "project-created",
                 "project-cron-jobs-toggled",
-                "project-delegated-protection-enabled",
-                "project-delegated-protection-updated",
-                "project-delegated-protection-disabled",
                 "project-delete",
                 "project-domain-unverified",
                 "project-domain-verified",
