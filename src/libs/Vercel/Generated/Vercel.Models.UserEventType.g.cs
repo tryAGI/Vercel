@@ -412,6 +412,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DeploymentPolicyBlocked,
+        /// <summary>
+        /// 
+        /// </summary>
         DisabledIntegrationInstallationRemoved,
         /// <summary>
         /// 
@@ -2083,6 +2087,7 @@ namespace Vercel
                 UserEventType.DeploymentChown => "deployment-chown",
                 UserEventType.DeploymentCreationBlocked => "deployment-creation-blocked",
                 UserEventType.DeploymentDelete => "deployment-delete",
+                UserEventType.DeploymentPolicyBlocked => "deployment-policy-blocked",
                 UserEventType.DisabledIntegrationInstallationRemoved => "disabled-integration-installation-removed",
                 UserEventType.DisconnectBitbucketApp => "disconnect-bitbucket-app",
                 UserEventType.DisconnectGithub => "disconnect-github",
@@ -2583,6 +2588,7 @@ namespace Vercel
                 "deployment-chown" => UserEventType.DeploymentChown,
                 "deployment-creation-blocked" => UserEventType.DeploymentCreationBlocked,
                 "deployment-delete" => UserEventType.DeploymentDelete,
+                "deployment-policy-blocked" => UserEventType.DeploymentPolicyBlocked,
                 "disabled-integration-installation-removed" => UserEventType.DisabledIntegrationInstallationRemoved,
                 "disconnect-bitbucket-app" => UserEventType.DisconnectBitbucketApp,
                 "disconnect-github" => UserEventType.DisconnectGithub,
