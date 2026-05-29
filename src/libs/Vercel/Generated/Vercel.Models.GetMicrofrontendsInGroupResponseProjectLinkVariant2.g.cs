@@ -24,12 +24,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        public double? UpdatedAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("org")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Org { get; set; }
@@ -69,6 +63,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        public double? UpdatedAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceless")]
         public bool? Sourceless { get; set; }
 
@@ -94,12 +94,12 @@ namespace Vercel
         /// <param name="productionBranch"></param>
         /// <param name="type"></param>
         /// <param name="createdAt"></param>
-        /// <param name="updatedAt"></param>
         /// <param name="repoOwnerId">
         /// A new field, should be included in all new project links, is being added just in time when a deployment is created. This is needed for Protected Git scopes.
         /// </param>
         /// <param name="repo"></param>
         /// <param name="repoId"></param>
+        /// <param name="updatedAt"></param>
         /// <param name="sourceless"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -111,21 +111,21 @@ namespace Vercel
             string productionBranch,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant2Type type,
             double? createdAt,
-            double? updatedAt,
             double? repoOwnerId,
             string? repo,
             double? repoId,
+            double? updatedAt,
             bool? sourceless)
         {
             this.Type = type;
             this.CreatedAt = createdAt;
-            this.UpdatedAt = updatedAt;
             this.Org = org ?? throw new global::System.ArgumentNullException(nameof(org));
             this.RepoOwnerId = repoOwnerId;
             this.Repo = repo;
             this.RepoId = repoId;
             this.DeployHooks = deployHooks ?? throw new global::System.ArgumentNullException(nameof(deployHooks));
             this.GitCredentialId = gitCredentialId ?? throw new global::System.ArgumentNullException(nameof(gitCredentialId));
+            this.UpdatedAt = updatedAt;
             this.Sourceless = sourceless;
             this.ProductionBranch = productionBranch ?? throw new global::System.ArgumentNullException(nameof(productionBranch));
         }

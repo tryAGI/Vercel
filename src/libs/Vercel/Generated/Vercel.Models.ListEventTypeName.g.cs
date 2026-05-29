@@ -1112,18 +1112,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        ProjectDelegatedProtectionDisabled,
-        /// <summary>
-        /// 
-        /// </summary>
-        ProjectDelegatedProtectionEnabled,
-        /// <summary>
-        /// 
-        /// </summary>
-        ProjectDelegatedProtectionUpdated,
-        /// <summary>
-        /// 
-        /// </summary>
         ProjectDelete,
         /// <summary>
         /// 
@@ -2262,9 +2250,6 @@ namespace Vercel
                 ListEventTypeName.ProjectCustomEnvironmentDeleted => "project-custom-environment-deleted",
                 ListEventTypeName.ProjectCustomEnvironmentUpdated => "project-custom-environment-updated",
                 ListEventTypeName.ProjectCustomerSuccessCodeVisibilityUpdated => "project-customer-success-code-visibility-updated",
-                ListEventTypeName.ProjectDelegatedProtectionDisabled => "project-delegated-protection-disabled",
-                ListEventTypeName.ProjectDelegatedProtectionEnabled => "project-delegated-protection-enabled",
-                ListEventTypeName.ProjectDelegatedProtectionUpdated => "project-delegated-protection-updated",
                 ListEventTypeName.ProjectDelete => "project-delete",
                 ListEventTypeName.ProjectDeploymentPolicyUpdated => "project-deployment-policy-updated",
                 ListEventTypeName.ProjectDeploymentRetentionUpdated => "project-deployment-retention-updated",
@@ -2763,9 +2748,6 @@ namespace Vercel
                 "project-custom-environment-deleted" => ListEventTypeName.ProjectCustomEnvironmentDeleted,
                 "project-custom-environment-updated" => ListEventTypeName.ProjectCustomEnvironmentUpdated,
                 "project-customer-success-code-visibility-updated" => ListEventTypeName.ProjectCustomerSuccessCodeVisibilityUpdated,
-                "project-delegated-protection-disabled" => ListEventTypeName.ProjectDelegatedProtectionDisabled,
-                "project-delegated-protection-enabled" => ListEventTypeName.ProjectDelegatedProtectionEnabled,
-                "project-delegated-protection-updated" => ListEventTypeName.ProjectDelegatedProtectionUpdated,
                 "project-delete" => ListEventTypeName.ProjectDelete,
                 "project-deployment-policy-updated" => ListEventTypeName.ProjectDeploymentPolicyUpdated,
                 "project-deployment-retention-updated" => ListEventTypeName.ProjectDeploymentRetentionUpdated,

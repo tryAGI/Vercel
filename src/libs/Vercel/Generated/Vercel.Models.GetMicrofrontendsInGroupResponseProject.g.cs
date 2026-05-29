@@ -112,12 +112,6 @@ namespace Vercel
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectDataCache? DataCache { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("delegatedProtection")]
-        public object? DelegatedProtection { get; set; }
-
-        /// <summary>
         /// Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentExpiration")]
@@ -616,7 +610,6 @@ namespace Vercel
         /// <param name="customerSupportCodeVisibility"></param>
         /// <param name="crons"></param>
         /// <param name="dataCache"></param>
-        /// <param name="delegatedProtection"></param>
         /// <param name="expiration"></param>
         /// <param name="devCommand"></param>
         /// <param name="installCommand"></param>
@@ -719,7 +712,6 @@ namespace Vercel
             bool? customerSupportCodeVisibility,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectCrons? crons,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectDataCache? dataCache,
-            object? delegatedProtection,
             global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectExpirationVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectExpirationVariant2>? expiration,
             string? devCommand,
             string? installCommand,
@@ -806,7 +798,6 @@ namespace Vercel
             this.CustomerSupportCodeVisibility = customerSupportCodeVisibility;
             this.Crons = crons;
             this.DataCache = dataCache;
-            this.DelegatedProtection = delegatedProtection;
             this.DeploymentExpiration = deploymentExpiration ?? throw new global::System.ArgumentNullException(nameof(deploymentExpiration));
             this.Expiration = expiration;
             this.DevCommand = devCommand;
