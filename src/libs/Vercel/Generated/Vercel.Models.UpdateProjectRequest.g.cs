@@ -232,6 +232,12 @@ namespace Vercel
         public global::Vercel.UpdateProjectRequestPasswordProtection? PasswordProtection { get; set; }
 
         /// <summary>
+        /// Passport configuration for the project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passport")]
+        public global::Vercel.UpdateProjectRequestPassport? Passport { get; set; }
+
+        /// <summary>
         /// Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ssoProtection")]
@@ -377,6 +383,9 @@ namespace Vercel
         /// <param name="passwordProtection">
         /// Allows to protect project deployments with a password
         /// </param>
+        /// <param name="passport">
+        /// Passport configuration for the project.
+        /// </param>
         /// <param name="ssoProtection">
         /// Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
         /// </param>
@@ -435,6 +444,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestTracing? tracing,
             global::Vercel.UpdateProjectRequestOidcTokenConfig? oidcTokenConfig,
             global::Vercel.UpdateProjectRequestPasswordProtection? passwordProtection,
+            global::Vercel.UpdateProjectRequestPassport? passport,
             global::Vercel.UpdateProjectRequestSsoProtection? ssoProtection,
             global::Vercel.UpdateProjectRequestTrustedIps? trustedIps,
             global::Vercel.UpdateProjectRequestTrustedSources? trustedSources,
@@ -478,6 +488,7 @@ namespace Vercel
             this.Tracing = tracing;
             this.OidcTokenConfig = oidcTokenConfig;
             this.PasswordProtection = passwordProtection;
+            this.Passport = passport;
             this.SsoProtection = ssoProtection;
             this.TrustedIps = trustedIps;
             this.TrustedSources = trustedSources;

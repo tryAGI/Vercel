@@ -177,6 +177,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passport")]
+        public global::Vercel.GetProjectsResponseVariant1ItemPassport? Passport { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
         public bool? PublicSource { get; set; }
 
@@ -383,6 +389,7 @@ namespace Vercel
         /// <param name="link"></param>
         /// <param name="outputDirectory"></param>
         /// <param name="passwordProtection"></param>
+        /// <param name="passport"></param>
         /// <param name="publicSource"></param>
         /// <param name="rollingRelease">
         /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
@@ -443,6 +450,7 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant1ItemLinkVariant1, global::Vercel.GetProjectsResponseVariant1ItemLinkVariant2, global::Vercel.GetProjectsResponseVariant1ItemLinkVariant3, global::Vercel.GetProjectsResponseVariant1ItemLinkVariant4, global::Vercel.GetProjectsResponseVariant1ItemLinkVariant5, global::Vercel.GetProjectsResponseVariant1ItemLinkVariant6>? link,
             string? outputDirectory,
             object? passwordProtection,
+            global::Vercel.GetProjectsResponseVariant1ItemPassport? passport,
             bool? publicSource,
             global::Vercel.GetProjectsResponseVariant1ItemRollingRelease? rollingRelease,
             string? rootDirectory,
@@ -496,6 +504,7 @@ namespace Vercel
             this.NodeVersion = nodeVersion;
             this.OutputDirectory = outputDirectory;
             this.PasswordProtection = passwordProtection;
+            this.Passport = passport;
             this.PublicSource = publicSource;
             this.ResourceConfig = resourceConfig ?? throw new global::System.ArgumentNullException(nameof(resourceConfig));
             this.RollingRelease = rollingRelease;

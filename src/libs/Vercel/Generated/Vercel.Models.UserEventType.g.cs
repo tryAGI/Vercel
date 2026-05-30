@@ -1312,6 +1312,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectPassportUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectPasswordProtection,
         /// <summary>
         /// 
@@ -2300,6 +2304,7 @@ namespace Vercel
                 UserEventType.ProjectOidcTokenCreated => "project-oidc-token-created",
                 UserEventType.ProjectOptionsAllowlist => "project-options-allowlist",
                 UserEventType.ProjectOutputDirectoryUpdated => "project-output-directory-updated",
+                UserEventType.ProjectPassportUpdated => "project-passport-updated",
                 UserEventType.ProjectPasswordProtection => "project-password-protection",
                 UserEventType.ProjectPaused => "project-paused",
                 UserEventType.ProjectPreviewDeploymentSuffix => "project-preview-deployment-suffix",
@@ -2798,6 +2803,7 @@ namespace Vercel
                 "project-oidc-token-created" => UserEventType.ProjectOidcTokenCreated,
                 "project-options-allowlist" => UserEventType.ProjectOptionsAllowlist,
                 "project-output-directory-updated" => UserEventType.ProjectOutputDirectoryUpdated,
+                "project-passport-updated" => UserEventType.ProjectPassportUpdated,
                 "project-password-protection" => UserEventType.ProjectPasswordProtection,
                 "project-paused" => UserEventType.ProjectPaused,
                 "project-preview-deployment-suffix" => UserEventType.ProjectPreviewDeploymentSuffix,

@@ -15324,8 +15324,8 @@
                             "functionType": {
                               "type": "string",
                               "enum": [
-                                "standard",
-                                "fluid"
+                                "fluid",
+                                "standard"
                               ]
                             },
                             "functionMemoryType": {
@@ -15386,9 +15386,9 @@
                                       "nullable": true,
                                       "type": "string",
                                       "enum": [
+                                        "standard",
                                         "enhanced",
                                         "turbo",
-                                        "standard",
                                         null
                                       ],
                                       "description": "Machine type that was used for the build."
@@ -19977,8 +19977,8 @@
                         "functionType": {
                           "type": "string",
                           "enum": [
-                            "standard",
-                            "fluid"
+                            "fluid",
+                            "standard"
                           ]
                         },
                         "functionMemoryType": {
@@ -20039,9 +20039,9 @@
                                   "nullable": true,
                                   "type": "string",
                                   "enum": [
+                                    "standard",
                                     "enhanced",
                                     "turbo",
-                                    "standard",
                                     null
                                   ],
                                   "description": "Machine type that was used for the build."
@@ -23910,8 +23910,8 @@
                         "functionType": {
                           "type": "string",
                           "enum": [
-                            "standard",
-                            "fluid"
+                            "fluid",
+                            "standard"
                           ]
                         },
                         "functionMemoryType": {
@@ -23972,9 +23972,9 @@
                                   "nullable": true,
                                   "type": "string",
                                   "enum": [
+                                    "standard",
                                     "enhanced",
                                     "turbo",
-                                    "standard",
                                     null
                                   ],
                                   "description": "Machine type that was used for the build."
@@ -61312,6 +61312,28 @@
                             "nullable": true,
                             "type": "object"
                           },
+                          "passport": {
+                            "nullable": true,
+                            "properties": {
+                              "connectorId": {
+                                "type": "string"
+                              },
+                              "deploymentType": {
+                                "type": "string",
+                                "enum": [
+                                  "preview",
+                                  "all",
+                                  "prod_deployment_urls_and_all_previews",
+                                  "all_except_custom_domains"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "connectorId",
+                              "deploymentType"
+                            ],
+                            "type": "object"
+                          },
                           "productionDeploymentsFastLane": {
                             "type": "boolean",
                             "enum": [
@@ -73117,6 +73139,28 @@
                             "nullable": true,
                             "type": "object"
                           },
+                          "passport": {
+                            "nullable": true,
+                            "properties": {
+                              "connectorId": {
+                                "type": "string"
+                              },
+                              "deploymentType": {
+                                "type": "string",
+                                "enum": [
+                                  "preview",
+                                  "all",
+                                  "prod_deployment_urls_and_all_previews",
+                                  "all_except_custom_domains"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "connectorId",
+                              "deploymentType"
+                            ],
+                            "type": "object"
+                          },
                           "publicSource": {
                             "nullable": true,
                             "type": "boolean",
@@ -76362,6 +76406,28 @@
                               },
                               "passwordProtection": {
                                 "nullable": true,
+                                "type": "object"
+                              },
+                              "passport": {
+                                "nullable": true,
+                                "properties": {
+                                  "connectorId": {
+                                    "type": "string"
+                                  },
+                                  "deploymentType": {
+                                    "type": "string",
+                                    "enum": [
+                                      "preview",
+                                      "all",
+                                      "prod_deployment_urls_and_all_previews",
+                                      "all_except_custom_domains"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "connectorId",
+                                  "deploymentType"
+                                ],
                                 "type": "object"
                               },
                               "publicSource": {
@@ -80048,6 +80114,28 @@
                               },
                               "passwordProtection": {
                                 "nullable": true,
+                                "type": "object"
+                              },
+                              "passport": {
+                                "nullable": true,
+                                "properties": {
+                                  "connectorId": {
+                                    "type": "string"
+                                  },
+                                  "deploymentType": {
+                                    "type": "string",
+                                    "enum": [
+                                      "preview",
+                                      "all",
+                                      "prod_deployment_urls_and_all_previews",
+                                      "all_except_custom_domains"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "connectorId",
+                                  "deploymentType"
+                                ],
                                 "type": "object"
                               },
                               "productionDeploymentsFastLane": {
@@ -85921,6 +86009,28 @@
                     },
                     "passwordProtection": {
                       "nullable": true,
+                      "type": "object"
+                    },
+                    "passport": {
+                      "nullable": true,
+                      "properties": {
+                        "connectorId": {
+                          "type": "string"
+                        },
+                        "deploymentType": {
+                          "type": "string",
+                          "enum": [
+                            "preview",
+                            "all",
+                            "prod_deployment_urls_and_all_previews",
+                            "all_except_custom_domains"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "connectorId",
+                        "deploymentType"
+                      ],
                       "type": "object"
                     },
                     "productionDeploymentsFastLane": {
@@ -92031,6 +92141,28 @@
                       "nullable": true,
                       "type": "object"
                     },
+                    "passport": {
+                      "nullable": true,
+                      "properties": {
+                        "connectorId": {
+                          "type": "string"
+                        },
+                        "deploymentType": {
+                          "type": "string",
+                          "enum": [
+                            "preview",
+                            "all",
+                            "prod_deployment_urls_and_all_previews",
+                            "all_except_custom_domains"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "connectorId",
+                        "deploymentType"
+                      ],
+                      "type": "object"
+                    },
                     "productionDeploymentsFastLane": {
                       "type": "boolean",
                       "enum": [
@@ -97718,6 +97850,28 @@
                       "nullable": true,
                       "type": "object"
                     },
+                    "passport": {
+                      "nullable": true,
+                      "properties": {
+                        "connectorId": {
+                          "type": "string"
+                        },
+                        "deploymentType": {
+                          "type": "string",
+                          "enum": [
+                            "preview",
+                            "all",
+                            "prod_deployment_urls_and_all_previews",
+                            "all_except_custom_domains"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "connectorId",
+                        "deploymentType"
+                      ],
+                      "type": "object"
+                    },
                     "productionDeploymentsFastLane": {
                       "type": "boolean",
                       "enum": [
@@ -101679,6 +101833,9 @@
           "409": {
             "description": "The provided name for the project is already being used\nThe project is currently being transferred."
           },
+          "422": {
+            "description": ""
+          },
           "428": {
             "description": "Owner does not have protection add-on\nAdvanced Deployment Protection is not available for the user plan"
           }
@@ -102159,6 +102316,30 @@
                       "deploymentType"
                     ],
                     "type": "object",
+                    "nullable": true
+                  },
+                  "passport": {
+                    "description": "Passport configuration for the project.",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "connectorId": {
+                        "type": "string"
+                      },
+                      "deploymentType": {
+                        "type": "string",
+                        "enum": [
+                          "all",
+                          "preview",
+                          "prod_deployment_urls_and_all_previews",
+                          "all_except_custom_domains"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "connectorId",
+                      "deploymentType"
+                    ],
                     "nullable": true
                   },
                   "ssoProtection": {
@@ -104551,6 +104732,28 @@
                     },
                     "passwordProtection": {
                       "nullable": true,
+                      "type": "object"
+                    },
+                    "passport": {
+                      "nullable": true,
+                      "properties": {
+                        "connectorId": {
+                          "type": "string"
+                        },
+                        "deploymentType": {
+                          "type": "string",
+                          "enum": [
+                            "preview",
+                            "all",
+                            "prod_deployment_urls_and_all_previews",
+                            "all_except_custom_domains"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "connectorId",
+                        "deploymentType"
+                      ],
                       "type": "object"
                     },
                     "productionDeploymentsFastLane": {
@@ -118641,6 +118844,28 @@
                     },
                     "passwordProtection": {
                       "nullable": true,
+                      "type": "object"
+                    },
+                    "passport": {
+                      "nullable": true,
+                      "properties": {
+                        "connectorId": {
+                          "type": "string"
+                        },
+                        "deploymentType": {
+                          "type": "string",
+                          "enum": [
+                            "preview",
+                            "all",
+                            "prod_deployment_urls_and_all_previews",
+                            "all_except_custom_domains"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "connectorId",
+                        "deploymentType"
+                      ],
                       "type": "object"
                     },
                     "productionDeploymentsFastLane": {
@@ -146113,6 +146338,7 @@
               "project-protected-sourcemaps-updated",
               "project-build-logs-and-source-protection-updated",
               "project-deployment-retention-updated",
+              "project-passport-updated",
               "project-skew-protection-threshold-updated",
               "project-skew-protection-max-age-updated",
               "project-skew-protection-allowed-domains-updated",
@@ -146866,6 +147092,7 @@
               "project-protected-sourcemaps-updated",
               "project-build-logs-and-source-protection-updated",
               "project-deployment-retention-updated",
+              "project-passport-updated",
               "project-skew-protection-threshold-updated",
               "project-skew-protection-max-age-updated",
               "project-skew-protection-allowed-domains-updated",
@@ -147412,6 +147639,7 @@
                 "project-protected-sourcemaps-updated",
                 "project-build-logs-and-source-protection-updated",
                 "project-deployment-retention-updated",
+                "project-passport-updated",
                 "project-skew-protection-threshold-updated",
                 "project-skew-protection-max-age-updated",
                 "project-skew-protection-allowed-domains-updated",
@@ -151455,56 +151683,6 @@
               },
               "customEnvironmentsPerProject": {
                 "type": "number",
-                "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
-              },
-              "buildMachine": {
-                "properties": {
-                  "default": {
-                    "type": "string",
-                    "enum": [
-                      "enhanced",
-                      "turbo",
-                      "standard",
-                      "elastic"
-                    ],
-                    "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
-                  },
-                  "purchaseType": {
-                    "type": "string",
-                    "enum": [
-                      "enhanced",
-                      "turbo",
-                      "standard"
-                    ],
-                    "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
-                  },
-                  "defaultPurchaseType": {
-                    "type": "string",
-                    "enum": [
-                      "enhanced",
-                      "turbo",
-                      "standard"
-                    ],
-                    "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
-                  },
-                  "cores": {
-                    "type": "number",
-                    "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
-                  },
-                  "memory": {
-                    "type": "number",
-                    "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
-                  },
-                  "machineSelectionType": {
-                    "type": "string",
-                    "enum": [
-                      "fixed",
-                      "elastic"
-                    ],
-                    "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
-                  }
-                },
-                "type": "object",
                 "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
               },
               "security": {

@@ -577,6 +577,38 @@ namespace Vercel
                                         h => h.Value));
                             }
                             // 
+                            if ((int)__response.StatusCode == 422)
+                            {
+                                string? __content_422 = null;
+                                global::System.Exception? __exception_422 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_422 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_422 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_422,
+                                    responseBody: __content_422,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            // 
                             if ((int)__response.StatusCode == 428)
                             {
                                 string? __content_428 = null;
@@ -812,6 +844,9 @@ namespace Vercel
         /// <param name="passwordProtection">
         /// Allows to protect project deployments with a password
         /// </param>
+        /// <param name="passport">
+        /// Passport configuration for the project.
+        /// </param>
         /// <param name="ssoProtection">
         /// Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
         /// </param>
@@ -873,6 +908,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestTracing? tracing = default,
             global::Vercel.UpdateProjectRequestOidcTokenConfig? oidcTokenConfig = default,
             global::Vercel.UpdateProjectRequestPasswordProtection? passwordProtection = default,
+            global::Vercel.UpdateProjectRequestPassport? passport = default,
             global::Vercel.UpdateProjectRequestSsoProtection? ssoProtection = default,
             global::Vercel.UpdateProjectRequestTrustedIps? trustedIps = default,
             global::Vercel.UpdateProjectRequestTrustedSources? trustedSources = default,
@@ -920,6 +956,7 @@ namespace Vercel
                 Tracing = tracing,
                 OidcTokenConfig = oidcTokenConfig,
                 PasswordProtection = passwordProtection,
+                Passport = passport,
                 SsoProtection = ssoProtection,
                 TrustedIps = trustedIps,
                 TrustedSources = trustedSources,
