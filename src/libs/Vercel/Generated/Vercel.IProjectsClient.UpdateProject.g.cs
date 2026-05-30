@@ -166,6 +166,9 @@ namespace Vercel
         /// <param name="passwordProtection">
         /// Allows to protect project deployments with a password
         /// </param>
+        /// <param name="passport">
+        /// Passport configuration for the project.
+        /// </param>
         /// <param name="ssoProtection">
         /// Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
         /// </param>
@@ -227,6 +230,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestTracing? tracing = default,
             global::Vercel.UpdateProjectRequestOidcTokenConfig? oidcTokenConfig = default,
             global::Vercel.UpdateProjectRequestPasswordProtection? passwordProtection = default,
+            global::Vercel.UpdateProjectRequestPassport? passport = default,
             global::Vercel.UpdateProjectRequestSsoProtection? ssoProtection = default,
             global::Vercel.UpdateProjectRequestTrustedIps? trustedIps = default,
             global::Vercel.UpdateProjectRequestTrustedSources? trustedSources = default,

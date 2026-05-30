@@ -250,6 +250,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passport")]
+        public global::Vercel.UpdateMicrofrontendsResponsePassport? Passport { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productionDeploymentsFastLane")]
         public bool? ProductionDeploymentsFastLane { get; set; }
 
@@ -626,6 +632,7 @@ namespace Vercel
         /// <param name="optionsAllowlist"></param>
         /// <param name="outputDirectory"></param>
         /// <param name="passwordProtection"></param>
+        /// <param name="passport"></param>
         /// <param name="productionDeploymentsFastLane"></param>
         /// <param name="publicSource"></param>
         /// <param name="rollbackDescription">
@@ -728,6 +735,7 @@ namespace Vercel
             global::Vercel.UpdateMicrofrontendsResponseOptionsAllowlist? optionsAllowlist,
             string? outputDirectory,
             object? passwordProtection,
+            global::Vercel.UpdateMicrofrontendsResponsePassport? passport,
             bool? productionDeploymentsFastLane,
             bool? publicSource,
             global::Vercel.UpdateMicrofrontendsResponseRollbackDescription? rollbackDescription,
@@ -819,6 +827,7 @@ namespace Vercel
             this.OptionsAllowlist = optionsAllowlist;
             this.OutputDirectory = outputDirectory;
             this.PasswordProtection = passwordProtection;
+            this.Passport = passport;
             this.ProductionDeploymentsFastLane = productionDeploymentsFastLane;
             this.PublicSource = publicSource;
             this.ResourceConfig = resourceConfig ?? throw new global::System.ArgumentNullException(nameof(resourceConfig));

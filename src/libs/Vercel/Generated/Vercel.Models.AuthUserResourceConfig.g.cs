@@ -155,12 +155,6 @@ namespace Vercel
         /// <summary>
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachine")]
-        public global::Vercel.AuthUserResourceConfigBuildMachine? BuildMachine { get; set; }
-
-        /// <summary>
-        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("security")]
         public global::Vercel.AuthUserResourceConfigSecurity? Security { get; set; }
 
@@ -251,9 +245,6 @@ namespace Vercel
         /// <param name="customEnvironmentsPerProject">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
-        /// <param name="buildMachine">
-        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
-        /// </param>
         /// <param name="security">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
@@ -288,7 +279,6 @@ namespace Vercel
             double? flagsExplorerOverridesThreshold,
             bool? flagsExplorerUnlimitedOverrides,
             double? customEnvironmentsPerProject,
-            global::Vercel.AuthUserResourceConfigBuildMachine? buildMachine,
             global::Vercel.AuthUserResourceConfigSecurity? security,
             double? bulkRedirectsFreeLimitOverride)
         {
@@ -316,7 +306,6 @@ namespace Vercel
             this.FlagsExplorerOverridesThreshold = flagsExplorerOverridesThreshold;
             this.FlagsExplorerUnlimitedOverrides = flagsExplorerUnlimitedOverrides;
             this.CustomEnvironmentsPerProject = customEnvironmentsPerProject;
-            this.BuildMachine = buildMachine;
             this.Security = security;
             this.BulkRedirectsFreeLimitOverride = bulkRedirectsFreeLimitOverride;
         }

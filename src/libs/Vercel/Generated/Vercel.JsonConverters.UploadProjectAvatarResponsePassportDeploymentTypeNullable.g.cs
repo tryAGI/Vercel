@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class AuthUserResourceConfigBuildMachineDefaultPurchaseTypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.AuthUserResourceConfigBuildMachineDefaultPurchaseType?>
+    public sealed class UploadProjectAvatarResponsePassportDeploymentTypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.UploadProjectAvatarResponsePassportDeploymentType?>
     {
         /// <inheritdoc />
-        public override global::Vercel.AuthUserResourceConfigBuildMachineDefaultPurchaseType? Read(
+        public override global::Vercel.UploadProjectAvatarResponsePassportDeploymentType? Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.AuthUserResourceConfigBuildMachineDefaultPurchaseTypeExtensions.ToEnum(stringValue);
+                        return global::Vercel.UploadProjectAvatarResponsePassportDeploymentTypeExtensions.ToEnum(stringValue);
                     }
                     
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.AuthUserResourceConfigBuildMachineDefaultPurchaseType)numValue;
+                    return (global::Vercel.UploadProjectAvatarResponsePassportDeploymentType)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.AuthUserResourceConfigBuildMachineDefaultPurchaseType?);
+                    return default(global::Vercel.UploadProjectAvatarResponsePassportDeploymentType?);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,7 +42,7 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.AuthUserResourceConfigBuildMachineDefaultPurchaseType? value,
+            global::Vercel.UploadProjectAvatarResponsePassportDeploymentType? value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
@@ -53,7 +53,7 @@ namespace Vercel.JsonConverters
             }
             else
             {
-                writer.WriteStringValue(global::Vercel.AuthUserResourceConfigBuildMachineDefaultPurchaseTypeExtensions.ToValueString(value.Value));
+                writer.WriteStringValue(global::Vercel.UploadProjectAvatarResponsePassportDeploymentTypeExtensions.ToValueString(value.Value));
             }
         }
     }
