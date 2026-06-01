@@ -6139,6 +6139,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserDataCache))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserFeatureBlocks))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserFeatureBlocksWebAnalytics))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserAccountUpdateContext))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserLimited))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FileTree))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FileTreeType), TypeInfoPropertyName = "FileTreeType2")]
@@ -6225,7 +6226,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateNetworkRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestStatus), TypeInfoPropertyName = "UpdateIntegrationDeploymentActionRequestStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome>))]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -5726,6 +5726,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome), TypeInfoPropertyName = "UpdateIntegrationDeploymentActionRequestOutcome2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeSecret>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeSecret))]
@@ -6225,7 +6226,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRoutesRequestRouteRouteTransformOp), TypeInfoPropertyName = "StageRoutesRequestRouteRouteTransformOp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddRouteRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddRouteRequestRoute))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddRouteRequestRouteSrcSyntax), TypeInfoPropertyName = "AddRouteRequestRouteSrcSyntax2")]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
