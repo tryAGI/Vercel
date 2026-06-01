@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public enum UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant2Provider
+    public enum PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider
     {
         /// <summary>
         /// 
@@ -17,27 +17,27 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant2ProviderExtensions
+    public static class PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2ProviderExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant2Provider value)
+        public static string ToValueString(this PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider value)
         {
             return value switch
             {
-                UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant2Provider.Gitlab => "gitlab",
+                PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider.Gitlab => "gitlab",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant2Provider? ToEnum(string value)
+        public static PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider? ToEnum(string value)
         {
             return value switch
             {
-                "gitlab" => UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant2Provider.Gitlab,
+                "gitlab" => PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider.Gitlab,
                 _ => null,
             };
         }

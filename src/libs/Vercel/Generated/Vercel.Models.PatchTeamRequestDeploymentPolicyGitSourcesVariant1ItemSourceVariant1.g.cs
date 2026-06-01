@@ -6,15 +6,15 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSource
+    public sealed partial class PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1
     {
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProviderJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1ProviderJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProvider Provider { get; set; }
+        public required global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1Provider Provider { get; set; }
 
         /// <summary>
         /// 
@@ -36,7 +36,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSource" /> class.
+        /// Initializes a new instance of the <see cref="PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1" /> class.
         /// </summary>
         /// <param name="provider"></param>
         /// <param name="org"></param>
@@ -44,8 +44,8 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSource(
-            global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProvider provider,
+        public PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1(
+            global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1Provider provider,
             string org,
             string? repo)
         {
@@ -55,9 +55,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSource" /> class.
+        /// Initializes a new instance of the <see cref="PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1" /> class.
         /// </summary>
-        public UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSource()
+        public PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1()
         {
         }
 
