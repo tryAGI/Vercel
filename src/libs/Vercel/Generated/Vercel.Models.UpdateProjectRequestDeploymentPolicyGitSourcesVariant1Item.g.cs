@@ -27,7 +27,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sources")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSource> Sources { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1, global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2>> Sources { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +47,7 @@ namespace Vercel
         public UpdateProjectRequestDeploymentPolicyGitSourcesVariant1Item(
             bool enabled,
             global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2>> environments,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSource> sources)
+            global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1, global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2>> sources)
         {
             this.Enabled = enabled;
             this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));

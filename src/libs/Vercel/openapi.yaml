@@ -64730,27 +64730,6 @@
                                                 "type": "string",
                                                 "enum": [
                                                   "github",
-                                                  "gitlab",
-                                                  "bitbucket"
-                                                ]
-                                              },
-                                              "org": {
-                                                "type": "string"
-                                              }
-                                            },
-                                            "required": [
-                                              "org",
-                                              "provider"
-                                            ],
-                                            "type": "object"
-                                          },
-                                          {
-                                            "properties": {
-                                              "provider": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "github",
-                                                  "gitlab",
                                                   "bitbucket"
                                                 ]
                                               },
@@ -64763,10 +64742,32 @@
                                             },
                                             "required": [
                                               "org",
-                                              "provider",
-                                              "repo"
+                                              "provider"
                                             ],
-                                            "type": "object"
+                                            "type": "object",
+                                            "description": "Allowlist entry for GitHub and Bitbucket, whose repos are identified by a flat `org`/`repo` (Bitbucket's workspace/owner maps to `org`, its repo slug to `repo`). Omit `repo` to match any repo in the org. Org is matched case-insensitively."
+                                          },
+                                          {
+                                            "properties": {
+                                              "provider": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "gitlab"
+                                                ]
+                                              },
+                                              "namespace": {
+                                                "type": "string"
+                                              },
+                                              "project": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "namespace",
+                                              "provider"
+                                            ],
+                                            "type": "object",
+                                            "description": "Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively."
                                           }
                                         ]
                                       },
@@ -83363,27 +83364,6 @@
                                                     "type": "string",
                                                     "enum": [
                                                       "github",
-                                                      "gitlab",
-                                                      "bitbucket"
-                                                    ]
-                                                  },
-                                                  "org": {
-                                                    "type": "string"
-                                                  }
-                                                },
-                                                "required": [
-                                                  "org",
-                                                  "provider"
-                                                ],
-                                                "type": "object"
-                                              },
-                                              {
-                                                "properties": {
-                                                  "provider": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "github",
-                                                      "gitlab",
                                                       "bitbucket"
                                                     ]
                                                   },
@@ -83396,10 +83376,32 @@
                                                 },
                                                 "required": [
                                                   "org",
-                                                  "provider",
-                                                  "repo"
+                                                  "provider"
                                                 ],
-                                                "type": "object"
+                                                "type": "object",
+                                                "description": "Allowlist entry for GitHub and Bitbucket, whose repos are identified by a flat `org`/`repo` (Bitbucket's workspace/owner maps to `org`, its repo slug to `repo`). Omit `repo` to match any repo in the org. Org is matched case-insensitively."
+                                              },
+                                              {
+                                                "properties": {
+                                                  "provider": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "gitlab"
+                                                    ]
+                                                  },
+                                                  "namespace": {
+                                                    "type": "string"
+                                                  },
+                                                  "project": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "namespace",
+                                                  "provider"
+                                                ],
+                                                "type": "object",
+                                                "description": "Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively."
                                               }
                                             ]
                                           },
@@ -89258,27 +89260,6 @@
                                           "type": "string",
                                           "enum": [
                                             "github",
-                                            "gitlab",
-                                            "bitbucket"
-                                          ]
-                                        },
-                                        "org": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "required": [
-                                        "org",
-                                        "provider"
-                                      ],
-                                      "type": "object"
-                                    },
-                                    {
-                                      "properties": {
-                                        "provider": {
-                                          "type": "string",
-                                          "enum": [
-                                            "github",
-                                            "gitlab",
                                             "bitbucket"
                                           ]
                                         },
@@ -89291,10 +89272,32 @@
                                       },
                                       "required": [
                                         "org",
-                                        "provider",
-                                        "repo"
+                                        "provider"
                                       ],
-                                      "type": "object"
+                                      "type": "object",
+                                      "description": "Allowlist entry for GitHub and Bitbucket, whose repos are identified by a flat `org`/`repo` (Bitbucket's workspace/owner maps to `org`, its repo slug to `repo`). Omit `repo` to match any repo in the org. Org is matched case-insensitively."
+                                    },
+                                    {
+                                      "properties": {
+                                        "provider": {
+                                          "type": "string",
+                                          "enum": [
+                                            "gitlab"
+                                          ]
+                                        },
+                                        "namespace": {
+                                          "type": "string"
+                                        },
+                                        "project": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "namespace",
+                                        "provider"
+                                      ],
+                                      "type": "object",
+                                      "description": "Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively."
                                     }
                                   ]
                                 },
@@ -95388,27 +95391,6 @@
                                           "type": "string",
                                           "enum": [
                                             "github",
-                                            "gitlab",
-                                            "bitbucket"
-                                          ]
-                                        },
-                                        "org": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "required": [
-                                        "org",
-                                        "provider"
-                                      ],
-                                      "type": "object"
-                                    },
-                                    {
-                                      "properties": {
-                                        "provider": {
-                                          "type": "string",
-                                          "enum": [
-                                            "github",
-                                            "gitlab",
                                             "bitbucket"
                                           ]
                                         },
@@ -95421,10 +95403,32 @@
                                       },
                                       "required": [
                                         "org",
-                                        "provider",
-                                        "repo"
+                                        "provider"
                                       ],
-                                      "type": "object"
+                                      "type": "object",
+                                      "description": "Allowlist entry for GitHub and Bitbucket, whose repos are identified by a flat `org`/`repo` (Bitbucket's workspace/owner maps to `org`, its repo slug to `repo`). Omit `repo` to match any repo in the org. Org is matched case-insensitively."
+                                    },
+                                    {
+                                      "properties": {
+                                        "provider": {
+                                          "type": "string",
+                                          "enum": [
+                                            "gitlab"
+                                          ]
+                                        },
+                                        "namespace": {
+                                          "type": "string"
+                                        },
+                                        "project": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "namespace",
+                                        "provider"
+                                      ],
+                                      "type": "object",
+                                      "description": "Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively."
                                     }
                                   ]
                                 },
@@ -101097,27 +101101,6 @@
                                           "type": "string",
                                           "enum": [
                                             "github",
-                                            "gitlab",
-                                            "bitbucket"
-                                          ]
-                                        },
-                                        "org": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "required": [
-                                        "org",
-                                        "provider"
-                                      ],
-                                      "type": "object"
-                                    },
-                                    {
-                                      "properties": {
-                                        "provider": {
-                                          "type": "string",
-                                          "enum": [
-                                            "github",
-                                            "gitlab",
                                             "bitbucket"
                                           ]
                                         },
@@ -101130,10 +101113,32 @@
                                       },
                                       "required": [
                                         "org",
-                                        "provider",
-                                        "repo"
+                                        "provider"
                                       ],
-                                      "type": "object"
+                                      "type": "object",
+                                      "description": "Allowlist entry for GitHub and Bitbucket, whose repos are identified by a flat `org`/`repo` (Bitbucket's workspace/owner maps to `org`, its repo slug to `repo`). Omit `repo` to match any repo in the org. Org is matched case-insensitively."
+                                    },
+                                    {
+                                      "properties": {
+                                        "provider": {
+                                          "type": "string",
+                                          "enum": [
+                                            "gitlab"
+                                          ]
+                                        },
+                                        "namespace": {
+                                          "type": "string"
+                                        },
+                                        "project": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "namespace",
+                                        "provider"
+                                      ],
+                                      "type": "object",
+                                      "description": "Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively."
                                     }
                                   ]
                                 },
@@ -103008,28 +103013,53 @@
                                     "sources": {
                                       "type": "array",
                                       "items": {
-                                        "type": "object",
-                                        "additionalProperties": false,
-                                        "required": [
-                                          "provider",
-                                          "org"
-                                        ],
-                                        "properties": {
-                                          "provider": {
-                                            "type": "string",
-                                            "enum": [
-                                              "github",
-                                              "gitlab",
-                                              "bitbucket"
-                                            ]
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "required": [
+                                              "provider",
+                                              "org"
+                                            ],
+                                            "properties": {
+                                              "provider": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "github",
+                                                  "bitbucket"
+                                                ]
+                                              },
+                                              "org": {
+                                                "type": "string"
+                                              },
+                                              "repo": {
+                                                "type": "string"
+                                              }
+                                            }
                                           },
-                                          "org": {
-                                            "type": "string"
-                                          },
-                                          "repo": {
-                                            "type": "string"
+                                          {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "required": [
+                                              "provider",
+                                              "namespace"
+                                            ],
+                                            "properties": {
+                                              "provider": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "gitlab"
+                                                ]
+                                              },
+                                              "namespace": {
+                                                "type": "string"
+                                              },
+                                              "project": {
+                                                "type": "string"
+                                              }
+                                            }
                                           }
-                                        }
+                                        ]
                                       }
                                     }
                                   }
@@ -107981,27 +108011,6 @@
                                           "type": "string",
                                           "enum": [
                                             "github",
-                                            "gitlab",
-                                            "bitbucket"
-                                          ]
-                                        },
-                                        "org": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "required": [
-                                        "org",
-                                        "provider"
-                                      ],
-                                      "type": "object"
-                                    },
-                                    {
-                                      "properties": {
-                                        "provider": {
-                                          "type": "string",
-                                          "enum": [
-                                            "github",
-                                            "gitlab",
                                             "bitbucket"
                                           ]
                                         },
@@ -108014,10 +108023,32 @@
                                       },
                                       "required": [
                                         "org",
-                                        "provider",
-                                        "repo"
+                                        "provider"
                                       ],
-                                      "type": "object"
+                                      "type": "object",
+                                      "description": "Allowlist entry for GitHub and Bitbucket, whose repos are identified by a flat `org`/`repo` (Bitbucket's workspace/owner maps to `org`, its repo slug to `repo`). Omit `repo` to match any repo in the org. Org is matched case-insensitively."
+                                    },
+                                    {
+                                      "properties": {
+                                        "provider": {
+                                          "type": "string",
+                                          "enum": [
+                                            "gitlab"
+                                          ]
+                                        },
+                                        "namespace": {
+                                          "type": "string"
+                                        },
+                                        "project": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "namespace",
+                                        "provider"
+                                      ],
+                                      "type": "object",
+                                      "description": "Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively."
                                     }
                                   ]
                                 },
@@ -122093,27 +122124,6 @@
                                           "type": "string",
                                           "enum": [
                                             "github",
-                                            "gitlab",
-                                            "bitbucket"
-                                          ]
-                                        },
-                                        "org": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "required": [
-                                        "org",
-                                        "provider"
-                                      ],
-                                      "type": "object"
-                                    },
-                                    {
-                                      "properties": {
-                                        "provider": {
-                                          "type": "string",
-                                          "enum": [
-                                            "github",
-                                            "gitlab",
                                             "bitbucket"
                                           ]
                                         },
@@ -122126,10 +122136,32 @@
                                       },
                                       "required": [
                                         "org",
-                                        "provider",
-                                        "repo"
+                                        "provider"
                                       ],
-                                      "type": "object"
+                                      "type": "object",
+                                      "description": "Allowlist entry for GitHub and Bitbucket, whose repos are identified by a flat `org`/`repo` (Bitbucket's workspace/owner maps to `org`, its repo slug to `repo`). Omit `repo` to match any repo in the org. Org is matched case-insensitively."
+                                    },
+                                    {
+                                      "properties": {
+                                        "provider": {
+                                          "type": "string",
+                                          "enum": [
+                                            "gitlab"
+                                          ]
+                                        },
+                                        "namespace": {
+                                          "type": "string"
+                                        },
+                                        "project": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "namespace",
+                                        "provider"
+                                      ],
+                                      "type": "object",
+                                      "description": "Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively."
                                     }
                                   ]
                                 },
@@ -138732,28 +138764,53 @@
                                     "sources": {
                                       "type": "array",
                                       "items": {
-                                        "type": "object",
-                                        "additionalProperties": false,
-                                        "required": [
-                                          "provider",
-                                          "org"
-                                        ],
-                                        "properties": {
-                                          "provider": {
-                                            "type": "string",
-                                            "enum": [
-                                              "github",
-                                              "gitlab",
-                                              "bitbucket"
-                                            ]
+                                        "anyOf": [
+                                          {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "required": [
+                                              "provider",
+                                              "org"
+                                            ],
+                                            "properties": {
+                                              "provider": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "github",
+                                                  "bitbucket"
+                                                ]
+                                              },
+                                              "org": {
+                                                "type": "string"
+                                              },
+                                              "repo": {
+                                                "type": "string"
+                                              }
+                                            }
                                           },
-                                          "org": {
-                                            "type": "string"
-                                          },
-                                          "repo": {
-                                            "type": "string"
+                                          {
+                                            "type": "object",
+                                            "additionalProperties": false,
+                                            "required": [
+                                              "provider",
+                                              "namespace"
+                                            ],
+                                            "properties": {
+                                              "provider": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "gitlab"
+                                                ]
+                                              },
+                                              "namespace": {
+                                                "type": "string"
+                                              },
+                                              "project": {
+                                                "type": "string"
+                                              }
+                                            }
                                           }
-                                        }
+                                        ]
                                       }
                                     }
                                   }
@@ -151245,27 +151302,6 @@
                                 "type": "string",
                                 "enum": [
                                   "github",
-                                  "gitlab",
-                                  "bitbucket"
-                                ]
-                              },
-                              "org": {
-                                "type": "string"
-                              }
-                            },
-                            "required": [
-                              "org",
-                              "provider"
-                            ],
-                            "type": "object"
-                          },
-                          {
-                            "properties": {
-                              "provider": {
-                                "type": "string",
-                                "enum": [
-                                  "github",
-                                  "gitlab",
                                   "bitbucket"
                                 ]
                               },
@@ -151278,10 +151314,32 @@
                             },
                             "required": [
                               "org",
-                              "provider",
-                              "repo"
+                              "provider"
                             ],
-                            "type": "object"
+                            "type": "object",
+                            "description": "Allowlist entry for GitHub and Bitbucket, whose repos are identified by a flat `org`/`repo` (Bitbucket's workspace/owner maps to `org`, its repo slug to `repo`). Omit `repo` to match any repo in the org. Org is matched case-insensitively."
+                          },
+                          {
+                            "properties": {
+                              "provider": {
+                                "type": "string",
+                                "enum": [
+                                  "gitlab"
+                                ]
+                              },
+                              "namespace": {
+                                "type": "string"
+                              },
+                              "project": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "namespace",
+                              "provider"
+                            ],
+                            "type": "object",
+                            "description": "Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively."
                           }
                         ]
                       },
@@ -151567,8 +151625,8 @@
                       "link",
                       "saml",
                       "github",
-                      "gitlab",
                       "bitbucket",
+                      "gitlab",
                       "mail",
                       "import",
                       "teams",
@@ -151907,8 +151965,8 @@
                       "link",
                       "saml",
                       "github",
-                      "gitlab",
                       "bitbucket",
+                      "gitlab",
                       "mail",
                       "import",
                       "teams",

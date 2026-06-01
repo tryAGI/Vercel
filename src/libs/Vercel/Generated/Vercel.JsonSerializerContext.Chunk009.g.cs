@@ -614,8 +614,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1TargetNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2TypeJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2TypeNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProviderJsonConverter),
-            typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProviderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1ProviderJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1ProviderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2ProviderJsonConverter),
+            typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2ProviderNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1TypeJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateProjectRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1TargetJsonConverter),
@@ -780,8 +782,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1TargetNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2TypeJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2TypeNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceProviderJsonConverter),
-            typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceProviderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1ProviderJsonConverter),
+            typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1ProviderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2ProviderJsonConverter),
+            typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2ProviderNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1TypeJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1TargetJsonConverter),
@@ -5091,6 +5095,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateProjectRequestDeploymentPolicy, string>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1Item>, string>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2>),
+            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1, global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestDeploymentPolicyDeploymentSourcesVariant1Item>, string>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateProjectRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1, global::Vercel.UpdateProjectRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant2>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, string, bool?, double?, global::Vercel.UpdateProjectRequestDismissedToastValue>),
@@ -5126,6 +5131,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestDeploymentPolicy, string>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1Item>, string>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2>),
+            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1, global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1Item>, string>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1, global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant2>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestNsnbConfig, string>),
@@ -5784,6 +5790,12 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectProtectionBypassVariant2Scope), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectProtectionBypassVariant2Scope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant2>), TypeInfoPropertyName = "OneOfGetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1DeploymentType), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1DeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1Addresse>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1Addresse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1ProtectionMode), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1ProtectionMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant2DeploymentType), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant2DeploymentType2")]
@@ -6278,12 +6290,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemTrustedSourcesOidcProviderToVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemTrustedSourcesOidcProviderToVariant2Preset), TypeInfoPropertyName = "GetProjectsResponseVariant1ItemTrustedSourcesOidcProviderToVariant2Preset2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemGitComments))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemGitProviderOptions))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemGitProviderOptionsCreateDeployments), TypeInfoPropertyName = "GetProjectsResponseVariant1ItemGitProviderOptionsCreateDeployments2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemGitProviderOptionsConsolidatedGitCommitStatus))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemWebAnalytics))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemSecurity))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRoute>))]
     internal sealed partial class SourceGenerationContextChunk009 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

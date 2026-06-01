@@ -16,10 +16,6 @@ namespace Vercel
         /// 
         /// </summary>
         Github,
-        /// <summary>
-        /// 
-        /// </summary>
-        Gitlab,
     }
 
     /// <summary>
@@ -36,7 +32,6 @@ namespace Vercel
             {
                 UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant1Provider.Bitbucket => "bitbucket",
                 UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant1Provider.Github => "github",
-                UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant1Provider.Gitlab => "gitlab",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -49,7 +44,6 @@ namespace Vercel
             {
                 "bitbucket" => UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant1Provider.Bitbucket,
                 "github" => UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant1Provider.Github,
-                "gitlab" => UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant1Provider.Gitlab,
                 _ => null,
             };
         }

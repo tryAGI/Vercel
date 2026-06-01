@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProviderNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProvider?>
+    public sealed class PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2ProviderNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider?>
     {
         /// <inheritdoc />
-        public override global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProvider? Read(
+        public override global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider? Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProviderExtensions.ToEnum(stringValue);
+                        return global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2ProviderExtensions.ToEnum(stringValue);
                     }
                     
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProvider)numValue;
+                    return (global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProvider?);
+                    return default(global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider?);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,7 +42,7 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProvider? value,
+            global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider? value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
@@ -53,7 +53,7 @@ namespace Vercel.JsonConverters
             }
             else
             {
-                writer.WriteStringValue(global::Vercel.UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemSourceProviderExtensions.ToValueString(value.Value));
+                writer.WriteStringValue(global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2ProviderExtensions.ToValueString(value.Value));
             }
         }
     }

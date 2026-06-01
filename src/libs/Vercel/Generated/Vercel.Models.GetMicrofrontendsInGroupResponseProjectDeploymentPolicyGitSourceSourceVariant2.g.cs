@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    /// Allowlist entry for GitLab, which uses nested groups rather than a flat org/repo. `namespace` is the full group path (e.g. `group` or `group/subgroup`); `project` is the leaf project name. Omit `project` to match any project under the namespace. Namespace is matched case-insensitively.
     /// </summary>
     public sealed partial class GetMicrofrontendsInGroupResponseProjectDeploymentPolicyGitSourceSourceVariant2
     {
@@ -13,22 +13,20 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectDeploymentPolicyGitSourceSourceVariant2ProviderJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetMicrofrontendsInGroupResponseProjectDeploymentPolicyGitSourceSourceVariant2Provider Provider { get; set; }
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectDeploymentPolicyGitSourceSourceVariant2Provider Provider { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("org")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("namespace")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Org { get; set; }
+        public required string Namespace { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Repo { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        public string? Project { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,20 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetMicrofrontendsInGroupResponseProjectDeploymentPolicyGitSourceSourceVariant2" /> class.
         /// </summary>
+        /// <param name="namespace"></param>
         /// <param name="provider"></param>
-        /// <param name="org"></param>
-        /// <param name="repo"></param>
+        /// <param name="project"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetMicrofrontendsInGroupResponseProjectDeploymentPolicyGitSourceSourceVariant2(
+            string @namespace,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectDeploymentPolicyGitSourceSourceVariant2Provider provider,
-            string org,
-            string repo)
+            string? project)
         {
             this.Provider = provider;
-            this.Org = org ?? throw new global::System.ArgumentNullException(nameof(org));
-            this.Repo = repo ?? throw new global::System.ArgumentNullException(nameof(repo));
+            this.Namespace = @namespace ?? throw new global::System.ArgumentNullException(nameof(@namespace));
+            this.Project = project;
         }
 
         /// <summary>
