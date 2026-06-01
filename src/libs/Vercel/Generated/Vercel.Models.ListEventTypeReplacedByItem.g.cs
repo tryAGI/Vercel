@@ -79,6 +79,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayApiKeyQuotaUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayByokCredentialCreated,
         /// <summary>
         /// 
@@ -1679,6 +1683,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamDefaultPassportUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamDelete,
         /// <summary>
         /// 
@@ -1995,6 +2003,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiCodeReview => "ai-code-review",
                 ListEventTypeReplacedByItem.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
                 ListEventTypeReplacedByItem.AiGatewayApiKeyDeleted => "ai-gateway-api-key-deleted",
+                ListEventTypeReplacedByItem.AiGatewayApiKeyQuotaUpdated => "ai-gateway-api-key-quota-updated",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
@@ -2395,6 +2404,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.Team => "team",
                 ListEventTypeReplacedByItem.TeamAvatarUpdate => "team-avatar-update",
                 ListEventTypeReplacedByItem.TeamDefaultBuildMachineUpdated => "team-default-build-machine-updated",
+                ListEventTypeReplacedByItem.TeamDefaultPassportUpdated => "team-default-passport-updated",
                 ListEventTypeReplacedByItem.TeamDelete => "team-delete",
                 ListEventTypeReplacedByItem.TeamDeploymentPolicyUpdated => "team-deployment-policy-updated",
                 ListEventTypeReplacedByItem.TeamDomainVerificationCreated => "team-domain-verification-created",
@@ -2494,6 +2504,7 @@ namespace Vercel
                 "ai-code-review" => ListEventTypeReplacedByItem.AiCodeReview,
                 "ai-gateway-api-key-created" => ListEventTypeReplacedByItem.AiGatewayApiKeyCreated,
                 "ai-gateway-api-key-deleted" => ListEventTypeReplacedByItem.AiGatewayApiKeyDeleted,
+                "ai-gateway-api-key-quota-updated" => ListEventTypeReplacedByItem.AiGatewayApiKeyQuotaUpdated,
                 "ai-gateway-byok-credential-created" => ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated,
@@ -2894,6 +2905,7 @@ namespace Vercel
                 "team" => ListEventTypeReplacedByItem.Team,
                 "team-avatar-update" => ListEventTypeReplacedByItem.TeamAvatarUpdate,
                 "team-default-build-machine-updated" => ListEventTypeReplacedByItem.TeamDefaultBuildMachineUpdated,
+                "team-default-passport-updated" => ListEventTypeReplacedByItem.TeamDefaultPassportUpdated,
                 "team-delete" => ListEventTypeReplacedByItem.TeamDelete,
                 "team-deployment-policy-updated" => ListEventTypeReplacedByItem.TeamDeploymentPolicyUpdated,
                 "team-domain-verification-created" => ListEventTypeReplacedByItem.TeamDomainVerificationCreated,

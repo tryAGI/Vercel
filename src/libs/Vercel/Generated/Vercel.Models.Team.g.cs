@@ -117,6 +117,12 @@ namespace Vercel
         public global::Vercel.TeamDefaultDeploymentProtection? DefaultDeploymentProtection { get; set; }
 
         /// <summary>
+        /// Default Passport configuration for new projects in this team.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultPassport")]
+        public global::Vercel.TeamDefaultPassport? DefaultPassport { get; set; }
+
+        /// <summary>
         /// Default deployment expiration settings for this team
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultExpirationSettings")]
@@ -358,6 +364,9 @@ namespace Vercel
         /// <param name="defaultDeploymentProtection">
         /// Default deployment protection for this team null indicates protection is disabled
         /// </param>
+        /// <param name="defaultPassport">
+        /// Default Passport configuration for new projects in this team.
+        /// </param>
         /// <param name="defaultExpirationSettings">
         /// Default deployment expiration settings for this team
         /// </param>
@@ -450,6 +459,7 @@ namespace Vercel
             global::Vercel.OneOf<double?, bool?>? disableHardAutoBlocks,
             global::Vercel.TeamRemoteCaching? remoteCaching,
             global::Vercel.TeamDefaultDeploymentProtection? defaultDeploymentProtection,
+            global::Vercel.TeamDefaultPassport? defaultPassport,
             global::Vercel.TeamDefaultExpirationSettings? defaultExpirationSettings,
             global::Vercel.TeamDefaultProjectJobs? defaultProjectJobs,
             global::Vercel.TeamEnablePreviewFeedback? enablePreviewFeedback,
@@ -489,6 +499,7 @@ namespace Vercel
             this.DisableHardAutoBlocks = disableHardAutoBlocks;
             this.RemoteCaching = remoteCaching;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
+            this.DefaultPassport = defaultPassport;
             this.DefaultExpirationSettings = defaultExpirationSettings;
             this.DefaultProjectJobs = defaultProjectJobs;
             this.EnablePreviewFeedback = enablePreviewFeedback;
