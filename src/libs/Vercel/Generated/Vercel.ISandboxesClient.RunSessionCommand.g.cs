@@ -95,6 +95,10 @@ namespace Vercel
         /// If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="timeout">
+        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.<br/>
+        /// Example: 30000
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -108,6 +112,7 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
             bool? sudo = default,
             bool? wait = default,
+            int? timeout = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

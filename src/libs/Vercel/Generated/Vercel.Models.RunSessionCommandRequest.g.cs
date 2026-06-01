@@ -57,6 +57,14 @@ namespace Vercel
         public bool? Wait { get; set; }
 
         /// <summary>
+        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.<br/>
+        /// Example: 30000
+        /// </summary>
+        /// <example>30000</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("timeout")]
+        public int? Timeout { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -90,6 +98,10 @@ namespace Vercel
         /// If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="timeout">
+        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.<br/>
+        /// Example: 30000
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -99,7 +111,8 @@ namespace Vercel
             string? cwd,
             global::System.Collections.Generic.Dictionary<string, string>? env,
             bool? sudo,
-            bool? wait)
+            bool? wait,
+            int? timeout)
         {
             this.Command = command ?? throw new global::System.ArgumentNullException(nameof(command));
             this.Args = args;
@@ -107,6 +120,7 @@ namespace Vercel
             this.Env = env;
             this.Sudo = sudo;
             this.Wait = wait;
+            this.Timeout = timeout;
         }
 
         /// <summary>

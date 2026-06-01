@@ -25,6 +25,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ui:options")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiOptionVariant1, string, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiOptionVariant3>> Ui_options { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enum")]
         public global::System.Collections.Generic.IList<string>? Enum { get; set; }
 
@@ -119,6 +126,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10" /> class.
         /// </summary>
+        /// <param name="ui_options"></param>
         /// <param name="type"></param>
         /// <param name="ui_control"></param>
         /// <param name="enum"></param>
@@ -139,6 +147,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10(
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiOptionVariant1, string, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiOptionVariant3>> ui_options,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10Type type,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiControl ui_control,
             global::System.Collections.Generic.IList<string>? @enum,
@@ -158,6 +167,7 @@ namespace Vercel
         {
             this.Type = type;
             this.Ui_control = ui_control;
+            this.Ui_options = ui_options ?? throw new global::System.ArgumentNullException(nameof(ui_options));
             this.Enum = @enum;
             this.MaxLength = maxLength;
             this.MinLength = minLength;

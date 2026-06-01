@@ -12979,8 +12979,8 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
-                                    "production",
                                     "preview",
+                                    "production",
                                     "development"
                                   ],
                                   "description": "The type of environment (production, preview, or development)"
@@ -13208,6 +13208,10 @@
                             "LAMBDAS"
                           ]
                         },
+                        "errorMessage": {
+                          "nullable": true,
+                          "type": "string"
+                        },
                         "aliasError": {
                           "nullable": true,
                           "properties": {
@@ -13281,10 +13285,6 @@
                           "type": "string"
                         },
                         "errorLink": {
-                          "type": "string"
-                        },
-                        "errorMessage": {
-                          "nullable": true,
                           "type": "string"
                         },
                         "errorStep": {
@@ -15820,8 +15820,8 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
-                                    "production",
                                     "preview",
+                                    "production",
                                     "development"
                                   ],
                                   "description": "The type of environment (production, preview, or development)"
@@ -16049,6 +16049,10 @@
                             "LAMBDAS"
                           ]
                         },
+                        "errorMessage": {
+                          "nullable": true,
+                          "type": "string"
+                        },
                         "aliasError": {
                           "nullable": true,
                           "properties": {
@@ -16122,10 +16126,6 @@
                           "type": "string"
                         },
                         "errorLink": {
-                          "type": "string"
-                        },
-                        "errorMessage": {
-                          "nullable": true,
                           "type": "string"
                         },
                         "errorStep": {
@@ -17632,8 +17632,8 @@
                             "type": {
                               "type": "string",
                               "enum": [
-                                "production",
                                 "preview",
+                                "production",
                                 "development"
                               ],
                               "description": "The type of environment (production, preview, or development)"
@@ -17861,6 +17861,10 @@
                         "LAMBDAS"
                       ]
                     },
+                    "errorMessage": {
+                      "nullable": true,
+                      "type": "string"
+                    },
                     "aliasError": {
                       "nullable": true,
                       "properties": {
@@ -17934,10 +17938,6 @@
                       "type": "string"
                     },
                     "errorLink": {
-                      "type": "string"
-                    },
-                    "errorMessage": {
-                      "nullable": true,
                       "type": "string"
                     },
                     "errorStep": {
@@ -21565,8 +21565,8 @@
                             "type": {
                               "type": "string",
                               "enum": [
-                                "production",
                                 "preview",
+                                "production",
                                 "development"
                               ],
                               "description": "The type of environment (production, preview, or development)"
@@ -21794,6 +21794,10 @@
                         "LAMBDAS"
                       ]
                     },
+                    "errorMessage": {
+                      "nullable": true,
+                      "type": "string"
+                    },
                     "aliasError": {
                       "nullable": true,
                       "properties": {
@@ -21867,10 +21871,6 @@
                       "type": "string"
                     },
                     "errorLink": {
-                      "type": "string"
-                    },
-                    "errorMessage": {
-                      "nullable": true,
                       "type": "string"
                     },
                     "errorStep": {
@@ -57440,6 +57440,336 @@
                                         "ui:control": {
                                           "type": "string",
                                           "enum": [
+                                            "vercel-country"
+                                          ]
+                                        },
+                                        "ui:options": {
+                                          "items": {
+                                            "oneOf": [
+                                              {
+                                                "properties": {
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "label": {
+                                                    "type": "string"
+                                                  },
+                                                  "description": {
+                                                    "type": "string"
+                                                  },
+                                                  "disabled": {
+                                                    "oneOf": [
+                                                      {
+                                                        "properties": {
+                                                          "expr": {
+                                                            "type": "string"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "expr"
+                                                        ],
+                                                        "type": "object"
+                                                      },
+                                                      {
+                                                        "type": "boolean",
+                                                        "enum": [
+                                                          false,
+                                                          true
+                                                        ]
+                                                      },
+                                                      {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "update",
+                                                          "create"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  "hidden": {
+                                                    "oneOf": [
+                                                      {
+                                                        "properties": {
+                                                          "expr": {
+                                                            "type": "string"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "expr"
+                                                        ],
+                                                        "type": "object"
+                                                      },
+                                                      {
+                                                        "type": "boolean",
+                                                        "enum": [
+                                                          false,
+                                                          true
+                                                        ]
+                                                      },
+                                                      {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "update",
+                                                          "create"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "required": [
+                                                  "label",
+                                                  "value"
+                                                ],
+                                                "type": "object"
+                                              },
+                                              {
+                                                "type": "string"
+                                              },
+                                              {
+                                                "properties": {
+                                                  "value": {
+                                                    "type": "string"
+                                                  },
+                                                  "description": {
+                                                    "type": "string"
+                                                  },
+                                                  "disabled": {
+                                                    "oneOf": [
+                                                      {
+                                                        "properties": {
+                                                          "expr": {
+                                                            "type": "string"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "expr"
+                                                        ],
+                                                        "type": "object"
+                                                      },
+                                                      {
+                                                        "type": "boolean",
+                                                        "enum": [
+                                                          false,
+                                                          true
+                                                        ]
+                                                      },
+                                                      {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "update",
+                                                          "create"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  "hidden": {
+                                                    "oneOf": [
+                                                      {
+                                                        "properties": {
+                                                          "expr": {
+                                                            "type": "string"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "expr"
+                                                        ],
+                                                        "type": "object"
+                                                      },
+                                                      {
+                                                        "type": "boolean",
+                                                        "enum": [
+                                                          false,
+                                                          true
+                                                        ]
+                                                      },
+                                                      {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "update",
+                                                          "create"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "required": [
+                                                  "value"
+                                                ],
+                                                "type": "object"
+                                              }
+                                            ]
+                                          },
+                                          "type": "array"
+                                        },
+                                        "description": {
+                                          "type": "string"
+                                        },
+                                        "default": {
+                                          "type": "string"
+                                        },
+                                        "enum": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        },
+                                        "maxLength": {
+                                          "type": "number"
+                                        },
+                                        "minLength": {
+                                          "type": "number"
+                                        },
+                                        "pattern": {
+                                          "type": "string"
+                                        },
+                                        "ui:label": {
+                                          "type": "string"
+                                        },
+                                        "ui:read-only": {
+                                          "oneOf": [
+                                            {
+                                              "properties": {
+                                                "expr": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "expr"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            {
+                                              "type": "boolean",
+                                              "enum": [
+                                                false,
+                                                true
+                                              ]
+                                            },
+                                            {
+                                              "type": "string",
+                                              "enum": [
+                                                "update",
+                                                "create"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        "ui:hidden": {
+                                          "oneOf": [
+                                            {
+                                              "properties": {
+                                                "expr": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "expr"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            {
+                                              "type": "boolean",
+                                              "enum": [
+                                                false,
+                                                true
+                                              ]
+                                            },
+                                            {
+                                              "type": "string",
+                                              "enum": [
+                                                "update",
+                                                "create"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        "ui:disabled": {
+                                          "oneOf": [
+                                            {
+                                              "properties": {
+                                                "expr": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "expr"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            {
+                                              "type": "boolean",
+                                              "enum": [
+                                                false,
+                                                true
+                                              ]
+                                            },
+                                            {
+                                              "type": "string",
+                                              "enum": [
+                                                "update",
+                                                "create"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        "ui:description": {
+                                          "oneOf": [
+                                            {
+                                              "type": "string"
+                                            },
+                                            {
+                                              "properties": {
+                                                "expr": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "expr"
+                                              ],
+                                              "type": "object"
+                                            }
+                                          ]
+                                        },
+                                        "ui:formatted-value": {
+                                          "properties": {
+                                            "expr": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "expr"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        "ui:paid-only": {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true
+                                          ]
+                                        },
+                                        "ui:placeholder": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "type",
+                                        "ui:control",
+                                        "ui:options"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "string"
+                                          ]
+                                        },
+                                        "ui:control": {
+                                          "type": "string",
+                                          "enum": [
                                             "domain"
                                           ]
                                         },
@@ -61315,9 +61645,6 @@
                           "passport": {
                             "nullable": true,
                             "properties": {
-                              "connectorId": {
-                                "type": "string"
-                              },
                               "deploymentType": {
                                 "type": "string",
                                 "enum": [
@@ -61326,6 +61653,9 @@
                                   "prod_deployment_urls_and_all_previews",
                                   "all_except_custom_domains"
                                 ]
+                              },
+                              "connectorId": {
+                                "type": "string"
                               }
                             },
                             "required": [
@@ -73142,9 +73472,6 @@
                           "passport": {
                             "nullable": true,
                             "properties": {
-                              "connectorId": {
-                                "type": "string"
-                              },
                               "deploymentType": {
                                 "type": "string",
                                 "enum": [
@@ -73153,6 +73480,9 @@
                                   "prod_deployment_urls_and_all_previews",
                                   "all_except_custom_domains"
                                 ]
+                              },
+                              "connectorId": {
+                                "type": "string"
                               }
                             },
                             "required": [
@@ -76411,9 +76741,6 @@
                               "passport": {
                                 "nullable": true,
                                 "properties": {
-                                  "connectorId": {
-                                    "type": "string"
-                                  },
                                   "deploymentType": {
                                     "type": "string",
                                     "enum": [
@@ -76422,6 +76749,9 @@
                                       "prod_deployment_urls_and_all_previews",
                                       "all_except_custom_domains"
                                     ]
+                                  },
+                                  "connectorId": {
+                                    "type": "string"
                                   }
                                 },
                                 "required": [
@@ -80119,9 +80449,6 @@
                               "passport": {
                                 "nullable": true,
                                 "properties": {
-                                  "connectorId": {
-                                    "type": "string"
-                                  },
                                   "deploymentType": {
                                     "type": "string",
                                     "enum": [
@@ -80130,6 +80457,9 @@
                                       "prod_deployment_urls_and_all_previews",
                                       "all_except_custom_domains"
                                     ]
+                                  },
+                                  "connectorId": {
+                                    "type": "string"
                                   }
                                 },
                                 "required": [
@@ -86014,9 +86344,6 @@
                     "passport": {
                       "nullable": true,
                       "properties": {
-                        "connectorId": {
-                          "type": "string"
-                        },
                         "deploymentType": {
                           "type": "string",
                           "enum": [
@@ -86025,6 +86352,9 @@
                             "prod_deployment_urls_and_all_previews",
                             "all_except_custom_domains"
                           ]
+                        },
+                        "connectorId": {
+                          "type": "string"
                         }
                       },
                       "required": [
@@ -92144,9 +92474,6 @@
                     "passport": {
                       "nullable": true,
                       "properties": {
-                        "connectorId": {
-                          "type": "string"
-                        },
                         "deploymentType": {
                           "type": "string",
                           "enum": [
@@ -92155,6 +92482,9 @@
                             "prod_deployment_urls_and_all_previews",
                             "all_except_custom_domains"
                           ]
+                        },
+                        "connectorId": {
+                          "type": "string"
                         }
                       },
                       "required": [
@@ -97853,9 +98183,6 @@
                     "passport": {
                       "nullable": true,
                       "properties": {
-                        "connectorId": {
-                          "type": "string"
-                        },
                         "deploymentType": {
                           "type": "string",
                           "enum": [
@@ -97864,6 +98191,9 @@
                             "prod_deployment_urls_and_all_previews",
                             "all_except_custom_domains"
                           ]
+                        },
+                        "connectorId": {
+                          "type": "string"
                         }
                       },
                       "required": [
@@ -104737,9 +105067,6 @@
                     "passport": {
                       "nullable": true,
                       "properties": {
-                        "connectorId": {
-                          "type": "string"
-                        },
                         "deploymentType": {
                           "type": "string",
                           "enum": [
@@ -104748,6 +105075,9 @@
                             "prod_deployment_urls_and_all_previews",
                             "all_except_custom_domains"
                           ]
+                        },
+                        "connectorId": {
+                          "type": "string"
                         }
                       },
                       "required": [
@@ -118849,9 +119179,6 @@
                     "passport": {
                       "nullable": true,
                       "properties": {
-                        "connectorId": {
-                          "type": "string"
-                        },
                         "deploymentType": {
                           "type": "string",
                           "enum": [
@@ -118860,6 +119187,9 @@
                             "prod_deployment_urls_and_all_previews",
                             "all_except_custom_domains"
                           ]
+                        },
+                        "connectorId": {
+                          "type": "string"
                         }
                       },
                       "required": [
@@ -125842,6 +126172,12 @@
                     "type": "boolean",
                     "description": "If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.",
                     "default": false
+                  },
+                  "timeout": {
+                    "type": "integer",
+                    "description": "Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.",
+                    "minimum": 100,
+                    "example": 30000
                   }
                 }
               }
@@ -135024,6 +135360,336 @@
                                           "ui:control": {
                                             "type": "string",
                                             "enum": [
+                                              "vercel-country"
+                                            ]
+                                          },
+                                          "ui:options": {
+                                            "items": {
+                                              "oneOf": [
+                                                {
+                                                  "properties": {
+                                                    "value": {
+                                                      "type": "string"
+                                                    },
+                                                    "label": {
+                                                      "type": "string"
+                                                    },
+                                                    "description": {
+                                                      "type": "string"
+                                                    },
+                                                    "disabled": {
+                                                      "oneOf": [
+                                                        {
+                                                          "properties": {
+                                                            "expr": {
+                                                              "type": "string"
+                                                            }
+                                                          },
+                                                          "required": [
+                                                            "expr"
+                                                          ],
+                                                          "type": "object"
+                                                        },
+                                                        {
+                                                          "type": "boolean",
+                                                          "enum": [
+                                                            false,
+                                                            true
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "string",
+                                                          "enum": [
+                                                            "update",
+                                                            "create"
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    "hidden": {
+                                                      "oneOf": [
+                                                        {
+                                                          "properties": {
+                                                            "expr": {
+                                                              "type": "string"
+                                                            }
+                                                          },
+                                                          "required": [
+                                                            "expr"
+                                                          ],
+                                                          "type": "object"
+                                                        },
+                                                        {
+                                                          "type": "boolean",
+                                                          "enum": [
+                                                            false,
+                                                            true
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "string",
+                                                          "enum": [
+                                                            "update",
+                                                            "create"
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "label",
+                                                    "value"
+                                                  ],
+                                                  "type": "object"
+                                                },
+                                                {
+                                                  "type": "string"
+                                                },
+                                                {
+                                                  "properties": {
+                                                    "value": {
+                                                      "type": "string"
+                                                    },
+                                                    "description": {
+                                                      "type": "string"
+                                                    },
+                                                    "disabled": {
+                                                      "oneOf": [
+                                                        {
+                                                          "properties": {
+                                                            "expr": {
+                                                              "type": "string"
+                                                            }
+                                                          },
+                                                          "required": [
+                                                            "expr"
+                                                          ],
+                                                          "type": "object"
+                                                        },
+                                                        {
+                                                          "type": "boolean",
+                                                          "enum": [
+                                                            false,
+                                                            true
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "string",
+                                                          "enum": [
+                                                            "update",
+                                                            "create"
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    "hidden": {
+                                                      "oneOf": [
+                                                        {
+                                                          "properties": {
+                                                            "expr": {
+                                                              "type": "string"
+                                                            }
+                                                          },
+                                                          "required": [
+                                                            "expr"
+                                                          ],
+                                                          "type": "object"
+                                                        },
+                                                        {
+                                                          "type": "boolean",
+                                                          "enum": [
+                                                            false,
+                                                            true
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "string",
+                                                          "enum": [
+                                                            "update",
+                                                            "create"
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "value"
+                                                  ],
+                                                  "type": "object"
+                                                }
+                                              ]
+                                            },
+                                            "type": "array"
+                                          },
+                                          "enum": {
+                                            "items": {
+                                              "type": "string"
+                                            },
+                                            "type": "array"
+                                          },
+                                          "maxLength": {
+                                            "type": "number"
+                                          },
+                                          "minLength": {
+                                            "type": "number"
+                                          },
+                                          "pattern": {
+                                            "type": "string"
+                                          },
+                                          "description": {
+                                            "type": "string"
+                                          },
+                                          "default": {
+                                            "type": "string"
+                                          },
+                                          "ui:label": {
+                                            "type": "string"
+                                          },
+                                          "ui:read-only": {
+                                            "oneOf": [
+                                              {
+                                                "properties": {
+                                                  "expr": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "expr"
+                                                ],
+                                                "type": "object"
+                                              },
+                                              {
+                                                "type": "boolean",
+                                                "enum": [
+                                                  false,
+                                                  true
+                                                ]
+                                              },
+                                              {
+                                                "type": "string",
+                                                "enum": [
+                                                  "update",
+                                                  "create"
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          "ui:hidden": {
+                                            "oneOf": [
+                                              {
+                                                "properties": {
+                                                  "expr": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "expr"
+                                                ],
+                                                "type": "object"
+                                              },
+                                              {
+                                                "type": "boolean",
+                                                "enum": [
+                                                  false,
+                                                  true
+                                                ]
+                                              },
+                                              {
+                                                "type": "string",
+                                                "enum": [
+                                                  "update",
+                                                  "create"
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          "ui:disabled": {
+                                            "oneOf": [
+                                              {
+                                                "properties": {
+                                                  "expr": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "expr"
+                                                ],
+                                                "type": "object"
+                                              },
+                                              {
+                                                "type": "boolean",
+                                                "enum": [
+                                                  false,
+                                                  true
+                                                ]
+                                              },
+                                              {
+                                                "type": "string",
+                                                "enum": [
+                                                  "update",
+                                                  "create"
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          "ui:description": {
+                                            "oneOf": [
+                                              {
+                                                "type": "string"
+                                              },
+                                              {
+                                                "properties": {
+                                                  "expr": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "expr"
+                                                ],
+                                                "type": "object"
+                                              }
+                                            ]
+                                          },
+                                          "ui:formatted-value": {
+                                            "properties": {
+                                              "expr": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "expr"
+                                            ],
+                                            "type": "object"
+                                          },
+                                          "ui:paid-only": {
+                                            "type": "boolean",
+                                            "enum": [
+                                              false,
+                                              true
+                                            ]
+                                          },
+                                          "ui:placeholder": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "type",
+                                          "ui:control",
+                                          "ui:options"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "string"
+                                            ]
+                                          },
+                                          "ui:control": {
+                                            "type": "string",
+                                            "enum": [
                                               "domain"
                                             ]
                                           },
@@ -137650,6 +138316,9 @@
           "403": {
             "description": "You do not have permission to access this resource.\nNot authorized to update the team. Must be an OWNER."
           },
+          "422": {
+            "description": ""
+          },
           "428": {
             "description": "Owner does not have protection add-on\nAdvanced Deployment Protection is not available for the user plan"
           }
@@ -137889,6 +138558,30 @@
                         "nullable": true
                       }
                     }
+                  },
+                  "defaultPassport": {
+                    "description": "Default Passport configuration for new projects.",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "connectorId": {
+                        "type": "string"
+                      },
+                      "deploymentType": {
+                        "type": "string",
+                        "enum": [
+                          "all",
+                          "preview",
+                          "prod_deployment_urls_and_all_previews",
+                          "all_except_custom_domains"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "connectorId",
+                      "deploymentType"
+                    ],
+                    "nullable": true
                   },
                   "defaultExpirationSettings": {
                     "properties": {
@@ -145999,6 +146692,7 @@
               "agentic-provisioning-plan-changed",
               "ai-gateway-api-key-created",
               "ai-gateway-api-key-deleted",
+              "ai-gateway-api-key-quota-updated",
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
@@ -146235,6 +146929,8 @@
               "passkey-created",
               "passkey-deleted",
               "passkey-updated",
+              "project-passport-updated",
+              "team-default-passport-updated",
               "preview-deployment-suffix-update",
               "privatelink-endpoint-created",
               "privatelink-endpoint-deleted",
@@ -146338,7 +147034,6 @@
               "project-protected-sourcemaps-updated",
               "project-build-logs-and-source-protection-updated",
               "project-deployment-retention-updated",
-              "project-passport-updated",
               "project-skew-protection-threshold-updated",
               "project-skew-protection-max-age-updated",
               "project-skew-protection-allowed-domains-updated",
@@ -146753,6 +147448,7 @@
               "agentic-provisioning-plan-changed",
               "ai-gateway-api-key-created",
               "ai-gateway-api-key-deleted",
+              "ai-gateway-api-key-quota-updated",
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
@@ -146989,6 +147685,8 @@
               "passkey-created",
               "passkey-deleted",
               "passkey-updated",
+              "project-passport-updated",
+              "team-default-passport-updated",
               "preview-deployment-suffix-update",
               "privatelink-endpoint-created",
               "privatelink-endpoint-deleted",
@@ -147092,7 +147790,6 @@
               "project-protected-sourcemaps-updated",
               "project-build-logs-and-source-protection-updated",
               "project-deployment-retention-updated",
-              "project-passport-updated",
               "project-skew-protection-threshold-updated",
               "project-skew-protection-max-age-updated",
               "project-skew-protection-allowed-domains-updated",
@@ -147300,6 +147997,7 @@
                 "agentic-provisioning-plan-changed",
                 "ai-gateway-api-key-created",
                 "ai-gateway-api-key-deleted",
+                "ai-gateway-api-key-quota-updated",
                 "ai-gateway-byok-credential-created",
                 "ai-gateway-byok-credential-deleted",
                 "ai-gateway-byok-credential-updated",
@@ -147536,6 +148234,8 @@
                 "passkey-created",
                 "passkey-deleted",
                 "passkey-updated",
+                "project-passport-updated",
+                "team-default-passport-updated",
                 "preview-deployment-suffix-update",
                 "privatelink-endpoint-created",
                 "privatelink-endpoint-deleted",
@@ -147639,7 +148339,6 @@
                 "project-protected-sourcemaps-updated",
                 "project-build-logs-and-source-protection-updated",
                 "project-deployment-retention-updated",
-                "project-passport-updated",
                 "project-skew-protection-threshold-updated",
                 "project-skew-protection-max-age-updated",
                 "project-skew-protection-allowed-domains-updated",
@@ -150278,6 +150977,31 @@
             "type": "object",
             "description": "Default deployment protection for this team null indicates protection is disabled"
           },
+          "defaultPassport": {
+            "nullable": true,
+            "properties": {
+              "connectorId": {
+                "type": "string",
+                "description": "Default Passport configuration for new projects in this team."
+              },
+              "deploymentType": {
+                "type": "string",
+                "enum": [
+                  "all",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews",
+                  "all_except_custom_domains"
+                ],
+                "description": "Default Passport configuration for new projects in this team."
+              }
+            },
+            "required": [
+              "connectorId",
+              "deploymentType"
+            ],
+            "type": "object",
+            "description": "Default Passport configuration for new projects in this team."
+          },
           "defaultExpirationSettings": {
             "properties": {
               "expirationDays": {
@@ -150584,8 +151308,8 @@
                               "target": {
                                 "type": "string",
                                 "enum": [
-                                  "production",
-                                  "preview"
+                                  "preview",
+                                  "production"
                                 ]
                               }
                             },
@@ -150666,8 +151390,8 @@
                               "target": {
                                 "type": "string",
                                 "enum": [
-                                  "production",
-                                  "preview"
+                                  "preview",
+                                  "production"
                                 ]
                               }
                             },

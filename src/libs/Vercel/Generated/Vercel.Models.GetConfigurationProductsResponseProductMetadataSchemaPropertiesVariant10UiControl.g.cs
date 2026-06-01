@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Domain,
+        VercelCountry,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant10UiControl.Domain => "domain",
+                GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant10UiControl.VercelCountry => "vercel-country",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "domain" => GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant10UiControl.Domain,
+                "vercel-country" => GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant10UiControl.VercelCountry,
                 _ => null,
             };
         }

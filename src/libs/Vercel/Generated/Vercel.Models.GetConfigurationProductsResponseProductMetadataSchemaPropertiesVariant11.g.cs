@@ -31,6 +31,36 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public string? Default { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enum")]
+        public global::System.Collections.Generic.IList<string>? Enum { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("maxLength")]
+        public double? MaxLength { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("minLength")]
+        public double? MinLength { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pattern")]
+        public string? Pattern { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ui:label")]
         public string? Ui_label { get; set; }
 
@@ -81,12 +111,6 @@ namespace Vercel
         public string? Ui_placeholder { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("git:providers")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11GitProvider>? Git_providers { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -98,6 +122,11 @@ namespace Vercel
         /// <param name="type"></param>
         /// <param name="ui_control"></param>
         /// <param name="description"></param>
+        /// <param name="default"></param>
+        /// <param name="enum"></param>
+        /// <param name="maxLength"></param>
+        /// <param name="minLength"></param>
+        /// <param name="pattern"></param>
         /// <param name="ui_label"></param>
         /// <param name="ui_readOnly"></param>
         /// <param name="ui_hidden"></param>
@@ -106,7 +135,6 @@ namespace Vercel
         /// <param name="ui_formattedValue"></param>
         /// <param name="ui_paidOnly"></param>
         /// <param name="ui_placeholder"></param>
-        /// <param name="git_providers"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -114,6 +142,11 @@ namespace Vercel
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11Type type,
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiControl ui_control,
             string? description,
+            string? @default,
+            global::System.Collections.Generic.IList<string>? @enum,
+            double? maxLength,
+            double? minLength,
+            string? pattern,
             string? ui_label,
             global::Vercel.OneOf<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiReadOnlyEnum, bool?, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiReadOnlyEnum2?>? ui_readOnly,
             global::Vercel.OneOf<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiHiddenEnum, bool?, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiHiddenEnum2?>? ui_hidden,
@@ -121,12 +154,16 @@ namespace Vercel
             global::Vercel.OneOf<string, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiDescription>? ui_description,
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11UiFormattedValue? ui_formattedValue,
             bool? ui_paidOnly,
-            string? ui_placeholder,
-            global::System.Collections.Generic.IList<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant11GitProvider>? git_providers)
+            string? ui_placeholder)
         {
             this.Type = type;
             this.Ui_control = ui_control;
             this.Description = description;
+            this.Default = @default;
+            this.Enum = @enum;
+            this.MaxLength = maxLength;
+            this.MinLength = minLength;
+            this.Pattern = pattern;
             this.Ui_label = ui_label;
             this.Ui_readOnly = ui_readOnly;
             this.Ui_hidden = ui_hidden;
@@ -135,7 +172,6 @@ namespace Vercel
             this.Ui_formattedValue = ui_formattedValue;
             this.Ui_paidOnly = ui_paidOnly;
             this.Ui_placeholder = ui_placeholder;
-            this.Git_providers = git_providers;
         }
 
         /// <summary>
