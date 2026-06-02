@@ -65497,6 +65497,42 @@
                                   false,
                                   true
                                 ]
+                              },
+                              "interstitialHistory": {
+                                "items": {
+                                  "properties": {
+                                    "action": {
+                                      "type": "string",
+                                      "enum": [
+                                        "add-project-interstitial",
+                                        "remove-project-interstitial",
+                                        "add-deployment-interstitial",
+                                        "remove-deployment-interstitial"
+                                      ]
+                                    },
+                                    "createdAt": {
+                                      "type": "number"
+                                    },
+                                    "caseId": {
+                                      "type": "string"
+                                    },
+                                    "reason": {
+                                      "type": "string"
+                                    },
+                                    "actor": {
+                                      "type": "string"
+                                    },
+                                    "comment": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "action",
+                                    "createdAt"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "array"
                               }
                             },
                             "required": [
@@ -75325,6 +75361,42 @@
                                   false,
                                   true
                                 ]
+                              },
+                              "interstitialHistory": {
+                                "items": {
+                                  "properties": {
+                                    "action": {
+                                      "type": "string",
+                                      "enum": [
+                                        "add-project-interstitial",
+                                        "remove-project-interstitial",
+                                        "add-deployment-interstitial",
+                                        "remove-deployment-interstitial"
+                                      ]
+                                    },
+                                    "createdAt": {
+                                      "type": "number"
+                                    },
+                                    "caseId": {
+                                      "type": "string"
+                                    },
+                                    "reason": {
+                                      "type": "string"
+                                    },
+                                    "actor": {
+                                      "type": "string"
+                                    },
+                                    "comment": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "action",
+                                    "createdAt"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "array"
                               }
                             },
                             "required": [
@@ -78594,6 +78666,42 @@
                                       false,
                                       true
                                     ]
+                                  },
+                                  "interstitialHistory": {
+                                    "items": {
+                                      "properties": {
+                                        "action": {
+                                          "type": "string",
+                                          "enum": [
+                                            "add-project-interstitial",
+                                            "remove-project-interstitial",
+                                            "add-deployment-interstitial",
+                                            "remove-deployment-interstitial"
+                                          ]
+                                        },
+                                        "createdAt": {
+                                          "type": "number"
+                                        },
+                                        "caseId": {
+                                          "type": "string"
+                                        },
+                                        "reason": {
+                                          "type": "string"
+                                        },
+                                        "actor": {
+                                          "type": "string"
+                                        },
+                                        "comment": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "action",
+                                        "createdAt"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "type": "array"
                                   }
                                 },
                                 "required": [
@@ -84131,6 +84239,42 @@
                                       false,
                                       true
                                     ]
+                                  },
+                                  "interstitialHistory": {
+                                    "items": {
+                                      "properties": {
+                                        "action": {
+                                          "type": "string",
+                                          "enum": [
+                                            "add-project-interstitial",
+                                            "remove-project-interstitial",
+                                            "add-deployment-interstitial",
+                                            "remove-deployment-interstitial"
+                                          ]
+                                        },
+                                        "createdAt": {
+                                          "type": "number"
+                                        },
+                                        "caseId": {
+                                          "type": "string"
+                                        },
+                                        "reason": {
+                                          "type": "string"
+                                        },
+                                        "actor": {
+                                          "type": "string"
+                                        },
+                                        "comment": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "action",
+                                        "createdAt"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "type": "array"
                                   }
                                 },
                                 "required": [
@@ -90027,6 +90171,42 @@
                             false,
                             true
                           ]
+                        },
+                        "interstitialHistory": {
+                          "items": {
+                            "properties": {
+                              "action": {
+                                "type": "string",
+                                "enum": [
+                                  "add-project-interstitial",
+                                  "remove-project-interstitial",
+                                  "add-deployment-interstitial",
+                                  "remove-deployment-interstitial"
+                                ]
+                              },
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "caseId": {
+                                "type": "string"
+                              },
+                              "reason": {
+                                "type": "string"
+                              },
+                              "actor": {
+                                "type": "string"
+                              },
+                              "comment": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "action",
+                              "createdAt"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
                         }
                       },
                       "required": [
@@ -96158,6 +96338,42 @@
                             false,
                             true
                           ]
+                        },
+                        "interstitialHistory": {
+                          "items": {
+                            "properties": {
+                              "action": {
+                                "type": "string",
+                                "enum": [
+                                  "add-project-interstitial",
+                                  "remove-project-interstitial",
+                                  "add-deployment-interstitial",
+                                  "remove-deployment-interstitial"
+                                ]
+                              },
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "caseId": {
+                                "type": "string"
+                              },
+                              "reason": {
+                                "type": "string"
+                              },
+                              "actor": {
+                                "type": "string"
+                              },
+                              "comment": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "action",
+                              "createdAt"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
                         }
                       },
                       "required": [
@@ -101868,6 +102084,42 @@
                             false,
                             true
                           ]
+                        },
+                        "interstitialHistory": {
+                          "items": {
+                            "properties": {
+                              "action": {
+                                "type": "string",
+                                "enum": [
+                                  "add-project-interstitial",
+                                  "remove-project-interstitial",
+                                  "add-deployment-interstitial",
+                                  "remove-deployment-interstitial"
+                                ]
+                              },
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "caseId": {
+                                "type": "string"
+                              },
+                              "reason": {
+                                "type": "string"
+                              },
+                              "actor": {
+                                "type": "string"
+                              },
+                              "comment": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "action",
+                              "createdAt"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
                         }
                       },
                       "required": [
@@ -108778,6 +109030,42 @@
                             false,
                             true
                           ]
+                        },
+                        "interstitialHistory": {
+                          "items": {
+                            "properties": {
+                              "action": {
+                                "type": "string",
+                                "enum": [
+                                  "add-project-interstitial",
+                                  "remove-project-interstitial",
+                                  "add-deployment-interstitial",
+                                  "remove-deployment-interstitial"
+                                ]
+                              },
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "caseId": {
+                                "type": "string"
+                              },
+                              "reason": {
+                                "type": "string"
+                              },
+                              "actor": {
+                                "type": "string"
+                              },
+                              "comment": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "action",
+                              "createdAt"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
                         }
                       },
                       "required": [
@@ -122891,6 +123179,42 @@
                             false,
                             true
                           ]
+                        },
+                        "interstitialHistory": {
+                          "items": {
+                            "properties": {
+                              "action": {
+                                "type": "string",
+                                "enum": [
+                                  "add-project-interstitial",
+                                  "remove-project-interstitial",
+                                  "add-deployment-interstitial",
+                                  "remove-deployment-interstitial"
+                                ]
+                              },
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "caseId": {
+                                "type": "string"
+                              },
+                              "reason": {
+                                "type": "string"
+                              },
+                              "actor": {
+                                "type": "string"
+                              },
+                              "comment": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "action",
+                              "createdAt"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
                         }
                       },
                       "required": [

@@ -47,6 +47,12 @@ namespace Vercel
         public bool? Interstitial { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("interstitialHistory")]
+        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseAbuseInterstitialHistoryItem>? InterstitialHistory { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -61,6 +67,7 @@ namespace Vercel
         /// <param name="block"></param>
         /// <param name="blockHistory"></param>
         /// <param name="interstitial"></param>
+        /// <param name="interstitialHistory"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -70,7 +77,8 @@ namespace Vercel
             string? scanner,
             global::Vercel.CreateProjectResponseAbuseBlock? block,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateProjectResponseAbuseBlockHistoryItemVariant1, global::Vercel.CreateProjectResponseAbuseBlockHistoryItemVariant2, global::Vercel.CreateProjectResponseAbuseBlockHistoryItemVariant3, global::Vercel.CreateProjectResponseAbuseBlockHistoryItemVariant4>>? blockHistory,
-            bool? interstitial)
+            bool? interstitial,
+            global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseAbuseInterstitialHistoryItem>? interstitialHistory)
         {
             this.Scanner = scanner;
             this.History = history ?? throw new global::System.ArgumentNullException(nameof(history));
@@ -78,6 +86,7 @@ namespace Vercel
             this.Block = block;
             this.BlockHistory = blockHistory;
             this.Interstitial = interstitial;
+            this.InterstitialHistory = interstitialHistory;
         }
 
         /// <summary>
