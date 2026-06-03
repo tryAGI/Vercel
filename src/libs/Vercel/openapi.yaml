@@ -147220,6 +147220,7 @@
               "disabled-integration-installation-removed",
               "dns-add",
               "dns-delete",
+              "dns-record-internal",
               "dns-update",
               "domain-buy",
               "domain-cdn",
@@ -147976,6 +147977,7 @@
               "disabled-integration-installation-removed",
               "dns-add",
               "dns-delete",
+              "dns-record-internal",
               "dns-update",
               "domain-buy",
               "domain-cdn",
@@ -148525,6 +148527,7 @@
                 "disabled-integration-installation-removed",
                 "dns-add",
                 "dns-delete",
+                "dns-record-internal",
                 "dns-update",
                 "domain-buy",
                 "domain-cdn",
@@ -151359,6 +151362,10 @@
               "postgresDatabases": {
                 "type": "number",
                 "description": "The maximum number of postgres databases an account can create."
+              },
+              "customEnvironmentsPerProject": {
+                "type": "number",
+                "description": "The maximum number of custom environments allowed per project."
               },
               "buildEntitlements": {
                 "properties": {
