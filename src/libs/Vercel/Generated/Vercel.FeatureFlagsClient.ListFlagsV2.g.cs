@@ -33,6 +33,7 @@ namespace Vercel
             ref string? cursor,
             ref string? search,
             global::System.Collections.Generic.IList<string>? tags,
+            ref bool? includeMarketplaceFlags,
             ref string? teamId,
             ref string? slug);
         partial void PrepareListFlagsV2Request(
@@ -44,6 +45,7 @@ namespace Vercel
             string? cursor,
             string? search,
             global::System.Collections.Generic.IList<string>? tags,
+            bool? includeMarketplaceFlags,
             string? teamId,
             string? slug);
         partial void ProcessListFlagsV2Response(
@@ -78,6 +80,9 @@ namespace Vercel
         /// <param name="tags">
         /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
         /// </param>
+        /// <param name="includeMarketplaceFlags">
+        /// Whether to include Marketplace experimentation items in the paginated response. Defaults to false.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -94,6 +99,7 @@ namespace Vercel
             string? cursor = default,
             string? search = default,
             global::System.Collections.Generic.IList<string>? tags = default,
+            bool? includeMarketplaceFlags = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -106,6 +112,7 @@ namespace Vercel
                 cursor: cursor,
                 search: search,
                 tags: tags,
+                includeMarketplaceFlags: includeMarketplaceFlags,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -137,6 +144,9 @@ namespace Vercel
         /// <param name="tags">
         /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
         /// </param>
+        /// <param name="includeMarketplaceFlags">
+        /// Whether to include Marketplace experimentation items in the paginated response. Defaults to false.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -153,6 +163,7 @@ namespace Vercel
             string? cursor = default,
             string? search = default,
             global::System.Collections.Generic.IList<string>? tags = default,
+            bool? includeMarketplaceFlags = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -168,6 +179,7 @@ namespace Vercel
                 cursor: ref cursor,
                 search: ref search,
                 tags: tags,
+                includeMarketplaceFlags: ref includeMarketplaceFlags,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -203,6 +215,7 @@ namespace Vercel
                                 .AddOptionalParameter("cursor", cursor)
                                 .AddOptionalParameter("search", search)
                                 .AddOptionalParameter("tags", tags, delimiter: ",", explode: true)
+                                .AddOptionalParameter("includeMarketplaceFlags", includeMarketplaceFlags?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -252,6 +265,7 @@ namespace Vercel
                     cursor: cursor,
                     search: search,
                     tags: tags,
+                    includeMarketplaceFlags: includeMarketplaceFlags,
                     teamId: teamId,
                     slug: slug);
 

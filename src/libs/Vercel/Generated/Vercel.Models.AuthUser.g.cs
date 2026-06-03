@@ -120,7 +120,7 @@ namespace Vercel
         public bool? IsAccountUpdateRequired { get; set; }
 
         /// <summary>
-        /// Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeamNames` is empty for orphan mode (user matches an EMU domain but is not on the team).
+        /// Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accountUpdateContext")]
         public global::Vercel.AuthUserAccountUpdateContext? AccountUpdateContext { get; set; }
@@ -246,7 +246,7 @@ namespace Vercel
         /// When `true`, the user must complete the EMU Update Account flow before they can use the dashboard.
         /// </param>
         /// <param name="accountUpdateContext">
-        /// Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeamNames` is empty for orphan mode (user matches an EMU domain but is not on the team).
+        /// Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team).
         /// </param>
         /// <param name="name">
         /// Name associated with the User account, or `null` if none has been provided.<br/>

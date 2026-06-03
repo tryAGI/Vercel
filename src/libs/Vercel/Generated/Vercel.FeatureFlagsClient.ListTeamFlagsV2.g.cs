@@ -33,6 +33,7 @@ namespace Vercel
             ref string? search,
             ref global::Vercel.ListTeamFlagsV2Kind? kind,
             global::System.Collections.Generic.IList<string>? tags,
+            ref bool? includeMarketplaceFlags,
             ref string teamId,
             ref string? slug);
         partial void PrepareListTeamFlagsV2Request(
@@ -44,6 +45,7 @@ namespace Vercel
             string? search,
             global::Vercel.ListTeamFlagsV2Kind? kind,
             global::System.Collections.Generic.IList<string>? tags,
+            bool? includeMarketplaceFlags,
             string teamId,
             string? slug);
         partial void ProcessListTeamFlagsV2Response(
@@ -78,6 +80,9 @@ namespace Vercel
         /// <param name="tags">
         /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
         /// </param>
+        /// <param name="includeMarketplaceFlags">
+        /// Whether to include Marketplace experimentation items in the paginated response. Defaults to false.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -95,6 +100,7 @@ namespace Vercel
             string? search = default,
             global::Vercel.ListTeamFlagsV2Kind? kind = default,
             global::System.Collections.Generic.IList<string>? tags = default,
+            bool? includeMarketplaceFlags = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -107,6 +113,7 @@ namespace Vercel
                 search: search,
                 kind: kind,
                 tags: tags,
+                includeMarketplaceFlags: includeMarketplaceFlags,
                 slug: slug,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
@@ -137,6 +144,9 @@ namespace Vercel
         /// <param name="tags">
         /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
         /// </param>
+        /// <param name="includeMarketplaceFlags">
+        /// Whether to include Marketplace experimentation items in the paginated response. Defaults to false.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -154,6 +164,7 @@ namespace Vercel
             string? search = default,
             global::Vercel.ListTeamFlagsV2Kind? kind = default,
             global::System.Collections.Generic.IList<string>? tags = default,
+            bool? includeMarketplaceFlags = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -168,6 +179,7 @@ namespace Vercel
                 search: ref search,
                 kind: ref kind,
                 tags: tags,
+                includeMarketplaceFlags: ref includeMarketplaceFlags,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -204,6 +216,7 @@ namespace Vercel
                                 .AddOptionalParameter("search", search)
                                 .AddOptionalParameter("kind", kind?.ToValueString())
                                 .AddOptionalParameter("tags", tags, delimiter: ",", explode: true)
+                                .AddOptionalParameter("includeMarketplaceFlags", includeMarketplaceFlags?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("slug", slug)
                                 ;
                             var __path = __pathBuilder.ToString();
@@ -252,6 +265,7 @@ namespace Vercel
                     search: search,
                     kind: kind,
                     tags: tags,
+                    includeMarketplaceFlags: includeMarketplaceFlags,
                     teamId: teamId!,
                     slug: slug);
 

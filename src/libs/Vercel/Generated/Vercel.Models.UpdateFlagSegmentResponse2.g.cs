@@ -35,6 +35,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateFlagSegmentResponseData Data { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
@@ -84,13 +91,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateFlagSegmentResponseData Data { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hint")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Hint { get; set; }
@@ -104,13 +104,13 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFlagSegmentResponse2" /> class.
         /// </summary>
+        /// <param name="data"></param>
         /// <param name="id"></param>
         /// <param name="label"></param>
         /// <param name="slug"></param>
         /// <param name="createdAt"></param>
         /// <param name="updatedAt"></param>
         /// <param name="projectId"></param>
-        /// <param name="data"></param>
         /// <param name="hint"></param>
         /// <param name="description"></param>
         /// <param name="createdBy"></param>
@@ -121,13 +121,13 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFlagSegmentResponse2(
+            global::Vercel.UpdateFlagSegmentResponseData data,
             string id,
             string label,
             string slug,
             double createdAt,
             double updatedAt,
             string projectId,
-            global::Vercel.UpdateFlagSegmentResponseData data,
             string hint,
             string? description,
             string? createdBy,
@@ -139,6 +139,7 @@ namespace Vercel
             this.CreatedBy = createdBy;
             this.UsedByFlags = usedByFlags;
             this.UsedBySegments = usedBySegments;
+            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
@@ -146,7 +147,6 @@ namespace Vercel
             this.UpdatedAt = updatedAt;
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.TypeName = typeName;
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Hint = hint ?? throw new global::System.ArgumentNullException(nameof(hint));
         }
 
