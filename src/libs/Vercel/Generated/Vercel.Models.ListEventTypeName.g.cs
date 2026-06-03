@@ -452,6 +452,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DnsRecordInternal,
+        /// <summary>
+        /// 
+        /// </summary>
         DnsUpdate,
         /// <summary>
         /// 
@@ -2097,6 +2101,7 @@ namespace Vercel
                 ListEventTypeName.DisconnectGitlabApp => "disconnect-gitlab-app",
                 ListEventTypeName.DnsAdd => "dns-add",
                 ListEventTypeName.DnsDelete => "dns-delete",
+                ListEventTypeName.DnsRecordInternal => "dns-record-internal",
                 ListEventTypeName.DnsUpdate => "dns-update",
                 ListEventTypeName.DnsZonefileImport => "dns-zonefile-import",
                 ListEventTypeName.Domain => "domain",
@@ -2598,6 +2603,7 @@ namespace Vercel
                 "disconnect-gitlab-app" => ListEventTypeName.DisconnectGitlabApp,
                 "dns-add" => ListEventTypeName.DnsAdd,
                 "dns-delete" => ListEventTypeName.DnsDelete,
+                "dns-record-internal" => ListEventTypeName.DnsRecordInternal,
                 "dns-update" => ListEventTypeName.DnsUpdate,
                 "dns-zonefile-import" => ListEventTypeName.DnsZonefileImport,
                 "domain" => ListEventTypeName.Domain,
