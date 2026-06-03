@@ -41847,12 +41847,6 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "data": {
-                      "items": {
-                        "$ref": "#/components/schemas/Flag"
-                      },
-                      "type": "array"
-                    },
                     "pagination": {
                       "properties": {
                         "next": {
@@ -41864,6 +41858,19 @@
                         "next"
                       ],
                       "type": "object"
+                    },
+                    "data": {
+                      "items": {
+                        "oneOf": [
+                          {
+                            "$ref": "#/components/schemas/Flag"
+                          },
+                          {
+                            "$ref": "#/components/schemas/MarketplaceFlag"
+                          }
+                        ]
+                      },
+                      "type": "array"
                     }
                   },
                   "required": [
@@ -41961,6 +41968,16 @@
               "items": {
                 "type": "string"
               }
+            }
+          },
+          {
+            "name": "includeMarketplaceFlags",
+            "description": "Whether to include Marketplace experimentation items in the paginated response. Defaults to false.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Whether to include Marketplace experimentation items in the paginated response. Defaults to false.",
+              "type": "boolean"
             }
           },
           {
@@ -45610,15 +45627,6 @@
                           "message": {
                             "type": "string"
                           },
-                          "id": {
-                            "type": "string"
-                          },
-                          "revision": {
-                            "type": "number"
-                          },
-                          "createdAt": {
-                            "type": "number"
-                          },
                           "data": {
                             "properties": {
                               "description": {
@@ -46423,6 +46431,15 @@
                               "variants"
                             ],
                             "type": "object"
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "revision": {
+                            "type": "number"
+                          },
+                          "createdAt": {
+                            "type": "number"
                           },
                           "flagId": {
                             "type": "string"
@@ -47532,12 +47549,6 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "data": {
-                      "items": {
-                        "$ref": "#/components/schemas/Flag"
-                      },
-                      "type": "array"
-                    },
                     "pagination": {
                       "properties": {
                         "next": {
@@ -47549,6 +47560,19 @@
                         "next"
                       ],
                       "type": "object"
+                    },
+                    "data": {
+                      "items": {
+                        "oneOf": [
+                          {
+                            "$ref": "#/components/schemas/Flag"
+                          },
+                          {
+                            "$ref": "#/components/schemas/MarketplaceFlag"
+                          }
+                        ]
+                      },
+                      "type": "array"
                     }
                   },
                   "required": [
@@ -47646,6 +47670,16 @@
               "items": {
                 "type": "string"
               }
+            }
+          },
+          {
+            "name": "includeMarketplaceFlags",
+            "description": "Whether to include Marketplace experimentation items in the paginated response. Defaults to false.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Whether to include Marketplace experimentation items in the paginated response. Defaults to false.",
+              "type": "boolean"
             }
           },
           {
@@ -47876,30 +47910,6 @@
                         "type": "string"
                       },
                       "type": "array"
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "label": {
-                      "type": "string"
-                    },
-                    "slug": {
-                      "type": "string"
-                    },
-                    "createdAt": {
-                      "type": "number"
-                    },
-                    "updatedAt": {
-                      "type": "number"
-                    },
-                    "projectId": {
-                      "type": "string"
-                    },
-                    "typeName": {
-                      "type": "string",
-                      "enum": [
-                        "segment"
-                      ]
                     },
                     "data": {
                       "properties": {
@@ -48214,6 +48224,30 @@
                         }
                       },
                       "type": "object"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "type": "number"
+                    },
+                    "updatedAt": {
+                      "type": "number"
+                    },
+                    "projectId": {
+                      "type": "string"
+                    },
+                    "typeName": {
+                      "type": "string",
+                      "enum": [
+                        "segment"
+                      ]
                     },
                     "hint": {
                       "type": "string"
@@ -48932,30 +48966,6 @@
                           },
                           "type": "array"
                         },
-                        "id": {
-                          "type": "string"
-                        },
-                        "label": {
-                          "type": "string"
-                        },
-                        "slug": {
-                          "type": "string"
-                        },
-                        "createdAt": {
-                          "type": "number"
-                        },
-                        "updatedAt": {
-                          "type": "number"
-                        },
-                        "projectId": {
-                          "type": "string"
-                        },
-                        "typeName": {
-                          "type": "string",
-                          "enum": [
-                            "segment"
-                          ]
-                        },
                         "data": {
                           "properties": {
                             "rules": {
@@ -49269,6 +49279,30 @@
                             }
                           },
                           "type": "object"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        },
+                        "slug": {
+                          "type": "string"
+                        },
+                        "createdAt": {
+                          "type": "number"
+                        },
+                        "updatedAt": {
+                          "type": "number"
+                        },
+                        "projectId": {
+                          "type": "string"
+                        },
+                        "typeName": {
+                          "type": "string",
+                          "enum": [
+                            "segment"
+                          ]
                         },
                         "hint": {
                           "type": "string"
@@ -149797,6 +149831,79 @@
         ],
         "type": "object"
       },
+      "MarketplaceFlag": {
+        "properties": {
+          "typeName": {
+            "type": "string",
+            "enum": [
+              "marketplaceFlag"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "externalId": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "projectId": {
+            "type": "string"
+          },
+          "resourceId": {
+            "type": "string"
+          },
+          "integrationConfigurationId": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "active",
+              "archived"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "experiment",
+              "flag"
+            ]
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "updatedAt": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "externalId",
+          "id",
+          "integrationConfigurationId",
+          "origin",
+          "ownerId",
+          "projectId",
+          "resourceId",
+          "slug",
+          "state",
+          "typeName"
+        ],
+        "type": "object"
+      },
       "Segment": {
         "properties": {
           "description": {
@@ -149816,30 +149923,6 @@
               "type": "string"
             },
             "type": "array"
-          },
-          "id": {
-            "type": "string"
-          },
-          "label": {
-            "type": "string"
-          },
-          "slug": {
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "number"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "projectId": {
-            "type": "string"
-          },
-          "typeName": {
-            "type": "string",
-            "enum": [
-              "segment"
-            ]
           },
           "data": {
             "properties": {
@@ -150154,6 +150237,30 @@
               }
             },
             "type": "object"
+          },
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "projectId": {
+            "type": "string"
+          },
+          "typeName": {
+            "type": "string",
+            "enum": [
+              "segment"
+            ]
           },
           "hint": {
             "type": "string"
@@ -153050,18 +153157,31 @@
           },
           "accountUpdateContext": {
             "properties": {
-              "managedTeamNames": {
+              "managedTeams": {
                 "items": {
-                  "type": "string"
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "avatar": {
+                      "nullable": true,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "avatar",
+                    "name"
+                  ],
+                  "type": "object"
                 },
                 "type": "array"
               }
             },
             "required": [
-              "managedTeamNames"
+              "managedTeams"
             ],
             "type": "object",
-            "description": "Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeamNames` is empty for orphan mode (user matches an EMU domain but is not on the team)."
+            "description": "Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team)."
           },
           "id": {
             "type": "string",

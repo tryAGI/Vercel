@@ -27,6 +27,9 @@ namespace Vercel
         /// <param name="tags">
         /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
         /// </param>
+        /// <param name="includeMarketplaceFlags">
+        /// Whether to include Marketplace experimentation items in the paginated response. Defaults to false.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -43,6 +46,7 @@ namespace Vercel
             string? cursor = default,
             string? search = default,
             global::System.Collections.Generic.IList<string>? tags = default,
+            bool? includeMarketplaceFlags = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -70,6 +74,9 @@ namespace Vercel
         /// <param name="tags">
         /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
         /// </param>
+        /// <param name="includeMarketplaceFlags">
+        /// Whether to include Marketplace experimentation items in the paginated response. Defaults to false.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -86,6 +93,7 @@ namespace Vercel
             string? cursor = default,
             string? search = default,
             global::System.Collections.Generic.IList<string>? tags = default,
+            bool? includeMarketplaceFlags = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
