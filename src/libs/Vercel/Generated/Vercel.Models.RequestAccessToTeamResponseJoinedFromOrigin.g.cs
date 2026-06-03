@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AccountUpdate,
+        /// <summary>
+        /// 
+        /// </summary>
         Bitbucket,
         /// <summary>
         /// 
@@ -94,6 +98,7 @@ namespace Vercel
         {
             return value switch
             {
+                RequestAccessToTeamResponseJoinedFromOrigin.AccountUpdate => "account-update",
                 RequestAccessToTeamResponseJoinedFromOrigin.Bitbucket => "bitbucket",
                 RequestAccessToTeamResponseJoinedFromOrigin.Dsync => "dsync",
                 RequestAccessToTeamResponseJoinedFromOrigin.Feedback => "feedback",
@@ -122,6 +127,7 @@ namespace Vercel
         {
             return value switch
             {
+                "account-update" => RequestAccessToTeamResponseJoinedFromOrigin.AccountUpdate,
                 "bitbucket" => RequestAccessToTeamResponseJoinedFromOrigin.Bitbucket,
                 "dsync" => RequestAccessToTeamResponseJoinedFromOrigin.Dsync,
                 "feedback" => RequestAccessToTeamResponseJoinedFromOrigin.Feedback,
