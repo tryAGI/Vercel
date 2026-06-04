@@ -211,7 +211,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -348,7 +348,7 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Rust => "rust",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Saber => "saber",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Sanity => "sanity",
-                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.SanityV3 => "sanity-v3",
+                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.SanityV2 => "sanity-v2",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Sapper => "sapper",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Scully => "scully",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Services => "services",
@@ -427,7 +427,7 @@ namespace Vercel
                 "rust" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Rust,
                 "saber" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Saber,
                 "sanity" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Sanity,
-                "sanity-v3" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.SanityV3,
+                "sanity-v2" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.SanityV2,
                 "sapper" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Sapper,
                 "scully" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Scully,
                 "services" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Services,

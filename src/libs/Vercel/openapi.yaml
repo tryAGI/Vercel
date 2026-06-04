@@ -12537,8 +12537,8 @@
                                 "fasthtml",
                                 "django",
                                 "ash",
-                                "sanity-v3",
                                 "sanity",
+                                "sanity-v2",
                                 "storybook",
                                 "nitro",
                                 "hono",
@@ -17190,8 +17190,8 @@
                             "fasthtml",
                             "django",
                             "ash",
-                            "sanity-v3",
                             "sanity",
+                            "sanity-v2",
                             "storybook",
                             "nitro",
                             "hono",
@@ -20843,8 +20843,8 @@
                           "fasthtml",
                           "django",
                           "ash",
-                          "sanity-v3",
                           "sanity",
+                          "sanity-v2",
                           "storybook",
                           "nitro",
                           "hono",
@@ -21123,8 +21123,8 @@
                             "fasthtml",
                             "django",
                             "ash",
-                            "sanity-v3",
                             "sanity",
+                            "sanity-v2",
                             "storybook",
                             "nitro",
                             "hono",
@@ -30837,8 +30837,8 @@
                               "fasthtml",
                               "django",
                               "ash",
-                              "sanity-v3",
                               "sanity",
+                              "sanity-v2",
                               "storybook",
                               "nitro",
                               "hono",
@@ -31086,8 +31086,8 @@
                                     "fasthtml",
                                     "django",
                                     "ash",
-                                    "sanity-v3",
                                     "sanity",
+                                    "sanity-v2",
                                     "storybook",
                                     "nitro",
                                     "hono",
@@ -60564,8 +60564,8 @@
                               "fasthtml",
                               "django",
                               "ash",
-                              "sanity-v3",
                               "sanity",
+                              "sanity-v2",
                               "storybook",
                               "nitro",
                               "hono",
@@ -72833,8 +72833,8 @@
                               "fasthtml",
                               "django",
                               "ash",
-                              "sanity-v3",
                               "sanity",
+                              "sanity-v2",
                               "storybook",
                               "nitro",
                               "hono",
@@ -76138,8 +76138,8 @@
                                   "fasthtml",
                                   "django",
                                   "ash",
-                                  "sanity-v3",
                                   "sanity",
+                                  "sanity-v2",
                                   "storybook",
                                   "nitro",
                                   "hono",
@@ -79648,8 +79648,8 @@
                                   "fasthtml",
                                   "django",
                                   "ash",
-                                  "sanity-v3",
                                   "sanity",
+                                  "sanity-v2",
                                   "storybook",
                                   "nitro",
                                   "hono",
@@ -85580,8 +85580,8 @@
                         "fasthtml",
                         "django",
                         "ash",
-                        "sanity-v3",
                         "sanity",
+                        "sanity-v2",
                         "storybook",
                         "nitro",
                         "hono",
@@ -90734,8 +90734,8 @@
                       "fasthtml",
                       "django",
                       "ash",
-                      "sanity-v3",
                       "sanity",
+                      "sanity-v2",
                       "storybook",
                       "nitro",
                       "hono",
@@ -91747,8 +91747,8 @@
                         "fasthtml",
                         "django",
                         "ash",
-                        "sanity-v3",
                         "sanity",
+                        "sanity-v2",
                         "storybook",
                         "nitro",
                         "hono",
@@ -97493,8 +97493,8 @@
                         "fasthtml",
                         "django",
                         "ash",
-                        "sanity-v3",
                         "sanity",
+                        "sanity-v2",
                         "storybook",
                         "nitro",
                         "hono",
@@ -102594,8 +102594,8 @@
                       "fasthtml",
                       "django",
                       "ash",
-                      "sanity-v3",
                       "sanity",
+                      "sanity-v2",
                       "storybook",
                       "nitro",
                       "hono",
@@ -104436,8 +104436,8 @@
                         "fasthtml",
                         "django",
                         "ash",
-                        "sanity-v3",
                         "sanity",
+                        "sanity-v2",
                         "storybook",
                         "nitro",
                         "hono",
@@ -118585,8 +118585,8 @@
                         "fasthtml",
                         "django",
                         "ash",
-                        "sanity-v3",
                         "sanity",
+                        "sanity-v2",
                         "storybook",
                         "nitro",
                         "hono",
@@ -133049,8 +133049,8 @@
                                   "fasthtml",
                                   "django",
                                   "ash",
-                                  "sanity-v3",
                                   "sanity",
+                                  "sanity-v2",
                                   "storybook",
                                   "nitro",
                                   "hono",
@@ -136653,6 +136653,147 @@
                                 },
                                 "icon": {
                                   "type": "string"
+                                },
+                                "capabilities": {
+                                  "properties": {
+                                    "provisioning": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "mcp": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "mcpReadonly": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "sso": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "billable": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "transferable": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "templateCloneOnly": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "checks": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "connectedProvisioning": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "secretRotation": {
+                                      "oneOf": [
+                                        {
+                                          "properties": {
+                                            "maxDelayHours": {
+                                              "type": "number"
+                                            }
+                                          },
+                                          "required": [
+                                            "maxDelayHours"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    "importResource": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "connectedImportResource": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "nativeImportResource": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "requiresBrowserInstall": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "v0Flavors": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "flexCommitEligible": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "updateConfiguration": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "maxAllowedTeams": {
+                                      "type": "number"
+                                    }
+                                  },
+                                  "type": "object"
                                 },
                                 "flags": {
                                   "items": {
@@ -141379,8 +141520,8 @@
                                     "fasthtml",
                                     "django",
                                     "ash",
-                                    "sanity-v3",
                                     "sanity",
+                                    "sanity-v2",
                                     "storybook",
                                     "nitro",
                                     "hono",
@@ -144934,8 +145075,8 @@
                                   "fasthtml",
                                   "django",
                                   "ash",
-                                  "sanity-v3",
                                   "sanity",
+                                  "sanity-v2",
                                   "storybook",
                                   "nitro",
                                   "hono",

@@ -211,7 +211,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -348,7 +348,7 @@ namespace Vercel
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Rust => "rust",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Saber => "saber",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Sanity => "sanity",
-                GetDeploymentResponseVariant1ProjectSettingsFramework.SanityV3 => "sanity-v3",
+                GetDeploymentResponseVariant1ProjectSettingsFramework.SanityV2 => "sanity-v2",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Sapper => "sapper",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Scully => "scully",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Services => "services",
@@ -427,7 +427,7 @@ namespace Vercel
                 "rust" => GetDeploymentResponseVariant1ProjectSettingsFramework.Rust,
                 "saber" => GetDeploymentResponseVariant1ProjectSettingsFramework.Saber,
                 "sanity" => GetDeploymentResponseVariant1ProjectSettingsFramework.Sanity,
-                "sanity-v3" => GetDeploymentResponseVariant1ProjectSettingsFramework.SanityV3,
+                "sanity-v2" => GetDeploymentResponseVariant1ProjectSettingsFramework.SanityV2,
                 "sapper" => GetDeploymentResponseVariant1ProjectSettingsFramework.Sapper,
                 "scully" => GetDeploymentResponseVariant1ProjectSettingsFramework.Scully,
                 "services" => GetDeploymentResponseVariant1ProjectSettingsFramework.Services,
