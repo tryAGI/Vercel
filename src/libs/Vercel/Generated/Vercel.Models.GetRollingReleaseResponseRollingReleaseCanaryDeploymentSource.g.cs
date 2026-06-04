@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Where was the deployment created from<br/>
+    /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
     /// Example: cli
     /// </summary>
     public enum GetRollingReleaseResponseRollingReleaseCanaryDeploymentSource

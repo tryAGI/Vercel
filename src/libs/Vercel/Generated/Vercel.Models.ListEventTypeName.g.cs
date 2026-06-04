@@ -96,6 +96,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayVirtualModelConfigArchived,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayVirtualModelConfigCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayVirtualModelConfigRestored,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayVirtualModelConfigUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiOmniagent,
         /// <summary>
         /// 
@@ -2012,6 +2028,10 @@ namespace Vercel
                 ListEventTypeName.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeName.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeName.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                ListEventTypeName.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
+                ListEventTypeName.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
+                ListEventTypeName.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
+                ListEventTypeName.AiGatewayVirtualModelConfigUpdated => "ai-gateway-virtual-model-config-updated",
                 ListEventTypeName.AiOmniagent => "ai-omniagent",
                 ListEventTypeName.AlertRuleCreated => "alert-rule-created",
                 ListEventTypeName.AlertRuleDeleted => "alert-rule-deleted",
@@ -2514,6 +2534,10 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => ListEventTypeName.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeName.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeName.AiGatewayByokCredentialUpdated,
+                "ai-gateway-virtual-model-config-archived" => ListEventTypeName.AiGatewayVirtualModelConfigArchived,
+                "ai-gateway-virtual-model-config-created" => ListEventTypeName.AiGatewayVirtualModelConfigCreated,
+                "ai-gateway-virtual-model-config-restored" => ListEventTypeName.AiGatewayVirtualModelConfigRestored,
+                "ai-gateway-virtual-model-config-updated" => ListEventTypeName.AiGatewayVirtualModelConfigUpdated,
                 "ai-omniagent" => ListEventTypeName.AiOmniagent,
                 "alert-rule-created" => ListEventTypeName.AlertRuleCreated,
                 "alert-rule-deleted" => ListEventTypeName.AlertRuleDeleted,
