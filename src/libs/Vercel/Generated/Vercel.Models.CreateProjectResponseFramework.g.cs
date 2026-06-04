@@ -211,7 +211,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -348,7 +348,7 @@ namespace Vercel
                 CreateProjectResponseFramework.Rust => "rust",
                 CreateProjectResponseFramework.Saber => "saber",
                 CreateProjectResponseFramework.Sanity => "sanity",
-                CreateProjectResponseFramework.SanityV3 => "sanity-v3",
+                CreateProjectResponseFramework.SanityV2 => "sanity-v2",
                 CreateProjectResponseFramework.Sapper => "sapper",
                 CreateProjectResponseFramework.Scully => "scully",
                 CreateProjectResponseFramework.Services => "services",
@@ -427,7 +427,7 @@ namespace Vercel
                 "rust" => CreateProjectResponseFramework.Rust,
                 "saber" => CreateProjectResponseFramework.Saber,
                 "sanity" => CreateProjectResponseFramework.Sanity,
-                "sanity-v3" => CreateProjectResponseFramework.SanityV3,
+                "sanity-v2" => CreateProjectResponseFramework.SanityV2,
                 "sapper" => CreateProjectResponseFramework.Sapper,
                 "scully" => CreateProjectResponseFramework.Scully,
                 "services" => CreateProjectResponseFramework.Services,

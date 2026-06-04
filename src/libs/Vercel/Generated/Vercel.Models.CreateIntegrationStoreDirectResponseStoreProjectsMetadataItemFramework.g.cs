@@ -211,7 +211,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -348,7 +348,7 @@ namespace Vercel
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Rust => "rust",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Saber => "saber",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sanity => "sanity",
-                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.SanityV3 => "sanity-v3",
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.SanityV2 => "sanity-v2",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sapper => "sapper",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Scully => "scully",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Services => "services",
@@ -427,7 +427,7 @@ namespace Vercel
                 "rust" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Rust,
                 "saber" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Saber,
                 "sanity" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sanity,
-                "sanity-v3" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.SanityV3,
+                "sanity-v2" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.SanityV2,
                 "sapper" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sapper,
                 "scully" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Scully,
                 "services" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Services,

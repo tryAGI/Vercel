@@ -211,7 +211,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -348,7 +348,7 @@ namespace Vercel
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Rust => "rust",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Saber => "saber",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Sanity => "sanity",
-                GetConfigurableLogDrainResponseProjectsMetadataItemFramework.SanityV3 => "sanity-v3",
+                GetConfigurableLogDrainResponseProjectsMetadataItemFramework.SanityV2 => "sanity-v2",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Sapper => "sapper",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Scully => "scully",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Services => "services",
@@ -427,7 +427,7 @@ namespace Vercel
                 "rust" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Rust,
                 "saber" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Saber,
                 "sanity" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Sanity,
-                "sanity-v3" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.SanityV3,
+                "sanity-v2" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.SanityV2,
                 "sapper" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Sapper,
                 "scully" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Scully,
                 "services" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Services,

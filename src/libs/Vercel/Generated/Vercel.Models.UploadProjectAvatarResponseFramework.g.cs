@@ -211,7 +211,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -348,7 +348,7 @@ namespace Vercel
                 UploadProjectAvatarResponseFramework.Rust => "rust",
                 UploadProjectAvatarResponseFramework.Saber => "saber",
                 UploadProjectAvatarResponseFramework.Sanity => "sanity",
-                UploadProjectAvatarResponseFramework.SanityV3 => "sanity-v3",
+                UploadProjectAvatarResponseFramework.SanityV2 => "sanity-v2",
                 UploadProjectAvatarResponseFramework.Sapper => "sapper",
                 UploadProjectAvatarResponseFramework.Scully => "scully",
                 UploadProjectAvatarResponseFramework.Services => "services",
@@ -427,7 +427,7 @@ namespace Vercel
                 "rust" => UploadProjectAvatarResponseFramework.Rust,
                 "saber" => UploadProjectAvatarResponseFramework.Saber,
                 "sanity" => UploadProjectAvatarResponseFramework.Sanity,
-                "sanity-v3" => UploadProjectAvatarResponseFramework.SanityV3,
+                "sanity-v2" => UploadProjectAvatarResponseFramework.SanityV2,
                 "sapper" => UploadProjectAvatarResponseFramework.Sapper,
                 "scully" => UploadProjectAvatarResponseFramework.Scully,
                 "services" => UploadProjectAvatarResponseFramework.Services,
