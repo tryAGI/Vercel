@@ -13988,7 +13988,7 @@
                             "v0-web",
                             "drop"
                           ],
-                          "description": "Where was the deployment created from",
+                          "description": "Where was the deployment created from. Best-effort guess for metrics only \u2014 not authoritative; do not gate behavior on it.",
                           "example": "cli"
                         },
                         "target": {
@@ -16829,7 +16829,7 @@
                             "v0-web",
                             "drop"
                           ],
-                          "description": "Where was the deployment created from",
+                          "description": "Where was the deployment created from. Best-effort guess for metrics only \u2014 not authoritative; do not gate behavior on it.",
                           "example": "cli"
                         },
                         "target": {
@@ -18641,7 +18641,7 @@
                         "v0-web",
                         "drop"
                       ],
-                      "description": "Where was the deployment created from",
+                      "description": "Where was the deployment created from. Best-effort guess for metrics only \u2014 not authoritative; do not gate behavior on it.",
                       "example": "cli"
                     },
                     "target": {
@@ -22574,7 +22574,7 @@
                         "v0-web",
                         "drop"
                       ],
-                      "description": "Where was the deployment created from",
+                      "description": "Where was the deployment created from. Best-effort guess for metrics only \u2014 not authoritative; do not gate behavior on it.",
                       "example": "cli"
                     },
                     "target": {
@@ -115522,7 +115522,7 @@
                                 "v0-web",
                                 "drop"
                               ],
-                              "description": "Where was the deployment created from",
+                              "description": "Where was the deployment created from. Best-effort guess for metrics only \u2014 not authoritative; do not gate behavior on it.",
                               "example": "cli"
                             },
                             "url": {
@@ -115610,7 +115610,7 @@
                                 "v0-web",
                                 "drop"
                               ],
-                              "description": "Where was the deployment created from",
+                              "description": "Where was the deployment created from. Best-effort guess for metrics only \u2014 not authoritative; do not gate behavior on it.",
                               "example": "cli"
                             },
                             "url": {
@@ -116101,7 +116101,7 @@
                                 "v0-web",
                                 "drop"
                               ],
-                              "description": "Where was the deployment created from",
+                              "description": "Where was the deployment created from. Best-effort guess for metrics only \u2014 not authoritative; do not gate behavior on it.",
                               "example": "cli"
                             },
                             "url": {
@@ -116189,7 +116189,7 @@
                                 "v0-web",
                                 "drop"
                               ],
-                              "description": "Where was the deployment created from",
+                              "description": "Where was the deployment created from. Best-effort guess for metrics only \u2014 not authoritative; do not gate behavior on it.",
                               "example": "cli"
                             },
                             "url": {
@@ -116691,7 +116691,7 @@
                                 "v0-web",
                                 "drop"
                               ],
-                              "description": "Where was the deployment created from",
+                              "description": "Where was the deployment created from. Best-effort guess for metrics only \u2014 not authoritative; do not gate behavior on it.",
                               "example": "cli"
                             },
                             "url": {
@@ -116779,7 +116779,7 @@
                                 "v0-web",
                                 "drop"
                               ],
-                              "description": "Where was the deployment created from",
+                              "description": "Where was the deployment created from. Best-effort guess for metrics only \u2014 not authoritative; do not gate behavior on it.",
                               "example": "cli"
                             },
                             "url": {
@@ -147250,6 +147250,10 @@
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-virtual-model-config-archived",
+              "ai-gateway-virtual-model-config-created",
+              "ai-gateway-virtual-model-config-restored",
+              "ai-gateway-virtual-model-config-updated",
               "access-group-created",
               "access-group-deleted",
               "access-group-project-updated",
@@ -148007,6 +148011,10 @@
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-virtual-model-config-archived",
+              "ai-gateway-virtual-model-config-created",
+              "ai-gateway-virtual-model-config-restored",
+              "ai-gateway-virtual-model-config-updated",
               "access-group-created",
               "access-group-deleted",
               "access-group-project-updated",
@@ -148557,6 +148565,10 @@
                 "ai-gateway-byok-credential-created",
                 "ai-gateway-byok-credential-deleted",
                 "ai-gateway-byok-credential-updated",
+                "ai-gateway-virtual-model-config-archived",
+                "ai-gateway-virtual-model-config-created",
+                "ai-gateway-virtual-model-config-restored",
+                "ai-gateway-virtual-model-config-updated",
                 "access-group-created",
                 "access-group-deleted",
                 "access-group-project-updated",

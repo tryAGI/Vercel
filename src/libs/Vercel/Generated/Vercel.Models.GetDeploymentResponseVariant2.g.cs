@@ -364,7 +364,7 @@ namespace Vercel
         public bool? SoftDeletedByRetention { get; set; }
 
         /// <summary>
-        /// Where was the deployment created from<br/>
+        /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
         /// Example: cli
         /// </summary>
         /// <example>cli</example>
@@ -549,7 +549,7 @@ namespace Vercel
         /// Example: true
         /// </param>
         /// <param name="source">
-        /// Where was the deployment created from<br/>
+        /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
         /// Example: cli
         /// </param>
         /// <param name="target">
