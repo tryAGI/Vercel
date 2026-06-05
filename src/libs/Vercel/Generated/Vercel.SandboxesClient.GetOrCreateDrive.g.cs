@@ -7,7 +7,7 @@ namespace Vercel
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_CreateSandboxesSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_GetOrCreateDriveSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,34 +21,40 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_CreateSandboxesSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetOrCreateDriveSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_CreateSandboxesSecurityRequirement0,
+            {                s_GetOrCreateDriveSecurityRequirement0,
             };
-        partial void PrepareCreateSandboxesArguments(
+        partial void PrepareGetOrCreateDriveArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref string name,
             ref string? teamId,
             ref string? slug,
-            global::Vercel.CreateSandboxesRequest request);
-        partial void PrepareCreateSandboxesRequest(
+            global::Vercel.GetOrCreateDriveRequest request);
+        partial void PrepareGetOrCreateDriveRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            string name,
             string? teamId,
             string? slug,
-            global::Vercel.CreateSandboxesRequest request);
-        partial void ProcessCreateSandboxesResponse(
+            global::Vercel.GetOrCreateDriveRequest request);
+        partial void ProcessGetOrCreateDriveResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessCreateSandboxesResponseContent(
+        partial void ProcessGetOrCreateDriveResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Create a named sandbox<br/>
-        /// Creates a named sandbox environment. Named sandboxes have a unique name within a project and support automatic snapshotting on shutdown.
+        /// Get or create a drive<br/>
+        /// Gets an existing drive by project and name, or creates it when it does not exist. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta
         /// </summary>
+        /// <param name="name">
+        /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
+        /// Example: workspace
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -59,15 +65,17 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.CreateSandboxesResponse> CreateSandboxesAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.GetOrCreateDriveResponse> GetOrCreateDriveAsync(
+            string name,
 
-            global::Vercel.CreateSandboxesRequest request,
+            global::Vercel.GetOrCreateDriveRequest request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await CreateSandboxesAsResponseAsync(
+            var __response = await GetOrCreateDriveAsResponseAsync(
+                name: name,
 
                 request: request,
                 teamId: teamId,
@@ -79,9 +87,13 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Create a named sandbox<br/>
-        /// Creates a named sandbox environment. Named sandboxes have a unique name within a project and support automatic snapshotting on shutdown.
+        /// Get or create a drive<br/>
+        /// Gets an existing drive by project and name, or creates it when it does not exist. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta
         /// </summary>
+        /// <param name="name">
+        /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
+        /// Example: workspace
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -92,9 +104,10 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSandboxesResponse>> CreateSandboxesAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetOrCreateDriveResponse>> GetOrCreateDriveAsResponseAsync(
+            string name,
 
-            global::Vercel.CreateSandboxesRequest request,
+            global::Vercel.GetOrCreateDriveRequest request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -104,8 +117,9 @@ namespace Vercel
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareCreateSandboxesArguments(
+            PrepareGetOrCreateDriveArguments(
                 httpClient: HttpClient,
+                name: ref name,
                 teamId: ref teamId,
                 slug: ref slug,
                 request: request);
@@ -113,8 +127,8 @@ namespace Vercel
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_CreateSandboxesSecurityRequirements,
-                operationName: "CreateSandboxesAsync");
+                securityRequirements: s_GetOrCreateDriveSecurityRequirements,
+                operationName: "GetOrCreateDriveAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -134,7 +148,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: "/v2/sandboxes",
+                                path: $"/v2/sandboxes/drives/{name}",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("teamId", teamId)
@@ -183,9 +197,10 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareCreateSandboxesRequest(
+                PrepareGetOrCreateDriveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    name: name!,
                     teamId: teamId,
                     slug: slug,
                     request: request);
@@ -205,9 +220,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSandboxes",
-                                methodName: "CreateSandboxesAsync",
-                                pathTemplate: "\"/v2/sandboxes\"",
+                                operationId: "GetOrCreateDrive",
+                                methodName: "GetOrCreateDriveAsync",
+                                pathTemplate: "$\"/v2/sandboxes/drives/{name}\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -239,9 +254,9 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSandboxes",
-                                methodName: "CreateSandboxesAsync",
-                                pathTemplate: "\"/v2/sandboxes\"",
+                                operationId: "GetOrCreateDrive",
+                                methodName: "GetOrCreateDriveAsync",
+                                pathTemplate: "$\"/v2/sandboxes/drives/{name}\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -280,9 +295,9 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSandboxes",
-                                methodName: "CreateSandboxesAsync",
-                                pathTemplate: "\"/v2/sandboxes\"",
+                                operationId: "GetOrCreateDrive",
+                                methodName: "GetOrCreateDriveAsync",
+                                pathTemplate: "$\"/v2/sandboxes/drives/{name}\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -320,7 +335,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessCreateSandboxesResponse(
+                ProcessGetOrCreateDriveResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -328,9 +343,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSandboxes",
-                                methodName: "CreateSandboxesAsync",
-                                pathTemplate: "\"/v2/sandboxes\"",
+                                operationId: "GetOrCreateDrive",
+                                methodName: "GetOrCreateDriveAsync",
+                                pathTemplate: "$\"/v2/sandboxes/drives/{name}\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -350,9 +365,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSandboxes",
-                                methodName: "CreateSandboxesAsync",
-                                pathTemplate: "\"/v2/sandboxes\"",
+                                operationId: "GetOrCreateDrive",
+                                methodName: "GetOrCreateDriveAsync",
+                                pathTemplate: "$\"/v2/sandboxes/drives/{name}\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -560,70 +575,6 @@ namespace Vercel
                                         h => h.Value));
                             }
                             // 
-                            if ((int)__response.StatusCode == 410)
-                            {
-                                string? __content_410 = null;
-                                global::System.Exception? __exception_410 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_410 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_410 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_410 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_410 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_410,
-                                    responseBody: __content_410,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            // 
-                            if ((int)__response.StatusCode == 422)
-                            {
-                                string? __content_422 = null;
-                                global::System.Exception? __exception_422 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_422 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_422 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_422,
-                                    responseBody: __content_422,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            // 
                             if ((int)__response.StatusCode == 429)
                             {
                                 string? __content_429 = null;
@@ -655,38 +606,6 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
-                            if ((int)__response.StatusCode == 500)
-                            {
-                                string? __content_500 = null;
-                                global::System.Exception? __exception_500 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_500 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_500,
-                                    responseBody: __content_500,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -700,7 +619,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessCreateSandboxesResponseContent(
+                                ProcessGetOrCreateDriveResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -709,9 +628,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.CreateSandboxesResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.GetOrCreateDriveResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSandboxesResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetOrCreateDriveResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -741,9 +660,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.CreateSandboxesResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.GetOrCreateDriveResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSandboxesResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetOrCreateDriveResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -784,108 +703,46 @@ namespace Vercel
             }
         }
         /// <summary>
-        /// Create a named sandbox<br/>
-        /// Creates a named sandbox environment. Named sandboxes have a unique name within a project and support automatic snapshotting on shutdown.
+        /// Get or create a drive<br/>
+        /// Gets an existing drive by project and name, or creates it when it does not exist. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta
         /// </summary>
+        /// <param name="name">
+        /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
+        /// Example: workspace
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
-        /// <param name="networkPolicy"></param>
-        /// <param name="resources">
-        /// Resources to define the VM
-        /// </param>
-        /// <param name="runtime">
-        /// The runtime environment for the sandbox. Determines the pre-installed language runtimes and tools available.<br/>
-        /// Default Value: node24<br/>
-        /// Example: node24
-        /// </param>
-        /// <param name="source">
-        /// The source from which to initialize the sandbox filesystem. Can be a Git repository, a tarball URL, or an existing snapshot.
-        /// </param>
         /// <param name="projectId">
-        /// The target project slug or ID in which the sandbox will be assigned to.<br/>
+        /// The project ID or name to associate the drive with. Required unless using a Vercel OIDC token scoped to a project.<br/>
         /// Example: prj_abc123
         /// </param>
-        /// <param name="ports">
-        /// List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.<br/>
-        /// Example: [3000, 4000]
-        /// </param>
-        /// <param name="timeout">
-        /// Maximum duration in milliseconds that the sandbox can run before being automatically stopped.<br/>
-        /// Example: 300000
-        /// </param>
-        /// <param name="env">
-        /// Default environment variables for the sandbox. These are inherited by all commands unless overridden.<br/>
-        /// Default Value: {}<br/>
-        /// Example: {"NODE_ENV":"production","HELLO":"world"}
-        /// </param>
-        /// <param name="mounts">
-        /// List of drives to mount to the sandbox at the provided path.
-        /// </param>
-        /// <param name="name">
-        /// Name for the sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
-        /// Example: my-sandbox
-        /// </param>
-        /// <param name="persistent">
-        /// Whether the sandbox persists its state across restarts via automatic snapshots. Defaults to true.<br/>
-        /// Default Value: true
-        /// </param>
-        /// <param name="snapshotExpiration">
-        /// Default snapshot expiration time in milliseconds. Set to 0 to disable expiration. When set, this value is used as the default expiration for all snapshots created for this sandbox.<br/>
-        /// Example: 604800000
-        /// </param>
-        /// <param name="keepLastSnapshots">
-        /// Protect the N most recent snapshots with different expiration/deletion behavior.
-        /// </param>
-        /// <param name="tags">
-        /// Key-value tags to associate with the sandbox. Maximum 5 tags.<br/>
-        /// Example: {"env":"staging","team":"platform"}
+        /// <param name="maxSizeBytes">
+        /// Maximum drive size in bytes. Defaults to 100 GiB when omitted.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.CreateSandboxesResponse> CreateSandboxesAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.GetOrCreateDriveResponse> GetOrCreateDriveAsync(
+            string name,
             string? teamId = default,
             string? slug = default,
-            global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>? networkPolicy = default,
-            global::Vercel.CreateSandboxesRequestResources? resources = default,
-            global::Vercel.CreateSandboxesRequestRuntime? runtime = default,
-            global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestSourceVariant1, global::Vercel.CreateSandboxesRequestSourceVariant2, global::Vercel.CreateSandboxesRequestSourceVariant3>? source = default,
             string? projectId = default,
-            global::System.Collections.Generic.IList<int>? ports = default,
-            int? timeout = default,
-            global::System.Collections.Generic.Dictionary<string, string>? env = default,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesRequestMounts2>? mounts = default,
-            string? name = default,
-            bool? persistent = default,
-            global::Vercel.OneOf<object, int?>? snapshotExpiration = default,
-            global::Vercel.CreateSandboxesRequestKeepLastSnapshots? keepLastSnapshots = default,
-            global::System.Collections.Generic.Dictionary<string, string>? tags = default,
+            int? maxSizeBytes = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Vercel.CreateSandboxesRequest
+            var __request = new global::Vercel.GetOrCreateDriveRequest
             {
-                NetworkPolicy = networkPolicy,
-                Resources = resources,
-                Runtime = runtime,
-                Source = source,
                 ProjectId = projectId,
-                Ports = ports,
-                Timeout = timeout,
-                Env = env,
-                Mounts = mounts,
-                Name = name,
-                Persistent = persistent,
-                SnapshotExpiration = snapshotExpiration,
-                KeepLastSnapshots = keepLastSnapshots,
-                Tags = tags,
+                MaxSizeBytes = maxSizeBytes,
             };
 
-            return await CreateSandboxesAsync(
+            return await GetOrCreateDriveAsync(
+                name: name,
                 teamId: teamId,
                 slug: slug,
                 request: __request,
