@@ -125503,6 +125503,35 @@
                       "HELLO": "world"
                     }
                   },
+                  "mounts": {
+                    "type": "object",
+                    "description": "List of drives to mount to the sandbox at the provided path.",
+                    "maxProperties": 4,
+                    "additionalProperties": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "drive"
+                      ],
+                      "properties": {
+                        "drive": {
+                          "type": "string",
+                          "description": "Name of the drive to mount. The drive must already exist.",
+                          "maxLength": 64,
+                          "pattern": "^[a-zA-Z0-9_-]+$"
+                        },
+                        "mode": {
+                          "type": "string",
+                          "enum": [
+                            "read-only",
+                            "read-write"
+                          ],
+                          "description": "Mount the drive read-only or read-write.",
+                          "default": "read-write"
+                        }
+                      }
+                    }
+                  },
                   "name": {
                     "description": "Name for the sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
                     "type": "string",
@@ -125572,6 +125601,401 @@
             }
           }
         }
+      }
+    },
+    "/v2/sandboxes/drives": {
+      "get": {
+        "description": "Retrieves a paginated list of drives belonging to a specific project. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta",
+        "operationId": "listDrives",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List drives",
+        "tags": [
+          "sandboxes"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drives": {
+                      "items": {
+                        "$ref": "#/components/schemas/Drive"
+                      },
+                      "type": "array"
+                    },
+                    "pagination": {
+                      "properties": {
+                        "count": {
+                          "type": "number"
+                        },
+                        "next": {
+                          "nullable": true,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "count",
+                        "next"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "drives",
+                    "pagination"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": ""
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectId",
+            "description": "The project ID or name associated with the drives. Required unless using a Vercel OIDC token scoped to a project.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The project ID or name associated with the drives. Required unless using a Vercel OIDC token scoped to a project.",
+              "example": "prj_abc123"
+            }
+          },
+          {
+            "name": "limit",
+            "description": "Maximum number of drives to return in the response. Used for pagination.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Maximum number of drives to return in the response. Used for pagination.",
+              "type": "number",
+              "minimum": 1,
+              "maximum": 50,
+              "default": 20,
+              "example": 20
+            }
+          },
+          {
+            "name": "cursor",
+            "description": "Opaque pagination cursor from a previous response.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Opaque pagination cursor from a previous response.",
+              "type": "string"
+            }
+          },
+          {
+            "name": "sortBy",
+            "description": "Field to sort drives by.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Field to sort drives by.",
+              "type": "string",
+              "enum": [
+                "createdAt",
+                "updatedAt",
+                "name"
+              ],
+              "default": "createdAt"
+            }
+          },
+          {
+            "name": "namePrefix",
+            "description": "Filter drives whose name starts with this prefix. Only valid when sortBy=name.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Filter drives whose name starts with this prefix. Only valid when sortBy=name.",
+              "type": "string"
+            }
+          },
+          {
+            "name": "sortOrder",
+            "description": "Sort direction for results.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Sort direction for results.",
+              "type": "string",
+              "enum": [
+                "asc",
+                "desc"
+              ],
+              "default": "desc"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
+    "/v2/sandboxes/drives/{name}": {
+      "post": {
+        "description": "Gets an existing drive by project and name, or creates it when it does not exist. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta",
+        "operationId": "getOrCreateDrive",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Get or create a drive",
+        "tags": [
+          "sandboxes"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": "The account is missing a payment so payment method must be updated"
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "maxLength": 64,
+              "example": "workspace"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "projectId": {
+                    "type": "string",
+                    "description": "The project ID or name to associate the drive with. Required unless using a Vercel OIDC token scoped to a project.",
+                    "example": "prj_abc123"
+                  },
+                  "maxSizeBytes": {
+                    "type": "integer",
+                    "description": "Maximum drive size in bytes. Defaults to 100 GiB when omitted."
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta",
+        "operationId": "deleteDrive",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Delete a drive",
+        "tags": [
+          "sandboxes"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": ""
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "maxLength": 64,
+              "example": "workspace"
+            }
+          },
+          {
+            "name": "projectId",
+            "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+              "example": "prj_abc123"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
       }
     },
     "/v2/sandboxes/snapshots": {
@@ -151857,6 +152281,54 @@
         ],
         "type": "object",
         "description": "This object represents a public route in a Vercel Sandbox."
+      },
+      "Drive": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The unique drive name within the project.",
+            "example": "workspace"
+          },
+          "projectId": {
+            "type": "string",
+            "description": "The project that owns the drive.",
+            "example": "prj_abc123"
+          },
+          "maxSizeBytes": {
+            "type": "number",
+            "description": "The maximum drive size in bytes.",
+            "example": 107374182400
+          },
+          "currentSessionId": {
+            "type": "string",
+            "description": "Current session ID the drive is attached to, if any.",
+            "example": "sbx_123"
+          },
+          "currentSandboxName": {
+            "type": "string",
+            "description": "Current sandbox name the drive is attached to, if any.",
+            "example": "my-sandbox"
+          },
+          "createdAt": {
+            "type": "number",
+            "description": "The time when the drive was created, in milliseconds since the epoch.",
+            "example": 1750344501629
+          },
+          "updatedAt": {
+            "type": "number",
+            "description": "The last time the drive was updated, in milliseconds since the epoch.",
+            "example": 1750344501629
+          }
+        },
+        "required": [
+          "createdAt",
+          "maxSizeBytes",
+          "name",
+          "projectId",
+          "updatedAt"
+        ],
+        "type": "object",
+        "description": "This object contains information related to a Vercel Sandbox Drive."
       },
       "Snapshot": {
         "properties": {
