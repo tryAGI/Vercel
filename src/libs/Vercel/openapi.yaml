@@ -60588,6 +60588,110 @@
                               null
                             ]
                           },
+                          "services": {
+                            "items": {
+                              "properties": {
+                                "serviceName": {
+                                  "type": "string",
+                                  "description": "Service name from the deployment (Service.name)."
+                                },
+                                "serviceType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "web",
+                                    "cron",
+                                    "worker",
+                                    "job"
+                                  ],
+                                  "description": "Service kind (Service.type). Omitted for schemas that do not define one."
+                                },
+                                "framework": {
+                                  "type": "string",
+                                  "enum": [
+                                    "blitzjs",
+                                    "nextjs",
+                                    "gatsby",
+                                    "remix",
+                                    "react-router",
+                                    "astro",
+                                    "hexo",
+                                    "eleventy",
+                                    "docusaurus-2",
+                                    "docusaurus",
+                                    "preact",
+                                    "solidstart-1",
+                                    "solidstart",
+                                    "dojo",
+                                    "ember",
+                                    "vue",
+                                    "scully",
+                                    "ionic-angular",
+                                    "angular",
+                                    "polymer",
+                                    "svelte",
+                                    "sveltekit",
+                                    "sveltekit-1",
+                                    "ionic-react",
+                                    "create-react-app",
+                                    "gridsome",
+                                    "umijs",
+                                    "sapper",
+                                    "saber",
+                                    "stencil",
+                                    "nuxtjs",
+                                    "redwoodjs",
+                                    "hugo",
+                                    "jekyll",
+                                    "brunch",
+                                    "middleman",
+                                    "zola",
+                                    "hydrogen",
+                                    "vite",
+                                    "tanstack-start",
+                                    "vitepress",
+                                    "vuepress",
+                                    "parcel",
+                                    "fastapi",
+                                    "flask",
+                                    "fasthtml",
+                                    "django",
+                                    "ash",
+                                    "sanity",
+                                    "sanity-v2",
+                                    "storybook",
+                                    "nitro",
+                                    "hono",
+                                    "express",
+                                    "h3",
+                                    "koa",
+                                    "nestjs",
+                                    "elysia",
+                                    "fastify",
+                                    "xmcp",
+                                    "python",
+                                    "ruby",
+                                    "rust",
+                                    "axum",
+                                    "actix-web",
+                                    "node",
+                                    "go",
+                                    "services",
+                                    "mastra"
+                                  ],
+                                  "description": "Framework slug, when the service has one (omitted otherwise)."
+                                },
+                                "runtime": {
+                                  "type": "string",
+                                  "description": "Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds."
+                                }
+                              },
+                              "required": [
+                                "serviceName"
+                              ],
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
                           "gitForkProtection": {
                             "type": "boolean",
                             "enum": [
@@ -79672,6 +79776,110 @@
                                   null
                                 ]
                               },
+                              "services": {
+                                "items": {
+                                  "properties": {
+                                    "serviceName": {
+                                      "type": "string",
+                                      "description": "Service name from the deployment (Service.name)."
+                                    },
+                                    "serviceType": {
+                                      "type": "string",
+                                      "enum": [
+                                        "web",
+                                        "cron",
+                                        "worker",
+                                        "job"
+                                      ],
+                                      "description": "Service kind (Service.type). Omitted for schemas that do not define one."
+                                    },
+                                    "framework": {
+                                      "type": "string",
+                                      "enum": [
+                                        "blitzjs",
+                                        "nextjs",
+                                        "gatsby",
+                                        "remix",
+                                        "react-router",
+                                        "astro",
+                                        "hexo",
+                                        "eleventy",
+                                        "docusaurus-2",
+                                        "docusaurus",
+                                        "preact",
+                                        "solidstart-1",
+                                        "solidstart",
+                                        "dojo",
+                                        "ember",
+                                        "vue",
+                                        "scully",
+                                        "ionic-angular",
+                                        "angular",
+                                        "polymer",
+                                        "svelte",
+                                        "sveltekit",
+                                        "sveltekit-1",
+                                        "ionic-react",
+                                        "create-react-app",
+                                        "gridsome",
+                                        "umijs",
+                                        "sapper",
+                                        "saber",
+                                        "stencil",
+                                        "nuxtjs",
+                                        "redwoodjs",
+                                        "hugo",
+                                        "jekyll",
+                                        "brunch",
+                                        "middleman",
+                                        "zola",
+                                        "hydrogen",
+                                        "vite",
+                                        "tanstack-start",
+                                        "vitepress",
+                                        "vuepress",
+                                        "parcel",
+                                        "fastapi",
+                                        "flask",
+                                        "fasthtml",
+                                        "django",
+                                        "ash",
+                                        "sanity",
+                                        "sanity-v2",
+                                        "storybook",
+                                        "nitro",
+                                        "hono",
+                                        "express",
+                                        "h3",
+                                        "koa",
+                                        "nestjs",
+                                        "elysia",
+                                        "fastify",
+                                        "xmcp",
+                                        "python",
+                                        "ruby",
+                                        "rust",
+                                        "axum",
+                                        "actix-web",
+                                        "node",
+                                        "go",
+                                        "services",
+                                        "mastra"
+                                      ],
+                                      "description": "Framework slug, when the service has one (omitted otherwise)."
+                                    },
+                                    "runtime": {
+                                      "type": "string",
+                                      "description": "Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds."
+                                    }
+                                  },
+                                  "required": [
+                                    "serviceName"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "array"
+                              },
                               "gitForkProtection": {
                                 "type": "boolean",
                                 "enum": [
@@ -85603,6 +85811,110 @@
                         "mastra",
                         null
                       ]
+                    },
+                    "services": {
+                      "items": {
+                        "properties": {
+                          "serviceName": {
+                            "type": "string",
+                            "description": "Service name from the deployment (Service.name)."
+                          },
+                          "serviceType": {
+                            "type": "string",
+                            "enum": [
+                              "web",
+                              "cron",
+                              "worker",
+                              "job"
+                            ],
+                            "description": "Service kind (Service.type). Omitted for schemas that do not define one."
+                          },
+                          "framework": {
+                            "type": "string",
+                            "enum": [
+                              "blitzjs",
+                              "nextjs",
+                              "gatsby",
+                              "remix",
+                              "react-router",
+                              "astro",
+                              "hexo",
+                              "eleventy",
+                              "docusaurus-2",
+                              "docusaurus",
+                              "preact",
+                              "solidstart-1",
+                              "solidstart",
+                              "dojo",
+                              "ember",
+                              "vue",
+                              "scully",
+                              "ionic-angular",
+                              "angular",
+                              "polymer",
+                              "svelte",
+                              "sveltekit",
+                              "sveltekit-1",
+                              "ionic-react",
+                              "create-react-app",
+                              "gridsome",
+                              "umijs",
+                              "sapper",
+                              "saber",
+                              "stencil",
+                              "nuxtjs",
+                              "redwoodjs",
+                              "hugo",
+                              "jekyll",
+                              "brunch",
+                              "middleman",
+                              "zola",
+                              "hydrogen",
+                              "vite",
+                              "tanstack-start",
+                              "vitepress",
+                              "vuepress",
+                              "parcel",
+                              "fastapi",
+                              "flask",
+                              "fasthtml",
+                              "django",
+                              "ash",
+                              "sanity",
+                              "sanity-v2",
+                              "storybook",
+                              "nitro",
+                              "hono",
+                              "express",
+                              "h3",
+                              "koa",
+                              "nestjs",
+                              "elysia",
+                              "fastify",
+                              "xmcp",
+                              "python",
+                              "ruby",
+                              "rust",
+                              "axum",
+                              "actix-web",
+                              "node",
+                              "go",
+                              "services",
+                              "mastra"
+                            ],
+                            "description": "Framework slug, when the service has one (omitted otherwise)."
+                          },
+                          "runtime": {
+                            "type": "string",
+                            "description": "Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds."
+                          }
+                        },
+                        "required": [
+                          "serviceName"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
                     },
                     "gitForkProtection": {
                       "type": "boolean",
@@ -91771,6 +92083,110 @@
                         null
                       ]
                     },
+                    "services": {
+                      "items": {
+                        "properties": {
+                          "serviceName": {
+                            "type": "string",
+                            "description": "Service name from the deployment (Service.name)."
+                          },
+                          "serviceType": {
+                            "type": "string",
+                            "enum": [
+                              "web",
+                              "cron",
+                              "worker",
+                              "job"
+                            ],
+                            "description": "Service kind (Service.type). Omitted for schemas that do not define one."
+                          },
+                          "framework": {
+                            "type": "string",
+                            "enum": [
+                              "blitzjs",
+                              "nextjs",
+                              "gatsby",
+                              "remix",
+                              "react-router",
+                              "astro",
+                              "hexo",
+                              "eleventy",
+                              "docusaurus-2",
+                              "docusaurus",
+                              "preact",
+                              "solidstart-1",
+                              "solidstart",
+                              "dojo",
+                              "ember",
+                              "vue",
+                              "scully",
+                              "ionic-angular",
+                              "angular",
+                              "polymer",
+                              "svelte",
+                              "sveltekit",
+                              "sveltekit-1",
+                              "ionic-react",
+                              "create-react-app",
+                              "gridsome",
+                              "umijs",
+                              "sapper",
+                              "saber",
+                              "stencil",
+                              "nuxtjs",
+                              "redwoodjs",
+                              "hugo",
+                              "jekyll",
+                              "brunch",
+                              "middleman",
+                              "zola",
+                              "hydrogen",
+                              "vite",
+                              "tanstack-start",
+                              "vitepress",
+                              "vuepress",
+                              "parcel",
+                              "fastapi",
+                              "flask",
+                              "fasthtml",
+                              "django",
+                              "ash",
+                              "sanity",
+                              "sanity-v2",
+                              "storybook",
+                              "nitro",
+                              "hono",
+                              "express",
+                              "h3",
+                              "koa",
+                              "nestjs",
+                              "elysia",
+                              "fastify",
+                              "xmcp",
+                              "python",
+                              "ruby",
+                              "rust",
+                              "axum",
+                              "actix-web",
+                              "node",
+                              "go",
+                              "services",
+                              "mastra"
+                            ],
+                            "description": "Framework slug, when the service has one (omitted otherwise)."
+                          },
+                          "runtime": {
+                            "type": "string",
+                            "description": "Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds."
+                          }
+                        },
+                        "required": [
+                          "serviceName"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
                     "gitForkProtection": {
                       "type": "boolean",
                       "enum": [
@@ -97516,6 +97932,110 @@
                         "mastra",
                         null
                       ]
+                    },
+                    "services": {
+                      "items": {
+                        "properties": {
+                          "serviceName": {
+                            "type": "string",
+                            "description": "Service name from the deployment (Service.name)."
+                          },
+                          "serviceType": {
+                            "type": "string",
+                            "enum": [
+                              "web",
+                              "cron",
+                              "worker",
+                              "job"
+                            ],
+                            "description": "Service kind (Service.type). Omitted for schemas that do not define one."
+                          },
+                          "framework": {
+                            "type": "string",
+                            "enum": [
+                              "blitzjs",
+                              "nextjs",
+                              "gatsby",
+                              "remix",
+                              "react-router",
+                              "astro",
+                              "hexo",
+                              "eleventy",
+                              "docusaurus-2",
+                              "docusaurus",
+                              "preact",
+                              "solidstart-1",
+                              "solidstart",
+                              "dojo",
+                              "ember",
+                              "vue",
+                              "scully",
+                              "ionic-angular",
+                              "angular",
+                              "polymer",
+                              "svelte",
+                              "sveltekit",
+                              "sveltekit-1",
+                              "ionic-react",
+                              "create-react-app",
+                              "gridsome",
+                              "umijs",
+                              "sapper",
+                              "saber",
+                              "stencil",
+                              "nuxtjs",
+                              "redwoodjs",
+                              "hugo",
+                              "jekyll",
+                              "brunch",
+                              "middleman",
+                              "zola",
+                              "hydrogen",
+                              "vite",
+                              "tanstack-start",
+                              "vitepress",
+                              "vuepress",
+                              "parcel",
+                              "fastapi",
+                              "flask",
+                              "fasthtml",
+                              "django",
+                              "ash",
+                              "sanity",
+                              "sanity-v2",
+                              "storybook",
+                              "nitro",
+                              "hono",
+                              "express",
+                              "h3",
+                              "koa",
+                              "nestjs",
+                              "elysia",
+                              "fastify",
+                              "xmcp",
+                              "python",
+                              "ruby",
+                              "rust",
+                              "axum",
+                              "actix-web",
+                              "node",
+                              "go",
+                              "services",
+                              "mastra"
+                            ],
+                            "description": "Framework slug, when the service has one (omitted otherwise)."
+                          },
+                          "runtime": {
+                            "type": "string",
+                            "description": "Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds."
+                          }
+                        },
+                        "required": [
+                          "serviceName"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
                     },
                     "gitForkProtection": {
                       "type": "boolean",
@@ -104459,6 +104979,110 @@
                         "mastra",
                         null
                       ]
+                    },
+                    "services": {
+                      "items": {
+                        "properties": {
+                          "serviceName": {
+                            "type": "string",
+                            "description": "Service name from the deployment (Service.name)."
+                          },
+                          "serviceType": {
+                            "type": "string",
+                            "enum": [
+                              "web",
+                              "cron",
+                              "worker",
+                              "job"
+                            ],
+                            "description": "Service kind (Service.type). Omitted for schemas that do not define one."
+                          },
+                          "framework": {
+                            "type": "string",
+                            "enum": [
+                              "blitzjs",
+                              "nextjs",
+                              "gatsby",
+                              "remix",
+                              "react-router",
+                              "astro",
+                              "hexo",
+                              "eleventy",
+                              "docusaurus-2",
+                              "docusaurus",
+                              "preact",
+                              "solidstart-1",
+                              "solidstart",
+                              "dojo",
+                              "ember",
+                              "vue",
+                              "scully",
+                              "ionic-angular",
+                              "angular",
+                              "polymer",
+                              "svelte",
+                              "sveltekit",
+                              "sveltekit-1",
+                              "ionic-react",
+                              "create-react-app",
+                              "gridsome",
+                              "umijs",
+                              "sapper",
+                              "saber",
+                              "stencil",
+                              "nuxtjs",
+                              "redwoodjs",
+                              "hugo",
+                              "jekyll",
+                              "brunch",
+                              "middleman",
+                              "zola",
+                              "hydrogen",
+                              "vite",
+                              "tanstack-start",
+                              "vitepress",
+                              "vuepress",
+                              "parcel",
+                              "fastapi",
+                              "flask",
+                              "fasthtml",
+                              "django",
+                              "ash",
+                              "sanity",
+                              "sanity-v2",
+                              "storybook",
+                              "nitro",
+                              "hono",
+                              "express",
+                              "h3",
+                              "koa",
+                              "nestjs",
+                              "elysia",
+                              "fastify",
+                              "xmcp",
+                              "python",
+                              "ruby",
+                              "rust",
+                              "axum",
+                              "actix-web",
+                              "node",
+                              "go",
+                              "services",
+                              "mastra"
+                            ],
+                            "description": "Framework slug, when the service has one (omitted otherwise)."
+                          },
+                          "runtime": {
+                            "type": "string",
+                            "description": "Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds."
+                          }
+                        },
+                        "required": [
+                          "serviceName"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
                     },
                     "gitForkProtection": {
                       "type": "boolean",
@@ -118609,6 +119233,110 @@
                         null
                       ]
                     },
+                    "services": {
+                      "items": {
+                        "properties": {
+                          "serviceName": {
+                            "type": "string",
+                            "description": "Service name from the deployment (Service.name)."
+                          },
+                          "serviceType": {
+                            "type": "string",
+                            "enum": [
+                              "web",
+                              "cron",
+                              "worker",
+                              "job"
+                            ],
+                            "description": "Service kind (Service.type). Omitted for schemas that do not define one."
+                          },
+                          "framework": {
+                            "type": "string",
+                            "enum": [
+                              "blitzjs",
+                              "nextjs",
+                              "gatsby",
+                              "remix",
+                              "react-router",
+                              "astro",
+                              "hexo",
+                              "eleventy",
+                              "docusaurus-2",
+                              "docusaurus",
+                              "preact",
+                              "solidstart-1",
+                              "solidstart",
+                              "dojo",
+                              "ember",
+                              "vue",
+                              "scully",
+                              "ionic-angular",
+                              "angular",
+                              "polymer",
+                              "svelte",
+                              "sveltekit",
+                              "sveltekit-1",
+                              "ionic-react",
+                              "create-react-app",
+                              "gridsome",
+                              "umijs",
+                              "sapper",
+                              "saber",
+                              "stencil",
+                              "nuxtjs",
+                              "redwoodjs",
+                              "hugo",
+                              "jekyll",
+                              "brunch",
+                              "middleman",
+                              "zola",
+                              "hydrogen",
+                              "vite",
+                              "tanstack-start",
+                              "vitepress",
+                              "vuepress",
+                              "parcel",
+                              "fastapi",
+                              "flask",
+                              "fasthtml",
+                              "django",
+                              "ash",
+                              "sanity",
+                              "sanity-v2",
+                              "storybook",
+                              "nitro",
+                              "hono",
+                              "express",
+                              "h3",
+                              "koa",
+                              "nestjs",
+                              "elysia",
+                              "fastify",
+                              "xmcp",
+                              "python",
+                              "ruby",
+                              "rust",
+                              "axum",
+                              "actix-web",
+                              "node",
+                              "go",
+                              "services",
+                              "mastra"
+                            ],
+                            "description": "Framework slug, when the service has one (omitted otherwise)."
+                          },
+                          "runtime": {
+                            "type": "string",
+                            "description": "Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds."
+                          }
+                        },
+                        "required": [
+                          "serviceName"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
                     "gitForkProtection": {
                       "type": "boolean",
                       "enum": [
@@ -126438,15 +127166,112 @@
               },
               "application/x-ndjson": {
                 "schema": {
-                  "properties": {
-                    "command": {
-                      "$ref": "#/components/schemas/SessionCommand"
+                  "oneOf": [
+                    {
+                      "properties": {
+                        "stream": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "properties": {
+                            "code": {
+                              "type": "string",
+                              "enum": [
+                                "sandbox_stream_closed"
+                              ]
+                            },
+                            "message": {
+                              "type": "string",
+                              "enum": [
+                                "Sandbox stream was closed and is not accepting commands."
+                              ]
+                            }
+                          },
+                          "required": [
+                            "code",
+                            "message"
+                          ],
+                          "type": "object"
+                        }
+                      },
+                      "required": [
+                        "data",
+                        "stream"
+                      ],
+                      "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "command": {
+                          "$ref": "#/components/schemas/SessionCommand"
+                        },
+                        "data": {
+                          "type": "string"
+                        },
+                        "stream": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "command",
+                        "data",
+                        "stream"
+                      ],
+                      "type": "object"
+                    },
+                    {
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "stream": {
+                              "type": "string"
+                            },
+                            "data": {
+                              "properties": {
+                                "code": {
+                                  "type": "string",
+                                  "enum": [
+                                    "sandbox_stream_closed"
+                                  ]
+                                },
+                                "message": {
+                                  "type": "string",
+                                  "enum": [
+                                    "Sandbox stream was closed and is not accepting commands."
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "code",
+                                "message"
+                              ],
+                              "type": "object"
+                            }
+                          },
+                          "required": [
+                            "data",
+                            "stream"
+                          ],
+                          "type": "object"
+                        },
+                        {
+                          "properties": {
+                            "data": {
+                              "type": "string"
+                            },
+                            "stream": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "data",
+                            "stream"
+                          ],
+                          "type": "object"
+                        }
+                      ]
                     }
-                  },
-                  "required": [
-                    "command"
-                  ],
-                  "type": "object"
+                  ]
                 }
               }
             }
@@ -126486,6 +127311,17 @@
               "type": "string",
               "description": "The unique identifier of the session in which to execute the command.",
               "example": "sbx_abc123"
+            }
+          },
+          {
+            "name": "cmdId",
+            "description": "The unique identifier of the command to stream logs for.",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The unique identifier of the command to stream logs for.",
+              "example": "cmd_abc123"
             }
           },
           {
@@ -126559,6 +127395,11 @@
                   "wait": {
                     "type": "boolean",
                     "description": "If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.",
+                    "default": false
+                  },
+                  "logs": {
+                    "type": "boolean",
+                    "description": "If true, stream the logs of the command execution in real-time via ND-JSON. This is only applicable if `wait` is also true.",
                     "default": false
                   },
                   "timeout": {
