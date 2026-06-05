@@ -166,6 +166,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("services")]
+        public global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseService>? Services { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitForkProtection")]
         public bool? GitForkProtection { get; set; }
 
@@ -622,6 +628,7 @@ namespace Vercel
         /// <param name="env"></param>
         /// <param name="customEnvironments"></param>
         /// <param name="framework"></param>
+        /// <param name="services"></param>
         /// <param name="gitForkProtection"></param>
         /// <param name="gitLFS"></param>
         /// <param name="ipBuckets"></param>
@@ -725,6 +732,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseEnvItem>? env,
             global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseCustomEnvironment>? customEnvironments,
             global::Vercel.UploadProjectAvatarResponseFramework? framework,
+            global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseService>? services,
             bool? gitForkProtection,
             bool? gitLFS,
             global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseIpBucket>? ipBuckets,
@@ -814,6 +822,7 @@ namespace Vercel
             this.Env = env;
             this.CustomEnvironments = customEnvironments;
             this.Framework = framework;
+            this.Services = services;
             this.GitForkProtection = gitForkProtection;
             this.GitLFS = gitLFS;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));

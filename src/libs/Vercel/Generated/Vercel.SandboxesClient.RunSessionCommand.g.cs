@@ -28,6 +28,7 @@ namespace Vercel
         partial void PrepareRunSessionCommandArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string sessionId,
+            ref string cmdId,
             ref string? teamId,
             ref string? slug,
             global::Vercel.RunSessionCommandRequest request);
@@ -35,6 +36,7 @@ namespace Vercel
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string sessionId,
+            string cmdId,
             string? teamId,
             string? slug,
             global::Vercel.RunSessionCommandRequest request);
@@ -55,6 +57,10 @@ namespace Vercel
         /// The unique identifier of the session in which to execute the command.<br/>
         /// Example: sbx_abc123
         /// </param>
+        /// <param name="cmdId">
+        /// The unique identifier of the command to stream logs for.<br/>
+        /// Example: cmd_abc123
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -67,6 +73,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.RunSessionCommandResponse> RunSessionCommandAsync(
             string sessionId,
+            string cmdId,
 
             global::Vercel.RunSessionCommandRequest request,
             string? teamId = default,
@@ -76,6 +83,7 @@ namespace Vercel
         {
             var __response = await RunSessionCommandAsResponseAsync(
                 sessionId: sessionId,
+                cmdId: cmdId,
 
                 request: request,
                 teamId: teamId,
@@ -94,6 +102,10 @@ namespace Vercel
         /// The unique identifier of the session in which to execute the command.<br/>
         /// Example: sbx_abc123
         /// </param>
+        /// <param name="cmdId">
+        /// The unique identifier of the command to stream logs for.<br/>
+        /// Example: cmd_abc123
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -106,6 +118,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.RunSessionCommandResponse>> RunSessionCommandAsResponseAsync(
             string sessionId,
+            string cmdId,
 
             global::Vercel.RunSessionCommandRequest request,
             string? teamId = default,
@@ -120,6 +133,7 @@ namespace Vercel
             PrepareRunSessionCommandArguments(
                 httpClient: HttpClient,
                 sessionId: ref sessionId,
+                cmdId: ref cmdId,
                 teamId: ref teamId,
                 slug: ref slug,
                 request: request);
@@ -151,6 +165,7 @@ namespace Vercel
                                 path: $"/v2/sandboxes/sessions/{sessionId}/cmd",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
+                                .AddRequiredParameter("cmdId", cmdId)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -201,6 +216,7 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     sessionId: sessionId!,
+                    cmdId: cmdId!,
                     teamId: teamId,
                     slug: slug,
                     request: request);
@@ -742,6 +758,10 @@ namespace Vercel
         /// The unique identifier of the session in which to execute the command.<br/>
         /// Example: sbx_abc123
         /// </param>
+        /// <param name="cmdId">
+        /// The unique identifier of the command to stream logs for.<br/>
+        /// Example: cmd_abc123
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -773,6 +793,10 @@ namespace Vercel
         /// If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="logs">
+        /// If true, stream the logs of the command execution in real-time via ND-JSON. This is only applicable if `wait` is also true.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="timeout">
         /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.<br/>
         /// Example: 30000
@@ -782,6 +806,7 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.RunSessionCommandResponse> RunSessionCommandAsync(
             string sessionId,
+            string cmdId,
             string command,
             string? teamId = default,
             string? slug = default,
@@ -790,6 +815,7 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
             bool? sudo = default,
             bool? wait = default,
+            bool? logs = default,
             int? timeout = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -802,11 +828,13 @@ namespace Vercel
                 Env = env,
                 Sudo = sudo,
                 Wait = wait,
+                Logs = logs,
                 Timeout = timeout,
             };
 
             return await RunSessionCommandAsync(
                 sessionId: sessionId,
+                cmdId: cmdId,
                 teamId: teamId,
                 slug: slug,
                 request: __request,

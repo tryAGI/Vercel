@@ -57,6 +57,13 @@ namespace Vercel
         public bool? Wait { get; set; }
 
         /// <summary>
+        /// If true, stream the logs of the command execution in real-time via ND-JSON. This is only applicable if `wait` is also true.<br/>
+        /// Default Value: false
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("logs")]
+        public bool? Logs { get; set; }
+
+        /// <summary>
         /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.<br/>
         /// Example: 30000
         /// </summary>
@@ -98,6 +105,10 @@ namespace Vercel
         /// If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="logs">
+        /// If true, stream the logs of the command execution in real-time via ND-JSON. This is only applicable if `wait` is also true.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="timeout">
         /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.<br/>
         /// Example: 30000
@@ -112,6 +123,7 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, string>? env,
             bool? sudo,
             bool? wait,
+            bool? logs,
             int? timeout)
         {
             this.Command = command ?? throw new global::System.ArgumentNullException(nameof(command));
@@ -120,6 +132,7 @@ namespace Vercel
             this.Env = env;
             this.Sudo = sudo;
             this.Wait = wait;
+            this.Logs = logs;
             this.Timeout = timeout;
         }
 
