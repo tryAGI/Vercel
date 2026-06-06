@@ -5860,6 +5860,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetEdgeConfigBackupResponseVariant1Metadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetEdgeConfigBackupResponseVariant1User))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetEdgeConfigBackupResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetEdgeConfigBackupResponseVariant2User))]
@@ -6359,7 +6360,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationsResponseVariant1ItemStatus), TypeInfoPropertyName = "GetConfigurationsResponseVariant1ItemStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationsResponseVariant1ItemSource), TypeInfoPropertyName = "GetConfigurationsResponseVariant1ItemSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationsResponseVariant1ItemType), TypeInfoPropertyName = "GetConfigurationsResponseVariant1ItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationsResponseVariant1ItemDisabledReason), TypeInfoPropertyName = "GetConfigurationsResponseVariant1ItemDisabledReason2")]
     internal sealed partial class SourceGenerationContextChunk007 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

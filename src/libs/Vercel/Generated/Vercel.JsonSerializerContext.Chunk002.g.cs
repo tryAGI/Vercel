@@ -5860,6 +5860,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRoutesRequestRouteRouteHaType), TypeInfoPropertyName = "StageRoutesRequestRouteRouteHaType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.StageRoutesRequestRouteRouteMissingItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRoutesRequestRouteRouteMissingItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRoutesRequestRouteRouteMissingItemType), TypeInfoPropertyName = "StageRoutesRequestRouteRouteMissingItemType2")]
@@ -6359,7 +6360,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2Type), TypeInfoPropertyName = "PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1, global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2>>), TypeInfoPropertyName = "PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2_f189bbd5cb8292e4")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1, global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2>), TypeInfoPropertyName = "PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2_fbdfd0dae954463a")]
     internal sealed partial class SourceGenerationContextChunk002 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

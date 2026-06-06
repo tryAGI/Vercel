@@ -6176,6 +6176,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamDefaultProjectJobs))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamDefaultProjectJobsLint))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamDefaultProjectJobsTypecheck))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamDefaultProjectJobsMfeConfigPresent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamEnablePreviewFeedback), TypeInfoPropertyName = "TeamEnablePreviewFeedback2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamEnableProductionFeedback), TypeInfoPropertyName = "TeamEnableProductionFeedback2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamSensitiveEnvironmentVariablePolicy), TypeInfoPropertyName = "TeamSensitiveEnvironmentVariablePolicy2")]
@@ -6359,7 +6360,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckRequestOutputMetricsFcpSource), TypeInfoPropertyName = "UpdateCheckRequestOutputMetricsFcpSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckRequestOutputMetricsLcp))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckRequestOutputMetricsLcpSource), TypeInfoPropertyName = "UpdateCheckRequestOutputMetricsLcpSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckRequestOutputMetricsCls))]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
