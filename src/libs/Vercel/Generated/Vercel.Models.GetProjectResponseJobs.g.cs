@@ -21,6 +21,12 @@ namespace Vercel
         public global::Vercel.GetProjectResponseJobsTypecheck? Typecheck { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mfe-config-present")]
+        public global::Vercel.GetProjectResponseJobsMfeConfigPresent? MfeConfigPresent { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -31,15 +37,18 @@ namespace Vercel
         /// </summary>
         /// <param name="lint"></param>
         /// <param name="typecheck"></param>
+        /// <param name="mfeConfigPresent"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectResponseJobs(
             global::Vercel.GetProjectResponseJobsLint? lint,
-            global::Vercel.GetProjectResponseJobsTypecheck? typecheck)
+            global::Vercel.GetProjectResponseJobsTypecheck? typecheck,
+            global::Vercel.GetProjectResponseJobsMfeConfigPresent? mfeConfigPresent)
         {
             this.Lint = lint;
             this.Typecheck = typecheck;
+            this.MfeConfigPresent = mfeConfigPresent;
         }
 
         /// <summary>

@@ -7566,7 +7566,7 @@
                                       }
                                     },
                                     "type": "object",
-                                    "description": "Native lint/typecheck \u2014 check definition and check run `source`."
+                                    "description": "Native Vercel checks \u2014 check definition and check run `source`."
                                   }
                                 ]
                               }
@@ -8011,7 +8011,7 @@
                                       }
                                     },
                                     "type": "object",
-                                    "description": "Native lint/typecheck \u2014 check definition and check run `source`."
+                                    "description": "Native Vercel checks \u2014 check definition and check run `source`."
                                   }
                                 ]
                               }
@@ -8440,7 +8440,7 @@
                                 }
                               },
                               "type": "object",
-                              "description": "Native lint/typecheck \u2014 check definition and check run `source`."
+                              "description": "Native Vercel checks \u2014 check definition and check run `source`."
                             }
                           ]
                         }
@@ -8883,7 +8883,7 @@
                                 }
                               },
                               "type": "object",
-                              "description": "Native lint/typecheck \u2014 check definition and check run `source`."
+                              "description": "Native Vercel checks \u2014 check definition and check run `source`."
                             }
                           ]
                         }
@@ -9318,7 +9318,7 @@
                                 }
                               },
                               "type": "object",
-                              "description": "Native lint/typecheck \u2014 check definition and check run `source`."
+                              "description": "Native Vercel checks \u2014 check definition and check run `source`."
                             }
                           ]
                         }
@@ -60762,6 +60762,20 @@
                                   "targets"
                                 ],
                                 "type": "object"
+                              },
+                              "mfe-config-present": {
+                                "properties": {
+                                  "targets": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  }
+                                },
+                                "required": [
+                                  "targets"
+                                ],
+                                "type": "object"
                               }
                             },
                             "type": "object"
@@ -79950,6 +79964,20 @@
                                       "targets"
                                     ],
                                     "type": "object"
+                                  },
+                                  "mfe-config-present": {
+                                    "properties": {
+                                      "targets": {
+                                        "items": {
+                                          "type": "string"
+                                        },
+                                        "type": "array"
+                                      }
+                                    },
+                                    "required": [
+                                      "targets"
+                                    ],
+                                    "type": "object"
                                   }
                                 },
                                 "type": "object"
@@ -85974,6 +86002,20 @@
                           "type": "object"
                         },
                         "typecheck": {
+                          "properties": {
+                            "targets": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "required": [
+                            "targets"
+                          ],
+                          "type": "object"
+                        },
+                        "mfe-config-present": {
                           "properties": {
                             "targets": {
                               "items": {
@@ -92257,6 +92299,20 @@
                             "targets"
                           ],
                           "type": "object"
+                        },
+                        "mfe-config-present": {
+                          "properties": {
+                            "targets": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "required": [
+                            "targets"
+                          ],
+                          "type": "object"
                         }
                       },
                       "type": "object"
@@ -98095,6 +98151,20 @@
                           "type": "object"
                         },
                         "typecheck": {
+                          "properties": {
+                            "targets": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "required": [
+                            "targets"
+                          ],
+                          "type": "object"
+                        },
+                        "mfe-config-present": {
                           "properties": {
                             "targets": {
                               "items": {
@@ -105142,6 +105212,20 @@
                           "type": "object"
                         },
                         "typecheck": {
+                          "properties": {
+                            "targets": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "required": [
+                            "targets"
+                          ],
+                          "type": "object"
+                        },
+                        "mfe-config-present": {
                           "properties": {
                             "targets": {
                               "items": {
@@ -119395,6 +119479,20 @@
                           "type": "object"
                         },
                         "typecheck": {
+                          "properties": {
+                            "targets": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "required": [
+                            "targets"
+                          ],
+                          "type": "object"
+                        },
+                        "mfe-config-present": {
                           "properties": {
                             "targets": {
                               "items": {
@@ -153006,6 +153104,22 @@
                 "description": "Default job configuration applied to new projects created in this team."
               },
               "typecheck": {
+                "properties": {
+                  "targets": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array",
+                    "description": "Default job configuration applied to new projects created in this team."
+                  }
+                },
+                "required": [
+                  "targets"
+                ],
+                "type": "object",
+                "description": "Default job configuration applied to new projects created in this team."
+              },
+              "mfe-config-present": {
                 "properties": {
                   "targets": {
                     "items": {

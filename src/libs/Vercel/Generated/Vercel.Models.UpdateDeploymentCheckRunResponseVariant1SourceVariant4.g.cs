@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Native lint/typecheck — check definition and check run `source`.
+    /// Native Vercel checks — check definition and check run `source`.
     /// </summary>
     public sealed partial class UpdateDeploymentCheckRunResponseVariant1SourceVariant4
     {

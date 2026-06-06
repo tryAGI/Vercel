@@ -21,6 +21,12 @@ namespace Vercel
         public global::Vercel.TeamDefaultProjectJobsTypecheck? Typecheck { get; set; }
 
         /// <summary>
+        /// Default job configuration applied to new projects created in this team.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mfe-config-present")]
+        public global::Vercel.TeamDefaultProjectJobsMfeConfigPresent? MfeConfigPresent { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -35,15 +41,20 @@ namespace Vercel
         /// <param name="typecheck">
         /// Default job configuration applied to new projects created in this team.
         /// </param>
+        /// <param name="mfeConfigPresent">
+        /// Default job configuration applied to new projects created in this team.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TeamDefaultProjectJobs(
             global::Vercel.TeamDefaultProjectJobsLint? lint,
-            global::Vercel.TeamDefaultProjectJobsTypecheck? typecheck)
+            global::Vercel.TeamDefaultProjectJobsTypecheck? typecheck,
+            global::Vercel.TeamDefaultProjectJobsMfeConfigPresent? mfeConfigPresent)
         {
             this.Lint = lint;
             this.Typecheck = typecheck;
+            this.MfeConfigPresent = mfeConfigPresent;
         }
 
         /// <summary>
