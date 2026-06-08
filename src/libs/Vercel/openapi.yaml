@@ -12577,7 +12577,7 @@
             "bearerToken": []
           }
         ],
-        "summary": "Get a connector access token",
+        "summary": "Get a Connect token",
         "tags": [
           "connect"
         ],
@@ -12677,34 +12677,88 @@
                 "type": "object",
                 "properties": {
                   "subject": {
-                    "type": "object",
-                    "required": [
-                      "type"
-                    ],
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "id": {
-                        "type": "string"
-                      },
-                      "issuer": {
-                        "type": "string"
-                      },
-                      "sub": {
-                        "type": "string"
-                      },
-                      "iss": {
-                        "type": "string"
-                      },
-                      "aud": {
-                        "type": "string"
-                      },
-                      "additionalClaims": {
+                    "anyOf": [
+                      {
+                        "title": "type:app",
                         "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "app"
+                            ]
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:user",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "user"
+                            ]
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "issuer": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:jwt-bearer",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "jwt-bearer"
+                            ]
+                          },
+                          "sub": {
+                            "type": "string"
+                          },
+                          "iss": {
+                            "type": "string"
+                          },
+                          "aud": {
+                            "type": "string"
+                          },
+                          "additionalClaims": {
+                            "type": "object",
+                            "additionalProperties": true
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:other",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          }
+                        },
                         "additionalProperties": true
                       }
-                    }
+                    ]
                   },
                   "installationId": {
                     "type": "string"
@@ -12758,7 +12812,7 @@
             "bearerToken": []
           }
         ],
-        "summary": "Create a connector authorization request",
+        "summary": "Create a Connect authorization request",
         "tags": [
           "connect"
         ],
@@ -12826,34 +12880,88 @@
                 "type": "object",
                 "properties": {
                   "subject": {
-                    "type": "object",
-                    "required": [
-                      "type"
-                    ],
-                    "properties": {
-                      "type": {
-                        "type": "string"
-                      },
-                      "id": {
-                        "type": "string"
-                      },
-                      "issuer": {
-                        "type": "string"
-                      },
-                      "sub": {
-                        "type": "string"
-                      },
-                      "iss": {
-                        "type": "string"
-                      },
-                      "aud": {
-                        "type": "string"
-                      },
-                      "additionalClaims": {
+                    "anyOf": [
+                      {
+                        "title": "type:app",
                         "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "app"
+                            ]
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:user",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "user"
+                            ]
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "issuer": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:jwt-bearer",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "jwt-bearer"
+                            ]
+                          },
+                          "sub": {
+                            "type": "string"
+                          },
+                          "iss": {
+                            "type": "string"
+                          },
+                          "aud": {
+                            "type": "string"
+                          },
+                          "additionalClaims": {
+                            "type": "object",
+                            "additionalProperties": true
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:other",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          }
+                        },
                         "additionalProperties": true
                       }
-                    }
+                    ]
                   },
                   "installationId": {
                     "type": "string"

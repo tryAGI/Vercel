@@ -5,7 +5,7 @@ namespace Vercel
     public partial interface IConnectClient
     {
         /// <summary>
-        /// Create a connector authorization request<br/>
+        /// Create a Connect authorization request<br/>
         /// Create an authorization request for a connector and return the URL and verifier details needed to complete the flow.
         /// </summary>
         /// <param name="connector"></param>
@@ -20,7 +20,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create a connector authorization request<br/>
+        /// Create a Connect authorization request<br/>
         /// Create an authorization request for a connector and return the URL and verifier details needed to complete the flow.
         /// </summary>
         /// <param name="connector"></param>
@@ -35,7 +35,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create a connector authorization request<br/>
+        /// Create a Connect authorization request<br/>
         /// Create an authorization request for a connector and return the URL and verifier details needed to complete the flow.
         /// </summary>
         /// <param name="connector"></param>
@@ -57,7 +57,7 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateConnectorAuthorizationRequestResponse> CreateConnectorAuthorizationRequestAsync(
             string connector,
-            global::Vercel.CreateConnectorAuthorizationRequestRequestSubject? subject = default,
+            global::Vercel.AnyOf<global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeApp, global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeUser, global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeJwtBearer, global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeOther>? subject = default,
             string? installationId = default,
             global::System.Collections.Generic.IList<string>? audience = default,
             global::System.Collections.Generic.IList<string>? scopes = default,
