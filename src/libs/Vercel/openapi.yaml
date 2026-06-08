@@ -61916,6 +61916,13 @@
                                   false,
                                   true
                                 ]
+                              },
+                              "enableFunctionsExtendedMaxDuration": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
                               }
                             },
                             "type": "object",
@@ -62095,6 +62102,13 @@
                                 "type": "object"
                               },
                               "enableFunctionsBeta": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
+                              },
+                              "enableFunctionsExtendedMaxDuration": {
                                 "type": "boolean",
                                 "enum": [
                                   false,
@@ -73773,6 +73787,13 @@
                                   false,
                                   true
                                 ]
+                              },
+                              "enableFunctionsExtendedMaxDuration": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
                               }
                             },
                             "type": "object",
@@ -77073,6 +77094,13 @@
                                     "type": "object"
                                   },
                                   "enableFunctionsBeta": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  },
+                                  "enableFunctionsExtendedMaxDuration": {
                                     "type": "boolean",
                                     "enum": [
                                       false,
@@ -80947,6 +80975,13 @@
                                       false,
                                       true
                                     ]
+                                  },
+                                  "enableFunctionsExtendedMaxDuration": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
                                   }
                                 },
                                 "type": "object",
@@ -81126,6 +81161,13 @@
                                     "type": "object"
                                   },
                                   "enableFunctionsBeta": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  },
+                                  "enableFunctionsExtendedMaxDuration": {
                                     "type": "boolean",
                                     "enum": [
                                       false,
@@ -86997,6 +87039,13 @@
                             false,
                             true
                           ]
+                        },
+                        "enableFunctionsExtendedMaxDuration": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
                         }
                       },
                       "type": "object",
@@ -87176,6 +87225,13 @@
                           "type": "object"
                         },
                         "enableFunctionsBeta": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        },
+                        "enableFunctionsExtendedMaxDuration": {
                           "type": "boolean",
                           "enum": [
                             false,
@@ -91300,6 +91356,9 @@
                       },
                       "enableFunctionsBeta": {
                         "type": "boolean"
+                      },
+                      "enableFunctionsExtendedMaxDuration": {
+                        "type": "boolean"
                       }
                     },
                     "type": "object",
@@ -93282,6 +93341,13 @@
                             false,
                             true
                           ]
+                        },
+                        "enableFunctionsExtendedMaxDuration": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
                         }
                       },
                       "type": "object",
@@ -93461,6 +93527,13 @@
                           "type": "object"
                         },
                         "enableFunctionsBeta": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        },
+                        "enableFunctionsExtendedMaxDuration": {
                           "type": "boolean",
                           "enum": [
                             false,
@@ -99146,6 +99219,13 @@
                             false,
                             true
                           ]
+                        },
+                        "enableFunctionsExtendedMaxDuration": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
                         }
                       },
                       "type": "object",
@@ -99325,6 +99405,13 @@
                           "type": "object"
                         },
                         "enableFunctionsBeta": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        },
+                        "enableFunctionsExtendedMaxDuration": {
                           "type": "boolean",
                           "enum": [
                             false,
@@ -103341,6 +103428,9 @@
                       },
                       "enableFunctionsBeta": {
                         "type": "boolean"
+                      },
+                      "enableFunctionsExtendedMaxDuration": {
+                        "type": "boolean"
                       }
                     },
                     "type": "object",
@@ -106207,6 +106297,13 @@
                             false,
                             true
                           ]
+                        },
+                        "enableFunctionsExtendedMaxDuration": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
                         }
                       },
                       "type": "object",
@@ -106386,6 +106483,13 @@
                           "type": "object"
                         },
                         "enableFunctionsBeta": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        },
+                        "enableFunctionsExtendedMaxDuration": {
                           "type": "boolean",
                           "enum": [
                             false,
@@ -120474,6 +120578,13 @@
                             false,
                             true
                           ]
+                        },
+                        "enableFunctionsExtendedMaxDuration": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
                         }
                       },
                       "type": "object",
@@ -120653,6 +120764,13 @@
                           "type": "object"
                         },
                         "enableFunctionsBeta": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        },
+                        "enableFunctionsExtendedMaxDuration": {
                           "type": "boolean",
                           "enum": [
                             false,
@@ -148891,6 +149009,7 @@
               "project-custom-environment-created",
               "project-custom-environment-deleted",
               "project-functions-beta-updated",
+              "project-functions-extended-max-duration-updated",
               "project-functions-fluid-disabled",
               "project-functions-fluid-enabled",
               "project-function-max-duration",
@@ -149652,6 +149771,7 @@
               "project-custom-environment-created",
               "project-custom-environment-deleted",
               "project-functions-beta-updated",
+              "project-functions-extended-max-duration-updated",
               "project-functions-fluid-disabled",
               "project-functions-fluid-enabled",
               "project-function-max-duration",
@@ -150206,6 +150326,7 @@
                 "project-custom-environment-created",
                 "project-custom-environment-deleted",
                 "project-functions-beta-updated",
+                "project-functions-extended-max-duration-updated",
                 "project-functions-fluid-disabled",
                 "project-functions-fluid-enabled",
                 "project-function-max-duration",
