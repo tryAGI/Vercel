@@ -44,7 +44,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
-        /// Get a connector access token<br/>
+        /// Get a Connect token<br/>
         /// Get an access token for a connector identified by the path parameter and scoped to the requester.
         /// </summary>
         /// <param name="connector"></param>
@@ -70,7 +70,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Get a connector access token<br/>
+        /// Get a Connect token<br/>
         /// Get an access token for a connector identified by the path parameter and scoped to the requester.
         /// </summary>
         /// <param name="connector"></param>
@@ -635,7 +635,7 @@ namespace Vercel
             }
         }
         /// <summary>
-        /// Get a connector access token<br/>
+        /// Get a Connect token<br/>
         /// Get an access token for a connector identified by the path parameter and scoped to the requester.
         /// </summary>
         /// <param name="connector"></param>
@@ -651,7 +651,7 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.GetConnectorTokenResponse> GetConnectorTokenAsync(
             string connector,
-            global::Vercel.GetConnectorTokenRequestSubject? subject = default,
+            global::Vercel.AnyOf<global::Vercel.GetConnectorTokenRequestSubjectTypeApp, global::Vercel.GetConnectorTokenRequestSubjectTypeUser, global::Vercel.GetConnectorTokenRequestSubjectTypeJwtBearer, global::Vercel.GetConnectorTokenRequestSubjectTypeOther>? subject = default,
             string? installationId = default,
             global::System.Collections.Generic.IList<string>? audience = default,
             global::System.Collections.Generic.IList<string>? scopes = default,

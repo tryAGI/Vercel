@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class CreateConnectorAuthorizationRequestRequestSubjectAdditionalClaims
+    public sealed partial class GetConnectorTokenRequestSubjectTypeJwtBearerAdditionalClaims
     {
 
         /// <summary>

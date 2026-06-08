@@ -6,26 +6,14 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class GetConnectorTokenRequestSubject
+    public sealed partial class CreateConnectorAuthorizationRequestRequestSubjectTypeJwtBearer
     {
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Type { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("issuer")]
-        public string? Issuer { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateConnectorAuthorizationRequestRequestSubjectTypeJwtBearerTypeJsonConverter))]
+        public global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeJwtBearerType Type { get; set; }
 
         /// <summary>
         /// 
@@ -58,11 +46,9 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetConnectorTokenRequestSubject" /> class.
+        /// Initializes a new instance of the <see cref="CreateConnectorAuthorizationRequestRequestSubjectTypeJwtBearer" /> class.
         /// </summary>
         /// <param name="type"></param>
-        /// <param name="id"></param>
-        /// <param name="issuer"></param>
         /// <param name="sub"></param>
         /// <param name="iss"></param>
         /// <param name="aud"></param>
@@ -70,18 +56,14 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public GetConnectorTokenRequestSubject(
-            string type,
-            string? id,
-            string? issuer,
+        public CreateConnectorAuthorizationRequestRequestSubjectTypeJwtBearer(
+            global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeJwtBearerType type,
             string? sub,
             string? iss,
             string? aud,
             object? additionalClaims)
         {
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
-            this.Id = id;
-            this.Issuer = issuer;
+            this.Type = type;
             this.Sub = sub;
             this.Iss = iss;
             this.Aud = aud;
@@ -89,9 +71,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetConnectorTokenRequestSubject" /> class.
+        /// Initializes a new instance of the <see cref="CreateConnectorAuthorizationRequestRequestSubjectTypeJwtBearer" /> class.
         /// </summary>
-        public GetConnectorTokenRequestSubject()
+        public CreateConnectorAuthorizationRequestRequestSubjectTypeJwtBearer()
         {
         }
 
