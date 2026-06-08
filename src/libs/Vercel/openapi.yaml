@@ -63945,6 +63945,12 @@
                                 },
                                 "type": "array"
                               },
+                              "projectFlagsSdkKey": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "projectFromV0": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -82833,6 +82839,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "projectFlagsSdkKey": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "projectFromV0": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -88892,6 +88904,12 @@
                           "type": "array"
                         },
                         "projectFlagsProduction": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectFlagsSdkKey": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -95199,6 +95217,12 @@
                           },
                           "type": "array"
                         },
+                        "projectFlagsSdkKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "projectFromV0": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -101072,6 +101096,12 @@
                           "type": "array"
                         },
                         "projectFlagsProduction": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectFlagsSdkKey": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -108150,6 +108180,12 @@
                           "type": "array"
                         },
                         "projectFlagsProduction": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectFlagsSdkKey": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -122431,6 +122467,12 @@
                           "type": "array"
                         },
                         "projectFlagsProduction": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectFlagsSdkKey": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
