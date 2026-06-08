@@ -1343,6 +1343,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectFlagsSdkKey")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlagsSdkKey { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectFromV0")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFromV0 { get; set; }
 
@@ -1745,6 +1751,7 @@ namespace Vercel
         /// <param name="projectEnvVarsUnownedByIntegration"></param>
         /// <param name="projectFlags"></param>
         /// <param name="projectFlagsProduction"></param>
+        /// <param name="projectFlagsSdkKey"></param>
         /// <param name="projectFromV0"></param>
         /// <param name="projectId"></param>
         /// <param name="projectIntegrationConfiguration"></param>
@@ -2000,6 +2007,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEnvVarsUnownedByIntegration,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlags,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlagsProduction,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlagsSdkKey,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFromV0,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectId,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectIntegrationConfiguration,
@@ -2252,6 +2260,7 @@ namespace Vercel
             this.ProjectEnvVarsUnownedByIntegration = projectEnvVarsUnownedByIntegration;
             this.ProjectFlags = projectFlags;
             this.ProjectFlagsProduction = projectFlagsProduction;
+            this.ProjectFlagsSdkKey = projectFlagsSdkKey;
             this.ProjectFromV0 = projectFromV0;
             this.ProjectId = projectId;
             this.ProjectIntegrationConfiguration = projectIntegrationConfiguration;
