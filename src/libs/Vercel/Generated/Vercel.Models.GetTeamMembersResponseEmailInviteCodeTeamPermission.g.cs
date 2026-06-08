@@ -31,6 +31,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrgAdmin,
+        /// <summary>
+        /// 
+        /// </summary>
+        OrgViewer,
+        /// <summary>
+        /// 
+        /// </summary>
         UsageViewer,
         /// <summary>
         /// 
@@ -63,6 +71,8 @@ namespace Vercel
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.EnvironmentManager => "EnvironmentManager",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.FullProductionDeployment => "FullProductionDeployment",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.IntegrationManager => "IntegrationManager",
+                GetTeamMembersResponseEmailInviteCodeTeamPermission.OrgAdmin => "OrgAdmin",
+                GetTeamMembersResponseEmailInviteCodeTeamPermission.OrgViewer => "OrgViewer",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.UsageViewer => "UsageViewer",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.V0Builder => "V0Builder",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.V0Chatter => "V0Chatter",
@@ -82,6 +92,8 @@ namespace Vercel
                 "EnvironmentManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.EnvironmentManager,
                 "FullProductionDeployment" => GetTeamMembersResponseEmailInviteCodeTeamPermission.FullProductionDeployment,
                 "IntegrationManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.IntegrationManager,
+                "OrgAdmin" => GetTeamMembersResponseEmailInviteCodeTeamPermission.OrgAdmin,
+                "OrgViewer" => GetTeamMembersResponseEmailInviteCodeTeamPermission.OrgViewer,
                 "UsageViewer" => GetTeamMembersResponseEmailInviteCodeTeamPermission.UsageViewer,
                 "V0Builder" => GetTeamMembersResponseEmailInviteCodeTeamPermission.V0Builder,
                 "V0Chatter" => GetTeamMembersResponseEmailInviteCodeTeamPermission.V0Chatter,

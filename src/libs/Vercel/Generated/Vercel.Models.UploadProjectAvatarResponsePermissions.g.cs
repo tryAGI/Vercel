@@ -17,12 +17,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("organization")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Organization { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? User { get; set; }
 
@@ -755,8 +749,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("organization")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Organization { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("organizationDomain")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OrganizationDomain { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("organizationTeam")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OrganizationTeam { get; set; }
 
         /// <summary>
         /// 
@@ -1530,7 +1536,6 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UploadProjectAvatarResponsePermissions" /> class.
         /// </summary>
         /// <param name="oauth2Connection"></param>
-        /// <param name="organization"></param>
         /// <param name="user"></param>
         /// <param name="userConnection"></param>
         /// <param name="userMfaConfiguration"></param>
@@ -1653,7 +1658,9 @@ namespace Vercel
         /// <param name="observabilityNotebook"></param>
         /// <param name="openTelemetryEndpoint"></param>
         /// <param name="ownEvent"></param>
+        /// <param name="organization"></param>
         /// <param name="organizationDomain"></param>
+        /// <param name="organizationTeam"></param>
         /// <param name="passwordProtectionInvoiceItem"></param>
         /// <param name="paymentMethod"></param>
         /// <param name="permissions"></param>
@@ -1786,7 +1793,6 @@ namespace Vercel
 #endif
         public UploadProjectAvatarResponsePermissions(
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? oauth2Connection,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? organization,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? user,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userConnection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userMfaConfiguration,
@@ -1909,7 +1915,9 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? observabilityNotebook,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? openTelemetryEndpoint,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ownEvent,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? organization,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? organizationDomain,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? organizationTeam,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? passwordProtectionInvoiceItem,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? paymentMethod,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? permissions,
@@ -2039,7 +2047,6 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalytics)
         {
             this.Oauth2Connection = oauth2Connection;
-            this.Organization = organization;
             this.User = user;
             this.UserConnection = userConnection;
             this.UserMfaConfiguration = userMfaConfiguration;
@@ -2162,7 +2169,9 @@ namespace Vercel
             this.ObservabilityNotebook = observabilityNotebook;
             this.OpenTelemetryEndpoint = openTelemetryEndpoint;
             this.OwnEvent = ownEvent;
+            this.Organization = organization;
             this.OrganizationDomain = organizationDomain;
+            this.OrganizationTeam = organizationTeam;
             this.PasswordProtectionInvoiceItem = passwordProtectionInvoiceItem;
             this.PaymentMethod = paymentMethod;
             this.Permissions = permissions;

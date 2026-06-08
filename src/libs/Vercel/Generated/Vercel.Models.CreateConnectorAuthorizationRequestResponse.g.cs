@@ -1,0 +1,84 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class CreateConnectorAuthorizationRequestResponse
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("request")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Request { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("verifier")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Verifier { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deviceCode")]
+        public string? DeviceCode { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double ExpiresAt { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateConnectorAuthorizationRequestResponse" /> class.
+        /// </summary>
+        /// <param name="url"></param>
+        /// <param name="request"></param>
+        /// <param name="verifier"></param>
+        /// <param name="expiresAt"></param>
+        /// <param name="deviceCode"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public CreateConnectorAuthorizationRequestResponse(
+            string url,
+            string request,
+            string verifier,
+            double expiresAt,
+            string? deviceCode)
+        {
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+            this.Verifier = verifier ?? throw new global::System.ArgumentNullException(nameof(verifier));
+            this.DeviceCode = deviceCode;
+            this.ExpiresAt = expiresAt;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateConnectorAuthorizationRequestResponse" /> class.
+        /// </summary>
+        public CreateConnectorAuthorizationRequestResponse()
+        {
+        }
+
+    }
+}
