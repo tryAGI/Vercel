@@ -1219,6 +1219,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectFunctionsExtendedMaxDurationUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectFunctionsFluidDisabled,
         /// <summary>
         /// 
@@ -2308,6 +2312,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectFunctionMaxDuration => "project-function-max-duration",
                 ListEventTypeReplacedByItem.ProjectFunctionRegions => "project-function-regions",
                 ListEventTypeReplacedByItem.ProjectFunctionsBetaUpdated => "project-functions-beta-updated",
+                ListEventTypeReplacedByItem.ProjectFunctionsExtendedMaxDurationUpdated => "project-functions-extended-max-duration-updated",
                 ListEventTypeReplacedByItem.ProjectFunctionsFluidDisabled => "project-functions-fluid-disabled",
                 ListEventTypeReplacedByItem.ProjectFunctionsFluidEnabled => "project-functions-fluid-enabled",
                 ListEventTypeReplacedByItem.ProjectGitCommitCommentsToggled => "project-git-commit-comments-toggled",
@@ -2814,6 +2819,7 @@ namespace Vercel
                 "project-function-max-duration" => ListEventTypeReplacedByItem.ProjectFunctionMaxDuration,
                 "project-function-regions" => ListEventTypeReplacedByItem.ProjectFunctionRegions,
                 "project-functions-beta-updated" => ListEventTypeReplacedByItem.ProjectFunctionsBetaUpdated,
+                "project-functions-extended-max-duration-updated" => ListEventTypeReplacedByItem.ProjectFunctionsExtendedMaxDurationUpdated,
                 "project-functions-fluid-disabled" => ListEventTypeReplacedByItem.ProjectFunctionsFluidDisabled,
                 "project-functions-fluid-enabled" => ListEventTypeReplacedByItem.ProjectFunctionsFluidEnabled,
                 "project-git-commit-comments-toggled" => ListEventTypeReplacedByItem.ProjectGitCommitCommentsToggled,
