@@ -31,6 +31,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrgAdmin,
+        /// <summary>
+        /// 
+        /// </summary>
+        OrgViewer,
+        /// <summary>
+        /// 
+        /// </summary>
         UsageViewer,
         /// <summary>
         /// 
@@ -63,6 +71,8 @@ namespace Vercel
                 TeamDefaultRolesTeamPermission.EnvironmentManager => "EnvironmentManager",
                 TeamDefaultRolesTeamPermission.FullProductionDeployment => "FullProductionDeployment",
                 TeamDefaultRolesTeamPermission.IntegrationManager => "IntegrationManager",
+                TeamDefaultRolesTeamPermission.OrgAdmin => "OrgAdmin",
+                TeamDefaultRolesTeamPermission.OrgViewer => "OrgViewer",
                 TeamDefaultRolesTeamPermission.UsageViewer => "UsageViewer",
                 TeamDefaultRolesTeamPermission.V0Builder => "V0Builder",
                 TeamDefaultRolesTeamPermission.V0Chatter => "V0Chatter",
@@ -82,6 +92,8 @@ namespace Vercel
                 "EnvironmentManager" => TeamDefaultRolesTeamPermission.EnvironmentManager,
                 "FullProductionDeployment" => TeamDefaultRolesTeamPermission.FullProductionDeployment,
                 "IntegrationManager" => TeamDefaultRolesTeamPermission.IntegrationManager,
+                "OrgAdmin" => TeamDefaultRolesTeamPermission.OrgAdmin,
+                "OrgViewer" => TeamDefaultRolesTeamPermission.OrgViewer,
                 "UsageViewer" => TeamDefaultRolesTeamPermission.UsageViewer,
                 "V0Builder" => TeamDefaultRolesTeamPermission.V0Builder,
                 "V0Chatter" => TeamDefaultRolesTeamPermission.V0Chatter,

@@ -31,6 +31,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrgAdmin,
+        /// <summary>
+        /// 
+        /// </summary>
+        OrgViewer,
+        /// <summary>
+        /// 
+        /// </summary>
         UsageViewer,
         /// <summary>
         /// 
@@ -63,6 +71,8 @@ namespace Vercel
                 ReadAccessGroupResponseTeamPermission.EnvironmentManager => "EnvironmentManager",
                 ReadAccessGroupResponseTeamPermission.FullProductionDeployment => "FullProductionDeployment",
                 ReadAccessGroupResponseTeamPermission.IntegrationManager => "IntegrationManager",
+                ReadAccessGroupResponseTeamPermission.OrgAdmin => "OrgAdmin",
+                ReadAccessGroupResponseTeamPermission.OrgViewer => "OrgViewer",
                 ReadAccessGroupResponseTeamPermission.UsageViewer => "UsageViewer",
                 ReadAccessGroupResponseTeamPermission.V0Builder => "V0Builder",
                 ReadAccessGroupResponseTeamPermission.V0Chatter => "V0Chatter",
@@ -82,6 +92,8 @@ namespace Vercel
                 "EnvironmentManager" => ReadAccessGroupResponseTeamPermission.EnvironmentManager,
                 "FullProductionDeployment" => ReadAccessGroupResponseTeamPermission.FullProductionDeployment,
                 "IntegrationManager" => ReadAccessGroupResponseTeamPermission.IntegrationManager,
+                "OrgAdmin" => ReadAccessGroupResponseTeamPermission.OrgAdmin,
+                "OrgViewer" => ReadAccessGroupResponseTeamPermission.OrgViewer,
                 "UsageViewer" => ReadAccessGroupResponseTeamPermission.UsageViewer,
                 "V0Builder" => ReadAccessGroupResponseTeamPermission.V0Builder,
                 "V0Chatter" => ReadAccessGroupResponseTeamPermission.V0Chatter,
