@@ -23,6 +23,12 @@ namespace Vercel
         public required bool SupportsRefinement { get; set; }
 
         /// <summary>
+        /// True when changing app token grants requires reinstalling the app, so tokens cannot be partitioned independently by requester environment.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("requiresReinstallation")]
+        public bool? RequiresReinstallation { get; set; }
+
+        /// <summary>
         /// Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
@@ -45,6 +51,9 @@ namespace Vercel
         /// </summary>
         /// <param name="crossInstallation"></param>
         /// <param name="supportsRefinement"></param>
+        /// <param name="requiresReinstallation">
+        /// True when changing app token grants requires reinstalling the app, so tokens cannot be partitioned independently by requester environment.
+        /// </param>
         /// <param name="scopes">
         /// Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document.
         /// </param>
@@ -55,11 +64,13 @@ namespace Vercel
         public CreateConnectorResponseAppTokens(
             bool crossInstallation,
             bool supportsRefinement,
+            bool? requiresReinstallation,
             global::System.Collections.Generic.IList<string>? scopes,
             global::System.Collections.Generic.IList<string>? supportedAuthorizationDetails)
         {
             this.CrossInstallation = crossInstallation;
             this.SupportsRefinement = supportsRefinement;
+            this.RequiresReinstallation = requiresReinstallation;
             this.Scopes = scopes;
             this.SupportedAuthorizationDetails = supportedAuthorizationDetails;
         }

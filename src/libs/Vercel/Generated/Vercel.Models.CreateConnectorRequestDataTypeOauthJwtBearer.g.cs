@@ -15,6 +15,12 @@ namespace Vercel
         public bool? Enabled { get; set; }
 
         /// <summary>
+        /// Default scopes to request when token params specify scopes: ["*"].
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
+        public global::System.Collections.Generic.IList<string>? Scopes { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sub")]
@@ -60,6 +66,9 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateConnectorRequestDataTypeOauthJwtBearer" /> class.
         /// </summary>
         /// <param name="enabled"></param>
+        /// <param name="scopes">
+        /// Default scopes to request when token params specify scopes: ["*"].
+        /// </param>
         /// <param name="sub"></param>
         /// <param name="iss"></param>
         /// <param name="aud"></param>
@@ -71,6 +80,7 @@ namespace Vercel
 #endif
         public CreateConnectorRequestDataTypeOauthJwtBearer(
             bool? enabled,
+            global::System.Collections.Generic.IList<string>? scopes,
             string? sub,
             string? iss,
             string? aud,
@@ -79,6 +89,7 @@ namespace Vercel
             bool? useClientCredentials)
         {
             this.Enabled = enabled;
+            this.Scopes = scopes;
             this.Sub = sub;
             this.Iss = iss;
             this.Aud = aud;

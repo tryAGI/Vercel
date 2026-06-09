@@ -11723,6 +11723,14 @@
                             true
                           ]
                         },
+                        "requiresReinstallation": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "True when changing app token grants requires reinstalling the app, so tokens cannot be partitioned independently by requester environment."
+                        },
                         "scopes": {
                           "items": {
                             "type": "string"
@@ -11764,7 +11772,7 @@
                             "type": "string"
                           },
                           "type": "array",
-                          "description": "Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document."
+                          "description": "Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document."
                         },
                         "supportedAuthorizationDetails": {
                           "items": {
@@ -12266,6 +12274,13 @@
                             "properties": {
                               "enabled": {
                                 "type": "boolean"
+                              },
+                              "scopes": {
+                                "type": "array",
+                                "description": "Default scopes to request when token params specify scopes: [\"*\"].",
+                                "items": {
+                                  "type": "string"
+                                }
                               }
                             },
                             "required": [
@@ -12290,6 +12305,13 @@
                             "properties": {
                               "enabled": {
                                 "type": "boolean"
+                              },
+                              "scopes": {
+                                "type": "array",
+                                "description": "Default scopes to request when token params specify scopes: [\"*\"].",
+                                "items": {
+                                  "type": "string"
+                                }
                               }
                             },
                             "required": [
@@ -12311,6 +12333,13 @@
                             "properties": {
                               "enabled": {
                                 "type": "boolean"
+                              },
+                              "scopes": {
+                                "type": "array",
+                                "description": "Default scopes to request when token params specify scopes: [\"*\"].",
+                                "items": {
+                                  "type": "string"
+                                }
                               },
                               "sub": {
                                 "type": "string"
