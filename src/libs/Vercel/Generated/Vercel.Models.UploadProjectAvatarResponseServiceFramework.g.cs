@@ -71,6 +71,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Eve,
+        /// <summary>
+        /// 
+        /// </summary>
         Express,
         /// <summary>
         /// 
@@ -313,6 +317,7 @@ namespace Vercel
                 UploadProjectAvatarResponseServiceFramework.Eleventy => "eleventy",
                 UploadProjectAvatarResponseServiceFramework.Elysia => "elysia",
                 UploadProjectAvatarResponseServiceFramework.Ember => "ember",
+                UploadProjectAvatarResponseServiceFramework.Eve => "eve",
                 UploadProjectAvatarResponseServiceFramework.Express => "express",
                 UploadProjectAvatarResponseServiceFramework.Fastapi => "fastapi",
                 UploadProjectAvatarResponseServiceFramework.Fasthtml => "fasthtml",
@@ -392,6 +397,7 @@ namespace Vercel
                 "eleventy" => UploadProjectAvatarResponseServiceFramework.Eleventy,
                 "elysia" => UploadProjectAvatarResponseServiceFramework.Elysia,
                 "ember" => UploadProjectAvatarResponseServiceFramework.Ember,
+                "eve" => UploadProjectAvatarResponseServiceFramework.Eve,
                 "express" => UploadProjectAvatarResponseServiceFramework.Express,
                 "fastapi" => UploadProjectAvatarResponseServiceFramework.Fastapi,
                 "fasthtml" => UploadProjectAvatarResponseServiceFramework.Fasthtml,

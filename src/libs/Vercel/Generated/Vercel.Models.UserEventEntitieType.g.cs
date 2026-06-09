@@ -32,6 +32,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DeploymentInspector,
+        /// <summary>
+        /// 
+        /// </summary>
         DnsRecord,
         /// <summary>
         /// 
@@ -116,6 +120,7 @@ namespace Vercel
                 UserEventEntitieType.BitbucketLogin => "bitbucket_login",
                 UserEventEntitieType.Bold => "bold",
                 UserEventEntitieType.DeploymentHost => "deployment_host",
+                UserEventEntitieType.DeploymentInspector => "deployment_inspector",
                 UserEventEntitieType.DnsRecord => "dns_record",
                 UserEventEntitieType.EdgeConfig => "edge-config",
                 UserEventEntitieType.EnvVarName => "env_var_name",
@@ -148,6 +153,7 @@ namespace Vercel
                 "bitbucket_login" => UserEventEntitieType.BitbucketLogin,
                 "bold" => UserEventEntitieType.Bold,
                 "deployment_host" => UserEventEntitieType.DeploymentHost,
+                "deployment_inspector" => UserEventEntitieType.DeploymentInspector,
                 "dns_record" => UserEventEntitieType.DnsRecord,
                 "edge-config" => UserEventEntitieType.EdgeConfig,
                 "env_var_name" => UserEventEntitieType.EnvVarName,

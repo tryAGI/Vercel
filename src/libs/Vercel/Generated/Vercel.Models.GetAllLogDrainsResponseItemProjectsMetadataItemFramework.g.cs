@@ -71,6 +71,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Eve,
+        /// <summary>
+        /// 
+        /// </summary>
         Express,
         /// <summary>
         /// 
@@ -313,6 +317,7 @@ namespace Vercel
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Eleventy => "eleventy",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Elysia => "elysia",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Ember => "ember",
+                GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Eve => "eve",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Express => "express",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Fastapi => "fastapi",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Fasthtml => "fasthtml",
@@ -392,6 +397,7 @@ namespace Vercel
                 "eleventy" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Eleventy,
                 "elysia" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Elysia,
                 "ember" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Ember,
+                "eve" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Eve,
                 "express" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Express,
                 "fastapi" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Fastapi,
                 "fasthtml" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Fasthtml,
