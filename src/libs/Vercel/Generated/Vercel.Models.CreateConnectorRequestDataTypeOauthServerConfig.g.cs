@@ -125,6 +125,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id_token_encryption_alg_values_supported")]
+        public global::System.Collections.Generic.IList<string>? IdTokenEncryptionAlgValuesSupported { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id_token_encryption_enc_values_supported")]
+        public global::System.Collections.Generic.IList<string>? IdTokenEncryptionEncValuesSupported { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("claim_types_supported")]
         public global::System.Collections.Generic.IList<string>? ClaimTypesSupported { get; set; }
 
@@ -234,6 +246,8 @@ namespace Vercel
         /// <param name="responseModesSupported"></param>
         /// <param name="subjectTypesSupported"></param>
         /// <param name="idTokenSigningAlgValuesSupported"></param>
+        /// <param name="idTokenEncryptionAlgValuesSupported"></param>
+        /// <param name="idTokenEncryptionEncValuesSupported"></param>
         /// <param name="claimTypesSupported"></param>
         /// <param name="claimsSupported"></param>
         /// <param name="codeChallengeMethodsSupported"></param>
@@ -271,6 +285,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? responseModesSupported,
             global::System.Collections.Generic.IList<string>? subjectTypesSupported,
             global::System.Collections.Generic.IList<string>? idTokenSigningAlgValuesSupported,
+            global::System.Collections.Generic.IList<string>? idTokenEncryptionAlgValuesSupported,
+            global::System.Collections.Generic.IList<string>? idTokenEncryptionEncValuesSupported,
             global::System.Collections.Generic.IList<string>? claimTypesSupported,
             global::System.Collections.Generic.IList<string>? claimsSupported,
             global::System.Collections.Generic.IList<string>? codeChallengeMethodsSupported,
@@ -305,6 +321,8 @@ namespace Vercel
             this.ResponseModesSupported = responseModesSupported;
             this.SubjectTypesSupported = subjectTypesSupported;
             this.IdTokenSigningAlgValuesSupported = idTokenSigningAlgValuesSupported;
+            this.IdTokenEncryptionAlgValuesSupported = idTokenEncryptionAlgValuesSupported;
+            this.IdTokenEncryptionEncValuesSupported = idTokenEncryptionEncValuesSupported;
             this.ClaimTypesSupported = claimTypesSupported;
             this.ClaimsSupported = claimsSupported;
             this.CodeChallengeMethodsSupported = codeChallengeMethodsSupported;
