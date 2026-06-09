@@ -119,15 +119,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("filter")]
-        public string? Filter { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filterV2")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDrainResponseVariant1FilterV2Variant1, global::Vercel.CreateDrainResponseVariant1FilterV2Variant2>))]
-        public global::Vercel.OneOf<global::Vercel.CreateDrainResponseVariant1FilterV2Variant1, global::Vercel.CreateDrainResponseVariant1FilterV2Variant2>? FilterV2 { get; set; }
+        public global::Vercel.CreateDrainResponseVariant1FilterV2? FilterV2 { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -154,7 +147,6 @@ namespace Vercel
         /// <param name="disabledBy"></param>
         /// <param name="disabledReason"></param>
         /// <param name="sampling"></param>
-        /// <param name="filter"></param>
         /// <param name="filterV2"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -176,8 +168,7 @@ namespace Vercel
             string? disabledBy,
             global::Vercel.CreateDrainResponseVariant1DisabledReason? disabledReason,
             global::System.Collections.Generic.IList<global::Vercel.CreateDrainResponseVariant1SamplingItem>? sampling,
-            string? filter,
-            global::Vercel.OneOf<global::Vercel.CreateDrainResponseVariant1FilterV2Variant1, global::Vercel.CreateDrainResponseVariant1FilterV2Variant2>? filterV2)
+            global::Vercel.CreateDrainResponseVariant1FilterV2? filterV2)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.CreatedAt = createdAt;
@@ -195,7 +186,6 @@ namespace Vercel
             this.Delivery = delivery;
             this.Sampling = sampling;
             this.Source = source;
-            this.Filter = filter;
             this.FilterV2 = filterV2;
         }
 

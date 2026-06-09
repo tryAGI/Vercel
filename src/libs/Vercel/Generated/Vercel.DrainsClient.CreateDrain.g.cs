@@ -588,7 +588,7 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             global::System.Collections.Generic.IList<string>? projectIds = default,
-            global::Vercel.OneOf<string, global::Vercel.CreateDrainRequestFilter>? filter = default,
+            global::Vercel.CreateDrainRequestFilter? filter = default,
             global::Vercel.OneOf<global::Vercel.CreateDrainRequestDeliveryVariant1, global::Vercel.CreateDrainRequestDeliveryVariant2>? delivery = default,
             global::System.Collections.Generic.IList<global::Vercel.CreateDrainRequestSamplingItem>? sampling = default,
             global::System.Collections.Generic.IList<global::Vercel.CreateDrainRequestTransform>? transforms = default,

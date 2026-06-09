@@ -33014,130 +33014,109 @@
                                       }
                                     ]
                                   },
-                                  "filter": {
-                                    "type": "string"
-                                  },
                                   "filterV2": {
-                                    "oneOf": [
-                                      {
-                                        "properties": {
-                                          "version": {
-                                            "type": "string",
-                                            "enum": [
-                                              "v1"
-                                            ]
-                                          }
-                                        },
-                                        "required": [
-                                          "version"
-                                        ],
-                                        "type": "object"
+                                    "properties": {
+                                      "version": {
+                                        "type": "string",
+                                        "enum": [
+                                          "v2"
+                                        ]
                                       },
-                                      {
-                                        "properties": {
-                                          "version": {
-                                            "type": "string",
-                                            "enum": [
-                                              "v2"
-                                            ]
-                                          },
-                                          "filter": {
-                                            "oneOf": [
-                                              {
+                                      "filter": {
+                                        "oneOf": [
+                                          {
+                                            "properties": {
+                                              "type": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "basic"
+                                                ]
+                                              },
+                                              "project": {
                                                 "properties": {
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "basic"
-                                                    ]
-                                                  },
-                                                  "project": {
-                                                    "properties": {
-                                                      "ids": {
-                                                        "items": {
-                                                          "type": "string"
-                                                        },
-                                                        "type": "array"
-                                                      }
+                                                  "ids": {
+                                                    "items": {
+                                                      "type": "string"
                                                     },
-                                                    "type": "object"
-                                                  },
-                                                  "log": {
-                                                    "properties": {
-                                                      "sources": {
-                                                        "items": {
-                                                          "type": "string",
-                                                          "enum": [
-                                                            "build",
-                                                            "edge",
-                                                            "external",
-                                                            "firewall",
-                                                            "lambda",
-                                                            "redirect",
-                                                            "static"
-                                                          ]
-                                                        },
-                                                        "type": "array"
-                                                      },
-                                                      "legacy_excludeCachedStaticAssetLogs": {
-                                                        "type": "boolean",
-                                                        "enum": [
-                                                          false,
-                                                          true
-                                                        ]
-                                                      }
-                                                    },
-                                                    "type": "object"
-                                                  },
-                                                  "deployment": {
-                                                    "properties": {
-                                                      "environments": {
-                                                        "items": {
-                                                          "type": "string",
-                                                          "enum": [
-                                                            "preview",
-                                                            "production"
-                                                          ]
-                                                        },
-                                                        "type": "array"
-                                                      }
-                                                    },
-                                                    "type": "object"
+                                                    "type": "array"
                                                   }
                                                 },
-                                                "required": [
-                                                  "type"
-                                                ],
                                                 "type": "object"
                                               },
-                                              {
+                                              "log": {
                                                 "properties": {
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "odata"
-                                                    ]
+                                                  "sources": {
+                                                    "items": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "build",
+                                                        "edge",
+                                                        "external",
+                                                        "firewall",
+                                                        "lambda",
+                                                        "redirect",
+                                                        "static"
+                                                      ]
+                                                    },
+                                                    "type": "array"
                                                   },
-                                                  "text": {
-                                                    "type": "string"
+                                                  "legacy_excludeCachedStaticAssetLogs": {
+                                                    "type": "boolean",
+                                                    "enum": [
+                                                      false,
+                                                      true
+                                                    ]
                                                   }
                                                 },
-                                                "required": [
-                                                  "text",
-                                                  "type"
-                                                ],
+                                                "type": "object"
+                                              },
+                                              "deployment": {
+                                                "properties": {
+                                                  "environments": {
+                                                    "items": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "preview",
+                                                        "production"
+                                                      ]
+                                                    },
+                                                    "type": "array"
+                                                  }
+                                                },
                                                 "type": "object"
                                               }
-                                            ]
+                                            },
+                                            "required": [
+                                              "type"
+                                            ],
+                                            "type": "object"
+                                          },
+                                          {
+                                            "properties": {
+                                              "type": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "odata"
+                                                ]
+                                              },
+                                              "text": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "text",
+                                              "type"
+                                            ],
+                                            "type": "object"
                                           }
-                                        },
-                                        "required": [
-                                          "filter",
-                                          "version"
-                                        ],
-                                        "type": "object"
+                                        ]
                                       }
-                                    ]
+                                    },
+                                    "required": [
+                                      "filter",
+                                      "version"
+                                    ],
+                                    "type": "object"
                                   }
                                 },
                                 "required": [
@@ -33478,130 +33457,109 @@
                                       }
                                     ]
                                   },
-                                  "filter": {
-                                    "type": "string"
-                                  },
                                   "filterV2": {
-                                    "oneOf": [
-                                      {
-                                        "properties": {
-                                          "version": {
-                                            "type": "string",
-                                            "enum": [
-                                              "v1"
-                                            ]
-                                          }
-                                        },
-                                        "required": [
-                                          "version"
-                                        ],
-                                        "type": "object"
+                                    "properties": {
+                                      "version": {
+                                        "type": "string",
+                                        "enum": [
+                                          "v2"
+                                        ]
                                       },
-                                      {
-                                        "properties": {
-                                          "version": {
-                                            "type": "string",
-                                            "enum": [
-                                              "v2"
-                                            ]
-                                          },
-                                          "filter": {
-                                            "oneOf": [
-                                              {
+                                      "filter": {
+                                        "oneOf": [
+                                          {
+                                            "properties": {
+                                              "type": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "basic"
+                                                ]
+                                              },
+                                              "project": {
                                                 "properties": {
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "basic"
-                                                    ]
-                                                  },
-                                                  "project": {
-                                                    "properties": {
-                                                      "ids": {
-                                                        "items": {
-                                                          "type": "string"
-                                                        },
-                                                        "type": "array"
-                                                      }
+                                                  "ids": {
+                                                    "items": {
+                                                      "type": "string"
                                                     },
-                                                    "type": "object"
-                                                  },
-                                                  "log": {
-                                                    "properties": {
-                                                      "sources": {
-                                                        "items": {
-                                                          "type": "string",
-                                                          "enum": [
-                                                            "build",
-                                                            "edge",
-                                                            "external",
-                                                            "firewall",
-                                                            "lambda",
-                                                            "redirect",
-                                                            "static"
-                                                          ]
-                                                        },
-                                                        "type": "array"
-                                                      },
-                                                      "legacy_excludeCachedStaticAssetLogs": {
-                                                        "type": "boolean",
-                                                        "enum": [
-                                                          false,
-                                                          true
-                                                        ]
-                                                      }
-                                                    },
-                                                    "type": "object"
-                                                  },
-                                                  "deployment": {
-                                                    "properties": {
-                                                      "environments": {
-                                                        "items": {
-                                                          "type": "string",
-                                                          "enum": [
-                                                            "preview",
-                                                            "production"
-                                                          ]
-                                                        },
-                                                        "type": "array"
-                                                      }
-                                                    },
-                                                    "type": "object"
+                                                    "type": "array"
                                                   }
                                                 },
-                                                "required": [
-                                                  "type"
-                                                ],
                                                 "type": "object"
                                               },
-                                              {
+                                              "log": {
                                                 "properties": {
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "odata"
-                                                    ]
+                                                  "sources": {
+                                                    "items": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "build",
+                                                        "edge",
+                                                        "external",
+                                                        "firewall",
+                                                        "lambda",
+                                                        "redirect",
+                                                        "static"
+                                                      ]
+                                                    },
+                                                    "type": "array"
                                                   },
-                                                  "text": {
-                                                    "type": "string"
+                                                  "legacy_excludeCachedStaticAssetLogs": {
+                                                    "type": "boolean",
+                                                    "enum": [
+                                                      false,
+                                                      true
+                                                    ]
                                                   }
                                                 },
-                                                "required": [
-                                                  "text",
-                                                  "type"
-                                                ],
+                                                "type": "object"
+                                              },
+                                              "deployment": {
+                                                "properties": {
+                                                  "environments": {
+                                                    "items": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "preview",
+                                                        "production"
+                                                      ]
+                                                    },
+                                                    "type": "array"
+                                                  }
+                                                },
                                                 "type": "object"
                                               }
-                                            ]
+                                            },
+                                            "required": [
+                                              "type"
+                                            ],
+                                            "type": "object"
+                                          },
+                                          {
+                                            "properties": {
+                                              "type": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "odata"
+                                                ]
+                                              },
+                                              "text": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "text",
+                                              "type"
+                                            ],
+                                            "type": "object"
                                           }
-                                        },
-                                        "required": [
-                                          "filter",
-                                          "version"
-                                        ],
-                                        "type": "object"
+                                        ]
                                       }
-                                    ]
+                                    },
+                                    "required": [
+                                      "filter",
+                                      "version"
+                                    ],
+                                    "type": "object"
                                   },
                                   "integrationIcon": {
                                     "type": "string"
@@ -34241,130 +34199,109 @@
                             }
                           ]
                         },
-                        "filter": {
-                          "type": "string"
-                        },
                         "filterV2": {
-                          "oneOf": [
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v1"
-                                  ]
-                                }
-                              },
-                              "required": [
-                                "version"
-                              ],
-                              "type": "object"
+                          "properties": {
+                            "version": {
+                              "type": "string",
+                              "enum": [
+                                "v2"
+                              ]
                             },
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v2"
-                                  ]
-                                },
-                                "filter": {
-                                  "oneOf": [
-                                    {
+                            "filter": {
+                              "oneOf": [
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "basic"
+                                      ]
+                                    },
+                                    "project": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "basic"
-                                          ]
-                                        },
-                                        "project": {
-                                          "properties": {
-                                            "ids": {
-                                              "items": {
-                                                "type": "string"
-                                              },
-                                              "type": "array"
-                                            }
+                                        "ids": {
+                                          "items": {
+                                            "type": "string"
                                           },
-                                          "type": "object"
-                                        },
-                                        "log": {
-                                          "properties": {
-                                            "sources": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "build",
-                                                  "edge",
-                                                  "external",
-                                                  "firewall",
-                                                  "lambda",
-                                                  "redirect",
-                                                  "static"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            },
-                                            "legacy_excludeCachedStaticAssetLogs": {
-                                              "type": "boolean",
-                                              "enum": [
-                                                false,
-                                                true
-                                              ]
-                                            }
-                                          },
-                                          "type": "object"
-                                        },
-                                        "deployment": {
-                                          "properties": {
-                                            "environments": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "preview",
-                                                  "production"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            }
-                                          },
-                                          "type": "object"
+                                          "type": "array"
                                         }
                                       },
-                                      "required": [
-                                        "type"
-                                      ],
                                       "type": "object"
                                     },
-                                    {
+                                    "log": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "odata"
-                                          ]
+                                        "sources": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "build",
+                                              "edge",
+                                              "external",
+                                              "firewall",
+                                              "lambda",
+                                              "redirect",
+                                              "static"
+                                            ]
+                                          },
+                                          "type": "array"
                                         },
-                                        "text": {
-                                          "type": "string"
+                                        "legacy_excludeCachedStaticAssetLogs": {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true
+                                          ]
                                         }
                                       },
-                                      "required": [
-                                        "text",
-                                        "type"
-                                      ],
+                                      "type": "object"
+                                    },
+                                    "deployment": {
+                                      "properties": {
+                                        "environments": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "preview",
+                                              "production"
+                                            ]
+                                          },
+                                          "type": "array"
+                                        }
+                                      },
                                       "type": "object"
                                     }
-                                  ]
+                                  },
+                                  "required": [
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                },
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "odata"
+                                      ]
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "text",
+                                    "type"
+                                  ],
+                                  "type": "object"
                                 }
-                              },
-                              "required": [
-                                "filter",
-                                "version"
-                              ],
-                              "type": "object"
+                              ]
                             }
-                          ]
+                          },
+                          "required": [
+                            "filter",
+                            "version"
+                          ],
+                          "type": "object"
                         }
                       },
                       "required": [
@@ -34702,130 +34639,109 @@
                             }
                           ]
                         },
-                        "filter": {
-                          "type": "string"
-                        },
                         "filterV2": {
-                          "oneOf": [
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v1"
-                                  ]
-                                }
-                              },
-                              "required": [
-                                "version"
-                              ],
-                              "type": "object"
+                          "properties": {
+                            "version": {
+                              "type": "string",
+                              "enum": [
+                                "v2"
+                              ]
                             },
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v2"
-                                  ]
-                                },
-                                "filter": {
-                                  "oneOf": [
-                                    {
+                            "filter": {
+                              "oneOf": [
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "basic"
+                                      ]
+                                    },
+                                    "project": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "basic"
-                                          ]
-                                        },
-                                        "project": {
-                                          "properties": {
-                                            "ids": {
-                                              "items": {
-                                                "type": "string"
-                                              },
-                                              "type": "array"
-                                            }
+                                        "ids": {
+                                          "items": {
+                                            "type": "string"
                                           },
-                                          "type": "object"
-                                        },
-                                        "log": {
-                                          "properties": {
-                                            "sources": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "build",
-                                                  "edge",
-                                                  "external",
-                                                  "firewall",
-                                                  "lambda",
-                                                  "redirect",
-                                                  "static"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            },
-                                            "legacy_excludeCachedStaticAssetLogs": {
-                                              "type": "boolean",
-                                              "enum": [
-                                                false,
-                                                true
-                                              ]
-                                            }
-                                          },
-                                          "type": "object"
-                                        },
-                                        "deployment": {
-                                          "properties": {
-                                            "environments": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "preview",
-                                                  "production"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            }
-                                          },
-                                          "type": "object"
+                                          "type": "array"
                                         }
                                       },
-                                      "required": [
-                                        "type"
-                                      ],
                                       "type": "object"
                                     },
-                                    {
+                                    "log": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "odata"
-                                          ]
+                                        "sources": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "build",
+                                              "edge",
+                                              "external",
+                                              "firewall",
+                                              "lambda",
+                                              "redirect",
+                                              "static"
+                                            ]
+                                          },
+                                          "type": "array"
                                         },
-                                        "text": {
-                                          "type": "string"
+                                        "legacy_excludeCachedStaticAssetLogs": {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true
+                                          ]
                                         }
                                       },
-                                      "required": [
-                                        "text",
-                                        "type"
-                                      ],
+                                      "type": "object"
+                                    },
+                                    "deployment": {
+                                      "properties": {
+                                        "environments": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "preview",
+                                              "production"
+                                            ]
+                                          },
+                                          "type": "array"
+                                        }
+                                      },
                                       "type": "object"
                                     }
-                                  ]
+                                  },
+                                  "required": [
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                },
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "odata"
+                                      ]
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "text",
+                                    "type"
+                                  ],
+                                  "type": "object"
                                 }
-                              },
-                              "required": [
-                                "filter",
-                                "version"
-                              ],
-                              "type": "object"
+                              ]
                             }
-                          ]
+                          },
+                          "required": [
+                            "filter",
+                            "version"
+                          ],
+                          "type": "object"
                         },
                         "integrationIcon": {
                           "type": "string"
@@ -34968,105 +34884,98 @@
                     }
                   },
                   "filter": {
-                    "oneOf": [
-                      {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "version",
+                      "filter"
+                    ],
+                    "properties": {
+                      "version": {
                         "type": "string"
                       },
-                      {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "required": [
-                          "version",
-                          "filter"
-                        ],
-                        "properties": {
-                          "version": {
-                            "type": "string"
-                          },
-                          "filter": {
-                            "oneOf": [
-                              {
+                      "filter": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "type"
+                            ],
+                            "properties": {
+                              "type": {
+                                "type": "string"
+                              },
+                              "project": {
                                 "type": "object",
                                 "additionalProperties": false,
-                                "required": [
-                                  "type"
-                                ],
                                 "properties": {
-                                  "type": {
-                                    "type": "string"
-                                  },
-                                  "project": {
-                                    "type": "object",
-                                    "additionalProperties": false,
-                                    "properties": {
-                                      "ids": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "string"
-                                        }
-                                      }
-                                    }
-                                  },
-                                  "log": {
-                                    "type": "object",
-                                    "additionalProperties": false,
-                                    "properties": {
-                                      "sources": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "string",
-                                          "enum": [
-                                            "build",
-                                            "edge",
-                                            "lambda",
-                                            "static",
-                                            "external",
-                                            "firewall",
-                                            "redirect"
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  },
-                                  "deployment": {
-                                    "type": "object",
-                                    "additionalProperties": false,
-                                    "properties": {
-                                      "environments": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "string",
-                                          "enum": [
-                                            "production",
-                                            "preview"
-                                          ]
-                                        }
-                                      }
+                                  "ids": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string"
                                     }
                                   }
                                 }
                               },
-                              {
+                              "log": {
                                 "type": "object",
                                 "additionalProperties": false,
-                                "required": [
-                                  "type",
-                                  "text"
-                                ],
                                 "properties": {
-                                  "type": {
-                                    "type": "string"
-                                  },
-                                  "text": {
-                                    "type": "string"
+                                  "sources": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string",
+                                      "enum": [
+                                        "build",
+                                        "edge",
+                                        "lambda",
+                                        "static",
+                                        "external",
+                                        "firewall",
+                                        "redirect"
+                                      ]
+                                    }
+                                  }
+                                }
+                              },
+                              "deployment": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                  "environments": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string",
+                                      "enum": [
+                                        "production",
+                                        "preview"
+                                      ]
+                                    }
                                   }
                                 }
                               }
-                            ]
+                            }
+                          },
+                          {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "type",
+                              "text"
+                            ],
+                            "properties": {
+                              "type": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              }
+                            }
                           }
-                        }
+                        ]
                       }
-                    ]
+                    }
                   },
                   "schemas": {
                     "type": "object",
@@ -35638,130 +35547,109 @@
                                   }
                                 ]
                               },
-                              "filter": {
-                                "type": "string"
-                              },
                               "filterV2": {
-                                "oneOf": [
-                                  {
-                                    "properties": {
-                                      "version": {
-                                        "type": "string",
-                                        "enum": [
-                                          "v1"
-                                        ]
-                                      }
-                                    },
-                                    "required": [
-                                      "version"
-                                    ],
-                                    "type": "object"
+                                "properties": {
+                                  "version": {
+                                    "type": "string",
+                                    "enum": [
+                                      "v2"
+                                    ]
                                   },
-                                  {
-                                    "properties": {
-                                      "version": {
-                                        "type": "string",
-                                        "enum": [
-                                          "v2"
-                                        ]
-                                      },
-                                      "filter": {
-                                        "oneOf": [
-                                          {
+                                  "filter": {
+                                    "oneOf": [
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "basic"
+                                            ]
+                                          },
+                                          "project": {
                                             "properties": {
-                                              "type": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "basic"
-                                                ]
-                                              },
-                                              "project": {
-                                                "properties": {
-                                                  "ids": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array"
-                                                  }
+                                              "ids": {
+                                                "items": {
+                                                  "type": "string"
                                                 },
-                                                "type": "object"
-                                              },
-                                              "log": {
-                                                "properties": {
-                                                  "sources": {
-                                                    "items": {
-                                                      "type": "string",
-                                                      "enum": [
-                                                        "build",
-                                                        "edge",
-                                                        "external",
-                                                        "firewall",
-                                                        "lambda",
-                                                        "redirect",
-                                                        "static"
-                                                      ]
-                                                    },
-                                                    "type": "array"
-                                                  },
-                                                  "legacy_excludeCachedStaticAssetLogs": {
-                                                    "type": "boolean",
-                                                    "enum": [
-                                                      false,
-                                                      true
-                                                    ]
-                                                  }
-                                                },
-                                                "type": "object"
-                                              },
-                                              "deployment": {
-                                                "properties": {
-                                                  "environments": {
-                                                    "items": {
-                                                      "type": "string",
-                                                      "enum": [
-                                                        "preview",
-                                                        "production"
-                                                      ]
-                                                    },
-                                                    "type": "array"
-                                                  }
-                                                },
-                                                "type": "object"
+                                                "type": "array"
                                               }
                                             },
-                                            "required": [
-                                              "type"
-                                            ],
                                             "type": "object"
                                           },
-                                          {
+                                          "log": {
                                             "properties": {
-                                              "type": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "odata"
-                                                ]
+                                              "sources": {
+                                                "items": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "build",
+                                                    "edge",
+                                                    "external",
+                                                    "firewall",
+                                                    "lambda",
+                                                    "redirect",
+                                                    "static"
+                                                  ]
+                                                },
+                                                "type": "array"
                                               },
-                                              "text": {
-                                                "type": "string"
+                                              "legacy_excludeCachedStaticAssetLogs": {
+                                                "type": "boolean",
+                                                "enum": [
+                                                  false,
+                                                  true
+                                                ]
                                               }
                                             },
-                                            "required": [
-                                              "text",
-                                              "type"
-                                            ],
+                                            "type": "object"
+                                          },
+                                          "deployment": {
+                                            "properties": {
+                                              "environments": {
+                                                "items": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "preview",
+                                                    "production"
+                                                  ]
+                                                },
+                                                "type": "array"
+                                              }
+                                            },
                                             "type": "object"
                                           }
-                                        ]
+                                        },
+                                        "required": [
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "odata"
+                                            ]
+                                          },
+                                          "text": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "text",
+                                          "type"
+                                        ],
+                                        "type": "object"
                                       }
-                                    },
-                                    "required": [
-                                      "filter",
-                                      "version"
-                                    ],
-                                    "type": "object"
+                                    ]
                                   }
-                                ]
+                                },
+                                "required": [
+                                  "filter",
+                                  "version"
+                                ],
+                                "type": "object"
                               }
                             },
                             "required": [
@@ -36102,130 +35990,109 @@
                                   }
                                 ]
                               },
-                              "filter": {
-                                "type": "string"
-                              },
                               "filterV2": {
-                                "oneOf": [
-                                  {
-                                    "properties": {
-                                      "version": {
-                                        "type": "string",
-                                        "enum": [
-                                          "v1"
-                                        ]
-                                      }
-                                    },
-                                    "required": [
-                                      "version"
-                                    ],
-                                    "type": "object"
+                                "properties": {
+                                  "version": {
+                                    "type": "string",
+                                    "enum": [
+                                      "v2"
+                                    ]
                                   },
-                                  {
-                                    "properties": {
-                                      "version": {
-                                        "type": "string",
-                                        "enum": [
-                                          "v2"
-                                        ]
-                                      },
-                                      "filter": {
-                                        "oneOf": [
-                                          {
+                                  "filter": {
+                                    "oneOf": [
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "basic"
+                                            ]
+                                          },
+                                          "project": {
                                             "properties": {
-                                              "type": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "basic"
-                                                ]
-                                              },
-                                              "project": {
-                                                "properties": {
-                                                  "ids": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array"
-                                                  }
+                                              "ids": {
+                                                "items": {
+                                                  "type": "string"
                                                 },
-                                                "type": "object"
-                                              },
-                                              "log": {
-                                                "properties": {
-                                                  "sources": {
-                                                    "items": {
-                                                      "type": "string",
-                                                      "enum": [
-                                                        "build",
-                                                        "edge",
-                                                        "external",
-                                                        "firewall",
-                                                        "lambda",
-                                                        "redirect",
-                                                        "static"
-                                                      ]
-                                                    },
-                                                    "type": "array"
-                                                  },
-                                                  "legacy_excludeCachedStaticAssetLogs": {
-                                                    "type": "boolean",
-                                                    "enum": [
-                                                      false,
-                                                      true
-                                                    ]
-                                                  }
-                                                },
-                                                "type": "object"
-                                              },
-                                              "deployment": {
-                                                "properties": {
-                                                  "environments": {
-                                                    "items": {
-                                                      "type": "string",
-                                                      "enum": [
-                                                        "preview",
-                                                        "production"
-                                                      ]
-                                                    },
-                                                    "type": "array"
-                                                  }
-                                                },
-                                                "type": "object"
+                                                "type": "array"
                                               }
                                             },
-                                            "required": [
-                                              "type"
-                                            ],
                                             "type": "object"
                                           },
-                                          {
+                                          "log": {
                                             "properties": {
-                                              "type": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "odata"
-                                                ]
+                                              "sources": {
+                                                "items": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "build",
+                                                    "edge",
+                                                    "external",
+                                                    "firewall",
+                                                    "lambda",
+                                                    "redirect",
+                                                    "static"
+                                                  ]
+                                                },
+                                                "type": "array"
                                               },
-                                              "text": {
-                                                "type": "string"
+                                              "legacy_excludeCachedStaticAssetLogs": {
+                                                "type": "boolean",
+                                                "enum": [
+                                                  false,
+                                                  true
+                                                ]
                                               }
                                             },
-                                            "required": [
-                                              "text",
-                                              "type"
-                                            ],
+                                            "type": "object"
+                                          },
+                                          "deployment": {
+                                            "properties": {
+                                              "environments": {
+                                                "items": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "preview",
+                                                    "production"
+                                                  ]
+                                                },
+                                                "type": "array"
+                                              }
+                                            },
                                             "type": "object"
                                           }
-                                        ]
+                                        },
+                                        "required": [
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "odata"
+                                            ]
+                                          },
+                                          "text": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "text",
+                                          "type"
+                                        ],
+                                        "type": "object"
                                       }
-                                    },
-                                    "required": [
-                                      "filter",
-                                      "version"
-                                    ],
-                                    "type": "object"
+                                    ]
                                   }
-                                ]
+                                },
+                                "required": [
+                                  "filter",
+                                  "version"
+                                ],
+                                "type": "object"
                               },
                               "integrationIcon": {
                                 "type": "string"
@@ -36768,130 +36635,109 @@
                             }
                           ]
                         },
-                        "filter": {
-                          "type": "string"
-                        },
                         "filterV2": {
-                          "oneOf": [
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v1"
-                                  ]
-                                }
-                              },
-                              "required": [
-                                "version"
-                              ],
-                              "type": "object"
+                          "properties": {
+                            "version": {
+                              "type": "string",
+                              "enum": [
+                                "v2"
+                              ]
                             },
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v2"
-                                  ]
-                                },
-                                "filter": {
-                                  "oneOf": [
-                                    {
+                            "filter": {
+                              "oneOf": [
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "basic"
+                                      ]
+                                    },
+                                    "project": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "basic"
-                                          ]
-                                        },
-                                        "project": {
-                                          "properties": {
-                                            "ids": {
-                                              "items": {
-                                                "type": "string"
-                                              },
-                                              "type": "array"
-                                            }
+                                        "ids": {
+                                          "items": {
+                                            "type": "string"
                                           },
-                                          "type": "object"
-                                        },
-                                        "log": {
-                                          "properties": {
-                                            "sources": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "build",
-                                                  "edge",
-                                                  "external",
-                                                  "firewall",
-                                                  "lambda",
-                                                  "redirect",
-                                                  "static"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            },
-                                            "legacy_excludeCachedStaticAssetLogs": {
-                                              "type": "boolean",
-                                              "enum": [
-                                                false,
-                                                true
-                                              ]
-                                            }
-                                          },
-                                          "type": "object"
-                                        },
-                                        "deployment": {
-                                          "properties": {
-                                            "environments": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "preview",
-                                                  "production"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            }
-                                          },
-                                          "type": "object"
+                                          "type": "array"
                                         }
                                       },
-                                      "required": [
-                                        "type"
-                                      ],
                                       "type": "object"
                                     },
-                                    {
+                                    "log": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "odata"
-                                          ]
+                                        "sources": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "build",
+                                              "edge",
+                                              "external",
+                                              "firewall",
+                                              "lambda",
+                                              "redirect",
+                                              "static"
+                                            ]
+                                          },
+                                          "type": "array"
                                         },
-                                        "text": {
-                                          "type": "string"
+                                        "legacy_excludeCachedStaticAssetLogs": {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true
+                                          ]
                                         }
                                       },
-                                      "required": [
-                                        "text",
-                                        "type"
-                                      ],
+                                      "type": "object"
+                                    },
+                                    "deployment": {
+                                      "properties": {
+                                        "environments": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "preview",
+                                              "production"
+                                            ]
+                                          },
+                                          "type": "array"
+                                        }
+                                      },
                                       "type": "object"
                                     }
-                                  ]
+                                  },
+                                  "required": [
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                },
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "odata"
+                                      ]
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "text",
+                                    "type"
+                                  ],
+                                  "type": "object"
                                 }
-                              },
-                              "required": [
-                                "filter",
-                                "version"
-                              ],
-                              "type": "object"
+                              ]
                             }
-                          ]
+                          },
+                          "required": [
+                            "filter",
+                            "version"
+                          ],
+                          "type": "object"
                         }
                       },
                       "required": [
@@ -37229,130 +37075,109 @@
                             }
                           ]
                         },
-                        "filter": {
-                          "type": "string"
-                        },
                         "filterV2": {
-                          "oneOf": [
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v1"
-                                  ]
-                                }
-                              },
-                              "required": [
-                                "version"
-                              ],
-                              "type": "object"
+                          "properties": {
+                            "version": {
+                              "type": "string",
+                              "enum": [
+                                "v2"
+                              ]
                             },
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v2"
-                                  ]
-                                },
-                                "filter": {
-                                  "oneOf": [
-                                    {
+                            "filter": {
+                              "oneOf": [
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "basic"
+                                      ]
+                                    },
+                                    "project": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "basic"
-                                          ]
-                                        },
-                                        "project": {
-                                          "properties": {
-                                            "ids": {
-                                              "items": {
-                                                "type": "string"
-                                              },
-                                              "type": "array"
-                                            }
+                                        "ids": {
+                                          "items": {
+                                            "type": "string"
                                           },
-                                          "type": "object"
-                                        },
-                                        "log": {
-                                          "properties": {
-                                            "sources": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "build",
-                                                  "edge",
-                                                  "external",
-                                                  "firewall",
-                                                  "lambda",
-                                                  "redirect",
-                                                  "static"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            },
-                                            "legacy_excludeCachedStaticAssetLogs": {
-                                              "type": "boolean",
-                                              "enum": [
-                                                false,
-                                                true
-                                              ]
-                                            }
-                                          },
-                                          "type": "object"
-                                        },
-                                        "deployment": {
-                                          "properties": {
-                                            "environments": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "preview",
-                                                  "production"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            }
-                                          },
-                                          "type": "object"
+                                          "type": "array"
                                         }
                                       },
-                                      "required": [
-                                        "type"
-                                      ],
                                       "type": "object"
                                     },
-                                    {
+                                    "log": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "odata"
-                                          ]
+                                        "sources": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "build",
+                                              "edge",
+                                              "external",
+                                              "firewall",
+                                              "lambda",
+                                              "redirect",
+                                              "static"
+                                            ]
+                                          },
+                                          "type": "array"
                                         },
-                                        "text": {
-                                          "type": "string"
+                                        "legacy_excludeCachedStaticAssetLogs": {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true
+                                          ]
                                         }
                                       },
-                                      "required": [
-                                        "text",
-                                        "type"
-                                      ],
+                                      "type": "object"
+                                    },
+                                    "deployment": {
+                                      "properties": {
+                                        "environments": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "preview",
+                                              "production"
+                                            ]
+                                          },
+                                          "type": "array"
+                                        }
+                                      },
                                       "type": "object"
                                     }
-                                  ]
+                                  },
+                                  "required": [
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                },
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "odata"
+                                      ]
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "text",
+                                    "type"
+                                  ],
+                                  "type": "object"
                                 }
-                              },
-                              "required": [
-                                "filter",
-                                "version"
-                              ],
-                              "type": "object"
+                              ]
                             }
-                          ]
+                          },
+                          "required": [
+                            "filter",
+                            "version"
+                          ],
+                          "type": "object"
                         },
                         "integrationIcon": {
                           "type": "string"
@@ -37820,130 +37645,109 @@
                             }
                           ]
                         },
-                        "filter": {
-                          "type": "string"
-                        },
                         "filterV2": {
-                          "oneOf": [
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v1"
-                                  ]
-                                }
-                              },
-                              "required": [
-                                "version"
-                              ],
-                              "type": "object"
+                          "properties": {
+                            "version": {
+                              "type": "string",
+                              "enum": [
+                                "v2"
+                              ]
                             },
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v2"
-                                  ]
-                                },
-                                "filter": {
-                                  "oneOf": [
-                                    {
+                            "filter": {
+                              "oneOf": [
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "basic"
+                                      ]
+                                    },
+                                    "project": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "basic"
-                                          ]
-                                        },
-                                        "project": {
-                                          "properties": {
-                                            "ids": {
-                                              "items": {
-                                                "type": "string"
-                                              },
-                                              "type": "array"
-                                            }
+                                        "ids": {
+                                          "items": {
+                                            "type": "string"
                                           },
-                                          "type": "object"
-                                        },
-                                        "log": {
-                                          "properties": {
-                                            "sources": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "build",
-                                                  "edge",
-                                                  "external",
-                                                  "firewall",
-                                                  "lambda",
-                                                  "redirect",
-                                                  "static"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            },
-                                            "legacy_excludeCachedStaticAssetLogs": {
-                                              "type": "boolean",
-                                              "enum": [
-                                                false,
-                                                true
-                                              ]
-                                            }
-                                          },
-                                          "type": "object"
-                                        },
-                                        "deployment": {
-                                          "properties": {
-                                            "environments": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "preview",
-                                                  "production"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            }
-                                          },
-                                          "type": "object"
+                                          "type": "array"
                                         }
                                       },
-                                      "required": [
-                                        "type"
-                                      ],
                                       "type": "object"
                                     },
-                                    {
+                                    "log": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "odata"
-                                          ]
+                                        "sources": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "build",
+                                              "edge",
+                                              "external",
+                                              "firewall",
+                                              "lambda",
+                                              "redirect",
+                                              "static"
+                                            ]
+                                          },
+                                          "type": "array"
                                         },
-                                        "text": {
-                                          "type": "string"
+                                        "legacy_excludeCachedStaticAssetLogs": {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true
+                                          ]
                                         }
                                       },
-                                      "required": [
-                                        "text",
-                                        "type"
-                                      ],
+                                      "type": "object"
+                                    },
+                                    "deployment": {
+                                      "properties": {
+                                        "environments": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "preview",
+                                              "production"
+                                            ]
+                                          },
+                                          "type": "array"
+                                        }
+                                      },
                                       "type": "object"
                                     }
-                                  ]
+                                  },
+                                  "required": [
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                },
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "odata"
+                                      ]
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "text",
+                                    "type"
+                                  ],
+                                  "type": "object"
                                 }
-                              },
-                              "required": [
-                                "filter",
-                                "version"
-                              ],
-                              "type": "object"
+                              ]
                             }
-                          ]
+                          },
+                          "required": [
+                            "filter",
+                            "version"
+                          ],
+                          "type": "object"
                         }
                       },
                       "required": [
@@ -38281,130 +38085,109 @@
                             }
                           ]
                         },
-                        "filter": {
-                          "type": "string"
-                        },
                         "filterV2": {
-                          "oneOf": [
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v1"
-                                  ]
-                                }
-                              },
-                              "required": [
-                                "version"
-                              ],
-                              "type": "object"
+                          "properties": {
+                            "version": {
+                              "type": "string",
+                              "enum": [
+                                "v2"
+                              ]
                             },
-                            {
-                              "properties": {
-                                "version": {
-                                  "type": "string",
-                                  "enum": [
-                                    "v2"
-                                  ]
-                                },
-                                "filter": {
-                                  "oneOf": [
-                                    {
+                            "filter": {
+                              "oneOf": [
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "basic"
+                                      ]
+                                    },
+                                    "project": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "basic"
-                                          ]
-                                        },
-                                        "project": {
-                                          "properties": {
-                                            "ids": {
-                                              "items": {
-                                                "type": "string"
-                                              },
-                                              "type": "array"
-                                            }
+                                        "ids": {
+                                          "items": {
+                                            "type": "string"
                                           },
-                                          "type": "object"
-                                        },
-                                        "log": {
-                                          "properties": {
-                                            "sources": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "build",
-                                                  "edge",
-                                                  "external",
-                                                  "firewall",
-                                                  "lambda",
-                                                  "redirect",
-                                                  "static"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            },
-                                            "legacy_excludeCachedStaticAssetLogs": {
-                                              "type": "boolean",
-                                              "enum": [
-                                                false,
-                                                true
-                                              ]
-                                            }
-                                          },
-                                          "type": "object"
-                                        },
-                                        "deployment": {
-                                          "properties": {
-                                            "environments": {
-                                              "items": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "preview",
-                                                  "production"
-                                                ]
-                                              },
-                                              "type": "array"
-                                            }
-                                          },
-                                          "type": "object"
+                                          "type": "array"
                                         }
                                       },
-                                      "required": [
-                                        "type"
-                                      ],
                                       "type": "object"
                                     },
-                                    {
+                                    "log": {
                                       "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "odata"
-                                          ]
+                                        "sources": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "build",
+                                              "edge",
+                                              "external",
+                                              "firewall",
+                                              "lambda",
+                                              "redirect",
+                                              "static"
+                                            ]
+                                          },
+                                          "type": "array"
                                         },
-                                        "text": {
-                                          "type": "string"
+                                        "legacy_excludeCachedStaticAssetLogs": {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true
+                                          ]
                                         }
                                       },
-                                      "required": [
-                                        "text",
-                                        "type"
-                                      ],
+                                      "type": "object"
+                                    },
+                                    "deployment": {
+                                      "properties": {
+                                        "environments": {
+                                          "items": {
+                                            "type": "string",
+                                            "enum": [
+                                              "preview",
+                                              "production"
+                                            ]
+                                          },
+                                          "type": "array"
+                                        }
+                                      },
                                       "type": "object"
                                     }
-                                  ]
+                                  },
+                                  "required": [
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                },
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "odata"
+                                      ]
+                                    },
+                                    "text": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "text",
+                                    "type"
+                                  ],
+                                  "type": "object"
                                 }
-                              },
-                              "required": [
-                                "filter",
-                                "version"
-                              ],
-                              "type": "object"
+                              ]
                             }
-                          ]
+                          },
+                          "required": [
+                            "filter",
+                            "version"
+                          ],
+                          "type": "object"
                         },
                         "integrationIcon": {
                           "type": "string"
@@ -38556,8 +38339,7 @@
                   "filter": {
                     "oneOf": [
                       {
-                        "type": "string",
-                        "nullable": true
+                        "type": "string"
                       },
                       {
                         "type": "object",
