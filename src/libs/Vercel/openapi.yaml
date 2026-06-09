@@ -12169,6 +12169,18 @@
                                   "type": "string"
                                 }
                               },
+                              "id_token_encryption_alg_values_supported": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "id_token_encryption_enc_values_supported": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
                               "claim_types_supported": {
                                 "type": "array",
                                 "items": {
