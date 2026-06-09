@@ -71,6 +71,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Eve,
+        /// <summary>
+        /// 
+        /// </summary>
         Express,
         /// <summary>
         /// 
@@ -313,6 +317,7 @@ namespace Vercel
                 UpdateMicrofrontendsResponseServiceFramework.Eleventy => "eleventy",
                 UpdateMicrofrontendsResponseServiceFramework.Elysia => "elysia",
                 UpdateMicrofrontendsResponseServiceFramework.Ember => "ember",
+                UpdateMicrofrontendsResponseServiceFramework.Eve => "eve",
                 UpdateMicrofrontendsResponseServiceFramework.Express => "express",
                 UpdateMicrofrontendsResponseServiceFramework.Fastapi => "fastapi",
                 UpdateMicrofrontendsResponseServiceFramework.Fasthtml => "fasthtml",
@@ -392,6 +397,7 @@ namespace Vercel
                 "eleventy" => UpdateMicrofrontendsResponseServiceFramework.Eleventy,
                 "elysia" => UpdateMicrofrontendsResponseServiceFramework.Elysia,
                 "ember" => UpdateMicrofrontendsResponseServiceFramework.Ember,
+                "eve" => UpdateMicrofrontendsResponseServiceFramework.Eve,
                 "express" => UpdateMicrofrontendsResponseServiceFramework.Express,
                 "fastapi" => UpdateMicrofrontendsResponseServiceFramework.Fastapi,
                 "fasthtml" => UpdateMicrofrontendsResponseServiceFramework.Fasthtml,

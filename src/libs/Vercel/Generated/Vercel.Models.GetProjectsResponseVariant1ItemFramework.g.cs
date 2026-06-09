@@ -71,6 +71,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Eve,
+        /// <summary>
+        /// 
+        /// </summary>
         Express,
         /// <summary>
         /// 
@@ -313,6 +317,7 @@ namespace Vercel
                 GetProjectsResponseVariant1ItemFramework.Eleventy => "eleventy",
                 GetProjectsResponseVariant1ItemFramework.Elysia => "elysia",
                 GetProjectsResponseVariant1ItemFramework.Ember => "ember",
+                GetProjectsResponseVariant1ItemFramework.Eve => "eve",
                 GetProjectsResponseVariant1ItemFramework.Express => "express",
                 GetProjectsResponseVariant1ItemFramework.Fastapi => "fastapi",
                 GetProjectsResponseVariant1ItemFramework.Fasthtml => "fasthtml",
@@ -392,6 +397,7 @@ namespace Vercel
                 "eleventy" => GetProjectsResponseVariant1ItemFramework.Eleventy,
                 "elysia" => GetProjectsResponseVariant1ItemFramework.Elysia,
                 "ember" => GetProjectsResponseVariant1ItemFramework.Ember,
+                "eve" => GetProjectsResponseVariant1ItemFramework.Eve,
                 "express" => GetProjectsResponseVariant1ItemFramework.Express,
                 "fastapi" => GetProjectsResponseVariant1ItemFramework.Fastapi,
                 "fasthtml" => GetProjectsResponseVariant1ItemFramework.Fasthtml,

@@ -71,6 +71,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Eve,
+        /// <summary>
+        /// 
+        /// </summary>
         Express,
         /// <summary>
         /// 
@@ -313,6 +317,7 @@ namespace Vercel
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Eleventy => "eleventy",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Elysia => "elysia",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Ember => "ember",
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Eve => "eve",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Express => "express",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fastapi => "fastapi",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fasthtml => "fasthtml",
@@ -392,6 +397,7 @@ namespace Vercel
                 "eleventy" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Eleventy,
                 "elysia" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Elysia,
                 "ember" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Ember,
+                "eve" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Eve,
                 "express" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Express,
                 "fastapi" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fastapi,
                 "fasthtml" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fasthtml,

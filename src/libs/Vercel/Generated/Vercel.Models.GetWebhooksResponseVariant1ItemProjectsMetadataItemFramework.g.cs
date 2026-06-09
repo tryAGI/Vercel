@@ -71,6 +71,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Eve,
+        /// <summary>
+        /// 
+        /// </summary>
         Express,
         /// <summary>
         /// 
@@ -313,6 +317,7 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Eleventy => "eleventy",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Elysia => "elysia",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Ember => "ember",
+                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Eve => "eve",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Express => "express",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fastapi => "fastapi",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fasthtml => "fasthtml",
@@ -392,6 +397,7 @@ namespace Vercel
                 "eleventy" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Eleventy,
                 "elysia" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Elysia,
                 "ember" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Ember,
+                "eve" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Eve,
                 "express" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Express,
                 "fastapi" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fastapi,
                 "fasthtml" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fasthtml,

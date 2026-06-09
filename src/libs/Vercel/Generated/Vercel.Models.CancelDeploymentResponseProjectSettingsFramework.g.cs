@@ -71,6 +71,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Eve,
+        /// <summary>
+        /// 
+        /// </summary>
         Express,
         /// <summary>
         /// 
@@ -313,6 +317,7 @@ namespace Vercel
                 CancelDeploymentResponseProjectSettingsFramework.Eleventy => "eleventy",
                 CancelDeploymentResponseProjectSettingsFramework.Elysia => "elysia",
                 CancelDeploymentResponseProjectSettingsFramework.Ember => "ember",
+                CancelDeploymentResponseProjectSettingsFramework.Eve => "eve",
                 CancelDeploymentResponseProjectSettingsFramework.Express => "express",
                 CancelDeploymentResponseProjectSettingsFramework.Fastapi => "fastapi",
                 CancelDeploymentResponseProjectSettingsFramework.Fasthtml => "fasthtml",
@@ -392,6 +397,7 @@ namespace Vercel
                 "eleventy" => CancelDeploymentResponseProjectSettingsFramework.Eleventy,
                 "elysia" => CancelDeploymentResponseProjectSettingsFramework.Elysia,
                 "ember" => CancelDeploymentResponseProjectSettingsFramework.Ember,
+                "eve" => CancelDeploymentResponseProjectSettingsFramework.Eve,
                 "express" => CancelDeploymentResponseProjectSettingsFramework.Express,
                 "fastapi" => CancelDeploymentResponseProjectSettingsFramework.Fastapi,
                 "fasthtml" => CancelDeploymentResponseProjectSettingsFramework.Fasthtml,
