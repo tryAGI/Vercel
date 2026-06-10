@@ -1427,6 +1427,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectSandboxUrlProtectionUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectSkewProtectionAllowedDomainsUpdated,
         /// <summary>
         /// 
@@ -2364,6 +2368,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectRootDirectoryUpdated => "project-root-directory-updated",
                 ListEventTypeReplacedByItem.ProjectRoutesVersionPromoted => "project-routes-version-promoted",
                 ListEventTypeReplacedByItem.ProjectRoutesVersionRestored => "project-routes-version-restored",
+                ListEventTypeReplacedByItem.ProjectSandboxUrlProtectionUpdated => "project-sandbox-url-protection-updated",
                 ListEventTypeReplacedByItem.ProjectSkewProtectionAllowedDomainsUpdated => "project-skew-protection-allowed-domains-updated",
                 ListEventTypeReplacedByItem.ProjectSkewProtectionMaxAgeUpdated => "project-skew-protection-max-age-updated",
                 ListEventTypeReplacedByItem.ProjectSkewProtectionThresholdUpdated => "project-skew-protection-threshold-updated",
@@ -2871,6 +2876,7 @@ namespace Vercel
                 "project-root-directory-updated" => ListEventTypeReplacedByItem.ProjectRootDirectoryUpdated,
                 "project-routes-version-promoted" => ListEventTypeReplacedByItem.ProjectRoutesVersionPromoted,
                 "project-routes-version-restored" => ListEventTypeReplacedByItem.ProjectRoutesVersionRestored,
+                "project-sandbox-url-protection-updated" => ListEventTypeReplacedByItem.ProjectSandboxUrlProtectionUpdated,
                 "project-skew-protection-allowed-domains-updated" => ListEventTypeReplacedByItem.ProjectSkewProtectionAllowedDomainsUpdated,
                 "project-skew-protection-max-age-updated" => ListEventTypeReplacedByItem.ProjectSkewProtectionMaxAgeUpdated,
                 "project-skew-protection-threshold-updated" => ListEventTypeReplacedByItem.ProjectSkewProtectionThresholdUpdated,

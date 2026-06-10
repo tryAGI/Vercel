@@ -119,6 +119,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TrustedSource,
+        /// <summary>
+        /// 
+        /// </summary>
         UserAgent,
     }
 
@@ -161,6 +165,7 @@ namespace Vercel
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.Scheme => "scheme",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.ServerAction => "server_action",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TargetPath => "target_path",
+                GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.UserAgent => "user_agent",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -199,6 +204,7 @@ namespace Vercel
                 "scheme" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.Scheme,
                 "server_action" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.ServerAction,
                 "target_path" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TargetPath,
+                "trusted_source" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.UserAgent,
                 _ => null,
             };

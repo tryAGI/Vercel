@@ -16448,10 +16448,36 @@
                                   },
                                   "source": {
                                     "type": "string",
-                                    "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, these are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object."
+                                    "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
                                   },
                                   "destination": {
-                                    "type": "string"
+                                    "oneOf": [
+                                      {
+                                        "type": "string"
+                                      },
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "service"
+                                            ]
+                                          },
+                                          "service": {
+                                            "type": "string"
+                                          },
+                                          "path": {
+                                            "type": "string",
+                                            "description": "Routing-only path used to select a route inside the target service."
+                                          }
+                                        },
+                                        "required": [
+                                          "service",
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      }
+                                    ]
                                   },
                                   "statusCode": {
                                     "type": "number"
@@ -21102,10 +21128,36 @@
                               },
                               "source": {
                                 "type": "string",
-                                "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, these are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object."
+                                "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
                               },
                               "destination": {
-                                "type": "string"
+                                "oneOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "service"
+                                        ]
+                                      },
+                                      "service": {
+                                        "type": "string"
+                                      },
+                                      "path": {
+                                        "type": "string",
+                                        "description": "Routing-only path used to select a route inside the target service."
+                                      }
+                                    },
+                                    "required": [
+                                      "service",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
                               },
                               "statusCode": {
                                 "type": "number"
@@ -25037,10 +25089,36 @@
                               },
                               "source": {
                                 "type": "string",
-                                "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, these are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object."
+                                "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
                               },
                               "destination": {
-                                "type": "string"
+                                "oneOf": [
+                                  {
+                                    "type": "string"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "service"
+                                        ]
+                                      },
+                                      "service": {
+                                        "type": "string"
+                                      },
+                                      "path": {
+                                        "type": "string",
+                                        "description": "Routing-only path used to select a route inside the target service."
+                                      }
+                                    },
+                                    "required": [
+                                      "service",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  }
+                                ]
                               },
                               "statusCode": {
                                 "type": "number"
@@ -63185,6 +63263,23 @@
                             ],
                             "type": "object"
                           },
+                          "protectionConfig": {
+                            "properties": {
+                              "sandboxUrls": {
+                                "properties": {
+                                  "inheritDeploymentProtection": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  }
+                                },
+                                "type": "object"
+                              }
+                            },
+                            "type": "object"
+                          },
                           "productionDeploymentsFastLane": {
                             "type": "boolean",
                             "enum": [
@@ -69274,10 +69369,36 @@
                                   },
                                   "source": {
                                     "type": "string",
-                                    "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, these are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object."
+                                    "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
                                   },
                                   "destination": {
-                                    "type": "string"
+                                    "oneOf": [
+                                      {
+                                        "type": "string"
+                                      },
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "service"
+                                            ]
+                                          },
+                                          "service": {
+                                            "type": "string"
+                                          },
+                                          "path": {
+                                            "type": "string",
+                                            "description": "Routing-only path used to select a route inside the target service."
+                                          }
+                                        },
+                                        "required": [
+                                          "service",
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      }
+                                    ]
                                   },
                                   "statusCode": {
                                     "type": "number"
@@ -69967,10 +70088,36 @@
                                   },
                                   "source": {
                                     "type": "string",
-                                    "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, these are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object."
+                                    "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
                                   },
                                   "destination": {
-                                    "type": "string"
+                                    "oneOf": [
+                                      {
+                                        "type": "string"
+                                      },
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "service"
+                                            ]
+                                          },
+                                          "service": {
+                                            "type": "string"
+                                          },
+                                          "path": {
+                                            "type": "string",
+                                            "description": "Routing-only path used to select a route inside the target service."
+                                          }
+                                        },
+                                        "required": [
+                                          "service",
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      }
+                                    ]
                                   },
                                   "statusCode": {
                                     "type": "number"
@@ -70656,10 +70803,36 @@
                                   },
                                   "source": {
                                     "type": "string",
-                                    "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, these are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object."
+                                    "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
                                   },
                                   "destination": {
-                                    "type": "string"
+                                    "oneOf": [
+                                      {
+                                        "type": "string"
+                                      },
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "service"
+                                            ]
+                                          },
+                                          "service": {
+                                            "type": "string"
+                                          },
+                                          "path": {
+                                            "type": "string",
+                                            "description": "Routing-only path used to select a route inside the target service."
+                                          }
+                                        },
+                                        "required": [
+                                          "service",
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      }
+                                    ]
                                   },
                                   "statusCode": {
                                     "type": "number"
@@ -71755,10 +71928,36 @@
                             },
                             "source": {
                               "type": "string",
-                              "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, these are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object."
+                              "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
                             },
                             "destination": {
-                              "type": "string"
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "service"
+                                      ]
+                                    },
+                                    "service": {
+                                      "type": "string"
+                                    },
+                                    "path": {
+                                      "type": "string",
+                                      "description": "Routing-only path used to select a route inside the target service."
+                                    }
+                                  },
+                                  "required": [
+                                    "service",
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                }
+                              ]
                             },
                             "statusCode": {
                               "type": "number"
@@ -72829,10 +73028,36 @@
                             },
                             "source": {
                               "type": "string",
-                              "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, these are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object."
+                              "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
                             },
                             "destination": {
-                              "type": "string"
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "service"
+                                      ]
+                                    },
+                                    "service": {
+                                      "type": "string"
+                                    },
+                                    "path": {
+                                      "type": "string",
+                                      "description": "Routing-only path used to select a route inside the target service."
+                                    }
+                                  },
+                                  "required": [
+                                    "service",
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                }
+                              ]
                             },
                             "statusCode": {
                               "type": "number"
@@ -75959,7 +76184,8 @@
                                               "protocol",
                                               "query",
                                               "region",
-                                              "scheme"
+                                              "scheme",
+                                              "trusted_source"
                                             ]
                                           },
                                           "key": {
@@ -76041,7 +76267,8 @@
                                               "protocol",
                                               "query",
                                               "region",
-                                              "scheme"
+                                              "scheme",
+                                              "trusted_source"
                                             ]
                                           },
                                           "key": {
@@ -79272,7 +79499,8 @@
                                                   "protocol",
                                                   "query",
                                                   "region",
-                                                  "scheme"
+                                                  "scheme",
+                                                  "trusted_source"
                                                 ]
                                               },
                                               "key": {
@@ -79354,7 +79582,8 @@
                                                   "protocol",
                                                   "query",
                                                   "region",
-                                                  "scheme"
+                                                  "scheme",
+                                                  "trusted_source"
                                                 ]
                                               },
                                               "key": {
@@ -82258,6 +82487,23 @@
                                   "connectorId",
                                   "deploymentType"
                                 ],
+                                "type": "object"
+                              },
+                              "protectionConfig": {
+                                "properties": {
+                                  "sandboxUrls": {
+                                    "properties": {
+                                      "inheritDeploymentProtection": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ]
+                                      }
+                                    },
+                                    "type": "object"
+                                  }
+                                },
                                 "type": "object"
                               },
                               "productionDeploymentsFastLane": {
@@ -88336,6 +88582,23 @@
                         "connectorId",
                         "deploymentType"
                       ],
+                      "type": "object"
+                    },
+                    "protectionConfig": {
+                      "properties": {
+                        "sandboxUrls": {
+                          "properties": {
+                            "inheritDeploymentProtection": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "type": "object"
+                        }
+                      },
                       "type": "object"
                     },
                     "productionDeploymentsFastLane": {
@@ -94655,6 +94918,23 @@
                       ],
                       "type": "object"
                     },
+                    "protectionConfig": {
+                      "properties": {
+                        "sandboxUrls": {
+                          "properties": {
+                            "inheritDeploymentProtection": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "type": "object"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "productionDeploymentsFastLane": {
                       "type": "boolean",
                       "enum": [
@@ -100545,6 +100825,23 @@
                         "connectorId",
                         "deploymentType"
                       ],
+                      "type": "object"
+                    },
+                    "protectionConfig": {
+                      "properties": {
+                        "sandboxUrls": {
+                          "properties": {
+                            "inheritDeploymentProtection": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "type": "object"
+                        }
+                      },
                       "type": "object"
                     },
                     "productionDeploymentsFastLane": {
@@ -107638,6 +107935,23 @@
                         "connectorId",
                         "deploymentType"
                       ],
+                      "type": "object"
+                    },
+                    "protectionConfig": {
+                      "properties": {
+                        "sandboxUrls": {
+                          "properties": {
+                            "inheritDeploymentProtection": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "type": "object"
+                        }
+                      },
                       "type": "object"
                     },
                     "productionDeploymentsFastLane": {
@@ -121935,6 +122249,23 @@
                       ],
                       "type": "object"
                     },
+                    "protectionConfig": {
+                      "properties": {
+                        "sandboxUrls": {
+                          "properties": {
+                            "inheritDeploymentProtection": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "type": "object"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "productionDeploymentsFastLane": {
                       "type": "boolean",
                       "enum": [
@@ -131528,6 +131859,7 @@
                                                   "scheme",
                                                   "server_action",
                                                   "target_path",
+                                                  "trusted_source",
                                                   "user_agent"
                                                 ]
                                               },
@@ -131783,6 +132115,7 @@
                                                   "scheme",
                                                   "server_action",
                                                   "target_path",
+                                                  "trusted_source",
                                                   "user_agent"
                                                 ]
                                               },
@@ -134287,6 +134620,7 @@
                                               "scheme",
                                               "server_action",
                                               "target_path",
+                                              "trusted_source",
                                               "user_agent"
                                             ]
                                           },
@@ -134542,6 +134876,7 @@
                                               "scheme",
                                               "server_action",
                                               "target_path",
+                                              "trusted_source",
                                               "user_agent"
                                             ]
                                           },
@@ -150543,6 +150878,7 @@
               "project-root-directory-updated",
               "project-routes-version-promoted",
               "project-routes-version-restored",
+              "project-sandbox-url-protection-updated",
               "project-skew-protection-allowed-domains-updated",
               "project-skew-protection-max-age-updated",
               "project-skew-protection-threshold-updated",
@@ -151305,6 +151641,7 @@
               "project-root-directory-updated",
               "project-routes-version-promoted",
               "project-routes-version-restored",
+              "project-sandbox-url-protection-updated",
               "project-skew-protection-allowed-domains-updated",
               "project-skew-protection-max-age-updated",
               "project-skew-protection-threshold-updated",
@@ -151860,6 +152197,7 @@
                 "project-root-directory-updated",
                 "project-routes-version-promoted",
                 "project-routes-version-restored",
+                "project-sandbox-url-protection-updated",
                 "project-skew-protection-allowed-domains-updated",
                 "project-skew-protection-max-age-updated",
                 "project-skew-protection-threshold-updated",
