@@ -47,7 +47,7 @@ namespace Vercel
 
         /// <summary>
         /// Import Resource<br/>
-        /// This endpoint imports (upserts) a resource to Vercel's installation. This may be needed if resources can be independently created on the partner's side and need to be synchronized to Vercel.
+        /// This endpoint imports (upserts) a resource to Vercel's installation. This may be needed if resources can be independently created on the partner's side and need to be synchronized to Vercel. When importing as part of the user-initiated import flow, call this endpoint before redirecting the user back to Vercel. See the [Import existing resources flow](https://vercel.com/docs/integrations/create-integration/marketplace-flows#import-existing-resources-flow) for the full contract.
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="resourceId"></param>
@@ -76,7 +76,7 @@ namespace Vercel
         }
         /// <summary>
         /// Import Resource<br/>
-        /// This endpoint imports (upserts) a resource to Vercel's installation. This may be needed if resources can be independently created on the partner's side and need to be synchronized to Vercel.
+        /// This endpoint imports (upserts) a resource to Vercel's installation. This may be needed if resources can be independently created on the partner's side and need to be synchronized to Vercel. When importing as part of the user-initiated import flow, call this endpoint before redirecting the user back to Vercel. See the [Import existing resources flow](https://vercel.com/docs/integrations/create-integration/marketplace-flows#import-existing-resources-flow) for the full contract.
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="resourceId"></param>
@@ -677,7 +677,7 @@ namespace Vercel
         }
         /// <summary>
         /// Import Resource<br/>
-        /// This endpoint imports (upserts) a resource to Vercel's installation. This may be needed if resources can be independently created on the partner's side and need to be synchronized to Vercel.
+        /// This endpoint imports (upserts) a resource to Vercel's installation. This may be needed if resources can be independently created on the partner's side and need to be synchronized to Vercel. When importing as part of the user-initiated import flow, call this endpoint before redirecting the user back to Vercel. See the [Import existing resources flow](https://vercel.com/docs/integrations/create-integration/marketplace-flows#import-existing-resources-flow) for the full contract.
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="resourceId"></param>
