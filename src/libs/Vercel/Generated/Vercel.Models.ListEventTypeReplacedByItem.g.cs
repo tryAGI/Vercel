@@ -947,6 +947,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrganizationTeamAdd,
+        /// <summary>
+        /// 
+        /// </summary>
         OwnerBlocked,
         /// <summary>
         /// 
@@ -968,6 +972,10 @@ namespace Vercel
         /// 
         /// </summary>
         PageIntegrityHeaderApproved,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityInventoryCleared,
         /// <summary>
         /// 
         /// </summary>
@@ -2248,12 +2256,14 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ObservabilityEnabled => "observability-enabled",
                 ListEventTypeReplacedByItem.ObservabilityPlusProjectDisabled => "observability-plus-project-disabled",
                 ListEventTypeReplacedByItem.ObservabilityPlusProjectEnabled => "observability-plus-project-enabled",
+                ListEventTypeReplacedByItem.OrganizationTeamAdd => "organization-team-add",
                 ListEventTypeReplacedByItem.OwnerBlocked => "owner-blocked",
                 ListEventTypeReplacedByItem.OwnerSoftBlocked => "owner-soft-blocked",
                 ListEventTypeReplacedByItem.OwnerSoftUnblocked => "owner-soft-unblocked",
                 ListEventTypeReplacedByItem.OwnerUnblocked => "owner-unblocked",
                 ListEventTypeReplacedByItem.PageIntegrityConfigUpdated => "page-integrity-config-updated",
                 ListEventTypeReplacedByItem.PageIntegrityHeaderApproved => "page-integrity-header-approved",
+                ListEventTypeReplacedByItem.PageIntegrityInventoryCleared => "page-integrity-inventory-cleared",
                 ListEventTypeReplacedByItem.PageIntegrityResourceApproved => "page-integrity-resource-approved",
                 ListEventTypeReplacedByItem.PageIntegrityResourceDeleted => "page-integrity-resource-deleted",
                 ListEventTypeReplacedByItem.PageIntegrityResourceRejected => "page-integrity-resource-rejected",
@@ -2756,12 +2766,14 @@ namespace Vercel
                 "observability-enabled" => ListEventTypeReplacedByItem.ObservabilityEnabled,
                 "observability-plus-project-disabled" => ListEventTypeReplacedByItem.ObservabilityPlusProjectDisabled,
                 "observability-plus-project-enabled" => ListEventTypeReplacedByItem.ObservabilityPlusProjectEnabled,
+                "organization-team-add" => ListEventTypeReplacedByItem.OrganizationTeamAdd,
                 "owner-blocked" => ListEventTypeReplacedByItem.OwnerBlocked,
                 "owner-soft-blocked" => ListEventTypeReplacedByItem.OwnerSoftBlocked,
                 "owner-soft-unblocked" => ListEventTypeReplacedByItem.OwnerSoftUnblocked,
                 "owner-unblocked" => ListEventTypeReplacedByItem.OwnerUnblocked,
                 "page-integrity-config-updated" => ListEventTypeReplacedByItem.PageIntegrityConfigUpdated,
                 "page-integrity-header-approved" => ListEventTypeReplacedByItem.PageIntegrityHeaderApproved,
+                "page-integrity-inventory-cleared" => ListEventTypeReplacedByItem.PageIntegrityInventoryCleared,
                 "page-integrity-resource-approved" => ListEventTypeReplacedByItem.PageIntegrityResourceApproved,
                 "page-integrity-resource-deleted" => ListEventTypeReplacedByItem.PageIntegrityResourceDeleted,
                 "page-integrity-resource-rejected" => ListEventTypeReplacedByItem.PageIntegrityResourceRejected,
