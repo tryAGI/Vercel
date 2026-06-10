@@ -67439,6 +67439,7 @@
                             "type": "object"
                           },
                           "avatar": {
+                            "nullable": true,
                             "type": "string"
                           }
                         },
@@ -86494,6 +86495,7 @@
                                 "type": "object"
                               },
                               "avatar": {
+                                "nullable": true,
                                 "type": "string"
                               }
                             },
@@ -92589,6 +92591,7 @@
                       "type": "object"
                     },
                     "avatar": {
+                      "nullable": true,
                       "type": "string"
                     }
                   },
@@ -98923,6 +98926,7 @@
                       "type": "object"
                     },
                     "avatar": {
+                      "nullable": true,
                       "type": "string"
                     }
                   },
@@ -104832,6 +104836,7 @@
                       "type": "object"
                     },
                     "avatar": {
+                      "nullable": true,
                       "type": "string"
                     }
                   },
@@ -106102,7 +106107,7 @@
     },
     "/v1/projects/{idOrName}/avatar": {
       "post": {
-        "description": "Upload an image as the avatar of the project identified by `idOrName`. The request body is the raw bytes of a JPG, PNG, or SVG image; the `Content-Type` header must declare which. SVG payloads are sanitized and optimized server-side before storage. The final SHA-1 of the stored bytes becomes the project's `avatar` value.",
+        "description": "Upload an image as the avatar of the project identified by `idOrName`. The request body is the raw bytes of a JPG, PNG, or SVG image; the `Content-Type` header must declare which. SVG payloads are sanitized and optimized server-side before storage. The final SHA-1 of the stored bytes becomes the project's `avatar` value. The actual upload pipeline (validation, sanitization, S3 write, conditional `updateProject`, and event emission) lives in the shared `@api/project-avatar-upload` helper so it can be reused by background workers.",
         "operationId": "uploadProjectAvatar",
         "security": [
           {
@@ -111942,6 +111947,7 @@
                       "type": "object"
                     },
                     "avatar": {
+                      "nullable": true,
                       "type": "string"
                     }
                   },
@@ -126254,6 +126260,7 @@
                       "type": "object"
                     },
                     "avatar": {
+                      "nullable": true,
                       "type": "string"
                     }
                   },
@@ -150758,12 +150765,14 @@
               "observability-enabled",
               "observability-plus-project-disabled",
               "observability-plus-project-enabled",
+              "organization-team-add",
               "owner-blocked",
               "owner-soft-blocked",
               "owner-soft-unblocked",
               "owner-unblocked",
               "page-integrity-config-updated",
               "page-integrity-header-approved",
+              "page-integrity-inventory-cleared",
               "page-integrity-resource-approved",
               "page-integrity-resource-deleted",
               "page-integrity-resource-rejected",
@@ -151521,12 +151530,14 @@
               "observability-enabled",
               "observability-plus-project-disabled",
               "observability-plus-project-enabled",
+              "organization-team-add",
               "owner-blocked",
               "owner-soft-blocked",
               "owner-soft-unblocked",
               "owner-unblocked",
               "page-integrity-config-updated",
               "page-integrity-header-approved",
+              "page-integrity-inventory-cleared",
               "page-integrity-resource-approved",
               "page-integrity-resource-deleted",
               "page-integrity-resource-rejected",
@@ -152077,12 +152088,14 @@
                 "observability-enabled",
                 "observability-plus-project-disabled",
                 "observability-plus-project-enabled",
+                "organization-team-add",
                 "owner-blocked",
                 "owner-soft-blocked",
                 "owner-soft-unblocked",
                 "owner-unblocked",
                 "page-integrity-config-updated",
                 "page-integrity-header-approved",
+                "page-integrity-inventory-cleared",
                 "page-integrity-resource-approved",
                 "page-integrity-resource-deleted",
                 "page-integrity-resource-rejected",

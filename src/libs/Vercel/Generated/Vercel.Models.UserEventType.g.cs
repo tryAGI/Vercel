@@ -948,6 +948,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrganizationTeamAdd,
+        /// <summary>
+        /// 
+        /// </summary>
         OwnerBlocked,
         /// <summary>
         /// 
@@ -969,6 +973,10 @@ namespace Vercel
         /// 
         /// </summary>
         PageIntegrityHeaderApproved,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityInventoryCleared,
         /// <summary>
         /// 
         /// </summary>
@@ -2249,12 +2257,14 @@ namespace Vercel
                 UserEventType.ObservabilityEnabled => "observability-enabled",
                 UserEventType.ObservabilityPlusProjectDisabled => "observability-plus-project-disabled",
                 UserEventType.ObservabilityPlusProjectEnabled => "observability-plus-project-enabled",
+                UserEventType.OrganizationTeamAdd => "organization-team-add",
                 UserEventType.OwnerBlocked => "owner-blocked",
                 UserEventType.OwnerSoftBlocked => "owner-soft-blocked",
                 UserEventType.OwnerSoftUnblocked => "owner-soft-unblocked",
                 UserEventType.OwnerUnblocked => "owner-unblocked",
                 UserEventType.PageIntegrityConfigUpdated => "page-integrity-config-updated",
                 UserEventType.PageIntegrityHeaderApproved => "page-integrity-header-approved",
+                UserEventType.PageIntegrityInventoryCleared => "page-integrity-inventory-cleared",
                 UserEventType.PageIntegrityResourceApproved => "page-integrity-resource-approved",
                 UserEventType.PageIntegrityResourceDeleted => "page-integrity-resource-deleted",
                 UserEventType.PageIntegrityResourceRejected => "page-integrity-resource-rejected",
@@ -2757,12 +2767,14 @@ namespace Vercel
                 "observability-enabled" => UserEventType.ObservabilityEnabled,
                 "observability-plus-project-disabled" => UserEventType.ObservabilityPlusProjectDisabled,
                 "observability-plus-project-enabled" => UserEventType.ObservabilityPlusProjectEnabled,
+                "organization-team-add" => UserEventType.OrganizationTeamAdd,
                 "owner-blocked" => UserEventType.OwnerBlocked,
                 "owner-soft-blocked" => UserEventType.OwnerSoftBlocked,
                 "owner-soft-unblocked" => UserEventType.OwnerSoftUnblocked,
                 "owner-unblocked" => UserEventType.OwnerUnblocked,
                 "page-integrity-config-updated" => UserEventType.PageIntegrityConfigUpdated,
                 "page-integrity-header-approved" => UserEventType.PageIntegrityHeaderApproved,
+                "page-integrity-inventory-cleared" => UserEventType.PageIntegrityInventoryCleared,
                 "page-integrity-resource-approved" => UserEventType.PageIntegrityResourceApproved,
                 "page-integrity-resource-deleted" => UserEventType.PageIntegrityResourceDeleted,
                 "page-integrity-resource-rejected" => UserEventType.PageIntegrityResourceRejected,
