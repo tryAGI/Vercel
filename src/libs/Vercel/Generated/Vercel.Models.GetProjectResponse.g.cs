@@ -268,6 +268,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("protectionConfig")]
+        public global::Vercel.GetProjectResponseProtectionConfig? ProtectionConfig { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productionDeploymentsFastLane")]
         public bool? ProductionDeploymentsFastLane { get; set; }
 
@@ -647,6 +653,7 @@ namespace Vercel
         /// <param name="outputDirectory"></param>
         /// <param name="passwordProtection"></param>
         /// <param name="passport"></param>
+        /// <param name="protectionConfig"></param>
         /// <param name="productionDeploymentsFastLane"></param>
         /// <param name="publicSource"></param>
         /// <param name="rollbackDescription">
@@ -752,6 +759,7 @@ namespace Vercel
             string? outputDirectory,
             object? passwordProtection,
             global::Vercel.GetProjectResponsePassport? passport,
+            global::Vercel.GetProjectResponseProtectionConfig? protectionConfig,
             bool? productionDeploymentsFastLane,
             bool? publicSource,
             global::Vercel.GetProjectResponseRollbackDescription? rollbackDescription,
@@ -846,6 +854,7 @@ namespace Vercel
             this.OutputDirectory = outputDirectory;
             this.PasswordProtection = passwordProtection;
             this.Passport = passport;
+            this.ProtectionConfig = protectionConfig;
             this.ProductionDeploymentsFastLane = productionDeploymentsFastLane;
             this.PublicSource = publicSource;
             this.ResourceConfig = resourceConfig ?? throw new global::System.ArgumentNullException(nameof(resourceConfig));

@@ -1428,6 +1428,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectSandboxUrlProtectionUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectSkewProtectionAllowedDomainsUpdated,
         /// <summary>
         /// 
@@ -2365,6 +2369,7 @@ namespace Vercel
                 UserEventType.ProjectRootDirectoryUpdated => "project-root-directory-updated",
                 UserEventType.ProjectRoutesVersionPromoted => "project-routes-version-promoted",
                 UserEventType.ProjectRoutesVersionRestored => "project-routes-version-restored",
+                UserEventType.ProjectSandboxUrlProtectionUpdated => "project-sandbox-url-protection-updated",
                 UserEventType.ProjectSkewProtectionAllowedDomainsUpdated => "project-skew-protection-allowed-domains-updated",
                 UserEventType.ProjectSkewProtectionMaxAgeUpdated => "project-skew-protection-max-age-updated",
                 UserEventType.ProjectSkewProtectionThresholdUpdated => "project-skew-protection-threshold-updated",
@@ -2872,6 +2877,7 @@ namespace Vercel
                 "project-root-directory-updated" => UserEventType.ProjectRootDirectoryUpdated,
                 "project-routes-version-promoted" => UserEventType.ProjectRoutesVersionPromoted,
                 "project-routes-version-restored" => UserEventType.ProjectRoutesVersionRestored,
+                "project-sandbox-url-protection-updated" => UserEventType.ProjectSandboxUrlProtectionUpdated,
                 "project-skew-protection-allowed-domains-updated" => UserEventType.ProjectSkewProtectionAllowedDomainsUpdated,
                 "project-skew-protection-max-age-updated" => UserEventType.ProjectSkewProtectionMaxAgeUpdated,
                 "project-skew-protection-threshold-updated" => UserEventType.ProjectSkewProtectionThresholdUpdated,
