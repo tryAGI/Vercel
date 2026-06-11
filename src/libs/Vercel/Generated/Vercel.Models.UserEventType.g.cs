@@ -436,6 +436,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DeploymentUndeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         DisabledIntegrationInstallationRemoved,
         /// <summary>
         /// 
@@ -1380,6 +1384,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectRollbackDescriptionUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectRollingReleaseAborted,
         /// <summary>
         /// 
@@ -2129,6 +2137,7 @@ namespace Vercel
                 UserEventType.DeploymentCreationBlocked => "deployment-creation-blocked",
                 UserEventType.DeploymentDelete => "deployment-delete",
                 UserEventType.DeploymentPolicyBlocked => "deployment-policy-blocked",
+                UserEventType.DeploymentUndeleted => "deployment-undeleted",
                 UserEventType.DisabledIntegrationInstallationRemoved => "disabled-integration-installation-removed",
                 UserEventType.DisconnectBitbucketApp => "disconnect-bitbucket-app",
                 UserEventType.DisconnectGithub => "disconnect-github",
@@ -2365,6 +2374,7 @@ namespace Vercel
                 UserEventType.ProjectPrioritizeProductionBuildsUpdated => "project-prioritize-production-builds-updated",
                 UserEventType.ProjectProgramEnrollmentChanged => "project-program-enrollment-changed",
                 UserEventType.ProjectProtectedSourcemapsUpdated => "project-protected-sourcemaps-updated",
+                UserEventType.ProjectRollbackDescriptionUpdated => "project-rollback-description-updated",
                 UserEventType.ProjectRollingReleaseAborted => "project-rolling-release-aborted",
                 UserEventType.ProjectRollingReleaseApproved => "project-rolling-release-approved",
                 UserEventType.ProjectRollingReleaseCompleted => "project-rolling-release-completed",
@@ -2639,6 +2649,7 @@ namespace Vercel
                 "deployment-creation-blocked" => UserEventType.DeploymentCreationBlocked,
                 "deployment-delete" => UserEventType.DeploymentDelete,
                 "deployment-policy-blocked" => UserEventType.DeploymentPolicyBlocked,
+                "deployment-undeleted" => UserEventType.DeploymentUndeleted,
                 "disabled-integration-installation-removed" => UserEventType.DisabledIntegrationInstallationRemoved,
                 "disconnect-bitbucket-app" => UserEventType.DisconnectBitbucketApp,
                 "disconnect-github" => UserEventType.DisconnectGithub,
@@ -2875,6 +2886,7 @@ namespace Vercel
                 "project-prioritize-production-builds-updated" => UserEventType.ProjectPrioritizeProductionBuildsUpdated,
                 "project-program-enrollment-changed" => UserEventType.ProjectProgramEnrollmentChanged,
                 "project-protected-sourcemaps-updated" => UserEventType.ProjectProtectedSourcemapsUpdated,
+                "project-rollback-description-updated" => UserEventType.ProjectRollbackDescriptionUpdated,
                 "project-rolling-release-aborted" => UserEventType.ProjectRollingReleaseAborted,
                 "project-rolling-release-approved" => UserEventType.ProjectRollingReleaseApproved,
                 "project-rolling-release-completed" => UserEventType.ProjectRollingReleaseCompleted,

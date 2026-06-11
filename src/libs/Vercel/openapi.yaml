@@ -150637,6 +150637,7 @@
               "deployment-creation-blocked",
               "deployment-delete",
               "deployment-policy-blocked",
+              "deployment-undeleted",
               "disabled-integration-installation-removed",
               "disconnect-bitbucket-app",
               "disconnect-github",
@@ -150873,6 +150874,7 @@
               "project-prioritize-production-builds-updated",
               "project-program-enrollment-changed",
               "project-protected-sourcemaps-updated",
+              "project-rollback-description-updated",
               "project-rolling-release-aborted",
               "project-rolling-release-approved",
               "project-rolling-release-completed",
@@ -151402,6 +151404,7 @@
               "deployment-creation-blocked",
               "deployment-delete",
               "deployment-policy-blocked",
+              "deployment-undeleted",
               "disabled-integration-installation-removed",
               "disconnect-bitbucket-app",
               "disconnect-github",
@@ -151638,6 +151641,7 @@
               "project-prioritize-production-builds-updated",
               "project-program-enrollment-changed",
               "project-protected-sourcemaps-updated",
+              "project-rollback-description-updated",
               "project-rolling-release-aborted",
               "project-rolling-release-approved",
               "project-rolling-release-completed",
@@ -151960,6 +151964,7 @@
                 "deployment-creation-blocked",
                 "deployment-delete",
                 "deployment-policy-blocked",
+                "deployment-undeleted",
                 "disabled-integration-installation-removed",
                 "disconnect-bitbucket-app",
                 "disconnect-github",
@@ -152196,6 +152201,7 @@
                 "project-prioritize-production-builds-updated",
                 "project-program-enrollment-changed",
                 "project-protected-sourcemaps-updated",
+                "project-rollback-description-updated",
                 "project-rolling-release-aborted",
                 "project-rolling-release-approved",
                 "project-rolling-release-completed",
@@ -154640,15 +154646,15 @@
             "properties": {
               "connection": {
                 "properties": {
-                  "type": {
-                    "type": "string",
-                    "description": "The Identity Provider \"type\", for example Okta.",
-                    "example": "OktaSAML"
-                  },
                   "status": {
                     "type": "string",
                     "description": "Current status of the connection.",
                     "example": "linked"
+                  },
+                  "type": {
+                    "type": "string",
+                    "description": "The Identity Provider \"type\", for example Okta.",
+                    "example": "OktaSAML"
                   },
                   "state": {
                     "type": "string",
@@ -155716,15 +155722,15 @@
             "properties": {
               "connection": {
                 "properties": {
-                  "type": {
-                    "type": "string",
-                    "description": "The Identity Provider \"type\", for example Okta.",
-                    "example": "OktaSAML"
-                  },
                   "status": {
                     "type": "string",
                     "description": "Current status of the connection.",
                     "example": "linked"
+                  },
+                  "type": {
+                    "type": "string",
+                    "description": "The Identity Provider \"type\", for example Okta.",
+                    "example": "OktaSAML"
                   },
                   "state": {
                     "type": "string",
