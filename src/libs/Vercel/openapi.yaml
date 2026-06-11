@@ -120180,7 +120180,7 @@
             "bearerToken": []
           }
         ],
-        "summary": "Points all production domains for a project to the given deploy",
+        "summary": "Point production traffic to a previous production deployment by ID",
         "tags": [
           "projects"
         ],
@@ -126266,7 +126266,7 @@
             "bearerToken": []
           }
         ],
-        "summary": "Points all production domains for a project to the given deploy",
+        "summary": "Point production traffic to a given deployment",
         "tags": [
           "projects"
         ],
