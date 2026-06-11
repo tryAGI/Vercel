@@ -5,7 +5,7 @@ namespace Vercel
     public partial interface IProjectsClient
     {
         /// <summary>
-        /// Points all production domains for a project to the given deploy<br/>
+        /// Point production traffic to a previous production deployment by ID<br/>
         /// Allows users to rollback to a deployment.
         /// </summary>
         /// <param name="projectId"></param>
@@ -33,7 +33,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Points all production domains for a project to the given deploy<br/>
+        /// Point production traffic to a previous production deployment by ID<br/>
         /// Allows users to rollback to a deployment.
         /// </summary>
         /// <param name="projectId"></param>

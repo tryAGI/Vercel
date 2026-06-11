@@ -43,7 +43,7 @@ namespace Vercel
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
         /// <summary>
-        /// Points all production domains for a project to the given deploy<br/>
+        /// Point production traffic to a given deployment<br/>
         /// Allows users to promote a deployment to production. Note: This does NOT rebuild the deployment. If you need that, then call create-deployments endpoint.
         /// </summary>
         /// <param name="projectId"></param>
@@ -75,7 +75,7 @@ namespace Vercel
             ).ConfigureAwait(false);
         }
         /// <summary>
-        /// Points all production domains for a project to the given deploy<br/>
+        /// Point production traffic to a given deployment<br/>
         /// Allows users to promote a deployment to production. Note: This does NOT rebuild the deployment. If you need that, then call create-deployments endpoint.
         /// </summary>
         /// <param name="projectId"></param>
