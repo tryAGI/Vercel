@@ -84,12 +84,6 @@ namespace Vercel
         public bool? EnableFunctionsBeta { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enableFunctionsExtendedMaxDuration")]
-        public bool? EnableFunctionsExtendedMaxDuration { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -114,7 +108,6 @@ namespace Vercel
         /// <param name="buildMachineElasticLastUpdated"></param>
         /// <param name="isNSNBDisabled"></param>
         /// <param name="enableFunctionsBeta"></param>
-        /// <param name="enableFunctionsExtendedMaxDuration"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -130,8 +123,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestResourceConfigBuildMachineSelection? buildMachineSelection,
             double? buildMachineElasticLastUpdated,
             bool? isNSNBDisabled,
-            bool? enableFunctionsBeta,
-            bool? enableFunctionsExtendedMaxDuration)
+            bool? enableFunctionsBeta)
         {
             this.BuildMachineType = buildMachineType;
             this.BuildQueue = buildQueue;
@@ -145,7 +137,6 @@ namespace Vercel
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
             this.IsNSNBDisabled = isNSNBDisabled;
             this.EnableFunctionsBeta = enableFunctionsBeta;
-            this.EnableFunctionsExtendedMaxDuration = enableFunctionsExtendedMaxDuration;
         }
 
         /// <summary>

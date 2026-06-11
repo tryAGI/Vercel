@@ -28,6 +28,10 @@ namespace Vercel
         /// 
         /// </summary>
         RestApi,
+        /// <summary>
+        /// 
+        /// </summary>
+        V0,
     }
 
     /// <summary>
@@ -47,6 +51,7 @@ namespace Vercel
                 PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource.Git => "git",
                 PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource.Integration => "integration",
                 PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource.RestApi => "rest-api",
+                PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource.V0 => "v0",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -62,6 +67,7 @@ namespace Vercel
                 "git" => PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource.Git,
                 "integration" => PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource.Integration,
                 "rest-api" => PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource.RestApi,
+                "v0" => PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource.V0,
                 _ => null,
             };
         }
