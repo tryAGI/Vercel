@@ -66187,6 +66187,29 @@
                                     ],
                                     "type": "object"
                                   },
+                                  "traffic_sources": {
+                                    "properties": {
+                                      "active": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ]
+                                      },
+                                      "action": {
+                                        "type": "string",
+                                        "enum": [
+                                          "challenge",
+                                          "deny",
+                                          "log"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "active"
+                                    ],
+                                    "type": "object"
+                                  },
                                   "bot_filter": {
                                     "properties": {
                                       "active": {
@@ -66261,6 +66284,7 @@
                                   "ai_bots",
                                   "bot_filter",
                                   "owasp",
+                                  "traffic_sources",
                                   "vercel_ruleset"
                                 ],
                                 "type": "object"
@@ -76457,6 +76481,29 @@
                                     ],
                                     "type": "object"
                                   },
+                                  "traffic_sources": {
+                                    "properties": {
+                                      "active": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ]
+                                      },
+                                      "action": {
+                                        "type": "string",
+                                        "enum": [
+                                          "challenge",
+                                          "deny",
+                                          "log"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "active"
+                                    ],
+                                    "type": "object"
+                                  },
                                   "bot_filter": {
                                     "properties": {
                                       "active": {
@@ -76531,6 +76578,7 @@
                                   "ai_bots",
                                   "bot_filter",
                                   "owasp",
+                                  "traffic_sources",
                                   "vercel_ruleset"
                                 ],
                                 "type": "object"
@@ -79765,6 +79813,29 @@
                                         ],
                                         "type": "object"
                                       },
+                                      "traffic_sources": {
+                                        "properties": {
+                                          "active": {
+                                            "type": "boolean",
+                                            "enum": [
+                                              false,
+                                              true
+                                            ]
+                                          },
+                                          "action": {
+                                            "type": "string",
+                                            "enum": [
+                                              "challenge",
+                                              "deny",
+                                              "log"
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "active"
+                                        ],
+                                        "type": "object"
+                                      },
                                       "bot_filter": {
                                         "properties": {
                                           "active": {
@@ -79839,6 +79910,7 @@
                                       "ai_bots",
                                       "bot_filter",
                                       "owasp",
+                                      "traffic_sources",
                                       "vercel_ruleset"
                                     ],
                                     "type": "object"
@@ -85216,6 +85288,29 @@
                                         ],
                                         "type": "object"
                                       },
+                                      "traffic_sources": {
+                                        "properties": {
+                                          "active": {
+                                            "type": "boolean",
+                                            "enum": [
+                                              false,
+                                              true
+                                            ]
+                                          },
+                                          "action": {
+                                            "type": "string",
+                                            "enum": [
+                                              "challenge",
+                                              "deny",
+                                              "log"
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "active"
+                                        ],
+                                        "type": "object"
+                                      },
                                       "bot_filter": {
                                         "properties": {
                                           "active": {
@@ -85290,6 +85385,7 @@
                                       "ai_bots",
                                       "bot_filter",
                                       "owasp",
+                                      "traffic_sources",
                                       "vercel_ruleset"
                                     ],
                                     "type": "object"
@@ -91299,6 +91395,29 @@
                               ],
                               "type": "object"
                             },
+                            "traffic_sources": {
+                              "properties": {
+                                "active": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false,
+                                    true
+                                  ]
+                                },
+                                "action": {
+                                  "type": "string",
+                                  "enum": [
+                                    "challenge",
+                                    "deny",
+                                    "log"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "active"
+                              ],
+                              "type": "object"
+                            },
                             "bot_filter": {
                               "properties": {
                                 "active": {
@@ -91373,6 +91492,7 @@
                             "ai_bots",
                             "bot_filter",
                             "owasp",
+                            "traffic_sources",
                             "vercel_ruleset"
                           ],
                           "type": "object"
@@ -97618,6 +97738,29 @@
                               ],
                               "type": "object"
                             },
+                            "traffic_sources": {
+                              "properties": {
+                                "active": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false,
+                                    true
+                                  ]
+                                },
+                                "action": {
+                                  "type": "string",
+                                  "enum": [
+                                    "challenge",
+                                    "deny",
+                                    "log"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "active"
+                              ],
+                              "type": "object"
+                            },
                             "bot_filter": {
                               "properties": {
                                 "active": {
@@ -97692,6 +97835,7 @@
                             "ai_bots",
                             "bot_filter",
                             "owasp",
+                            "traffic_sources",
                             "vercel_ruleset"
                           ],
                           "type": "object"
@@ -103515,6 +103659,29 @@
                               ],
                               "type": "object"
                             },
+                            "traffic_sources": {
+                              "properties": {
+                                "active": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false,
+                                    true
+                                  ]
+                                },
+                                "action": {
+                                  "type": "string",
+                                  "enum": [
+                                    "challenge",
+                                    "deny",
+                                    "log"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "active"
+                              ],
+                              "type": "object"
+                            },
                             "bot_filter": {
                               "properties": {
                                 "active": {
@@ -103589,6 +103756,7 @@
                             "ai_bots",
                             "bot_filter",
                             "owasp",
+                            "traffic_sources",
                             "vercel_ruleset"
                           ],
                           "type": "object"
@@ -110611,6 +110779,29 @@
                               ],
                               "type": "object"
                             },
+                            "traffic_sources": {
+                              "properties": {
+                                "active": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false,
+                                    true
+                                  ]
+                                },
+                                "action": {
+                                  "type": "string",
+                                  "enum": [
+                                    "challenge",
+                                    "deny",
+                                    "log"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "active"
+                              ],
+                              "type": "object"
+                            },
                             "bot_filter": {
                               "properties": {
                                 "active": {
@@ -110685,6 +110876,7 @@
                             "ai_bots",
                             "bot_filter",
                             "owasp",
+                            "traffic_sources",
                             "vercel_ruleset"
                           ],
                           "type": "object"
@@ -124911,6 +125103,29 @@
                               ],
                               "type": "object"
                             },
+                            "traffic_sources": {
+                              "properties": {
+                                "active": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false,
+                                    true
+                                  ]
+                                },
+                                "action": {
+                                  "type": "string",
+                                  "enum": [
+                                    "challenge",
+                                    "deny",
+                                    "log"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "active"
+                              ],
+                              "type": "object"
+                            },
                             "bot_filter": {
                               "properties": {
                                 "active": {
@@ -124985,6 +125200,7 @@
                             "ai_bots",
                             "bot_filter",
                             "owasp",
+                            "traffic_sources",
                             "vercel_ruleset"
                           ],
                           "type": "object"
@@ -132391,6 +132607,38 @@
                                 "active"
                               ],
                               "type": "object"
+                            },
+                            "traffic_sources": {
+                              "properties": {
+                                "active": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false,
+                                    true
+                                  ]
+                                },
+                                "action": {
+                                  "type": "string",
+                                  "enum": [
+                                    "challenge",
+                                    "deny",
+                                    "log"
+                                  ]
+                                },
+                                "updatedAt": {
+                                  "type": "string"
+                                },
+                                "userId": {
+                                  "type": "string"
+                                },
+                                "username": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "active"
+                              ],
+                              "type": "object"
                             }
                           },
                           "type": "object"
@@ -135122,6 +135370,38 @@
                           "type": "object"
                         },
                         "vercel_ruleset": {
+                          "properties": {
+                            "active": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            },
+                            "action": {
+                              "type": "string",
+                              "enum": [
+                                "challenge",
+                                "deny",
+                                "log"
+                              ]
+                            },
+                            "updatedAt": {
+                              "type": "string"
+                            },
+                            "userId": {
+                              "type": "string"
+                            },
+                            "username": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "active"
+                          ],
+                          "type": "object"
+                        },
+                        "traffic_sources": {
                           "properties": {
                             "active": {
                               "type": "boolean",
@@ -150642,6 +150922,7 @@
               "microfrontend-project-added-to-group",
               "microfrontend-project-removed-from-group",
               "microfrontend-project-updated",
+              "monitoring-alert-updated",
               "monitoring-disabled",
               "monitoring-enabled",
               "oauth-app-connection-created",
@@ -151408,6 +151689,7 @@
               "microfrontend-project-added-to-group",
               "microfrontend-project-removed-from-group",
               "microfrontend-project-updated",
+              "monitoring-alert-updated",
               "monitoring-disabled",
               "monitoring-enabled",
               "oauth-app-connection-created",
@@ -151967,6 +152249,7 @@
                 "microfrontend-project-added-to-group",
                 "microfrontend-project-removed-from-group",
                 "microfrontend-project-updated",
+                "monitoring-alert-updated",
                 "monitoring-disabled",
                 "monitoring-enabled",
                 "oauth-app-connection-created",
