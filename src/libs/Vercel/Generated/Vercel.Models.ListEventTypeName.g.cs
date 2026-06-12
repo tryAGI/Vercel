@@ -892,6 +892,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        MonitoringAlertUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         MonitoringDisabled,
         /// <summary>
         /// 
@@ -2247,6 +2251,7 @@ namespace Vercel
                 ListEventTypeName.MicrofrontendProjectAddedToGroup => "microfrontend-project-added-to-group",
                 ListEventTypeName.MicrofrontendProjectRemovedFromGroup => "microfrontend-project-removed-from-group",
                 ListEventTypeName.MicrofrontendProjectUpdated => "microfrontend-project-updated",
+                ListEventTypeName.MonitoringAlertUpdated => "monitoring-alert-updated",
                 ListEventTypeName.MonitoringDisabled => "monitoring-disabled",
                 ListEventTypeName.MonitoringEnabled => "monitoring-enabled",
                 ListEventTypeName.OauthAppConnectionCreated => "oauth-app-connection-created",
@@ -2758,6 +2763,7 @@ namespace Vercel
                 "microfrontend-project-added-to-group" => ListEventTypeName.MicrofrontendProjectAddedToGroup,
                 "microfrontend-project-removed-from-group" => ListEventTypeName.MicrofrontendProjectRemovedFromGroup,
                 "microfrontend-project-updated" => ListEventTypeName.MicrofrontendProjectUpdated,
+                "monitoring-alert-updated" => ListEventTypeName.MonitoringAlertUpdated,
                 "monitoring-disabled" => ListEventTypeName.MonitoringDisabled,
                 "monitoring-enabled" => ListEventTypeName.MonitoringEnabled,
                 "oauth-app-connection-created" => ListEventTypeName.OauthAppConnectionCreated,
