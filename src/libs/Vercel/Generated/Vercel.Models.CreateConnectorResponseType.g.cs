@@ -40,6 +40,10 @@ namespace Vercel
         /// 
         /// </summary>
         Snowflake,
+        /// <summary>
+        /// 
+        /// </summary>
+        SnowflakeWif,
     }
 
     /// <summary>
@@ -62,6 +66,7 @@ namespace Vercel
                 CreateConnectorResponseType.Salesforce => "salesforce",
                 CreateConnectorResponseType.Slack => "slack",
                 CreateConnectorResponseType.Snowflake => "snowflake",
+                CreateConnectorResponseType.SnowflakeWif => "snowflake-wif",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -80,6 +85,7 @@ namespace Vercel
                 "salesforce" => CreateConnectorResponseType.Salesforce,
                 "slack" => CreateConnectorResponseType.Slack,
                 "snowflake" => CreateConnectorResponseType.Snowflake,
+                "snowflake-wif" => CreateConnectorResponseType.SnowflakeWif,
                 _ => null,
             };
         }

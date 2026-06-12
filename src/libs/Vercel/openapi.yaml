@@ -11650,7 +11650,8 @@
                         "oauth",
                         "salesforce",
                         "slack",
-                        "snowflake"
+                        "snowflake",
+                        "snowflake-wif"
                       ]
                     },
                     "service": {
@@ -11998,7 +11999,7 @@
                 "properties": {
                   "type": {
                     "type": "string",
-                    "description": "Known types: api-key, github, oauth, salesforce, slack, snowflake."
+                    "description": "Known types: api-key, github, linear, oauth, salesforce, slack, snowflake."
                   },
                   "service": {
                     "type": "string",
@@ -12474,6 +12475,137 @@
                       {
                         "type": "object",
                         "properties": {
+                          "appId": {
+                            "type": "string"
+                          },
+                          "appName": {
+                            "type": "string"
+                          },
+                          "clientId": {
+                            "type": "string"
+                          },
+                          "clientSecret": {
+                            "type": "string"
+                          },
+                          "webhookSecret": {
+                            "type": "string"
+                          },
+                          "appScopes": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "userScopes": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "ownerOrganization": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "slug": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "logoUrl": {
+                                "type": "string",
+                                "nullable": true
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "slug",
+                              "name"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "application": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "clientId": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string",
+                                "nullable": true
+                              },
+                              "developer": {
+                                "type": "string",
+                                "nullable": true
+                              },
+                              "developerUrl": {
+                                "type": "string",
+                                "nullable": true
+                              },
+                              "imageUrl": {
+                                "type": "string",
+                                "nullable": true
+                              },
+                              "redirectUris": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "distribution": {
+                                "type": "string",
+                                "nullable": true
+                              },
+                              "webhookResourceTypes": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "webhookUrl": {
+                                "type": "string",
+                                "nullable": true
+                              },
+                              "webhookEnabled": {
+                                "type": "boolean"
+                              },
+                              "createdAt": {
+                                "type": "string"
+                              },
+                              "updatedAt": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "clientId",
+                              "name"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "extras": {
+                            "type": "object",
+                            "additionalProperties": {}
+                          }
+                        },
+                        "required": [
+                          "clientId",
+                          "clientSecret"
+                        ],
+                        "additionalProperties": false,
+                        "title": "type:linear"
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
                           "consumerKey": {
                             "type": "string"
                           },
@@ -12566,22 +12698,7 @@
                           "accountIdentifier": {
                             "type": "string"
                           },
-                          "serviceUsername": {
-                            "type": "string"
-                          },
-                          "serviceRole": {
-                            "type": "string"
-                          },
                           "defaultSessionRole": {
-                            "type": "string"
-                          },
-                          "privateKeyPem": {
-                            "type": "string"
-                          },
-                          "publicKeyPem": {
-                            "type": "string"
-                          },
-                          "publicKeyFingerprint": {
                             "type": "string"
                           },
                           "extras": {
@@ -12595,6 +12712,26 @@
                         ],
                         "additionalProperties": false,
                         "title": "type:snowflake"
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "clientName": {
+                            "type": "string"
+                          },
+                          "accountIdentifier": {
+                            "type": "string"
+                          },
+                          "extras": {
+                            "type": "object",
+                            "additionalProperties": {}
+                          }
+                        },
+                        "required": [
+                          "clientName"
+                        ],
+                        "additionalProperties": false,
+                        "title": "type:snowflake-wif"
                       },
                       {
                         "title": "type:other",
@@ -134242,6 +134379,7 @@
                           "ai_bots",
                           "bot_filter",
                           "bot_protection",
+                          "traffic_sources",
                           "vercel_ruleset",
                           "owasp"
                         ]
@@ -134287,6 +134425,7 @@
                           "ai_bots",
                           "bot_filter",
                           "bot_protection",
+                          "traffic_sources",
                           "vercel_ruleset",
                           "owasp"
                         ]
