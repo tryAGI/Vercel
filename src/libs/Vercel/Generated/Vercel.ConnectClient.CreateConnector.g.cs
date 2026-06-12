@@ -598,7 +598,7 @@ namespace Vercel
         /// Create a connector from type-specific configuration and optionally link it to a project during creation.
         /// </summary>
         /// <param name="type">
-        /// Known types: api-key, github, oauth, salesforce, slack, snowflake.
+        /// Known types: api-key, github, linear, oauth, salesforce, slack, snowflake.
         /// </param>
         /// <param name="service">
         /// Service slug or URL for which the connector is used.
@@ -632,7 +632,7 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.CreateConnectorResponse> CreateConnectorAsync(
             string type,
-            global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, object> data,
+            global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, object> data,
             string? service = default,
             string? uid = default,
             string? name = default,
