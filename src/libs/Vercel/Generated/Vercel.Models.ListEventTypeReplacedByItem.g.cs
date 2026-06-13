@@ -95,6 +95,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayProviderAllowlistProvidersUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayProviderAllowlistToggled,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayVirtualModelConfigArchived,
         /// <summary>
         /// 
@@ -2051,6 +2059,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                ListEventTypeReplacedByItem.AiGatewayProviderAllowlistProvidersUpdated => "ai-gateway-provider-allowlist-providers-updated",
+                ListEventTypeReplacedByItem.AiGatewayProviderAllowlistToggled => "ai-gateway-provider-allowlist-toggled",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
@@ -2563,6 +2573,8 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated,
+                "ai-gateway-provider-allowlist-providers-updated" => ListEventTypeReplacedByItem.AiGatewayProviderAllowlistProvidersUpdated,
+                "ai-gateway-provider-allowlist-toggled" => ListEventTypeReplacedByItem.AiGatewayProviderAllowlistToggled,
                 "ai-gateway-virtual-model-config-archived" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigArchived,
                 "ai-gateway-virtual-model-config-created" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigCreated,
                 "ai-gateway-virtual-model-config-restored" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigRestored,

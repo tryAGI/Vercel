@@ -43,6 +43,13 @@ namespace Vercel
         public required double ExpiresAt { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connector")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.CreateConnectorAuthorizationRequestResponseConnector Connector { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -55,6 +62,7 @@ namespace Vercel
         /// <param name="request"></param>
         /// <param name="verifier"></param>
         /// <param name="expiresAt"></param>
+        /// <param name="connector"></param>
         /// <param name="deviceCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -64,6 +72,7 @@ namespace Vercel
             string request,
             string verifier,
             double expiresAt,
+            global::Vercel.CreateConnectorAuthorizationRequestResponseConnector connector,
             string? deviceCode)
         {
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
@@ -71,6 +80,7 @@ namespace Vercel
             this.Verifier = verifier ?? throw new global::System.ArgumentNullException(nameof(verifier));
             this.DeviceCode = deviceCode;
             this.ExpiresAt = expiresAt;
+            this.Connector = connector ?? throw new global::System.ArgumentNullException(nameof(connector));
         }
 
         /// <summary>

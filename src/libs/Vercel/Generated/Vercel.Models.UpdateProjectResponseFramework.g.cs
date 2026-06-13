@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -309,6 +313,7 @@ namespace Vercel
                 UpdateProjectResponseFramework.Axum => "axum",
                 UpdateProjectResponseFramework.Blitzjs => "blitzjs",
                 UpdateProjectResponseFramework.Brunch => "brunch",
+                UpdateProjectResponseFramework.Bun => "bun",
                 UpdateProjectResponseFramework.CreateReactApp => "create-react-app",
                 UpdateProjectResponseFramework.Django => "django",
                 UpdateProjectResponseFramework.Docusaurus => "docusaurus",
@@ -389,6 +394,7 @@ namespace Vercel
                 "axum" => UpdateProjectResponseFramework.Axum,
                 "blitzjs" => UpdateProjectResponseFramework.Blitzjs,
                 "brunch" => UpdateProjectResponseFramework.Brunch,
+                "bun" => UpdateProjectResponseFramework.Bun,
                 "create-react-app" => UpdateProjectResponseFramework.CreateReactApp,
                 "django" => UpdateProjectResponseFramework.Django,
                 "docusaurus" => UpdateProjectResponseFramework.Docusaurus,
