@@ -5914,6 +5914,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AssignAliasResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListAliasesResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListAliasesResponseAliase>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListAliasesResponseAliase))]
@@ -6413,7 +6414,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.SegmentDataExcludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.SandboxInjectionRule>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.InvitedTeamMemberTeamRole>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.InvitedTeamMemberTeamPermission>))]
     internal sealed partial class SourceGenerationContextChunk016 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -5914,6 +5914,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDrainResponseVariant2FilterV2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDrainResponseVariant2FilterV2Version), TypeInfoPropertyName = "UpdateDrainResponseVariant2FilterV2Version2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateDrainResponseVariant2FilterV2FilterVariant1, global::Vercel.UpdateDrainResponseVariant2FilterV2FilterVariant2>), TypeInfoPropertyName = "OneOfUpdateDrainResponseVariant2FilterV2FilterVariant1UpdateDrainResponseVariant2FilterV2FilterVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDrainResponseVariant2FilterV2FilterVariant1))]
@@ -6413,7 +6414,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSdkKeysResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSdkKeysResponseDataItemType), TypeInfoPropertyName = "GetSdkKeysResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GitNamespacesResponseItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GitNamespacesResponseItem))]
     internal sealed partial class SourceGenerationContextChunk007 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

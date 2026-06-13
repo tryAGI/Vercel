@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -309,6 +313,7 @@ namespace Vercel
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Axum => "axum",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Blitzjs => "blitzjs",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Brunch => "brunch",
+                GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Bun => "bun",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.CreateReactApp => "create-react-app",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Django => "django",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Docusaurus => "docusaurus",
@@ -389,6 +394,7 @@ namespace Vercel
                 "axum" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Axum,
                 "blitzjs" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Blitzjs,
                 "brunch" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Brunch,
+                "bun" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Bun,
                 "create-react-app" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.CreateReactApp,
                 "django" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Django,
                 "docusaurus" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Docusaurus,

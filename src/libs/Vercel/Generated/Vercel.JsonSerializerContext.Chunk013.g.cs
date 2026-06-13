@@ -5914,6 +5914,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UpdateProjectResponseInternalRouteVariant1, global::Vercel.UpdateProjectResponseInternalRouteVariant2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateProjectResponseInternalRouteVariant1, global::Vercel.UpdateProjectResponseInternalRouteVariant2>), TypeInfoPropertyName = "OneOfUpdateProjectResponseInternalRouteVariant1UpdateProjectResponseInternalRouteVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseInternalRouteVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseInternalRouteVariant2))]
@@ -6413,7 +6414,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateRollingReleaseConfigResponseVariant1, global::Vercel.UpdateRollingReleaseConfigResponseVariant2>), TypeInfoPropertyName = "OneOfUpdateRollingReleaseConfigResponseVariant1UpdateRollingReleaseConfigResponseVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateRollingReleaseConfigResponseVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateRollingReleaseConfigResponseVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateRollingReleaseConfigResponseVariant2RollingRelease))]
     internal sealed partial class SourceGenerationContextChunk013 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

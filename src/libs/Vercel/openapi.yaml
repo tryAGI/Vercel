@@ -12837,6 +12837,9 @@
           },
           "429": {
             "description": ""
+          },
+          "504": {
+            "description": ""
           }
         },
         "parameters": [
@@ -13016,9 +13019,45 @@
                     },
                     "expiresAt": {
                       "type": "number"
+                    },
+                    "connector": {
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "Client id (e.g. `scl_\u2026`)."
+                        },
+                        "uid": {
+                          "type": "string",
+                          "description": "Client uid (e.g. `salesforce/my-org`)."
+                        },
+                        "type": {
+                          "type": "string",
+                          "description": "Client type (e.g. `oauth`, `salesforce`)."
+                        },
+                        "service": {
+                          "type": "string",
+                          "description": "Resolved service id when known (e.g. `salesforce`), following the `stored.service ?? typeDef.service ?? stored.type` convention."
+                        },
+                        "serviceName": {
+                          "type": "string",
+                          "description": "Curated display name of the resolved service (e.g. \"Salesforce\"), present when the service is a known service. Suited for end-user surfaces like \"Sign in with {serviceName}\"."
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": "The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one."
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name",
+                        "type",
+                        "uid"
+                      ],
+                      "type": "object"
                     }
                   },
                   "required": [
+                    "connector",
                     "expiresAt",
                     "request",
                     "url",
@@ -14211,6 +14250,7 @@
                                 "axum",
                                 "blitzjs",
                                 "brunch",
+                                "bun",
                                 "create-react-app",
                                 "django",
                                 "docusaurus",
@@ -18891,6 +18931,7 @@
                             "axum",
                             "blitzjs",
                             "brunch",
+                            "bun",
                             "create-react-app",
                             "django",
                             "docusaurus",
@@ -22630,6 +22671,7 @@
                           "rust",
                           "axum",
                           "actix-web",
+                          "bun",
                           "node",
                           "go",
                           "services",
@@ -22852,6 +22894,7 @@
                             "axum",
                             "blitzjs",
                             "brunch",
+                            "bun",
                             "create-react-app",
                             "django",
                             "docusaurus",
@@ -32593,6 +32636,7 @@
                               "axum",
                               "blitzjs",
                               "brunch",
+                              "bun",
                               "create-react-app",
                               "django",
                               "docusaurus",
@@ -32843,6 +32887,7 @@
                                     "axum",
                                     "blitzjs",
                                     "brunch",
+                                    "bun",
                                     "create-react-app",
                                     "django",
                                     "docusaurus",
@@ -62104,6 +62149,7 @@
                               "axum",
                               "blitzjs",
                               "brunch",
+                              "bun",
                               "create-react-app",
                               "django",
                               "docusaurus",
@@ -62197,6 +62243,7 @@
                                     "axum",
                                     "blitzjs",
                                     "brunch",
+                                    "bun",
                                     "create-react-app",
                                     "django",
                                     "docusaurus",
@@ -74678,6 +74725,7 @@
                               "axum",
                               "blitzjs",
                               "brunch",
+                              "bun",
                               "create-react-app",
                               "django",
                               "docusaurus",
@@ -78010,6 +78058,7 @@
                                   "axum",
                                   "blitzjs",
                                   "brunch",
+                                  "bun",
                                   "create-react-app",
                                   "django",
                                   "docusaurus",
@@ -81547,6 +81596,7 @@
                                   "axum",
                                   "blitzjs",
                                   "brunch",
+                                  "bun",
                                   "create-react-app",
                                   "django",
                                   "docusaurus",
@@ -81640,6 +81690,7 @@
                                         "axum",
                                         "blitzjs",
                                         "brunch",
+                                        "bun",
                                         "create-react-app",
                                         "django",
                                         "docusaurus",
@@ -87654,6 +87705,7 @@
                         "axum",
                         "blitzjs",
                         "brunch",
+                        "bun",
                         "create-react-app",
                         "django",
                         "docusaurus",
@@ -87747,6 +87799,7 @@
                               "axum",
                               "blitzjs",
                               "brunch",
+                              "bun",
                               "create-react-app",
                               "django",
                               "docusaurus",
@@ -93042,6 +93095,7 @@
                       "rust",
                       "axum",
                       "actix-web",
+                      "bun",
                       "node",
                       "go",
                       "services",
@@ -93997,6 +94051,7 @@
                         "axum",
                         "blitzjs",
                         "brunch",
+                        "bun",
                         "create-react-app",
                         "django",
                         "docusaurus",
@@ -94090,6 +94145,7 @@
                               "axum",
                               "blitzjs",
                               "brunch",
+                              "bun",
                               "create-react-app",
                               "django",
                               "docusaurus",
@@ -99918,6 +99974,7 @@
                         "axum",
                         "blitzjs",
                         "brunch",
+                        "bun",
                         "create-react-app",
                         "django",
                         "docusaurus",
@@ -100011,6 +100068,7 @@
                               "axum",
                               "blitzjs",
                               "brunch",
+                              "bun",
                               "create-react-app",
                               "django",
                               "docusaurus",
@@ -105253,6 +105311,7 @@
                       "rust",
                       "axum",
                       "actix-web",
+                      "bun",
                       "node",
                       "go",
                       "services",
@@ -107038,6 +107097,7 @@
                         "axum",
                         "blitzjs",
                         "brunch",
+                        "bun",
                         "create-react-app",
                         "django",
                         "docusaurus",
@@ -107131,6 +107191,7 @@
                               "axum",
                               "blitzjs",
                               "brunch",
+                              "bun",
                               "create-react-app",
                               "django",
                               "docusaurus",
@@ -121362,6 +121423,7 @@
                         "axum",
                         "blitzjs",
                         "brunch",
+                        "bun",
                         "create-react-app",
                         "django",
                         "docusaurus",
@@ -121455,6 +121517,7 @@
                               "axum",
                               "blitzjs",
                               "brunch",
+                              "bun",
                               "create-react-app",
                               "django",
                               "docusaurus",
@@ -136608,6 +136671,7 @@
                                   "axum",
                                   "blitzjs",
                                   "brunch",
+                                  "bun",
                                   "create-react-app",
                                   "django",
                                   "docusaurus",
@@ -145085,6 +145149,7 @@
                                     "axum",
                                     "blitzjs",
                                     "brunch",
+                                    "bun",
                                     "create-react-app",
                                     "django",
                                     "docusaurus",
@@ -148641,6 +148706,7 @@
                                   "axum",
                                   "blitzjs",
                                   "brunch",
+                                  "bun",
                                   "create-react-app",
                                   "django",
                                   "docusaurus",
@@ -150862,6 +150928,8 @@
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-provider-allowlist-providers-updated",
+              "ai-gateway-provider-allowlist-toggled",
               "ai-gateway-virtual-model-config-archived",
               "ai-gateway-virtual-model-config-created",
               "ai-gateway-virtual-model-config-restored",
@@ -151629,6 +151697,8 @@
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-provider-allowlist-providers-updated",
+              "ai-gateway-provider-allowlist-toggled",
               "ai-gateway-virtual-model-config-archived",
               "ai-gateway-virtual-model-config-created",
               "ai-gateway-virtual-model-config-restored",
@@ -152189,6 +152259,8 @@
                 "ai-gateway-byok-credential-created",
                 "ai-gateway-byok-credential-deleted",
                 "ai-gateway-byok-credential-updated",
+                "ai-gateway-provider-allowlist-providers-updated",
+                "ai-gateway-provider-allowlist-toggled",
                 "ai-gateway-virtual-model-config-archived",
                 "ai-gateway-virtual-model-config-created",
                 "ai-gateway-virtual-model-config-restored",

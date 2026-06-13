@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -309,6 +313,7 @@ namespace Vercel
                 GetMicrofrontendsInGroupResponseProjectServiceFramework.Axum => "axum",
                 GetMicrofrontendsInGroupResponseProjectServiceFramework.Blitzjs => "blitzjs",
                 GetMicrofrontendsInGroupResponseProjectServiceFramework.Brunch => "brunch",
+                GetMicrofrontendsInGroupResponseProjectServiceFramework.Bun => "bun",
                 GetMicrofrontendsInGroupResponseProjectServiceFramework.CreateReactApp => "create-react-app",
                 GetMicrofrontendsInGroupResponseProjectServiceFramework.Django => "django",
                 GetMicrofrontendsInGroupResponseProjectServiceFramework.Docusaurus => "docusaurus",
@@ -389,6 +394,7 @@ namespace Vercel
                 "axum" => GetMicrofrontendsInGroupResponseProjectServiceFramework.Axum,
                 "blitzjs" => GetMicrofrontendsInGroupResponseProjectServiceFramework.Blitzjs,
                 "brunch" => GetMicrofrontendsInGroupResponseProjectServiceFramework.Brunch,
+                "bun" => GetMicrofrontendsInGroupResponseProjectServiceFramework.Bun,
                 "create-react-app" => GetMicrofrontendsInGroupResponseProjectServiceFramework.CreateReactApp,
                 "django" => GetMicrofrontendsInGroupResponseProjectServiceFramework.Django,
                 "docusaurus" => GetMicrofrontendsInGroupResponseProjectServiceFramework.Docusaurus,

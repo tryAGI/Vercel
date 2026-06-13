@@ -5914,6 +5914,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseCustomEnvironmentType), TypeInfoPropertyName = "GetProjectResponseCustomEnvironmentType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseCustomEnvironmentBranchMatcher))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseCustomEnvironmentBranchMatcherType), TypeInfoPropertyName = "GetProjectResponseCustomEnvironmentBranchMatcherType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseCustomEnvironmentDomain>))]
@@ -6413,7 +6414,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseAbuseInterstitialHistoryItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAbuseInterstitialHistoryItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAbuseInterstitialHistoryItemAction), TypeInfoPropertyName = "UpdateProjectResponseAbuseInterstitialHistoryItemAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UpdateProjectResponseInternalRouteVariant1, global::Vercel.UpdateProjectResponseInternalRouteVariant2>>))]
     internal sealed partial class SourceGenerationContextChunk012 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

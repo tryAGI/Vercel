@@ -5914,6 +5914,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseManualProvisioningState), TypeInfoPropertyName = "CreateDeploymentResponseManualProvisioningState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseNodeVersion), TypeInfoPropertyName = "CreateDeploymentResponseNodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseProject))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseReadySubstate), TypeInfoPropertyName = "CreateDeploymentResponseReadySubstate2")]
@@ -6413,7 +6414,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurableLogDrainResponseProjectsMetadataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurableLogDrainResponseProjectsMetadataItemFramework), TypeInfoPropertyName = "GetConfigurableLogDrainResponseProjectsMetadataItemFramework2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItem>, global::Vercel.GetAllLogDrainsResponse2>), TypeInfoPropertyName = "OneOfIListGetAllLogDrainsResponseItemGetAllLogDrainsResponse22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItem>))]
     internal sealed partial class SourceGenerationContextChunk005 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
