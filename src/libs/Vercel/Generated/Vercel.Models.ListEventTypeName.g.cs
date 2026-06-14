@@ -104,6 +104,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayRuleCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayRuleDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayRuleUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayVirtualModelConfigArchived,
         /// <summary>
         /// 
@@ -2062,6 +2074,9 @@ namespace Vercel
                 ListEventTypeName.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
                 ListEventTypeName.AiGatewayProviderAllowlistProvidersUpdated => "ai-gateway-provider-allowlist-providers-updated",
                 ListEventTypeName.AiGatewayProviderAllowlistToggled => "ai-gateway-provider-allowlist-toggled",
+                ListEventTypeName.AiGatewayRuleCreated => "ai-gateway-rule-created",
+                ListEventTypeName.AiGatewayRuleDeleted => "ai-gateway-rule-deleted",
+                ListEventTypeName.AiGatewayRuleUpdated => "ai-gateway-rule-updated",
                 ListEventTypeName.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
                 ListEventTypeName.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
                 ListEventTypeName.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
@@ -2576,6 +2591,9 @@ namespace Vercel
                 "ai-gateway-byok-credential-updated" => ListEventTypeName.AiGatewayByokCredentialUpdated,
                 "ai-gateway-provider-allowlist-providers-updated" => ListEventTypeName.AiGatewayProviderAllowlistProvidersUpdated,
                 "ai-gateway-provider-allowlist-toggled" => ListEventTypeName.AiGatewayProviderAllowlistToggled,
+                "ai-gateway-rule-created" => ListEventTypeName.AiGatewayRuleCreated,
+                "ai-gateway-rule-deleted" => ListEventTypeName.AiGatewayRuleDeleted,
+                "ai-gateway-rule-updated" => ListEventTypeName.AiGatewayRuleUpdated,
                 "ai-gateway-virtual-model-config-archived" => ListEventTypeName.AiGatewayVirtualModelConfigArchived,
                 "ai-gateway-virtual-model-config-created" => ListEventTypeName.AiGatewayVirtualModelConfigCreated,
                 "ai-gateway-virtual-model-config-restored" => ListEventTypeName.AiGatewayVirtualModelConfigRestored,
