@@ -64300,6 +64300,12 @@
                                 },
                                 "type": "array"
                               },
+                              "aiGatewayRules": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "aiGatewayUsage": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -83405,6 +83411,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "aiGatewayRules": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "aiGatewayUsage": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -89509,6 +89521,12 @@
                           "type": "array"
                         },
                         "agent": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayRules": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -95860,6 +95878,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayRules": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayUsage": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -101778,6 +101802,12 @@
                           "type": "array"
                         },
                         "agent": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayRules": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -108901,6 +108931,12 @@
                           "type": "array"
                         },
                         "agent": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayRules": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -123227,6 +123263,12 @@
                           "type": "array"
                         },
                         "agent": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayRules": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -150930,6 +150972,9 @@
               "ai-gateway-byok-credential-updated",
               "ai-gateway-provider-allowlist-providers-updated",
               "ai-gateway-provider-allowlist-toggled",
+              "ai-gateway-rule-created",
+              "ai-gateway-rule-deleted",
+              "ai-gateway-rule-updated",
               "ai-gateway-virtual-model-config-archived",
               "ai-gateway-virtual-model-config-created",
               "ai-gateway-virtual-model-config-restored",
@@ -151699,6 +151744,9 @@
               "ai-gateway-byok-credential-updated",
               "ai-gateway-provider-allowlist-providers-updated",
               "ai-gateway-provider-allowlist-toggled",
+              "ai-gateway-rule-created",
+              "ai-gateway-rule-deleted",
+              "ai-gateway-rule-updated",
               "ai-gateway-virtual-model-config-archived",
               "ai-gateway-virtual-model-config-created",
               "ai-gateway-virtual-model-config-restored",
@@ -152261,6 +152309,9 @@
                 "ai-gateway-byok-credential-updated",
                 "ai-gateway-provider-allowlist-providers-updated",
                 "ai-gateway-provider-allowlist-toggled",
+                "ai-gateway-rule-created",
+                "ai-gateway-rule-deleted",
+                "ai-gateway-rule-updated",
                 "ai-gateway-virtual-model-config-archived",
                 "ai-gateway-virtual-model-config-created",
                 "ai-gateway-virtual-model-config-restored",
