@@ -1,0 +1,84 @@
+#nullable enable
+
+namespace Vercel
+{
+    public partial interface IDomainsClient
+    {
+        /// <summary>
+        /// List Project Domains by Apex Domain<br/>
+        /// List all project domains associated with an apex domain owned by the authenticated account.
+        /// </summary>
+        /// <param name="domain">
+        /// The apex domain name.<br/>
+        /// Example: example.com
+        /// </param>
+        /// <param name="limit">
+        /// Maximum number of project domains to list from a request.<br/>
+        /// Example: 20
+        /// </param>
+        /// <param name="since">
+        /// Get project domains created after this JavaScript timestamp.<br/>
+        /// Example: 1609499532000L
+        /// </param>
+        /// <param name="until">
+        /// Get project domains created before this JavaScript timestamp.<br/>
+        /// Example: 1612264332000L
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.GetDomainProjectDomainsResponse> GetDomainProjectDomainsAsync(
+            string domain,
+            double? limit = default,
+            double? since = default,
+            double? until = default,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// List Project Domains by Apex Domain<br/>
+        /// List all project domains associated with an apex domain owned by the authenticated account.
+        /// </summary>
+        /// <param name="domain">
+        /// The apex domain name.<br/>
+        /// Example: example.com
+        /// </param>
+        /// <param name="limit">
+        /// Maximum number of project domains to list from a request.<br/>
+        /// Example: 20
+        /// </param>
+        /// <param name="since">
+        /// Get project domains created after this JavaScript timestamp.<br/>
+        /// Example: 1609499532000L
+        /// </param>
+        /// <param name="until">
+        /// Get project domains created before this JavaScript timestamp.<br/>
+        /// Example: 1612264332000L
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetDomainProjectDomainsResponse>> GetDomainProjectDomainsAsResponseAsync(
+            string domain,
+            double? limit = default,
+            double? since = default,
+            double? until = default,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

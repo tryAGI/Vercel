@@ -31478,6 +31478,206 @@
         ]
       }
     },
+    "/v1/domains/{domain}/project-domains": {
+      "get": {
+        "description": "List all project domains associated with an apex domain owned by the authenticated account.",
+        "operationId": "getDomainProjectDomains",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List Project Domains by Apex Domain",
+        "tags": [
+          "domains"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response retrieving project domains for an apex domain.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "projectDomains": {
+                      "items": {
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "apexName": {
+                            "type": "string"
+                          },
+                          "projectId": {
+                            "type": "string"
+                          },
+                          "redirect": {
+                            "nullable": true,
+                            "type": "string"
+                          },
+                          "redirectStatusCode": {
+                            "nullable": true,
+                            "type": "number",
+                            "enum": [
+                              301,
+                              302,
+                              307,
+                              308,
+                              null
+                            ]
+                          },
+                          "gitBranch": {
+                            "nullable": true,
+                            "type": "string"
+                          },
+                          "customEnvironmentId": {
+                            "nullable": true,
+                            "type": "string"
+                          },
+                          "updatedAt": {
+                            "type": "number"
+                          },
+                          "createdAt": {
+                            "type": "number"
+                          },
+                          "verified": {
+                            "type": "boolean",
+                            "enum": [
+                              false,
+                              true
+                            ],
+                            "description": "`true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed."
+                          },
+                          "verification": {
+                            "items": {
+                              "properties": {
+                                "type": {
+                                  "type": "string"
+                                },
+                                "domain": {
+                                  "type": "string"
+                                },
+                                "value": {
+                                  "type": "string"
+                                },
+                                "reason": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "domain",
+                                "reason",
+                                "type",
+                                "value"
+                              ],
+                              "type": "object",
+                              "description": "A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`."
+                            },
+                            "type": "array",
+                            "description": "A list of verification challenges, one of which must be completed to verify the domain for use on the project. After the challenge is complete `POST /projects/:idOrName/domains/:domain/verify` to verify the domain. Possible challenges: - If `verification.type = TXT` the `verification.domain` will be checked for a TXT record matching `verification.value`."
+                          }
+                        },
+                        "required": [
+                          "apexName",
+                          "name",
+                          "projectId",
+                          "verified"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "pagination": {
+                      "$ref": "#/components/schemas/Pagination"
+                    }
+                  },
+                  "required": [
+                    "pagination",
+                    "projectDomains"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "The apex domain name.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "description": "The apex domain name.",
+              "type": "string",
+              "example": "example.com"
+            }
+          },
+          {
+            "name": "limit",
+            "description": "Maximum number of project domains to list from a request.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Maximum number of project domains to list from a request.",
+              "type": "number",
+              "example": 20
+            }
+          },
+          {
+            "name": "since",
+            "description": "Get project domains created after this JavaScript timestamp.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Get project domains created after this JavaScript timestamp.",
+              "type": "number",
+              "example": 1609499532000
+            }
+          },
+          {
+            "name": "until",
+            "description": "Get project domains created before this JavaScript timestamp.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Get project domains created before this JavaScript timestamp.",
+              "type": "number",
+              "example": 1612264332000
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
     "/v5/domains/{domain}": {
       "get": {
         "description": "Get information for a single domain in an account or team.",
