@@ -99,9 +99,6 @@ namespace Vercel
         /// <param name="outputDirectory">
         /// The output directory of the project. When `null` is used this value will be automatically detected
         /// </param>
-        /// <param name="publicSource">
-        /// Specifies whether the source code and logs of the deployments for this project should be public or not
-        /// </param>
         /// <param name="rootDirectory">
         /// The name of a directory or relative path to the source code of your project. When `null` is used it will default to the project root
         /// </param>
@@ -140,7 +137,6 @@ namespace Vercel
             string? installCommand = default,
             global::Vercel.CreateProjectRequestSsoProtection? ssoProtection = default,
             string? outputDirectory = default,
-            bool? publicSource = default,
             string? rootDirectory = default,
             string? serverlessFunctionRegion = default,
             bool? serverlessFunctionZeroConfigFailover = default,

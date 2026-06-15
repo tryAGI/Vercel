@@ -64337,15 +64337,6 @@
                               true
                             ]
                           },
-                          "publicSource": {
-                            "nullable": true,
-                            "type": "boolean",
-                            "enum": [
-                              false,
-                              true,
-                              null
-                            ]
-                          },
                           "resourceConfig": {
                             "properties": {
                               "fluid": {
@@ -76370,15 +76361,6 @@
                             ],
                             "type": "object"
                           },
-                          "publicSource": {
-                            "nullable": true,
-                            "type": "boolean",
-                            "enum": [
-                              false,
-                              true,
-                              null
-                            ]
-                          },
                           "resourceConfig": {
                             "properties": {
                               "elasticConcurrencyEnabled": {
@@ -79702,15 +79684,6 @@
                                   "deploymentType"
                                 ],
                                 "type": "object"
-                              },
-                              "publicSource": {
-                                "nullable": true,
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true,
-                                  null
-                                ]
                               },
                               "resourceConfig": {
                                 "properties": {
@@ -83617,15 +83590,6 @@
                                 "enum": [
                                   false,
                                   true
-                                ]
-                              },
-                              "publicSource": {
-                                "nullable": true,
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true,
-                                  null
                                 ]
                               },
                               "resourceConfig": {
@@ -89734,15 +89698,6 @@
                         true
                       ]
                     },
-                    "publicSource": {
-                      "nullable": true,
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true,
-                        null
-                      ]
-                    },
                     "resourceConfig": {
                       "properties": {
                         "elasticConcurrencyEnabled": {
@@ -94052,11 +94007,6 @@
                     "type": "string",
                     "nullable": true
                   },
-                  "publicSource": {
-                    "description": "Specifies whether the source code and logs of the deployments for this project should be public or not",
-                    "type": "boolean",
-                    "nullable": true
-                  },
                   "rootDirectory": {
                     "description": "The name of a directory or relative path to the source code of your project. When `null` is used it will default to the project root",
                     "maxLength": 256,
@@ -96084,15 +96034,6 @@
                       "enum": [
                         false,
                         true
-                      ]
-                    },
-                    "publicSource": {
-                      "nullable": true,
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true,
-                        null
                       ]
                     },
                     "resourceConfig": {
@@ -102015,15 +101956,6 @@
                         true
                       ]
                     },
-                    "publicSource": {
-                      "nullable": true,
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true,
-                        null
-                      ]
-                    },
                     "resourceConfig": {
                       "properties": {
                         "elasticConcurrencyEnabled": {
@@ -106051,7 +105983,10 @@
             "description": "The provided name for the project is already being used\nThe project is currently being transferred."
           },
           "428": {
-            "description": "Owner does not have protection add-on\nAdvanced Deployment Protection is not available for the user plan"
+            "description": "Owner does not have protection add-on"
+          },
+          "500": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -106268,11 +106203,6 @@
                     "description": "Custom domain suffix for preview deployments. Takes precedence over team-level suffix. Must be a domain owned by the team.",
                     "type": "string",
                     "maxLength": 253,
-                    "nullable": true
-                  },
-                  "publicSource": {
-                    "description": "Specifies whether the source code and logs of the deployments for this project should be public or not",
-                    "type": "boolean",
                     "nullable": true
                   },
                   "resourceConfig": {
@@ -109142,15 +109072,6 @@
                       "enum": [
                         false,
                         true
-                      ]
-                    },
-                    "publicSource": {
-                      "nullable": true,
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true,
-                        null
                       ]
                     },
                     "resourceConfig": {
@@ -123474,15 +123395,6 @@
                       "enum": [
                         false,
                         true
-                      ]
-                    },
-                    "publicSource": {
-                      "nullable": true,
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true,
-                        null
                       ]
                     },
                     "resourceConfig": {
@@ -143426,7 +143338,7 @@
             "description": "You do not have permission to access this resource.\nNot authorized to update the team. Must be an OWNER."
           },
           "428": {
-            "description": "Owner does not have protection add-on\nAdvanced Deployment Protection is not available for the user plan"
+            "description": "Owner does not have protection add-on"
           }
         },
         "x-vercel-cli": {
@@ -149734,15 +149646,6 @@
                               "outputDirectory": {
                                 "nullable": true,
                                 "type": "string"
-                              },
-                              "publicSource": {
-                                "nullable": true,
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true,
-                                  null
-                                ]
                               },
                               "rootDirectory": {
                                 "nullable": true,

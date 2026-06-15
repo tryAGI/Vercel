@@ -280,12 +280,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
-        public bool? PublicSource { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetProjectResponseResourceConfig ResourceConfig { get; set; }
@@ -655,7 +649,6 @@ namespace Vercel
         /// <param name="passport"></param>
         /// <param name="protectionConfig"></param>
         /// <param name="productionDeploymentsFastLane"></param>
-        /// <param name="publicSource"></param>
         /// <param name="rollbackDescription">
         /// Description of why a project was rolled back, and by whom. Note that lastAliasRequest contains the from/to details of the rollback.
         /// </param>
@@ -761,7 +754,6 @@ namespace Vercel
             global::Vercel.GetProjectResponsePassport? passport,
             global::Vercel.GetProjectResponseProtectionConfig? protectionConfig,
             bool? productionDeploymentsFastLane,
-            bool? publicSource,
             global::Vercel.GetProjectResponseRollbackDescription? rollbackDescription,
             global::Vercel.GetProjectResponseRollingRelease? rollingRelease,
             string? rootDirectory,
@@ -856,7 +848,6 @@ namespace Vercel
             this.Passport = passport;
             this.ProtectionConfig = protectionConfig;
             this.ProductionDeploymentsFastLane = productionDeploymentsFastLane;
-            this.PublicSource = publicSource;
             this.ResourceConfig = resourceConfig ?? throw new global::System.ArgumentNullException(nameof(resourceConfig));
             this.RollbackDescription = rollbackDescription;
             this.RollingRelease = rollingRelease;
