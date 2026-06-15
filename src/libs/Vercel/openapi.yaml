@@ -33215,6 +33215,74 @@
                                           "type": {
                                             "type": "string",
                                             "enum": [
+                                              "s3"
+                                            ]
+                                          },
+                                          "endpoint": {
+                                            "type": "string"
+                                          },
+                                          "encoding": {
+                                            "type": "string",
+                                            "enum": [
+                                              "json",
+                                              "ndjson"
+                                            ]
+                                          },
+                                          "compression": {
+                                            "type": "string",
+                                            "enum": [
+                                              "none"
+                                            ]
+                                          },
+                                          "fileStructure": {
+                                            "type": "string",
+                                            "enum": [
+                                              "hive"
+                                            ]
+                                          },
+                                          "roleArn": {
+                                            "type": "string"
+                                          },
+                                          "region": {
+                                            "type": "string"
+                                          },
+                                          "serverSideEncryption": {
+                                            "type": "string",
+                                            "enum": [
+                                              "AES256",
+                                              "aws:kms",
+                                              "aws:kms:dsse"
+                                            ]
+                                          },
+                                          "objectAcl": {
+                                            "type": "string",
+                                            "enum": [
+                                              "authenticated-read",
+                                              "aws-exec-read",
+                                              "bucket-owner-full-control",
+                                              "bucket-owner-read",
+                                              "private",
+                                              "public-read",
+                                              "public-read-write"
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "compression",
+                                          "encoding",
+                                          "endpoint",
+                                          "fileStructure",
+                                          "region",
+                                          "roleArn",
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
                                               "internal"
                                             ]
                                           },
@@ -33649,6 +33717,74 @@
                                         "required": [
                                           "endpoint",
                                           "table",
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "s3"
+                                            ]
+                                          },
+                                          "endpoint": {
+                                            "type": "string"
+                                          },
+                                          "encoding": {
+                                            "type": "string",
+                                            "enum": [
+                                              "json",
+                                              "ndjson"
+                                            ]
+                                          },
+                                          "compression": {
+                                            "type": "string",
+                                            "enum": [
+                                              "none"
+                                            ]
+                                          },
+                                          "fileStructure": {
+                                            "type": "string",
+                                            "enum": [
+                                              "hive"
+                                            ]
+                                          },
+                                          "roleArn": {
+                                            "type": "string"
+                                          },
+                                          "region": {
+                                            "type": "string"
+                                          },
+                                          "serverSideEncryption": {
+                                            "type": "string",
+                                            "enum": [
+                                              "AES256",
+                                              "aws:kms",
+                                              "aws:kms:dsse"
+                                            ]
+                                          },
+                                          "objectAcl": {
+                                            "type": "string",
+                                            "enum": [
+                                              "authenticated-read",
+                                              "aws-exec-read",
+                                              "bucket-owner-full-control",
+                                              "bucket-owner-read",
+                                              "private",
+                                              "public-read",
+                                              "public-read-write"
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "compression",
+                                          "encoding",
+                                          "endpoint",
+                                          "fileStructure",
+                                          "region",
+                                          "roleArn",
                                           "type"
                                         ],
                                         "type": "object"
@@ -34400,6 +34536,74 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
+                                    "s3"
+                                  ]
+                                },
+                                "endpoint": {
+                                  "type": "string"
+                                },
+                                "encoding": {
+                                  "type": "string",
+                                  "enum": [
+                                    "json",
+                                    "ndjson"
+                                  ]
+                                },
+                                "compression": {
+                                  "type": "string",
+                                  "enum": [
+                                    "none"
+                                  ]
+                                },
+                                "fileStructure": {
+                                  "type": "string",
+                                  "enum": [
+                                    "hive"
+                                  ]
+                                },
+                                "roleArn": {
+                                  "type": "string"
+                                },
+                                "region": {
+                                  "type": "string"
+                                },
+                                "serverSideEncryption": {
+                                  "type": "string",
+                                  "enum": [
+                                    "AES256",
+                                    "aws:kms",
+                                    "aws:kms:dsse"
+                                  ]
+                                },
+                                "objectAcl": {
+                                  "type": "string",
+                                  "enum": [
+                                    "authenticated-read",
+                                    "aws-exec-read",
+                                    "bucket-owner-full-control",
+                                    "bucket-owner-read",
+                                    "private",
+                                    "public-read",
+                                    "public-read-write"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "compression",
+                                "encoding",
+                                "endpoint",
+                                "fileStructure",
+                                "region",
+                                "roleArn",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
                                     "internal"
                                   ]
                                 },
@@ -34831,6 +35035,74 @@
                               "required": [
                                 "endpoint",
                                 "table",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "s3"
+                                  ]
+                                },
+                                "endpoint": {
+                                  "type": "string"
+                                },
+                                "encoding": {
+                                  "type": "string",
+                                  "enum": [
+                                    "json",
+                                    "ndjson"
+                                  ]
+                                },
+                                "compression": {
+                                  "type": "string",
+                                  "enum": [
+                                    "none"
+                                  ]
+                                },
+                                "fileStructure": {
+                                  "type": "string",
+                                  "enum": [
+                                    "hive"
+                                  ]
+                                },
+                                "roleArn": {
+                                  "type": "string"
+                                },
+                                "region": {
+                                  "type": "string"
+                                },
+                                "serverSideEncryption": {
+                                  "type": "string",
+                                  "enum": [
+                                    "AES256",
+                                    "aws:kms",
+                                    "aws:kms:dsse"
+                                  ]
+                                },
+                                "objectAcl": {
+                                  "type": "string",
+                                  "enum": [
+                                    "authenticated-read",
+                                    "aws-exec-read",
+                                    "bucket-owner-full-control",
+                                    "bucket-owner-read",
+                                    "private",
+                                    "public-read",
+                                    "public-read-write"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "compression",
+                                "encoding",
+                                "endpoint",
+                                "fileStructure",
+                                "region",
+                                "roleArn",
                                 "type"
                               ],
                               "type": "object"
@@ -35377,6 +35649,68 @@
                             "type": "string"
                           }
                         }
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "type",
+                          "endpoint",
+                          "encoding",
+                          "compression",
+                          "fileStructure",
+                          "roleArn",
+                          "region"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "endpoint": {
+                            "type": "string"
+                          },
+                          "encoding": {
+                            "type": "string",
+                            "enum": [
+                              "json",
+                              "ndjson"
+                            ]
+                          },
+                          "compression": {
+                            "type": "string",
+                            "enum": [
+                              "none"
+                            ]
+                          },
+                          "fileStructure": {
+                            "type": "string",
+                            "enum": [
+                              "hive"
+                            ]
+                          },
+                          "roleArn": {
+                            "type": "string"
+                          },
+                          "region": {
+                            "type": "string"
+                          },
+                          "serverSideEncryption": {
+                            "type": "string",
+                            "enum": [
+                              "AES256",
+                              "aws:kms",
+                              "aws:kms:dsse"
+                            ]
+                          },
+                          "objectAcl": {
+                            "type": "string",
+                            "enum": [
+                              "private",
+                              "bucket-owner-read",
+                              "bucket-owner-full-control"
+                            ]
+                          }
+                        }
                       }
                     ]
                   },
@@ -35739,6 +36073,74 @@
                                     "required": [
                                       "endpoint",
                                       "table",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "s3"
+                                        ]
+                                      },
+                                      "endpoint": {
+                                        "type": "string"
+                                      },
+                                      "encoding": {
+                                        "type": "string",
+                                        "enum": [
+                                          "json",
+                                          "ndjson"
+                                        ]
+                                      },
+                                      "compression": {
+                                        "type": "string",
+                                        "enum": [
+                                          "none"
+                                        ]
+                                      },
+                                      "fileStructure": {
+                                        "type": "string",
+                                        "enum": [
+                                          "hive"
+                                        ]
+                                      },
+                                      "roleArn": {
+                                        "type": "string"
+                                      },
+                                      "region": {
+                                        "type": "string"
+                                      },
+                                      "serverSideEncryption": {
+                                        "type": "string",
+                                        "enum": [
+                                          "AES256",
+                                          "aws:kms",
+                                          "aws:kms:dsse"
+                                        ]
+                                      },
+                                      "objectAcl": {
+                                        "type": "string",
+                                        "enum": [
+                                          "authenticated-read",
+                                          "aws-exec-read",
+                                          "bucket-owner-full-control",
+                                          "bucket-owner-read",
+                                          "private",
+                                          "public-read",
+                                          "public-read-write"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "compression",
+                                      "encoding",
+                                      "endpoint",
+                                      "fileStructure",
+                                      "region",
+                                      "roleArn",
                                       "type"
                                     ],
                                     "type": "object"
@@ -36182,6 +36584,74 @@
                                     "required": [
                                       "endpoint",
                                       "table",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "s3"
+                                        ]
+                                      },
+                                      "endpoint": {
+                                        "type": "string"
+                                      },
+                                      "encoding": {
+                                        "type": "string",
+                                        "enum": [
+                                          "json",
+                                          "ndjson"
+                                        ]
+                                      },
+                                      "compression": {
+                                        "type": "string",
+                                        "enum": [
+                                          "none"
+                                        ]
+                                      },
+                                      "fileStructure": {
+                                        "type": "string",
+                                        "enum": [
+                                          "hive"
+                                        ]
+                                      },
+                                      "roleArn": {
+                                        "type": "string"
+                                      },
+                                      "region": {
+                                        "type": "string"
+                                      },
+                                      "serverSideEncryption": {
+                                        "type": "string",
+                                        "enum": [
+                                          "AES256",
+                                          "aws:kms",
+                                          "aws:kms:dsse"
+                                        ]
+                                      },
+                                      "objectAcl": {
+                                        "type": "string",
+                                        "enum": [
+                                          "authenticated-read",
+                                          "aws-exec-read",
+                                          "bucket-owner-full-control",
+                                          "bucket-owner-read",
+                                          "private",
+                                          "public-read",
+                                          "public-read-write"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "compression",
+                                      "encoding",
+                                      "endpoint",
+                                      "fileStructure",
+                                      "region",
+                                      "roleArn",
                                       "type"
                                     ],
                                     "type": "object"
@@ -36836,6 +37306,74 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
+                                    "s3"
+                                  ]
+                                },
+                                "endpoint": {
+                                  "type": "string"
+                                },
+                                "encoding": {
+                                  "type": "string",
+                                  "enum": [
+                                    "json",
+                                    "ndjson"
+                                  ]
+                                },
+                                "compression": {
+                                  "type": "string",
+                                  "enum": [
+                                    "none"
+                                  ]
+                                },
+                                "fileStructure": {
+                                  "type": "string",
+                                  "enum": [
+                                    "hive"
+                                  ]
+                                },
+                                "roleArn": {
+                                  "type": "string"
+                                },
+                                "region": {
+                                  "type": "string"
+                                },
+                                "serverSideEncryption": {
+                                  "type": "string",
+                                  "enum": [
+                                    "AES256",
+                                    "aws:kms",
+                                    "aws:kms:dsse"
+                                  ]
+                                },
+                                "objectAcl": {
+                                  "type": "string",
+                                  "enum": [
+                                    "authenticated-read",
+                                    "aws-exec-read",
+                                    "bucket-owner-full-control",
+                                    "bucket-owner-read",
+                                    "private",
+                                    "public-read",
+                                    "public-read-write"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "compression",
+                                "encoding",
+                                "endpoint",
+                                "fileStructure",
+                                "region",
+                                "roleArn",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
                                     "internal"
                                   ]
                                 },
@@ -37267,6 +37805,74 @@
                               "required": [
                                 "endpoint",
                                 "table",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "s3"
+                                  ]
+                                },
+                                "endpoint": {
+                                  "type": "string"
+                                },
+                                "encoding": {
+                                  "type": "string",
+                                  "enum": [
+                                    "json",
+                                    "ndjson"
+                                  ]
+                                },
+                                "compression": {
+                                  "type": "string",
+                                  "enum": [
+                                    "none"
+                                  ]
+                                },
+                                "fileStructure": {
+                                  "type": "string",
+                                  "enum": [
+                                    "hive"
+                                  ]
+                                },
+                                "roleArn": {
+                                  "type": "string"
+                                },
+                                "region": {
+                                  "type": "string"
+                                },
+                                "serverSideEncryption": {
+                                  "type": "string",
+                                  "enum": [
+                                    "AES256",
+                                    "aws:kms",
+                                    "aws:kms:dsse"
+                                  ]
+                                },
+                                "objectAcl": {
+                                  "type": "string",
+                                  "enum": [
+                                    "authenticated-read",
+                                    "aws-exec-read",
+                                    "bucket-owner-full-control",
+                                    "bucket-owner-read",
+                                    "private",
+                                    "public-read",
+                                    "public-read-write"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "compression",
+                                "encoding",
+                                "endpoint",
+                                "fileStructure",
+                                "region",
+                                "roleArn",
                                 "type"
                               ],
                               "type": "object"
@@ -37846,6 +38452,74 @@
                                 "type": {
                                   "type": "string",
                                   "enum": [
+                                    "s3"
+                                  ]
+                                },
+                                "endpoint": {
+                                  "type": "string"
+                                },
+                                "encoding": {
+                                  "type": "string",
+                                  "enum": [
+                                    "json",
+                                    "ndjson"
+                                  ]
+                                },
+                                "compression": {
+                                  "type": "string",
+                                  "enum": [
+                                    "none"
+                                  ]
+                                },
+                                "fileStructure": {
+                                  "type": "string",
+                                  "enum": [
+                                    "hive"
+                                  ]
+                                },
+                                "roleArn": {
+                                  "type": "string"
+                                },
+                                "region": {
+                                  "type": "string"
+                                },
+                                "serverSideEncryption": {
+                                  "type": "string",
+                                  "enum": [
+                                    "AES256",
+                                    "aws:kms",
+                                    "aws:kms:dsse"
+                                  ]
+                                },
+                                "objectAcl": {
+                                  "type": "string",
+                                  "enum": [
+                                    "authenticated-read",
+                                    "aws-exec-read",
+                                    "bucket-owner-full-control",
+                                    "bucket-owner-read",
+                                    "private",
+                                    "public-read",
+                                    "public-read-write"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "compression",
+                                "encoding",
+                                "endpoint",
+                                "fileStructure",
+                                "region",
+                                "roleArn",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
                                     "internal"
                                   ]
                                 },
@@ -38277,6 +38951,74 @@
                               "required": [
                                 "endpoint",
                                 "table",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "s3"
+                                  ]
+                                },
+                                "endpoint": {
+                                  "type": "string"
+                                },
+                                "encoding": {
+                                  "type": "string",
+                                  "enum": [
+                                    "json",
+                                    "ndjson"
+                                  ]
+                                },
+                                "compression": {
+                                  "type": "string",
+                                  "enum": [
+                                    "none"
+                                  ]
+                                },
+                                "fileStructure": {
+                                  "type": "string",
+                                  "enum": [
+                                    "hive"
+                                  ]
+                                },
+                                "roleArn": {
+                                  "type": "string"
+                                },
+                                "region": {
+                                  "type": "string"
+                                },
+                                "serverSideEncryption": {
+                                  "type": "string",
+                                  "enum": [
+                                    "AES256",
+                                    "aws:kms",
+                                    "aws:kms:dsse"
+                                  ]
+                                },
+                                "objectAcl": {
+                                  "type": "string",
+                                  "enum": [
+                                    "authenticated-read",
+                                    "aws-exec-read",
+                                    "bucket-owner-full-control",
+                                    "bucket-owner-read",
+                                    "private",
+                                    "public-read",
+                                    "public-read-write"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "compression",
+                                "encoding",
+                                "endpoint",
+                                "fileStructure",
+                                "region",
+                                "roleArn",
                                 "type"
                               ],
                               "type": "object"
@@ -38837,6 +39579,68 @@
                             "type": "string"
                           }
                         }
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "type",
+                          "endpoint",
+                          "encoding",
+                          "compression",
+                          "fileStructure",
+                          "roleArn",
+                          "region"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "endpoint": {
+                            "type": "string"
+                          },
+                          "encoding": {
+                            "type": "string",
+                            "enum": [
+                              "json",
+                              "ndjson"
+                            ]
+                          },
+                          "compression": {
+                            "type": "string",
+                            "enum": [
+                              "none"
+                            ]
+                          },
+                          "fileStructure": {
+                            "type": "string",
+                            "enum": [
+                              "hive"
+                            ]
+                          },
+                          "roleArn": {
+                            "type": "string"
+                          },
+                          "region": {
+                            "type": "string"
+                          },
+                          "serverSideEncryption": {
+                            "type": "string",
+                            "enum": [
+                              "AES256",
+                              "aws:kms",
+                              "aws:kms:dsse"
+                            ]
+                          },
+                          "objectAcl": {
+                            "type": "string",
+                            "enum": [
+                              "private",
+                              "bucket-owner-read",
+                              "bucket-owner-full-control"
+                            ]
+                          }
+                        }
                       }
                     ]
                   },
@@ -39158,6 +39962,68 @@
                           },
                           "secret": {
                             "type": "string"
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "type",
+                          "endpoint",
+                          "encoding",
+                          "compression",
+                          "fileStructure",
+                          "roleArn",
+                          "region"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          },
+                          "endpoint": {
+                            "type": "string"
+                          },
+                          "encoding": {
+                            "type": "string",
+                            "enum": [
+                              "json",
+                              "ndjson"
+                            ]
+                          },
+                          "compression": {
+                            "type": "string",
+                            "enum": [
+                              "none"
+                            ]
+                          },
+                          "fileStructure": {
+                            "type": "string",
+                            "enum": [
+                              "hive"
+                            ]
+                          },
+                          "roleArn": {
+                            "type": "string"
+                          },
+                          "region": {
+                            "type": "string"
+                          },
+                          "serverSideEncryption": {
+                            "type": "string",
+                            "enum": [
+                              "AES256",
+                              "aws:kms",
+                              "aws:kms:dsse"
+                            ]
+                          },
+                          "objectAcl": {
+                            "type": "string",
+                            "enum": [
+                              "private",
+                              "bucket-owner-read",
+                              "bucket-owner-full-control"
+                            ]
                           }
                         }
                       }
@@ -143320,6 +144186,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "500": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
