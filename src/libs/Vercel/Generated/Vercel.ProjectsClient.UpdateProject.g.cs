@@ -608,6 +608,38 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
+                            // 
+                            if ((int)__response.StatusCode == 500)
+                            {
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_500 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    responseBody: __content_500,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -761,9 +793,6 @@ namespace Vercel
         /// <param name="previewDeploymentSuffix">
         /// Custom domain suffix for preview deployments. Takes precedence over team-level suffix. Must be a domain owned by the team.
         /// </param>
-        /// <param name="publicSource">
-        /// Specifies whether the source code and logs of the deployments for this project should be public or not
-        /// </param>
         /// <param name="resourceConfig">
         /// Specifies resource override configuration for the project
         /// </param>
@@ -859,7 +888,6 @@ namespace Vercel
             string? outputDirectory = default,
             bool? previewDeploymentsDisabled = default,
             string? previewDeploymentSuffix = default,
-            bool? publicSource = default,
             global::Vercel.UpdateProjectRequestResourceConfig? resourceConfig = default,
             string? rootDirectory = default,
             string? serverlessFunctionRegion = default,
@@ -907,7 +935,6 @@ namespace Vercel
                 OutputDirectory = outputDirectory,
                 PreviewDeploymentsDisabled = previewDeploymentsDisabled,
                 PreviewDeploymentSuffix = previewDeploymentSuffix,
-                PublicSource = publicSource,
                 ResourceConfig = resourceConfig,
                 RootDirectory = rootDirectory,
                 ServerlessFunctionRegion = serverlessFunctionRegion,

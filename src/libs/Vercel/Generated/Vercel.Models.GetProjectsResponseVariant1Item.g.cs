@@ -183,12 +183,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
-        public bool? PublicSource { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetProjectsResponseVariant1ItemResourceConfig ResourceConfig { get; set; }
@@ -390,7 +384,6 @@ namespace Vercel
         /// <param name="outputDirectory"></param>
         /// <param name="passwordProtection"></param>
         /// <param name="passport"></param>
-        /// <param name="publicSource"></param>
         /// <param name="rollingRelease">
         /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
         /// </param>
@@ -451,7 +444,6 @@ namespace Vercel
             string? outputDirectory,
             object? passwordProtection,
             global::Vercel.GetProjectsResponseVariant1ItemPassport? passport,
-            bool? publicSource,
             global::Vercel.GetProjectsResponseVariant1ItemRollingRelease? rollingRelease,
             string? rootDirectory,
             bool? serverlessFunctionZeroConfigFailover,
@@ -505,7 +497,6 @@ namespace Vercel
             this.OutputDirectory = outputDirectory;
             this.PasswordProtection = passwordProtection;
             this.Passport = passport;
-            this.PublicSource = publicSource;
             this.ResourceConfig = resourceConfig ?? throw new global::System.ArgumentNullException(nameof(resourceConfig));
             this.RollingRelease = rollingRelease;
             this.RootDirectory = rootDirectory;

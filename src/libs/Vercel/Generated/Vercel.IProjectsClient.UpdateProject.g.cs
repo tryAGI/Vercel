@@ -115,9 +115,6 @@ namespace Vercel
         /// <param name="previewDeploymentSuffix">
         /// Custom domain suffix for preview deployments. Takes precedence over team-level suffix. Must be a domain owned by the team.
         /// </param>
-        /// <param name="publicSource">
-        /// Specifies whether the source code and logs of the deployments for this project should be public or not
-        /// </param>
         /// <param name="resourceConfig">
         /// Specifies resource override configuration for the project
         /// </param>
@@ -213,7 +210,6 @@ namespace Vercel
             string? outputDirectory = default,
             bool? previewDeploymentsDisabled = default,
             string? previewDeploymentSuffix = default,
-            bool? publicSource = default,
             global::Vercel.UpdateProjectRequestResourceConfig? resourceConfig = default,
             string? rootDirectory = default,
             string? serverlessFunctionRegion = default,

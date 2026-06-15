@@ -123,12 +123,6 @@ namespace Vercel
         public string? PreviewDeploymentSuffix { get; set; }
 
         /// <summary>
-        /// Specifies whether the source code and logs of the deployments for this project should be public or not
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
-        public bool? PublicSource { get; set; }
-
-        /// <summary>
         /// Specifies resource override configuration for the project
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
@@ -332,9 +326,6 @@ namespace Vercel
         /// <param name="previewDeploymentSuffix">
         /// Custom domain suffix for preview deployments. Takes precedence over team-level suffix. Must be a domain owned by the team.
         /// </param>
-        /// <param name="publicSource">
-        /// Specifies whether the source code and logs of the deployments for this project should be public or not
-        /// </param>
         /// <param name="resourceConfig">
         /// Specifies resource override configuration for the project
         /// </param>
@@ -427,7 +418,6 @@ namespace Vercel
             string? outputDirectory,
             bool? previewDeploymentsDisabled,
             string? previewDeploymentSuffix,
-            bool? publicSource,
             global::Vercel.UpdateProjectRequestResourceConfig? resourceConfig,
             string? rootDirectory,
             string? serverlessFunctionRegion,
@@ -471,7 +461,6 @@ namespace Vercel
             this.OutputDirectory = outputDirectory;
             this.PreviewDeploymentsDisabled = previewDeploymentsDisabled;
             this.PreviewDeploymentSuffix = previewDeploymentSuffix;
-            this.PublicSource = publicSource;
             this.ResourceConfig = resourceConfig;
             this.RootDirectory = rootDirectory;
             this.ServerlessFunctionRegion = serverlessFunctionRegion;

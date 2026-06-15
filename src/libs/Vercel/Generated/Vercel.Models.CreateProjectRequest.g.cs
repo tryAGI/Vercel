@@ -106,12 +106,6 @@ namespace Vercel
         public string? OutputDirectory { get; set; }
 
         /// <summary>
-        /// Specifies whether the source code and logs of the deployments for this project should be public or not
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
-        public bool? PublicSource { get; set; }
-
-        /// <summary>
         /// The name of a directory or relative path to the source code of your project. When `null` is used it will default to the project root
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rootDirectory")]
@@ -197,9 +191,6 @@ namespace Vercel
         /// <param name="outputDirectory">
         /// The output directory of the project. When `null` is used this value will be automatically detected
         /// </param>
-        /// <param name="publicSource">
-        /// Specifies whether the source code and logs of the deployments for this project should be public or not
-        /// </param>
         /// <param name="rootDirectory">
         /// The name of a directory or relative path to the source code of your project. When `null` is used it will default to the project root
         /// </param>
@@ -236,7 +227,6 @@ namespace Vercel
             string? installCommand,
             global::Vercel.CreateProjectRequestSsoProtection? ssoProtection,
             string? outputDirectory,
-            bool? publicSource,
             string? rootDirectory,
             string? serverlessFunctionRegion,
             bool? serverlessFunctionZeroConfigFailover,
@@ -258,7 +248,6 @@ namespace Vercel
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.SsoProtection = ssoProtection;
             this.OutputDirectory = outputDirectory;
-            this.PublicSource = publicSource;
             this.RootDirectory = rootDirectory;
             this.ServerlessFunctionRegion = serverlessFunctionRegion;
             this.ServerlessFunctionZeroConfigFailover = serverlessFunctionZeroConfigFailover;
