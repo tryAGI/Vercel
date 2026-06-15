@@ -44,8 +44,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("delivery")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateDrainRequestDeliveryVariant1, global::Vercel.UpdateDrainRequestDeliveryVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.UpdateDrainRequestDeliveryVariant1, global::Vercel.UpdateDrainRequestDeliveryVariant2>? Delivery { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateDrainRequestDeliveryVariant1, global::Vercel.UpdateDrainRequestDeliveryVariant2, global::Vercel.UpdateDrainRequestDeliveryVariant3>))]
+        public global::Vercel.OneOf<global::Vercel.UpdateDrainRequestDeliveryVariant1, global::Vercel.UpdateDrainRequestDeliveryVariant2, global::Vercel.UpdateDrainRequestDeliveryVariant3>? Delivery { get; set; }
 
         /// <summary>
         /// 
@@ -101,7 +101,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? projectIds,
             global::Vercel.OneOf<string, global::Vercel.UpdateDrainRequestFilter>? filter,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateDrainRequestSchemas2>? schemas,
-            global::Vercel.OneOf<global::Vercel.UpdateDrainRequestDeliveryVariant1, global::Vercel.UpdateDrainRequestDeliveryVariant2>? delivery,
+            global::Vercel.OneOf<global::Vercel.UpdateDrainRequestDeliveryVariant1, global::Vercel.UpdateDrainRequestDeliveryVariant2, global::Vercel.UpdateDrainRequestDeliveryVariant3>? delivery,
             global::System.Collections.Generic.IList<global::Vercel.UpdateDrainRequestSamplingItem>? sampling,
             global::System.Collections.Generic.IList<global::Vercel.UpdateDrainRequestTransform>? transforms,
             global::Vercel.UpdateDrainRequestStatus? status,

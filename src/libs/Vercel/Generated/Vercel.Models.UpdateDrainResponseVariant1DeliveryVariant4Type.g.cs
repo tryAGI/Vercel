@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Internal,
+        S3,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                UpdateDrainResponseVariant1DeliveryVariant4Type.Internal => "internal",
+                UpdateDrainResponseVariant1DeliveryVariant4Type.S3 => "s3",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "internal" => UpdateDrainResponseVariant1DeliveryVariant4Type.Internal,
+                "s3" => UpdateDrainResponseVariant1DeliveryVariant4Type.S3,
                 _ => null,
             };
         }

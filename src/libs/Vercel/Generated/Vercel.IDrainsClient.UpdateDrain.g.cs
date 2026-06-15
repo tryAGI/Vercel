@@ -83,7 +83,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? projectIds = default,
             global::Vercel.OneOf<string, global::Vercel.UpdateDrainRequestFilter>? filter = default,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateDrainRequestSchemas2>? schemas = default,
-            global::Vercel.OneOf<global::Vercel.UpdateDrainRequestDeliveryVariant1, global::Vercel.UpdateDrainRequestDeliveryVariant2>? delivery = default,
+            global::Vercel.OneOf<global::Vercel.UpdateDrainRequestDeliveryVariant1, global::Vercel.UpdateDrainRequestDeliveryVariant2, global::Vercel.UpdateDrainRequestDeliveryVariant3>? delivery = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateDrainRequestSamplingItem>? sampling = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateDrainRequestTransform>? transforms = default,
             global::Vercel.UpdateDrainRequestStatus? status = default,

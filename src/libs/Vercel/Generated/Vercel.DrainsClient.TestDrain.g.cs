@@ -576,7 +576,7 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<object, global::Vercel.TestDrainResponseVariant2>> TestDrainAsync(
             global::System.Collections.Generic.Dictionary<string, global::Vercel.TestDrainRequestSchemas2> schemas,
-            global::Vercel.OneOf<global::Vercel.TestDrainRequestDeliveryVariant1, global::Vercel.TestDrainRequestDeliveryVariant2> delivery,
+            global::Vercel.OneOf<global::Vercel.TestDrainRequestDeliveryVariant1, global::Vercel.TestDrainRequestDeliveryVariant2, global::Vercel.TestDrainRequestDeliveryVariant3> delivery,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
