@@ -1907,6 +1907,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserEmuAccountArchived,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserEmuAccountRecovered,
+        /// <summary>
+        /// 
+        /// </summary>
         UserMfaChallengeVerified,
         /// <summary>
         /// 
@@ -2524,6 +2532,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.TeamTokensInvalidated => "team-tokens-invalidated",
                 ListEventTypeReplacedByItem.UnlinkLoginConnection => "unlink-login-connection",
                 ListEventTypeReplacedByItem.UserDelete => "user-delete",
+                ListEventTypeReplacedByItem.UserEmuAccountArchived => "user-emu-account-archived",
+                ListEventTypeReplacedByItem.UserEmuAccountRecovered => "user-emu-account-recovered",
                 ListEventTypeReplacedByItem.UserMfaChallengeVerified => "user-mfa-challenge-verified",
                 ListEventTypeReplacedByItem.UserMfaConfigurationUpdated => "user-mfa-configuration-updated",
                 ListEventTypeReplacedByItem.UserMfaRecoveryCodesRegenerated => "user-mfa-recovery-codes-regenerated",
@@ -3041,6 +3051,8 @@ namespace Vercel
                 "team-tokens-invalidated" => ListEventTypeReplacedByItem.TeamTokensInvalidated,
                 "unlink-login-connection" => ListEventTypeReplacedByItem.UnlinkLoginConnection,
                 "user-delete" => ListEventTypeReplacedByItem.UserDelete,
+                "user-emu-account-archived" => ListEventTypeReplacedByItem.UserEmuAccountArchived,
+                "user-emu-account-recovered" => ListEventTypeReplacedByItem.UserEmuAccountRecovered,
                 "user-mfa-challenge-verified" => ListEventTypeReplacedByItem.UserMfaChallengeVerified,
                 "user-mfa-configuration-updated" => ListEventTypeReplacedByItem.UserMfaConfigurationUpdated,
                 "user-mfa-recovery-codes-regenerated" => ListEventTypeReplacedByItem.UserMfaRecoveryCodesRegenerated,
