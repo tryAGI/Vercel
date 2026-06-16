@@ -803,6 +803,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        GitAccountIntegrationLinkAdded,
+        /// <summary>
+        /// 
+        /// </summary>
         InstantRollbackCreated,
         /// <summary>
         /// 
@@ -2256,6 +2260,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.FlagsSdkKeyRead => "flags-sdk-key-read",
                 ListEventTypeReplacedByItem.FlagsSegment => "flags-segment",
                 ListEventTypeReplacedByItem.FlagsSettings => "flags-settings",
+                ListEventTypeReplacedByItem.GitAccountIntegrationLinkAdded => "git_account_integration_link_added",
                 ListEventTypeReplacedByItem.InstantRollbackCreated => "instant-rollback-created",
                 ListEventTypeReplacedByItem.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
                 ListEventTypeReplacedByItem.IntegrationConfigurationScopeChangeConfirmed => "integration-configuration-scope-change-confirmed",
@@ -2775,6 +2780,7 @@ namespace Vercel
                 "flags-sdk-key-read" => ListEventTypeReplacedByItem.FlagsSdkKeyRead,
                 "flags-segment" => ListEventTypeReplacedByItem.FlagsSegment,
                 "flags-settings" => ListEventTypeReplacedByItem.FlagsSettings,
+                "git_account_integration_link_added" => ListEventTypeReplacedByItem.GitAccountIntegrationLinkAdded,
                 "instant-rollback-created" => ListEventTypeReplacedByItem.InstantRollbackCreated,
                 "integration-configuration-owner-changed" => ListEventTypeReplacedByItem.IntegrationConfigurationOwnerChanged,
                 "integration-configuration-scope-change-confirmed" => ListEventTypeReplacedByItem.IntegrationConfigurationScopeChangeConfirmed,
