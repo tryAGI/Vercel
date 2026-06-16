@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Where was the deployment created from<br/>
+    /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
     /// Example: cli
     /// </summary>
     public enum GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource
@@ -21,6 +21,10 @@ namespace Vercel
         /// 
         /// </summary>
         CloneRepo,
+        /// <summary>
+        /// 
+        /// </summary>
+        Drop,
         /// <summary>
         /// 
         /// </summary>
@@ -58,6 +62,7 @@ namespace Vercel
                 GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.ApiTriggerGitDeploy => "api-trigger-git-deploy",
                 GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Cli => "cli",
                 GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.CloneRepo => "clone/repo",
+                GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Drop => "drop",
                 GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Git => "git",
                 GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Import => "import",
                 GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.ImportRepo => "import/repo",
@@ -76,6 +81,7 @@ namespace Vercel
                 "api-trigger-git-deploy" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.ApiTriggerGitDeploy,
                 "cli" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Cli,
                 "clone/repo" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.CloneRepo,
+                "drop" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Drop,
                 "git" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Git,
                 "import" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Import,
                 "import/repo" => GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource.ImportRepo,

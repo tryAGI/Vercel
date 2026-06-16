@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -68,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Ember,
+        /// <summary>
+        /// 
+        /// </summary>
+        Eve,
         /// <summary>
         /// 
         /// </summary>
@@ -211,7 +219,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +313,7 @@ namespace Vercel
                 UpdateMicrofrontendsResponseFramework.Axum => "axum",
                 UpdateMicrofrontendsResponseFramework.Blitzjs => "blitzjs",
                 UpdateMicrofrontendsResponseFramework.Brunch => "brunch",
+                UpdateMicrofrontendsResponseFramework.Bun => "bun",
                 UpdateMicrofrontendsResponseFramework.CreateReactApp => "create-react-app",
                 UpdateMicrofrontendsResponseFramework.Django => "django",
                 UpdateMicrofrontendsResponseFramework.Docusaurus => "docusaurus",
@@ -313,6 +322,7 @@ namespace Vercel
                 UpdateMicrofrontendsResponseFramework.Eleventy => "eleventy",
                 UpdateMicrofrontendsResponseFramework.Elysia => "elysia",
                 UpdateMicrofrontendsResponseFramework.Ember => "ember",
+                UpdateMicrofrontendsResponseFramework.Eve => "eve",
                 UpdateMicrofrontendsResponseFramework.Express => "express",
                 UpdateMicrofrontendsResponseFramework.Fastapi => "fastapi",
                 UpdateMicrofrontendsResponseFramework.Fasthtml => "fasthtml",
@@ -348,7 +358,7 @@ namespace Vercel
                 UpdateMicrofrontendsResponseFramework.Rust => "rust",
                 UpdateMicrofrontendsResponseFramework.Saber => "saber",
                 UpdateMicrofrontendsResponseFramework.Sanity => "sanity",
-                UpdateMicrofrontendsResponseFramework.SanityV3 => "sanity-v3",
+                UpdateMicrofrontendsResponseFramework.SanityV2 => "sanity-v2",
                 UpdateMicrofrontendsResponseFramework.Sapper => "sapper",
                 UpdateMicrofrontendsResponseFramework.Scully => "scully",
                 UpdateMicrofrontendsResponseFramework.Services => "services",
@@ -384,6 +394,7 @@ namespace Vercel
                 "axum" => UpdateMicrofrontendsResponseFramework.Axum,
                 "blitzjs" => UpdateMicrofrontendsResponseFramework.Blitzjs,
                 "brunch" => UpdateMicrofrontendsResponseFramework.Brunch,
+                "bun" => UpdateMicrofrontendsResponseFramework.Bun,
                 "create-react-app" => UpdateMicrofrontendsResponseFramework.CreateReactApp,
                 "django" => UpdateMicrofrontendsResponseFramework.Django,
                 "docusaurus" => UpdateMicrofrontendsResponseFramework.Docusaurus,
@@ -392,6 +403,7 @@ namespace Vercel
                 "eleventy" => UpdateMicrofrontendsResponseFramework.Eleventy,
                 "elysia" => UpdateMicrofrontendsResponseFramework.Elysia,
                 "ember" => UpdateMicrofrontendsResponseFramework.Ember,
+                "eve" => UpdateMicrofrontendsResponseFramework.Eve,
                 "express" => UpdateMicrofrontendsResponseFramework.Express,
                 "fastapi" => UpdateMicrofrontendsResponseFramework.Fastapi,
                 "fasthtml" => UpdateMicrofrontendsResponseFramework.Fasthtml,
@@ -427,7 +439,7 @@ namespace Vercel
                 "rust" => UpdateMicrofrontendsResponseFramework.Rust,
                 "saber" => UpdateMicrofrontendsResponseFramework.Saber,
                 "sanity" => UpdateMicrofrontendsResponseFramework.Sanity,
-                "sanity-v3" => UpdateMicrofrontendsResponseFramework.SanityV3,
+                "sanity-v2" => UpdateMicrofrontendsResponseFramework.SanityV2,
                 "sapper" => UpdateMicrofrontendsResponseFramework.Sapper,
                 "scully" => UpdateMicrofrontendsResponseFramework.Scully,
                 "services" => UpdateMicrofrontendsResponseFramework.Services,

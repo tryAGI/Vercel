@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Where was the deployment created from<br/>
+    /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
     /// Example: cli
     /// </summary>
     public enum GetDeploymentResponseVariant2Source
@@ -21,6 +21,10 @@ namespace Vercel
         /// 
         /// </summary>
         CloneRepo,
+        /// <summary>
+        /// 
+        /// </summary>
+        Drop,
         /// <summary>
         /// 
         /// </summary>
@@ -58,6 +62,7 @@ namespace Vercel
                 GetDeploymentResponseVariant2Source.ApiTriggerGitDeploy => "api-trigger-git-deploy",
                 GetDeploymentResponseVariant2Source.Cli => "cli",
                 GetDeploymentResponseVariant2Source.CloneRepo => "clone/repo",
+                GetDeploymentResponseVariant2Source.Drop => "drop",
                 GetDeploymentResponseVariant2Source.Git => "git",
                 GetDeploymentResponseVariant2Source.Import => "import",
                 GetDeploymentResponseVariant2Source.ImportRepo => "import/repo",
@@ -76,6 +81,7 @@ namespace Vercel
                 "api-trigger-git-deploy" => GetDeploymentResponseVariant2Source.ApiTriggerGitDeploy,
                 "cli" => GetDeploymentResponseVariant2Source.Cli,
                 "clone/repo" => GetDeploymentResponseVariant2Source.CloneRepo,
+                "drop" => GetDeploymentResponseVariant2Source.Drop,
                 "git" => GetDeploymentResponseVariant2Source.Git,
                 "import" => GetDeploymentResponseVariant2Source.Import,
                 "import/repo" => GetDeploymentResponseVariant2Source.ImportRepo,

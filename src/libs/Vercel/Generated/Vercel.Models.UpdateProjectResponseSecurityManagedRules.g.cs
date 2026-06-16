@@ -18,6 +18,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("traffic_sources")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateProjectResponseSecurityManagedRulesTrafficSources TrafficSources { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bot_filter")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateProjectResponseSecurityManagedRulesBotFilter BotFilter { get; set; }
@@ -46,6 +53,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateProjectResponseSecurityManagedRules" /> class.
         /// </summary>
         /// <param name="vercelRuleset"></param>
+        /// <param name="trafficSources"></param>
         /// <param name="botFilter"></param>
         /// <param name="aiBots"></param>
         /// <param name="owasp"></param>
@@ -54,11 +62,13 @@ namespace Vercel
 #endif
         public UpdateProjectResponseSecurityManagedRules(
             global::Vercel.UpdateProjectResponseSecurityManagedRulesVercelRuleset vercelRuleset,
+            global::Vercel.UpdateProjectResponseSecurityManagedRulesTrafficSources trafficSources,
             global::Vercel.UpdateProjectResponseSecurityManagedRulesBotFilter botFilter,
             global::Vercel.UpdateProjectResponseSecurityManagedRulesAiBots aiBots,
             global::Vercel.UpdateProjectResponseSecurityManagedRulesOwasp owasp)
         {
             this.VercelRuleset = vercelRuleset ?? throw new global::System.ArgumentNullException(nameof(vercelRuleset));
+            this.TrafficSources = trafficSources ?? throw new global::System.ArgumentNullException(nameof(trafficSources));
             this.BotFilter = botFilter ?? throw new global::System.ArgumentNullException(nameof(botFilter));
             this.AiBots = aiBots ?? throw new global::System.ArgumentNullException(nameof(aiBots));
             this.Owasp = owasp ?? throw new global::System.ArgumentNullException(nameof(owasp));

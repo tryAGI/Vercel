@@ -56,6 +56,10 @@ namespace Vercel
         /// 
         /// </summary>
         Scheme,
+        /// <summary>
+        /// 
+        /// </summary>
+        TrustedSource,
     }
 
     /// <summary>
@@ -82,6 +86,7 @@ namespace Vercel
                 GetProjectsResponseVariant2ProjectSecurityFirewallRouteMissingItemType.Query => "query",
                 GetProjectsResponseVariant2ProjectSecurityFirewallRouteMissingItemType.Region => "region",
                 GetProjectsResponseVariant2ProjectSecurityFirewallRouteMissingItemType.Scheme => "scheme",
+                GetProjectsResponseVariant2ProjectSecurityFirewallRouteMissingItemType.TrustedSource => "trusted_source",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -104,6 +109,7 @@ namespace Vercel
                 "query" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteMissingItemType.Query,
                 "region" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteMissingItemType.Region,
                 "scheme" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteMissingItemType.Scheme,
+                "trusted_source" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteMissingItemType.TrustedSource,
                 _ => null,
             };
         }

@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -68,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Ember,
+        /// <summary>
+        /// 
+        /// </summary>
+        Eve,
         /// <summary>
         /// 
         /// </summary>
@@ -211,7 +219,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +313,7 @@ namespace Vercel
                 GetProjectsResponseVariant2ProjectFramework.Axum => "axum",
                 GetProjectsResponseVariant2ProjectFramework.Blitzjs => "blitzjs",
                 GetProjectsResponseVariant2ProjectFramework.Brunch => "brunch",
+                GetProjectsResponseVariant2ProjectFramework.Bun => "bun",
                 GetProjectsResponseVariant2ProjectFramework.CreateReactApp => "create-react-app",
                 GetProjectsResponseVariant2ProjectFramework.Django => "django",
                 GetProjectsResponseVariant2ProjectFramework.Docusaurus => "docusaurus",
@@ -313,6 +322,7 @@ namespace Vercel
                 GetProjectsResponseVariant2ProjectFramework.Eleventy => "eleventy",
                 GetProjectsResponseVariant2ProjectFramework.Elysia => "elysia",
                 GetProjectsResponseVariant2ProjectFramework.Ember => "ember",
+                GetProjectsResponseVariant2ProjectFramework.Eve => "eve",
                 GetProjectsResponseVariant2ProjectFramework.Express => "express",
                 GetProjectsResponseVariant2ProjectFramework.Fastapi => "fastapi",
                 GetProjectsResponseVariant2ProjectFramework.Fasthtml => "fasthtml",
@@ -348,7 +358,7 @@ namespace Vercel
                 GetProjectsResponseVariant2ProjectFramework.Rust => "rust",
                 GetProjectsResponseVariant2ProjectFramework.Saber => "saber",
                 GetProjectsResponseVariant2ProjectFramework.Sanity => "sanity",
-                GetProjectsResponseVariant2ProjectFramework.SanityV3 => "sanity-v3",
+                GetProjectsResponseVariant2ProjectFramework.SanityV2 => "sanity-v2",
                 GetProjectsResponseVariant2ProjectFramework.Sapper => "sapper",
                 GetProjectsResponseVariant2ProjectFramework.Scully => "scully",
                 GetProjectsResponseVariant2ProjectFramework.Services => "services",
@@ -384,6 +394,7 @@ namespace Vercel
                 "axum" => GetProjectsResponseVariant2ProjectFramework.Axum,
                 "blitzjs" => GetProjectsResponseVariant2ProjectFramework.Blitzjs,
                 "brunch" => GetProjectsResponseVariant2ProjectFramework.Brunch,
+                "bun" => GetProjectsResponseVariant2ProjectFramework.Bun,
                 "create-react-app" => GetProjectsResponseVariant2ProjectFramework.CreateReactApp,
                 "django" => GetProjectsResponseVariant2ProjectFramework.Django,
                 "docusaurus" => GetProjectsResponseVariant2ProjectFramework.Docusaurus,
@@ -392,6 +403,7 @@ namespace Vercel
                 "eleventy" => GetProjectsResponseVariant2ProjectFramework.Eleventy,
                 "elysia" => GetProjectsResponseVariant2ProjectFramework.Elysia,
                 "ember" => GetProjectsResponseVariant2ProjectFramework.Ember,
+                "eve" => GetProjectsResponseVariant2ProjectFramework.Eve,
                 "express" => GetProjectsResponseVariant2ProjectFramework.Express,
                 "fastapi" => GetProjectsResponseVariant2ProjectFramework.Fastapi,
                 "fasthtml" => GetProjectsResponseVariant2ProjectFramework.Fasthtml,
@@ -427,7 +439,7 @@ namespace Vercel
                 "rust" => GetProjectsResponseVariant2ProjectFramework.Rust,
                 "saber" => GetProjectsResponseVariant2ProjectFramework.Saber,
                 "sanity" => GetProjectsResponseVariant2ProjectFramework.Sanity,
-                "sanity-v3" => GetProjectsResponseVariant2ProjectFramework.SanityV3,
+                "sanity-v2" => GetProjectsResponseVariant2ProjectFramework.SanityV2,
                 "sapper" => GetProjectsResponseVariant2ProjectFramework.Sapper,
                 "scully" => GetProjectsResponseVariant2ProjectFramework.Scully,
                 "services" => GetProjectsResponseVariant2ProjectFramework.Services,

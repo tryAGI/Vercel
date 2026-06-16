@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -68,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Ember,
+        /// <summary>
+        /// 
+        /// </summary>
+        Eve,
         /// <summary>
         /// 
         /// </summary>
@@ -211,7 +219,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +313,7 @@ namespace Vercel
                 CancelDeploymentResponseProjectSettingsFramework.Axum => "axum",
                 CancelDeploymentResponseProjectSettingsFramework.Blitzjs => "blitzjs",
                 CancelDeploymentResponseProjectSettingsFramework.Brunch => "brunch",
+                CancelDeploymentResponseProjectSettingsFramework.Bun => "bun",
                 CancelDeploymentResponseProjectSettingsFramework.CreateReactApp => "create-react-app",
                 CancelDeploymentResponseProjectSettingsFramework.Django => "django",
                 CancelDeploymentResponseProjectSettingsFramework.Docusaurus => "docusaurus",
@@ -313,6 +322,7 @@ namespace Vercel
                 CancelDeploymentResponseProjectSettingsFramework.Eleventy => "eleventy",
                 CancelDeploymentResponseProjectSettingsFramework.Elysia => "elysia",
                 CancelDeploymentResponseProjectSettingsFramework.Ember => "ember",
+                CancelDeploymentResponseProjectSettingsFramework.Eve => "eve",
                 CancelDeploymentResponseProjectSettingsFramework.Express => "express",
                 CancelDeploymentResponseProjectSettingsFramework.Fastapi => "fastapi",
                 CancelDeploymentResponseProjectSettingsFramework.Fasthtml => "fasthtml",
@@ -348,7 +358,7 @@ namespace Vercel
                 CancelDeploymentResponseProjectSettingsFramework.Rust => "rust",
                 CancelDeploymentResponseProjectSettingsFramework.Saber => "saber",
                 CancelDeploymentResponseProjectSettingsFramework.Sanity => "sanity",
-                CancelDeploymentResponseProjectSettingsFramework.SanityV3 => "sanity-v3",
+                CancelDeploymentResponseProjectSettingsFramework.SanityV2 => "sanity-v2",
                 CancelDeploymentResponseProjectSettingsFramework.Sapper => "sapper",
                 CancelDeploymentResponseProjectSettingsFramework.Scully => "scully",
                 CancelDeploymentResponseProjectSettingsFramework.Services => "services",
@@ -384,6 +394,7 @@ namespace Vercel
                 "axum" => CancelDeploymentResponseProjectSettingsFramework.Axum,
                 "blitzjs" => CancelDeploymentResponseProjectSettingsFramework.Blitzjs,
                 "brunch" => CancelDeploymentResponseProjectSettingsFramework.Brunch,
+                "bun" => CancelDeploymentResponseProjectSettingsFramework.Bun,
                 "create-react-app" => CancelDeploymentResponseProjectSettingsFramework.CreateReactApp,
                 "django" => CancelDeploymentResponseProjectSettingsFramework.Django,
                 "docusaurus" => CancelDeploymentResponseProjectSettingsFramework.Docusaurus,
@@ -392,6 +403,7 @@ namespace Vercel
                 "eleventy" => CancelDeploymentResponseProjectSettingsFramework.Eleventy,
                 "elysia" => CancelDeploymentResponseProjectSettingsFramework.Elysia,
                 "ember" => CancelDeploymentResponseProjectSettingsFramework.Ember,
+                "eve" => CancelDeploymentResponseProjectSettingsFramework.Eve,
                 "express" => CancelDeploymentResponseProjectSettingsFramework.Express,
                 "fastapi" => CancelDeploymentResponseProjectSettingsFramework.Fastapi,
                 "fasthtml" => CancelDeploymentResponseProjectSettingsFramework.Fasthtml,
@@ -427,7 +439,7 @@ namespace Vercel
                 "rust" => CancelDeploymentResponseProjectSettingsFramework.Rust,
                 "saber" => CancelDeploymentResponseProjectSettingsFramework.Saber,
                 "sanity" => CancelDeploymentResponseProjectSettingsFramework.Sanity,
-                "sanity-v3" => CancelDeploymentResponseProjectSettingsFramework.SanityV3,
+                "sanity-v2" => CancelDeploymentResponseProjectSettingsFramework.SanityV2,
                 "sapper" => CancelDeploymentResponseProjectSettingsFramework.Sapper,
                 "scully" => CancelDeploymentResponseProjectSettingsFramework.Scully,
                 "services" => CancelDeploymentResponseProjectSettingsFramework.Services,

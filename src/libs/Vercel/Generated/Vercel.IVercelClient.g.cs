@@ -93,6 +93,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public ConnectClient Connect { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public DeploymentsClient Deployments { get; }
 
         /// <summary>

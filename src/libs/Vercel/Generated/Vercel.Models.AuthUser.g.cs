@@ -114,6 +114,18 @@ namespace Vercel
         public global::Vercel.AuthUserFeatureBlocks? FeatureBlocks { get; set; }
 
         /// <summary>
+        /// When `true`, the user must complete the EMU Update Account flow before they can use the dashboard.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isAccountUpdateRequired")]
+        public bool? IsAccountUpdateRequired { get; set; }
+
+        /// <summary>
+        /// Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("accountUpdateContext")]
+        public global::Vercel.AuthUserAccountUpdateContext? AccountUpdateContext { get; set; }
+
+        /// <summary>
         /// The User's unique identifier.<br/>
         /// Example: AEIIDYVk59zbFF2Sxfyxxmua
         /// </summary>
@@ -230,6 +242,12 @@ namespace Vercel
         /// <param name="featureBlocks">
         /// Feature blocks for the user
         /// </param>
+        /// <param name="isAccountUpdateRequired">
+        /// When `true`, the user must complete the EMU Update Account flow before they can use the dashboard.
+        /// </param>
+        /// <param name="accountUpdateContext">
+        /// Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team).
+        /// </param>
         /// <param name="name">
         /// Name associated with the User account, or `null` if none has been provided.<br/>
         /// Example: John Doe
@@ -267,6 +285,8 @@ namespace Vercel
             global::Vercel.AuthUserRemoteCaching? remoteCaching,
             global::Vercel.AuthUserDataCache? dataCache,
             global::Vercel.AuthUserFeatureBlocks? featureBlocks,
+            bool? isAccountUpdateRequired,
+            global::Vercel.AuthUserAccountUpdateContext? accountUpdateContext,
             string? name,
             string? avatar,
             string? defaultTeamId,
@@ -288,6 +308,8 @@ namespace Vercel
             this.RemoteCaching = remoteCaching;
             this.DataCache = dataCache;
             this.FeatureBlocks = featureBlocks;
+            this.IsAccountUpdateRequired = isAccountUpdateRequired;
+            this.AccountUpdateContext = accountUpdateContext;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
             this.Name = name;

@@ -822,6 +822,9 @@ namespace Vercel
         /// Default Value: {}<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </param>
+        /// <param name="mounts">
+        /// List of drives to mount to the sandbox at the provided path.
+        /// </param>
         /// <param name="name">
         /// Name for the sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
         /// Example: my-sandbox
@@ -855,6 +858,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<int>? ports = default,
             int? timeout = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesRequestMounts2>? mounts = default,
             string? name = default,
             bool? persistent = default,
             global::Vercel.OneOf<object, int?>? snapshotExpiration = default,
@@ -873,6 +877,7 @@ namespace Vercel
                 Ports = ports,
                 Timeout = timeout,
                 Env = env,
+                Mounts = mounts,
                 Name = name,
                 Persistent = persistent,
                 SnapshotExpiration = snapshotExpiration,

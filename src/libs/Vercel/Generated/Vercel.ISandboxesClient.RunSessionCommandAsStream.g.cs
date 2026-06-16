@@ -12,6 +12,10 @@ namespace Vercel
         /// The unique identifier of the session in which to execute the command.<br/>
         /// Example: sbx_abc123
         /// </param>
+        /// <param name="cmdId">
+        /// The unique identifier of the command to stream logs for.<br/>
+        /// Example: cmd_abc123
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -22,8 +26,9 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.RunSessionCommandResponse2> RunSessionCommandAsStreamAsync(
+        global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2, global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant3Variant1, global::Vercel.RunSessionCommandResponseVariant3Variant2>?>> RunSessionCommandAsStreamAsync(
             string sessionId,
+            string cmdId,
 
             global::Vercel.RunSessionCommandRequest request,
             string? teamId = default,
@@ -37,6 +42,10 @@ namespace Vercel
         /// <param name="sessionId">
         /// The unique identifier of the session in which to execute the command.<br/>
         /// Example: sbx_abc123
+        /// </param>
+        /// <param name="cmdId">
+        /// The unique identifier of the command to stream logs for.<br/>
+        /// Example: cmd_abc123
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -69,11 +78,20 @@ namespace Vercel
         /// If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="logs">
+        /// If true, stream the logs of the command execution in real-time via ND-JSON. This is only applicable if `wait` is also true.<br/>
+        /// Default Value: false
+        /// </param>
+        /// <param name="timeout">
+        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.<br/>
+        /// Example: 30000
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.RunSessionCommandResponse2> RunSessionCommandAsStreamAsync(
+        global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2, global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant3Variant1, global::Vercel.RunSessionCommandResponseVariant3Variant2>?>> RunSessionCommandAsStreamAsync(
             string sessionId,
+            string cmdId,
             string command,
             string? teamId = default,
             string? slug = default,
@@ -82,6 +100,8 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
             bool? sudo = default,
             bool? wait = default,
+            bool? logs = default,
+            int? timeout = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

@@ -27,6 +27,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TrafficSources,
+        /// <summary>
+        /// 
+        /// </summary>
         VercelRuleset,
     }
 
@@ -46,6 +50,7 @@ namespace Vercel
                 UpdateFirewallConfigRequestVariant11Id.BotFilter => "bot_filter",
                 UpdateFirewallConfigRequestVariant11Id.BotProtection => "bot_protection",
                 UpdateFirewallConfigRequestVariant11Id.Owasp => "owasp",
+                UpdateFirewallConfigRequestVariant11Id.TrafficSources => "traffic_sources",
                 UpdateFirewallConfigRequestVariant11Id.VercelRuleset => "vercel_ruleset",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -61,6 +66,7 @@ namespace Vercel
                 "bot_filter" => UpdateFirewallConfigRequestVariant11Id.BotFilter,
                 "bot_protection" => UpdateFirewallConfigRequestVariant11Id.BotProtection,
                 "owasp" => UpdateFirewallConfigRequestVariant11Id.Owasp,
+                "traffic_sources" => UpdateFirewallConfigRequestVariant11Id.TrafficSources,
                 "vercel_ruleset" => UpdateFirewallConfigRequestVariant11Id.VercelRuleset,
                 _ => null,
             };

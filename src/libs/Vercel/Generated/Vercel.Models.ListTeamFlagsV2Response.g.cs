@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.Flag> Data { get; set; }
+        public required global::Vercel.ListTeamFlagsV2ResponsePagination Pagination { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.ListTeamFlagsV2ResponsePagination Pagination { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.Flag, global::Vercel.MarketplaceFlag>> Data { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListTeamFlagsV2Response" /> class.
         /// </summary>
-        /// <param name="data"></param>
         /// <param name="pagination"></param>
+        /// <param name="data"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListTeamFlagsV2Response(
-            global::System.Collections.Generic.IList<global::Vercel.Flag> data,
-            global::Vercel.ListTeamFlagsV2ResponsePagination pagination)
+            global::Vercel.ListTeamFlagsV2ResponsePagination pagination,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.Flag, global::Vercel.MarketplaceFlag>> data)
         {
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Pagination = pagination ?? throw new global::System.ArgumentNullException(nameof(pagination));
+            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
         }
 
         /// <summary>

@@ -45,6 +45,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("capabilities")]
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilities? Capabilities { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flags")]
         public global::System.Collections.Generic.IList<string>? Flags { get; set; }
 
@@ -62,6 +68,7 @@ namespace Vercel
         /// <param name="slug"></param>
         /// <param name="icon"></param>
         /// <param name="supportsInstallationBillingPlans"></param>
+        /// <param name="capabilities"></param>
         /// <param name="flags"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -72,6 +79,7 @@ namespace Vercel
             string slug,
             string icon,
             bool? supportsInstallationBillingPlans,
+            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilities? capabilities,
             global::System.Collections.Generic.IList<string>? flags)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
@@ -79,6 +87,7 @@ namespace Vercel
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.SupportsInstallationBillingPlans = supportsInstallationBillingPlans;
             this.Icon = icon ?? throw new global::System.ArgumentNullException(nameof(icon));
+            this.Capabilities = capabilities;
             this.Flags = flags;
         }
 

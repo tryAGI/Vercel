@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -68,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Ember,
+        /// <summary>
+        /// 
+        /// </summary>
+        Eve,
         /// <summary>
         /// 
         /// </summary>
@@ -211,7 +219,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +313,7 @@ namespace Vercel
                 CreateDeploymentResponseProjectSettingsFramework.Axum => "axum",
                 CreateDeploymentResponseProjectSettingsFramework.Blitzjs => "blitzjs",
                 CreateDeploymentResponseProjectSettingsFramework.Brunch => "brunch",
+                CreateDeploymentResponseProjectSettingsFramework.Bun => "bun",
                 CreateDeploymentResponseProjectSettingsFramework.CreateReactApp => "create-react-app",
                 CreateDeploymentResponseProjectSettingsFramework.Django => "django",
                 CreateDeploymentResponseProjectSettingsFramework.Docusaurus => "docusaurus",
@@ -313,6 +322,7 @@ namespace Vercel
                 CreateDeploymentResponseProjectSettingsFramework.Eleventy => "eleventy",
                 CreateDeploymentResponseProjectSettingsFramework.Elysia => "elysia",
                 CreateDeploymentResponseProjectSettingsFramework.Ember => "ember",
+                CreateDeploymentResponseProjectSettingsFramework.Eve => "eve",
                 CreateDeploymentResponseProjectSettingsFramework.Express => "express",
                 CreateDeploymentResponseProjectSettingsFramework.Fastapi => "fastapi",
                 CreateDeploymentResponseProjectSettingsFramework.Fasthtml => "fasthtml",
@@ -348,7 +358,7 @@ namespace Vercel
                 CreateDeploymentResponseProjectSettingsFramework.Rust => "rust",
                 CreateDeploymentResponseProjectSettingsFramework.Saber => "saber",
                 CreateDeploymentResponseProjectSettingsFramework.Sanity => "sanity",
-                CreateDeploymentResponseProjectSettingsFramework.SanityV3 => "sanity-v3",
+                CreateDeploymentResponseProjectSettingsFramework.SanityV2 => "sanity-v2",
                 CreateDeploymentResponseProjectSettingsFramework.Sapper => "sapper",
                 CreateDeploymentResponseProjectSettingsFramework.Scully => "scully",
                 CreateDeploymentResponseProjectSettingsFramework.Services => "services",
@@ -384,6 +394,7 @@ namespace Vercel
                 "axum" => CreateDeploymentResponseProjectSettingsFramework.Axum,
                 "blitzjs" => CreateDeploymentResponseProjectSettingsFramework.Blitzjs,
                 "brunch" => CreateDeploymentResponseProjectSettingsFramework.Brunch,
+                "bun" => CreateDeploymentResponseProjectSettingsFramework.Bun,
                 "create-react-app" => CreateDeploymentResponseProjectSettingsFramework.CreateReactApp,
                 "django" => CreateDeploymentResponseProjectSettingsFramework.Django,
                 "docusaurus" => CreateDeploymentResponseProjectSettingsFramework.Docusaurus,
@@ -392,6 +403,7 @@ namespace Vercel
                 "eleventy" => CreateDeploymentResponseProjectSettingsFramework.Eleventy,
                 "elysia" => CreateDeploymentResponseProjectSettingsFramework.Elysia,
                 "ember" => CreateDeploymentResponseProjectSettingsFramework.Ember,
+                "eve" => CreateDeploymentResponseProjectSettingsFramework.Eve,
                 "express" => CreateDeploymentResponseProjectSettingsFramework.Express,
                 "fastapi" => CreateDeploymentResponseProjectSettingsFramework.Fastapi,
                 "fasthtml" => CreateDeploymentResponseProjectSettingsFramework.Fasthtml,
@@ -427,7 +439,7 @@ namespace Vercel
                 "rust" => CreateDeploymentResponseProjectSettingsFramework.Rust,
                 "saber" => CreateDeploymentResponseProjectSettingsFramework.Saber,
                 "sanity" => CreateDeploymentResponseProjectSettingsFramework.Sanity,
-                "sanity-v3" => CreateDeploymentResponseProjectSettingsFramework.SanityV3,
+                "sanity-v2" => CreateDeploymentResponseProjectSettingsFramework.SanityV2,
                 "sapper" => CreateDeploymentResponseProjectSettingsFramework.Sapper,
                 "scully" => CreateDeploymentResponseProjectSettingsFramework.Scully,
                 "services" => CreateDeploymentResponseProjectSettingsFramework.Services,

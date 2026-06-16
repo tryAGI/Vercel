@@ -67,12 +67,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
-        public bool? PublicSource { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rootDirectory")]
         public string? RootDirectory { get; set; }
 
@@ -136,7 +130,6 @@ namespace Vercel
         /// <param name="buildCommand"></param>
         /// <param name="nodeVersion"></param>
         /// <param name="outputDirectory"></param>
-        /// <param name="publicSource"></param>
         /// <param name="rootDirectory"></param>
         /// <param name="sourceFilesOutsideRootDirectory"></param>
         /// <param name="commandForIgnoringBuildStep"></param>
@@ -160,7 +153,6 @@ namespace Vercel
             string? buildCommand,
             global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsNodeVersion? nodeVersion,
             string? outputDirectory,
-            bool? publicSource,
             string? rootDirectory,
             bool? sourceFilesOutsideRootDirectory,
             string? commandForIgnoringBuildStep,
@@ -179,7 +171,6 @@ namespace Vercel
             this.BuildCommand = buildCommand;
             this.NodeVersion = nodeVersion;
             this.OutputDirectory = outputDirectory;
-            this.PublicSource = publicSource;
             this.RootDirectory = rootDirectory;
             this.SourceFilesOutsideRootDirectory = sourceFilesOutsideRootDirectory;
             this.CommandForIgnoringBuildStep = commandForIgnoringBuildStep;

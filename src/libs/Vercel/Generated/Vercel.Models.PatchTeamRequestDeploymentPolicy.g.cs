@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Composable deployment-time policy. Each rule key controls an independent restriction.
+    /// Composable deployment-time policy. Each rule type holds a list of rules, one per environment scope.
     /// </summary>
     public sealed partial class PatchTeamRequestDeploymentPolicy
     {
@@ -12,15 +12,15 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitSources")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestDeploymentPolicyGitSources, string>))]
-        public global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicyGitSources, string>? GitSources { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1Item>, string>))]
+        public global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1Item>, string>? GitSources { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentSources")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSources, string>))]
-        public global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSources, string>? DeploymentSources { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1Item>, string>))]
+        public global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1Item>, string>? DeploymentSources { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,8 +37,8 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PatchTeamRequestDeploymentPolicy(
-            global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicyGitSources, string>? gitSources,
-            global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSources, string>? deploymentSources)
+            global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1Item>, string>? gitSources,
+            global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1Item>, string>? deploymentSources)
         {
             this.GitSources = gitSources;
             this.DeploymentSources = deploymentSources;

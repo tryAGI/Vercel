@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -68,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Ember,
+        /// <summary>
+        /// 
+        /// </summary>
+        Eve,
         /// <summary>
         /// 
         /// </summary>
@@ -211,7 +219,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +313,7 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Axum => "axum",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Blitzjs => "blitzjs",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Brunch => "brunch",
+                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Bun => "bun",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.CreateReactApp => "create-react-app",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Django => "django",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Docusaurus => "docusaurus",
@@ -313,6 +322,7 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Eleventy => "eleventy",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Elysia => "elysia",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Ember => "ember",
+                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Eve => "eve",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Express => "express",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fastapi => "fastapi",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fasthtml => "fasthtml",
@@ -348,7 +358,7 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Rust => "rust",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Saber => "saber",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Sanity => "sanity",
-                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.SanityV3 => "sanity-v3",
+                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.SanityV2 => "sanity-v2",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Sapper => "sapper",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Scully => "scully",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Services => "services",
@@ -384,6 +394,7 @@ namespace Vercel
                 "axum" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Axum,
                 "blitzjs" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Blitzjs,
                 "brunch" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Brunch,
+                "bun" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Bun,
                 "create-react-app" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.CreateReactApp,
                 "django" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Django,
                 "docusaurus" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Docusaurus,
@@ -392,6 +403,7 @@ namespace Vercel
                 "eleventy" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Eleventy,
                 "elysia" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Elysia,
                 "ember" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Ember,
+                "eve" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Eve,
                 "express" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Express,
                 "fastapi" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fastapi,
                 "fasthtml" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fasthtml,
@@ -427,7 +439,7 @@ namespace Vercel
                 "rust" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Rust,
                 "saber" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Saber,
                 "sanity" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Sanity,
-                "sanity-v3" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.SanityV3,
+                "sanity-v2" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.SanityV2,
                 "sapper" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Sapper,
                 "scully" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Scully,
                 "services" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Services,

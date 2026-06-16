@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -68,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Ember,
+        /// <summary>
+        /// 
+        /// </summary>
+        Eve,
         /// <summary>
         /// 
         /// </summary>
@@ -211,7 +219,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +313,7 @@ namespace Vercel
                 CreateProjectResponseFramework.Axum => "axum",
                 CreateProjectResponseFramework.Blitzjs => "blitzjs",
                 CreateProjectResponseFramework.Brunch => "brunch",
+                CreateProjectResponseFramework.Bun => "bun",
                 CreateProjectResponseFramework.CreateReactApp => "create-react-app",
                 CreateProjectResponseFramework.Django => "django",
                 CreateProjectResponseFramework.Docusaurus => "docusaurus",
@@ -313,6 +322,7 @@ namespace Vercel
                 CreateProjectResponseFramework.Eleventy => "eleventy",
                 CreateProjectResponseFramework.Elysia => "elysia",
                 CreateProjectResponseFramework.Ember => "ember",
+                CreateProjectResponseFramework.Eve => "eve",
                 CreateProjectResponseFramework.Express => "express",
                 CreateProjectResponseFramework.Fastapi => "fastapi",
                 CreateProjectResponseFramework.Fasthtml => "fasthtml",
@@ -348,7 +358,7 @@ namespace Vercel
                 CreateProjectResponseFramework.Rust => "rust",
                 CreateProjectResponseFramework.Saber => "saber",
                 CreateProjectResponseFramework.Sanity => "sanity",
-                CreateProjectResponseFramework.SanityV3 => "sanity-v3",
+                CreateProjectResponseFramework.SanityV2 => "sanity-v2",
                 CreateProjectResponseFramework.Sapper => "sapper",
                 CreateProjectResponseFramework.Scully => "scully",
                 CreateProjectResponseFramework.Services => "services",
@@ -384,6 +394,7 @@ namespace Vercel
                 "axum" => CreateProjectResponseFramework.Axum,
                 "blitzjs" => CreateProjectResponseFramework.Blitzjs,
                 "brunch" => CreateProjectResponseFramework.Brunch,
+                "bun" => CreateProjectResponseFramework.Bun,
                 "create-react-app" => CreateProjectResponseFramework.CreateReactApp,
                 "django" => CreateProjectResponseFramework.Django,
                 "docusaurus" => CreateProjectResponseFramework.Docusaurus,
@@ -392,6 +403,7 @@ namespace Vercel
                 "eleventy" => CreateProjectResponseFramework.Eleventy,
                 "elysia" => CreateProjectResponseFramework.Elysia,
                 "ember" => CreateProjectResponseFramework.Ember,
+                "eve" => CreateProjectResponseFramework.Eve,
                 "express" => CreateProjectResponseFramework.Express,
                 "fastapi" => CreateProjectResponseFramework.Fastapi,
                 "fasthtml" => CreateProjectResponseFramework.Fasthtml,
@@ -427,7 +439,7 @@ namespace Vercel
                 "rust" => CreateProjectResponseFramework.Rust,
                 "saber" => CreateProjectResponseFramework.Saber,
                 "sanity" => CreateProjectResponseFramework.Sanity,
-                "sanity-v3" => CreateProjectResponseFramework.SanityV3,
+                "sanity-v2" => CreateProjectResponseFramework.SanityV2,
                 "sapper" => CreateProjectResponseFramework.Sapper,
                 "scully" => CreateProjectResponseFramework.Scully,
                 "services" => CreateProjectResponseFramework.Services,

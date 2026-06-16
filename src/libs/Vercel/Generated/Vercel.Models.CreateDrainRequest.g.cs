@@ -33,8 +33,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filter")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.CreateDrainRequestFilter>))]
-        public global::Vercel.OneOf<string, global::Vercel.CreateDrainRequestFilter>? Filter { get; set; }
+        public global::Vercel.CreateDrainRequestFilter? Filter { get; set; }
 
         /// <summary>
         /// 
@@ -47,8 +46,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("delivery")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDrainRequestDeliveryVariant1, global::Vercel.CreateDrainRequestDeliveryVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.CreateDrainRequestDeliveryVariant1, global::Vercel.CreateDrainRequestDeliveryVariant2>? Delivery { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDrainRequestDeliveryVariant1, global::Vercel.CreateDrainRequestDeliveryVariant2, global::Vercel.CreateDrainRequestDeliveryVariant3>))]
+        public global::Vercel.OneOf<global::Vercel.CreateDrainRequestDeliveryVariant1, global::Vercel.CreateDrainRequestDeliveryVariant2, global::Vercel.CreateDrainRequestDeliveryVariant3>? Delivery { get; set; }
 
         /// <summary>
         /// 
@@ -95,8 +94,8 @@ namespace Vercel
             global::Vercel.CreateDrainRequestProjects projects,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateDrainRequestSchemas2> schemas,
             global::System.Collections.Generic.IList<string>? projectIds,
-            global::Vercel.OneOf<string, global::Vercel.CreateDrainRequestFilter>? filter,
-            global::Vercel.OneOf<global::Vercel.CreateDrainRequestDeliveryVariant1, global::Vercel.CreateDrainRequestDeliveryVariant2>? delivery,
+            global::Vercel.CreateDrainRequestFilter? filter,
+            global::Vercel.OneOf<global::Vercel.CreateDrainRequestDeliveryVariant1, global::Vercel.CreateDrainRequestDeliveryVariant2, global::Vercel.CreateDrainRequestDeliveryVariant3>? delivery,
             global::System.Collections.Generic.IList<global::Vercel.CreateDrainRequestSamplingItem>? sampling,
             global::System.Collections.Generic.IList<global::Vercel.CreateDrainRequestTransform>? transforms,
             global::Vercel.OneOf<global::Vercel.OneOf<global::Vercel.CreateDrainRequestSourceVariant1, global::Vercel.CreateDrainRequestSourceVariant2, global::Vercel.CreateDrainRequestSourceVariant3>?, global::Vercel.CreateDrainRequestSource2>? source)

@@ -118,12 +118,6 @@ namespace Vercel
         public global::Vercel.GetProjectResponseDataCache? DataCache { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("delegatedProtection")]
-        public object? DelegatedProtection { get; set; }
-
-        /// <summary>
         /// Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentExpiration")]
@@ -174,6 +168,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("framework")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectResponseFrameworkJsonConverter))]
         public global::Vercel.GetProjectResponseFramework? Framework { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("services")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseService>? Services { get; set; }
 
         /// <summary>
         /// 
@@ -262,14 +262,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("productionDeploymentsFastLane")]
-        public bool? ProductionDeploymentsFastLane { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("passport")]
+        public global::Vercel.GetProjectResponsePassport? Passport { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
-        public bool? PublicSource { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("protectionConfig")]
+        public global::Vercel.GetProjectResponseProtectionConfig? ProtectionConfig { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("productionDeploymentsFastLane")]
+        public bool? ProductionDeploymentsFastLane { get; set; }
 
         /// <summary>
         /// 
@@ -503,7 +509,7 @@ namespace Vercel
         public global::Vercel.GetProjectResponseOidcTokenConfig? OidcTokenConfig { get; set; }
 
         /// <summary>
-        /// Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type — the underlying data lives in separate stores.
+        /// Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
         public global::Vercel.GetProjectResponseDeploymentPolicy? DeploymentPolicy { get; set; }
@@ -623,13 +629,13 @@ namespace Vercel
         /// <param name="customerSupportCodeVisibility"></param>
         /// <param name="crons"></param>
         /// <param name="dataCache"></param>
-        /// <param name="delegatedProtection"></param>
         /// <param name="expiration"></param>
         /// <param name="devCommand"></param>
         /// <param name="installCommand"></param>
         /// <param name="env"></param>
         /// <param name="customEnvironments"></param>
         /// <param name="framework"></param>
+        /// <param name="services"></param>
         /// <param name="gitForkProtection"></param>
         /// <param name="gitLFS"></param>
         /// <param name="ipBuckets"></param>
@@ -640,8 +646,9 @@ namespace Vercel
         /// <param name="optionsAllowlist"></param>
         /// <param name="outputDirectory"></param>
         /// <param name="passwordProtection"></param>
+        /// <param name="passport"></param>
+        /// <param name="protectionConfig"></param>
         /// <param name="productionDeploymentsFastLane"></param>
-        /// <param name="publicSource"></param>
         /// <param name="rollbackDescription">
         /// Description of why a project was rolled back, and by whom. Note that lastAliasRequest contains the from/to details of the rollback.
         /// </param>
@@ -683,7 +690,7 @@ namespace Vercel
         /// <param name="security"></param>
         /// <param name="oidcTokenConfig"></param>
         /// <param name="deploymentPolicy">
-        /// Project-level shape. Each rule may be: - an object: overrides the team's value for that rule - `null`: explicitly clears the override on just that rule (inherit team) - omitted: inherit team To clear all overrides and inherit fully, set the project's `deploymentPolicy` field itself to `null`. Defined independently from {@link TeamDeploymentPolicy} so the two are not coupled by a shared type — the underlying data lives in separate stores.
+        /// Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident.
         /// </param>
         /// <param name="tier"></param>
         /// <param name="flatRateTier"></param>
@@ -727,13 +734,13 @@ namespace Vercel
             bool? customerSupportCodeVisibility,
             global::Vercel.GetProjectResponseCrons? crons,
             global::Vercel.GetProjectResponseDataCache? dataCache,
-            object? delegatedProtection,
             global::Vercel.OneOf<global::Vercel.GetProjectResponseExpirationVariant1, global::Vercel.GetProjectResponseExpirationVariant2>? expiration,
             string? devCommand,
             string? installCommand,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseEnvItem>? env,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseCustomEnvironment>? customEnvironments,
             global::Vercel.GetProjectResponseFramework? framework,
+            global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseService>? services,
             bool? gitForkProtection,
             bool? gitLFS,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseIpBucket>? ipBuckets,
@@ -744,8 +751,9 @@ namespace Vercel
             global::Vercel.GetProjectResponseOptionsAllowlist? optionsAllowlist,
             string? outputDirectory,
             object? passwordProtection,
+            global::Vercel.GetProjectResponsePassport? passport,
+            global::Vercel.GetProjectResponseProtectionConfig? protectionConfig,
             bool? productionDeploymentsFastLane,
-            bool? publicSource,
             global::Vercel.GetProjectResponseRollbackDescription? rollbackDescription,
             global::Vercel.GetProjectResponseRollingRelease? rollingRelease,
             string? rootDirectory,
@@ -815,7 +823,6 @@ namespace Vercel
             this.CustomerSupportCodeVisibility = customerSupportCodeVisibility;
             this.Crons = crons;
             this.DataCache = dataCache;
-            this.DelegatedProtection = delegatedProtection;
             this.DeploymentExpiration = deploymentExpiration ?? throw new global::System.ArgumentNullException(nameof(deploymentExpiration));
             this.Expiration = expiration;
             this.DevCommand = devCommand;
@@ -824,6 +831,7 @@ namespace Vercel
             this.Env = env;
             this.CustomEnvironments = customEnvironments;
             this.Framework = framework;
+            this.Services = services;
             this.GitForkProtection = gitForkProtection;
             this.GitLFS = gitLFS;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
@@ -837,8 +845,9 @@ namespace Vercel
             this.OptionsAllowlist = optionsAllowlist;
             this.OutputDirectory = outputDirectory;
             this.PasswordProtection = passwordProtection;
+            this.Passport = passport;
+            this.ProtectionConfig = protectionConfig;
             this.ProductionDeploymentsFastLane = productionDeploymentsFastLane;
-            this.PublicSource = publicSource;
             this.ResourceConfig = resourceConfig ?? throw new global::System.ArgumentNullException(nameof(resourceConfig));
             this.RollbackDescription = rollbackDescription;
             this.RollingRelease = rollingRelease;

@@ -697,6 +697,9 @@ namespace Vercel
         /// <param name="defaultDeploymentProtection">
         /// Default deployment protection settings for new projects.
         /// </param>
+        /// <param name="defaultPassport">
+        /// Default Passport configuration for new projects.
+        /// </param>
         /// <param name="defaultExpirationSettings"></param>
         /// <param name="deploymentPolicy"></param>
         /// <param name="strictDeploymentProtectionSettings">
@@ -734,6 +737,7 @@ namespace Vercel
             bool? requireVerifiedCommits = default,
             bool? disableRepositoryDispatchEvents = default,
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection = default,
+            global::Vercel.PatchTeamRequestDefaultPassport? defaultPassport = default,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings = default,
             global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicy, string>? deploymentPolicy = default,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings = default,
@@ -764,6 +768,7 @@ namespace Vercel
                 RequireVerifiedCommits = requireVerifiedCommits,
                 DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents,
                 DefaultDeploymentProtection = defaultDeploymentProtection,
+                DefaultPassport = defaultPassport,
                 DefaultExpirationSettings = defaultExpirationSettings,
                 DeploymentPolicy = deploymentPolicy,
                 StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings,

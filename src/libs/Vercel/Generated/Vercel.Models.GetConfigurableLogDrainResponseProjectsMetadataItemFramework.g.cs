@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -68,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Ember,
+        /// <summary>
+        /// 
+        /// </summary>
+        Eve,
         /// <summary>
         /// 
         /// </summary>
@@ -211,7 +219,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +313,7 @@ namespace Vercel
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Axum => "axum",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Blitzjs => "blitzjs",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Brunch => "brunch",
+                GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Bun => "bun",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.CreateReactApp => "create-react-app",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Django => "django",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Docusaurus => "docusaurus",
@@ -313,6 +322,7 @@ namespace Vercel
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Eleventy => "eleventy",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Elysia => "elysia",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Ember => "ember",
+                GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Eve => "eve",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Express => "express",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Fastapi => "fastapi",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Fasthtml => "fasthtml",
@@ -348,7 +358,7 @@ namespace Vercel
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Rust => "rust",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Saber => "saber",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Sanity => "sanity",
-                GetConfigurableLogDrainResponseProjectsMetadataItemFramework.SanityV3 => "sanity-v3",
+                GetConfigurableLogDrainResponseProjectsMetadataItemFramework.SanityV2 => "sanity-v2",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Sapper => "sapper",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Scully => "scully",
                 GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Services => "services",
@@ -384,6 +394,7 @@ namespace Vercel
                 "axum" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Axum,
                 "blitzjs" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Blitzjs,
                 "brunch" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Brunch,
+                "bun" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Bun,
                 "create-react-app" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.CreateReactApp,
                 "django" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Django,
                 "docusaurus" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Docusaurus,
@@ -392,6 +403,7 @@ namespace Vercel
                 "eleventy" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Eleventy,
                 "elysia" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Elysia,
                 "ember" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Ember,
+                "eve" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Eve,
                 "express" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Express,
                 "fastapi" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Fastapi,
                 "fasthtml" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Fasthtml,
@@ -427,7 +439,7 @@ namespace Vercel
                 "rust" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Rust,
                 "saber" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Saber,
                 "sanity" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Sanity,
-                "sanity-v3" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.SanityV3,
+                "sanity-v2" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.SanityV2,
                 "sapper" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Sapper,
                 "scully" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Scully,
                 "services" => GetConfigurableLogDrainResponseProjectsMetadataItemFramework.Services,

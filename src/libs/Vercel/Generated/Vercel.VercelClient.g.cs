@@ -124,6 +124,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public ConnectClient Connect => new ConnectClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
+        /// 
+        /// </summary>
         public DeploymentsClient Deployments => new DeploymentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

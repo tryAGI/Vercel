@@ -45,7 +45,7 @@ namespace Vercel
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
         /// <summary>
-        /// Points all production domains for a project to the given deploy<br/>
+        /// Point production traffic to a previous production deployment by ID<br/>
         /// Allows users to rollback to a deployment.
         /// </summary>
         /// <param name="projectId"></param>
@@ -84,7 +84,7 @@ namespace Vercel
             ).ConfigureAwait(false);
         }
         /// <summary>
-        /// Points all production domains for a project to the given deploy<br/>
+        /// Point production traffic to a previous production deployment by ID<br/>
         /// Allows users to rollback to a deployment.
         /// </summary>
         /// <param name="projectId"></param>

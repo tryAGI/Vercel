@@ -23,6 +23,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.ListFlagVersionsResponseVersionData Data { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
@@ -40,13 +47,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.ListFlagVersionsResponseVersionData Data { get; set; }
 
         /// <summary>
         /// 
@@ -77,10 +77,10 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListFlagVersionsResponseVersion" /> class.
         /// </summary>
+        /// <param name="data"></param>
         /// <param name="id"></param>
         /// <param name="revision"></param>
         /// <param name="createdAt"></param>
-        /// <param name="data"></param>
         /// <param name="flagId"></param>
         /// <param name="changedEnvironments"></param>
         /// <param name="createdBy"></param>
@@ -90,10 +90,10 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListFlagVersionsResponseVersion(
+            global::Vercel.ListFlagVersionsResponseVersionData data,
             string id,
             double revision,
             double createdAt,
-            global::Vercel.ListFlagVersionsResponseVersionData data,
             string flagId,
             global::System.Collections.Generic.IList<string> changedEnvironments,
             string? createdBy,
@@ -102,10 +102,10 @@ namespace Vercel
         {
             this.CreatedBy = createdBy;
             this.Message = message;
+            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Revision = revision;
             this.CreatedAt = createdAt;
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.FlagId = flagId ?? throw new global::System.ArgumentNullException(nameof(flagId));
             this.ChangedEnvironments = changedEnvironments ?? throw new global::System.ArgumentNullException(nameof(changedEnvironments));
             this.Metadata = metadata;

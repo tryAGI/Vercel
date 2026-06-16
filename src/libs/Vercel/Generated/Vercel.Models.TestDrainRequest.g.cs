@@ -19,9 +19,9 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("delivery")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.TestDrainRequestDeliveryVariant1, global::Vercel.TestDrainRequestDeliveryVariant2>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.TestDrainRequestDeliveryVariant1, global::Vercel.TestDrainRequestDeliveryVariant2, global::Vercel.TestDrainRequestDeliveryVariant3>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<global::Vercel.TestDrainRequestDeliveryVariant1, global::Vercel.TestDrainRequestDeliveryVariant2> Delivery { get; set; }
+        public required global::Vercel.OneOf<global::Vercel.TestDrainRequestDeliveryVariant1, global::Vercel.TestDrainRequestDeliveryVariant2, global::Vercel.TestDrainRequestDeliveryVariant3> Delivery { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,7 +39,7 @@ namespace Vercel
 #endif
         public TestDrainRequest(
             global::System.Collections.Generic.Dictionary<string, global::Vercel.TestDrainRequestSchemas2> schemas,
-            global::Vercel.OneOf<global::Vercel.TestDrainRequestDeliveryVariant1, global::Vercel.TestDrainRequestDeliveryVariant2> delivery)
+            global::Vercel.OneOf<global::Vercel.TestDrainRequestDeliveryVariant1, global::Vercel.TestDrainRequestDeliveryVariant2, global::Vercel.TestDrainRequestDeliveryVariant3> delivery)
         {
             this.Schemas = schemas ?? throw new global::System.ArgumentNullException(nameof(schemas));
             this.Delivery = delivery;

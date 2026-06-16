@@ -72,6 +72,12 @@ namespace Vercel
         public global::System.Collections.Generic.Dictionary<string, string>? Env { get; set; }
 
         /// <summary>
+        /// List of drives to mount to the sandbox at the provided path.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mounts")]
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesRequestMounts2>? Mounts { get; set; }
+
+        /// <summary>
         /// Name for the sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
         /// Example: my-sandbox
         /// </summary>
@@ -147,6 +153,9 @@ namespace Vercel
         /// Default Value: {}<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </param>
+        /// <param name="mounts">
+        /// List of drives to mount to the sandbox at the provided path.
+        /// </param>
         /// <param name="name">
         /// Name for the sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
         /// Example: my-sandbox
@@ -178,6 +187,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<int>? ports,
             int? timeout,
             global::System.Collections.Generic.Dictionary<string, string>? env,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesRequestMounts2>? mounts,
             string? name,
             bool? persistent,
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
@@ -192,6 +202,7 @@ namespace Vercel
             this.Ports = ports;
             this.Timeout = timeout;
             this.Env = env;
+            this.Mounts = mounts;
             this.Name = name;
             this.Persistent = persistent;
             this.SnapshotExpiration = snapshotExpiration;

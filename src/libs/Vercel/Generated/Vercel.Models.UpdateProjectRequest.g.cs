@@ -123,16 +123,17 @@ namespace Vercel
         public string? PreviewDeploymentSuffix { get; set; }
 
         /// <summary>
-        /// Specifies whether the source code and logs of the deployments for this project should be public or not
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
-        public bool? PublicSource { get; set; }
-
-        /// <summary>
         /// Specifies resource override configuration for the project
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
         public global::Vercel.UpdateProjectRequestResourceConfig? ResourceConfig { get; set; }
+
+        /// <summary>
+        /// Deprecated. Accepted for backwards compatibility but ignored.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
+        [global::System.Obsolete("This property marked as deprecated.")]
+        public bool? PublicSource { get; set; }
 
         /// <summary>
         /// The name of a directory or relative path to the source code of your project. When `null` is used it will default to the project root
@@ -232,6 +233,12 @@ namespace Vercel
         public global::Vercel.UpdateProjectRequestPasswordProtection? PasswordProtection { get; set; }
 
         /// <summary>
+        /// Passport configuration for the project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passport")]
+        public global::Vercel.UpdateProjectRequestPassport? Passport { get; set; }
+
+        /// <summary>
         /// Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ssoProtection")]
@@ -326,9 +333,6 @@ namespace Vercel
         /// <param name="previewDeploymentSuffix">
         /// Custom domain suffix for preview deployments. Takes precedence over team-level suffix. Must be a domain owned by the team.
         /// </param>
-        /// <param name="publicSource">
-        /// Specifies whether the source code and logs of the deployments for this project should be public or not
-        /// </param>
         /// <param name="resourceConfig">
         /// Specifies resource override configuration for the project
         /// </param>
@@ -377,6 +381,9 @@ namespace Vercel
         /// <param name="passwordProtection">
         /// Allows to protect project deployments with a password
         /// </param>
+        /// <param name="passport">
+        /// Passport configuration for the project.
+        /// </param>
         /// <param name="ssoProtection">
         /// Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
         /// </param>
@@ -418,7 +425,6 @@ namespace Vercel
             string? outputDirectory,
             bool? previewDeploymentsDisabled,
             string? previewDeploymentSuffix,
-            bool? publicSource,
             global::Vercel.UpdateProjectRequestResourceConfig? resourceConfig,
             string? rootDirectory,
             string? serverlessFunctionRegion,
@@ -435,6 +441,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestTracing? tracing,
             global::Vercel.UpdateProjectRequestOidcTokenConfig? oidcTokenConfig,
             global::Vercel.UpdateProjectRequestPasswordProtection? passwordProtection,
+            global::Vercel.UpdateProjectRequestPassport? passport,
             global::Vercel.UpdateProjectRequestSsoProtection? ssoProtection,
             global::Vercel.UpdateProjectRequestTrustedIps? trustedIps,
             global::Vercel.UpdateProjectRequestTrustedSources? trustedSources,
@@ -461,7 +468,6 @@ namespace Vercel
             this.OutputDirectory = outputDirectory;
             this.PreviewDeploymentsDisabled = previewDeploymentsDisabled;
             this.PreviewDeploymentSuffix = previewDeploymentSuffix;
-            this.PublicSource = publicSource;
             this.ResourceConfig = resourceConfig;
             this.RootDirectory = rootDirectory;
             this.ServerlessFunctionRegion = serverlessFunctionRegion;
@@ -478,6 +484,7 @@ namespace Vercel
             this.Tracing = tracing;
             this.OidcTokenConfig = oidcTokenConfig;
             this.PasswordProtection = passwordProtection;
+            this.Passport = passport;
             this.SsoProtection = ssoProtection;
             this.TrustedIps = trustedIps;
             this.TrustedSources = trustedSources;

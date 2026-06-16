@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -68,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Ember,
+        /// <summary>
+        /// 
+        /// </summary>
+        Eve,
         /// <summary>
         /// 
         /// </summary>
@@ -211,7 +219,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +313,7 @@ namespace Vercel
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Axum => "axum",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Blitzjs => "blitzjs",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Brunch => "brunch",
+                GetDeploymentResponseVariant1ProjectSettingsFramework.Bun => "bun",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.CreateReactApp => "create-react-app",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Django => "django",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Docusaurus => "docusaurus",
@@ -313,6 +322,7 @@ namespace Vercel
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Eleventy => "eleventy",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Elysia => "elysia",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Ember => "ember",
+                GetDeploymentResponseVariant1ProjectSettingsFramework.Eve => "eve",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Express => "express",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Fastapi => "fastapi",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Fasthtml => "fasthtml",
@@ -348,7 +358,7 @@ namespace Vercel
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Rust => "rust",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Saber => "saber",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Sanity => "sanity",
-                GetDeploymentResponseVariant1ProjectSettingsFramework.SanityV3 => "sanity-v3",
+                GetDeploymentResponseVariant1ProjectSettingsFramework.SanityV2 => "sanity-v2",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Sapper => "sapper",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Scully => "scully",
                 GetDeploymentResponseVariant1ProjectSettingsFramework.Services => "services",
@@ -384,6 +394,7 @@ namespace Vercel
                 "axum" => GetDeploymentResponseVariant1ProjectSettingsFramework.Axum,
                 "blitzjs" => GetDeploymentResponseVariant1ProjectSettingsFramework.Blitzjs,
                 "brunch" => GetDeploymentResponseVariant1ProjectSettingsFramework.Brunch,
+                "bun" => GetDeploymentResponseVariant1ProjectSettingsFramework.Bun,
                 "create-react-app" => GetDeploymentResponseVariant1ProjectSettingsFramework.CreateReactApp,
                 "django" => GetDeploymentResponseVariant1ProjectSettingsFramework.Django,
                 "docusaurus" => GetDeploymentResponseVariant1ProjectSettingsFramework.Docusaurus,
@@ -392,6 +403,7 @@ namespace Vercel
                 "eleventy" => GetDeploymentResponseVariant1ProjectSettingsFramework.Eleventy,
                 "elysia" => GetDeploymentResponseVariant1ProjectSettingsFramework.Elysia,
                 "ember" => GetDeploymentResponseVariant1ProjectSettingsFramework.Ember,
+                "eve" => GetDeploymentResponseVariant1ProjectSettingsFramework.Eve,
                 "express" => GetDeploymentResponseVariant1ProjectSettingsFramework.Express,
                 "fastapi" => GetDeploymentResponseVariant1ProjectSettingsFramework.Fastapi,
                 "fasthtml" => GetDeploymentResponseVariant1ProjectSettingsFramework.Fasthtml,
@@ -427,7 +439,7 @@ namespace Vercel
                 "rust" => GetDeploymentResponseVariant1ProjectSettingsFramework.Rust,
                 "saber" => GetDeploymentResponseVariant1ProjectSettingsFramework.Saber,
                 "sanity" => GetDeploymentResponseVariant1ProjectSettingsFramework.Sanity,
-                "sanity-v3" => GetDeploymentResponseVariant1ProjectSettingsFramework.SanityV3,
+                "sanity-v2" => GetDeploymentResponseVariant1ProjectSettingsFramework.SanityV2,
                 "sapper" => GetDeploymentResponseVariant1ProjectSettingsFramework.Sapper,
                 "scully" => GetDeploymentResponseVariant1ProjectSettingsFramework.Scully,
                 "services" => GetDeploymentResponseVariant1ProjectSettingsFramework.Services,

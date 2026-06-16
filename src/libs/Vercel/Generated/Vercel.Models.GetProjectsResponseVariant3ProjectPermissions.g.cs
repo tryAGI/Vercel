@@ -17,12 +17,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("organization")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Organization { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? User { get; set; }
 
@@ -31,6 +25,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userConnection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? UserConnection { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("userMfaConfiguration")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? UserMfaConfiguration { get; set; }
 
         /// <summary>
         /// 
@@ -61,6 +61,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("agent")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Agent { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayRules")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayRules { get; set; }
 
         /// <summary>
         /// 
@@ -295,12 +301,6 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultDeploymentProtection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DefaultDeploymentProtection { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("delegatedProtectionClient")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DelegatedProtectionClient { get; set; }
 
         /// <summary>
         /// 
@@ -755,8 +755,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("organization")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Organization { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("organizationDomain")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OrganizationDomain { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("organizationTeam")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OrganizationTeam { get; set; }
 
         /// <summary>
         /// 
@@ -1271,12 +1283,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectDelegatedProtection")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDelegatedProtection { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectDeploymentExpiration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDeploymentExpiration { get; set; }
 
@@ -1345,6 +1351,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectFlagsProduction")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlagsProduction { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectFlagsSdkKey")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlagsSdkKey { get; set; }
 
         /// <summary>
         /// 
@@ -1530,14 +1542,15 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant3ProjectPermissions" /> class.
         /// </summary>
         /// <param name="oauth2Connection"></param>
-        /// <param name="organization"></param>
         /// <param name="user"></param>
         /// <param name="userConnection"></param>
+        /// <param name="userMfaConfiguration"></param>
         /// <param name="userPreference"></param>
         /// <param name="userSudo"></param>
         /// <param name="webAuthn"></param>
         /// <param name="accessGroup"></param>
         /// <param name="agent"></param>
+        /// <param name="aiGatewayRules"></param>
         /// <param name="aiGatewayUsage"></param>
         /// <param name="alerts"></param>
         /// <param name="alertRules"></param>
@@ -1577,7 +1590,6 @@ namespace Vercel
         /// <param name="buildMachineDefault"></param>
         /// <param name="dataCacheBillingSettings"></param>
         /// <param name="defaultDeploymentProtection"></param>
-        /// <param name="delegatedProtectionClient"></param>
         /// <param name="deploymentPolicy"></param>
         /// <param name="domain"></param>
         /// <param name="domainAcceptDelegation"></param>
@@ -1653,7 +1665,9 @@ namespace Vercel
         /// <param name="observabilityNotebook"></param>
         /// <param name="openTelemetryEndpoint"></param>
         /// <param name="ownEvent"></param>
+        /// <param name="organization"></param>
         /// <param name="organizationDomain"></param>
+        /// <param name="organizationTeam"></param>
         /// <param name="passwordProtectionInvoiceItem"></param>
         /// <param name="paymentMethod"></param>
         /// <param name="permissions"></param>
@@ -1739,7 +1753,6 @@ namespace Vercel
         /// <param name="projectAnalyticsUsage"></param>
         /// <param name="projectCheck"></param>
         /// <param name="projectCheckRun"></param>
-        /// <param name="projectDelegatedProtection"></param>
         /// <param name="projectDeploymentExpiration"></param>
         /// <param name="projectDeploymentHook"></param>
         /// <param name="projectDeploymentProtectionStrict"></param>
@@ -1752,6 +1765,7 @@ namespace Vercel
         /// <param name="projectEnvVarsUnownedByIntegration"></param>
         /// <param name="projectFlags"></param>
         /// <param name="projectFlagsProduction"></param>
+        /// <param name="projectFlagsSdkKey"></param>
         /// <param name="projectFromV0"></param>
         /// <param name="projectId"></param>
         /// <param name="projectIntegrationConfiguration"></param>
@@ -1786,14 +1800,15 @@ namespace Vercel
 #endif
         public GetProjectsResponseVariant3ProjectPermissions(
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? oauth2Connection,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? organization,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? user,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userConnection,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userMfaConfiguration,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userPreference,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userSudo,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAuthn,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? accessGroup,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? agent,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayRules,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayUsage,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? alerts,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? alertRules,
@@ -1833,7 +1848,6 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? buildMachineDefault,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? dataCacheBillingSettings,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? defaultDeploymentProtection,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? delegatedProtectionClient,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentPolicy,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? domain,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? domainAcceptDelegation,
@@ -1909,7 +1923,9 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? observabilityNotebook,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? openTelemetryEndpoint,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ownEvent,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? organization,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? organizationDomain,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? organizationTeam,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? passwordProtectionInvoiceItem,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? paymentMethod,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? permissions,
@@ -1995,7 +2011,6 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectAnalyticsUsage,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectCheck,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectCheckRun,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDelegatedProtection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDeploymentExpiration,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDeploymentHook,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDeploymentProtectionStrict,
@@ -2008,6 +2023,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEnvVarsUnownedByIntegration,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlags,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlagsProduction,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlagsSdkKey,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFromV0,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectId,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectIntegrationConfiguration,
@@ -2039,14 +2055,15 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalytics)
         {
             this.Oauth2Connection = oauth2Connection;
-            this.Organization = organization;
             this.User = user;
             this.UserConnection = userConnection;
+            this.UserMfaConfiguration = userMfaConfiguration;
             this.UserPreference = userPreference;
             this.UserSudo = userSudo;
             this.WebAuthn = webAuthn;
             this.AccessGroup = accessGroup;
             this.Agent = agent;
+            this.AiGatewayRules = aiGatewayRules;
             this.AiGatewayUsage = aiGatewayUsage;
             this.Alerts = alerts;
             this.AlertRules = alertRules;
@@ -2086,7 +2103,6 @@ namespace Vercel
             this.BuildMachineDefault = buildMachineDefault;
             this.DataCacheBillingSettings = dataCacheBillingSettings;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
-            this.DelegatedProtectionClient = delegatedProtectionClient;
             this.DeploymentPolicy = deploymentPolicy;
             this.Domain = domain;
             this.DomainAcceptDelegation = domainAcceptDelegation;
@@ -2162,7 +2178,9 @@ namespace Vercel
             this.ObservabilityNotebook = observabilityNotebook;
             this.OpenTelemetryEndpoint = openTelemetryEndpoint;
             this.OwnEvent = ownEvent;
+            this.Organization = organization;
             this.OrganizationDomain = organizationDomain;
+            this.OrganizationTeam = organizationTeam;
             this.PasswordProtectionInvoiceItem = passwordProtectionInvoiceItem;
             this.PaymentMethod = paymentMethod;
             this.Permissions = permissions;
@@ -2248,7 +2266,6 @@ namespace Vercel
             this.ProjectAnalyticsUsage = projectAnalyticsUsage;
             this.ProjectCheck = projectCheck;
             this.ProjectCheckRun = projectCheckRun;
-            this.ProjectDelegatedProtection = projectDelegatedProtection;
             this.ProjectDeploymentExpiration = projectDeploymentExpiration;
             this.ProjectDeploymentHook = projectDeploymentHook;
             this.ProjectDeploymentProtectionStrict = projectDeploymentProtectionStrict;
@@ -2261,6 +2278,7 @@ namespace Vercel
             this.ProjectEnvVarsUnownedByIntegration = projectEnvVarsUnownedByIntegration;
             this.ProjectFlags = projectFlags;
             this.ProjectFlagsProduction = projectFlagsProduction;
+            this.ProjectFlagsSdkKey = projectFlagsSdkKey;
             this.ProjectFromV0 = projectFromV0;
             this.ProjectId = projectId;
             this.ProjectIntegrationConfiguration = projectIntegrationConfiguration;

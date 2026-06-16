@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -68,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Ember,
+        /// <summary>
+        /// 
+        /// </summary>
+        Eve,
         /// <summary>
         /// 
         /// </summary>
@@ -211,7 +219,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +313,7 @@ namespace Vercel
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Axum => "axum",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Blitzjs => "blitzjs",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Brunch => "brunch",
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Bun => "bun",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.CreateReactApp => "create-react-app",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Django => "django",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Docusaurus => "docusaurus",
@@ -313,6 +322,7 @@ namespace Vercel
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Eleventy => "eleventy",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Elysia => "elysia",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Ember => "ember",
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Eve => "eve",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Express => "express",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fastapi => "fastapi",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fasthtml => "fasthtml",
@@ -348,7 +358,7 @@ namespace Vercel
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Rust => "rust",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Saber => "saber",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sanity => "sanity",
-                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.SanityV3 => "sanity-v3",
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.SanityV2 => "sanity-v2",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sapper => "sapper",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Scully => "scully",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Services => "services",
@@ -384,6 +394,7 @@ namespace Vercel
                 "axum" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Axum,
                 "blitzjs" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Blitzjs,
                 "brunch" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Brunch,
+                "bun" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Bun,
                 "create-react-app" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.CreateReactApp,
                 "django" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Django,
                 "docusaurus" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Docusaurus,
@@ -392,6 +403,7 @@ namespace Vercel
                 "eleventy" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Eleventy,
                 "elysia" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Elysia,
                 "ember" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Ember,
+                "eve" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Eve,
                 "express" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Express,
                 "fastapi" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fastapi,
                 "fasthtml" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fasthtml,
@@ -427,7 +439,7 @@ namespace Vercel
                 "rust" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Rust,
                 "saber" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Saber,
                 "sanity" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sanity,
-                "sanity-v3" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.SanityV3,
+                "sanity-v2" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.SanityV2,
                 "sapper" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sapper,
                 "scully" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Scully,
                 "services" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Services,

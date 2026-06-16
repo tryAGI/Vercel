@@ -98,9 +98,9 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("delivery")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateDrainResponseVariant2DeliveryVariant1, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant3, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant4>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateDrainResponseVariant2DeliveryVariant1, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant3, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant4, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant5>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<global::Vercel.UpdateDrainResponseVariant2DeliveryVariant1, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant3, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant4> Delivery { get; set; }
+        public required global::Vercel.OneOf<global::Vercel.UpdateDrainResponseVariant2DeliveryVariant1, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant3, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant4, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant5> Delivery { get; set; }
 
         /// <summary>
         /// 
@@ -119,15 +119,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("filter")]
-        public string? Filter { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filterV2")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateDrainResponseVariant2FilterV2Variant1, global::Vercel.UpdateDrainResponseVariant2FilterV2Variant2>))]
-        public global::Vercel.OneOf<global::Vercel.UpdateDrainResponseVariant2FilterV2Variant1, global::Vercel.UpdateDrainResponseVariant2FilterV2Variant2>? FilterV2 { get; set; }
+        public global::Vercel.UpdateDrainResponseVariant2FilterV2? FilterV2 { get; set; }
 
         /// <summary>
         /// 
@@ -179,7 +172,6 @@ namespace Vercel
         /// <param name="disabledBy"></param>
         /// <param name="disabledReason"></param>
         /// <param name="sampling"></param>
-        /// <param name="filter"></param>
         /// <param name="filterV2"></param>
         /// <param name="integrationIcon"></param>
         /// <param name="integrationConfigurationUri"></param>
@@ -195,7 +187,7 @@ namespace Vercel
             string name,
             string ownerId,
             global::Vercel.UpdateDrainResponseVariant2Schemas schemas,
-            global::Vercel.OneOf<global::Vercel.UpdateDrainResponseVariant2DeliveryVariant1, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant3, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant4> delivery,
+            global::Vercel.OneOf<global::Vercel.UpdateDrainResponseVariant2DeliveryVariant1, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant3, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant4, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant5> delivery,
             global::Vercel.OneOf<global::Vercel.UpdateDrainResponseVariant2SourceVariant1, global::Vercel.UpdateDrainResponseVariant2SourceVariant2> source,
             global::System.Collections.Generic.IList<string>? projectIds,
             string? teamId,
@@ -205,8 +197,7 @@ namespace Vercel
             string? disabledBy,
             global::Vercel.UpdateDrainResponseVariant2DisabledReason? disabledReason,
             global::System.Collections.Generic.IList<global::Vercel.UpdateDrainResponseVariant2SamplingItem>? sampling,
-            string? filter,
-            global::Vercel.OneOf<global::Vercel.UpdateDrainResponseVariant2FilterV2Variant1, global::Vercel.UpdateDrainResponseVariant2FilterV2Variant2>? filterV2,
+            global::Vercel.UpdateDrainResponseVariant2FilterV2? filterV2,
             string? integrationIcon,
             string? integrationConfigurationUri,
             string? integrationWebsite,
@@ -228,7 +219,6 @@ namespace Vercel
             this.Delivery = delivery;
             this.Sampling = sampling;
             this.Source = source;
-            this.Filter = filter;
             this.FilterV2 = filterV2;
             this.IntegrationIcon = integrationIcon;
             this.IntegrationConfigurationUri = integrationConfigurationUri;

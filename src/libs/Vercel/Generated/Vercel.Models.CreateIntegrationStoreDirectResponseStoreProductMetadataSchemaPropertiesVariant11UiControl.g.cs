@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        GitNamespace,
+        Domain,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant11UiControl.GitNamespace => "git-namespace",
+                CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant11UiControl.Domain => "domain",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "git-namespace" => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant11UiControl.GitNamespace,
+                "domain" => CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant11UiControl.Domain,
                 _ => null,
             };
         }

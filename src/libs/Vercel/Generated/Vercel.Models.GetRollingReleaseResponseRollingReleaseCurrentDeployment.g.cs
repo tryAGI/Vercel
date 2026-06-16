@@ -62,7 +62,7 @@ namespace Vercel
         public double? ReadyStateAt { get; set; }
 
         /// <summary>
-        /// Where was the deployment created from<br/>
+        /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
         /// Example: cli
         /// </summary>
         /// <example>cli</example>
@@ -114,7 +114,7 @@ namespace Vercel
         /// </param>
         /// <param name="readyStateAt"></param>
         /// <param name="source">
-        /// Where was the deployment created from<br/>
+        /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
         /// Example: cli
         /// </param>
 #if NET7_0_OR_GREATER

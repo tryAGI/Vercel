@@ -9,15 +9,6 @@ namespace Vercel
     public sealed partial class TeamSamlConnection
     {
         /// <summary>
-        /// The Identity Provider "type", for example Okta.<br/>
-        /// Example: OktaSAML
-        /// </summary>
-        /// <example>OktaSAML</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Type { get; set; }
-
-        /// <summary>
         /// Current status of the connection.<br/>
         /// Example: linked
         /// </summary>
@@ -25,6 +16,15 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Status { get; set; }
+
+        /// <summary>
+        /// The Identity Provider "type", for example Okta.<br/>
+        /// Example: OktaSAML
+        /// </summary>
+        /// <example>OktaSAML</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Type { get; set; }
 
         /// <summary>
         /// Current state of the connection.<br/>
@@ -76,13 +76,13 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="TeamSamlConnection" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The Identity Provider "type", for example Okta.<br/>
-        /// Example: OktaSAML
-        /// </param>
         /// <param name="status">
         /// Current status of the connection.<br/>
         /// Example: linked
+        /// </param>
+        /// <param name="type">
+        /// The Identity Provider "type", for example Okta.<br/>
+        /// Example: OktaSAML
         /// </param>
         /// <param name="state">
         /// Current state of the connection.<br/>
@@ -107,16 +107,16 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TeamSamlConnection(
-            string type,
             string status,
+            string type,
             string state,
             double connectedAt,
             double? lastReceivedWebhookEvent,
             double? lastSyncedAt,
             global::Vercel.TeamSamlConnectionSyncState? syncState)
         {
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
+            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.State = state ?? throw new global::System.ArgumentNullException(nameof(state));
             this.ConnectedAt = connectedAt;
             this.LastReceivedWebhookEvent = lastReceivedWebhookEvent;

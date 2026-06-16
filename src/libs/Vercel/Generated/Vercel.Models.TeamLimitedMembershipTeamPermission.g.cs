@@ -31,6 +31,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrgAdmin,
+        /// <summary>
+        /// 
+        /// </summary>
+        OrgViewer,
+        /// <summary>
+        /// 
+        /// </summary>
         UsageViewer,
         /// <summary>
         /// 
@@ -63,6 +71,8 @@ namespace Vercel
                 TeamLimitedMembershipTeamPermission.EnvironmentManager => "EnvironmentManager",
                 TeamLimitedMembershipTeamPermission.FullProductionDeployment => "FullProductionDeployment",
                 TeamLimitedMembershipTeamPermission.IntegrationManager => "IntegrationManager",
+                TeamLimitedMembershipTeamPermission.OrgAdmin => "OrgAdmin",
+                TeamLimitedMembershipTeamPermission.OrgViewer => "OrgViewer",
                 TeamLimitedMembershipTeamPermission.UsageViewer => "UsageViewer",
                 TeamLimitedMembershipTeamPermission.V0Builder => "V0Builder",
                 TeamLimitedMembershipTeamPermission.V0Chatter => "V0Chatter",
@@ -82,6 +92,8 @@ namespace Vercel
                 "EnvironmentManager" => TeamLimitedMembershipTeamPermission.EnvironmentManager,
                 "FullProductionDeployment" => TeamLimitedMembershipTeamPermission.FullProductionDeployment,
                 "IntegrationManager" => TeamLimitedMembershipTeamPermission.IntegrationManager,
+                "OrgAdmin" => TeamLimitedMembershipTeamPermission.OrgAdmin,
+                "OrgViewer" => TeamLimitedMembershipTeamPermission.OrgViewer,
                 "UsageViewer" => TeamLimitedMembershipTeamPermission.UsageViewer,
                 "V0Builder" => TeamLimitedMembershipTeamPermission.V0Builder,
                 "V0Chatter" => TeamLimitedMembershipTeamPermission.V0Chatter,

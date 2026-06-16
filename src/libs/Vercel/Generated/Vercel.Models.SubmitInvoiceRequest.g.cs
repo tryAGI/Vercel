@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class SubmitInvoiceRequest
     {
         /// <summary>
-        /// 
+        /// Partner-provided invoice identifier. If provided, it must be unique for this installation.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalId")]
         public string? ExternalId { get; set; }
@@ -75,7 +75,9 @@ namespace Vercel
         /// Subscription period for this billing cycle.
         /// </param>
         /// <param name="items"></param>
-        /// <param name="externalId"></param>
+        /// <param name="externalId">
+        /// Partner-provided invoice identifier. If provided, it must be unique for this installation.
+        /// </param>
         /// <param name="memo">
         /// Additional memo for the invoice.
         /// </param>

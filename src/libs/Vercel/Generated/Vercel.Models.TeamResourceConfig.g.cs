@@ -51,6 +51,12 @@ namespace Vercel
         public double? PostgresDatabases { get; set; }
 
         /// <summary>
+        /// The maximum number of custom environments allowed per project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentsPerProject")]
+        public double? CustomEnvironmentsPerProject { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildEntitlements")]
@@ -92,6 +98,9 @@ namespace Vercel
         /// <param name="postgresDatabases">
         /// The maximum number of postgres databases an account can create.
         /// </param>
+        /// <param name="customEnvironmentsPerProject">
+        /// The maximum number of custom environments allowed per project.
+        /// </param>
         /// <param name="buildEntitlements"></param>
         /// <param name="buildMachine">
         /// Build machine configuration
@@ -107,6 +116,7 @@ namespace Vercel
             double? kvDatabases,
             double? blobStores,
             double? postgresDatabases,
+            double? customEnvironmentsPerProject,
             global::Vercel.TeamResourceConfigBuildEntitlements? buildEntitlements,
             global::Vercel.TeamResourceConfigBuildMachine? buildMachine)
         {
@@ -117,6 +127,7 @@ namespace Vercel
             this.KvDatabases = kvDatabases;
             this.BlobStores = blobStores;
             this.PostgresDatabases = postgresDatabases;
+            this.CustomEnvironmentsPerProject = customEnvironmentsPerProject;
             this.BuildEntitlements = buildEntitlements;
             this.BuildMachine = buildMachine;
         }

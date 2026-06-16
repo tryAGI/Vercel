@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bun,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -68,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         Ember,
+        /// <summary>
+        /// 
+        /// </summary>
+        Eve,
         /// <summary>
         /// 
         /// </summary>
@@ -211,7 +219,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        SanityV3,
+        SanityV2,
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +313,7 @@ namespace Vercel
                 GetMicrofrontendsInGroupResponseProjectFramework.Axum => "axum",
                 GetMicrofrontendsInGroupResponseProjectFramework.Blitzjs => "blitzjs",
                 GetMicrofrontendsInGroupResponseProjectFramework.Brunch => "brunch",
+                GetMicrofrontendsInGroupResponseProjectFramework.Bun => "bun",
                 GetMicrofrontendsInGroupResponseProjectFramework.CreateReactApp => "create-react-app",
                 GetMicrofrontendsInGroupResponseProjectFramework.Django => "django",
                 GetMicrofrontendsInGroupResponseProjectFramework.Docusaurus => "docusaurus",
@@ -313,6 +322,7 @@ namespace Vercel
                 GetMicrofrontendsInGroupResponseProjectFramework.Eleventy => "eleventy",
                 GetMicrofrontendsInGroupResponseProjectFramework.Elysia => "elysia",
                 GetMicrofrontendsInGroupResponseProjectFramework.Ember => "ember",
+                GetMicrofrontendsInGroupResponseProjectFramework.Eve => "eve",
                 GetMicrofrontendsInGroupResponseProjectFramework.Express => "express",
                 GetMicrofrontendsInGroupResponseProjectFramework.Fastapi => "fastapi",
                 GetMicrofrontendsInGroupResponseProjectFramework.Fasthtml => "fasthtml",
@@ -348,7 +358,7 @@ namespace Vercel
                 GetMicrofrontendsInGroupResponseProjectFramework.Rust => "rust",
                 GetMicrofrontendsInGroupResponseProjectFramework.Saber => "saber",
                 GetMicrofrontendsInGroupResponseProjectFramework.Sanity => "sanity",
-                GetMicrofrontendsInGroupResponseProjectFramework.SanityV3 => "sanity-v3",
+                GetMicrofrontendsInGroupResponseProjectFramework.SanityV2 => "sanity-v2",
                 GetMicrofrontendsInGroupResponseProjectFramework.Sapper => "sapper",
                 GetMicrofrontendsInGroupResponseProjectFramework.Scully => "scully",
                 GetMicrofrontendsInGroupResponseProjectFramework.Services => "services",
@@ -384,6 +394,7 @@ namespace Vercel
                 "axum" => GetMicrofrontendsInGroupResponseProjectFramework.Axum,
                 "blitzjs" => GetMicrofrontendsInGroupResponseProjectFramework.Blitzjs,
                 "brunch" => GetMicrofrontendsInGroupResponseProjectFramework.Brunch,
+                "bun" => GetMicrofrontendsInGroupResponseProjectFramework.Bun,
                 "create-react-app" => GetMicrofrontendsInGroupResponseProjectFramework.CreateReactApp,
                 "django" => GetMicrofrontendsInGroupResponseProjectFramework.Django,
                 "docusaurus" => GetMicrofrontendsInGroupResponseProjectFramework.Docusaurus,
@@ -392,6 +403,7 @@ namespace Vercel
                 "eleventy" => GetMicrofrontendsInGroupResponseProjectFramework.Eleventy,
                 "elysia" => GetMicrofrontendsInGroupResponseProjectFramework.Elysia,
                 "ember" => GetMicrofrontendsInGroupResponseProjectFramework.Ember,
+                "eve" => GetMicrofrontendsInGroupResponseProjectFramework.Eve,
                 "express" => GetMicrofrontendsInGroupResponseProjectFramework.Express,
                 "fastapi" => GetMicrofrontendsInGroupResponseProjectFramework.Fastapi,
                 "fasthtml" => GetMicrofrontendsInGroupResponseProjectFramework.Fasthtml,
@@ -427,7 +439,7 @@ namespace Vercel
                 "rust" => GetMicrofrontendsInGroupResponseProjectFramework.Rust,
                 "saber" => GetMicrofrontendsInGroupResponseProjectFramework.Saber,
                 "sanity" => GetMicrofrontendsInGroupResponseProjectFramework.Sanity,
-                "sanity-v3" => GetMicrofrontendsInGroupResponseProjectFramework.SanityV3,
+                "sanity-v2" => GetMicrofrontendsInGroupResponseProjectFramework.SanityV2,
                 "sapper" => GetMicrofrontendsInGroupResponseProjectFramework.Sapper,
                 "scully" => GetMicrofrontendsInGroupResponseProjectFramework.Scully,
                 "services" => GetMicrofrontendsInGroupResponseProjectFramework.Services,

@@ -80,6 +80,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayApiKeyQuotaUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayByokCredentialCreated,
         /// <summary>
         /// 
@@ -89,6 +93,42 @@ namespace Vercel
         /// 
         /// </summary>
         AiGatewayByokCredentialUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayProviderAllowlistProvidersUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayProviderAllowlistToggled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayRuleCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayRuleDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayRuleUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayVirtualModelConfigArchived,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayVirtualModelConfigCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayVirtualModelConfigRestored,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayVirtualModelConfigUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -412,6 +452,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DeploymentPolicyBlocked,
+        /// <summary>
+        /// 
+        /// </summary>
+        DeploymentUndeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         DisabledIntegrationInstallationRemoved,
         /// <summary>
         /// 
@@ -441,6 +489,10 @@ namespace Vercel
         /// 
         /// </summary>
         DnsDelete,
+        /// <summary>
+        /// 
+        /// </summary>
+        DnsRecordInternal,
         /// <summary>
         /// 
         /// </summary>
@@ -752,6 +804,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        GitAccountIntegrationLinkAdded,
+        /// <summary>
+        /// 
+        /// </summary>
         InstantRollbackCreated,
         /// <summary>
         /// 
@@ -860,6 +916,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        MonitoringAlertUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         MonitoringDisabled,
         /// <summary>
         /// 
@@ -920,6 +980,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrganizationTeamAdd,
+        /// <summary>
+        /// 
+        /// </summary>
         OwnerBlocked,
         /// <summary>
         /// 
@@ -941,6 +1005,10 @@ namespace Vercel
         /// 
         /// </summary>
         PageIntegrityHeaderApproved,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityInventoryCleared,
         /// <summary>
         /// 
         /// </summary>
@@ -1105,18 +1173,6 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectCustomerSuccessCodeVisibilityUpdated,
-        /// <summary>
-        /// 
-        /// </summary>
-        ProjectDelegatedProtectionDisabled,
-        /// <summary>
-        /// 
-        /// </summary>
-        ProjectDelegatedProtectionEnabled,
-        /// <summary>
-        /// 
-        /// </summary>
-        ProjectDelegatedProtectionUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -1320,6 +1376,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ProjectPassportUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ProjectPasswordProtection,
         /// <summary>
         /// 
@@ -1345,6 +1405,10 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectProtectedSourcemapsUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectRollbackDescriptionUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -1401,6 +1465,10 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectRoutesVersionRestored,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectSandboxUrlProtectionUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -1684,6 +1752,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamDefaultPassportUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamDelete,
         /// <summary>
         /// 
@@ -1840,6 +1912,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserEmuAccountArchived,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserEmuAccountRecovered,
+        /// <summary>
+        /// 
+        /// </summary>
         UserMfaChallengeVerified,
         /// <summary>
         /// 
@@ -1853,6 +1933,10 @@ namespace Vercel
         /// 
         /// </summary>
         UserMfaRemoved,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserMfaSetupSkipped,
         /// <summary>
         /// 
         /// </summary>
@@ -1996,9 +2080,19 @@ namespace Vercel
                 ListEventTypeName.AiCodeReview => "ai-code-review",
                 ListEventTypeName.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
                 ListEventTypeName.AiGatewayApiKeyDeleted => "ai-gateway-api-key-deleted",
+                ListEventTypeName.AiGatewayApiKeyQuotaUpdated => "ai-gateway-api-key-quota-updated",
                 ListEventTypeName.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeName.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeName.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                ListEventTypeName.AiGatewayProviderAllowlistProvidersUpdated => "ai-gateway-provider-allowlist-providers-updated",
+                ListEventTypeName.AiGatewayProviderAllowlistToggled => "ai-gateway-provider-allowlist-toggled",
+                ListEventTypeName.AiGatewayRuleCreated => "ai-gateway-rule-created",
+                ListEventTypeName.AiGatewayRuleDeleted => "ai-gateway-rule-deleted",
+                ListEventTypeName.AiGatewayRuleUpdated => "ai-gateway-rule-updated",
+                ListEventTypeName.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
+                ListEventTypeName.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
+                ListEventTypeName.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
+                ListEventTypeName.AiGatewayVirtualModelConfigUpdated => "ai-gateway-virtual-model-config-updated",
                 ListEventTypeName.AiOmniagent => "ai-omniagent",
                 ListEventTypeName.AlertRuleCreated => "alert-rule-created",
                 ListEventTypeName.AlertRuleDeleted => "alert-rule-deleted",
@@ -2079,6 +2173,8 @@ namespace Vercel
                 ListEventTypeName.DeploymentChown => "deployment-chown",
                 ListEventTypeName.DeploymentCreationBlocked => "deployment-creation-blocked",
                 ListEventTypeName.DeploymentDelete => "deployment-delete",
+                ListEventTypeName.DeploymentPolicyBlocked => "deployment-policy-blocked",
+                ListEventTypeName.DeploymentUndeleted => "deployment-undeleted",
                 ListEventTypeName.DisabledIntegrationInstallationRemoved => "disabled-integration-installation-removed",
                 ListEventTypeName.DisconnectBitbucketApp => "disconnect-bitbucket-app",
                 ListEventTypeName.DisconnectGithub => "disconnect-github",
@@ -2087,6 +2183,7 @@ namespace Vercel
                 ListEventTypeName.DisconnectGitlabApp => "disconnect-gitlab-app",
                 ListEventTypeName.DnsAdd => "dns-add",
                 ListEventTypeName.DnsDelete => "dns-delete",
+                ListEventTypeName.DnsRecordInternal => "dns-record-internal",
                 ListEventTypeName.DnsUpdate => "dns-update",
                 ListEventTypeName.DnsZonefileImport => "dns-zonefile-import",
                 ListEventTypeName.Domain => "domain",
@@ -2164,6 +2261,7 @@ namespace Vercel
                 ListEventTypeName.FlagsSdkKeyRead => "flags-sdk-key-read",
                 ListEventTypeName.FlagsSegment => "flags-segment",
                 ListEventTypeName.FlagsSettings => "flags-settings",
+                ListEventTypeName.GitAccountIntegrationLinkAdded => "git_account_integration_link_added",
                 ListEventTypeName.InstantRollbackCreated => "instant-rollback-created",
                 ListEventTypeName.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
                 ListEventTypeName.IntegrationConfigurationScopeChangeConfirmed => "integration-configuration-scope-change-confirmed",
@@ -2191,6 +2289,7 @@ namespace Vercel
                 ListEventTypeName.MicrofrontendProjectAddedToGroup => "microfrontend-project-added-to-group",
                 ListEventTypeName.MicrofrontendProjectRemovedFromGroup => "microfrontend-project-removed-from-group",
                 ListEventTypeName.MicrofrontendProjectUpdated => "microfrontend-project-updated",
+                ListEventTypeName.MonitoringAlertUpdated => "monitoring-alert-updated",
                 ListEventTypeName.MonitoringDisabled => "monitoring-disabled",
                 ListEventTypeName.MonitoringEnabled => "monitoring-enabled",
                 ListEventTypeName.OauthAppConnectionCreated => "oauth-app-connection-created",
@@ -2206,12 +2305,14 @@ namespace Vercel
                 ListEventTypeName.ObservabilityEnabled => "observability-enabled",
                 ListEventTypeName.ObservabilityPlusProjectDisabled => "observability-plus-project-disabled",
                 ListEventTypeName.ObservabilityPlusProjectEnabled => "observability-plus-project-enabled",
+                ListEventTypeName.OrganizationTeamAdd => "organization-team-add",
                 ListEventTypeName.OwnerBlocked => "owner-blocked",
                 ListEventTypeName.OwnerSoftBlocked => "owner-soft-blocked",
                 ListEventTypeName.OwnerSoftUnblocked => "owner-soft-unblocked",
                 ListEventTypeName.OwnerUnblocked => "owner-unblocked",
                 ListEventTypeName.PageIntegrityConfigUpdated => "page-integrity-config-updated",
                 ListEventTypeName.PageIntegrityHeaderApproved => "page-integrity-header-approved",
+                ListEventTypeName.PageIntegrityInventoryCleared => "page-integrity-inventory-cleared",
                 ListEventTypeName.PageIntegrityResourceApproved => "page-integrity-resource-approved",
                 ListEventTypeName.PageIntegrityResourceDeleted => "page-integrity-resource-deleted",
                 ListEventTypeName.PageIntegrityResourceRejected => "page-integrity-resource-rejected",
@@ -2253,9 +2354,6 @@ namespace Vercel
                 ListEventTypeName.ProjectCustomEnvironmentDeleted => "project-custom-environment-deleted",
                 ListEventTypeName.ProjectCustomEnvironmentUpdated => "project-custom-environment-updated",
                 ListEventTypeName.ProjectCustomerSuccessCodeVisibilityUpdated => "project-customer-success-code-visibility-updated",
-                ListEventTypeName.ProjectDelegatedProtectionDisabled => "project-delegated-protection-disabled",
-                ListEventTypeName.ProjectDelegatedProtectionEnabled => "project-delegated-protection-enabled",
-                ListEventTypeName.ProjectDelegatedProtectionUpdated => "project-delegated-protection-updated",
                 ListEventTypeName.ProjectDelete => "project-delete",
                 ListEventTypeName.ProjectDeploymentPolicyUpdated => "project-deployment-policy-updated",
                 ListEventTypeName.ProjectDeploymentRetentionUpdated => "project-deployment-retention-updated",
@@ -2306,6 +2404,7 @@ namespace Vercel
                 ListEventTypeName.ProjectOidcTokenCreated => "project-oidc-token-created",
                 ListEventTypeName.ProjectOptionsAllowlist => "project-options-allowlist",
                 ListEventTypeName.ProjectOutputDirectoryUpdated => "project-output-directory-updated",
+                ListEventTypeName.ProjectPassportUpdated => "project-passport-updated",
                 ListEventTypeName.ProjectPasswordProtection => "project-password-protection",
                 ListEventTypeName.ProjectPaused => "project-paused",
                 ListEventTypeName.ProjectPreviewDeploymentSuffix => "project-preview-deployment-suffix",
@@ -2313,6 +2412,7 @@ namespace Vercel
                 ListEventTypeName.ProjectPrioritizeProductionBuildsUpdated => "project-prioritize-production-builds-updated",
                 ListEventTypeName.ProjectProgramEnrollmentChanged => "project-program-enrollment-changed",
                 ListEventTypeName.ProjectProtectedSourcemapsUpdated => "project-protected-sourcemaps-updated",
+                ListEventTypeName.ProjectRollbackDescriptionUpdated => "project-rollback-description-updated",
                 ListEventTypeName.ProjectRollingReleaseAborted => "project-rolling-release-aborted",
                 ListEventTypeName.ProjectRollingReleaseApproved => "project-rolling-release-approved",
                 ListEventTypeName.ProjectRollingReleaseCompleted => "project-rolling-release-completed",
@@ -2327,6 +2427,7 @@ namespace Vercel
                 ListEventTypeName.ProjectRootDirectoryUpdated => "project-root-directory-updated",
                 ListEventTypeName.ProjectRoutesVersionPromoted => "project-routes-version-promoted",
                 ListEventTypeName.ProjectRoutesVersionRestored => "project-routes-version-restored",
+                ListEventTypeName.ProjectSandboxUrlProtectionUpdated => "project-sandbox-url-protection-updated",
                 ListEventTypeName.ProjectSkewProtectionAllowedDomainsUpdated => "project-skew-protection-allowed-domains-updated",
                 ListEventTypeName.ProjectSkewProtectionMaxAgeUpdated => "project-skew-protection-max-age-updated",
                 ListEventTypeName.ProjectSkewProtectionThresholdUpdated => "project-skew-protection-threshold-updated",
@@ -2397,6 +2498,7 @@ namespace Vercel
                 ListEventTypeName.Team => "team",
                 ListEventTypeName.TeamAvatarUpdate => "team-avatar-update",
                 ListEventTypeName.TeamDefaultBuildMachineUpdated => "team-default-build-machine-updated",
+                ListEventTypeName.TeamDefaultPassportUpdated => "team-default-passport-updated",
                 ListEventTypeName.TeamDelete => "team-delete",
                 ListEventTypeName.TeamDeploymentPolicyUpdated => "team-deployment-policy-updated",
                 ListEventTypeName.TeamDomainVerificationCreated => "team-domain-verification-created",
@@ -2436,10 +2538,13 @@ namespace Vercel
                 ListEventTypeName.TeamTokensInvalidated => "team-tokens-invalidated",
                 ListEventTypeName.UnlinkLoginConnection => "unlink-login-connection",
                 ListEventTypeName.UserDelete => "user-delete",
+                ListEventTypeName.UserEmuAccountArchived => "user-emu-account-archived",
+                ListEventTypeName.UserEmuAccountRecovered => "user-emu-account-recovered",
                 ListEventTypeName.UserMfaChallengeVerified => "user-mfa-challenge-verified",
                 ListEventTypeName.UserMfaConfigurationUpdated => "user-mfa-configuration-updated",
                 ListEventTypeName.UserMfaRecoveryCodesRegenerated => "user-mfa-recovery-codes-regenerated",
                 ListEventTypeName.UserMfaRemoved => "user-mfa-removed",
+                ListEventTypeName.UserMfaSetupSkipped => "user-mfa-setup-skipped",
                 ListEventTypeName.UserMfaTotpVerificationStarted => "user-mfa-totp-verification-started",
                 ListEventTypeName.UserMfaTotpVerified => "user-mfa-totp-verified",
                 ListEventTypeName.UserPrimaryEmailUpdated => "user-primary-email-updated",
@@ -2495,9 +2600,19 @@ namespace Vercel
                 "ai-code-review" => ListEventTypeName.AiCodeReview,
                 "ai-gateway-api-key-created" => ListEventTypeName.AiGatewayApiKeyCreated,
                 "ai-gateway-api-key-deleted" => ListEventTypeName.AiGatewayApiKeyDeleted,
+                "ai-gateway-api-key-quota-updated" => ListEventTypeName.AiGatewayApiKeyQuotaUpdated,
                 "ai-gateway-byok-credential-created" => ListEventTypeName.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeName.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeName.AiGatewayByokCredentialUpdated,
+                "ai-gateway-provider-allowlist-providers-updated" => ListEventTypeName.AiGatewayProviderAllowlistProvidersUpdated,
+                "ai-gateway-provider-allowlist-toggled" => ListEventTypeName.AiGatewayProviderAllowlistToggled,
+                "ai-gateway-rule-created" => ListEventTypeName.AiGatewayRuleCreated,
+                "ai-gateway-rule-deleted" => ListEventTypeName.AiGatewayRuleDeleted,
+                "ai-gateway-rule-updated" => ListEventTypeName.AiGatewayRuleUpdated,
+                "ai-gateway-virtual-model-config-archived" => ListEventTypeName.AiGatewayVirtualModelConfigArchived,
+                "ai-gateway-virtual-model-config-created" => ListEventTypeName.AiGatewayVirtualModelConfigCreated,
+                "ai-gateway-virtual-model-config-restored" => ListEventTypeName.AiGatewayVirtualModelConfigRestored,
+                "ai-gateway-virtual-model-config-updated" => ListEventTypeName.AiGatewayVirtualModelConfigUpdated,
                 "ai-omniagent" => ListEventTypeName.AiOmniagent,
                 "alert-rule-created" => ListEventTypeName.AlertRuleCreated,
                 "alert-rule-deleted" => ListEventTypeName.AlertRuleDeleted,
@@ -2578,6 +2693,8 @@ namespace Vercel
                 "deployment-chown" => ListEventTypeName.DeploymentChown,
                 "deployment-creation-blocked" => ListEventTypeName.DeploymentCreationBlocked,
                 "deployment-delete" => ListEventTypeName.DeploymentDelete,
+                "deployment-policy-blocked" => ListEventTypeName.DeploymentPolicyBlocked,
+                "deployment-undeleted" => ListEventTypeName.DeploymentUndeleted,
                 "disabled-integration-installation-removed" => ListEventTypeName.DisabledIntegrationInstallationRemoved,
                 "disconnect-bitbucket-app" => ListEventTypeName.DisconnectBitbucketApp,
                 "disconnect-github" => ListEventTypeName.DisconnectGithub,
@@ -2586,6 +2703,7 @@ namespace Vercel
                 "disconnect-gitlab-app" => ListEventTypeName.DisconnectGitlabApp,
                 "dns-add" => ListEventTypeName.DnsAdd,
                 "dns-delete" => ListEventTypeName.DnsDelete,
+                "dns-record-internal" => ListEventTypeName.DnsRecordInternal,
                 "dns-update" => ListEventTypeName.DnsUpdate,
                 "dns-zonefile-import" => ListEventTypeName.DnsZonefileImport,
                 "domain" => ListEventTypeName.Domain,
@@ -2663,6 +2781,7 @@ namespace Vercel
                 "flags-sdk-key-read" => ListEventTypeName.FlagsSdkKeyRead,
                 "flags-segment" => ListEventTypeName.FlagsSegment,
                 "flags-settings" => ListEventTypeName.FlagsSettings,
+                "git_account_integration_link_added" => ListEventTypeName.GitAccountIntegrationLinkAdded,
                 "instant-rollback-created" => ListEventTypeName.InstantRollbackCreated,
                 "integration-configuration-owner-changed" => ListEventTypeName.IntegrationConfigurationOwnerChanged,
                 "integration-configuration-scope-change-confirmed" => ListEventTypeName.IntegrationConfigurationScopeChangeConfirmed,
@@ -2690,6 +2809,7 @@ namespace Vercel
                 "microfrontend-project-added-to-group" => ListEventTypeName.MicrofrontendProjectAddedToGroup,
                 "microfrontend-project-removed-from-group" => ListEventTypeName.MicrofrontendProjectRemovedFromGroup,
                 "microfrontend-project-updated" => ListEventTypeName.MicrofrontendProjectUpdated,
+                "monitoring-alert-updated" => ListEventTypeName.MonitoringAlertUpdated,
                 "monitoring-disabled" => ListEventTypeName.MonitoringDisabled,
                 "monitoring-enabled" => ListEventTypeName.MonitoringEnabled,
                 "oauth-app-connection-created" => ListEventTypeName.OauthAppConnectionCreated,
@@ -2705,12 +2825,14 @@ namespace Vercel
                 "observability-enabled" => ListEventTypeName.ObservabilityEnabled,
                 "observability-plus-project-disabled" => ListEventTypeName.ObservabilityPlusProjectDisabled,
                 "observability-plus-project-enabled" => ListEventTypeName.ObservabilityPlusProjectEnabled,
+                "organization-team-add" => ListEventTypeName.OrganizationTeamAdd,
                 "owner-blocked" => ListEventTypeName.OwnerBlocked,
                 "owner-soft-blocked" => ListEventTypeName.OwnerSoftBlocked,
                 "owner-soft-unblocked" => ListEventTypeName.OwnerSoftUnblocked,
                 "owner-unblocked" => ListEventTypeName.OwnerUnblocked,
                 "page-integrity-config-updated" => ListEventTypeName.PageIntegrityConfigUpdated,
                 "page-integrity-header-approved" => ListEventTypeName.PageIntegrityHeaderApproved,
+                "page-integrity-inventory-cleared" => ListEventTypeName.PageIntegrityInventoryCleared,
                 "page-integrity-resource-approved" => ListEventTypeName.PageIntegrityResourceApproved,
                 "page-integrity-resource-deleted" => ListEventTypeName.PageIntegrityResourceDeleted,
                 "page-integrity-resource-rejected" => ListEventTypeName.PageIntegrityResourceRejected,
@@ -2752,9 +2874,6 @@ namespace Vercel
                 "project-custom-environment-deleted" => ListEventTypeName.ProjectCustomEnvironmentDeleted,
                 "project-custom-environment-updated" => ListEventTypeName.ProjectCustomEnvironmentUpdated,
                 "project-customer-success-code-visibility-updated" => ListEventTypeName.ProjectCustomerSuccessCodeVisibilityUpdated,
-                "project-delegated-protection-disabled" => ListEventTypeName.ProjectDelegatedProtectionDisabled,
-                "project-delegated-protection-enabled" => ListEventTypeName.ProjectDelegatedProtectionEnabled,
-                "project-delegated-protection-updated" => ListEventTypeName.ProjectDelegatedProtectionUpdated,
                 "project-delete" => ListEventTypeName.ProjectDelete,
                 "project-deployment-policy-updated" => ListEventTypeName.ProjectDeploymentPolicyUpdated,
                 "project-deployment-retention-updated" => ListEventTypeName.ProjectDeploymentRetentionUpdated,
@@ -2805,6 +2924,7 @@ namespace Vercel
                 "project-oidc-token-created" => ListEventTypeName.ProjectOidcTokenCreated,
                 "project-options-allowlist" => ListEventTypeName.ProjectOptionsAllowlist,
                 "project-output-directory-updated" => ListEventTypeName.ProjectOutputDirectoryUpdated,
+                "project-passport-updated" => ListEventTypeName.ProjectPassportUpdated,
                 "project-password-protection" => ListEventTypeName.ProjectPasswordProtection,
                 "project-paused" => ListEventTypeName.ProjectPaused,
                 "project-preview-deployment-suffix" => ListEventTypeName.ProjectPreviewDeploymentSuffix,
@@ -2812,6 +2932,7 @@ namespace Vercel
                 "project-prioritize-production-builds-updated" => ListEventTypeName.ProjectPrioritizeProductionBuildsUpdated,
                 "project-program-enrollment-changed" => ListEventTypeName.ProjectProgramEnrollmentChanged,
                 "project-protected-sourcemaps-updated" => ListEventTypeName.ProjectProtectedSourcemapsUpdated,
+                "project-rollback-description-updated" => ListEventTypeName.ProjectRollbackDescriptionUpdated,
                 "project-rolling-release-aborted" => ListEventTypeName.ProjectRollingReleaseAborted,
                 "project-rolling-release-approved" => ListEventTypeName.ProjectRollingReleaseApproved,
                 "project-rolling-release-completed" => ListEventTypeName.ProjectRollingReleaseCompleted,
@@ -2826,6 +2947,7 @@ namespace Vercel
                 "project-root-directory-updated" => ListEventTypeName.ProjectRootDirectoryUpdated,
                 "project-routes-version-promoted" => ListEventTypeName.ProjectRoutesVersionPromoted,
                 "project-routes-version-restored" => ListEventTypeName.ProjectRoutesVersionRestored,
+                "project-sandbox-url-protection-updated" => ListEventTypeName.ProjectSandboxUrlProtectionUpdated,
                 "project-skew-protection-allowed-domains-updated" => ListEventTypeName.ProjectSkewProtectionAllowedDomainsUpdated,
                 "project-skew-protection-max-age-updated" => ListEventTypeName.ProjectSkewProtectionMaxAgeUpdated,
                 "project-skew-protection-threshold-updated" => ListEventTypeName.ProjectSkewProtectionThresholdUpdated,
@@ -2896,6 +3018,7 @@ namespace Vercel
                 "team" => ListEventTypeName.Team,
                 "team-avatar-update" => ListEventTypeName.TeamAvatarUpdate,
                 "team-default-build-machine-updated" => ListEventTypeName.TeamDefaultBuildMachineUpdated,
+                "team-default-passport-updated" => ListEventTypeName.TeamDefaultPassportUpdated,
                 "team-delete" => ListEventTypeName.TeamDelete,
                 "team-deployment-policy-updated" => ListEventTypeName.TeamDeploymentPolicyUpdated,
                 "team-domain-verification-created" => ListEventTypeName.TeamDomainVerificationCreated,
@@ -2935,10 +3058,13 @@ namespace Vercel
                 "team-tokens-invalidated" => ListEventTypeName.TeamTokensInvalidated,
                 "unlink-login-connection" => ListEventTypeName.UnlinkLoginConnection,
                 "user-delete" => ListEventTypeName.UserDelete,
+                "user-emu-account-archived" => ListEventTypeName.UserEmuAccountArchived,
+                "user-emu-account-recovered" => ListEventTypeName.UserEmuAccountRecovered,
                 "user-mfa-challenge-verified" => ListEventTypeName.UserMfaChallengeVerified,
                 "user-mfa-configuration-updated" => ListEventTypeName.UserMfaConfigurationUpdated,
                 "user-mfa-recovery-codes-regenerated" => ListEventTypeName.UserMfaRecoveryCodesRegenerated,
                 "user-mfa-removed" => ListEventTypeName.UserMfaRemoved,
+                "user-mfa-setup-skipped" => ListEventTypeName.UserMfaSetupSkipped,
                 "user-mfa-totp-verification-started" => ListEventTypeName.UserMfaTotpVerificationStarted,
                 "user-mfa-totp-verified" => ListEventTypeName.UserMfaTotpVerified,
                 "user-primary-email-updated" => ListEventTypeName.UserPrimaryEmailUpdated,

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Where was the deployment created from<br/>
+    /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
     /// Example: cli
     /// </summary>
     public enum CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource
@@ -21,6 +21,10 @@ namespace Vercel
         /// 
         /// </summary>
         CloneRepo,
+        /// <summary>
+        /// 
+        /// </summary>
+        Drop,
         /// <summary>
         /// 
         /// </summary>
@@ -58,6 +62,7 @@ namespace Vercel
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.ApiTriggerGitDeploy => "api-trigger-git-deploy",
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Cli => "cli",
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.CloneRepo => "clone/repo",
+                CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Drop => "drop",
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Git => "git",
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Import => "import",
                 CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.ImportRepo => "import/repo",
@@ -76,6 +81,7 @@ namespace Vercel
                 "api-trigger-git-deploy" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.ApiTriggerGitDeploy,
                 "cli" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Cli,
                 "clone/repo" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.CloneRepo,
+                "drop" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Drop,
                 "git" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Git,
                 "import" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Import,
                 "import/repo" => CompleteRollingReleaseResponseRollingReleaseCanaryDeploymentSource.ImportRepo,

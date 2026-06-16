@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace Vercel.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class UploadProjectAvatarResponseConnectConfigurationEnvIdNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.UploadProjectAvatarResponseConnectConfigurationEnvId?>
+    {
+        /// <inheritdoc />
+        public override global::Vercel.UploadProjectAvatarResponseConnectConfigurationEnvId? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Vercel.UploadProjectAvatarResponseConnectConfigurationEnvIdExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Vercel.UploadProjectAvatarResponseConnectConfigurationEnvId)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Vercel.UploadProjectAvatarResponseConnectConfigurationEnvId?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Vercel.UploadProjectAvatarResponseConnectConfigurationEnvId? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::Vercel.UploadProjectAvatarResponseConnectConfigurationEnvIdExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

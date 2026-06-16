@@ -106,7 +106,7 @@ namespace Vercel
         public global::Vercel.CreateDeploymentResponseRouteVariant1Locale? Locale { get; set; }
 
         /// <summary>
-        /// Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, these are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object.
+        /// Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         public string? Source { get; set; }
@@ -115,7 +115,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("destination")]
-        public string? Destination { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.CreateDeploymentResponseRouteVariant1Destination>))]
+        public global::Vercel.OneOf<string, global::Vercel.CreateDeploymentResponseRouteVariant1Destination>? Destination { get; set; }
 
         /// <summary>
         /// 
@@ -173,7 +174,7 @@ namespace Vercel
         /// <param name="env"></param>
         /// <param name="locale"></param>
         /// <param name="source">
-        /// Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, these are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object.
+        /// Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`).
         /// </param>
         /// <param name="destination"></param>
         /// <param name="statusCode"></param>
@@ -208,7 +209,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? env,
             global::Vercel.CreateDeploymentResponseRouteVariant1Locale? locale,
             string? source,
-            string? destination,
+            global::Vercel.OneOf<string, global::Vercel.CreateDeploymentResponseRouteVariant1Destination>? destination,
             double? statusCode,
             string? middlewarePath,
             global::System.Collections.Generic.IList<string>? middlewareRawSrc,

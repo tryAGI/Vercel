@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Where was the deployment created from<br/>
+    /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
     /// Example: cli
     /// </summary>
     public enum ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource
@@ -21,6 +21,10 @@ namespace Vercel
         /// 
         /// </summary>
         CloneRepo,
+        /// <summary>
+        /// 
+        /// </summary>
+        Drop,
         /// <summary>
         /// 
         /// </summary>
@@ -58,6 +62,7 @@ namespace Vercel
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.ApiTriggerGitDeploy => "api-trigger-git-deploy",
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Cli => "cli",
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.CloneRepo => "clone/repo",
+                ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Drop => "drop",
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Git => "git",
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Import => "import",
                 ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.ImportRepo => "import/repo",
@@ -76,6 +81,7 @@ namespace Vercel
                 "api-trigger-git-deploy" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.ApiTriggerGitDeploy,
                 "cli" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Cli,
                 "clone/repo" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.CloneRepo,
+                "drop" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Drop,
                 "git" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Git,
                 "import" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.Import,
                 "import/repo" => ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentSource.ImportRepo,

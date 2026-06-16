@@ -277,6 +277,12 @@ namespace Vercel
         public global::Vercel.GetDeploymentResponseVariant1Type Type { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("errorMessage")]
+        public string? ErrorMessage { get; set; }
+
+        /// <summary>
         /// An object that will contain a `code` and a `message` when the aliasing fails, otherwise the value will be `null`<br/>
         /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </summary>
@@ -353,12 +359,6 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorLink")]
         public string? ErrorLink { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("errorMessage")]
-        public string? ErrorMessage { get; set; }
 
         /// <summary>
         /// 
@@ -442,7 +442,7 @@ namespace Vercel
         public bool? SoftDeletedByRetention { get; set; }
 
         /// <summary>
-        /// Where was the deployment created from<br/>
+        /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
         /// Example: cli
         /// </summary>
         /// <example>cli</example>
@@ -718,6 +718,7 @@ namespace Vercel
         /// <param name="readyStateReason"></param>
         /// <param name="aliasWarning"></param>
         /// <param name="type"></param>
+        /// <param name="errorMessage"></param>
         /// <param name="aliasError">
         /// An object that will contain a `code` and a `message` when the aliasing fails, otherwise the value will be `null`<br/>
         /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
@@ -740,7 +741,6 @@ namespace Vercel
         /// <param name="canceledAt"></param>
         /// <param name="errorCode"></param>
         /// <param name="errorLink"></param>
-        /// <param name="errorMessage"></param>
         /// <param name="errorStep"></param>
         /// <param name="passiveRegions">
         /// Since November 2023 this field defines a set of regions that we will deploy the lambda to passively Lambdas will be deployed to these regions but only invoked if all of the primary `regions` are marked as out of service
@@ -765,7 +765,7 @@ namespace Vercel
         /// Example: true
         /// </param>
         /// <param name="source">
-        /// Where was the deployment created from<br/>
+        /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
         /// Example: cli
         /// </param>
         /// <param name="target">
@@ -856,6 +856,7 @@ namespace Vercel
             string? readyStateReason,
             global::Vercel.GetDeploymentResponseVariant1AliasWarning? aliasWarning,
             global::Vercel.GetDeploymentResponseVariant1Type type,
+            string? errorMessage,
             global::Vercel.GetDeploymentResponseVariant1AliasError? aliasError,
             string? aliasFinal,
             bool? autoAssignCustomDomains,
@@ -868,7 +869,6 @@ namespace Vercel
             double? canceledAt,
             string? errorCode,
             string? errorLink,
-            string? errorMessage,
             string? errorStep,
             global::System.Collections.Generic.IList<string>? passiveRegions,
             global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1GitSourceVariant1, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant2, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant3, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant4, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant5, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant6, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant7, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant8, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant9, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant10, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant11, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant12, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant13, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant14, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant15, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant16, global::Vercel.GetDeploymentResponseVariant1GitSourceVariant17>? gitSource,
@@ -938,6 +938,7 @@ namespace Vercel
             this.ReadyState = readyState;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Type = type;
+            this.ErrorMessage = errorMessage;
             this.AliasError = aliasError;
             this.AliasFinal = aliasFinal;
             this.AutoAssignCustomDomains = autoAssignCustomDomains;
@@ -950,7 +951,6 @@ namespace Vercel
             this.CanceledAt = canceledAt;
             this.ErrorCode = errorCode;
             this.ErrorLink = errorLink;
-            this.ErrorMessage = errorMessage;
             this.ErrorStep = errorStep;
             this.PassiveRegions = passiveRegions;
             this.GitSource = gitSource;

@@ -145,6 +145,12 @@ namespace Vercel
         public global::Vercel.PatchTeamRequestDefaultDeploymentProtection? DefaultDeploymentProtection { get; set; }
 
         /// <summary>
+        /// Default Passport configuration for new projects.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultPassport")]
+        public global::Vercel.PatchTeamRequestDefaultPassport? DefaultPassport { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultExpirationSettings")]
@@ -263,6 +269,9 @@ namespace Vercel
         /// <param name="defaultDeploymentProtection">
         /// Default deployment protection settings for new projects.
         /// </param>
+        /// <param name="defaultPassport">
+        /// Default Passport configuration for new projects.
+        /// </param>
         /// <param name="defaultExpirationSettings"></param>
         /// <param name="deploymentPolicy"></param>
         /// <param name="strictDeploymentProtectionSettings">
@@ -298,6 +307,7 @@ namespace Vercel
             bool? requireVerifiedCommits,
             bool? disableRepositoryDispatchEvents,
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection,
+            global::Vercel.PatchTeamRequestDefaultPassport? defaultPassport,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings,
             global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicy, string>? deploymentPolicy,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
@@ -324,6 +334,7 @@ namespace Vercel
             this.RequireVerifiedCommits = requireVerifiedCommits;
             this.DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
+            this.DefaultPassport = defaultPassport;
             this.DefaultExpirationSettings = defaultExpirationSettings;
             this.DeploymentPolicy = deploymentPolicy;
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;

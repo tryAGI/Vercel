@@ -177,8 +177,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
-        public bool? PublicSource { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("passport")]
+        public global::Vercel.GetProjectsResponseVariant2ProjectPassport? Passport { get; set; }
 
         /// <summary>
         /// 
@@ -383,7 +383,7 @@ namespace Vercel
         /// <param name="link"></param>
         /// <param name="outputDirectory"></param>
         /// <param name="passwordProtection"></param>
-        /// <param name="publicSource"></param>
+        /// <param name="passport"></param>
         /// <param name="rollingRelease">
         /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
         /// </param>
@@ -443,7 +443,7 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant2ProjectLinkVariant1, global::Vercel.GetProjectsResponseVariant2ProjectLinkVariant2, global::Vercel.GetProjectsResponseVariant2ProjectLinkVariant3, global::Vercel.GetProjectsResponseVariant2ProjectLinkVariant4, global::Vercel.GetProjectsResponseVariant2ProjectLinkVariant5, global::Vercel.GetProjectsResponseVariant2ProjectLinkVariant6>? link,
             string? outputDirectory,
             object? passwordProtection,
-            bool? publicSource,
+            global::Vercel.GetProjectsResponseVariant2ProjectPassport? passport,
             global::Vercel.GetProjectsResponseVariant2ProjectRollingRelease? rollingRelease,
             string? rootDirectory,
             bool? serverlessFunctionZeroConfigFailover,
@@ -496,7 +496,7 @@ namespace Vercel
             this.NodeVersion = nodeVersion;
             this.OutputDirectory = outputDirectory;
             this.PasswordProtection = passwordProtection;
-            this.PublicSource = publicSource;
+            this.Passport = passport;
             this.ResourceConfig = resourceConfig ?? throw new global::System.ArgumentNullException(nameof(resourceConfig));
             this.RollingRelease = rollingRelease;
             this.RootDirectory = rootDirectory;
