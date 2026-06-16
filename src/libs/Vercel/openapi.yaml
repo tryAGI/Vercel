@@ -94207,6 +94207,12 @@
                     "type": "string",
                     "nullable": true
                   },
+                  "publicSource": {
+                    "deprecated": true,
+                    "description": "Deprecated. Accepted for backwards compatibility but ignored.",
+                    "type": "boolean",
+                    "nullable": true
+                  },
                   "rootDirectory": {
                     "description": "The name of a directory or relative path to the source code of your project. When `null` is used it will default to the project root",
                     "maxLength": 256,
@@ -106483,6 +106489,12 @@
                     "type": "object",
                     "description": "Specifies resource override configuration for the project",
                     "additionalProperties": false
+                  },
+                  "publicSource": {
+                    "deprecated": true,
+                    "description": "Deprecated. Accepted for backwards compatibility but ignored.",
+                    "type": "boolean",
+                    "nullable": true
                   },
                   "rootDirectory": {
                     "description": "The name of a directory or relative path to the source code of your project. When `null` is used it will default to the project root",
@@ -152119,6 +152131,7 @@
               "flags-sdk-key-read",
               "flags-segment",
               "flags-settings",
+              "git_account_integration_link_added",
               "instant-rollback-created",
               "integration-configuration-owner-changed",
               "integration-configuration-scope-change-confirmed",
@@ -152893,6 +152906,7 @@
               "flags-sdk-key-read",
               "flags-segment",
               "flags-settings",
+              "git_account_integration_link_added",
               "instant-rollback-created",
               "integration-configuration-owner-changed",
               "integration-configuration-scope-change-confirmed",
@@ -153460,6 +153474,7 @@
                 "flags-sdk-key-read",
                 "flags-segment",
                 "flags-settings",
+                "git_account_integration_link_added",
                 "instant-rollback-created",
                 "integration-configuration-owner-changed",
                 "integration-configuration-scope-change-confirmed",

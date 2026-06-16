@@ -129,6 +129,13 @@ namespace Vercel
         public global::Vercel.UpdateProjectRequestResourceConfig? ResourceConfig { get; set; }
 
         /// <summary>
+        /// Deprecated. Accepted for backwards compatibility but ignored.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("publicSource")]
+        [global::System.Obsolete("This property marked as deprecated.")]
+        public bool? PublicSource { get; set; }
+
+        /// <summary>
         /// The name of a directory or relative path to the source code of your project. When `null` is used it will default to the project root
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rootDirectory")]
