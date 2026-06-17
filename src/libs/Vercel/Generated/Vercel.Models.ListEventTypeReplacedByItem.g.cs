@@ -1535,6 +1535,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SandboxAliasAssigned,
+        /// <summary>
+        /// 
+        /// </summary>
+        SandboxAliasDelete,
+        /// <summary>
+        /// 
+        /// </summary>
         Scale,
         /// <summary>
         /// 
@@ -2443,6 +2451,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProtectedGitScopeAdded => "protected-git-scope-added",
                 ListEventTypeReplacedByItem.ProtectedGitScopeRemoved => "protected-git-scope-removed",
                 ListEventTypeReplacedByItem.RuntimeCachePurgeAll => "runtime-cache-purge-all",
+                ListEventTypeReplacedByItem.SandboxAliasAssigned => "sandbox-alias-assigned",
+                ListEventTypeReplacedByItem.SandboxAliasDelete => "sandbox-alias-delete",
                 ListEventTypeReplacedByItem.Scale => "scale",
                 ListEventTypeReplacedByItem.ScaleAuto => "scale-auto",
                 ListEventTypeReplacedByItem.SecondaryEmailAdded => "secondary-email-added",
@@ -2963,6 +2973,8 @@ namespace Vercel
                 "protected-git-scope-added" => ListEventTypeReplacedByItem.ProtectedGitScopeAdded,
                 "protected-git-scope-removed" => ListEventTypeReplacedByItem.ProtectedGitScopeRemoved,
                 "runtime-cache-purge-all" => ListEventTypeReplacedByItem.RuntimeCachePurgeAll,
+                "sandbox-alias-assigned" => ListEventTypeReplacedByItem.SandboxAliasAssigned,
+                "sandbox-alias-delete" => ListEventTypeReplacedByItem.SandboxAliasDelete,
                 "scale" => ListEventTypeReplacedByItem.Scale,
                 "scale-auto" => ListEventTypeReplacedByItem.ScaleAuto,
                 "secondary-email-added" => ListEventTypeReplacedByItem.SecondaryEmailAdded,
