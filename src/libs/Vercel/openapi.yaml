@@ -55620,7 +55620,8 @@
                         "type": "string",
                         "enum": [
                           "paid",
-                          "notpaid"
+                          "notpaid",
+                          "overdue"
                         ]
                       }
                     },
