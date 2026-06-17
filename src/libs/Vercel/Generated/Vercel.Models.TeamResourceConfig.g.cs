@@ -57,6 +57,12 @@ namespace Vercel
         public double? CustomEnvironmentsPerProject { get; set; }
 
         /// <summary>
+        /// The maximum memory size (in MB) for a serverless function. Only specified if a custom limit is set.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("serverlessFunctionMaxMemorySize")]
+        public double? ServerlessFunctionMaxMemorySize { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildEntitlements")]
@@ -101,6 +107,9 @@ namespace Vercel
         /// <param name="customEnvironmentsPerProject">
         /// The maximum number of custom environments allowed per project.
         /// </param>
+        /// <param name="serverlessFunctionMaxMemorySize">
+        /// The maximum memory size (in MB) for a serverless function. Only specified if a custom limit is set.
+        /// </param>
         /// <param name="buildEntitlements"></param>
         /// <param name="buildMachine">
         /// Build machine configuration
@@ -117,6 +126,7 @@ namespace Vercel
             double? blobStores,
             double? postgresDatabases,
             double? customEnvironmentsPerProject,
+            double? serverlessFunctionMaxMemorySize,
             global::Vercel.TeamResourceConfigBuildEntitlements? buildEntitlements,
             global::Vercel.TeamResourceConfigBuildMachine? buildMachine)
         {
@@ -128,6 +138,7 @@ namespace Vercel
             this.BlobStores = blobStores;
             this.PostgresDatabases = postgresDatabases;
             this.CustomEnvironmentsPerProject = customEnvironmentsPerProject;
+            this.ServerlessFunctionMaxMemorySize = serverlessFunctionMaxMemorySize;
             this.BuildEntitlements = buildEntitlements;
             this.BuildMachine = buildMachine;
         }

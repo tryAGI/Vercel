@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        PerformanceXl,
+        /// <summary>
+        /// 
+        /// </summary>
         Standard,
         /// <summary>
         /// 
@@ -35,6 +39,7 @@ namespace Vercel
             return value switch
             {
                 GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType.Performance => "performance",
+                GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType.PerformanceXl => "performance_xl",
                 GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType.Standard => "standard",
                 GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType.StandardLegacy => "standard_legacy",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -48,6 +53,7 @@ namespace Vercel
             return value switch
             {
                 "performance" => GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType.Performance,
+                "performance_xl" => GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType.PerformanceXl,
                 "standard" => GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType.Standard,
                 "standard_legacy" => GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType.StandardLegacy,
                 _ => null,

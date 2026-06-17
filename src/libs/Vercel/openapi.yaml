@@ -17114,6 +17114,7 @@
                               "type": "string",
                               "enum": [
                                 "performance",
+                                "performance_xl",
                                 "standard",
                                 "standard_legacy"
                               ]
@@ -21795,6 +21796,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -25758,6 +25760,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -64559,6 +64562,7 @@
                                 "type": "string",
                                 "enum": [
                                   "performance",
+                                  "performance_xl",
                                   "standard",
                                   "standard_legacy"
                                 ]
@@ -64743,6 +64747,7 @@
                                 "type": "string",
                                 "enum": [
                                   "performance",
+                                  "performance_xl",
                                   "standard",
                                   "standard_legacy"
                                 ]
@@ -76590,6 +76595,7 @@
                                 "type": "string",
                                 "enum": [
                                   "performance",
+                                  "performance_xl",
                                   "standard",
                                   "standard_legacy"
                                 ]
@@ -79914,6 +79920,7 @@
                                     "type": "string",
                                     "enum": [
                                       "performance",
+                                      "performance_xl",
                                       "standard",
                                       "standard_legacy"
                                     ]
@@ -83821,6 +83828,7 @@
                                     "type": "string",
                                     "enum": [
                                       "performance",
+                                      "performance_xl",
                                       "standard",
                                       "standard_legacy"
                                     ]
@@ -84005,6 +84013,7 @@
                                     "type": "string",
                                     "enum": [
                                       "performance",
+                                      "performance_xl",
                                       "standard",
                                       "standard_legacy"
                                     ]
@@ -89927,6 +89936,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -90111,6 +90121,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -94291,7 +94302,8 @@
                         "enum": [
                           "standard_legacy",
                           "standard",
-                          "performance"
+                          "performance",
+                          "performance_xl"
                         ]
                       },
                       "functionZeroConfigFailover": {
@@ -96271,6 +96283,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -96455,6 +96468,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -102191,6 +102205,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -102375,6 +102390,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -106456,7 +106472,8 @@
                         "enum": [
                           "standard_legacy",
                           "standard",
-                          "performance"
+                          "performance",
+                          "performance_xl"
                         ]
                       },
                       "functionZeroConfigFailover": {
@@ -109315,6 +109332,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -109499,6 +109517,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -123638,6 +123657,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -123822,6 +123842,7 @@
                           "type": "string",
                           "enum": [
                             "performance",
+                            "performance_xl",
                             "standard",
                             "standard_legacy"
                           ]
@@ -156314,6 +156335,10 @@
               "customEnvironmentsPerProject": {
                 "type": "number",
                 "description": "The maximum number of custom environments allowed per project."
+              },
+              "serverlessFunctionMaxMemorySize": {
+                "type": "number",
+                "description": "The maximum memory size (in MB) for a serverless function. Only specified if a custom limit is set."
               },
               "buildEntitlements": {
                 "properties": {
