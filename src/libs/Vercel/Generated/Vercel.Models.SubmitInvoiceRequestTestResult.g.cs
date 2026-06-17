@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Overdue,
+        /// <summary>
+        /// 
+        /// </summary>
         Paid,
     }
 
@@ -31,6 +35,7 @@ namespace Vercel
             return value switch
             {
                 SubmitInvoiceRequestTestResult.Notpaid => "notpaid",
+                SubmitInvoiceRequestTestResult.Overdue => "overdue",
                 SubmitInvoiceRequestTestResult.Paid => "paid",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -43,6 +48,7 @@ namespace Vercel
             return value switch
             {
                 "notpaid" => SubmitInvoiceRequestTestResult.Notpaid,
+                "overdue" => SubmitInvoiceRequestTestResult.Overdue,
                 "paid" => SubmitInvoiceRequestTestResult.Paid,
                 _ => null,
             };
