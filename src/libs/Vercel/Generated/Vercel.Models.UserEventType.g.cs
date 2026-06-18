@@ -1992,6 +1992,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        VercelAgentElevatedPermissionsApproved,
+        /// <summary>
+        /// 
+        /// </summary>
+        VercelAgentElevatedPermissionsRequested,
+        /// <summary>
+        /// 
+        /// </summary>
+        VercelAgentSessionCreated,
+        /// <summary>
+        /// 
+        /// </summary>
         VercelAgentTeamTrialCreditsApplied,
         /// <summary>
         /// 
@@ -2570,6 +2582,9 @@ namespace Vercel
                 UserEventType.V0ChatAiUsage => "v0-chat-ai-usage",
                 UserEventType.V0ChatCreated => "v0-chat-created",
                 UserEventType.V0ChatMessageSent => "v0-chat-message-sent",
+                UserEventType.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
+                UserEventType.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
+                UserEventType.VercelAgentSessionCreated => "vercel-agent-session-created",
                 UserEventType.VercelAgentTeamTrialCreditsApplied => "vercel-agent-team-trial-credits-applied",
                 UserEventType.VercelAppInstallationRequestDismissed => "vercel-app-installation-request-dismissed",
                 UserEventType.VercelAppInstallationRequested => "vercel-app-installation-requested",
@@ -3093,6 +3108,9 @@ namespace Vercel
                 "v0-chat-ai-usage" => UserEventType.V0ChatAiUsage,
                 "v0-chat-created" => UserEventType.V0ChatCreated,
                 "v0-chat-message-sent" => UserEventType.V0ChatMessageSent,
+                "vercel-agent-elevated-permissions-approved" => UserEventType.VercelAgentElevatedPermissionsApproved,
+                "vercel-agent-elevated-permissions-requested" => UserEventType.VercelAgentElevatedPermissionsRequested,
+                "vercel-agent-session-created" => UserEventType.VercelAgentSessionCreated,
                 "vercel-agent-team-trial-credits-applied" => UserEventType.VercelAgentTeamTrialCreditsApplied,
                 "vercel-app-installation-request-dismissed" => UserEventType.VercelAppInstallationRequestDismissed,
                 "vercel-app-installation-requested" => UserEventType.VercelAppInstallationRequested,

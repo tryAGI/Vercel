@@ -29732,6 +29732,168 @@
         }
       }
     },
+    "/v1/registrar/domains/{domain}/contact-verification": {
+      "get": {
+        "tags": [
+          "domains-registrar"
+        ],
+        "operationId": "getDomainContactVerification",
+        "parameters": [
+          {
+            "name": "domain",
+            "in": "path",
+            "schema": {
+              "$ref": "#/components/schemas/DomainName"
+            },
+            "required": true
+          },
+          {
+            "name": "teamId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            },
+            "required": false
+          }
+        ],
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "required": [
+                        "verified"
+                      ],
+                      "properties": {
+                        "verified": {
+                          "type": "boolean",
+                          "enum": [
+                            true
+                          ]
+                        }
+                      },
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "required": [
+                        "verified",
+                        "verifyBy",
+                        "email"
+                      ],
+                      "properties": {
+                        "verified": {
+                          "type": "boolean",
+                          "enum": [
+                            false
+                          ]
+                        },
+                        "verifyBy": {
+                          "$ref": "#/components/schemas/DateFromString"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "additionalProperties": false
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "There was something wrong with the request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/components/schemas/BoughtTooRecently"
+                    },
+                    {
+                      "$ref": "#/components/schemas/DomainNotRegistered"
+                    },
+                    {
+                      "$ref": "#/components/schemas/HttpApiDecodeError"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Unauthorized"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "NotAuthorizedForScope",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/components/schemas/NotAuthorizedForScope"
+                    },
+                    {
+                      "$ref": "#/components/schemas/Forbidden"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The domain was not found in our system.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DomainNotFound"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "TooManyRequests",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TooManyRequests"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "InternalServerError",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InternalServerError"
+                }
+              }
+            }
+          }
+        },
+        "description": "Get the registrant contact verification status for a domain. Use this after purchasing a domain to determine whether the contact has been verified. Note that a bought_too_recently error will be returned if the domain was bought less than 30 minutes before the request.",
+        "summary": "Get contact verification status for a domain"
+      }
+    },
     "/v1/registrar/domains/{domain}/contact-info/schema": {
       "get": {
         "tags": [
@@ -151684,6 +151846,37 @@
         "type": "string",
         "description": "A valid nameserver"
       },
+      "DateFromString": {
+        "type": "string",
+        "description": "a string to be decoded into a Date"
+      },
+      "BoughtTooRecently": {
+        "type": "object",
+        "required": [
+          "status",
+          "code",
+          "message"
+        ],
+        "properties": {
+          "status": {
+            "type": "number",
+            "enum": [
+              400
+            ]
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "bought_too_recently"
+            ]
+          },
+          "message": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "description": "The domain was bought too recently to determine verification status."
+      },
       "RegistrantField": {
         "anyOf": [
           {
@@ -152611,6 +152804,9 @@
               "v0-chat-ai-usage",
               "v0-chat-created",
               "v0-chat-message-sent",
+              "vercel-agent-elevated-permissions-approved",
+              "vercel-agent-elevated-permissions-requested",
+              "vercel-agent-session-created",
               "vercel-agent-team-trial-credits-applied",
               "vercel-app-installation-request-dismissed",
               "vercel-app-installation-requested",
@@ -153389,6 +153585,9 @@
               "v0-chat-ai-usage",
               "v0-chat-created",
               "v0-chat-message-sent",
+              "vercel-agent-elevated-permissions-approved",
+              "vercel-agent-elevated-permissions-requested",
+              "vercel-agent-session-created",
               "vercel-agent-team-trial-credits-applied",
               "vercel-app-installation-request-dismissed",
               "vercel-app-installation-requested",
@@ -153960,6 +154159,9 @@
                 "v0-chat-ai-usage",
                 "v0-chat-created",
                 "v0-chat-message-sent",
+                "vercel-agent-elevated-permissions-approved",
+                "vercel-agent-elevated-permissions-requested",
+                "vercel-agent-session-created",
                 "vercel-agent-team-trial-credits-applied",
                 "vercel-app-installation-request-dismissed",
                 "vercel-app-installation-requested",

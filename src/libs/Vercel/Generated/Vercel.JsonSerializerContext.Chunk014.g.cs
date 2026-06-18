@@ -62,6 +62,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.DomainNotRenewableCodeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.DomainAlreadyRenewingCodeJsonConverter),
             typeof(global::Vercel.JsonConverters.DomainAlreadyRenewingCodeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.BoughtTooRecentlyCodeJsonConverter),
+            typeof(global::Vercel.JsonConverters.BoughtTooRecentlyCodeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.RegistrantFieldVariant1TypeJsonConverter),
             typeof(global::Vercel.JsonConverters.RegistrantFieldVariant1TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.RegistrantFieldVariant2TypeJsonConverter),
@@ -5514,6 +5516,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BadRequest, global::Vercel.DomainAlreadyOwned, global::Vercel.DomainTooShort, global::Vercel.DNSSECEnabled, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BadRequest, global::Vercel.DomainTooShort, global::Vercel.DomainNotRegistered, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.DomainAlreadyRenewing, global::Vercel.DomainNotRenewable, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>),
+            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.GetDomainContactVerificationResponseVariant1, global::Vercel.GetDomainContactVerificationResponseVariant2>),
+            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BoughtTooRecently, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BadRequest, global::Vercel.HttpApiDecodeError>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.GetOrderResponseDomainVariant1, global::Vercel.GetOrderResponseDomainVariant2, global::Vercel.GetOrderResponseDomainVariant3>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.AnyOf<global::Vercel.GetOrderResponseDomainVariant1ErrorVariant1, global::Vercel.GetOrderResponseDomainVariant1ErrorVariant2, global::Vercel.GetOrderResponseDomainVariant1ErrorVariant3, global::Vercel.GetOrderResponseDomainVariant1ErrorVariant4, global::Vercel.GetOrderResponseDomainVariant1ErrorVariant5, global::Vercel.GetOrderResponseDomainVariant1ErrorVariant6, global::Vercel.GetOrderResponseDomainVariant1ErrorVariant7, global::Vercel.GetOrderResponseDomainVariant1ErrorVariant8, global::Vercel.GetOrderResponseDomainVariant1ErrorVariant9, global::Vercel.GetOrderResponseDomainVariant1ErrorVariant10>?, global::Vercel.GetOrderResponseDomainVariant1Error>),
@@ -6066,6 +6070,12 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant3EnvTarget), TypeInfoPropertyName = "FilterProjectEnvsResponseVariant3EnvTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant3EnvType), TypeInfoPropertyName = "FilterProjectEnvsResponseVariant3EnvType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant3EnvInternalContentHint))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant3EnvInternalContentHintType), TypeInfoPropertyName = "FilterProjectEnvsResponseVariant3EnvInternalContentHintType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectEnvResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateProjectEnvResponseCreated, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedItem>>), TypeInfoPropertyName = "OneOfCreateProjectEnvResponseCreatedIListCreateProjectEnvResponseCreatedItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectEnvResponseCreated))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedTargetItem>, global::Vercel.CreateProjectEnvResponseCreatedTarget?>), TypeInfoPropertyName = "OneOfIListCreateProjectEnvResponseCreatedTargetItemCreateProjectEnvResponseCreatedTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedTargetItem>))]
@@ -6560,12 +6570,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSessionCommandLogsResponseVariant1DataMessage), TypeInfoPropertyName = "GetSessionCommandLogsResponseVariant1DataMessage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSessionCommandLogsResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.StopSessionResponseVariant1, global::Vercel.StopSessionResponseVariant2>), TypeInfoPropertyName = "OneOfStopSessionResponseVariant1StopSessionResponseVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StopSessionResponseVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StopSessionResponseVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ExtendSessionTimeoutResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSessionSnapshotResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateAttackChallengeModeResponse))]
     internal sealed partial class SourceGenerationContextChunk014 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
