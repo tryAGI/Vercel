@@ -44666,6 +44666,32 @@
             }
           },
           {
+            "name": "createdBy",
+            "description": "Filter flags by the id of the entity that created them (a user or team id).",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Filter flags by the id of the entity that created them (a user or team id).",
+              "type": "string",
+              "maxLength": 256
+            }
+          },
+          {
+            "name": "maintainerIds",
+            "description": "Filter flags by maintainer user id. Repeat the parameter for multiple maintainers (any may match).",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Filter flags by maintainer user id. Repeat the parameter for multiple maintainers (any may match).",
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 24
+              },
+              "maxItems": 25
+            }
+          },
+          {
             "name": "includeMarketplaceFlags",
             "description": "Whether to include Marketplace experimentation items in the paginated response. Defaults to false.",
             "in": "query",
@@ -50365,6 +50391,32 @@
               "items": {
                 "type": "string"
               }
+            }
+          },
+          {
+            "name": "createdBy",
+            "description": "Filter flags by the id of the entity that created them (a user or team id).",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Filter flags by the id of the entity that created them (a user or team id).",
+              "type": "string",
+              "maxLength": 256
+            }
+          },
+          {
+            "name": "maintainerIds",
+            "description": "Filter flags by maintainer user id. Repeat the parameter for multiple maintainers (any may match).",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Filter flags by maintainer user id. Repeat the parameter for multiple maintainers (any may match).",
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 24
+              },
+              "maxItems": 25
             }
           },
           {

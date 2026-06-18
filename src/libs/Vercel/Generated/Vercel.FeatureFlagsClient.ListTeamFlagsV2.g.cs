@@ -33,6 +33,8 @@ namespace Vercel
             ref string? search,
             ref global::Vercel.ListTeamFlagsV2Kind? kind,
             global::System.Collections.Generic.IList<string>? tags,
+            ref string? createdBy,
+            global::System.Collections.Generic.IList<string>? maintainerIds,
             ref bool? includeMarketplaceFlags,
             ref string teamId,
             ref string? slug);
@@ -45,6 +47,8 @@ namespace Vercel
             string? search,
             global::Vercel.ListTeamFlagsV2Kind? kind,
             global::System.Collections.Generic.IList<string>? tags,
+            string? createdBy,
+            global::System.Collections.Generic.IList<string>? maintainerIds,
             bool? includeMarketplaceFlags,
             string teamId,
             string? slug);
@@ -80,6 +84,12 @@ namespace Vercel
         /// <param name="tags">
         /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
         /// </param>
+        /// <param name="createdBy">
+        /// Filter flags by the id of the entity that created them (a user or team id).
+        /// </param>
+        /// <param name="maintainerIds">
+        /// Filter flags by maintainer user id. Repeat the parameter for multiple maintainers (any may match).
+        /// </param>
         /// <param name="includeMarketplaceFlags">
         /// Whether to include Marketplace experimentation items in the paginated response. Defaults to false.
         /// </param>
@@ -100,6 +110,8 @@ namespace Vercel
             string? search = default,
             global::Vercel.ListTeamFlagsV2Kind? kind = default,
             global::System.Collections.Generic.IList<string>? tags = default,
+            string? createdBy = default,
+            global::System.Collections.Generic.IList<string>? maintainerIds = default,
             bool? includeMarketplaceFlags = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -113,6 +125,8 @@ namespace Vercel
                 search: search,
                 kind: kind,
                 tags: tags,
+                createdBy: createdBy,
+                maintainerIds: maintainerIds,
                 includeMarketplaceFlags: includeMarketplaceFlags,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -144,6 +158,12 @@ namespace Vercel
         /// <param name="tags">
         /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
         /// </param>
+        /// <param name="createdBy">
+        /// Filter flags by the id of the entity that created them (a user or team id).
+        /// </param>
+        /// <param name="maintainerIds">
+        /// Filter flags by maintainer user id. Repeat the parameter for multiple maintainers (any may match).
+        /// </param>
         /// <param name="includeMarketplaceFlags">
         /// Whether to include Marketplace experimentation items in the paginated response. Defaults to false.
         /// </param>
@@ -164,6 +184,8 @@ namespace Vercel
             string? search = default,
             global::Vercel.ListTeamFlagsV2Kind? kind = default,
             global::System.Collections.Generic.IList<string>? tags = default,
+            string? createdBy = default,
+            global::System.Collections.Generic.IList<string>? maintainerIds = default,
             bool? includeMarketplaceFlags = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -179,6 +201,8 @@ namespace Vercel
                 search: ref search,
                 kind: ref kind,
                 tags: tags,
+                createdBy: ref createdBy,
+                maintainerIds: maintainerIds,
                 includeMarketplaceFlags: ref includeMarketplaceFlags,
                 teamId: ref teamId,
                 slug: ref slug);
@@ -216,6 +240,8 @@ namespace Vercel
                                 .AddOptionalParameter("search", search)
                                 .AddOptionalParameter("kind", kind?.ToValueString())
                                 .AddOptionalParameter("tags", tags, delimiter: ",", explode: true)
+                                .AddOptionalParameter("createdBy", createdBy)
+                                .AddOptionalParameter("maintainerIds", maintainerIds, delimiter: ",", explode: true)
                                 .AddOptionalParameter("includeMarketplaceFlags", includeMarketplaceFlags?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -265,6 +291,8 @@ namespace Vercel
                     search: search,
                     kind: kind,
                     tags: tags,
+                    createdBy: createdBy,
+                    maintainerIds: maintainerIds,
                     includeMarketplaceFlags: includeMarketplaceFlags,
                     teamId: teamId!,
                     slug: slug);
