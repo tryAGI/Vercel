@@ -27,6 +27,12 @@ namespace Vercel
         /// <param name="tags">
         /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
         /// </param>
+        /// <param name="createdBy">
+        /// Filter flags by the id of the entity that created them (a user or team id).
+        /// </param>
+        /// <param name="maintainerIds">
+        /// Filter flags by maintainer user id. Repeat the parameter for multiple maintainers (any may match).
+        /// </param>
         /// <param name="includeMarketplaceFlags">
         /// Whether to include Marketplace experimentation items in the paginated response. Defaults to false.
         /// </param>
@@ -47,6 +53,8 @@ namespace Vercel
             string? search = default,
             global::Vercel.ListTeamFlagsV2Kind? kind = default,
             global::System.Collections.Generic.IList<string>? tags = default,
+            string? createdBy = default,
+            global::System.Collections.Generic.IList<string>? maintainerIds = default,
             bool? includeMarketplaceFlags = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -74,6 +82,12 @@ namespace Vercel
         /// <param name="tags">
         /// Filter flags by tag. Repeat the parameter for multiple tags (all must match).
         /// </param>
+        /// <param name="createdBy">
+        /// Filter flags by the id of the entity that created them (a user or team id).
+        /// </param>
+        /// <param name="maintainerIds">
+        /// Filter flags by maintainer user id. Repeat the parameter for multiple maintainers (any may match).
+        /// </param>
         /// <param name="includeMarketplaceFlags">
         /// Whether to include Marketplace experimentation items in the paginated response. Defaults to false.
         /// </param>
@@ -94,6 +108,8 @@ namespace Vercel
             string? search = default,
             global::Vercel.ListTeamFlagsV2Kind? kind = default,
             global::System.Collections.Generic.IList<string>? tags = default,
+            string? createdBy = default,
+            global::System.Collections.Generic.IList<string>? maintainerIds = default,
             bool? includeMarketplaceFlags = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
