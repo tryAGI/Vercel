@@ -612,6 +612,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        EdgeConfigBackupRestored,
+        /// <summary>
+        /// 
+        /// </summary>
         EdgeConfigCreated,
         /// <summary>
         /// 
@@ -2221,6 +2225,7 @@ namespace Vercel
                 UserEventType.EdgeCacheInvalidateByTags => "edge-cache-invalidate-by-tags",
                 UserEventType.EdgeCachePurgeAll => "edge-cache-purge-all",
                 UserEventType.EdgeCacheRollbackPurge => "edge-cache-rollback-purge",
+                UserEventType.EdgeConfigBackupRestored => "edge-config-backup-restored",
                 UserEventType.EdgeConfigCreated => "edge-config-created",
                 UserEventType.EdgeConfigDeleted => "edge-config-deleted",
                 UserEventType.EdgeConfigItemsUpdated => "edge-config-items-updated",
@@ -2743,6 +2748,7 @@ namespace Vercel
                 "edge-cache-invalidate-by-tags" => UserEventType.EdgeCacheInvalidateByTags,
                 "edge-cache-purge-all" => UserEventType.EdgeCachePurgeAll,
                 "edge-cache-rollback-purge" => UserEventType.EdgeCacheRollbackPurge,
+                "edge-config-backup-restored" => UserEventType.EdgeConfigBackupRestored,
                 "edge-config-created" => UserEventType.EdgeConfigCreated,
                 "edge-config-deleted" => UserEventType.EdgeConfigDeleted,
                 "edge-config-items-updated" => UserEventType.EdgeConfigItemsUpdated,

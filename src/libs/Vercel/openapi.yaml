@@ -42595,6 +42595,115 @@
         "x-speakeasy-test": false
       }
     },
+    "/v1/edge-config/{edgeConfigId}/backups/{edgeConfigBackupVersionId}/restore": {
+      "post": {
+        "description": "Restores an Edge Config backup.",
+        "operationId": "restoreEdgeConfigBackup",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Restore Edge Config backup",
+        "tags": [
+          "edge-config"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "ok"
+                      ]
+                    },
+                    "restoredFrom": {
+                      "type": "string"
+                    },
+                    "previousDigest": {
+                      "type": "string"
+                    },
+                    "digest": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "digest",
+                    "previousDigest",
+                    "restoredFrom",
+                    "status"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": "The account is missing a payment so payment method must be updated"
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "412": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "edgeConfigId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^ecfg_"
+            }
+          },
+          {
+            "name": "edgeConfigBackupVersionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ],
+        "x-speakeasy-test": false
+      }
+    },
     "/v1/edge-config/{edgeConfigId}/backups": {
       "get": {
         "description": "Returns backups of an Edge Config.",
@@ -152157,6 +152266,7 @@
               "edge-cache-invalidate-by-tags",
               "edge-cache-purge-all",
               "edge-cache-rollback-purge",
+              "edge-config-backup-restored",
               "edge-config-created",
               "edge-config-deleted",
               "edge-config-items-updated",
@@ -152934,6 +153044,7 @@
               "edge-cache-invalidate-by-tags",
               "edge-cache-purge-all",
               "edge-cache-rollback-purge",
+              "edge-config-backup-restored",
               "edge-config-created",
               "edge-config-deleted",
               "edge-config-items-updated",
@@ -153504,6 +153615,7 @@
                 "edge-cache-invalidate-by-tags",
                 "edge-cache-purge-all",
                 "edge-cache-rollback-purge",
+                "edge-config-backup-restored",
                 "edge-config-created",
                 "edge-config-deleted",
                 "edge-config-items-updated",
