@@ -2566,6 +2566,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateEdgeConfigResponsePurposeVariant1TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateEdgeConfigResponsePurposeVariant2TypeJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateEdgeConfigResponsePurposeVariant2TypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.RestoreEdgeConfigBackupResponseStatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.RestoreEdgeConfigBackupResponseStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSharedEnvVariableResponseCreatedItemTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSharedEnvVariableResponseCreatedItemTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSharedEnvVariableResponseCreatedItemTargetItemJsonConverter),
@@ -6064,6 +6066,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSource), TypeInfoPropertyName = "GetIntegrationLogDrainsResponseItemSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemCreatedFrom), TypeInfoPropertyName = "GetIntegrationLogDrainsResponseItemCreatedFrom2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetIntegrationLogDrainsResponseItemEnvironment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemEnvironment), TypeInfoPropertyName = "GetIntegrationLogDrainsResponseItemEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1, global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2>), TypeInfoPropertyName = "OneOfGetIntegrationLogDrainsResponseItemSourceVariant1GetIntegrationLogDrainsResponseItemSourceVariant22")]
@@ -6562,8 +6566,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AddRouteResponseRouteRouteHaVariant1, global::Vercel.AddRouteResponseRouteRouteHaVariant2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AddRouteResponseRouteRouteHaVariant1, global::Vercel.AddRouteResponseRouteRouteHaVariant2>), TypeInfoPropertyName = "OneOfAddRouteResponseRouteRouteHaVariant1AddRouteResponseRouteRouteHaVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddRouteResponseRouteRouteHaVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddRouteResponseRouteRouteHaVariant1Type), TypeInfoPropertyName = "AddRouteResponseRouteRouteHaVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AddRouteResponseRouteRouteHaVariant1Value>), TypeInfoPropertyName = "OneOfStringAddRouteResponseRouteRouteHaVariant1Value2")]
     internal sealed partial class SourceGenerationContextChunk009 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -2566,6 +2566,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateEdgeConfigResponsePurposeVariant1TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateEdgeConfigResponsePurposeVariant2TypeJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateEdgeConfigResponsePurposeVariant2TypeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.RestoreEdgeConfigBackupResponseStatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.RestoreEdgeConfigBackupResponseStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSharedEnvVariableResponseCreatedItemTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSharedEnvVariableResponseCreatedItemTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSharedEnvVariableResponseCreatedItemTargetItemJsonConverter),
@@ -6222,6 +6224,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GetEdgeConfigBackupResponseVariant2BackupItems2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetEdgeConfigBackupResponseVariant2BackupItems2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetEdgeConfigBackupResponseVariant2Metadata))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RestoreEdgeConfigBackupResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RestoreEdgeConfigBackupResponseStatus), TypeInfoPropertyName = "RestoreEdgeConfigBackupResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetEdgeConfigBackupsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetEdgeConfigBackupsResponseBackup>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetEdgeConfigBackupsResponseBackup))]
@@ -6562,8 +6566,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemEntitie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemEntitie))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemEntitieAttribute>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemEntitieAttribute))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemEntitieAttributeLabel>))]
     internal sealed partial class SourceGenerationContextChunk007 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

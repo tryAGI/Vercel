@@ -611,6 +611,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        EdgeConfigBackupRestored,
+        /// <summary>
+        /// 
+        /// </summary>
         EdgeConfigCreated,
         /// <summary>
         /// 
@@ -2220,6 +2224,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.EdgeCacheInvalidateByTags => "edge-cache-invalidate-by-tags",
                 ListEventTypeReplacedByItem.EdgeCachePurgeAll => "edge-cache-purge-all",
                 ListEventTypeReplacedByItem.EdgeCacheRollbackPurge => "edge-cache-rollback-purge",
+                ListEventTypeReplacedByItem.EdgeConfigBackupRestored => "edge-config-backup-restored",
                 ListEventTypeReplacedByItem.EdgeConfigCreated => "edge-config-created",
                 ListEventTypeReplacedByItem.EdgeConfigDeleted => "edge-config-deleted",
                 ListEventTypeReplacedByItem.EdgeConfigItemsUpdated => "edge-config-items-updated",
@@ -2742,6 +2747,7 @@ namespace Vercel
                 "edge-cache-invalidate-by-tags" => ListEventTypeReplacedByItem.EdgeCacheInvalidateByTags,
                 "edge-cache-purge-all" => ListEventTypeReplacedByItem.EdgeCachePurgeAll,
                 "edge-cache-rollback-purge" => ListEventTypeReplacedByItem.EdgeCacheRollbackPurge,
+                "edge-config-backup-restored" => ListEventTypeReplacedByItem.EdgeConfigBackupRestored,
                 "edge-config-created" => ListEventTypeReplacedByItem.EdgeConfigCreated,
                 "edge-config-deleted" => ListEventTypeReplacedByItem.EdgeConfigDeleted,
                 "edge-config-items-updated" => ListEventTypeReplacedByItem.EdgeConfigItemsUpdated,
