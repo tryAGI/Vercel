@@ -29,6 +29,13 @@ namespace Vercel
         public string? RequestPath { get; set; }
 
         /// <summary>
+        /// Tracing destination this rule applies to. Derived server-side when project tracing is computed; accepted here so a computed config can round-trip through this endpoint.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("destination")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectRequestTracingSamplingRuleDestinationJsonConverter))]
+        public global::Vercel.UpdateProjectRequestTracingSamplingRuleDestination? Destination { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -46,17 +53,22 @@ namespace Vercel
         /// <param name="requestPath">
         /// Request path prefix to apply the sampling rule to
         /// </param>
+        /// <param name="destination">
+        /// Tracing destination this rule applies to. Derived server-side when project tracing is computed; accepted here so a computed config can round-trip through this endpoint.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectRequestTracingSamplingRule(
             double rate,
             global::Vercel.UpdateProjectRequestTracingSamplingRuleEnv? env,
-            string? requestPath)
+            string? requestPath,
+            global::Vercel.UpdateProjectRequestTracingSamplingRuleDestination? destination)
         {
             this.Rate = rate;
             this.Env = env;
             this.RequestPath = requestPath;
+            this.Destination = destination;
         }
 
         /// <summary>
