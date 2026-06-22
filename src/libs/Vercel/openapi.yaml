@@ -51871,6 +51871,9 @@
           "204": {
             "description": ""
           },
+          "304": {
+            "description": ""
+          },
           "400": {
             "description": "One of the provided values in the request query is invalid."
           },
@@ -152559,6 +152562,7 @@
               "owner-unblocked",
               "page-integrity-config-updated",
               "page-integrity-header-approved",
+              "page-integrity-header-rejected",
               "page-integrity-inventory-cleared",
               "page-integrity-resource-approved",
               "page-integrity-resource-deleted",
@@ -153340,6 +153344,7 @@
               "owner-unblocked",
               "page-integrity-config-updated",
               "page-integrity-header-approved",
+              "page-integrity-header-rejected",
               "page-integrity-inventory-cleared",
               "page-integrity-resource-approved",
               "page-integrity-resource-deleted",
@@ -153914,6 +153919,7 @@
                 "owner-unblocked",
                 "page-integrity-config-updated",
                 "page-integrity-header-approved",
+                "page-integrity-header-rejected",
                 "page-integrity-inventory-cleared",
                 "page-integrity-resource-approved",
                 "page-integrity-resource-deleted",

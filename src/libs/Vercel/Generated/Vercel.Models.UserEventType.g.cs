@@ -1012,6 +1012,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        PageIntegrityHeaderRejected,
+        /// <summary>
+        /// 
+        /// </summary>
         PageIntegrityInventoryCleared,
         /// <summary>
         /// 
@@ -2337,6 +2341,7 @@ namespace Vercel
                 UserEventType.OwnerUnblocked => "owner-unblocked",
                 UserEventType.PageIntegrityConfigUpdated => "page-integrity-config-updated",
                 UserEventType.PageIntegrityHeaderApproved => "page-integrity-header-approved",
+                UserEventType.PageIntegrityHeaderRejected => "page-integrity-header-rejected",
                 UserEventType.PageIntegrityInventoryCleared => "page-integrity-inventory-cleared",
                 UserEventType.PageIntegrityResourceApproved => "page-integrity-resource-approved",
                 UserEventType.PageIntegrityResourceDeleted => "page-integrity-resource-deleted",
@@ -2863,6 +2868,7 @@ namespace Vercel
                 "owner-unblocked" => UserEventType.OwnerUnblocked,
                 "page-integrity-config-updated" => UserEventType.PageIntegrityConfigUpdated,
                 "page-integrity-header-approved" => UserEventType.PageIntegrityHeaderApproved,
+                "page-integrity-header-rejected" => UserEventType.PageIntegrityHeaderRejected,
                 "page-integrity-inventory-cleared" => UserEventType.PageIntegrityInventoryCleared,
                 "page-integrity-resource-approved" => UserEventType.PageIntegrityResourceApproved,
                 "page-integrity-resource-deleted" => UserEventType.PageIntegrityResourceDeleted,
