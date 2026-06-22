@@ -383,6 +383,38 @@ namespace Vercel
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // 
+                            if ((int)__response.StatusCode == 304)
+                            {
+                                string? __content_304 = null;
+                                global::System.Exception? __exception_304 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_304 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_304 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_304 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_304 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_304,
+                                    responseBody: __content_304,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            // 
                             if ((int)__response.StatusCode == 400)
                             {
                                 string? __content_400 = null;
