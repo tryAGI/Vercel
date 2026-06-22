@@ -29,6 +29,13 @@ namespace Vercel
         public string? RequestPath { get; set; }
 
         /// <summary>
+        /// Which tracing destination this rule applies to. `internal` is the hidden Vercel production-tracing drain (internal delivery); `external` is any customer-configured drain. Derived from the owning drain's delivery type when project tracing is computed; absent on configs persisted before this field existed.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("destination")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UploadProjectAvatarResponseTracingSamplingRuleDestinationJsonConverter))]
+        public global::Vercel.UploadProjectAvatarResponseTracingSamplingRuleDestination? Destination { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -40,17 +47,22 @@ namespace Vercel
         /// <param name="rate"></param>
         /// <param name="env"></param>
         /// <param name="requestPath"></param>
+        /// <param name="destination">
+        /// Which tracing destination this rule applies to. `internal` is the hidden Vercel production-tracing drain (internal delivery); `external` is any customer-configured drain. Derived from the owning drain's delivery type when project tracing is computed; absent on configs persisted before this field existed.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UploadProjectAvatarResponseTracingSamplingRule(
             double rate,
             global::Vercel.UploadProjectAvatarResponseTracingSamplingRuleEnv? env,
-            string? requestPath)
+            string? requestPath,
+            global::Vercel.UploadProjectAvatarResponseTracingSamplingRuleDestination? destination)
         {
             this.Rate = rate;
             this.Env = env;
             this.RequestPath = requestPath;
+            this.Destination = destination;
         }
 
         /// <summary>

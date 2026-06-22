@@ -577,6 +577,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseRouteVariant1, global::Vercel.CreateDeploymentResponseRouteVariant2, global::Vercel.CreateDeploymentResponseRouteVariant3>>? Routes { get; set; }
 
         /// <summary>
+        /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("services")]
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseServiceVariant1, global::Vercel.CreateDeploymentResponseServiceVariant2>>? Services { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitRepo")]
@@ -793,6 +799,9 @@ namespace Vercel
         /// Since November 2023 this field defines a Secure Compute network that will only be used to deploy passive lambdas to (as in passiveRegions)
         /// </param>
         /// <param name="routes"></param>
+        /// <param name="services">
+        /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
+        /// </param>
         /// <param name="gitRepo"></param>
         /// <param name="flags"></param>
         /// <param name="microfrontends"></param>
@@ -892,6 +901,7 @@ namespace Vercel
             string? monorepoManager,
             string? passiveConnectConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseRouteVariant1, global::Vercel.CreateDeploymentResponseRouteVariant2, global::Vercel.CreateDeploymentResponseRouteVariant3>>? routes,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseServiceVariant1, global::Vercel.CreateDeploymentResponseServiceVariant2>>? services,
             global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseGitRepoVariant1, global::Vercel.CreateDeploymentResponseGitRepoVariant2, global::Vercel.CreateDeploymentResponseGitRepoVariant3, global::Vercel.CreateDeploymentResponseGitRepoVariant4>? gitRepo,
             global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseFlags, global::System.Collections.Generic.IList<object>>? flags,
             global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseMicrofrontendsVariant1, global::Vercel.CreateDeploymentResponseMicrofrontendsVariant2>? microfrontends,
@@ -982,6 +992,7 @@ namespace Vercel
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.PassiveConnectConfigurationId = passiveConnectConfigurationId;
             this.Routes = routes;
+            this.Services = services;
             this.GitRepo = gitRepo;
             this.Flags = flags;
             this.Microfrontends = microfrontends;
