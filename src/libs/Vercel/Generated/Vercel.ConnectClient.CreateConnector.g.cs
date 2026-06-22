@@ -618,7 +618,7 @@ namespace Vercel
         /// The list of the defaults trigger events for this connector.
         /// </param>
         /// <param name="icon">
-        /// Branding icon. Either a SHA-1 hash already uploaded to the Vercel avatar service or an https:// URL that will be downloaded and rehosted.
+        /// Branding icon SHA-1 hash already uploaded to the Vercel avatar service.
         /// </param>
         /// <param name="backgroundColor">
         /// Branding background color (6-digit hex, e.g. "#000000").

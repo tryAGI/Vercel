@@ -12035,7 +12035,8 @@
                   },
                   "icon": {
                     "type": "string",
-                    "description": "Branding icon. Either a SHA-1 hash already uploaded to the Vercel avatar service or an https:// URL that will be downloaded and rehosted."
+                    "description": "Branding icon SHA-1 hash already uploaded to the Vercel avatar service.",
+                    "pattern": "^[0-9a-fA-F]{40}$"
                   },
                   "backgroundColor": {
                     "type": "string",
