@@ -91,7 +91,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transforms")]
-        public global::System.Collections.Generic.IList<global::Vercel.EditRouteResponseRouteRouteTransform>? Transforms { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.EditRouteResponseRouteRouteTransformVariant1, global::Vercel.EditRouteResponseRouteRouteTransformVariant2>>? Transforms { get; set; }
 
         /// <summary>
         /// 
@@ -205,7 +205,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.EditRouteResponseRouteRouteHaVariant1, global::Vercel.EditRouteResponseRouteRouteHaVariant2>>? has,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.EditRouteResponseRouteRouteMissingItemVariant1, global::Vercel.EditRouteResponseRouteRouteMissingItemVariant2>>? missing,
             global::Vercel.EditRouteResponseRouteRouteMitigate? mitigate,
-            global::System.Collections.Generic.IList<global::Vercel.EditRouteResponseRouteRouteTransform>? transforms,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.EditRouteResponseRouteRouteTransformVariant1, global::Vercel.EditRouteResponseRouteRouteTransformVariant2>>? transforms,
             global::System.Collections.Generic.IList<string>? env,
             global::Vercel.EditRouteResponseRouteRouteLocale? locale,
             string? source,

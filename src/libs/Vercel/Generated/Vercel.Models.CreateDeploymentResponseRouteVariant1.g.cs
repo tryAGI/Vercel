@@ -91,7 +91,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transforms")]
-        public global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseRouteVariant1Transform>? Transforms { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseRouteVariant1TransformVariant1, global::Vercel.CreateDeploymentResponseRouteVariant1TransformVariant2>>? Transforms { get; set; }
 
         /// <summary>
         /// 
@@ -205,7 +205,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseRouteVariant1HaVariant1, global::Vercel.CreateDeploymentResponseRouteVariant1HaVariant2>>? has,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseRouteVariant1MissingItemVariant1, global::Vercel.CreateDeploymentResponseRouteVariant1MissingItemVariant2>>? missing,
             global::Vercel.CreateDeploymentResponseRouteVariant1Mitigate? mitigate,
-            global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseRouteVariant1Transform>? transforms,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseRouteVariant1TransformVariant1, global::Vercel.CreateDeploymentResponseRouteVariant1TransformVariant2>>? transforms,
             global::System.Collections.Generic.IList<string>? env,
             global::Vercel.CreateDeploymentResponseRouteVariant1Locale? locale,
             string? source,

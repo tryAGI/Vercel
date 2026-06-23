@@ -16878,112 +16878,147 @@
                                   },
                                   "transforms": {
                                     "items": {
-                                      "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "request.headers",
-                                            "request.query",
-                                            "response.headers"
-                                          ]
-                                        },
-                                        "op": {
-                                          "type": "string",
-                                          "enum": [
-                                            "append",
-                                            "delete",
-                                            "set"
-                                          ]
-                                        },
-                                        "target": {
+                                      "oneOf": [
+                                        {
                                           "properties": {
-                                            "key": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "request.headers",
+                                                "request.query",
+                                                "response.headers"
+                                              ]
+                                            },
+                                            "op": {
+                                              "type": "string",
+                                              "enum": [
+                                                "append",
+                                                "delete",
+                                                "set"
+                                              ]
+                                            },
+                                            "target": {
+                                              "properties": {
+                                                "key": {
+                                                  "oneOf": [
+                                                    {
+                                                      "type": "string"
+                                                    },
+                                                    {
+                                                      "properties": {
+                                                        "eq": {
+                                                          "oneOf": [
+                                                            {
+                                                              "type": "string"
+                                                            },
+                                                            {
+                                                              "type": "number"
+                                                            }
+                                                          ]
+                                                        },
+                                                        "neq": {
+                                                          "type": "string"
+                                                        },
+                                                        "inc": {
+                                                          "items": {
+                                                            "type": "string"
+                                                          },
+                                                          "type": "array"
+                                                        },
+                                                        "ninc": {
+                                                          "items": {
+                                                            "type": "string"
+                                                          },
+                                                          "type": "array"
+                                                        },
+                                                        "pre": {
+                                                          "type": "string"
+                                                        },
+                                                        "suf": {
+                                                          "type": "string"
+                                                        },
+                                                        "gt": {
+                                                          "type": "number"
+                                                        },
+                                                        "gte": {
+                                                          "type": "number"
+                                                        },
+                                                        "lt": {
+                                                          "type": "number"
+                                                        },
+                                                        "lte": {
+                                                          "type": "number"
+                                                        }
+                                                      },
+                                                      "type": "object"
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "key"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            "args": {
                                               "oneOf": [
                                                 {
                                                   "type": "string"
                                                 },
                                                 {
-                                                  "properties": {
-                                                    "eq": {
-                                                      "oneOf": [
-                                                        {
-                                                          "type": "string"
-                                                        },
-                                                        {
-                                                          "type": "number"
-                                                        }
-                                                      ]
-                                                    },
-                                                    "neq": {
-                                                      "type": "string"
-                                                    },
-                                                    "inc": {
-                                                      "items": {
-                                                        "type": "string"
-                                                      },
-                                                      "type": "array"
-                                                    },
-                                                    "ninc": {
-                                                      "items": {
-                                                        "type": "string"
-                                                      },
-                                                      "type": "array"
-                                                    },
-                                                    "pre": {
-                                                      "type": "string"
-                                                    },
-                                                    "suf": {
-                                                      "type": "string"
-                                                    },
-                                                    "gt": {
-                                                      "type": "number"
-                                                    },
-                                                    "gte": {
-                                                      "type": "number"
-                                                    },
-                                                    "lt": {
-                                                      "type": "number"
-                                                    },
-                                                    "lte": {
-                                                      "type": "number"
-                                                    }
+                                                  "items": {
+                                                    "type": "string"
                                                   },
-                                                  "type": "object"
+                                                  "type": "array"
                                                 }
                                               ]
-                                            }
-                                          },
-                                          "required": [
-                                            "key"
-                                          ],
-                                          "type": "object"
-                                        },
-                                        "args": {
-                                          "oneOf": [
-                                            {
-                                              "type": "string"
                                             },
-                                            {
+                                            "env": {
                                               "items": {
                                                 "type": "string"
                                               },
                                               "type": "array"
                                             }
-                                          ]
-                                        },
-                                        "env": {
-                                          "items": {
-                                            "type": "string"
                                           },
-                                          "type": "array"
+                                          "required": [
+                                            "op",
+                                            "target",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "request.path"
+                                              ]
+                                            },
+                                            "op": {
+                                              "type": "string",
+                                              "enum": [
+                                                "set"
+                                              ]
+                                            },
+                                            "args": {
+                                              "type": "string"
+                                            },
+                                            "env": {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array"
+                                            }
+                                          },
+                                          "required": [
+                                            "args",
+                                            "op",
+                                            "type"
+                                          ],
+                                          "type": "object"
                                         }
-                                      },
-                                      "required": [
-                                        "op",
-                                        "target",
-                                        "type"
-                                      ],
-                                      "type": "object"
+                                      ]
                                     },
                                     "type": "array"
                                   },
@@ -18901,6 +18936,40 @@
                                             }
                                           ]
                                         },
+                                        "transforms": {
+                                          "items": {
+                                            "properties": {
+                                              "type": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "request.path"
+                                                ]
+                                              },
+                                              "op": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "set"
+                                                ]
+                                              },
+                                              "args": {
+                                                "type": "string"
+                                              },
+                                              "env": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array"
+                                              }
+                                            },
+                                            "required": [
+                                              "args",
+                                              "op",
+                                              "type"
+                                            ],
+                                            "type": "object"
+                                          },
+                                          "type": "array"
+                                        },
                                         "has": {
                                           "items": {
                                             "oneOf": [
@@ -19636,112 +19705,147 @@
                                             },
                                             "transforms": {
                                               "items": {
-                                                "properties": {
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "request.headers",
-                                                      "request.query",
-                                                      "response.headers"
-                                                    ]
-                                                  },
-                                                  "op": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "append",
-                                                      "delete",
-                                                      "set"
-                                                    ]
-                                                  },
-                                                  "target": {
+                                                "oneOf": [
+                                                  {
                                                     "properties": {
-                                                      "key": {
+                                                      "type": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "request.headers",
+                                                          "request.query",
+                                                          "response.headers"
+                                                        ]
+                                                      },
+                                                      "op": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "append",
+                                                          "delete",
+                                                          "set"
+                                                        ]
+                                                      },
+                                                      "target": {
+                                                        "properties": {
+                                                          "key": {
+                                                            "oneOf": [
+                                                              {
+                                                                "type": "string"
+                                                              },
+                                                              {
+                                                                "properties": {
+                                                                  "eq": {
+                                                                    "oneOf": [
+                                                                      {
+                                                                        "type": "string"
+                                                                      },
+                                                                      {
+                                                                        "type": "number"
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  "neq": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "inc": {
+                                                                    "items": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "type": "array"
+                                                                  },
+                                                                  "ninc": {
+                                                                    "items": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "type": "array"
+                                                                  },
+                                                                  "pre": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "suf": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "gt": {
+                                                                    "type": "number"
+                                                                  },
+                                                                  "gte": {
+                                                                    "type": "number"
+                                                                  },
+                                                                  "lt": {
+                                                                    "type": "number"
+                                                                  },
+                                                                  "lte": {
+                                                                    "type": "number"
+                                                                  }
+                                                                },
+                                                                "type": "object"
+                                                              }
+                                                            ]
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "key"
+                                                        ],
+                                                        "type": "object"
+                                                      },
+                                                      "args": {
                                                         "oneOf": [
                                                           {
                                                             "type": "string"
                                                           },
                                                           {
-                                                            "properties": {
-                                                              "eq": {
-                                                                "oneOf": [
-                                                                  {
-                                                                    "type": "string"
-                                                                  },
-                                                                  {
-                                                                    "type": "number"
-                                                                  }
-                                                                ]
-                                                              },
-                                                              "neq": {
-                                                                "type": "string"
-                                                              },
-                                                              "inc": {
-                                                                "items": {
-                                                                  "type": "string"
-                                                                },
-                                                                "type": "array"
-                                                              },
-                                                              "ninc": {
-                                                                "items": {
-                                                                  "type": "string"
-                                                                },
-                                                                "type": "array"
-                                                              },
-                                                              "pre": {
-                                                                "type": "string"
-                                                              },
-                                                              "suf": {
-                                                                "type": "string"
-                                                              },
-                                                              "gt": {
-                                                                "type": "number"
-                                                              },
-                                                              "gte": {
-                                                                "type": "number"
-                                                              },
-                                                              "lt": {
-                                                                "type": "number"
-                                                              },
-                                                              "lte": {
-                                                                "type": "number"
-                                                              }
+                                                            "items": {
+                                                              "type": "string"
                                                             },
-                                                            "type": "object"
+                                                            "type": "array"
                                                           }
                                                         ]
-                                                      }
-                                                    },
-                                                    "required": [
-                                                      "key"
-                                                    ],
-                                                    "type": "object"
-                                                  },
-                                                  "args": {
-                                                    "oneOf": [
-                                                      {
-                                                        "type": "string"
                                                       },
-                                                      {
+                                                      "env": {
                                                         "items": {
                                                           "type": "string"
                                                         },
                                                         "type": "array"
                                                       }
-                                                    ]
-                                                  },
-                                                  "env": {
-                                                    "items": {
-                                                      "type": "string"
                                                     },
-                                                    "type": "array"
+                                                    "required": [
+                                                      "op",
+                                                      "target",
+                                                      "type"
+                                                    ],
+                                                    "type": "object"
+                                                  },
+                                                  {
+                                                    "properties": {
+                                                      "type": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "request.path"
+                                                        ]
+                                                      },
+                                                      "op": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "set"
+                                                        ]
+                                                      },
+                                                      "args": {
+                                                        "type": "string"
+                                                      },
+                                                      "env": {
+                                                        "items": {
+                                                          "type": "string"
+                                                        },
+                                                        "type": "array"
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "args",
+                                                      "op",
+                                                      "type"
+                                                    ],
+                                                    "type": "object"
                                                   }
-                                                },
-                                                "required": [
-                                                  "op",
-                                                  "target",
-                                                  "type"
-                                                ],
-                                                "type": "object"
+                                                ]
                                               },
                                               "type": "array"
                                             },
@@ -24321,112 +24425,147 @@
                               },
                               "transforms": {
                                 "items": {
-                                  "properties": {
-                                    "type": {
-                                      "type": "string",
-                                      "enum": [
-                                        "request.headers",
-                                        "request.query",
-                                        "response.headers"
-                                      ]
-                                    },
-                                    "op": {
-                                      "type": "string",
-                                      "enum": [
-                                        "append",
-                                        "delete",
-                                        "set"
-                                      ]
-                                    },
-                                    "target": {
+                                  "oneOf": [
+                                    {
                                       "properties": {
-                                        "key": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "request.headers",
+                                            "request.query",
+                                            "response.headers"
+                                          ]
+                                        },
+                                        "op": {
+                                          "type": "string",
+                                          "enum": [
+                                            "append",
+                                            "delete",
+                                            "set"
+                                          ]
+                                        },
+                                        "target": {
+                                          "properties": {
+                                            "key": {
+                                              "oneOf": [
+                                                {
+                                                  "type": "string"
+                                                },
+                                                {
+                                                  "properties": {
+                                                    "eq": {
+                                                      "oneOf": [
+                                                        {
+                                                          "type": "string"
+                                                        },
+                                                        {
+                                                          "type": "number"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "neq": {
+                                                      "type": "string"
+                                                    },
+                                                    "inc": {
+                                                      "items": {
+                                                        "type": "string"
+                                                      },
+                                                      "type": "array"
+                                                    },
+                                                    "ninc": {
+                                                      "items": {
+                                                        "type": "string"
+                                                      },
+                                                      "type": "array"
+                                                    },
+                                                    "pre": {
+                                                      "type": "string"
+                                                    },
+                                                    "suf": {
+                                                      "type": "string"
+                                                    },
+                                                    "gt": {
+                                                      "type": "number"
+                                                    },
+                                                    "gte": {
+                                                      "type": "number"
+                                                    },
+                                                    "lt": {
+                                                      "type": "number"
+                                                    },
+                                                    "lte": {
+                                                      "type": "number"
+                                                    }
+                                                  },
+                                                  "type": "object"
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "key"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        "args": {
                                           "oneOf": [
                                             {
                                               "type": "string"
                                             },
                                             {
-                                              "properties": {
-                                                "eq": {
-                                                  "oneOf": [
-                                                    {
-                                                      "type": "string"
-                                                    },
-                                                    {
-                                                      "type": "number"
-                                                    }
-                                                  ]
-                                                },
-                                                "neq": {
-                                                  "type": "string"
-                                                },
-                                                "inc": {
-                                                  "items": {
-                                                    "type": "string"
-                                                  },
-                                                  "type": "array"
-                                                },
-                                                "ninc": {
-                                                  "items": {
-                                                    "type": "string"
-                                                  },
-                                                  "type": "array"
-                                                },
-                                                "pre": {
-                                                  "type": "string"
-                                                },
-                                                "suf": {
-                                                  "type": "string"
-                                                },
-                                                "gt": {
-                                                  "type": "number"
-                                                },
-                                                "gte": {
-                                                  "type": "number"
-                                                },
-                                                "lt": {
-                                                  "type": "number"
-                                                },
-                                                "lte": {
-                                                  "type": "number"
-                                                }
+                                              "items": {
+                                                "type": "string"
                                               },
-                                              "type": "object"
+                                              "type": "array"
                                             }
                                           ]
-                                        }
-                                      },
-                                      "required": [
-                                        "key"
-                                      ],
-                                      "type": "object"
-                                    },
-                                    "args": {
-                                      "oneOf": [
-                                        {
-                                          "type": "string"
                                         },
-                                        {
+                                        "env": {
                                           "items": {
                                             "type": "string"
                                           },
                                           "type": "array"
                                         }
-                                      ]
-                                    },
-                                    "env": {
-                                      "items": {
-                                        "type": "string"
                                       },
-                                      "type": "array"
+                                      "required": [
+                                        "op",
+                                        "target",
+                                        "type"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "request.path"
+                                          ]
+                                        },
+                                        "op": {
+                                          "type": "string",
+                                          "enum": [
+                                            "set"
+                                          ]
+                                        },
+                                        "args": {
+                                          "type": "string"
+                                        },
+                                        "env": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        }
+                                      },
+                                      "required": [
+                                        "args",
+                                        "op",
+                                        "type"
+                                      ],
+                                      "type": "object"
                                     }
-                                  },
-                                  "required": [
-                                    "op",
-                                    "target",
-                                    "type"
-                                  ],
-                                  "type": "object"
+                                  ]
                                 },
                                 "type": "array"
                               },
@@ -26344,6 +26483,40 @@
                                         }
                                       ]
                                     },
+                                    "transforms": {
+                                      "items": {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "request.path"
+                                            ]
+                                          },
+                                          "op": {
+                                            "type": "string",
+                                            "enum": [
+                                              "set"
+                                            ]
+                                          },
+                                          "args": {
+                                            "type": "string"
+                                          },
+                                          "env": {
+                                            "items": {
+                                              "type": "string"
+                                            },
+                                            "type": "array"
+                                          }
+                                        },
+                                        "required": [
+                                          "args",
+                                          "op",
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      "type": "array"
+                                    },
                                     "has": {
                                       "items": {
                                         "oneOf": [
@@ -27079,112 +27252,147 @@
                                         },
                                         "transforms": {
                                           "items": {
-                                            "properties": {
-                                              "type": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "request.headers",
-                                                  "request.query",
-                                                  "response.headers"
-                                                ]
-                                              },
-                                              "op": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "append",
-                                                  "delete",
-                                                  "set"
-                                                ]
-                                              },
-                                              "target": {
+                                            "oneOf": [
+                                              {
                                                 "properties": {
-                                                  "key": {
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "request.headers",
+                                                      "request.query",
+                                                      "response.headers"
+                                                    ]
+                                                  },
+                                                  "op": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "append",
+                                                      "delete",
+                                                      "set"
+                                                    ]
+                                                  },
+                                                  "target": {
+                                                    "properties": {
+                                                      "key": {
+                                                        "oneOf": [
+                                                          {
+                                                            "type": "string"
+                                                          },
+                                                          {
+                                                            "properties": {
+                                                              "eq": {
+                                                                "oneOf": [
+                                                                  {
+                                                                    "type": "string"
+                                                                  },
+                                                                  {
+                                                                    "type": "number"
+                                                                  }
+                                                                ]
+                                                              },
+                                                              "neq": {
+                                                                "type": "string"
+                                                              },
+                                                              "inc": {
+                                                                "items": {
+                                                                  "type": "string"
+                                                                },
+                                                                "type": "array"
+                                                              },
+                                                              "ninc": {
+                                                                "items": {
+                                                                  "type": "string"
+                                                                },
+                                                                "type": "array"
+                                                              },
+                                                              "pre": {
+                                                                "type": "string"
+                                                              },
+                                                              "suf": {
+                                                                "type": "string"
+                                                              },
+                                                              "gt": {
+                                                                "type": "number"
+                                                              },
+                                                              "gte": {
+                                                                "type": "number"
+                                                              },
+                                                              "lt": {
+                                                                "type": "number"
+                                                              },
+                                                              "lte": {
+                                                                "type": "number"
+                                                              }
+                                                            },
+                                                            "type": "object"
+                                                          }
+                                                        ]
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "key"
+                                                    ],
+                                                    "type": "object"
+                                                  },
+                                                  "args": {
                                                     "oneOf": [
                                                       {
                                                         "type": "string"
                                                       },
                                                       {
-                                                        "properties": {
-                                                          "eq": {
-                                                            "oneOf": [
-                                                              {
-                                                                "type": "string"
-                                                              },
-                                                              {
-                                                                "type": "number"
-                                                              }
-                                                            ]
-                                                          },
-                                                          "neq": {
-                                                            "type": "string"
-                                                          },
-                                                          "inc": {
-                                                            "items": {
-                                                              "type": "string"
-                                                            },
-                                                            "type": "array"
-                                                          },
-                                                          "ninc": {
-                                                            "items": {
-                                                              "type": "string"
-                                                            },
-                                                            "type": "array"
-                                                          },
-                                                          "pre": {
-                                                            "type": "string"
-                                                          },
-                                                          "suf": {
-                                                            "type": "string"
-                                                          },
-                                                          "gt": {
-                                                            "type": "number"
-                                                          },
-                                                          "gte": {
-                                                            "type": "number"
-                                                          },
-                                                          "lt": {
-                                                            "type": "number"
-                                                          },
-                                                          "lte": {
-                                                            "type": "number"
-                                                          }
+                                                        "items": {
+                                                          "type": "string"
                                                         },
-                                                        "type": "object"
+                                                        "type": "array"
                                                       }
                                                     ]
-                                                  }
-                                                },
-                                                "required": [
-                                                  "key"
-                                                ],
-                                                "type": "object"
-                                              },
-                                              "args": {
-                                                "oneOf": [
-                                                  {
-                                                    "type": "string"
                                                   },
-                                                  {
+                                                  "env": {
                                                     "items": {
                                                       "type": "string"
                                                     },
                                                     "type": "array"
                                                   }
-                                                ]
-                                              },
-                                              "env": {
-                                                "items": {
-                                                  "type": "string"
                                                 },
-                                                "type": "array"
+                                                "required": [
+                                                  "op",
+                                                  "target",
+                                                  "type"
+                                                ],
+                                                "type": "object"
+                                              },
+                                              {
+                                                "properties": {
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "request.path"
+                                                    ]
+                                                  },
+                                                  "op": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "set"
+                                                    ]
+                                                  },
+                                                  "args": {
+                                                    "type": "string"
+                                                  },
+                                                  "env": {
+                                                    "items": {
+                                                      "type": "string"
+                                                    },
+                                                    "type": "array"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "args",
+                                                  "op",
+                                                  "type"
+                                                ],
+                                                "type": "object"
                                               }
-                                            },
-                                            "required": [
-                                              "op",
-                                              "target",
-                                              "type"
-                                            ],
-                                            "type": "object"
+                                            ]
                                           },
                                           "type": "array"
                                         },
@@ -31046,112 +31254,147 @@
                               },
                               "transforms": {
                                 "items": {
-                                  "properties": {
-                                    "type": {
-                                      "type": "string",
-                                      "enum": [
-                                        "request.headers",
-                                        "request.query",
-                                        "response.headers"
-                                      ]
-                                    },
-                                    "op": {
-                                      "type": "string",
-                                      "enum": [
-                                        "append",
-                                        "delete",
-                                        "set"
-                                      ]
-                                    },
-                                    "target": {
+                                  "oneOf": [
+                                    {
                                       "properties": {
-                                        "key": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "request.headers",
+                                            "request.query",
+                                            "response.headers"
+                                          ]
+                                        },
+                                        "op": {
+                                          "type": "string",
+                                          "enum": [
+                                            "append",
+                                            "delete",
+                                            "set"
+                                          ]
+                                        },
+                                        "target": {
+                                          "properties": {
+                                            "key": {
+                                              "oneOf": [
+                                                {
+                                                  "type": "string"
+                                                },
+                                                {
+                                                  "properties": {
+                                                    "eq": {
+                                                      "oneOf": [
+                                                        {
+                                                          "type": "string"
+                                                        },
+                                                        {
+                                                          "type": "number"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "neq": {
+                                                      "type": "string"
+                                                    },
+                                                    "inc": {
+                                                      "items": {
+                                                        "type": "string"
+                                                      },
+                                                      "type": "array"
+                                                    },
+                                                    "ninc": {
+                                                      "items": {
+                                                        "type": "string"
+                                                      },
+                                                      "type": "array"
+                                                    },
+                                                    "pre": {
+                                                      "type": "string"
+                                                    },
+                                                    "suf": {
+                                                      "type": "string"
+                                                    },
+                                                    "gt": {
+                                                      "type": "number"
+                                                    },
+                                                    "gte": {
+                                                      "type": "number"
+                                                    },
+                                                    "lt": {
+                                                      "type": "number"
+                                                    },
+                                                    "lte": {
+                                                      "type": "number"
+                                                    }
+                                                  },
+                                                  "type": "object"
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "key"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        "args": {
                                           "oneOf": [
                                             {
                                               "type": "string"
                                             },
                                             {
-                                              "properties": {
-                                                "eq": {
-                                                  "oneOf": [
-                                                    {
-                                                      "type": "string"
-                                                    },
-                                                    {
-                                                      "type": "number"
-                                                    }
-                                                  ]
-                                                },
-                                                "neq": {
-                                                  "type": "string"
-                                                },
-                                                "inc": {
-                                                  "items": {
-                                                    "type": "string"
-                                                  },
-                                                  "type": "array"
-                                                },
-                                                "ninc": {
-                                                  "items": {
-                                                    "type": "string"
-                                                  },
-                                                  "type": "array"
-                                                },
-                                                "pre": {
-                                                  "type": "string"
-                                                },
-                                                "suf": {
-                                                  "type": "string"
-                                                },
-                                                "gt": {
-                                                  "type": "number"
-                                                },
-                                                "gte": {
-                                                  "type": "number"
-                                                },
-                                                "lt": {
-                                                  "type": "number"
-                                                },
-                                                "lte": {
-                                                  "type": "number"
-                                                }
+                                              "items": {
+                                                "type": "string"
                                               },
-                                              "type": "object"
+                                              "type": "array"
                                             }
                                           ]
-                                        }
-                                      },
-                                      "required": [
-                                        "key"
-                                      ],
-                                      "type": "object"
-                                    },
-                                    "args": {
-                                      "oneOf": [
-                                        {
-                                          "type": "string"
                                         },
-                                        {
+                                        "env": {
                                           "items": {
                                             "type": "string"
                                           },
                                           "type": "array"
                                         }
-                                      ]
-                                    },
-                                    "env": {
-                                      "items": {
-                                        "type": "string"
                                       },
-                                      "type": "array"
+                                      "required": [
+                                        "op",
+                                        "target",
+                                        "type"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "request.path"
+                                          ]
+                                        },
+                                        "op": {
+                                          "type": "string",
+                                          "enum": [
+                                            "set"
+                                          ]
+                                        },
+                                        "args": {
+                                          "type": "string"
+                                        },
+                                        "env": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        }
+                                      },
+                                      "required": [
+                                        "args",
+                                        "op",
+                                        "type"
+                                      ],
+                                      "type": "object"
                                     }
-                                  },
-                                  "required": [
-                                    "op",
-                                    "target",
-                                    "type"
-                                  ],
-                                  "type": "object"
+                                  ]
                                 },
                                 "type": "array"
                               },
@@ -33069,6 +33312,40 @@
                                         }
                                       ]
                                     },
+                                    "transforms": {
+                                      "items": {
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "request.path"
+                                            ]
+                                          },
+                                          "op": {
+                                            "type": "string",
+                                            "enum": [
+                                              "set"
+                                            ]
+                                          },
+                                          "args": {
+                                            "type": "string"
+                                          },
+                                          "env": {
+                                            "items": {
+                                              "type": "string"
+                                            },
+                                            "type": "array"
+                                          }
+                                        },
+                                        "required": [
+                                          "args",
+                                          "op",
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      "type": "array"
+                                    },
                                     "has": {
                                       "items": {
                                         "oneOf": [
@@ -33804,112 +34081,147 @@
                                         },
                                         "transforms": {
                                           "items": {
-                                            "properties": {
-                                              "type": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "request.headers",
-                                                  "request.query",
-                                                  "response.headers"
-                                                ]
-                                              },
-                                              "op": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "append",
-                                                  "delete",
-                                                  "set"
-                                                ]
-                                              },
-                                              "target": {
+                                            "oneOf": [
+                                              {
                                                 "properties": {
-                                                  "key": {
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "request.headers",
+                                                      "request.query",
+                                                      "response.headers"
+                                                    ]
+                                                  },
+                                                  "op": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "append",
+                                                      "delete",
+                                                      "set"
+                                                    ]
+                                                  },
+                                                  "target": {
+                                                    "properties": {
+                                                      "key": {
+                                                        "oneOf": [
+                                                          {
+                                                            "type": "string"
+                                                          },
+                                                          {
+                                                            "properties": {
+                                                              "eq": {
+                                                                "oneOf": [
+                                                                  {
+                                                                    "type": "string"
+                                                                  },
+                                                                  {
+                                                                    "type": "number"
+                                                                  }
+                                                                ]
+                                                              },
+                                                              "neq": {
+                                                                "type": "string"
+                                                              },
+                                                              "inc": {
+                                                                "items": {
+                                                                  "type": "string"
+                                                                },
+                                                                "type": "array"
+                                                              },
+                                                              "ninc": {
+                                                                "items": {
+                                                                  "type": "string"
+                                                                },
+                                                                "type": "array"
+                                                              },
+                                                              "pre": {
+                                                                "type": "string"
+                                                              },
+                                                              "suf": {
+                                                                "type": "string"
+                                                              },
+                                                              "gt": {
+                                                                "type": "number"
+                                                              },
+                                                              "gte": {
+                                                                "type": "number"
+                                                              },
+                                                              "lt": {
+                                                                "type": "number"
+                                                              },
+                                                              "lte": {
+                                                                "type": "number"
+                                                              }
+                                                            },
+                                                            "type": "object"
+                                                          }
+                                                        ]
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "key"
+                                                    ],
+                                                    "type": "object"
+                                                  },
+                                                  "args": {
                                                     "oneOf": [
                                                       {
                                                         "type": "string"
                                                       },
                                                       {
-                                                        "properties": {
-                                                          "eq": {
-                                                            "oneOf": [
-                                                              {
-                                                                "type": "string"
-                                                              },
-                                                              {
-                                                                "type": "number"
-                                                              }
-                                                            ]
-                                                          },
-                                                          "neq": {
-                                                            "type": "string"
-                                                          },
-                                                          "inc": {
-                                                            "items": {
-                                                              "type": "string"
-                                                            },
-                                                            "type": "array"
-                                                          },
-                                                          "ninc": {
-                                                            "items": {
-                                                              "type": "string"
-                                                            },
-                                                            "type": "array"
-                                                          },
-                                                          "pre": {
-                                                            "type": "string"
-                                                          },
-                                                          "suf": {
-                                                            "type": "string"
-                                                          },
-                                                          "gt": {
-                                                            "type": "number"
-                                                          },
-                                                          "gte": {
-                                                            "type": "number"
-                                                          },
-                                                          "lt": {
-                                                            "type": "number"
-                                                          },
-                                                          "lte": {
-                                                            "type": "number"
-                                                          }
+                                                        "items": {
+                                                          "type": "string"
                                                         },
-                                                        "type": "object"
+                                                        "type": "array"
                                                       }
                                                     ]
-                                                  }
-                                                },
-                                                "required": [
-                                                  "key"
-                                                ],
-                                                "type": "object"
-                                              },
-                                              "args": {
-                                                "oneOf": [
-                                                  {
-                                                    "type": "string"
                                                   },
-                                                  {
+                                                  "env": {
                                                     "items": {
                                                       "type": "string"
                                                     },
                                                     "type": "array"
                                                   }
-                                                ]
-                                              },
-                                              "env": {
-                                                "items": {
-                                                  "type": "string"
                                                 },
-                                                "type": "array"
+                                                "required": [
+                                                  "op",
+                                                  "target",
+                                                  "type"
+                                                ],
+                                                "type": "object"
+                                              },
+                                              {
+                                                "properties": {
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "request.path"
+                                                    ]
+                                                  },
+                                                  "op": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "set"
+                                                    ]
+                                                  },
+                                                  "args": {
+                                                    "type": "string"
+                                                  },
+                                                  "env": {
+                                                    "items": {
+                                                      "type": "string"
+                                                    },
+                                                    "type": "array"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "args",
+                                                  "op",
+                                                  "type"
+                                                ],
+                                                "type": "object"
                                               }
-                                            },
-                                            "required": [
-                                              "op",
-                                              "target",
-                                              "type"
-                                            ],
-                                            "type": "object"
+                                            ]
                                           },
                                           "type": "array"
                                         },
@@ -79475,112 +79787,147 @@
                                   },
                                   "transforms": {
                                     "items": {
-                                      "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "request.headers",
-                                            "request.query",
-                                            "response.headers"
-                                          ]
-                                        },
-                                        "op": {
-                                          "type": "string",
-                                          "enum": [
-                                            "append",
-                                            "delete",
-                                            "set"
-                                          ]
-                                        },
-                                        "target": {
+                                      "oneOf": [
+                                        {
                                           "properties": {
-                                            "key": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "request.headers",
+                                                "request.query",
+                                                "response.headers"
+                                              ]
+                                            },
+                                            "op": {
+                                              "type": "string",
+                                              "enum": [
+                                                "append",
+                                                "delete",
+                                                "set"
+                                              ]
+                                            },
+                                            "target": {
+                                              "properties": {
+                                                "key": {
+                                                  "oneOf": [
+                                                    {
+                                                      "type": "string"
+                                                    },
+                                                    {
+                                                      "properties": {
+                                                        "eq": {
+                                                          "oneOf": [
+                                                            {
+                                                              "type": "string"
+                                                            },
+                                                            {
+                                                              "type": "number"
+                                                            }
+                                                          ]
+                                                        },
+                                                        "neq": {
+                                                          "type": "string"
+                                                        },
+                                                        "inc": {
+                                                          "items": {
+                                                            "type": "string"
+                                                          },
+                                                          "type": "array"
+                                                        },
+                                                        "ninc": {
+                                                          "items": {
+                                                            "type": "string"
+                                                          },
+                                                          "type": "array"
+                                                        },
+                                                        "pre": {
+                                                          "type": "string"
+                                                        },
+                                                        "suf": {
+                                                          "type": "string"
+                                                        },
+                                                        "gt": {
+                                                          "type": "number"
+                                                        },
+                                                        "gte": {
+                                                          "type": "number"
+                                                        },
+                                                        "lt": {
+                                                          "type": "number"
+                                                        },
+                                                        "lte": {
+                                                          "type": "number"
+                                                        }
+                                                      },
+                                                      "type": "object"
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "key"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            "args": {
                                               "oneOf": [
                                                 {
                                                   "type": "string"
                                                 },
                                                 {
-                                                  "properties": {
-                                                    "eq": {
-                                                      "oneOf": [
-                                                        {
-                                                          "type": "string"
-                                                        },
-                                                        {
-                                                          "type": "number"
-                                                        }
-                                                      ]
-                                                    },
-                                                    "neq": {
-                                                      "type": "string"
-                                                    },
-                                                    "inc": {
-                                                      "items": {
-                                                        "type": "string"
-                                                      },
-                                                      "type": "array"
-                                                    },
-                                                    "ninc": {
-                                                      "items": {
-                                                        "type": "string"
-                                                      },
-                                                      "type": "array"
-                                                    },
-                                                    "pre": {
-                                                      "type": "string"
-                                                    },
-                                                    "suf": {
-                                                      "type": "string"
-                                                    },
-                                                    "gt": {
-                                                      "type": "number"
-                                                    },
-                                                    "gte": {
-                                                      "type": "number"
-                                                    },
-                                                    "lt": {
-                                                      "type": "number"
-                                                    },
-                                                    "lte": {
-                                                      "type": "number"
-                                                    }
+                                                  "items": {
+                                                    "type": "string"
                                                   },
-                                                  "type": "object"
+                                                  "type": "array"
                                                 }
                                               ]
-                                            }
-                                          },
-                                          "required": [
-                                            "key"
-                                          ],
-                                          "type": "object"
-                                        },
-                                        "args": {
-                                          "oneOf": [
-                                            {
-                                              "type": "string"
                                             },
-                                            {
+                                            "env": {
                                               "items": {
                                                 "type": "string"
                                               },
                                               "type": "array"
                                             }
-                                          ]
-                                        },
-                                        "env": {
-                                          "items": {
-                                            "type": "string"
                                           },
-                                          "type": "array"
+                                          "required": [
+                                            "op",
+                                            "target",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "request.path"
+                                              ]
+                                            },
+                                            "op": {
+                                              "type": "string",
+                                              "enum": [
+                                                "set"
+                                              ]
+                                            },
+                                            "args": {
+                                              "type": "string"
+                                            },
+                                            "env": {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array"
+                                            }
+                                          },
+                                          "required": [
+                                            "args",
+                                            "op",
+                                            "type"
+                                          ],
+                                          "type": "object"
                                         }
-                                      },
-                                      "required": [
-                                        "op",
-                                        "target",
-                                        "type"
-                                      ],
-                                      "type": "object"
+                                      ]
                                     },
                                     "type": "array"
                                   },
@@ -80194,112 +80541,147 @@
                                   },
                                   "transforms": {
                                     "items": {
-                                      "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "request.headers",
-                                            "request.query",
-                                            "response.headers"
-                                          ]
-                                        },
-                                        "op": {
-                                          "type": "string",
-                                          "enum": [
-                                            "append",
-                                            "delete",
-                                            "set"
-                                          ]
-                                        },
-                                        "target": {
+                                      "oneOf": [
+                                        {
                                           "properties": {
-                                            "key": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "request.headers",
+                                                "request.query",
+                                                "response.headers"
+                                              ]
+                                            },
+                                            "op": {
+                                              "type": "string",
+                                              "enum": [
+                                                "append",
+                                                "delete",
+                                                "set"
+                                              ]
+                                            },
+                                            "target": {
+                                              "properties": {
+                                                "key": {
+                                                  "oneOf": [
+                                                    {
+                                                      "type": "string"
+                                                    },
+                                                    {
+                                                      "properties": {
+                                                        "eq": {
+                                                          "oneOf": [
+                                                            {
+                                                              "type": "string"
+                                                            },
+                                                            {
+                                                              "type": "number"
+                                                            }
+                                                          ]
+                                                        },
+                                                        "neq": {
+                                                          "type": "string"
+                                                        },
+                                                        "inc": {
+                                                          "items": {
+                                                            "type": "string"
+                                                          },
+                                                          "type": "array"
+                                                        },
+                                                        "ninc": {
+                                                          "items": {
+                                                            "type": "string"
+                                                          },
+                                                          "type": "array"
+                                                        },
+                                                        "pre": {
+                                                          "type": "string"
+                                                        },
+                                                        "suf": {
+                                                          "type": "string"
+                                                        },
+                                                        "gt": {
+                                                          "type": "number"
+                                                        },
+                                                        "gte": {
+                                                          "type": "number"
+                                                        },
+                                                        "lt": {
+                                                          "type": "number"
+                                                        },
+                                                        "lte": {
+                                                          "type": "number"
+                                                        }
+                                                      },
+                                                      "type": "object"
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "key"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            "args": {
                                               "oneOf": [
                                                 {
                                                   "type": "string"
                                                 },
                                                 {
-                                                  "properties": {
-                                                    "eq": {
-                                                      "oneOf": [
-                                                        {
-                                                          "type": "string"
-                                                        },
-                                                        {
-                                                          "type": "number"
-                                                        }
-                                                      ]
-                                                    },
-                                                    "neq": {
-                                                      "type": "string"
-                                                    },
-                                                    "inc": {
-                                                      "items": {
-                                                        "type": "string"
-                                                      },
-                                                      "type": "array"
-                                                    },
-                                                    "ninc": {
-                                                      "items": {
-                                                        "type": "string"
-                                                      },
-                                                      "type": "array"
-                                                    },
-                                                    "pre": {
-                                                      "type": "string"
-                                                    },
-                                                    "suf": {
-                                                      "type": "string"
-                                                    },
-                                                    "gt": {
-                                                      "type": "number"
-                                                    },
-                                                    "gte": {
-                                                      "type": "number"
-                                                    },
-                                                    "lt": {
-                                                      "type": "number"
-                                                    },
-                                                    "lte": {
-                                                      "type": "number"
-                                                    }
+                                                  "items": {
+                                                    "type": "string"
                                                   },
-                                                  "type": "object"
+                                                  "type": "array"
                                                 }
                                               ]
-                                            }
-                                          },
-                                          "required": [
-                                            "key"
-                                          ],
-                                          "type": "object"
-                                        },
-                                        "args": {
-                                          "oneOf": [
-                                            {
-                                              "type": "string"
                                             },
-                                            {
+                                            "env": {
                                               "items": {
                                                 "type": "string"
                                               },
                                               "type": "array"
                                             }
-                                          ]
-                                        },
-                                        "env": {
-                                          "items": {
-                                            "type": "string"
                                           },
-                                          "type": "array"
+                                          "required": [
+                                            "op",
+                                            "target",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "request.path"
+                                              ]
+                                            },
+                                            "op": {
+                                              "type": "string",
+                                              "enum": [
+                                                "set"
+                                              ]
+                                            },
+                                            "args": {
+                                              "type": "string"
+                                            },
+                                            "env": {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array"
+                                            }
+                                          },
+                                          "required": [
+                                            "args",
+                                            "op",
+                                            "type"
+                                          ],
+                                          "type": "object"
                                         }
-                                      },
-                                      "required": [
-                                        "op",
-                                        "target",
-                                        "type"
-                                      ],
-                                      "type": "object"
+                                      ]
                                     },
                                     "type": "array"
                                   },
@@ -80909,112 +81291,147 @@
                                   },
                                   "transforms": {
                                     "items": {
-                                      "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "request.headers",
-                                            "request.query",
-                                            "response.headers"
-                                          ]
-                                        },
-                                        "op": {
-                                          "type": "string",
-                                          "enum": [
-                                            "append",
-                                            "delete",
-                                            "set"
-                                          ]
-                                        },
-                                        "target": {
+                                      "oneOf": [
+                                        {
                                           "properties": {
-                                            "key": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "request.headers",
+                                                "request.query",
+                                                "response.headers"
+                                              ]
+                                            },
+                                            "op": {
+                                              "type": "string",
+                                              "enum": [
+                                                "append",
+                                                "delete",
+                                                "set"
+                                              ]
+                                            },
+                                            "target": {
+                                              "properties": {
+                                                "key": {
+                                                  "oneOf": [
+                                                    {
+                                                      "type": "string"
+                                                    },
+                                                    {
+                                                      "properties": {
+                                                        "eq": {
+                                                          "oneOf": [
+                                                            {
+                                                              "type": "string"
+                                                            },
+                                                            {
+                                                              "type": "number"
+                                                            }
+                                                          ]
+                                                        },
+                                                        "neq": {
+                                                          "type": "string"
+                                                        },
+                                                        "inc": {
+                                                          "items": {
+                                                            "type": "string"
+                                                          },
+                                                          "type": "array"
+                                                        },
+                                                        "ninc": {
+                                                          "items": {
+                                                            "type": "string"
+                                                          },
+                                                          "type": "array"
+                                                        },
+                                                        "pre": {
+                                                          "type": "string"
+                                                        },
+                                                        "suf": {
+                                                          "type": "string"
+                                                        },
+                                                        "gt": {
+                                                          "type": "number"
+                                                        },
+                                                        "gte": {
+                                                          "type": "number"
+                                                        },
+                                                        "lt": {
+                                                          "type": "number"
+                                                        },
+                                                        "lte": {
+                                                          "type": "number"
+                                                        }
+                                                      },
+                                                      "type": "object"
+                                                    }
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "key"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            "args": {
                                               "oneOf": [
                                                 {
                                                   "type": "string"
                                                 },
                                                 {
-                                                  "properties": {
-                                                    "eq": {
-                                                      "oneOf": [
-                                                        {
-                                                          "type": "string"
-                                                        },
-                                                        {
-                                                          "type": "number"
-                                                        }
-                                                      ]
-                                                    },
-                                                    "neq": {
-                                                      "type": "string"
-                                                    },
-                                                    "inc": {
-                                                      "items": {
-                                                        "type": "string"
-                                                      },
-                                                      "type": "array"
-                                                    },
-                                                    "ninc": {
-                                                      "items": {
-                                                        "type": "string"
-                                                      },
-                                                      "type": "array"
-                                                    },
-                                                    "pre": {
-                                                      "type": "string"
-                                                    },
-                                                    "suf": {
-                                                      "type": "string"
-                                                    },
-                                                    "gt": {
-                                                      "type": "number"
-                                                    },
-                                                    "gte": {
-                                                      "type": "number"
-                                                    },
-                                                    "lt": {
-                                                      "type": "number"
-                                                    },
-                                                    "lte": {
-                                                      "type": "number"
-                                                    }
+                                                  "items": {
+                                                    "type": "string"
                                                   },
-                                                  "type": "object"
+                                                  "type": "array"
                                                 }
                                               ]
-                                            }
-                                          },
-                                          "required": [
-                                            "key"
-                                          ],
-                                          "type": "object"
-                                        },
-                                        "args": {
-                                          "oneOf": [
-                                            {
-                                              "type": "string"
                                             },
-                                            {
+                                            "env": {
                                               "items": {
                                                 "type": "string"
                                               },
                                               "type": "array"
                                             }
-                                          ]
-                                        },
-                                        "env": {
-                                          "items": {
-                                            "type": "string"
                                           },
-                                          "type": "array"
+                                          "required": [
+                                            "op",
+                                            "target",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "request.path"
+                                              ]
+                                            },
+                                            "op": {
+                                              "type": "string",
+                                              "enum": [
+                                                "set"
+                                              ]
+                                            },
+                                            "args": {
+                                              "type": "string"
+                                            },
+                                            "env": {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array"
+                                            }
+                                          },
+                                          "required": [
+                                            "args",
+                                            "op",
+                                            "type"
+                                          ],
+                                          "type": "object"
                                         }
-                                      },
-                                      "required": [
-                                        "op",
-                                        "target",
-                                        "type"
-                                      ],
-                                      "type": "object"
+                                      ]
                                     },
                                     "type": "array"
                                   },
@@ -82034,112 +82451,147 @@
                             },
                             "transforms": {
                               "items": {
-                                "properties": {
-                                  "type": {
-                                    "type": "string",
-                                    "enum": [
-                                      "request.headers",
-                                      "request.query",
-                                      "response.headers"
-                                    ]
-                                  },
-                                  "op": {
-                                    "type": "string",
-                                    "enum": [
-                                      "append",
-                                      "delete",
-                                      "set"
-                                    ]
-                                  },
-                                  "target": {
+                                "oneOf": [
+                                  {
                                     "properties": {
-                                      "key": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "request.headers",
+                                          "request.query",
+                                          "response.headers"
+                                        ]
+                                      },
+                                      "op": {
+                                        "type": "string",
+                                        "enum": [
+                                          "append",
+                                          "delete",
+                                          "set"
+                                        ]
+                                      },
+                                      "target": {
+                                        "properties": {
+                                          "key": {
+                                            "oneOf": [
+                                              {
+                                                "type": "string"
+                                              },
+                                              {
+                                                "properties": {
+                                                  "eq": {
+                                                    "oneOf": [
+                                                      {
+                                                        "type": "string"
+                                                      },
+                                                      {
+                                                        "type": "number"
+                                                      }
+                                                    ]
+                                                  },
+                                                  "neq": {
+                                                    "type": "string"
+                                                  },
+                                                  "inc": {
+                                                    "items": {
+                                                      "type": "string"
+                                                    },
+                                                    "type": "array"
+                                                  },
+                                                  "ninc": {
+                                                    "items": {
+                                                      "type": "string"
+                                                    },
+                                                    "type": "array"
+                                                  },
+                                                  "pre": {
+                                                    "type": "string"
+                                                  },
+                                                  "suf": {
+                                                    "type": "string"
+                                                  },
+                                                  "gt": {
+                                                    "type": "number"
+                                                  },
+                                                  "gte": {
+                                                    "type": "number"
+                                                  },
+                                                  "lt": {
+                                                    "type": "number"
+                                                  },
+                                                  "lte": {
+                                                    "type": "number"
+                                                  }
+                                                },
+                                                "type": "object"
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "key"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      "args": {
                                         "oneOf": [
                                           {
                                             "type": "string"
                                           },
                                           {
-                                            "properties": {
-                                              "eq": {
-                                                "oneOf": [
-                                                  {
-                                                    "type": "string"
-                                                  },
-                                                  {
-                                                    "type": "number"
-                                                  }
-                                                ]
-                                              },
-                                              "neq": {
-                                                "type": "string"
-                                              },
-                                              "inc": {
-                                                "items": {
-                                                  "type": "string"
-                                                },
-                                                "type": "array"
-                                              },
-                                              "ninc": {
-                                                "items": {
-                                                  "type": "string"
-                                                },
-                                                "type": "array"
-                                              },
-                                              "pre": {
-                                                "type": "string"
-                                              },
-                                              "suf": {
-                                                "type": "string"
-                                              },
-                                              "gt": {
-                                                "type": "number"
-                                              },
-                                              "gte": {
-                                                "type": "number"
-                                              },
-                                              "lt": {
-                                                "type": "number"
-                                              },
-                                              "lte": {
-                                                "type": "number"
-                                              }
+                                            "items": {
+                                              "type": "string"
                                             },
-                                            "type": "object"
+                                            "type": "array"
                                           }
                                         ]
-                                      }
-                                    },
-                                    "required": [
-                                      "key"
-                                    ],
-                                    "type": "object"
-                                  },
-                                  "args": {
-                                    "oneOf": [
-                                      {
-                                        "type": "string"
                                       },
-                                      {
+                                      "env": {
                                         "items": {
                                           "type": "string"
                                         },
                                         "type": "array"
                                       }
-                                    ]
-                                  },
-                                  "env": {
-                                    "items": {
-                                      "type": "string"
                                     },
-                                    "type": "array"
+                                    "required": [
+                                      "op",
+                                      "target",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "request.path"
+                                        ]
+                                      },
+                                      "op": {
+                                        "type": "string",
+                                        "enum": [
+                                          "set"
+                                        ]
+                                      },
+                                      "args": {
+                                        "type": "string"
+                                      },
+                                      "env": {
+                                        "items": {
+                                          "type": "string"
+                                        },
+                                        "type": "array"
+                                      }
+                                    },
+                                    "required": [
+                                      "args",
+                                      "op",
+                                      "type"
+                                    ],
+                                    "type": "object"
                                   }
-                                },
-                                "required": [
-                                  "op",
-                                  "target",
-                                  "type"
-                                ],
-                                "type": "object"
+                                ]
                               },
                               "type": "array"
                             },
@@ -83134,112 +83586,147 @@
                             },
                             "transforms": {
                               "items": {
-                                "properties": {
-                                  "type": {
-                                    "type": "string",
-                                    "enum": [
-                                      "request.headers",
-                                      "request.query",
-                                      "response.headers"
-                                    ]
-                                  },
-                                  "op": {
-                                    "type": "string",
-                                    "enum": [
-                                      "append",
-                                      "delete",
-                                      "set"
-                                    ]
-                                  },
-                                  "target": {
+                                "oneOf": [
+                                  {
                                     "properties": {
-                                      "key": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "request.headers",
+                                          "request.query",
+                                          "response.headers"
+                                        ]
+                                      },
+                                      "op": {
+                                        "type": "string",
+                                        "enum": [
+                                          "append",
+                                          "delete",
+                                          "set"
+                                        ]
+                                      },
+                                      "target": {
+                                        "properties": {
+                                          "key": {
+                                            "oneOf": [
+                                              {
+                                                "type": "string"
+                                              },
+                                              {
+                                                "properties": {
+                                                  "eq": {
+                                                    "oneOf": [
+                                                      {
+                                                        "type": "string"
+                                                      },
+                                                      {
+                                                        "type": "number"
+                                                      }
+                                                    ]
+                                                  },
+                                                  "neq": {
+                                                    "type": "string"
+                                                  },
+                                                  "inc": {
+                                                    "items": {
+                                                      "type": "string"
+                                                    },
+                                                    "type": "array"
+                                                  },
+                                                  "ninc": {
+                                                    "items": {
+                                                      "type": "string"
+                                                    },
+                                                    "type": "array"
+                                                  },
+                                                  "pre": {
+                                                    "type": "string"
+                                                  },
+                                                  "suf": {
+                                                    "type": "string"
+                                                  },
+                                                  "gt": {
+                                                    "type": "number"
+                                                  },
+                                                  "gte": {
+                                                    "type": "number"
+                                                  },
+                                                  "lt": {
+                                                    "type": "number"
+                                                  },
+                                                  "lte": {
+                                                    "type": "number"
+                                                  }
+                                                },
+                                                "type": "object"
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "key"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      "args": {
                                         "oneOf": [
                                           {
                                             "type": "string"
                                           },
                                           {
-                                            "properties": {
-                                              "eq": {
-                                                "oneOf": [
-                                                  {
-                                                    "type": "string"
-                                                  },
-                                                  {
-                                                    "type": "number"
-                                                  }
-                                                ]
-                                              },
-                                              "neq": {
-                                                "type": "string"
-                                              },
-                                              "inc": {
-                                                "items": {
-                                                  "type": "string"
-                                                },
-                                                "type": "array"
-                                              },
-                                              "ninc": {
-                                                "items": {
-                                                  "type": "string"
-                                                },
-                                                "type": "array"
-                                              },
-                                              "pre": {
-                                                "type": "string"
-                                              },
-                                              "suf": {
-                                                "type": "string"
-                                              },
-                                              "gt": {
-                                                "type": "number"
-                                              },
-                                              "gte": {
-                                                "type": "number"
-                                              },
-                                              "lt": {
-                                                "type": "number"
-                                              },
-                                              "lte": {
-                                                "type": "number"
-                                              }
+                                            "items": {
+                                              "type": "string"
                                             },
-                                            "type": "object"
+                                            "type": "array"
                                           }
                                         ]
-                                      }
-                                    },
-                                    "required": [
-                                      "key"
-                                    ],
-                                    "type": "object"
-                                  },
-                                  "args": {
-                                    "oneOf": [
-                                      {
-                                        "type": "string"
                                       },
-                                      {
+                                      "env": {
                                         "items": {
                                           "type": "string"
                                         },
                                         "type": "array"
                                       }
-                                    ]
-                                  },
-                                  "env": {
-                                    "items": {
-                                      "type": "string"
                                     },
-                                    "type": "array"
+                                    "required": [
+                                      "op",
+                                      "target",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "request.path"
+                                        ]
+                                      },
+                                      "op": {
+                                        "type": "string",
+                                        "enum": [
+                                          "set"
+                                        ]
+                                      },
+                                      "args": {
+                                        "type": "string"
+                                      },
+                                      "env": {
+                                        "items": {
+                                          "type": "string"
+                                        },
+                                        "type": "array"
+                                      }
+                                    },
+                                    "required": [
+                                      "args",
+                                      "op",
+                                      "type"
+                                    ],
+                                    "type": "object"
                                   }
-                                },
-                                "required": [
-                                  "op",
-                                  "target",
-                                  "type"
-                                ],
-                                "type": "object"
+                                ]
                               },
                               "type": "array"
                             },
