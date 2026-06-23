@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    /// Default Value: AES256
     /// </summary>
     public enum CreateDrainRequestDeliveryVariant3ServerSideEncryption
     {
