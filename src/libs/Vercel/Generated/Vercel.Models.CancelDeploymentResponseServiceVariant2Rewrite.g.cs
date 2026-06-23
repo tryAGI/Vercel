@@ -26,6 +26,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transforms")]
+        public global::System.Collections.Generic.IList<global::Vercel.CancelDeploymentResponseServiceVariant2RewriteTransform>? Transforms { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("has")]
         public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseServiceVariant2RewriteHaVariant1, global::Vercel.CancelDeploymentResponseServiceVariant2RewriteHaVariant2>>? Has { get; set; }
 
@@ -64,6 +70,7 @@ namespace Vercel
         /// </summary>
         /// <param name="source"></param>
         /// <param name="destination"></param>
+        /// <param name="transforms"></param>
         /// <param name="has"></param>
         /// <param name="missing"></param>
         /// <param name="statusCode"></param>
@@ -75,6 +82,7 @@ namespace Vercel
         public CancelDeploymentResponseServiceVariant2Rewrite(
             string source,
             global::Vercel.OneOf<string, global::Vercel.CancelDeploymentResponseServiceVariant2RewriteDestination> destination,
+            global::System.Collections.Generic.IList<global::Vercel.CancelDeploymentResponseServiceVariant2RewriteTransform>? transforms,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseServiceVariant2RewriteHaVariant1, global::Vercel.CancelDeploymentResponseServiceVariant2RewriteHaVariant2>>? has,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseServiceVariant2RewriteMissingItemVariant1, global::Vercel.CancelDeploymentResponseServiceVariant2RewriteMissingItemVariant2>>? missing,
             double? statusCode,
@@ -83,6 +91,7 @@ namespace Vercel
         {
             this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
             this.Destination = destination;
+            this.Transforms = transforms;
             this.Has = has;
             this.Missing = missing;
             this.StatusCode = statusCode;
