@@ -12986,6 +12986,389 @@
         }
       }
     },
+    "/v1/connect/token/{connector}/import": {
+      "post": {
+        "description": "Import access and refresh tokens for a connector identified by the path parameter.",
+        "operationId": "importConnectorTokens",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Import Connect tokens",
+        "tags": [
+          "connect"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "accepted": {
+                      "type": "number"
+                    },
+                    "imported": {
+                      "type": "number"
+                    },
+                    "tokens": {
+                      "items": {
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "installationId": {
+                            "type": "string"
+                          },
+                          "audience": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          "scopes": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          "resources": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          "authorizationDetails": {
+                            "items": {
+                              "properties": {
+                                "type": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "expiresAt": {
+                            "type": "number"
+                          },
+                          "refreshTokenExpiresAt": {
+                            "type": "number"
+                          },
+                          "externalSubject": {
+                            "type": "string"
+                          },
+                          "installation": {
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "id"
+                            ],
+                            "type": "object"
+                          },
+                          "tenant": {
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "id"
+                            ],
+                            "type": "object"
+                          },
+                          "data": {
+                            "additionalProperties": true,
+                            "type": "object"
+                          },
+                          "subject": {
+                            "oneOf": [
+                              {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "app"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ],
+                                "type": "object"
+                              },
+                              {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "user"
+                                    ]
+                                  },
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "issuer": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "type"
+                                ],
+                                "type": "object"
+                              }
+                            ]
+                          },
+                          "environment": {
+                            "type": "string",
+                            "enum": [
+                              "development",
+                              "preview",
+                              "production"
+                            ]
+                          },
+                          "succeeded": {
+                            "type": "boolean",
+                            "enum": [
+                              false,
+                              true
+                            ]
+                          }
+                        },
+                        "required": [
+                          "environment",
+                          "expiresAt",
+                          "subject",
+                          "succeeded"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "accepted",
+                    "imported",
+                    "tokens"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "422": {
+            "description": ""
+          },
+          "504": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "connector",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "tokens"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "tokens": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 1000,
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "accessToken",
+                        "expiresAt",
+                        "subject",
+                        "environment"
+                      ],
+                      "additionalProperties": false,
+                      "properties": {
+                        "accessToken": {
+                          "type": "string"
+                        },
+                        "expiresAt": {
+                          "type": "number"
+                        },
+                        "refreshToken": {
+                          "type": "string"
+                        },
+                        "refreshTokenExpiresAt": {
+                          "type": "number"
+                        },
+                        "subject": {
+                          "anyOf": [
+                            {
+                              "title": "type:app",
+                              "type": "object",
+                              "required": [
+                                "type"
+                              ],
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "app"
+                                  ]
+                                }
+                              },
+                              "additionalProperties": true
+                            },
+                            {
+                              "required": [
+                                "type",
+                                "id"
+                              ],
+                              "title": "type:user",
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "user"
+                                  ]
+                                },
+                                "id": {
+                                  "type": "string"
+                                },
+                                "issuer": {
+                                  "type": "string"
+                                }
+                              },
+                              "additionalProperties": true
+                            }
+                          ]
+                        },
+                        "environment": {
+                          "type": "string",
+                          "enum": [
+                            "development",
+                            "preview",
+                            "production"
+                          ]
+                        },
+                        "installationId": {
+                          "type": "string"
+                        },
+                        "audience": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "scopes": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "resources": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "authorizationDetails": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string"
+                              }
+                            },
+                            "additionalProperties": true
+                          }
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "externalSubject": {
+                          "type": "string"
+                        },
+                        "installation": {
+                          "type": "object",
+                          "required": [
+                            "id"
+                          ],
+                          "additionalProperties": false,
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "tenant": {
+                          "type": "object",
+                          "required": [
+                            "id"
+                          ],
+                          "additionalProperties": false,
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "data": {
+                          "type": "object",
+                          "additionalProperties": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/connect/authorize/{connector}": {
       "post": {
         "description": "Create an authorization request for a connector and return the URL and verifier details needed to complete the flow.",
@@ -44317,7 +44700,8 @@
                               "AES256",
                               "aws:kms",
                               "aws:kms:dsse"
-                            ]
+                            ],
+                            "default": "AES256"
                           },
                           "objectAcl": {
                             "type": "string",
@@ -48247,7 +48631,8 @@
                               "AES256",
                               "aws:kms",
                               "aws:kms:dsse"
-                            ]
+                            ],
+                            "default": "AES256"
                           },
                           "objectAcl": {
                             "type": "string",
@@ -48632,7 +49017,8 @@
                               "AES256",
                               "aws:kms",
                               "aws:kms:dsse"
-                            ]
+                            ],
+                            "default": "AES256"
                           },
                           "objectAcl": {
                             "type": "string",
@@ -160757,6 +161143,7 @@
               "connect-github-limited",
               "connect-gitlab",
               "connect-gitlab-app",
+              "connect-import-tokens",
               "connect-revoke-all-tokens",
               "connect-update-connector",
               "connect-update-trigger-destinations",
@@ -160869,6 +161256,7 @@
               "flags-sdk-key-read",
               "flags-segment",
               "flags-settings",
+              "flags-transferred",
               "git_account_integration_link_added",
               "instant-rollback-created",
               "integration-configuration-owner-changed",
@@ -161116,6 +161504,7 @@
               "team-domain-verification-deleted",
               "team-domain-verification-verified",
               "team-email-domain-update",
+              "team-emu-account-split",
               "team-emu-updated",
               "team-ended-trial",
               "team-git-repository-dispatch-events-toggled",
@@ -161138,6 +161527,7 @@
               "team-member-leave",
               "team-member-request-access",
               "team-member-role-update",
+              "team-member-sso-authorization-attempt",
               "team-mfa-enforcement-updated",
               "team-name-update",
               "team-paid-invoice",
@@ -161539,6 +161929,7 @@
               "connect-github-limited",
               "connect-gitlab",
               "connect-gitlab-app",
+              "connect-import-tokens",
               "connect-revoke-all-tokens",
               "connect-update-connector",
               "connect-update-trigger-destinations",
@@ -161651,6 +162042,7 @@
               "flags-sdk-key-read",
               "flags-segment",
               "flags-settings",
+              "flags-transferred",
               "git_account_integration_link_added",
               "instant-rollback-created",
               "integration-configuration-owner-changed",
@@ -161898,6 +162290,7 @@
               "team-domain-verification-deleted",
               "team-domain-verification-verified",
               "team-email-domain-update",
+              "team-emu-account-split",
               "team-emu-updated",
               "team-ended-trial",
               "team-git-repository-dispatch-events-toggled",
@@ -161920,6 +162313,7 @@
               "team-member-leave",
               "team-member-request-access",
               "team-member-role-update",
+              "team-member-sso-authorization-attempt",
               "team-mfa-enforcement-updated",
               "team-name-update",
               "team-paid-invoice",
@@ -162114,6 +162508,7 @@
                 "connect-github-limited",
                 "connect-gitlab",
                 "connect-gitlab-app",
+                "connect-import-tokens",
                 "connect-revoke-all-tokens",
                 "connect-update-connector",
                 "connect-update-trigger-destinations",
@@ -162226,6 +162621,7 @@
                 "flags-sdk-key-read",
                 "flags-segment",
                 "flags-settings",
+                "flags-transferred",
                 "git_account_integration_link_added",
                 "instant-rollback-created",
                 "integration-configuration-owner-changed",
@@ -162473,6 +162869,7 @@
                 "team-domain-verification-deleted",
                 "team-domain-verification-verified",
                 "team-email-domain-update",
+                "team-emu-account-split",
                 "team-emu-updated",
                 "team-ended-trial",
                 "team-git-repository-dispatch-events-toggled",
@@ -162495,6 +162892,7 @@
                 "team-member-leave",
                 "team-member-request-access",
                 "team-member-role-update",
+                "team-member-sso-authorization-attempt",
                 "team-mfa-enforcement-updated",
                 "team-name-update",
                 "team-paid-invoice",

@@ -360,6 +360,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ConnectImportTokens,
+        /// <summary>
+        /// 
+        /// </summary>
         ConnectRevokeAllTokens,
         /// <summary>
         /// 
@@ -805,6 +809,10 @@ namespace Vercel
         /// 
         /// </summary>
         FlagsSettings,
+        /// <summary>
+        /// 
+        /// </summary>
+        FlagsTransferred,
         /// <summary>
         /// 
         /// </summary>
@@ -1796,6 +1804,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamEmuAccountSplit,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamEmuUpdated,
         /// <summary>
         /// 
@@ -1881,6 +1893,10 @@ namespace Vercel
         /// 
         /// </summary>
         TeamMemberRoleUpdate,
+        /// <summary>
+        /// 
+        /// </summary>
+        TeamMemberSsoAuthorizationAttempt,
         /// <summary>
         /// 
         /// </summary>
@@ -2178,6 +2194,7 @@ namespace Vercel
                 ListEventTypeName.ConnectGithubLimited => "connect-github-limited",
                 ListEventTypeName.ConnectGitlab => "connect-gitlab",
                 ListEventTypeName.ConnectGitlabApp => "connect-gitlab-app",
+                ListEventTypeName.ConnectImportTokens => "connect-import-tokens",
                 ListEventTypeName.ConnectRevokeAllTokens => "connect-revoke-all-tokens",
                 ListEventTypeName.ConnectUpdateConnector => "connect-update-connector",
                 ListEventTypeName.ConnectUpdateTriggerDestinations => "connect-update-trigger-destinations",
@@ -2290,6 +2307,7 @@ namespace Vercel
                 ListEventTypeName.FlagsSdkKeyRead => "flags-sdk-key-read",
                 ListEventTypeName.FlagsSegment => "flags-segment",
                 ListEventTypeName.FlagsSettings => "flags-settings",
+                ListEventTypeName.FlagsTransferred => "flags-transferred",
                 ListEventTypeName.GitAccountIntegrationLinkAdded => "git_account_integration_link_added",
                 ListEventTypeName.InstantRollbackCreated => "instant-rollback-created",
                 ListEventTypeName.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
@@ -2537,6 +2555,7 @@ namespace Vercel
                 ListEventTypeName.TeamDomainVerificationDeleted => "team-domain-verification-deleted",
                 ListEventTypeName.TeamDomainVerificationVerified => "team-domain-verification-verified",
                 ListEventTypeName.TeamEmailDomainUpdate => "team-email-domain-update",
+                ListEventTypeName.TeamEmuAccountSplit => "team-emu-account-split",
                 ListEventTypeName.TeamEmuUpdated => "team-emu-updated",
                 ListEventTypeName.TeamEndedTrial => "team-ended-trial",
                 ListEventTypeName.TeamGitRepositoryDispatchEventsToggled => "team-git-repository-dispatch-events-toggled",
@@ -2559,6 +2578,7 @@ namespace Vercel
                 ListEventTypeName.TeamMemberLeave => "team-member-leave",
                 ListEventTypeName.TeamMemberRequestAccess => "team-member-request-access",
                 ListEventTypeName.TeamMemberRoleUpdate => "team-member-role-update",
+                ListEventTypeName.TeamMemberSsoAuthorizationAttempt => "team-member-sso-authorization-attempt",
                 ListEventTypeName.TeamMfaEnforcementUpdated => "team-mfa-enforcement-updated",
                 ListEventTypeName.TeamNameUpdate => "team-name-update",
                 ListEventTypeName.TeamPaidInvoice => "team-paid-invoice",
@@ -2705,6 +2725,7 @@ namespace Vercel
                 "connect-github-limited" => ListEventTypeName.ConnectGithubLimited,
                 "connect-gitlab" => ListEventTypeName.ConnectGitlab,
                 "connect-gitlab-app" => ListEventTypeName.ConnectGitlabApp,
+                "connect-import-tokens" => ListEventTypeName.ConnectImportTokens,
                 "connect-revoke-all-tokens" => ListEventTypeName.ConnectRevokeAllTokens,
                 "connect-update-connector" => ListEventTypeName.ConnectUpdateConnector,
                 "connect-update-trigger-destinations" => ListEventTypeName.ConnectUpdateTriggerDestinations,
@@ -2817,6 +2838,7 @@ namespace Vercel
                 "flags-sdk-key-read" => ListEventTypeName.FlagsSdkKeyRead,
                 "flags-segment" => ListEventTypeName.FlagsSegment,
                 "flags-settings" => ListEventTypeName.FlagsSettings,
+                "flags-transferred" => ListEventTypeName.FlagsTransferred,
                 "git_account_integration_link_added" => ListEventTypeName.GitAccountIntegrationLinkAdded,
                 "instant-rollback-created" => ListEventTypeName.InstantRollbackCreated,
                 "integration-configuration-owner-changed" => ListEventTypeName.IntegrationConfigurationOwnerChanged,
@@ -3064,6 +3086,7 @@ namespace Vercel
                 "team-domain-verification-deleted" => ListEventTypeName.TeamDomainVerificationDeleted,
                 "team-domain-verification-verified" => ListEventTypeName.TeamDomainVerificationVerified,
                 "team-email-domain-update" => ListEventTypeName.TeamEmailDomainUpdate,
+                "team-emu-account-split" => ListEventTypeName.TeamEmuAccountSplit,
                 "team-emu-updated" => ListEventTypeName.TeamEmuUpdated,
                 "team-ended-trial" => ListEventTypeName.TeamEndedTrial,
                 "team-git-repository-dispatch-events-toggled" => ListEventTypeName.TeamGitRepositoryDispatchEventsToggled,
@@ -3086,6 +3109,7 @@ namespace Vercel
                 "team-member-leave" => ListEventTypeName.TeamMemberLeave,
                 "team-member-request-access" => ListEventTypeName.TeamMemberRequestAccess,
                 "team-member-role-update" => ListEventTypeName.TeamMemberRoleUpdate,
+                "team-member-sso-authorization-attempt" => ListEventTypeName.TeamMemberSsoAuthorizationAttempt,
                 "team-mfa-enforcement-updated" => ListEventTypeName.TeamMfaEnforcementUpdated,
                 "team-name-update" => ListEventTypeName.TeamNameUpdate,
                 "team-paid-invoice" => ListEventTypeName.TeamPaidInvoice,

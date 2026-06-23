@@ -59,7 +59,7 @@ namespace Vercel
         public required string Region { get; set; }
 
         /// <summary>
-        /// 
+        /// Default Value: AES256
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serverSideEncryption")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainRequestDeliveryVariant3ServerSideEncryptionJsonConverter))]
@@ -88,7 +88,9 @@ namespace Vercel
         /// <param name="region"></param>
         /// <param name="compression"></param>
         /// <param name="fileStructure"></param>
-        /// <param name="serverSideEncryption"></param>
+        /// <param name="serverSideEncryption">
+        /// Default Value: AES256
+        /// </param>
         /// <param name="objectAcl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
