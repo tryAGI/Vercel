@@ -17668,6 +17668,13 @@
                                     "type": "string",
                                     "description": "Resolved entrypoint, relative to the service root."
                                   },
+                                  "command": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array",
+                                    "description": "Command override for `runtime: \"container\"` services."
+                                  },
                                   "builder": {
                                     "properties": {
                                       "use": {
@@ -18029,7 +18036,7 @@
                                         },
                                         "service": {
                                           "type": "string",
-                                          "description": "Target service name from `experimentalServicesV2`."
+                                          "description": "Target service name from `services`."
                                         },
                                         "format": {
                                           "type": "string",
@@ -25215,6 +25222,13 @@
                                 "type": "string",
                                 "description": "Resolved entrypoint, relative to the service root."
                               },
+                              "command": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array",
+                                "description": "Command override for `runtime: \"container\"` services."
+                              },
                               "builder": {
                                 "properties": {
                                   "use": {
@@ -25576,7 +25590,7 @@
                                     },
                                     "service": {
                                       "type": "string",
-                                      "description": "Target service name from `experimentalServicesV2`."
+                                      "description": "Target service name from `services`."
                                     },
                                     "format": {
                                       "type": "string",
@@ -32044,6 +32058,13 @@
                                 "type": "string",
                                 "description": "Resolved entrypoint, relative to the service root."
                               },
+                              "command": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array",
+                                "description": "Command override for `runtime: \"container\"` services."
+                              },
                               "builder": {
                                 "properties": {
                                   "use": {
@@ -32405,7 +32426,7 @@
                                     },
                                     "service": {
                                       "type": "string",
-                                      "description": "Target service name from `experimentalServicesV2`."
+                                      "description": "Target service name from `services`."
                                     },
                                     "format": {
                                       "type": "string",
@@ -150781,9 +150802,12 @@
                               "description": "Custom resource title to display during installation and configuration. If not provided, defaults to protocol-based defaults.",
                               "example": "Instance"
                             },
-                            "agentSkillUrl": {
-                              "type": "string",
-                              "description": "URL to a skill/guide for how AI agents should use this product. Providers can specify this to help agents understand how to interact with their integration."
+                            "agentSkills": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array",
+                              "description": "URLs to skills/guides for how AI agents should use this product. Providers can specify these to help agents understand how to interact with their integration."
                             },
                             "repl": {
                               "properties": {
