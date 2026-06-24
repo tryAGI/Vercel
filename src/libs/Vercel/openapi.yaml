@@ -67765,22 +67765,22 @@
                                                 "number"
                                               ]
                                             },
-                                            "description": {
-                                              "type": "string"
-                                            },
                                             "minimum": {
-                                              "type": "number"
-                                            },
-                                            "exclusiveMinimum": {
                                               "type": "number"
                                             },
                                             "maximum": {
                                               "type": "number"
                                             },
+                                            "description": {
+                                              "type": "string"
+                                            },
+                                            "default": {
+                                              "type": "number"
+                                            },
                                             "exclusiveMaximum": {
                                               "type": "number"
                                             },
-                                            "default": {
+                                            "exclusiveMinimum": {
                                               "type": "number"
                                             }
                                           },
@@ -67803,6 +67803,12 @@
                                         },
                                         "description": {
                                           "type": "string"
+                                        },
+                                        "default": {
+                                          "items": {
+                                            "type": "number"
+                                          },
+                                          "type": "array"
                                         },
                                         "maxItems": {
                                           "type": "number"
@@ -67935,12 +67941,6 @@
                                             false,
                                             true
                                           ]
-                                        },
-                                        "default": {
-                                          "items": {
-                                            "type": "number"
-                                          },
-                                          "type": "array"
                                         }
                                       },
                                       "required": [
@@ -68472,15 +68472,6 @@
                                             "description": {
                                               "type": "string"
                                             },
-                                            "minLength": {
-                                              "type": "number"
-                                            },
-                                            "maxLength": {
-                                              "type": "number"
-                                            },
-                                            "pattern": {
-                                              "type": "string"
-                                            },
                                             "default": {
                                               "type": "string"
                                             },
@@ -68489,6 +68480,15 @@
                                                 "type": "string"
                                               },
                                               "type": "array"
+                                            },
+                                            "maxLength": {
+                                              "type": "number"
+                                            },
+                                            "minLength": {
+                                              "type": "number"
+                                            },
+                                            "pattern": {
+                                              "type": "string"
                                             }
                                           },
                                           "required": [
@@ -68584,11 +68584,23 @@
                                         "description": {
                                           "type": "string"
                                         },
+                                        "default": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        },
                                         "maxItems": {
                                           "type": "number"
                                         },
                                         "minItems": {
                                           "type": "number"
+                                        },
+                                        "example": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
                                         },
                                         "ui:label": {
                                           "type": "string"
@@ -68718,18 +68730,6 @@
                                         },
                                         "ui:placeholder": {
                                           "type": "string"
-                                        },
-                                        "default": {
-                                          "items": {
-                                            "type": "string"
-                                          },
-                                          "type": "array"
-                                        },
-                                        "example": {
-                                          "items": {
-                                            "type": "string"
-                                          },
-                                          "type": "array"
                                         }
                                       },
                                       "required": [
@@ -69089,15 +69089,6 @@
                                             "description": {
                                               "type": "string"
                                             },
-                                            "minLength": {
-                                              "type": "number"
-                                            },
-                                            "maxLength": {
-                                              "type": "number"
-                                            },
-                                            "pattern": {
-                                              "type": "string"
-                                            },
                                             "default": {
                                               "type": "string"
                                             },
@@ -69106,6 +69097,15 @@
                                                 "type": "string"
                                               },
                                               "type": "array"
+                                            },
+                                            "maxLength": {
+                                              "type": "number"
+                                            },
+                                            "minLength": {
+                                              "type": "number"
+                                            },
+                                            "pattern": {
+                                              "type": "string"
                                             }
                                           },
                                           "required": [
@@ -69280,11 +69280,23 @@
                                         "description": {
                                           "type": "string"
                                         },
+                                        "default": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        },
                                         "maxItems": {
                                           "type": "number"
                                         },
                                         "minItems": {
                                           "type": "number"
+                                        },
+                                        "example": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
                                         },
                                         "ui:label": {
                                           "type": "string"
@@ -69414,18 +69426,6 @@
                                         },
                                         "ui:placeholder": {
                                           "type": "string"
-                                        },
-                                        "default": {
-                                          "items": {
-                                            "type": "string"
-                                          },
-                                          "type": "array"
-                                        },
-                                        "example": {
-                                          "items": {
-                                            "type": "string"
-                                          },
-                                          "type": "array"
                                         }
                                       },
                                       "required": [
@@ -148300,8 +148300,11 @@
                                                   "number"
                                                 ]
                                               },
-                                              "description": {
-                                                "type": "string"
+                                              "maximum": {
+                                                "type": "number"
+                                              },
+                                              "exclusiveMaximum": {
+                                                "type": "number"
                                               },
                                               "minimum": {
                                                 "type": "number"
@@ -148309,11 +148312,8 @@
                                               "exclusiveMinimum": {
                                                 "type": "number"
                                               },
-                                              "maximum": {
-                                                "type": "number"
-                                              },
-                                              "exclusiveMaximum": {
-                                                "type": "number"
+                                              "description": {
+                                                "type": "string"
                                               },
                                               "default": {
                                                 "type": "number"
@@ -148344,6 +148344,12 @@
                                           },
                                           "description": {
                                             "type": "string"
+                                          },
+                                          "default": {
+                                            "items": {
+                                              "type": "number"
+                                            },
+                                            "type": "array"
                                           },
                                           "ui:label": {
                                             "type": "string"
@@ -148470,12 +148476,6 @@
                                               false,
                                               true
                                             ]
-                                          },
-                                          "default": {
-                                            "items": {
-                                              "type": "number"
-                                            },
-                                            "type": "array"
                                           }
                                         },
                                         "required": [
@@ -149004,26 +149004,26 @@
                                                   "string"
                                                 ]
                                               },
-                                              "description": {
-                                                "type": "string"
-                                              },
-                                              "minLength": {
-                                                "type": "number"
-                                              },
-                                              "maxLength": {
-                                                "type": "number"
-                                              },
-                                              "pattern": {
-                                                "type": "string"
-                                              },
-                                              "default": {
-                                                "type": "string"
-                                              },
                                               "enum": {
                                                 "items": {
                                                   "type": "string"
                                                 },
                                                 "type": "array"
+                                              },
+                                              "maxLength": {
+                                                "type": "number"
+                                              },
+                                              "minLength": {
+                                                "type": "number"
+                                              },
+                                              "pattern": {
+                                                "type": "string"
+                                              },
+                                              "description": {
+                                                "type": "string"
+                                              },
+                                              "default": {
+                                                "type": "string"
                                               }
                                             },
                                             "required": [
@@ -149124,6 +149124,12 @@
                                           },
                                           "description": {
                                             "type": "string"
+                                          },
+                                          "default": {
+                                            "items": {
+                                              "type": "string"
+                                            },
+                                            "type": "array"
                                           },
                                           "ui:label": {
                                             "type": "string"
@@ -149253,12 +149259,6 @@
                                           },
                                           "ui:placeholder": {
                                             "type": "string"
-                                          },
-                                          "default": {
-                                            "items": {
-                                              "type": "string"
-                                            },
-                                            "type": "array"
                                           },
                                           "example": {
                                             "items": {
@@ -149621,26 +149621,26 @@
                                                   "string"
                                                 ]
                                               },
-                                              "description": {
-                                                "type": "string"
-                                              },
-                                              "minLength": {
-                                                "type": "number"
-                                              },
-                                              "maxLength": {
-                                                "type": "number"
-                                              },
-                                              "pattern": {
-                                                "type": "string"
-                                              },
-                                              "default": {
-                                                "type": "string"
-                                              },
                                               "enum": {
                                                 "items": {
                                                   "type": "string"
                                                 },
                                                 "type": "array"
+                                              },
+                                              "maxLength": {
+                                                "type": "number"
+                                              },
+                                              "minLength": {
+                                                "type": "number"
+                                              },
+                                              "pattern": {
+                                                "type": "string"
+                                              },
+                                              "description": {
+                                                "type": "string"
+                                              },
+                                              "default": {
+                                                "type": "string"
                                               }
                                             },
                                             "required": [
@@ -149821,6 +149821,12 @@
                                           "description": {
                                             "type": "string"
                                           },
+                                          "default": {
+                                            "items": {
+                                              "type": "string"
+                                            },
+                                            "type": "array"
+                                          },
                                           "ui:label": {
                                             "type": "string"
                                           },
@@ -149949,12 +149955,6 @@
                                           },
                                           "ui:placeholder": {
                                             "type": "string"
-                                          },
-                                          "default": {
-                                            "items": {
-                                              "type": "string"
-                                            },
-                                            "type": "array"
                                           },
                                           "example": {
                                             "items": {

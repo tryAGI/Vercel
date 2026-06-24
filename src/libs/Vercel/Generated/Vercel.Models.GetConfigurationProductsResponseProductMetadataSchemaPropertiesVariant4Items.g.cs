@@ -18,20 +18,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("minimum")]
         public double? Minimum { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("exclusiveMinimum")]
-        public double? ExclusiveMinimum { get; set; }
 
         /// <summary>
         /// 
@@ -42,14 +30,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("exclusiveMaximum")]
-        public double? ExclusiveMaximum { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default")]
         public double? Default { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("exclusiveMaximum")]
+        public double? ExclusiveMaximum { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("exclusiveMinimum")]
+        public double? ExclusiveMinimum { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,31 +61,31 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4Items" /> class.
         /// </summary>
         /// <param name="type"></param>
-        /// <param name="description"></param>
         /// <param name="minimum"></param>
-        /// <param name="exclusiveMinimum"></param>
         /// <param name="maximum"></param>
-        /// <param name="exclusiveMaximum"></param>
+        /// <param name="description"></param>
         /// <param name="default"></param>
+        /// <param name="exclusiveMaximum"></param>
+        /// <param name="exclusiveMinimum"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4Items(
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4ItemsType type,
-            string? description,
             double? minimum,
-            double? exclusiveMinimum,
             double? maximum,
+            string? description,
+            double? @default,
             double? exclusiveMaximum,
-            double? @default)
+            double? exclusiveMinimum)
         {
             this.Type = type;
-            this.Description = description;
             this.Minimum = minimum;
-            this.ExclusiveMinimum = exclusiveMinimum;
             this.Maximum = maximum;
-            this.ExclusiveMaximum = exclusiveMaximum;
+            this.Description = description;
             this.Default = @default;
+            this.ExclusiveMaximum = exclusiveMaximum;
+            this.ExclusiveMinimum = exclusiveMinimum;
         }
 
         /// <summary>

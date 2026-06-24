@@ -24,8 +24,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("minLength")]
-        public double? MinLength { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public string? Default { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enum")]
+        public global::System.Collections.Generic.IList<string>? Enum { get; set; }
 
         /// <summary>
         /// 
@@ -36,20 +42,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("minLength")]
+        public double? MinLength { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pattern")]
         public string? Pattern { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public string? Default { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enum")]
-        public global::System.Collections.Generic.IList<string>? Enum { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -62,30 +62,30 @@ namespace Vercel
         /// </summary>
         /// <param name="type"></param>
         /// <param name="description"></param>
-        /// <param name="minLength"></param>
-        /// <param name="maxLength"></param>
-        /// <param name="pattern"></param>
         /// <param name="default"></param>
         /// <param name="enum"></param>
+        /// <param name="maxLength"></param>
+        /// <param name="minLength"></param>
+        /// <param name="pattern"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant7Items(
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant7ItemsType type,
             string? description,
-            double? minLength,
-            double? maxLength,
-            string? pattern,
             string? @default,
-            global::System.Collections.Generic.IList<string>? @enum)
+            global::System.Collections.Generic.IList<string>? @enum,
+            double? maxLength,
+            double? minLength,
+            string? pattern)
         {
             this.Type = type;
             this.Description = description;
-            this.MinLength = minLength;
-            this.MaxLength = maxLength;
-            this.Pattern = pattern;
             this.Default = @default;
             this.Enum = @enum;
+            this.MaxLength = maxLength;
+            this.MinLength = minLength;
+            this.Pattern = pattern;
         }
 
         /// <summary>

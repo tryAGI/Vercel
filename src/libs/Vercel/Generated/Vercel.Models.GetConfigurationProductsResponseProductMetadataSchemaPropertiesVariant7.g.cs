@@ -45,6 +45,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public global::System.Collections.Generic.IList<string>? Default { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxItems")]
         public double? MaxItems { get; set; }
 
@@ -53,6 +59,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("minItems")]
         public double? MinItems { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("example")]
+        public global::System.Collections.Generic.IList<string>? Example { get; set; }
 
         /// <summary>
         /// 
@@ -107,18 +119,6 @@ namespace Vercel
         public string? Ui_placeholder { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public global::System.Collections.Generic.IList<string>? Default { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("example")]
-        public global::System.Collections.Generic.IList<string>? Example { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -132,8 +132,10 @@ namespace Vercel
         /// <param name="type"></param>
         /// <param name="ui_control"></param>
         /// <param name="description"></param>
+        /// <param name="default"></param>
         /// <param name="maxItems"></param>
         /// <param name="minItems"></param>
+        /// <param name="example"></param>
         /// <param name="ui_label"></param>
         /// <param name="ui_readOnly"></param>
         /// <param name="ui_hidden"></param>
@@ -142,8 +144,6 @@ namespace Vercel
         /// <param name="ui_formattedValue"></param>
         /// <param name="ui_paidOnly"></param>
         /// <param name="ui_placeholder"></param>
-        /// <param name="default"></param>
-        /// <param name="example"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -153,8 +153,10 @@ namespace Vercel
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant7Type type,
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant7UiControl ui_control,
             string? description,
+            global::System.Collections.Generic.IList<string>? @default,
             double? maxItems,
             double? minItems,
+            global::System.Collections.Generic.IList<string>? example,
             string? ui_label,
             global::Vercel.OneOf<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant7UiReadOnlyEnum, bool?, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant7UiReadOnlyEnum2?>? ui_readOnly,
             global::Vercel.OneOf<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant7UiHiddenEnum, bool?, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant7UiHiddenEnum2?>? ui_hidden,
@@ -162,17 +164,17 @@ namespace Vercel
             global::Vercel.OneOf<string, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant7UiDescription>? ui_description,
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant7UiFormattedValue? ui_formattedValue,
             bool? ui_paidOnly,
-            string? ui_placeholder,
-            global::System.Collections.Generic.IList<string>? @default,
-            global::System.Collections.Generic.IList<string>? example)
+            string? ui_placeholder)
         {
             this.Type = type;
             this.Items = items ?? throw new global::System.ArgumentNullException(nameof(items));
             this.Ui_control = ui_control;
             this.Ui_options = ui_options ?? throw new global::System.ArgumentNullException(nameof(ui_options));
             this.Description = description;
+            this.Default = @default;
             this.MaxItems = maxItems;
             this.MinItems = minItems;
+            this.Example = example;
             this.Ui_label = ui_label;
             this.Ui_readOnly = ui_readOnly;
             this.Ui_hidden = ui_hidden;
@@ -181,8 +183,6 @@ namespace Vercel
             this.Ui_formattedValue = ui_formattedValue;
             this.Ui_paidOnly = ui_paidOnly;
             this.Ui_placeholder = ui_placeholder;
-            this.Default = @default;
-            this.Example = example;
         }
 
         /// <summary>

@@ -45,6 +45,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public global::System.Collections.Generic.IList<double>? Default { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxItems")]
         public double? MaxItems { get; set; }
 
@@ -101,12 +107,6 @@ namespace Vercel
         public bool? Ui_paidOnly { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public global::System.Collections.Generic.IList<double>? Default { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -120,6 +120,7 @@ namespace Vercel
         /// <param name="type"></param>
         /// <param name="ui_control"></param>
         /// <param name="description"></param>
+        /// <param name="default"></param>
         /// <param name="maxItems"></param>
         /// <param name="minItems"></param>
         /// <param name="ui_label"></param>
@@ -129,7 +130,6 @@ namespace Vercel
         /// <param name="ui_description"></param>
         /// <param name="ui_formattedValue"></param>
         /// <param name="ui_paidOnly"></param>
-        /// <param name="default"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -139,6 +139,7 @@ namespace Vercel
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4Type type,
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiControl ui_control,
             string? description,
+            global::System.Collections.Generic.IList<double>? @default,
             double? maxItems,
             double? minItems,
             string? ui_label,
@@ -147,14 +148,14 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiDisabledEnum, bool?, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiDisabledEnum2?>? ui_disabled,
             global::Vercel.OneOf<string, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiDescription>? ui_description,
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiFormattedValue? ui_formattedValue,
-            bool? ui_paidOnly,
-            global::System.Collections.Generic.IList<double>? @default)
+            bool? ui_paidOnly)
         {
             this.Type = type;
             this.Items = items ?? throw new global::System.ArgumentNullException(nameof(items));
             this.Ui_control = ui_control;
             this.Ui_steps = ui_steps ?? throw new global::System.ArgumentNullException(nameof(ui_steps));
             this.Description = description;
+            this.Default = @default;
             this.MaxItems = maxItems;
             this.MinItems = minItems;
             this.Ui_label = ui_label;
@@ -164,7 +165,6 @@ namespace Vercel
             this.Ui_description = ui_description;
             this.Ui_formattedValue = ui_formattedValue;
             this.Ui_paidOnly = ui_paidOnly;
-            this.Default = @default;
         }
 
         /// <summary>
