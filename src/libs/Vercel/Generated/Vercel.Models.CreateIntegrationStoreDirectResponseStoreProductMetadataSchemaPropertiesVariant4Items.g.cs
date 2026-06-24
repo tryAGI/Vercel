@@ -18,8 +18,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("maximum")]
+        public double? Maximum { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("exclusiveMaximum")]
+        public double? ExclusiveMaximum { get; set; }
 
         /// <summary>
         /// 
@@ -36,14 +42,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maximum")]
-        public double? Maximum { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("exclusiveMaximum")]
-        public double? ExclusiveMaximum { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
 
         /// <summary>
         /// 
@@ -61,30 +61,30 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant4Items" /> class.
         /// </summary>
         /// <param name="type"></param>
-        /// <param name="description"></param>
-        /// <param name="minimum"></param>
-        /// <param name="exclusiveMinimum"></param>
         /// <param name="maximum"></param>
         /// <param name="exclusiveMaximum"></param>
+        /// <param name="minimum"></param>
+        /// <param name="exclusiveMinimum"></param>
+        /// <param name="description"></param>
         /// <param name="default"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant4Items(
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant4ItemsType type,
-            string? description,
-            double? minimum,
-            double? exclusiveMinimum,
             double? maximum,
             double? exclusiveMaximum,
+            double? minimum,
+            double? exclusiveMinimum,
+            string? description,
             double? @default)
         {
             this.Type = type;
-            this.Description = description;
-            this.Minimum = minimum;
-            this.ExclusiveMinimum = exclusiveMinimum;
             this.Maximum = maximum;
             this.ExclusiveMaximum = exclusiveMaximum;
+            this.Minimum = minimum;
+            this.ExclusiveMinimum = exclusiveMinimum;
+            this.Description = description;
             this.Default = @default;
         }
 

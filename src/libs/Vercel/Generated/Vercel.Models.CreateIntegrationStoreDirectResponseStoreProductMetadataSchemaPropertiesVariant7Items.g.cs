@@ -18,14 +18,8 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("minLength")]
-        public double? MinLength { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("enum")]
+        public global::System.Collections.Generic.IList<string>? Enum { get; set; }
 
         /// <summary>
         /// 
@@ -36,20 +30,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("minLength")]
+        public double? MinLength { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pattern")]
         public string? Pattern { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public string? Default { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enum")]
-        public global::System.Collections.Generic.IList<string>? Enum { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public string? Default { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,31 +61,31 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant7Items" /> class.
         /// </summary>
         /// <param name="type"></param>
-        /// <param name="description"></param>
-        /// <param name="minLength"></param>
-        /// <param name="maxLength"></param>
-        /// <param name="pattern"></param>
-        /// <param name="default"></param>
         /// <param name="enum"></param>
+        /// <param name="maxLength"></param>
+        /// <param name="minLength"></param>
+        /// <param name="pattern"></param>
+        /// <param name="description"></param>
+        /// <param name="default"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant7Items(
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant7ItemsType type,
-            string? description,
-            double? minLength,
+            global::System.Collections.Generic.IList<string>? @enum,
             double? maxLength,
+            double? minLength,
             string? pattern,
-            string? @default,
-            global::System.Collections.Generic.IList<string>? @enum)
+            string? description,
+            string? @default)
         {
             this.Type = type;
-            this.Description = description;
-            this.MinLength = minLength;
-            this.MaxLength = maxLength;
-            this.Pattern = pattern;
-            this.Default = @default;
             this.Enum = @enum;
+            this.MaxLength = maxLength;
+            this.MinLength = minLength;
+            this.Pattern = pattern;
+            this.Description = description;
+            this.Default = @default;
         }
 
         /// <summary>
