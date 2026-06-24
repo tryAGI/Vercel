@@ -89,10 +89,10 @@ namespace Vercel
         public string? ResourceTitle { get; set; }
 
         /// <summary>
-        /// URL to a skill/guide for how AI agents should use this product. Providers can specify this to help agents understand how to interact with their integration.
+        /// URLs to skills/guides for how AI agents should use this product. Providers can specify these to help agents understand how to interact with their integration.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("agentSkillUrl")]
-        public string? AgentSkillUrl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("agentSkills")]
+        public global::System.Collections.Generic.IList<string>? AgentSkills { get; set; }
 
         /// <summary>
         /// 
@@ -169,8 +169,8 @@ namespace Vercel
         /// Custom resource title to display during installation and configuration. If not provided, defaults to protocol-based defaults.<br/>
         /// Example: Instance
         /// </param>
-        /// <param name="agentSkillUrl">
-        /// URL to a skill/guide for how AI agents should use this product. Providers can specify this to help agents understand how to interact with their integration.
+        /// <param name="agentSkills">
+        /// URLs to skills/guides for how AI agents should use this product. Providers can specify these to help agents understand how to interact with their integration.
         /// </param>
         /// <param name="repl"></param>
         /// <param name="guides"></param>
@@ -196,7 +196,7 @@ namespace Vercel
             bool? showSSOLinkOnProjectConnection,
             bool? disableResourceRenaming,
             string? resourceTitle,
-            string? agentSkillUrl,
+            global::System.Collections.Generic.IList<string>? agentSkills,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductRepl? repl,
             global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide>? guides,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductPrimaryProtocol? primaryProtocol,
@@ -215,7 +215,7 @@ namespace Vercel
             this.ShowSSOLinkOnProjectConnection = showSSOLinkOnProjectConnection;
             this.DisableResourceRenaming = disableResourceRenaming;
             this.ResourceTitle = resourceTitle;
-            this.AgentSkillUrl = agentSkillUrl;
+            this.AgentSkills = agentSkills;
             this.Repl = repl;
             this.Guides = guides;
             this.Integration = integration ?? throw new global::System.ArgumentNullException(nameof(integration));

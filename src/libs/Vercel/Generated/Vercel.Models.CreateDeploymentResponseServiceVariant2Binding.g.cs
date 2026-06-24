@@ -16,7 +16,7 @@ namespace Vercel
         public global::Vercel.CreateDeploymentResponseServiceVariant2BindingType Type { get; set; }
 
         /// <summary>
-        /// Target service name from `experimentalServicesV2`.
+        /// Target service name from `services`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("service")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -46,7 +46,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseServiceVariant2Binding" /> class.
         /// </summary>
         /// <param name="service">
-        /// Target service name from `experimentalServicesV2`.
+        /// Target service name from `services`.
         /// </param>
         /// <param name="env">
         /// Environment variable name that will store the generated value

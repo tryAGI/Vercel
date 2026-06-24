@@ -48,6 +48,12 @@ namespace Vercel
         public string? Entrypoint { get; set; }
 
         /// <summary>
+        /// Command override for `runtime: "container"` services.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("command")]
+        public global::System.Collections.Generic.IList<string>? Command { get; set; }
+
+        /// <summary>
         /// Builder selected by the resolver.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("builder")]
@@ -154,6 +160,9 @@ namespace Vercel
         /// <param name="entrypoint">
         /// Resolved entrypoint, relative to the service root.
         /// </param>
+        /// <param name="command">
+        /// Command override for `runtime: "container"` services.
+        /// </param>
         /// <param name="installCommand"></param>
         /// <param name="buildCommand"></param>
         /// <param name="devCommand"></param>
@@ -182,6 +191,7 @@ namespace Vercel
             string? framework,
             string? runtime,
             string? entrypoint,
+            global::System.Collections.Generic.IList<string>? command,
             string? installCommand,
             string? buildCommand,
             string? devCommand,
@@ -202,6 +212,7 @@ namespace Vercel
             this.Framework = framework;
             this.Runtime = runtime;
             this.Entrypoint = entrypoint;
+            this.Command = command;
             this.Builder = builder ?? throw new global::System.ArgumentNullException(nameof(builder));
             this.InstallCommand = installCommand;
             this.BuildCommand = buildCommand;
