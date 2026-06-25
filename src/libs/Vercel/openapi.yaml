@@ -17058,7 +17058,8 @@
                                             "type": "string",
                                             "enum": [
                                               "service"
-                                            ]
+                                            ],
+                                            "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                           },
                                           "service": {
                                             "type": "string"
@@ -17069,8 +17070,7 @@
                                           }
                                         },
                                         "required": [
-                                          "service",
-                                          "type"
+                                          "service"
                                         ],
                                         "type": "object"
                                       }
@@ -18926,7 +18926,8 @@
                                                   "type": "string",
                                                   "enum": [
                                                     "service"
-                                                  ]
+                                                  ],
+                                                  "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                                 },
                                                 "service": {
                                                   "type": "string"
@@ -18937,8 +18938,7 @@
                                                 }
                                               },
                                               "required": [
-                                                "service",
-                                                "type"
+                                                "service"
                                               ],
                                               "type": "object"
                                             }
@@ -19892,7 +19892,8 @@
                                                       "type": "string",
                                                       "enum": [
                                                         "service"
-                                                      ]
+                                                      ],
+                                                      "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                                     },
                                                     "service": {
                                                       "type": "string"
@@ -19903,8 +19904,7 @@
                                                     }
                                                   },
                                                   "required": [
-                                                    "service",
-                                                    "type"
+                                                    "service"
                                                   ],
                                                   "type": "object"
                                                 }
@@ -24613,7 +24613,8 @@
                                         "type": "string",
                                         "enum": [
                                           "service"
-                                        ]
+                                        ],
+                                        "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                       },
                                       "service": {
                                         "type": "string"
@@ -24624,8 +24625,7 @@
                                       }
                                     },
                                     "required": [
-                                      "service",
-                                      "type"
+                                      "service"
                                     ],
                                     "type": "object"
                                   }
@@ -26481,7 +26481,8 @@
                                               "type": "string",
                                               "enum": [
                                                 "service"
-                                              ]
+                                              ],
+                                              "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                             },
                                             "service": {
                                               "type": "string"
@@ -26492,8 +26493,7 @@
                                             }
                                           },
                                           "required": [
-                                            "service",
-                                            "type"
+                                            "service"
                                           ],
                                           "type": "object"
                                         }
@@ -27447,7 +27447,8 @@
                                                   "type": "string",
                                                   "enum": [
                                                     "service"
-                                                  ]
+                                                  ],
+                                                  "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                                 },
                                                 "service": {
                                                   "type": "string"
@@ -27458,8 +27459,7 @@
                                                 }
                                               },
                                               "required": [
-                                                "service",
-                                                "type"
+                                                "service"
                                               ],
                                               "type": "object"
                                             }
@@ -31451,7 +31451,8 @@
                                         "type": "string",
                                         "enum": [
                                           "service"
-                                        ]
+                                        ],
+                                        "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                       },
                                       "service": {
                                         "type": "string"
@@ -31462,8 +31463,7 @@
                                       }
                                     },
                                     "required": [
-                                      "service",
-                                      "type"
+                                      "service"
                                     ],
                                     "type": "object"
                                   }
@@ -33319,7 +33319,8 @@
                                               "type": "string",
                                               "enum": [
                                                 "service"
-                                              ]
+                                              ],
+                                              "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                             },
                                             "service": {
                                               "type": "string"
@@ -33330,8 +33331,7 @@
                                             }
                                           },
                                           "required": [
-                                            "service",
-                                            "type"
+                                            "service"
                                           ],
                                           "type": "object"
                                         }
@@ -34285,7 +34285,8 @@
                                                   "type": "string",
                                                   "enum": [
                                                     "service"
-                                                  ]
+                                                  ],
+                                                  "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                                 },
                                                 "service": {
                                                   "type": "string"
@@ -34296,8 +34297,7 @@
                                                 }
                                               },
                                               "required": [
-                                                "service",
-                                                "type"
+                                                "service"
                                               ],
                                               "type": "object"
                                             }
@@ -80004,7 +80004,8 @@
                                             "type": "string",
                                             "enum": [
                                               "service"
-                                            ]
+                                            ],
+                                            "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                           },
                                           "service": {
                                             "type": "string"
@@ -80015,8 +80016,7 @@
                                           }
                                         },
                                         "required": [
-                                          "service",
-                                          "type"
+                                          "service"
                                         ],
                                         "type": "object"
                                       }
@@ -80758,7 +80758,8 @@
                                             "type": "string",
                                             "enum": [
                                               "service"
-                                            ]
+                                            ],
+                                            "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                           },
                                           "service": {
                                             "type": "string"
@@ -80769,8 +80770,7 @@
                                           }
                                         },
                                         "required": [
-                                          "service",
-                                          "type"
+                                          "service"
                                         ],
                                         "type": "object"
                                       }
@@ -81508,7 +81508,8 @@
                                             "type": "string",
                                             "enum": [
                                               "service"
-                                            ]
+                                            ],
+                                            "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                           },
                                           "service": {
                                             "type": "string"
@@ -81519,8 +81520,7 @@
                                           }
                                         },
                                         "required": [
-                                          "service",
-                                          "type"
+                                          "service"
                                         ],
                                         "type": "object"
                                       }
@@ -82668,7 +82668,8 @@
                                       "type": "string",
                                       "enum": [
                                         "service"
-                                      ]
+                                      ],
+                                      "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                     },
                                     "service": {
                                       "type": "string"
@@ -82679,8 +82680,7 @@
                                     }
                                   },
                                   "required": [
-                                    "service",
-                                    "type"
+                                    "service"
                                   ],
                                   "type": "object"
                                 }
@@ -83803,7 +83803,8 @@
                                       "type": "string",
                                       "enum": [
                                         "service"
-                                      ]
+                                      ],
+                                      "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
                                     },
                                     "service": {
                                       "type": "string"
@@ -83814,8 +83815,7 @@
                                     }
                                   },
                                   "required": [
-                                    "service",
-                                    "type"
+                                    "service"
                                   ],
                                   "type": "object"
                                 }

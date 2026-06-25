@@ -9,11 +9,11 @@ namespace Vercel
     public sealed partial class GetRoutesResponseVariant3RouteRouteDestination
     {
         /// <summary>
-        /// 
+        /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRoutesResponseVariant3RouteRouteDestinationTypeJsonConverter))]
-        public global::Vercel.GetRoutesResponseVariant3RouteRouteDestinationType Type { get; set; }
+        public global::Vercel.GetRoutesResponseVariant3RouteRouteDestinationType? Type { get; set; }
 
         /// <summary>
         /// 
@@ -38,7 +38,9 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetRoutesResponseVariant3RouteRouteDestination" /> class.
         /// </summary>
         /// <param name="service"></param>
-        /// <param name="type"></param>
+        /// <param name="type">
+        /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
+        /// </param>
         /// <param name="path">
         /// Routing-only path used to select a route inside the target service.
         /// </param>
@@ -47,7 +49,7 @@ namespace Vercel
 #endif
         public GetRoutesResponseVariant3RouteRouteDestination(
             string service,
-            global::Vercel.GetRoutesResponseVariant3RouteRouteDestinationType type,
+            global::Vercel.GetRoutesResponseVariant3RouteRouteDestinationType? type,
             string? path)
         {
             this.Type = type;

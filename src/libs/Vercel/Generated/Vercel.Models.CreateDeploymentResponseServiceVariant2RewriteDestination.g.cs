@@ -9,11 +9,11 @@ namespace Vercel
     public sealed partial class CreateDeploymentResponseServiceVariant2RewriteDestination
     {
         /// <summary>
-        /// 
+        /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseServiceVariant2RewriteDestinationTypeJsonConverter))]
-        public global::Vercel.CreateDeploymentResponseServiceVariant2RewriteDestinationType Type { get; set; }
+        public global::Vercel.CreateDeploymentResponseServiceVariant2RewriteDestinationType? Type { get; set; }
 
         /// <summary>
         /// 
@@ -38,7 +38,9 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseServiceVariant2RewriteDestination" /> class.
         /// </summary>
         /// <param name="service"></param>
-        /// <param name="type"></param>
+        /// <param name="type">
+        /// Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required.
+        /// </param>
         /// <param name="path">
         /// Routing-only path used to select a route inside the target service.
         /// </param>
@@ -47,7 +49,7 @@ namespace Vercel
 #endif
         public CreateDeploymentResponseServiceVariant2RewriteDestination(
             string service,
-            global::Vercel.CreateDeploymentResponseServiceVariant2RewriteDestinationType type,
+            global::Vercel.CreateDeploymentResponseServiceVariant2RewriteDestinationType? type,
             string? path)
         {
             this.Type = type;
