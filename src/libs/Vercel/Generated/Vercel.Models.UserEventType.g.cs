@@ -672,6 +672,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        EmuMemberRemovedUnverifiedDomain,
+        /// <summary>
+        /// 
+        /// </summary>
         EnforceSensitiveEnvironmentVariables,
         /// <summary>
         /// 
@@ -2272,6 +2276,7 @@ namespace Vercel
                 UserEventType.Email => "email",
                 UserEventType.EmailNotificationRuleRemoved => "email-notification-rule-removed",
                 UserEventType.EmailNotificationRuleUpdated => "email-notification-rule-updated",
+                UserEventType.EmuMemberRemovedUnverifiedDomain => "emu-member-removed-unverified-domain",
                 UserEventType.EnforceSensitiveEnvironmentVariables => "enforce-sensitive-environment-variables",
                 UserEventType.EnvVariableAdd => "env-variable-add",
                 UserEventType.EnvVariableDelete => "env-variable-delete",
@@ -2803,6 +2808,7 @@ namespace Vercel
                 "email" => UserEventType.Email,
                 "email-notification-rule-removed" => UserEventType.EmailNotificationRuleRemoved,
                 "email-notification-rule-updated" => UserEventType.EmailNotificationRuleUpdated,
+                "emu-member-removed-unverified-domain" => UserEventType.EmuMemberRemovedUnverifiedDomain,
                 "enforce-sensitive-environment-variables" => UserEventType.EnforceSensitiveEnvironmentVariables,
                 "env-variable-add" => UserEventType.EnvVariableAdd,
                 "env-variable-delete" => UserEventType.EnvVariableDelete,
