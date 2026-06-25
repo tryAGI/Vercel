@@ -43,6 +43,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Container,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -314,6 +318,7 @@ namespace Vercel
                 UpdateMicrofrontendsResponseServiceFramework.Blitzjs => "blitzjs",
                 UpdateMicrofrontendsResponseServiceFramework.Brunch => "brunch",
                 UpdateMicrofrontendsResponseServiceFramework.Bun => "bun",
+                UpdateMicrofrontendsResponseServiceFramework.Container => "container",
                 UpdateMicrofrontendsResponseServiceFramework.CreateReactApp => "create-react-app",
                 UpdateMicrofrontendsResponseServiceFramework.Django => "django",
                 UpdateMicrofrontendsResponseServiceFramework.Docusaurus => "docusaurus",
@@ -395,6 +400,7 @@ namespace Vercel
                 "blitzjs" => UpdateMicrofrontendsResponseServiceFramework.Blitzjs,
                 "brunch" => UpdateMicrofrontendsResponseServiceFramework.Brunch,
                 "bun" => UpdateMicrofrontendsResponseServiceFramework.Bun,
+                "container" => UpdateMicrofrontendsResponseServiceFramework.Container,
                 "create-react-app" => UpdateMicrofrontendsResponseServiceFramework.CreateReactApp,
                 "django" => UpdateMicrofrontendsResponseServiceFramework.Django,
                 "docusaurus" => UpdateMicrofrontendsResponseServiceFramework.Docusaurus,

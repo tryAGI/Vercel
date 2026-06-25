@@ -43,6 +43,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Container,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -314,6 +318,7 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Blitzjs => "blitzjs",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Brunch => "brunch",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Bun => "bun",
+                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Container => "container",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.CreateReactApp => "create-react-app",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Django => "django",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Docusaurus => "docusaurus",
@@ -395,6 +400,7 @@ namespace Vercel
                 "blitzjs" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Blitzjs,
                 "brunch" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Brunch,
                 "bun" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Bun,
+                "container" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Container,
                 "create-react-app" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.CreateReactApp,
                 "django" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Django,
                 "docusaurus" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Docusaurus,
