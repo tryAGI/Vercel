@@ -43,6 +43,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Container,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -314,6 +318,7 @@ namespace Vercel
                 UploadProjectAvatarResponseFramework.Blitzjs => "blitzjs",
                 UploadProjectAvatarResponseFramework.Brunch => "brunch",
                 UploadProjectAvatarResponseFramework.Bun => "bun",
+                UploadProjectAvatarResponseFramework.Container => "container",
                 UploadProjectAvatarResponseFramework.CreateReactApp => "create-react-app",
                 UploadProjectAvatarResponseFramework.Django => "django",
                 UploadProjectAvatarResponseFramework.Docusaurus => "docusaurus",
@@ -395,6 +400,7 @@ namespace Vercel
                 "blitzjs" => UploadProjectAvatarResponseFramework.Blitzjs,
                 "brunch" => UploadProjectAvatarResponseFramework.Brunch,
                 "bun" => UploadProjectAvatarResponseFramework.Bun,
+                "container" => UploadProjectAvatarResponseFramework.Container,
                 "create-react-app" => UploadProjectAvatarResponseFramework.CreateReactApp,
                 "django" => UploadProjectAvatarResponseFramework.Django,
                 "docusaurus" => UploadProjectAvatarResponseFramework.Docusaurus,

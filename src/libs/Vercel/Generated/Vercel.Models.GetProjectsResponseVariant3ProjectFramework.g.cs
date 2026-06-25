@@ -43,6 +43,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Container,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -314,6 +318,7 @@ namespace Vercel
                 GetProjectsResponseVariant3ProjectFramework.Blitzjs => "blitzjs",
                 GetProjectsResponseVariant3ProjectFramework.Brunch => "brunch",
                 GetProjectsResponseVariant3ProjectFramework.Bun => "bun",
+                GetProjectsResponseVariant3ProjectFramework.Container => "container",
                 GetProjectsResponseVariant3ProjectFramework.CreateReactApp => "create-react-app",
                 GetProjectsResponseVariant3ProjectFramework.Django => "django",
                 GetProjectsResponseVariant3ProjectFramework.Docusaurus => "docusaurus",
@@ -395,6 +400,7 @@ namespace Vercel
                 "blitzjs" => GetProjectsResponseVariant3ProjectFramework.Blitzjs,
                 "brunch" => GetProjectsResponseVariant3ProjectFramework.Brunch,
                 "bun" => GetProjectsResponseVariant3ProjectFramework.Bun,
+                "container" => GetProjectsResponseVariant3ProjectFramework.Container,
                 "create-react-app" => GetProjectsResponseVariant3ProjectFramework.CreateReactApp,
                 "django" => GetProjectsResponseVariant3ProjectFramework.Django,
                 "docusaurus" => GetProjectsResponseVariant3ProjectFramework.Docusaurus,

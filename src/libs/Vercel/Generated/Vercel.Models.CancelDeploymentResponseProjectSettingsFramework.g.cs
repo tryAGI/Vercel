@@ -43,6 +43,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Container,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateReactApp,
         /// <summary>
         /// 
@@ -314,6 +318,7 @@ namespace Vercel
                 CancelDeploymentResponseProjectSettingsFramework.Blitzjs => "blitzjs",
                 CancelDeploymentResponseProjectSettingsFramework.Brunch => "brunch",
                 CancelDeploymentResponseProjectSettingsFramework.Bun => "bun",
+                CancelDeploymentResponseProjectSettingsFramework.Container => "container",
                 CancelDeploymentResponseProjectSettingsFramework.CreateReactApp => "create-react-app",
                 CancelDeploymentResponseProjectSettingsFramework.Django => "django",
                 CancelDeploymentResponseProjectSettingsFramework.Docusaurus => "docusaurus",
@@ -395,6 +400,7 @@ namespace Vercel
                 "blitzjs" => CancelDeploymentResponseProjectSettingsFramework.Blitzjs,
                 "brunch" => CancelDeploymentResponseProjectSettingsFramework.Brunch,
                 "bun" => CancelDeploymentResponseProjectSettingsFramework.Bun,
+                "container" => CancelDeploymentResponseProjectSettingsFramework.Container,
                 "create-react-app" => CancelDeploymentResponseProjectSettingsFramework.CreateReactApp,
                 "django" => CancelDeploymentResponseProjectSettingsFramework.Django,
                 "docusaurus" => CancelDeploymentResponseProjectSettingsFramework.Docusaurus,

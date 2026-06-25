@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    /// Default Value: all
     /// </summary>
     public enum UpdateProjectRequestPassportDeploymentType
     {
