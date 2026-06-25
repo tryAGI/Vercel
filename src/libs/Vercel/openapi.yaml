@@ -44738,6 +44738,9 @@
           "401": {
             "description": "The request is not authorized."
           },
+          "402": {
+            "description": ""
+          },
           "403": {
             "description": "You do not have permission to access this resource."
           }
@@ -48655,6 +48658,9 @@
           "401": {
             "description": "The request is not authorized."
           },
+          "402": {
+            "description": ""
+          },
           "403": {
             "description": "You do not have permission to access this resource."
           },
@@ -49165,6 +49171,9 @@
           },
           "401": {
             "description": "The request is not authorized."
+          },
+          "402": {
+            "description": ""
           },
           "403": {
             "description": "You do not have permission to access this resource."
