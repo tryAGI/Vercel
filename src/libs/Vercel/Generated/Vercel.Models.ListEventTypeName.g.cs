@@ -2040,6 +2040,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        VcrImageDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        VcrImagePushed,
+        /// <summary>
+        /// 
+        /// </summary>
+        VcrRepositoryCreated,
+        /// <summary>
+        /// 
+        /// </summary>
         VercelAgentElevatedPermissionsApproved,
         /// <summary>
         /// 
@@ -2642,6 +2654,9 @@ namespace Vercel
                 ListEventTypeName.V0ChatAiUsage => "v0-chat-ai-usage",
                 ListEventTypeName.V0ChatCreated => "v0-chat-created",
                 ListEventTypeName.V0ChatMessageSent => "v0-chat-message-sent",
+                ListEventTypeName.VcrImageDeleted => "vcr-image-deleted",
+                ListEventTypeName.VcrImagePushed => "vcr-image-pushed",
+                ListEventTypeName.VcrRepositoryCreated => "vcr-repository-created",
                 ListEventTypeName.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
                 ListEventTypeName.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
                 ListEventTypeName.VercelAgentSessionCreated => "vercel-agent-session-created",
@@ -3180,6 +3195,9 @@ namespace Vercel
                 "v0-chat-ai-usage" => ListEventTypeName.V0ChatAiUsage,
                 "v0-chat-created" => ListEventTypeName.V0ChatCreated,
                 "v0-chat-message-sent" => ListEventTypeName.V0ChatMessageSent,
+                "vcr-image-deleted" => ListEventTypeName.VcrImageDeleted,
+                "vcr-image-pushed" => ListEventTypeName.VcrImagePushed,
+                "vcr-repository-created" => ListEventTypeName.VcrRepositoryCreated,
                 "vercel-agent-elevated-permissions-approved" => ListEventTypeName.VercelAgentElevatedPermissionsApproved,
                 "vercel-agent-elevated-permissions-requested" => ListEventTypeName.VercelAgentElevatedPermissionsRequested,
                 "vercel-agent-session-created" => ListEventTypeName.VercelAgentSessionCreated,

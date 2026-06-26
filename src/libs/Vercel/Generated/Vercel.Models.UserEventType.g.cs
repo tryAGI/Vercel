@@ -2040,6 +2040,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        VcrImageDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        VcrImagePushed,
+        /// <summary>
+        /// 
+        /// </summary>
+        VcrRepositoryCreated,
+        /// <summary>
+        /// 
+        /// </summary>
         VercelAgentElevatedPermissionsApproved,
         /// <summary>
         /// 
@@ -2642,6 +2654,9 @@ namespace Vercel
                 UserEventType.V0ChatAiUsage => "v0-chat-ai-usage",
                 UserEventType.V0ChatCreated => "v0-chat-created",
                 UserEventType.V0ChatMessageSent => "v0-chat-message-sent",
+                UserEventType.VcrImageDeleted => "vcr-image-deleted",
+                UserEventType.VcrImagePushed => "vcr-image-pushed",
+                UserEventType.VcrRepositoryCreated => "vcr-repository-created",
                 UserEventType.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
                 UserEventType.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
                 UserEventType.VercelAgentSessionCreated => "vercel-agent-session-created",
@@ -3180,6 +3195,9 @@ namespace Vercel
                 "v0-chat-ai-usage" => UserEventType.V0ChatAiUsage,
                 "v0-chat-created" => UserEventType.V0ChatCreated,
                 "v0-chat-message-sent" => UserEventType.V0ChatMessageSent,
+                "vcr-image-deleted" => UserEventType.VcrImageDeleted,
+                "vcr-image-pushed" => UserEventType.VcrImagePushed,
+                "vcr-repository-created" => UserEventType.VcrRepositoryCreated,
                 "vercel-agent-elevated-permissions-approved" => UserEventType.VercelAgentElevatedPermissionsApproved,
                 "vercel-agent-elevated-permissions-requested" => UserEventType.VercelAgentElevatedPermissionsRequested,
                 "vercel-agent-session-created" => UserEventType.VercelAgentSessionCreated,

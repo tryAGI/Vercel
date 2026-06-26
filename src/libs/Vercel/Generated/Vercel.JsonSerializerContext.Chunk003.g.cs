@@ -952,6 +952,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.GetSessionCommandWaitNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetTeamMembersRoleJsonConverter),
             typeof(global::Vercel.JsonConverters.GetTeamMembersRoleNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AggregatePageviewsByItemEnumJsonConverter),
+            typeof(global::Vercel.JsonConverters.AggregatePageviewsByItemEnumNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AggregateEventsByItemEnumJsonConverter),
+            typeof(global::Vercel.JsonConverters.AggregateEventsByItemEnumNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ReadAccessGroupResponseTeamPermissionJsonConverter),
             typeof(global::Vercel.JsonConverters.ReadAccessGroupResponseTeamPermissionNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ReadAccessGroupResponseEntitlementJsonConverter),
@@ -5550,6 +5554,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.RequestAccessToTeamResponseJoinedFromOriginNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetTeamAccessRequestResponseJoinedFromOriginJsonConverter),
             typeof(global::Vercel.JsonConverters.GetTeamAccessRequestResponseJoinedFromOriginNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AggregatePageviewsResponseQueryGroupByItemJsonConverter),
+            typeof(global::Vercel.JsonConverters.AggregatePageviewsResponseQueryGroupByItemNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AggregateEventsResponseQueryGroupByItemJsonConverter),
+            typeof(global::Vercel.JsonConverters.AggregateEventsResponseQueryGroupByItemNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateWebhookResponseEventJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateWebhookResponseEventNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetWebhooksResponseVariant1ItemProjectsMetadataItemFrameworkJsonConverter),
@@ -5753,6 +5761,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<bool?, global::Vercel.GetRoutesDiff2?>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, bool?>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>),
+            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.AggregatePageviewsByItemEnum?, object>),
+            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>),
+            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.AggregateEventsByItemEnum?, object>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<object, global::Vercel.ListAccessGroupsResponseVariant2>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.StatusResponseVariant1, global::Vercel.StatusResponseVariant2>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ArtifactQueryResponseVariant1, global::Vercel.ArtifactQueryResponseVariant2>),
@@ -5959,7 +5970,6 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.GetRecordsResponseVariant2, global::Vercel.GetRecordsResponseVariant3>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateRecordResponseVariant1, global::Vercel.CreateRecordResponseVariant2>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>),
-            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BadRequest, global::Vercel.DomainTooShort, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.NotAuthorizedForScope, global::Vercel.Forbidden>),
@@ -6519,6 +6529,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UploadFileResponseVariant1, object>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListAuthTokensResponseVariant1, global::Vercel.ListAuthTokensResponseVariant2>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AuthUser, global::Vercel.AuthUserLimited>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AggregatePageviewsResponseQueryGroupByItem?>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant2Item>>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AggregateEventsResponseQueryGroupByItem?>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant2Item>>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant2Item>>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1, global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2, global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant3, global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant4>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant1, global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant2, global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant3, global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant4>),
@@ -6714,6 +6728,13 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSessionsSortOrder), TypeInfoPropertyName = "ListSessionsSortOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSessionCommandWait), TypeInfoPropertyName = "GetSessionCommandWait2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTeamMembersRole), TypeInfoPropertyName = "GetTeamMembersRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AggregatePageviewsByItemEnum?, object>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AggregatePageviewsByItemEnum?, object>), TypeInfoPropertyName = "AnyOfAggregatePageviewsByItemEnumObject2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AggregatePageviewsByItemEnum), TypeInfoPropertyName = "AggregatePageviewsByItemEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<double?, string>), TypeInfoPropertyName = "AnyOfDoubleString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AggregateEventsByItemEnum?, object>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AggregateEventsByItemEnum?, object>), TypeInfoPropertyName = "AnyOfAggregateEventsByItemEnumObject2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AggregateEventsByItemEnum), TypeInfoPropertyName = "AggregateEventsByItemEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ReadAccessGroupResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ReadAccessGroupResponseTeamPermission>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ReadAccessGroupResponseTeamPermission), TypeInfoPropertyName = "ReadAccessGroupResponseTeamPermission2")]
@@ -7020,13 +7041,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2Origin), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2SourceVariant2Origin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentCheckRunResponseVariant1, global::Vercel.CreateDeploymentCheckRunResponseVariant2>), TypeInfoPropertyName = "OneOfCreateDeploymentCheckRunResponseVariant1CreateDeploymentCheckRunResponseVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1Requires), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1Requires2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1Blocks), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1Blocks2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1Status), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1Status2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1Conclusion), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1Conclusion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant1, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant2, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant3, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant4>), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant4_ad84c822855afa4d")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant1Kind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant1Kind2")]
     internal sealed partial class SourceGenerationContextChunk003 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
