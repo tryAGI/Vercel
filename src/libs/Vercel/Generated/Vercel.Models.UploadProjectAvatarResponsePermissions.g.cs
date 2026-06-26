@@ -65,6 +65,24 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKey")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKey { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKeyOwnedBySelf")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKeyOwnedBySelf { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayCredits")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayCredits { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayPrivateModels")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayPrivateModels { get; set; }
 
@@ -73,6 +91,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayRules")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayRules { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewaySettings")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewaySettings { get; set; }
 
         /// <summary>
         /// 
@@ -1562,8 +1586,12 @@ namespace Vercel
         /// <param name="webAuthn"></param>
         /// <param name="accessGroup"></param>
         /// <param name="agent"></param>
+        /// <param name="aiGatewayApiKey"></param>
+        /// <param name="aiGatewayApiKeyOwnedBySelf"></param>
+        /// <param name="aiGatewayCredits"></param>
         /// <param name="aiGatewayPrivateModels"></param>
         /// <param name="aiGatewayRules"></param>
+        /// <param name="aiGatewaySettings"></param>
         /// <param name="aiGatewayUsage"></param>
         /// <param name="alerts"></param>
         /// <param name="alertRules"></param>
@@ -1822,8 +1850,12 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAuthn,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? accessGroup,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? agent,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKey,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKeyOwnedBySelf,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayCredits,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayPrivateModels,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayRules,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewaySettings,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayUsage,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? alerts,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? alertRules,
@@ -2079,8 +2111,12 @@ namespace Vercel
             this.WebAuthn = webAuthn;
             this.AccessGroup = accessGroup;
             this.Agent = agent;
+            this.AiGatewayApiKey = aiGatewayApiKey;
+            this.AiGatewayApiKeyOwnedBySelf = aiGatewayApiKeyOwnedBySelf;
+            this.AiGatewayCredits = aiGatewayCredits;
             this.AiGatewayPrivateModels = aiGatewayPrivateModels;
             this.AiGatewayRules = aiGatewayRules;
+            this.AiGatewaySettings = aiGatewaySettings;
             this.AiGatewayUsage = aiGatewayUsage;
             this.Alerts = alerts;
             this.AlertRules = alertRules;

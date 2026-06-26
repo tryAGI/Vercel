@@ -12,6 +12,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayApiKeyOwnedBySelf,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayCredits,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewaySettings,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateProject,
         /// <summary>
         /// 
@@ -67,6 +79,9 @@ namespace Vercel
         {
             return value switch
             {
+                InvitedTeamMemberTeamPermission.AiGatewayApiKeyOwnedBySelf => "AiGatewayApiKeyOwnedBySelf",
+                InvitedTeamMemberTeamPermission.AiGatewayCredits => "AiGatewayCredits",
+                InvitedTeamMemberTeamPermission.AiGatewaySettings => "AiGatewaySettings",
                 InvitedTeamMemberTeamPermission.CreateProject => "CreateProject",
                 InvitedTeamMemberTeamPermission.EnvVariableManager => "EnvVariableManager",
                 InvitedTeamMemberTeamPermission.EnvironmentManager => "EnvironmentManager",
@@ -88,6 +103,9 @@ namespace Vercel
         {
             return value switch
             {
+                "AiGatewayApiKeyOwnedBySelf" => InvitedTeamMemberTeamPermission.AiGatewayApiKeyOwnedBySelf,
+                "AiGatewayCredits" => InvitedTeamMemberTeamPermission.AiGatewayCredits,
+                "AiGatewaySettings" => InvitedTeamMemberTeamPermission.AiGatewaySettings,
                 "CreateProject" => InvitedTeamMemberTeamPermission.CreateProject,
                 "EnvVariableManager" => InvitedTeamMemberTeamPermission.EnvVariableManager,
                 "EnvironmentManager" => InvitedTeamMemberTeamPermission.EnvironmentManager,
