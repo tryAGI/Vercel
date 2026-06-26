@@ -41,6 +41,9 @@
                       "items": {
                         "type": "string",
                         "enum": [
+                          "AiGatewayApiKeyOwnedBySelf",
+                          "AiGatewayCredits",
+                          "AiGatewaySettings",
                           "CreateProject",
                           "EnvVariableManager",
                           "EnvironmentManager",
@@ -74677,6 +74680,24 @@
                                 },
                                 "type": "array"
                               },
+                              "aiGatewayApiKey": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
+                              "aiGatewayApiKeyOwnedBySelf": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
+                              "aiGatewayCredits": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "aiGatewayPrivateModels": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -74684,6 +74705,12 @@
                                 "type": "array"
                               },
                               "aiGatewayRules": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
+                              "aiGatewaySettings": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
                                 },
@@ -93964,6 +93991,24 @@
                                     },
                                     "type": "array"
                                   },
+                                  "aiGatewayApiKey": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "aiGatewayApiKeyOwnedBySelf": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "aiGatewayCredits": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "aiGatewayPrivateModels": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -93971,6 +94016,12 @@
                                     "type": "array"
                                   },
                                   "aiGatewayRules": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "aiGatewaySettings": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
                                     },
@@ -100094,6 +100145,24 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayApiKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayCredits": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayPrivateModels": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -100101,6 +100170,12 @@
                           "type": "array"
                         },
                         "aiGatewayRules": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewaySettings": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -106464,6 +106539,24 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayApiKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayCredits": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayPrivateModels": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -106471,6 +106564,12 @@
                           "type": "array"
                         },
                         "aiGatewayRules": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewaySettings": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -112408,6 +112507,24 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayApiKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayCredits": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayPrivateModels": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -112415,6 +112532,12 @@
                           "type": "array"
                         },
                         "aiGatewayRules": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewaySettings": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -119566,6 +119689,24 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayApiKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayCredits": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayPrivateModels": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -119573,6 +119714,12 @@
                           "type": "array"
                         },
                         "aiGatewayRules": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewaySettings": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -133913,6 +134060,24 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayApiKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayCredits": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayPrivateModels": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -133920,6 +134085,12 @@
                           "type": "array"
                         },
                         "aiGatewayRules": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewaySettings": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -151941,6 +152112,9 @@
                             "items": {
                               "type": "string",
                               "enum": [
+                                "AiGatewayApiKeyOwnedBySelf",
+                                "AiGatewayCredits",
+                                "AiGatewaySettings",
                                 "CreateProject",
                                 "EnvVariableManager",
                                 "EnvironmentManager",
@@ -152988,6 +153162,9 @@
                         "EnvironmentManager",
                         "OrgAdmin",
                         "OrgViewer",
+                        "AiGatewaySettings",
+                        "AiGatewayCredits",
+                        "AiGatewayApiKeyOwnedBySelf",
                         "V0Builder",
                         "V0Chatter",
                         "V0Viewer"
@@ -170734,6 +170911,9 @@
             "items": {
               "type": "string",
               "enum": [
+                "AiGatewayApiKeyOwnedBySelf",
+                "AiGatewayCredits",
+                "AiGatewaySettings",
                 "CreateProject",
                 "EnvVariableManager",
                 "EnvironmentManager",
@@ -170983,6 +171163,9 @@
                 "items": {
                   "type": "string",
                   "enum": [
+                    "AiGatewayApiKeyOwnedBySelf",
+                    "AiGatewayCredits",
+                    "AiGatewaySettings",
                     "CreateProject",
                     "EnvVariableManager",
                     "EnvironmentManager",
@@ -171732,6 +171915,9 @@
                 "items": {
                   "type": "string",
                   "enum": [
+                    "AiGatewayApiKeyOwnedBySelf",
+                    "AiGatewayCredits",
+                    "AiGatewaySettings",
                     "CreateProject",
                     "EnvVariableManager",
                     "EnvironmentManager",
@@ -172075,6 +172261,9 @@
                 "items": {
                   "type": "string",
                   "enum": [
+                    "AiGatewayApiKeyOwnedBySelf",
+                    "AiGatewayCredits",
+                    "AiGatewaySettings",
                     "CreateProject",
                     "EnvVariableManager",
                     "EnvironmentManager",
