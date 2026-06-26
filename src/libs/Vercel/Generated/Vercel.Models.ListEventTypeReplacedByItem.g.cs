@@ -95,6 +95,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayPrivateModelCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayPrivateModelDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayPrivateModelUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayPrivateProviderCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayPrivateProviderDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayPrivateProviderUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayProviderAllowlistProvidersUpdated,
         /// <summary>
         /// 
@@ -2131,6 +2155,12 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                ListEventTypeReplacedByItem.AiGatewayPrivateModelCreated => "ai-gateway-private-model-created",
+                ListEventTypeReplacedByItem.AiGatewayPrivateModelDeleted => "ai-gateway-private-model-deleted",
+                ListEventTypeReplacedByItem.AiGatewayPrivateModelUpdated => "ai-gateway-private-model-updated",
+                ListEventTypeReplacedByItem.AiGatewayPrivateProviderCreated => "ai-gateway-private-provider-created",
+                ListEventTypeReplacedByItem.AiGatewayPrivateProviderDeleted => "ai-gateway-private-provider-deleted",
+                ListEventTypeReplacedByItem.AiGatewayPrivateProviderUpdated => "ai-gateway-private-provider-updated",
                 ListEventTypeReplacedByItem.AiGatewayProviderAllowlistProvidersUpdated => "ai-gateway-provider-allowlist-providers-updated",
                 ListEventTypeReplacedByItem.AiGatewayProviderAllowlistToggled => "ai-gateway-provider-allowlist-toggled",
                 ListEventTypeReplacedByItem.AiGatewayRuleCreated => "ai-gateway-rule-created",
@@ -2663,6 +2693,12 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated,
+                "ai-gateway-private-model-created" => ListEventTypeReplacedByItem.AiGatewayPrivateModelCreated,
+                "ai-gateway-private-model-deleted" => ListEventTypeReplacedByItem.AiGatewayPrivateModelDeleted,
+                "ai-gateway-private-model-updated" => ListEventTypeReplacedByItem.AiGatewayPrivateModelUpdated,
+                "ai-gateway-private-provider-created" => ListEventTypeReplacedByItem.AiGatewayPrivateProviderCreated,
+                "ai-gateway-private-provider-deleted" => ListEventTypeReplacedByItem.AiGatewayPrivateProviderDeleted,
+                "ai-gateway-private-provider-updated" => ListEventTypeReplacedByItem.AiGatewayPrivateProviderUpdated,
                 "ai-gateway-provider-allowlist-providers-updated" => ListEventTypeReplacedByItem.AiGatewayProviderAllowlistProvidersUpdated,
                 "ai-gateway-provider-allowlist-toggled" => ListEventTypeReplacedByItem.AiGatewayProviderAllowlistToggled,
                 "ai-gateway-rule-created" => ListEventTypeReplacedByItem.AiGatewayRuleCreated,
