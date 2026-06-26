@@ -96,6 +96,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayPrivateModelCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayPrivateModelDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayPrivateModelUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayPrivateProviderCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayPrivateProviderDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayPrivateProviderUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayProviderAllowlistProvidersUpdated,
         /// <summary>
         /// 
@@ -2132,6 +2156,12 @@ namespace Vercel
                 UserEventType.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 UserEventType.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 UserEventType.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                UserEventType.AiGatewayPrivateModelCreated => "ai-gateway-private-model-created",
+                UserEventType.AiGatewayPrivateModelDeleted => "ai-gateway-private-model-deleted",
+                UserEventType.AiGatewayPrivateModelUpdated => "ai-gateway-private-model-updated",
+                UserEventType.AiGatewayPrivateProviderCreated => "ai-gateway-private-provider-created",
+                UserEventType.AiGatewayPrivateProviderDeleted => "ai-gateway-private-provider-deleted",
+                UserEventType.AiGatewayPrivateProviderUpdated => "ai-gateway-private-provider-updated",
                 UserEventType.AiGatewayProviderAllowlistProvidersUpdated => "ai-gateway-provider-allowlist-providers-updated",
                 UserEventType.AiGatewayProviderAllowlistToggled => "ai-gateway-provider-allowlist-toggled",
                 UserEventType.AiGatewayRuleCreated => "ai-gateway-rule-created",
@@ -2664,6 +2694,12 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => UserEventType.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => UserEventType.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => UserEventType.AiGatewayByokCredentialUpdated,
+                "ai-gateway-private-model-created" => UserEventType.AiGatewayPrivateModelCreated,
+                "ai-gateway-private-model-deleted" => UserEventType.AiGatewayPrivateModelDeleted,
+                "ai-gateway-private-model-updated" => UserEventType.AiGatewayPrivateModelUpdated,
+                "ai-gateway-private-provider-created" => UserEventType.AiGatewayPrivateProviderCreated,
+                "ai-gateway-private-provider-deleted" => UserEventType.AiGatewayPrivateProviderDeleted,
+                "ai-gateway-private-provider-updated" => UserEventType.AiGatewayPrivateProviderUpdated,
                 "ai-gateway-provider-allowlist-providers-updated" => UserEventType.AiGatewayProviderAllowlistProvidersUpdated,
                 "ai-gateway-provider-allowlist-toggled" => UserEventType.AiGatewayProviderAllowlistToggled,
                 "ai-gateway-rule-created" => UserEventType.AiGatewayRuleCreated,

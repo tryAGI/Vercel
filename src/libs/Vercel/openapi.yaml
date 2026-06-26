@@ -74677,6 +74677,12 @@
                                 },
                                 "type": "array"
                               },
+                              "aiGatewayPrivateModels": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "aiGatewayRules": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -74846,6 +74852,12 @@
                                 "type": "array"
                               },
                               "codeChecks": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
+                              "codeOwners": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
                                 },
@@ -93952,6 +93964,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "aiGatewayPrivateModels": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "aiGatewayRules": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -94121,6 +94139,12 @@
                                     "type": "array"
                                   },
                                   "codeChecks": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "codeOwners": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
                                     },
@@ -100070,6 +100094,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayPrivateModels": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayRules": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -100239,6 +100269,12 @@
                           "type": "array"
                         },
                         "codeChecks": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "codeOwners": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -106428,6 +106464,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayPrivateModels": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayRules": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -106597,6 +106639,12 @@
                           "type": "array"
                         },
                         "codeChecks": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "codeOwners": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -112360,6 +112408,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayPrivateModels": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayRules": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -112529,6 +112583,12 @@
                           "type": "array"
                         },
                         "codeChecks": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "codeOwners": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -119506,6 +119566,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayPrivateModels": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayRules": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -119675,6 +119741,12 @@
                           "type": "array"
                         },
                         "codeChecks": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "codeOwners": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -133841,6 +133913,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayPrivateModels": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayRules": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -134010,6 +134088,12 @@
                           "type": "array"
                         },
                         "codeChecks": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "codeOwners": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -161624,6 +161708,12 @@
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-private-model-created",
+              "ai-gateway-private-model-deleted",
+              "ai-gateway-private-model-updated",
+              "ai-gateway-private-provider-created",
+              "ai-gateway-private-provider-deleted",
+              "ai-gateway-private-provider-updated",
               "ai-gateway-provider-allowlist-providers-updated",
               "ai-gateway-provider-allowlist-toggled",
               "ai-gateway-rule-created",
@@ -162411,6 +162501,12 @@
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-private-model-created",
+              "ai-gateway-private-model-deleted",
+              "ai-gateway-private-model-updated",
+              "ai-gateway-private-provider-created",
+              "ai-gateway-private-provider-deleted",
+              "ai-gateway-private-provider-updated",
               "ai-gateway-provider-allowlist-providers-updated",
               "ai-gateway-provider-allowlist-toggled",
               "ai-gateway-rule-created",
@@ -162991,6 +163087,12 @@
                 "ai-gateway-byok-credential-created",
                 "ai-gateway-byok-credential-deleted",
                 "ai-gateway-byok-credential-updated",
+                "ai-gateway-private-model-created",
+                "ai-gateway-private-model-deleted",
+                "ai-gateway-private-model-updated",
+                "ai-gateway-private-provider-created",
+                "ai-gateway-private-provider-deleted",
+                "ai-gateway-private-provider-updated",
                 "ai-gateway-provider-allowlist-providers-updated",
                 "ai-gateway-provider-allowlist-toggled",
                 "ai-gateway-rule-created",

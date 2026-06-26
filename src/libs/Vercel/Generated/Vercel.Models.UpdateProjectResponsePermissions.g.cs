@@ -65,6 +65,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayPrivateModels")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayPrivateModels { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayRules")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayRules { get; set; }
 
@@ -235,6 +241,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("codeChecks")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? CodeChecks { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("codeOwners")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? CodeOwners { get; set; }
 
         /// <summary>
         /// 
@@ -1550,6 +1562,7 @@ namespace Vercel
         /// <param name="webAuthn"></param>
         /// <param name="accessGroup"></param>
         /// <param name="agent"></param>
+        /// <param name="aiGatewayPrivateModels"></param>
         /// <param name="aiGatewayRules"></param>
         /// <param name="aiGatewayUsage"></param>
         /// <param name="alerts"></param>
@@ -1579,6 +1592,7 @@ namespace Vercel
         /// <param name="cacheArtifact"></param>
         /// <param name="cacheArtifactUsageEvent"></param>
         /// <param name="codeChecks"></param>
+        /// <param name="codeOwners"></param>
         /// <param name="ciInvocations"></param>
         /// <param name="ciLogs"></param>
         /// <param name="concurrentBuilds"></param>
@@ -1808,6 +1822,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAuthn,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? accessGroup,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? agent,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayPrivateModels,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayRules,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayUsage,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? alerts,
@@ -1837,6 +1852,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? cacheArtifact,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? cacheArtifactUsageEvent,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? codeChecks,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? codeOwners,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ciInvocations,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ciLogs,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? concurrentBuilds,
@@ -2063,6 +2079,7 @@ namespace Vercel
             this.WebAuthn = webAuthn;
             this.AccessGroup = accessGroup;
             this.Agent = agent;
+            this.AiGatewayPrivateModels = aiGatewayPrivateModels;
             this.AiGatewayRules = aiGatewayRules;
             this.AiGatewayUsage = aiGatewayUsage;
             this.Alerts = alerts;
@@ -2092,6 +2109,7 @@ namespace Vercel
             this.CacheArtifact = cacheArtifact;
             this.CacheArtifactUsageEvent = cacheArtifactUsageEvent;
             this.CodeChecks = codeChecks;
+            this.CodeOwners = codeOwners;
             this.CiInvocations = ciInvocations;
             this.CiLogs = ciLogs;
             this.ConcurrentBuilds = concurrentBuilds;
