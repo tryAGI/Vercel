@@ -2039,6 +2039,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        VcrImageDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        VcrImagePushed,
+        /// <summary>
+        /// 
+        /// </summary>
+        VcrRepositoryCreated,
+        /// <summary>
+        /// 
+        /// </summary>
         VercelAgentElevatedPermissionsApproved,
         /// <summary>
         /// 
@@ -2641,6 +2653,9 @@ namespace Vercel
                 ListEventTypeReplacedByItem.V0ChatAiUsage => "v0-chat-ai-usage",
                 ListEventTypeReplacedByItem.V0ChatCreated => "v0-chat-created",
                 ListEventTypeReplacedByItem.V0ChatMessageSent => "v0-chat-message-sent",
+                ListEventTypeReplacedByItem.VcrImageDeleted => "vcr-image-deleted",
+                ListEventTypeReplacedByItem.VcrImagePushed => "vcr-image-pushed",
+                ListEventTypeReplacedByItem.VcrRepositoryCreated => "vcr-repository-created",
                 ListEventTypeReplacedByItem.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
                 ListEventTypeReplacedByItem.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
                 ListEventTypeReplacedByItem.VercelAgentSessionCreated => "vercel-agent-session-created",
@@ -3179,6 +3194,9 @@ namespace Vercel
                 "v0-chat-ai-usage" => ListEventTypeReplacedByItem.V0ChatAiUsage,
                 "v0-chat-created" => ListEventTypeReplacedByItem.V0ChatCreated,
                 "v0-chat-message-sent" => ListEventTypeReplacedByItem.V0ChatMessageSent,
+                "vcr-image-deleted" => ListEventTypeReplacedByItem.VcrImageDeleted,
+                "vcr-image-pushed" => ListEventTypeReplacedByItem.VcrImagePushed,
+                "vcr-repository-created" => ListEventTypeReplacedByItem.VcrRepositoryCreated,
                 "vercel-agent-elevated-permissions-approved" => ListEventTypeReplacedByItem.VercelAgentElevatedPermissionsApproved,
                 "vercel-agent-elevated-permissions-requested" => ListEventTypeReplacedByItem.VercelAgentElevatedPermissionsRequested,
                 "vercel-agent-session-created" => ListEventTypeReplacedByItem.VercelAgentSessionCreated,

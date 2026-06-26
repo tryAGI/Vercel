@@ -213,6 +213,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public WebAnalyticsClient WebAnalytics { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public WebhooksClient Webhooks { get; }
 
     }
