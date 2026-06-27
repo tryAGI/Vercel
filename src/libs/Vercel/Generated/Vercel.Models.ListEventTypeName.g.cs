@@ -596,6 +596,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DomainZoneChangeInternal,
+        /// <summary>
+        /// 
+        /// </summary>
         DrainCreated,
         /// <summary>
         /// 
@@ -2293,6 +2297,7 @@ namespace Vercel
                 ListEventTypeName.DomainTransferInCanceled => "domain-transfer-in-canceled",
                 ListEventTypeName.DomainTransferInCompleted => "domain-transfer-in-completed",
                 ListEventTypeName.DomainZoneChange => "domain-zone-change",
+                ListEventTypeName.DomainZoneChangeInternal => "domain-zone-change-internal",
                 ListEventTypeName.DrainCreated => "drain-created",
                 ListEventTypeName.DrainDeleted => "drain-deleted",
                 ListEventTypeName.DrainDisabled => "drain-disabled",
@@ -2834,6 +2839,7 @@ namespace Vercel
                 "domain-transfer-in-canceled" => ListEventTypeName.DomainTransferInCanceled,
                 "domain-transfer-in-completed" => ListEventTypeName.DomainTransferInCompleted,
                 "domain-zone-change" => ListEventTypeName.DomainZoneChange,
+                "domain-zone-change-internal" => ListEventTypeName.DomainZoneChangeInternal,
                 "drain-created" => ListEventTypeName.DrainCreated,
                 "drain-deleted" => ListEventTypeName.DrainDeleted,
                 "drain-disabled" => ListEventTypeName.DrainDisabled,
