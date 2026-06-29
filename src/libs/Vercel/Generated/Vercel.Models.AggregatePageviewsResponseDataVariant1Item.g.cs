@@ -725,6 +725,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("surchargeCostCurrency")]
+        public string? SurchargeCostCurrency { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gatewayCostCurrency")]
+        public string? GatewayCostCurrency { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyId")]
         public string? KeyId { get; set; }
 
@@ -1248,6 +1260,8 @@ namespace Vercel
         /// <param name="cachedInputTokensCurrency"></param>
         /// <param name="cacheCreationInputTokensCurrency"></param>
         /// <param name="cacheCreation1hInputTokensCurrency"></param>
+        /// <param name="surchargeCostCurrency"></param>
+        /// <param name="gatewayCostCurrency"></param>
         /// <param name="keyId"></param>
         /// <param name="keyName"></param>
         /// <param name="isByok"></param>
@@ -1437,6 +1451,8 @@ namespace Vercel
             string? cachedInputTokensCurrency,
             string? cacheCreationInputTokensCurrency,
             string? cacheCreation1hInputTokensCurrency,
+            string? surchargeCostCurrency,
+            string? gatewayCostCurrency,
             string? keyId,
             string? keyName,
             string? isByok,
@@ -1622,6 +1638,8 @@ namespace Vercel
             this.CachedInputTokensCurrency = cachedInputTokensCurrency;
             this.CacheCreationInputTokensCurrency = cacheCreationInputTokensCurrency;
             this.CacheCreation1hInputTokensCurrency = cacheCreation1hInputTokensCurrency;
+            this.SurchargeCostCurrency = surchargeCostCurrency;
+            this.GatewayCostCurrency = gatewayCostCurrency;
             this.KeyId = keyId;
             this.KeyName = keyName;
             this.IsByok = isByok;
