@@ -1848,6 +1848,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamFirewallConfigModified,
+        /// <summary>
+        /// 
+        /// </summary>
+        TeamFirewallConfigPromoted,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamGitRepositoryDispatchEventsToggled,
         /// <summary>
         /// 
@@ -2053,6 +2061,10 @@ namespace Vercel
         /// 
         /// </summary>
         VcrRepositoryCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        VcrRepositoryDeleted,
         /// <summary>
         /// 
         /// </summary>
@@ -2610,6 +2622,8 @@ namespace Vercel
                 ListEventTypeName.TeamEmuAccountSplit => "team-emu-account-split",
                 ListEventTypeName.TeamEmuUpdated => "team-emu-updated",
                 ListEventTypeName.TeamEndedTrial => "team-ended-trial",
+                ListEventTypeName.TeamFirewallConfigModified => "team-firewall-config-modified",
+                ListEventTypeName.TeamFirewallConfigPromoted => "team-firewall-config-promoted",
                 ListEventTypeName.TeamGitRepositoryDispatchEventsToggled => "team-git-repository-dispatch-events-toggled",
                 ListEventTypeName.TeamGitRequireVerifiedCommitsToggled => "team-git-require-verified-commits-toggled",
                 ListEventTypeName.TeamInviteBulkDelete => "team-invite-bulk-delete",
@@ -2662,6 +2676,7 @@ namespace Vercel
                 ListEventTypeName.VcrImageDeleted => "vcr-image-deleted",
                 ListEventTypeName.VcrImagePushed => "vcr-image-pushed",
                 ListEventTypeName.VcrRepositoryCreated => "vcr-repository-created",
+                ListEventTypeName.VcrRepositoryDeleted => "vcr-repository-deleted",
                 ListEventTypeName.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
                 ListEventTypeName.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
                 ListEventTypeName.VercelAgentSessionCreated => "vercel-agent-session-created",
@@ -3152,6 +3167,8 @@ namespace Vercel
                 "team-emu-account-split" => ListEventTypeName.TeamEmuAccountSplit,
                 "team-emu-updated" => ListEventTypeName.TeamEmuUpdated,
                 "team-ended-trial" => ListEventTypeName.TeamEndedTrial,
+                "team-firewall-config-modified" => ListEventTypeName.TeamFirewallConfigModified,
+                "team-firewall-config-promoted" => ListEventTypeName.TeamFirewallConfigPromoted,
                 "team-git-repository-dispatch-events-toggled" => ListEventTypeName.TeamGitRepositoryDispatchEventsToggled,
                 "team-git-require-verified-commits-toggled" => ListEventTypeName.TeamGitRequireVerifiedCommitsToggled,
                 "team-invite-bulk-delete" => ListEventTypeName.TeamInviteBulkDelete,
@@ -3204,6 +3221,7 @@ namespace Vercel
                 "vcr-image-deleted" => ListEventTypeName.VcrImageDeleted,
                 "vcr-image-pushed" => ListEventTypeName.VcrImagePushed,
                 "vcr-repository-created" => ListEventTypeName.VcrRepositoryCreated,
+                "vcr-repository-deleted" => ListEventTypeName.VcrRepositoryDeleted,
                 "vercel-agent-elevated-permissions-approved" => ListEventTypeName.VercelAgentElevatedPermissionsApproved,
                 "vercel-agent-elevated-permissions-requested" => ListEventTypeName.VercelAgentElevatedPermissionsRequested,
                 "vercel-agent-session-created" => ListEventTypeName.VercelAgentSessionCreated,

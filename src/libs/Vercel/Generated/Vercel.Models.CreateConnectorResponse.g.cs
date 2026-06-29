@@ -239,6 +239,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.CreateConnectorResponseTriggerDestination>? TriggerDestinations { get; set; }
 
         /// <summary>
+        /// Whether this connector is linked to the project supplied through `prioritizedProjectId`. Only present on prioritized list responses.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isConnectedToPrioritizedProject")]
+        public bool? IsConnectedToPrioritizedProject { get; set; }
+
+        /// <summary>
         /// Optional expansions populated by `?include=...` on the list endpoint.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("includes")]
@@ -306,6 +312,9 @@ namespace Vercel
         /// <param name="triggerDestinations">
         /// Destinations that incoming triggers should be forwarded to. Limited to `MAX_CONNEX_TRIGGER_DESTINATIONS` entries.
         /// </param>
+        /// <param name="isConnectedToPrioritizedProject">
+        /// Whether this connector is linked to the project supplied through `prioritizedProjectId`. Only present on prioritized list responses.
+        /// </param>
         /// <param name="includes">
         /// Optional expansions populated by `?include=...` on the list endpoint.
         /// </param>
@@ -348,6 +357,7 @@ namespace Vercel
             global::Vercel.CreateConnectorResponseTriggers? triggers,
             global::System.Collections.Generic.IList<string>? events,
             global::System.Collections.Generic.IList<global::Vercel.CreateConnectorResponseTriggerDestination>? triggerDestinations,
+            bool? isConnectedToPrioritizedProject,
             global::Vercel.CreateConnectorResponseIncludes? includes)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
@@ -385,6 +395,7 @@ namespace Vercel
             this.Triggers = triggers;
             this.Events = events;
             this.TriggerDestinations = triggerDestinations;
+            this.IsConnectedToPrioritizedProject = isConnectedToPrioritizedProject;
             this.Includes = includes;
         }
 

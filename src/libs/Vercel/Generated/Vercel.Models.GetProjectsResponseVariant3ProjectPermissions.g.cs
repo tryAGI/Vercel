@@ -905,6 +905,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("securityConfig")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SecurityConfig { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sensitiveEnvironmentVariablePolicy")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SensitiveEnvironmentVariablePolicy { get; set; }
 
@@ -1726,6 +1732,7 @@ namespace Vercel
         /// <param name="repository"></param>
         /// <param name="samlConfig"></param>
         /// <param name="secret"></param>
+        /// <param name="securityConfig"></param>
         /// <param name="sensitiveEnvironmentVariablePolicy"></param>
         /// <param name="sharedEnvVars"></param>
         /// <param name="sharedEnvVarsProduction"></param>
@@ -1990,6 +1997,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? repository,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? samlConfig,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? secret,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? securityConfig,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sensitiveEnvironmentVariablePolicy,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVars,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVarsProduction,
@@ -2251,6 +2259,7 @@ namespace Vercel
             this.Repository = repository;
             this.SamlConfig = samlConfig;
             this.Secret = secret;
+            this.SecurityConfig = securityConfig;
             this.SensitiveEnvironmentVariablePolicy = sensitiveEnvironmentVariablePolicy;
             this.SharedEnvVars = sharedEnvVars;
             this.SharedEnvVarsProduction = sharedEnvVarsProduction;
