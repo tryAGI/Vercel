@@ -155908,6 +155908,12 @@
                               "cacheCreation1hInputTokensCurrency": {
                                 "type": "string"
                               },
+                              "surchargeCostCurrency": {
+                                "type": "string"
+                              },
+                              "gatewayCostCurrency": {
+                                "type": "string"
+                              },
                               "keyId": {
                                 "type": "string"
                               },
@@ -156475,6 +156481,12 @@
                               "cacheCreation1hInputTokensCurrency": {
                                 "type": "string"
                               },
+                              "surchargeCostCurrency": {
+                                "type": "string"
+                              },
+                              "gatewayCostCurrency": {
+                                "type": "string"
+                              },
                               "keyId": {
                                 "type": "string"
                               },
@@ -156737,6 +156749,7 @@
                               "functionDispatcher",
                               "functionRegion",
                               "functionStartType",
+                              "gatewayCostCurrency",
                               "generationId",
                               "hipaaRequested",
                               "httpAccept",
@@ -156831,6 +156844,7 @@
                               "stepRunId",
                               "storeId",
                               "storeName",
+                              "surchargeCostCurrency",
                               "tagName",
                               "toolCallErrorType",
                               "toolCallProvider",
@@ -157472,6 +157486,12 @@
                               "cacheCreation1hInputTokensCurrency": {
                                 "type": "string"
                               },
+                              "surchargeCostCurrency": {
+                                "type": "string"
+                              },
+                              "gatewayCostCurrency": {
+                                "type": "string"
+                              },
                               "keyId": {
                                 "type": "string"
                               },
@@ -158039,6 +158059,12 @@
                               "cacheCreation1hInputTokensCurrency": {
                                 "type": "string"
                               },
+                              "surchargeCostCurrency": {
+                                "type": "string"
+                              },
+                              "gatewayCostCurrency": {
+                                "type": "string"
+                              },
                               "keyId": {
                                 "type": "string"
                               },
@@ -158301,6 +158327,7 @@
                               "functionDispatcher",
                               "functionRegion",
                               "functionStartType",
+                              "gatewayCostCurrency",
                               "generationId",
                               "hipaaRequested",
                               "httpAccept",
@@ -158395,6 +158422,7 @@
                               "stepRunId",
                               "storeId",
                               "storeName",
+                              "surchargeCostCurrency",
                               "tagName",
                               "toolCallErrorType",
                               "toolCallProvider",
@@ -159000,6 +159028,12 @@
                         "cacheCreation1hInputTokensCurrency": {
                           "type": "string"
                         },
+                        "surchargeCostCurrency": {
+                          "type": "string"
+                        },
+                        "gatewayCostCurrency": {
+                          "type": "string"
+                        },
                         "keyId": {
                           "type": "string"
                         },
@@ -159262,6 +159296,7 @@
                         "functionDispatcher",
                         "functionRegion",
                         "functionStartType",
+                        "gatewayCostCurrency",
                         "generationId",
                         "hipaaRequested",
                         "httpAccept",
@@ -159356,6 +159391,7 @@
                         "stepRunId",
                         "storeId",
                         "storeName",
+                        "surchargeCostCurrency",
                         "tagName",
                         "toolCallErrorType",
                         "toolCallProvider",
@@ -159892,6 +159928,12 @@
                         "cacheCreation1hInputTokensCurrency": {
                           "type": "string"
                         },
+                        "surchargeCostCurrency": {
+                          "type": "string"
+                        },
+                        "gatewayCostCurrency": {
+                          "type": "string"
+                        },
                         "keyId": {
                           "type": "string"
                         },
@@ -160154,6 +160196,7 @@
                         "functionDispatcher",
                         "functionRegion",
                         "functionStartType",
+                        "gatewayCostCurrency",
                         "generationId",
                         "hipaaRequested",
                         "httpAccept",
@@ -160248,6 +160291,7 @@
                         "stepRunId",
                         "storeId",
                         "storeName",
+                        "surchargeCostCurrency",
                         "tagName",
                         "toolCallErrorType",
                         "toolCallProvider",

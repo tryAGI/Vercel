@@ -844,6 +844,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("surchargeCostCurrency")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string SurchargeCostCurrency { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gatewayCostCurrency")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GatewayCostCurrency { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string KeyId { get; set; }
@@ -1424,6 +1438,8 @@ namespace Vercel
         /// <param name="cachedInputTokensCurrency"></param>
         /// <param name="cacheCreationInputTokensCurrency"></param>
         /// <param name="cacheCreation1hInputTokensCurrency"></param>
+        /// <param name="surchargeCostCurrency"></param>
+        /// <param name="gatewayCostCurrency"></param>
         /// <param name="keyId"></param>
         /// <param name="keyName"></param>
         /// <param name="isByok"></param>
@@ -1612,6 +1628,8 @@ namespace Vercel
             string cachedInputTokensCurrency,
             string cacheCreationInputTokensCurrency,
             string cacheCreation1hInputTokensCurrency,
+            string surchargeCostCurrency,
+            string gatewayCostCurrency,
             string keyId,
             string keyName,
             string isByok,
@@ -1797,6 +1815,8 @@ namespace Vercel
             this.CachedInputTokensCurrency = cachedInputTokensCurrency ?? throw new global::System.ArgumentNullException(nameof(cachedInputTokensCurrency));
             this.CacheCreationInputTokensCurrency = cacheCreationInputTokensCurrency ?? throw new global::System.ArgumentNullException(nameof(cacheCreationInputTokensCurrency));
             this.CacheCreation1hInputTokensCurrency = cacheCreation1hInputTokensCurrency ?? throw new global::System.ArgumentNullException(nameof(cacheCreation1hInputTokensCurrency));
+            this.SurchargeCostCurrency = surchargeCostCurrency ?? throw new global::System.ArgumentNullException(nameof(surchargeCostCurrency));
+            this.GatewayCostCurrency = gatewayCostCurrency ?? throw new global::System.ArgumentNullException(nameof(gatewayCostCurrency));
             this.KeyId = keyId ?? throw new global::System.ArgumentNullException(nameof(keyId));
             this.KeyName = keyName ?? throw new global::System.ArgumentNullException(nameof(keyName));
             this.IsByok = isByok ?? throw new global::System.ArgumentNullException(nameof(isByok));
