@@ -131,6 +131,12 @@ namespace Vercel
         public bool? Middleware { get; set; }
 
         /// <summary>
+        /// Owning service name; scopes per-function config such as the v2beta consumer.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("serviceName")]
+        public string? ServiceName { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -159,6 +165,9 @@ namespace Vercel
         /// <param name="framework"></param>
         /// <param name="nodeVersion"></param>
         /// <param name="middleware"></param>
+        /// <param name="serviceName">
+        /// Owning service name; scopes per-function config such as the v2beta consumer.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -182,7 +191,8 @@ namespace Vercel
             string? devCommand,
             string? framework,
             string? nodeVersion,
-            bool? middleware)
+            bool? middleware,
+            string? serviceName)
         {
             this.BunVersion = bunVersion;
             this.MaxLambdaSize = maxLambdaSize;
@@ -204,6 +214,7 @@ namespace Vercel
             this.Framework = framework;
             this.NodeVersion = nodeVersion;
             this.Middleware = middleware;
+            this.ServiceName = serviceName;
         }
 
         /// <summary>
