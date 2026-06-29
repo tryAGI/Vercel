@@ -17534,6 +17534,10 @@
                                               false,
                                               true
                                             ]
+                                          },
+                                          "serviceName": {
+                                            "type": "string",
+                                            "description": "Owning service name; scopes per-function config such as the v2beta consumer."
                                           }
                                         },
                                         "type": "object"
@@ -18002,6 +18006,10 @@
                                               false,
                                               true
                                             ]
+                                          },
+                                          "serviceName": {
+                                            "type": "string",
+                                            "description": "Owning service name; scopes per-function config such as the v2beta consumer."
                                           }
                                         },
                                         "type": "object"
@@ -25089,6 +25097,10 @@
                                           false,
                                           true
                                         ]
+                                      },
+                                      "serviceName": {
+                                        "type": "string",
+                                        "description": "Owning service name; scopes per-function config such as the v2beta consumer."
                                       }
                                     },
                                     "type": "object"
@@ -25557,6 +25569,10 @@
                                           false,
                                           true
                                         ]
+                                      },
+                                      "serviceName": {
+                                        "type": "string",
+                                        "description": "Owning service name; scopes per-function config such as the v2beta consumer."
                                       }
                                     },
                                     "type": "object"
@@ -31927,6 +31943,10 @@
                                           false,
                                           true
                                         ]
+                                      },
+                                      "serviceName": {
+                                        "type": "string",
+                                        "description": "Owning service name; scopes per-function config such as the v2beta consumer."
                                       }
                                     },
                                     "type": "object"
@@ -32395,6 +32415,10 @@
                                           false,
                                           true
                                         ]
+                                      },
+                                      "serviceName": {
+                                        "type": "string",
+                                        "description": "Owning service name; scopes per-function config such as the v2beta consumer."
                                       }
                                     },
                                     "type": "object"
