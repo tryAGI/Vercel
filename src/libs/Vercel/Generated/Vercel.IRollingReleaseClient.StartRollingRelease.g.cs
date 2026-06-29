@@ -1,0 +1,84 @@
+#nullable enable
+
+namespace Vercel
+{
+    public partial interface IRollingReleaseClient
+    {
+        /// <summary>
+        /// Start a rolling release for the project<br/>
+        /// Start a rolling release for a deployment. If a rolling release is already active for the same canary deployment, returns the current state without side effects.
+        /// </summary>
+        /// <param name="idOrName">
+        /// Project ID or project name (URL-encoded)
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.StartRollingReleaseResponse> StartRollingReleaseAsync(
+            string idOrName,
+
+            global::Vercel.StartRollingReleaseRequest request,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Start a rolling release for the project<br/>
+        /// Start a rolling release for a deployment. If a rolling release is already active for the same canary deployment, returns the current state without side effects.
+        /// </summary>
+        /// <param name="idOrName">
+        /// Project ID or project name (URL-encoded)
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vercel.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.StartRollingReleaseResponse>> StartRollingReleaseAsResponseAsync(
+            string idOrName,
+
+            global::Vercel.StartRollingReleaseRequest request,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Start a rolling release for the project<br/>
+        /// Start a rolling release for a deployment. If a rolling release is already active for the same canary deployment, returns the current state without side effects.
+        /// </summary>
+        /// <param name="idOrName">
+        /// Project ID or project name (URL-encoded)
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="canaryDeploymentId">
+        /// The ID of the canary deployment to start the rolling release for
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task<global::Vercel.StartRollingReleaseResponse> StartRollingReleaseAsync(
+            string idOrName,
+            string canaryDeploymentId,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

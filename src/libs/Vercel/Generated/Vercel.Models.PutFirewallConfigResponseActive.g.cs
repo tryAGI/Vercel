@@ -54,8 +54,7 @@ namespace Vercel
         /// Custom Ruleset
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("crs")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.PutFirewallConfigResponseActiveCrs Crs { get; set; }
+        public global::Vercel.PutFirewallConfigResponseActiveCrs? Crs { get; set; }
 
         /// <summary>
         /// 
@@ -112,12 +111,12 @@ namespace Vercel
         /// <param name="version"></param>
         /// <param name="updatedAt"></param>
         /// <param name="firewallEnabled"></param>
-        /// <param name="crs">
-        /// Custom Ruleset
-        /// </param>
         /// <param name="rules"></param>
         /// <param name="ips"></param>
         /// <param name="changes"></param>
+        /// <param name="crs">
+        /// Custom Ruleset
+        /// </param>
         /// <param name="managedRules"></param>
         /// <param name="botIdEnabled"></param>
         /// <param name="logHeaders"></param>
@@ -131,10 +130,10 @@ namespace Vercel
             double version,
             string updatedAt,
             bool firewallEnabled,
-            global::Vercel.PutFirewallConfigResponseActiveCrs crs,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.PutFirewallConfigResponseActiveRuleVariant1, global::Vercel.PutFirewallConfigResponseActiveRuleVariant2>> rules,
             global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigResponseActiveIp> ips,
             global::System.Collections.Generic.IList<object> changes,
+            global::Vercel.PutFirewallConfigResponseActiveCrs? crs,
             global::Vercel.PutFirewallConfigResponseActiveManagedRules? managedRules,
             bool? botIdEnabled,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.PutFirewallConfigResponseActiveLogHeaders?>? logHeaders)
@@ -145,7 +144,7 @@ namespace Vercel
             this.Version = version;
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
             this.FirewallEnabled = firewallEnabled;
-            this.Crs = crs ?? throw new global::System.ArgumentNullException(nameof(crs));
+            this.Crs = crs;
             this.Rules = rules ?? throw new global::System.ArgumentNullException(nameof(rules));
             this.Ips = ips ?? throw new global::System.ArgumentNullException(nameof(ips));
             this.Changes = changes ?? throw new global::System.ArgumentNullException(nameof(changes));
