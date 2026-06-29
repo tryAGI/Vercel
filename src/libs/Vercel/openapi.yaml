@@ -3551,6 +3551,14 @@
                                     },
                                     "output": {
                                       "properties": {
+                                        "effectiveBehavior": {
+                                          "type": "string",
+                                          "enum": [
+                                            "end_of_term",
+                                            "immediate"
+                                          ],
+                                          "description": "When the subscription change should take effect."
+                                        },
                                         "orbPriceId": {
                                           "type": "string",
                                           "description": "The Orb price ID for the subscription item being modified."
@@ -3561,167 +3569,52 @@
                                         },
                                         "changedResources": {
                                           "items": {
-                                            "oneOf": [
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "set_plan_item_quantity"
-                                                    ]
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "The full set of resource IDs after the set operation."
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                            "properties": {
+                                              "productAlias": {
+                                                "type": "string",
+                                                "description": "The alias of the product that was changed."
                                               },
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were added."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "increase_plan_item_quantity"
-                                                    ]
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "resourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                              "productId": {
+                                                "type": "string",
+                                                "description": "The ID of the product that was changed."
                                               },
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were removed."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "decrease_plan_item_quantity"
-                                                    ]
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "resourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                              "quantity": {
+                                                "type": "number",
+                                                "description": "The resulting quantity after this change."
                                               },
-                                              {
-                                                "properties": {
-                                                  "addedResourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were added."
-                                                  },
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "removedResourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were removed."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "adjust_plan_item_quantity"
-                                                    ]
-                                                  }
+                                              "addedResourceIds": {
+                                                "items": {
+                                                  "type": "string"
                                                 },
-                                                "required": [
-                                                  "addedResourceIds",
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "removedResourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                                "type": "array",
+                                                "description": "Resource IDs that were added."
+                                              },
+                                              "effectiveAt": {
+                                                "type": "string",
+                                                "description": "When this resource change should take effect for downstream consumers."
+                                              },
+                                              "removedResourceIds": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "Resource IDs that were removed."
+                                              },
+                                              "resourceIds": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "The full set of resource IDs after the change."
                                               }
-                                            ]
+                                            },
+                                            "required": [
+                                              "productAlias",
+                                              "productId",
+                                              "quantity"
+                                            ],
+                                            "type": "object",
+                                            "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
                                           },
                                           "type": "array",
                                           "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
@@ -3739,6 +3632,7 @@
                                         }
                                       },
                                       "required": [
+                                        "effectiveBehavior",
                                         "orbPriceId",
                                         "productId"
                                       ],
@@ -3785,6 +3679,14 @@
                                     },
                                     "output": {
                                       "properties": {
+                                        "effectiveBehavior": {
+                                          "type": "string",
+                                          "enum": [
+                                            "end_of_term",
+                                            "immediate"
+                                          ],
+                                          "description": "When the subscription change should take effect."
+                                        },
                                         "orbPriceId": {
                                           "type": "string",
                                           "description": "The Orb price ID for the subscription item being modified."
@@ -3795,167 +3697,52 @@
                                         },
                                         "changedResources": {
                                           "items": {
-                                            "oneOf": [
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "set_plan_item_quantity"
-                                                    ]
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "The full set of resource IDs after the set operation."
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                            "properties": {
+                                              "productAlias": {
+                                                "type": "string",
+                                                "description": "The alias of the product that was changed."
                                               },
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were added."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "increase_plan_item_quantity"
-                                                    ]
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "resourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                              "productId": {
+                                                "type": "string",
+                                                "description": "The ID of the product that was changed."
                                               },
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were removed."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "decrease_plan_item_quantity"
-                                                    ]
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "resourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                              "quantity": {
+                                                "type": "number",
+                                                "description": "The resulting quantity after this change."
                                               },
-                                              {
-                                                "properties": {
-                                                  "addedResourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were added."
-                                                  },
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "removedResourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were removed."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "adjust_plan_item_quantity"
-                                                    ]
-                                                  }
+                                              "addedResourceIds": {
+                                                "items": {
+                                                  "type": "string"
                                                 },
-                                                "required": [
-                                                  "addedResourceIds",
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "removedResourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                                "type": "array",
+                                                "description": "Resource IDs that were added."
+                                              },
+                                              "effectiveAt": {
+                                                "type": "string",
+                                                "description": "When this resource change should take effect for downstream consumers."
+                                              },
+                                              "removedResourceIds": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "Resource IDs that were removed."
+                                              },
+                                              "resourceIds": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "The full set of resource IDs after the change."
                                               }
-                                            ]
+                                            },
+                                            "required": [
+                                              "productAlias",
+                                              "productId",
+                                              "quantity"
+                                            ],
+                                            "type": "object",
+                                            "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
                                           },
                                           "type": "array",
                                           "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
@@ -3973,6 +3760,7 @@
                                         }
                                       },
                                       "required": [
+                                        "effectiveBehavior",
                                         "orbPriceId",
                                         "productId"
                                       ],
@@ -4019,6 +3807,14 @@
                                     },
                                     "output": {
                                       "properties": {
+                                        "effectiveBehavior": {
+                                          "type": "string",
+                                          "enum": [
+                                            "end_of_term",
+                                            "immediate"
+                                          ],
+                                          "description": "When the subscription change should take effect."
+                                        },
                                         "orbPriceId": {
                                           "type": "string",
                                           "description": "The Orb price ID for the subscription item being modified."
@@ -4029,167 +3825,52 @@
                                         },
                                         "changedResources": {
                                           "items": {
-                                            "oneOf": [
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "set_plan_item_quantity"
-                                                    ]
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "The full set of resource IDs after the set operation."
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                            "properties": {
+                                              "productAlias": {
+                                                "type": "string",
+                                                "description": "The alias of the product that was changed."
                                               },
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were added."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "increase_plan_item_quantity"
-                                                    ]
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "resourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                              "productId": {
+                                                "type": "string",
+                                                "description": "The ID of the product that was changed."
                                               },
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were removed."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "decrease_plan_item_quantity"
-                                                    ]
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "resourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                              "quantity": {
+                                                "type": "number",
+                                                "description": "The resulting quantity after this change."
                                               },
-                                              {
-                                                "properties": {
-                                                  "addedResourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were added."
-                                                  },
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "removedResourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were removed."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "adjust_plan_item_quantity"
-                                                    ]
-                                                  }
+                                              "addedResourceIds": {
+                                                "items": {
+                                                  "type": "string"
                                                 },
-                                                "required": [
-                                                  "addedResourceIds",
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "removedResourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                                "type": "array",
+                                                "description": "Resource IDs that were added."
+                                              },
+                                              "effectiveAt": {
+                                                "type": "string",
+                                                "description": "When this resource change should take effect for downstream consumers."
+                                              },
+                                              "removedResourceIds": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "Resource IDs that were removed."
+                                              },
+                                              "resourceIds": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "The full set of resource IDs after the change."
                                               }
-                                            ]
+                                            },
+                                            "required": [
+                                              "productAlias",
+                                              "productId",
+                                              "quantity"
+                                            ],
+                                            "type": "object",
+                                            "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
                                           },
                                           "type": "array",
                                           "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
@@ -4207,6 +3888,7 @@
                                         }
                                       },
                                       "required": [
+                                        "effectiveBehavior",
                                         "orbPriceId",
                                         "productId"
                                       ],
@@ -4261,6 +3943,14 @@
                                     },
                                     "output": {
                                       "properties": {
+                                        "effectiveBehavior": {
+                                          "type": "string",
+                                          "enum": [
+                                            "end_of_term",
+                                            "immediate"
+                                          ],
+                                          "description": "When the subscription change should take effect."
+                                        },
                                         "orbPriceId": {
                                           "type": "string",
                                           "description": "The Orb price ID for the subscription item being modified."
@@ -4271,167 +3961,52 @@
                                         },
                                         "changedResources": {
                                           "items": {
-                                            "oneOf": [
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "set_plan_item_quantity"
-                                                    ]
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "The full set of resource IDs after the set operation."
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                            "properties": {
+                                              "productAlias": {
+                                                "type": "string",
+                                                "description": "The alias of the product that was changed."
                                               },
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were added."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "increase_plan_item_quantity"
-                                                    ]
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "resourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                              "productId": {
+                                                "type": "string",
+                                                "description": "The ID of the product that was changed."
                                               },
-                                              {
-                                                "properties": {
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "resourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were removed."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "decrease_plan_item_quantity"
-                                                    ]
-                                                  }
-                                                },
-                                                "required": [
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "resourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                              "quantity": {
+                                                "type": "number",
+                                                "description": "The resulting quantity after this change."
                                               },
-                                              {
-                                                "properties": {
-                                                  "addedResourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were added."
-                                                  },
-                                                  "productAlias": {
-                                                    "type": "string",
-                                                    "description": "The alias of the product that was changed."
-                                                  },
-                                                  "productId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the product that was changed."
-                                                  },
-                                                  "quantity": {
-                                                    "type": "number",
-                                                    "description": "The resulting quantity after this change."
-                                                  },
-                                                  "removedResourceIds": {
-                                                    "items": {
-                                                      "type": "string"
-                                                    },
-                                                    "type": "array",
-                                                    "description": "Resource IDs that were removed."
-                                                  },
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "adjust_plan_item_quantity"
-                                                    ]
-                                                  }
+                                              "addedResourceIds": {
+                                                "items": {
+                                                  "type": "string"
                                                 },
-                                                "required": [
-                                                  "addedResourceIds",
-                                                  "productAlias",
-                                                  "productId",
-                                                  "quantity",
-                                                  "removedResourceIds",
-                                                  "type"
-                                                ],
-                                                "type": "object",
-                                                "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+                                                "type": "array",
+                                                "description": "Resource IDs that were added."
+                                              },
+                                              "effectiveAt": {
+                                                "type": "string",
+                                                "description": "When this resource change should take effect for downstream consumers."
+                                              },
+                                              "removedResourceIds": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "Resource IDs that were removed."
+                                              },
+                                              "resourceIds": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "The full set of resource IDs after the change."
                                               }
-                                            ]
+                                            },
+                                            "required": [
+                                              "productAlias",
+                                              "productId",
+                                              "quantity"
+                                            ],
+                                            "type": "object",
+                                            "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
                                           },
                                           "type": "array",
                                           "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
@@ -4449,6 +4024,7 @@
                                         }
                                       },
                                       "required": [
+                                        "effectiveBehavior",
                                         "orbPriceId",
                                         "productId"
                                       ],
