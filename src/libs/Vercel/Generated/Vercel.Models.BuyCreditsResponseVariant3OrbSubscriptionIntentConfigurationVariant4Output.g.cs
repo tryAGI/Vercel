@@ -9,6 +9,14 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Output
     {
         /// <summary>
+        /// When the subscription change should take effect.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("effectiveBehavior")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputEffectiveBehaviorJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputEffectiveBehavior EffectiveBehavior { get; set; }
+
+        /// <summary>
         /// The Orb price ID for the subscription item being modified.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("orbPriceId")]
@@ -26,7 +34,7 @@ namespace Vercel
         /// Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("changedResources")]
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResourceVariant1, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResourceVariant2, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResourceVariant3, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResourceVariant4>>? ChangedResources { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResource>? ChangedResources { get; set; }
 
         /// <summary>
         /// Optional metadata associated with the intent to update the Orb subscription with.
@@ -49,6 +57,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Output" /> class.
         /// </summary>
+        /// <param name="effectiveBehavior">
+        /// When the subscription change should take effect.
+        /// </param>
         /// <param name="orbPriceId">
         /// The Orb price ID for the subscription item being modified.
         /// </param>
@@ -68,12 +79,14 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Output(
+            global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputEffectiveBehavior effectiveBehavior,
             string orbPriceId,
             string productId,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResourceVariant1, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResourceVariant2, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResourceVariant3, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResourceVariant4>>? changedResources,
+            global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResource>? changedResources,
             global::System.Collections.Generic.Dictionary<string, string>? metadata,
             string? pendingSubscriptionChangeId)
         {
+            this.EffectiveBehavior = effectiveBehavior;
             this.OrbPriceId = orbPriceId ?? throw new global::System.ArgumentNullException(nameof(orbPriceId));
             this.ProductId = productId ?? throw new global::System.ArgumentNullException(nameof(productId));
             this.ChangedResources = changedResources;
