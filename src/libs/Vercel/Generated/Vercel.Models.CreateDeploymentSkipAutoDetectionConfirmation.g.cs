@@ -4,7 +4,8 @@
 namespace Vercel
 {
     /// <summary>
-    /// Allows to skip framework detection so the API would not fail to ask for confirmation
+    /// Set to `1` to skip framework auto-detection and proceed without confirmation. By default, if Vercel detects a framework that differs from the project setting, the API returns a `400` asking you to confirm. Use this to suppress that check in automated pipelines.<br/>
+    /// Example: 1
     /// </summary>
     public enum CreateDeploymentSkipAutoDetectionConfirmation
     {

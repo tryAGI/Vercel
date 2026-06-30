@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// The deployment including only public information
+    /// Returns a reduced view of the deployment with public information only. Private fields are omitted when the requester is not the deployment owner.
     /// </summary>
     public sealed partial class GetDeploymentResponseVariant2
     {

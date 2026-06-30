@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// The private deployment representation of a Deployment.
+    /// Returns the updated deployment object with `readyState` set to `CANCELED`. The build has been stopped and this action is irreversible.
     /// </summary>
     public sealed partial class CancelDeploymentResponse
     {

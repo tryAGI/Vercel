@@ -9,13 +9,15 @@ namespace Vercel
     public sealed partial class CreateDeploymentRequest
     {
         /// <summary>
-        /// Deploy to a custom environment, which will override the default environment
+        /// The slug or ID of a custom environment to deploy to, overriding the default target environment. When omitted, the deployment targets the environment inferred from the branch (production or preview).<br/>
+        /// Example: staging
         /// </summary>
+        /// <example>staging</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentSlugOrId")]
         public string? CustomEnvironmentSlugOrId { get; set; }
 
         /// <summary>
-        /// An deployment id for an existing deployment to redeploy<br/>
+        /// The ID of an existing deployment to redeploy. All project settings and environment variables are inherited from the original unless explicitly overridden in this request. The redeployment gets a new ID, URL, and build.<br/>
         /// Example: dpl_2qn7PZrx89yxY34vEZPD31Y9XVj6
         /// </summary>
         /// <example>dpl_2qn7PZrx89yxY34vEZPD31Y9XVj6</example>
@@ -23,7 +25,7 @@ namespace Vercel
         public string? DeploymentId { get; set; }
 
         /// <summary>
-        /// A list of objects with the files to be deployed
+        /// The files to include in the deployment. Each entry is either an inlined file (with `data` and `encoding`) or a reference to a previously uploaded file (with `sha` and `size`). Required for non-git deployments. Cannot be used together with `gitSource`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("files")]
         public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentRequestFileInlinedFile, global::Vercel.CreateDeploymentRequestFileUploadedFile>>? Files { get; set; }
@@ -106,14 +108,15 @@ namespace Vercel
         /// Example: my-instant-deployment
         /// </param>
         /// <param name="customEnvironmentSlugOrId">
-        /// Deploy to a custom environment, which will override the default environment
+        /// The slug or ID of a custom environment to deploy to, overriding the default target environment. When omitted, the deployment targets the environment inferred from the branch (production or preview).<br/>
+        /// Example: staging
         /// </param>
         /// <param name="deploymentId">
-        /// An deployment id for an existing deployment to redeploy<br/>
+        /// The ID of an existing deployment to redeploy. All project settings and environment variables are inherited from the original unless explicitly overridden in this request. The redeployment gets a new ID, URL, and build.<br/>
         /// Example: dpl_2qn7PZrx89yxY34vEZPD31Y9XVj6
         /// </param>
         /// <param name="files">
-        /// A list of objects with the files to be deployed
+        /// The files to include in the deployment. Each entry is either an inlined file (with `data` and `encoding`) or a reference to a previously uploaded file (with `sha` and `size`). Required for non-git deployments. Cannot be used together with `gitSource`.
         /// </param>
         /// <param name="gitMetadata">
         /// Populates initial git metadata for different git providers.
