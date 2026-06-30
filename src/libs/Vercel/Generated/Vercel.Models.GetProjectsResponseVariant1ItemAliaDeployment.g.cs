@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         public global::System.Collections.Generic.IList<string>? Alias { get; set; }
 
@@ -24,8 +31,64 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasError")]
+        public global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentAliasError? AliasError { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasFinal")]
+        public string? AliasFinal { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("automaticAliases")]
+        public global::System.Collections.Generic.IList<string>? AutomaticAliases { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("branchMatcher")]
+        public global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentBranchMatcher? BranchMatcher { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildingAt")]
+        public double? BuildingAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("builds")]
         public global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentBuild>? Builds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("checksConclusion")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemAliaDeploymentChecksConclusionJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentChecksConclusion? ChecksConclusion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("checksState")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemAliaDeploymentChecksStateJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentChecksState? ChecksState { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectBuildsEnabled")]
+        public bool? ConnectBuildsEnabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurationId")]
+        public string? ConnectConfigurationId { get; set; }
 
         /// <summary>
         /// 
@@ -50,9 +113,21 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
+        public double? DeletedAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentHostname")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DeploymentHostname { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("forced")]
+        public bool? Forced { get; set; }
 
         /// <summary>
         /// 
@@ -64,28 +139,36 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("forced")]
-        public bool? Forced { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
         public global::System.Collections.Generic.Dictionary<string, string>? Meta { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("monorepoManager")]
+        public string? MonorepoManager { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oidcTokenClaims")]
+        public global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentOidcTokenClaims? OidcTokenClaims { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemAliaDeploymentPlanJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Plan { get; set; }
+        public required global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentPlan Plan { get; set; }
+
+        /// <summary>
+        /// Whether or not preview comments are enabled for the deployment<br/>
+        /// Example: false
+        /// </summary>
+        /// <example>false</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previewCommentsEnabled")]
+        public bool? PreviewCommentsEnabled { get; set; }
 
         /// <summary>
         /// 
@@ -97,9 +180,23 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("readyAt")]
+        public double? ReadyAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("readyState")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemAliaDeploymentReadyStateJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ReadyState { get; set; }
+        public required global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentReadyState ReadyState { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("readySubstate")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemAliaDeploymentReadySubstateJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentReadySubstate? ReadySubstate { get; set; }
 
         /// <summary>
         /// 
@@ -123,8 +220,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemAliaDeploymentTypeJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentType Type { get; set; }
 
         /// <summary>
         /// 
@@ -155,71 +252,119 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant1ItemAliaDeployment" /> class.
         /// </summary>
+        /// <param name="id"></param>
         /// <param name="createdAt"></param>
         /// <param name="createdIn"></param>
         /// <param name="deploymentHostname"></param>
         /// <param name="name"></param>
-        /// <param name="id"></param>
         /// <param name="plan"></param>
         /// <param name="private"></param>
         /// <param name="readyState"></param>
-        /// <param name="type"></param>
         /// <param name="url"></param>
         /// <param name="userId"></param>
         /// <param name="alias"></param>
         /// <param name="aliasAssigned"></param>
+        /// <param name="aliasError"></param>
+        /// <param name="aliasFinal"></param>
+        /// <param name="automaticAliases"></param>
+        /// <param name="branchMatcher"></param>
+        /// <param name="buildingAt"></param>
         /// <param name="builds"></param>
+        /// <param name="checksConclusion"></param>
+        /// <param name="checksState"></param>
+        /// <param name="connectBuildsEnabled"></param>
+        /// <param name="connectConfigurationId"></param>
         /// <param name="creator"></param>
+        /// <param name="deletedAt"></param>
         /// <param name="forced"></param>
         /// <param name="meta"></param>
+        /// <param name="monorepoManager"></param>
+        /// <param name="oidcTokenClaims"></param>
+        /// <param name="previewCommentsEnabled">
+        /// Whether or not preview comments are enabled for the deployment<br/>
+        /// Example: false
+        /// </param>
+        /// <param name="readyAt"></param>
+        /// <param name="readySubstate"></param>
         /// <param name="requestedAt"></param>
         /// <param name="target"></param>
         /// <param name="teamId"></param>
+        /// <param name="type"></param>
         /// <param name="withCache"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant1ItemAliaDeployment(
+            string id,
             double createdAt,
             string createdIn,
             string deploymentHostname,
             string name,
-            string id,
-            string plan,
+            global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentPlan plan,
             bool @private,
-            string readyState,
-            string type,
+            global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentReadyState readyState,
             string url,
             string userId,
             global::System.Collections.Generic.IList<string>? alias,
             global::Vercel.OneOf<double?, bool?>? aliasAssigned,
+            global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentAliasError? aliasError,
+            string? aliasFinal,
+            global::System.Collections.Generic.IList<string>? automaticAliases,
+            global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentBranchMatcher? branchMatcher,
+            double? buildingAt,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentBuild>? builds,
+            global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentChecksConclusion? checksConclusion,
+            global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentChecksState? checksState,
+            bool? connectBuildsEnabled,
+            string? connectConfigurationId,
             global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentCreator? creator,
+            double? deletedAt,
             bool? forced,
             global::System.Collections.Generic.Dictionary<string, string>? meta,
+            string? monorepoManager,
+            global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentOidcTokenClaims? oidcTokenClaims,
+            bool? previewCommentsEnabled,
+            double? readyAt,
+            global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentReadySubstate? readySubstate,
             double? requestedAt,
             string? target,
             string? teamId,
+            global::Vercel.GetProjectsResponseVariant1ItemAliaDeploymentType type,
             bool? withCache)
         {
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Alias = alias;
             this.AliasAssigned = aliasAssigned;
+            this.AliasError = aliasError;
+            this.AliasFinal = aliasFinal;
+            this.AutomaticAliases = automaticAliases;
+            this.BranchMatcher = branchMatcher;
+            this.BuildingAt = buildingAt;
             this.Builds = builds;
+            this.ChecksConclusion = checksConclusion;
+            this.ChecksState = checksState;
+            this.ConnectBuildsEnabled = connectBuildsEnabled;
+            this.ConnectConfigurationId = connectConfigurationId;
             this.CreatedAt = createdAt;
             this.CreatedIn = createdIn ?? throw new global::System.ArgumentNullException(nameof(createdIn));
             this.Creator = creator;
+            this.DeletedAt = deletedAt;
             this.DeploymentHostname = deploymentHostname ?? throw new global::System.ArgumentNullException(nameof(deploymentHostname));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Forced = forced;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Meta = meta;
-            this.Plan = plan ?? throw new global::System.ArgumentNullException(nameof(plan));
+            this.MonorepoManager = monorepoManager;
+            this.OidcTokenClaims = oidcTokenClaims;
+            this.Plan = plan;
+            this.PreviewCommentsEnabled = previewCommentsEnabled;
             this.Private = @private;
-            this.ReadyState = readyState ?? throw new global::System.ArgumentNullException(nameof(readyState));
+            this.ReadyAt = readyAt;
+            this.ReadyState = readyState;
+            this.ReadySubstate = readySubstate;
             this.RequestedAt = requestedAt;
             this.Target = target;
             this.TeamId = teamId;
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
+            this.Type = type;
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
             this.WithCache = withCache;

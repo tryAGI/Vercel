@@ -18,6 +18,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant3ProjectAlia> Alias { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("analytics")]
         public global::Vercel.GetProjectsResponseVariant3ProjectAnalytics? Analytics { get; set; }
 
@@ -597,6 +604,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant3Project" /> class.
         /// </summary>
         /// <param name="accountId"></param>
+        /// <param name="alias"></param>
         /// <param name="deploymentExpiration">
         /// Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects.
         /// </param>
@@ -703,6 +711,7 @@ namespace Vercel
 #endif
         public GetProjectsResponseVariant3Project(
             string accountId,
+            global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant3ProjectAlia> alias,
             global::Vercel.GetProjectsResponseVariant3ProjectDeploymentExpiration deploymentExpiration,
             bool directoryListing,
             string id,
@@ -798,6 +807,7 @@ namespace Vercel
             string? avatar)
         {
             this.AccountId = accountId ?? throw new global::System.ArgumentNullException(nameof(accountId));
+            this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
             this.Analytics = analytics;
             this.AppliedCve55182Migration = appliedCve55182Migration;
             this.SpeedInsights = speedInsights;

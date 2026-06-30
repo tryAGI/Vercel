@@ -28,6 +28,16 @@ namespace Vercel
         public required double CreatedAt { get; set; }
 
         /// <summary>
+        /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state<br/>
+        /// Example: READY
+        /// </summary>
+        /// <example>READY</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("readyState")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.StartRollingReleaseResponseRollingReleaseCurrentDeploymentReadyStateJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.StartRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState ReadyState { get; set; }
+
+        /// <summary>
         /// A string holding the unique ID of the deployment<br/>
         /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
         /// </summary>
@@ -44,16 +54,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("target")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.StartRollingReleaseResponseRollingReleaseCurrentDeploymentTargetJsonConverter))]
         public global::Vercel.StartRollingReleaseResponseRollingReleaseCurrentDeploymentTarget? Target { get; set; }
-
-        /// <summary>
-        /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state<br/>
-        /// Example: READY
-        /// </summary>
-        /// <example>READY</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("readyState")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.StartRollingReleaseResponseRollingReleaseCurrentDeploymentReadyStateJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.StartRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState ReadyState { get; set; }
 
         /// <summary>
         /// 
@@ -96,13 +96,13 @@ namespace Vercel
         /// A number containing the date when the deployment was created in milliseconds<br/>
         /// Example: 1540257589405L
         /// </param>
-        /// <param name="id">
-        /// A string holding the unique ID of the deployment<br/>
-        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
-        /// </param>
         /// <param name="readyState">
         /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state<br/>
         /// Example: READY
+        /// </param>
+        /// <param name="id">
+        /// A string holding the unique ID of the deployment<br/>
+        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
         /// </param>
         /// <param name="url">
         /// A string with the unique URL of the deployment<br/>
@@ -123,8 +123,8 @@ namespace Vercel
         public StartRollingReleaseResponseRollingReleaseCurrentDeployment(
             string name,
             double createdAt,
-            string id,
             global::Vercel.StartRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState readyState,
+            string id,
             string url,
             global::Vercel.StartRollingReleaseResponseRollingReleaseCurrentDeploymentTarget? target,
             double? readyStateAt,
@@ -132,9 +132,9 @@ namespace Vercel
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.CreatedAt = createdAt;
+            this.ReadyState = readyState;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Target = target;
-            this.ReadyState = readyState;
             this.ReadyStateAt = readyStateAt;
             this.Source = source;
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));

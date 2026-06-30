@@ -27,13 +27,13 @@ namespace Vercel
             };
         partial void PrepareGetProjectArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref global::Vercel.OneOf<string, bool?> idOrName,
+            ref string idOrName,
             ref string? teamId,
             ref string? slug);
         partial void PrepareGetProjectRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::Vercel.OneOf<string, bool?> idOrName,
+            string idOrName,
             string? teamId,
             string? slug);
         partial void ProcessGetProjectResponse(
@@ -50,7 +50,8 @@ namespace Vercel
         /// Get the information for a specific project by passing either the project `id` or `name` in the URL.
         /// </summary>
         /// <param name="idOrName">
-        /// The unique project identifier or the project name
+        /// The unique project identifier or the project name<br/>
+        /// Example: prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -62,7 +63,7 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.GetProjectResponse> GetProjectAsync(
-            global::Vercel.OneOf<string, bool?> idOrName,
+            string idOrName,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -83,7 +84,8 @@ namespace Vercel
         /// Get the information for a specific project by passing either the project `id` or `name` in the URL.
         /// </summary>
         /// <param name="idOrName">
-        /// The unique project identifier or the project name
+        /// The unique project identifier or the project name<br/>
+        /// Example: prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -95,7 +97,7 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetProjectResponse>> GetProjectAsResponseAsync(
-            global::Vercel.OneOf<string, bool?> idOrName,
+            string idOrName,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

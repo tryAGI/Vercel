@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Cancel a deployment<br/>
-        /// This endpoint allows you to cancel a deployment which is currently building, by supplying its `id` in the URL.
+        /// Cancels a deployment that is currently in progress, stopping the build before it completes. Use this to recover quickly from accidental deploys, wrong-branch pushes, or builds with known errors — without waiting for them to finish. Returns 400 if the deployment is no longer cancelable (already `READY`, `ERROR`, or `CANCELED`). Returns the updated deployment object with `readyState: 'CANCELED'` on success.
         /// </summary>
         /// <param name="id">
         /// The unique identifier of the deployment.<br/>
@@ -29,7 +29,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Cancel a deployment<br/>
-        /// This endpoint allows you to cancel a deployment which is currently building, by supplying its `id` in the URL.
+        /// Cancels a deployment that is currently in progress, stopping the build before it completes. Use this to recover quickly from accidental deploys, wrong-branch pushes, or builds with known errors — without waiting for them to finish. Returns 400 if the deployment is no longer cancelable (already `READY`, `ERROR`, or `CANCELED`). Returns the updated deployment object with `readyState: 'CANCELED'` on success.
         /// </summary>
         /// <param name="id">
         /// The unique identifier of the deployment.<br/>

@@ -56,7 +56,7 @@ namespace Vercel
         /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
         /// </param>
         /// <param name="withGitRepoInfo">
-        /// Whether to add in gitRepo information.<br/>
+        /// When `true`, the response includes the `gitSource` object with the commit SHA, branch name, and connected repository metadata. Defaults to `false`.<br/>
         /// Example: true
         /// </param>
         /// <param name="teamId">
@@ -96,7 +96,7 @@ namespace Vercel
         /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
         /// </param>
         /// <param name="withGitRepoInfo">
-        /// Whether to add in gitRepo information.<br/>
+        /// When `true`, the response includes the `gitSource` object with the commit SHA, branch name, and connected repository metadata. Defaults to `false`.<br/>
         /// Example: true
         /// </param>
         /// <param name="teamId">

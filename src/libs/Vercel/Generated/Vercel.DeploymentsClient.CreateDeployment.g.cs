@@ -51,13 +51,15 @@ namespace Vercel
 
         /// <summary>
         /// Create a new deployment<br/>
-        /// Create a new deployment with all the required and intended data. If the deployment is not a git deployment, all files must be provided with the request, either referenced or inlined. Additionally, a deployment id can be specified to redeploy a previous deployment.
+        /// Creates a new deployment for the authenticated team or user. For non-git deployments, upload files first via the file upload API, then reference them here by SHA — or inline small files directly in the request body. To redeploy an existing deployment, provide its `deploymentId`; all settings are inherited unless explicitly overridden. The deployment begins building immediately and transitions through `QUEUED` → `INITIALIZING` → `BUILDING` before reaching `READY` or `ERROR`.
         /// </summary>
         /// <param name="forceNew">
-        /// Forces a new deployment even if there is a previous similar deployment
+        /// Forces a new deployment even if there is a previous similar deployment. Set to `1` to bypass deployment deduplication and always trigger a fresh build.<br/>
+        /// Example: 1
         /// </param>
         /// <param name="skipAutoDetectionConfirmation">
-        /// Allows to skip framework detection so the API would not fail to ask for confirmation
+        /// Set to `1` to skip framework auto-detection and proceed without confirmation. By default, if Vercel detects a framework that differs from the project setting, the API returns a `400` asking you to confirm. Use this to suppress that check in automated pipelines.<br/>
+        /// Example: 1
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -94,13 +96,15 @@ namespace Vercel
         }
         /// <summary>
         /// Create a new deployment<br/>
-        /// Create a new deployment with all the required and intended data. If the deployment is not a git deployment, all files must be provided with the request, either referenced or inlined. Additionally, a deployment id can be specified to redeploy a previous deployment.
+        /// Creates a new deployment for the authenticated team or user. For non-git deployments, upload files first via the file upload API, then reference them here by SHA — or inline small files directly in the request body. To redeploy an existing deployment, provide its `deploymentId`; all settings are inherited unless explicitly overridden. The deployment begins building immediately and transitions through `QUEUED` → `INITIALIZING` → `BUILDING` before reaching `READY` or `ERROR`.
         /// </summary>
         /// <param name="forceNew">
-        /// Forces a new deployment even if there is a previous similar deployment
+        /// Forces a new deployment even if there is a previous similar deployment. Set to `1` to bypass deployment deduplication and always trigger a fresh build.<br/>
+        /// Example: 1
         /// </param>
         /// <param name="skipAutoDetectionConfirmation">
-        /// Allows to skip framework detection so the API would not fail to ask for confirmation
+        /// Set to `1` to skip framework auto-detection and proceed without confirmation. By default, if Vercel detects a framework that differs from the project setting, the API returns a `400` asking you to confirm. Use this to suppress that check in automated pipelines.<br/>
+        /// Example: 1
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -813,13 +817,15 @@ namespace Vercel
         }
         /// <summary>
         /// Create a new deployment<br/>
-        /// Create a new deployment with all the required and intended data. If the deployment is not a git deployment, all files must be provided with the request, either referenced or inlined. Additionally, a deployment id can be specified to redeploy a previous deployment.
+        /// Creates a new deployment for the authenticated team or user. For non-git deployments, upload files first via the file upload API, then reference them here by SHA — or inline small files directly in the request body. To redeploy an existing deployment, provide its `deploymentId`; all settings are inherited unless explicitly overridden. The deployment begins building immediately and transitions through `QUEUED` → `INITIALIZING` → `BUILDING` before reaching `READY` or `ERROR`.
         /// </summary>
         /// <param name="forceNew">
-        /// Forces a new deployment even if there is a previous similar deployment
+        /// Forces a new deployment even if there is a previous similar deployment. Set to `1` to bypass deployment deduplication and always trigger a fresh build.<br/>
+        /// Example: 1
         /// </param>
         /// <param name="skipAutoDetectionConfirmation">
-        /// Allows to skip framework detection so the API would not fail to ask for confirmation
+        /// Set to `1` to skip framework auto-detection and proceed without confirmation. By default, if Vercel detects a framework that differs from the project setting, the API returns a `400` asking you to confirm. Use this to suppress that check in automated pipelines.<br/>
+        /// Example: 1
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -828,14 +834,15 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="customEnvironmentSlugOrId">
-        /// Deploy to a custom environment, which will override the default environment
+        /// The slug or ID of a custom environment to deploy to, overriding the default target environment. When omitted, the deployment targets the environment inferred from the branch (production or preview).<br/>
+        /// Example: staging
         /// </param>
         /// <param name="deploymentId">
-        /// An deployment id for an existing deployment to redeploy<br/>
+        /// The ID of an existing deployment to redeploy. All project settings and environment variables are inherited from the original unless explicitly overridden in this request. The redeployment gets a new ID, URL, and build.<br/>
         /// Example: dpl_2qn7PZrx89yxY34vEZPD31Y9XVj6
         /// </param>
         /// <param name="files">
-        /// A list of objects with the files to be deployed
+        /// The files to include in the deployment. Each entry is either an inlined file (with `data` and `encoding`) or a reference to a previously uploaded file (with `sha` and `size`). Required for non-git deployments. Cannot be used together with `gitSource`.
         /// </param>
         /// <param name="gitMetadata">
         /// Populates initial git metadata for different git providers.
