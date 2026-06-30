@@ -73924,6 +73924,19 @@
                               "buildMachineElasticLastUpdated": {
                                 "type": "number"
                               },
+                              "buildMachineElasticReason": {
+                                "type": "string",
+                                "enum": [
+                                  "enospc-failure",
+                                  "enterprise-floor",
+                                  "high-peak-disk",
+                                  "high-peak-memory",
+                                  "long-build-duration",
+                                  "oom-failure",
+                                  "short-build-duration",
+                                  "sustained-high-cpu"
+                                ]
+                              },
                               "isNSNBDisabled": {
                                 "type": "boolean",
                                 "enum": [
@@ -74108,6 +74121,19 @@
                               },
                               "buildMachineElasticLastUpdated": {
                                 "type": "number"
+                              },
+                              "buildMachineElasticReason": {
+                                "type": "string",
+                                "enum": [
+                                  "enospc-failure",
+                                  "enterprise-floor",
+                                  "high-peak-disk",
+                                  "high-peak-memory",
+                                  "long-build-duration",
+                                  "oom-failure",
+                                  "short-build-duration",
+                                  "sustained-high-cpu"
+                                ]
                               },
                               "isNSNBDisabled": {
                                 "type": "boolean",
@@ -86519,6 +86545,19 @@
                               "buildMachineElasticLastUpdated": {
                                 "type": "number"
                               },
+                              "buildMachineElasticReason": {
+                                "type": "string",
+                                "enum": [
+                                  "enospc-failure",
+                                  "enterprise-floor",
+                                  "high-peak-disk",
+                                  "high-peak-memory",
+                                  "long-build-duration",
+                                  "oom-failure",
+                                  "short-build-duration",
+                                  "sustained-high-cpu"
+                                ]
+                              },
                               "isNSNBDisabled": {
                                 "type": "boolean",
                                 "enum": [
@@ -90357,6 +90396,19 @@
                                   },
                                   "buildMachineElasticLastUpdated": {
                                     "type": "number"
+                                  },
+                                  "buildMachineElasticReason": {
+                                    "type": "string",
+                                    "enum": [
+                                      "enospc-failure",
+                                      "enterprise-floor",
+                                      "high-peak-disk",
+                                      "high-peak-memory",
+                                      "long-build-duration",
+                                      "oom-failure",
+                                      "short-build-duration",
+                                      "sustained-high-cpu"
+                                    ]
                                   },
                                   "isNSNBDisabled": {
                                     "type": "boolean",
@@ -95006,6 +95058,19 @@
                                   "buildMachineElasticLastUpdated": {
                                     "type": "number"
                                   },
+                                  "buildMachineElasticReason": {
+                                    "type": "string",
+                                    "enum": [
+                                      "enospc-failure",
+                                      "enterprise-floor",
+                                      "high-peak-disk",
+                                      "high-peak-memory",
+                                      "long-build-duration",
+                                      "oom-failure",
+                                      "short-build-duration",
+                                      "sustained-high-cpu"
+                                    ]
+                                  },
                                   "isNSNBDisabled": {
                                     "type": "boolean",
                                     "enum": [
@@ -95190,6 +95255,19 @@
                                   },
                                   "buildMachineElasticLastUpdated": {
                                     "type": "number"
+                                  },
+                                  "buildMachineElasticReason": {
+                                    "type": "string",
+                                    "enum": [
+                                      "enospc-failure",
+                                      "enterprise-floor",
+                                      "high-peak-disk",
+                                      "high-peak-memory",
+                                      "long-build-duration",
+                                      "oom-failure",
+                                      "short-build-duration",
+                                      "sustained-high-cpu"
+                                    ]
                                   },
                                   "isNSNBDisabled": {
                                     "type": "boolean",
@@ -101905,6 +101983,19 @@
                         "buildMachineElasticLastUpdated": {
                           "type": "number"
                         },
+                        "buildMachineElasticReason": {
+                          "type": "string",
+                          "enum": [
+                            "enospc-failure",
+                            "enterprise-floor",
+                            "high-peak-disk",
+                            "high-peak-memory",
+                            "long-build-duration",
+                            "oom-failure",
+                            "short-build-duration",
+                            "sustained-high-cpu"
+                          ]
+                        },
                         "isNSNBDisabled": {
                           "type": "boolean",
                           "enum": [
@@ -102089,6 +102180,19 @@
                         },
                         "buildMachineElasticLastUpdated": {
                           "type": "number"
+                        },
+                        "buildMachineElasticReason": {
+                          "type": "string",
+                          "enum": [
+                            "enospc-failure",
+                            "enterprise-floor",
+                            "high-peak-disk",
+                            "high-peak-memory",
+                            "long-build-duration",
+                            "oom-failure",
+                            "short-build-duration",
+                            "sustained-high-cpu"
+                          ]
                         },
                         "isNSNBDisabled": {
                           "type": "boolean",
@@ -106488,6 +106592,18 @@
                       "buildMachineElasticLastUpdated": {
                         "type": "number"
                       },
+                      "buildMachineElasticReason": {
+                        "enum": [
+                          "oom-failure",
+                          "enospc-failure",
+                          "high-peak-memory",
+                          "sustained-high-cpu",
+                          "high-peak-disk",
+                          "long-build-duration",
+                          "short-build-duration",
+                          "enterprise-floor"
+                        ]
+                      },
                       "isNSNBDisabled": {
                         "type": "boolean"
                       },
@@ -109044,6 +109160,19 @@
                         "buildMachineElasticLastUpdated": {
                           "type": "number"
                         },
+                        "buildMachineElasticReason": {
+                          "type": "string",
+                          "enum": [
+                            "enospc-failure",
+                            "enterprise-floor",
+                            "high-peak-disk",
+                            "high-peak-memory",
+                            "long-build-duration",
+                            "oom-failure",
+                            "short-build-duration",
+                            "sustained-high-cpu"
+                          ]
+                        },
                         "isNSNBDisabled": {
                           "type": "boolean",
                           "enum": [
@@ -109228,6 +109357,19 @@
                         },
                         "buildMachineElasticLastUpdated": {
                           "type": "number"
+                        },
+                        "buildMachineElasticReason": {
+                          "type": "string",
+                          "enum": [
+                            "enospc-failure",
+                            "enterprise-floor",
+                            "high-peak-disk",
+                            "high-peak-memory",
+                            "long-build-duration",
+                            "oom-failure",
+                            "short-build-duration",
+                            "sustained-high-cpu"
+                          ]
                         },
                         "isNSNBDisabled": {
                           "type": "boolean",
@@ -115751,6 +115893,19 @@
                         "buildMachineElasticLastUpdated": {
                           "type": "number"
                         },
+                        "buildMachineElasticReason": {
+                          "type": "string",
+                          "enum": [
+                            "enospc-failure",
+                            "enterprise-floor",
+                            "high-peak-disk",
+                            "high-peak-memory",
+                            "long-build-duration",
+                            "oom-failure",
+                            "short-build-duration",
+                            "sustained-high-cpu"
+                          ]
+                        },
                         "isNSNBDisabled": {
                           "type": "boolean",
                           "enum": [
@@ -115935,6 +116090,19 @@
                         },
                         "buildMachineElasticLastUpdated": {
                           "type": "number"
+                        },
+                        "buildMachineElasticReason": {
+                          "type": "string",
+                          "enum": [
+                            "enospc-failure",
+                            "enterprise-floor",
+                            "high-peak-disk",
+                            "high-peak-memory",
+                            "long-build-duration",
+                            "oom-failure",
+                            "short-build-duration",
+                            "sustained-high-cpu"
+                          ]
                         },
                         "isNSNBDisabled": {
                           "type": "boolean",
@@ -120235,6 +120403,18 @@
                       "buildMachineElasticLastUpdated": {
                         "type": "number"
                       },
+                      "buildMachineElasticReason": {
+                        "enum": [
+                          "oom-failure",
+                          "enospc-failure",
+                          "high-peak-memory",
+                          "sustained-high-cpu",
+                          "high-peak-disk",
+                          "long-build-duration",
+                          "short-build-duration",
+                          "enterprise-floor"
+                        ]
+                      },
                       "isNSNBDisabled": {
                         "type": "boolean"
                       },
@@ -123678,6 +123858,19 @@
                         "buildMachineElasticLastUpdated": {
                           "type": "number"
                         },
+                        "buildMachineElasticReason": {
+                          "type": "string",
+                          "enum": [
+                            "enospc-failure",
+                            "enterprise-floor",
+                            "high-peak-disk",
+                            "high-peak-memory",
+                            "long-build-duration",
+                            "oom-failure",
+                            "short-build-duration",
+                            "sustained-high-cpu"
+                          ]
+                        },
                         "isNSNBDisabled": {
                           "type": "boolean",
                           "enum": [
@@ -123862,6 +124055,19 @@
                         },
                         "buildMachineElasticLastUpdated": {
                           "type": "number"
+                        },
+                        "buildMachineElasticReason": {
+                          "type": "string",
+                          "enum": [
+                            "enospc-failure",
+                            "enterprise-floor",
+                            "high-peak-disk",
+                            "high-peak-memory",
+                            "long-build-duration",
+                            "oom-failure",
+                            "short-build-duration",
+                            "sustained-high-cpu"
+                          ]
                         },
                         "isNSNBDisabled": {
                           "type": "boolean",
@@ -139382,6 +139588,19 @@
                         "buildMachineElasticLastUpdated": {
                           "type": "number"
                         },
+                        "buildMachineElasticReason": {
+                          "type": "string",
+                          "enum": [
+                            "enospc-failure",
+                            "enterprise-floor",
+                            "high-peak-disk",
+                            "high-peak-memory",
+                            "long-build-duration",
+                            "oom-failure",
+                            "short-build-duration",
+                            "sustained-high-cpu"
+                          ]
+                        },
                         "isNSNBDisabled": {
                           "type": "boolean",
                           "enum": [
@@ -139566,6 +139785,19 @@
                         },
                         "buildMachineElasticLastUpdated": {
                           "type": "number"
+                        },
+                        "buildMachineElasticReason": {
+                          "type": "string",
+                          "enum": [
+                            "enospc-failure",
+                            "enterprise-floor",
+                            "high-peak-disk",
+                            "high-peak-memory",
+                            "long-build-duration",
+                            "oom-failure",
+                            "short-build-duration",
+                            "sustained-high-cpu"
+                          ]
                         },
                         "isNSNBDisabled": {
                           "type": "boolean",
@@ -180047,6 +180279,12 @@
               "managedTeams": {
                 "items": {
                   "properties": {
+                    "teamId": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
                     "name": {
                       "type": "string"
                     },
@@ -180057,7 +180295,9 @@
                   },
                   "required": [
                     "avatar",
-                    "name"
+                    "name",
+                    "slug",
+                    "teamId"
                   ],
                   "type": "object"
                 },

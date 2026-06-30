@@ -69,6 +69,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticReason")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemResourceConfigBuildMachineElasticReasonJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant1ItemResourceConfigBuildMachineElasticReason? BuildMachineElasticReason { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isNSNBDisabled")]
         public bool? IsNSNBDisabled { get; set; }
 
@@ -102,6 +109,7 @@ namespace Vercel
         /// <param name="buildMachineType"></param>
         /// <param name="buildMachineSelection"></param>
         /// <param name="buildMachineElasticLastUpdated"></param>
+        /// <param name="buildMachineElasticReason"></param>
         /// <param name="isNSNBDisabled"></param>
         /// <param name="buildQueue"></param>
         /// <param name="enableFunctionsBeta"></param>
@@ -118,6 +126,7 @@ namespace Vercel
             global::Vercel.GetProjectsResponseVariant1ItemResourceConfigBuildMachineType? buildMachineType,
             global::Vercel.GetProjectsResponseVariant1ItemResourceConfigBuildMachineSelection? buildMachineSelection,
             double? buildMachineElasticLastUpdated,
+            global::Vercel.GetProjectsResponseVariant1ItemResourceConfigBuildMachineElasticReason? buildMachineElasticReason,
             bool? isNSNBDisabled,
             global::Vercel.GetProjectsResponseVariant1ItemResourceConfigBuildQueue? buildQueue,
             bool? enableFunctionsBeta)
@@ -131,6 +140,7 @@ namespace Vercel
             this.BuildMachineType = buildMachineType;
             this.BuildMachineSelection = buildMachineSelection;
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
+            this.BuildMachineElasticReason = buildMachineElasticReason;
             this.IsNSNBDisabled = isNSNBDisabled;
             this.BuildQueue = buildQueue;
             this.EnableFunctionsBeta = enableFunctionsBeta;
