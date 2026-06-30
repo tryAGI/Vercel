@@ -1632,6 +1632,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SecurityListCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        SecurityListDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        SecurityListUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         SecurityPlusUpdated,
         /// <summary>
         /// 
@@ -2576,6 +2588,9 @@ namespace Vercel
                 UserEventType.SecretAdd => "secret-add",
                 UserEventType.SecretDelete => "secret-delete",
                 UserEventType.SecretRename => "secret-rename",
+                UserEventType.SecurityListCreated => "security-list-created",
+                UserEventType.SecurityListDeleted => "security-list-deleted",
+                UserEventType.SecurityListUpdated => "security-list-updated",
                 UserEventType.SecurityPlusUpdated => "security-plus-updated",
                 UserEventType.SetBio => "set-bio",
                 UserEventType.SetName => "set-name",
@@ -3123,6 +3138,9 @@ namespace Vercel
                 "secret-add" => UserEventType.SecretAdd,
                 "secret-delete" => UserEventType.SecretDelete,
                 "secret-rename" => UserEventType.SecretRename,
+                "security-list-created" => UserEventType.SecurityListCreated,
+                "security-list-deleted" => UserEventType.SecurityListDeleted,
+                "security-list-updated" => UserEventType.SecurityListUpdated,
                 "security-plus-updated" => UserEventType.SecurityPlusUpdated,
                 "set-bio" => UserEventType.SetBio,
                 "set-name" => UserEventType.SetName,

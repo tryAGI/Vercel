@@ -1631,6 +1631,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SecurityListCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        SecurityListDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        SecurityListUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         SecurityPlusUpdated,
         /// <summary>
         /// 
@@ -2575,6 +2587,9 @@ namespace Vercel
                 ListEventTypeReplacedByItem.SecretAdd => "secret-add",
                 ListEventTypeReplacedByItem.SecretDelete => "secret-delete",
                 ListEventTypeReplacedByItem.SecretRename => "secret-rename",
+                ListEventTypeReplacedByItem.SecurityListCreated => "security-list-created",
+                ListEventTypeReplacedByItem.SecurityListDeleted => "security-list-deleted",
+                ListEventTypeReplacedByItem.SecurityListUpdated => "security-list-updated",
                 ListEventTypeReplacedByItem.SecurityPlusUpdated => "security-plus-updated",
                 ListEventTypeReplacedByItem.SetBio => "set-bio",
                 ListEventTypeReplacedByItem.SetName => "set-name",
@@ -3122,6 +3137,9 @@ namespace Vercel
                 "secret-add" => ListEventTypeReplacedByItem.SecretAdd,
                 "secret-delete" => ListEventTypeReplacedByItem.SecretDelete,
                 "secret-rename" => ListEventTypeReplacedByItem.SecretRename,
+                "security-list-created" => ListEventTypeReplacedByItem.SecurityListCreated,
+                "security-list-deleted" => ListEventTypeReplacedByItem.SecurityListDeleted,
+                "security-list-updated" => ListEventTypeReplacedByItem.SecurityListUpdated,
                 "security-plus-updated" => ListEventTypeReplacedByItem.SecurityPlusUpdated,
                 "set-bio" => ListEventTypeReplacedByItem.SetBio,
                 "set-name" => ListEventTypeReplacedByItem.SetName,
