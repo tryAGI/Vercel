@@ -68,6 +68,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticReason")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectRequestResourceConfigBuildMachineElasticReasonJsonConverter))]
+        public global::Vercel.CreateProjectRequestResourceConfigBuildMachineElasticReason? BuildMachineElasticReason { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isNSNBDisabled")]
         public bool? IsNSNBDisabled { get; set; }
 
@@ -105,6 +112,7 @@ namespace Vercel
         /// <param name="elasticConcurrencyEnabled"></param>
         /// <param name="buildMachineSelection"></param>
         /// <param name="buildMachineElasticLastUpdated"></param>
+        /// <param name="buildMachineElasticReason"></param>
         /// <param name="isNSNBDisabled"></param>
         /// <param name="buildQueue"></param>
         /// <param name="enableFunctionsBeta"></param>
@@ -121,6 +129,7 @@ namespace Vercel
             bool? elasticConcurrencyEnabled,
             global::Vercel.CreateProjectRequestResourceConfigBuildMachineSelection? buildMachineSelection,
             double? buildMachineElasticLastUpdated,
+            global::Vercel.CreateProjectRequestResourceConfigBuildMachineElasticReason? buildMachineElasticReason,
             bool? isNSNBDisabled,
             global::Vercel.CreateProjectRequestResourceConfigBuildQueue? buildQueue,
             bool? enableFunctionsBeta)
@@ -134,6 +143,7 @@ namespace Vercel
             this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
             this.BuildMachineSelection = buildMachineSelection;
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
+            this.BuildMachineElasticReason = buildMachineElasticReason;
             this.IsNSNBDisabled = isNSNBDisabled;
             this.BuildQueue = buildQueue;
             this.EnableFunctionsBeta = enableFunctionsBeta;
