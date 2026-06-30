@@ -16,6 +16,12 @@ namespace Vercel
         public global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
 
         /// <summary>
+        /// Image to use for the sandbox.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("image")]
+        public string? Image { get; set; }
+
+        /// <summary>
         /// Resources to define the VM
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resources")]
@@ -125,6 +131,9 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateSandboxesRequest" /> class.
         /// </summary>
         /// <param name="networkPolicy"></param>
+        /// <param name="image">
+        /// Image to use for the sandbox.
+        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
@@ -180,6 +189,7 @@ namespace Vercel
 #endif
         public CreateSandboxesRequest(
             global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>? networkPolicy,
+            string? image,
             global::Vercel.CreateSandboxesRequestResources? resources,
             global::Vercel.CreateSandboxesRequestRuntime? runtime,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestSourceVariant1, global::Vercel.CreateSandboxesRequestSourceVariant2, global::Vercel.CreateSandboxesRequestSourceVariant3>? source,
@@ -195,6 +205,7 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, string>? tags)
         {
             this.NetworkPolicy = networkPolicy;
+            this.Image = image;
             this.Resources = resources;
             this.Runtime = runtime;
             this.Source = source;

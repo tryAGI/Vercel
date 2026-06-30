@@ -96,6 +96,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayModelAllowlistModelsUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayModelAllowlistToggled,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayPrivateModelCreated,
         /// <summary>
         /// 
@@ -2184,6 +2192,8 @@ namespace Vercel
                 UserEventType.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 UserEventType.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 UserEventType.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                UserEventType.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
+                UserEventType.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
                 UserEventType.AiGatewayPrivateModelCreated => "ai-gateway-private-model-created",
                 UserEventType.AiGatewayPrivateModelDeleted => "ai-gateway-private-model-deleted",
                 UserEventType.AiGatewayPrivateModelUpdated => "ai-gateway-private-model-updated",
@@ -2729,6 +2739,8 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => UserEventType.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => UserEventType.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => UserEventType.AiGatewayByokCredentialUpdated,
+                "ai-gateway-model-allowlist-models-updated" => UserEventType.AiGatewayModelAllowlistModelsUpdated,
+                "ai-gateway-model-allowlist-toggled" => UserEventType.AiGatewayModelAllowlistToggled,
                 "ai-gateway-private-model-created" => UserEventType.AiGatewayPrivateModelCreated,
                 "ai-gateway-private-model-deleted" => UserEventType.AiGatewayPrivateModelDeleted,
                 "ai-gateway-private-model-updated" => UserEventType.AiGatewayPrivateModelUpdated,

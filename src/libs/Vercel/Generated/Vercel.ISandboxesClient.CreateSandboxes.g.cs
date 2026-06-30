@@ -57,6 +57,9 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="networkPolicy"></param>
+        /// <param name="image">
+        /// Image to use for the sandbox.
+        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
@@ -114,6 +117,7 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>? networkPolicy = default,
+            string? image = default,
             global::Vercel.CreateSandboxesRequestResources? resources = default,
             global::Vercel.CreateSandboxesRequestRuntime? runtime = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesRequestSourceVariant1, global::Vercel.CreateSandboxesRequestSourceVariant2, global::Vercel.CreateSandboxesRequestSourceVariant3>? source = default,

@@ -213,6 +213,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public VcrClient Vcr { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public WebAnalyticsClient WebAnalytics { get; }
 
         /// <summary>

@@ -95,6 +95,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayModelAllowlistModelsUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayModelAllowlistToggled,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayPrivateModelCreated,
         /// <summary>
         /// 
@@ -2183,6 +2191,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                ListEventTypeReplacedByItem.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
+                ListEventTypeReplacedByItem.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
                 ListEventTypeReplacedByItem.AiGatewayPrivateModelCreated => "ai-gateway-private-model-created",
                 ListEventTypeReplacedByItem.AiGatewayPrivateModelDeleted => "ai-gateway-private-model-deleted",
                 ListEventTypeReplacedByItem.AiGatewayPrivateModelUpdated => "ai-gateway-private-model-updated",
@@ -2728,6 +2738,8 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated,
+                "ai-gateway-model-allowlist-models-updated" => ListEventTypeReplacedByItem.AiGatewayModelAllowlistModelsUpdated,
+                "ai-gateway-model-allowlist-toggled" => ListEventTypeReplacedByItem.AiGatewayModelAllowlistToggled,
                 "ai-gateway-private-model-created" => ListEventTypeReplacedByItem.AiGatewayPrivateModelCreated,
                 "ai-gateway-private-model-deleted" => ListEventTypeReplacedByItem.AiGatewayPrivateModelDeleted,
                 "ai-gateway-private-model-updated" => ListEventTypeReplacedByItem.AiGatewayPrivateModelUpdated,
