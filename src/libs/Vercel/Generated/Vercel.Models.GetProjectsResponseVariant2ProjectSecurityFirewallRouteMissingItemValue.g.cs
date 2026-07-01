@@ -75,6 +75,12 @@ namespace Vercel
         public double? Lte { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("list")]
+        public string? List { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -94,6 +100,7 @@ namespace Vercel
         /// <param name="gte"></param>
         /// <param name="lt"></param>
         /// <param name="lte"></param>
+        /// <param name="list"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -108,7 +115,8 @@ namespace Vercel
             double? gt,
             double? gte,
             double? lt,
-            double? lte)
+            double? lte,
+            string? list)
         {
             this.Re = re;
             this.Eq = eq;
@@ -121,6 +129,7 @@ namespace Vercel
             this.Gte = gte;
             this.Lt = lt;
             this.Lte = lte;
+            this.List = list;
         }
 
         /// <summary>

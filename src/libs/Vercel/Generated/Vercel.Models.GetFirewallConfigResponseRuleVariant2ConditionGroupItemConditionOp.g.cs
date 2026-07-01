@@ -31,6 +31,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        List,
+        /// <summary>
+        /// 
+        /// </summary>
         Lt,
         /// <summary>
         /// 
@@ -83,6 +87,7 @@ namespace Vercel
                 GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Gt => "gt",
                 GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Gte => "gte",
                 GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Inc => "inc",
+                GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.List => "list",
                 GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Lt => "lt",
                 GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Lte => "lte",
                 GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Neq => "neq",
@@ -107,6 +112,7 @@ namespace Vercel
                 "gt" => GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Gt,
                 "gte" => GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Gte,
                 "inc" => GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Inc,
+                "list" => GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.List,
                 "lt" => GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Lt,
                 "lte" => GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Lte,
                 "neq" => GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp.Neq,
