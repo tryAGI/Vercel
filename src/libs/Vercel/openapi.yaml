@@ -132089,13 +132089,13 @@
             "description": "The account is missing a payment so payment method must be updated"
           },
           "403": {
-            "description": "You do not have permission to access this resource.\nThe environment variable cannot be created because it already exists\nAdditional permissions are required to create production environment variables"
+            "description": "You do not have permission to access this resource.\nThe environment variable cannot be created because it already exists"
           },
           "404": {
             "description": ""
           },
           "409": {
-            "description": "The project is being transfered and creating an environment variable is not possible"
+            "description": ""
           },
           "429": {
             "description": ""
