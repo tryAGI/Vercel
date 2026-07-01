@@ -581,6 +581,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("attributionTarget")]
+        public string? AttributionTarget { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("attributionEventName")]
+        public string? AttributionEventName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metricName")]
         public string? MetricName { get; set; }
 
@@ -1236,6 +1248,8 @@ namespace Vercel
         /// <param name="blobOperationLevel"></param>
         /// <param name="visitorId"></param>
         /// <param name="eventName"></param>
+        /// <param name="attributionTarget"></param>
+        /// <param name="attributionEventName"></param>
         /// <param name="metricName"></param>
         /// <param name="attributes"></param>
         /// <param name="flagKey"></param>
@@ -1427,6 +1441,8 @@ namespace Vercel
             string? blobOperationLevel,
             string? visitorId,
             string? eventName,
+            string? attributionTarget,
+            string? attributionEventName,
             string? metricName,
             string? attributes,
             string? flagKey,
@@ -1614,6 +1630,8 @@ namespace Vercel
             this.BlobOperationLevel = blobOperationLevel;
             this.VisitorId = visitorId;
             this.EventName = eventName;
+            this.AttributionTarget = attributionTarget;
+            this.AttributionEventName = attributionEventName;
             this.MetricName = metricName;
             this.Attributes = attributes;
             this.FlagKey = flagKey;
