@@ -31,6 +31,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        List,
+        /// <summary>
+        /// 
+        /// </summary>
         Lt,
         /// <summary>
         /// 
@@ -83,6 +87,7 @@ namespace Vercel
                 UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Gt => "gt",
                 UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Gte => "gte",
                 UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Inc => "inc",
+                UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.List => "list",
                 UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Lt => "lt",
                 UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Lte => "lte",
                 UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Neq => "neq",
@@ -107,6 +112,7 @@ namespace Vercel
                 "gt" => UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Gt,
                 "gte" => UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Gte,
                 "inc" => UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Inc,
+                "list" => UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.List,
                 "lt" => UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Lt,
                 "lte" => UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Lte,
                 "neq" => UpdateFirewallConfigRequestVariant3ValueConditionGroupItemConditionOp.Neq,

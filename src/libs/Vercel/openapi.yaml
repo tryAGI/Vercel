@@ -73927,6 +73927,7 @@
                               "buildMachineElasticReason": {
                                 "type": "string",
                                 "enum": [
+                                  "build-timeout-failure",
                                   "enospc-failure",
                                   "enterprise-floor",
                                   "high-peak-disk",
@@ -74125,6 +74126,7 @@
                               "buildMachineElasticReason": {
                                 "type": "string",
                                 "enum": [
+                                  "build-timeout-failure",
                                   "enospc-failure",
                                   "enterprise-floor",
                                   "high-peak-disk",
@@ -86548,6 +86550,7 @@
                               "buildMachineElasticReason": {
                                 "type": "string",
                                 "enum": [
+                                  "build-timeout-failure",
                                   "enospc-failure",
                                   "enterprise-floor",
                                   "high-peak-disk",
@@ -87515,6 +87518,9 @@
                                             },
                                             "lte": {
                                               "type": "number"
+                                            },
+                                            "list": {
+                                              "type": "string"
                                             }
                                           },
                                           "type": "object"
@@ -87590,6 +87596,9 @@
                                                   },
                                                   "lte": {
                                                     "type": "number"
+                                                  },
+                                                  "list": {
+                                                    "type": "string"
                                                   }
                                                 },
                                                 "type": "object"
@@ -87673,6 +87682,9 @@
                                                   },
                                                   "lte": {
                                                     "type": "number"
+                                                  },
+                                                  "list": {
+                                                    "type": "string"
                                                   }
                                                 },
                                                 "type": "object"
@@ -90400,6 +90412,7 @@
                                   "buildMachineElasticReason": {
                                     "type": "string",
                                     "enum": [
+                                      "build-timeout-failure",
                                       "enospc-failure",
                                       "enterprise-floor",
                                       "high-peak-disk",
@@ -91367,6 +91380,9 @@
                                                 },
                                                 "lte": {
                                                   "type": "number"
+                                                },
+                                                "list": {
+                                                  "type": "string"
                                                 }
                                               },
                                               "type": "object"
@@ -91442,6 +91458,9 @@
                                                       },
                                                       "lte": {
                                                         "type": "number"
+                                                      },
+                                                      "list": {
+                                                        "type": "string"
                                                       }
                                                     },
                                                     "type": "object"
@@ -91525,6 +91544,9 @@
                                                       },
                                                       "lte": {
                                                         "type": "number"
+                                                      },
+                                                      "list": {
+                                                        "type": "string"
                                                       }
                                                     },
                                                     "type": "object"
@@ -95061,6 +95083,7 @@
                                   "buildMachineElasticReason": {
                                     "type": "string",
                                     "enum": [
+                                      "build-timeout-failure",
                                       "enospc-failure",
                                       "enterprise-floor",
                                       "high-peak-disk",
@@ -95259,6 +95282,7 @@
                                   "buildMachineElasticReason": {
                                     "type": "string",
                                     "enum": [
+                                      "build-timeout-failure",
                                       "enospc-failure",
                                       "enterprise-floor",
                                       "high-peak-disk",
@@ -101986,6 +102010,7 @@
                         "buildMachineElasticReason": {
                           "type": "string",
                           "enum": [
+                            "build-timeout-failure",
                             "enospc-failure",
                             "enterprise-floor",
                             "high-peak-disk",
@@ -102184,6 +102209,7 @@
                         "buildMachineElasticReason": {
                           "type": "string",
                           "enum": [
+                            "build-timeout-failure",
                             "enospc-failure",
                             "enterprise-floor",
                             "high-peak-disk",
@@ -106596,6 +106622,7 @@
                         "enum": [
                           "oom-failure",
                           "enospc-failure",
+                          "build-timeout-failure",
                           "high-peak-memory",
                           "sustained-high-cpu",
                           "high-peak-disk",
@@ -109163,6 +109190,7 @@
                         "buildMachineElasticReason": {
                           "type": "string",
                           "enum": [
+                            "build-timeout-failure",
                             "enospc-failure",
                             "enterprise-floor",
                             "high-peak-disk",
@@ -109361,6 +109389,7 @@
                         "buildMachineElasticReason": {
                           "type": "string",
                           "enum": [
+                            "build-timeout-failure",
                             "enospc-failure",
                             "enterprise-floor",
                             "high-peak-disk",
@@ -115896,6 +115925,7 @@
                         "buildMachineElasticReason": {
                           "type": "string",
                           "enum": [
+                            "build-timeout-failure",
                             "enospc-failure",
                             "enterprise-floor",
                             "high-peak-disk",
@@ -116094,6 +116124,7 @@
                         "buildMachineElasticReason": {
                           "type": "string",
                           "enum": [
+                            "build-timeout-failure",
                             "enospc-failure",
                             "enterprise-floor",
                             "high-peak-disk",
@@ -120407,6 +120438,7 @@
                         "enum": [
                           "oom-failure",
                           "enospc-failure",
+                          "build-timeout-failure",
                           "high-peak-memory",
                           "sustained-high-cpu",
                           "high-peak-disk",
@@ -123861,6 +123893,7 @@
                         "buildMachineElasticReason": {
                           "type": "string",
                           "enum": [
+                            "build-timeout-failure",
                             "enospc-failure",
                             "enterprise-floor",
                             "high-peak-disk",
@@ -124059,6 +124092,7 @@
                         "buildMachineElasticReason": {
                           "type": "string",
                           "enum": [
+                            "build-timeout-failure",
                             "enospc-failure",
                             "enterprise-floor",
                             "high-peak-disk",
@@ -139591,6 +139625,7 @@
                         "buildMachineElasticReason": {
                           "type": "string",
                           "enum": [
+                            "build-timeout-failure",
                             "enospc-failure",
                             "enterprise-floor",
                             "high-peak-disk",
@@ -139789,6 +139824,7 @@
                         "buildMachineElasticReason": {
                           "type": "string",
                           "enum": [
+                            "build-timeout-failure",
                             "enospc-failure",
                             "enterprise-floor",
                             "high-peak-disk",
@@ -149391,6 +149427,7 @@
                                                   "gt",
                                                   "gte",
                                                   "inc",
+                                                  "list",
                                                   "lt",
                                                   "lte",
                                                   "neq",
@@ -149647,6 +149684,7 @@
                                                   "gt",
                                                   "gte",
                                                   "inc",
+                                                  "list",
                                                   "lt",
                                                   "lte",
                                                   "neq",
@@ -150472,7 +150510,8 @@
                                         "gt",
                                         "gte",
                                         "lt",
-                                        "lte"
+                                        "lte",
+                                        "list"
                                       ]
                                     },
                                     "neg": {
@@ -150908,7 +150947,8 @@
                                           "gt",
                                           "gte",
                                           "lt",
-                                          "lte"
+                                          "lte",
+                                          "list"
                                         ]
                                       },
                                       "neg": {
@@ -151190,7 +151230,8 @@
                                           "gt",
                                           "gte",
                                           "lt",
-                                          "lte"
+                                          "lte",
+                                          "list"
                                         ]
                                       },
                                       "neg": {
@@ -152185,6 +152226,7 @@
                                               "gt",
                                               "gte",
                                               "inc",
+                                              "list",
                                               "lt",
                                               "lte",
                                               "neq",
@@ -152441,6 +152483,7 @@
                                               "gt",
                                               "gte",
                                               "inc",
+                                              "list",
                                               "lt",
                                               "lte",
                                               "neq",

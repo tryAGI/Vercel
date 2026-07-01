@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        BuildTimeoutFailure,
+        /// <summary>
+        /// 
+        /// </summary>
         EnospcFailure,
         /// <summary>
         /// 
@@ -54,6 +58,7 @@ namespace Vercel
         {
             return value switch
             {
+                GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineElasticReason.BuildTimeoutFailure => "build-timeout-failure",
                 GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineElasticReason.EnospcFailure => "enospc-failure",
                 GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineElasticReason.EnterpriseFloor => "enterprise-floor",
                 GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineElasticReason.HighPeakDisk => "high-peak-disk",
@@ -72,6 +77,7 @@ namespace Vercel
         {
             return value switch
             {
+                "build-timeout-failure" => GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineElasticReason.BuildTimeoutFailure,
                 "enospc-failure" => GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineElasticReason.EnospcFailure,
                 "enterprise-floor" => GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineElasticReason.EnterpriseFloor,
                 "high-peak-disk" => GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigBuildMachineElasticReason.HighPeakDisk,
