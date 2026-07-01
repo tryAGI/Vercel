@@ -676,6 +676,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("attributionTarget")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string AttributionTarget { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("attributionEventName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string AttributionEventName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metricName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MetricName { get; set; }
@@ -1414,6 +1428,8 @@ namespace Vercel
         /// <param name="blobOperationLevel"></param>
         /// <param name="visitorId"></param>
         /// <param name="eventName"></param>
+        /// <param name="attributionTarget"></param>
+        /// <param name="attributionEventName"></param>
         /// <param name="metricName"></param>
         /// <param name="attributes"></param>
         /// <param name="flagKey"></param>
@@ -1604,6 +1620,8 @@ namespace Vercel
             string blobOperationLevel,
             string visitorId,
             string eventName,
+            string attributionTarget,
+            string attributionEventName,
             string metricName,
             string attributes,
             string flagKey,
@@ -1791,6 +1809,8 @@ namespace Vercel
             this.BlobOperationLevel = blobOperationLevel ?? throw new global::System.ArgumentNullException(nameof(blobOperationLevel));
             this.VisitorId = visitorId ?? throw new global::System.ArgumentNullException(nameof(visitorId));
             this.EventName = eventName ?? throw new global::System.ArgumentNullException(nameof(eventName));
+            this.AttributionTarget = attributionTarget ?? throw new global::System.ArgumentNullException(nameof(attributionTarget));
+            this.AttributionEventName = attributionEventName ?? throw new global::System.ArgumentNullException(nameof(attributionEventName));
             this.MetricName = metricName ?? throw new global::System.ArgumentNullException(nameof(metricName));
             this.Attributes = attributes ?? throw new global::System.ArgumentNullException(nameof(attributes));
             this.FlagKey = flagKey ?? throw new global::System.ArgumentNullException(nameof(flagKey));

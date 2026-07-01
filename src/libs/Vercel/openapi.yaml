@@ -163024,6 +163024,12 @@
                               "eventName": {
                                 "type": "string"
                               },
+                              "attributionTarget": {
+                                "type": "string"
+                              },
+                              "attributionEventName": {
+                                "type": "string"
+                              },
                               "metricName": {
                                 "type": "string"
                               },
@@ -163597,6 +163603,12 @@
                               "eventName": {
                                 "type": "string"
                               },
+                              "attributionTarget": {
+                                "type": "string"
+                              },
+                              "attributionEventName": {
+                                "type": "string"
+                              },
                               "metricName": {
                                 "type": "string"
                               },
@@ -163879,6 +163891,8 @@
                               "asnId",
                               "asnName",
                               "attributes",
+                              "attributionEventName",
+                              "attributionTarget",
                               "blobOperationLevel",
                               "blobOperationType",
                               "botCategory",
@@ -164602,6 +164616,12 @@
                               "eventName": {
                                 "type": "string"
                               },
+                              "attributionTarget": {
+                                "type": "string"
+                              },
+                              "attributionEventName": {
+                                "type": "string"
+                              },
                               "metricName": {
                                 "type": "string"
                               },
@@ -165175,6 +165195,12 @@
                               "eventName": {
                                 "type": "string"
                               },
+                              "attributionTarget": {
+                                "type": "string"
+                              },
+                              "attributionEventName": {
+                                "type": "string"
+                              },
                               "metricName": {
                                 "type": "string"
                               },
@@ -165457,6 +165483,8 @@
                               "asnId",
                               "asnName",
                               "attributes",
+                              "attributionEventName",
+                              "attributionTarget",
                               "blobOperationLevel",
                               "blobOperationType",
                               "botCategory",
@@ -166144,6 +166172,12 @@
                         "eventName": {
                           "type": "string"
                         },
+                        "attributionTarget": {
+                          "type": "string"
+                        },
+                        "attributionEventName": {
+                          "type": "string"
+                        },
                         "metricName": {
                           "type": "string"
                         },
@@ -166426,6 +166460,8 @@
                         "asnId",
                         "asnName",
                         "attributes",
+                        "attributionEventName",
+                        "attributionTarget",
                         "blobOperationLevel",
                         "blobOperationType",
                         "botCategory",
@@ -167044,6 +167080,12 @@
                         "eventName": {
                           "type": "string"
                         },
+                        "attributionTarget": {
+                          "type": "string"
+                        },
+                        "attributionEventName": {
+                          "type": "string"
+                        },
                         "metricName": {
                           "type": "string"
                         },
@@ -167326,6 +167368,8 @@
                         "asnId",
                         "asnName",
                         "attributes",
+                        "attributionEventName",
+                        "attributionTarget",
                         "blobOperationLevel",
                         "blobOperationType",
                         "botCategory",
