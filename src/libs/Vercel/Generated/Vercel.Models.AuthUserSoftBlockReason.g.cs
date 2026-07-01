@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DomainOwnerDeletionRequest,
+        /// <summary>
+        /// 
+        /// </summary>
         EnterpriseTrialEnded,
         /// <summary>
         /// 
@@ -55,6 +59,7 @@ namespace Vercel
             return value switch
             {
                 AuthUserSoftBlockReason.BlockedForPlatformAbuse => "BLOCKED_FOR_PLATFORM_ABUSE",
+                AuthUserSoftBlockReason.DomainOwnerDeletionRequest => "DOMAIN_OWNER_DELETION_REQUEST",
                 AuthUserSoftBlockReason.EnterpriseTrialEnded => "ENTERPRISE_TRIAL_ENDED",
                 AuthUserSoftBlockReason.EnterpriseUnpaidInvoice => "ENTERPRISE_UNPAID_INVOICE",
                 AuthUserSoftBlockReason.ExposureCapExceeded => "EXPOSURE_CAP_EXCEEDED",
@@ -73,6 +78,7 @@ namespace Vercel
             return value switch
             {
                 "BLOCKED_FOR_PLATFORM_ABUSE" => AuthUserSoftBlockReason.BlockedForPlatformAbuse,
+                "DOMAIN_OWNER_DELETION_REQUEST" => AuthUserSoftBlockReason.DomainOwnerDeletionRequest,
                 "ENTERPRISE_TRIAL_ENDED" => AuthUserSoftBlockReason.EnterpriseTrialEnded,
                 "ENTERPRISE_UNPAID_INVOICE" => AuthUserSoftBlockReason.EnterpriseUnpaidInvoice,
                 "EXPOSURE_CAP_EXCEEDED" => AuthUserSoftBlockReason.ExposureCapExceeded,
