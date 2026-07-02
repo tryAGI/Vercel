@@ -162484,6 +162484,99 @@
         ]
       }
     },
+    "/v1/vcr/repository/{idOrName}/tags/{tag}": {
+      "get": {
+        "description": "Fetch a single tag from a repository, including the backing image's metadata and VHS-readiness status.",
+        "operationId": "getRepositoryTag",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Get a repository tag",
+        "tags": [
+          "vcr"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "tag": {
+                      "$ref": "#/components/schemas/VcrTag"
+                    }
+                  },
+                  "required": [
+                    "tag"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "idOrName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "tag",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "maxLength": 255
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
     "/v1/vcr/repository/{idOrName}/images/{imageId}": {
       "get": {
         "description": "Fetch an individual image from a repository, including its tags and Dockerfile history entries with discriminated layer details for UI rendering.",
@@ -180710,6 +180803,84 @@
         ],
         "type": "object",
         "description": "A paginated list of images for a repository."
+      },
+      "VcrTag": {
+        "properties": {
+          "tag": {
+            "type": "string",
+            "description": "The tag name.",
+            "example": "latest"
+          },
+          "manifestDigest": {
+            "type": "string",
+            "description": "SHA-256 digest of the image manifest the tag points at.",
+            "example": "sha256:2c4e8f3a1b9d0e5c7a6f4b2d8e1c9a0b3d5f7e9c1a2b4d6f8e0c2a4b6d8f0e2c"
+          },
+          "imageId": {
+            "type": "string",
+            "description": "Internal identifier of the image the tag points at.",
+            "example": "img_a1b2c3d4e5f6"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "index",
+              "manifest"
+            ],
+            "description": "Whether the manifest is a multi-platform image index or a single-platform image manifest."
+          },
+          "platform": {
+            "type": "string",
+            "description": "Operating system the manifest targets. Only present for single-platform manifests.",
+            "example": "linux"
+          },
+          "arch": {
+            "type": "string",
+            "description": "CPU architecture the manifest targets. Only present for single-platform manifests.",
+            "example": "amd64"
+          },
+          "pushedBy": {
+            "type": "string",
+            "description": "Identifier of the actor that pushed the image."
+          },
+          "status": {
+            "nullable": true,
+            "type": "string",
+            "enum": [
+              "preparing",
+              "ready",
+              "unoptimized",
+              null
+            ],
+            "description": "VHS-readiness status, or `null` for a multi-platform index."
+          },
+          "sizeInBytes": {
+            "type": "number",
+            "description": "Total size in bytes of the image's resources (manifest, config and layer blobs) stored by the registry."
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "ISO 8601 timestamp of when the tag was created.",
+            "example": "2026-06-30T10:00:00.000Z"
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "ISO 8601 timestamp of when the tag was last updated.",
+            "example": "2026-06-30T10:00:00.000Z"
+          }
+        },
+        "required": [
+          "createdAt",
+          "imageId",
+          "kind",
+          "manifestDigest",
+          "sizeInBytes",
+          "status",
+          "tag",
+          "updatedAt"
+        ],
+        "type": "object",
+        "description": "A tag pointing at an image in a Vercel Container Registry repository, enriched with the backing image's metadata and VHS-readiness status."
       },
       "VcrImageLayer": {
         "oneOf": [
