@@ -1097,6 +1097,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptSafetyIdentifier")]
+        public string? ProviderAttemptSafetyIdentifier { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptDevSafetyIdentifier")]
+        public string? ProviderAttemptDevSafetyIdentifier { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptRegion")]
         public string? ProviderAttemptRegion { get; set; }
 
@@ -1334,6 +1346,8 @@ namespace Vercel
         /// <param name="generationId"></param>
         /// <param name="sessionId"></param>
         /// <param name="providerAttemptError"></param>
+        /// <param name="providerAttemptSafetyIdentifier"></param>
+        /// <param name="providerAttemptDevSafetyIdentifier"></param>
         /// <param name="providerAttemptRegion"></param>
         /// <param name="providerAttemptModelIndex"></param>
         /// <param name="toolCallType"></param>
@@ -1527,6 +1541,8 @@ namespace Vercel
             string? generationId,
             string? sessionId,
             string? providerAttemptError,
+            string? providerAttemptSafetyIdentifier,
+            string? providerAttemptDevSafetyIdentifier,
             string? providerAttemptRegion,
             string? providerAttemptModelIndex,
             string? toolCallType,
@@ -1716,6 +1732,8 @@ namespace Vercel
             this.GenerationId = generationId;
             this.SessionId = sessionId;
             this.ProviderAttemptError = providerAttemptError;
+            this.ProviderAttemptSafetyIdentifier = providerAttemptSafetyIdentifier;
+            this.ProviderAttemptDevSafetyIdentifier = providerAttemptDevSafetyIdentifier;
             this.ProviderAttemptRegion = providerAttemptRegion;
             this.ProviderAttemptModelIndex = providerAttemptModelIndex;
             this.ToolCallType = toolCallType;
