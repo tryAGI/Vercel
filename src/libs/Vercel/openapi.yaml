@@ -163375,6 +163375,12 @@
                               "providerAttemptError": {
                                 "type": "string"
                               },
+                              "providerAttemptSafetyIdentifier": {
+                                "type": "string"
+                              },
+                              "providerAttemptDevSafetyIdentifier": {
+                                "type": "string"
+                              },
                               "providerAttemptRegion": {
                                 "type": "string"
                               },
@@ -163954,6 +163960,12 @@
                               "providerAttemptError": {
                                 "type": "string"
                               },
+                              "providerAttemptSafetyIdentifier": {
+                                "type": "string"
+                              },
+                              "providerAttemptDevSafetyIdentifier": {
+                                "type": "string"
+                              },
                               "providerAttemptRegion": {
                                 "type": "string"
                               },
@@ -164084,11 +164096,13 @@
                               "provider",
                               "providerAttemptCanonicalSlug",
                               "providerAttemptCredentialType",
+                              "providerAttemptDevSafetyIdentifier",
                               "providerAttemptError",
                               "providerAttemptIsFinal",
                               "providerAttemptModelIndex",
                               "providerAttemptNumber",
                               "providerAttemptRegion",
+                              "providerAttemptSafetyIdentifier",
                               "providerAttemptStatusCode",
                               "providerAttemptSuccess",
                               "providerAttemptTimeout",
@@ -164967,6 +164981,12 @@
                               "providerAttemptError": {
                                 "type": "string"
                               },
+                              "providerAttemptSafetyIdentifier": {
+                                "type": "string"
+                              },
+                              "providerAttemptDevSafetyIdentifier": {
+                                "type": "string"
+                              },
                               "providerAttemptRegion": {
                                 "type": "string"
                               },
@@ -165546,6 +165566,12 @@
                               "providerAttemptError": {
                                 "type": "string"
                               },
+                              "providerAttemptSafetyIdentifier": {
+                                "type": "string"
+                              },
+                              "providerAttemptDevSafetyIdentifier": {
+                                "type": "string"
+                              },
                               "providerAttemptRegion": {
                                 "type": "string"
                               },
@@ -165676,11 +165702,13 @@
                               "provider",
                               "providerAttemptCanonicalSlug",
                               "providerAttemptCredentialType",
+                              "providerAttemptDevSafetyIdentifier",
                               "providerAttemptError",
                               "providerAttemptIsFinal",
                               "providerAttemptModelIndex",
                               "providerAttemptNumber",
                               "providerAttemptRegion",
+                              "providerAttemptSafetyIdentifier",
                               "providerAttemptStatusCode",
                               "providerAttemptSuccess",
                               "providerAttemptTimeout",
@@ -166523,6 +166551,12 @@
                         "providerAttemptError": {
                           "type": "string"
                         },
+                        "providerAttemptSafetyIdentifier": {
+                          "type": "string"
+                        },
+                        "providerAttemptDevSafetyIdentifier": {
+                          "type": "string"
+                        },
                         "providerAttemptRegion": {
                           "type": "string"
                         },
@@ -166653,11 +166687,13 @@
                         "provider",
                         "providerAttemptCanonicalSlug",
                         "providerAttemptCredentialType",
+                        "providerAttemptDevSafetyIdentifier",
                         "providerAttemptError",
                         "providerAttemptIsFinal",
                         "providerAttemptModelIndex",
                         "providerAttemptNumber",
                         "providerAttemptRegion",
+                        "providerAttemptSafetyIdentifier",
                         "providerAttemptStatusCode",
                         "providerAttemptSuccess",
                         "providerAttemptTimeout",
@@ -167431,6 +167467,12 @@
                         "providerAttemptError": {
                           "type": "string"
                         },
+                        "providerAttemptSafetyIdentifier": {
+                          "type": "string"
+                        },
+                        "providerAttemptDevSafetyIdentifier": {
+                          "type": "string"
+                        },
                         "providerAttemptRegion": {
                           "type": "string"
                         },
@@ -167561,11 +167603,13 @@
                         "provider",
                         "providerAttemptCanonicalSlug",
                         "providerAttemptCredentialType",
+                        "providerAttemptDevSafetyIdentifier",
                         "providerAttemptError",
                         "providerAttemptIsFinal",
                         "providerAttemptModelIndex",
                         "providerAttemptNumber",
                         "providerAttemptRegion",
+                        "providerAttemptSafetyIdentifier",
                         "providerAttemptStatusCode",
                         "providerAttemptSuccess",
                         "providerAttemptTimeout",

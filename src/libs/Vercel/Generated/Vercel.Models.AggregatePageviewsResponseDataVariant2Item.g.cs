@@ -1278,6 +1278,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptSafetyIdentifier")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProviderAttemptSafetyIdentifier { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptDevSafetyIdentifier")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProviderAttemptDevSafetyIdentifier { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptRegion { get; set; }
@@ -1514,6 +1528,8 @@ namespace Vercel
         /// <param name="generationId"></param>
         /// <param name="sessionId"></param>
         /// <param name="providerAttemptError"></param>
+        /// <param name="providerAttemptSafetyIdentifier"></param>
+        /// <param name="providerAttemptDevSafetyIdentifier"></param>
         /// <param name="providerAttemptRegion"></param>
         /// <param name="providerAttemptModelIndex"></param>
         /// <param name="toolCallType"></param>
@@ -1706,6 +1722,8 @@ namespace Vercel
             string generationId,
             string sessionId,
             string providerAttemptError,
+            string providerAttemptSafetyIdentifier,
+            string providerAttemptDevSafetyIdentifier,
             string providerAttemptRegion,
             string providerAttemptModelIndex,
             string toolCallType,
@@ -1895,6 +1913,8 @@ namespace Vercel
             this.GenerationId = generationId ?? throw new global::System.ArgumentNullException(nameof(generationId));
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
             this.ProviderAttemptError = providerAttemptError ?? throw new global::System.ArgumentNullException(nameof(providerAttemptError));
+            this.ProviderAttemptSafetyIdentifier = providerAttemptSafetyIdentifier ?? throw new global::System.ArgumentNullException(nameof(providerAttemptSafetyIdentifier));
+            this.ProviderAttemptDevSafetyIdentifier = providerAttemptDevSafetyIdentifier ?? throw new global::System.ArgumentNullException(nameof(providerAttemptDevSafetyIdentifier));
             this.ProviderAttemptRegion = providerAttemptRegion ?? throw new global::System.ArgumentNullException(nameof(providerAttemptRegion));
             this.ProviderAttemptModelIndex = providerAttemptModelIndex ?? throw new global::System.ArgumentNullException(nameof(providerAttemptModelIndex));
             this.ToolCallType = toolCallType ?? throw new global::System.ArgumentNullException(nameof(toolCallType));
