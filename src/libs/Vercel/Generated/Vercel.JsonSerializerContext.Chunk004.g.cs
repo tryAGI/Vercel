@@ -298,6 +298,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.VcrImageListItemStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageListItemKindJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageListItemKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagStatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1OperationJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1OperationNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1TypeJsonConverter),
@@ -6991,6 +6995,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1, global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2>), TypeInfoPropertyName = "OneOfListDeploymentCheckRunsResponseRunVariant2SourceVariant1ListDeploymentCheckRunsResponseRunVariant2SourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1SubKind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2SourceVariant1SubKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant1Origin), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2SourceVariant1Origin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2SourceVariant2SubKind), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2SourceVariant2SubKind2")]
@@ -7488,9 +7495,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ServiceVariant2RewriteHaVariant2Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1ServiceVariant2RewriteHaVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetDeploymentResponseVariant1ServiceVariant2RewriteHaVariant2Value>), TypeInfoPropertyName = "OneOfStringGetDeploymentResponseVariant1ServiceVariant2RewriteHaVariant2Value2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ServiceVariant2RewriteHaVariant2Value))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1ServiceVariant2RewriteMissingItemVariant1, global::Vercel.GetDeploymentResponseVariant1ServiceVariant2RewriteMissingItemVariant2>>), TypeInfoPropertyName = "GetDeploymentResponseVariant1ServiceVariant2RewriteMissingItemVariant2_352f814ea088387f")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1ServiceVariant2RewriteMissingItemVariant1, global::Vercel.GetDeploymentResponseVariant1ServiceVariant2RewriteMissingItemVariant2>), TypeInfoPropertyName = "GetDeploymentResponseVariant1ServiceVariant2RewriteMissingItemVariant2_4e26fbac3d20bc5e")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ServiceVariant2RewriteMissingItemVariant1))]
     internal sealed partial class SourceGenerationContextChunk004 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

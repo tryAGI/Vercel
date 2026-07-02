@@ -298,6 +298,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.VcrImageListItemStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageListItemKindJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageListItemKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagStatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1OperationJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1OperationNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1TypeJsonConverter),
@@ -7430,6 +7434,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageListItemVhsConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageList))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.VcrImageListItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrTag))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrTagKind), TypeInfoPropertyName = "VcrTagKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrTagStatus), TypeInfoPropertyName = "VcrTagStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageLayer), TypeInfoPropertyName = "VcrImageLayer2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageLayerVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageLayerVariant1Operation), TypeInfoPropertyName = "VcrImageLayerVariant1Operation2")]
@@ -7488,9 +7495,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequestItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequestItemType), TypeInfoPropertyName = "BuyCreditsRequestItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequestItemCreditType), TypeInfoPropertyName = "BuyCreditsRequestItemCreditType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRedirectsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.StageRedirectsRequestRedirect>))]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

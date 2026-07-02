@@ -298,6 +298,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.VcrImageListItemStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageListItemKindJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageListItemKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagStatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1OperationJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1OperationNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1TypeJsonConverter),
@@ -6991,6 +6995,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequestItemCreditType), TypeInfoPropertyName = "BuyCreditsRequestItemCreditType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRedirectsRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.StageRedirectsRequestRedirect>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRedirectsRequestRedirect))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<double?, string>), TypeInfoPropertyName = "OneOfDoubleString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteRedirectsRequest))]
@@ -7488,9 +7495,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequestStatus), TypeInfoPropertyName = "UpdateInstallationRequestStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequestBillingPlan))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequestBillingPlanType), TypeInfoPropertyName = "UpdateInstallationRequestBillingPlanType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateInstallationRequestBillingPlanDetail>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequestBillingPlanDetail))]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -298,6 +298,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.VcrImageListItemStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageListItemKindJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageListItemKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagStatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1OperationJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1OperationNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1TypeJsonConverter),
@@ -6991,6 +6995,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.UploadProjectAvatarResponseConnectConfigurationEnvId?>), TypeInfoPropertyName = "OneOfStringUploadProjectAvatarResponseConnectConfigurationEnvId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseConnectConfigurationEnvId), TypeInfoPropertyName = "UploadProjectAvatarResponseConnectConfigurationEnvId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseConnectConfigurationAws))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseCrons))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseCronsDefinition>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseCronsDefinition))]
@@ -7488,9 +7495,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingRelease))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseState), TypeInfoPropertyName = "GetRollingReleaseResponseRollingReleaseState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseSubstate), TypeInfoPropertyName = "GetRollingReleaseResponseRollingReleaseSubstate2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseCurrentDeployment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState), TypeInfoPropertyName = "GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState2")]
     internal sealed partial class SourceGenerationContextChunk015 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

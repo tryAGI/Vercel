@@ -298,6 +298,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.VcrImageListItemStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageListItemKindJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageListItemKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagKindJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagKindNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagStatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.VcrTagStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1OperationJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1OperationNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1TypeJsonConverter),
@@ -6991,6 +6995,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseSubstate), TypeInfoPropertyName = "GetRollingReleaseResponseRollingReleaseSubstate2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseCurrentDeployment))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState), TypeInfoPropertyName = "GetRollingReleaseResponseRollingReleaseCurrentDeploymentReadyState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget), TypeInfoPropertyName = "GetRollingReleaseResponseRollingReleaseCurrentDeploymentTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource), TypeInfoPropertyName = "GetRollingReleaseResponseRollingReleaseCurrentDeploymentSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeployment))]
@@ -7488,9 +7495,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRuleVariant1ActionMitigateRateLimitAlgo), TypeInfoPropertyName = "PutFirewallConfigResponseActiveRuleVariant1ActionMitigateRateLimitAlgo2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRuleVariant1ActionMitigateRateLimitAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveRuleVariant1ActionMitigateRateLimitAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRuleVariant1ActionMitigateRedirect))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.PutFirewallConfigResponseActiveRuleVariant1ActionMitigateLogHeaders?>), TypeInfoPropertyName = "OneOfIListStringPutFirewallConfigResponseActiveRuleVariant1ActionMitigateLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRuleVariant1ActionMitigateLogHeaders), TypeInfoPropertyName = "PutFirewallConfigResponseActiveRuleVariant1ActionMitigateLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRuleVariant2))]
     internal sealed partial class SourceGenerationContextChunk016 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
