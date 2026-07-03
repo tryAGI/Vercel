@@ -191,6 +191,14 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
+        /// The time at which the currently running sandbox will time out, in milliseconds since the epoch. Only present while a session is running.<br/>
+        /// Example: 1750344801629L
+        /// </summary>
+        /// <example>1750344801629L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        public double? ExpiresAt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -286,6 +294,10 @@ namespace Vercel
         /// <param name="mounts">
         /// Key-value pairs of mount path and drive.
         /// </param>
+        /// <param name="expiresAt">
+        /// The time at which the currently running sandbox will time out, in milliseconds since the epoch. Only present while a session is running.<br/>
+        /// Example: 1750344801629L
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -312,7 +324,8 @@ namespace Vercel
             double? totalDurationMs,
             string? cwd,
             global::System.Collections.Generic.Dictionary<string, string>? tags,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.NamedSandboxMounts2>? mounts)
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.NamedSandboxMounts2>? mounts,
+            double? expiresAt)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.CurrentSnapshotId = currentSnapshotId;
@@ -337,6 +350,7 @@ namespace Vercel
             this.Mounts = mounts;
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
+            this.ExpiresAt = expiresAt;
         }
 
         /// <summary>
