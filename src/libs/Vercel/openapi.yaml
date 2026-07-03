@@ -177822,6 +177822,11 @@
             "type": "number",
             "description": "The time when the named sandbox was last updated, in milliseconds since the epoch.",
             "example": 1750344501629
+          },
+          "expiresAt": {
+            "type": "number",
+            "description": "The time at which the currently running sandbox will time out, in milliseconds since the epoch. Only present while a session is running.",
+            "example": 1750344801629
           }
         },
         "required": [
