@@ -168,6 +168,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AlertInvestigationProjectAllowlistUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AlertRuleCreated,
         /// <summary>
         /// 
@@ -2222,6 +2226,7 @@ namespace Vercel
                 ListEventTypeName.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
                 ListEventTypeName.AiGatewayVirtualModelConfigUpdated => "ai-gateway-virtual-model-config-updated",
                 ListEventTypeName.AiOmniagent => "ai-omniagent",
+                ListEventTypeName.AlertInvestigationProjectAllowlistUpdated => "alert-investigation-project-allowlist-updated",
                 ListEventTypeName.AlertRuleCreated => "alert-rule-created",
                 ListEventTypeName.AlertRuleDeleted => "alert-rule-deleted",
                 ListEventTypeName.AlertRuleUpdated => "alert-rule-updated",
@@ -2772,6 +2777,7 @@ namespace Vercel
                 "ai-gateway-virtual-model-config-restored" => ListEventTypeName.AiGatewayVirtualModelConfigRestored,
                 "ai-gateway-virtual-model-config-updated" => ListEventTypeName.AiGatewayVirtualModelConfigUpdated,
                 "ai-omniagent" => ListEventTypeName.AiOmniagent,
+                "alert-investigation-project-allowlist-updated" => ListEventTypeName.AlertInvestigationProjectAllowlistUpdated,
                 "alert-rule-created" => ListEventTypeName.AlertRuleCreated,
                 "alert-rule-deleted" => ListEventTypeName.AlertRuleDeleted,
                 "alert-rule-updated" => ListEventTypeName.AlertRuleUpdated,
