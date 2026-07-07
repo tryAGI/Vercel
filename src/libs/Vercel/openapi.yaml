@@ -73624,6 +73624,19 @@
                               }
                             ]
                           },
+                          "blobs": {
+                            "properties": {
+                              "isDefaultApp": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ],
+                                "description": "Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation \u2014 guards rely on it to protect the connected stores from being lost when the project is deleted or transferred."
+                              }
+                            },
+                            "type": "object"
+                          },
                           "microfrontends": {
                             "oneOf": [
                               {
@@ -77260,7 +77273,15 @@
                                   false,
                                   true
                                 ],
-                                "description": "Whether the project is currently throttled."
+                                "description": "Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint)."
+                              },
+                              "teamThrottled": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ],
+                                "description": "Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`."
                               }
                             },
                             "required": [
@@ -94780,6 +94801,19 @@
                                   }
                                 ]
                               },
+                              "blobs": {
+                                "properties": {
+                                  "isDefaultApp": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ],
+                                    "description": "Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation \u2014 guards rely on it to protect the connected stores from being lost when the project is deleted or transferred."
+                                  }
+                                },
+                                "type": "object"
+                              },
                               "microfrontends": {
                                 "oneOf": [
                                   {
@@ -98416,7 +98450,15 @@
                                       false,
                                       true
                                     ],
-                                    "description": "Whether the project is currently throttled."
+                                    "description": "Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint)."
+                                  },
+                                  "teamThrottled": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ],
+                                    "description": "Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`."
                                   }
                                 },
                                 "required": [
@@ -101706,6 +101748,19 @@
                           "type": "object"
                         }
                       ]
+                    },
+                    "blobs": {
+                      "properties": {
+                        "isDefaultApp": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation \u2014 guards rely on it to protect the connected stores from being lost when the project is deleted or transferred."
+                        }
+                      },
+                      "type": "object"
                     },
                     "microfrontends": {
                       "oneOf": [
@@ -105343,7 +105398,15 @@
                             false,
                             true
                           ],
-                          "description": "Whether the project is currently throttled."
+                          "description": "Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint)."
+                        },
+                        "teamThrottled": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`."
                         }
                       },
                       "required": [
@@ -108887,6 +108950,19 @@
                         }
                       ]
                     },
+                    "blobs": {
+                      "properties": {
+                        "isDefaultApp": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation \u2014 guards rely on it to protect the connected stores from being lost when the project is deleted or transferred."
+                        }
+                      },
+                      "type": "object"
+                    },
                     "microfrontends": {
                       "oneOf": [
                         {
@@ -112523,7 +112599,15 @@
                             false,
                             true
                           ],
-                          "description": "Whether the project is currently throttled."
+                          "description": "Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint)."
+                        },
+                        "teamThrottled": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`."
                         }
                       },
                       "required": [
@@ -115622,6 +115706,19 @@
                         }
                       ]
                     },
+                    "blobs": {
+                      "properties": {
+                        "isDefaultApp": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation \u2014 guards rely on it to protect the connected stores from being lost when the project is deleted or transferred."
+                        }
+                      },
+                      "type": "object"
+                    },
                     "microfrontends": {
                       "oneOf": [
                         {
@@ -119258,7 +119355,15 @@
                             false,
                             true
                           ],
-                          "description": "Whether the project is currently throttled."
+                          "description": "Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint)."
+                        },
+                        "teamThrottled": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`."
                         }
                       },
                       "required": [
@@ -123590,6 +123695,19 @@
                         }
                       ]
                     },
+                    "blobs": {
+                      "properties": {
+                        "isDefaultApp": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation \u2014 guards rely on it to protect the connected stores from being lost when the project is deleted or transferred."
+                        }
+                      },
+                      "type": "object"
+                    },
                     "microfrontends": {
                       "oneOf": [
                         {
@@ -127226,7 +127344,15 @@
                             false,
                             true
                           ],
-                          "description": "Whether the project is currently throttled."
+                          "description": "Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint)."
+                        },
+                        "teamThrottled": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`."
                         }
                       },
                       "required": [
@@ -139322,6 +139448,19 @@
                         }
                       ]
                     },
+                    "blobs": {
+                      "properties": {
+                        "isDefaultApp": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Marks the team-level, Vercel-managed default blob project (`vercel-blob-default-project`) that orphan blob stores are scoped to when connected without an explicit project. Set only by internal storage flows and immutable after creation \u2014 guards rely on it to protect the connected stores from being lost when the project is deleted or transferred."
+                        }
+                      },
+                      "type": "object"
+                    },
                     "microfrontends": {
                       "oneOf": [
                         {
@@ -142958,7 +143097,15 @@
                             false,
                             true
                           ],
-                          "description": "Whether the project is currently throttled."
+                          "description": "Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint)."
+                        },
+                        "teamThrottled": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`."
                         }
                       },
                       "required": [

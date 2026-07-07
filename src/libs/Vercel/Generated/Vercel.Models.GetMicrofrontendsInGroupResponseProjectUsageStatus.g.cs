@@ -28,10 +28,16 @@ namespace Vercel
         public double? BypassThrottleUntil { get; set; }
 
         /// <summary>
-        /// Whether the project is currently throttled.
+        /// Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("throttled")]
         public bool? Throttled { get; set; }
+
+        /// <summary>
+        /// Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamThrottled")]
+        public bool? TeamThrottled { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,7 +58,10 @@ namespace Vercel
         /// Timestamp until which throttling is bypassed (project pays list rates for overage).
         /// </param>
         /// <param name="throttled">
-        /// Whether the project is currently throttled.
+        /// Per-project throttle, set explicitly for this project (e.g. via the per-project Flat Rate CDN endpoint).
+        /// </param>
+        /// <param name="teamThrottled">
+        /// Synced from `team.billing.usageStatus.throttled`. When `true`, the team has throttled all of its projects regardless of `throttled`. The effective throttle the CDN enforces is `throttled || teamThrottled`.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -61,12 +70,14 @@ namespace Vercel
             global::Vercel.GetMicrofrontendsInGroupResponseProjectUsageStatusKind kind,
             double? exceededAllowanceUntil,
             double? bypassThrottleUntil,
-            bool? throttled)
+            bool? throttled,
+            bool? teamThrottled)
         {
             this.Kind = kind;
             this.ExceededAllowanceUntil = exceededAllowanceUntil;
             this.BypassThrottleUntil = bypassThrottleUntil;
             this.Throttled = throttled;
+            this.TeamThrottled = teamThrottled;
         }
 
         /// <summary>
