@@ -223,6 +223,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("blobs")]
+        public global::Vercel.GetProjectsResponseVariant3ProjectBlobs? Blobs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetProjectsResponseVariant3ProjectMicrofrontendsVariant1, global::Vercel.GetProjectsResponseVariant3ProjectMicrofrontendsVariant2, global::Vercel.GetProjectsResponseVariant3ProjectMicrofrontendsVariant3>))]
         public global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant3ProjectMicrofrontendsVariant1, global::Vercel.GetProjectsResponseVariant3ProjectMicrofrontendsVariant2, global::Vercel.GetProjectsResponseVariant3ProjectMicrofrontendsVariant3>? Microfrontends { get; set; }
@@ -643,6 +649,7 @@ namespace Vercel
         /// <param name="jobs"></param>
         /// <param name="latestDeployments"></param>
         /// <param name="link"></param>
+        /// <param name="blobs"></param>
         /// <param name="microfrontends"></param>
         /// <param name="optionsAllowlist"></param>
         /// <param name="outputDirectory"></param>
@@ -748,6 +755,7 @@ namespace Vercel
             global::Vercel.GetProjectsResponseVariant3ProjectJobs? jobs,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant3ProjectLatestDeployment>? latestDeployments,
             global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant1, global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant2, global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant3, global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant4, global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant5, global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant6>? link,
+            global::Vercel.GetProjectsResponseVariant3ProjectBlobs? blobs,
             global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant3ProjectMicrofrontendsVariant1, global::Vercel.GetProjectsResponseVariant3ProjectMicrofrontendsVariant2, global::Vercel.GetProjectsResponseVariant3ProjectMicrofrontendsVariant3>? microfrontends,
             global::Vercel.GetProjectsResponseVariant3ProjectOptionsAllowlist? optionsAllowlist,
             string? outputDirectory,
@@ -840,6 +848,7 @@ namespace Vercel
             this.Jobs = jobs;
             this.LatestDeployments = latestDeployments;
             this.Link = link;
+            this.Blobs = blobs;
             this.Microfrontends = microfrontends;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.NodeVersion = nodeVersion;

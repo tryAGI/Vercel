@@ -6995,6 +6995,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetRoutesResponseVariant2RouteRouteMissingItemVariant2Value>), TypeInfoPropertyName = "OneOfStringGetRoutesResponseVariant2RouteRouteMissingItemVariant2Value2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRoutesResponseVariant2RouteRouteMissingItemVariant2Value))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRoutesResponseVariant2RouteRouteMitigate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRoutesResponseVariant2RouteRouteMitigateAction), TypeInfoPropertyName = "GetRoutesResponseVariant2RouteRouteMitigateAction2")]
@@ -7494,7 +7495,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectLatestDeploymentBranchMatcherType), TypeInfoPropertyName = "GetProjectsResponseVariant2ProjectLatestDeploymentBranchMatcherType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant2ProjectLatestDeploymentBuild>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectLatestDeploymentBuild))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectLatestDeploymentChecksConclusion), TypeInfoPropertyName = "GetProjectsResponseVariant2ProjectLatestDeploymentChecksConclusion2")]
     internal sealed partial class SourceGenerationContextChunk011 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
