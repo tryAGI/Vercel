@@ -50,7 +50,7 @@ namespace Vercel
         public required string ManifestDigest { get; set; }
 
         /// <summary>
-        /// Whether the manifest is a multi-platform image index or a single-platform image manifest.
+        /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.VcrImageListItemKindJsonConverter))]
@@ -126,7 +126,7 @@ namespace Vercel
         /// Example: sha256:2c4e8f3a1b9d0e5c7a6f4b2d8e1c9a0b3d5f7e9c1a2b4d6f8e0c2a4b6d8f0e2c
         /// </param>
         /// <param name="kind">
-        /// Whether the manifest is a multi-platform image index or a single-platform image manifest.
+        /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
         /// </param>
         /// <param name="sizeInBytes">
         /// Total size in bytes of the image's resources (manifest, config and layer blobs) stored by the registry.

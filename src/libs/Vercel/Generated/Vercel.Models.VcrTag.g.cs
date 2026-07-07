@@ -36,7 +36,7 @@ namespace Vercel
         public required string ImageId { get; set; }
 
         /// <summary>
-        /// Whether the manifest is a multi-platform image index or a single-platform image manifest.
+        /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.VcrTagKindJsonConverter))]
@@ -119,7 +119,7 @@ namespace Vercel
         /// Example: img_a1b2c3d4e5f6
         /// </param>
         /// <param name="kind">
-        /// Whether the manifest is a multi-platform image index or a single-platform image manifest.
+        /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
         /// </param>
         /// <param name="sizeInBytes">
         /// Total size in bytes of the image's resources (manifest, config and layer blobs) stored by the registry.

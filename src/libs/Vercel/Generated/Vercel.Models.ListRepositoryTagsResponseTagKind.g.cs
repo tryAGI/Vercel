@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Attestation,
+        /// <summary>
+        /// 
+        /// </summary>
         Index,
         /// <summary>
         /// 
@@ -30,6 +34,7 @@ namespace Vercel
         {
             return value switch
             {
+                ListRepositoryTagsResponseTagKind.Attestation => "attestation",
                 ListRepositoryTagsResponseTagKind.Index => "index",
                 ListRepositoryTagsResponseTagKind.Manifest => "manifest",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -42,6 +47,7 @@ namespace Vercel
         {
             return value switch
             {
+                "attestation" => ListRepositoryTagsResponseTagKind.Attestation,
                 "index" => ListRepositoryTagsResponseTagKind.Index,
                 "manifest" => ListRepositoryTagsResponseTagKind.Manifest,
                 _ => null,

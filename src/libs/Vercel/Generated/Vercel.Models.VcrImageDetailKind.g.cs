@@ -4,10 +4,14 @@
 namespace Vercel
 {
     /// <summary>
-    /// Whether the manifest is a multi-platform image index or a single-platform image manifest.
+    /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
     /// </summary>
     public enum VcrImageDetailKind
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        Attestation,
         /// <summary>
         /// 
         /// </summary>
@@ -30,6 +34,7 @@ namespace Vercel
         {
             return value switch
             {
+                VcrImageDetailKind.Attestation => "attestation",
                 VcrImageDetailKind.Index => "index",
                 VcrImageDetailKind.Manifest => "manifest",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -42,6 +47,7 @@ namespace Vercel
         {
             return value switch
             {
+                "attestation" => VcrImageDetailKind.Attestation,
                 "index" => VcrImageDetailKind.Index,
                 "manifest" => VcrImageDetailKind.Manifest,
                 _ => null,
