@@ -71,6 +71,14 @@ namespace Vercel
         public required double StartedAt { get; set; }
 
         /// <summary>
+        /// Duration of the command execution in milliseconds.<br/>
+        /// Example: 1234
+        /// </summary>
+        /// <example>1234</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("durationMs")]
+        public double? DurationMs { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -107,6 +115,10 @@ namespace Vercel
         /// If the command did finish, the exit code.<br/>
         /// Example: 0
         /// </param>
+        /// <param name="durationMs">
+        /// Duration of the command execution in milliseconds.<br/>
+        /// Example: 1234
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -117,7 +129,8 @@ namespace Vercel
             string cwd,
             string sessionId,
             double startedAt,
-            double? exitCode)
+            double? exitCode,
+            double? durationMs)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
@@ -126,6 +139,7 @@ namespace Vercel
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
             this.ExitCode = exitCode;
             this.StartedAt = startedAt;
+            this.DurationMs = durationMs;
         }
 
         /// <summary>

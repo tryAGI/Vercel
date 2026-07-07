@@ -361,6 +361,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cacheReason")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CacheReason { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientIp")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ClientIp { get; set; }
@@ -1397,6 +1404,7 @@ namespace Vercel
         /// <param name="cacheHitState"></param>
         /// <param name="cacheHitLevel"></param>
         /// <param name="cacheApi"></param>
+        /// <param name="cacheReason"></param>
         /// <param name="clientIp"></param>
         /// <param name="clientIpCountry"></param>
         /// <param name="clientUserAgent"></param>
@@ -1591,6 +1599,7 @@ namespace Vercel
             string cacheHitState,
             string cacheHitLevel,
             string cacheApi,
+            string cacheReason,
             string clientIp,
             string clientIpCountry,
             string clientUserAgent,
@@ -1782,6 +1791,7 @@ namespace Vercel
             this.CacheHitState = cacheHitState ?? throw new global::System.ArgumentNullException(nameof(cacheHitState));
             this.CacheHitLevel = cacheHitLevel ?? throw new global::System.ArgumentNullException(nameof(cacheHitLevel));
             this.CacheApi = cacheApi ?? throw new global::System.ArgumentNullException(nameof(cacheApi));
+            this.CacheReason = cacheReason ?? throw new global::System.ArgumentNullException(nameof(cacheReason));
             this.ClientIp = clientIp ?? throw new global::System.ArgumentNullException(nameof(clientIp));
             this.ClientIpCountry = clientIpCountry ?? throw new global::System.ArgumentNullException(nameof(clientIpCountry));
             this.ClientUserAgent = clientUserAgent ?? throw new global::System.ArgumentNullException(nameof(clientUserAgent));
