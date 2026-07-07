@@ -163129,6 +163129,9 @@
                               "cacheApi": {
                                 "type": "string"
                               },
+                              "cacheReason": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -163714,6 +163717,9 @@
                               "cacheApi": {
                                 "type": "string"
                               },
+                              "cacheReason": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -164161,6 +164167,7 @@
                               "cacheHostname",
                               "cacheOperation",
                               "cachePath",
+                              "cacheReason",
                               "cacheResult",
                               "cacheTags",
                               "cachedInputTokensCurrency",
@@ -164735,6 +164742,9 @@
                               "cacheApi": {
                                 "type": "string"
                               },
+                              "cacheReason": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -165320,6 +165330,9 @@
                               "cacheApi": {
                                 "type": "string"
                               },
+                              "cacheReason": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -165767,6 +165780,7 @@
                               "cacheHostname",
                               "cacheOperation",
                               "cachePath",
+                              "cacheReason",
                               "cacheResult",
                               "cacheTags",
                               "cachedInputTokensCurrency",
@@ -166305,6 +166319,9 @@
                         "cacheApi": {
                           "type": "string"
                         },
+                        "cacheReason": {
+                          "type": "string"
+                        },
                         "clientIp": {
                           "type": "string"
                         },
@@ -166752,6 +166769,7 @@
                         "cacheHostname",
                         "cacheOperation",
                         "cachePath",
+                        "cacheReason",
                         "cacheResult",
                         "cacheTags",
                         "cachedInputTokensCurrency",
@@ -167221,6 +167239,9 @@
                         "cacheApi": {
                           "type": "string"
                         },
+                        "cacheReason": {
+                          "type": "string"
+                        },
                         "clientIp": {
                           "type": "string"
                         },
@@ -167668,6 +167689,7 @@
                         "cacheHostname",
                         "cacheOperation",
                         "cachePath",
+                        "cacheReason",
                         "cacheResult",
                         "cacheTags",
                         "cachedInputTokensCurrency",
@@ -178432,6 +178454,11 @@
             "type": "number",
             "description": "When the command was started, in milliseconds since the epoch.",
             "example": 1673123456789
+          },
+          "durationMs": {
+            "type": "number",
+            "description": "Duration of the command execution in milliseconds.",
+            "example": 1234
           }
         },
         "required": [
