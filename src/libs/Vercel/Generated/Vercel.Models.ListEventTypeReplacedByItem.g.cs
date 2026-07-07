@@ -1979,6 +1979,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamRemoteCachingPurge,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamRemoteCachingUpdate,
         /// <summary>
         /// 
@@ -2678,6 +2682,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.TeamNameUpdate => "team-name-update",
                 ListEventTypeReplacedByItem.TeamPaidInvoice => "team-paid-invoice",
                 ListEventTypeReplacedByItem.TeamProgramEnrollmentChanged => "team-program-enrollment-changed",
+                ListEventTypeReplacedByItem.TeamRemoteCachingPurge => "team-remote-caching-purge",
                 ListEventTypeReplacedByItem.TeamRemoteCachingUpdate => "team-remote-caching-update",
                 ListEventTypeReplacedByItem.TeamSamlEnforced => "team-saml-enforced",
                 ListEventTypeReplacedByItem.TeamSamlRoles => "team-saml-roles",
@@ -3229,6 +3234,7 @@ namespace Vercel
                 "team-name-update" => ListEventTypeReplacedByItem.TeamNameUpdate,
                 "team-paid-invoice" => ListEventTypeReplacedByItem.TeamPaidInvoice,
                 "team-program-enrollment-changed" => ListEventTypeReplacedByItem.TeamProgramEnrollmentChanged,
+                "team-remote-caching-purge" => ListEventTypeReplacedByItem.TeamRemoteCachingPurge,
                 "team-remote-caching-update" => ListEventTypeReplacedByItem.TeamRemoteCachingUpdate,
                 "team-saml-enforced" => ListEventTypeReplacedByItem.TeamSamlEnforced,
                 "team-saml-roles" => ListEventTypeReplacedByItem.TeamSamlRoles,

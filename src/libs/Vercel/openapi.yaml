@@ -2383,6 +2383,68 @@
           },
           "required": true
         }
+      },
+      "delete": {
+        "description": "Deletes all cache artifacts stored for the authenticated team or user, clearing the Remote Cache. Subsequent builds will re-populate the cache.",
+        "operationId": "deleteAllArtifacts",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Delete all cache artifacts",
+        "tags": [
+          "artifacts"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success. All cache artifacts for the account were deleted.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "deletedCount": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "deletedCount"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": ""
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          }
+        },
+        "parameters": [
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
       }
     },
     "/v1/billing/charges": {
@@ -162472,6 +162534,7 @@
                           "kind": {
                             "type": "string",
                             "enum": [
+                              "attestation",
                               "index",
                               "manifest"
                             ]
@@ -174850,6 +174913,7 @@
               "team-name-update",
               "team-paid-invoice",
               "team-program-enrollment-changed",
+              "team-remote-caching-purge",
               "team-remote-caching-update",
               "team-saml-enforced",
               "team-saml-roles",
@@ -175656,6 +175720,7 @@
               "team-name-update",
               "team-paid-invoice",
               "team-program-enrollment-changed",
+              "team-remote-caching-purge",
               "team-remote-caching-update",
               "team-saml-enforced",
               "team-saml-roles",
@@ -176255,6 +176320,7 @@
                 "team-name-update",
                 "team-paid-invoice",
                 "team-program-enrollment-changed",
+                "team-remote-caching-purge",
                 "team-remote-caching-update",
                 "team-saml-enforced",
                 "team-saml-roles",
@@ -180932,10 +180998,11 @@
           "kind": {
             "type": "string",
             "enum": [
+              "attestation",
               "index",
               "manifest"
             ],
-            "description": "Whether the manifest is a multi-platform image index or a single-platform image manifest."
+            "description": "Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation."
           },
           "platform": {
             "type": "string",
@@ -181050,10 +181117,11 @@
           "kind": {
             "type": "string",
             "enum": [
+              "attestation",
               "index",
               "manifest"
             ],
-            "description": "Whether the manifest is a multi-platform image index or a single-platform image manifest."
+            "description": "Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation."
           },
           "platform": {
             "type": "string",
@@ -181417,10 +181485,11 @@
           "kind": {
             "type": "string",
             "enum": [
+              "attestation",
               "index",
               "manifest"
             ],
-            "description": "Whether the manifest is a multi-platform image index or a single-platform image manifest."
+            "description": "Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation."
           },
           "platform": {
             "type": "string",

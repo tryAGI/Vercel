@@ -6995,6 +6995,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDrainResponseVariant1SamplingItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1SamplingItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1SamplingItemType), TypeInfoPropertyName = "GetDrainResponseVariant1SamplingItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1SamplingItemEnv), TypeInfoPropertyName = "GetDrainResponseVariant1SamplingItemEnv2")]
@@ -7494,7 +7495,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant2Type), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant2Base))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant2BaseType), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant2BaseType2")]
     internal sealed partial class SourceGenerationContextChunk008 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

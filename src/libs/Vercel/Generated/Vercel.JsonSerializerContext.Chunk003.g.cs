@@ -7269,6 +7269,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ArtifactQueryResponseVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ArtifactQueryResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ArtifactQueryResponseVariant2Error))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteAllArtifactsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListBillingChargesResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListBillingChargesResponseBillingCurrency), TypeInfoPropertyName = "ListBillingChargesResponseBillingCurrency2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListBillingChargesResponseChargeCategory), TypeInfoPropertyName = "ListBillingChargesResponseChargeCategory2")]
@@ -7494,7 +7495,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2Requires), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2Requires2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2Blocks), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2Blocks2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2Status), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2Status2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentCheckRunsResponseRunVariant2Conclusion), TypeInfoPropertyName = "ListDeploymentCheckRunsResponseRunVariant2Conclusion2")]
     internal sealed partial class SourceGenerationContextChunk003 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
