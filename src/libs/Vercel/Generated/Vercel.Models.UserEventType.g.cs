@@ -1044,6 +1044,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrganizationSlugUpdate,
+        /// <summary>
+        /// 
+        /// </summary>
         OrganizationTeamAdd,
         /// <summary>
         /// 
@@ -2457,6 +2461,7 @@ namespace Vercel
                 UserEventType.ObservabilityPlusProjectDisabled => "observability-plus-project-disabled",
                 UserEventType.ObservabilityPlusProjectEnabled => "observability-plus-project-enabled",
                 UserEventType.OrganizationCreate => "organization-create",
+                UserEventType.OrganizationSlugUpdate => "organization-slug-update",
                 UserEventType.OrganizationTeamAdd => "organization-team-add",
                 UserEventType.OwnerBlocked => "owner-blocked",
                 UserEventType.OwnerSoftBlocked => "owner-soft-blocked",
@@ -3011,6 +3016,7 @@ namespace Vercel
                 "observability-plus-project-disabled" => UserEventType.ObservabilityPlusProjectDisabled,
                 "observability-plus-project-enabled" => UserEventType.ObservabilityPlusProjectEnabled,
                 "organization-create" => UserEventType.OrganizationCreate,
+                "organization-slug-update" => UserEventType.OrganizationSlugUpdate,
                 "organization-team-add" => UserEventType.OrganizationTeamAdd,
                 "owner-blocked" => UserEventType.OwnerBlocked,
                 "owner-soft-blocked" => UserEventType.OwnerSoftBlocked,
