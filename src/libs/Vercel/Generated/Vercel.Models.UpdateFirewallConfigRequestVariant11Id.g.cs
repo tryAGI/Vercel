@@ -11,27 +11,47 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        AiBots,
+        Gen,
         /// <summary>
         /// 
         /// </summary>
-        BotFilter,
+        Java,
         /// <summary>
         /// 
         /// </summary>
-        BotProtection,
+        Lfi,
         /// <summary>
         /// 
         /// </summary>
-        Owasp,
+        Ma,
         /// <summary>
         /// 
         /// </summary>
-        TrafficSources,
+        Php,
         /// <summary>
         /// 
         /// </summary>
-        VercelRuleset,
+        Rce,
+        /// <summary>
+        /// 
+        /// </summary>
+        Rfi,
+        /// <summary>
+        /// 
+        /// </summary>
+        Sd,
+        /// <summary>
+        /// 
+        /// </summary>
+        Sf,
+        /// <summary>
+        /// 
+        /// </summary>
+        Sqli,
+        /// <summary>
+        /// 
+        /// </summary>
+        Xss,
     }
 
     /// <summary>
@@ -46,12 +66,17 @@ namespace Vercel
         {
             return value switch
             {
-                UpdateFirewallConfigRequestVariant11Id.AiBots => "ai_bots",
-                UpdateFirewallConfigRequestVariant11Id.BotFilter => "bot_filter",
-                UpdateFirewallConfigRequestVariant11Id.BotProtection => "bot_protection",
-                UpdateFirewallConfigRequestVariant11Id.Owasp => "owasp",
-                UpdateFirewallConfigRequestVariant11Id.TrafficSources => "traffic_sources",
-                UpdateFirewallConfigRequestVariant11Id.VercelRuleset => "vercel_ruleset",
+                UpdateFirewallConfigRequestVariant11Id.Gen => "gen",
+                UpdateFirewallConfigRequestVariant11Id.Java => "java",
+                UpdateFirewallConfigRequestVariant11Id.Lfi => "lfi",
+                UpdateFirewallConfigRequestVariant11Id.Ma => "ma",
+                UpdateFirewallConfigRequestVariant11Id.Php => "php",
+                UpdateFirewallConfigRequestVariant11Id.Rce => "rce",
+                UpdateFirewallConfigRequestVariant11Id.Rfi => "rfi",
+                UpdateFirewallConfigRequestVariant11Id.Sd => "sd",
+                UpdateFirewallConfigRequestVariant11Id.Sf => "sf",
+                UpdateFirewallConfigRequestVariant11Id.Sqli => "sqli",
+                UpdateFirewallConfigRequestVariant11Id.Xss => "xss",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -62,12 +87,17 @@ namespace Vercel
         {
             return value switch
             {
-                "ai_bots" => UpdateFirewallConfigRequestVariant11Id.AiBots,
-                "bot_filter" => UpdateFirewallConfigRequestVariant11Id.BotFilter,
-                "bot_protection" => UpdateFirewallConfigRequestVariant11Id.BotProtection,
-                "owasp" => UpdateFirewallConfigRequestVariant11Id.Owasp,
-                "traffic_sources" => UpdateFirewallConfigRequestVariant11Id.TrafficSources,
-                "vercel_ruleset" => UpdateFirewallConfigRequestVariant11Id.VercelRuleset,
+                "gen" => UpdateFirewallConfigRequestVariant11Id.Gen,
+                "java" => UpdateFirewallConfigRequestVariant11Id.Java,
+                "lfi" => UpdateFirewallConfigRequestVariant11Id.Lfi,
+                "ma" => UpdateFirewallConfigRequestVariant11Id.Ma,
+                "php" => UpdateFirewallConfigRequestVariant11Id.Php,
+                "rce" => UpdateFirewallConfigRequestVariant11Id.Rce,
+                "rfi" => UpdateFirewallConfigRequestVariant11Id.Rfi,
+                "sd" => UpdateFirewallConfigRequestVariant11Id.Sd,
+                "sf" => UpdateFirewallConfigRequestVariant11Id.Sf,
+                "sqli" => UpdateFirewallConfigRequestVariant11Id.Sqli,
+                "xss" => UpdateFirewallConfigRequestVariant11Id.Xss,
                 _ => null,
             };
         }

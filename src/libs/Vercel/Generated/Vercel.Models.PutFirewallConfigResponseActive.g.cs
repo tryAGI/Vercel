@@ -73,6 +73,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rulesets")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigResponseActiveRuleset>, global::System.Collections.Generic.Dictionary<string, global::Vercel.PutFirewallConfigResponseActiveRulesets2>>))]
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigResponseActiveRuleset>, global::System.Collections.Generic.Dictionary<string, global::Vercel.PutFirewallConfigResponseActiveRulesets2>>? Rulesets { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("changes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<object> Changes { get; set; }
@@ -117,6 +124,7 @@ namespace Vercel
         /// <param name="crs">
         /// Custom Ruleset
         /// </param>
+        /// <param name="rulesets"></param>
         /// <param name="managedRules"></param>
         /// <param name="botIdEnabled"></param>
         /// <param name="logHeaders"></param>
@@ -134,6 +142,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigResponseActiveIp> ips,
             global::System.Collections.Generic.IList<object> changes,
             global::Vercel.PutFirewallConfigResponseActiveCrs? crs,
+            global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigResponseActiveRuleset>, global::System.Collections.Generic.Dictionary<string, global::Vercel.PutFirewallConfigResponseActiveRulesets2>>? rulesets,
             global::Vercel.PutFirewallConfigResponseActiveManagedRules? managedRules,
             bool? botIdEnabled,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.PutFirewallConfigResponseActiveLogHeaders?>? logHeaders)
@@ -147,6 +156,7 @@ namespace Vercel
             this.Crs = crs;
             this.Rules = rules ?? throw new global::System.ArgumentNullException(nameof(rules));
             this.Ips = ips ?? throw new global::System.ArgumentNullException(nameof(ips));
+            this.Rulesets = rulesets;
             this.Changes = changes ?? throw new global::System.ArgumentNullException(nameof(changes));
             this.ManagedRules = managedRules;
             this.BotIdEnabled = botIdEnabled;

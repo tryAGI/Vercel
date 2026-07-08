@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Enable Firewall
+    /// Add a ruleset
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant1
     {
@@ -26,7 +26,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Value { get; set; }
+        public required global::Vercel.UpdateFirewallConfigRequestVariant1Value Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,13 +44,13 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant1(
-            bool value,
+            global::Vercel.UpdateFirewallConfigRequestVariant1Value value,
             global::Vercel.UpdateFirewallConfigRequestVariant1Action action,
             object? id)
         {
             this.Action = action;
             this.Id = id;
-            this.Value = value;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>

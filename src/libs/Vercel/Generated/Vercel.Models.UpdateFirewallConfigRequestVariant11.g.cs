@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Update a managed ruleset
+    /// Enable a managed rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant11
     {

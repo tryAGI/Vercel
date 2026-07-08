@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Toggle bot ID
+    /// Add an IP Blocking rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant13
     {
@@ -26,7 +26,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Value { get; set; }
+        public required global::Vercel.UpdateFirewallConfigRequestVariant13Value Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,12 +45,12 @@ namespace Vercel
 #endif
         public UpdateFirewallConfigRequestVariant13(
             string action,
-            bool value,
+            global::Vercel.UpdateFirewallConfigRequestVariant13Value value,
             string? id)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
             this.Id = id;
-            this.Value = value;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>

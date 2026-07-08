@@ -53,6 +53,12 @@ namespace Vercel
         public global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteMitigate? Mitigate { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transforms")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteTransform>? Transforms { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -68,6 +74,7 @@ namespace Vercel
         /// <param name="status"></param>
         /// <param name="handle"></param>
         /// <param name="mitigate"></param>
+        /// <param name="transforms"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -78,7 +85,8 @@ namespace Vercel
             string? dest,
             double? status,
             global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteHandle? handle,
-            global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteMitigate? mitigate)
+            global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteMitigate? mitigate,
+            global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteTransform>? transforms)
         {
             this.Src = src;
             this.Has = has;
@@ -87,6 +95,7 @@ namespace Vercel
             this.Status = status;
             this.Handle = handle;
             this.Mitigate = mitigate;
+            this.Transforms = transforms;
         }
 
         /// <summary>

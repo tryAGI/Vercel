@@ -6,58 +6,39 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public enum UpdateFirewallConfigRequestVariant8ValueAction
+    public sealed partial class UpdateFirewallConfigRequestVariant8ValueAction
     {
         /// <summary>
         /// 
         /// </summary>
-        Bypass,
-        /// <summary>
-        /// 
-        /// </summary>
-        Challenge,
-        /// <summary>
-        /// 
-        /// </summary>
-        Deny,
-        /// <summary>
-        /// 
-        /// </summary>
-        Log,
-    }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mitigate")]
+        public global::Vercel.UpdateFirewallConfigRequestVariant8ValueActionMitigate? Mitigate { get; set; }
 
-    /// <summary>
-    /// Enum extensions to do fast conversions without the reflection.
-    /// </summary>
-    public static class UpdateFirewallConfigRequestVariant8ValueActionExtensions
-    {
         /// <summary>
-        /// Converts an enum to a string.
+        /// Additional properties that are not explicitly defined in the schema
         /// </summary>
-        public static string ToValueString(this UpdateFirewallConfigRequestVariant8ValueAction value)
-        {
-            return value switch
-            {
-                UpdateFirewallConfigRequestVariant8ValueAction.Bypass => "bypass",
-                UpdateFirewallConfigRequestVariant8ValueAction.Challenge => "challenge",
-                UpdateFirewallConfigRequestVariant8ValueAction.Deny => "deny",
-                UpdateFirewallConfigRequestVariant8ValueAction.Log => "log",
-                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
-            };
-        }
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
         /// <summary>
-        /// Converts an string to a enum.
+        /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant8ValueAction" /> class.
         /// </summary>
-        public static UpdateFirewallConfigRequestVariant8ValueAction? ToEnum(string value)
+        /// <param name="mitigate"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public UpdateFirewallConfigRequestVariant8ValueAction(
+            global::Vercel.UpdateFirewallConfigRequestVariant8ValueActionMitigate? mitigate)
         {
-            return value switch
-            {
-                "bypass" => UpdateFirewallConfigRequestVariant8ValueAction.Bypass,
-                "challenge" => UpdateFirewallConfigRequestVariant8ValueAction.Challenge,
-                "deny" => UpdateFirewallConfigRequestVariant8ValueAction.Deny,
-                "log" => UpdateFirewallConfigRequestVariant8ValueAction.Log,
-                _ => null,
-            };
+            this.Mitigate = mitigate;
         }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant8ValueAction" /> class.
+        /// </summary>
+        public UpdateFirewallConfigRequestVariant8ValueAction()
+        {
+        }
+
     }
 }

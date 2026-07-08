@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Remove an IP Blocking rule
+    /// Reorder a custom rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant10
     {

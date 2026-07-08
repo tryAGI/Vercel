@@ -11,10 +11,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Challenge,
-        /// <summary>
-        /// 
-        /// </summary>
         Deny,
         /// <summary>
         /// 
@@ -34,7 +30,6 @@ namespace Vercel
         {
             return value switch
             {
-                UpdateFirewallConfigRequestVariant11ValueAction.Challenge => "challenge",
                 UpdateFirewallConfigRequestVariant11ValueAction.Deny => "deny",
                 UpdateFirewallConfigRequestVariant11ValueAction.Log => "log",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -47,7 +42,6 @@ namespace Vercel
         {
             return value switch
             {
-                "challenge" => UpdateFirewallConfigRequestVariant11ValueAction.Challenge,
                 "deny" => UpdateFirewallConfigRequestVariant11ValueAction.Deny,
                 "log" => UpdateFirewallConfigRequestVariant11ValueAction.Log,
                 _ => null,
