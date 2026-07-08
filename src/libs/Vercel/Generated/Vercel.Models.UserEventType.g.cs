@@ -1040,6 +1040,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrganizationCreate,
+        /// <summary>
+        /// 
+        /// </summary>
         OrganizationTeamAdd,
         /// <summary>
         /// 
@@ -2452,6 +2456,7 @@ namespace Vercel
                 UserEventType.ObservabilityEnabled => "observability-enabled",
                 UserEventType.ObservabilityPlusProjectDisabled => "observability-plus-project-disabled",
                 UserEventType.ObservabilityPlusProjectEnabled => "observability-plus-project-enabled",
+                UserEventType.OrganizationCreate => "organization-create",
                 UserEventType.OrganizationTeamAdd => "organization-team-add",
                 UserEventType.OwnerBlocked => "owner-blocked",
                 UserEventType.OwnerSoftBlocked => "owner-soft-blocked",
@@ -3005,6 +3010,7 @@ namespace Vercel
                 "observability-enabled" => UserEventType.ObservabilityEnabled,
                 "observability-plus-project-disabled" => UserEventType.ObservabilityPlusProjectDisabled,
                 "observability-plus-project-enabled" => UserEventType.ObservabilityPlusProjectEnabled,
+                "organization-create" => UserEventType.OrganizationCreate,
                 "organization-team-add" => UserEventType.OrganizationTeamAdd,
                 "owner-blocked" => UserEventType.OwnerBlocked,
                 "owner-soft-blocked" => UserEventType.OwnerSoftBlocked,
