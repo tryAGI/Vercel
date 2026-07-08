@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Remove a custom rule
+    /// Set the action for a consumed ruleset (project scope)
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant4
     {

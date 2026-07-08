@@ -38,13 +38,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateFirewallConfigRequestVariant2ValueAction Action { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("valid")]
         public bool? Valid { get; set; }
 
@@ -67,7 +60,6 @@ namespace Vercel
         /// <param name="name"></param>
         /// <param name="active"></param>
         /// <param name="conditionGroup"></param>
-        /// <param name="action"></param>
         /// <param name="description"></param>
         /// <param name="valid"></param>
         /// <param name="validationErrors"></param>
@@ -78,7 +70,6 @@ namespace Vercel
             string name,
             bool active,
             global::System.Collections.Generic.IList<global::Vercel.UpdateFirewallConfigRequestVariant2ValueConditionGroupItem> conditionGroup,
-            global::Vercel.UpdateFirewallConfigRequestVariant2ValueAction action,
             string? description,
             bool? valid,
             global::Vercel.AnyOf<global::System.Collections.Generic.IList<string>, string>? validationErrors)
@@ -87,7 +78,6 @@ namespace Vercel
             this.Description = description;
             this.Active = active;
             this.ConditionGroup = conditionGroup ?? throw new global::System.ArgumentNullException(nameof(conditionGroup));
-            this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
             this.Valid = valid;
             this.ValidationErrors = validationErrors;
         }

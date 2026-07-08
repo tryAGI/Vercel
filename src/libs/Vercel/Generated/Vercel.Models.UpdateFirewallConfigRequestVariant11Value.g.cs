@@ -11,16 +11,17 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant11ValueActionJsonConverter))]
-        public global::Vercel.UpdateFirewallConfigRequestVariant11ValueAction? Action { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Active { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant11ValueActionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Active { get; set; }
+        public required global::Vercel.UpdateFirewallConfigRequestVariant11ValueAction Action { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,10 +39,10 @@ namespace Vercel
 #endif
         public UpdateFirewallConfigRequestVariant11Value(
             bool active,
-            global::Vercel.UpdateFirewallConfigRequestVariant11ValueAction? action)
+            global::Vercel.UpdateFirewallConfigRequestVariant11ValueAction action)
         {
-            this.Action = action;
             this.Active = active;
+            this.Action = action;
         }
 
         /// <summary>

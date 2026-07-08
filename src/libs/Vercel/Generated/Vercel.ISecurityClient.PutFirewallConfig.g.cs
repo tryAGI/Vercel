@@ -67,6 +67,7 @@ namespace Vercel
         /// Custom Ruleset
         /// </param>
         /// <param name="rules"></param>
+        /// <param name="rulesets"></param>
         /// <param name="ips"></param>
         /// <param name="botIdEnabled"></param>
         /// <param name="logHeaders"></param>
@@ -81,6 +82,7 @@ namespace Vercel
             object? managedRules = default,
             global::Vercel.PutFirewallConfigRequestCrs? crs = default,
             global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestRule>? rules = default,
+            global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestRuleset>, global::System.Collections.Generic.Dictionary<string, global::Vercel.PutFirewallConfigRequestRulesets2>>? rulesets = default,
             global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestIp>? ips = default,
             bool? botIdEnabled = default,
             global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? logHeaders = default,

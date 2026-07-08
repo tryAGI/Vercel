@@ -36,6 +36,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rulesets")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestRuleset>, global::System.Collections.Generic.Dictionary<string, global::Vercel.PutFirewallConfigRequestRulesets2>>))]
+        public global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestRuleset>, global::System.Collections.Generic.Dictionary<string, global::Vercel.PutFirewallConfigRequestRulesets2>>? Rulesets { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ips")]
         public global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestIp>? Ips { get; set; }
 
@@ -67,6 +74,7 @@ namespace Vercel
         /// Custom Ruleset
         /// </param>
         /// <param name="rules"></param>
+        /// <param name="rulesets"></param>
         /// <param name="ips"></param>
         /// <param name="botIdEnabled"></param>
         /// <param name="logHeaders"></param>
@@ -78,6 +86,7 @@ namespace Vercel
             object? managedRules,
             global::Vercel.PutFirewallConfigRequestCrs? crs,
             global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestRule>? rules,
+            global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestRuleset>, global::System.Collections.Generic.Dictionary<string, global::Vercel.PutFirewallConfigRequestRulesets2>>? rulesets,
             global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestIp>? ips,
             bool? botIdEnabled,
             global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? logHeaders)
@@ -86,6 +95,7 @@ namespace Vercel
             this.ManagedRules = managedRules;
             this.Crs = crs;
             this.Rules = rules;
+            this.Rulesets = rulesets;
             this.Ips = ips;
             this.BotIdEnabled = botIdEnabled;
             this.LogHeaders = logHeaders;

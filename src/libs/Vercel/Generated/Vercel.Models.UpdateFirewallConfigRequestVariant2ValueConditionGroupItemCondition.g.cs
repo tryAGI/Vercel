@@ -40,8 +40,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>))]
-        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>, double?>? Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>))]
+        public global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>, double?>? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,7 +65,7 @@ namespace Vercel
             global::Vercel.UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionOp op,
             bool? neg,
             string? key,
-            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>, double?>? value)
+            global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>, double?>? value)
         {
             this.Type = type;
             this.Op = op;

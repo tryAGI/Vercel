@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Disable a managed rule
+    /// Add a custom rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant7
     {

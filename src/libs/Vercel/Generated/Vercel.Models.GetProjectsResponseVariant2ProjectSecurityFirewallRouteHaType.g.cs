@@ -23,6 +23,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Headers,
+        /// <summary>
+        /// 
+        /// </summary>
         Host,
         /// <summary>
         /// 
@@ -77,6 +81,7 @@ namespace Vercel
                 GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.Cookie => "cookie",
                 GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.Environment => "environment",
                 GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.Header => "header",
+                GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.Headers => "headers",
                 GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.Host => "host",
                 GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.InitialRequestPath => "initial_request_path",
                 GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.IpAddress => "ip_address",
@@ -100,6 +105,7 @@ namespace Vercel
                 "cookie" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.Cookie,
                 "environment" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.Environment,
                 "header" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.Header,
+                "headers" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.Headers,
                 "host" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.Host,
                 "initial_request_path" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.InitialRequestPath,
                 "ip_address" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteHaType.IpAddress,
