@@ -96,6 +96,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayGuardrailsUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayModelAllowlistModelsUpdated,
         /// <summary>
         /// 
@@ -2212,6 +2216,7 @@ namespace Vercel
                 ListEventTypeName.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeName.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeName.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                ListEventTypeName.AiGatewayGuardrailsUpdated => "ai-gateway-guardrails-updated",
                 ListEventTypeName.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
                 ListEventTypeName.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
                 ListEventTypeName.AiGatewayPrivateModelCreated => "ai-gateway-private-model-created",
@@ -2764,6 +2769,7 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => ListEventTypeName.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeName.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeName.AiGatewayByokCredentialUpdated,
+                "ai-gateway-guardrails-updated" => ListEventTypeName.AiGatewayGuardrailsUpdated,
                 "ai-gateway-model-allowlist-models-updated" => ListEventTypeName.AiGatewayModelAllowlistModelsUpdated,
                 "ai-gateway-model-allowlist-toggled" => ListEventTypeName.AiGatewayModelAllowlistToggled,
                 "ai-gateway-private-model-created" => ListEventTypeName.AiGatewayPrivateModelCreated,

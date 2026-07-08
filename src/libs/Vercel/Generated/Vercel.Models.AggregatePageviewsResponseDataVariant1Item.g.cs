@@ -821,6 +821,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("piiRedactionApplied")]
+        public string? PiiRedactionApplied { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("moderationApplied")]
+        public string? ModerationApplied { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("queueName")]
         public string? QueueName { get; set; }
 
@@ -1306,6 +1318,8 @@ namespace Vercel
         /// <param name="quotaEntityType"></param>
         /// <param name="videoResolution"></param>
         /// <param name="videoAspectRatio"></param>
+        /// <param name="piiRedactionApplied"></param>
+        /// <param name="moderationApplied"></param>
         /// <param name="queueName"></param>
         /// <param name="consumerGroup"></param>
         /// <param name="messageId"></param>
@@ -1502,6 +1516,8 @@ namespace Vercel
             string? quotaEntityType,
             string? videoResolution,
             string? videoAspectRatio,
+            string? piiRedactionApplied,
+            string? moderationApplied,
             string? queueName,
             string? consumerGroup,
             string? messageId,
@@ -1694,6 +1710,8 @@ namespace Vercel
             this.QuotaEntityType = quotaEntityType;
             this.VideoResolution = videoResolution;
             this.VideoAspectRatio = videoAspectRatio;
+            this.PiiRedactionApplied = piiRedactionApplied;
+            this.ModerationApplied = moderationApplied;
             this.QueueName = queueName;
             this.ConsumerGroup = consumerGroup;
             this.MessageId = messageId;
