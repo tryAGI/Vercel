@@ -956,6 +956,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("piiRedactionApplied")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string PiiRedactionApplied { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("moderationApplied")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ModerationApplied { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("queueName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string QueueName { get; set; }
@@ -1489,6 +1503,8 @@ namespace Vercel
         /// <param name="quotaEntityType"></param>
         /// <param name="videoResolution"></param>
         /// <param name="videoAspectRatio"></param>
+        /// <param name="piiRedactionApplied"></param>
+        /// <param name="moderationApplied"></param>
         /// <param name="queueName"></param>
         /// <param name="consumerGroup"></param>
         /// <param name="messageId"></param>
@@ -1684,6 +1700,8 @@ namespace Vercel
             string quotaEntityType,
             string videoResolution,
             string videoAspectRatio,
+            string piiRedactionApplied,
+            string moderationApplied,
             string queueName,
             string consumerGroup,
             string messageId,
@@ -1876,6 +1894,8 @@ namespace Vercel
             this.QuotaEntityType = quotaEntityType ?? throw new global::System.ArgumentNullException(nameof(quotaEntityType));
             this.VideoResolution = videoResolution ?? throw new global::System.ArgumentNullException(nameof(videoResolution));
             this.VideoAspectRatio = videoAspectRatio ?? throw new global::System.ArgumentNullException(nameof(videoAspectRatio));
+            this.PiiRedactionApplied = piiRedactionApplied ?? throw new global::System.ArgumentNullException(nameof(piiRedactionApplied));
+            this.ModerationApplied = moderationApplied ?? throw new global::System.ArgumentNullException(nameof(moderationApplied));
             this.QueueName = queueName ?? throw new global::System.ArgumentNullException(nameof(queueName));
             this.ConsumerGroup = consumerGroup ?? throw new global::System.ArgumentNullException(nameof(consumerGroup));
             this.MessageId = messageId ?? throw new global::System.ArgumentNullException(nameof(messageId));

@@ -89,6 +89,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayGuardrails")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayGuardrails { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayRules")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayRules { get; set; }
 
@@ -1596,6 +1602,7 @@ namespace Vercel
         /// <param name="aiGatewayApiKeyOwnedBySelf"></param>
         /// <param name="aiGatewayCredits"></param>
         /// <param name="aiGatewayPrivateModels"></param>
+        /// <param name="aiGatewayGuardrails"></param>
         /// <param name="aiGatewayRules"></param>
         /// <param name="aiGatewaySettings"></param>
         /// <param name="aiGatewayUsage"></param>
@@ -1861,6 +1868,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKeyOwnedBySelf,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayCredits,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayPrivateModels,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayGuardrails,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayRules,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewaySettings,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayUsage,
@@ -2123,6 +2131,7 @@ namespace Vercel
             this.AiGatewayApiKeyOwnedBySelf = aiGatewayApiKeyOwnedBySelf;
             this.AiGatewayCredits = aiGatewayCredits;
             this.AiGatewayPrivateModels = aiGatewayPrivateModels;
+            this.AiGatewayGuardrails = aiGatewayGuardrails;
             this.AiGatewayRules = aiGatewayRules;
             this.AiGatewaySettings = aiGatewaySettings;
             this.AiGatewayUsage = aiGatewayUsage;

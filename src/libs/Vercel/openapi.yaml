@@ -74814,6 +74814,12 @@
                                 },
                                 "type": "array"
                               },
+                              "aiGatewayGuardrails": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "aiGatewayRules": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -95991,6 +95997,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "aiGatewayGuardrails": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "aiGatewayRules": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -102934,6 +102946,12 @@
                           "type": "array"
                         },
                         "aiGatewayPrivateModels": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayGuardrails": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -110140,6 +110158,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayGuardrails": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayRules": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -116891,6 +116915,12 @@
                           "type": "array"
                         },
                         "aiGatewayPrivateModels": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayGuardrails": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -124880,6 +124910,12 @@
                           "type": "array"
                         },
                         "aiGatewayPrivateModels": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayGuardrails": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -140633,6 +140669,12 @@
                           "type": "array"
                         },
                         "aiGatewayPrivateModels": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayGuardrails": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -163447,6 +163489,12 @@
                               "videoAspectRatio": {
                                 "type": "string"
                               },
+                              "piiRedactionApplied": {
+                                "type": "string"
+                              },
+                              "moderationApplied": {
+                                "type": "string"
+                              },
                               "queueName": {
                                 "type": "string"
                               },
@@ -164035,6 +164083,12 @@
                               "videoAspectRatio": {
                                 "type": "string"
                               },
+                              "piiRedactionApplied": {
+                                "type": "string"
+                              },
+                              "moderationApplied": {
+                                "type": "string"
+                              },
                               "queueName": {
                                 "type": "string"
                               },
@@ -164298,6 +164352,7 @@
                               "microfrontendsResponseReason",
                               "middlewareAction",
                               "middlewareActionTarget",
+                              "moderationApplied",
                               "notificationUrl",
                               "optimizedFormatMimeType",
                               "optimizedQuality",
@@ -164308,6 +164363,7 @@
                               "osName",
                               "pathType",
                               "pathTypeVariant",
+                              "piiRedactionApplied",
                               "projectId",
                               "projectName",
                               "provider",
@@ -165060,6 +165116,12 @@
                               "videoAspectRatio": {
                                 "type": "string"
                               },
+                              "piiRedactionApplied": {
+                                "type": "string"
+                              },
+                              "moderationApplied": {
+                                "type": "string"
+                              },
                               "queueName": {
                                 "type": "string"
                               },
@@ -165648,6 +165710,12 @@
                               "videoAspectRatio": {
                                 "type": "string"
                               },
+                              "piiRedactionApplied": {
+                                "type": "string"
+                              },
+                              "moderationApplied": {
+                                "type": "string"
+                              },
                               "queueName": {
                                 "type": "string"
                               },
@@ -165911,6 +165979,7 @@
                               "microfrontendsResponseReason",
                               "middlewareAction",
                               "middlewareActionTarget",
+                              "moderationApplied",
                               "notificationUrl",
                               "optimizedFormatMimeType",
                               "optimizedQuality",
@@ -165921,6 +165990,7 @@
                               "osName",
                               "pathType",
                               "pathTypeVariant",
+                              "piiRedactionApplied",
                               "projectId",
                               "projectName",
                               "provider",
@@ -166637,6 +166707,12 @@
                         "videoAspectRatio": {
                           "type": "string"
                         },
+                        "piiRedactionApplied": {
+                          "type": "string"
+                        },
+                        "moderationApplied": {
+                          "type": "string"
+                        },
                         "queueName": {
                           "type": "string"
                         },
@@ -166900,6 +166976,7 @@
                         "microfrontendsResponseReason",
                         "middlewareAction",
                         "middlewareActionTarget",
+                        "moderationApplied",
                         "notificationUrl",
                         "optimizedFormatMimeType",
                         "optimizedQuality",
@@ -166910,6 +166987,7 @@
                         "osName",
                         "pathType",
                         "pathTypeVariant",
+                        "piiRedactionApplied",
                         "projectId",
                         "projectName",
                         "provider",
@@ -167557,6 +167635,12 @@
                         "videoAspectRatio": {
                           "type": "string"
                         },
+                        "piiRedactionApplied": {
+                          "type": "string"
+                        },
+                        "moderationApplied": {
+                          "type": "string"
+                        },
                         "queueName": {
                           "type": "string"
                         },
@@ -167820,6 +167904,7 @@
                         "microfrontendsResponseReason",
                         "middlewareAction",
                         "middlewareActionTarget",
+                        "moderationApplied",
                         "notificationUrl",
                         "optimizedFormatMimeType",
                         "optimizedQuality",
@@ -167830,6 +167915,7 @@
                         "osName",
                         "pathType",
                         "pathTypeVariant",
+                        "piiRedactionApplied",
                         "projectId",
                         "projectName",
                         "provider",
@@ -174442,6 +174528,7 @@
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-guardrails-updated",
               "ai-gateway-model-allowlist-models-updated",
               "ai-gateway-model-allowlist-toggled",
               "ai-gateway-private-model-created",
@@ -175249,6 +175336,7 @@
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-guardrails-updated",
               "ai-gateway-model-allowlist-models-updated",
               "ai-gateway-model-allowlist-toggled",
               "ai-gateway-private-model-created",
@@ -175849,6 +175937,7 @@
                 "ai-gateway-byok-credential-created",
                 "ai-gateway-byok-credential-deleted",
                 "ai-gateway-byok-credential-updated",
+                "ai-gateway-guardrails-updated",
                 "ai-gateway-model-allowlist-models-updated",
                 "ai-gateway-model-allowlist-toggled",
                 "ai-gateway-private-model-created",
