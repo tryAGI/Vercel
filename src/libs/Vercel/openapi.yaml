@@ -13563,6 +13563,296 @@
                           "type"
                         ],
                         "type": "object"
+                      },
+                      {
+                        "oneOf": [
+                          {
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "command",
+                                  "delimiter",
+                                  "deployment-state",
+                                  "edge-function-invocation",
+                                  "exit",
+                                  "fatal",
+                                  "metric",
+                                  "middleware",
+                                  "middleware-invocation",
+                                  "report",
+                                  "stderr",
+                                  "stdout"
+                                ]
+                              },
+                              "created": {
+                                "type": "number"
+                              },
+                              "payload": {
+                                "properties": {
+                                  "deploymentId": {
+                                    "type": "string"
+                                  },
+                                  "info": {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string"
+                                      },
+                                      "name": {
+                                        "type": "string"
+                                      },
+                                      "entrypoint": {
+                                        "type": "string"
+                                      },
+                                      "path": {
+                                        "type": "string"
+                                      },
+                                      "step": {
+                                        "type": "string"
+                                      },
+                                      "readyState": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "name",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  "text": {
+                                    "type": "string"
+                                  },
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "date": {
+                                    "type": "number"
+                                  },
+                                  "serial": {
+                                    "type": "string"
+                                  },
+                                  "created": {
+                                    "type": "number"
+                                  },
+                                  "statusCode": {
+                                    "type": "number"
+                                  },
+                                  "requestId": {
+                                    "type": "string"
+                                  },
+                                  "proxy": {
+                                    "properties": {
+                                      "timestamp": {
+                                        "type": "number"
+                                      },
+                                      "method": {
+                                        "type": "string"
+                                      },
+                                      "host": {
+                                        "type": "string"
+                                      },
+                                      "path": {
+                                        "type": "string"
+                                      },
+                                      "statusCode": {
+                                        "type": "number"
+                                      },
+                                      "userAgent": {
+                                        "items": {
+                                          "type": "string"
+                                        },
+                                        "type": "array"
+                                      },
+                                      "referer": {
+                                        "type": "string"
+                                      },
+                                      "clientIp": {
+                                        "type": "string"
+                                      },
+                                      "region": {
+                                        "type": "string"
+                                      },
+                                      "scheme": {
+                                        "type": "string"
+                                      },
+                                      "responseByteSize": {
+                                        "type": "number"
+                                      },
+                                      "cacheId": {
+                                        "type": "string"
+                                      },
+                                      "pathType": {
+                                        "type": "string"
+                                      },
+                                      "pathTypeVariant": {
+                                        "type": "string"
+                                      },
+                                      "vercelId": {
+                                        "type": "string"
+                                      },
+                                      "vercelCache": {
+                                        "type": "string",
+                                        "enum": [
+                                          "BYPASS",
+                                          "HIT",
+                                          "MISS",
+                                          "PRERENDER",
+                                          "REVALIDATED",
+                                          "STALE"
+                                        ]
+                                      },
+                                      "lambdaRegion": {
+                                        "type": "string"
+                                      },
+                                      "wafAction": {
+                                        "type": "string",
+                                        "enum": [
+                                          "bypass",
+                                          "challenge",
+                                          "deny",
+                                          "log",
+                                          "rate_limit"
+                                        ]
+                                      },
+                                      "wafRuleId": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "host",
+                                      "method",
+                                      "path",
+                                      "referer",
+                                      "region",
+                                      "timestamp",
+                                      "userAgent"
+                                    ],
+                                    "type": "object"
+                                  }
+                                },
+                                "required": [
+                                  "date",
+                                  "deploymentId",
+                                  "id",
+                                  "serial"
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "created",
+                              "payload",
+                              "type"
+                            ],
+                            "type": "object"
+                          },
+                          {
+                            "properties": {
+                              "created": {
+                                "type": "number"
+                              },
+                              "date": {
+                                "type": "number"
+                              },
+                              "deploymentId": {
+                                "type": "string"
+                              },
+                              "id": {
+                                "type": "string"
+                              },
+                              "info": {
+                                "properties": {
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "entrypoint": {
+                                    "type": "string"
+                                  },
+                                  "path": {
+                                    "type": "string"
+                                  },
+                                  "step": {
+                                    "type": "string"
+                                  },
+                                  "readyState": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "type"
+                                ],
+                                "type": "object"
+                              },
+                              "serial": {
+                                "type": "string"
+                              },
+                              "text": {
+                                "type": "string"
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "command",
+                                  "delimiter",
+                                  "deployment-state",
+                                  "edge-function-invocation",
+                                  "exit",
+                                  "fatal",
+                                  "metric",
+                                  "middleware",
+                                  "middleware-invocation",
+                                  "report",
+                                  "stderr",
+                                  "stdout"
+                                ]
+                              },
+                              "level": {
+                                "type": "string",
+                                "enum": [
+                                  "error",
+                                  "warning"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "created",
+                              "date",
+                              "deploymentId",
+                              "id",
+                              "info",
+                              "serial",
+                              "type"
+                            ],
+                            "type": "object"
+                          },
+                          {
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "alias-assigned"
+                                ]
+                              },
+                              "deploymentId": {
+                                "type": "string"
+                              },
+                              "date": {
+                                "type": "number"
+                              }
+                            },
+                            "required": [
+                              "date",
+                              "deploymentId",
+                              "type"
+                            ],
+                            "type": "object"
+                          }
+                        ]
                       }
                     ],
                     "nullable": true
@@ -13836,9 +14126,298 @@
                         "type"
                       ],
                       "type": "object"
+                    },
+                    {
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "command",
+                                "delimiter",
+                                "deployment-state",
+                                "edge-function-invocation",
+                                "exit",
+                                "fatal",
+                                "metric",
+                                "middleware",
+                                "middleware-invocation",
+                                "report",
+                                "stderr",
+                                "stdout"
+                              ]
+                            },
+                            "created": {
+                              "type": "number"
+                            },
+                            "payload": {
+                              "properties": {
+                                "deploymentId": {
+                                  "type": "string"
+                                },
+                                "info": {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string"
+                                    },
+                                    "name": {
+                                      "type": "string"
+                                    },
+                                    "entrypoint": {
+                                      "type": "string"
+                                    },
+                                    "path": {
+                                      "type": "string"
+                                    },
+                                    "step": {
+                                      "type": "string"
+                                    },
+                                    "readyState": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "name",
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                },
+                                "text": {
+                                  "type": "string"
+                                },
+                                "id": {
+                                  "type": "string"
+                                },
+                                "date": {
+                                  "type": "number"
+                                },
+                                "serial": {
+                                  "type": "string"
+                                },
+                                "created": {
+                                  "type": "number"
+                                },
+                                "statusCode": {
+                                  "type": "number"
+                                },
+                                "requestId": {
+                                  "type": "string"
+                                },
+                                "proxy": {
+                                  "properties": {
+                                    "timestamp": {
+                                      "type": "number"
+                                    },
+                                    "method": {
+                                      "type": "string"
+                                    },
+                                    "host": {
+                                      "type": "string"
+                                    },
+                                    "path": {
+                                      "type": "string"
+                                    },
+                                    "statusCode": {
+                                      "type": "number"
+                                    },
+                                    "userAgent": {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
+                                    },
+                                    "referer": {
+                                      "type": "string"
+                                    },
+                                    "clientIp": {
+                                      "type": "string"
+                                    },
+                                    "region": {
+                                      "type": "string"
+                                    },
+                                    "scheme": {
+                                      "type": "string"
+                                    },
+                                    "responseByteSize": {
+                                      "type": "number"
+                                    },
+                                    "cacheId": {
+                                      "type": "string"
+                                    },
+                                    "pathType": {
+                                      "type": "string"
+                                    },
+                                    "pathTypeVariant": {
+                                      "type": "string"
+                                    },
+                                    "vercelId": {
+                                      "type": "string"
+                                    },
+                                    "vercelCache": {
+                                      "type": "string",
+                                      "enum": [
+                                        "BYPASS",
+                                        "HIT",
+                                        "MISS",
+                                        "PRERENDER",
+                                        "REVALIDATED",
+                                        "STALE"
+                                      ]
+                                    },
+                                    "lambdaRegion": {
+                                      "type": "string"
+                                    },
+                                    "wafAction": {
+                                      "type": "string",
+                                      "enum": [
+                                        "bypass",
+                                        "challenge",
+                                        "deny",
+                                        "log",
+                                        "rate_limit"
+                                      ]
+                                    },
+                                    "wafRuleId": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "host",
+                                    "method",
+                                    "path",
+                                    "referer",
+                                    "region",
+                                    "timestamp",
+                                    "userAgent"
+                                  ],
+                                  "type": "object"
+                                }
+                              },
+                              "required": [
+                                "date",
+                                "deploymentId",
+                                "id",
+                                "serial"
+                              ],
+                              "type": "object"
+                            }
+                          },
+                          "required": [
+                            "created",
+                            "payload",
+                            "type"
+                          ],
+                          "type": "object"
+                        },
+                        {
+                          "properties": {
+                            "created": {
+                              "type": "number"
+                            },
+                            "date": {
+                              "type": "number"
+                            },
+                            "deploymentId": {
+                              "type": "string"
+                            },
+                            "id": {
+                              "type": "string"
+                            },
+                            "info": {
+                              "properties": {
+                                "type": {
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "type": "string"
+                                },
+                                "entrypoint": {
+                                  "type": "string"
+                                },
+                                "path": {
+                                  "type": "string"
+                                },
+                                "step": {
+                                  "type": "string"
+                                },
+                                "readyState": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            "serial": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            },
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "command",
+                                "delimiter",
+                                "deployment-state",
+                                "edge-function-invocation",
+                                "exit",
+                                "fatal",
+                                "metric",
+                                "middleware",
+                                "middleware-invocation",
+                                "report",
+                                "stderr",
+                                "stdout"
+                              ]
+                            },
+                            "level": {
+                              "type": "string",
+                              "enum": [
+                                "error",
+                                "warning"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "created",
+                            "date",
+                            "deploymentId",
+                            "id",
+                            "info",
+                            "serial",
+                            "type"
+                          ],
+                          "type": "object"
+                        },
+                        {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "alias-assigned"
+                              ]
+                            },
+                            "deploymentId": {
+                              "type": "string"
+                            },
+                            "date": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "date",
+                            "deploymentId",
+                            "type"
+                          ],
+                          "type": "object"
+                        }
+                      ]
                     }
-                  ],
-                  "nullable": true
+                  ]
                 }
               }
             }
