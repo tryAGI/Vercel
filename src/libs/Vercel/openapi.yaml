@@ -121752,9 +121752,34 @@
                   },
                   "passport": {
                     "description": "Passport configuration for the project.",
-                    "type": "object",
-                    "additionalProperties": false,
                     "properties": {
+                      "publicPathRules": {
+                        "type": "array",
+                        "maxItems": 100,
+                        "uniqueItems": true,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "type",
+                            "value"
+                          ],
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "equals",
+                                "startsWith"
+                              ]
+                            },
+                            "value": {
+                              "type": "string",
+                              "maxLength": 2048,
+                              "pattern": "^/[^?#\\\\s]*$"
+                            }
+                          }
+                        }
+                      },
                       "connectorId": {
                         "type": "string"
                       },
@@ -121769,6 +121794,8 @@
                         ]
                       }
                     },
+                    "type": "object",
+                    "additionalProperties": false,
                     "required": [
                       "connectorId"
                     ],
