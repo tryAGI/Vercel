@@ -80,6 +80,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mfe_group_ids")]
+        public global::System.Collections.Generic.IList<string>? MfeGroupIds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
         public string? Plan { get; set; }
 
@@ -102,6 +108,7 @@ namespace Vercel
         /// <param name="projectId"></param>
         /// <param name="environment"></param>
         /// <param name="customEnvironmentId"></param>
+        /// <param name="mfeGroupIds"></param>
         /// <param name="plan"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -117,6 +124,7 @@ namespace Vercel
             string projectId,
             string environment,
             string? customEnvironmentId,
+            global::System.Collections.Generic.IList<string>? mfeGroupIds,
             string? plan)
         {
             this.Iss = iss ?? throw new global::System.ArgumentNullException(nameof(iss));
@@ -129,6 +137,7 @@ namespace Vercel
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Environment = environment ?? throw new global::System.ArgumentNullException(nameof(environment));
             this.CustomEnvironmentId = customEnvironmentId;
+            this.MfeGroupIds = mfeGroupIds;
             this.Plan = plan;
         }
 
