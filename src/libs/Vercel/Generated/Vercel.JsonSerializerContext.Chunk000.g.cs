@@ -7391,6 +7391,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamIpBucket))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamStrictDeploymentProtectionSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamStrictShareableLinks))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamStrictPasswordProtectionSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamNsnbConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamNsnbConfigPreference), TypeInfoPropertyName = "TeamNsnbConfigPreference2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamDeploymentPolicy))]
@@ -7561,7 +7562,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ArtifactQueryRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequestItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequestItemType), TypeInfoPropertyName = "BuyCreditsRequestItemType2")]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

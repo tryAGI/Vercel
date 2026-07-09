@@ -1811,6 +1811,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        StrictPasswordProtectionSettings,
+        /// <summary>
+        /// 
+        /// </summary>
         StrictShareableLinks,
         /// <summary>
         /// 
@@ -2652,6 +2656,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.StorageUpgradeProjectConnectionToOidc => "storage-upgrade-project-connection-to-oidc",
                 ListEventTypeReplacedByItem.StorageViewSecret => "storage-view-secret",
                 ListEventTypeReplacedByItem.StrictDeploymentProtectionSettings => "strict-deployment-protection-settings",
+                ListEventTypeReplacedByItem.StrictPasswordProtectionSettings => "strict-password-protection-settings",
                 ListEventTypeReplacedByItem.StrictShareableLinks => "strict-shareable-links",
                 ListEventTypeReplacedByItem.SubscriptionCreated => "subscription-created",
                 ListEventTypeReplacedByItem.SubscriptionProductAdded => "subscription-product-added",
@@ -3207,6 +3212,7 @@ namespace Vercel
                 "storage-upgrade-project-connection-to-oidc" => ListEventTypeReplacedByItem.StorageUpgradeProjectConnectionToOidc,
                 "storage-view-secret" => ListEventTypeReplacedByItem.StorageViewSecret,
                 "strict-deployment-protection-settings" => ListEventTypeReplacedByItem.StrictDeploymentProtectionSettings,
+                "strict-password-protection-settings" => ListEventTypeReplacedByItem.StrictPasswordProtectionSettings,
                 "strict-shareable-links" => ListEventTypeReplacedByItem.StrictShareableLinks,
                 "subscription-created" => ListEventTypeReplacedByItem.SubscriptionCreated,
                 "subscription-product-added" => ListEventTypeReplacedByItem.SubscriptionProductAdded,

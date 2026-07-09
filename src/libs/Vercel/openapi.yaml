@@ -161979,6 +161979,21 @@
                       "enabled"
                     ]
                   },
+                  "strictPasswordProtectionSettings": {
+                    "type": "object",
+                    "description": "When enabled, adding, changing, or removing project password protection requires Owner role.",
+                    "additionalProperties": false,
+                    "properties": {
+                      "enabled": {
+                        "type": "boolean",
+                        "example": true,
+                        "description": "Enable or disable requiring Owner role to change project password protection."
+                      }
+                    },
+                    "required": [
+                      "enabled"
+                    ]
+                  },
                   "nsnbConfig": {
                     "anyOf": [
                       {
@@ -176316,6 +176331,7 @@
               "storage-upgrade-project-connection-to-oidc",
               "storage-view-secret",
               "strict-deployment-protection-settings",
+              "strict-password-protection-settings",
               "strict-shareable-links",
               "subscription-created",
               "subscription-product-added",
@@ -177126,6 +177142,7 @@
               "storage-upgrade-project-connection-to-oidc",
               "storage-view-secret",
               "strict-deployment-protection-settings",
+              "strict-password-protection-settings",
               "strict-shareable-links",
               "subscription-created",
               "subscription-product-added",
@@ -177729,6 +177746,7 @@
                 "storage-upgrade-project-connection-to-oidc",
                 "storage-view-secret",
                 "strict-deployment-protection-settings",
+                "strict-password-protection-settings",
                 "strict-shareable-links",
                 "subscription-created",
                 "subscription-product-added",
@@ -180728,6 +180746,26 @@
             ],
             "type": "object",
             "description": "When enabled, creating shareable links requires Owner role."
+          },
+          "strictPasswordProtectionSettings": {
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "updatedAt": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "enabled",
+              "updatedAt"
+            ],
+            "type": "object",
+            "description": "When enabled, adding, changing, or removing project password protection requires Owner role."
           },
           "nsnbConfig": {
             "properties": {

@@ -205,6 +205,12 @@ namespace Vercel
         public global::Vercel.TeamStrictShareableLinks? StrictShareableLinks { get; set; }
 
         /// <summary>
+        /// When enabled, adding, changing, or removing project password protection requires Owner role.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("strictPasswordProtectionSettings")]
+        public global::Vercel.TeamStrictPasswordProtectionSettings? StrictPasswordProtectionSettings { get; set; }
+
+        /// <summary>
         /// NSNB configuration for the team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nsnbConfig")]
@@ -404,6 +410,9 @@ namespace Vercel
         /// <param name="strictShareableLinks">
         /// When enabled, creating shareable links requires Owner role.
         /// </param>
+        /// <param name="strictPasswordProtectionSettings">
+        /// When enabled, adding, changing, or removing project password protection requires Owner role.
+        /// </param>
         /// <param name="nsnbConfig">
         /// NSNB configuration for the team.
         /// </param>
@@ -473,6 +482,7 @@ namespace Vercel
             bool? disableRepositoryDispatchEvents,
             global::Vercel.TeamStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.TeamStrictShareableLinks? strictShareableLinks,
+            global::Vercel.TeamStrictPasswordProtectionSettings? strictPasswordProtectionSettings,
             global::Vercel.TeamNsnbConfig? nsnbConfig,
             global::Vercel.TeamDeploymentPolicy? deploymentPolicy,
             double? personalAccessTokensInvalidatedAt,
@@ -513,6 +523,7 @@ namespace Vercel
             this.DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents;
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
             this.StrictShareableLinks = strictShareableLinks;
+            this.StrictPasswordProtectionSettings = strictPasswordProtectionSettings;
             this.NsnbConfig = nsnbConfig;
             this.DeploymentPolicy = deploymentPolicy;
             this.PersonalAccessTokensInvalidatedAt = personalAccessTokensInvalidatedAt;
