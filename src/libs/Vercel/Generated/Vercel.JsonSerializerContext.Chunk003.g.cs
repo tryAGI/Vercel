@@ -7062,6 +7062,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PutFirewallConfigRequestRulesetsRateLimitAction?, string>), TypeInfoPropertyName = "AnyOfPutFirewallConfigRequestRulesetsRateLimitActionString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRulesetsRateLimitAction), TypeInfoPropertyName = "PutFirewallConfigRequestRulesetsRateLimitAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PutFirewallConfigRequestRulesetsRedirect, string>), TypeInfoPropertyName = "AnyOfPutFirewallConfigRequestRulesetsRedirectString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRulesetsRedirect))]
@@ -7244,6 +7245,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource), TypeInfoPropertyName = "PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestStrictShareableLinks))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestStrictPasswordProtectionSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>), TypeInfoPropertyName = "AnyOfPatchTeamRequestNsnbConfigString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestNsnbConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestNsnbConfigPreference), TypeInfoPropertyName = "PatchTeamRequestNsnbConfigPreference2")]
@@ -7560,8 +7562,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1Requires), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1Requires2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1Blocks), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1Blocks2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1Status), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1Status2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1Conclusion), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1Conclusion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant1, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant2, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant3, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant4>), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1SourceVariant4_63a5231457d83806")]
     internal sealed partial class SourceGenerationContextChunk003 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -7062,6 +7062,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Log))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Deployment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment>))]
@@ -7560,8 +7562,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateFlagResponseEnvironmentsRuleConditionRhsVariant3ItemVariant1, global::Vercel.UpdateFlagResponseEnvironmentsRuleConditionRhsVariant3ItemVariant2>), TypeInfoPropertyName = "UpdateFlagResponseEnvironmentsRuleConditionRhsVariant3ItemVariant2_4202cb5917864385")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleConditionRhsVariant3ItemVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleConditionRhsVariant3ItemVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleConditionRhsVariant4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleConditionRhsVariant4Type), TypeInfoPropertyName = "UpdateFlagResponseEnvironmentsRuleConditionRhsVariant4Type2")]
     internal sealed partial class SourceGenerationContextChunk008 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

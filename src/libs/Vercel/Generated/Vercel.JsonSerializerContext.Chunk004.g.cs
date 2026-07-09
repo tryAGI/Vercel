@@ -7062,6 +7062,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1Conclusion), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant1, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant2, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant3, global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant4>), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1SourceVariant4_63a5231457d83806")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant1Kind), TypeInfoPropertyName = "ListCheckRunsResponseRunVariant1SourceVariant1Kind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListCheckRunsResponseRunVariant1SourceVariant2))]
@@ -7560,8 +7562,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant1, global::Vercel.GetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant2>>), TypeInfoPropertyName = "GetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant2_9fb41bbab33a3907")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant1, global::Vercel.GetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant2>), TypeInfoPropertyName = "GetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant2_f231172555783039")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant1Type), TypeInfoPropertyName = "GetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant1Value>), TypeInfoPropertyName = "OneOfStringGetDeploymentResponseVariant1ServiceVariant2HeaderMissingItemVariant1Value2")]
     internal sealed partial class SourceGenerationContextChunk004 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

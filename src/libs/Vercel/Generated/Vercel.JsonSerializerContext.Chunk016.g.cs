@@ -7062,6 +7062,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectEnvResponseVariant2TargetItem), TypeInfoPropertyName = "GetProjectEnvResponseVariant2TargetItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectEnvResponseVariant2Target), TypeInfoPropertyName = "GetProjectEnvResponseVariant2Target2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectEnvResponseVariant2InternalContentHint))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectEnvResponseVariant2InternalContentHintType), TypeInfoPropertyName = "GetProjectEnvResponseVariant2InternalContentHintType2")]
@@ -7560,8 +7562,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RunSessionCommandResponseVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RunSessionCommandResponseVariant1Data))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RunSessionCommandResponseVariant1DataCode), TypeInfoPropertyName = "RunSessionCommandResponseVariant1DataCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RunSessionCommandResponseVariant1DataMessage), TypeInfoPropertyName = "RunSessionCommandResponseVariant1DataMessage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RunSessionCommandResponseVariant2))]
     internal sealed partial class SourceGenerationContextChunk016 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
