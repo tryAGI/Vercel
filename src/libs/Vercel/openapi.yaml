@@ -13843,9 +13843,56 @@
                               },
                               "date": {
                                 "type": "number"
+                              },
+                              "alias": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
+                              "aliasError": {
+                                "nullable": true,
+                                "properties": {
+                                  "code": {
+                                    "type": "string"
+                                  },
+                                  "message": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "code",
+                                  "message"
+                                ],
+                                "type": "object"
+                              },
+                              "aliasWarning": {
+                                "nullable": true,
+                                "properties": {
+                                  "code": {
+                                    "type": "string"
+                                  },
+                                  "message": {
+                                    "type": "string"
+                                  },
+                                  "link": {
+                                    "type": "string"
+                                  },
+                                  "action": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "code",
+                                  "message"
+                                ],
+                                "type": "object"
                               }
                             },
                             "required": [
+                              "alias",
+                              "aliasError",
+                              "aliasWarning",
                               "date",
                               "deploymentId",
                               "type"
@@ -14406,9 +14453,56 @@
                             },
                             "date": {
                               "type": "number"
+                            },
+                            "alias": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "aliasError": {
+                              "nullable": true,
+                              "properties": {
+                                "code": {
+                                  "type": "string"
+                                },
+                                "message": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "code",
+                                "message"
+                              ],
+                              "type": "object"
+                            },
+                            "aliasWarning": {
+                              "nullable": true,
+                              "properties": {
+                                "code": {
+                                  "type": "string"
+                                },
+                                "message": {
+                                  "type": "string"
+                                },
+                                "link": {
+                                  "type": "string"
+                                },
+                                "action": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "code",
+                                "message"
+                              ],
+                              "type": "object"
                             }
                           },
                           "required": [
+                            "alias",
+                            "aliasError",
+                            "aliasWarning",
                             "date",
                             "deploymentId",
                             "type"
@@ -16425,6 +16519,12 @@
                             },
                             "custom_environment_id": {
                               "type": "string"
+                            },
+                            "mfe_group_ids": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
                             },
                             "plan": {
                               "type": "string"
@@ -22174,6 +22274,12 @@
                             "custom_environment_id": {
                               "type": "string"
                             },
+                            "mfe_group_ids": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
                             "plan": {
                               "type": "string"
                             }
@@ -23988,6 +24094,12 @@
                         },
                         "custom_environment_id": {
                           "type": "string"
+                        },
+                        "mfe_group_ids": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
                         },
                         "plan": {
                           "type": "string"
@@ -30837,6 +30949,12 @@
                         },
                         "custom_environment_id": {
                           "type": "string"
+                        },
+                        "mfe_group_ids": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
                         },
                         "plan": {
                           "type": "string"
@@ -72334,6 +72452,12 @@
                                         "custom_environment_id": {
                                           "type": "string"
                                         },
+                                        "mfe_group_ids": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        },
                                         "plan": {
                                           "type": "string"
                                         }
@@ -73659,6 +73783,12 @@
                                     },
                                     "custom_environment_id": {
                                       "type": "string"
+                                    },
+                                    "mfe_group_ids": {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
                                     },
                                     "plan": {
                                       "type": "string"
@@ -75159,6 +75289,12 @@
                                     },
                                     "custom_environment_id": {
                                       "type": "string"
+                                    },
+                                    "mfe_group_ids": {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
                                     },
                                     "plan": {
                                       "type": "string"
@@ -85758,6 +85894,12 @@
                                         "custom_environment_id": {
                                           "type": "string"
                                         },
+                                        "mfe_group_ids": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        },
                                         "plan": {
                                           "type": "string"
                                         }
@@ -86503,6 +86645,12 @@
                                     },
                                     "custom_environment_id": {
                                       "type": "string"
+                                    },
+                                    "mfe_group_ids": {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
                                     },
                                     "plan": {
                                       "type": "string"
@@ -87640,6 +87788,12 @@
                                     },
                                     "custom_environment_id": {
                                       "type": "string"
+                                    },
+                                    "mfe_group_ids": {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
                                     },
                                     "plan": {
                                       "type": "string"
@@ -89662,6 +89816,12 @@
                                             "custom_environment_id": {
                                               "type": "string"
                                             },
+                                            "mfe_group_ids": {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array"
+                                            },
                                             "plan": {
                                               "type": "string"
                                             }
@@ -90407,6 +90567,12 @@
                                         },
                                         "custom_environment_id": {
                                           "type": "string"
+                                        },
+                                        "mfe_group_ids": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
                                         },
                                         "plan": {
                                           "type": "string"
@@ -91544,6 +91710,12 @@
                                         },
                                         "custom_environment_id": {
                                           "type": "string"
+                                        },
+                                        "mfe_group_ids": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
                                         },
                                         "plan": {
                                           "type": "string"
@@ -93601,6 +93773,12 @@
                                             "custom_environment_id": {
                                               "type": "string"
                                             },
+                                            "mfe_group_ids": {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array"
+                                            },
                                             "plan": {
                                               "type": "string"
                                             }
@@ -94926,6 +95104,12 @@
                                         },
                                         "custom_environment_id": {
                                           "type": "string"
+                                        },
+                                        "mfe_group_ids": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
                                         },
                                         "plan": {
                                           "type": "string"
@@ -96426,6 +96610,12 @@
                                         },
                                         "custom_environment_id": {
                                           "type": "string"
+                                        },
+                                        "mfe_group_ids": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
                                         },
                                         "plan": {
                                           "type": "string"
@@ -100555,6 +100745,12 @@
                                   "custom_environment_id": {
                                     "type": "string"
                                   },
+                                  "mfe_group_ids": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  },
                                   "plan": {
                                     "type": "string"
                                   }
@@ -101880,6 +102076,12 @@
                               },
                               "custom_environment_id": {
                                 "type": "string"
+                              },
+                              "mfe_group_ids": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "plan": {
                                 "type": "string"
@@ -103380,6 +103582,12 @@
                               },
                               "custom_environment_id": {
                                 "type": "string"
+                              },
+                              "mfe_group_ids": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "plan": {
                                 "type": "string"
@@ -107764,6 +107972,12 @@
                                   "custom_environment_id": {
                                     "type": "string"
                                   },
+                                  "mfe_group_ids": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  },
                                   "plan": {
                                     "type": "string"
                                   }
@@ -109087,6 +109301,12 @@
                               },
                               "custom_environment_id": {
                                 "type": "string"
+                              },
+                              "mfe_group_ids": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "plan": {
                                 "type": "string"
@@ -110587,6 +110807,12 @@
                               },
                               "custom_environment_id": {
                                 "type": "string"
+                              },
+                              "mfe_group_ids": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "plan": {
                                 "type": "string"
@@ -114533,6 +114759,12 @@
                                   "custom_environment_id": {
                                     "type": "string"
                                   },
+                                  "mfe_group_ids": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  },
                                   "plan": {
                                     "type": "string"
                                   }
@@ -115849,6 +116081,12 @@
                               },
                               "custom_environment_id": {
                                 "type": "string"
+                              },
+                              "mfe_group_ids": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "plan": {
                                 "type": "string"
@@ -117349,6 +117587,12 @@
                               },
                               "custom_environment_id": {
                                 "type": "string"
+                              },
+                              "mfe_group_ids": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "plan": {
                                 "type": "string"
@@ -122519,6 +122763,12 @@
                                   "custom_environment_id": {
                                     "type": "string"
                                   },
+                                  "mfe_group_ids": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  },
                                   "plan": {
                                     "type": "string"
                                   }
@@ -123844,6 +124094,12 @@
                               },
                               "custom_environment_id": {
                                 "type": "string"
+                              },
+                              "mfe_group_ids": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "plan": {
                                 "type": "string"
@@ -125344,6 +125600,12 @@
                               },
                               "custom_environment_id": {
                                 "type": "string"
+                              },
+                              "mfe_group_ids": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "plan": {
                                 "type": "string"
@@ -138278,6 +138540,12 @@
                                   "custom_environment_id": {
                                     "type": "string"
                                   },
+                                  "mfe_group_ids": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  },
                                   "plan": {
                                     "type": "string"
                                   }
@@ -139603,6 +139871,12 @@
                               },
                               "custom_environment_id": {
                                 "type": "string"
+                              },
+                              "mfe_group_ids": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "plan": {
                                 "type": "string"
@@ -141103,6 +141377,12 @@
                               },
                               "custom_environment_id": {
                                 "type": "string"
+                              },
+                              "mfe_group_ids": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
                               },
                               "plan": {
                                 "type": "string"
@@ -176965,6 +177245,7 @@
               "unlink-login-connection",
               "user-delete",
               "user-emu-account-archived",
+              "user-emu-account-deleted",
               "user-emu-account-recovered",
               "user-mfa-challenge-verified",
               "user-mfa-configuration-updated",
@@ -177776,6 +178057,7 @@
               "unlink-login-connection",
               "user-delete",
               "user-emu-account-archived",
+              "user-emu-account-deleted",
               "user-emu-account-recovered",
               "user-mfa-challenge-verified",
               "user-mfa-configuration-updated",
@@ -178380,6 +178662,7 @@
                 "unlink-login-connection",
                 "user-delete",
                 "user-emu-account-archived",
+                "user-emu-account-deleted",
                 "user-emu-account-recovered",
                 "user-mfa-challenge-verified",
                 "user-mfa-configuration-updated",

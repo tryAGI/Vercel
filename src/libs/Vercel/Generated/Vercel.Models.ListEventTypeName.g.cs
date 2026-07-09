@@ -2032,6 +2032,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserEmuAccountDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         UserEmuAccountRecovered,
         /// <summary>
         /// 
@@ -2712,6 +2716,7 @@ namespace Vercel
                 ListEventTypeName.UnlinkLoginConnection => "unlink-login-connection",
                 ListEventTypeName.UserDelete => "user-delete",
                 ListEventTypeName.UserEmuAccountArchived => "user-emu-account-archived",
+                ListEventTypeName.UserEmuAccountDeleted => "user-emu-account-deleted",
                 ListEventTypeName.UserEmuAccountRecovered => "user-emu-account-recovered",
                 ListEventTypeName.UserMfaChallengeVerified => "user-mfa-challenge-verified",
                 ListEventTypeName.UserMfaConfigurationUpdated => "user-mfa-configuration-updated",
@@ -3268,6 +3273,7 @@ namespace Vercel
                 "unlink-login-connection" => ListEventTypeName.UnlinkLoginConnection,
                 "user-delete" => ListEventTypeName.UserDelete,
                 "user-emu-account-archived" => ListEventTypeName.UserEmuAccountArchived,
+                "user-emu-account-deleted" => ListEventTypeName.UserEmuAccountDeleted,
                 "user-emu-account-recovered" => ListEventTypeName.UserEmuAccountRecovered,
                 "user-mfa-challenge-verified" => ListEventTypeName.UserMfaChallengeVerified,
                 "user-mfa-configuration-updated" => ListEventTypeName.UserMfaConfigurationUpdated,
