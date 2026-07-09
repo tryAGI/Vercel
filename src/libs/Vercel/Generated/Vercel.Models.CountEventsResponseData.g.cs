@@ -445,13 +445,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dheCipherSuite")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DheCipherSuite { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("botCheckResult")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BotCheckResult { get; set; }
@@ -1430,7 +1423,6 @@ namespace Vercel
         /// <param name="botCategory"></param>
         /// <param name="botCategoryLegacy"></param>
         /// <param name="botVerified"></param>
-        /// <param name="dheCipherSuite"></param>
         /// <param name="botCheckResult"></param>
         /// <param name="deepAnalysisCheck"></param>
         /// <param name="wafAction"></param>
@@ -1627,7 +1619,6 @@ namespace Vercel
             string botCategory,
             string botCategoryLegacy,
             string botVerified,
-            string dheCipherSuite,
             string botCheckResult,
             string deepAnalysisCheck,
             string wafAction,
@@ -1821,7 +1812,6 @@ namespace Vercel
             this.BotCategory = botCategory ?? throw new global::System.ArgumentNullException(nameof(botCategory));
             this.BotCategoryLegacy = botCategoryLegacy ?? throw new global::System.ArgumentNullException(nameof(botCategoryLegacy));
             this.BotVerified = botVerified ?? throw new global::System.ArgumentNullException(nameof(botVerified));
-            this.DheCipherSuite = dheCipherSuite ?? throw new global::System.ArgumentNullException(nameof(dheCipherSuite));
             this.BotCheckResult = botCheckResult ?? throw new global::System.ArgumentNullException(nameof(botCheckResult));
             this.DeepAnalysisCheck = deepAnalysisCheck ?? throw new global::System.ArgumentNullException(nameof(deepAnalysisCheck));
             this.WafAction = wafAction ?? throw new global::System.ArgumentNullException(nameof(wafAction));

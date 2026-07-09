@@ -383,12 +383,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dheCipherSuite")]
-        public string? DheCipherSuite { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("botCheckResult")]
         public string? BotCheckResult { get; set; }
 
@@ -1245,7 +1239,6 @@ namespace Vercel
         /// <param name="botCategory"></param>
         /// <param name="botCategoryLegacy"></param>
         /// <param name="botVerified"></param>
-        /// <param name="dheCipherSuite"></param>
         /// <param name="botCheckResult"></param>
         /// <param name="deepAnalysisCheck"></param>
         /// <param name="wafAction"></param>
@@ -1443,7 +1436,6 @@ namespace Vercel
             string? botCategory,
             string? botCategoryLegacy,
             string? botVerified,
-            string? dheCipherSuite,
             string? botCheckResult,
             string? deepAnalysisCheck,
             string? wafAction,
@@ -1637,7 +1629,6 @@ namespace Vercel
             this.BotCategory = botCategory;
             this.BotCategoryLegacy = botCategoryLegacy;
             this.BotVerified = botVerified;
-            this.DheCipherSuite = dheCipherSuite;
             this.BotCheckResult = botCheckResult;
             this.DeepAnalysisCheck = deepAnalysisCheck;
             this.WafAction = wafAction;
