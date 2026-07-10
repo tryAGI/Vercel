@@ -271,6 +271,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TanstackStartLovable,
+        /// <summary>
+        /// 
+        /// </summary>
         Umijs,
         /// <summary>
         /// 
@@ -375,6 +379,7 @@ namespace Vercel
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Sveltekit => "sveltekit",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Sveltekit1 => "sveltekit-1",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.TanstackStart => "tanstack-start",
+                GetAllLogDrainsResponseItemProjectsMetadataItemFramework.TanstackStartLovable => "tanstack-start-lovable",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Umijs => "umijs",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Vite => "vite",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Vitepress => "vitepress",
@@ -457,6 +462,7 @@ namespace Vercel
                 "sveltekit" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Sveltekit,
                 "sveltekit-1" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Sveltekit1,
                 "tanstack-start" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.TanstackStart,
+                "tanstack-start-lovable" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.TanstackStartLovable,
                 "umijs" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Umijs,
                 "vite" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Vite,
                 "vitepress" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Vitepress,

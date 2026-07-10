@@ -271,6 +271,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TanstackStartLovable,
+        /// <summary>
+        /// 
+        /// </summary>
         Umijs,
         /// <summary>
         /// 
@@ -375,6 +379,7 @@ namespace Vercel
                 GetProjectsResponseVariant3ProjectServiceFramework.Sveltekit => "sveltekit",
                 GetProjectsResponseVariant3ProjectServiceFramework.Sveltekit1 => "sveltekit-1",
                 GetProjectsResponseVariant3ProjectServiceFramework.TanstackStart => "tanstack-start",
+                GetProjectsResponseVariant3ProjectServiceFramework.TanstackStartLovable => "tanstack-start-lovable",
                 GetProjectsResponseVariant3ProjectServiceFramework.Umijs => "umijs",
                 GetProjectsResponseVariant3ProjectServiceFramework.Vite => "vite",
                 GetProjectsResponseVariant3ProjectServiceFramework.Vitepress => "vitepress",
@@ -457,6 +462,7 @@ namespace Vercel
                 "sveltekit" => GetProjectsResponseVariant3ProjectServiceFramework.Sveltekit,
                 "sveltekit-1" => GetProjectsResponseVariant3ProjectServiceFramework.Sveltekit1,
                 "tanstack-start" => GetProjectsResponseVariant3ProjectServiceFramework.TanstackStart,
+                "tanstack-start-lovable" => GetProjectsResponseVariant3ProjectServiceFramework.TanstackStartLovable,
                 "umijs" => GetProjectsResponseVariant3ProjectServiceFramework.Umijs,
                 "vite" => GetProjectsResponseVariant3ProjectServiceFramework.Vite,
                 "vitepress" => GetProjectsResponseVariant3ProjectServiceFramework.Vitepress,
