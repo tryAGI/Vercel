@@ -271,6 +271,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TanstackStartLovable,
+        /// <summary>
+        /// 
+        /// </summary>
         Umijs,
         /// <summary>
         /// 
@@ -375,6 +379,7 @@ namespace Vercel
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sveltekit => "sveltekit",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sveltekit1 => "sveltekit-1",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.TanstackStart => "tanstack-start",
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.TanstackStartLovable => "tanstack-start-lovable",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Umijs => "umijs",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Vite => "vite",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Vitepress => "vitepress",
@@ -457,6 +462,7 @@ namespace Vercel
                 "sveltekit" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sveltekit,
                 "sveltekit-1" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Sveltekit1,
                 "tanstack-start" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.TanstackStart,
+                "tanstack-start-lovable" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.TanstackStartLovable,
                 "umijs" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Umijs,
                 "vite" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Vite,
                 "vitepress" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Vitepress,
