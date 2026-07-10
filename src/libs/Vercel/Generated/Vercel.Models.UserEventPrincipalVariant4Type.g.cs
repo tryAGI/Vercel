@@ -6,38 +6,38 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public enum UserEventViaItemVariant3Type
+    public enum UserEventPrincipalVariant4Type
     {
         /// <summary>
         /// 
         /// </summary>
-        External,
+        System,
     }
 
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class UserEventViaItemVariant3TypeExtensions
+    public static class UserEventPrincipalVariant4TypeExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this UserEventViaItemVariant3Type value)
+        public static string ToValueString(this UserEventPrincipalVariant4Type value)
         {
             return value switch
             {
-                UserEventViaItemVariant3Type.External => "external",
+                UserEventPrincipalVariant4Type.System => "system",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static UserEventViaItemVariant3Type? ToEnum(string value)
+        public static UserEventPrincipalVariant4Type? ToEnum(string value)
         {
             return value switch
             {
-                "external" => UserEventViaItemVariant3Type.External,
+                "system" => UserEventPrincipalVariant4Type.System,
                 _ => null,
             };
         }

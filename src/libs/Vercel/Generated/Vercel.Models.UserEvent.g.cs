@@ -69,14 +69,14 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("principal")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3>))]
-        public global::Vercel.OneOf<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3>? Principal { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3, global::Vercel.UserEventPrincipalVariant4>))]
+        public global::Vercel.OneOf<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3, global::Vercel.UserEventPrincipalVariant4>? Principal { get; set; }
 
         /// <summary>
         /// Metadata for {@link viaIds}.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("via")]
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3>>? Via { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3, global::Vercel.UserEventViaItemVariant4>>? Via { get; set; }
 
         /// <summary>
         /// When the principal who generated the event is a user, this is their ID; otherwise, it is empty.<br/>
@@ -169,8 +169,8 @@ namespace Vercel
             global::Vercel.UserEventType? type,
             global::System.Collections.Generic.IList<global::Vercel.UserEventCategorie>? categories,
             global::Vercel.UserEventUser? user,
-            global::Vercel.OneOf<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3>? principal,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3>>? via,
+            global::Vercel.OneOf<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3, global::Vercel.UserEventPrincipalVariant4>? principal,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3, global::Vercel.UserEventViaItemVariant4>>? via,
             string? userId,
             global::System.Collections.Generic.IList<string>? viaIds,
             object? payload)

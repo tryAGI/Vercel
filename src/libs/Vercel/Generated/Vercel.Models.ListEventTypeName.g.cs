@@ -1112,6 +1112,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        PassportAccessGranted,
+        /// <summary>
+        /// 
+        /// </summary>
         PasswordProtectionDisabled,
         /// <summary>
         /// 
@@ -2490,6 +2494,7 @@ namespace Vercel
                 ListEventTypeName.PasskeyCreated => "passkey-created",
                 ListEventTypeName.PasskeyDeleted => "passkey-deleted",
                 ListEventTypeName.PasskeyUpdated => "passkey-updated",
+                ListEventTypeName.PassportAccessGranted => "passport-access-granted",
                 ListEventTypeName.PasswordProtectionDisabled => "password-protection-disabled",
                 ListEventTypeName.PasswordProtectionEnabled => "password-protection-enabled",
                 ListEventTypeName.PaymentMethodAdded => "payment-method-added",
@@ -3048,6 +3053,7 @@ namespace Vercel
                 "passkey-created" => ListEventTypeName.PasskeyCreated,
                 "passkey-deleted" => ListEventTypeName.PasskeyDeleted,
                 "passkey-updated" => ListEventTypeName.PasskeyUpdated,
+                "passport-access-granted" => ListEventTypeName.PassportAccessGranted,
                 "password-protection-disabled" => ListEventTypeName.PasswordProtectionDisabled,
                 "password-protection-enabled" => ListEventTypeName.PasswordProtectionEnabled,
                 "payment-method-added" => ListEventTypeName.PaymentMethodAdded,
