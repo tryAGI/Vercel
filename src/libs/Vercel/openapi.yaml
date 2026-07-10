@@ -177077,6 +177077,7 @@
               "passkey-created",
               "passkey-deleted",
               "passkey-updated",
+              "passport-access-granted",
               "password-protection-disabled",
               "password-protection-enabled",
               "payment-method-added",
@@ -177487,6 +177488,32 @@
                   "type": {
                     "type": "string",
                     "enum": [
+                      "external"
+                    ]
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "name",
+                  "type"
+                ],
+                "type": "object",
+                "description": "Metadata for {@link principalId}."
+              },
+              {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
                       "system"
                     ]
                   }
@@ -177552,6 +177579,32 @@
                   },
                   "required": [
                     "clientId",
+                    "name",
+                    "type"
+                  ],
+                  "type": "object",
+                  "description": "Metadata for {@link viaIds}."
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "external"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
                     "name",
                     "type"
                   ],
@@ -177890,6 +177943,7 @@
               "passkey-created",
               "passkey-deleted",
               "passkey-updated",
+              "passport-access-granted",
               "password-protection-disabled",
               "password-protection-enabled",
               "payment-method-added",
@@ -178496,6 +178550,7 @@
                 "passkey-created",
                 "passkey-deleted",
                 "passkey-updated",
+                "passport-access-granted",
                 "password-protection-disabled",
                 "password-protection-enabled",
                 "payment-method-added",
