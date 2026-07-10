@@ -77,6 +77,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayBudget")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayBudget { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayCredits")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayCredits { get; set; }
 
@@ -1600,6 +1606,7 @@ namespace Vercel
         /// <param name="agent"></param>
         /// <param name="aiGatewayApiKey"></param>
         /// <param name="aiGatewayApiKeyOwnedBySelf"></param>
+        /// <param name="aiGatewayBudget"></param>
         /// <param name="aiGatewayCredits"></param>
         /// <param name="aiGatewayPrivateModels"></param>
         /// <param name="aiGatewayGuardrails"></param>
@@ -1866,6 +1873,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? agent,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKey,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKeyOwnedBySelf,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayBudget,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayCredits,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayPrivateModels,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayGuardrails,
@@ -2129,6 +2137,7 @@ namespace Vercel
             this.Agent = agent;
             this.AiGatewayApiKey = aiGatewayApiKey;
             this.AiGatewayApiKeyOwnedBySelf = aiGatewayApiKeyOwnedBySelf;
+            this.AiGatewayBudget = aiGatewayBudget;
             this.AiGatewayCredits = aiGatewayCredits;
             this.AiGatewayPrivateModels = aiGatewayPrivateModels;
             this.AiGatewayGuardrails = aiGatewayGuardrails;

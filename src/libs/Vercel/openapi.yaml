@@ -75525,6 +75525,12 @@
                                 },
                                 "type": "array"
                               },
+                              "aiGatewayBudget": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "aiGatewayCredits": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -96844,6 +96850,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "aiGatewayBudget": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "aiGatewayCredits": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -103813,6 +103825,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayBudget": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -111046,6 +111064,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayBudget": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayCredits": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -117823,6 +117847,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayBudget": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -125866,6 +125896,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayBudget": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -141645,6 +141681,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayBudget": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
