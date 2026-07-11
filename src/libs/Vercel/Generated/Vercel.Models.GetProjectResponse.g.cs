@@ -24,6 +24,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetProjectResponseCreatorVariant1, global::Vercel.GetProjectResponseCreatorVariant2, global::Vercel.GetProjectResponseCreatorVariant3, global::Vercel.GetProjectResponseCreatorVariant4>))]
+        public global::Vercel.OneOf<global::Vercel.GetProjectResponseCreatorVariant1, global::Vercel.GetProjectResponseCreatorVariant2, global::Vercel.GetProjectResponseCreatorVariant3, global::Vercel.GetProjectResponseCreatorVariant4>? Creator { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseAlia> Alias { get; set; }
@@ -627,6 +634,7 @@ namespace Vercel
         /// <param name="resourceConfig"></param>
         /// <param name="defaultResourceConfig"></param>
         /// <param name="integrations"></param>
+        /// <param name="creator"></param>
         /// <param name="analytics"></param>
         /// <param name="appliedCve55182Migration"></param>
         /// <param name="speedInsights"></param>
@@ -734,6 +742,7 @@ namespace Vercel
             global::Vercel.GetProjectResponseResourceConfig resourceConfig,
             global::Vercel.GetProjectResponseDefaultResourceConfig defaultResourceConfig,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseIntegration>? integrations,
+            global::Vercel.OneOf<global::Vercel.GetProjectResponseCreatorVariant1, global::Vercel.GetProjectResponseCreatorVariant2, global::Vercel.GetProjectResponseCreatorVariant3, global::Vercel.GetProjectResponseCreatorVariant4>? creator,
             global::Vercel.GetProjectResponseAnalytics? analytics,
             bool? appliedCve55182Migration,
             global::Vercel.GetProjectResponseSpeedInsights? speedInsights,
@@ -824,6 +833,7 @@ namespace Vercel
         {
             this.Integrations = integrations;
             this.AccountId = accountId ?? throw new global::System.ArgumentNullException(nameof(accountId));
+            this.Creator = creator;
             this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
             this.Analytics = analytics;
             this.AppliedCve55182Migration = appliedCve55182Migration;
