@@ -18,6 +18,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UploadProjectAvatarResponseCreatorVariant1, global::Vercel.UploadProjectAvatarResponseCreatorVariant2, global::Vercel.UploadProjectAvatarResponseCreatorVariant3, global::Vercel.UploadProjectAvatarResponseCreatorVariant4>))]
+        public global::Vercel.OneOf<global::Vercel.UploadProjectAvatarResponseCreatorVariant1, global::Vercel.UploadProjectAvatarResponseCreatorVariant2, global::Vercel.UploadProjectAvatarResponseCreatorVariant3, global::Vercel.UploadProjectAvatarResponseCreatorVariant4>? Creator { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseAlia> Alias { get; set; }
@@ -620,6 +627,7 @@ namespace Vercel
         /// <param name="nodeVersion"></param>
         /// <param name="resourceConfig"></param>
         /// <param name="defaultResourceConfig"></param>
+        /// <param name="creator"></param>
         /// <param name="analytics"></param>
         /// <param name="appliedCve55182Migration"></param>
         /// <param name="speedInsights"></param>
@@ -726,6 +734,7 @@ namespace Vercel
             global::Vercel.UploadProjectAvatarResponseNodeVersion nodeVersion,
             global::Vercel.UploadProjectAvatarResponseResourceConfig resourceConfig,
             global::Vercel.UploadProjectAvatarResponseDefaultResourceConfig defaultResourceConfig,
+            global::Vercel.OneOf<global::Vercel.UploadProjectAvatarResponseCreatorVariant1, global::Vercel.UploadProjectAvatarResponseCreatorVariant2, global::Vercel.UploadProjectAvatarResponseCreatorVariant3, global::Vercel.UploadProjectAvatarResponseCreatorVariant4>? creator,
             global::Vercel.UploadProjectAvatarResponseAnalytics? analytics,
             bool? appliedCve55182Migration,
             global::Vercel.UploadProjectAvatarResponseSpeedInsights? speedInsights,
@@ -815,6 +824,7 @@ namespace Vercel
             string? avatar)
         {
             this.AccountId = accountId ?? throw new global::System.ArgumentNullException(nameof(accountId));
+            this.Creator = creator;
             this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
             this.Analytics = analytics;
             this.AppliedCve55182Migration = appliedCve55182Migration;

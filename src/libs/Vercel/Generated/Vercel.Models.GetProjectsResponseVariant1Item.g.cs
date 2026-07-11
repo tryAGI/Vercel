@@ -18,6 +18,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant1, global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant2, global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant3, global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant4>))]
+        public global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant1, global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant2, global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant3, global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant4>? Creator { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemAlia> Alias { get; set; }
@@ -364,6 +371,7 @@ namespace Vercel
         /// <param name="nodeVersion"></param>
         /// <param name="resourceConfig"></param>
         /// <param name="serverlessFunctionRegion"></param>
+        /// <param name="creator"></param>
         /// <param name="analytics"></param>
         /// <param name="appliedCve55182Migration"></param>
         /// <param name="autoExposeSystemEnvs"></param>
@@ -424,6 +432,7 @@ namespace Vercel
             global::Vercel.GetProjectsResponseVariant1ItemNodeVersion nodeVersion,
             global::Vercel.GetProjectsResponseVariant1ItemResourceConfig resourceConfig,
             string serverlessFunctionRegion,
+            global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant1, global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant2, global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant3, global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant4>? creator,
             global::Vercel.GetProjectsResponseVariant1ItemAnalytics? analytics,
             bool? appliedCve55182Migration,
             bool? autoExposeSystemEnvs,
@@ -471,6 +480,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant1ItemInternalRouteVariant1, global::Vercel.GetProjectsResponseVariant1ItemInternalRouteVariant2>>? internalRoutes)
         {
             this.AccountId = accountId ?? throw new global::System.ArgumentNullException(nameof(accountId));
+            this.Creator = creator;
             this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
             this.Analytics = analytics;
             this.AppliedCve55182Migration = appliedCve55182Migration;
