@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// List sandboxes<br/>
-        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix.
+        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.
         /// </summary>
         /// <param name="project">
         /// The unique identifier or name of the project to list named sandboxes for.<br/>
@@ -30,6 +30,9 @@ namespace Vercel
         /// <param name="sortOrder">
         /// Sort direction. Defaults to desc.<br/>
         /// Default Value: desc
+        /// </param>
+        /// <param name="status">
+        /// Filter named sandboxes by status. Only valid when sortBy is createdAt.
         /// </param>
         /// <param name="tags">
         /// Filter sandboxes by tag. Format: \"key:value\". Only one tag filter is supported at a time.
@@ -50,6 +53,7 @@ namespace Vercel
             string? namePrefix = default,
             string? cursor = default,
             global::Vercel.ListSandboxesSortOrder? sortOrder = default,
+            global::Vercel.ListSandboxesStatus? status = default,
             global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>? tags = default,
             string? teamId = default,
             string? slug = default,
@@ -57,7 +61,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// List sandboxes<br/>
-        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix.
+        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.
         /// </summary>
         /// <param name="project">
         /// The unique identifier or name of the project to list named sandboxes for.<br/>
@@ -82,6 +86,9 @@ namespace Vercel
         /// Sort direction. Defaults to desc.<br/>
         /// Default Value: desc
         /// </param>
+        /// <param name="status">
+        /// Filter named sandboxes by status. Only valid when sortBy is createdAt.
+        /// </param>
         /// <param name="tags">
         /// Filter sandboxes by tag. Format: \"key:value\". Only one tag filter is supported at a time.
         /// </param>
@@ -101,6 +108,7 @@ namespace Vercel
             string? namePrefix = default,
             string? cursor = default,
             global::Vercel.ListSandboxesSortOrder? sortOrder = default,
+            global::Vercel.ListSandboxesStatus? status = default,
             global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>? tags = default,
             string? teamId = default,
             string? slug = default,

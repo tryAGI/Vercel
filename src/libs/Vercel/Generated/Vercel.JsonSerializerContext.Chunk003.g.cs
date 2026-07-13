@@ -1002,6 +1002,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.ListSandboxesSortByNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ListSandboxesSortOrderJsonConverter),
             typeof(global::Vercel.JsonConverters.ListSandboxesSortOrderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListSandboxesStatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListSandboxesStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ListDrivesSortByJsonConverter),
             typeof(global::Vercel.JsonConverters.ListDrivesSortByNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ListDrivesSortOrderJsonConverter),
@@ -7489,6 +7491,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseState), TypeInfoPropertyName = "GetRollingReleaseState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSandboxesSortBy), TypeInfoPropertyName = "ListSandboxesSortBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSandboxesSortOrder), TypeInfoPropertyName = "ListSandboxesSortOrder2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSandboxesStatus), TypeInfoPropertyName = "ListSandboxesStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>), TypeInfoPropertyName = "AnyOfStringIListString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDrivesSortBy), TypeInfoPropertyName = "ListDrivesSortBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDrivesSortOrder), TypeInfoPropertyName = "ListDrivesSortOrder2")]
@@ -7719,7 +7722,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectCheckResponseSourceVariant3Provider), TypeInfoPropertyName = "UpdateProjectCheckResponseSourceVariant3Provider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectCheckResponseBlocks), TypeInfoPropertyName = "UpdateProjectCheckResponseBlocks2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectCheckResponseSourceKind), TypeInfoPropertyName = "UpdateProjectCheckResponseSourceKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteProjectCheckResponse))]
     internal sealed partial class SourceGenerationContextChunk003 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
