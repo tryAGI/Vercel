@@ -1002,6 +1002,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.ListSandboxesSortByNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ListSandboxesSortOrderJsonConverter),
             typeof(global::Vercel.JsonConverters.ListSandboxesSortOrderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListSandboxesStatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListSandboxesStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ListDrivesSortByJsonConverter),
             typeof(global::Vercel.JsonConverters.ListDrivesSortByNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ListDrivesSortOrderJsonConverter),
@@ -7220,6 +7222,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagRequestEnvironmentsRuleConditionRhsVariant1, global::Vercel.CreateFlagRequestEnvironmentsRuleConditionRhsVariant2, string, double?, bool?>?), TypeInfoPropertyName = "CreateFlagRequestEnvironmentsRuleConditionRhsVariant2_string_double_bool_5aadb6b6ee02286b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagRequestEnvironmentsRuleConditionRhsVariant1ItemVariant1, global::Vercel.CreateFlagRequestEnvironmentsRuleConditionRhsVariant1ItemVariant2>?), TypeInfoPropertyName = "CreateFlagRequestEnvironmentsRuleConditionRhsVariant1ItemVariant2_af8b6d80ad7ad177")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagRequestEnvironmentsRuleOutcomeVariant1, global::Vercel.CreateFlagRequestEnvironmentsRuleOutcomeVariant2, global::Vercel.CreateFlagRequestEnvironmentsRuleOutcomeVariant3>?), TypeInfoPropertyName = "CreateFlagRequestEnvironmentsRuleOutcomeVariant3_261489d28a6e83bc")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagRequestEnvironmentsFallthroughVariant1, global::Vercel.CreateFlagRequestEnvironmentsFallthroughVariant2, global::Vercel.CreateFlagRequestEnvironmentsFallthroughVariant3>?), TypeInfoPropertyName = "CreateFlagRequestEnvironmentsFallthroughVariant3_97f9a9c9b0ade2c1")]
@@ -7719,7 +7722,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateConfigurableLogDrainRequestEnvironment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateDrainRequestFilterFilterVariant1LogSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateDrainRequestFilterFilterVariant1DeploymentEnvironment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateDrainRequestSamplingItem>))]
     internal sealed partial class SourceGenerationContextChunk019 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

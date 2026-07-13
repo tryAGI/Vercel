@@ -1002,6 +1002,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.ListSandboxesSortByNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ListSandboxesSortOrderJsonConverter),
             typeof(global::Vercel.JsonConverters.ListSandboxesSortOrderNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListSandboxesStatusJsonConverter),
+            typeof(global::Vercel.JsonConverters.ListSandboxesStatusNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ListDrivesSortByJsonConverter),
             typeof(global::Vercel.JsonConverters.ListDrivesSortByNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.ListDrivesSortOrderJsonConverter),

@@ -147014,7 +147014,7 @@
     },
     "/v2/sandboxes": {
       "get": {
-        "description": "Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix.",
+        "description": "Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.",
         "operationId": "listSandboxes",
         "security": [
           {
@@ -147156,6 +147156,21 @@
                 "desc"
               ],
               "default": "desc"
+            }
+          },
+          {
+            "name": "status",
+            "description": "Filter named sandboxes by status. Only valid when sortBy is createdAt.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Filter named sandboxes by status. Only valid when sortBy is createdAt.",
+              "type": "string",
+              "enum": [
+                "running",
+                "stopping",
+                "stopped"
+              ]
             }
           },
           {
