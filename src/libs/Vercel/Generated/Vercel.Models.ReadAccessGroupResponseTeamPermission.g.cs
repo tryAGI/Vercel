@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayBudgetManager,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayCredits,
         /// <summary>
         /// 
@@ -79,6 +83,7 @@ namespace Vercel
             return value switch
             {
                 ReadAccessGroupResponseTeamPermission.AiGatewayApiKeyOwnedBySelf => "AiGatewayApiKeyOwnedBySelf",
+                ReadAccessGroupResponseTeamPermission.AiGatewayBudgetManager => "AiGatewayBudgetManager",
                 ReadAccessGroupResponseTeamPermission.AiGatewayCredits => "AiGatewayCredits",
                 ReadAccessGroupResponseTeamPermission.AiGatewaySettings => "AiGatewaySettings",
                 ReadAccessGroupResponseTeamPermission.CreateProject => "CreateProject",
@@ -103,6 +108,7 @@ namespace Vercel
             return value switch
             {
                 "AiGatewayApiKeyOwnedBySelf" => ReadAccessGroupResponseTeamPermission.AiGatewayApiKeyOwnedBySelf,
+                "AiGatewayBudgetManager" => ReadAccessGroupResponseTeamPermission.AiGatewayBudgetManager,
                 "AiGatewayCredits" => ReadAccessGroupResponseTeamPermission.AiGatewayCredits,
                 "AiGatewaySettings" => ReadAccessGroupResponseTeamPermission.AiGatewaySettings,
                 "CreateProject" => ReadAccessGroupResponseTeamPermission.CreateProject,
