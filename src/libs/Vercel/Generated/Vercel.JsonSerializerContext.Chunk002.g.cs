@@ -7222,6 +7222,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSdkKeyRequestSdkKeyType), TypeInfoPropertyName = "CreateSdkKeyRequestSdkKeyType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectIntegrationResourceToProjectRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ConnectIntegrationResourceToProjectRequestEnvVarEnvironment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectIntegrationResourceToProjectRequestEnvVarEnvironment), TypeInfoPropertyName = "ConnectIntegrationResourceToProjectRequestEnvVarEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequest))]
@@ -7297,7 +7299,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SubmitInvoiceRequestDiscount))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SubmitInvoiceRequestTest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SubmitInvoiceRequestTestResult), TypeInfoPropertyName = "SubmitInvoiceRequestTestResult2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInvoiceRequest2), TypeInfoPropertyName = "UpdateInvoiceRequest22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInvoiceRequest2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInvoiceRequestAction), TypeInfoPropertyName = "UpdateInvoiceRequestAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SubmitPrepaymentBalancesRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.SubmitPrepaymentBalancesRequestBalance>))]
@@ -7720,8 +7722,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestRulesetConditionGroupItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRulesetConditionGroupItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestRulesetConditionGroupItemCondition>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRulesetConditionGroupItemCondition))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRulesetConditionGroupItemConditionType), TypeInfoPropertyName = "PutFirewallConfigRequestRulesetConditionGroupItemConditionType2")]
     internal sealed partial class SourceGenerationContextChunk002 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
