@@ -42,6 +42,7 @@
                         "type": "string",
                         "enum": [
                           "AiGatewayApiKeyOwnedBySelf",
+                          "AiGatewayBudgetManager",
                           "AiGatewayCredits",
                           "AiGatewaySettings",
                           "CreateProject",
@@ -162528,6 +162529,7 @@
                               "type": "string",
                               "enum": [
                                 "AiGatewayApiKeyOwnedBySelf",
+                                "AiGatewayBudgetManager",
                                 "AiGatewayCredits",
                                 "AiGatewaySettings",
                                 "CreateProject",
@@ -163580,6 +163582,7 @@
                         "AiGatewaySettings",
                         "AiGatewayCredits",
                         "AiGatewayApiKeyOwnedBySelf",
+                        "AiGatewayBudgetManager",
                         "V0Builder",
                         "V0Chatter",
                         "V0Viewer"
@@ -182548,6 +182551,7 @@
               "type": "string",
               "enum": [
                 "AiGatewayApiKeyOwnedBySelf",
+                "AiGatewayBudgetManager",
                 "AiGatewayCredits",
                 "AiGatewaySettings",
                 "CreateProject",
@@ -182800,6 +182804,7 @@
                   "type": "string",
                   "enum": [
                     "AiGatewayApiKeyOwnedBySelf",
+                    "AiGatewayBudgetManager",
                     "AiGatewayCredits",
                     "AiGatewaySettings",
                     "CreateProject",
@@ -183572,6 +183577,7 @@
                   "type": "string",
                   "enum": [
                     "AiGatewayApiKeyOwnedBySelf",
+                    "AiGatewayBudgetManager",
                     "AiGatewayCredits",
                     "AiGatewaySettings",
                     "CreateProject",
@@ -183918,6 +183924,7 @@
                   "type": "string",
                   "enum": [
                     "AiGatewayApiKeyOwnedBySelf",
+                    "AiGatewayBudgetManager",
                     "AiGatewayCredits",
                     "AiGatewaySettings",
                     "CreateProject",
