@@ -61,6 +61,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public ApiAiGatewayClient ApiAiGateway => new ApiAiGatewayClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
+        /// 
+        /// </summary>
         public ApiObservabilityClient ApiObservability => new ApiObservabilityClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
