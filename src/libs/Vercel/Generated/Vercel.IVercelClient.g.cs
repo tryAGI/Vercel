@@ -58,6 +58,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public ApiAiGatewayClient ApiAiGateway { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public ApiObservabilityClient ApiObservability { get; }
 
         /// <summary>

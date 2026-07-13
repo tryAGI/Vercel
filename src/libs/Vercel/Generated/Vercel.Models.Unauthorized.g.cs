@@ -30,6 +30,12 @@ namespace Vercel
         public required string Message { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -41,17 +47,20 @@ namespace Vercel
         /// <param name="status"></param>
         /// <param name="message"></param>
         /// <param name="code"></param>
+        /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public Unauthorized(
             double status,
             string message,
-            global::Vercel.UnauthorizedCode code)
+            global::Vercel.UnauthorizedCode code,
+            string? reason)
         {
             this.Status = status;
             this.Code = code;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
+            this.Reason = reason;
         }
 
         /// <summary>
