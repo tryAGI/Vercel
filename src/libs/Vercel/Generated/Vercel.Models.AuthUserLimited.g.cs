@@ -71,6 +71,12 @@ namespace Vercel
         public bool? IsEnterpriseManaged { get; set; }
 
         /// <summary>
+        /// Whether the Enterprise Managed User joined the current team through the Update Account flow and should see its welcome experience.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("shouldShowEnterpriseManagedWelcome")]
+        public bool? ShouldShowEnterpriseManagedWelcome { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -108,6 +114,9 @@ namespace Vercel
         /// <param name="isEnterpriseManaged">
         /// Indicates whether the user is managed by an enterprise.
         /// </param>
+        /// <param name="shouldShowEnterpriseManagedWelcome">
+        /// Whether the Enterprise Managed User joined the current team through the Update Account flow and should see its welcome experience.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -119,7 +128,8 @@ namespace Vercel
             string? name,
             string? avatar,
             string? defaultTeamId,
-            bool? isEnterpriseManaged)
+            bool? isEnterpriseManaged,
+            bool? shouldShowEnterpriseManagedWelcome)
         {
             this.Limited = limited;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
@@ -129,6 +139,7 @@ namespace Vercel
             this.Avatar = avatar;
             this.DefaultTeamId = defaultTeamId;
             this.IsEnterpriseManaged = isEnterpriseManaged;
+            this.ShouldShowEnterpriseManagedWelcome = shouldShowEnterpriseManagedWelcome;
         }
 
         /// <summary>

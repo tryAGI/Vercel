@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Basic,
+        /// <summary>
+        /// 
+        /// </summary>
         Enhanced,
         /// <summary>
         /// 
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Basic => "basic",
                 CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Enhanced => "enhanced",
                 CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Standard => "standard",
                 CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Turbo => "turbo",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "basic" => CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Basic,
                 "enhanced" => CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Enhanced,
                 "standard" => CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Standard,
                 "turbo" => CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Turbo,
