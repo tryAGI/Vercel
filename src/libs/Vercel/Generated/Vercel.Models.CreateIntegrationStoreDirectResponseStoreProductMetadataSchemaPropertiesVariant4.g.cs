@@ -39,6 +39,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public global::System.Collections.Generic.IList<double>? Default { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxItems")]
         public double? MaxItems { get; set; }
 
@@ -53,12 +59,6 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         public string? Description { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public global::System.Collections.Generic.IList<double>? Default { get; set; }
 
         /// <summary>
         /// 
@@ -119,10 +119,10 @@ namespace Vercel
         /// <param name="ui_steps"></param>
         /// <param name="type"></param>
         /// <param name="ui_control"></param>
+        /// <param name="default"></param>
         /// <param name="maxItems"></param>
         /// <param name="minItems"></param>
         /// <param name="description"></param>
-        /// <param name="default"></param>
         /// <param name="ui_label"></param>
         /// <param name="ui_readOnly"></param>
         /// <param name="ui_hidden"></param>
@@ -138,10 +138,10 @@ namespace Vercel
             global::System.Collections.Generic.IList<double> ui_steps,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant4Type type,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant4UiControl ui_control,
+            global::System.Collections.Generic.IList<double>? @default,
             double? maxItems,
             double? minItems,
             string? description,
-            global::System.Collections.Generic.IList<double>? @default,
             string? ui_label,
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant4UiReadOnlyEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant4UiReadOnlyEnum2?>? ui_readOnly,
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant4UiHiddenEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant4UiHiddenEnum2?>? ui_hidden,
@@ -154,10 +154,10 @@ namespace Vercel
             this.Items = items ?? throw new global::System.ArgumentNullException(nameof(items));
             this.Ui_control = ui_control;
             this.Ui_steps = ui_steps ?? throw new global::System.ArgumentNullException(nameof(ui_steps));
+            this.Default = @default;
             this.MaxItems = maxItems;
             this.MinItems = minItems;
             this.Description = description;
-            this.Default = @default;
             this.Ui_label = ui_label;
             this.Ui_readOnly = ui_readOnly;
             this.Ui_hidden = ui_hidden;

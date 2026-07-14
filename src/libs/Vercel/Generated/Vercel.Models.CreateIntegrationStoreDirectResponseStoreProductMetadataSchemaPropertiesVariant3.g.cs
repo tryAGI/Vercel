@@ -25,14 +25,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public bool? Default { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public bool? Default { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
 
         /// <summary>
         /// 
@@ -91,8 +91,8 @@ namespace Vercel
         /// </summary>
         /// <param name="type"></param>
         /// <param name="ui_control"></param>
-        /// <param name="description"></param>
         /// <param name="default"></param>
+        /// <param name="description"></param>
         /// <param name="ui_label"></param>
         /// <param name="ui_readOnly"></param>
         /// <param name="ui_hidden"></param>
@@ -106,8 +106,8 @@ namespace Vercel
         public CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3(
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3Type type,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiControl ui_control,
-            string? description,
             bool? @default,
+            string? description,
             string? ui_label,
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiReadOnlyEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiReadOnlyEnum2?>? ui_readOnly,
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiHiddenEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiHiddenEnum2?>? ui_hidden,
@@ -118,8 +118,8 @@ namespace Vercel
         {
             this.Type = type;
             this.Ui_control = ui_control;
-            this.Description = description;
             this.Default = @default;
+            this.Description = description;
             this.Ui_label = ui_label;
             this.Ui_readOnly = ui_readOnly;
             this.Ui_hidden = ui_hidden;

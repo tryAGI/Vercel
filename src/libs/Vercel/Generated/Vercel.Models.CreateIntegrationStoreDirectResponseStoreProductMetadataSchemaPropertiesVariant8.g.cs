@@ -32,6 +32,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public string? Default { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enum")]
         public global::System.Collections.Generic.IList<string>? Enum { get; set; }
 
@@ -58,12 +64,6 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         public string? Description { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public string? Default { get; set; }
 
         /// <summary>
         /// 
@@ -129,12 +129,12 @@ namespace Vercel
         /// <param name="ui_options"></param>
         /// <param name="type"></param>
         /// <param name="ui_control"></param>
+        /// <param name="default"></param>
         /// <param name="enum"></param>
         /// <param name="maxLength"></param>
         /// <param name="minLength"></param>
         /// <param name="pattern"></param>
         /// <param name="description"></param>
-        /// <param name="default"></param>
         /// <param name="ui_label"></param>
         /// <param name="ui_readOnly"></param>
         /// <param name="ui_hidden"></param>
@@ -150,12 +150,12 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant1, string, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3>> ui_options,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8Type type,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiControl ui_control,
+            string? @default,
             global::System.Collections.Generic.IList<string>? @enum,
             double? maxLength,
             double? minLength,
             string? pattern,
             string? description,
-            string? @default,
             string? ui_label,
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiReadOnlyEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiReadOnlyEnum2?>? ui_readOnly,
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiHiddenEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiHiddenEnum2?>? ui_hidden,
@@ -168,12 +168,12 @@ namespace Vercel
             this.Type = type;
             this.Ui_control = ui_control;
             this.Ui_options = ui_options ?? throw new global::System.ArgumentNullException(nameof(ui_options));
+            this.Default = @default;
             this.Enum = @enum;
             this.MaxLength = maxLength;
             this.MinLength = minLength;
             this.Pattern = pattern;
             this.Description = description;
-            this.Default = @default;
             this.Ui_label = ui_label;
             this.Ui_readOnly = ui_readOnly;
             this.Ui_hidden = ui_hidden;

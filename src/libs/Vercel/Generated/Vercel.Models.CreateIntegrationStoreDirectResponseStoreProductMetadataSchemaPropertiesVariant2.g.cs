@@ -25,6 +25,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public double? Default { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maximum")]
         public double? Maximum { get; set; }
 
@@ -51,12 +57,6 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         public string? Description { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public double? Default { get; set; }
 
         /// <summary>
         /// 
@@ -121,12 +121,12 @@ namespace Vercel
         /// </summary>
         /// <param name="type"></param>
         /// <param name="ui_control"></param>
+        /// <param name="default"></param>
         /// <param name="maximum"></param>
         /// <param name="exclusiveMaximum"></param>
         /// <param name="minimum"></param>
         /// <param name="exclusiveMinimum"></param>
         /// <param name="description"></param>
-        /// <param name="default"></param>
         /// <param name="ui_label"></param>
         /// <param name="ui_readOnly"></param>
         /// <param name="ui_hidden"></param>
@@ -141,12 +141,12 @@ namespace Vercel
         public CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant2(
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant2Type type,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant2UiControl ui_control,
+            double? @default,
             double? maximum,
             double? exclusiveMaximum,
             double? minimum,
             double? exclusiveMinimum,
             string? description,
-            double? @default,
             string? ui_label,
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant2UiReadOnlyEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant2UiReadOnlyEnum2?>? ui_readOnly,
             global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant2UiHiddenEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant2UiHiddenEnum2?>? ui_hidden,
@@ -158,12 +158,12 @@ namespace Vercel
         {
             this.Type = type;
             this.Ui_control = ui_control;
+            this.Default = @default;
             this.Maximum = maximum;
             this.ExclusiveMaximum = exclusiveMaximum;
             this.Minimum = minimum;
             this.ExclusiveMinimum = exclusiveMinimum;
             this.Description = description;
-            this.Default = @default;
             this.Ui_label = ui_label;
             this.Ui_readOnly = ui_readOnly;
             this.Ui_hidden = ui_hidden;

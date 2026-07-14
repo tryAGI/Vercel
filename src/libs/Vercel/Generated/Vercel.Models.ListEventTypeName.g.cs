@@ -1064,6 +1064,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrganizationTeamDelete,
+        /// <summary>
+        /// 
+        /// </summary>
         OwnerBlocked,
         /// <summary>
         /// 
@@ -2490,6 +2494,7 @@ namespace Vercel
                 ListEventTypeName.OrganizationSlugUpdate => "organization-slug-update",
                 ListEventTypeName.OrganizationTeamAdd => "organization-team-add",
                 ListEventTypeName.OrganizationTeamCreate => "organization-team-create",
+                ListEventTypeName.OrganizationTeamDelete => "organization-team-delete",
                 ListEventTypeName.OwnerBlocked => "owner-blocked",
                 ListEventTypeName.OwnerSoftBlocked => "owner-soft-blocked",
                 ListEventTypeName.OwnerSoftUnblocked => "owner-soft-unblocked",
@@ -3051,6 +3056,7 @@ namespace Vercel
                 "organization-slug-update" => ListEventTypeName.OrganizationSlugUpdate,
                 "organization-team-add" => ListEventTypeName.OrganizationTeamAdd,
                 "organization-team-create" => ListEventTypeName.OrganizationTeamCreate,
+                "organization-team-delete" => ListEventTypeName.OrganizationTeamDelete,
                 "owner-blocked" => ListEventTypeName.OwnerBlocked,
                 "owner-soft-blocked" => ListEventTypeName.OwnerSoftBlocked,
                 "owner-soft-unblocked" => ListEventTypeName.OwnerSoftUnblocked,
