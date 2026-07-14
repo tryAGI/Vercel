@@ -101672,6 +101672,284 @@
         ]
       }
     },
+    "/v1/projects/traces": {
+      "get": {
+        "description": "Returns the OTEL trace for a given Vercel CLI request.",
+        "operationId": "getProjectTrace",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Get a project trace by request ID",
+        "tags": [
+          "projects"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "trace": {
+                      "properties": {
+                        "traceId": {
+                          "type": "string"
+                        },
+                        "resources": {
+                          "items": {
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "attributes": {
+                                "additionalProperties": {
+                                  "type": "string"
+                                },
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "attributes",
+                              "name"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "spans": {
+                          "items": {
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "kind": {
+                                "type": "number"
+                              },
+                              "resource": {
+                                "type": "string"
+                              },
+                              "library": {
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "version": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "name"
+                                ],
+                                "type": "object"
+                              },
+                              "spanId": {
+                                "type": "string"
+                              },
+                              "parentSpanId": {
+                                "type": "string"
+                              },
+                              "status": {
+                                "properties": {
+                                  "code": {
+                                    "type": "number"
+                                  }
+                                },
+                                "required": [
+                                  "code"
+                                ],
+                                "type": "object"
+                              },
+                              "traceFlags": {
+                                "type": "number"
+                              },
+                              "attributes": {
+                                "additionalProperties": true,
+                                "type": "object"
+                              },
+                              "links": {
+                                "items": {
+                                  "additionalProperties": true,
+                                  "type": "object"
+                                },
+                                "type": "array"
+                              },
+                              "events": {
+                                "items": {
+                                  "properties": {
+                                    "name": {
+                                      "type": "string"
+                                    },
+                                    "timestamp": {
+                                      "items": {
+                                        "oneOf": [
+                                          {
+                                            "type": "number"
+                                          },
+                                          {
+                                            "type": "number"
+                                          }
+                                        ]
+                                      },
+                                      "maxItems": 2,
+                                      "minItems": 2,
+                                      "type": "array"
+                                    },
+                                    "attributes": {
+                                      "additionalProperties": true,
+                                      "type": "object"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributes",
+                                    "name",
+                                    "timestamp"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "array"
+                              },
+                              "startTime": {
+                                "items": {
+                                  "oneOf": [
+                                    {
+                                      "type": "number"
+                                    },
+                                    {
+                                      "type": "number"
+                                    }
+                                  ]
+                                },
+                                "maxItems": 2,
+                                "minItems": 2,
+                                "type": "array"
+                              },
+                              "endTime": {
+                                "items": {
+                                  "oneOf": [
+                                    {
+                                      "type": "number"
+                                    },
+                                    {
+                                      "type": "number"
+                                    }
+                                  ]
+                                },
+                                "maxItems": 2,
+                                "minItems": 2,
+                                "type": "array"
+                              },
+                              "duration": {
+                                "items": {
+                                  "oneOf": [
+                                    {
+                                      "type": "number"
+                                    },
+                                    {
+                                      "type": "number"
+                                    }
+                                  ]
+                                },
+                                "maxItems": 2,
+                                "minItems": 2,
+                                "type": "array"
+                              }
+                            },
+                            "required": [
+                              "attributes",
+                              "duration",
+                              "endTime",
+                              "events",
+                              "kind",
+                              "library",
+                              "links",
+                              "name",
+                              "resource",
+                              "spanId",
+                              "startTime",
+                              "status",
+                              "traceFlags"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "rootSpanId": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "spans",
+                        "traceId"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "trace"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectId",
+            "description": "The project ID",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "description": "The project ID",
+              "type": "string",
+              "example": "prj_123",
+              "maxLength": 150
+            }
+          },
+          {
+            "name": "requestId",
+            "description": "The Vercel CLI request ID associated with the trace",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "description": "The Vercel CLI request ID associated with the trace",
+              "type": "string",
+              "example": "cli-req-abc",
+              "maxLength": 256
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
     "/v11/projects": {
       "post": {
         "description": "Allows to create a new project with the provided configuration. It only requires the project `name` but more configuration can be provided to override the defaults.",
@@ -109033,6 +109311,97 @@
                   "name"
                 ],
                 "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/projects/traces/session": {
+      "post": {
+        "description": "Mints a short-lived HS256 JWT scoped to a deployment hostname. The Vercel CLI presents this JWT to the Vercel proxy on requests it wants traced.",
+        "operationId": "createTraceSession",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Create a trace session token for a deployment",
+        "tags": [
+          "projects"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "token": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "token"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "422": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "projectId",
+                  "hostname"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "projectId": {
+                    "type": "string",
+                    "description": "The project ID the deployment belongs to."
+                  },
+                  "hostname": {
+                    "type": "string",
+                    "description": "The deployment hostname to scope the trace session to."
+                  }
+                }
               }
             }
           }

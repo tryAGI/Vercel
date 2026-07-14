@@ -7466,6 +7466,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectRequestResourceConfigBuildMachineElasticReason), TypeInfoPropertyName = "CreateProjectRequestResourceConfigBuildMachineElasticReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectRequestResourceConfigBuildQueue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectRequestResourceConfigBuildQueueConfiguration), TypeInfoPropertyName = "CreateProjectRequestResourceConfigBuildQueueConfiguration2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateTraceSessionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectRequestFramework), TypeInfoPropertyName = "UpdateProjectRequestFramework2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectRequestNodeVersion), TypeInfoPropertyName = "UpdateProjectRequestNodeVersion2")]
@@ -7759,7 +7760,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRuleActionMitigate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRuleActionMitigateAction), TypeInfoPropertyName = "PutFirewallConfigRequestRuleActionMitigateAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PutFirewallConfigRequestRuleActionMitigateRateLimitVariant1, object>), TypeInfoPropertyName = "AnyOfPutFirewallConfigRequestRuleActionMitigateRateLimitVariant1Object2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRuleActionMitigateRateLimitVariant1))]
     internal sealed partial class SourceGenerationContextChunk002 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
