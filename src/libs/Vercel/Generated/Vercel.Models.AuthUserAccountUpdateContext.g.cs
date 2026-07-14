@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("organization")]
+        public global::Vercel.AuthUserAccountUpdateContextOrganization? Organization { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("managedTeams")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.AuthUserAccountUpdateContextManagedTeam> ManagedTeams { get; set; }
@@ -25,12 +31,15 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="AuthUserAccountUpdateContext" /> class.
         /// </summary>
         /// <param name="managedTeams"></param>
+        /// <param name="organization"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthUserAccountUpdateContext(
-            global::System.Collections.Generic.IList<global::Vercel.AuthUserAccountUpdateContextManagedTeam> managedTeams)
+            global::System.Collections.Generic.IList<global::Vercel.AuthUserAccountUpdateContextManagedTeam> managedTeams,
+            global::Vercel.AuthUserAccountUpdateContextOrganization? organization)
         {
+            this.Organization = organization;
             this.ManagedTeams = managedTeams ?? throw new global::System.ArgumentNullException(nameof(managedTeams));
         }
 
