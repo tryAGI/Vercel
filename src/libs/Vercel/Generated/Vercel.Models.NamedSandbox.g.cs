@@ -91,6 +91,14 @@ namespace Vercel
         public string? Runtime { get; set; }
 
         /// <summary>
+        /// Digest-pinned reference of the container image the sandbox was created from, when it was created from an image ("{repository}@{manifestDigest}").<br/>
+        /// Example: my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708
+        /// </summary>
+        /// <example>my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("image")]
+        public string? Image { get; set; }
+
+        /// <summary>
         /// Timeout in milliseconds.<br/>
         /// Example: 300000
         /// </summary>
@@ -253,6 +261,10 @@ namespace Vercel
         /// Runtime identifier.<br/>
         /// Example: node22
         /// </param>
+        /// <param name="image">
+        /// Digest-pinned reference of the container image the sandbox was created from, when it was created from an image ("{repository}@{manifestDigest}").<br/>
+        /// Example: my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708
+        /// </param>
         /// <param name="timeout">
         /// Timeout in milliseconds.<br/>
         /// Example: 300000
@@ -314,6 +326,7 @@ namespace Vercel
             double? vcpus,
             double? memory,
             string? runtime,
+            string? image,
             double? timeout,
             double? snapshotExpiration,
             global::Vercel.NamedSandboxKeepLastSnapshots? keepLastSnapshots,
@@ -337,6 +350,7 @@ namespace Vercel
             this.Vcpus = vcpus;
             this.Memory = memory;
             this.Runtime = runtime;
+            this.Image = image;
             this.Timeout = timeout;
             this.SnapshotExpiration = snapshotExpiration;
             this.KeepLastSnapshots = keepLastSnapshots;
