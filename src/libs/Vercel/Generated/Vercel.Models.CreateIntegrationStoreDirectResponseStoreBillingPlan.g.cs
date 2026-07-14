@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateIntegrationStoreDirectResponseStoreBillingPlanTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -22,13 +29,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Description { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
 
         /// <summary>
         /// 
@@ -127,9 +127,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateIntegrationStoreDirectResponseStoreBillingPlan" /> class.
         /// </summary>
+        /// <param name="id"></param>
         /// <param name="type"></param>
         /// <param name="description"></param>
-        /// <param name="id"></param>
         /// <param name="name"></param>
         /// <param name="scope"></param>
         /// <param name="paymentMethodRequired"></param>
@@ -148,9 +148,9 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateIntegrationStoreDirectResponseStoreBillingPlan(
+            string id,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanType type,
             string description,
-            string id,
             string name,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanScope scope,
             bool paymentMethodRequired,
@@ -166,9 +166,9 @@ namespace Vercel
             string? effectiveDate,
             bool? disabled)
         {
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Type = type;
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Scope = scope;
             this.PaymentMethodRequired = paymentMethodRequired;
