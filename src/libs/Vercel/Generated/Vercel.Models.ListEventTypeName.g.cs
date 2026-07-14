@@ -432,6 +432,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        CustomEnvironmentsSettingsUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         CustomSuffixClear,
         /// <summary>
         /// 
@@ -1053,6 +1057,10 @@ namespace Vercel
         /// 
         /// </summary>
         OrganizationTeamAdd,
+        /// <summary>
+        /// 
+        /// </summary>
+        OrganizationTeamCreate,
         /// <summary>
         /// 
         /// </summary>
@@ -2324,6 +2332,7 @@ namespace Vercel
                 ListEventTypeName.CustomAlertCreated => "custom-alert-created",
                 ListEventTypeName.CustomAlertDeleted => "custom-alert-deleted",
                 ListEventTypeName.CustomAlertUpdated => "custom-alert-updated",
+                ListEventTypeName.CustomEnvironmentsSettingsUpdated => "custom-environments-settings-updated",
                 ListEventTypeName.CustomSuffixClear => "custom-suffix-clear",
                 ListEventTypeName.CustomSuffixDisable => "custom-suffix-disable",
                 ListEventTypeName.CustomSuffixEnable => "custom-suffix-enable",
@@ -2480,6 +2489,7 @@ namespace Vercel
                 ListEventTypeName.OrganizationDelete => "organization-delete",
                 ListEventTypeName.OrganizationSlugUpdate => "organization-slug-update",
                 ListEventTypeName.OrganizationTeamAdd => "organization-team-add",
+                ListEventTypeName.OrganizationTeamCreate => "organization-team-create",
                 ListEventTypeName.OwnerBlocked => "owner-blocked",
                 ListEventTypeName.OwnerSoftBlocked => "owner-soft-blocked",
                 ListEventTypeName.OwnerSoftUnblocked => "owner-soft-unblocked",
@@ -2883,6 +2893,7 @@ namespace Vercel
                 "custom-alert-created" => ListEventTypeName.CustomAlertCreated,
                 "custom-alert-deleted" => ListEventTypeName.CustomAlertDeleted,
                 "custom-alert-updated" => ListEventTypeName.CustomAlertUpdated,
+                "custom-environments-settings-updated" => ListEventTypeName.CustomEnvironmentsSettingsUpdated,
                 "custom-suffix-clear" => ListEventTypeName.CustomSuffixClear,
                 "custom-suffix-disable" => ListEventTypeName.CustomSuffixDisable,
                 "custom-suffix-enable" => ListEventTypeName.CustomSuffixEnable,
@@ -3039,6 +3050,7 @@ namespace Vercel
                 "organization-delete" => ListEventTypeName.OrganizationDelete,
                 "organization-slug-update" => ListEventTypeName.OrganizationSlugUpdate,
                 "organization-team-add" => ListEventTypeName.OrganizationTeamAdd,
+                "organization-team-create" => ListEventTypeName.OrganizationTeamCreate,
                 "owner-blocked" => ListEventTypeName.OwnerBlocked,
                 "owner-soft-blocked" => ListEventTypeName.OwnerSoftBlocked,
                 "owner-soft-unblocked" => ListEventTypeName.OwnerSoftUnblocked,
