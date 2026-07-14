@@ -7226,6 +7226,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRulesetConditionGroupItemConditionType?), TypeInfoPropertyName = "NullablePutFirewallConfigRequestRulesetConditionGroupItemConditionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRulesetConditionGroupItemConditionOp?), TypeInfoPropertyName = "NullablePutFirewallConfigRequestRulesetConditionGroupItemConditionOp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRulesetsAction?), TypeInfoPropertyName = "NullablePutFirewallConfigRequestRulesetsAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PutFirewallConfigRequestRulesetsRateLimit, string>?), TypeInfoPropertyName = "NullableAnyOfPutFirewallConfigRequestRulesetsRateLimitString2")]
@@ -7725,7 +7726,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<double?, global::Vercel.GetDeploymentResponseVariant1ServiceVariant2FunctionsMaxDuration?>?), TypeInfoPropertyName = "NullableOneOfDoubleGetDeploymentResponseVariant1ServiceVariant2FunctionsMaxDuration2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ServiceVariant2FunctionsMaxDuration?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant1ServiceVariant2FunctionsMaxDuration2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1ServiceVariant2FunctionsExperimentalTriggerVariant1, global::Vercel.GetDeploymentResponseVariant1ServiceVariant2FunctionsExperimentalTriggerVariant2>?), TypeInfoPropertyName = "GetDeploymentResponseVariant1ServiceVariant2FunctionsExperimentalTriggerVariant2_c559156b3469ec71")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ServiceVariant2FunctionsExperimentalTriggerVariant1Type?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant1ServiceVariant2FunctionsExperimentalTriggerVariant1Type2")]
     internal sealed partial class SourceGenerationContextChunk020 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

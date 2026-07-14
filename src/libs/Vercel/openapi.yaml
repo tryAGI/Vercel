@@ -185084,6 +185084,25 @@
           },
           "accountUpdateContext": {
             "properties": {
+              "organization": {
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "slug": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "name",
+                  "slug"
+                ],
+                "type": "object"
+              },
               "managedTeams": {
                 "items": {
                   "properties": {
