@@ -18,6 +18,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TokenId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double ExpiresAt { get; set; }
@@ -69,6 +76,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetConnectorTokenResponse" /> class.
         /// </summary>
         /// <param name="token"></param>
+        /// <param name="tokenId"></param>
         /// <param name="expiresAt"></param>
         /// <param name="connector"></param>
         /// <param name="name"></param>
@@ -83,6 +91,7 @@ namespace Vercel
 #endif
         public GetConnectorTokenResponse(
             string token,
+            string tokenId,
             double expiresAt,
             global::Vercel.GetConnectorTokenResponseConnector connector,
             string? name,
@@ -92,6 +101,7 @@ namespace Vercel
             object? metadata)
         {
             this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
+            this.TokenId = tokenId ?? throw new global::System.ArgumentNullException(nameof(tokenId));
             this.ExpiresAt = expiresAt;
             this.Connector = connector ?? throw new global::System.ArgumentNullException(nameof(connector));
             this.Name = name;

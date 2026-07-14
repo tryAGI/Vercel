@@ -12679,6 +12679,9 @@
                     "token": {
                       "type": "string"
                     },
+                    "tokenId": {
+                      "type": "string"
+                    },
                     "expiresAt": {
                       "type": "number"
                     },
@@ -12722,7 +12725,8 @@
                   "required": [
                     "connector",
                     "expiresAt",
-                    "token"
+                    "token",
+                    "tokenId"
                   ],
                   "type": "object"
                 }
@@ -178754,6 +178758,7 @@
               "custom-alert-created",
               "custom-alert-deleted",
               "custom-alert-updated",
+              "custom-environments-settings-updated",
               "custom-suffix-clear",
               "custom-suffix-disable",
               "custom-suffix-enable",
@@ -178910,6 +178915,7 @@
               "organization-delete",
               "organization-slug-update",
               "organization-team-add",
+              "organization-team-create",
               "owner-blocked",
               "owner-soft-blocked",
               "owner-soft-unblocked",
@@ -179620,6 +179626,7 @@
               "custom-alert-created",
               "custom-alert-deleted",
               "custom-alert-updated",
+              "custom-environments-settings-updated",
               "custom-suffix-clear",
               "custom-suffix-disable",
               "custom-suffix-enable",
@@ -179776,6 +179783,7 @@
               "organization-delete",
               "organization-slug-update",
               "organization-team-add",
+              "organization-team-create",
               "owner-blocked",
               "owner-soft-blocked",
               "owner-soft-unblocked",
@@ -180227,6 +180235,7 @@
                 "custom-alert-created",
                 "custom-alert-deleted",
                 "custom-alert-updated",
+                "custom-environments-settings-updated",
                 "custom-suffix-clear",
                 "custom-suffix-disable",
                 "custom-suffix-enable",
@@ -180383,6 +180392,7 @@
                 "organization-delete",
                 "organization-slug-update",
                 "organization-team-add",
+                "organization-team-create",
                 "owner-blocked",
                 "owner-soft-blocked",
                 "owner-soft-unblocked",
