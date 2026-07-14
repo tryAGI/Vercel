@@ -610,6 +610,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateLogDrainRequestSourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateLogDrainRequestEnvironmentJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateLogDrainRequestEnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateApiKeysRequestAiGatewayQuotaRefreshPeriodJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateApiKeysRequestAiGatewayQuotaRefreshPeriodNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItemCategoryJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItemCategoryNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestCategoryJsonConverter),
@@ -7226,6 +7228,20 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1Type), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiControl), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiControl2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiReadOnlyEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiReadOnlyEnum2?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiReadOnlyEnum2_9e66be92a7ac830b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiReadOnlyEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiReadOnlyEnum2), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiReadOnlyEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiHiddenEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiHiddenEnum2?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiHiddenEnum2_f68f709f749e79ca")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiHiddenEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiHiddenEnum2), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiHiddenEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiDisabledEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiDisabledEnum2?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiDisabledEnum2_658b57c28f52a07a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiDisabledEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiDisabledEnum2), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiDisabledEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiDescription>), TypeInfoPropertyName = "OneOfStringCreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiDescription2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiDescription))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant1UiFormattedValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant2Type), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant2Type2")]
@@ -7712,20 +7728,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsNodeVersion), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentProjectSettingsNodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsSpeedInsights))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsWebAnalytics))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsGitComments))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentPlatform))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentPlatformSource))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentPlatformOrigin))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentPlatformOriginType), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentPlatformOriginType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentPlatformCreator))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentCustomEnvironment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentSeatBlock))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentSeatBlockBlockCode), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentSeatBlockBlockCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentSeatBlockGitProvider), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentSeatBlockGitProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentAttribution))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentAttributionCommitMeta))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentAttributionGitUser))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentAttributionVercelUser))]
     internal sealed partial class SourceGenerationContextChunk018 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

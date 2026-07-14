@@ -610,6 +610,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateLogDrainRequestSourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateLogDrainRequestEnvironmentJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateLogDrainRequestEnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateApiKeysRequestAiGatewayQuotaRefreshPeriodJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateApiKeysRequestAiGatewayQuotaRefreshPeriodNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItemCategoryJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItemCategoryNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestCategoryJsonConverter),
@@ -7226,6 +7228,11 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Log))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Deployment))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2Type), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2Type2")]
@@ -7721,11 +7728,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentGuardrailMetricMetricUnit), TypeInfoPropertyName = "UpdateFlagResponseExperimentGuardrailMetricMetricUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentGuardrailMetricDirectionality), TypeInfoPropertyName = "UpdateFlagResponseExperimentGuardrailMetricDirectionality2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentDevice), TypeInfoPropertyName = "UpdateFlagResponseExperimentDevice2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentDurationUnit), TypeInfoPropertyName = "UpdateFlagResponseExperimentDurationUnit2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentAllocationUnit), TypeInfoPropertyName = "UpdateFlagResponseExperimentAllocationUnit2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateFlagResponseExperimentPrimaryMetric>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentPrimaryMetric))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseExperimentPrimaryMetricMetricType), TypeInfoPropertyName = "UpdateFlagResponseExperimentPrimaryMetricMetricType2")]
     internal sealed partial class SourceGenerationContextChunk008 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

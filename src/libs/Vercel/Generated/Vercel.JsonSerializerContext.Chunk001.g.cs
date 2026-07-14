@@ -610,6 +610,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateLogDrainRequestSourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateLogDrainRequestEnvironmentJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateLogDrainRequestEnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateApiKeysRequestAiGatewayQuotaRefreshPeriodJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateApiKeysRequestAiGatewayQuotaRefreshPeriodNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItemCategoryJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItemCategoryNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestCategoryJsonConverter),
@@ -7226,6 +7228,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateAccessGroupRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateAccessGroupRequestProject>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateAccessGroupRequestProject))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateAccessGroupRequestProjectRole), TypeInfoPropertyName = "CreateAccessGroupRequestProjectRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateAccessGroupProjectRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateAccessGroupProjectRequestRole), TypeInfoPropertyName = "CreateAccessGroupProjectRequestRole2")]
@@ -7723,9 +7728,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFlagSegmentRequestDataRuleOutcomeVariant1, global::Vercel.UpdateFlagSegmentRequestDataRuleOutcomeVariant2>), TypeInfoPropertyName = "AnyOfUpdateFlagSegmentRequestDataRuleOutcomeVariant1UpdateFlagSegmentRequestDataRuleOutcomeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestDataRuleOutcomeVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestDataRuleOutcomeVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestDataRuleOutcomeVariant2Base))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentRequestDataIncludeItem>>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentRequestDataIncludeItem>>))]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
