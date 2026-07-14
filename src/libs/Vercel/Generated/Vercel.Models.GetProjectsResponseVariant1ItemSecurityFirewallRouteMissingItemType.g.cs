@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DomainEnvironment,
+        /// <summary>
+        /// 
+        /// </summary>
         Environment,
         /// <summary>
         /// 
@@ -79,6 +83,7 @@ namespace Vercel
             return value switch
             {
                 GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItemType.Cookie => "cookie",
+                GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItemType.DomainEnvironment => "domain_environment",
                 GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItemType.Environment => "environment",
                 GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItemType.Header => "header",
                 GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItemType.Headers => "headers",
@@ -103,6 +108,7 @@ namespace Vercel
             return value switch
             {
                 "cookie" => GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItemType.Cookie,
+                "domain_environment" => GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItemType.DomainEnvironment,
                 "environment" => GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItemType.Environment,
                 "header" => GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItemType.Header,
                 "headers" => GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItemType.Headers,
