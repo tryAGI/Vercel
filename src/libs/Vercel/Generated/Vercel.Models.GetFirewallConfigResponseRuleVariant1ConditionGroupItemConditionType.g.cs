@@ -31,6 +31,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DomainEnvironment,
+        /// <summary>
+        /// 
+        /// </summary>
         Environment,
         /// <summary>
         /// 
@@ -143,6 +147,7 @@ namespace Vercel
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.BotProtection => "bot_protection",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.BotStatus => "bot_status",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.Cookie => "cookie",
+                GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.DomainEnvironment => "domain_environment",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.Environment => "environment",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.GeoAsNumber => "geo_as_number",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.GeoCity => "geo_city",
@@ -182,6 +187,7 @@ namespace Vercel
                 "bot_protection" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.BotProtection,
                 "bot_status" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.BotStatus,
                 "cookie" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.Cookie,
+                "domain_environment" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.DomainEnvironment,
                 "environment" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.Environment,
                 "geo_as_number" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.GeoAsNumber,
                 "geo_city" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.GeoCity,
