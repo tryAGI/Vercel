@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Bypass,
+        Allow,
         /// <summary>
         /// 
         /// </summary>
@@ -24,14 +24,6 @@ namespace Vercel
         /// 
         /// </summary>
         Log,
-        /// <summary>
-        /// 
-        /// </summary>
-        RateLimit,
-        /// <summary>
-        /// 
-        /// </summary>
-        Redirect,
     }
 
     /// <summary>
@@ -46,12 +38,10 @@ namespace Vercel
         {
             return value switch
             {
-                UpdateFirewallConfigRequestVariant4ValueAction.Bypass => "bypass",
+                UpdateFirewallConfigRequestVariant4ValueAction.Allow => "allow",
                 UpdateFirewallConfigRequestVariant4ValueAction.Challenge => "challenge",
                 UpdateFirewallConfigRequestVariant4ValueAction.Deny => "deny",
                 UpdateFirewallConfigRequestVariant4ValueAction.Log => "log",
-                UpdateFirewallConfigRequestVariant4ValueAction.RateLimit => "rate_limit",
-                UpdateFirewallConfigRequestVariant4ValueAction.Redirect => "redirect",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -62,12 +52,10 @@ namespace Vercel
         {
             return value switch
             {
-                "bypass" => UpdateFirewallConfigRequestVariant4ValueAction.Bypass,
+                "allow" => UpdateFirewallConfigRequestVariant4ValueAction.Allow,
                 "challenge" => UpdateFirewallConfigRequestVariant4ValueAction.Challenge,
                 "deny" => UpdateFirewallConfigRequestVariant4ValueAction.Deny,
                 "log" => UpdateFirewallConfigRequestVariant4ValueAction.Log,
-                "rate_limit" => UpdateFirewallConfigRequestVariant4ValueAction.RateLimit,
-                "redirect" => UpdateFirewallConfigRequestVariant4ValueAction.Redirect,
                 _ => null,
             };
         }

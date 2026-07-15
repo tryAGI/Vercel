@@ -47,6 +47,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rulesets")]
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetProjectResponseSecurityRulesets2>? Rulesets { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("firewallSeawallEnabled")]
         public bool? FirewallSeawallEnabled { get; set; }
 
@@ -120,6 +126,7 @@ namespace Vercel
         /// <param name="firewallUpdatedAt"></param>
         /// <param name="attackModeActiveUntil"></param>
         /// <param name="firewallConfigVersion"></param>
+        /// <param name="rulesets"></param>
         /// <param name="firewallSeawallEnabled"></param>
         /// <param name="ja3Enabled"></param>
         /// <param name="ja4Enabled"></param>
@@ -142,6 +149,7 @@ namespace Vercel
             double? firewallUpdatedAt,
             double? attackModeActiveUntil,
             double? firewallConfigVersion,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.GetProjectResponseSecurityRulesets2>? rulesets,
             bool? firewallSeawallEnabled,
             bool? ja3Enabled,
             bool? ja4Enabled,
@@ -159,6 +167,7 @@ namespace Vercel
             this.FirewallUpdatedAt = firewallUpdatedAt;
             this.AttackModeActiveUntil = attackModeActiveUntil;
             this.FirewallConfigVersion = firewallConfigVersion;
+            this.Rulesets = rulesets;
             this.FirewallSeawallEnabled = firewallSeawallEnabled;
             this.Ja3Enabled = ja3Enabled;
             this.Ja4Enabled = ja4Enabled;

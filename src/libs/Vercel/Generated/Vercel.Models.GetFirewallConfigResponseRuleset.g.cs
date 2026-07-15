@@ -43,6 +43,12 @@ namespace Vercel
         public required global::System.Collections.Generic.IList<global::Vercel.GetFirewallConfigResponseRulesetConditionGroupItem> ConditionGroup { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        public global::Vercel.GetFirewallConfigResponseRulesetAction? Action { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -56,6 +62,7 @@ namespace Vercel
         /// <param name="active"></param>
         /// <param name="conditionGroup"></param>
         /// <param name="description"></param>
+        /// <param name="action"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -64,13 +71,15 @@ namespace Vercel
             string name,
             bool active,
             global::System.Collections.Generic.IList<global::Vercel.GetFirewallConfigResponseRulesetConditionGroupItem> conditionGroup,
-            string? description)
+            string? description,
+            global::Vercel.GetFirewallConfigResponseRulesetAction? action)
         {
             this.Description = description;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Active = active;
             this.ConditionGroup = conditionGroup ?? throw new global::System.ArgumentNullException(nameof(conditionGroup));
+            this.Action = action;
         }
 
         /// <summary>
