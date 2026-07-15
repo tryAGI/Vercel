@@ -12616,7 +12616,6 @@
                           }
                         },
                         "required": [
-                          "clientName",
                           "accountIdentifier"
                         ],
                         "additionalProperties": false,
@@ -12636,9 +12635,6 @@
                             "additionalProperties": {}
                           }
                         },
-                        "required": [
-                          "clientName"
-                        ],
                         "additionalProperties": false,
                         "title": "type:snowflake-wif"
                       },
@@ -80741,6 +80737,257 @@
             }
           }
         }
+      }
+    },
+    "/v2/observability/query": {
+      "post": {
+        "description": "",
+        "operationId": "createObservabilityQuery",
+        "security": [],
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": ""
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "408": {
+            "description": ""
+          }
+        },
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "metric",
+                  "scope"
+                ],
+                "properties": {
+                  "metric": {
+                    "type": "string",
+                    "description": "Metric id"
+                  },
+                  "scope": {
+                    "type": "object",
+                    "description": "Owner or project scope for the query"
+                  },
+                  "aggregation": {
+                    "type": "string",
+                    "description": "Aggregation function to apply. Some aggregations require a dimension: use <agg>/<dimension>, for example unique/visitor_id."
+                  },
+                  "groupBy": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Dimensions to group results by. JSON dimensions support nested refs, for example event_data/checkout_step. Nested keys containing characters that OData cannot parse as an identifier, such as '-', spaces, quotes, or '/', must be wrapped in single quotes (escape embedded single quotes by doubling them), for example flags/'enable-comments-view' or event_data/'some property''s/value'."
+                  },
+                  "filter": {
+                    "type": "string",
+                    "description": "Filter to apply to the query. JSON dimensions support nested refs, for example event_data/checkout_step eq 'payment'. Nested keys containing characters that OData cannot parse as an identifier, such as '-', spaces, quotes, or '/', must be wrapped in single quotes (escape embedded single quotes by doubling them), for example flags/'enable-comments-view' eq true or event_data/'some property''s/value' eq true."
+                  },
+                  "limit": {
+                    "type": "number",
+                    "description": "Maximum number of results"
+                  },
+                  "orderBy": {
+                    "type": "string",
+                    "description": "Rollup column to order grouped results by. Use the generated rollup key for the requested metric and aggregation. Defaults to the query engine count rollup."
+                  },
+                  "orderDirection": {
+                    "type": "string",
+                    "enum": [
+                      "asc",
+                      "desc"
+                    ],
+                    "description": "Direction to order grouped results by. Defaults to desc."
+                  },
+                  "granularity": {
+                    "type": "object",
+                    "description": "Time bucket size"
+                  },
+                  "startTime": {
+                    "type": "string",
+                    "description": "Start timestamp"
+                  },
+                  "endTime": {
+                    "type": "string",
+                    "description": "End timestamp"
+                  },
+                  "bucketTimezone": {
+                    "type": "string",
+                    "description": "IANA timezone (e.g. Europe/Paris) used only to align calendar buckets (1d/1mo) to that zone's day/month boundaries. startTime/endTime and all output timestamps are always UTC. No effect on sub-day granularities."
+                  }
+                },
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v2/observability/schema": {
+      "get": {
+        "description": "",
+        "operationId": "getObservabilitySchema",
+        "security": [],
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "metrics": {
+                      "items": {
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "description",
+                          "id"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "metrics"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": ""
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          }
+        },
+        "parameters": []
+      }
+    },
+    "/v2/observability/schema/{metricId}": {
+      "get": {
+        "description": "",
+        "operationId": "getObservabilitySchemaByMetricId",
+        "security": [],
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "dimensions": {
+                        "items": {
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            },
+                            "label": {
+                              "type": "string"
+                            },
+                            "description": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "label",
+                            "name"
+                          ],
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "unit": {
+                        "type": "string"
+                      },
+                      "aggregations": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "defaultAggregation": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "aggregations",
+                      "defaultAggregation",
+                      "description",
+                      "dimensions",
+                      "id",
+                      "unit"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          }
+        },
+        "parameters": [
+          {
+            "name": "metricId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
       }
     },
     "/v1/projects/{idOrName}/members": {
@@ -193336,7 +193583,7 @@
             "enum": [
               true
             ],
-            "description": "Property indicating that this Team data contains only limited information, due to the authentication token missing privileges to read the full Team data or due to team having MFA enforced and the user not having MFA enabled. Re-login with the Team's configured SAML Single Sign-On provider in order to upgrade the authentication token with the necessary privileges."
+            "description": "Property indicating that this Team data contains only limited information, due to the authentication token missing privileges to read the full Team data or due to team having 2FA enforced and the user not having 2FA configured. Re-login with the Team's configured SAML Single Sign-On provider in order to upgrade the authentication token with the necessary privileges."
           },
           "limitedBy": {
             "items": {

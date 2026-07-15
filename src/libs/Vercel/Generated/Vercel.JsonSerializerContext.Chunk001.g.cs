@@ -616,6 +616,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItemCategoryNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestCategoryJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestCategoryNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateObservabilityQueryRequestOrderDirectionJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateObservabilityQueryRequestOrderDirectionNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.AddProjectMemberRequestRoleJsonConverter),
             typeof(global::Vercel.JsonConverters.AddProjectMemberRequestRoleNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.StageRoutesRequestRouteRouteHaTypeJsonConverter),
