@@ -12,8 +12,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ClientName { get; set; }
+        public string? ClientName { get; set; }
 
         /// <summary>
         /// 
@@ -43,11 +42,11 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateConnectorRequestDataTypeSnowflakeWif(
-            string clientName,
+            string? clientName,
             string? accountIdentifier,
             object? extras)
         {
-            this.ClientName = clientName ?? throw new global::System.ArgumentNullException(nameof(clientName));
+            this.ClientName = clientName;
             this.AccountIdentifier = accountIdentifier;
             this.Extras = extras;
         }

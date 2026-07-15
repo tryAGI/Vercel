@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class TeamLimited
     {
         /// <summary>
-        /// Property indicating that this Team data contains only limited information, due to the authentication token missing privileges to read the full Team data or due to team having MFA enforced and the user not having MFA enabled. Re-login with the Team's configured SAML Single Sign-On provider in order to upgrade the authentication token with the necessary privileges.
+        /// Property indicating that this Team data contains only limited information, due to the authentication token missing privileges to read the full Team data or due to team having 2FA enforced and the user not having 2FA configured. Re-login with the Team's configured SAML Single Sign-On provider in order to upgrade the authentication token with the necessary privileges.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("limited")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -95,7 +95,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="TeamLimited" /> class.
         /// </summary>
         /// <param name="limited">
-        /// Property indicating that this Team data contains only limited information, due to the authentication token missing privileges to read the full Team data or due to team having MFA enforced and the user not having MFA enabled. Re-login with the Team's configured SAML Single Sign-On provider in order to upgrade the authentication token with the necessary privileges.
+        /// Property indicating that this Team data contains only limited information, due to the authentication token missing privileges to read the full Team data or due to team having 2FA enforced and the user not having 2FA configured. Re-login with the Team's configured SAML Single Sign-On provider in order to upgrade the authentication token with the necessary privileges.
         /// </param>
         /// <param name="limitedBy"></param>
         /// <param name="id">

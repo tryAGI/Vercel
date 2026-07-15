@@ -12,8 +12,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ClientName { get; set; }
+        public string? ClientName { get; set; }
 
         /// <summary>
         /// 
@@ -43,20 +42,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateConnectorRequestDataTypeSnowflake" /> class.
         /// </summary>
-        /// <param name="clientName"></param>
         /// <param name="accountIdentifier"></param>
+        /// <param name="clientName"></param>
         /// <param name="defaultSessionRole"></param>
         /// <param name="extras"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateConnectorRequestDataTypeSnowflake(
-            string clientName,
             string accountIdentifier,
+            string? clientName,
             string? defaultSessionRole,
             object? extras)
         {
-            this.ClientName = clientName ?? throw new global::System.ArgumentNullException(nameof(clientName));
+            this.ClientName = clientName;
             this.AccountIdentifier = accountIdentifier ?? throw new global::System.ArgumentNullException(nameof(accountIdentifier));
             this.DefaultSessionRole = defaultSessionRole;
             this.Extras = extras;
