@@ -68,6 +68,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public ApiSecurityClient ApiSecurity { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public ArtifactsClient Artifacts { get; }
 
         /// <summary>
@@ -144,6 +149,11 @@ namespace Vercel
         /// 
         /// </summary>
         public FeatureFlagsClient FeatureFlags { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public FirewallClient Firewall { get; }
 
         /// <summary>
         /// 

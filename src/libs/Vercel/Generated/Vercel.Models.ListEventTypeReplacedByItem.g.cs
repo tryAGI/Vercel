@@ -931,6 +931,34 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        KmsIssuerCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerKeyRotated,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerPolicyCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerPolicyDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         LogDrainCreated,
         /// <summary>
         /// 
@@ -2464,6 +2492,13 @@ namespace Vercel
                 ListEventTypeReplacedByItem.IntegrationScopeChanged => "integration-scope-changed",
                 ListEventTypeReplacedByItem.InvoiceModified => "invoice-modified",
                 ListEventTypeReplacedByItem.InvoiceRefunded => "invoice-refunded",
+                ListEventTypeReplacedByItem.KmsIssuerCreated => "kms-issuer-created",
+                ListEventTypeReplacedByItem.KmsIssuerDeleted => "kms-issuer-deleted",
+                ListEventTypeReplacedByItem.KmsIssuerKeyRotated => "kms-issuer-key-rotated",
+                ListEventTypeReplacedByItem.KmsIssuerPolicyCreated => "kms-issuer-policy-created",
+                ListEventTypeReplacedByItem.KmsIssuerPolicyDeleted => "kms-issuer-policy-deleted",
+                ListEventTypeReplacedByItem.KmsIssuerPolicyUpdated => "kms-issuer-policy-updated",
+                ListEventTypeReplacedByItem.KmsIssuerUpdated => "kms-issuer-updated",
                 ListEventTypeReplacedByItem.LogDrainCreated => "log-drain-created",
                 ListEventTypeReplacedByItem.LogDrainDeleted => "log-drain-deleted",
                 ListEventTypeReplacedByItem.LogDrainDisabled => "log-drain-disabled",
@@ -3027,6 +3062,13 @@ namespace Vercel
                 "integration-scope-changed" => ListEventTypeReplacedByItem.IntegrationScopeChanged,
                 "invoice-modified" => ListEventTypeReplacedByItem.InvoiceModified,
                 "invoice-refunded" => ListEventTypeReplacedByItem.InvoiceRefunded,
+                "kms-issuer-created" => ListEventTypeReplacedByItem.KmsIssuerCreated,
+                "kms-issuer-deleted" => ListEventTypeReplacedByItem.KmsIssuerDeleted,
+                "kms-issuer-key-rotated" => ListEventTypeReplacedByItem.KmsIssuerKeyRotated,
+                "kms-issuer-policy-created" => ListEventTypeReplacedByItem.KmsIssuerPolicyCreated,
+                "kms-issuer-policy-deleted" => ListEventTypeReplacedByItem.KmsIssuerPolicyDeleted,
+                "kms-issuer-policy-updated" => ListEventTypeReplacedByItem.KmsIssuerPolicyUpdated,
+                "kms-issuer-updated" => ListEventTypeReplacedByItem.KmsIssuerUpdated,
                 "log-drain-created" => ListEventTypeReplacedByItem.LogDrainCreated,
                 "log-drain-deleted" => ListEventTypeReplacedByItem.LogDrainDeleted,
                 "log-drain-disabled" => ListEventTypeReplacedByItem.LogDrainDisabled,
