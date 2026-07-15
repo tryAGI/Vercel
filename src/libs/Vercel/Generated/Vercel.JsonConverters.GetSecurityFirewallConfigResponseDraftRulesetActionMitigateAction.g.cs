@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace Vercel.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class GetSecurityFirewallConfigResponseDraftRulesetActionMitigateActionJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetActionMitigateAction>
+    {
+        /// <inheritdoc />
+        public override global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetActionMitigateAction Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetActionMitigateActionExtensions.ToEnum(stringValue) ?? default;
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetActionMitigateAction)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetActionMitigateAction);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetActionMitigateAction value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetActionMitigateActionExtensions.ToValueString(value));
+        }
+    }
+}

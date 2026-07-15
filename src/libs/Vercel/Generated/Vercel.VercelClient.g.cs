@@ -79,6 +79,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public ApiSecurityClient ApiSecurity => new ApiSecurityClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
+        /// 
+        /// </summary>
         public ArtifactsClient Artifacts => new ArtifactsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
@@ -215,6 +224,15 @@ namespace Vercel
         /// 
         /// </summary>
         public FeatureFlagsClient FeatureFlags => new FeatureFlagsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public FirewallClient Firewall => new FirewallClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,

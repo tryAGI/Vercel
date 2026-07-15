@@ -932,6 +932,34 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        KmsIssuerCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerKeyRotated,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerPolicyCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerPolicyDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         LogDrainCreated,
         /// <summary>
         /// 
@@ -2465,6 +2493,13 @@ namespace Vercel
                 UserEventType.IntegrationScopeChanged => "integration-scope-changed",
                 UserEventType.InvoiceModified => "invoice-modified",
                 UserEventType.InvoiceRefunded => "invoice-refunded",
+                UserEventType.KmsIssuerCreated => "kms-issuer-created",
+                UserEventType.KmsIssuerDeleted => "kms-issuer-deleted",
+                UserEventType.KmsIssuerKeyRotated => "kms-issuer-key-rotated",
+                UserEventType.KmsIssuerPolicyCreated => "kms-issuer-policy-created",
+                UserEventType.KmsIssuerPolicyDeleted => "kms-issuer-policy-deleted",
+                UserEventType.KmsIssuerPolicyUpdated => "kms-issuer-policy-updated",
+                UserEventType.KmsIssuerUpdated => "kms-issuer-updated",
                 UserEventType.LogDrainCreated => "log-drain-created",
                 UserEventType.LogDrainDeleted => "log-drain-deleted",
                 UserEventType.LogDrainDisabled => "log-drain-disabled",
@@ -3028,6 +3063,13 @@ namespace Vercel
                 "integration-scope-changed" => UserEventType.IntegrationScopeChanged,
                 "invoice-modified" => UserEventType.InvoiceModified,
                 "invoice-refunded" => UserEventType.InvoiceRefunded,
+                "kms-issuer-created" => UserEventType.KmsIssuerCreated,
+                "kms-issuer-deleted" => UserEventType.KmsIssuerDeleted,
+                "kms-issuer-key-rotated" => UserEventType.KmsIssuerKeyRotated,
+                "kms-issuer-policy-created" => UserEventType.KmsIssuerPolicyCreated,
+                "kms-issuer-policy-deleted" => UserEventType.KmsIssuerPolicyDeleted,
+                "kms-issuer-policy-updated" => UserEventType.KmsIssuerPolicyUpdated,
+                "kms-issuer-updated" => UserEventType.KmsIssuerUpdated,
                 "log-drain-created" => UserEventType.LogDrainCreated,
                 "log-drain-deleted" => UserEventType.LogDrainDeleted,
                 "log-drain-disabled" => UserEventType.LogDrainDisabled,
