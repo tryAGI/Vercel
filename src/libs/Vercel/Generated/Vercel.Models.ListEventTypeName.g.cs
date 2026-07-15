@@ -324,6 +324,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ComplianceDocumentDownloaded,
+        /// <summary>
+        /// 
+        /// </summary>
         ConcurrentBuildsUpdate,
         /// <summary>
         /// 
@@ -2309,6 +2313,7 @@ namespace Vercel
                 ListEventTypeName.CertRenew => "cert-renew",
                 ListEventTypeName.CertReplace => "cert-replace",
                 ListEventTypeName.CertSystemCreate => "cert-system-create",
+                ListEventTypeName.ComplianceDocumentDownloaded => "compliance-document-downloaded",
                 ListEventTypeName.ConcurrentBuildsUpdate => "concurrent-builds-update",
                 ListEventTypeName.ConnectAttachProject => "connect-attach-project",
                 ListEventTypeName.ConnectBitbucket => "connect-bitbucket",
@@ -2871,6 +2876,7 @@ namespace Vercel
                 "cert-renew" => ListEventTypeName.CertRenew,
                 "cert-replace" => ListEventTypeName.CertReplace,
                 "cert-system-create" => ListEventTypeName.CertSystemCreate,
+                "compliance-document-downloaded" => ListEventTypeName.ComplianceDocumentDownloaded,
                 "concurrent-builds-update" => ListEventTypeName.ConcurrentBuildsUpdate,
                 "connect-attach-project" => ListEventTypeName.ConnectAttachProject,
                 "connect-bitbucket" => ListEventTypeName.ConnectBitbucket,
