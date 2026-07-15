@@ -111,6 +111,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Ruleset,
+        /// <summary>
+        /// 
+        /// </summary>
         Scheme,
         /// <summary>
         /// 
@@ -163,6 +167,7 @@ namespace Vercel
                 UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.RawPath => "raw_path",
                 UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.Region => "region",
                 UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.Route => "route",
+                UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.Ruleset => "ruleset",
                 UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.Scheme => "scheme",
                 UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.ServerAction => "server_action",
                 UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.TargetPath => "target_path",
@@ -202,6 +207,7 @@ namespace Vercel
                 "raw_path" => UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.RawPath,
                 "region" => UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.Region,
                 "route" => UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.Route,
+                "ruleset" => UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.Ruleset,
                 "scheme" => UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.Scheme,
                 "server_action" => UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.ServerAction,
                 "target_path" => UpdateFirewallConfigRequestVariant7ValueConditionGroupItemConditionType.TargetPath,

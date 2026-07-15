@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Allow,
+        /// <summary>
+        /// 
+        /// </summary>
         Bypass,
         /// <summary>
         /// 
@@ -46,6 +50,7 @@ namespace Vercel
         {
             return value switch
             {
+                PutFirewallConfigResponseActiveRulesetsAction.Allow => "allow",
                 PutFirewallConfigResponseActiveRulesetsAction.Bypass => "bypass",
                 PutFirewallConfigResponseActiveRulesetsAction.Challenge => "challenge",
                 PutFirewallConfigResponseActiveRulesetsAction.Deny => "deny",
@@ -62,6 +67,7 @@ namespace Vercel
         {
             return value switch
             {
+                "allow" => PutFirewallConfigResponseActiveRulesetsAction.Allow,
                 "bypass" => PutFirewallConfigResponseActiveRulesetsAction.Bypass,
                 "challenge" => PutFirewallConfigResponseActiveRulesetsAction.Challenge,
                 "deny" => PutFirewallConfigResponseActiveRulesetsAction.Deny,

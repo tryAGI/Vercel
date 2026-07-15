@@ -78264,6 +78264,120 @@
                               "firewallConfigVersion": {
                                 "type": "number"
                               },
+                              "rulesets": {
+                                "additionalProperties": {
+                                  "properties": {
+                                    "action": {
+                                      "type": "string",
+                                      "enum": [
+                                        "allow",
+                                        "bypass",
+                                        "challenge",
+                                        "deny",
+                                        "log",
+                                        "rate_limit",
+                                        "redirect"
+                                      ]
+                                    },
+                                    "rateLimit": {
+                                      "nullable": true,
+                                      "properties": {
+                                        "algo": {
+                                          "type": "string",
+                                          "enum": [
+                                            "fixed_window",
+                                            "token_bucket"
+                                          ]
+                                        },
+                                        "window": {
+                                          "type": "number"
+                                        },
+                                        "limit": {
+                                          "type": "number"
+                                        },
+                                        "keys": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        },
+                                        "action": {
+                                          "nullable": true,
+                                          "type": "string",
+                                          "enum": [
+                                            "challenge",
+                                            "deny",
+                                            "log",
+                                            "rate_limit",
+                                            null
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "algo",
+                                        "keys",
+                                        "limit",
+                                        "window"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "redirect": {
+                                      "nullable": true,
+                                      "properties": {
+                                        "location": {
+                                          "type": "string"
+                                        },
+                                        "permanent": {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "location",
+                                        "permanent"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "actionDuration": {
+                                      "nullable": true,
+                                      "type": "string"
+                                    },
+                                    "bypassSystem": {
+                                      "nullable": true,
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true,
+                                        null
+                                      ]
+                                    },
+                                    "logHeaders": {
+                                      "oneOf": [
+                                        {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        },
+                                        {
+                                          "type": "string",
+                                          "enum": [
+                                            "*"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "action"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "object"
+                              },
                               "firewallSeawallEnabled": {
                                 "type": "boolean",
                                 "enum": [
@@ -89501,6 +89615,109 @@
                                 },
                                 "type": "array"
                               },
+                              "rulesets": {
+                                "additionalProperties": {
+                                  "properties": {
+                                    "action": {
+                                      "type": "string",
+                                      "enum": [
+                                        "allow",
+                                        "bypass",
+                                        "challenge",
+                                        "deny",
+                                        "log",
+                                        "rate_limit",
+                                        "redirect"
+                                      ]
+                                    },
+                                    "rateLimit": {
+                                      "nullable": true,
+                                      "properties": {
+                                        "algo": {
+                                          "type": "string",
+                                          "enum": [
+                                            "fixed_window",
+                                            "token_bucket"
+                                          ]
+                                        },
+                                        "window": {
+                                          "type": "number"
+                                        },
+                                        "limit": {
+                                          "type": "number"
+                                        },
+                                        "keys": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        }
+                                      },
+                                      "required": [
+                                        "algo",
+                                        "keys",
+                                        "limit",
+                                        "window"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "redirect": {
+                                      "nullable": true,
+                                      "properties": {
+                                        "location": {
+                                          "type": "string"
+                                        },
+                                        "permanent": {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "location",
+                                        "permanent"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "actionDuration": {
+                                      "nullable": true,
+                                      "type": "string"
+                                    },
+                                    "bypassSystem": {
+                                      "nullable": true,
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true,
+                                        null
+                                      ]
+                                    },
+                                    "logHeaders": {
+                                      "oneOf": [
+                                        {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        },
+                                        {
+                                          "type": "string",
+                                          "enum": [
+                                            "*"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "action"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "object"
+                              },
                               "firewallSeawallEnabled": {
                                 "type": "boolean",
                                 "enum": [
@@ -93589,6 +93806,109 @@
                                       "type": "object"
                                     },
                                     "type": "array"
+                                  },
+                                  "rulesets": {
+                                    "additionalProperties": {
+                                      "properties": {
+                                        "action": {
+                                          "type": "string",
+                                          "enum": [
+                                            "allow",
+                                            "bypass",
+                                            "challenge",
+                                            "deny",
+                                            "log",
+                                            "rate_limit",
+                                            "redirect"
+                                          ]
+                                        },
+                                        "rateLimit": {
+                                          "nullable": true,
+                                          "properties": {
+                                            "algo": {
+                                              "type": "string",
+                                              "enum": [
+                                                "fixed_window",
+                                                "token_bucket"
+                                              ]
+                                            },
+                                            "window": {
+                                              "type": "number"
+                                            },
+                                            "limit": {
+                                              "type": "number"
+                                            },
+                                            "keys": {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array"
+                                            }
+                                          },
+                                          "required": [
+                                            "algo",
+                                            "keys",
+                                            "limit",
+                                            "window"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        "redirect": {
+                                          "nullable": true,
+                                          "properties": {
+                                            "location": {
+                                              "type": "string"
+                                            },
+                                            "permanent": {
+                                              "type": "boolean",
+                                              "enum": [
+                                                false,
+                                                true
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "location",
+                                            "permanent"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        "actionDuration": {
+                                          "nullable": true,
+                                          "type": "string"
+                                        },
+                                        "bypassSystem": {
+                                          "nullable": true,
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true,
+                                            null
+                                          ]
+                                        },
+                                        "logHeaders": {
+                                          "oneOf": [
+                                            {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array"
+                                            },
+                                            {
+                                              "type": "string",
+                                              "enum": [
+                                                "*"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "action"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "type": "object"
                                   },
                                   "firewallSeawallEnabled": {
                                     "type": "boolean",
@@ -100084,6 +100404,109 @@
                                   },
                                   "firewallConfigVersion": {
                                     "type": "number"
+                                  },
+                                  "rulesets": {
+                                    "additionalProperties": {
+                                      "properties": {
+                                        "action": {
+                                          "type": "string",
+                                          "enum": [
+                                            "allow",
+                                            "bypass",
+                                            "challenge",
+                                            "deny",
+                                            "log",
+                                            "rate_limit",
+                                            "redirect"
+                                          ]
+                                        },
+                                        "rateLimit": {
+                                          "nullable": true,
+                                          "properties": {
+                                            "algo": {
+                                              "type": "string",
+                                              "enum": [
+                                                "fixed_window",
+                                                "token_bucket"
+                                              ]
+                                            },
+                                            "window": {
+                                              "type": "number"
+                                            },
+                                            "limit": {
+                                              "type": "number"
+                                            },
+                                            "keys": {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array"
+                                            }
+                                          },
+                                          "required": [
+                                            "algo",
+                                            "keys",
+                                            "limit",
+                                            "window"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        "redirect": {
+                                          "nullable": true,
+                                          "properties": {
+                                            "location": {
+                                              "type": "string"
+                                            },
+                                            "permanent": {
+                                              "type": "boolean",
+                                              "enum": [
+                                                false,
+                                                true
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "location",
+                                            "permanent"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        "actionDuration": {
+                                          "nullable": true,
+                                          "type": "string"
+                                        },
+                                        "bypassSystem": {
+                                          "nullable": true,
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true,
+                                            null
+                                          ]
+                                        },
+                                        "logHeaders": {
+                                          "oneOf": [
+                                            {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array"
+                                            },
+                                            {
+                                              "type": "string",
+                                              "enum": [
+                                                "*"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "action"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "type": "object"
                                   },
                                   "firewallSeawallEnabled": {
                                     "type": "boolean",
@@ -107506,6 +107929,109 @@
                         },
                         "firewallConfigVersion": {
                           "type": "number"
+                        },
+                        "rulesets": {
+                          "additionalProperties": {
+                            "properties": {
+                              "action": {
+                                "type": "string",
+                                "enum": [
+                                  "allow",
+                                  "bypass",
+                                  "challenge",
+                                  "deny",
+                                  "log",
+                                  "rate_limit",
+                                  "redirect"
+                                ]
+                              },
+                              "rateLimit": {
+                                "nullable": true,
+                                "properties": {
+                                  "algo": {
+                                    "type": "string",
+                                    "enum": [
+                                      "fixed_window",
+                                      "token_bucket"
+                                    ]
+                                  },
+                                  "window": {
+                                    "type": "number"
+                                  },
+                                  "limit": {
+                                    "type": "number"
+                                  },
+                                  "keys": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  }
+                                },
+                                "required": [
+                                  "algo",
+                                  "keys",
+                                  "limit",
+                                  "window"
+                                ],
+                                "type": "object"
+                              },
+                              "redirect": {
+                                "nullable": true,
+                                "properties": {
+                                  "location": {
+                                    "type": "string"
+                                  },
+                                  "permanent": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "location",
+                                  "permanent"
+                                ],
+                                "type": "object"
+                              },
+                              "actionDuration": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "bypassSystem": {
+                                "nullable": true,
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true,
+                                  null
+                                ]
+                              },
+                              "logHeaders": {
+                                "oneOf": [
+                                  {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  },
+                                  {
+                                    "type": "string",
+                                    "enum": [
+                                      "*"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "action"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "object"
                         },
                         "firewallSeawallEnabled": {
                           "type": "boolean",
@@ -114996,6 +115522,109 @@
                         "firewallConfigVersion": {
                           "type": "number"
                         },
+                        "rulesets": {
+                          "additionalProperties": {
+                            "properties": {
+                              "action": {
+                                "type": "string",
+                                "enum": [
+                                  "allow",
+                                  "bypass",
+                                  "challenge",
+                                  "deny",
+                                  "log",
+                                  "rate_limit",
+                                  "redirect"
+                                ]
+                              },
+                              "rateLimit": {
+                                "nullable": true,
+                                "properties": {
+                                  "algo": {
+                                    "type": "string",
+                                    "enum": [
+                                      "fixed_window",
+                                      "token_bucket"
+                                    ]
+                                  },
+                                  "window": {
+                                    "type": "number"
+                                  },
+                                  "limit": {
+                                    "type": "number"
+                                  },
+                                  "keys": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  }
+                                },
+                                "required": [
+                                  "algo",
+                                  "keys",
+                                  "limit",
+                                  "window"
+                                ],
+                                "type": "object"
+                              },
+                              "redirect": {
+                                "nullable": true,
+                                "properties": {
+                                  "location": {
+                                    "type": "string"
+                                  },
+                                  "permanent": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "location",
+                                  "permanent"
+                                ],
+                                "type": "object"
+                              },
+                              "actionDuration": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "bypassSystem": {
+                                "nullable": true,
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true,
+                                  null
+                                ]
+                              },
+                              "logHeaders": {
+                                "oneOf": [
+                                  {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  },
+                                  {
+                                    "type": "string",
+                                    "enum": [
+                                      "*"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "action"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "object"
+                        },
                         "firewallSeawallEnabled": {
                           "type": "boolean",
                           "enum": [
@@ -121947,6 +122576,109 @@
                         },
                         "firewallConfigVersion": {
                           "type": "number"
+                        },
+                        "rulesets": {
+                          "additionalProperties": {
+                            "properties": {
+                              "action": {
+                                "type": "string",
+                                "enum": [
+                                  "allow",
+                                  "bypass",
+                                  "challenge",
+                                  "deny",
+                                  "log",
+                                  "rate_limit",
+                                  "redirect"
+                                ]
+                              },
+                              "rateLimit": {
+                                "nullable": true,
+                                "properties": {
+                                  "algo": {
+                                    "type": "string",
+                                    "enum": [
+                                      "fixed_window",
+                                      "token_bucket"
+                                    ]
+                                  },
+                                  "window": {
+                                    "type": "number"
+                                  },
+                                  "limit": {
+                                    "type": "number"
+                                  },
+                                  "keys": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  }
+                                },
+                                "required": [
+                                  "algo",
+                                  "keys",
+                                  "limit",
+                                  "window"
+                                ],
+                                "type": "object"
+                              },
+                              "redirect": {
+                                "nullable": true,
+                                "properties": {
+                                  "location": {
+                                    "type": "string"
+                                  },
+                                  "permanent": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "location",
+                                  "permanent"
+                                ],
+                                "type": "object"
+                              },
+                              "actionDuration": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "bypassSystem": {
+                                "nullable": true,
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true,
+                                  null
+                                ]
+                              },
+                              "logHeaders": {
+                                "oneOf": [
+                                  {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  },
+                                  {
+                                    "type": "string",
+                                    "enum": [
+                                      "*"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "action"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "object"
                         },
                         "firewallSeawallEnabled": {
                           "type": "boolean",
@@ -130160,6 +130892,109 @@
                         },
                         "firewallConfigVersion": {
                           "type": "number"
+                        },
+                        "rulesets": {
+                          "additionalProperties": {
+                            "properties": {
+                              "action": {
+                                "type": "string",
+                                "enum": [
+                                  "allow",
+                                  "bypass",
+                                  "challenge",
+                                  "deny",
+                                  "log",
+                                  "rate_limit",
+                                  "redirect"
+                                ]
+                              },
+                              "rateLimit": {
+                                "nullable": true,
+                                "properties": {
+                                  "algo": {
+                                    "type": "string",
+                                    "enum": [
+                                      "fixed_window",
+                                      "token_bucket"
+                                    ]
+                                  },
+                                  "window": {
+                                    "type": "number"
+                                  },
+                                  "limit": {
+                                    "type": "number"
+                                  },
+                                  "keys": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  }
+                                },
+                                "required": [
+                                  "algo",
+                                  "keys",
+                                  "limit",
+                                  "window"
+                                ],
+                                "type": "object"
+                              },
+                              "redirect": {
+                                "nullable": true,
+                                "properties": {
+                                  "location": {
+                                    "type": "string"
+                                  },
+                                  "permanent": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "location",
+                                  "permanent"
+                                ],
+                                "type": "object"
+                              },
+                              "actionDuration": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "bypassSystem": {
+                                "nullable": true,
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true,
+                                  null
+                                ]
+                              },
+                              "logHeaders": {
+                                "oneOf": [
+                                  {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  },
+                                  {
+                                    "type": "string",
+                                    "enum": [
+                                      "*"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "action"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "object"
                         },
                         "firewallSeawallEnabled": {
                           "type": "boolean",
@@ -146110,6 +146945,109 @@
                         "firewallConfigVersion": {
                           "type": "number"
                         },
+                        "rulesets": {
+                          "additionalProperties": {
+                            "properties": {
+                              "action": {
+                                "type": "string",
+                                "enum": [
+                                  "allow",
+                                  "bypass",
+                                  "challenge",
+                                  "deny",
+                                  "log",
+                                  "rate_limit",
+                                  "redirect"
+                                ]
+                              },
+                              "rateLimit": {
+                                "nullable": true,
+                                "properties": {
+                                  "algo": {
+                                    "type": "string",
+                                    "enum": [
+                                      "fixed_window",
+                                      "token_bucket"
+                                    ]
+                                  },
+                                  "window": {
+                                    "type": "number"
+                                  },
+                                  "limit": {
+                                    "type": "number"
+                                  },
+                                  "keys": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  }
+                                },
+                                "required": [
+                                  "algo",
+                                  "keys",
+                                  "limit",
+                                  "window"
+                                ],
+                                "type": "object"
+                              },
+                              "redirect": {
+                                "nullable": true,
+                                "properties": {
+                                  "location": {
+                                    "type": "string"
+                                  },
+                                  "permanent": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "location",
+                                  "permanent"
+                                ],
+                                "type": "object"
+                              },
+                              "actionDuration": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "bypassSystem": {
+                                "nullable": true,
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true,
+                                  null
+                                ]
+                              },
+                              "logHeaders": {
+                                "oneOf": [
+                                  {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array"
+                                  },
+                                  {
+                                    "type": "string",
+                                    "enum": [
+                                      "*"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "action"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "object"
+                        },
                         "firewallSeawallEnabled": {
                           "type": "boolean",
                           "enum": [
@@ -148401,6 +149339,7 @@
                                 }
                               },
                               {
+                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.",
                                 "type": "object",
                                 "additionalProperties": {
                                   "type": "array",
@@ -150383,6 +151322,7 @@
                                 }
                               },
                               {
+                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.",
                                 "type": "object",
                                 "additionalProperties": {
                                   "type": "array",
@@ -151959,6 +152899,7 @@
                             }
                           },
                           {
+                            "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.",
                             "type": "object",
                             "additionalProperties": {
                               "type": "array",
@@ -153061,6 +154002,7 @@
                                                   "raw_path",
                                                   "region",
                                                   "route",
+                                                  "ruleset",
                                                   "scheme",
                                                   "server_action",
                                                   "target_path",
@@ -153138,6 +154080,7 @@
                                           "action": {
                                             "type": "string",
                                             "enum": [
+                                              "allow",
                                               "bypass",
                                               "challenge",
                                               "deny",
@@ -153319,6 +154262,7 @@
                                                   "raw_path",
                                                   "region",
                                                   "route",
+                                                  "ruleset",
                                                   "scheme",
                                                   "server_action",
                                                   "target_path",
@@ -153396,6 +154340,7 @@
                                           "action": {
                                             "type": "string",
                                             "enum": [
+                                              "allow",
                                               "bypass",
                                               "challenge",
                                               "deny",
@@ -153622,6 +154567,7 @@
                                                   "raw_path",
                                                   "region",
                                                   "route",
+                                                  "ruleset",
                                                   "scheme",
                                                   "server_action",
                                                   "target_path",
@@ -153691,6 +154637,122 @@
                                       "type": "object"
                                     },
                                     "type": "array"
+                                  },
+                                  "action": {
+                                    "properties": {
+                                      "mitigate": {
+                                        "properties": {
+                                          "action": {
+                                            "type": "string",
+                                            "enum": [
+                                              "allow",
+                                              "bypass",
+                                              "challenge",
+                                              "deny",
+                                              "log",
+                                              "rate_limit",
+                                              "redirect"
+                                            ]
+                                          },
+                                          "rateLimit": {
+                                            "nullable": true,
+                                            "properties": {
+                                              "algo": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "fixed_window",
+                                                  "token_bucket"
+                                                ]
+                                              },
+                                              "window": {
+                                                "type": "number"
+                                              },
+                                              "limit": {
+                                                "type": "number"
+                                              },
+                                              "keys": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array"
+                                              },
+                                              "action": {
+                                                "nullable": true,
+                                                "type": "string",
+                                                "enum": [
+                                                  "challenge",
+                                                  "deny",
+                                                  "log",
+                                                  "rate_limit",
+                                                  null
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "algo",
+                                              "keys",
+                                              "limit",
+                                              "window"
+                                            ],
+                                            "type": "object"
+                                          },
+                                          "redirect": {
+                                            "nullable": true,
+                                            "properties": {
+                                              "location": {
+                                                "type": "string"
+                                              },
+                                              "permanent": {
+                                                "type": "boolean",
+                                                "enum": [
+                                                  false,
+                                                  true
+                                                ]
+                                              }
+                                            },
+                                            "required": [
+                                              "location",
+                                              "permanent"
+                                            ],
+                                            "type": "object"
+                                          },
+                                          "actionDuration": {
+                                            "nullable": true,
+                                            "type": "string"
+                                          },
+                                          "bypassSystem": {
+                                            "nullable": true,
+                                            "type": "boolean",
+                                            "enum": [
+                                              false,
+                                              true,
+                                              null
+                                            ]
+                                          },
+                                          "logHeaders": {
+                                            "oneOf": [
+                                              {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array"
+                                              },
+                                              {
+                                                "type": "string",
+                                                "enum": [
+                                                  "*"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "action"
+                                        ],
+                                        "type": "object"
+                                      }
+                                    },
+                                    "type": "object"
                                   }
                                 },
                                 "required": [
@@ -153709,6 +154771,7 @@
                                   "action": {
                                     "type": "string",
                                     "enum": [
+                                      "allow",
                                       "bypass",
                                       "challenge",
                                       "deny",
@@ -154392,7 +155455,8 @@
                                         "bot_name",
                                         "bot_category",
                                         "bot_status",
-                                        "bot_protection"
+                                        "bot_protection",
+                                        "ruleset"
                                       ],
                                       "description": "[Parameter](https://vercel.com/docs/security/vercel-waf/rule-configuration#parameters) from the incoming traffic."
                                     },
@@ -154666,7 +155730,8 @@
                                             "bot_name",
                                             "bot_category",
                                             "bot_status",
-                                            "bot_protection"
+                                            "bot_protection",
+                                            "ruleset"
                                           ]
                                         },
                                         "op": {
@@ -154729,6 +155794,29 @@
                               },
                               "maxItems": 25
                             },
+                            "action": {
+                              "type": "object",
+                              "properties": {
+                                "mitigate": {
+                                  "type": "object",
+                                  "properties": {
+                                    "action": {
+                                      "type": "string",
+                                      "enum": [
+                                        "deny",
+                                        "challenge",
+                                        "log"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "action"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              },
+                              "additionalProperties": false
+                            },
                             "valid": {
                               "type": "boolean"
                             },
@@ -154763,110 +155851,10 @@
                             "action": {
                               "type": "string",
                               "enum": [
-                                "log",
-                                "challenge",
                                 "deny",
-                                "bypass",
-                                "rate_limit",
-                                "redirect"
-                              ]
-                            },
-                            "rateLimit": {
-                              "anyOf": [
-                                {
-                                  "type": "object",
-                                  "properties": {
-                                    "algo": {
-                                      "type": "string",
-                                      "enum": [
-                                        "fixed_window",
-                                        "token_bucket"
-                                      ]
-                                    },
-                                    "window": {
-                                      "type": "number"
-                                    },
-                                    "limit": {
-                                      "type": "number"
-                                    },
-                                    "keys": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "string"
-                                      }
-                                    },
-                                    "action": {
-                                      "anyOf": [
-                                        {
-                                          "type": "string",
-                                          "enum": [
-                                            "log",
-                                            "challenge",
-                                            "deny",
-                                            "rate_limit"
-                                          ]
-                                        },
-                                        {
-                                          "type": "string"
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  "required": [
-                                    "algo",
-                                    "window",
-                                    "limit",
-                                    "keys"
-                                  ],
-                                  "additionalProperties": false
-                                },
-                                {
-                                  "type": "string"
-                                }
-                              ]
-                            },
-                            "redirect": {
-                              "anyOf": [
-                                {
-                                  "type": "object",
-                                  "properties": {
-                                    "location": {
-                                      "type": "string"
-                                    },
-                                    "permanent": {
-                                      "type": "boolean"
-                                    }
-                                  },
-                                  "required": [
-                                    "location",
-                                    "permanent"
-                                  ],
-                                  "additionalProperties": false
-                                },
-                                {
-                                  "type": "string"
-                                }
-                              ]
-                            },
-                            "actionDuration": {
-                              "type": "string",
-                              "nullable": true
-                            },
-                            "bypassSystem": {
-                              "type": "boolean",
-                              "nullable": true
-                            },
-                            "logHeaders": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "string"
-                                  }
-                                }
+                                "challenge",
+                                "log",
+                                "allow"
                               ]
                             }
                           },
@@ -155083,7 +156071,8 @@
                                           "bot_name",
                                           "bot_category",
                                           "bot_status",
-                                          "bot_protection"
+                                          "bot_protection",
+                                          "ruleset"
                                         ]
                                       },
                                       "op": {
@@ -155145,6 +156134,29 @@
                               "additionalProperties": false
                             },
                             "maxItems": 25
+                          },
+                          "action": {
+                            "type": "object",
+                            "properties": {
+                              "mitigate": {
+                                "type": "object",
+                                "properties": {
+                                  "action": {
+                                    "type": "string",
+                                    "enum": [
+                                      "deny",
+                                      "challenge",
+                                      "log"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "action"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "additionalProperties": false
                           },
                           "valid": {
                             "type": "boolean"
@@ -155245,7 +156257,8 @@
                                           "bot_name",
                                           "bot_category",
                                           "bot_status",
-                                          "bot_protection"
+                                          "bot_protection",
+                                          "ruleset"
                                         ]
                                       },
                                       "op": {
@@ -155307,6 +156320,29 @@
                               "additionalProperties": false
                             },
                             "maxItems": 25
+                          },
+                          "action": {
+                            "type": "object",
+                            "properties": {
+                              "mitigate": {
+                                "type": "object",
+                                "properties": {
+                                  "action": {
+                                    "type": "string",
+                                    "enum": [
+                                      "deny",
+                                      "challenge",
+                                      "log"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "action"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "additionalProperties": false
                           },
                           "valid": {
                             "type": "boolean"
@@ -155382,110 +156418,10 @@
                           "action": {
                             "type": "string",
                             "enum": [
-                              "log",
-                              "challenge",
                               "deny",
-                              "bypass",
-                              "rate_limit",
-                              "redirect"
-                            ]
-                          },
-                          "rateLimit": {
-                            "anyOf": [
-                              {
-                                "type": "object",
-                                "properties": {
-                                  "algo": {
-                                    "type": "string",
-                                    "enum": [
-                                      "fixed_window",
-                                      "token_bucket"
-                                    ]
-                                  },
-                                  "window": {
-                                    "type": "number"
-                                  },
-                                  "limit": {
-                                    "type": "number"
-                                  },
-                                  "keys": {
-                                    "type": "array",
-                                    "items": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "action": {
-                                    "anyOf": [
-                                      {
-                                        "type": "string",
-                                        "enum": [
-                                          "log",
-                                          "challenge",
-                                          "deny",
-                                          "rate_limit"
-                                        ]
-                                      },
-                                      {
-                                        "type": "string"
-                                      }
-                                    ]
-                                  }
-                                },
-                                "required": [
-                                  "algo",
-                                  "window",
-                                  "limit",
-                                  "keys"
-                                ],
-                                "additionalProperties": false
-                              },
-                              {
-                                "type": "string"
-                              }
-                            ]
-                          },
-                          "redirect": {
-                            "anyOf": [
-                              {
-                                "type": "object",
-                                "properties": {
-                                  "location": {
-                                    "type": "string"
-                                  },
-                                  "permanent": {
-                                    "type": "boolean"
-                                  }
-                                },
-                                "required": [
-                                  "location",
-                                  "permanent"
-                                ],
-                                "additionalProperties": false
-                              },
-                              {
-                                "type": "string"
-                              }
-                            ]
-                          },
-                          "actionDuration": {
-                            "type": "string",
-                            "nullable": true
-                          },
-                          "bypassSystem": {
-                            "type": "boolean",
-                            "nullable": true
-                          },
-                          "logHeaders": {
-                            "oneOf": [
-                              {
-                                "type": "string"
-                              },
-                              {
-                                "type": "array",
-                                "items": {
-                                  "type": "string"
-                                }
-                              }
+                              "challenge",
+                              "log",
+                              "allow"
                             ]
                           }
                         },
@@ -155617,7 +156553,8 @@
                                           "bot_name",
                                           "bot_category",
                                           "bot_status",
-                                          "bot_protection"
+                                          "bot_protection",
+                                          "ruleset"
                                         ]
                                       },
                                       "op": {
@@ -155905,7 +156842,8 @@
                                           "bot_name",
                                           "bot_category",
                                           "bot_status",
-                                          "bot_protection"
+                                          "bot_protection",
+                                          "ruleset"
                                         ]
                                       },
                                       "op": {
@@ -156894,6 +157832,7 @@
                                               "raw_path",
                                               "region",
                                               "route",
+                                              "ruleset",
                                               "scheme",
                                               "server_action",
                                               "target_path",
@@ -156971,6 +157910,7 @@
                                       "action": {
                                         "type": "string",
                                         "enum": [
+                                          "allow",
                                           "bypass",
                                           "challenge",
                                           "deny",
@@ -157152,6 +158092,7 @@
                                               "raw_path",
                                               "region",
                                               "route",
+                                              "ruleset",
                                               "scheme",
                                               "server_action",
                                               "target_path",
@@ -157229,6 +158170,7 @@
                                       "action": {
                                         "type": "string",
                                         "enum": [
+                                          "allow",
                                           "bypass",
                                           "challenge",
                                           "deny",
@@ -157455,6 +158397,7 @@
                                               "raw_path",
                                               "region",
                                               "route",
+                                              "ruleset",
                                               "scheme",
                                               "server_action",
                                               "target_path",
@@ -157524,6 +158467,122 @@
                                   "type": "object"
                                 },
                                 "type": "array"
+                              },
+                              "action": {
+                                "properties": {
+                                  "mitigate": {
+                                    "properties": {
+                                      "action": {
+                                        "type": "string",
+                                        "enum": [
+                                          "allow",
+                                          "bypass",
+                                          "challenge",
+                                          "deny",
+                                          "log",
+                                          "rate_limit",
+                                          "redirect"
+                                        ]
+                                      },
+                                      "rateLimit": {
+                                        "nullable": true,
+                                        "properties": {
+                                          "algo": {
+                                            "type": "string",
+                                            "enum": [
+                                              "fixed_window",
+                                              "token_bucket"
+                                            ]
+                                          },
+                                          "window": {
+                                            "type": "number"
+                                          },
+                                          "limit": {
+                                            "type": "number"
+                                          },
+                                          "keys": {
+                                            "items": {
+                                              "type": "string"
+                                            },
+                                            "type": "array"
+                                          },
+                                          "action": {
+                                            "nullable": true,
+                                            "type": "string",
+                                            "enum": [
+                                              "challenge",
+                                              "deny",
+                                              "log",
+                                              "rate_limit",
+                                              null
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "algo",
+                                          "keys",
+                                          "limit",
+                                          "window"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      "redirect": {
+                                        "nullable": true,
+                                        "properties": {
+                                          "location": {
+                                            "type": "string"
+                                          },
+                                          "permanent": {
+                                            "type": "boolean",
+                                            "enum": [
+                                              false,
+                                              true
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "location",
+                                          "permanent"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      "actionDuration": {
+                                        "nullable": true,
+                                        "type": "string"
+                                      },
+                                      "bypassSystem": {
+                                        "nullable": true,
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true,
+                                          null
+                                        ]
+                                      },
+                                      "logHeaders": {
+                                        "oneOf": [
+                                          {
+                                            "items": {
+                                              "type": "string"
+                                            },
+                                            "type": "array"
+                                          },
+                                          {
+                                            "type": "string",
+                                            "enum": [
+                                              "*"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "action"
+                                    ],
+                                    "type": "object"
+                                  }
+                                },
+                                "type": "object"
                               }
                             },
                             "required": [
@@ -157542,6 +158601,7 @@
                               "action": {
                                 "type": "string",
                                 "enum": [
+                                  "allow",
                                   "bypass",
                                   "challenge",
                                   "deny",
@@ -158805,6 +159865,77 @@
             }
           }
         ]
+      }
+    },
+    "/speed-insights/toggle": {
+      "post": {
+        "description": "",
+        "operationId": "createSpeedInsightsToggle",
+        "security": [],
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "value": {
+                      "type": "boolean",
+                      "enum": [
+                        false,
+                        true
+                      ]
+                    }
+                  },
+                  "required": [
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": ""
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "value": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "value"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        }
       }
     },
     "/storage/stores/{id}": {
@@ -168493,6 +169624,74 @@
             }
           }
         ]
+      }
+    },
+    "/web/insights/toggle": {
+      "post": {
+        "description": "",
+        "operationId": "createWebInsightsToggle",
+        "security": [],
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "value": {
+                      "type": "boolean",
+                      "enum": [
+                        false,
+                        true
+                      ]
+                    }
+                  },
+                  "required": [
+                    "value"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "value": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "value"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        }
       }
     },
     "/v1/query/web-analytics/visits/aggregate": {

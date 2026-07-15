@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Allow,
+        /// <summary>
+        /// 
+        /// </summary>
         Bypass,
         /// <summary>
         /// 
@@ -46,6 +50,7 @@ namespace Vercel
         {
             return value switch
             {
+                GetFirewallConfigResponseRuleVariant2ActionMitigateAction.Allow => "allow",
                 GetFirewallConfigResponseRuleVariant2ActionMitigateAction.Bypass => "bypass",
                 GetFirewallConfigResponseRuleVariant2ActionMitigateAction.Challenge => "challenge",
                 GetFirewallConfigResponseRuleVariant2ActionMitigateAction.Deny => "deny",
@@ -62,6 +67,7 @@ namespace Vercel
         {
             return value switch
             {
+                "allow" => GetFirewallConfigResponseRuleVariant2ActionMitigateAction.Allow,
                 "bypass" => GetFirewallConfigResponseRuleVariant2ActionMitigateAction.Bypass,
                 "challenge" => GetFirewallConfigResponseRuleVariant2ActionMitigateAction.Challenge,
                 "deny" => GetFirewallConfigResponseRuleVariant2ActionMitigateAction.Deny,
