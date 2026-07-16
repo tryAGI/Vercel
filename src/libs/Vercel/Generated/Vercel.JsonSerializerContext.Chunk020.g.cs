@@ -6688,12 +6688,12 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.GetAliasResponseProtectionBypassVariant4ScopeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.DeleteAliasResponseStatusJsonConverter),
             typeof(global::Vercel.JsonConverters.DeleteAliasResponseStatusNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentReadyStateJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentReadyStateNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentSourceJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentSourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentStateJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentStateNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentReadyStateJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentReadyStateNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentTargetJsonConverter),
@@ -7748,9 +7748,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentsResponseDeployment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeployment))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentReadyState), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentReadyState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentSource), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentState), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentReadyState), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentReadyState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentType), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentCreator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentsResponseDeploymentTarget), TypeInfoPropertyName = "GetDeploymentsResponseDeploymentTarget2")]
