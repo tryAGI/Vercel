@@ -7691,6 +7691,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectRequestEnvironmentVariableType?), TypeInfoPropertyName = "NullableCreateProjectRequestEnvironmentVariableType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectRequestFramework?), TypeInfoPropertyName = "NullableCreateProjectRequestFramework2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectRequestGitRepositoryType?), TypeInfoPropertyName = "NullableCreateProjectRequestGitRepositoryType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectRequestSsoProtectionDeploymentType?), TypeInfoPropertyName = "NullableCreateProjectRequestSsoProtectionDeploymentType2")]
@@ -8190,7 +8191,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ProjectSettingsFramework?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant1ProjectSettingsFramework2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1IntegrationsStatus?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant1IntegrationsStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ImagesRemotePatternProtocol?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant1ImagesRemotePatternProtocol2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant1ImagesFormat?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant1ImagesFormat2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

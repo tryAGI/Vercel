@@ -61,6 +61,12 @@ namespace Vercel
         public string? ExternalSubject { get; set; }
 
         /// <summary>
+        /// Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("claims")]
+        public object? Claims { get; set; }
+
+        /// <summary>
         /// Driver-specific metadata (e.g., botUserId for Slack).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
@@ -83,6 +89,9 @@ namespace Vercel
         /// <param name="installationId"></param>
         /// <param name="tenantId"></param>
         /// <param name="externalSubject"></param>
+        /// <param name="claims">
+        /// Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only.
+        /// </param>
         /// <param name="metadata">
         /// Driver-specific metadata (e.g., botUserId for Slack).
         /// </param>
@@ -98,6 +107,7 @@ namespace Vercel
             string? installationId,
             string? tenantId,
             string? externalSubject,
+            object? claims,
             object? metadata)
         {
             this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
@@ -108,6 +118,7 @@ namespace Vercel
             this.InstallationId = installationId;
             this.TenantId = tenantId;
             this.ExternalSubject = externalSubject;
+            this.Claims = claims;
             this.Metadata = metadata;
         }
 

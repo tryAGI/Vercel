@@ -76,6 +76,12 @@ namespace Vercel
         public global::Vercel.CreateConnectorRequestDataTypeOauthClientCredentials? ClientCredentials { get; set; }
 
         /// <summary>
+        /// Allow-list of extra claims to propagate, keyed by source (idToken). Only claims named here and present in that source are exposed.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("forwardedClaims")]
+        public global::Vercel.CreateConnectorRequestDataTypeOauthForwardedClaims? ForwardedClaims { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultAudience")]
@@ -115,6 +121,9 @@ namespace Vercel
         /// <param name="userAuthorization"></param>
         /// <param name="refreshTokens"></param>
         /// <param name="clientCredentials"></param>
+        /// <param name="forwardedClaims">
+        /// Allow-list of extra claims to propagate, keyed by source (idToken). Only claims named here and present in that source are exposed.
+        /// </param>
         /// <param name="defaultAudience"></param>
         /// <param name="authorizationUrlParams"></param>
         /// <param name="jwtBearer"></param>
@@ -133,6 +142,7 @@ namespace Vercel
             global::Vercel.CreateConnectorRequestDataTypeOauthUserAuthorization? userAuthorization,
             global::Vercel.CreateConnectorRequestDataTypeOauthRefreshTokens? refreshTokens,
             global::Vercel.CreateConnectorRequestDataTypeOauthClientCredentials? clientCredentials,
+            global::Vercel.CreateConnectorRequestDataTypeOauthForwardedClaims? forwardedClaims,
             string? defaultAudience,
             global::System.Collections.Generic.Dictionary<string, string>? authorizationUrlParams,
             global::Vercel.CreateConnectorRequestDataTypeOauthJwtBearer? jwtBearer)
@@ -148,6 +158,7 @@ namespace Vercel
             this.UserAuthorization = userAuthorization;
             this.RefreshTokens = refreshTokens;
             this.ClientCredentials = clientCredentials;
+            this.ForwardedClaims = forwardedClaims;
             this.DefaultAudience = defaultAudience;
             this.AuthorizationUrlParams = authorizationUrlParams;
             this.JwtBearer = jwtBearer;

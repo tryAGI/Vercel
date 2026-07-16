@@ -1143,6 +1143,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        PageIntegrityScriptApprovalRuleCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityScriptApprovalRuleDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         PasskeyCreated,
         /// <summary>
         /// 
@@ -2545,6 +2553,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.PageIntegrityResourceApproved => "page-integrity-resource-approved",
                 ListEventTypeReplacedByItem.PageIntegrityResourceDeleted => "page-integrity-resource-deleted",
                 ListEventTypeReplacedByItem.PageIntegrityResourceRejected => "page-integrity-resource-rejected",
+                ListEventTypeReplacedByItem.PageIntegrityScriptApprovalRuleCreated => "page-integrity-script-approval-rule-created",
+                ListEventTypeReplacedByItem.PageIntegrityScriptApprovalRuleDeleted => "page-integrity-script-approval-rule-deleted",
                 ListEventTypeReplacedByItem.PasskeyCreated => "passkey-created",
                 ListEventTypeReplacedByItem.PasskeyDeleted => "passkey-deleted",
                 ListEventTypeReplacedByItem.PasskeyUpdated => "passkey-updated",
@@ -3115,6 +3125,8 @@ namespace Vercel
                 "page-integrity-resource-approved" => ListEventTypeReplacedByItem.PageIntegrityResourceApproved,
                 "page-integrity-resource-deleted" => ListEventTypeReplacedByItem.PageIntegrityResourceDeleted,
                 "page-integrity-resource-rejected" => ListEventTypeReplacedByItem.PageIntegrityResourceRejected,
+                "page-integrity-script-approval-rule-created" => ListEventTypeReplacedByItem.PageIntegrityScriptApprovalRuleCreated,
+                "page-integrity-script-approval-rule-deleted" => ListEventTypeReplacedByItem.PageIntegrityScriptApprovalRuleDeleted,
                 "passkey-created" => ListEventTypeReplacedByItem.PasskeyCreated,
                 "passkey-deleted" => ListEventTypeReplacedByItem.PasskeyDeleted,
                 "passkey-updated" => ListEventTypeReplacedByItem.PasskeyUpdated,

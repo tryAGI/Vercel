@@ -12229,6 +12229,19 @@
                             ],
                             "additionalProperties": false
                           },
+                          "forwardedClaims": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "description": "Allow-list of extra claims to propagate, keyed by source (idToken). Only claims named here and present in that source are exposed.",
+                            "properties": {
+                              "idToken": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
                           "defaultAudience": {
                             "type": "string"
                           },
@@ -12711,6 +12724,11 @@
                     "externalSubject": {
                       "type": "string"
                     },
+                    "claims": {
+                      "additionalProperties": true,
+                      "type": "object",
+                      "description": "Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only."
+                    },
                     "metadata": {
                       "additionalProperties": true,
                       "type": "object",
@@ -12968,6 +12986,11 @@
                           },
                           "externalSubject": {
                             "type": "string"
+                          },
+                          "claims": {
+                            "additionalProperties": true,
+                            "type": "object",
+                            "description": "Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only."
                           },
                           "installation": {
                             "properties": {
@@ -188241,6 +188264,8 @@
               "page-integrity-resource-approved",
               "page-integrity-resource-deleted",
               "page-integrity-resource-rejected",
+              "page-integrity-script-approval-rule-created",
+              "page-integrity-script-approval-rule-deleted",
               "passkey-created",
               "passkey-deleted",
               "passkey-updated",
@@ -189118,6 +189143,8 @@
               "page-integrity-resource-approved",
               "page-integrity-resource-deleted",
               "page-integrity-resource-rejected",
+              "page-integrity-script-approval-rule-created",
+              "page-integrity-script-approval-rule-deleted",
               "passkey-created",
               "passkey-deleted",
               "passkey-updated",
@@ -189736,6 +189763,8 @@
                 "page-integrity-resource-approved",
                 "page-integrity-resource-deleted",
                 "page-integrity-resource-rejected",
+                "page-integrity-script-approval-rule-created",
+                "page-integrity-script-approval-rule-deleted",
                 "passkey-created",
                 "passkey-deleted",
                 "passkey-updated",

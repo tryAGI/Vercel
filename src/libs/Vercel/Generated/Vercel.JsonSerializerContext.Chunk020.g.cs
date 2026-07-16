@@ -7691,6 +7691,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AssignAliasResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListAliasesResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListAliasesResponseAliase>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListAliasesResponseAliase))]
@@ -8190,7 +8191,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateProjectRequestEnvironmentVariableTarget?, global::System.Collections.Generic.IList<global::Vercel.CreateProjectRequestEnvironmentVariableTargetItem>>?), TypeInfoPropertyName = "NullableOneOfCreateProjectRequestEnvironmentVariableTargetIListCreateProjectRequestEnvironmentVariableTargetItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectRequestEnvironmentVariableTarget?), TypeInfoPropertyName = "NullableCreateProjectRequestEnvironmentVariableTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectRequestEnvironmentVariableTargetItem?), TypeInfoPropertyName = "NullableCreateProjectRequestEnvironmentVariableTargetItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectRequestEnvironmentVariableType?), TypeInfoPropertyName = "NullableCreateProjectRequestEnvironmentVariableType2")]
     internal sealed partial class SourceGenerationContextChunk020 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
