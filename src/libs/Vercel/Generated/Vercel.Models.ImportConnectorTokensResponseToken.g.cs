@@ -64,6 +64,12 @@ namespace Vercel
         public string? ExternalSubject { get; set; }
 
         /// <summary>
+        /// Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("claims")]
+        public object? Claims { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("installation")]
@@ -125,6 +131,9 @@ namespace Vercel
         /// <param name="authorizationDetails"></param>
         /// <param name="refreshTokenExpiresAt"></param>
         /// <param name="externalSubject"></param>
+        /// <param name="claims">
+        /// Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only.
+        /// </param>
         /// <param name="installation"></param>
         /// <param name="tenant"></param>
         /// <param name="data"></param>
@@ -144,6 +153,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ImportConnectorTokensResponseTokenAuthorizationDetail>? authorizationDetails,
             double? refreshTokenExpiresAt,
             string? externalSubject,
+            object? claims,
             global::Vercel.ImportConnectorTokensResponseTokenInstallation? installation,
             global::Vercel.ImportConnectorTokensResponseTokenTenant? tenant,
             object? data)
@@ -157,6 +167,7 @@ namespace Vercel
             this.ExpiresAt = expiresAt;
             this.RefreshTokenExpiresAt = refreshTokenExpiresAt;
             this.ExternalSubject = externalSubject;
+            this.Claims = claims;
             this.Installation = installation;
             this.Tenant = tenant;
             this.Data = data;

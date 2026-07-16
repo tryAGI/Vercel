@@ -1144,6 +1144,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        PageIntegrityScriptApprovalRuleCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        PageIntegrityScriptApprovalRuleDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         PasskeyCreated,
         /// <summary>
         /// 
@@ -2546,6 +2554,8 @@ namespace Vercel
                 ListEventTypeName.PageIntegrityResourceApproved => "page-integrity-resource-approved",
                 ListEventTypeName.PageIntegrityResourceDeleted => "page-integrity-resource-deleted",
                 ListEventTypeName.PageIntegrityResourceRejected => "page-integrity-resource-rejected",
+                ListEventTypeName.PageIntegrityScriptApprovalRuleCreated => "page-integrity-script-approval-rule-created",
+                ListEventTypeName.PageIntegrityScriptApprovalRuleDeleted => "page-integrity-script-approval-rule-deleted",
                 ListEventTypeName.PasskeyCreated => "passkey-created",
                 ListEventTypeName.PasskeyDeleted => "passkey-deleted",
                 ListEventTypeName.PasskeyUpdated => "passkey-updated",
@@ -3116,6 +3126,8 @@ namespace Vercel
                 "page-integrity-resource-approved" => ListEventTypeName.PageIntegrityResourceApproved,
                 "page-integrity-resource-deleted" => ListEventTypeName.PageIntegrityResourceDeleted,
                 "page-integrity-resource-rejected" => ListEventTypeName.PageIntegrityResourceRejected,
+                "page-integrity-script-approval-rule-created" => ListEventTypeName.PageIntegrityScriptApprovalRuleCreated,
+                "page-integrity-script-approval-rule-deleted" => ListEventTypeName.PageIntegrityScriptApprovalRuleDeleted,
                 "passkey-created" => ListEventTypeName.PasskeyCreated,
                 "passkey-deleted" => ListEventTypeName.PasskeyDeleted,
                 "passkey-updated" => ListEventTypeName.PasskeyUpdated,
