@@ -9,6 +9,21 @@ namespace Vercel
     public sealed partial class GetDeploymentsResponseDeployment
     {
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("readyState")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentReadyStateJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetDeploymentsResponseDeploymentReadyState ReadyState { get; set; }
+
+        /// <summary>
         /// The unique identifier of the deployment.<br/>
         /// Example: dpl_2euZBFqxYdDMDG1jTrHFnNZ2eUVa
         /// </summary>
@@ -102,15 +117,6 @@ namespace Vercel
         public global::Vercel.GetDeploymentsResponseDeploymentState? State { get; set; }
 
         /// <summary>
-        /// In which state is the deployment.<br/>
-        /// Example: READY
-        /// </summary>
-        /// <example>READY</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("readyState")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentReadyStateJsonConverter))]
-        public global::Vercel.GetDeploymentsResponseDeploymentReadyState? ReadyState { get; set; }
-
-        /// <summary>
         /// The type of the deployment.<br/>
         /// Example: LAMBDAS
         /// </summary>
@@ -153,14 +159,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasAssigned")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>))]
         public global::Vercel.OneOf<double?, bool?>? AliasAssigned { get; set; }
-
-        /// <summary>
-        /// Timestamp of when the deployment got created.<br/>
-        /// Example: 1609492210000L
-        /// </summary>
-        /// <example>1609492210000L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
 
         /// <summary>
         /// Timestamp of when the deployment started building at.<br/>
@@ -325,6 +323,8 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentsResponseDeployment" /> class.
         /// </summary>
+        /// <param name="createdAt"></param>
+        /// <param name="readyState"></param>
         /// <param name="uid">
         /// The unique identifier of the deployment.<br/>
         /// Example: dpl_2euZBFqxYdDMDG1jTrHFnNZ2eUVa
@@ -371,10 +371,6 @@ namespace Vercel
         /// In which state is the deployment.<br/>
         /// Example: READY
         /// </param>
-        /// <param name="readyState">
-        /// In which state is the deployment.<br/>
-        /// Example: READY
-        /// </param>
         /// <param name="type">
         /// The type of the deployment.<br/>
         /// Example: LAMBDAS
@@ -390,10 +386,6 @@ namespace Vercel
         /// An error object in case aliasing of the deployment failed.
         /// </param>
         /// <param name="aliasAssigned"></param>
-        /// <param name="createdAt">
-        /// Timestamp of when the deployment got created.<br/>
-        /// Example: 1609492210000L
-        /// </param>
         /// <param name="buildingAt">
         /// Timestamp of when the deployment started building at.<br/>
         /// Example: 1609492210000L
@@ -469,6 +461,8 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentsResponseDeployment(
+            double createdAt,
+            global::Vercel.GetDeploymentsResponseDeploymentReadyState readyState,
             string uid,
             string name,
             string projectId,
@@ -481,13 +475,11 @@ namespace Vercel
             bool? softDeletedByRetention,
             global::Vercel.GetDeploymentsResponseDeploymentSource? source,
             global::Vercel.GetDeploymentsResponseDeploymentState? state,
-            global::Vercel.GetDeploymentsResponseDeploymentReadyState? readyState,
             global::Vercel.GetDeploymentsResponseDeploymentType type,
             global::System.Collections.Generic.Dictionary<string, string>? meta,
             global::Vercel.GetDeploymentsResponseDeploymentTarget? target,
             global::Vercel.GetDeploymentsResponseDeploymentAliasError? aliasError,
             global::Vercel.OneOf<double?, bool?>? aliasAssigned,
-            double? createdAt,
             double? buildingAt,
             double? ready,
             global::Vercel.GetDeploymentsResponseDeploymentReadySubstate? readySubstate,
@@ -512,6 +504,8 @@ namespace Vercel
             global::Vercel.GetDeploymentsResponseDeploymentSeatBlock? seatBlock,
             global::Vercel.GetDeploymentsResponseDeploymentAttribution? attribution)
         {
+            this.CreatedAt = createdAt;
+            this.ReadyState = readyState;
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
@@ -523,14 +517,12 @@ namespace Vercel
             this.SoftDeletedByRetention = softDeletedByRetention;
             this.Source = source;
             this.State = state;
-            this.ReadyState = readyState;
             this.Type = type;
             this.Creator = creator ?? throw new global::System.ArgumentNullException(nameof(creator));
             this.Meta = meta;
             this.Target = target;
             this.AliasError = aliasError;
             this.AliasAssigned = aliasAssigned;
-            this.CreatedAt = createdAt;
             this.BuildingAt = buildingAt;
             this.Ready = ready;
             this.ReadySubstate = readySubstate;

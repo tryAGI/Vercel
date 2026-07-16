@@ -4,8 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// In which state is the deployment.<br/>
-    /// Example: READY
+    /// 
     /// </summary>
     public enum GetDeploymentsResponseDeploymentReadyState
     {

@@ -185262,6 +185262,22 @@
                     "deployments": {
                       "items": {
                         "properties": {
+                          "createdAt": {
+                            "type": "number"
+                          },
+                          "readyState": {
+                            "type": "string",
+                            "enum": [
+                              "BLOCKED",
+                              "BUILDING",
+                              "CANCELED",
+                              "DELETED",
+                              "ERROR",
+                              "INITIALIZING",
+                              "QUEUED",
+                              "READY"
+                            ]
+                          },
                           "uid": {
                             "type": "string",
                             "description": "The unique identifier of the deployment.",
@@ -185327,21 +185343,6 @@
                             "example": "cli"
                           },
                           "state": {
-                            "type": "string",
-                            "enum": [
-                              "BLOCKED",
-                              "BUILDING",
-                              "CANCELED",
-                              "DELETED",
-                              "ERROR",
-                              "INITIALIZING",
-                              "QUEUED",
-                              "READY"
-                            ],
-                            "description": "In which state is the deployment.",
-                            "example": "READY"
-                          },
-                          "readyState": {
                             "type": "string",
                             "enum": [
                               "BLOCKED",
@@ -185448,11 +185449,6 @@
                                 ]
                               }
                             ]
-                          },
-                          "createdAt": {
-                            "type": "number",
-                            "description": "Timestamp of when the deployment got created.",
-                            "example": 1609492210000
                           },
                           "buildingAt": {
                             "type": "number",
@@ -186077,10 +186073,12 @@
                         },
                         "required": [
                           "created",
+                          "createdAt",
                           "creator",
                           "inspectorUrl",
                           "name",
                           "projectId",
+                          "readyState",
                           "type",
                           "uid",
                           "url"
