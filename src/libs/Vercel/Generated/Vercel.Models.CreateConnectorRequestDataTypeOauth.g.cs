@@ -34,7 +34,7 @@ namespace Vercel
         public string? ClientSecret { get; set; }
 
         /// <summary>
-        /// Default Value: client_secret_post
+        /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tokenEndpointAuthMethod")]
         public string? TokenEndpointAuthMethod { get; set; }
@@ -108,9 +108,7 @@ namespace Vercel
         /// Default Value: {}
         /// </param>
         /// <param name="clientSecret"></param>
-        /// <param name="tokenEndpointAuthMethod">
-        /// Default Value: client_secret_post
-        /// </param>
+        /// <param name="tokenEndpointAuthMethod"></param>
         /// <param name="responseType"></param>
         /// <param name="pkceRequired"></param>
         /// <param name="codeChallengeMethod"></param>
