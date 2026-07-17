@@ -176065,9 +176065,9 @@
         ]
       }
     },
-    "/v1/vcr/repository/{idOrName}/images/{imageId}": {
+    "/v1/vcr/repository/{idOrName}/images/{imageIdOrDigest}": {
       "get": {
-        "description": "Fetch an individual image from a repository, including its tags and Dockerfile history entries with discriminated layer details for UI rendering.",
+        "description": "Fetch an individual image from a repository, including its tags and Dockerfile history entries with discriminated layer details for UI rendering. The image may be addressed by its internal id (`image_...`) or by its manifest digest (`sha256:...`).",
         "operationId": "getRepositoryImage",
         "security": [
           {
@@ -176129,12 +176129,14 @@
             }
           },
           {
-            "name": "imageId",
+            "name": "imageIdOrDigest",
+            "description": "The internal image id (`image_...`) or the image manifest digest (`sha256:...`).",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "maxLength": 255
+              "maxLength": 255,
+              "description": "The internal image id (`image_...`) or the image manifest digest (`sha256:...`)."
             }
           },
           {
@@ -176156,7 +176158,9 @@
             }
           }
         ]
-      },
+      }
+    },
+    "/v1/vcr/repository/{idOrName}/images/{imageId}": {
       "delete": {
         "description": "Schedule an image for deletion. The image is marked so it disappears from list/get immediately; subscriber-vcr reclaims the manifest, blobs, tags and row asynchronously via the VcrManifestRemoved event.",
         "operationId": "deleteRepositoryImage",
