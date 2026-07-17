@@ -29,7 +29,7 @@ namespace Vercel
             global::System.Net.Http.HttpClient httpClient,
             ref string projectId,
             ref string idOrName,
-            ref string imageId,
+            ref string imageIdOrDigest,
             ref string? teamId,
             ref string? slug);
         partial void PrepareGetRepositoryImageRequest(
@@ -37,7 +37,7 @@ namespace Vercel
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string projectId,
             string idOrName,
-            string imageId,
+            string imageIdOrDigest,
             string? teamId,
             string? slug);
         partial void ProcessGetRepositoryImageResponse(
@@ -51,11 +51,13 @@ namespace Vercel
 
         /// <summary>
         /// Get a repository image<br/>
-        /// Fetch an individual image from a repository, including its tags and Dockerfile history entries with discriminated layer details for UI rendering.
+        /// Fetch an individual image from a repository, including its tags and Dockerfile history entries with discriminated layer details for UI rendering. The image may be addressed by its internal id (`image_...`) or by its manifest digest (`sha256:...`).
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="idOrName"></param>
-        /// <param name="imageId"></param>
+        /// <param name="imageIdOrDigest">
+        /// The internal image id (`image_...`) or the image manifest digest (`sha256:...`).
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -68,7 +70,7 @@ namespace Vercel
         public async global::System.Threading.Tasks.Task<global::Vercel.GetRepositoryImageResponse> GetRepositoryImageAsync(
             string projectId,
             string idOrName,
-            string imageId,
+            string imageIdOrDigest,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -77,7 +79,7 @@ namespace Vercel
             var __response = await GetRepositoryImageAsResponseAsync(
                 projectId: projectId,
                 idOrName: idOrName,
-                imageId: imageId,
+                imageIdOrDigest: imageIdOrDigest,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -88,11 +90,13 @@ namespace Vercel
         }
         /// <summary>
         /// Get a repository image<br/>
-        /// Fetch an individual image from a repository, including its tags and Dockerfile history entries with discriminated layer details for UI rendering.
+        /// Fetch an individual image from a repository, including its tags and Dockerfile history entries with discriminated layer details for UI rendering. The image may be addressed by its internal id (`image_...`) or by its manifest digest (`sha256:...`).
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="idOrName"></param>
-        /// <param name="imageId"></param>
+        /// <param name="imageIdOrDigest">
+        /// The internal image id (`image_...`) or the image manifest digest (`sha256:...`).
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -105,7 +109,7 @@ namespace Vercel
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetRepositoryImageResponse>> GetRepositoryImageAsResponseAsync(
             string projectId,
             string idOrName,
-            string imageId,
+            string imageIdOrDigest,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -117,7 +121,7 @@ namespace Vercel
                 httpClient: HttpClient,
                 projectId: ref projectId,
                 idOrName: ref idOrName,
-                imageId: ref imageId,
+                imageIdOrDigest: ref imageIdOrDigest,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -145,7 +149,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v1/vcr/repository/{idOrName}/images/{imageId}",
+                                path: $"/v1/vcr/repository/{idOrName}/images/{imageIdOrDigest}",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddRequiredParameter("projectId", projectId)
@@ -194,7 +198,7 @@ namespace Vercel
                     httpRequestMessage: __httpRequest,
                     projectId: projectId!,
                     idOrName: idOrName!,
-                    imageId: imageId!,
+                    imageIdOrDigest: imageIdOrDigest!,
                     teamId: teamId,
                     slug: slug);
 
@@ -215,7 +219,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "GetRepositoryImage",
                                 methodName: "GetRepositoryImageAsync",
-                                pathTemplate: "$\"/v1/vcr/repository/{idOrName}/images/{imageId}\"",
+                                pathTemplate: "$\"/v1/vcr/repository/{idOrName}/images/{imageIdOrDigest}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -249,7 +253,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "GetRepositoryImage",
                                 methodName: "GetRepositoryImageAsync",
-                                pathTemplate: "$\"/v1/vcr/repository/{idOrName}/images/{imageId}\"",
+                                pathTemplate: "$\"/v1/vcr/repository/{idOrName}/images/{imageIdOrDigest}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -290,7 +294,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "GetRepositoryImage",
                                 methodName: "GetRepositoryImageAsync",
-                                pathTemplate: "$\"/v1/vcr/repository/{idOrName}/images/{imageId}\"",
+                                pathTemplate: "$\"/v1/vcr/repository/{idOrName}/images/{imageIdOrDigest}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -338,7 +342,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "GetRepositoryImage",
                                 methodName: "GetRepositoryImageAsync",
-                                pathTemplate: "$\"/v1/vcr/repository/{idOrName}/images/{imageId}\"",
+                                pathTemplate: "$\"/v1/vcr/repository/{idOrName}/images/{imageIdOrDigest}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -360,7 +364,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "GetRepositoryImage",
                                 methodName: "GetRepositoryImageAsync",
-                                pathTemplate: "$\"/v1/vcr/repository/{idOrName}/images/{imageId}\"",
+                                pathTemplate: "$\"/v1/vcr/repository/{idOrName}/images/{imageIdOrDigest}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
