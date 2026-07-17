@@ -2180,6 +2180,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        VcrRepositoryPermissionRemoved,
+        /// <summary>
+        /// 
+        /// </summary>
         VercelAgentElevatedPermissionsApproved,
         /// <summary>
         /// 
@@ -2817,6 +2821,7 @@ namespace Vercel
                 ListEventTypeName.VcrRepositoryCreated => "vcr-repository-created",
                 ListEventTypeName.VcrRepositoryDeleted => "vcr-repository-deleted",
                 ListEventTypeName.VcrRepositoryPermissionAdded => "vcr-repository-permission-added",
+                ListEventTypeName.VcrRepositoryPermissionRemoved => "vcr-repository-permission-removed",
                 ListEventTypeName.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
                 ListEventTypeName.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
                 ListEventTypeName.VercelAgentSessionCreated => "vercel-agent-session-created",
@@ -3390,6 +3395,7 @@ namespace Vercel
                 "vcr-repository-created" => ListEventTypeName.VcrRepositoryCreated,
                 "vcr-repository-deleted" => ListEventTypeName.VcrRepositoryDeleted,
                 "vcr-repository-permission-added" => ListEventTypeName.VcrRepositoryPermissionAdded,
+                "vcr-repository-permission-removed" => ListEventTypeName.VcrRepositoryPermissionRemoved,
                 "vercel-agent-elevated-permissions-approved" => ListEventTypeName.VercelAgentElevatedPermissionsApproved,
                 "vercel-agent-elevated-permissions-requested" => ListEventTypeName.VercelAgentElevatedPermissionsRequested,
                 "vercel-agent-session-created" => ListEventTypeName.VercelAgentSessionCreated,
