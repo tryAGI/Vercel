@@ -43,6 +43,12 @@ namespace Vercel
         public double? DeletedAt { get; set; }
 
         /// <summary>
+        /// Time when this connector started requiring reinstallation because an installation-affecting app-token grant changed.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reinstallAt")]
+        public double? ReinstallAt { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
@@ -280,6 +286,9 @@ namespace Vercel
         /// </param>
         /// <param name="supportsIcon"></param>
         /// <param name="deletedAt"></param>
+        /// <param name="reinstallAt">
+        /// Time when this connector started requiring reinstallation because an installation-affecting app-token grant changed.
+        /// </param>
         /// <param name="createdBy"></param>
         /// <param name="updatedBy"></param>
         /// <param name="clientUrl"></param>
@@ -339,6 +348,7 @@ namespace Vercel
             bool supportsTriggers,
             global::Vercel.CreateConnectorResponseSupportsIcon supportsIcon,
             double? deletedAt,
+            double? reinstallAt,
             global::Vercel.OneOf<global::Vercel.CreateConnectorResponseCreatedByVariant1, global::Vercel.CreateConnectorResponseCreatedByVariant2>? createdBy,
             global::Vercel.OneOf<global::Vercel.CreateConnectorResponseUpdatedByVariant1, global::Vercel.CreateConnectorResponseUpdatedByVariant2>? updatedBy,
             string? clientUrl,
@@ -365,6 +375,7 @@ namespace Vercel
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
             this.DeletedAt = deletedAt;
+            this.ReinstallAt = reinstallAt;
             this.CreatedBy = createdBy;
             this.UpdatedBy = updatedBy;
             this.Public = @public;
