@@ -1936,10 +1936,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        TeamEmuAccountSplit,
-        /// <summary>
-        /// 
-        /// </summary>
         TeamEmuUpdated,
         /// <summary>
         /// 
@@ -2181,6 +2177,10 @@ namespace Vercel
         /// 
         /// </summary>
         VcrRepositoryPermissionRemoved,
+        /// <summary>
+        /// 
+        /// </summary>
+        VcrRepositoryPermissionsCleared,
         /// <summary>
         /// 
         /// </summary>
@@ -2760,7 +2760,6 @@ namespace Vercel
                 ListEventTypeName.TeamDomainVerificationDeleted => "team-domain-verification-deleted",
                 ListEventTypeName.TeamDomainVerificationVerified => "team-domain-verification-verified",
                 ListEventTypeName.TeamEmailDomainUpdate => "team-email-domain-update",
-                ListEventTypeName.TeamEmuAccountSplit => "team-emu-account-split",
                 ListEventTypeName.TeamEmuUpdated => "team-emu-updated",
                 ListEventTypeName.TeamEndedTrial => "team-ended-trial",
                 ListEventTypeName.TeamFirewallConfigModified => "team-firewall-config-modified",
@@ -2822,6 +2821,7 @@ namespace Vercel
                 ListEventTypeName.VcrRepositoryDeleted => "vcr-repository-deleted",
                 ListEventTypeName.VcrRepositoryPermissionAdded => "vcr-repository-permission-added",
                 ListEventTypeName.VcrRepositoryPermissionRemoved => "vcr-repository-permission-removed",
+                ListEventTypeName.VcrRepositoryPermissionsCleared => "vcr-repository-permissions-cleared",
                 ListEventTypeName.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
                 ListEventTypeName.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
                 ListEventTypeName.VercelAgentSessionCreated => "vercel-agent-session-created",
@@ -3334,7 +3334,6 @@ namespace Vercel
                 "team-domain-verification-deleted" => ListEventTypeName.TeamDomainVerificationDeleted,
                 "team-domain-verification-verified" => ListEventTypeName.TeamDomainVerificationVerified,
                 "team-email-domain-update" => ListEventTypeName.TeamEmailDomainUpdate,
-                "team-emu-account-split" => ListEventTypeName.TeamEmuAccountSplit,
                 "team-emu-updated" => ListEventTypeName.TeamEmuUpdated,
                 "team-ended-trial" => ListEventTypeName.TeamEndedTrial,
                 "team-firewall-config-modified" => ListEventTypeName.TeamFirewallConfigModified,
@@ -3396,6 +3395,7 @@ namespace Vercel
                 "vcr-repository-deleted" => ListEventTypeName.VcrRepositoryDeleted,
                 "vcr-repository-permission-added" => ListEventTypeName.VcrRepositoryPermissionAdded,
                 "vcr-repository-permission-removed" => ListEventTypeName.VcrRepositoryPermissionRemoved,
+                "vcr-repository-permissions-cleared" => ListEventTypeName.VcrRepositoryPermissionsCleared,
                 "vercel-agent-elevated-permissions-approved" => ListEventTypeName.VercelAgentElevatedPermissionsApproved,
                 "vercel-agent-elevated-permissions-requested" => ListEventTypeName.VercelAgentElevatedPermissionsRequested,
                 "vercel-agent-session-created" => ListEventTypeName.VercelAgentSessionCreated,

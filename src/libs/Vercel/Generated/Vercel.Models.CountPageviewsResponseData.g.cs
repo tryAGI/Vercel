@@ -1353,6 +1353,69 @@ namespace Vercel
         public required string ToolCallStatusCode { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("environmentId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string EnvironmentId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("billableRegion")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string BillableRegion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("direction")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Direction { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("networkTenancy")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NetworkTenancy { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trafficSource")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TrafficSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("networkId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string NetworkId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("privatelinkEndpointId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string PrivatelinkEndpointId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("privatelinkDnsName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string PrivatelinkDnsName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("privatelinkIpAddress")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string PrivatelinkIpAddress { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -1553,6 +1616,15 @@ namespace Vercel
         /// <param name="toolCallSuccess"></param>
         /// <param name="toolCallErrorType"></param>
         /// <param name="toolCallStatusCode"></param>
+        /// <param name="environmentId"></param>
+        /// <param name="billableRegion"></param>
+        /// <param name="direction"></param>
+        /// <param name="networkTenancy"></param>
+        /// <param name="trafficSource"></param>
+        /// <param name="networkId"></param>
+        /// <param name="privatelinkEndpointId"></param>
+        /// <param name="privatelinkDnsName"></param>
+        /// <param name="privatelinkIpAddress"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -1748,7 +1820,16 @@ namespace Vercel
             string toolCallProvider,
             string toolCallSuccess,
             string toolCallErrorType,
-            string toolCallStatusCode)
+            string toolCallStatusCode,
+            string environmentId,
+            string billableRegion,
+            string direction,
+            string networkTenancy,
+            string trafficSource,
+            string networkId,
+            string privatelinkEndpointId,
+            string privatelinkDnsName,
+            string privatelinkIpAddress)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Country = country ?? throw new global::System.ArgumentNullException(nameof(country));
@@ -1942,6 +2023,15 @@ namespace Vercel
             this.ToolCallSuccess = toolCallSuccess ?? throw new global::System.ArgumentNullException(nameof(toolCallSuccess));
             this.ToolCallErrorType = toolCallErrorType ?? throw new global::System.ArgumentNullException(nameof(toolCallErrorType));
             this.ToolCallStatusCode = toolCallStatusCode ?? throw new global::System.ArgumentNullException(nameof(toolCallStatusCode));
+            this.EnvironmentId = environmentId ?? throw new global::System.ArgumentNullException(nameof(environmentId));
+            this.BillableRegion = billableRegion ?? throw new global::System.ArgumentNullException(nameof(billableRegion));
+            this.Direction = direction ?? throw new global::System.ArgumentNullException(nameof(direction));
+            this.NetworkTenancy = networkTenancy ?? throw new global::System.ArgumentNullException(nameof(networkTenancy));
+            this.TrafficSource = trafficSource ?? throw new global::System.ArgumentNullException(nameof(trafficSource));
+            this.NetworkId = networkId ?? throw new global::System.ArgumentNullException(nameof(networkId));
+            this.PrivatelinkEndpointId = privatelinkEndpointId ?? throw new global::System.ArgumentNullException(nameof(privatelinkEndpointId));
+            this.PrivatelinkDnsName = privatelinkDnsName ?? throw new global::System.ArgumentNullException(nameof(privatelinkDnsName));
+            this.PrivatelinkIpAddress = privatelinkIpAddress ?? throw new global::System.ArgumentNullException(nameof(privatelinkIpAddress));
         }
 
         /// <summary>

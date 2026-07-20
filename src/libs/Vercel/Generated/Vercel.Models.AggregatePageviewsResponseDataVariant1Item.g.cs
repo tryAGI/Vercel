@@ -1163,6 +1163,60 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("environmentId")]
+        public string? EnvironmentId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("billableRegion")]
+        public string? BillableRegion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("direction")]
+        public string? Direction { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("networkTenancy")]
+        public string? NetworkTenancy { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trafficSource")]
+        public string? TrafficSource { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("networkId")]
+        public string? NetworkId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("privatelinkEndpointId")]
+        public string? PrivatelinkEndpointId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("privatelinkDnsName")]
+        public string? PrivatelinkDnsName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("privatelinkIpAddress")]
+        public string? PrivatelinkIpAddress { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime Timestamp { get; set; }
@@ -1369,6 +1423,15 @@ namespace Vercel
         /// <param name="toolCallSuccess"></param>
         /// <param name="toolCallErrorType"></param>
         /// <param name="toolCallStatusCode"></param>
+        /// <param name="environmentId"></param>
+        /// <param name="billableRegion"></param>
+        /// <param name="direction"></param>
+        /// <param name="networkTenancy"></param>
+        /// <param name="trafficSource"></param>
+        /// <param name="networkId"></param>
+        /// <param name="privatelinkEndpointId"></param>
+        /// <param name="privatelinkDnsName"></param>
+        /// <param name="privatelinkIpAddress"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -1565,7 +1628,16 @@ namespace Vercel
             string? toolCallProvider,
             string? toolCallSuccess,
             string? toolCallErrorType,
-            string? toolCallStatusCode)
+            string? toolCallStatusCode,
+            string? environmentId,
+            string? billableRegion,
+            string? direction,
+            string? networkTenancy,
+            string? trafficSource,
+            string? networkId,
+            string? privatelinkEndpointId,
+            string? privatelinkDnsName,
+            string? privatelinkIpAddress)
         {
             this.ProjectId = projectId;
             this.Country = country;
@@ -1759,6 +1831,15 @@ namespace Vercel
             this.ToolCallSuccess = toolCallSuccess;
             this.ToolCallErrorType = toolCallErrorType;
             this.ToolCallStatusCode = toolCallStatusCode;
+            this.EnvironmentId = environmentId;
+            this.BillableRegion = billableRegion;
+            this.Direction = direction;
+            this.NetworkTenancy = networkTenancy;
+            this.TrafficSource = trafficSource;
+            this.NetworkId = networkId;
+            this.PrivatelinkEndpointId = privatelinkEndpointId;
+            this.PrivatelinkDnsName = privatelinkDnsName;
+            this.PrivatelinkIpAddress = privatelinkIpAddress;
             this.Timestamp = timestamp;
         }
 
