@@ -33,8 +33,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("path")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Path { get; set; }
+        public string? Path { get; set; }
 
         /// <summary>
         /// 
@@ -46,15 +45,13 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userAgent")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> UserAgent { get; set; }
+        public global::System.Collections.Generic.IList<string>? UserAgent { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("referer")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Referer { get; set; }
+        public string? Referer { get; set; }
 
         /// <summary>
         /// 
@@ -66,8 +63,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("region")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Region { get; set; }
+        public string? Region { get; set; }
 
         /// <summary>
         /// 
@@ -144,11 +140,11 @@ namespace Vercel
         /// <param name="method"></param>
         /// <param name="host"></param>
         /// <param name="path"></param>
+        /// <param name="statusCode"></param>
         /// <param name="userAgent"></param>
         /// <param name="referer"></param>
-        /// <param name="region"></param>
-        /// <param name="statusCode"></param>
         /// <param name="clientIp"></param>
+        /// <param name="region"></param>
         /// <param name="scheme"></param>
         /// <param name="responseByteSize"></param>
         /// <param name="cacheId"></param>
@@ -166,12 +162,12 @@ namespace Vercel
             double timestamp,
             string method,
             string host,
-            string path,
-            global::System.Collections.Generic.IList<string> userAgent,
-            string referer,
-            string region,
+            string? path,
             double? statusCode,
+            global::System.Collections.Generic.IList<string>? userAgent,
+            string? referer,
             string? clientIp,
+            string? region,
             string? scheme,
             double? responseByteSize,
             string? cacheId,
@@ -186,12 +182,12 @@ namespace Vercel
             this.Timestamp = timestamp;
             this.Method = method ?? throw new global::System.ArgumentNullException(nameof(method));
             this.Host = host ?? throw new global::System.ArgumentNullException(nameof(host));
-            this.Path = path ?? throw new global::System.ArgumentNullException(nameof(path));
+            this.Path = path;
             this.StatusCode = statusCode;
-            this.UserAgent = userAgent ?? throw new global::System.ArgumentNullException(nameof(userAgent));
-            this.Referer = referer ?? throw new global::System.ArgumentNullException(nameof(referer));
+            this.UserAgent = userAgent;
+            this.Referer = referer;
             this.ClientIp = clientIp;
-            this.Region = region ?? throw new global::System.ArgumentNullException(nameof(region));
+            this.Region = region;
             this.Scheme = scheme;
             this.ResponseByteSize = responseByteSize;
             this.CacheId = cacheId;

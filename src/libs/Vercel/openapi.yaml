@@ -11428,6 +11428,10 @@
                     "deletedAt": {
                       "type": "number"
                     },
+                    "reinstallAt": {
+                      "type": "number",
+                      "description": "Time when this connector started requiring reinstallation because an installation-affecting app-token grant changed."
+                    },
                     "createdBy": {
                       "oneOf": [
                         {
@@ -13737,11 +13741,7 @@
                                 "required": [
                                   "host",
                                   "method",
-                                  "path",
-                                  "referer",
-                                  "region",
-                                  "timestamp",
-                                  "userAgent"
+                                  "timestamp"
                                 ],
                                 "type": "object"
                               }
@@ -14003,11 +14003,7 @@
                                     "required": [
                                       "host",
                                       "method",
-                                      "path",
-                                      "referer",
-                                      "region",
-                                      "timestamp",
-                                      "userAgent"
+                                      "timestamp"
                                     ],
                                     "type": "object"
                                   }
@@ -14347,11 +14343,7 @@
                               "required": [
                                 "host",
                                 "method",
-                                "path",
-                                "referer",
-                                "region",
-                                "timestamp",
-                                "userAgent"
+                                "timestamp"
                               ],
                               "type": "object"
                             }
@@ -14613,11 +14605,7 @@
                                   "required": [
                                     "host",
                                     "method",
-                                    "path",
-                                    "referer",
-                                    "region",
-                                    "timestamp",
-                                    "userAgent"
+                                    "timestamp"
                                   ],
                                   "type": "object"
                                 }
