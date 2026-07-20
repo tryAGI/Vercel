@@ -12767,9 +12767,6 @@
           },
           "429": {
             "description": ""
-          },
-          "504": {
-            "description": ""
           }
         },
         "parameters": [
@@ -13117,9 +13114,6 @@
             "description": ""
           },
           "422": {
-            "description": ""
-          },
-          "504": {
             "description": ""
           }
         },
