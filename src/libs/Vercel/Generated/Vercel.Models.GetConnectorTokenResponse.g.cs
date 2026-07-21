@@ -61,6 +61,18 @@ namespace Vercel
         public string? ExternalSubject { get; set; }
 
         /// <summary>
+        /// Stable id correlating all tokens (including refreshes) back to the original authorization.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("authorizationId")]
+        public string? AuthorizationId { get; set; }
+
+        /// <summary>
+        /// Stable id that groups all tokens with the same parameters across refreshes.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenGroupId")]
+        public string? TokenGroupId { get; set; }
+
+        /// <summary>
         /// Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("claims")]
@@ -89,6 +101,12 @@ namespace Vercel
         /// <param name="installationId"></param>
         /// <param name="tenantId"></param>
         /// <param name="externalSubject"></param>
+        /// <param name="authorizationId">
+        /// Stable id correlating all tokens (including refreshes) back to the original authorization.
+        /// </param>
+        /// <param name="tokenGroupId">
+        /// Stable id that groups all tokens with the same parameters across refreshes.
+        /// </param>
         /// <param name="claims">
         /// Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only.
         /// </param>
@@ -107,6 +125,8 @@ namespace Vercel
             string? installationId,
             string? tenantId,
             string? externalSubject,
+            string? authorizationId,
+            string? tokenGroupId,
             object? claims,
             object? metadata)
         {
@@ -118,6 +138,8 @@ namespace Vercel
             this.InstallationId = installationId;
             this.TenantId = tenantId;
             this.ExternalSubject = externalSubject;
+            this.AuthorizationId = authorizationId;
+            this.TokenGroupId = tokenGroupId;
             this.Claims = claims;
             this.Metadata = metadata;
         }
