@@ -809,6 +809,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("servedSpeed")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ServedSpeed { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("virtualModelSlug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VirtualModelSlug { get; set; }
@@ -1285,6 +1292,27 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("contentCaptureStatus")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ContentCaptureStatus { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("contentCaptureInputs")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ContentCaptureInputs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("contentCaptureOutputs")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ContentCaptureOutputs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptError")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptError { get; set; }
@@ -1538,6 +1566,7 @@ namespace Vercel
         /// <param name="aiGatewayModelId"></param>
         /// <param name="aiProvider"></param>
         /// <param name="aiModelType"></param>
+        /// <param name="servedSpeed"></param>
         /// <param name="virtualModelSlug"></param>
         /// <param name="virtualModelKind"></param>
         /// <param name="costCurrency"></param>
@@ -1606,6 +1635,9 @@ namespace Vercel
         /// <param name="providerAttemptTotalInRequest"></param>
         /// <param name="generationId"></param>
         /// <param name="sessionId"></param>
+        /// <param name="contentCaptureStatus"></param>
+        /// <param name="contentCaptureInputs"></param>
+        /// <param name="contentCaptureOutputs"></param>
         /// <param name="providerAttemptError"></param>
         /// <param name="providerAttemptSafetyIdentifier"></param>
         /// <param name="providerAttemptDevSafetyIdentifier"></param>
@@ -1743,6 +1775,7 @@ namespace Vercel
             string aiGatewayModelId,
             string aiProvider,
             string aiModelType,
+            string servedSpeed,
             string virtualModelSlug,
             string virtualModelKind,
             string costCurrency,
@@ -1811,6 +1844,9 @@ namespace Vercel
             string providerAttemptTotalInRequest,
             string generationId,
             string sessionId,
+            string contentCaptureStatus,
+            string contentCaptureInputs,
+            string contentCaptureOutputs,
             string providerAttemptError,
             string providerAttemptSafetyIdentifier,
             string providerAttemptDevSafetyIdentifier,
@@ -1945,6 +1981,7 @@ namespace Vercel
             this.AiGatewayModelId = aiGatewayModelId ?? throw new global::System.ArgumentNullException(nameof(aiGatewayModelId));
             this.AiProvider = aiProvider ?? throw new global::System.ArgumentNullException(nameof(aiProvider));
             this.AiModelType = aiModelType ?? throw new global::System.ArgumentNullException(nameof(aiModelType));
+            this.ServedSpeed = servedSpeed ?? throw new global::System.ArgumentNullException(nameof(servedSpeed));
             this.VirtualModelSlug = virtualModelSlug ?? throw new global::System.ArgumentNullException(nameof(virtualModelSlug));
             this.VirtualModelKind = virtualModelKind ?? throw new global::System.ArgumentNullException(nameof(virtualModelKind));
             this.CostCurrency = costCurrency ?? throw new global::System.ArgumentNullException(nameof(costCurrency));
@@ -2013,6 +2050,9 @@ namespace Vercel
             this.ProviderAttemptTotalInRequest = providerAttemptTotalInRequest ?? throw new global::System.ArgumentNullException(nameof(providerAttemptTotalInRequest));
             this.GenerationId = generationId ?? throw new global::System.ArgumentNullException(nameof(generationId));
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
+            this.ContentCaptureStatus = contentCaptureStatus ?? throw new global::System.ArgumentNullException(nameof(contentCaptureStatus));
+            this.ContentCaptureInputs = contentCaptureInputs ?? throw new global::System.ArgumentNullException(nameof(contentCaptureInputs));
+            this.ContentCaptureOutputs = contentCaptureOutputs ?? throw new global::System.ArgumentNullException(nameof(contentCaptureOutputs));
             this.ProviderAttemptError = providerAttemptError ?? throw new global::System.ArgumentNullException(nameof(providerAttemptError));
             this.ProviderAttemptSafetyIdentifier = providerAttemptSafetyIdentifier ?? throw new global::System.ArgumentNullException(nameof(providerAttemptSafetyIdentifier));
             this.ProviderAttemptDevSafetyIdentifier = providerAttemptDevSafetyIdentifier ?? throw new global::System.ArgumentNullException(nameof(providerAttemptDevSafetyIdentifier));
