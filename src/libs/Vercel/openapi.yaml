@@ -146,6 +146,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -306,6 +309,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -434,6 +440,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -565,6 +574,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -789,6 +801,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -988,6 +1003,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -1179,6 +1197,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -1303,6 +1324,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -1434,6 +1458,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -1549,6 +1576,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -1650,6 +1680,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -1737,6 +1770,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -1793,6 +1829,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "500": {
             "description": ""
@@ -1865,6 +1904,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -1923,6 +1965,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -1987,6 +2032,9 @@
           },
           "403": {
             "description": "The customer has reached their spend cap limit and has been paused. An owner can disable the cap or raise the limit in settings.\nThe Remote Caching usage limit has been reached for this account for this billing cycle.\nRemote Caching has been disabled for this team or user. An owner can enable it in the billing settings.\nYou do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -2150,6 +2198,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -2224,6 +2275,9 @@
           },
           "403": {
             "description": "The customer has reached their spend cap limit and has been paused. An owner can disable the cap or raise the limit in settings.\nThe Remote Caching usage limit has been reached for this account for this billing cycle.\nRemote Caching has been disabled for this team or user. An owner can enable it in the billing settings.\nYou do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -2389,6 +2443,9 @@
           },
           "404": {
             "description": "The artifact was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -2476,6 +2533,9 @@
           },
           "404": {
             "description": "The artifact was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -2594,6 +2654,9 @@
           },
           "403": {
             "description": "The customer has reached their spend cap limit and has been paused. An owner can disable the cap or raise the limit in settings.\nThe Remote Caching usage limit has been reached for this account for this billing cycle.\nRemote Caching has been disabled for this team or user. An owner can enable it in the billing settings.\nYou do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -2682,6 +2745,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -2876,6 +2942,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           },
@@ -3038,6 +3107,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -4436,6 +4508,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -4619,6 +4694,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "500": {
             "description": ""
@@ -5030,6 +5108,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -5370,6 +5451,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -5525,6 +5609,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -5722,6 +5809,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -5877,6 +5967,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -6001,6 +6094,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -6274,6 +6370,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -6516,6 +6615,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "500": {
             "description": ""
@@ -6849,6 +6951,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -7091,6 +7196,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -7222,6 +7330,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -7665,6 +7776,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "500": {
             "description": ""
@@ -8111,6 +8225,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -8533,6 +8650,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -8978,6 +9098,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -9410,6 +9533,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "410": {
+            "description": ""
+          },
           "413": {
             "description": "The output provided is too large"
           },
@@ -9748,6 +9874,9 @@
           },
           "404": {
             "description": "The deployment was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -10074,6 +10203,9 @@
           },
           "404": {
             "description": "The deployment was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -10349,6 +10481,9 @@
           },
           "404": {
             "description": "Check was not found\nThe deployment was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -10633,6 +10768,9 @@
           },
           "404": {
             "description": "Check was not found\nThe deployment was not found"
+          },
+          "410": {
+            "description": ""
           },
           "413": {
             "description": "The output provided is too large"
@@ -10920,6 +11058,9 @@
           },
           "404": {
             "description": "The deployment was not found\nCheck was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -11011,6 +11152,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -11111,6 +11255,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -11208,6 +11355,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -11273,6 +11423,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -11358,6 +11511,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -11895,6 +12051,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -12762,6 +12921,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "422": {
             "description": ""
           },
@@ -13113,6 +13275,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "422": {
             "description": ""
           }
@@ -13390,6 +13555,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -14788,6 +14956,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -14970,6 +15141,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -22598,6 +22772,9 @@
           "404": {
             "description": "The deployment was not found"
           },
+          "410": {
+            "description": ""
+          },
           "429": {
             "description": ""
           }
@@ -28847,6 +29024,9 @@
           },
           "409": {
             "description": "The deployment project is being transferred"
+          },
+          "410": {
+            "description": ""
           },
           "426": {
             "description": ""
@@ -35699,6 +35879,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -35957,6 +36140,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -36103,6 +36289,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -36753,6 +36942,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -36965,6 +37157,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "415": {
             "description": ""
           }
@@ -37066,6 +37261,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": []
@@ -37105,6 +37303,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -41032,6 +41233,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -41136,6 +41340,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -41372,6 +41579,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -41538,6 +41748,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -41815,6 +42028,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -42063,6 +42279,9 @@
             "description": "You do not have permission to access this resource."
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -42332,6 +42551,9 @@
           },
           "409": {
             "description": "The domain is not allowed to be used"
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -42534,6 +42756,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -42671,6 +42896,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -42874,6 +43102,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -42931,6 +43162,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -44229,6 +44463,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -44306,6 +44543,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -45537,6 +45777,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -47098,6 +47341,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -47164,6 +47410,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -48310,6 +48559,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -49460,6 +49712,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -49971,6 +50226,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -50209,6 +50467,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -50307,6 +50568,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -50414,6 +50678,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -50500,6 +50767,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -50669,6 +50939,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -50840,6 +51113,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -51037,6 +51313,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -51222,6 +51501,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -51303,6 +51585,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -51372,6 +51657,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -51452,6 +51740,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "412": {
@@ -51626,6 +51917,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -51698,6 +51992,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -51788,6 +52085,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -51854,6 +52154,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -51931,6 +52234,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -51994,6 +52300,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -52102,6 +52411,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -52194,6 +52506,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -52496,6 +52811,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -52600,6 +52918,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "412": {
@@ -52739,6 +53060,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -53068,6 +53392,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -53369,6 +53696,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -53737,6 +54067,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -54022,6 +54355,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -54238,6 +54574,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -54319,6 +54658,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -54406,6 +54748,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -54549,6 +54894,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -54641,6 +54989,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -54834,6 +55185,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -55831,6 +56185,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "412": {
             "description": ""
           }
@@ -56577,6 +56934,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -57543,6 +57903,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "412": {
             "description": ""
           }
@@ -58302,6 +58665,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "412": {
@@ -59285,6 +59651,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -59548,6 +59917,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -59921,6 +60293,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "412": {
             "description": ""
           }
@@ -60253,6 +60628,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -60364,6 +60742,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -60558,6 +60939,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -61085,6 +61469,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "412": {
             "description": ""
           }
@@ -61498,6 +61885,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -61580,6 +61970,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -61670,6 +62063,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "412": {
@@ -62146,6 +62542,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "412": {
@@ -62650,6 +63049,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -62780,6 +63182,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -62852,6 +63257,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -62950,6 +63358,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -63101,6 +63512,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -63320,6 +63734,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -63569,6 +63986,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -63671,6 +64091,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -63769,6 +64192,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -63984,6 +64410,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -64056,6 +64485,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -64105,6 +64537,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -64356,6 +64791,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -64532,6 +64970,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -64583,6 +65024,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -64649,6 +65093,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "422": {
@@ -64912,6 +65359,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "422": {
@@ -65212,6 +65662,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -65561,6 +66014,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -65774,6 +66230,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -66024,6 +66483,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -66076,6 +66538,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -66158,6 +66623,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -66254,6 +66722,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "422": {
@@ -66378,6 +66849,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "422": {
@@ -66886,6 +67360,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -67676,6 +68153,9 @@
           },
           "404": {
             "description": "The configuration was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -67737,6 +68217,9 @@
           },
           "404": {
             "description": "The configuration was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -71019,6 +71502,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -71443,6 +71929,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -71681,6 +72170,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -71822,6 +72314,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -71951,6 +72446,9 @@
             }
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -72194,6 +72692,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -72261,6 +72762,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -72379,6 +72883,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -72484,6 +72991,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -72579,6 +73089,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -72665,6 +73178,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -72750,6 +73266,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "412": {
             "description": ""
           }
@@ -72826,6 +73345,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "500": {
             "description": ""
@@ -79895,6 +80417,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -80127,6 +80652,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -80367,6 +80895,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -80471,6 +81002,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "500": {
             "description": ""
@@ -80617,6 +81151,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -80686,6 +81223,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -80773,6 +81313,9 @@
             "description": "You do not have permission to access this resource."
           },
           "408": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -80898,6 +81441,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": []
@@ -80980,6 +81526,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -81159,6 +81708,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -81279,6 +81831,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "500": {
             "description": ""
@@ -81418,6 +81973,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -83773,6 +84331,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -83942,6 +84503,9 @@
             "description": "You do not have permission to access this resource."
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -84903,6 +85467,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -85199,6 +85766,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -86034,6 +86604,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -86409,6 +86982,9 @@
           "408": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -86639,6 +87215,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -86763,6 +87342,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -102307,6 +102889,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -102725,6 +103310,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -109803,6 +110391,9 @@
           "409": {
             "description": "A project with the provided name already exists."
           },
+          "410": {
+            "description": ""
+          },
           "428": {
             "description": "Owner does not have protection add-on"
           },
@@ -110286,6 +110877,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -110379,6 +110973,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "422": {
             "description": ""
@@ -117481,6 +118078,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -124546,6 +125146,9 @@
           "409": {
             "description": "The provided name for the project is already being used\nThe project is currently being transferred."
           },
+          "410": {
+            "description": ""
+          },
           "428": {
             "description": "Owner does not have protection add-on"
           },
@@ -125789,6 +126392,9 @@
             "description": "You do not have permission to access this resource."
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -132853,6 +133459,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "410": {
+            "description": ""
+          },
           "413": {
             "description": ""
           },
@@ -133013,6 +133622,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -133284,6 +133896,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "500": {
             "description": ""
@@ -133581,6 +134196,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -133819,6 +134437,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -134055,6 +134676,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "500": {
             "description": ""
@@ -134336,6 +134960,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -134646,6 +135273,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -134932,6 +135562,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -135092,6 +135725,9 @@
           },
           "409": {
             "description": "The project is currently being transferred"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -135211,6 +135847,9 @@
           },
           "409": {
             "description": "The project is currently being transferred"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -135391,6 +136030,9 @@
           },
           "409": {
             "description": "The domain is already assigned to another Vercel project\nCannot create project domain since owner already has `domain` on their account, but it's not verified yet.\nCannot create project domain since owner already has `domain` on their account, and it's verified.\nThe domain is not allowed to be used\nThe project is currently being transferred"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -135592,6 +136234,9 @@
           },
           "409": {
             "description": "The project is currently being transferred"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -135772,6 +136417,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -136320,6 +136968,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -136850,6 +137501,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "429": {
             "description": ""
           },
@@ -137374,6 +138028,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -137881,6 +138538,9 @@
           },
           "409": {
             "description": "The project is being transfered and removing an environment variable is not possible"
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -138119,6 +138779,9 @@
           "409": {
             "description": "The project is being transfered and removing an environment variable is not possible"
           },
+          "410": {
+            "description": ""
+          },
           "429": {
             "description": ""
           },
@@ -138302,6 +138965,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -138502,6 +139168,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -138642,6 +139311,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -138716,6 +139388,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -138850,6 +139525,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -139414,6 +140092,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -139993,6 +140674,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -140588,6 +141272,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "422": {
             "description": ""
           }
@@ -141172,6 +141859,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -141266,6 +141956,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -141422,6 +142115,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "422": {
@@ -141631,6 +142327,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -141766,6 +142465,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "422": {
             "description": ""
           }
@@ -141843,6 +142545,9 @@
             "description": "You do not have permission to access this resource."
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "422": {
@@ -148908,6 +149613,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -149014,6 +149722,9 @@
             "description": "You do not have permission to access this resource."
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -149128,6 +149839,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -149230,6 +149944,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -149291,6 +150008,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "500": {
             "description": ""
@@ -149390,6 +150110,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -150327,6 +151050,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "429": {
             "description": ""
           }
@@ -150497,6 +151223,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "429": {
             "description": ""
           }
@@ -150600,6 +151329,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -150721,6 +151453,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -150856,6 +151591,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "429": {
             "description": ""
           }
@@ -150933,6 +151671,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -151041,6 +151782,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -151184,6 +151928,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -152081,6 +152828,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "429": {
             "description": ""
           }
@@ -152176,6 +152926,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "429": {
@@ -154046,6 +154799,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -158470,6 +159226,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": []
@@ -159966,6 +160725,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -160817,6 +161579,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -163786,6 +164551,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -163858,6 +164626,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -165336,6 +166107,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -165480,6 +166254,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -165645,6 +166422,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -165914,6 +166694,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -166039,6 +166822,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -166194,6 +166980,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -166430,6 +167219,9 @@
           "408": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -166504,6 +167296,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -166821,6 +167616,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -167208,6 +168006,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "429": {
             "description": ""
           }
@@ -167308,6 +168109,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -171501,6 +172305,9 @@
           "409": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "429": {
             "description": ""
           },
@@ -172061,6 +172868,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -172214,6 +173024,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource.\nThe authenticated user must be a team owner to perform the action"
+          },
+          "410": {
+            "description": ""
           },
           "503": {
             "description": ""
@@ -172478,6 +173291,9 @@
           "404": {
             "description": "The team was not found."
           },
+          "410": {
+            "description": ""
+          },
           "429": {
             "description": ""
           },
@@ -172741,6 +173557,9 @@
           },
           "404": {
             "description": "The provided user doesn't have a membership.\nTeam was not found."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -172834,6 +173653,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "503": {
             "description": ""
           }
@@ -172918,6 +173740,9 @@
             "description": "The provided user is not part of this team.\nA user with the specified ID does not exist."
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -173086,6 +173911,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "503": {
             "description": ""
           }
@@ -173161,6 +173989,9 @@
           },
           "404": {
             "description": "Team was not found."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -173228,6 +174059,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource.\nNot authorized to update the team. Must be an OWNER."
+          },
+          "410": {
+            "description": ""
           },
           "428": {
             "description": "Owner does not have protection add-on"
@@ -174006,6 +174840,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "410": {
+            "description": ""
+          },
           "500": {
             "description": ""
           }
@@ -174103,6 +174940,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -174227,6 +175067,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -174359,6 +175202,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -174475,6 +175321,9 @@
           },
           "404": {
             "description": "Team invite code not found."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -174563,6 +175412,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -174648,6 +175500,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "500": {
@@ -174742,6 +175597,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           },
           "426": {
             "description": ""
@@ -174906,6 +175764,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -174967,6 +175828,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -175058,6 +175922,9 @@
           },
           "404": {
             "description": "Token not found with the requested `tokenId`."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -175121,6 +175988,9 @@
           },
           "404": {
             "description": "Token not found with the requested `tokenId`."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -175205,6 +176075,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -175270,6 +176143,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [],
@@ -175360,6 +176236,9 @@
           },
           "409": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -175442,6 +176321,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -175539,6 +176421,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -175612,6 +176497,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -175688,6 +176576,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -175865,6 +176756,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -175997,6 +176891,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -176090,6 +176987,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -176176,6 +177076,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -176264,6 +177167,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -177831,6 +178737,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -179514,6 +180423,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -180539,6 +181451,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -181499,6 +182414,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -181859,6 +182777,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -182735,6 +183656,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -183040,6 +183964,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -183095,6 +184022,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -183322,6 +184252,9 @@
           },
           "404": {
             "description": "The deployment was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -183432,6 +184365,9 @@
           },
           "409": {
             "description": "The provided alias is already assigned to the given deployment\nThe domain is not allowed to be used"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -183892,6 +184828,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -184392,6 +185331,9 @@
           },
           "404": {
             "description": "The alias was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -184518,6 +185460,9 @@
           },
           "404": {
             "description": "The alias was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -184595,6 +185540,9 @@
             "description": ""
           },
           "409": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "428": {
@@ -184819,6 +185767,9 @@
           },
           "404": {
             "description": ""
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -184892,6 +185843,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           }
         },
@@ -185012,6 +185966,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -185102,6 +186059,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "410": {
             "description": ""
           },
           "449": {
@@ -185225,6 +186185,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -185327,6 +186290,9 @@
           },
           "404": {
             "description": "File tree not found\nDeployment not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
@@ -186316,6 +187282,9 @@
           "404": {
             "description": ""
           },
+          "410": {
+            "description": ""
+          },
           "422": {
             "description": ""
           }
@@ -186550,6 +187519,9 @@
           },
           "404": {
             "description": "The deployment was not found"
+          },
+          "410": {
+            "description": ""
           }
         },
         "parameters": [
