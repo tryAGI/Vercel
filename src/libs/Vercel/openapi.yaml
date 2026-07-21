@@ -177703,6 +177703,9 @@
                               "aiModelType": {
                                 "type": "string"
                               },
+                              "servedSpeed": {
+                                "type": "string"
+                              },
                               "virtualModelSlug": {
                                 "type": "string"
                               },
@@ -177905,6 +177908,15 @@
                                 "type": "string"
                               },
                               "sessionId": {
+                                "type": "string"
+                              },
+                              "contentCaptureStatus": {
+                                "type": "string"
+                              },
+                              "contentCaptureInputs": {
+                                "type": "string"
+                              },
+                              "contentCaptureOutputs": {
                                 "type": "string"
                               },
                               "providerAttemptError": {
@@ -178321,6 +178333,9 @@
                               "aiModelType": {
                                 "type": "string"
                               },
+                              "servedSpeed": {
+                                "type": "string"
+                              },
                               "virtualModelSlug": {
                                 "type": "string"
                               },
@@ -178525,6 +178540,15 @@
                               "sessionId": {
                                 "type": "string"
                               },
+                              "contentCaptureStatus": {
+                                "type": "string"
+                              },
+                              "contentCaptureInputs": {
+                                "type": "string"
+                              },
+                              "contentCaptureOutputs": {
+                                "type": "string"
+                              },
                               "providerAttemptError": {
                                 "type": "string"
                               },
@@ -178621,6 +178645,9 @@
                               "clientUserAgent",
                               "commitSha",
                               "consumerGroup",
+                              "contentCaptureInputs",
+                              "contentCaptureOutputs",
+                              "contentCaptureStatus",
                               "contentType",
                               "costCurrency",
                               "country",
@@ -178743,6 +178770,7 @@
                               "sandboxSessionId",
                               "sdkKeyEnvironment",
                               "sdkKeyId",
+                              "servedSpeed",
                               "serverActionName",
                               "service",
                               "sessionId",
@@ -179389,6 +179417,9 @@
                               "aiModelType": {
                                 "type": "string"
                               },
+                              "servedSpeed": {
+                                "type": "string"
+                              },
                               "virtualModelSlug": {
                                 "type": "string"
                               },
@@ -179591,6 +179622,15 @@
                                 "type": "string"
                               },
                               "sessionId": {
+                                "type": "string"
+                              },
+                              "contentCaptureStatus": {
+                                "type": "string"
+                              },
+                              "contentCaptureInputs": {
+                                "type": "string"
+                              },
+                              "contentCaptureOutputs": {
                                 "type": "string"
                               },
                               "providerAttemptError": {
@@ -180007,6 +180047,9 @@
                               "aiModelType": {
                                 "type": "string"
                               },
+                              "servedSpeed": {
+                                "type": "string"
+                              },
                               "virtualModelSlug": {
                                 "type": "string"
                               },
@@ -180211,6 +180254,15 @@
                               "sessionId": {
                                 "type": "string"
                               },
+                              "contentCaptureStatus": {
+                                "type": "string"
+                              },
+                              "contentCaptureInputs": {
+                                "type": "string"
+                              },
+                              "contentCaptureOutputs": {
+                                "type": "string"
+                              },
                               "providerAttemptError": {
                                 "type": "string"
                               },
@@ -180307,6 +180359,9 @@
                               "clientUserAgent",
                               "commitSha",
                               "consumerGroup",
+                              "contentCaptureInputs",
+                              "contentCaptureOutputs",
+                              "contentCaptureStatus",
                               "contentType",
                               "costCurrency",
                               "country",
@@ -180429,6 +180484,7 @@
                               "sandboxSessionId",
                               "sdkKeyEnvironment",
                               "sdkKeyId",
+                              "servedSpeed",
                               "serverActionName",
                               "service",
                               "sessionId",
@@ -181039,6 +181095,9 @@
                         "aiModelType": {
                           "type": "string"
                         },
+                        "servedSpeed": {
+                          "type": "string"
+                        },
                         "virtualModelSlug": {
                           "type": "string"
                         },
@@ -181243,6 +181302,15 @@
                         "sessionId": {
                           "type": "string"
                         },
+                        "contentCaptureStatus": {
+                          "type": "string"
+                        },
+                        "contentCaptureInputs": {
+                          "type": "string"
+                        },
+                        "contentCaptureOutputs": {
+                          "type": "string"
+                        },
                         "providerAttemptError": {
                           "type": "string"
                         },
@@ -181339,6 +181407,9 @@
                         "clientUserAgent",
                         "commitSha",
                         "consumerGroup",
+                        "contentCaptureInputs",
+                        "contentCaptureOutputs",
+                        "contentCaptureStatus",
                         "contentType",
                         "costCurrency",
                         "country",
@@ -181461,6 +181532,7 @@
                         "sandboxSessionId",
                         "sdkKeyEnvironment",
                         "sdkKeyId",
+                        "servedSpeed",
                         "serverActionName",
                         "service",
                         "sessionId",
@@ -182002,6 +182074,9 @@
                         "aiModelType": {
                           "type": "string"
                         },
+                        "servedSpeed": {
+                          "type": "string"
+                        },
                         "virtualModelSlug": {
                           "type": "string"
                         },
@@ -182206,6 +182281,15 @@
                         "sessionId": {
                           "type": "string"
                         },
+                        "contentCaptureStatus": {
+                          "type": "string"
+                        },
+                        "contentCaptureInputs": {
+                          "type": "string"
+                        },
+                        "contentCaptureOutputs": {
+                          "type": "string"
+                        },
                         "providerAttemptError": {
                           "type": "string"
                         },
@@ -182302,6 +182386,9 @@
                         "clientUserAgent",
                         "commitSha",
                         "consumerGroup",
+                        "contentCaptureInputs",
+                        "contentCaptureOutputs",
+                        "contentCaptureStatus",
                         "contentType",
                         "costCurrency",
                         "country",
@@ -182424,6 +182511,7 @@
                         "sandboxSessionId",
                         "sdkKeyEnvironment",
                         "sdkKeyId",
+                        "servedSpeed",
                         "serverActionName",
                         "service",
                         "sessionId",

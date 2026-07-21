@@ -695,6 +695,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("servedSpeed")]
+        public string? ServedSpeed { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("virtualModelSlug")]
         public string? VirtualModelSlug { get; set; }
 
@@ -1103,6 +1109,24 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("contentCaptureStatus")]
+        public string? ContentCaptureStatus { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("contentCaptureInputs")]
+        public string? ContentCaptureInputs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("contentCaptureOutputs")]
+        public string? ContentCaptureOutputs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptError")]
         public string? ProviderAttemptError { get; set; }
 
@@ -1345,6 +1369,7 @@ namespace Vercel
         /// <param name="aiGatewayModelId"></param>
         /// <param name="aiProvider"></param>
         /// <param name="aiModelType"></param>
+        /// <param name="servedSpeed"></param>
         /// <param name="virtualModelSlug"></param>
         /// <param name="virtualModelKind"></param>
         /// <param name="costCurrency"></param>
@@ -1413,6 +1438,9 @@ namespace Vercel
         /// <param name="providerAttemptTotalInRequest"></param>
         /// <param name="generationId"></param>
         /// <param name="sessionId"></param>
+        /// <param name="contentCaptureStatus"></param>
+        /// <param name="contentCaptureInputs"></param>
+        /// <param name="contentCaptureOutputs"></param>
         /// <param name="providerAttemptError"></param>
         /// <param name="providerAttemptSafetyIdentifier"></param>
         /// <param name="providerAttemptDevSafetyIdentifier"></param>
@@ -1551,6 +1579,7 @@ namespace Vercel
             string? aiGatewayModelId,
             string? aiProvider,
             string? aiModelType,
+            string? servedSpeed,
             string? virtualModelSlug,
             string? virtualModelKind,
             string? costCurrency,
@@ -1619,6 +1648,9 @@ namespace Vercel
             string? providerAttemptTotalInRequest,
             string? generationId,
             string? sessionId,
+            string? contentCaptureStatus,
+            string? contentCaptureInputs,
+            string? contentCaptureOutputs,
             string? providerAttemptError,
             string? providerAttemptSafetyIdentifier,
             string? providerAttemptDevSafetyIdentifier,
@@ -1753,6 +1785,7 @@ namespace Vercel
             this.AiGatewayModelId = aiGatewayModelId;
             this.AiProvider = aiProvider;
             this.AiModelType = aiModelType;
+            this.ServedSpeed = servedSpeed;
             this.VirtualModelSlug = virtualModelSlug;
             this.VirtualModelKind = virtualModelKind;
             this.CostCurrency = costCurrency;
@@ -1821,6 +1854,9 @@ namespace Vercel
             this.ProviderAttemptTotalInRequest = providerAttemptTotalInRequest;
             this.GenerationId = generationId;
             this.SessionId = sessionId;
+            this.ContentCaptureStatus = contentCaptureStatus;
+            this.ContentCaptureInputs = contentCaptureInputs;
+            this.ContentCaptureOutputs = contentCaptureOutputs;
             this.ProviderAttemptError = providerAttemptError;
             this.ProviderAttemptSafetyIdentifier = providerAttemptSafetyIdentifier;
             this.ProviderAttemptDevSafetyIdentifier = providerAttemptDevSafetyIdentifier;
