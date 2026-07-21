@@ -652,6 +652,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        EdgeCacheDangerouslyDeleteImmutableStatic,
+        /// <summary>
+        /// 
+        /// </summary>
         EdgeCacheInvalidateBySrcImages,
         /// <summary>
         /// 
@@ -2439,6 +2443,7 @@ namespace Vercel
                 UserEventType.DrainUpdated => "drain-updated",
                 UserEventType.EdgeCacheDangerouslyDeleteBySrcImages => "edge-cache-dangerously-delete-by-src-images",
                 UserEventType.EdgeCacheDangerouslyDeleteByTags => "edge-cache-dangerously-delete-by-tags",
+                UserEventType.EdgeCacheDangerouslyDeleteImmutableStatic => "edge-cache-dangerously-delete-immutable-static",
                 UserEventType.EdgeCacheInvalidateBySrcImages => "edge-cache-invalidate-by-src-images",
                 UserEventType.EdgeCacheInvalidateByTags => "edge-cache-invalidate-by-tags",
                 UserEventType.EdgeCachePurgeAll => "edge-cache-purge-all",
@@ -3013,6 +3018,7 @@ namespace Vercel
                 "drain-updated" => UserEventType.DrainUpdated,
                 "edge-cache-dangerously-delete-by-src-images" => UserEventType.EdgeCacheDangerouslyDeleteBySrcImages,
                 "edge-cache-dangerously-delete-by-tags" => UserEventType.EdgeCacheDangerouslyDeleteByTags,
+                "edge-cache-dangerously-delete-immutable-static" => UserEventType.EdgeCacheDangerouslyDeleteImmutableStatic,
                 "edge-cache-invalidate-by-src-images" => UserEventType.EdgeCacheInvalidateBySrcImages,
                 "edge-cache-invalidate-by-tags" => UserEventType.EdgeCacheInvalidateByTags,
                 "edge-cache-purge-all" => UserEventType.EdgeCachePurgeAll,

@@ -23,6 +23,12 @@ namespace Vercel
         public required double Status { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiry")]
+        public double? Expiry { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -33,15 +39,18 @@ namespace Vercel
         /// </summary>
         /// <param name="src"></param>
         /// <param name="status"></param>
+        /// <param name="expiry"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectResponseInternalRouteVariant1(
             string src,
-            double status)
+            double status,
+            double? expiry)
         {
             this.Src = src ?? throw new global::System.ArgumentNullException(nameof(src));
             this.Status = status;
+            this.Expiry = expiry;
         }
 
         /// <summary>
