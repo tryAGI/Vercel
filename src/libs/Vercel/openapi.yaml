@@ -11707,6 +11707,7 @@
                         "custom",
                         "github",
                         "linear",
+                        "microsoft-entra",
                         "oauth",
                         "salesforce",
                         "slack",
@@ -66485,6 +66486,9 @@
             "description": ""
           },
           "410": {
+            "description": ""
+          },
+          "429": {
             "description": ""
           }
         },

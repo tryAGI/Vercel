@@ -27,6 +27,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        MicrosoftEntra,
+        /// <summary>
+        /// 
+        /// </summary>
         Oauth,
         /// <summary>
         /// 
@@ -62,6 +66,7 @@ namespace Vercel
                 CreateConnectorResponseType.Custom => "custom",
                 CreateConnectorResponseType.Github => "github",
                 CreateConnectorResponseType.Linear => "linear",
+                CreateConnectorResponseType.MicrosoftEntra => "microsoft-entra",
                 CreateConnectorResponseType.Oauth => "oauth",
                 CreateConnectorResponseType.Salesforce => "salesforce",
                 CreateConnectorResponseType.Slack => "slack",
@@ -81,6 +86,7 @@ namespace Vercel
                 "custom" => CreateConnectorResponseType.Custom,
                 "github" => CreateConnectorResponseType.Github,
                 "linear" => CreateConnectorResponseType.Linear,
+                "microsoft-entra" => CreateConnectorResponseType.MicrosoftEntra,
                 "oauth" => CreateConnectorResponseType.Oauth,
                 "salesforce" => CreateConnectorResponseType.Salesforce,
                 "slack" => CreateConnectorResponseType.Slack,
