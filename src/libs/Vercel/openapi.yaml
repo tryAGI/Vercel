@@ -79767,6 +79767,9 @@
                                                 },
                                                 "status": {
                                                   "type": "number"
+                                                },
+                                                "expiry": {
+                                                  "type": "number"
                                                 }
                                               },
                                               "required": [
@@ -79923,6 +79926,9 @@
                                                   "type": "string"
                                                 },
                                                 "status": {
+                                                  "type": "number"
+                                                },
+                                                "expiry": {
                                                   "type": "number"
                                                 }
                                               },
@@ -80126,6 +80132,9 @@
                                       "type": "string"
                                     },
                                     "status": {
+                                      "type": "number"
+                                    },
+                                    "expiry": {
                                       "type": "number"
                                     }
                                   },
@@ -91138,6 +91147,9 @@
                                                 },
                                                 "status": {
                                                   "type": "number"
+                                                },
+                                                "expiry": {
+                                                  "type": "number"
                                                 }
                                               },
                                               "required": [
@@ -91294,6 +91306,9 @@
                                                   "type": "string"
                                                 },
                                                 "status": {
+                                                  "type": "number"
+                                                },
+                                                "expiry": {
                                                   "type": "number"
                                                 }
                                               },
@@ -91497,6 +91512,9 @@
                                       "type": "string"
                                     },
                                     "status": {
+                                      "type": "number"
+                                    },
+                                    "expiry": {
                                       "type": "number"
                                     }
                                   },
@@ -95330,6 +95348,9 @@
                                                     },
                                                     "status": {
                                                       "type": "number"
+                                                    },
+                                                    "expiry": {
+                                                      "type": "number"
                                                     }
                                                   },
                                                   "required": [
@@ -95486,6 +95507,9 @@
                                                       "type": "string"
                                                     },
                                                     "status": {
+                                                      "type": "number"
+                                                    },
+                                                    "expiry": {
                                                       "type": "number"
                                                     }
                                                   },
@@ -95689,6 +95713,9 @@
                                           "type": "string"
                                         },
                                         "status": {
+                                          "type": "number"
+                                        },
+                                        "expiry": {
                                           "type": "number"
                                         }
                                       },
@@ -102208,6 +102235,9 @@
                                                     },
                                                     "status": {
                                                       "type": "number"
+                                                    },
+                                                    "expiry": {
+                                                      "type": "number"
                                                     }
                                                   },
                                                   "required": [
@@ -102364,6 +102394,9 @@
                                                       "type": "string"
                                                     },
                                                     "status": {
+                                                      "type": "number"
+                                                    },
+                                                    "expiry": {
                                                       "type": "number"
                                                     }
                                                   },
@@ -102567,6 +102600,9 @@
                                           "type": "string"
                                         },
                                         "status": {
+                                          "type": "number"
+                                        },
+                                        "expiry": {
                                           "type": "number"
                                         }
                                       },
@@ -109739,6 +109775,9 @@
                                           },
                                           "status": {
                                             "type": "number"
+                                          },
+                                          "expiry": {
+                                            "type": "number"
                                           }
                                         },
                                         "required": [
@@ -109895,6 +109934,9 @@
                                             "type": "string"
                                           },
                                           "status": {
+                                            "type": "number"
+                                          },
+                                          "expiry": {
                                             "type": "number"
                                           }
                                         },
@@ -110098,6 +110140,9 @@
                                 "type": "string"
                               },
                               "status": {
+                                "type": "number"
+                              },
+                              "expiry": {
                                 "type": "number"
                               }
                             },
@@ -117436,6 +117481,9 @@
                                           },
                                           "status": {
                                             "type": "number"
+                                          },
+                                          "expiry": {
+                                            "type": "number"
                                           }
                                         },
                                         "required": [
@@ -117592,6 +117640,9 @@
                                             "type": "string"
                                           },
                                           "status": {
+                                            "type": "number"
+                                          },
+                                          "expiry": {
                                             "type": "number"
                                           }
                                         },
@@ -117795,6 +117846,9 @@
                                 "type": "string"
                               },
                               "status": {
+                                "type": "number"
+                              },
+                              "expiry": {
                                 "type": "number"
                               }
                             },
@@ -124494,6 +124548,9 @@
                                           },
                                           "status": {
                                             "type": "number"
+                                          },
+                                          "expiry": {
+                                            "type": "number"
                                           }
                                         },
                                         "required": [
@@ -124650,6 +124707,9 @@
                                             "type": "string"
                                           },
                                           "status": {
+                                            "type": "number"
+                                          },
+                                          "expiry": {
                                             "type": "number"
                                           }
                                         },
@@ -124853,6 +124913,9 @@
                                 "type": "string"
                               },
                               "status": {
+                                "type": "number"
+                              },
+                              "expiry": {
                                 "type": "number"
                               }
                             },
@@ -132816,6 +132879,9 @@
                                           },
                                           "status": {
                                             "type": "number"
+                                          },
+                                          "expiry": {
+                                            "type": "number"
                                           }
                                         },
                                         "required": [
@@ -132972,6 +133038,9 @@
                                             "type": "string"
                                           },
                                           "status": {
+                                            "type": "number"
+                                          },
+                                          "expiry": {
                                             "type": "number"
                                           }
                                         },
@@ -133175,6 +133244,9 @@
                                 "type": "string"
                               },
                               "status": {
+                                "type": "number"
+                              },
+                              "expiry": {
                                 "type": "number"
                               }
                             },
@@ -148967,6 +149039,9 @@
                                           },
                                           "status": {
                                             "type": "number"
+                                          },
+                                          "expiry": {
+                                            "type": "number"
                                           }
                                         },
                                         "required": [
@@ -149123,6 +149198,9 @@
                                             "type": "string"
                                           },
                                           "status": {
+                                            "type": "number"
+                                          },
+                                          "expiry": {
                                             "type": "number"
                                           }
                                         },
@@ -149326,6 +149404,9 @@
                                 "type": "string"
                               },
                               "status": {
+                                "type": "number"
+                              },
+                              "expiry": {
                                 "type": "number"
                               }
                             },
@@ -189297,6 +189378,7 @@
               "drain-updated",
               "edge-cache-dangerously-delete-by-src-images",
               "edge-cache-dangerously-delete-by-tags",
+              "edge-cache-dangerously-delete-immutable-static",
               "edge-cache-invalidate-by-src-images",
               "edge-cache-invalidate-by-tags",
               "edge-cache-purge-all",
@@ -190178,6 +190260,7 @@
               "drain-updated",
               "edge-cache-dangerously-delete-by-src-images",
               "edge-cache-dangerously-delete-by-tags",
+              "edge-cache-dangerously-delete-immutable-static",
               "edge-cache-invalidate-by-src-images",
               "edge-cache-invalidate-by-tags",
               "edge-cache-purge-all",
@@ -190800,6 +190883,7 @@
                 "drain-updated",
                 "edge-cache-dangerously-delete-by-src-images",
                 "edge-cache-dangerously-delete-by-tags",
+                "edge-cache-dangerously-delete-immutable-static",
                 "edge-cache-invalidate-by-src-images",
                 "edge-cache-invalidate-by-tags",
                 "edge-cache-purge-all",
