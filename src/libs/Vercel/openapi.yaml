@@ -12888,6 +12888,14 @@
                     "externalSubject": {
                       "type": "string"
                     },
+                    "authorizationId": {
+                      "type": "string",
+                      "description": "Stable id correlating all tokens (including refreshes) back to the original authorization."
+                    },
+                    "tokenGroupId": {
+                      "type": "string",
+                      "description": "Stable id that groups all tokens with the same parameters across refreshes."
+                    },
                     "claims": {
                       "additionalProperties": true,
                       "type": "object",
