@@ -110,6 +110,13 @@ namespace Vercel
         public string? ConfigurationId { get; set; }
 
         /// <summary>
+        /// User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("visibility")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.EditProjectEnvResponseVisibilityJsonConverter))]
+        public global::Vercel.EditProjectEnvResponseVisibility? Visibility { get; set; }
+
+        /// <summary>
         /// Provider-specific content hint metadata.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contentHint")]
@@ -162,6 +169,9 @@ namespace Vercel
         /// </param>
         /// <param name="decrypted"></param>
         /// <param name="configurationId"></param>
+        /// <param name="visibility">
+        /// User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior.
+        /// </param>
         /// <param name="contentHint">
         /// Provider-specific content hint metadata.
         /// </param>
@@ -190,6 +200,7 @@ namespace Vercel
             string? legacyValue,
             bool? decrypted,
             string? configurationId,
+            global::Vercel.EditProjectEnvResponseVisibility? visibility,
             object? contentHint,
             global::Vercel.EditProjectEnvResponseInternalContentHint? internalContentHint,
             string? comment,
@@ -211,6 +222,7 @@ namespace Vercel
             this.LegacyValue = legacyValue;
             this.Decrypted = decrypted;
             this.ConfigurationId = configurationId;
+            this.Visibility = visibility;
             this.ContentHint = contentHint;
             this.InternalContentHint = internalContentHint;
             this.Comment = comment;

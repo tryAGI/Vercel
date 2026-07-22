@@ -104,6 +104,13 @@ namespace Vercel
         public string? GitBranch { get; set; }
 
         /// <summary>
+        /// User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("visibility")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.FilterProjectEnvsResponseVariant1VisibilityJsonConverter))]
+        public global::Vercel.FilterProjectEnvsResponseVariant1Visibility? Visibility { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
@@ -173,6 +180,9 @@ namespace Vercel
         /// <param name="createdBy"></param>
         /// <param name="updatedBy"></param>
         /// <param name="gitBranch"></param>
+        /// <param name="visibility">
+        /// User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior.
+        /// </param>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigTokenId"></param>
         /// <param name="contentHint">
@@ -203,6 +213,7 @@ namespace Vercel
             string? createdBy,
             string? updatedBy,
             string? gitBranch,
+            global::Vercel.FilterProjectEnvsResponseVariant1Visibility? visibility,
             string? edgeConfigId,
             string? edgeConfigTokenId,
             object? contentHint,
@@ -226,6 +237,7 @@ namespace Vercel
             this.CreatedBy = createdBy;
             this.UpdatedBy = updatedBy;
             this.GitBranch = gitBranch;
+            this.Visibility = visibility;
             this.EdgeConfigId = edgeConfigId;
             this.EdgeConfigTokenId = edgeConfigTokenId;
             this.ContentHint = contentHint;

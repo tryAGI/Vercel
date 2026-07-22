@@ -104,6 +104,13 @@ namespace Vercel
         public string? ConfigurationId { get; set; }
 
         /// <summary>
+        /// User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("visibility")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectEnvResponseVariant1VisibilityJsonConverter))]
+        public global::Vercel.GetProjectEnvResponseVariant1Visibility? Visibility { get; set; }
+
+        /// <summary>
         /// Provider-specific content hint metadata.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contentHint")]
@@ -155,6 +162,9 @@ namespace Vercel
         /// Legacy now-encryption ciphertext, present after migration swaps value/vsmValue
         /// </param>
         /// <param name="configurationId"></param>
+        /// <param name="visibility">
+        /// User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior.
+        /// </param>
         /// <param name="contentHint">
         /// Provider-specific content hint metadata.
         /// </param>
@@ -182,6 +192,7 @@ namespace Vercel
             string? sunsetSecretId,
             string? legacyValue,
             string? configurationId,
+            global::Vercel.GetProjectEnvResponseVariant1Visibility? visibility,
             object? contentHint,
             global::Vercel.GetProjectEnvResponseVariant1InternalContentHint? internalContentHint,
             string? comment,
@@ -202,6 +213,7 @@ namespace Vercel
             this.SunsetSecretId = sunsetSecretId;
             this.LegacyValue = legacyValue;
             this.ConfigurationId = configurationId;
+            this.Visibility = visibility;
             this.ContentHint = contentHint;
             this.InternalContentHint = internalContentHint;
             this.Comment = comment;
