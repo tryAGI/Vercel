@@ -11621,11 +11621,20 @@
                               "type": "string"
                             },
                             "environment": {
-                              "type": "string",
-                              "enum": [
-                                "development",
-                                "preview",
-                                "production"
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "development",
+                                    "development",
+                                    "preview",
+                                    "preview",
+                                    "production"
+                                  ]
+                                }
                               ]
                             }
                           },
@@ -11672,11 +11681,20 @@
                               "type": "string"
                             },
                             "environment": {
-                              "type": "string",
-                              "enum": [
-                                "development",
-                                "preview",
-                                "production"
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "string",
+                                  "enum": [
+                                    "development",
+                                    "development",
+                                    "preview",
+                                    "preview",
+                                    "production"
+                                  ]
+                                }
                               ]
                             }
                           },
@@ -11955,6 +11973,24 @@
                                       },
                                       "name": {
                                         "type": "string"
+                                      },
+                                      "customEnvironments": {
+                                        "items": {
+                                          "properties": {
+                                            "id": {
+                                              "type": "string"
+                                            },
+                                            "slug": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "id",
+                                            "slug"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        "type": "array"
                                       }
                                     },
                                     "required": [
@@ -11965,11 +12001,20 @@
                                   },
                                   "environments": {
                                     "items": {
-                                      "type": "string",
-                                      "enum": [
-                                        "development",
-                                        "preview",
-                                        "production"
+                                      "oneOf": [
+                                        {
+                                          "type": "string"
+                                        },
+                                        {
+                                          "type": "string",
+                                          "enum": [
+                                            "development",
+                                            "development",
+                                            "preview",
+                                            "preview",
+                                            "production"
+                                          ]
+                                        }
                                       ]
                                     },
                                     "type": "array"
@@ -12069,57 +12114,6 @@
                   "data"
                 ],
                 "properties": {
-                  "type": {
-                    "type": "string",
-                    "description": "Known types: api-key, github, linear, oauth, salesforce, slack, snowflake."
-                  },
-                  "service": {
-                    "type": "string",
-                    "description": "Service slug or URL for which the connector is used."
-                  },
-                  "uid": {
-                    "type": "string"
-                  },
-                  "name": {
-                    "type": "string"
-                  },
-                  "projectId": {
-                    "type": "string",
-                    "description": "Link to the specified project when specified. See environments."
-                  },
-                  "environments": {
-                    "type": "array",
-                    "description": "Use these environments when linking to the project specified by the projectId.",
-                    "items": {
-                      "type": "string"
-                    }
-                  },
-                  "triggers": {
-                    "description": "Whether the triggers are enabled for this connector.",
-                    "type": "boolean"
-                  },
-                  "events": {
-                    "type": "array",
-                    "description": "The list of the defaults trigger events for this connector.",
-                    "items": {
-                      "type": "string"
-                    }
-                  },
-                  "icon": {
-                    "type": "string",
-                    "description": "Branding icon SHA-1 hash already uploaded to the Vercel avatar service.",
-                    "pattern": "^[0-9a-fA-F]{40}$"
-                  },
-                  "backgroundColor": {
-                    "type": "string",
-                    "description": "Branding background color (6-digit hex, e.g. \"#000000\").",
-                    "pattern": "^#[0-9a-fA-F]{6}$"
-                  },
-                  "accentColor": {
-                    "type": "string",
-                    "description": "Branding accent color (6-digit hex, e.g. \"#000000\").",
-                    "pattern": "^#[0-9a-fA-F]{6}$"
-                  },
                   "data": {
                     "anyOf": [
                       {
@@ -12351,7 +12345,7 @@
                               },
                               "scopes": {
                                 "type": "array",
-                                "description": "Default scopes to request when token params specify scopes: [\"*\"].",
+                                "description": "Default scopes to request when token params specify scopes: [\\\"*\\\"].",
                                 "items": {
                                   "type": "string"
                                 }
@@ -12382,7 +12376,7 @@
                               },
                               "scopes": {
                                 "type": "array",
-                                "description": "Default scopes to request when token params specify scopes: [\"*\"].",
+                                "description": "Default scopes to request when token params specify scopes: [\\\"*\\\"].",
                                 "items": {
                                   "type": "string"
                                 }
@@ -12423,7 +12417,7 @@
                               },
                               "scopes": {
                                 "type": "array",
-                                "description": "Default scopes to request when token params specify scopes: [\"*\"].",
+                                "description": "Default scopes to request when token params specify scopes: [\\\"*\\\"].",
                                 "items": {
                                   "type": "string"
                                 }
@@ -12820,6 +12814,60 @@
                         "additionalProperties": true
                       }
                     ]
+                  },
+                  "icon": {
+                    "type": "string"
+                  },
+                  "backgroundColor": {
+                    "type": "string"
+                  },
+                  "accentColor": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string",
+                    "description": "Known types: api-key, github, linear, oauth, salesforce, slack, snowflake."
+                  },
+                  "service": {
+                    "type": "string",
+                    "description": "Service slug or URL for which the connector is used."
+                  },
+                  "uid": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "projectId": {
+                    "type": "string",
+                    "description": "Link to the specified project when specified. See environments."
+                  },
+                  "environments": {
+                    "description": "Use these built-in environment names or stable custom environment IDs when linking to projectId.",
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string",
+                          "pattern": "^env_"
+                        }
+                      ],
+                      "description": "A built-in environment name or the stable env_* ID of a custom environment."
+                    }
+                  },
+                  "triggers": {
+                    "description": "Whether the triggers are enabled for this connector.",
+                    "type": "boolean"
+                  },
+                  "events": {
+                    "type": "array",
+                    "description": "The list of the defaults trigger events for this connector.",
+                    "items": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -13115,6 +13163,10 @@
                           "name": {
                             "type": "string"
                           },
+                          "data": {
+                            "additionalProperties": true,
+                            "type": "object"
+                          },
                           "installationId": {
                             "type": "string"
                           },
@@ -13192,10 +13244,6 @@
                             ],
                             "type": "object"
                           },
-                          "data": {
-                            "additionalProperties": true,
-                            "type": "object"
-                          },
                           "subject": {
                             "oneOf": [
                               {
@@ -13239,6 +13287,8 @@
                             "type": "string",
                             "enum": [
                               "development",
+                              "development",
+                              "preview",
                               "preview",
                               "production"
                             ]

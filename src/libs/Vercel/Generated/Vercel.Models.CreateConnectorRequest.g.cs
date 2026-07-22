@@ -9,6 +9,32 @@ namespace Vercel
     public sealed partial class CreateConnectorRequest
     {
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, object>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, object> Data { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("icon")]
+        public string? Icon { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("backgroundColor")]
+        public string? BackgroundColor { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("accentColor")]
+        public string? AccentColor { get; set; }
+
+        /// <summary>
         /// Known types: api-key, github, linear, oauth, salesforce, slack, snowflake.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
@@ -40,7 +66,7 @@ namespace Vercel
         public string? ProjectId { get; set; }
 
         /// <summary>
-        /// Use these environments when linking to the project specified by the projectId.
+        /// Use these built-in environment names or stable custom environment IDs when linking to projectId.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
         public global::System.Collections.Generic.IList<string>? Environments { get; set; }
@@ -58,32 +84,6 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? Events { get; set; }
 
         /// <summary>
-        /// Branding icon SHA-1 hash already uploaded to the Vercel avatar service.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("icon")]
-        public string? Icon { get; set; }
-
-        /// <summary>
-        /// Branding background color (6-digit hex, e.g. "#000000").
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("backgroundColor")]
-        public string? BackgroundColor { get; set; }
-
-        /// <summary>
-        /// Branding accent color (6-digit hex, e.g. "#000000").
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("accentColor")]
-        public string? AccentColor { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, object> Data { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -92,10 +92,13 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateConnectorRequest" /> class.
         /// </summary>
+        /// <param name="data"></param>
         /// <param name="type">
         /// Known types: api-key, github, linear, oauth, salesforce, slack, snowflake.
         /// </param>
-        /// <param name="data"></param>
+        /// <param name="icon"></param>
+        /// <param name="backgroundColor"></param>
+        /// <param name="accentColor"></param>
         /// <param name="service">
         /// Service slug or URL for which the connector is used.
         /// </param>
@@ -105,7 +108,7 @@ namespace Vercel
         /// Link to the specified project when specified. See environments.
         /// </param>
         /// <param name="environments">
-        /// Use these environments when linking to the project specified by the projectId.
+        /// Use these built-in environment names or stable custom environment IDs when linking to projectId.
         /// </param>
         /// <param name="triggers">
         /// Whether the triggers are enabled for this connector.
@@ -113,32 +116,27 @@ namespace Vercel
         /// <param name="events">
         /// The list of the defaults trigger events for this connector.
         /// </param>
-        /// <param name="icon">
-        /// Branding icon SHA-1 hash already uploaded to the Vercel avatar service.
-        /// </param>
-        /// <param name="backgroundColor">
-        /// Branding background color (6-digit hex, e.g. "#000000").
-        /// </param>
-        /// <param name="accentColor">
-        /// Branding accent color (6-digit hex, e.g. "#000000").
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateConnectorRequest(
-            string type,
             global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, object> data,
+            string type,
+            string? icon,
+            string? backgroundColor,
+            string? accentColor,
             string? service,
             string? uid,
             string? name,
             string? projectId,
             global::System.Collections.Generic.IList<string>? environments,
             bool? triggers,
-            global::System.Collections.Generic.IList<string>? events,
-            string? icon,
-            string? backgroundColor,
-            string? accentColor)
+            global::System.Collections.Generic.IList<string>? events)
         {
+            this.Data = data;
+            this.Icon = icon;
+            this.BackgroundColor = backgroundColor;
+            this.AccentColor = accentColor;
             this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.Service = service;
             this.Uid = uid;
@@ -147,10 +145,6 @@ namespace Vercel
             this.Environments = environments;
             this.Triggers = triggers;
             this.Events = events;
-            this.Icon = icon;
-            this.BackgroundColor = backgroundColor;
-            this.AccentColor = accentColor;
-            this.Data = data;
         }
 
         /// <summary>

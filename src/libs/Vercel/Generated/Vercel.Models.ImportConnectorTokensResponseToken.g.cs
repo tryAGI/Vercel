@@ -17,6 +17,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        public object? Data { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("installationId")]
         public string? InstallationId { get; set; }
 
@@ -84,12 +90,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        public object? Data { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subject")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ImportConnectorTokensResponseTokenSubjectVariant1, global::Vercel.ImportConnectorTokensResponseTokenSubjectVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -124,6 +124,7 @@ namespace Vercel
         /// <param name="environment"></param>
         /// <param name="succeeded"></param>
         /// <param name="name"></param>
+        /// <param name="data"></param>
         /// <param name="installationId"></param>
         /// <param name="audience"></param>
         /// <param name="scopes"></param>
@@ -136,7 +137,6 @@ namespace Vercel
         /// </param>
         /// <param name="installation"></param>
         /// <param name="tenant"></param>
-        /// <param name="data"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -146,6 +146,7 @@ namespace Vercel
             global::Vercel.ImportConnectorTokensResponseTokenEnvironment environment,
             bool succeeded,
             string? name,
+            object? data,
             string? installationId,
             global::System.Collections.Generic.IList<string>? audience,
             global::System.Collections.Generic.IList<string>? scopes,
@@ -155,10 +156,10 @@ namespace Vercel
             string? externalSubject,
             object? claims,
             global::Vercel.ImportConnectorTokensResponseTokenInstallation? installation,
-            global::Vercel.ImportConnectorTokensResponseTokenTenant? tenant,
-            object? data)
+            global::Vercel.ImportConnectorTokensResponseTokenTenant? tenant)
         {
             this.Name = name;
+            this.Data = data;
             this.InstallationId = installationId;
             this.Audience = audience;
             this.Scopes = scopes;
@@ -170,7 +171,6 @@ namespace Vercel
             this.Claims = claims;
             this.Installation = installation;
             this.Tenant = tenant;
-            this.Data = data;
             this.Subject = subject;
             this.Environment = environment;
             this.Succeeded = succeeded;
