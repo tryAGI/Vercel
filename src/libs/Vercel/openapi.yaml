@@ -125254,7 +125254,7 @@
             }
           },
           "400": {
-            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid.\nTrusted IPs is only accessible for enterprise customers"
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid.\nTrusted IPs is only accessible for enterprise customers. This plan gate runs before the ACL check below on purpose: it depends only on the team's billing plan, so it can reject unsupported plans deterministically. `auth.can` resolves team membership (a DynamoDB lookup) and rejecting here first avoids depending on that external read for a request that is invalid regardless of authorization."
           },
           "401": {
             "description": "The request is not authorized."
@@ -177576,6 +177576,9 @@
                               "cacheReason": {
                                 "type": "string"
                               },
+                              "pprState": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -178206,6 +178209,9 @@
                               "cacheReason": {
                                 "type": "string"
                               },
+                              "pprState": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -178782,6 +178788,7 @@
                               "pathType",
                               "pathTypeVariant",
                               "piiRedactionApplied",
+                              "pprState",
                               "privatelinkDnsName",
                               "privatelinkEndpointId",
                               "privatelinkIpAddress",
@@ -179290,6 +179297,9 @@
                               "cacheReason": {
                                 "type": "string"
                               },
+                              "pprState": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -179920,6 +179930,9 @@
                               "cacheReason": {
                                 "type": "string"
                               },
+                              "pprState": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -180496,6 +180509,7 @@
                               "pathType",
                               "pathTypeVariant",
                               "piiRedactionApplied",
+                              "pprState",
                               "privatelinkDnsName",
                               "privatelinkEndpointId",
                               "privatelinkIpAddress",
@@ -180968,6 +180982,9 @@
                         "cacheReason": {
                           "type": "string"
                         },
+                        "pprState": {
+                          "type": "string"
+                        },
                         "clientIp": {
                           "type": "string"
                         },
@@ -181544,6 +181561,7 @@
                         "pathType",
                         "pathTypeVariant",
                         "piiRedactionApplied",
+                        "pprState",
                         "privatelinkDnsName",
                         "privatelinkEndpointId",
                         "privatelinkIpAddress",
@@ -181947,6 +181965,9 @@
                         "cacheReason": {
                           "type": "string"
                         },
+                        "pprState": {
+                          "type": "string"
+                        },
                         "clientIp": {
                           "type": "string"
                         },
@@ -182523,6 +182544,7 @@
                         "pathType",
                         "pathTypeVariant",
                         "piiRedactionApplied",
+                        "pprState",
                         "privatelinkDnsName",
                         "privatelinkEndpointId",
                         "privatelinkIpAddress",
