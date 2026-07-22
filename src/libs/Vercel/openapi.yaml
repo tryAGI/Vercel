@@ -74488,6 +74488,14 @@
                                 "gitBranch": {
                                   "type": "string"
                                 },
+                                "visibility": {
+                                  "type": "string",
+                                  "enum": [
+                                    "config",
+                                    "secret"
+                                  ],
+                                  "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
+                                },
                                 "edgeConfigId": {
                                   "nullable": true,
                                   "type": "string"
@@ -88300,6 +88308,14 @@
                                 "gitBranch": {
                                   "type": "string"
                                 },
+                                "visibility": {
+                                  "type": "string",
+                                  "enum": [
+                                    "config",
+                                    "secret"
+                                  ],
+                                  "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
+                                },
                                 "edgeConfigId": {
                                   "nullable": true,
                                   "type": "string"
@@ -92500,6 +92516,14 @@
                                     },
                                     "gitBranch": {
                                       "type": "string"
+                                    },
+                                    "visibility": {
+                                      "type": "string",
+                                      "enum": [
+                                        "config",
+                                        "secret"
+                                      ],
+                                      "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                                     },
                                     "edgeConfigId": {
                                       "nullable": true,
@@ -96966,6 +96990,14 @@
                                     },
                                     "gitBranch": {
                                       "type": "string"
+                                    },
+                                    "visibility": {
+                                      "type": "string",
+                                      "enum": [
+                                        "config",
+                                        "secret"
+                                      ],
+                                      "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                                     },
                                     "edgeConfigId": {
                                       "nullable": true,
@@ -104506,6 +104538,14 @@
                           },
                           "gitBranch": {
                             "type": "string"
+                          },
+                          "visibility": {
+                            "type": "string",
+                            "enum": [
+                              "config",
+                              "secret"
+                            ],
+                            "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                           },
                           "edgeConfigId": {
                             "nullable": true,
@@ -112213,6 +112253,14 @@
                           "gitBranch": {
                             "type": "string"
                           },
+                          "visibility": {
+                            "type": "string",
+                            "enum": [
+                              "config",
+                              "secret"
+                            ],
+                            "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
+                          },
                           "edgeConfigId": {
                             "nullable": true,
                             "type": "string"
@@ -119279,6 +119327,14 @@
                           },
                           "gitBranch": {
                             "type": "string"
+                          },
+                          "visibility": {
+                            "type": "string",
+                            "enum": [
+                              "config",
+                              "secret"
+                            ],
+                            "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                           },
                           "edgeConfigId": {
                             "nullable": true,
@@ -127610,6 +127666,14 @@
                           },
                           "gitBranch": {
                             "type": "string"
+                          },
+                          "visibility": {
+                            "type": "string",
+                            "enum": [
+                              "config",
+                              "secret"
+                            ],
+                            "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                           },
                           "edgeConfigId": {
                             "nullable": true,
@@ -136707,6 +136771,14 @@
                         "gitBranch": {
                           "type": "string"
                         },
+                        "visibility": {
+                          "type": "string",
+                          "enum": [
+                            "config",
+                            "secret"
+                          ],
+                          "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
+                        },
                         "edgeConfigId": {
                           "nullable": true,
                           "type": "string"
@@ -136855,6 +136927,14 @@
                               },
                               "gitBranch": {
                                 "type": "string"
+                              },
+                              "visibility": {
+                                "type": "string",
+                                "enum": [
+                                  "config",
+                                  "secret"
+                                ],
+                                "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                               },
                               "edgeConfigId": {
                                 "nullable": true,
@@ -137016,6 +137096,14 @@
                               },
                               "gitBranch": {
                                 "type": "string"
+                              },
+                              "visibility": {
+                                "type": "string",
+                                "enum": [
+                                  "config",
+                                  "secret"
+                                ],
+                                "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                               },
                               "edgeConfigId": {
                                 "nullable": true,
@@ -137316,6 +137404,14 @@
                             "gitBranch": {
                               "type": "string"
                             },
+                            "visibility": {
+                              "type": "string",
+                              "enum": [
+                                "config",
+                                "secret"
+                              ],
+                              "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
+                            },
                             "edgeConfigId": {
                               "nullable": true,
                               "type": "string"
@@ -137453,6 +137549,14 @@
                               },
                               "gitBranch": {
                                 "type": "string"
+                              },
+                              "visibility": {
+                                "type": "string",
+                                "enum": [
+                                  "config",
+                                  "secret"
+                                ],
+                                "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                               },
                               "edgeConfigId": {
                                 "nullable": true,
@@ -137973,6 +138077,14 @@
                           "nullable": true,
                           "type": "string"
                         },
+                        "visibility": {
+                          "type": "string",
+                          "enum": [
+                            "config",
+                            "secret"
+                          ],
+                          "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
+                        },
                         "contentHint": {
                           "type": "object",
                           "nullable": true,
@@ -138104,6 +138216,14 @@
                         "configurationId": {
                           "nullable": true,
                           "type": "string"
+                        },
+                        "visibility": {
+                          "type": "string",
+                          "enum": [
+                            "config",
+                            "secret"
+                          ],
+                          "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                         },
                         "contentHint": {
                           "type": "object",
@@ -138242,6 +138362,7 @@
                   "oneOf": [
                     {
                       "items": {
+                        "nullable": true,
                         "properties": {
                           "type": {
                             "type": "string",
@@ -138330,6 +138451,14 @@
                           "configurationId": {
                             "nullable": true,
                             "type": "string"
+                          },
+                          "visibility": {
+                            "type": "string",
+                            "enum": [
+                              "config",
+                              "secret"
+                            ],
+                            "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                           },
                           "contentHint": {
                             "type": "object",
@@ -138474,6 +138603,14 @@
                           "nullable": true,
                           "type": "string"
                         },
+                        "visibility": {
+                          "type": "string",
+                          "enum": [
+                            "config",
+                            "secret"
+                          ],
+                          "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
+                        },
                         "contentHint": {
                           "type": "object",
                           "nullable": true,
@@ -138608,6 +138745,14 @@
                         "configurationId": {
                           "nullable": true,
                           "type": "string"
+                        },
+                        "visibility": {
+                          "type": "string",
+                          "enum": [
+                            "config",
+                            "secret"
+                          ],
+                          "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                         },
                         "contentHint": {
                           "type": "object",
@@ -138755,7 +138900,7 @@
         ],
         "responses": {
           "200": {
-            "description": "The environment variable was successfully edited",
+            "description": "",
             "content": {
               "application/json": {
                 "schema": {
@@ -138850,6 +138995,14 @@
                     "configurationId": {
                       "nullable": true,
                       "type": "string"
+                    },
+                    "visibility": {
+                      "type": "string",
+                      "enum": [
+                        "config",
+                        "secret"
+                      ],
+                      "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                     },
                     "contentHint": {
                       "type": "object",
@@ -143770,6 +143923,14 @@
                           },
                           "gitBranch": {
                             "type": "string"
+                          },
+                          "visibility": {
+                            "type": "string",
+                            "enum": [
+                              "config",
+                              "secret"
+                            ],
+                            "description": "User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior."
                           },
                           "edgeConfigId": {
                             "nullable": true,
