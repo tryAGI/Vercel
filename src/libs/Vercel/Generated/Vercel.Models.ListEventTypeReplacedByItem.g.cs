@@ -323,6 +323,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        CodeOwnersConfigUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         ComplianceDocumentDownloaded,
         /// <summary>
         /// 
@@ -2360,6 +2364,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.CertRenew => "cert-renew",
                 ListEventTypeReplacedByItem.CertReplace => "cert-replace",
                 ListEventTypeReplacedByItem.CertSystemCreate => "cert-system-create",
+                ListEventTypeReplacedByItem.CodeOwnersConfigUpdated => "code-owners-config-updated",
                 ListEventTypeReplacedByItem.ComplianceDocumentDownloaded => "compliance-document-downloaded",
                 ListEventTypeReplacedByItem.ConcurrentBuildsUpdate => "concurrent-builds-update",
                 ListEventTypeReplacedByItem.ConnectAttachProject => "connect-attach-project",
@@ -2935,6 +2940,7 @@ namespace Vercel
                 "cert-renew" => ListEventTypeReplacedByItem.CertRenew,
                 "cert-replace" => ListEventTypeReplacedByItem.CertReplace,
                 "cert-system-create" => ListEventTypeReplacedByItem.CertSystemCreate,
+                "code-owners-config-updated" => ListEventTypeReplacedByItem.CodeOwnersConfigUpdated,
                 "compliance-document-downloaded" => ListEventTypeReplacedByItem.ComplianceDocumentDownloaded,
                 "concurrent-builds-update" => ListEventTypeReplacedByItem.ConcurrentBuildsUpdate,
                 "connect-attach-project" => ListEventTypeReplacedByItem.ConnectAttachProject,
