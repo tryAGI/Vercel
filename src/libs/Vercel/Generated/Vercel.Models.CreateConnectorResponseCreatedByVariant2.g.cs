@@ -26,9 +26,9 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreatedByVariant2EnvironmentJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.CreateConnectorResponseCreatedByVariant2Environment?>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateConnectorResponseCreatedByVariant2Environment Environment { get; set; }
+        public required global::Vercel.OneOf<string, global::Vercel.CreateConnectorResponseCreatedByVariant2Environment?> Environment { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +47,7 @@ namespace Vercel
 #endif
         public CreateConnectorResponseCreatedByVariant2(
             string id,
-            global::Vercel.CreateConnectorResponseCreatedByVariant2Environment environment,
+            global::Vercel.OneOf<string, global::Vercel.CreateConnectorResponseCreatedByVariant2Environment?> environment,
             global::Vercel.CreateConnectorResponseCreatedByVariant2Type type)
         {
             this.Type = type;

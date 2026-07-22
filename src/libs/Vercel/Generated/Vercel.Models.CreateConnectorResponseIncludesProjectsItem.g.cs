@@ -33,7 +33,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironment> Environments { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironment?>> Environments { get; set; }
 
         /// <summary>
         /// 
@@ -70,7 +70,7 @@ namespace Vercel
         public CreateConnectorResponseIncludesProjectsItem(
             string clientId,
             string projectId,
-            global::System.Collections.Generic.IList<global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironment> environments,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironment?>> environments,
             double createdAt,
             double updatedAt,
             global::Vercel.CreateConnectorResponseIncludesProjectsItemProject? project)
