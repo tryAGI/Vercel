@@ -178324,6 +178324,21 @@
                               "virtualModelKind": {
                                 "type": "string"
                               },
+                              "inferenceEndpointSlug": {
+                                "type": "string"
+                              },
+                              "inferenceScope": {
+                                "type": "string"
+                              },
+                              "inferenceGeoRegion": {
+                                "type": "string"
+                              },
+                              "inferenceProviderRegion": {
+                                "type": "string"
+                              },
+                              "requestedInferenceRegion": {
+                                "type": "string"
+                              },
                               "costCurrency": {
                                 "type": "string"
                               },
@@ -178957,6 +178972,21 @@
                               "virtualModelKind": {
                                 "type": "string"
                               },
+                              "inferenceEndpointSlug": {
+                                "type": "string"
+                              },
+                              "inferenceScope": {
+                                "type": "string"
+                              },
+                              "inferenceGeoRegion": {
+                                "type": "string"
+                              },
+                              "inferenceProviderRegion": {
+                                "type": "string"
+                              },
+                              "requestedInferenceRegion": {
+                                "type": "string"
+                              },
                               "costCurrency": {
                                 "type": "string"
                               },
@@ -179303,6 +179333,10 @@
                               "httpStatus",
                               "imageSource",
                               "imageTransformationRegion",
+                              "inferenceEndpointSlug",
+                              "inferenceGeoRegion",
+                              "inferenceProviderRegion",
+                              "inferenceScope",
                               "isAdditionalRequest",
                               "isByok",
                               "isPrefetchRequest",
@@ -179377,6 +179411,7 @@
                               "requestMethod",
                               "requestPath",
                               "requestResolvedIp",
+                              "requestedInferenceRegion",
                               "reviewConclusion",
                               "reviewStatus",
                               "rewriteDestinationHostname",
@@ -180045,6 +180080,21 @@
                               "virtualModelKind": {
                                 "type": "string"
                               },
+                              "inferenceEndpointSlug": {
+                                "type": "string"
+                              },
+                              "inferenceScope": {
+                                "type": "string"
+                              },
+                              "inferenceGeoRegion": {
+                                "type": "string"
+                              },
+                              "inferenceProviderRegion": {
+                                "type": "string"
+                              },
+                              "requestedInferenceRegion": {
+                                "type": "string"
+                              },
                               "costCurrency": {
                                 "type": "string"
                               },
@@ -180678,6 +180728,21 @@
                               "virtualModelKind": {
                                 "type": "string"
                               },
+                              "inferenceEndpointSlug": {
+                                "type": "string"
+                              },
+                              "inferenceScope": {
+                                "type": "string"
+                              },
+                              "inferenceGeoRegion": {
+                                "type": "string"
+                              },
+                              "inferenceProviderRegion": {
+                                "type": "string"
+                              },
+                              "requestedInferenceRegion": {
+                                "type": "string"
+                              },
                               "costCurrency": {
                                 "type": "string"
                               },
@@ -181024,6 +181089,10 @@
                               "httpStatus",
                               "imageSource",
                               "imageTransformationRegion",
+                              "inferenceEndpointSlug",
+                              "inferenceGeoRegion",
+                              "inferenceProviderRegion",
+                              "inferenceScope",
                               "isAdditionalRequest",
                               "isByok",
                               "isPrefetchRequest",
@@ -181098,6 +181167,7 @@
                               "requestMethod",
                               "requestPath",
                               "requestResolvedIp",
+                              "requestedInferenceRegion",
                               "reviewConclusion",
                               "reviewStatus",
                               "rewriteDestinationHostname",
@@ -181730,6 +181800,21 @@
                         "virtualModelKind": {
                           "type": "string"
                         },
+                        "inferenceEndpointSlug": {
+                          "type": "string"
+                        },
+                        "inferenceScope": {
+                          "type": "string"
+                        },
+                        "inferenceGeoRegion": {
+                          "type": "string"
+                        },
+                        "inferenceProviderRegion": {
+                          "type": "string"
+                        },
+                        "requestedInferenceRegion": {
+                          "type": "string"
+                        },
                         "costCurrency": {
                           "type": "string"
                         },
@@ -182076,6 +182161,10 @@
                         "httpStatus",
                         "imageSource",
                         "imageTransformationRegion",
+                        "inferenceEndpointSlug",
+                        "inferenceGeoRegion",
+                        "inferenceProviderRegion",
+                        "inferenceScope",
                         "isAdditionalRequest",
                         "isByok",
                         "isPrefetchRequest",
@@ -182150,6 +182239,7 @@
                         "requestMethod",
                         "requestPath",
                         "requestResolvedIp",
+                        "requestedInferenceRegion",
                         "reviewConclusion",
                         "reviewStatus",
                         "rewriteDestinationHostname",
@@ -182713,6 +182803,21 @@
                         "virtualModelKind": {
                           "type": "string"
                         },
+                        "inferenceEndpointSlug": {
+                          "type": "string"
+                        },
+                        "inferenceScope": {
+                          "type": "string"
+                        },
+                        "inferenceGeoRegion": {
+                          "type": "string"
+                        },
+                        "inferenceProviderRegion": {
+                          "type": "string"
+                        },
+                        "requestedInferenceRegion": {
+                          "type": "string"
+                        },
                         "costCurrency": {
                           "type": "string"
                         },
@@ -183059,6 +183164,10 @@
                         "httpStatus",
                         "imageSource",
                         "imageTransformationRegion",
+                        "inferenceEndpointSlug",
+                        "inferenceGeoRegion",
+                        "inferenceProviderRegion",
+                        "inferenceScope",
                         "isAdditionalRequest",
                         "isByok",
                         "isPrefetchRequest",
@@ -183133,6 +183242,7 @@
                         "requestMethod",
                         "requestPath",
                         "requestResolvedIp",
+                        "requestedInferenceRegion",
                         "reviewConclusion",
                         "reviewStatus",
                         "rewriteDestinationHostname",
