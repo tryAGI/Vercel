@@ -837,6 +837,41 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("inferenceEndpointSlug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string InferenceEndpointSlug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("inferenceScope")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string InferenceScope { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("inferenceGeoRegion")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string InferenceGeoRegion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("inferenceProviderRegion")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string InferenceProviderRegion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("requestedInferenceRegion")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RequestedInferenceRegion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("costCurrency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CostCurrency { get; set; }
@@ -1577,6 +1612,11 @@ namespace Vercel
         /// <param name="servedSpeed"></param>
         /// <param name="virtualModelSlug"></param>
         /// <param name="virtualModelKind"></param>
+        /// <param name="inferenceEndpointSlug"></param>
+        /// <param name="inferenceScope"></param>
+        /// <param name="inferenceGeoRegion"></param>
+        /// <param name="inferenceProviderRegion"></param>
+        /// <param name="requestedInferenceRegion"></param>
         /// <param name="costCurrency"></param>
         /// <param name="marketCostCurrency"></param>
         /// <param name="cachedInputTokensCurrency"></param>
@@ -1787,6 +1827,11 @@ namespace Vercel
             string servedSpeed,
             string virtualModelSlug,
             string virtualModelKind,
+            string inferenceEndpointSlug,
+            string inferenceScope,
+            string inferenceGeoRegion,
+            string inferenceProviderRegion,
+            string requestedInferenceRegion,
             string costCurrency,
             string marketCostCurrency,
             string cachedInputTokensCurrency,
@@ -1994,6 +2039,11 @@ namespace Vercel
             this.ServedSpeed = servedSpeed ?? throw new global::System.ArgumentNullException(nameof(servedSpeed));
             this.VirtualModelSlug = virtualModelSlug ?? throw new global::System.ArgumentNullException(nameof(virtualModelSlug));
             this.VirtualModelKind = virtualModelKind ?? throw new global::System.ArgumentNullException(nameof(virtualModelKind));
+            this.InferenceEndpointSlug = inferenceEndpointSlug ?? throw new global::System.ArgumentNullException(nameof(inferenceEndpointSlug));
+            this.InferenceScope = inferenceScope ?? throw new global::System.ArgumentNullException(nameof(inferenceScope));
+            this.InferenceGeoRegion = inferenceGeoRegion ?? throw new global::System.ArgumentNullException(nameof(inferenceGeoRegion));
+            this.InferenceProviderRegion = inferenceProviderRegion ?? throw new global::System.ArgumentNullException(nameof(inferenceProviderRegion));
+            this.RequestedInferenceRegion = requestedInferenceRegion ?? throw new global::System.ArgumentNullException(nameof(requestedInferenceRegion));
             this.CostCurrency = costCurrency ?? throw new global::System.ArgumentNullException(nameof(costCurrency));
             this.MarketCostCurrency = marketCostCurrency ?? throw new global::System.ArgumentNullException(nameof(marketCostCurrency));
             this.CachedInputTokensCurrency = cachedInputTokensCurrency ?? throw new global::System.ArgumentNullException(nameof(cachedInputTokensCurrency));

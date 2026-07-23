@@ -719,6 +719,36 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("inferenceEndpointSlug")]
+        public string? InferenceEndpointSlug { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("inferenceScope")]
+        public string? InferenceScope { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("inferenceGeoRegion")]
+        public string? InferenceGeoRegion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("inferenceProviderRegion")]
+        public string? InferenceProviderRegion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("requestedInferenceRegion")]
+        public string? RequestedInferenceRegion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("costCurrency")]
         public string? CostCurrency { get; set; }
 
@@ -1379,6 +1409,11 @@ namespace Vercel
         /// <param name="servedSpeed"></param>
         /// <param name="virtualModelSlug"></param>
         /// <param name="virtualModelKind"></param>
+        /// <param name="inferenceEndpointSlug"></param>
+        /// <param name="inferenceScope"></param>
+        /// <param name="inferenceGeoRegion"></param>
+        /// <param name="inferenceProviderRegion"></param>
+        /// <param name="requestedInferenceRegion"></param>
         /// <param name="costCurrency"></param>
         /// <param name="marketCostCurrency"></param>
         /// <param name="cachedInputTokensCurrency"></param>
@@ -1590,6 +1625,11 @@ namespace Vercel
             string? servedSpeed,
             string? virtualModelSlug,
             string? virtualModelKind,
+            string? inferenceEndpointSlug,
+            string? inferenceScope,
+            string? inferenceGeoRegion,
+            string? inferenceProviderRegion,
+            string? requestedInferenceRegion,
             string? costCurrency,
             string? marketCostCurrency,
             string? cachedInputTokensCurrency,
@@ -1797,6 +1837,11 @@ namespace Vercel
             this.ServedSpeed = servedSpeed;
             this.VirtualModelSlug = virtualModelSlug;
             this.VirtualModelKind = virtualModelKind;
+            this.InferenceEndpointSlug = inferenceEndpointSlug;
+            this.InferenceScope = inferenceScope;
+            this.InferenceGeoRegion = inferenceGeoRegion;
+            this.InferenceProviderRegion = inferenceProviderRegion;
+            this.RequestedInferenceRegion = requestedInferenceRegion;
             this.CostCurrency = costCurrency;
             this.MarketCostCurrency = marketCostCurrency;
             this.CachedInputTokensCurrency = cachedInputTokensCurrency;
