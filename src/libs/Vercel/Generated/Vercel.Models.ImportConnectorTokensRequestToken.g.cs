@@ -43,12 +43,11 @@ namespace Vercel
         public required global::Vercel.AnyOf<global::Vercel.ImportConnectorTokensRequestTokenSubjectTypeApp, global::Vercel.ImportConnectorTokensRequestTokenSubjectTypeUser> Subject { get; set; }
 
         /// <summary>
-        /// 
+        /// A built-in environment name or the stable env_* ID of a custom environment.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ImportConnectorTokensRequestTokenEnvironmentJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.ImportConnectorTokensRequestTokenEnvironment Environment { get; set; }
+        public required string Environment { get; set; }
 
         /// <summary>
         /// 
@@ -122,7 +121,9 @@ namespace Vercel
         /// <param name="accessToken"></param>
         /// <param name="expiresAt"></param>
         /// <param name="subject"></param>
-        /// <param name="environment"></param>
+        /// <param name="environment">
+        /// A built-in environment name or the stable env_* ID of a custom environment.
+        /// </param>
         /// <param name="refreshToken"></param>
         /// <param name="refreshTokenExpiresAt"></param>
         /// <param name="installationId"></param>
@@ -142,7 +143,7 @@ namespace Vercel
             string accessToken,
             double expiresAt,
             global::Vercel.AnyOf<global::Vercel.ImportConnectorTokensRequestTokenSubjectTypeApp, global::Vercel.ImportConnectorTokensRequestTokenSubjectTypeUser> subject,
-            global::Vercel.ImportConnectorTokensRequestTokenEnvironment environment,
+            string environment,
             string? refreshToken,
             double? refreshTokenExpiresAt,
             string? installationId,
