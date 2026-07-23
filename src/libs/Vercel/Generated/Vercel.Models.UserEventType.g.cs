@@ -2084,6 +2084,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TracingConfigured,
+        /// <summary>
+        /// 
+        /// </summary>
+        TracingDisabled,
+        /// <summary>
+        /// 
+        /// </summary>
         UnlinkLoginConnection,
         /// <summary>
         /// 
@@ -2805,6 +2813,8 @@ namespace Vercel
                 UserEventType.TeamSamlRoles => "team-saml-roles",
                 UserEventType.TeamSlugUpdate => "team-slug-update",
                 UserEventType.TeamTokensInvalidated => "team-tokens-invalidated",
+                UserEventType.TracingConfigured => "tracing-configured",
+                UserEventType.TracingDisabled => "tracing-disabled",
                 UserEventType.UnlinkLoginConnection => "unlink-login-connection",
                 UserEventType.UserDelete => "user-delete",
                 UserEventType.UserEmuAccountArchived => "user-emu-account-archived",
@@ -3381,6 +3391,8 @@ namespace Vercel
                 "team-saml-roles" => UserEventType.TeamSamlRoles,
                 "team-slug-update" => UserEventType.TeamSlugUpdate,
                 "team-tokens-invalidated" => UserEventType.TeamTokensInvalidated,
+                "tracing-configured" => UserEventType.TracingConfigured,
+                "tracing-disabled" => UserEventType.TracingDisabled,
                 "unlink-login-connection" => UserEventType.UnlinkLoginConnection,
                 "user-delete" => UserEventType.UserDelete,
                 "user-emu-account-archived" => UserEventType.UserEmuAccountArchived,
