@@ -2083,6 +2083,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TracingConfigured,
+        /// <summary>
+        /// 
+        /// </summary>
+        TracingDisabled,
+        /// <summary>
+        /// 
+        /// </summary>
         UnlinkLoginConnection,
         /// <summary>
         /// 
@@ -2804,6 +2812,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.TeamSamlRoles => "team-saml-roles",
                 ListEventTypeReplacedByItem.TeamSlugUpdate => "team-slug-update",
                 ListEventTypeReplacedByItem.TeamTokensInvalidated => "team-tokens-invalidated",
+                ListEventTypeReplacedByItem.TracingConfigured => "tracing-configured",
+                ListEventTypeReplacedByItem.TracingDisabled => "tracing-disabled",
                 ListEventTypeReplacedByItem.UnlinkLoginConnection => "unlink-login-connection",
                 ListEventTypeReplacedByItem.UserDelete => "user-delete",
                 ListEventTypeReplacedByItem.UserEmuAccountArchived => "user-emu-account-archived",
@@ -3380,6 +3390,8 @@ namespace Vercel
                 "team-saml-roles" => ListEventTypeReplacedByItem.TeamSamlRoles,
                 "team-slug-update" => ListEventTypeReplacedByItem.TeamSlugUpdate,
                 "team-tokens-invalidated" => ListEventTypeReplacedByItem.TeamTokensInvalidated,
+                "tracing-configured" => ListEventTypeReplacedByItem.TracingConfigured,
+                "tracing-disabled" => ListEventTypeReplacedByItem.TracingDisabled,
                 "unlink-login-connection" => ListEventTypeReplacedByItem.UnlinkLoginConnection,
                 "user-delete" => ListEventTypeReplacedByItem.UserDelete,
                 "user-emu-account-archived" => ListEventTypeReplacedByItem.UserEmuAccountArchived,
