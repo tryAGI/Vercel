@@ -23,6 +23,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("globalConfigId")]
+        public string? GlobalConfigId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("globalConfigSyncingEnabled")]
+        public bool? GlobalConfigSyncingEnabled { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenId")]
         public string? EdgeConfigTokenId { get; set; }
 
@@ -37,6 +49,8 @@ namespace Vercel
         /// </summary>
         /// <param name="edgeConfigSyncingEnabled"></param>
         /// <param name="edgeConfigId"></param>
+        /// <param name="globalConfigId"></param>
+        /// <param name="globalConfigSyncingEnabled"></param>
         /// <param name="edgeConfigTokenId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,10 +58,14 @@ namespace Vercel
         public GetIntegrationResourcesResponseResourceProtocolSettingsExperimentation(
             bool? edgeConfigSyncingEnabled,
             string? edgeConfigId,
+            string? globalConfigId,
+            bool? globalConfigSyncingEnabled,
             string? edgeConfigTokenId)
         {
             this.EdgeConfigSyncingEnabled = edgeConfigSyncingEnabled;
             this.EdgeConfigId = edgeConfigId;
+            this.GlobalConfigId = globalConfigId;
+            this.GlobalConfigSyncingEnabled = globalConfigSyncingEnabled;
             this.EdgeConfigTokenId = edgeConfigTokenId;
         }
 
