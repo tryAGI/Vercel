@@ -25,7 +25,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1, global::Vercel.GetDeploymentResponseVariant2>> GetDeploymentAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1, global::Vercel.GetDeploymentResponseVariant2, global::Vercel.GetDeploymentResponseVariant3>> GetDeploymentAsync(
             string idOrUrl,
             string? withGitRepoInfo = default,
             string? teamId = default,
@@ -53,7 +53,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1, global::Vercel.GetDeploymentResponseVariant2>>> GetDeploymentAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant1, global::Vercel.GetDeploymentResponseVariant2, global::Vercel.GetDeploymentResponseVariant3>>> GetDeploymentAsResponseAsync(
             string idOrUrl,
             string? withGitRepoInfo = default,
             string? teamId = default,

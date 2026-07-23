@@ -1,0 +1,51 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public enum CreateDeploymentResponseVariant2ImagesContentDispositionType
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        Attachment,
+        /// <summary>
+        /// 
+        /// </summary>
+        Inline,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class CreateDeploymentResponseVariant2ImagesContentDispositionTypeExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this CreateDeploymentResponseVariant2ImagesContentDispositionType value)
+        {
+            return value switch
+            {
+                CreateDeploymentResponseVariant2ImagesContentDispositionType.Attachment => "attachment",
+                CreateDeploymentResponseVariant2ImagesContentDispositionType.Inline => "inline",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static CreateDeploymentResponseVariant2ImagesContentDispositionType? ToEnum(string value)
+        {
+            return value switch
+            {
+                "attachment" => CreateDeploymentResponseVariant2ImagesContentDispositionType.Attachment,
+                "inline" => CreateDeploymentResponseVariant2ImagesContentDispositionType.Inline,
+                _ => null,
+            };
+        }
+    }
+}
