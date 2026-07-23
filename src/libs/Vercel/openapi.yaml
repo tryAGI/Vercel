@@ -64743,6 +64743,16 @@
                                   "edgeConfigId": {
                                     "type": "string"
                                   },
+                                  "globalConfigId": {
+                                    "type": "string"
+                                  },
+                                  "globalConfigSyncingEnabled": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  },
                                   "edgeConfigTokenId": {
                                     "type": "string"
                                   }
@@ -64920,17 +64930,10 @@
                       "properties": {
                         "experimentation": {
                           "properties": {
-                            "edgeConfigSyncingEnabled": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            },
                             "edgeConfigId": {
                               "type": "string"
                             },
-                            "edgeConfigTokenId": {
+                            "globalConfigId": {
                               "type": "string"
                             }
                           },
@@ -172355,6 +172358,16 @@
                                 },
                                 "edgeConfigId": {
                                   "type": "string"
+                                },
+                                "globalConfigId": {
+                                  "type": "string"
+                                },
+                                "globalConfigSyncingEnabled": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false,
+                                    true
+                                  ]
                                 },
                                 "edgeConfigTokenId": {
                                   "type": "string"
