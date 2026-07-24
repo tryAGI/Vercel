@@ -329,6 +329,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connexInstallation")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexInstallation { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connexToken")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexToken { get; set; }
 
@@ -1648,6 +1654,7 @@ namespace Vercel
         /// <param name="connectConfiguration"></param>
         /// <param name="connexClient"></param>
         /// <param name="connexClientProject"></param>
+        /// <param name="connexInstallation"></param>
         /// <param name="connexToken"></param>
         /// <param name="buildMachineDefault"></param>
         /// <param name="dataCacheBillingSettings"></param>
@@ -1915,6 +1922,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connectConfiguration,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexClient,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexClientProject,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexInstallation,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexToken,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? buildMachineDefault,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? dataCacheBillingSettings,
@@ -2179,6 +2187,7 @@ namespace Vercel
             this.ConnectConfiguration = connectConfiguration;
             this.ConnexClient = connexClient;
             this.ConnexClientProject = connexClientProject;
+            this.ConnexInstallation = connexInstallation;
             this.ConnexToken = connexToken;
             this.BuildMachineDefault = buildMachineDefault;
             this.DataCacheBillingSettings = dataCacheBillingSettings;
