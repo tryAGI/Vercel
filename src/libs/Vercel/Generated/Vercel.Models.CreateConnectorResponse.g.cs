@@ -63,6 +63,13 @@ namespace Vercel
         public global::Vercel.OneOf<global::Vercel.CreateConnectorResponseUpdatedByVariant1, global::Vercel.CreateConnectorResponseUpdatedByVariant2>? UpdatedBy { get; set; }
 
         /// <summary>
+        /// How the connector row was originally created. New create paths stamp this explicitly; older rows may omit it.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("creationMode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeJsonConverter))]
+        public global::Vercel.CreateConnectorResponseCreationMode? CreationMode { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("public")]
@@ -291,6 +298,9 @@ namespace Vercel
         /// </param>
         /// <param name="createdBy"></param>
         /// <param name="updatedBy"></param>
+        /// <param name="creationMode">
+        /// How the connector row was originally created. New create paths stamp this explicitly; older rows may omit it.
+        /// </param>
         /// <param name="clientUrl"></param>
         /// <param name="redirectUri">
         /// Redirect URI registered with the third-party service for this client, if any. Used by `startAuthorization`/`startInstallation` to replay the exact URI back to the provider's token endpoint. Absent on clients created before this field was introduced; those callers fall back to the `https://connect.vercel.com/callback` default.
@@ -351,6 +361,7 @@ namespace Vercel
             double? reinstallAt,
             global::Vercel.OneOf<global::Vercel.CreateConnectorResponseCreatedByVariant1, global::Vercel.CreateConnectorResponseCreatedByVariant2>? createdBy,
             global::Vercel.OneOf<global::Vercel.CreateConnectorResponseUpdatedByVariant1, global::Vercel.CreateConnectorResponseUpdatedByVariant2>? updatedBy,
+            global::Vercel.CreateConnectorResponseCreationMode? creationMode,
             string? clientUrl,
             string? redirectUri,
             string? defaultInstallationId,
@@ -378,6 +389,7 @@ namespace Vercel
             this.ReinstallAt = reinstallAt;
             this.CreatedBy = createdBy;
             this.UpdatedBy = updatedBy;
+            this.CreationMode = creationMode;
             this.Public = @public;
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Type = type;
