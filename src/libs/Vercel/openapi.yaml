@@ -11925,6 +11925,10 @@
                           "projectId": {
                             "type": "string"
                           },
+                          "customEnvironmentId": {
+                            "type": "string",
+                            "description": "Stable custom-environment ID to route this destination to. Mutually exclusive with `branch`; omitted destinations keep the legacy production behavior."
+                          },
                           "branch": {
                             "type": "string"
                           },
@@ -43858,6 +43862,9 @@
                                       },
                                       "audit_log": {
                                         "type": "object"
+                                      },
+                                      "connect": {
+                                        "type": "object"
                                       }
                                     },
                                     "type": "object"
@@ -44368,6 +44375,9 @@
                                         "type": "object"
                                       },
                                       "audit_log": {
+                                        "type": "object"
+                                      },
+                                      "connect": {
                                         "type": "object"
                                       }
                                     },
@@ -45185,6 +45195,9 @@
                             },
                             "audit_log": {
                               "type": "object"
+                            },
+                            "connect": {
+                              "type": "object"
                             }
                           },
                           "type": "object"
@@ -45692,6 +45705,9 @@
                               "type": "object"
                             },
                             "audit_log": {
+                              "type": "object"
+                            },
+                            "connect": {
                               "type": "object"
                             }
                           },
@@ -46738,6 +46754,9 @@
                                   },
                                   "audit_log": {
                                     "type": "object"
+                                  },
+                                  "connect": {
+                                    "type": "object"
                                   }
                                 },
                                 "type": "object"
@@ -47248,6 +47267,9 @@
                                     "type": "object"
                                   },
                                   "audit_log": {
+                                    "type": "object"
+                                  },
+                                  "connect": {
                                     "type": "object"
                                   }
                                 },
@@ -47968,6 +47990,9 @@
                             },
                             "audit_log": {
                               "type": "object"
+                            },
+                            "connect": {
+                              "type": "object"
                             }
                           },
                           "type": "object"
@@ -48475,6 +48500,9 @@
                               "type": "object"
                             },
                             "audit_log": {
+                              "type": "object"
+                            },
+                            "connect": {
                               "type": "object"
                             }
                           },
@@ -49117,6 +49145,9 @@
                             },
                             "audit_log": {
                               "type": "object"
+                            },
+                            "connect": {
+                              "type": "object"
                             }
                           },
                           "type": "object"
@@ -49624,6 +49655,9 @@
                               "type": "object"
                             },
                             "audit_log": {
+                              "type": "object"
+                            },
+                            "connect": {
                               "type": "object"
                             }
                           },

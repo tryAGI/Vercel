@@ -16,6 +16,12 @@ namespace Vercel
         public required string ProjectId { get; set; }
 
         /// <summary>
+        /// Stable custom-environment ID to route this destination to. Mutually exclusive with `branch`; omitted destinations keep the legacy production behavior.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentId")]
+        public string? CustomEnvironmentId { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("branch")]
@@ -37,6 +43,9 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateConnectorResponseTriggerDestination" /> class.
         /// </summary>
         /// <param name="projectId"></param>
+        /// <param name="customEnvironmentId">
+        /// Stable custom-environment ID to route this destination to. Mutually exclusive with `branch`; omitted destinations keep the legacy production behavior.
+        /// </param>
         /// <param name="branch"></param>
         /// <param name="path"></param>
 #if NET7_0_OR_GREATER
@@ -44,10 +53,12 @@ namespace Vercel
 #endif
         public CreateConnectorResponseTriggerDestination(
             string projectId,
+            string? customEnvironmentId,
             string? branch,
             string? path)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.CustomEnvironmentId = customEnvironmentId;
             this.Branch = branch;
             this.Path = path;
         }

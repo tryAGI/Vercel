@@ -45,6 +45,12 @@ namespace Vercel
         public object? AuditLog { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connect")]
+        public object? Connect { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -59,6 +65,7 @@ namespace Vercel
         /// <param name="speedInsights"></param>
         /// <param name="aiGateway"></param>
         /// <param name="auditLog"></param>
+        /// <param name="connect"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -68,7 +75,8 @@ namespace Vercel
             object? analytics,
             object? speedInsights,
             object? aiGateway,
-            object? auditLog)
+            object? auditLog,
+            object? connect)
         {
             this.Log = log;
             this.Trace = trace;
@@ -76,6 +84,7 @@ namespace Vercel
             this.SpeedInsights = speedInsights;
             this.AiGateway = aiGateway;
             this.AuditLog = auditLog;
+            this.Connect = connect;
         }
 
         /// <summary>
