@@ -1410,6 +1410,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseSupportsIconJsonConverter),
@@ -7754,6 +7756,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1, global::Vercel.UpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant2>?), TypeInfoPropertyName = "UpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant2_c2df75a615faf7c7")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1Type?), TypeInfoPropertyName = "NullableUpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1Key?), TypeInfoPropertyName = "NullableUpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1Key2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant2Type?), TypeInfoPropertyName = "NullableUpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2MitigateAction?), TypeInfoPropertyName = "NullableUpdateProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2MitigateAction2")]
@@ -8252,8 +8256,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRulesetsRateLimitAlgo?), TypeInfoPropertyName = "NullableGetSecurityFirewallConfigResponseActiveRulesetsRateLimitAlgo2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRulesetsRateLimitAction?), TypeInfoPropertyName = "NullableGetSecurityFirewallConfigResponseActiveRulesetsRateLimitAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetSecurityFirewallConfigResponseActiveRulesetsLogHeaders?>?), TypeInfoPropertyName = "NullableOneOfIListStringGetSecurityFirewallConfigResponseActiveRulesetsLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRulesetsLogHeaders?), TypeInfoPropertyName = "NullableGetSecurityFirewallConfigResponseActiveRulesetsLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveManagedRulesBotProtectionAction?), TypeInfoPropertyName = "NullableGetSecurityFirewallConfigResponseActiveManagedRulesBotProtectionAction2")]
     internal sealed partial class SourceGenerationContextChunk027 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

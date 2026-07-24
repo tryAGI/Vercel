@@ -1410,6 +1410,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseSupportsIconJsonConverter),
@@ -7754,6 +7756,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2FunctionsExperimentalTriggerVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2FunctionsExperimentalTriggerVariant1Type), TypeInfoPropertyName = "CreateDeploymentResponseVariant2ServiceVariant2FunctionsExperimentalTriggerVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2FunctionsExperimentalTriggerVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2FunctionsExperimentalTriggerVariant2Type), TypeInfoPropertyName = "CreateDeploymentResponseVariant2ServiceVariant2FunctionsExperimentalTriggerVariant2Type2")]
@@ -8253,7 +8256,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitRepoVariant3OwnerType), TypeInfoPropertyName = "CancelDeploymentResponseGitRepoVariant3OwnerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitRepoVariant4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitRepoVariant4Type), TypeInfoPropertyName = "CancelDeploymentResponseGitRepoVariant4Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitRepoVariant4OwnerType), TypeInfoPropertyName = "CancelDeploymentResponseGitRepoVariant4OwnerType2")]
     internal sealed partial class SourceGenerationContextChunk006 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

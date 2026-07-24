@@ -1410,6 +1410,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseSupportsIconJsonConverter),
@@ -7754,6 +7756,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ImportResourceRequestStatus?), TypeInfoPropertyName = "NullableImportResourceRequestStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ImportResourceRequestBillingPlanType?), TypeInfoPropertyName = "NullableImportResourceRequestBillingPlanType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ImportResourceRequestNotificationLevel?), TypeInfoPropertyName = "NullableImportResourceRequestNotificationLevel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequestOwnership?), TypeInfoPropertyName = "NullableUpdateResourceRequestOwnership2")]
@@ -8253,7 +8256,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource?), TypeInfoPropertyName = "NullableUpdateCheckResponseOutputMetricsVirtualExperienceScoreSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateConnectorResponseCreatedByVariant1, global::Vercel.CreateConnectorResponseCreatedByVariant2>?), TypeInfoPropertyName = "NullableOneOfCreateConnectorResponseCreatedByVariant1CreateConnectorResponseCreatedByVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorResponseCreatedByVariant1Type?), TypeInfoPropertyName = "NullableCreateConnectorResponseCreatedByVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorResponseCreatedByVariant2Type?), TypeInfoPropertyName = "NullableCreateConnectorResponseCreatedByVariant2Type2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

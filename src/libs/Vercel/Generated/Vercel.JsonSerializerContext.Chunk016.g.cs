@@ -1410,6 +1410,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseSupportsIconJsonConverter),
@@ -7754,6 +7756,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseRollingReleaseStage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseRollingReleaseStage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseDefaultResourceConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseDefaultResourceConfigFunctionDefaultMemoryType), TypeInfoPropertyName = "UploadProjectAvatarResponseDefaultResourceConfigFunctionDefaultMemoryType2")]
@@ -8253,7 +8256,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseCreatorVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseCreatorVariant1Type), TypeInfoPropertyName = "UpdateMicrofrontendsResponseCreatorVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateMicrofrontendsResponseCreatorVariant1ViaVariant1, global::Vercel.UpdateMicrofrontendsResponseCreatorVariant1ViaVariant2>), TypeInfoPropertyName = "OneOfUpdateMicrofrontendsResponseCreatorVariant1ViaVariant1UpdateMicrofrontendsResponseCreatorVariant1ViaVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseCreatorVariant1ViaVariant1))]
     internal sealed partial class SourceGenerationContextChunk016 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

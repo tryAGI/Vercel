@@ -1410,6 +1410,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseSupportsIconJsonConverter),
@@ -7754,6 +7756,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveManagedRulesOwaspAction), TypeInfoPropertyName = "GetSecurityFirewallConfigResponseActiveManagedRulesOwaspAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveManagedRulesVercelRuleset))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveManagedRulesVercelRulesetAction), TypeInfoPropertyName = "GetSecurityFirewallConfigResponseActiveManagedRulesVercelRulesetAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveManagedRulesTrafficSources))]
@@ -8253,7 +8256,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetsRateLimitAlgo), TypeInfoPropertyName = "CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetsRateLimitAlgo2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetsRateLimitAction), TypeInfoPropertyName = "CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetsRateLimitAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetsRedirect))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetsLogHeaders?>), TypeInfoPropertyName = "OneOfIListStringCreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetsLogHeaders2")]
     internal sealed partial class SourceGenerationContextChunk018 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -1410,6 +1410,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseSupportsIconJsonConverter),
@@ -7754,6 +7756,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateDrainResponseVariant1FilterV2FilterVariant1, global::Vercel.UpdateDrainResponseVariant1FilterV2FilterVariant2>?), TypeInfoPropertyName = "NullableOneOfUpdateDrainResponseVariant1FilterV2FilterVariant1UpdateDrainResponseVariant1FilterV2FilterVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDrainResponseVariant1FilterV2FilterVariant1Type?), TypeInfoPropertyName = "NullableUpdateDrainResponseVariant1FilterV2FilterVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDrainResponseVariant1FilterV2FilterVariant1LogSource?), TypeInfoPropertyName = "NullableUpdateDrainResponseVariant1FilterV2FilterVariant1LogSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDrainResponseVariant1FilterV2FilterVariant1DeploymentEnvironment?), TypeInfoPropertyName = "NullableUpdateDrainResponseVariant1FilterV2FilterVariant1DeploymentEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDrainResponseVariant1FilterV2FilterVariant2Type?), TypeInfoPropertyName = "NullableUpdateDrainResponseVariant1FilterV2FilterVariant2Type2")]
@@ -8252,8 +8256,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectNodeVersion?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectNodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectPassportDeploymentType?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectPassportDeploymentType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineSelection?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineSelection2")]
     internal sealed partial class SourceGenerationContextChunk024 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -1410,6 +1410,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2TypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseUpdatedByVariant2EnvironmentNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorResponseCreationModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorResponseSupportsIconJsonConverter),
@@ -7754,6 +7756,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineSelection?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineSelection2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineElasticReason?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineElasticReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueueConfiguration?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueueConfiguration2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfigFunctionDefaultMemoryType?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectDefaultResourceConfigFunctionDefaultMemoryType2")]
@@ -8252,8 +8256,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectResourceConfigFunctionDefaultMemoryType?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectResourceConfigFunctionDefaultMemoryType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectResourceConfigBuildMachineType?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectResourceConfigBuildMachineType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectResourceConfigBuildMachineSelection?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectResourceConfigBuildMachineSelection2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectResourceConfigBuildMachineElasticReason?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectResourceConfigBuildMachineElasticReason2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectResourceConfigBuildQueueConfiguration?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectResourceConfigBuildQueueConfiguration2")]
     internal sealed partial class SourceGenerationContextChunk025 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
