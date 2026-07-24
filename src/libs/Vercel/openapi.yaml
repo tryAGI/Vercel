@@ -13080,6 +13080,26 @@
                         "additionalProperties": true
                       },
                       {
+                        "title": "type:token",
+                        "type": "object",
+                        "required": [
+                          "type",
+                          "token"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "token"
+                            ]
+                          },
+                          "token": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      {
                         "title": "type:other",
                         "type": "object",
                         "required": [
@@ -13089,6 +13109,19 @@
                           "type": {
                             "type": "string"
                           }
+                        },
+                        "not": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "token"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
                         },
                         "additionalProperties": true
                       }
@@ -13721,6 +13754,26 @@
                         "additionalProperties": true
                       },
                       {
+                        "title": "type:token",
+                        "type": "object",
+                        "required": [
+                          "type",
+                          "token"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "token"
+                            ]
+                          },
+                          "token": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      {
                         "title": "type:other",
                         "type": "object",
                         "required": [
@@ -13730,6 +13783,19 @@
                           "type": {
                             "type": "string"
                           }
+                        },
+                        "not": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "token"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
                         },
                         "additionalProperties": true
                       }
@@ -55989,6 +56055,9 @@
                       ],
                       "type": "object"
                     },
+                    "updatedBy": {
+                      "type": "string"
+                    },
                     "variants": {
                       "items": {
                         "type": "object"
@@ -57698,6 +57767,9 @@
                             "status"
                           ],
                           "type": "object"
+                        },
+                        "updatedBy": {
+                          "type": "string"
                         },
                         "variants": {
                           "items": {
@@ -193102,6 +193174,9 @@
               "status"
             ],
             "type": "object"
+          },
+          "updatedBy": {
+            "type": "string"
           },
           "variants": {
             "items": {
