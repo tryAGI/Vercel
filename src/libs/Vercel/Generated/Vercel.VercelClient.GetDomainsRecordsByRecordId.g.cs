@@ -44,7 +44,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="recordId"></param>
+        /// <param name="recordId">
+        /// The unique ID of the DNS record
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
@@ -64,7 +66,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="recordId"></param>
+        /// <param name="recordId">
+        /// The unique ID of the DNS record
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>

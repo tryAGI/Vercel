@@ -924,6 +924,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        IntegrationResourceRedisCommandExecuted,
+        /// <summary>
+        /// 
+        /// </summary>
         IntegrationResourceSqlQueryExecuted,
         /// <summary>
         /// 
@@ -2523,6 +2527,7 @@ namespace Vercel
                 ListEventTypeName.IntegrationInstallationCompleted => "integration-installation-completed",
                 ListEventTypeName.IntegrationInstallationPermissionUpdated => "integration-installation-permission-updated",
                 ListEventTypeName.IntegrationInstallationRemoved => "integration-installation-removed",
+                ListEventTypeName.IntegrationResourceRedisCommandExecuted => "integration-resource-redis-command-executed",
                 ListEventTypeName.IntegrationResourceSqlQueryExecuted => "integration-resource-sql-query-executed",
                 ListEventTypeName.IntegrationScopeChanged => "integration-scope-changed",
                 ListEventTypeName.InvoiceModified => "invoice-modified",
@@ -3101,6 +3106,7 @@ namespace Vercel
                 "integration-installation-completed" => ListEventTypeName.IntegrationInstallationCompleted,
                 "integration-installation-permission-updated" => ListEventTypeName.IntegrationInstallationPermissionUpdated,
                 "integration-installation-removed" => ListEventTypeName.IntegrationInstallationRemoved,
+                "integration-resource-redis-command-executed" => ListEventTypeName.IntegrationResourceRedisCommandExecuted,
                 "integration-resource-sql-query-executed" => ListEventTypeName.IntegrationResourceSqlQueryExecuted,
                 "integration-scope-changed" => ListEventTypeName.IntegrationScopeChanged,
                 "invoice-modified" => ListEventTypeName.InvoiceModified,

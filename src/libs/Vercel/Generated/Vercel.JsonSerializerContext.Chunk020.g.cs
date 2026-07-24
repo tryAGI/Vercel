@@ -7766,6 +7766,11 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTeamAccessRequestResponseGitlab))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTeamAccessRequestResponseBitbucket))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.JoinTeamResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateTeamMemberResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveTeamMemberResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTeamsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.Team, global::Vercel.TeamLimited>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.Team, global::Vercel.TeamLimited>), TypeInfoPropertyName = "OneOfTeamTeamLimited2")]
@@ -8261,11 +8266,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, string>?), TypeInfoPropertyName = "NullableOneOfIListStringString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InvalidateByTagsRequestTarget?), TypeInfoPropertyName = "NullableInvalidateByTagsRequestTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DangerouslyDeleteByTagsRequestTarget?), TypeInfoPropertyName = "NullableDangerouslyDeleteByTagsRequestTarget2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemOperation?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemOperation2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, object>?), TypeInfoPropertyName = "NullableOneOfStringObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemEnumOperation2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation2?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemEnumOperation22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation3?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemEnumOperation32")]
     internal sealed partial class SourceGenerationContextChunk020 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

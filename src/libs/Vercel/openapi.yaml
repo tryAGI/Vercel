@@ -13865,6 +13865,183 @@
         }
       }
     },
+    "/v1/connect/install/{connector}": {
+      "post": {
+        "description": "Create an installation request for a connector and return the URL and verifier details needed to complete the flow.",
+        "operationId": "createConnectorInstallationRequest",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Create a Connect installation request",
+        "tags": [
+          "connect"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "url": {
+                      "type": "string"
+                    },
+                    "request": {
+                      "type": "string"
+                    },
+                    "verifier": {
+                      "type": "string"
+                    },
+                    "deviceCode": {
+                      "type": "string"
+                    },
+                    "expiresAt": {
+                      "type": "number"
+                    },
+                    "connector": {
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "Client id (e.g. `scl_\u2026`)."
+                        },
+                        "uid": {
+                          "type": "string",
+                          "description": "Client uid (e.g. `salesforce/my-org`)."
+                        },
+                        "type": {
+                          "type": "string",
+                          "description": "Client type (e.g. `oauth`, `salesforce`)."
+                        },
+                        "service": {
+                          "type": "string",
+                          "description": "Resolved service id when known (e.g. `salesforce`), following the `stored.service ?? typeDef.service ?? stored.type` convention."
+                        },
+                        "serviceName": {
+                          "type": "string",
+                          "description": "Curated display name of the resolved service (e.g. \"Salesforce\"), present when the service is a known service. Suited for end-user surfaces like \"Sign in with {serviceName}\"."
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": "The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one."
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name",
+                        "type",
+                        "uid"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "connector",
+                    "expiresAt",
+                    "request",
+                    "url",
+                    "verifier"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "422": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "connector",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "installationId": {
+                    "type": "string"
+                  },
+                  "audience": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "scopes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "resources": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "authorizationDetails": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  },
+                  "validityBufferMs": {
+                    "type": "number"
+                  },
+                  "returnUrl": {
+                    "type": "string"
+                  },
+                  "webhook": {
+                    "type": "string"
+                  },
+                  "tenantId": {
+                    "type": "string"
+                  },
+                  "deviceCode": {
+                    "type": "boolean"
+                  },
+                  "expiresInMs": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v3/deployments/{idOrUrl}/events": {
       "get": {
         "description": "Get the build logs of a deployment by deployment ID and build ID. It can work as an infinite stream of logs or as a JSON endpoint depending on the input parameters.",
@@ -37653,7 +37830,7 @@
             }
           },
           "400": {
-            "description": ""
+            "description": "One of the provided values in the request query is invalid."
           },
           "401": {
             "description": "The request is not authorized."
@@ -37674,7 +37851,19 @@
             "description": ""
           }
         },
-        "parameters": []
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "The domain name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The domain name",
+              "example": "example.com"
+            }
+          }
+        ]
       }
     },
     "/domains/records/{recordId}": {
@@ -37761,7 +37950,7 @@
             }
           },
           "400": {
-            "description": ""
+            "description": "One of the provided values in the request query is invalid."
           },
           "401": {
             "description": "The request is not authorized."
@@ -37776,7 +37965,18 @@
             "description": ""
           }
         },
-        "parameters": []
+        "parameters": [
+          {
+            "name": "recordId",
+            "description": "The unique ID of the DNS record",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The unique ID of the DNS record"
+            }
+          }
+        ]
       }
     },
     "/v2/domains/{domain}/records/{recordId}": {
@@ -77681,6 +77881,12 @@
                                 },
                                 "type": "array"
                               },
+                              "connexInstallation": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "connexToken": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -100184,6 +100390,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "connexInstallation": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "connexToken": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -107727,6 +107939,12 @@
                           "type": "array"
                         },
                         "connexClientProject": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "connexInstallation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -115446,6 +115664,12 @@
                           },
                           "type": "array"
                         },
+                        "connexInstallation": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "connexToken": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -122516,6 +122740,12 @@
                           "type": "array"
                         },
                         "connexClientProject": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "connexInstallation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -130855,6 +131085,12 @@
                           "type": "array"
                         },
                         "connexClientProject": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "connexInstallation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -147112,6 +147348,12 @@
                           "type": "array"
                         },
                         "connexClientProject": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "connexInstallation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -166086,7 +166328,17 @@
             "description": ""
           }
         },
-        "parameters": []
+        "parameters": [
+          {
+            "description": "The deployed configVersion for the firewall configuration",
+            "in": "path",
+            "name": "configVersion",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
       }
     },
     "/v1/security/firewall/config/{configVersion}/activate": {
@@ -167565,7 +167817,17 @@
             "description": ""
           }
         },
-        "parameters": []
+        "parameters": [
+          {
+            "description": "The deployed configVersion for the firewall configuration",
+            "in": "path",
+            "name": "configVersion",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
       }
     },
     "/v1/security/firewall/attack-status": {
@@ -191046,6 +191308,7 @@
               "integration-installation-completed",
               "integration-installation-permission-updated",
               "integration-installation-removed",
+              "integration-resource-redis-command-executed",
               "integration-resource-sql-query-executed",
               "integration-scope-changed",
               "invoice-modified",
@@ -191931,6 +192194,7 @@
               "integration-installation-completed",
               "integration-installation-permission-updated",
               "integration-installation-removed",
+              "integration-resource-redis-command-executed",
               "integration-resource-sql-query-executed",
               "integration-scope-changed",
               "invoice-modified",
@@ -192557,6 +192821,7 @@
                 "integration-installation-completed",
                 "integration-installation-permission-updated",
                 "integration-installation-removed",
+                "integration-resource-redis-command-executed",
                 "integration-resource-sql-query-executed",
                 "integration-scope-changed",
                 "invoice-modified",

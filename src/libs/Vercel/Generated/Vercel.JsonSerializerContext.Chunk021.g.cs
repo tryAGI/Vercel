@@ -7766,6 +7766,11 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemOperation?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemOperation2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, object>?), TypeInfoPropertyName = "NullableOneOfStringObject2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemEnumOperation2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation2?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemEnumOperation22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation3?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemEnumOperation32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableRequestType?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableRequestType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableRequestTargetItem?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableRequestTargetItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesTargetItem?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableRequestUpdatesTargetItem2")]
@@ -8261,11 +8266,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2Status?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2Status2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2Conclusion?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2Conclusion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1, global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2>?), TypeInfoPropertyName = "NullableOneOfGetDeploymentCheckRunResponseVariant2SourceVariant1GetDeploymentCheckRunResponseVariant2SourceVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKind?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2SourceVariant1SubKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1Origin?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2SourceVariant1Origin2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2SubKind?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2SourceVariant2SubKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2Origin?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2SourceVariant2Origin2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateDeploymentCheckRunResponseVariant1, global::Vercel.UpdateDeploymentCheckRunResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfUpdateDeploymentCheckRunResponseVariant1UpdateDeploymentCheckRunResponseVariant22")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
