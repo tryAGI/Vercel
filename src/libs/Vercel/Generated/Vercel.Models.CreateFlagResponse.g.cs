@@ -41,6 +41,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedBy")]
+        public string? UpdatedBy { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("variants")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<object> Variants { get; set; }
@@ -165,6 +171,7 @@ namespace Vercel
         /// <param name="permanent"></param>
         /// <param name="tags"></param>
         /// <param name="experiment"></param>
+        /// <param name="updatedBy"></param>
         /// <param name="typeName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -188,6 +195,7 @@ namespace Vercel
             bool? permanent,
             global::System.Collections.Generic.IList<string>? tags,
             global::Vercel.CreateFlagResponseExperiment? experiment,
+            string? updatedBy,
             global::Vercel.CreateFlagResponseTypeName typeName)
         {
             this.Description = description;
@@ -195,6 +203,7 @@ namespace Vercel
             this.Permanent = permanent;
             this.Tags = tags;
             this.Experiment = experiment;
+            this.UpdatedBy = updatedBy;
             this.Variants = variants ?? throw new global::System.ArgumentNullException(nameof(variants));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
