@@ -46,8 +46,9 @@ namespace Vercel
         /// A built-in environment name or the stable env_* ID of a custom environment.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.ImportConnectorTokensEnvironment?, string>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Environment { get; set; }
+        public required global::Vercel.AnyOf<global::Vercel.ImportConnectorTokensEnvironment?, string> Environment { get; set; }
 
         /// <summary>
         /// 
@@ -143,7 +144,7 @@ namespace Vercel
             string accessToken,
             double expiresAt,
             global::Vercel.AnyOf<global::Vercel.ImportConnectorTokensRequestTokenSubjectTypeApp, global::Vercel.ImportConnectorTokensRequestTokenSubjectTypeUser> subject,
-            string environment,
+            global::Vercel.AnyOf<global::Vercel.ImportConnectorTokensEnvironment?, string> environment,
             string? refreshToken,
             double? refreshTokenExpiresAt,
             string? installationId,
