@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class CreateConnectorResponseIncludesProjectsItemEnvironmentNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironment?>
+    public sealed class CreatedByEnvironmentJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.CreatedByEnvironment>
     {
         /// <inheritdoc />
-        public override global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironment? Read(
+        public override global::Vercel.CreatedByEnvironment Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironmentExtensions.ToEnum(stringValue);
+                        return global::Vercel.CreatedByEnvironmentExtensions.ToEnum(stringValue) ?? default;
                     }
                     
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironment)numValue;
+                    return (global::Vercel.CreatedByEnvironment)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironment?);
+                    return default(global::Vercel.CreatedByEnvironment);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,19 +42,12 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironment? value,
+            global::Vercel.CreatedByEnvironment value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            if (value == null)
-            {
-                writer.WriteNullValue();
-            }
-            else
-            {
-                writer.WriteStringValue(global::Vercel.CreateConnectorResponseIncludesProjectsItemEnvironmentExtensions.ToValueString(value.Value));
-            }
+            writer.WriteStringValue(global::Vercel.CreatedByEnvironmentExtensions.ToValueString(value));
         }
     }
 }

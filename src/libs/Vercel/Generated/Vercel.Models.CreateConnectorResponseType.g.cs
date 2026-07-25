@@ -35,6 +35,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Photon,
+        /// <summary>
+        /// 
+        /// </summary>
         Salesforce,
         /// <summary>
         /// 
@@ -68,6 +72,7 @@ namespace Vercel
                 CreateConnectorResponseType.Linear => "linear",
                 CreateConnectorResponseType.MicrosoftEntra => "microsoft-entra",
                 CreateConnectorResponseType.Oauth => "oauth",
+                CreateConnectorResponseType.Photon => "photon",
                 CreateConnectorResponseType.Salesforce => "salesforce",
                 CreateConnectorResponseType.Slack => "slack",
                 CreateConnectorResponseType.Snowflake => "snowflake",
@@ -88,6 +93,7 @@ namespace Vercel
                 "linear" => CreateConnectorResponseType.Linear,
                 "microsoft-entra" => CreateConnectorResponseType.MicrosoftEntra,
                 "oauth" => CreateConnectorResponseType.Oauth,
+                "photon" => CreateConnectorResponseType.Photon,
                 "salesforce" => CreateConnectorResponseType.Salesforce,
                 "slack" => CreateConnectorResponseType.Slack,
                 "snowflake" => CreateConnectorResponseType.Snowflake,

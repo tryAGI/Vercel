@@ -99,9 +99,9 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ImportConnectorTokensResponseTokenEnvironment?>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ImportConnectorTokensConnectEnvironment?>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<string, global::Vercel.ImportConnectorTokensResponseTokenEnvironment?> Environment { get; set; }
+        public required global::Vercel.OneOf<string, global::Vercel.ImportConnectorTokensConnectEnvironment?> Environment { get; set; }
 
         /// <summary>
         /// 
@@ -143,7 +143,7 @@ namespace Vercel
         public ImportConnectorTokensResponseToken(
             double expiresAt,
             global::Vercel.OneOf<global::Vercel.ImportConnectorTokensResponseTokenSubjectVariant1, global::Vercel.ImportConnectorTokensResponseTokenSubjectVariant2> subject,
-            global::Vercel.OneOf<string, global::Vercel.ImportConnectorTokensResponseTokenEnvironment?> environment,
+            global::Vercel.OneOf<string, global::Vercel.ImportConnectorTokensConnectEnvironment?> environment,
             bool succeeded,
             string? name,
             object? data,

@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public enum ImportConnectorTokensResponseTokenEnvironment
+    public enum UpdatedByEnvironment
     {
         /// <summary>
         /// 
@@ -25,31 +25,31 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class ImportConnectorTokensResponseTokenEnvironmentExtensions
+    public static class UpdatedByEnvironmentExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this ImportConnectorTokensResponseTokenEnvironment value)
+        public static string ToValueString(this UpdatedByEnvironment value)
         {
             return value switch
             {
-                ImportConnectorTokensResponseTokenEnvironment.Development => "development",
-                ImportConnectorTokensResponseTokenEnvironment.Preview => "preview",
-                ImportConnectorTokensResponseTokenEnvironment.Production => "production",
+                UpdatedByEnvironment.Development => "development",
+                UpdatedByEnvironment.Preview => "preview",
+                UpdatedByEnvironment.Production => "production",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static ImportConnectorTokensResponseTokenEnvironment? ToEnum(string value)
+        public static UpdatedByEnvironment? ToEnum(string value)
         {
             return value switch
             {
-                "development" => ImportConnectorTokensResponseTokenEnvironment.Development,
-                "preview" => ImportConnectorTokensResponseTokenEnvironment.Preview,
-                "production" => ImportConnectorTokensResponseTokenEnvironment.Production,
+                "development" => UpdatedByEnvironment.Development,
+                "preview" => UpdatedByEnvironment.Preview,
+                "production" => UpdatedByEnvironment.Production,
                 _ => null,
             };
         }
