@@ -196472,8 +196472,13 @@
           },
           "parentId": {
             "type": "string",
-            "description": "The organizationId for child teams created under an organization.",
+            "description": "The organizationId for teams that belong to an organization (set on both the organization's root team and its child teams).",
             "example": "org_nllPyCtREAqxxdyFKbbMDlxd"
+          },
+          "orgRootTeamId": {
+            "type": "string",
+            "description": "Best-effort ID of the organization\u2019s root billing team. When present, compare `orgRootTeamId === id` to identify the root team. It may be omitted even when `parentId` is set if organization resolution fails or the referenced organization is missing. Always omitted for non-organization teams.",
+            "example": "team_nllPyCtREAqxxdyFKbbMDlxd"
           }
         },
         "required": [
@@ -196819,8 +196824,13 @@
           },
           "parentId": {
             "type": "string",
-            "description": "The organizationId for child teams created under an organization.",
+            "description": "The organizationId for teams that belong to an organization (set on both the organization's root team and its child teams).",
             "example": "org_nllPyCtREAqxxdyFKbbMDlxd"
+          },
+          "orgRootTeamId": {
+            "type": "string",
+            "description": "Best-effort ID of the organization\u2019s root billing team. When present, compare `orgRootTeamId === id` to identify the root team. It may be omitted even when `parentId` is set if organization resolution fails or the referenced organization is missing. Always omitted for non-organization teams.",
+            "example": "team_nllPyCtREAqxxdyFKbbMDlxd"
           }
         },
         "required": [
