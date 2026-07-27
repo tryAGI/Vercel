@@ -1923,6 +1923,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamCollaborationSettingsUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamDefaultBuildMachineUpdated,
         /// <summary>
         /// 
@@ -2784,6 +2788,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.SubscriptionUpdated => "subscription-updated",
                 ListEventTypeReplacedByItem.Team => "team",
                 ListEventTypeReplacedByItem.TeamAvatarUpdate => "team-avatar-update",
+                ListEventTypeReplacedByItem.TeamCollaborationSettingsUpdated => "team-collaboration-settings-updated",
                 ListEventTypeReplacedByItem.TeamDefaultBuildMachineUpdated => "team-default-build-machine-updated",
                 ListEventTypeReplacedByItem.TeamDefaultPassportUpdated => "team-default-passport-updated",
                 ListEventTypeReplacedByItem.TeamDelete => "team-delete",
@@ -3365,6 +3370,7 @@ namespace Vercel
                 "subscription-updated" => ListEventTypeReplacedByItem.SubscriptionUpdated,
                 "team" => ListEventTypeReplacedByItem.Team,
                 "team-avatar-update" => ListEventTypeReplacedByItem.TeamAvatarUpdate,
+                "team-collaboration-settings-updated" => ListEventTypeReplacedByItem.TeamCollaborationSettingsUpdated,
                 "team-default-build-machine-updated" => ListEventTypeReplacedByItem.TeamDefaultBuildMachineUpdated,
                 "team-default-passport-updated" => ListEventTypeReplacedByItem.TeamDefaultPassportUpdated,
                 "team-delete" => ListEventTypeReplacedByItem.TeamDelete,
