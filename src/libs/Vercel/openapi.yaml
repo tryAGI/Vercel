@@ -17511,76 +17511,6 @@
                             "pro"
                           ]
                         },
-                        "platform": {
-                          "properties": {
-                            "source": {
-                              "properties": {
-                                "name": {
-                                  "type": "string",
-                                  "description": "Display name of the platform."
-                                }
-                              },
-                              "required": [
-                                "name"
-                              ],
-                              "type": "object",
-                              "description": "The external platform that created the deployment (e.g. its display name)."
-                            },
-                            "origin": {
-                              "properties": {
-                                "type": {
-                                  "type": "string",
-                                  "enum": [
-                                    "id",
-                                    "url"
-                                  ],
-                                  "description": "Whether the value is an opaque identifier or a URL."
-                                },
-                                "value": {
-                                  "type": "string",
-                                  "description": "The identifier or URL pointing to the originating entity."
-                                }
-                              },
-                              "required": [
-                                "type",
-                                "value"
-                              ],
-                              "type": "object",
-                              "description": "Reference back to the entity on the platform that initiated the deployment."
-                            },
-                            "creator": {
-                              "properties": {
-                                "name": {
-                                  "type": "string",
-                                  "description": "Display name of the platform user."
-                                },
-                                "avatar": {
-                                  "type": "string",
-                                  "description": "URL of the platform user's avatar image."
-                                }
-                              },
-                              "required": [
-                                "name"
-                              ],
-                              "type": "object",
-                              "description": "The user on the external platform who triggered the deployment."
-                            },
-                            "meta": {
-                              "additionalProperties": {
-                                "type": "string"
-                              },
-                              "type": "object",
-                              "description": "Arbitrary key-value metadata provided by the platform."
-                            }
-                          },
-                          "required": [
-                            "creator",
-                            "origin",
-                            "source"
-                          ],
-                          "type": "object",
-                          "description": "Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)"
-                        },
                         "connectBuildsEnabled": {
                           "type": "boolean",
                           "enum": [
@@ -21647,6 +21577,76 @@
                               "type": "object"
                             }
                           ]
+                        },
+                        "platform": {
+                          "properties": {
+                            "source": {
+                              "properties": {
+                                "name": {
+                                  "type": "string",
+                                  "description": "Display name of the platform."
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ],
+                              "type": "object",
+                              "description": "The external platform that created the deployment (e.g. its display name)."
+                            },
+                            "origin": {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "id",
+                                    "url"
+                                  ],
+                                  "description": "Whether the value is an opaque identifier or a URL."
+                                },
+                                "value": {
+                                  "type": "string",
+                                  "description": "The identifier or URL pointing to the originating entity."
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "value"
+                              ],
+                              "type": "object",
+                              "description": "Reference back to the entity on the platform that initiated the deployment."
+                            },
+                            "creator": {
+                              "properties": {
+                                "name": {
+                                  "type": "string",
+                                  "description": "Display name of the platform user."
+                                },
+                                "avatar": {
+                                  "type": "string",
+                                  "description": "URL of the platform user's avatar image."
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ],
+                              "type": "object",
+                              "description": "The user on the external platform who triggered the deployment."
+                            },
+                            "meta": {
+                              "additionalProperties": {
+                                "type": "string"
+                              },
+                              "type": "object",
+                              "description": "Arbitrary key-value metadata provided by the platform."
+                            }
+                          },
+                          "required": [
+                            "creator",
+                            "origin",
+                            "source"
+                          ],
+                          "type": "object",
+                          "description": "Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)"
                         },
                         "config": {
                           "properties": {
@@ -25276,76 +25276,6 @@
                             "pro"
                           ]
                         },
-                        "platform": {
-                          "properties": {
-                            "source": {
-                              "properties": {
-                                "name": {
-                                  "type": "string",
-                                  "description": "Display name of the platform."
-                                }
-                              },
-                              "required": [
-                                "name"
-                              ],
-                              "type": "object",
-                              "description": "The external platform that created the deployment (e.g. its display name)."
-                            },
-                            "origin": {
-                              "properties": {
-                                "type": {
-                                  "type": "string",
-                                  "enum": [
-                                    "id",
-                                    "url"
-                                  ],
-                                  "description": "Whether the value is an opaque identifier or a URL."
-                                },
-                                "value": {
-                                  "type": "string",
-                                  "description": "The identifier or URL pointing to the originating entity."
-                                }
-                              },
-                              "required": [
-                                "type",
-                                "value"
-                              ],
-                              "type": "object",
-                              "description": "Reference back to the entity on the platform that initiated the deployment."
-                            },
-                            "creator": {
-                              "properties": {
-                                "name": {
-                                  "type": "string",
-                                  "description": "Display name of the platform user."
-                                },
-                                "avatar": {
-                                  "type": "string",
-                                  "description": "URL of the platform user's avatar image."
-                                }
-                              },
-                              "required": [
-                                "name"
-                              ],
-                              "type": "object",
-                              "description": "The user on the external platform who triggered the deployment."
-                            },
-                            "meta": {
-                              "additionalProperties": {
-                                "type": "string"
-                              },
-                              "type": "object",
-                              "description": "Arbitrary key-value metadata provided by the platform."
-                            }
-                          },
-                          "required": [
-                            "creator",
-                            "origin",
-                            "source"
-                          ],
-                          "type": "object",
-                          "description": "Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)"
-                        },
                         "connectBuildsEnabled": {
                           "type": "boolean",
                           "enum": [
@@ -29413,6 +29343,76 @@
                             }
                           ]
                         },
+                        "platform": {
+                          "properties": {
+                            "source": {
+                              "properties": {
+                                "name": {
+                                  "type": "string",
+                                  "description": "Display name of the platform."
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ],
+                              "type": "object",
+                              "description": "The external platform that created the deployment (e.g. its display name)."
+                            },
+                            "origin": {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "id",
+                                    "url"
+                                  ],
+                                  "description": "Whether the value is an opaque identifier or a URL."
+                                },
+                                "value": {
+                                  "type": "string",
+                                  "description": "The identifier or URL pointing to the originating entity."
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "value"
+                              ],
+                              "type": "object",
+                              "description": "Reference back to the entity on the platform that initiated the deployment."
+                            },
+                            "creator": {
+                              "properties": {
+                                "name": {
+                                  "type": "string",
+                                  "description": "Display name of the platform user."
+                                },
+                                "avatar": {
+                                  "type": "string",
+                                  "description": "URL of the platform user's avatar image."
+                                }
+                              },
+                              "required": [
+                                "name"
+                              ],
+                              "type": "object",
+                              "description": "The user on the external platform who triggered the deployment."
+                            },
+                            "meta": {
+                              "additionalProperties": {
+                                "type": "string"
+                              },
+                              "type": "object",
+                              "description": "Arbitrary key-value metadata provided by the platform."
+                            }
+                          },
+                          "required": [
+                            "creator",
+                            "origin",
+                            "source"
+                          ],
+                          "type": "object",
+                          "description": "Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)"
+                        },
                         "config": {
                           "properties": {
                             "version": {
@@ -32138,76 +32138,6 @@
                         "hobby",
                         "pro"
                       ]
-                    },
-                    "platform": {
-                      "properties": {
-                        "source": {
-                          "properties": {
-                            "name": {
-                              "type": "string",
-                              "description": "Display name of the platform."
-                            }
-                          },
-                          "required": [
-                            "name"
-                          ],
-                          "type": "object",
-                          "description": "The external platform that created the deployment (e.g. its display name)."
-                        },
-                        "origin": {
-                          "properties": {
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "id",
-                                "url"
-                              ],
-                              "description": "Whether the value is an opaque identifier or a URL."
-                            },
-                            "value": {
-                              "type": "string",
-                              "description": "The identifier or URL pointing to the originating entity."
-                            }
-                          },
-                          "required": [
-                            "type",
-                            "value"
-                          ],
-                          "type": "object",
-                          "description": "Reference back to the entity on the platform that initiated the deployment."
-                        },
-                        "creator": {
-                          "properties": {
-                            "name": {
-                              "type": "string",
-                              "description": "Display name of the platform user."
-                            },
-                            "avatar": {
-                              "type": "string",
-                              "description": "URL of the platform user's avatar image."
-                            }
-                          },
-                          "required": [
-                            "name"
-                          ],
-                          "type": "object",
-                          "description": "The user on the external platform who triggered the deployment."
-                        },
-                        "meta": {
-                          "additionalProperties": {
-                            "type": "string"
-                          },
-                          "type": "object",
-                          "description": "Arbitrary key-value metadata provided by the platform."
-                        }
-                      },
-                      "required": [
-                        "creator",
-                        "origin",
-                        "source"
-                      ],
-                      "type": "object",
-                      "description": "Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)"
                     },
                     "connectBuildsEnabled": {
                       "type": "boolean",
@@ -36275,6 +36205,76 @@
                           "type": "object"
                         }
                       ]
+                    },
+                    "platform": {
+                      "properties": {
+                        "source": {
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "description": "Display name of the platform."
+                            }
+                          },
+                          "required": [
+                            "name"
+                          ],
+                          "type": "object",
+                          "description": "The external platform that created the deployment (e.g. its display name)."
+                        },
+                        "origin": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "id",
+                                "url"
+                              ],
+                              "description": "Whether the value is an opaque identifier or a URL."
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "The identifier or URL pointing to the originating entity."
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "value"
+                          ],
+                          "type": "object",
+                          "description": "Reference back to the entity on the platform that initiated the deployment."
+                        },
+                        "creator": {
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "description": "Display name of the platform user."
+                            },
+                            "avatar": {
+                              "type": "string",
+                              "description": "URL of the platform user's avatar image."
+                            }
+                          },
+                          "required": [
+                            "name"
+                          ],
+                          "type": "object",
+                          "description": "The user on the external platform who triggered the deployment."
+                        },
+                        "meta": {
+                          "additionalProperties": {
+                            "type": "string"
+                          },
+                          "type": "object",
+                          "description": "Arbitrary key-value metadata provided by the platform."
+                        }
+                      },
+                      "required": [
+                        "creator",
+                        "origin",
+                        "source"
+                      ],
+                      "type": "object",
+                      "description": "Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)"
                     },
                     "config": {
                       "properties": {
@@ -56949,9 +56949,6 @@
           },
           "410": {
             "description": ""
-          },
-          "412": {
-            "description": ""
           }
         },
         "parameters": [
@@ -58670,9 +58667,6 @@
           },
           "410": {
             "description": ""
-          },
-          "412": {
-            "description": ""
           }
         },
         "parameters": [
@@ -59433,9 +59427,6 @@
             "description": ""
           },
           "410": {
-            "description": ""
-          },
-          "412": {
             "description": ""
           }
         },
@@ -60546,24 +60537,6 @@
                       },
                       "type": "array"
                     },
-                    "connections": {
-                      "items": {
-                        "properties": {
-                          "edgeConfigId": {
-                            "type": "string"
-                          },
-                          "edgeConfigItemKey": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "edgeConfigId",
-                          "edgeConfigItemKey"
-                        ],
-                        "type": "object"
-                      },
-                      "type": "array"
-                    },
                     "entities": {
                       "items": {
                         "properties": {
@@ -60663,8 +60636,7 @@
                     "projectId",
                     "typeName"
                   ],
-                  "type": "object",
-                  "description": "Syncs direct the synchronization of Flags to Edge Configs"
+                  "type": "object"
                 }
               }
             }
@@ -60763,24 +60735,6 @@
                       },
                       "type": "array"
                     },
-                    "connections": {
-                      "items": {
-                        "properties": {
-                          "edgeConfigId": {
-                            "type": "string"
-                          },
-                          "edgeConfigItemKey": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "edgeConfigId",
-                          "edgeConfigItemKey"
-                        ],
-                        "type": "object"
-                      },
-                      "type": "array"
-                    },
                     "entities": {
                       "items": {
                         "properties": {
@@ -60880,8 +60834,7 @@
                     "projectId",
                     "typeName"
                   ],
-                  "type": "object",
-                  "description": "Syncs direct the synchronization of Flags to Edge Configs"
+                  "type": "object"
                 }
               }
             }
@@ -60917,24 +60870,6 @@
                       },
                       "type": "array"
                     },
-                    "connections": {
-                      "items": {
-                        "properties": {
-                          "edgeConfigId": {
-                            "type": "string"
-                          },
-                          "edgeConfigItemKey": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "edgeConfigId",
-                          "edgeConfigItemKey"
-                        ],
-                        "type": "object"
-                      },
-                      "type": "array"
-                    },
                     "entities": {
                       "items": {
                         "properties": {
@@ -61034,8 +60969,7 @@
                     "projectId",
                     "typeName"
                   ],
-                  "type": "object",
-                  "description": "Syncs direct the synchronization of Flags to Edge Configs"
+                  "type": "object"
                 }
               }
             }
@@ -61059,9 +60993,6 @@
             "description": ""
           },
           "410": {
-            "description": ""
-          },
-          "412": {
             "description": ""
           }
         },
@@ -61239,24 +61170,6 @@
                                 },
                                 "type": "array"
                               },
-                              "connections": {
-                                "items": {
-                                  "properties": {
-                                    "edgeConfigId": {
-                                      "type": "string"
-                                    },
-                                    "edgeConfigItemKey": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "edgeConfigId",
-                                    "edgeConfigItemKey"
-                                  ],
-                                  "type": "object"
-                                },
-                                "type": "array"
-                              },
                               "entities": {
                                 "items": {
                                   "properties": {
@@ -61356,8 +61269,7 @@
                               "projectId",
                               "typeName"
                             ],
-                            "type": "object",
-                            "description": "Syncs direct the synchronization of Flags to Edge Configs"
+                            "type": "object"
                           },
                           "type": "array"
                         },
@@ -62236,9 +62148,6 @@
           },
           "410": {
             "description": ""
-          },
-          "412": {
-            "description": ""
           }
         },
         "parameters": [
@@ -62832,9 +62741,6 @@
           },
           "410": {
             "description": ""
-          },
-          "412": {
-            "description": ""
           }
         },
         "parameters": [
@@ -63310,9 +63216,6 @@
             "description": ""
           },
           "410": {
-            "description": ""
-          },
-          "412": {
             "description": ""
           }
         },
@@ -191334,6 +191237,8 @@
               "invoice-refunded",
               "kms-issuer-created",
               "kms-issuer-deleted",
+              "kms-issuer-key-activated",
+              "kms-issuer-key-created",
               "kms-issuer-key-rotated",
               "kms-issuer-policy-created",
               "kms-issuer-policy-deleted",
@@ -192220,6 +192125,8 @@
               "invoice-refunded",
               "kms-issuer-created",
               "kms-issuer-deleted",
+              "kms-issuer-key-activated",
+              "kms-issuer-key-created",
               "kms-issuer-key-rotated",
               "kms-issuer-policy-created",
               "kms-issuer-policy-deleted",
@@ -192847,6 +192754,8 @@
                 "invoice-refunded",
                 "kms-issuer-created",
                 "kms-issuer-deleted",
+                "kms-issuer-key-activated",
+                "kms-issuer-key-created",
                 "kms-issuer-key-rotated",
                 "kms-issuer-policy-created",
                 "kms-issuer-policy-deleted",

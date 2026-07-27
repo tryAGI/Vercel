@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Syncs direct the synchronization of Flags to Edge Configs
+    /// 
     /// </summary>
     public sealed partial class GetFlagSettingsResponse
     {
@@ -41,12 +41,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<string> Environments { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("connections")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetFlagSettingsResponseConnection>? Connections { get; set; }
 
         /// <summary>
         /// 
@@ -90,7 +84,6 @@ namespace Vercel
         /// <param name="metadata"></param>
         /// <param name="typeName"></param>
         /// <param name="ownerId"></param>
-        /// <param name="connections"></param>
         /// <param name="createdAt"></param>
         /// <param name="updatedAt"></param>
 #if NET7_0_OR_GREATER
@@ -104,7 +97,6 @@ namespace Vercel
             global::Vercel.GetFlagSettingsResponseMetadata metadata,
             global::Vercel.GetFlagSettingsResponseTypeName typeName,
             string? ownerId,
-            global::System.Collections.Generic.IList<global::Vercel.GetFlagSettingsResponseConnection>? connections,
             double? createdAt,
             double? updatedAt)
         {
@@ -113,7 +105,6 @@ namespace Vercel
             this.OwnerId = ownerId;
             this.Enabled = enabled;
             this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
-            this.Connections = connections;
             this.Entities = entities ?? throw new global::System.ArgumentNullException(nameof(entities));
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;

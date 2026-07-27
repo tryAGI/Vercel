@@ -1564,8 +1564,6 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2SourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2PlanJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2PlanNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2PlatformOriginTypeJsonConverter),
-            typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2PlatformOriginTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2FunctionsArchitectureJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2FunctionsArchitectureNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2FunctionsMaxDurationJsonConverter),
@@ -1706,6 +1704,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2GitRepoVariant4OwnerTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2MicrofrontendsVariant2MfeConfigUploadStateJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2MicrofrontendsVariant2MfeConfigUploadStateNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2PlatformOriginTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2PlatformOriginTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ConfigFunctionTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ConfigFunctionTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ConfigFunctionMemoryTypeJsonConverter),
@@ -1870,8 +1870,6 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2SourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2PlanJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2PlanNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2PlatformOriginTypeJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2PlatformOriginTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2FunctionsArchitectureJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2FunctionsArchitectureNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2FunctionsMaxDurationJsonConverter),
@@ -2012,6 +2010,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2GitRepoVariant4OwnerTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2MicrofrontendsVariant2MfeConfigUploadStateJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2MicrofrontendsVariant2MfeConfigUploadStateNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2PlatformOriginTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2PlatformOriginTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2ConfigFunctionTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2ConfigFunctionTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2ConfigFunctionMemoryTypeJsonConverter),
@@ -2104,8 +2104,6 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponseSourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponsePlanJsonConverter),
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponsePlanNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CancelDeploymentResponsePlatformOriginTypeJsonConverter),
-            typeof(global::Vercel.JsonConverters.CancelDeploymentResponsePlatformOriginTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponseFunctionsArchitectureJsonConverter),
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponseFunctionsArchitectureNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponseFunctionsMaxDurationJsonConverter),
@@ -2246,6 +2244,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponseGitRepoVariant4OwnerTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponseMicrofrontendsVariant2MfeConfigUploadStateJsonConverter),
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponseMicrofrontendsVariant2MfeConfigUploadStateNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CancelDeploymentResponsePlatformOriginTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CancelDeploymentResponsePlatformOriginTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponseConfigFunctionTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponseConfigFunctionTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CancelDeploymentResponseConfigFunctionMemoryTypeJsonConverter),
@@ -7769,14 +7769,6 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2Blocks?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2Blocks2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2Status?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2Status2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2Conclusion?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2Conclusion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1, global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2>?), TypeInfoPropertyName = "NullableOneOfGetDeploymentCheckRunResponseVariant2SourceVariant1GetDeploymentCheckRunResponseVariant2SourceVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKind?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2SourceVariant1SubKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1Origin?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2SourceVariant1Origin2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2SubKind?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2SourceVariant2SubKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant2Origin?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant2SourceVariant2Origin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateDeploymentCheckRunResponseVariant1, global::Vercel.UpdateDeploymentCheckRunResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfUpdateDeploymentCheckRunResponseVariant1UpdateDeploymentCheckRunResponseVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1Requires?), TypeInfoPropertyName = "NullableUpdateDeploymentCheckRunResponseVariant1Requires2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunResponseVariant1Blocks?), TypeInfoPropertyName = "NullableUpdateDeploymentCheckRunResponseVariant1Blocks2")]
@@ -7918,7 +7910,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2NodeVersion?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2NodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2Source?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2Source2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2Plan?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2Plan2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2PlatformOriginType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2PlatformOriginType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2FunctionsArchitecture?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2FunctionsArchitecture2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<double?, global::Vercel.GetDeploymentResponseVariant2FunctionsMaxDuration?>?), TypeInfoPropertyName = "NullableOneOfDoubleGetDeploymentResponseVariant2FunctionsMaxDuration2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2FunctionsMaxDuration?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2FunctionsMaxDuration2")]
@@ -8041,6 +8032,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2Flags, global::System.Collections.Generic.IList<object>>?), TypeInfoPropertyName = "NullableOneOfGetDeploymentResponseVariant2FlagsIListObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant1, global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant2>?), TypeInfoPropertyName = "NullableOneOfGetDeploymentResponseVariant2MicrofrontendsVariant1GetDeploymentResponseVariant2MicrofrontendsVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant2MfeConfigUploadState?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2MicrofrontendsVariant2MfeConfigUploadState2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2PlatformOriginType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2PlatformOriginType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigFunctionType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ConfigFunctionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigFunctionMemoryType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ConfigFunctionMemoryType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfigBuildQueueConfiguration?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ConfigResourceConfigBuildQueueConfiguration2")]
@@ -8128,7 +8120,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2NodeVersion?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2NodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2Source?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2Source2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2Plan?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2Plan2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2PlatformOriginType?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2PlatformOriginType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2FunctionsArchitecture?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2FunctionsArchitecture2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<double?, global::Vercel.CreateDeploymentResponseVariant2FunctionsMaxDuration?>?), TypeInfoPropertyName = "NullableOneOfDoubleCreateDeploymentResponseVariant2FunctionsMaxDuration2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2FunctionsMaxDuration?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2FunctionsMaxDuration2")]
@@ -8251,6 +8242,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2Flags, global::System.Collections.Generic.IList<object>>?), TypeInfoPropertyName = "NullableOneOfCreateDeploymentResponseVariant2FlagsIListObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2MicrofrontendsVariant1, global::Vercel.CreateDeploymentResponseVariant2MicrofrontendsVariant2>?), TypeInfoPropertyName = "CreateDeploymentResponseVariant2MicrofrontendsVariant2_8002c16261862be9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2MicrofrontendsVariant2MfeConfigUploadState?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2MicrofrontendsVariant2MfeConfigUploadState2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2PlatformOriginType?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2PlatformOriginType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ConfigFunctionType?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ConfigFunctionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ConfigFunctionMemoryType?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ConfigFunctionMemoryType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ConfigResourceConfigBuildQueueConfiguration?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ConfigResourceConfigBuildQueueConfiguration2")]
@@ -8269,6 +8261,14 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseStatus?), TypeInfoPropertyName = "NullableCancelDeploymentResponseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseCustomEnvironmentVariant1, global::Vercel.CancelDeploymentResponseCustomEnvironmentVariant2>?), TypeInfoPropertyName = "NullableOneOfCancelDeploymentResponseCustomEnvironmentVariant1CancelDeploymentResponseCustomEnvironmentVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseCustomEnvironmentVariant1Type?), TypeInfoPropertyName = "NullableCancelDeploymentResponseCustomEnvironmentVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseCustomEnvironmentVariant1BranchMatcherType?), TypeInfoPropertyName = "NullableCancelDeploymentResponseCustomEnvironmentVariant1BranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseOomReport?), TypeInfoPropertyName = "NullableCancelDeploymentResponseOomReport2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseTarget?), TypeInfoPropertyName = "NullableCancelDeploymentResponseTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseReadyState?), TypeInfoPropertyName = "NullableCancelDeploymentResponseReadyState2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseReadySubstate?), TypeInfoPropertyName = "NullableCancelDeploymentResponseReadySubstate2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseChecksState?), TypeInfoPropertyName = "NullableCancelDeploymentResponseChecksState2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseChecksConclusion?), TypeInfoPropertyName = "NullableCancelDeploymentResponseChecksConclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseType?), TypeInfoPropertyName = "NullableCancelDeploymentResponseType2")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -515,12 +515,6 @@ namespace Vercel
         public required global::Vercel.CancelDeploymentResponsePlan Plan { get; set; }
 
         /// <summary>
-        /// Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("platform")]
-        public global::Vercel.CancelDeploymentResponsePlatform? Platform { get; set; }
-
-        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectBuildsEnabled")]
@@ -602,6 +596,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CancelDeploymentResponseMicrofrontendsVariant1, global::Vercel.CancelDeploymentResponseMicrofrontendsVariant2>))]
         public global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseMicrofrontendsVariant1, global::Vercel.CancelDeploymentResponseMicrofrontendsVariant2>? Microfrontends { get; set; }
+
+        /// <summary>
+        /// Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("platform")]
+        public global::Vercel.CancelDeploymentResponsePlatform? Platform { get; set; }
 
         /// <summary>
         /// Since February 2025 the configuration must include snapshot data at the time of deployment creation to capture properties for the /deployments/:id/config endpoint utilized for displaying Deployment Configuration on the frontend This is optional because older deployments may not have this data captured
@@ -787,9 +787,6 @@ namespace Vercel
         /// Example: abc123
         /// </param>
         /// <param name="oidcTokenClaims"></param>
-        /// <param name="platform">
-        /// Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)
-        /// </param>
         /// <param name="connectBuildsEnabled"></param>
         /// <param name="connectConfigurationId"></param>
         /// <param name="crons"></param>
@@ -805,6 +802,9 @@ namespace Vercel
         /// <param name="gitRepo"></param>
         /// <param name="flags"></param>
         /// <param name="microfrontends"></param>
+        /// <param name="platform">
+        /// Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)
+        /// </param>
         /// <param name="config">
         /// Since February 2025 the configuration must include snapshot data at the time of deployment creation to capture properties for the /deployments/:id/config endpoint utilized for displaying Deployment Configuration on the frontend This is optional because older deployments may not have this data captured
         /// </param>
@@ -893,7 +893,6 @@ namespace Vercel
             double? undeletedAt,
             string? userConfiguredDeploymentId,
             global::Vercel.CancelDeploymentResponseOidcTokenClaims? oidcTokenClaims,
-            global::Vercel.CancelDeploymentResponsePlatform? platform,
             bool? connectBuildsEnabled,
             string? connectConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.CancelDeploymentResponseCron>? crons,
@@ -905,6 +904,7 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseGitRepoVariant1, global::Vercel.CancelDeploymentResponseGitRepoVariant2, global::Vercel.CancelDeploymentResponseGitRepoVariant3, global::Vercel.CancelDeploymentResponseGitRepoVariant4>? gitRepo,
             global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseFlags, global::System.Collections.Generic.IList<object>>? flags,
             global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseMicrofrontendsVariant1, global::Vercel.CancelDeploymentResponseMicrofrontendsVariant2>? microfrontends,
+            global::Vercel.CancelDeploymentResponsePlatform? platform,
             global::Vercel.CancelDeploymentResponseConfig? config,
             global::Vercel.CancelDeploymentResponseChecks? checks,
             global::Vercel.CancelDeploymentResponseSeatBlock? seatBlock,
@@ -982,7 +982,6 @@ namespace Vercel
             this.OidcTokenClaims = oidcTokenClaims;
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Plan = plan;
-            this.Platform = platform;
             this.ConnectBuildsEnabled = connectBuildsEnabled;
             this.ConnectConfigurationId = connectConfigurationId;
             this.CreatedIn = createdIn ?? throw new global::System.ArgumentNullException(nameof(createdIn));
@@ -996,6 +995,7 @@ namespace Vercel
             this.GitRepo = gitRepo;
             this.Flags = flags;
             this.Microfrontends = microfrontends;
+            this.Platform = platform;
             this.Config = config;
             this.Checks = checks;
             this.SeatBlock = seatBlock;
