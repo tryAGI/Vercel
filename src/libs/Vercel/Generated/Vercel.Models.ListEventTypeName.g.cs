@@ -952,6 +952,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        KmsIssuerKeyActivated,
+        /// <summary>
+        /// 
+        /// </summary>
+        KmsIssuerKeyCreated,
+        /// <summary>
+        /// 
+        /// </summary>
         KmsIssuerKeyRotated,
         /// <summary>
         /// 
@@ -2534,6 +2542,8 @@ namespace Vercel
                 ListEventTypeName.InvoiceRefunded => "invoice-refunded",
                 ListEventTypeName.KmsIssuerCreated => "kms-issuer-created",
                 ListEventTypeName.KmsIssuerDeleted => "kms-issuer-deleted",
+                ListEventTypeName.KmsIssuerKeyActivated => "kms-issuer-key-activated",
+                ListEventTypeName.KmsIssuerKeyCreated => "kms-issuer-key-created",
                 ListEventTypeName.KmsIssuerKeyRotated => "kms-issuer-key-rotated",
                 ListEventTypeName.KmsIssuerPolicyCreated => "kms-issuer-policy-created",
                 ListEventTypeName.KmsIssuerPolicyDeleted => "kms-issuer-policy-deleted",
@@ -3113,6 +3123,8 @@ namespace Vercel
                 "invoice-refunded" => ListEventTypeName.InvoiceRefunded,
                 "kms-issuer-created" => ListEventTypeName.KmsIssuerCreated,
                 "kms-issuer-deleted" => ListEventTypeName.KmsIssuerDeleted,
+                "kms-issuer-key-activated" => ListEventTypeName.KmsIssuerKeyActivated,
+                "kms-issuer-key-created" => ListEventTypeName.KmsIssuerKeyCreated,
                 "kms-issuer-key-rotated" => ListEventTypeName.KmsIssuerKeyRotated,
                 "kms-issuer-policy-created" => ListEventTypeName.KmsIssuerPolicyCreated,
                 "kms-issuer-policy-deleted" => ListEventTypeName.KmsIssuerPolicyDeleted,
