@@ -78,12 +78,20 @@ namespace Vercel
         public required double CreatedAt { get; set; }
 
         /// <summary>
-        /// The organizationId for child teams created under an organization.<br/>
+        /// The organizationId for teams that belong to an organization (set on both the organization's root team and its child teams).<br/>
         /// Example: org_nllPyCtREAqxxdyFKbbMDlxd
         /// </summary>
         /// <example>org_nllPyCtREAqxxdyFKbbMDlxd</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("parentId")]
         public string? ParentId { get; set; }
+
+        /// <summary>
+        /// Best-effort ID of the organization’s root billing team. When present, compare `orgRootTeamId === id` to identify the root team. It may be omitted even when `parentId` is set if organization resolution fails or the referenced organization is missing. Always omitted for non-organization teams.<br/>
+        /// Example: team_nllPyCtREAqxxdyFKbbMDlxd
+        /// </summary>
+        /// <example>team_nllPyCtREAqxxdyFKbbMDlxd</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("orgRootTeamId")]
+        public string? OrgRootTeamId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -125,8 +133,12 @@ namespace Vercel
         /// The membership of the authenticated User in relation to the Team.
         /// </param>
         /// <param name="parentId">
-        /// The organizationId for child teams created under an organization.<br/>
+        /// The organizationId for teams that belong to an organization (set on both the organization's root team and its child teams).<br/>
         /// Example: org_nllPyCtREAqxxdyFKbbMDlxd
+        /// </param>
+        /// <param name="orgRootTeamId">
+        /// Best-effort ID of the organization’s root billing team. When present, compare `orgRootTeamId === id` to identify the root team. It may be omitted even when `parentId` is set if organization resolution fails or the referenced organization is missing. Always omitted for non-organization teams.<br/>
+        /// Example: team_nllPyCtREAqxxdyFKbbMDlxd
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -141,7 +153,8 @@ namespace Vercel
             string? name,
             string? avatar,
             global::Vercel.TeamLimitedMembership? membership,
-            string? parentId)
+            string? parentId,
+            string? orgRootTeamId)
         {
             this.Limited = limited;
             this.LimitedBy = limitedBy ?? throw new global::System.ArgumentNullException(nameof(limitedBy));
@@ -153,6 +166,7 @@ namespace Vercel
             this.Membership = membership;
             this.CreatedAt = createdAt;
             this.ParentId = parentId;
+            this.OrgRootTeamId = orgRootTeamId;
         }
 
         /// <summary>
