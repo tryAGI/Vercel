@@ -19,6 +19,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Discord,
+        /// <summary>
+        /// 
+        /// </summary>
         Github,
         /// <summary>
         /// 
@@ -68,6 +72,7 @@ namespace Vercel
             {
                 CreateConnectorResponseType.ApiKey => "api-key",
                 CreateConnectorResponseType.Custom => "custom",
+                CreateConnectorResponseType.Discord => "discord",
                 CreateConnectorResponseType.Github => "github",
                 CreateConnectorResponseType.Linear => "linear",
                 CreateConnectorResponseType.MicrosoftEntra => "microsoft-entra",
@@ -89,6 +94,7 @@ namespace Vercel
             {
                 "api-key" => CreateConnectorResponseType.ApiKey,
                 "custom" => CreateConnectorResponseType.Custom,
+                "discord" => CreateConnectorResponseType.Discord,
                 "github" => CreateConnectorResponseType.Github,
                 "linear" => CreateConnectorResponseType.Linear,
                 "microsoft-entra" => CreateConnectorResponseType.MicrosoftEntra,
