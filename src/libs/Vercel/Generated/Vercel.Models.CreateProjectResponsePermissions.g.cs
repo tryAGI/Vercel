@@ -317,6 +317,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectLogs")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnectLogs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connexClient")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexClient { get; set; }
 
@@ -1652,6 +1658,7 @@ namespace Vercel
         /// <param name="concurrentBuilds"></param>
         /// <param name="connect"></param>
         /// <param name="connectConfiguration"></param>
+        /// <param name="connectLogs"></param>
         /// <param name="connexClient"></param>
         /// <param name="connexClientProject"></param>
         /// <param name="connexInstallation"></param>
@@ -1920,6 +1927,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? concurrentBuilds,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connect,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connectConfiguration,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connectLogs,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexClient,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexClientProject,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexInstallation,
@@ -2185,6 +2193,7 @@ namespace Vercel
             this.ConcurrentBuilds = concurrentBuilds;
             this.Connect = connect;
             this.ConnectConfiguration = connectConfiguration;
+            this.ConnectLogs = connectLogs;
             this.ConnexClient = connexClient;
             this.ConnexClientProject = connexClientProject;
             this.ConnexInstallation = connexInstallation;
