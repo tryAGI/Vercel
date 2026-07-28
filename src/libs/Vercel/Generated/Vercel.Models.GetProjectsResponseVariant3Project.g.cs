@@ -288,6 +288,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sandbox")]
+        public global::Vercel.GetProjectsResponseVariant3ProjectSandbox? Sandbox { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productionDeploymentsFastLane")]
         public bool? ProductionDeploymentsFastLane { get; set; }
 
@@ -664,6 +670,7 @@ namespace Vercel
         /// <param name="passwordProtection"></param>
         /// <param name="passport"></param>
         /// <param name="protectionConfig"></param>
+        /// <param name="sandbox"></param>
         /// <param name="productionDeploymentsFastLane"></param>
         /// <param name="rollbackDescription">
         /// Description of why a project was rolled back, and by whom. Note that lastAliasRequest contains the from/to details of the rollback.
@@ -771,6 +778,7 @@ namespace Vercel
             object? passwordProtection,
             global::Vercel.GetProjectsResponseVariant3ProjectPassport? passport,
             global::Vercel.GetProjectsResponseVariant3ProjectProtectionConfig? protectionConfig,
+            global::Vercel.GetProjectsResponseVariant3ProjectSandbox? sandbox,
             bool? productionDeploymentsFastLane,
             global::Vercel.GetProjectsResponseVariant3ProjectRollbackDescription? rollbackDescription,
             global::Vercel.GetProjectsResponseVariant3ProjectRollingRelease? rollingRelease,
@@ -867,6 +875,7 @@ namespace Vercel
             this.PasswordProtection = passwordProtection;
             this.Passport = passport;
             this.ProtectionConfig = protectionConfig;
+            this.Sandbox = sandbox;
             this.ProductionDeploymentsFastLane = productionDeploymentsFastLane;
             this.ResourceConfig = resourceConfig ?? throw new global::System.ArgumentNullException(nameof(resourceConfig));
             this.RollbackDescription = rollbackDescription;
