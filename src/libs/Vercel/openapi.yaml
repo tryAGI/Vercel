@@ -11731,6 +11731,7 @@
                       "enum": [
                         "api-key",
                         "custom",
+                        "discord",
                         "github",
                         "linear",
                         "microsoft-entra",
