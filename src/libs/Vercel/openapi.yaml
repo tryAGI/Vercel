@@ -12116,6 +12116,9 @@
           "410": {
             "description": ""
           },
+          "422": {
+            "description": ""
+          },
           "502": {
             "description": ""
           }
@@ -13253,6 +13256,9 @@
                             "type": "array"
                           },
                           "expiresAt": {
+                            "type": "number"
+                          },
+                          "expiresIn": {
                             "type": "number"
                           },
                           "refreshTokenExpiresAt": {

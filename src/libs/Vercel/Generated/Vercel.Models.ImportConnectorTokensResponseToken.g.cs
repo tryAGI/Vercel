@@ -60,6 +60,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresIn")]
+        public double? ExpiresIn { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("refreshTokenExpiresAt")]
         public double? RefreshTokenExpiresAt { get; set; }
 
@@ -130,6 +136,7 @@ namespace Vercel
         /// <param name="scopes"></param>
         /// <param name="resources"></param>
         /// <param name="authorizationDetails"></param>
+        /// <param name="expiresIn"></param>
         /// <param name="refreshTokenExpiresAt"></param>
         /// <param name="externalSubject"></param>
         /// <param name="claims">
@@ -152,6 +159,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? scopes,
             global::System.Collections.Generic.IList<string>? resources,
             global::System.Collections.Generic.IList<global::Vercel.ImportConnectorTokensResponseTokenAuthorizationDetail>? authorizationDetails,
+            double? expiresIn,
             double? refreshTokenExpiresAt,
             string? externalSubject,
             object? claims,
@@ -166,6 +174,7 @@ namespace Vercel
             this.Resources = resources;
             this.AuthorizationDetails = authorizationDetails;
             this.ExpiresAt = expiresAt;
+            this.ExpiresIn = expiresIn;
             this.RefreshTokenExpiresAt = refreshTokenExpiresAt;
             this.ExternalSubject = externalSubject;
             this.Claims = claims;
