@@ -77658,6 +77658,12 @@
                                 },
                                 "type": "array"
                               },
+                              "connectLogs": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "connexClient": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -100191,6 +100197,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "connectLogs": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "connexClient": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -107764,6 +107776,12 @@
                           "type": "array"
                         },
                         "connectConfiguration": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "connectLogs": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -115513,6 +115531,12 @@
                           },
                           "type": "array"
                         },
+                        "connectLogs": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "connexClient": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -122613,6 +122637,12 @@
                           "type": "array"
                         },
                         "connectConfiguration": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "connectLogs": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -130982,6 +131012,12 @@
                           "type": "array"
                         },
                         "connectConfiguration": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "connectLogs": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -147269,6 +147305,12 @@
                           "type": "array"
                         },
                         "connectConfiguration": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "connectLogs": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
