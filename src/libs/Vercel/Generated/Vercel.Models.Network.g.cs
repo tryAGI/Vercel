@@ -49,6 +49,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? EgressIpAddresses { get; set; }
 
         /// <summary>
+        /// The single contiguous CIDR block from which all egress (NAT gateway) IP addresses are allocated. Present only for networks created with the egress CIDR block feature enabled. Customers can allowlist this range instead of individual egress IPs so it keeps working when AZs are added.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("egressCidrBlock")]
+        public string? EgressCidrBlock { get; set; }
+
+        /// <summary>
         /// Metadata about any AWS Route53 Hosted Zones associated with the Network.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hostedZones")]
@@ -144,6 +150,9 @@ namespace Vercel
         /// The IDs of the AWS Availability Zones in which the network exists, if specified during creation.
         /// </param>
         /// <param name="egressIpAddresses"></param>
+        /// <param name="egressCidrBlock">
+        /// The single contiguous CIDR block from which all egress (NAT gateway) IP addresses are allocated. Present only for networks created with the egress CIDR block feature enabled. Customers can allowlist this range instead of individual egress IPs so it keeps working when AZs are added.
+        /// </param>
         /// <param name="hostedZones">
         /// Metadata about any AWS Route53 Hosted Zones associated with the Network.
         /// </param>
@@ -173,6 +182,7 @@ namespace Vercel
             string teamId,
             global::System.Collections.Generic.IList<string>? awsAvailabilityZoneIds,
             global::System.Collections.Generic.IList<string>? egressIpAddresses,
+            string? egressCidrBlock,
             global::Vercel.NetworkHostedZones? hostedZones,
             global::Vercel.NetworkPeeringConnections? peeringConnections,
             global::Vercel.NetworkProjects? projects,
@@ -185,6 +195,7 @@ namespace Vercel
             this.Cidr = cidr ?? throw new global::System.ArgumentNullException(nameof(cidr));
             this.CreatedAt = createdAt;
             this.EgressIpAddresses = egressIpAddresses;
+            this.EgressCidrBlock = egressCidrBlock;
             this.HostedZones = hostedZones;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

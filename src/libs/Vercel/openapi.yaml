@@ -189392,6 +189392,10 @@
             },
             "type": "array"
           },
+          "egressCidrBlock": {
+            "type": "string",
+            "description": "The single contiguous CIDR block from which all egress (NAT gateway) IP addresses are allocated. Present only for networks created with the egress CIDR block feature enabled. Customers can allowlist this range instead of individual egress IPs so it keeps working when AZs are added."
+          },
           "hostedZones": {
             "properties": {
               "count": {
