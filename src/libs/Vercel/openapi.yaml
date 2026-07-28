@@ -76512,6 +76512,30 @@
                             },
                             "type": "object"
                           },
+                          "sandbox": {
+                            "properties": {
+                              "region": {
+                                "type": "string",
+                                "enum": [
+                                  "cle1",
+                                  "iad1",
+                                  "sfo1"
+                                ]
+                              },
+                              "failoverRegions": {
+                                "items": {
+                                  "type": "string",
+                                  "enum": [
+                                    "cle1",
+                                    "iad1",
+                                    "sfo1"
+                                  ]
+                                },
+                                "type": "array"
+                              }
+                            },
+                            "type": "object"
+                          },
                           "productionDeploymentsFastLane": {
                             "type": "boolean",
                             "enum": [
@@ -99021,6 +99045,30 @@
                                 },
                                 "type": "object"
                               },
+                              "sandbox": {
+                                "properties": {
+                                  "region": {
+                                    "type": "string",
+                                    "enum": [
+                                      "cle1",
+                                      "iad1",
+                                      "sfo1"
+                                    ]
+                                  },
+                                  "failoverRegions": {
+                                    "items": {
+                                      "type": "string",
+                                      "enum": [
+                                        "cle1",
+                                        "iad1",
+                                        "sfo1"
+                                      ]
+                                    },
+                                    "type": "array"
+                                  }
+                                },
+                                "type": "object"
+                              },
                               "productionDeploymentsFastLane": {
                                 "type": "boolean",
                                 "enum": [
@@ -106571,6 +106619,30 @@
                             }
                           },
                           "type": "object"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "sandbox": {
+                      "properties": {
+                        "region": {
+                          "type": "string",
+                          "enum": [
+                            "cle1",
+                            "iad1",
+                            "sfo1"
+                          ]
+                        },
+                        "failoverRegions": {
+                          "items": {
+                            "type": "string",
+                            "enum": [
+                              "cle1",
+                              "iad1",
+                              "sfo1"
+                            ]
+                          },
+                          "type": "array"
                         }
                       },
                       "type": "object"
@@ -114295,6 +114367,30 @@
                       },
                       "type": "object"
                     },
+                    "sandbox": {
+                      "properties": {
+                        "region": {
+                          "type": "string",
+                          "enum": [
+                            "cle1",
+                            "iad1",
+                            "sfo1"
+                          ]
+                        },
+                        "failoverRegions": {
+                          "items": {
+                            "type": "string",
+                            "enum": [
+                              "cle1",
+                              "iad1",
+                              "sfo1"
+                            ]
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "productionDeploymentsFastLane": {
                       "type": "boolean",
                       "enum": [
@@ -121372,6 +121468,30 @@
                             }
                           },
                           "type": "object"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "sandbox": {
+                      "properties": {
+                        "region": {
+                          "type": "string",
+                          "enum": [
+                            "cle1",
+                            "iad1",
+                            "sfo1"
+                          ]
+                        },
+                        "failoverRegions": {
+                          "items": {
+                            "type": "string",
+                            "enum": [
+                              "cle1",
+                              "iad1",
+                              "sfo1"
+                            ]
+                          },
+                          "type": "array"
                         }
                       },
                       "type": "object"
@@ -129717,6 +129837,30 @@
                             }
                           },
                           "type": "object"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "sandbox": {
+                      "properties": {
+                        "region": {
+                          "type": "string",
+                          "enum": [
+                            "cle1",
+                            "iad1",
+                            "sfo1"
+                          ]
+                        },
+                        "failoverRegions": {
+                          "items": {
+                            "type": "string",
+                            "enum": [
+                              "cle1",
+                              "iad1",
+                              "sfo1"
+                            ]
+                          },
+                          "type": "array"
                         }
                       },
                       "type": "object"
@@ -145980,6 +146124,30 @@
                             }
                           },
                           "type": "object"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "sandbox": {
+                      "properties": {
+                        "region": {
+                          "type": "string",
+                          "enum": [
+                            "cle1",
+                            "iad1",
+                            "sfo1"
+                          ]
+                        },
+                        "failoverRegions": {
+                          "items": {
+                            "type": "string",
+                            "enum": [
+                              "cle1",
+                              "iad1",
+                              "sfo1"
+                            ]
+                          },
+                          "type": "array"
                         }
                       },
                       "type": "object"
@@ -191244,6 +191412,7 @@
               "project-root-directory-updated",
               "project-routes-version-promoted",
               "project-routes-version-restored",
+              "project-sandbox-config-updated",
               "project-sandbox-url-protection-updated",
               "project-skew-protection-allowed-domains-updated",
               "project-skew-protection-max-age-updated",
@@ -192133,6 +192302,7 @@
               "project-root-directory-updated",
               "project-routes-version-promoted",
               "project-routes-version-restored",
+              "project-sandbox-config-updated",
               "project-sandbox-url-protection-updated",
               "project-skew-protection-allowed-domains-updated",
               "project-skew-protection-max-age-updated",
@@ -192763,6 +192933,7 @@
                 "project-root-directory-updated",
                 "project-routes-version-promoted",
                 "project-routes-version-restored",
+                "project-sandbox-config-updated",
                 "project-sandbox-url-protection-updated",
                 "project-skew-protection-allowed-domains-updated",
                 "project-skew-protection-max-age-updated",
