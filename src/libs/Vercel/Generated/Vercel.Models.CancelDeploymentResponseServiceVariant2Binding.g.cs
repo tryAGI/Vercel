@@ -9,11 +9,11 @@ namespace Vercel
     public sealed partial class CancelDeploymentResponseServiceVariant2Binding
     {
         /// <summary>
-        /// Must be `"service"` for Service-to-Service HTTP bindings.
+        /// If present, must be `"service"` for Service-to-Service HTTP bindings.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseServiceVariant2BindingTypeJsonConverter))]
-        public global::Vercel.CancelDeploymentResponseServiceVariant2BindingType Type { get; set; }
+        public global::Vercel.CancelDeploymentResponseServiceVariant2BindingType? Type { get; set; }
 
         /// <summary>
         /// Target service name from `services`.
@@ -52,7 +52,7 @@ namespace Vercel
         /// Environment variable name that will store the generated value
         /// </param>
         /// <param name="type">
-        /// Must be `"service"` for Service-to-Service HTTP bindings.
+        /// If present, must be `"service"` for Service-to-Service HTTP bindings.
         /// </param>
         /// <param name="format">
         /// Generated value shape, must be `"url"`.
@@ -63,7 +63,7 @@ namespace Vercel
         public CancelDeploymentResponseServiceVariant2Binding(
             string service,
             string env,
-            global::Vercel.CancelDeploymentResponseServiceVariant2BindingType type,
+            global::Vercel.CancelDeploymentResponseServiceVariant2BindingType? type,
             global::Vercel.CancelDeploymentResponseServiceVariant2BindingFormat format)
         {
             this.Type = type;
