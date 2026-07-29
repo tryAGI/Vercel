@@ -78885,6 +78885,12 @@
                                 },
                                 "type": "array"
                               },
+                              "projectDomainVerify": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "projectEvent": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -101424,6 +101430,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "projectDomainVerify": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "projectEvent": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -109003,6 +109015,12 @@
                           "type": "array"
                         },
                         "projectDomainMove": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectDomainVerify": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -116758,6 +116776,12 @@
                           },
                           "type": "array"
                         },
+                        "projectDomainVerify": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "projectEvent": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -123864,6 +123888,12 @@
                           "type": "array"
                         },
                         "projectDomainMove": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectDomainVerify": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -132239,6 +132269,12 @@
                           "type": "array"
                         },
                         "projectDomainMove": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectDomainVerify": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -148532,6 +148568,12 @@
                           "type": "array"
                         },
                         "projectDomainMove": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectDomainVerify": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
