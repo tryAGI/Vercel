@@ -131,6 +131,20 @@ namespace Vercel
         public bool? Middleware { get; set; }
 
         /// <summary>
+        /// Enforced runtime for explicitly configured Routing Middleware.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("middlewareRuntime")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseServiceVariant2BuilderConfigMiddlewareRuntimeJsonConverter))]
+        public global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfigMiddlewareRuntime? MiddlewareRuntime { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("middlewareMatcher")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>))]
+        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? MiddlewareMatcher { get; set; }
+
+        /// <summary>
         /// Owning service name; scopes per-function config such as the v2beta consumer.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serviceName")]
@@ -165,6 +179,10 @@ namespace Vercel
         /// <param name="framework"></param>
         /// <param name="nodeVersion"></param>
         /// <param name="middleware"></param>
+        /// <param name="middlewareRuntime">
+        /// Enforced runtime for explicitly configured Routing Middleware.
+        /// </param>
+        /// <param name="middlewareMatcher"></param>
         /// <param name="serviceName">
         /// Owning service name; scopes per-function config such as the v2beta consumer.
         /// </param>
@@ -192,6 +210,8 @@ namespace Vercel
             string? framework,
             string? nodeVersion,
             bool? middleware,
+            global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfigMiddlewareRuntime? middlewareRuntime,
+            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? middlewareMatcher,
             string? serviceName)
         {
             this.BunVersion = bunVersion;
@@ -214,6 +234,8 @@ namespace Vercel
             this.Framework = framework;
             this.NodeVersion = nodeVersion;
             this.Middleware = middleware;
+            this.MiddlewareRuntime = middlewareRuntime;
+            this.MiddlewareMatcher = middlewareMatcher;
             this.ServiceName = serviceName;
         }
 

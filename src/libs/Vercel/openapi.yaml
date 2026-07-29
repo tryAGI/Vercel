@@ -18672,6 +18672,27 @@
                                               true
                                             ]
                                           },
+                                          "middlewareRuntime": {
+                                            "type": "string",
+                                            "enum": [
+                                              "nodejs"
+                                            ],
+                                            "description": "Enforced runtime for explicitly configured Routing Middleware."
+                                          },
+                                          "middlewareMatcher": {
+                                            "oneOf": [
+                                              {
+                                                "type": "string"
+                                              },
+                                              {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "Matcher supplied outside of the middleware source module."
+                                              }
+                                            ]
+                                          },
                                           "serviceName": {
                                             "type": "string",
                                             "description": "Owning service name; scopes per-function config such as the v2beta consumer."
@@ -19144,6 +19165,27 @@
                                               true
                                             ]
                                           },
+                                          "middlewareRuntime": {
+                                            "type": "string",
+                                            "enum": [
+                                              "nodejs"
+                                            ],
+                                            "description": "Enforced runtime for explicitly configured Routing Middleware."
+                                          },
+                                          "middlewareMatcher": {
+                                            "oneOf": [
+                                              {
+                                                "type": "string"
+                                              },
+                                              {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "Matcher supplied outside of the middleware source module."
+                                              }
+                                            ]
+                                          },
                                           "serviceName": {
                                             "type": "string",
                                             "description": "Owning service name; scopes per-function config such as the v2beta consumer."
@@ -19181,7 +19223,7 @@
                                           "enum": [
                                             "service"
                                           ],
-                                          "description": "Must be `\"service\"` for Service-to-Service HTTP bindings."
+                                          "description": "If present, must be `\"service\"` for Service-to-Service HTTP bindings."
                                         },
                                         "service": {
                                           "type": "string",
@@ -19202,8 +19244,7 @@
                                       "required": [
                                         "env",
                                         "format",
-                                        "service",
-                                        "type"
+                                        "service"
                                       ],
                                       "type": "object",
                                       "description": "Caller-side bindings to other services."
@@ -26355,6 +26396,27 @@
                                               true
                                             ]
                                           },
+                                          "middlewareRuntime": {
+                                            "type": "string",
+                                            "enum": [
+                                              "nodejs"
+                                            ],
+                                            "description": "Enforced runtime for explicitly configured Routing Middleware."
+                                          },
+                                          "middlewareMatcher": {
+                                            "oneOf": [
+                                              {
+                                                "type": "string"
+                                              },
+                                              {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "Matcher supplied outside of the middleware source module."
+                                              }
+                                            ]
+                                          },
                                           "serviceName": {
                                             "type": "string",
                                             "description": "Owning service name; scopes per-function config such as the v2beta consumer."
@@ -26827,6 +26889,27 @@
                                               true
                                             ]
                                           },
+                                          "middlewareRuntime": {
+                                            "type": "string",
+                                            "enum": [
+                                              "nodejs"
+                                            ],
+                                            "description": "Enforced runtime for explicitly configured Routing Middleware."
+                                          },
+                                          "middlewareMatcher": {
+                                            "oneOf": [
+                                              {
+                                                "type": "string"
+                                              },
+                                              {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "Matcher supplied outside of the middleware source module."
+                                              }
+                                            ]
+                                          },
                                           "serviceName": {
                                             "type": "string",
                                             "description": "Owning service name; scopes per-function config such as the v2beta consumer."
@@ -26864,7 +26947,7 @@
                                           "enum": [
                                             "service"
                                           ],
-                                          "description": "Must be `\"service\"` for Service-to-Service HTTP bindings."
+                                          "description": "If present, must be `\"service\"` for Service-to-Service HTTP bindings."
                                         },
                                         "service": {
                                           "type": "string",
@@ -26885,8 +26968,7 @@
                                       "required": [
                                         "env",
                                         "format",
-                                        "service",
-                                        "type"
+                                        "service"
                                       ],
                                       "type": "object",
                                       "description": "Caller-side bindings to other services."
@@ -33218,6 +33300,27 @@
                                           true
                                         ]
                                       },
+                                      "middlewareRuntime": {
+                                        "type": "string",
+                                        "enum": [
+                                          "nodejs"
+                                        ],
+                                        "description": "Enforced runtime for explicitly configured Routing Middleware."
+                                      },
+                                      "middlewareMatcher": {
+                                        "oneOf": [
+                                          {
+                                            "type": "string"
+                                          },
+                                          {
+                                            "items": {
+                                              "type": "string"
+                                            },
+                                            "type": "array",
+                                            "description": "Matcher supplied outside of the middleware source module."
+                                          }
+                                        ]
+                                      },
                                       "serviceName": {
                                         "type": "string",
                                         "description": "Owning service name; scopes per-function config such as the v2beta consumer."
@@ -33690,6 +33793,27 @@
                                           true
                                         ]
                                       },
+                                      "middlewareRuntime": {
+                                        "type": "string",
+                                        "enum": [
+                                          "nodejs"
+                                        ],
+                                        "description": "Enforced runtime for explicitly configured Routing Middleware."
+                                      },
+                                      "middlewareMatcher": {
+                                        "oneOf": [
+                                          {
+                                            "type": "string"
+                                          },
+                                          {
+                                            "items": {
+                                              "type": "string"
+                                            },
+                                            "type": "array",
+                                            "description": "Matcher supplied outside of the middleware source module."
+                                          }
+                                        ]
+                                      },
                                       "serviceName": {
                                         "type": "string",
                                         "description": "Owning service name; scopes per-function config such as the v2beta consumer."
@@ -33727,7 +33851,7 @@
                                       "enum": [
                                         "service"
                                       ],
-                                      "description": "Must be `\"service\"` for Service-to-Service HTTP bindings."
+                                      "description": "If present, must be `\"service\"` for Service-to-Service HTTP bindings."
                                     },
                                     "service": {
                                       "type": "string",
@@ -33748,8 +33872,7 @@
                                   "required": [
                                     "env",
                                     "format",
-                                    "service",
-                                    "type"
+                                    "service"
                                   ],
                                   "type": "object",
                                   "description": "Caller-side bindings to other services."

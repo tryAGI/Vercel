@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Must be `"service"` for Service-to-Service HTTP bindings.
+    /// If present, must be `"service"` for Service-to-Service HTTP bindings.
     /// </summary>
     public enum CancelDeploymentResponseServiceVariant2BindingType
     {
