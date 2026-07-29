@@ -35,6 +35,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        HobbyAllocationPaused,
+        /// <summary>
+        /// 
+        /// </summary>
         SubscriptionCanceled,
         /// <summary>
         /// 
@@ -64,6 +68,7 @@ namespace Vercel
                 AuthUserSoftBlockReason.EnterpriseUnpaidInvoice => "ENTERPRISE_UNPAID_INVOICE",
                 AuthUserSoftBlockReason.ExposureCapExceeded => "EXPOSURE_CAP_EXCEEDED",
                 AuthUserSoftBlockReason.FairUseLimitsExceeded => "FAIR_USE_LIMITS_EXCEEDED",
+                AuthUserSoftBlockReason.HobbyAllocationPaused => "HOBBY_ALLOCATION_PAUSED",
                 AuthUserSoftBlockReason.SubscriptionCanceled => "SUBSCRIPTION_CANCELED",
                 AuthUserSoftBlockReason.SubscriptionExpired => "SUBSCRIPTION_EXPIRED",
                 AuthUserSoftBlockReason.UnpaidInvoice => "UNPAID_INVOICE",
@@ -83,6 +88,7 @@ namespace Vercel
                 "ENTERPRISE_UNPAID_INVOICE" => AuthUserSoftBlockReason.EnterpriseUnpaidInvoice,
                 "EXPOSURE_CAP_EXCEEDED" => AuthUserSoftBlockReason.ExposureCapExceeded,
                 "FAIR_USE_LIMITS_EXCEEDED" => AuthUserSoftBlockReason.FairUseLimitsExceeded,
+                "HOBBY_ALLOCATION_PAUSED" => AuthUserSoftBlockReason.HobbyAllocationPaused,
                 "SUBSCRIPTION_CANCELED" => AuthUserSoftBlockReason.SubscriptionCanceled,
                 "SUBSCRIPTION_EXPIRED" => AuthUserSoftBlockReason.SubscriptionExpired,
                 "UNPAID_INVOICE" => AuthUserSoftBlockReason.UnpaidInvoice,

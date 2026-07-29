@@ -1745,7 +1745,7 @@
         ],
         "summary": "Create rule",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "201": {
@@ -1808,7 +1808,7 @@
         ],
         "summary": "List rules",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "200": {
@@ -1879,7 +1879,7 @@
         ],
         "summary": "Update rule",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "200": {
@@ -1942,7 +1942,7 @@
         ],
         "summary": "Delete rule",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "204": {
@@ -12422,6 +12422,11 @@
                           },
                           "defaultAudience": {
                             "type": "string"
+                          },
+                          "defaultTokenExpiresIn": {
+                            "type": "number",
+                            "minimum": 60,
+                            "description": "Default token lifetime in seconds to use when the token response omits expires_in."
                           },
                           "authorizationUrlParams": {
                             "type": "object",
@@ -81831,7 +81836,7 @@
         ],
         "summary": "Lists disabled Observability Plus projects",
         "tags": [
-          "api-observability"
+          "observability"
         ],
         "responses": {
           "200": {
@@ -81919,7 +81924,7 @@
         ],
         "summary": "Updates a disabled Observability Plus project setting",
         "tags": [
-          "api-observability"
+          "observability"
         ],
         "responses": {
           "200": {
@@ -156707,7 +156712,7 @@
         "security": [],
         "summary": "Returns activated WAF config",
         "tags": [
-          "api-security"
+          "security"
         ],
         "responses": {
           "200": {
@@ -166428,7 +166433,7 @@
         "security": [],
         "summary": "Returns activated WAF config",
         "tags": [
-          "api-security"
+          "security"
         ],
         "responses": {
           "204": {
@@ -166483,7 +166488,7 @@
         "security": [],
         "summary": "Returns activated WAF config",
         "tags": [
-          "api-security"
+          "security"
         ],
         "responses": {
           "200": {
@@ -168884,7 +168889,7 @@
         ],
         "summary": "Generate a firewall rule from natural language",
         "tags": [
-          "firewall"
+          "security"
         ],
         "responses": {
           "200": {
@@ -169078,7 +169083,6 @@
           {
             "name": "projectId",
             "in": "query",
-            "required": true,
             "schema": {
               "type": "string"
             }
@@ -191237,6 +191241,7 @@
               "ai-gateway-api-key-created",
               "ai-gateway-api-key-deleted",
               "ai-gateway-api-key-quota-updated",
+              "ai-gateway-budget-default-updated",
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
@@ -191254,6 +191259,7 @@
               "ai-gateway-rule-created",
               "ai-gateway-rule-deleted",
               "ai-gateway-rule-updated",
+              "ai-gateway-scope-budget-updated",
               "ai-gateway-virtual-model-config-archived",
               "ai-gateway-virtual-model-config-created",
               "ai-gateway-virtual-model-config-restored",
@@ -191299,6 +191305,7 @@
               "cert-system-create",
               "code-owners-config-updated",
               "compliance-document-downloaded",
+              "compliance-documents-bulk-downloaded",
               "concurrent-builds-update",
               "connect-attach-project",
               "connect-bitbucket",
@@ -191697,6 +191704,7 @@
               "subscription-product-removed",
               "subscription-updated",
               "team",
+              "team-agent-billing-migration-decision-changed",
               "team-avatar-update",
               "team-collaboration-settings-updated",
               "team-default-build-machine-updated",
@@ -192127,6 +192135,7 @@
               "ai-gateway-api-key-created",
               "ai-gateway-api-key-deleted",
               "ai-gateway-api-key-quota-updated",
+              "ai-gateway-budget-default-updated",
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
@@ -192144,6 +192153,7 @@
               "ai-gateway-rule-created",
               "ai-gateway-rule-deleted",
               "ai-gateway-rule-updated",
+              "ai-gateway-scope-budget-updated",
               "ai-gateway-virtual-model-config-archived",
               "ai-gateway-virtual-model-config-created",
               "ai-gateway-virtual-model-config-restored",
@@ -192189,6 +192199,7 @@
               "cert-system-create",
               "code-owners-config-updated",
               "compliance-document-downloaded",
+              "compliance-documents-bulk-downloaded",
               "concurrent-builds-update",
               "connect-attach-project",
               "connect-bitbucket",
@@ -192587,6 +192598,7 @@
               "subscription-product-removed",
               "subscription-updated",
               "team",
+              "team-agent-billing-migration-decision-changed",
               "team-avatar-update",
               "team-collaboration-settings-updated",
               "team-default-build-machine-updated",
@@ -192758,6 +192770,7 @@
                 "ai-gateway-api-key-created",
                 "ai-gateway-api-key-deleted",
                 "ai-gateway-api-key-quota-updated",
+                "ai-gateway-budget-default-updated",
                 "ai-gateway-byok-credential-created",
                 "ai-gateway-byok-credential-deleted",
                 "ai-gateway-byok-credential-updated",
@@ -192775,6 +192788,7 @@
                 "ai-gateway-rule-created",
                 "ai-gateway-rule-deleted",
                 "ai-gateway-rule-updated",
+                "ai-gateway-scope-budget-updated",
                 "ai-gateway-virtual-model-config-archived",
                 "ai-gateway-virtual-model-config-created",
                 "ai-gateway-virtual-model-config-restored",
@@ -192820,6 +192834,7 @@
                 "cert-system-create",
                 "code-owners-config-updated",
                 "compliance-document-downloaded",
+                "compliance-documents-bulk-downloaded",
                 "concurrent-builds-update",
                 "connect-attach-project",
                 "connect-bitbucket",
@@ -193218,6 +193233,7 @@
                 "subscription-product-removed",
                 "subscription-updated",
                 "team",
+                "team-agent-billing-migration-decision-changed",
                 "team-avatar-update",
                 "team-collaboration-settings-updated",
                 "team-default-build-machine-updated",
@@ -197444,6 +197460,7 @@
                   "ENTERPRISE_UNPAID_INVOICE",
                   "EXPOSURE_CAP_EXCEEDED",
                   "FAIR_USE_LIMITS_EXCEEDED",
+                  "HOBBY_ALLOCATION_PAUSED",
                   "SUBSCRIPTION_CANCELED",
                   "SUBSCRIPTION_EXPIRED",
                   "UNPAID_INVOICE"
@@ -197492,6 +197509,93 @@
                   "wafRateLimitRequest",
                   "webAnalyticsEvent"
                 ]
+              },
+              "hobbyAllocationPause": {
+                "properties": {
+                  "pausedUntil": {
+                    "type": "number",
+                    "description": "Unix ms timestamp at which the pause is eligible to end. This is the single source of truth for when the pause ends. Never re-derive it by re-checking usage \u2014 usage keeps moving while a team is paused, and the pause duration is a fixed experiment parameter."
+                  },
+                  "pausedAt": {
+                    "type": "number",
+                    "description": "Unix ms timestamp of when the pause was applied."
+                  },
+                  "triggers": {
+                    "items": {
+                      "properties": {
+                        "allocation": {
+                          "type": "string",
+                          "enum": [
+                            "analyticsUsage",
+                            "artifacts",
+                            "bandwidth",
+                            "blobDataTransfer",
+                            "blobTotalAdvancedRequests",
+                            "blobTotalAvgSizeInBytes",
+                            "blobTotalGetResponseObjectSizeInBytes",
+                            "blobTotalSimpleRequests",
+                            "connectDataTransfer",
+                            "dataCacheRead",
+                            "dataCacheWrite",
+                            "edgeConfigRead",
+                            "edgeConfigWrite",
+                            "edgeFunctionExecutionUnits",
+                            "edgeMiddlewareInvocations",
+                            "edgeRequest",
+                            "edgeRequestAdditionalCpuDuration",
+                            "elasticConcurrencyBuildSlots",
+                            "fastDataTransfer",
+                            "fastOriginTransfer",
+                            "fluidCpuDuration",
+                            "fluidDuration",
+                            "functionDuration",
+                            "functionInvocation",
+                            "imageOptimizationCacheRead",
+                            "imageOptimizationCacheWrite",
+                            "imageOptimizationTransformation",
+                            "logDrainsVolume",
+                            "monitoringMetric",
+                            "observabilityEvent",
+                            "onDemandConcurrencyMinutes",
+                            "runtimeCacheRead",
+                            "runtimeCacheWrite",
+                            "serverlessFunctionExecution",
+                            "sourceImages",
+                            "wafOwaspExcessBytes",
+                            "wafOwaspRequests",
+                            "wafRateLimitRequest",
+                            "webAnalyticsEvent"
+                          ],
+                          "description": "Metered allocation whose included amount was fully consumed."
+                        },
+                        "usage": {
+                          "type": "number",
+                          "description": "Usage recorded for that allocation when the pause was applied."
+                        }
+                      },
+                      "required": [
+                        "allocation",
+                        "usage"
+                      ],
+                      "type": "object",
+                      "description": "Allocations that were at or over 100% when the pause was applied."
+                    },
+                    "type": "array",
+                    "description": "Allocations that were at or over 100% when the pause was applied."
+                  },
+                  "cohort": {
+                    "type": "string",
+                    "description": "Experiment cohort the owner was assigned to when the pause fired. Free-form so cohort naming stays owned by the assignment path."
+                  }
+                },
+                "required": [
+                  "cohort",
+                  "pausedAt",
+                  "pausedUntil",
+                  "triggers"
+                ],
+                "type": "object",
+                "description": "Present only when `reason` is `HOBBY_ALLOCATION_PAUSED`. Makes the pause self-describing for support without a separate lookup."
               }
             },
             "required": [

@@ -83,6 +83,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayBudgetDefaultUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayByokCredentialCreated,
         /// <summary>
         /// 
@@ -148,6 +152,10 @@ namespace Vercel
         /// 
         /// </summary>
         AiGatewayRuleUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayScopeBudgetUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -328,6 +336,10 @@ namespace Vercel
         /// 
         /// </summary>
         ComplianceDocumentDownloaded,
+        /// <summary>
+        /// 
+        /// </summary>
+        ComplianceDocumentsBulkDownloaded,
         /// <summary>
         /// 
         /// </summary>
@@ -1923,6 +1935,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamAgentBillingMigrationDecisionChanged,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamAvatarUpdate,
         /// <summary>
         /// 
@@ -2332,6 +2348,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
                 ListEventTypeReplacedByItem.AiGatewayApiKeyDeleted => "ai-gateway-api-key-deleted",
                 ListEventTypeReplacedByItem.AiGatewayApiKeyQuotaUpdated => "ai-gateway-api-key-quota-updated",
+                ListEventTypeReplacedByItem.AiGatewayBudgetDefaultUpdated => "ai-gateway-budget-default-updated",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
@@ -2349,6 +2366,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayRuleCreated => "ai-gateway-rule-created",
                 ListEventTypeReplacedByItem.AiGatewayRuleDeleted => "ai-gateway-rule-deleted",
                 ListEventTypeReplacedByItem.AiGatewayRuleUpdated => "ai-gateway-rule-updated",
+                ListEventTypeReplacedByItem.AiGatewayScopeBudgetUpdated => "ai-gateway-scope-budget-updated",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
@@ -2394,6 +2412,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.CertSystemCreate => "cert-system-create",
                 ListEventTypeReplacedByItem.CodeOwnersConfigUpdated => "code-owners-config-updated",
                 ListEventTypeReplacedByItem.ComplianceDocumentDownloaded => "compliance-document-downloaded",
+                ListEventTypeReplacedByItem.ComplianceDocumentsBulkDownloaded => "compliance-documents-bulk-downloaded",
                 ListEventTypeReplacedByItem.ConcurrentBuildsUpdate => "concurrent-builds-update",
                 ListEventTypeReplacedByItem.ConnectAttachProject => "connect-attach-project",
                 ListEventTypeReplacedByItem.ConnectBitbucket => "connect-bitbucket",
@@ -2792,6 +2811,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.SubscriptionProductRemoved => "subscription-product-removed",
                 ListEventTypeReplacedByItem.SubscriptionUpdated => "subscription-updated",
                 ListEventTypeReplacedByItem.Team => "team",
+                ListEventTypeReplacedByItem.TeamAgentBillingMigrationDecisionChanged => "team-agent-billing-migration-decision-changed",
                 ListEventTypeReplacedByItem.TeamAvatarUpdate => "team-avatar-update",
                 ListEventTypeReplacedByItem.TeamCollaborationSettingsUpdated => "team-collaboration-settings-updated",
                 ListEventTypeReplacedByItem.TeamDefaultBuildMachineUpdated => "team-default-build-machine-updated",
@@ -2915,6 +2935,7 @@ namespace Vercel
                 "ai-gateway-api-key-created" => ListEventTypeReplacedByItem.AiGatewayApiKeyCreated,
                 "ai-gateway-api-key-deleted" => ListEventTypeReplacedByItem.AiGatewayApiKeyDeleted,
                 "ai-gateway-api-key-quota-updated" => ListEventTypeReplacedByItem.AiGatewayApiKeyQuotaUpdated,
+                "ai-gateway-budget-default-updated" => ListEventTypeReplacedByItem.AiGatewayBudgetDefaultUpdated,
                 "ai-gateway-byok-credential-created" => ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated,
@@ -2932,6 +2953,7 @@ namespace Vercel
                 "ai-gateway-rule-created" => ListEventTypeReplacedByItem.AiGatewayRuleCreated,
                 "ai-gateway-rule-deleted" => ListEventTypeReplacedByItem.AiGatewayRuleDeleted,
                 "ai-gateway-rule-updated" => ListEventTypeReplacedByItem.AiGatewayRuleUpdated,
+                "ai-gateway-scope-budget-updated" => ListEventTypeReplacedByItem.AiGatewayScopeBudgetUpdated,
                 "ai-gateway-virtual-model-config-archived" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigArchived,
                 "ai-gateway-virtual-model-config-created" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigCreated,
                 "ai-gateway-virtual-model-config-restored" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigRestored,
@@ -2977,6 +2999,7 @@ namespace Vercel
                 "cert-system-create" => ListEventTypeReplacedByItem.CertSystemCreate,
                 "code-owners-config-updated" => ListEventTypeReplacedByItem.CodeOwnersConfigUpdated,
                 "compliance-document-downloaded" => ListEventTypeReplacedByItem.ComplianceDocumentDownloaded,
+                "compliance-documents-bulk-downloaded" => ListEventTypeReplacedByItem.ComplianceDocumentsBulkDownloaded,
                 "concurrent-builds-update" => ListEventTypeReplacedByItem.ConcurrentBuildsUpdate,
                 "connect-attach-project" => ListEventTypeReplacedByItem.ConnectAttachProject,
                 "connect-bitbucket" => ListEventTypeReplacedByItem.ConnectBitbucket,
@@ -3375,6 +3398,7 @@ namespace Vercel
                 "subscription-product-removed" => ListEventTypeReplacedByItem.SubscriptionProductRemoved,
                 "subscription-updated" => ListEventTypeReplacedByItem.SubscriptionUpdated,
                 "team" => ListEventTypeReplacedByItem.Team,
+                "team-agent-billing-migration-decision-changed" => ListEventTypeReplacedByItem.TeamAgentBillingMigrationDecisionChanged,
                 "team-avatar-update" => ListEventTypeReplacedByItem.TeamAvatarUpdate,
                 "team-collaboration-settings-updated" => ListEventTypeReplacedByItem.TeamCollaborationSettingsUpdated,
                 "team-default-build-machine-updated" => ListEventTypeReplacedByItem.TeamDefaultBuildMachineUpdated,

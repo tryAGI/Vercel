@@ -84,6 +84,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayBudgetDefaultUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayByokCredentialCreated,
         /// <summary>
         /// 
@@ -149,6 +153,10 @@ namespace Vercel
         /// 
         /// </summary>
         AiGatewayRuleUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayScopeBudgetUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -329,6 +337,10 @@ namespace Vercel
         /// 
         /// </summary>
         ComplianceDocumentDownloaded,
+        /// <summary>
+        /// 
+        /// </summary>
+        ComplianceDocumentsBulkDownloaded,
         /// <summary>
         /// 
         /// </summary>
@@ -1924,6 +1936,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TeamAgentBillingMigrationDecisionChanged,
+        /// <summary>
+        /// 
+        /// </summary>
         TeamAvatarUpdate,
         /// <summary>
         /// 
@@ -2333,6 +2349,7 @@ namespace Vercel
                 ListEventTypeName.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
                 ListEventTypeName.AiGatewayApiKeyDeleted => "ai-gateway-api-key-deleted",
                 ListEventTypeName.AiGatewayApiKeyQuotaUpdated => "ai-gateway-api-key-quota-updated",
+                ListEventTypeName.AiGatewayBudgetDefaultUpdated => "ai-gateway-budget-default-updated",
                 ListEventTypeName.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeName.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeName.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
@@ -2350,6 +2367,7 @@ namespace Vercel
                 ListEventTypeName.AiGatewayRuleCreated => "ai-gateway-rule-created",
                 ListEventTypeName.AiGatewayRuleDeleted => "ai-gateway-rule-deleted",
                 ListEventTypeName.AiGatewayRuleUpdated => "ai-gateway-rule-updated",
+                ListEventTypeName.AiGatewayScopeBudgetUpdated => "ai-gateway-scope-budget-updated",
                 ListEventTypeName.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
                 ListEventTypeName.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
                 ListEventTypeName.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
@@ -2395,6 +2413,7 @@ namespace Vercel
                 ListEventTypeName.CertSystemCreate => "cert-system-create",
                 ListEventTypeName.CodeOwnersConfigUpdated => "code-owners-config-updated",
                 ListEventTypeName.ComplianceDocumentDownloaded => "compliance-document-downloaded",
+                ListEventTypeName.ComplianceDocumentsBulkDownloaded => "compliance-documents-bulk-downloaded",
                 ListEventTypeName.ConcurrentBuildsUpdate => "concurrent-builds-update",
                 ListEventTypeName.ConnectAttachProject => "connect-attach-project",
                 ListEventTypeName.ConnectBitbucket => "connect-bitbucket",
@@ -2793,6 +2812,7 @@ namespace Vercel
                 ListEventTypeName.SubscriptionProductRemoved => "subscription-product-removed",
                 ListEventTypeName.SubscriptionUpdated => "subscription-updated",
                 ListEventTypeName.Team => "team",
+                ListEventTypeName.TeamAgentBillingMigrationDecisionChanged => "team-agent-billing-migration-decision-changed",
                 ListEventTypeName.TeamAvatarUpdate => "team-avatar-update",
                 ListEventTypeName.TeamCollaborationSettingsUpdated => "team-collaboration-settings-updated",
                 ListEventTypeName.TeamDefaultBuildMachineUpdated => "team-default-build-machine-updated",
@@ -2916,6 +2936,7 @@ namespace Vercel
                 "ai-gateway-api-key-created" => ListEventTypeName.AiGatewayApiKeyCreated,
                 "ai-gateway-api-key-deleted" => ListEventTypeName.AiGatewayApiKeyDeleted,
                 "ai-gateway-api-key-quota-updated" => ListEventTypeName.AiGatewayApiKeyQuotaUpdated,
+                "ai-gateway-budget-default-updated" => ListEventTypeName.AiGatewayBudgetDefaultUpdated,
                 "ai-gateway-byok-credential-created" => ListEventTypeName.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeName.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeName.AiGatewayByokCredentialUpdated,
@@ -2933,6 +2954,7 @@ namespace Vercel
                 "ai-gateway-rule-created" => ListEventTypeName.AiGatewayRuleCreated,
                 "ai-gateway-rule-deleted" => ListEventTypeName.AiGatewayRuleDeleted,
                 "ai-gateway-rule-updated" => ListEventTypeName.AiGatewayRuleUpdated,
+                "ai-gateway-scope-budget-updated" => ListEventTypeName.AiGatewayScopeBudgetUpdated,
                 "ai-gateway-virtual-model-config-archived" => ListEventTypeName.AiGatewayVirtualModelConfigArchived,
                 "ai-gateway-virtual-model-config-created" => ListEventTypeName.AiGatewayVirtualModelConfigCreated,
                 "ai-gateway-virtual-model-config-restored" => ListEventTypeName.AiGatewayVirtualModelConfigRestored,
@@ -2978,6 +3000,7 @@ namespace Vercel
                 "cert-system-create" => ListEventTypeName.CertSystemCreate,
                 "code-owners-config-updated" => ListEventTypeName.CodeOwnersConfigUpdated,
                 "compliance-document-downloaded" => ListEventTypeName.ComplianceDocumentDownloaded,
+                "compliance-documents-bulk-downloaded" => ListEventTypeName.ComplianceDocumentsBulkDownloaded,
                 "concurrent-builds-update" => ListEventTypeName.ConcurrentBuildsUpdate,
                 "connect-attach-project" => ListEventTypeName.ConnectAttachProject,
                 "connect-bitbucket" => ListEventTypeName.ConnectBitbucket,
@@ -3376,6 +3399,7 @@ namespace Vercel
                 "subscription-product-removed" => ListEventTypeName.SubscriptionProductRemoved,
                 "subscription-updated" => ListEventTypeName.SubscriptionUpdated,
                 "team" => ListEventTypeName.Team,
+                "team-agent-billing-migration-decision-changed" => ListEventTypeName.TeamAgentBillingMigrationDecisionChanged,
                 "team-avatar-update" => ListEventTypeName.TeamAvatarUpdate,
                 "team-collaboration-settings-updated" => ListEventTypeName.TeamCollaborationSettingsUpdated,
                 "team-default-build-machine-updated" => ListEventTypeName.TeamDefaultBuildMachineUpdated,

@@ -2,13 +2,13 @@
 
 namespace Vercel
 {
-    public partial interface IFirewallClient
+    public partial interface IAiGatewayClient
     {
         /// <summary>
-        /// Generate a firewall rule from natural language<br/>
-        /// Generate a firewall rule from a natural language description.
+        /// Delete rule<br/>
+        /// Delete a routing rule (soft delete)
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="ruleId"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -18,17 +18,17 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.GenerateFirewallRuleResponse> GenerateFirewallRuleAsync(
-            string projectId,
+        global::System.Threading.Tasks.Task<string> DeleteAiGatewayRuleAsync(
+            string ruleId,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Generate a firewall rule from natural language<br/>
-        /// Generate a firewall rule from a natural language description.
+        /// Delete rule<br/>
+        /// Delete a routing rule (soft delete)
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="ruleId"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -38,8 +38,8 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GenerateFirewallRuleResponse>> GenerateFirewallRuleAsResponseAsync(
-            string projectId,
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> DeleteAiGatewayRuleAsResponseAsync(
+            string ruleId,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

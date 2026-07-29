@@ -88,6 +88,12 @@ namespace Vercel
         public string? DefaultAudience { get; set; }
 
         /// <summary>
+        /// Default token lifetime in seconds to use when the token response omits expires_in.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultTokenExpiresIn")]
+        public double? DefaultTokenExpiresIn { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("authorizationUrlParams")]
@@ -125,6 +131,9 @@ namespace Vercel
         /// Allow-list of extra claims to propagate, keyed by source (idToken). Only claims named here and present in that source are exposed.
         /// </param>
         /// <param name="defaultAudience"></param>
+        /// <param name="defaultTokenExpiresIn">
+        /// Default token lifetime in seconds to use when the token response omits expires_in.
+        /// </param>
         /// <param name="authorizationUrlParams"></param>
         /// <param name="jwtBearer"></param>
 #if NET7_0_OR_GREATER
@@ -144,6 +153,7 @@ namespace Vercel
             global::Vercel.CreateConnectorRequestDataTypeOauthClientCredentials? clientCredentials,
             global::Vercel.CreateConnectorRequestDataTypeOauthForwardedClaims? forwardedClaims,
             string? defaultAudience,
+            double? defaultTokenExpiresIn,
             global::System.Collections.Generic.Dictionary<string, string>? authorizationUrlParams,
             global::Vercel.CreateConnectorRequestDataTypeOauthJwtBearer? jwtBearer)
         {
@@ -160,6 +170,7 @@ namespace Vercel
             this.ClientCredentials = clientCredentials;
             this.ForwardedClaims = forwardedClaims;
             this.DefaultAudience = defaultAudience;
+            this.DefaultTokenExpiresIn = defaultTokenExpiresIn;
             this.AuthorizationUrlParams = authorizationUrlParams;
             this.JwtBearer = jwtBearer;
         }

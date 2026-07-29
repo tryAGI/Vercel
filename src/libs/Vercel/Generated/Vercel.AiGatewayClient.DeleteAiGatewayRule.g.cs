@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class ApiObservabilityClient
+    public partial class AiGatewayClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_UpdateObservabilityConfigurationProjectSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_DeleteAiGatewayRuleSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,62 +21,53 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_UpdateObservabilityConfigurationProjectSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_DeleteAiGatewayRuleSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_UpdateObservabilityConfigurationProjectSecurityRequirement0,
+            {                s_DeleteAiGatewayRuleSecurityRequirement0,
             };
-        partial void PrepareUpdateObservabilityConfigurationProjectArguments(
+        partial void PrepareDeleteAiGatewayRuleArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string projectIdOrName,
+            ref string ruleId,
             ref string? teamId,
-            ref string? slug,
-            global::Vercel.UpdateObservabilityConfigurationProjectRequest request);
-        partial void PrepareUpdateObservabilityConfigurationProjectRequest(
+            ref string? slug);
+        partial void PrepareDeleteAiGatewayRuleRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string projectIdOrName,
+            string ruleId,
             string? teamId,
-            string? slug,
-            global::Vercel.UpdateObservabilityConfigurationProjectRequest request);
-        partial void ProcessUpdateObservabilityConfigurationProjectResponse(
+            string? slug);
+        partial void ProcessDeleteAiGatewayRuleResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessUpdateObservabilityConfigurationProjectResponseContent(
+        partial void ProcessDeleteAiGatewayRuleResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Updates a disabled Observability Plus project setting<br/>
-        /// Updates whether Observability Plus is disabled for a single project.
+        /// Delete rule<br/>
+        /// Delete a routing rule (soft delete)
         /// </summary>
-        /// <param name="projectIdOrName">
-        /// The ID or name of the project to update
-        /// </param>
+        /// <param name="ruleId"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
-        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.UpdateObservabilityConfigurationProjectResponse> UpdateObservabilityConfigurationProjectAsync(
-            string projectIdOrName,
-
-            global::Vercel.UpdateObservabilityConfigurationProjectRequest request,
+        public async global::System.Threading.Tasks.Task<string> DeleteAiGatewayRuleAsync(
+            string ruleId,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await UpdateObservabilityConfigurationProjectAsResponseAsync(
-                projectIdOrName: projectIdOrName,
-
-                request: request,
+            var __response = await DeleteAiGatewayRuleAsResponseAsync(
+                ruleId: ruleId,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -86,47 +77,39 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Updates a disabled Observability Plus project setting<br/>
-        /// Updates whether Observability Plus is disabled for a single project.
+        /// Delete rule<br/>
+        /// Delete a routing rule (soft delete)
         /// </summary>
-        /// <param name="projectIdOrName">
-        /// The ID or name of the project to update
-        /// </param>
+        /// <param name="ruleId"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
-        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateObservabilityConfigurationProjectResponse>> UpdateObservabilityConfigurationProjectAsResponseAsync(
-            string projectIdOrName,
-
-            global::Vercel.UpdateObservabilityConfigurationProjectRequest request,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> DeleteAiGatewayRuleAsResponseAsync(
+            string ruleId,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
-
             PrepareArguments(
                 client: HttpClient);
-            PrepareUpdateObservabilityConfigurationProjectArguments(
+            PrepareDeleteAiGatewayRuleArguments(
                 httpClient: HttpClient,
-                projectIdOrName: ref projectIdOrName,
+                ruleId: ref ruleId,
                 teamId: ref teamId,
-                slug: ref slug,
-                request: request);
+                slug: ref slug);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_UpdateObservabilityConfigurationProjectSecurityRequirements,
-                operationName: "UpdateObservabilityConfigurationProjectAsync");
+                securityRequirements: s_DeleteAiGatewayRuleSecurityRequirements,
+                operationName: "DeleteAiGatewayRuleAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -146,9 +129,10 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v1/observability/manage/configuration/projects/{projectIdOrName}",
+                                path: "/v1/ai-gateway/rules",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
+                                .AddRequiredParameter("ruleId", ruleId)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -158,7 +142,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Put,
+                    method: global::System.Net.Http.HttpMethod.Delete,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -181,12 +165,6 @@ namespace Vercel
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 } 
             }
-                            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
-                            var __httpRequestContent = new global::System.Net.Http.StringContent(
-                                content: __httpRequestContentBody,
-                                encoding: global::System.Text.Encoding.UTF8,
-                                mediaType: "application/json");
-                            __httpRequest.Content = __httpRequestContent;
                 global::Vercel.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -195,13 +173,12 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareUpdateObservabilityConfigurationProjectRequest(
+                PrepareDeleteAiGatewayRuleRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName!,
+                    ruleId: ruleId!,
                     teamId: teamId,
-                    slug: slug,
-                    request: request);
+                    slug: slug);
 
                 return __httpRequest;
             }
@@ -218,10 +195,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateObservabilityConfigurationProject",
-                                methodName: "UpdateObservabilityConfigurationProjectAsync",
-                                pathTemplate: "$\"/v1/observability/manage/configuration/projects/{projectIdOrName}\"",
-                                httpMethod: "PUT",
+                                operationId: "DeleteAiGatewayRule",
+                                methodName: "DeleteAiGatewayRuleAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -252,10 +229,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateObservabilityConfigurationProject",
-                                methodName: "UpdateObservabilityConfigurationProjectAsync",
-                                pathTemplate: "$\"/v1/observability/manage/configuration/projects/{projectIdOrName}\"",
-                                httpMethod: "PUT",
+                                operationId: "DeleteAiGatewayRule",
+                                methodName: "DeleteAiGatewayRuleAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -293,10 +270,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateObservabilityConfigurationProject",
-                                methodName: "UpdateObservabilityConfigurationProjectAsync",
-                                pathTemplate: "$\"/v1/observability/manage/configuration/projects/{projectIdOrName}\"",
-                                httpMethod: "PUT",
+                                operationId: "DeleteAiGatewayRule",
+                                methodName: "DeleteAiGatewayRuleAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -333,7 +310,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessUpdateObservabilityConfigurationProjectResponse(
+                ProcessDeleteAiGatewayRuleResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -341,10 +318,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateObservabilityConfigurationProject",
-                                methodName: "UpdateObservabilityConfigurationProjectAsync",
-                                pathTemplate: "$\"/v1/observability/manage/configuration/projects/{projectIdOrName}\"",
-                                httpMethod: "PUT",
+                                operationId: "DeleteAiGatewayRule",
+                                methodName: "DeleteAiGatewayRuleAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -363,10 +340,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateObservabilityConfigurationProject",
-                                methodName: "UpdateObservabilityConfigurationProjectAsync",
-                                pathTemplate: "$\"/v1/observability/manage/configuration/projects/{projectIdOrName}\"",
-                                httpMethod: "PUT",
+                                operationId: "DeleteAiGatewayRule",
+                                methodName: "DeleteAiGatewayRuleAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -541,32 +518,32 @@ namespace Vercel
                                         h => h.Value));
                             }
                             // 
-                            if ((int)__response.StatusCode == 429)
+                            if ((int)__response.StatusCode == 500)
                             {
-                                string? __content_429 = null;
-                                global::System.Exception? __exception_429 = null;
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
-                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
                                     }
                                     else
                                     {
-                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    __exception_429 = __ex;
+                                    __exception_500 = __ex;
                                 }
 
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_429,
-                                    responseBody: __content_429,
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    responseBody: __content_500,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -585,7 +562,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessUpdateObservabilityConfigurationProjectResponseContent(
+                                ProcessDeleteAiGatewayRuleResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -594,13 +571,11 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.UpdateObservabilityConfigurationProjectResponse.FromJson(__content, JsonSerializerContext) ??
-                                        throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateObservabilityConfigurationProjectResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<string>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
-                                        body: __value);
+                                        body: __content);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -620,19 +595,17 @@ namespace Vercel
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
-                                    using var __content = await __response.Content.ReadAsStreamAsync(
+                                    var __content = await __response.Content.ReadAsStringAsync(
                 #if NET5_0_OR_GREATER
                                         __effectiveCancellationToken
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.UpdateObservabilityConfigurationProjectResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
-                                        throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateObservabilityConfigurationProjectResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<string>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
-                                        body: __value);
+                                        body: __content);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -667,46 +640,6 @@ namespace Vercel
             {
                 __httpRequest?.Dispose();
             }
-        }
-        /// <summary>
-        /// Updates a disabled Observability Plus project setting<br/>
-        /// Updates whether Observability Plus is disabled for a single project.
-        /// </summary>
-        /// <param name="projectIdOrName">
-        /// The ID or name of the project to update
-        /// </param>
-        /// <param name="teamId">
-        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
-        /// </param>
-        /// <param name="slug">
-        /// Example: my-team-url-slug
-        /// </param>
-        /// <param name="disabled">
-        /// Whether Observability Plus should be disabled for the project
-        /// </param>
-        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
-        /// <param name="cancellationToken">The token to cancel the operation with</param>
-        /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.UpdateObservabilityConfigurationProjectResponse> UpdateObservabilityConfigurationProjectAsync(
-            string projectIdOrName,
-            bool disabled,
-            string? teamId = default,
-            string? slug = default,
-            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
-            global::System.Threading.CancellationToken cancellationToken = default)
-        {
-            var __request = new global::Vercel.UpdateObservabilityConfigurationProjectRequest
-            {
-                Disabled = disabled,
-            };
-
-            return await UpdateObservabilityConfigurationProjectAsync(
-                projectIdOrName: projectIdOrName,
-                teamId: teamId,
-                slug: slug,
-                request: __request,
-                requestOptions: requestOptions,
-                cancellationToken: cancellationToken).ConfigureAwait(false);
         }
     }
 }

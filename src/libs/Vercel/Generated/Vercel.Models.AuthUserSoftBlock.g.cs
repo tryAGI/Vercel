@@ -31,6 +31,12 @@ namespace Vercel
         public global::Vercel.AuthUserSoftBlockBlockedDueToOverageType? BlockedDueToOverageType { get; set; }
 
         /// <summary>
+        /// Present only when `reason` is `HOBBY_ALLOCATION_PAUSED`. Makes the pause self-describing for support without a separate lookup.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("hobbyAllocationPause")]
+        public global::Vercel.AuthUserSoftBlockHobbyAllocationPause? HobbyAllocationPause { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -42,17 +48,22 @@ namespace Vercel
         /// <param name="blockedAt"></param>
         /// <param name="reason"></param>
         /// <param name="blockedDueToOverageType"></param>
+        /// <param name="hobbyAllocationPause">
+        /// Present only when `reason` is `HOBBY_ALLOCATION_PAUSED`. Makes the pause self-describing for support without a separate lookup.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthUserSoftBlock(
             double blockedAt,
             global::Vercel.AuthUserSoftBlockReason reason,
-            global::Vercel.AuthUserSoftBlockBlockedDueToOverageType? blockedDueToOverageType)
+            global::Vercel.AuthUserSoftBlockBlockedDueToOverageType? blockedDueToOverageType,
+            global::Vercel.AuthUserSoftBlockHobbyAllocationPause? hobbyAllocationPause)
         {
             this.BlockedAt = blockedAt;
             this.Reason = reason;
             this.BlockedDueToOverageType = blockedDueToOverageType;
+            this.HobbyAllocationPause = hobbyAllocationPause;
         }
 
         /// <summary>

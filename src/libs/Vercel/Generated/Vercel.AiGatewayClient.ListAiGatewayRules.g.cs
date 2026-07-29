@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class ApiSecurityClient
+    public partial class AiGatewayClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_GetSecurityFirewallConfigSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_ListAiGatewayRulesSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,36 +21,55 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetSecurityFirewallConfigSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_ListAiGatewayRulesSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_GetSecurityFirewallConfigSecurityRequirement0,
+            {                s_ListAiGatewayRulesSecurityRequirement0,
             };
-        partial void PrepareGetSecurityFirewallConfigArguments(
-            global::System.Net.Http.HttpClient httpClient);
-        partial void PrepareGetSecurityFirewallConfigRequest(
+        partial void PrepareListAiGatewayRulesArguments(
             global::System.Net.Http.HttpClient httpClient,
-            global::System.Net.Http.HttpRequestMessage httpRequestMessage);
-        partial void ProcessGetSecurityFirewallConfigResponse(
+            ref global::Vercel.ListAiGatewayRulesIncludeDisabled? includeDisabled,
+            ref string? teamId,
+            ref string? slug);
+        partial void PrepareListAiGatewayRulesRequest(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::Vercel.ListAiGatewayRulesIncludeDisabled? includeDisabled,
+            string? teamId,
+            string? slug);
+        partial void ProcessListAiGatewayRulesResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessGetSecurityFirewallConfigResponseContent(
+        partial void ProcessListAiGatewayRulesResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Returns activated WAF config<br/>
-        /// Lists WAF configs for a project
+        /// List rules<br/>
+        /// List the authenticated team's routing rules
         /// </summary>
+        /// <param name="includeDisabled"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.GetSecurityFirewallConfigResponse> GetSecurityFirewallConfigAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AiGatewayRuleList> ListAiGatewayRulesAsync(
+            global::Vercel.ListAiGatewayRulesIncludeDisabled? includeDisabled = default,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await GetSecurityFirewallConfigAsResponseAsync(
+            var __response = await ListAiGatewayRulesAsResponseAsync(
+                includeDisabled: includeDisabled,
+                teamId: teamId,
+                slug: slug,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -58,26 +77,39 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Returns activated WAF config<br/>
-        /// Lists WAF configs for a project
+        /// List rules<br/>
+        /// List the authenticated team's routing rules
         /// </summary>
+        /// <param name="includeDisabled"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSecurityFirewallConfigResponse>> GetSecurityFirewallConfigAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRuleList>> ListAiGatewayRulesAsResponseAsync(
+            global::Vercel.ListAiGatewayRulesIncludeDisabled? includeDisabled = default,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareGetSecurityFirewallConfigArguments(
-                httpClient: HttpClient);
+            PrepareListAiGatewayRulesArguments(
+                httpClient: HttpClient,
+                includeDisabled: ref includeDisabled,
+                teamId: ref teamId,
+                slug: ref slug);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_GetSecurityFirewallConfigSecurityRequirements,
-                operationName: "GetSecurityFirewallConfigAsync");
+                securityRequirements: s_ListAiGatewayRulesSecurityRequirements,
+                operationName: "ListAiGatewayRulesAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -97,8 +129,13 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: "/v1/security/firewall/config",
+                                path: "/v1/ai-gateway/rules",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("includeDisabled", includeDisabled?.ToValueString())
+                                .AddOptionalParameter("teamId", teamId)
+                                .AddOptionalParameter("slug", slug)
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
@@ -136,9 +173,12 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareGetSecurityFirewallConfigRequest(
+                PrepareListAiGatewayRulesRequest(
                     httpClient: HttpClient,
-                    httpRequestMessage: __httpRequest);
+                    httpRequestMessage: __httpRequest,
+                    includeDisabled: includeDisabled,
+                    teamId: teamId,
+                    slug: slug);
 
                 return __httpRequest;
             }
@@ -155,9 +195,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetSecurityFirewallConfig",
-                                methodName: "GetSecurityFirewallConfigAsync",
-                                pathTemplate: "\"/v1/security/firewall/config\"",
+                                operationId: "ListAiGatewayRules",
+                                methodName: "ListAiGatewayRulesAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -189,9 +229,9 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetSecurityFirewallConfig",
-                                methodName: "GetSecurityFirewallConfigAsync",
-                                pathTemplate: "\"/v1/security/firewall/config\"",
+                                operationId: "ListAiGatewayRules",
+                                methodName: "ListAiGatewayRulesAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -230,9 +270,9 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetSecurityFirewallConfig",
-                                methodName: "GetSecurityFirewallConfigAsync",
-                                pathTemplate: "\"/v1/security/firewall/config\"",
+                                operationId: "ListAiGatewayRules",
+                                methodName: "ListAiGatewayRulesAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -270,7 +310,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessGetSecurityFirewallConfigResponse(
+                ProcessListAiGatewayRulesResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -278,9 +318,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetSecurityFirewallConfig",
-                                methodName: "GetSecurityFirewallConfigAsync",
-                                pathTemplate: "\"/v1/security/firewall/config\"",
+                                operationId: "ListAiGatewayRules",
+                                methodName: "ListAiGatewayRulesAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -300,9 +340,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetSecurityFirewallConfig",
-                                methodName: "GetSecurityFirewallConfigAsync",
-                                pathTemplate: "\"/v1/security/firewall/config\"",
+                                operationId: "ListAiGatewayRules",
+                                methodName: "ListAiGatewayRulesAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -414,38 +454,6 @@ namespace Vercel
                                         h => h.Value));
                             }
                             // 
-                            if ((int)__response.StatusCode == 404)
-                            {
-                                string? __content_404 = null;
-                                global::System.Exception? __exception_404 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_404 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_404,
-                                    responseBody: __content_404,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            // 
                             if ((int)__response.StatusCode == 410)
                             {
                                 string? __content_410 = null;
@@ -477,6 +485,38 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
+                            // 
+                            if ((int)__response.StatusCode == 500)
+                            {
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_500 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    responseBody: __content_500,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -490,7 +530,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessGetSecurityFirewallConfigResponseContent(
+                                ProcessListAiGatewayRulesResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -499,9 +539,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.GetSecurityFirewallConfigResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AiGatewayRuleList.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSecurityFirewallConfigResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRuleList>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -531,9 +571,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.GetSecurityFirewallConfigResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AiGatewayRuleList.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSecurityFirewallConfigResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRuleList>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

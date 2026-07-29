@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class ApiAiGatewayClient
+    public partial class ObservabilityClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_CreateAiGatewayRuleSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_GetObservabilityConfigurationProjectsSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,31 +21,31 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_CreateAiGatewayRuleSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetObservabilityConfigurationProjectsSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_CreateAiGatewayRuleSecurityRequirement0,
+            {                s_GetObservabilityConfigurationProjectsSecurityRequirement0,
             };
-        partial void PrepareCreateAiGatewayRuleArguments(
+        partial void PrepareGetObservabilityConfigurationProjectsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? teamId,
             ref string? slug);
-        partial void PrepareCreateAiGatewayRuleRequest(
+        partial void PrepareGetObservabilityConfigurationProjectsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string? teamId,
             string? slug);
-        partial void ProcessCreateAiGatewayRuleResponse(
+        partial void ProcessGetObservabilityConfigurationProjectsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessCreateAiGatewayRuleResponseContent(
+        partial void ProcessGetObservabilityConfigurationProjectsResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Create rule<br/>
-        /// Create a routing rule
+        /// Lists disabled Observability Plus projects<br/>
+        /// Lists the projects that are currently configured as disabled for Observability Plus on a team.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -56,13 +56,13 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AiGatewayRule> CreateAiGatewayRuleAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.GetObservabilityConfigurationProjectsResponse> GetObservabilityConfigurationProjectsAsync(
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await CreateAiGatewayRuleAsResponseAsync(
+            var __response = await GetObservabilityConfigurationProjectsAsResponseAsync(
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -72,8 +72,8 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Create rule<br/>
-        /// Create a routing rule
+        /// Lists disabled Observability Plus projects<br/>
+        /// Lists the projects that are currently configured as disabled for Observability Plus on a team.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -84,7 +84,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRule>> CreateAiGatewayRuleAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetObservabilityConfigurationProjectsResponse>> GetObservabilityConfigurationProjectsAsResponseAsync(
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -92,7 +92,7 @@ namespace Vercel
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareCreateAiGatewayRuleArguments(
+            PrepareGetObservabilityConfigurationProjectsArguments(
                 httpClient: HttpClient,
                 teamId: ref teamId,
                 slug: ref slug);
@@ -100,8 +100,8 @@ namespace Vercel
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_CreateAiGatewayRuleSecurityRequirements,
-                operationName: "CreateAiGatewayRuleAsync");
+                securityRequirements: s_GetObservabilityConfigurationProjectsSecurityRequirements,
+                operationName: "GetObservabilityConfigurationProjectsAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -121,7 +121,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: "/v1/ai-gateway/rules",
+                                path: "/v1/observability/manage/configuration/projects",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("teamId", teamId)
@@ -133,7 +133,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Post,
+                    method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -164,7 +164,7 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareCreateAiGatewayRuleRequest(
+                PrepareGetObservabilityConfigurationProjectsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     teamId: teamId,
@@ -185,10 +185,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateAiGatewayRule",
-                                methodName: "CreateAiGatewayRuleAsync",
-                                pathTemplate: "\"/v1/ai-gateway/rules\"",
-                                httpMethod: "POST",
+                                operationId: "GetObservabilityConfigurationProjects",
+                                methodName: "GetObservabilityConfigurationProjectsAsync",
+                                pathTemplate: "\"/v1/observability/manage/configuration/projects\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -219,10 +219,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateAiGatewayRule",
-                                methodName: "CreateAiGatewayRuleAsync",
-                                pathTemplate: "\"/v1/ai-gateway/rules\"",
-                                httpMethod: "POST",
+                                operationId: "GetObservabilityConfigurationProjects",
+                                methodName: "GetObservabilityConfigurationProjectsAsync",
+                                pathTemplate: "\"/v1/observability/manage/configuration/projects\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -260,10 +260,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateAiGatewayRule",
-                                methodName: "CreateAiGatewayRuleAsync",
-                                pathTemplate: "\"/v1/ai-gateway/rules\"",
-                                httpMethod: "POST",
+                                operationId: "GetObservabilityConfigurationProjects",
+                                methodName: "GetObservabilityConfigurationProjectsAsync",
+                                pathTemplate: "\"/v1/observability/manage/configuration/projects\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -300,7 +300,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessCreateAiGatewayRuleResponse(
+                ProcessGetObservabilityConfigurationProjectsResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -308,10 +308,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateAiGatewayRule",
-                                methodName: "CreateAiGatewayRuleAsync",
-                                pathTemplate: "\"/v1/ai-gateway/rules\"",
-                                httpMethod: "POST",
+                                operationId: "GetObservabilityConfigurationProjects",
+                                methodName: "GetObservabilityConfigurationProjectsAsync",
+                                pathTemplate: "\"/v1/observability/manage/configuration/projects\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -330,10 +330,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateAiGatewayRule",
-                                methodName: "CreateAiGatewayRuleAsync",
-                                pathTemplate: "\"/v1/ai-gateway/rules\"",
-                                httpMethod: "POST",
+                                operationId: "GetObservabilityConfigurationProjects",
+                                methodName: "GetObservabilityConfigurationProjectsAsync",
+                                pathTemplate: "\"/v1/observability/manage/configuration/projects\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -444,32 +444,32 @@ namespace Vercel
                                         h => h.Value));
                             }
                             // 
-                            if ((int)__response.StatusCode == 409)
+                            if ((int)__response.StatusCode == 404)
                             {
-                                string? __content_409 = null;
-                                global::System.Exception? __exception_409 = null;
+                                string? __content_404 = null;
+                                global::System.Exception? __exception_404 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
-                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
                                     }
                                     else
                                     {
-                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    __exception_409 = __ex;
+                                    __exception_404 = __ex;
                                 }
 
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_409 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_409,
-                                    responseBody: __content_409,
+                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_404,
+                                    responseBody: __content_404,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -507,38 +507,6 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
-                            if ((int)__response.StatusCode == 500)
-                            {
-                                string? __content_500 = null;
-                                global::System.Exception? __exception_500 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_500 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_500,
-                                    responseBody: __content_500,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -552,7 +520,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessCreateAiGatewayRuleResponseContent(
+                                ProcessGetObservabilityConfigurationProjectsResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -561,9 +529,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.AiGatewayRule.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.GetObservabilityConfigurationProjectsResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRule>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetObservabilityConfigurationProjectsResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -593,9 +561,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.AiGatewayRule.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.GetObservabilityConfigurationProjectsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRule>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetObservabilityConfigurationProjectsResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

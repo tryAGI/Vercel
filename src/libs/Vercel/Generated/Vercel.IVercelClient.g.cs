@@ -53,22 +53,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public AiGatewayClient AiGateway { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public AliasesClient Aliases { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public ApiAiGatewayClient ApiAiGateway { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public ApiObservabilityClient ApiObservability { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public ApiSecurityClient ApiSecurity { get; }
 
         /// <summary>
         /// 
@@ -148,11 +138,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public FirewallClient Firewall { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public GlobalConfigClient GlobalConfig { get; }
 
         /// <summary>
@@ -184,6 +169,11 @@ namespace Vercel
         /// 
         /// </summary>
         public NetworkingClient Networking { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ObservabilityClient Observability { get; }
 
         /// <summary>
         /// 
