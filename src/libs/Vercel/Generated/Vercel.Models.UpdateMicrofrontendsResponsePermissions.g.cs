@@ -1379,6 +1379,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectDomainVerify")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomainVerify { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectEvent")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEvent { get; set; }
 
@@ -1835,6 +1841,7 @@ namespace Vercel
         /// <param name="projectDomain"></param>
         /// <param name="projectDomainCheckConfig"></param>
         /// <param name="projectDomainMove"></param>
+        /// <param name="projectDomainVerify"></param>
         /// <param name="projectEvent"></param>
         /// <param name="projectEnvVars"></param>
         /// <param name="projectEnvVarsProduction"></param>
@@ -2104,6 +2111,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomain,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomainCheckConfig,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomainMove,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomainVerify,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEvent,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEnvVars,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEnvVarsProduction,
@@ -2370,6 +2378,7 @@ namespace Vercel
             this.ProjectDomain = projectDomain;
             this.ProjectDomainCheckConfig = projectDomainCheckConfig;
             this.ProjectDomainMove = projectDomainMove;
+            this.ProjectDomainVerify = projectDomainVerify;
             this.ProjectEvent = projectEvent;
             this.ProjectEnvVars = projectEnvVars;
             this.ProjectEnvVarsProduction = projectEnvVarsProduction;
