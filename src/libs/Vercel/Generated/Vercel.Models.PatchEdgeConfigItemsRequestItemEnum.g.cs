@@ -12,8 +12,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("operation")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.PatchEdgeConfigItemsRequestItemEnumOperationJsonConverter))]
-        public global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation Operation { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required object Operation { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,9 +29,9 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PatchEdgeConfigItemsRequestItemEnum(
-            global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation operation)
+            object operation)
         {
-            this.Operation = operation;
+            this.Operation = operation ?? throw new global::System.ArgumentNullException(nameof(operation));
         }
 
         /// <summary>

@@ -205,15 +205,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public EdgeConfigClient EdgeConfig => new EdgeConfigClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
         public EnvironmentClient Environment => new EnvironmentClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
@@ -233,6 +224,15 @@ namespace Vercel
         /// 
         /// </summary>
         public FirewallClient Firewall => new FirewallClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public GlobalConfigClient GlobalConfig => new GlobalConfigClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,

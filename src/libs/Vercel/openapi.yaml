@@ -51556,102 +51556,140 @@
         }
       }
     },
-    "/v1/edge-config": {
+    "/v1/global-config": {
       "get": {
-        "description": "Returns all Edge Configs.",
+        "description": "Returns all Global Configs.",
         "operationId": "getEdgeConfigs",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get Edge Configs",
+        "summary": "Get Global Configs",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
-            "description": "List of all edge configs.",
+            "description": "List of all global configs.",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "description": "List of all edge configs.",
-                  "items": {
-                    "properties": {
-                      "id": {
-                        "type": "string"
-                      },
-                      "createdAt": {
-                        "type": "number"
-                      },
-                      "ownerId": {
-                        "type": "string"
-                      },
-                      "slug": {
-                        "type": "string",
-                        "description": "Name for the Edge Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
-                      },
-                      "updatedAt": {
-                        "type": "number"
-                      },
-                      "digest": {
-                        "type": "string"
-                      },
-                      "transfer": {
-                        "properties": {
-                          "fromAccountId": {
-                            "type": "string"
-                          },
-                          "startedAt": {
-                            "type": "number"
-                          },
-                          "doneAt": {
-                            "nullable": true,
-                            "type": "number"
-                          }
-                        },
-                        "required": [
-                          "fromAccountId",
-                          "startedAt",
-                          "doneAt"
-                        ],
-                        "type": "object",
-                        "description": "Keeps track of the current state of the Edge Config while it gets transferred."
-                      },
-                      "schema": {
-                        "type": "object"
-                      },
-                      "purpose": {
-                        "properties": {
-                          "type": {
-                            "type": "string",
-                            "enum": [
-                              "flags"
-                            ]
-                          },
-                          "projectId": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "projectId"
-                        ],
-                        "type": "object"
-                      },
-                      "sizeInBytes": {
-                        "type": "number"
-                      },
-                      "itemCount": {
-                        "type": "number"
-                      }
+                  "properties": {
+                    "id": {
+                      "type": "string"
                     },
-                    "required": [
-                      "sizeInBytes",
-                      "itemCount"
-                    ]
-                  }
+                    "createdAt": {
+                      "type": "number"
+                    },
+                    "createdBy": {
+                      "type": "string",
+                      "description": "The ID of the user who created the Edge Config, optional because it is not always set."
+                    },
+                    "ownerId": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string",
+                      "description": "Name for the Edge Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
+                    },
+                    "updatedAt": {
+                      "type": "number"
+                    },
+                    "digest": {
+                      "type": "string"
+                    },
+                    "purpose": {
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "flags"
+                              ]
+                            },
+                            "projectId": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "projectId",
+                            "type"
+                          ],
+                          "type": "object"
+                        },
+                        {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "experimentation"
+                              ]
+                            },
+                            "resourceId": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "resourceId",
+                            "type"
+                          ],
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "deletedAt": {
+                      "nullable": true,
+                      "type": "number"
+                    },
+                    "transfer": {
+                      "properties": {
+                        "fromAccountId": {
+                          "type": "string"
+                        },
+                        "startedAt": {
+                          "type": "number"
+                        },
+                        "doneAt": {
+                          "nullable": true,
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "doneAt",
+                        "fromAccountId",
+                        "startedAt"
+                      ],
+                      "type": "object",
+                      "description": "Keeps track of the current state of the Edge Config while it gets transferred."
+                    },
+                    "schema": {
+                      "type": "object"
+                    },
+                    "syncedToDynamoAt": {
+                      "type": "number",
+                      "description": "Timestamp of when the Edge Config was synced to DynamoDB initially. It is only set when syncing the entire Edge Config, not when updating."
+                    },
+                    "sizeInBytes": {
+                      "type": "number"
+                    },
+                    "itemCount": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "createdAt",
+                    "digest",
+                    "id",
+                    "itemCount",
+                    "ownerId",
+                    "sizeInBytes",
+                    "slug",
+                    "updatedAt"
+                  ],
+                  "type": "object",
+                  "description": "List of all global configs."
                 }
               }
             }
@@ -51691,16 +51729,16 @@
         ]
       },
       "post": {
-        "description": "Creates an Edge Config.",
+        "description": "Creates a Global Config.",
         "operationId": "createEdgeConfig",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Create an Edge Config",
+        "summary": "Create a Global Config",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "201": {
@@ -51884,27 +51922,26 @@
                 }
               }
             }
-          },
-          "required": true
+          }
         }
       }
     },
-    "/v1/edge-config/{edgeConfigId}": {
+    "/v1/global-config/{edgeConfigId}": {
       "get": {
-        "description": "Returns an Edge Config.",
+        "description": "Returns a Global Config.",
         "operationId": "getEdgeConfig",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get an Edge Config",
+        "summary": "Get a Global Config",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
-            "description": "The EdgeConfig.",
+            "description": "The Global Config.",
             "content": {
               "application/json": {
                 "schema": {
@@ -52022,7 +52059,7 @@
                     "updatedAt"
                   ],
                   "type": "object",
-                  "description": "The EdgeConfig."
+                  "description": "The Global Config."
                 }
               }
             }
@@ -52073,16 +52110,16 @@
         ]
       },
       "put": {
-        "description": "Updates an Edge Config.",
+        "description": "Updates a Global Config.",
         "operationId": "updateEdgeConfig",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Update an Edge Config",
+        "summary": "Update a Global Config",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
@@ -52276,21 +52313,20 @@
                 }
               }
             }
-          },
-          "required": true
+          }
         }
       },
       "delete": {
-        "description": "Delete an Edge Config by id.",
+        "description": "Delete a Global Config by id.",
         "operationId": "deleteEdgeConfig",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Delete an Edge Config",
+        "summary": "Delete a Global Config",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "204": {
@@ -52345,22 +52381,22 @@
         ]
       }
     },
-    "/v1/edge-config/{edgeConfigId}/items": {
+    "/v1/global-config/{edgeConfigId}/items": {
       "get": {
-        "description": "Returns all items of an Edge Config.",
+        "description": "Returns all items of a Global Config.",
         "operationId": "getEdgeConfigItems",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get Edge Config items",
+        "summary": "Get Global Config items",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
-            "description": "List of all Edge Config items.",
+            "description": "List of all Global Config items.",
             "content": {
               "application/json": {
                 "schema": {
@@ -52419,16 +52455,16 @@
         ]
       },
       "patch": {
-        "description": "Update multiple Edge Config Items in batch.",
+        "description": "Update multiple Global Config Items in batch.",
         "operationId": "patchEdgeConfigItems",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Update Edge Config items in batch",
+        "summary": "Update Global Config items in batch",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
@@ -52533,29 +52569,23 @@
                               "pattern": "^[\\w-]+$",
                               "type": "string"
                             },
-                            "value": {
-                              "nullable": true
-                            },
+                            "value": {},
                             "description": {
                               "oneOf": [
                                 {
                                   "type": "string",
                                   "maxLength": 512
                                 },
-                                {}
-                              ],
-                              "nullable": true
+                                {
+                                  "type": "string"
+                                }
+                              ]
                             }
                           },
                           "anyOf": [
                             {
                               "properties": {
-                                "operation": {
-                                  "type": "string",
-                                  "enum": [
-                                    "create"
-                                  ]
-                                }
+                                "operation": {}
                               },
                               "required": [
                                 "operation",
@@ -52592,6 +52622,21 @@
                                 "key",
                                 "description"
                               ]
+                            },
+                            {
+                              "properties": {
+                                "operation": {}
+                              },
+                              "required": [
+                                "operation",
+                                "key"
+                              ],
+                              "not": {
+                                "required": [
+                                  "value",
+                                  "description"
+                                ]
+                              }
                             }
                           ]
                         }
@@ -52605,28 +52650,28 @@
         }
       }
     },
-    "/v1/edge-config/{edgeConfigId}/schema": {
+    "/v1/global-config/{edgeConfigId}/schema": {
       "get": {
-        "description": "Returns the schema of an Edge Config.",
+        "description": "Returns the schema of a Global Config.",
         "operationId": "getEdgeConfigSchema",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get Edge Config schema",
+        "summary": "Get Global Config schema",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
-            "description": "The EdgeConfig.",
+            "description": "The Global Config.",
             "content": {
               "application/json": {
                 "schema": {
                   "nullable": true,
                   "type": "object",
-                  "description": "The EdgeConfig."
+                  "description": "The Global Config."
                 }
               }
             }
@@ -52677,16 +52722,16 @@
         ]
       },
       "post": {
-        "description": "Update an Edge Config's schema.",
+        "description": "Update a Global Config's schema.",
         "operationId": "patchEdgeConfigSchema",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Update Edge Config schema",
+        "summary": "Update Global Config schema",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
@@ -52773,21 +52818,20 @@
                 }
               }
             }
-          },
-          "required": true
+          }
         }
       },
       "delete": {
-        "description": "Deletes the schema of existing Edge Config.",
+        "description": "Deletes the schema of existing Global Config.",
         "operationId": "deleteEdgeConfigSchema",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Delete an Edge Config's schema",
+        "summary": "Delete a Global Config's schema",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "204": {
@@ -52845,22 +52889,22 @@
         ]
       }
     },
-    "/v1/edge-config/{edgeConfigId}/item/{edgeConfigItemKey}": {
+    "/v1/global-config/{edgeConfigId}/item/{edgeConfigItemKey}": {
       "get": {
-        "description": "Returns a specific Edge Config Item.",
+        "description": "Returns a specific Global Config Item.",
         "operationId": "getEdgeConfigItem",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get an Edge Config item",
+        "summary": "Get a Global Config item",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
-            "description": "The EdgeConfig.",
+            "description": "The Global Config.",
             "content": {
               "application/json": {
                 "schema": {
@@ -52924,22 +52968,22 @@
         ]
       }
     },
-    "/v1/edge-config/{edgeConfigId}/tokens": {
+    "/v1/global-config/{edgeConfigId}/tokens": {
       "get": {
-        "description": "Returns all tokens of an Edge Config.",
+        "description": "Returns all tokens of a Global Config.",
         "operationId": "getEdgeConfigTokens",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get all tokens of an Edge Config",
+        "summary": "Get all tokens of a Global Config",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
-            "description": "The EdgeConfig.",
+            "description": "The Global Config.",
             "content": {
               "application/json": {
                 "schema": {
@@ -52994,16 +53038,16 @@
         ]
       },
       "delete": {
-        "description": "Deletes one or more tokens of an existing Edge Config.",
+        "description": "Deletes one or more tokens of an existing Global Config.",
         "operationId": "deleteEdgeConfigTokens",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Delete one or more Edge Config tokens",
+        "summary": "Delete one or more Global Config tokens",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "204": {
@@ -53096,27 +53140,26 @@
                 ]
               }
             }
-          },
-          "required": true
+          }
         }
       }
     },
-    "/v1/edge-config/{edgeConfigId}/token/{token}": {
+    "/v1/global-config/{edgeConfigId}/token/{token}": {
       "get": {
-        "description": "Return meta data about an Edge Config token.",
+        "description": "Return meta data about a Global Config token.",
         "operationId": "getEdgeConfigToken",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get Edge Config token meta data",
+        "summary": "Get Global Config token meta data",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
-            "description": "The EdgeConfig.",
+            "description": "The Global Config.",
             "content": {
               "application/json": {
                 "schema": {
@@ -53179,18 +53222,18 @@
         ]
       }
     },
-    "/v1/edge-config/{edgeConfigId}/token": {
+    "/v1/global-config/{edgeConfigId}/token": {
       "post": {
-        "description": "Adds a token to an existing Edge Config.",
+        "description": "Adds a token to an existing Global Config.",
         "operationId": "createEdgeConfigToken",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Create an Edge Config token",
+        "summary": "Create a Global Config token",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "201": {
@@ -53283,23 +53326,22 @@
                 }
               }
             }
-          },
-          "required": true
+          }
         }
       }
     },
-    "/v1/edge-config/{edgeConfigId}/backups/{edgeConfigBackupVersionId}": {
+    "/v1/global-config/{edgeConfigId}/backups/{edgeConfigBackupVersionId}": {
       "get": {
-        "description": "Retrieves a specific version of an Edge Config from backup storage.",
+        "description": "Retrieves a specific version of a Global Config from backup storage.",
         "operationId": "getEdgeConfigBackup",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get Edge Config backup",
+        "summary": "Get Global Config backup",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
@@ -53576,22 +53618,21 @@
               "example": "my-team-url-slug"
             }
           }
-        ],
-        "x-speakeasy-test": false
+        ]
       }
     },
-    "/v1/edge-config/{edgeConfigId}/backups/{edgeConfigBackupVersionId}/restore": {
+    "/v1/global-config/{edgeConfigId}/backups/{edgeConfigBackupVersionId}/restore": {
       "post": {
-        "description": "Restores an Edge Config backup.",
+        "description": "Restores a Global Config backup.",
         "operationId": "restoreEdgeConfigBackup",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Restore Edge Config backup",
+        "summary": "Restore Global Config backup",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
@@ -53688,22 +53729,21 @@
               "example": "my-team-url-slug"
             }
           }
-        ],
-        "x-speakeasy-test": false
+        ]
       }
     },
-    "/v1/edge-config/{edgeConfigId}/backups": {
+    "/v1/global-config/{edgeConfigId}/backups": {
       "get": {
-        "description": "Returns backups of an Edge Config.",
+        "description": "Returns backups of a Global Config.",
         "operationId": "getEdgeConfigBackups",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get Edge Config backups",
+        "summary": "Get Global Config backups",
         "tags": [
-          "edge-config"
+          "global-config"
         ],
         "responses": {
           "200": {
@@ -73665,22 +73705,22 @@
         "x-speakeasy-name-override": "deleteInstallationIntegrationConfiguration"
       }
     },
-    "/v1/installations/{integrationConfigurationId}/resources/{resourceId}/experimentation/edge-config": {
+    "/v1/installations/{integrationConfigurationId}/resources/{resourceId}/experimentation/global-config": {
       "head": {
-        "description": "When the user enabled Edge Config syncing, then this endpoint can be used by the partner to fetch the contents of the Edge Config.",
-        "operationId": "headInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfig",
+        "description": "When the user enabled Global Config syncing, then this endpoint can be used by the partner to fetch the contents of the Global Config.",
+        "operationId": "headInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get the data of a user-provided Edge Config",
+        "summary": "Get the data of a user-provided Global Config",
         "tags": [
           "marketplace"
         ],
         "responses": {
           "200": {
-            "description": "The Edge Config data",
+            "description": "The Global Config data",
             "content": {
               "application/json": {
                 "schema": {
@@ -73751,25 +73791,23 @@
               "type": "string"
             }
           }
-        ],
-        "x-speakeasy-name-override": "createInstallationIntegrationEdgeConfig",
-        "x-speakeasy-test": false
+        ]
       },
       "get": {
-        "description": "When the user enabled Edge Config syncing, then this endpoint can be used by the partner to fetch the contents of the Edge Config.",
-        "operationId": "getInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfig",
+        "description": "When the user enabled Global Config syncing, then this endpoint can be used by the partner to fetch the contents of the Global Config.",
+        "operationId": "getInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Get the data of a user-provided Edge Config",
+        "summary": "Get the data of a user-provided Global Config",
         "tags": [
           "marketplace"
         ],
         "responses": {
           "200": {
-            "description": "The Edge Config data",
+            "description": "The Global Config data",
             "content": {
               "application/json": {
                 "schema": {
@@ -73843,20 +73881,20 @@
         ]
       },
       "put": {
-        "description": "When the user enabled Edge Config syncing, then this endpoint can be used by the partner to push their configuration data into the relevant Edge Config.",
-        "operationId": "replaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationEdgeConfig",
+        "description": "When the user enabled Global Config syncing, then this endpoint can be used by the partner to push their configuration data into the relevant Global Config.",
+        "operationId": "replaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfig",
         "security": [
           {
             "bearerToken": []
           }
         ],
-        "summary": "Push data into a user-provided Edge Config",
+        "summary": "Push data into a user-provided Global Config",
         "tags": [
           "marketplace"
         ],
         "responses": {
           "200": {
-            "description": "The Edge Config was updated",
+            "description": "The Global Config was updated",
             "content": {
               "application/json": {
                 "schema": {
@@ -73949,8 +73987,7 @@
               }
             }
           }
-        },
-        "x-speakeasy-name-override": "updateInstallationIntegrationEdgeConfig"
+        }
       }
     },
     "/v1/microfrontends/groups": {
@@ -191076,7 +191113,7 @@
           "value"
         ],
         "type": "object",
-        "description": "The EdgeConfig."
+        "description": "The Global Config."
       },
       "EdgeConfigToken": {
         "properties": {
@@ -191110,7 +191147,7 @@
           "partialToken"
         ],
         "type": "object",
-        "description": "The EdgeConfig."
+        "description": "The Global Config."
       },
       "UserEvent": {
         "properties": {

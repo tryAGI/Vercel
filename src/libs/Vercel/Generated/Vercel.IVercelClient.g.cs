@@ -138,11 +138,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        public EdgeConfigClient EdgeConfig { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public EnvironmentClient Environment { get; }
 
         /// <summary>
@@ -154,6 +149,11 @@ namespace Vercel
         /// 
         /// </summary>
         public FirewallClient Firewall { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public GlobalConfigClient GlobalConfig { get; }
 
         /// <summary>
         /// 

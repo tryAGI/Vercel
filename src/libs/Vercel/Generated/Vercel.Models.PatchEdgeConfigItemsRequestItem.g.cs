@@ -31,8 +31,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, object>))]
-        public global::Vercel.OneOf<string, object>? Description { get; set; }
+        public string? Description { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,7 +53,7 @@ namespace Vercel
             global::Vercel.PatchEdgeConfigItemsRequestItemOperation? operation,
             string? key,
             object? value,
-            global::Vercel.OneOf<string, object>? description)
+            string? description)
         {
             this.Operation = operation;
             this.Key = key;
