@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// The EdgeConfig.
+    /// The Global Config.
     /// </summary>
     public sealed partial class GetEdgeConfigSchemaResponse
     {
