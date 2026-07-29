@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class FirewallClient
+    public partial class AiGatewayClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_GenerateFirewallRuleSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_UpdateAiGatewayRuleSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,35 +21,32 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GenerateFirewallRuleSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_UpdateAiGatewayRuleSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_GenerateFirewallRuleSecurityRequirement0,
+            {                s_UpdateAiGatewayRuleSecurityRequirement0,
             };
-        partial void PrepareGenerateFirewallRuleArguments(
+        partial void PrepareUpdateAiGatewayRuleArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string projectId,
             ref string? teamId,
             ref string? slug);
-        partial void PrepareGenerateFirewallRuleRequest(
+        partial void PrepareUpdateAiGatewayRuleRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string projectId,
             string? teamId,
             string? slug);
-        partial void ProcessGenerateFirewallRuleResponse(
+        partial void ProcessUpdateAiGatewayRuleResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessGenerateFirewallRuleResponseContent(
+        partial void ProcessUpdateAiGatewayRuleResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Generate a firewall rule from natural language<br/>
-        /// Generate a firewall rule from a natural language description.
+        /// Update rule<br/>
+        /// Update a routing rule (enabled, action, or description)
         /// </summary>
-        /// <param name="projectId"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -59,15 +56,13 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.GenerateFirewallRuleResponse> GenerateFirewallRuleAsync(
-            string projectId,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AiGatewayRule> UpdateAiGatewayRuleAsync(
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await GenerateFirewallRuleAsResponseAsync(
-                projectId: projectId,
+            var __response = await UpdateAiGatewayRuleAsResponseAsync(
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -77,10 +72,9 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Generate a firewall rule from natural language<br/>
-        /// Generate a firewall rule from a natural language description.
+        /// Update rule<br/>
+        /// Update a routing rule (enabled, action, or description)
         /// </summary>
-        /// <param name="projectId"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -90,8 +84,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GenerateFirewallRuleResponse>> GenerateFirewallRuleAsResponseAsync(
-            string projectId,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRule>> UpdateAiGatewayRuleAsResponseAsync(
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -99,17 +92,16 @@ namespace Vercel
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareGenerateFirewallRuleArguments(
+            PrepareUpdateAiGatewayRuleArguments(
                 httpClient: HttpClient,
-                projectId: ref projectId,
                 teamId: ref teamId,
                 slug: ref slug);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_GenerateFirewallRuleSecurityRequirements,
-                operationName: "GenerateFirewallRuleAsync");
+                securityRequirements: s_UpdateAiGatewayRuleSecurityRequirements,
+                operationName: "UpdateAiGatewayRuleAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -129,10 +121,9 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: "/v1/security/firewall/config/generate-rule",
+                                path: "/v1/ai-gateway/rules",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddRequiredParameter("projectId", projectId)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -142,7 +133,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Post,
+                    method: new global::System.Net.Http.HttpMethod("PATCH"),
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -173,10 +164,9 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareGenerateFirewallRuleRequest(
+                PrepareUpdateAiGatewayRuleRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId!,
                     teamId: teamId,
                     slug: slug);
 
@@ -195,10 +185,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GenerateFirewallRule",
-                                methodName: "GenerateFirewallRuleAsync",
-                                pathTemplate: "\"/v1/security/firewall/config/generate-rule\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateAiGatewayRule",
+                                methodName: "UpdateAiGatewayRuleAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -229,10 +219,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GenerateFirewallRule",
-                                methodName: "GenerateFirewallRuleAsync",
-                                pathTemplate: "\"/v1/security/firewall/config/generate-rule\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateAiGatewayRule",
+                                methodName: "UpdateAiGatewayRuleAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -270,10 +260,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GenerateFirewallRule",
-                                methodName: "GenerateFirewallRuleAsync",
-                                pathTemplate: "\"/v1/security/firewall/config/generate-rule\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateAiGatewayRule",
+                                methodName: "UpdateAiGatewayRuleAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -310,7 +300,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessGenerateFirewallRuleResponse(
+                ProcessUpdateAiGatewayRuleResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -318,10 +308,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GenerateFirewallRule",
-                                methodName: "GenerateFirewallRuleAsync",
-                                pathTemplate: "\"/v1/security/firewall/config/generate-rule\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateAiGatewayRule",
+                                methodName: "UpdateAiGatewayRuleAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -340,10 +330,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GenerateFirewallRule",
-                                methodName: "GenerateFirewallRuleAsync",
-                                pathTemplate: "\"/v1/security/firewall/config/generate-rule\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateAiGatewayRule",
+                                methodName: "UpdateAiGatewayRuleAsync",
+                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -486,38 +476,6 @@ namespace Vercel
                                         h => h.Value));
                             }
                             // 
-                            if ((int)__response.StatusCode == 408)
-                            {
-                                string? __content_408 = null;
-                                global::System.Exception? __exception_408 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_408 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_408 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_408 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_408 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_408,
-                                    responseBody: __content_408,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            // 
                             if ((int)__response.StatusCode == 410)
                             {
                                 string? __content_410 = null;
@@ -594,7 +552,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessGenerateFirewallRuleResponseContent(
+                                ProcessUpdateAiGatewayRuleResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -603,9 +561,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.GenerateFirewallRuleResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AiGatewayRule.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GenerateFirewallRuleResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRule>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -635,9 +593,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.GenerateFirewallRuleResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AiGatewayRule.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GenerateFirewallRuleResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRule>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

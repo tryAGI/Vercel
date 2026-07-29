@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class ApiSecurityClient
+    public partial class ObservabilityClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_CreateSecurityFirewallConfigByConfigVersionActivateSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_UpdateObservabilityConfigurationProjectSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,41 +21,64 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_CreateSecurityFirewallConfigByConfigVersionActivateSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_UpdateObservabilityConfigurationProjectSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_CreateSecurityFirewallConfigByConfigVersionActivateSecurityRequirement0,
+            {                s_UpdateObservabilityConfigurationProjectSecurityRequirement0,
             };
-        partial void PrepareCreateSecurityFirewallConfigByConfigVersionActivateArguments(
+        partial void PrepareUpdateObservabilityConfigurationProjectArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string configVersion);
-        partial void PrepareCreateSecurityFirewallConfigByConfigVersionActivateRequest(
+            ref string projectIdOrName,
+            ref string? teamId,
+            ref string? slug,
+            global::Vercel.UpdateObservabilityConfigurationProjectRequest request);
+        partial void PrepareUpdateObservabilityConfigurationProjectRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string configVersion);
-        partial void ProcessCreateSecurityFirewallConfigByConfigVersionActivateResponse(
+            string projectIdOrName,
+            string? teamId,
+            string? slug,
+            global::Vercel.UpdateObservabilityConfigurationProjectRequest request);
+        partial void ProcessUpdateObservabilityConfigurationProjectResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessCreateSecurityFirewallConfigByConfigVersionActivateResponseContent(
+        partial void ProcessUpdateObservabilityConfigurationProjectResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Returns activated WAF config<br/>
-        /// Promotes a draft WAF config to an active config
+        /// Updates a disabled Observability Plus project setting<br/>
+        /// Updates whether Observability Plus is disabled for a single project.
         /// </summary>
-        /// <param name="configVersion"></param>
+        /// <param name="projectIdOrName">
+        /// The ID or name of the project to update
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponse> CreateSecurityFirewallConfigByConfigVersionActivateAsync(
-            string configVersion,
+        public async global::System.Threading.Tasks.Task<global::Vercel.UpdateObservabilityConfigurationProjectResponse> UpdateObservabilityConfigurationProjectAsync(
+            string projectIdOrName,
+
+            global::Vercel.UpdateObservabilityConfigurationProjectRequest request,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await CreateSecurityFirewallConfigByConfigVersionActivateAsResponseAsync(
-                configVersion: configVersion,
+            var __response = await UpdateObservabilityConfigurationProjectAsResponseAsync(
+                projectIdOrName: projectIdOrName,
+
+                request: request,
+                teamId: teamId,
+                slug: slug,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -63,29 +86,47 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Returns activated WAF config<br/>
-        /// Promotes a draft WAF config to an active config
+        /// Updates a disabled Observability Plus project setting<br/>
+        /// Updates whether Observability Plus is disabled for a single project.
         /// </summary>
-        /// <param name="configVersion"></param>
+        /// <param name="projectIdOrName">
+        /// The ID or name of the project to update
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponse>> CreateSecurityFirewallConfigByConfigVersionActivateAsResponseAsync(
-            string configVersion,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateObservabilityConfigurationProjectResponse>> UpdateObservabilityConfigurationProjectAsResponseAsync(
+            string projectIdOrName,
+
+            global::Vercel.UpdateObservabilityConfigurationProjectRequest request,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+
             PrepareArguments(
                 client: HttpClient);
-            PrepareCreateSecurityFirewallConfigByConfigVersionActivateArguments(
+            PrepareUpdateObservabilityConfigurationProjectArguments(
                 httpClient: HttpClient,
-                configVersion: ref configVersion);
+                projectIdOrName: ref projectIdOrName,
+                teamId: ref teamId,
+                slug: ref slug,
+                request: request);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_CreateSecurityFirewallConfigByConfigVersionActivateSecurityRequirements,
-                operationName: "CreateSecurityFirewallConfigByConfigVersionActivateAsync");
+                securityRequirements: s_UpdateObservabilityConfigurationProjectSecurityRequirements,
+                operationName: "UpdateObservabilityConfigurationProjectAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -105,15 +146,19 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v1/security/firewall/config/{configVersion}/activate",
+                                path: $"/v1/observability/manage/configuration/projects/{projectIdOrName}",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("teamId", teamId)
+                                .AddOptionalParameter("slug", slug)
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Post,
+                    method: global::System.Net.Http.HttpMethod.Put,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -136,6 +181,12 @@ namespace Vercel
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 } 
             }
+                            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
+                            var __httpRequestContent = new global::System.Net.Http.StringContent(
+                                content: __httpRequestContentBody,
+                                encoding: global::System.Text.Encoding.UTF8,
+                                mediaType: "application/json");
+                            __httpRequest.Content = __httpRequestContent;
                 global::Vercel.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -144,10 +195,13 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareCreateSecurityFirewallConfigByConfigVersionActivateRequest(
+                PrepareUpdateObservabilityConfigurationProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    configVersion: configVersion!);
+                    projectIdOrName: projectIdOrName!,
+                    teamId: teamId,
+                    slug: slug,
+                    request: request);
 
                 return __httpRequest;
             }
@@ -164,10 +218,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSecurityFirewallConfigByConfigVersionActivate",
-                                methodName: "CreateSecurityFirewallConfigByConfigVersionActivateAsync",
-                                pathTemplate: "$\"/v1/security/firewall/config/{configVersion}/activate\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateObservabilityConfigurationProject",
+                                methodName: "UpdateObservabilityConfigurationProjectAsync",
+                                pathTemplate: "$\"/v1/observability/manage/configuration/projects/{projectIdOrName}\"",
+                                httpMethod: "PUT",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -198,10 +252,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSecurityFirewallConfigByConfigVersionActivate",
-                                methodName: "CreateSecurityFirewallConfigByConfigVersionActivateAsync",
-                                pathTemplate: "$\"/v1/security/firewall/config/{configVersion}/activate\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateObservabilityConfigurationProject",
+                                methodName: "UpdateObservabilityConfigurationProjectAsync",
+                                pathTemplate: "$\"/v1/observability/manage/configuration/projects/{projectIdOrName}\"",
+                                httpMethod: "PUT",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -239,10 +293,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSecurityFirewallConfigByConfigVersionActivate",
-                                methodName: "CreateSecurityFirewallConfigByConfigVersionActivateAsync",
-                                pathTemplate: "$\"/v1/security/firewall/config/{configVersion}/activate\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateObservabilityConfigurationProject",
+                                methodName: "UpdateObservabilityConfigurationProjectAsync",
+                                pathTemplate: "$\"/v1/observability/manage/configuration/projects/{projectIdOrName}\"",
+                                httpMethod: "PUT",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -279,7 +333,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessCreateSecurityFirewallConfigByConfigVersionActivateResponse(
+                ProcessUpdateObservabilityConfigurationProjectResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -287,10 +341,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSecurityFirewallConfigByConfigVersionActivate",
-                                methodName: "CreateSecurityFirewallConfigByConfigVersionActivateAsync",
-                                pathTemplate: "$\"/v1/security/firewall/config/{configVersion}/activate\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateObservabilityConfigurationProject",
+                                methodName: "UpdateObservabilityConfigurationProjectAsync",
+                                pathTemplate: "$\"/v1/observability/manage/configuration/projects/{projectIdOrName}\"",
+                                httpMethod: "PUT",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -309,10 +363,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSecurityFirewallConfigByConfigVersionActivate",
-                                methodName: "CreateSecurityFirewallConfigByConfigVersionActivateAsync",
-                                pathTemplate: "$\"/v1/security/firewall/config/{configVersion}/activate\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateObservabilityConfigurationProject",
+                                methodName: "UpdateObservabilityConfigurationProjectAsync",
+                                pathTemplate: "$\"/v1/observability/manage/configuration/projects/{projectIdOrName}\"",
+                                httpMethod: "PUT",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -385,38 +439,6 @@ namespace Vercel
                                     message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            // 
-                            if ((int)__response.StatusCode == 402)
-                            {
-                                string? __content_402 = null;
-                                global::System.Exception? __exception_402 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_402 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_402,
-                                    responseBody: __content_402,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -519,32 +541,32 @@ namespace Vercel
                                         h => h.Value));
                             }
                             // 
-                            if ((int)__response.StatusCode == 500)
+                            if ((int)__response.StatusCode == 429)
                             {
-                                string? __content_500 = null;
-                                global::System.Exception? __exception_500 = null;
+                                string? __content_429 = null;
+                                global::System.Exception? __exception_429 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
                                     }
                                     else
                                     {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    __exception_500 = __ex;
+                                    __exception_429 = __ex;
                                 }
 
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_500,
-                                    responseBody: __content_500,
+                                    message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_429,
+                                    responseBody: __content_429,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -563,7 +585,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessCreateSecurityFirewallConfigByConfigVersionActivateResponseContent(
+                                ProcessUpdateObservabilityConfigurationProjectResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -572,9 +594,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.UpdateObservabilityConfigurationProjectResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateObservabilityConfigurationProjectResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -604,9 +626,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.UpdateObservabilityConfigurationProjectResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateObservabilityConfigurationProjectResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -645,6 +667,46 @@ namespace Vercel
             {
                 __httpRequest?.Dispose();
             }
+        }
+        /// <summary>
+        /// Updates a disabled Observability Plus project setting<br/>
+        /// Updates whether Observability Plus is disabled for a single project.
+        /// </summary>
+        /// <param name="projectIdOrName">
+        /// The ID or name of the project to update
+        /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="disabled">
+        /// Whether Observability Plus should be disabled for the project
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Vercel.UpdateObservabilityConfigurationProjectResponse> UpdateObservabilityConfigurationProjectAsync(
+            string projectIdOrName,
+            bool disabled,
+            string? teamId = default,
+            string? slug = default,
+            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            var __request = new global::Vercel.UpdateObservabilityConfigurationProjectRequest
+            {
+                Disabled = disabled,
+            };
+
+            return await UpdateObservabilityConfigurationProjectAsync(
+                projectIdOrName: projectIdOrName,
+                teamId: teamId,
+                slug: slug,
+                request: __request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken).ConfigureAwait(false);
         }
     }
 }

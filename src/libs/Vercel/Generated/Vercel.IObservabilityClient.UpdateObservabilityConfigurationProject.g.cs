@@ -2,7 +2,7 @@
 
 namespace Vercel
 {
-    public partial interface IApiObservabilityClient
+    public partial interface IObservabilityClient
     {
         /// <summary>
         /// Updates a disabled Observability Plus project setting<br/>

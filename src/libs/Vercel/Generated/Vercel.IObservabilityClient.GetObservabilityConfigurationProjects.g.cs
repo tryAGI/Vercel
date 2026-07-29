@@ -2,11 +2,11 @@
 
 namespace Vercel
 {
-    public partial interface IApiAiGatewayClient
+    public partial interface IObservabilityClient
     {
         /// <summary>
-        /// Update rule<br/>
-        /// Update a routing rule (enabled, action, or description)
+        /// Lists disabled Observability Plus projects<br/>
+        /// Lists the projects that are currently configured as disabled for Observability Plus on a team.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -17,14 +17,14 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AiGatewayRule> UpdateAiGatewayRuleAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.GetObservabilityConfigurationProjectsResponse> GetObservabilityConfigurationProjectsAsync(
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Update rule<br/>
-        /// Update a routing rule (enabled, action, or description)
+        /// Lists disabled Observability Plus projects<br/>
+        /// Lists the projects that are currently configured as disabled for Observability Plus on a team.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -35,7 +35,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRule>> UpdateAiGatewayRuleAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetObservabilityConfigurationProjectsResponse>> GetObservabilityConfigurationProjectsAsResponseAsync(
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

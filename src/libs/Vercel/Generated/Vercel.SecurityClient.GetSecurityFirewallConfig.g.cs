@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class ApiSecurityClient
+    public partial class SecurityClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_DeleteSecurityFirewallConfigByConfigVersionSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_GetSecurityFirewallConfigSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,41 +21,36 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_DeleteSecurityFirewallConfigByConfigVersionSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetSecurityFirewallConfigSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_DeleteSecurityFirewallConfigByConfigVersionSecurityRequirement0,
+            {                s_GetSecurityFirewallConfigSecurityRequirement0,
             };
-        partial void PrepareDeleteSecurityFirewallConfigByConfigVersionArguments(
+        partial void PrepareGetSecurityFirewallConfigArguments(
+            global::System.Net.Http.HttpClient httpClient);
+        partial void PrepareGetSecurityFirewallConfigRequest(
             global::System.Net.Http.HttpClient httpClient,
-            ref string configVersion);
-        partial void PrepareDeleteSecurityFirewallConfigByConfigVersionRequest(
-            global::System.Net.Http.HttpClient httpClient,
-            global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string configVersion);
-        partial void ProcessDeleteSecurityFirewallConfigByConfigVersionResponse(
+            global::System.Net.Http.HttpRequestMessage httpRequestMessage);
+        partial void ProcessGetSecurityFirewallConfigResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessDeleteSecurityFirewallConfigByConfigVersionResponseContent(
+        partial void ProcessGetSecurityFirewallConfigResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
         /// Returns activated WAF config<br/>
-        /// Promotes a draft WAF config to an active config
+        /// Lists WAF configs for a project
         /// </summary>
-        /// <param name="configVersion"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.DeleteSecurityFirewallConfigByConfigVersionResponse> DeleteSecurityFirewallConfigByConfigVersionAsync(
-            string configVersion,
+        public async global::System.Threading.Tasks.Task<global::Vercel.GetSecurityFirewallConfigResponse> GetSecurityFirewallConfigAsync(
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await DeleteSecurityFirewallConfigByConfigVersionAsResponseAsync(
-                configVersion: configVersion,
+            var __response = await GetSecurityFirewallConfigAsResponseAsync(
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -64,28 +59,25 @@ namespace Vercel
         }
         /// <summary>
         /// Returns activated WAF config<br/>
-        /// Promotes a draft WAF config to an active config
+        /// Lists WAF configs for a project
         /// </summary>
-        /// <param name="configVersion"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteSecurityFirewallConfigByConfigVersionResponse>> DeleteSecurityFirewallConfigByConfigVersionAsResponseAsync(
-            string configVersion,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSecurityFirewallConfigResponse>> GetSecurityFirewallConfigAsResponseAsync(
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareDeleteSecurityFirewallConfigByConfigVersionArguments(
-                httpClient: HttpClient,
-                configVersion: ref configVersion);
+            PrepareGetSecurityFirewallConfigArguments(
+                httpClient: HttpClient);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_DeleteSecurityFirewallConfigByConfigVersionSecurityRequirements,
-                operationName: "DeleteSecurityFirewallConfigByConfigVersionAsync");
+                securityRequirements: s_GetSecurityFirewallConfigSecurityRequirements,
+                operationName: "GetSecurityFirewallConfigAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -105,7 +97,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v1/security/firewall/config/{configVersion}",
+                                path: "/v1/security/firewall/config",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -113,7 +105,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Delete,
+                    method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -144,10 +136,9 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareDeleteSecurityFirewallConfigByConfigVersionRequest(
+                PrepareGetSecurityFirewallConfigRequest(
                     httpClient: HttpClient,
-                    httpRequestMessage: __httpRequest,
-                    configVersion: configVersion!);
+                    httpRequestMessage: __httpRequest);
 
                 return __httpRequest;
             }
@@ -164,10 +155,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteSecurityFirewallConfigByConfigVersion",
-                                methodName: "DeleteSecurityFirewallConfigByConfigVersionAsync",
-                                pathTemplate: "$\"/v1/security/firewall/config/{configVersion}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetSecurityFirewallConfig",
+                                methodName: "GetSecurityFirewallConfigAsync",
+                                pathTemplate: "\"/v1/security/firewall/config\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -198,10 +189,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteSecurityFirewallConfigByConfigVersion",
-                                methodName: "DeleteSecurityFirewallConfigByConfigVersionAsync",
-                                pathTemplate: "$\"/v1/security/firewall/config/{configVersion}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetSecurityFirewallConfig",
+                                methodName: "GetSecurityFirewallConfigAsync",
+                                pathTemplate: "\"/v1/security/firewall/config\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -239,10 +230,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteSecurityFirewallConfigByConfigVersion",
-                                methodName: "DeleteSecurityFirewallConfigByConfigVersionAsync",
-                                pathTemplate: "$\"/v1/security/firewall/config/{configVersion}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetSecurityFirewallConfig",
+                                methodName: "GetSecurityFirewallConfigAsync",
+                                pathTemplate: "\"/v1/security/firewall/config\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -279,7 +270,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessDeleteSecurityFirewallConfigByConfigVersionResponse(
+                ProcessGetSecurityFirewallConfigResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -287,10 +278,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteSecurityFirewallConfigByConfigVersion",
-                                methodName: "DeleteSecurityFirewallConfigByConfigVersionAsync",
-                                pathTemplate: "$\"/v1/security/firewall/config/{configVersion}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetSecurityFirewallConfig",
+                                methodName: "GetSecurityFirewallConfigAsync",
+                                pathTemplate: "\"/v1/security/firewall/config\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -309,10 +300,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteSecurityFirewallConfigByConfigVersion",
-                                methodName: "DeleteSecurityFirewallConfigByConfigVersionAsync",
-                                pathTemplate: "$\"/v1/security/firewall/config/{configVersion}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetSecurityFirewallConfig",
+                                methodName: "GetSecurityFirewallConfigAsync",
+                                pathTemplate: "\"/v1/security/firewall/config\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -486,38 +477,6 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
-                            if ((int)__response.StatusCode == 500)
-                            {
-                                string? __content_500 = null;
-                                global::System.Exception? __exception_500 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_500 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_500,
-                                    responseBody: __content_500,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -531,7 +490,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessDeleteSecurityFirewallConfigByConfigVersionResponseContent(
+                                ProcessGetSecurityFirewallConfigResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -540,9 +499,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = (global::Vercel.DeleteSecurityFirewallConfigByConfigVersionResponse?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::Vercel.DeleteSecurityFirewallConfigByConfigVersionResponse?), JsonSerializerContext) ??
+                                    var __value = global::Vercel.GetSecurityFirewallConfigResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteSecurityFirewallConfigByConfigVersionResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSecurityFirewallConfigResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -572,9 +531,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = (global::Vercel.DeleteSecurityFirewallConfigByConfigVersionResponse?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::Vercel.DeleteSecurityFirewallConfigByConfigVersionResponse?), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.GetSecurityFirewallConfigResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteSecurityFirewallConfigByConfigVersionResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSecurityFirewallConfigResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

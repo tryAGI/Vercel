@@ -2,7 +2,7 @@
 
 namespace Vercel
 {
-    public partial interface IApiSecurityClient
+    public partial interface ISecurityClient
     {
         /// <summary>
         /// Returns activated WAF config<br/>
