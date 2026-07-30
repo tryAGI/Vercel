@@ -2168,7 +2168,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserMfaChallengeFailed,
+        /// <summary>
+        /// 
+        /// </summary>
         UserMfaChallengeVerified,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserMfaChangeFailed,
         /// <summary>
         /// 
         /// </summary>
@@ -2890,7 +2898,9 @@ namespace Vercel
                 ListEventTypeName.UserEmuAccountArchived => "user-emu-account-archived",
                 ListEventTypeName.UserEmuAccountDeleted => "user-emu-account-deleted",
                 ListEventTypeName.UserEmuAccountRecovered => "user-emu-account-recovered",
+                ListEventTypeName.UserMfaChallengeFailed => "user-mfa-challenge-failed",
                 ListEventTypeName.UserMfaChallengeVerified => "user-mfa-challenge-verified",
+                ListEventTypeName.UserMfaChangeFailed => "user-mfa-change-failed",
                 ListEventTypeName.UserMfaConfigurationUpdated => "user-mfa-configuration-updated",
                 ListEventTypeName.UserMfaRecoveryCodesRegenerated => "user-mfa-recovery-codes-regenerated",
                 ListEventTypeName.UserMfaRemoved => "user-mfa-removed",
@@ -3482,7 +3492,9 @@ namespace Vercel
                 "user-emu-account-archived" => ListEventTypeName.UserEmuAccountArchived,
                 "user-emu-account-deleted" => ListEventTypeName.UserEmuAccountDeleted,
                 "user-emu-account-recovered" => ListEventTypeName.UserEmuAccountRecovered,
+                "user-mfa-challenge-failed" => ListEventTypeName.UserMfaChallengeFailed,
                 "user-mfa-challenge-verified" => ListEventTypeName.UserMfaChallengeVerified,
+                "user-mfa-change-failed" => ListEventTypeName.UserMfaChangeFailed,
                 "user-mfa-configuration-updated" => ListEventTypeName.UserMfaConfigurationUpdated,
                 "user-mfa-recovery-codes-regenerated" => ListEventTypeName.UserMfaRecoveryCodesRegenerated,
                 "user-mfa-removed" => ListEventTypeName.UserMfaRemoved,

@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Basic,
+        /// <summary>
+        /// 
+        /// </summary>
         Elastic,
         /// <summary>
         /// 
@@ -38,6 +42,7 @@ namespace Vercel
         {
             return value switch
             {
+                TeamResourceConfigBuildMachineDefault.Basic => "basic",
                 TeamResourceConfigBuildMachineDefault.Elastic => "elastic",
                 TeamResourceConfigBuildMachineDefault.Enhanced => "enhanced",
                 TeamResourceConfigBuildMachineDefault.Standard => "standard",
@@ -52,6 +57,7 @@ namespace Vercel
         {
             return value switch
             {
+                "basic" => TeamResourceConfigBuildMachineDefault.Basic,
                 "elastic" => TeamResourceConfigBuildMachineDefault.Elastic,
                 "enhanced" => TeamResourceConfigBuildMachineDefault.Enhanced,
                 "standard" => TeamResourceConfigBuildMachineDefault.Standard,

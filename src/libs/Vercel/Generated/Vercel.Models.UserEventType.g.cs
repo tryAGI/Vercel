@@ -2168,7 +2168,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserMfaChallengeFailed,
+        /// <summary>
+        /// 
+        /// </summary>
         UserMfaChallengeVerified,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserMfaChangeFailed,
         /// <summary>
         /// 
         /// </summary>
@@ -2890,7 +2898,9 @@ namespace Vercel
                 UserEventType.UserEmuAccountArchived => "user-emu-account-archived",
                 UserEventType.UserEmuAccountDeleted => "user-emu-account-deleted",
                 UserEventType.UserEmuAccountRecovered => "user-emu-account-recovered",
+                UserEventType.UserMfaChallengeFailed => "user-mfa-challenge-failed",
                 UserEventType.UserMfaChallengeVerified => "user-mfa-challenge-verified",
+                UserEventType.UserMfaChangeFailed => "user-mfa-change-failed",
                 UserEventType.UserMfaConfigurationUpdated => "user-mfa-configuration-updated",
                 UserEventType.UserMfaRecoveryCodesRegenerated => "user-mfa-recovery-codes-regenerated",
                 UserEventType.UserMfaRemoved => "user-mfa-removed",
@@ -3482,7 +3492,9 @@ namespace Vercel
                 "user-emu-account-archived" => UserEventType.UserEmuAccountArchived,
                 "user-emu-account-deleted" => UserEventType.UserEmuAccountDeleted,
                 "user-emu-account-recovered" => UserEventType.UserEmuAccountRecovered,
+                "user-mfa-challenge-failed" => UserEventType.UserMfaChallengeFailed,
                 "user-mfa-challenge-verified" => UserEventType.UserMfaChallengeVerified,
+                "user-mfa-change-failed" => UserEventType.UserMfaChangeFailed,
                 "user-mfa-configuration-updated" => UserEventType.UserMfaConfigurationUpdated,
                 "user-mfa-recovery-codes-regenerated" => UserEventType.UserMfaRecoveryCodesRegenerated,
                 "user-mfa-removed" => UserEventType.UserMfaRemoved,

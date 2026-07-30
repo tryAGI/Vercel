@@ -76759,6 +76759,7 @@
                               "buildMachineType": {
                                 "type": "string",
                                 "enum": [
+                                  "basic",
                                   "enhanced",
                                   "standard",
                                   "turbo"
@@ -76958,6 +76959,7 @@
                               "buildMachineType": {
                                 "type": "string",
                                 "enum": [
+                                  "basic",
                                   "enhanced",
                                   "standard",
                                   "turbo"
@@ -90039,6 +90041,7 @@
                               "buildMachineType": {
                                 "type": "string",
                                 "enum": [
+                                  "basic",
                                   "enhanced",
                                   "standard",
                                   "turbo"
@@ -94248,6 +94251,7 @@
                                   "buildMachineType": {
                                     "type": "string",
                                     "enum": [
+                                      "basic",
                                       "enhanced",
                                       "standard",
                                       "turbo"
@@ -99304,6 +99308,7 @@
                                   "buildMachineType": {
                                     "type": "string",
                                     "enum": [
+                                      "basic",
                                       "enhanced",
                                       "standard",
                                       "turbo"
@@ -99503,6 +99508,7 @@
                                   "buildMachineType": {
                                     "type": "string",
                                     "enum": [
+                                      "basic",
                                       "enhanced",
                                       "standard",
                                       "turbo"
@@ -106894,6 +106900,7 @@
                         "buildMachineType": {
                           "type": "string",
                           "enum": [
+                            "basic",
                             "enhanced",
                             "standard",
                             "turbo"
@@ -107093,6 +107100,7 @@
                         "buildMachineType": {
                           "type": "string",
                           "enum": [
+                            "basic",
                             "enhanced",
                             "standard",
                             "turbo"
@@ -111628,6 +111636,7 @@
                     "properties": {
                       "buildMachineType": {
                         "enum": [
+                          "basic",
                           "enhanced",
                           "turbo",
                           "standard",
@@ -114650,6 +114659,7 @@
                         "buildMachineType": {
                           "type": "string",
                           "enum": [
+                            "basic",
                             "enhanced",
                             "standard",
                             "turbo"
@@ -114849,6 +114859,7 @@
                         "buildMachineType": {
                           "type": "string",
                           "enum": [
+                            "basic",
                             "enhanced",
                             "standard",
                             "turbo"
@@ -121767,6 +121778,7 @@
                         "buildMachineType": {
                           "type": "string",
                           "enum": [
+                            "basic",
                             "enhanced",
                             "standard",
                             "turbo"
@@ -121966,6 +121978,7 @@
                         "buildMachineType": {
                           "type": "string",
                           "enum": [
+                            "basic",
                             "enhanced",
                             "standard",
                             "turbo"
@@ -126390,6 +126403,7 @@
                       "buildMachineType": {
                         "enum": [
                           null,
+                          "basic",
                           "enhanced",
                           "turbo",
                           "standard",
@@ -130148,6 +130162,7 @@
                         "buildMachineType": {
                           "type": "string",
                           "enum": [
+                            "basic",
                             "enhanced",
                             "standard",
                             "turbo"
@@ -130347,6 +130362,7 @@
                         "buildMachineType": {
                           "type": "string",
                           "enum": [
+                            "basic",
                             "enhanced",
                             "standard",
                             "turbo"
@@ -146447,6 +146463,7 @@
                         "buildMachineType": {
                           "type": "string",
                           "enum": [
+                            "basic",
                             "enhanced",
                             "standard",
                             "turbo"
@@ -146646,6 +146663,7 @@
                         "buildMachineType": {
                           "type": "string",
                           "enum": [
+                            "basic",
                             "enhanced",
                             "standard",
                             "turbo"
@@ -176659,6 +176677,7 @@
                           "default": {
                             "type": "string",
                             "enum": [
+                              "basic",
                               "enhanced",
                               "turbo",
                               "standard",
@@ -179770,6 +179789,15 @@
                               "contentCaptureOutputs": {
                                 "type": "string"
                               },
+                              "transcriptStatus": {
+                                "type": "string"
+                              },
+                              "transcriptInputs": {
+                                "type": "string"
+                              },
+                              "transcriptOutputs": {
+                                "type": "string"
+                              },
                               "providerAttemptError": {
                                 "type": "string"
                               },
@@ -180424,6 +180452,15 @@
                               "contentCaptureOutputs": {
                                 "type": "string"
                               },
+                              "transcriptStatus": {
+                                "type": "string"
+                              },
+                              "transcriptInputs": {
+                                "type": "string"
+                              },
+                              "transcriptOutputs": {
+                                "type": "string"
+                              },
                               "providerAttemptError": {
                                 "type": "string"
                               },
@@ -180677,6 +180714,9 @@
                               "toolCallSuccess",
                               "toolCallType",
                               "trafficSource",
+                              "transcriptInputs",
+                              "transcriptOutputs",
+                              "transcriptStatus",
                               "triggeringTag",
                               "utmCampaign",
                               "utmContent",
@@ -181540,6 +181580,15 @@
                               "contentCaptureOutputs": {
                                 "type": "string"
                               },
+                              "transcriptStatus": {
+                                "type": "string"
+                              },
+                              "transcriptInputs": {
+                                "type": "string"
+                              },
+                              "transcriptOutputs": {
+                                "type": "string"
+                              },
                               "providerAttemptError": {
                                 "type": "string"
                               },
@@ -182194,6 +182243,15 @@
                               "contentCaptureOutputs": {
                                 "type": "string"
                               },
+                              "transcriptStatus": {
+                                "type": "string"
+                              },
+                              "transcriptInputs": {
+                                "type": "string"
+                              },
+                              "transcriptOutputs": {
+                                "type": "string"
+                              },
                               "providerAttemptError": {
                                 "type": "string"
                               },
@@ -182447,6 +182505,9 @@
                               "toolCallSuccess",
                               "toolCallType",
                               "trafficSource",
+                              "transcriptInputs",
+                              "transcriptOutputs",
+                              "transcriptStatus",
                               "triggeringTag",
                               "utmCampaign",
                               "utmContent",
@@ -183274,6 +183335,15 @@
                         "contentCaptureOutputs": {
                           "type": "string"
                         },
+                        "transcriptStatus": {
+                          "type": "string"
+                        },
+                        "transcriptInputs": {
+                          "type": "string"
+                        },
+                        "transcriptOutputs": {
+                          "type": "string"
+                        },
                         "providerAttemptError": {
                           "type": "string"
                         },
@@ -183527,6 +183597,9 @@
                         "toolCallSuccess",
                         "toolCallType",
                         "trafficSource",
+                        "transcriptInputs",
+                        "transcriptOutputs",
+                        "transcriptStatus",
                         "triggeringTag",
                         "utmCampaign",
                         "utmContent",
@@ -184285,6 +184358,15 @@
                         "contentCaptureOutputs": {
                           "type": "string"
                         },
+                        "transcriptStatus": {
+                          "type": "string"
+                        },
+                        "transcriptInputs": {
+                          "type": "string"
+                        },
+                        "transcriptOutputs": {
+                          "type": "string"
+                        },
                         "providerAttemptError": {
                           "type": "string"
                         },
@@ -184538,6 +184620,9 @@
                         "toolCallSuccess",
                         "toolCallType",
                         "trafficSource",
+                        "transcriptInputs",
+                        "transcriptOutputs",
+                        "transcriptStatus",
                         "triggeringTag",
                         "utmCampaign",
                         "utmContent",
@@ -191852,7 +191937,9 @@
               "user-emu-account-archived",
               "user-emu-account-deleted",
               "user-emu-account-recovered",
+              "user-mfa-challenge-failed",
               "user-mfa-challenge-verified",
+              "user-mfa-change-failed",
               "user-mfa-configuration-updated",
               "user-mfa-recovery-codes-regenerated",
               "user-mfa-removed",
@@ -192751,7 +192838,9 @@
               "user-emu-account-archived",
               "user-emu-account-deleted",
               "user-emu-account-recovered",
+              "user-mfa-challenge-failed",
               "user-mfa-challenge-verified",
+              "user-mfa-change-failed",
               "user-mfa-configuration-updated",
               "user-mfa-recovery-codes-regenerated",
               "user-mfa-removed",
@@ -193391,7 +193480,9 @@
                 "user-emu-account-archived",
                 "user-emu-account-deleted",
                 "user-emu-account-recovered",
+                "user-mfa-challenge-failed",
                 "user-mfa-challenge-verified",
+                "user-mfa-change-failed",
                 "user-mfa-configuration-updated",
                 "user-mfa-recovery-codes-regenerated",
                 "user-mfa-removed",
@@ -196177,6 +196268,7 @@
                   "default": {
                     "type": "string",
                     "enum": [
+                      "basic",
                       "elastic",
                       "enhanced",
                       "standard",

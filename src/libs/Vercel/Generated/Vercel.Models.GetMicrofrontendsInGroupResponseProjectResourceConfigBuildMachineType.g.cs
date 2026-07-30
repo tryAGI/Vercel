@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Basic,
+        /// <summary>
+        /// 
+        /// </summary>
         Enhanced,
         /// <summary>
         /// 
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType.Basic => "basic",
                 GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType.Enhanced => "enhanced",
                 GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType.Standard => "standard",
                 GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType.Turbo => "turbo",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "basic" => GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType.Basic,
                 "enhanced" => GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType.Enhanced,
                 "standard" => GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType.Standard,
                 "turbo" => GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType.Turbo,
