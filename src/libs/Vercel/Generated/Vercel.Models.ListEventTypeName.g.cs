@@ -1108,6 +1108,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OidcPolicyCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        OidcPolicyDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        OidcPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        OidcPolicyUsedToObtainAppToken,
+        /// <summary>
+        /// 
+        /// </summary>
         OrganizationCreate,
         /// <summary>
         /// 
@@ -1297,6 +1313,10 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectBuildMachineUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectCardWidgetPreferenceUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -2605,6 +2625,10 @@ namespace Vercel
                 ListEventTypeName.ObservabilityEnabled => "observability-enabled",
                 ListEventTypeName.ObservabilityPlusProjectDisabled => "observability-plus-project-disabled",
                 ListEventTypeName.ObservabilityPlusProjectEnabled => "observability-plus-project-enabled",
+                ListEventTypeName.OidcPolicyCreated => "oidc-policy-created",
+                ListEventTypeName.OidcPolicyDeleted => "oidc-policy-deleted",
+                ListEventTypeName.OidcPolicyUpdated => "oidc-policy-updated",
+                ListEventTypeName.OidcPolicyUsedToObtainAppToken => "oidc-policy-used-to-obtain-app-token",
                 ListEventTypeName.OrganizationCreate => "organization-create",
                 ListEventTypeName.OrganizationDelete => "organization-delete",
                 ListEventTypeName.OrganizationSlugUpdate => "organization-slug-update",
@@ -2653,6 +2677,7 @@ namespace Vercel
                 ListEventTypeName.ProjectBuildCommandUpdated => "project-build-command-updated",
                 ListEventTypeName.ProjectBuildLogsAndSourceProtectionUpdated => "project-build-logs-and-source-protection-updated",
                 ListEventTypeName.ProjectBuildMachineUpdated => "project-build-machine-updated",
+                ListEventTypeName.ProjectCardWidgetPreferenceUpdated => "project-card-widget-preference-updated",
                 ListEventTypeName.ProjectClientCertDelete => "project-client-cert-delete",
                 ListEventTypeName.ProjectClientCertUpload => "project-client-cert-upload",
                 ListEventTypeName.ProjectConnectConfigurations => "project-connect-configurations",
@@ -3192,6 +3217,10 @@ namespace Vercel
                 "observability-enabled" => ListEventTypeName.ObservabilityEnabled,
                 "observability-plus-project-disabled" => ListEventTypeName.ObservabilityPlusProjectDisabled,
                 "observability-plus-project-enabled" => ListEventTypeName.ObservabilityPlusProjectEnabled,
+                "oidc-policy-created" => ListEventTypeName.OidcPolicyCreated,
+                "oidc-policy-deleted" => ListEventTypeName.OidcPolicyDeleted,
+                "oidc-policy-updated" => ListEventTypeName.OidcPolicyUpdated,
+                "oidc-policy-used-to-obtain-app-token" => ListEventTypeName.OidcPolicyUsedToObtainAppToken,
                 "organization-create" => ListEventTypeName.OrganizationCreate,
                 "organization-delete" => ListEventTypeName.OrganizationDelete,
                 "organization-slug-update" => ListEventTypeName.OrganizationSlugUpdate,
@@ -3240,6 +3269,7 @@ namespace Vercel
                 "project-build-command-updated" => ListEventTypeName.ProjectBuildCommandUpdated,
                 "project-build-logs-and-source-protection-updated" => ListEventTypeName.ProjectBuildLogsAndSourceProtectionUpdated,
                 "project-build-machine-updated" => ListEventTypeName.ProjectBuildMachineUpdated,
+                "project-card-widget-preference-updated" => ListEventTypeName.ProjectCardWidgetPreferenceUpdated,
                 "project-client-cert-delete" => ListEventTypeName.ProjectClientCertDelete,
                 "project-client-cert-upload" => ListEventTypeName.ProjectClientCertUpload,
                 "project-connect-configurations" => ListEventTypeName.ProjectConnectConfigurations,

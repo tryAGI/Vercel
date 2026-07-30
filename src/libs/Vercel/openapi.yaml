@@ -177773,6 +177773,10 @@
                   },
                   "expiresAt": {
                     "type": "number"
+                  },
+                  "projectId": {
+                    "type": "string",
+                    "description": "The ID of the project to scope this token to"
                   }
                 }
               }
@@ -179580,6 +179584,12 @@
                               "keyName": {
                                 "type": "string"
                               },
+                              "authMethod": {
+                                "type": "string"
+                              },
+                              "appName": {
+                                "type": "string"
+                              },
                               "isByok": {
                                 "type": "string"
                               },
@@ -180228,6 +180238,12 @@
                               "keyName": {
                                 "type": "string"
                               },
+                              "authMethod": {
+                                "type": "string"
+                              },
+                              "appName": {
+                                "type": "string"
+                              },
                               "isByok": {
                                 "type": "string"
                               },
@@ -180471,11 +180487,13 @@
                               "aiModel",
                               "aiModelType",
                               "aiProvider",
+                              "appName",
                               "asnId",
                               "asnName",
                               "attributes",
                               "attributionEventName",
                               "attributionTarget",
+                              "authMethod",
                               "billableRegion",
                               "blobOperationLevel",
                               "blobOperationType",
@@ -181336,6 +181354,12 @@
                               "keyName": {
                                 "type": "string"
                               },
+                              "authMethod": {
+                                "type": "string"
+                              },
+                              "appName": {
+                                "type": "string"
+                              },
                               "isByok": {
                                 "type": "string"
                               },
@@ -181984,6 +182008,12 @@
                               "keyName": {
                                 "type": "string"
                               },
+                              "authMethod": {
+                                "type": "string"
+                              },
+                              "appName": {
+                                "type": "string"
+                              },
                               "isByok": {
                                 "type": "string"
                               },
@@ -182227,11 +182257,13 @@
                               "aiModel",
                               "aiModelType",
                               "aiProvider",
+                              "appName",
                               "asnId",
                               "asnName",
                               "attributes",
                               "attributionEventName",
                               "attributionTarget",
+                              "authMethod",
                               "billableRegion",
                               "blobOperationLevel",
                               "blobOperationType",
@@ -183056,6 +183088,12 @@
                         "keyName": {
                           "type": "string"
                         },
+                        "authMethod": {
+                          "type": "string"
+                        },
+                        "appName": {
+                          "type": "string"
+                        },
                         "isByok": {
                           "type": "string"
                         },
@@ -183299,11 +183337,13 @@
                         "aiModel",
                         "aiModelType",
                         "aiProvider",
+                        "appName",
                         "asnId",
                         "asnName",
                         "attributes",
                         "attributionEventName",
                         "attributionTarget",
+                        "authMethod",
                         "billableRegion",
                         "blobOperationLevel",
                         "blobOperationType",
@@ -184059,6 +184099,12 @@
                         "keyName": {
                           "type": "string"
                         },
+                        "authMethod": {
+                          "type": "string"
+                        },
+                        "appName": {
+                          "type": "string"
+                        },
                         "isByok": {
                           "type": "string"
                         },
@@ -184302,11 +184348,13 @@
                         "aiModel",
                         "aiModelType",
                         "aiProvider",
+                        "appName",
                         "asnId",
                         "asnName",
                         "attributes",
                         "attributionEventName",
                         "attributionTarget",
+                        "authMethod",
                         "billableRegion",
                         "blobOperationLevel",
                         "blobOperationType",
@@ -191539,6 +191587,10 @@
               "observability-enabled",
               "observability-plus-project-disabled",
               "observability-plus-project-enabled",
+              "oidc-policy-created",
+              "oidc-policy-deleted",
+              "oidc-policy-updated",
+              "oidc-policy-used-to-obtain-app-token",
               "organization-create",
               "organization-delete",
               "organization-slug-update",
@@ -191587,6 +191639,7 @@
               "project-build-command-updated",
               "project-build-logs-and-source-protection-updated",
               "project-build-machine-updated",
+              "project-card-widget-preference-updated",
               "project-client-cert-delete",
               "project-client-cert-upload",
               "project-connect-configurations",
@@ -192433,6 +192486,10 @@
               "observability-enabled",
               "observability-plus-project-disabled",
               "observability-plus-project-enabled",
+              "oidc-policy-created",
+              "oidc-policy-deleted",
+              "oidc-policy-updated",
+              "oidc-policy-used-to-obtain-app-token",
               "organization-create",
               "organization-delete",
               "organization-slug-update",
@@ -192481,6 +192538,7 @@
               "project-build-command-updated",
               "project-build-logs-and-source-protection-updated",
               "project-build-machine-updated",
+              "project-card-widget-preference-updated",
               "project-client-cert-delete",
               "project-client-cert-upload",
               "project-connect-configurations",
@@ -193068,6 +193126,10 @@
                 "observability-enabled",
                 "observability-plus-project-disabled",
                 "observability-plus-project-enabled",
+                "oidc-policy-created",
+                "oidc-policy-deleted",
+                "oidc-policy-updated",
+                "oidc-policy-used-to-obtain-app-token",
                 "organization-create",
                 "organization-delete",
                 "organization-slug-update",
@@ -193116,6 +193178,7 @@
                 "project-build-command-updated",
                 "project-build-logs-and-source-protection-updated",
                 "project-build-machine-updated",
+                "project-card-widget-preference-updated",
                 "project-client-cert-delete",
                 "project-client-cert-upload",
                 "project-connect-configurations",

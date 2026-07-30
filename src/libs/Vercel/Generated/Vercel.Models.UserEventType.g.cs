@@ -1108,6 +1108,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OidcPolicyCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        OidcPolicyDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        OidcPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        OidcPolicyUsedToObtainAppToken,
+        /// <summary>
+        /// 
+        /// </summary>
         OrganizationCreate,
         /// <summary>
         /// 
@@ -1297,6 +1313,10 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectBuildMachineUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectCardWidgetPreferenceUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -2605,6 +2625,10 @@ namespace Vercel
                 UserEventType.ObservabilityEnabled => "observability-enabled",
                 UserEventType.ObservabilityPlusProjectDisabled => "observability-plus-project-disabled",
                 UserEventType.ObservabilityPlusProjectEnabled => "observability-plus-project-enabled",
+                UserEventType.OidcPolicyCreated => "oidc-policy-created",
+                UserEventType.OidcPolicyDeleted => "oidc-policy-deleted",
+                UserEventType.OidcPolicyUpdated => "oidc-policy-updated",
+                UserEventType.OidcPolicyUsedToObtainAppToken => "oidc-policy-used-to-obtain-app-token",
                 UserEventType.OrganizationCreate => "organization-create",
                 UserEventType.OrganizationDelete => "organization-delete",
                 UserEventType.OrganizationSlugUpdate => "organization-slug-update",
@@ -2653,6 +2677,7 @@ namespace Vercel
                 UserEventType.ProjectBuildCommandUpdated => "project-build-command-updated",
                 UserEventType.ProjectBuildLogsAndSourceProtectionUpdated => "project-build-logs-and-source-protection-updated",
                 UserEventType.ProjectBuildMachineUpdated => "project-build-machine-updated",
+                UserEventType.ProjectCardWidgetPreferenceUpdated => "project-card-widget-preference-updated",
                 UserEventType.ProjectClientCertDelete => "project-client-cert-delete",
                 UserEventType.ProjectClientCertUpload => "project-client-cert-upload",
                 UserEventType.ProjectConnectConfigurations => "project-connect-configurations",
@@ -3192,6 +3217,10 @@ namespace Vercel
                 "observability-enabled" => UserEventType.ObservabilityEnabled,
                 "observability-plus-project-disabled" => UserEventType.ObservabilityPlusProjectDisabled,
                 "observability-plus-project-enabled" => UserEventType.ObservabilityPlusProjectEnabled,
+                "oidc-policy-created" => UserEventType.OidcPolicyCreated,
+                "oidc-policy-deleted" => UserEventType.OidcPolicyDeleted,
+                "oidc-policy-updated" => UserEventType.OidcPolicyUpdated,
+                "oidc-policy-used-to-obtain-app-token" => UserEventType.OidcPolicyUsedToObtainAppToken,
                 "organization-create" => UserEventType.OrganizationCreate,
                 "organization-delete" => UserEventType.OrganizationDelete,
                 "organization-slug-update" => UserEventType.OrganizationSlugUpdate,
@@ -3240,6 +3269,7 @@ namespace Vercel
                 "project-build-command-updated" => UserEventType.ProjectBuildCommandUpdated,
                 "project-build-logs-and-source-protection-updated" => UserEventType.ProjectBuildLogsAndSourceProtectionUpdated,
                 "project-build-machine-updated" => UserEventType.ProjectBuildMachineUpdated,
+                "project-card-widget-preference-updated" => UserEventType.ProjectCardWidgetPreferenceUpdated,
                 "project-client-cert-delete" => UserEventType.ProjectClientCertDelete,
                 "project-client-cert-upload" => UserEventType.ProjectClientCertUpload,
                 "project-connect-configurations" => UserEventType.ProjectConnectConfigurations,

@@ -58,6 +58,9 @@ namespace Vercel
         /// </param>
         /// <param name="name"></param>
         /// <param name="expiresAt"></param>
+        /// <param name="projectId">
+        /// The ID of the project to scope this token to
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -66,6 +69,7 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             double? expiresAt = default,
+            string? projectId = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

@@ -1107,6 +1107,22 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OidcPolicyCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        OidcPolicyDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        OidcPolicyUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        OidcPolicyUsedToObtainAppToken,
+        /// <summary>
+        /// 
+        /// </summary>
         OrganizationCreate,
         /// <summary>
         /// 
@@ -1296,6 +1312,10 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectBuildMachineUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectCardWidgetPreferenceUpdated,
         /// <summary>
         /// 
         /// </summary>
@@ -2604,6 +2624,10 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ObservabilityEnabled => "observability-enabled",
                 ListEventTypeReplacedByItem.ObservabilityPlusProjectDisabled => "observability-plus-project-disabled",
                 ListEventTypeReplacedByItem.ObservabilityPlusProjectEnabled => "observability-plus-project-enabled",
+                ListEventTypeReplacedByItem.OidcPolicyCreated => "oidc-policy-created",
+                ListEventTypeReplacedByItem.OidcPolicyDeleted => "oidc-policy-deleted",
+                ListEventTypeReplacedByItem.OidcPolicyUpdated => "oidc-policy-updated",
+                ListEventTypeReplacedByItem.OidcPolicyUsedToObtainAppToken => "oidc-policy-used-to-obtain-app-token",
                 ListEventTypeReplacedByItem.OrganizationCreate => "organization-create",
                 ListEventTypeReplacedByItem.OrganizationDelete => "organization-delete",
                 ListEventTypeReplacedByItem.OrganizationSlugUpdate => "organization-slug-update",
@@ -2652,6 +2676,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectBuildCommandUpdated => "project-build-command-updated",
                 ListEventTypeReplacedByItem.ProjectBuildLogsAndSourceProtectionUpdated => "project-build-logs-and-source-protection-updated",
                 ListEventTypeReplacedByItem.ProjectBuildMachineUpdated => "project-build-machine-updated",
+                ListEventTypeReplacedByItem.ProjectCardWidgetPreferenceUpdated => "project-card-widget-preference-updated",
                 ListEventTypeReplacedByItem.ProjectClientCertDelete => "project-client-cert-delete",
                 ListEventTypeReplacedByItem.ProjectClientCertUpload => "project-client-cert-upload",
                 ListEventTypeReplacedByItem.ProjectConnectConfigurations => "project-connect-configurations",
@@ -3191,6 +3216,10 @@ namespace Vercel
                 "observability-enabled" => ListEventTypeReplacedByItem.ObservabilityEnabled,
                 "observability-plus-project-disabled" => ListEventTypeReplacedByItem.ObservabilityPlusProjectDisabled,
                 "observability-plus-project-enabled" => ListEventTypeReplacedByItem.ObservabilityPlusProjectEnabled,
+                "oidc-policy-created" => ListEventTypeReplacedByItem.OidcPolicyCreated,
+                "oidc-policy-deleted" => ListEventTypeReplacedByItem.OidcPolicyDeleted,
+                "oidc-policy-updated" => ListEventTypeReplacedByItem.OidcPolicyUpdated,
+                "oidc-policy-used-to-obtain-app-token" => ListEventTypeReplacedByItem.OidcPolicyUsedToObtainAppToken,
                 "organization-create" => ListEventTypeReplacedByItem.OrganizationCreate,
                 "organization-delete" => ListEventTypeReplacedByItem.OrganizationDelete,
                 "organization-slug-update" => ListEventTypeReplacedByItem.OrganizationSlugUpdate,
@@ -3239,6 +3268,7 @@ namespace Vercel
                 "project-build-command-updated" => ListEventTypeReplacedByItem.ProjectBuildCommandUpdated,
                 "project-build-logs-and-source-protection-updated" => ListEventTypeReplacedByItem.ProjectBuildLogsAndSourceProtectionUpdated,
                 "project-build-machine-updated" => ListEventTypeReplacedByItem.ProjectBuildMachineUpdated,
+                "project-card-widget-preference-updated" => ListEventTypeReplacedByItem.ProjectCardWidgetPreferenceUpdated,
                 "project-client-cert-delete" => ListEventTypeReplacedByItem.ProjectClientCertDelete,
                 "project-client-cert-upload" => ListEventTypeReplacedByItem.ProjectClientCertUpload,
                 "project-connect-configurations" => ListEventTypeReplacedByItem.ProjectConnectConfigurations,
