@@ -22,6 +22,12 @@ namespace Vercel
         public double? ExpiresAt { get; set; }
 
         /// <summary>
+        /// The ID of the project to scope this token to
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -32,15 +38,20 @@ namespace Vercel
         /// </summary>
         /// <param name="name"></param>
         /// <param name="expiresAt"></param>
+        /// <param name="projectId">
+        /// The ID of the project to scope this token to
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateAuthTokenRequest(
             string name,
-            double? expiresAt)
+            double? expiresAt,
+            string? projectId)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ExpiresAt = expiresAt;
+            this.ProjectId = projectId;
         }
 
         /// <summary>

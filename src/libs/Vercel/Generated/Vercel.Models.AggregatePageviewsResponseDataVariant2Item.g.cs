@@ -935,6 +935,20 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("authMethod")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string AuthMethod { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string AppName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isByok")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsByok { get; set; }
@@ -1626,6 +1640,8 @@ namespace Vercel
         /// <param name="gatewayCostCurrency"></param>
         /// <param name="keyId"></param>
         /// <param name="keyName"></param>
+        /// <param name="authMethod"></param>
+        /// <param name="appName"></param>
         /// <param name="isByok"></param>
         /// <param name="isPrivateModel"></param>
         /// <param name="isRequestZdr"></param>
@@ -1841,6 +1857,8 @@ namespace Vercel
             string gatewayCostCurrency,
             string keyId,
             string keyName,
+            string authMethod,
+            string appName,
             string isByok,
             string isPrivateModel,
             string isRequestZdr,
@@ -2053,6 +2071,8 @@ namespace Vercel
             this.GatewayCostCurrency = gatewayCostCurrency ?? throw new global::System.ArgumentNullException(nameof(gatewayCostCurrency));
             this.KeyId = keyId ?? throw new global::System.ArgumentNullException(nameof(keyId));
             this.KeyName = keyName ?? throw new global::System.ArgumentNullException(nameof(keyName));
+            this.AuthMethod = authMethod ?? throw new global::System.ArgumentNullException(nameof(authMethod));
+            this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
             this.IsByok = isByok ?? throw new global::System.ArgumentNullException(nameof(isByok));
             this.IsPrivateModel = isPrivateModel ?? throw new global::System.ArgumentNullException(nameof(isPrivateModel));
             this.IsRequestZdr = isRequestZdr ?? throw new global::System.ArgumentNullException(nameof(isRequestZdr));
