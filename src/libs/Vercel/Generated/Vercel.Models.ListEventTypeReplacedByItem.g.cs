@@ -2167,7 +2167,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserMfaChallengeFailed,
+        /// <summary>
+        /// 
+        /// </summary>
         UserMfaChallengeVerified,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserMfaChangeFailed,
         /// <summary>
         /// 
         /// </summary>
@@ -2889,7 +2897,9 @@ namespace Vercel
                 ListEventTypeReplacedByItem.UserEmuAccountArchived => "user-emu-account-archived",
                 ListEventTypeReplacedByItem.UserEmuAccountDeleted => "user-emu-account-deleted",
                 ListEventTypeReplacedByItem.UserEmuAccountRecovered => "user-emu-account-recovered",
+                ListEventTypeReplacedByItem.UserMfaChallengeFailed => "user-mfa-challenge-failed",
                 ListEventTypeReplacedByItem.UserMfaChallengeVerified => "user-mfa-challenge-verified",
+                ListEventTypeReplacedByItem.UserMfaChangeFailed => "user-mfa-change-failed",
                 ListEventTypeReplacedByItem.UserMfaConfigurationUpdated => "user-mfa-configuration-updated",
                 ListEventTypeReplacedByItem.UserMfaRecoveryCodesRegenerated => "user-mfa-recovery-codes-regenerated",
                 ListEventTypeReplacedByItem.UserMfaRemoved => "user-mfa-removed",
@@ -3481,7 +3491,9 @@ namespace Vercel
                 "user-emu-account-archived" => ListEventTypeReplacedByItem.UserEmuAccountArchived,
                 "user-emu-account-deleted" => ListEventTypeReplacedByItem.UserEmuAccountDeleted,
                 "user-emu-account-recovered" => ListEventTypeReplacedByItem.UserEmuAccountRecovered,
+                "user-mfa-challenge-failed" => ListEventTypeReplacedByItem.UserMfaChallengeFailed,
                 "user-mfa-challenge-verified" => ListEventTypeReplacedByItem.UserMfaChallengeVerified,
+                "user-mfa-change-failed" => ListEventTypeReplacedByItem.UserMfaChangeFailed,
                 "user-mfa-configuration-updated" => ListEventTypeReplacedByItem.UserMfaConfigurationUpdated,
                 "user-mfa-recovery-codes-regenerated" => ListEventTypeReplacedByItem.UserMfaRecoveryCodesRegenerated,
                 "user-mfa-removed" => ListEventTypeReplacedByItem.UserMfaRemoved,

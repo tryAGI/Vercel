@@ -1175,6 +1175,24 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transcriptStatus")]
+        public string? TranscriptStatus { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transcriptInputs")]
+        public string? TranscriptInputs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transcriptOutputs")]
+        public string? TranscriptOutputs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptError")]
         public string? ProviderAttemptError { get; set; }
 
@@ -1497,6 +1515,9 @@ namespace Vercel
         /// <param name="contentCaptureStatus"></param>
         /// <param name="contentCaptureInputs"></param>
         /// <param name="contentCaptureOutputs"></param>
+        /// <param name="transcriptStatus"></param>
+        /// <param name="transcriptInputs"></param>
+        /// <param name="transcriptOutputs"></param>
         /// <param name="providerAttemptError"></param>
         /// <param name="providerAttemptSafetyIdentifier"></param>
         /// <param name="providerAttemptDevSafetyIdentifier"></param>
@@ -1715,6 +1736,9 @@ namespace Vercel
             string? contentCaptureStatus,
             string? contentCaptureInputs,
             string? contentCaptureOutputs,
+            string? transcriptStatus,
+            string? transcriptInputs,
+            string? transcriptOutputs,
             string? providerAttemptError,
             string? providerAttemptSafetyIdentifier,
             string? providerAttemptDevSafetyIdentifier,
@@ -1929,6 +1953,9 @@ namespace Vercel
             this.ContentCaptureStatus = contentCaptureStatus;
             this.ContentCaptureInputs = contentCaptureInputs;
             this.ContentCaptureOutputs = contentCaptureOutputs;
+            this.TranscriptStatus = transcriptStatus;
+            this.TranscriptInputs = transcriptInputs;
+            this.TranscriptOutputs = transcriptOutputs;
             this.ProviderAttemptError = providerAttemptError;
             this.ProviderAttemptSafetyIdentifier = providerAttemptSafetyIdentifier;
             this.ProviderAttemptDevSafetyIdentifier = providerAttemptDevSafetyIdentifier;

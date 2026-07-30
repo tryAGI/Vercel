@@ -10,6 +10,10 @@ namespace Vercel
     public enum PatchTeamRequestResourceConfigBuildMachineDefault
     {
         /// <summary>
+        /// 
+        /// </summary>
+        Basic,
+        /// <summary>
         /// standard, enhanced, turbo, or elastic.
         /// </summary>
         Elastic,
@@ -39,6 +43,7 @@ namespace Vercel
         {
             return value switch
             {
+                PatchTeamRequestResourceConfigBuildMachineDefault.Basic => "basic",
                 PatchTeamRequestResourceConfigBuildMachineDefault.Elastic => "elastic",
                 PatchTeamRequestResourceConfigBuildMachineDefault.Enhanced => "enhanced",
                 PatchTeamRequestResourceConfigBuildMachineDefault.Standard => "standard",
@@ -53,6 +58,7 @@ namespace Vercel
         {
             return value switch
             {
+                "basic" => PatchTeamRequestResourceConfigBuildMachineDefault.Basic,
                 "elastic" => PatchTeamRequestResourceConfigBuildMachineDefault.Elastic,
                 "enhanced" => PatchTeamRequestResourceConfigBuildMachineDefault.Enhanced,
                 "standard" => PatchTeamRequestResourceConfigBuildMachineDefault.Standard,

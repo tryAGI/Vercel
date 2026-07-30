@@ -1369,6 +1369,27 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transcriptStatus")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TranscriptStatus { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transcriptInputs")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TranscriptInputs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transcriptOutputs")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TranscriptOutputs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptError")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptError { get; set; }
@@ -1702,6 +1723,9 @@ namespace Vercel
         /// <param name="contentCaptureStatus"></param>
         /// <param name="contentCaptureInputs"></param>
         /// <param name="contentCaptureOutputs"></param>
+        /// <param name="transcriptStatus"></param>
+        /// <param name="transcriptInputs"></param>
+        /// <param name="transcriptOutputs"></param>
         /// <param name="providerAttemptError"></param>
         /// <param name="providerAttemptSafetyIdentifier"></param>
         /// <param name="providerAttemptDevSafetyIdentifier"></param>
@@ -1919,6 +1943,9 @@ namespace Vercel
             string contentCaptureStatus,
             string contentCaptureInputs,
             string contentCaptureOutputs,
+            string transcriptStatus,
+            string transcriptInputs,
+            string transcriptOutputs,
             string providerAttemptError,
             string providerAttemptSafetyIdentifier,
             string providerAttemptDevSafetyIdentifier,
@@ -2133,6 +2160,9 @@ namespace Vercel
             this.ContentCaptureStatus = contentCaptureStatus ?? throw new global::System.ArgumentNullException(nameof(contentCaptureStatus));
             this.ContentCaptureInputs = contentCaptureInputs ?? throw new global::System.ArgumentNullException(nameof(contentCaptureInputs));
             this.ContentCaptureOutputs = contentCaptureOutputs ?? throw new global::System.ArgumentNullException(nameof(contentCaptureOutputs));
+            this.TranscriptStatus = transcriptStatus ?? throw new global::System.ArgumentNullException(nameof(transcriptStatus));
+            this.TranscriptInputs = transcriptInputs ?? throw new global::System.ArgumentNullException(nameof(transcriptInputs));
+            this.TranscriptOutputs = transcriptOutputs ?? throw new global::System.ArgumentNullException(nameof(transcriptOutputs));
             this.ProviderAttemptError = providerAttemptError ?? throw new global::System.ArgumentNullException(nameof(providerAttemptError));
             this.ProviderAttemptSafetyIdentifier = providerAttemptSafetyIdentifier ?? throw new global::System.ArgumentNullException(nameof(providerAttemptSafetyIdentifier));
             this.ProviderAttemptDevSafetyIdentifier = providerAttemptDevSafetyIdentifier ?? throw new global::System.ArgumentNullException(nameof(providerAttemptDevSafetyIdentifier));
