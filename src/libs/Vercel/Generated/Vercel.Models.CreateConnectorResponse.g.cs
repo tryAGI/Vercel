@@ -99,6 +99,18 @@ namespace Vercel
         public required string Service { get; set; }
 
         /// <summary>
+        /// The connection method this connector was created from, when the create request named one.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectionMethod")]
+        public string? ConnectionMethod { get; set; }
+
+        /// <summary>
+        /// Which of the service's products/surfaces this connector points at.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        public string? Target { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
@@ -301,6 +313,12 @@ namespace Vercel
         /// <param name="creationMode">
         /// How the connector row was originally created. New create paths stamp this explicitly; older rows may omit it.
         /// </param>
+        /// <param name="connectionMethod">
+        /// The connection method this connector was created from, when the create request named one.
+        /// </param>
+        /// <param name="target">
+        /// Which of the service's products/surfaces this connector points at.
+        /// </param>
         /// <param name="clientUrl"></param>
         /// <param name="redirectUri">
         /// Redirect URI registered with the third-party service for this client, if any. Used by `startAuthorization`/`startInstallation` to replay the exact URI back to the provider's token endpoint. Absent on clients created before this field was introduced; those callers fall back to the `https://connect.vercel.com/callback` default.
@@ -362,6 +380,8 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.CreateConnectorResponseCreatedByVariant1, global::Vercel.CreateConnectorResponseCreatedByVariant2>? createdBy,
             global::Vercel.OneOf<global::Vercel.CreateConnectorResponseUpdatedByVariant1, global::Vercel.CreateConnectorResponseUpdatedByVariant2>? updatedBy,
             global::Vercel.CreateConnectorResponseCreationMode? creationMode,
+            string? connectionMethod,
+            string? target,
             string? clientUrl,
             string? redirectUri,
             string? defaultInstallationId,
@@ -394,6 +414,8 @@ namespace Vercel
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Type = type;
             this.Service = service ?? throw new global::System.ArgumentNullException(nameof(service));
+            this.ConnectionMethod = connectionMethod;
+            this.Target = target;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ClientUrl = clientUrl;
             this.RedirectUri = redirectUri;

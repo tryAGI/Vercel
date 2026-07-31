@@ -11747,6 +11747,14 @@
                       "type": "string",
                       "description": "Best-effort identifier of the third-party service this client represents, independent of `type`. Examples: `'slack'`, `'mcp.linear.app'`, `'auth.example.com'`. Always non-empty on the API response \u2014 falls back through `storedClient.service ?? typeDef.service ?? typeDef.type`."
                     },
+                    "connectionMethod": {
+                      "type": "string",
+                      "description": "The connection method this connector was created from, when the create request named one."
+                    },
+                    "target": {
+                      "type": "string",
+                      "description": "Which of the service's products/surfaces this connector points at."
+                    },
                     "name": {
                       "type": "string"
                     },
@@ -78158,6 +78166,12 @@
                                 },
                                 "type": "array"
                               },
+                              "marketplaceFlexCommit": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "marketplaceInstallationMember": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -100707,6 +100721,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "marketplaceFlexCommit": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "marketplaceInstallationMember": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -108294,6 +108314,12 @@
                           "type": "array"
                         },
                         "marketplaceExperimentationItem": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "marketplaceFlexCommit": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -116058,6 +116084,12 @@
                           },
                           "type": "array"
                         },
+                        "marketplaceFlexCommit": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "marketplaceInstallationMember": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -123172,6 +123204,12 @@
                           "type": "array"
                         },
                         "marketplaceExperimentationItem": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "marketplaceFlexCommit": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -131556,6 +131594,12 @@
                           "type": "array"
                         },
                         "marketplaceExperimentationItem": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "marketplaceFlexCommit": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -147857,6 +147901,12 @@
                           "type": "array"
                         },
                         "marketplaceExperimentationItem": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "marketplaceFlexCommit": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -191652,6 +191702,7 @@
               "log-drain-enabled",
               "login",
               "manual-deployment-promotion-created",
+              "marketplace-flex-commit-opt-in",
               "marketplace-integration-allowlist-updated",
               "microfrontend-group-added",
               "microfrontend-group-deleted",
@@ -191936,6 +191987,7 @@
               "tracing-configured",
               "tracing-disabled",
               "unlink-login-connection",
+              "update-account-flow-triggered",
               "user-delete",
               "user-emu-account-archived",
               "user-emu-account-deleted",
@@ -192553,6 +192605,7 @@
               "log-drain-enabled",
               "login",
               "manual-deployment-promotion-created",
+              "marketplace-flex-commit-opt-in",
               "marketplace-integration-allowlist-updated",
               "microfrontend-group-added",
               "microfrontend-group-deleted",
@@ -192837,6 +192890,7 @@
               "tracing-configured",
               "tracing-disabled",
               "unlink-login-connection",
+              "update-account-flow-triggered",
               "user-delete",
               "user-emu-account-archived",
               "user-emu-account-deleted",
@@ -193195,6 +193249,7 @@
                 "log-drain-enabled",
                 "login",
                 "manual-deployment-promotion-created",
+                "marketplace-flex-commit-opt-in",
                 "marketplace-integration-allowlist-updated",
                 "microfrontend-group-added",
                 "microfrontend-group-deleted",
@@ -193479,6 +193534,7 @@
                 "tracing-configured",
                 "tracing-disabled",
                 "unlink-login-connection",
+                "update-account-flow-triggered",
                 "user-delete",
                 "user-emu-account-archived",
                 "user-emu-account-deleted",

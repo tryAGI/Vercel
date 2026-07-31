@@ -1015,6 +1015,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        MarketplaceFlexCommitOptIn,
+        /// <summary>
+        /// 
+        /// </summary>
         MarketplaceIntegrationAllowlistUpdated,
         /// <summary>
         /// 
@@ -2151,6 +2155,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UpdateAccountFlowTriggered,
+        /// <summary>
+        /// 
+        /// </summary>
         UserDelete,
         /// <summary>
         /// 
@@ -2609,6 +2617,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.LogDrainEnabled => "log-drain-enabled",
                 ListEventTypeReplacedByItem.Login => "login",
                 ListEventTypeReplacedByItem.ManualDeploymentPromotionCreated => "manual-deployment-promotion-created",
+                ListEventTypeReplacedByItem.MarketplaceFlexCommitOptIn => "marketplace-flex-commit-opt-in",
                 ListEventTypeReplacedByItem.MarketplaceIntegrationAllowlistUpdated => "marketplace-integration-allowlist-updated",
                 ListEventTypeReplacedByItem.MicrofrontendGroupAdded => "microfrontend-group-added",
                 ListEventTypeReplacedByItem.MicrofrontendGroupDeleted => "microfrontend-group-deleted",
@@ -2893,6 +2902,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.TracingConfigured => "tracing-configured",
                 ListEventTypeReplacedByItem.TracingDisabled => "tracing-disabled",
                 ListEventTypeReplacedByItem.UnlinkLoginConnection => "unlink-login-connection",
+                ListEventTypeReplacedByItem.UpdateAccountFlowTriggered => "update-account-flow-triggered",
                 ListEventTypeReplacedByItem.UserDelete => "user-delete",
                 ListEventTypeReplacedByItem.UserEmuAccountArchived => "user-emu-account-archived",
                 ListEventTypeReplacedByItem.UserEmuAccountDeleted => "user-emu-account-deleted",
@@ -3203,6 +3213,7 @@ namespace Vercel
                 "log-drain-enabled" => ListEventTypeReplacedByItem.LogDrainEnabled,
                 "login" => ListEventTypeReplacedByItem.Login,
                 "manual-deployment-promotion-created" => ListEventTypeReplacedByItem.ManualDeploymentPromotionCreated,
+                "marketplace-flex-commit-opt-in" => ListEventTypeReplacedByItem.MarketplaceFlexCommitOptIn,
                 "marketplace-integration-allowlist-updated" => ListEventTypeReplacedByItem.MarketplaceIntegrationAllowlistUpdated,
                 "microfrontend-group-added" => ListEventTypeReplacedByItem.MicrofrontendGroupAdded,
                 "microfrontend-group-deleted" => ListEventTypeReplacedByItem.MicrofrontendGroupDeleted,
@@ -3487,6 +3498,7 @@ namespace Vercel
                 "tracing-configured" => ListEventTypeReplacedByItem.TracingConfigured,
                 "tracing-disabled" => ListEventTypeReplacedByItem.TracingDisabled,
                 "unlink-login-connection" => ListEventTypeReplacedByItem.UnlinkLoginConnection,
+                "update-account-flow-triggered" => ListEventTypeReplacedByItem.UpdateAccountFlowTriggered,
                 "user-delete" => ListEventTypeReplacedByItem.UserDelete,
                 "user-emu-account-archived" => ListEventTypeReplacedByItem.UserEmuAccountArchived,
                 "user-emu-account-deleted" => ListEventTypeReplacedByItem.UserEmuAccountDeleted,

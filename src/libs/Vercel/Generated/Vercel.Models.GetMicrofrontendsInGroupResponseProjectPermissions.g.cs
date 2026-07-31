@@ -647,6 +647,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("marketplaceFlexCommit")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MarketplaceFlexCommit { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("marketplaceInstallationMember")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MarketplaceInstallationMember { get; set; }
 
@@ -1719,6 +1725,7 @@ namespace Vercel
         /// <param name="marketplaceBillingData"></param>
         /// <param name="marketplaceExperimentationEdgeConfigData"></param>
         /// <param name="marketplaceExperimentationItem"></param>
+        /// <param name="marketplaceFlexCommit"></param>
         /// <param name="marketplaceInstallationMember"></param>
         /// <param name="marketplaceInvoice"></param>
         /// <param name="marketplaceSettings"></param>
@@ -1989,6 +1996,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? marketplaceBillingData,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? marketplaceExperimentationEdgeConfigData,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? marketplaceExperimentationItem,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? marketplaceFlexCommit,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? marketplaceInstallationMember,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? marketplaceInvoice,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? marketplaceSettings,
@@ -2256,6 +2264,7 @@ namespace Vercel
             this.MarketplaceBillingData = marketplaceBillingData;
             this.MarketplaceExperimentationEdgeConfigData = marketplaceExperimentationEdgeConfigData;
             this.MarketplaceExperimentationItem = marketplaceExperimentationItem;
+            this.MarketplaceFlexCommit = marketplaceFlexCommit;
             this.MarketplaceInstallationMember = marketplaceInstallationMember;
             this.MarketplaceInvoice = marketplaceInvoice;
             this.MarketplaceSettings = marketplaceSettings;
