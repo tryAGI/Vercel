@@ -30,6 +30,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("clientName")]
+        public string? ClientName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientSecret")]
         public string? ClientSecret { get; set; }
 
@@ -119,6 +125,7 @@ namespace Vercel
         /// <param name="serverConfig">
         /// Default Value: {}
         /// </param>
+        /// <param name="clientName"></param>
         /// <param name="clientSecret"></param>
         /// <param name="tokenEndpointAuthMethod"></param>
         /// <param name="responseType"></param>
@@ -143,6 +150,7 @@ namespace Vercel
             string clientId,
             string? serverUrl,
             global::Vercel.CreateConnectorRequestDataTypeOauthServerConfig? serverConfig,
+            string? clientName,
             string? clientSecret,
             string? tokenEndpointAuthMethod,
             string? responseType,
@@ -160,6 +168,7 @@ namespace Vercel
             this.ServerUrl = serverUrl;
             this.ServerConfig = serverConfig;
             this.ClientId = clientId ?? throw new global::System.ArgumentNullException(nameof(clientId));
+            this.ClientName = clientName;
             this.ClientSecret = clientSecret;
             this.TokenEndpointAuthMethod = tokenEndpointAuthMethod;
             this.ResponseType = responseType;

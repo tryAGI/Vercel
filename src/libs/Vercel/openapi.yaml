@@ -12342,6 +12342,9 @@
                           "clientId": {
                             "type": "string"
                           },
+                          "clientName": {
+                            "type": "string"
+                          },
                           "clientSecret": {
                             "type": "string"
                           },
