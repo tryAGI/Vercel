@@ -6855,7 +6855,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.AllOfJsonConverter<global::Vercel.VercelBaseError, global::Vercel.VercelRateLimitErrorError>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateProjectCheckRequestSourceVariant1, global::Vercel.CreateProjectCheckRequestSourceVariant2, global::Vercel.CreateProjectCheckRequestSourceVariant3>),
-            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, object>),
+            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, global::Vercel.CreateConnectorRequestDataTypePhoton, object>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.GetConnectorTokenRequestSubjectTypeApp, global::Vercel.GetConnectorTokenRequestSubjectTypeUser, global::Vercel.GetConnectorTokenRequestSubjectTypeJwtBearer, global::Vercel.GetConnectorTokenRequestSubjectTypeToken, global::Vercel.GetConnectorTokenRequestSubjectTypeOther>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.ImportConnectorTokensRequestTokenSubjectTypeApp, global::Vercel.ImportConnectorTokensRequestTokenSubjectTypeUser>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.ImportConnectorTokensEnvironment?, string>),
@@ -7799,6 +7799,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseJobs))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseJobsLint))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseJobsTypecheck))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseJobsMfeConfigPresent))]
@@ -8298,7 +8299,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetRollingReleaseResponseRollingReleaseStage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseStage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseActiveStage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseNextStage))]
     internal sealed partial class SourceGenerationContextChunk016 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

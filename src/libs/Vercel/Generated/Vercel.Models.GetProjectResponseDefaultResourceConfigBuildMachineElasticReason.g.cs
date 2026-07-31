@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        BasicFloor,
+        /// <summary>
+        /// 
+        /// </summary>
         BuildTimeoutFailure,
         /// <summary>
         /// 
@@ -58,6 +62,7 @@ namespace Vercel
         {
             return value switch
             {
+                GetProjectResponseDefaultResourceConfigBuildMachineElasticReason.BasicFloor => "basic-floor",
                 GetProjectResponseDefaultResourceConfigBuildMachineElasticReason.BuildTimeoutFailure => "build-timeout-failure",
                 GetProjectResponseDefaultResourceConfigBuildMachineElasticReason.EnospcFailure => "enospc-failure",
                 GetProjectResponseDefaultResourceConfigBuildMachineElasticReason.EnterpriseFloor => "enterprise-floor",
@@ -77,6 +82,7 @@ namespace Vercel
         {
             return value switch
             {
+                "basic-floor" => GetProjectResponseDefaultResourceConfigBuildMachineElasticReason.BasicFloor,
                 "build-timeout-failure" => GetProjectResponseDefaultResourceConfigBuildMachineElasticReason.BuildTimeoutFailure,
                 "enospc-failure" => GetProjectResponseDefaultResourceConfigBuildMachineElasticReason.EnospcFailure,
                 "enterprise-floor" => GetProjectResponseDefaultResourceConfigBuildMachineElasticReason.EnterpriseFloor,

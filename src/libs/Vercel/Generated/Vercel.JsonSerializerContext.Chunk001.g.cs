@@ -6855,7 +6855,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.AllOfJsonConverter<global::Vercel.VercelBaseError, global::Vercel.VercelRateLimitErrorError>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateProjectCheckRequestSourceVariant1, global::Vercel.CreateProjectCheckRequestSourceVariant2, global::Vercel.CreateProjectCheckRequestSourceVariant3>),
-            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, object>),
+            typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, global::Vercel.CreateConnectorRequestDataTypePhoton, object>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.GetConnectorTokenRequestSubjectTypeApp, global::Vercel.GetConnectorTokenRequestSubjectTypeUser, global::Vercel.GetConnectorTokenRequestSubjectTypeJwtBearer, global::Vercel.GetConnectorTokenRequestSubjectTypeToken, global::Vercel.GetConnectorTokenRequestSubjectTypeOther>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.ImportConnectorTokensRequestTokenSubjectTypeApp, global::Vercel.ImportConnectorTokensRequestTokenSubjectTypeUser>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.ImportConnectorTokensEnvironment?, string>),
@@ -7865,7 +7865,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateNetworkRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateNetworkRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, object>), TypeInfoPropertyName = "CreateConnectorRequestDataTypeSnowflakeWif_object_c9b3c7f6cbe6ff44")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, global::Vercel.CreateConnectorRequestDataTypePhoton, object>), TypeInfoPropertyName = "CreateConnectorRequestDataTypePhoton_object_fdc8ee02b94c3af6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequestDataTypeOauth))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequestDataTypeOauthServerConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequestDataTypeOauthServerConfigJwks))]
@@ -7891,6 +7891,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequestDataTypeSlackSlackTeam))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequestDataTypeSnowflake))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequestDataTypePhoton))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConnectorTokenRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.GetConnectorTokenRequestSubjectTypeApp, global::Vercel.GetConnectorTokenRequestSubjectTypeUser, global::Vercel.GetConnectorTokenRequestSubjectTypeJwtBearer, global::Vercel.GetConnectorTokenRequestSubjectTypeToken, global::Vercel.GetConnectorTokenRequestSubjectTypeOther>), TypeInfoPropertyName = "GetConnectorTokenRequestSubjectTypeOther_ebabd7c849c6ee3f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConnectorTokenRequestSubjectTypeApp))]
@@ -8298,7 +8299,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFlagSegmentRequestDataRuleConditionLhsVariant1, global::Vercel.UpdateFlagSegmentRequestDataRuleConditionLhsVariant2>), TypeInfoPropertyName = "AnyOfUpdateFlagSegmentRequestDataRuleConditionLhsVariant1UpdateFlagSegmentRequestDataRuleConditionLhsVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestDataRuleConditionLhsVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestDataRuleConditionLhsVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestDataRuleConditionCmp), TypeInfoPropertyName = "UpdateFlagSegmentRequestDataRuleConditionCmp2")]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

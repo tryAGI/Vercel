@@ -59,7 +59,7 @@ namespace Vercel
         public required bool Persistent { get; set; }
 
         /// <summary>
-        /// The region the sandbox runs in.<br/>
+        /// The region the sandbox is configured to run in: the region set on the sandbox, otherwise the project-level default, then the platform default. Where a running session actually landed is reported by `session.region`.<br/>
         /// Example: iad1
         /// </summary>
         /// <example>iad1</example>
@@ -246,7 +246,7 @@ namespace Vercel
         /// Current snapshot ID that the named sandbox is pointing to.
         /// </param>
         /// <param name="region">
-        /// The region the sandbox runs in.<br/>
+        /// The region the sandbox is configured to run in: the region set on the sandbox, otherwise the project-level default, then the platform default. Where a running session actually landed is reported by `session.region`.<br/>
         /// Example: iad1
         /// </param>
         /// <param name="vcpus">
