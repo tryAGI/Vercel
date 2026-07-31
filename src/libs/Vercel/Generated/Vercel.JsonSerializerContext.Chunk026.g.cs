@@ -7799,6 +7799,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectSecurityManagedRulesVercelRulesetAction?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant2ProjectSecurityManagedRulesVercelRulesetAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectSecurityManagedRulesTrafficSourcesAction?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant2ProjectSecurityManagedRulesTrafficSourcesAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectSecurityManagedRulesBotFilterAction?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant2ProjectSecurityManagedRulesBotFilterAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectSecurityManagedRulesAiBotsAction?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant2ProjectSecurityManagedRulesAiBotsAction2")]
@@ -8298,7 +8299,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseEnvItemType?), TypeInfoPropertyName = "NullableUpdateProjectResponseEnvItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseEnvItemVisibility?), TypeInfoPropertyName = "NullableUpdateProjectResponseEnvItemVisibility2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseEnvItemInternalContentHintType?), TypeInfoPropertyName = "NullableUpdateProjectResponseEnvItemInternalContentHintType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseCustomEnvironmentType?), TypeInfoPropertyName = "NullableUpdateProjectResponseCustomEnvironmentType2")]
     internal sealed partial class SourceGenerationContextChunk026 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

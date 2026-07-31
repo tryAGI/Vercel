@@ -112,6 +112,12 @@ namespace Vercel
         public global::Vercel.CreateConnectorRequestDataTypeOauthJwtBearer? JwtBearer { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("clientAssertion")]
+        public global::Vercel.CreateConnectorRequestDataTypeOauthClientAssertion? ClientAssertion { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -143,6 +149,7 @@ namespace Vercel
         /// </param>
         /// <param name="authorizationUrlParams"></param>
         /// <param name="jwtBearer"></param>
+        /// <param name="clientAssertion"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -163,7 +170,8 @@ namespace Vercel
             string? defaultAudience,
             double? defaultTokenExpiresIn,
             global::System.Collections.Generic.Dictionary<string, string>? authorizationUrlParams,
-            global::Vercel.CreateConnectorRequestDataTypeOauthJwtBearer? jwtBearer)
+            global::Vercel.CreateConnectorRequestDataTypeOauthJwtBearer? jwtBearer,
+            global::Vercel.CreateConnectorRequestDataTypeOauthClientAssertion? clientAssertion)
         {
             this.ServerUrl = serverUrl;
             this.ServerConfig = serverConfig;
@@ -182,6 +190,7 @@ namespace Vercel
             this.DefaultTokenExpiresIn = defaultTokenExpiresIn;
             this.AuthorizationUrlParams = authorizationUrlParams;
             this.JwtBearer = jwtBearer;
+            this.ClientAssertion = clientAssertion;
         }
 
         /// <summary>

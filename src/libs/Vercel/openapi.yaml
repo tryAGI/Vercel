@@ -12127,6 +12127,9 @@
           "422": {
             "description": ""
           },
+          "500": {
+            "description": ""
+          },
           "502": {
             "description": ""
           }
@@ -12138,7 +12141,6 @@
               "schema": {
                 "type": "object",
                 "required": [
-                  "type",
                   "data"
                 ],
                 "properties": {
@@ -12479,6 +12481,22 @@
                               }
                             },
                             "additionalProperties": false
+                          },
+                          "clientAssertion": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "type": {
+                                "type": "string"
+                              },
+                              "ttl": {
+                                "type": "number"
+                              },
+                              "claims": {
+                                "type": "object",
+                                "additionalProperties": {}
+                              }
+                            }
                           }
                         },
                         "required": [
@@ -12882,11 +12900,30 @@
                   },
                   "type": {
                     "type": "string",
-                    "description": "Known types: api-key, github, linear, oauth, photon, salesforce, slack, snowflake."
+                    "description": "Known types: api-key, github, linear, oauth, photon, salesforce, slack, snowflake. Optional when \\\"connectionMethod\\\" is set."
                   },
                   "service": {
                     "type": "string",
                     "description": "Service slug or URL for which the connector is used."
+                  },
+                  "connectionMethod": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "description": "Connection method slug of the service."
+                  },
+                  "params": {
+                    "type": "object",
+                    "maxProperties": 16,
+                    "additionalProperties": {
+                      "type": "string",
+                      "maxLength": 256
+                    },
+                    "description": "Values for the connection method's templateFields."
+                  },
+                  "target": {
+                    "type": "string",
+                    "maxLength": 64,
+                    "description": "Which of the service's targets this connector is for. Requires \\\"connectionMethod\\\" and must be one that method serves. Optional."
                   },
                   "uid": {
                     "type": "string"

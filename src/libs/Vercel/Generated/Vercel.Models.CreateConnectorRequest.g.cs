@@ -35,17 +35,34 @@ namespace Vercel
         public string? AccentColor { get; set; }
 
         /// <summary>
-        /// Known types: api-key, github, linear, oauth, photon, salesforce, slack, snowflake.
+        /// Known types: api-key, github, linear, oauth, photon, salesforce, slack, snowflake. Optional when \"connectionMethod\" is set.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Type { get; set; }
+        public string? Type { get; set; }
 
         /// <summary>
         /// Service slug or URL for which the connector is used.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("service")]
         public string? Service { get; set; }
+
+        /// <summary>
+        /// Connection method slug of the service.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectionMethod")]
+        public string? ConnectionMethod { get; set; }
+
+        /// <summary>
+        /// Values for the connection method's templateFields.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("params")]
+        public global::System.Collections.Generic.Dictionary<string, string>? Params { get; set; }
+
+        /// <summary>
+        /// Which of the service's targets this connector is for. Requires \"connectionMethod\" and must be one that method serves. Optional.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        public string? Target { get; set; }
 
         /// <summary>
         /// 
@@ -93,14 +110,23 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateConnectorRequest" /> class.
         /// </summary>
         /// <param name="data"></param>
-        /// <param name="type">
-        /// Known types: api-key, github, linear, oauth, photon, salesforce, slack, snowflake.
-        /// </param>
         /// <param name="icon"></param>
         /// <param name="backgroundColor"></param>
         /// <param name="accentColor"></param>
+        /// <param name="type">
+        /// Known types: api-key, github, linear, oauth, photon, salesforce, slack, snowflake. Optional when \"connectionMethod\" is set.
+        /// </param>
         /// <param name="service">
         /// Service slug or URL for which the connector is used.
+        /// </param>
+        /// <param name="connectionMethod">
+        /// Connection method slug of the service.
+        /// </param>
+        /// <param name="params">
+        /// Values for the connection method's templateFields.
+        /// </param>
+        /// <param name="target">
+        /// Which of the service's targets this connector is for. Requires \"connectionMethod\" and must be one that method serves. Optional.
         /// </param>
         /// <param name="uid"></param>
         /// <param name="name"></param>
@@ -121,11 +147,14 @@ namespace Vercel
 #endif
         public CreateConnectorRequest(
             global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, global::Vercel.CreateConnectorRequestDataTypePhoton, object> data,
-            string type,
             string? icon,
             string? backgroundColor,
             string? accentColor,
+            string? type,
             string? service,
+            string? connectionMethod,
+            global::System.Collections.Generic.Dictionary<string, string>? @params,
+            string? target,
             string? uid,
             string? name,
             string? projectId,
@@ -137,8 +166,11 @@ namespace Vercel
             this.Icon = icon;
             this.BackgroundColor = backgroundColor;
             this.AccentColor = accentColor;
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
+            this.Type = type;
             this.Service = service;
+            this.ConnectionMethod = connectionMethod;
+            this.Params = @params;
+            this.Target = target;
             this.Uid = uid;
             this.Name = name;
             this.ProjectId = projectId;

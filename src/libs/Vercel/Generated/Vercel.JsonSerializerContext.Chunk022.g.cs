@@ -7799,6 +7799,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant4SubKind?), TypeInfoPropertyName = "NullableCreateDeploymentCheckRunResponseVariant1SourceVariant4SubKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant4Origin?), TypeInfoPropertyName = "NullableCreateDeploymentCheckRunResponseVariant1SourceVariant4Origin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2Requires?), TypeInfoPropertyName = "NullableCreateDeploymentCheckRunResponseVariant2Requires2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant2Blocks?), TypeInfoPropertyName = "NullableCreateDeploymentCheckRunResponseVariant2Blocks2")]
@@ -8298,7 +8299,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant3OwnerType?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2GitRepoVariant3OwnerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant4Type?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2GitRepoVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant4OwnerType?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2GitRepoVariant4OwnerType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2Flags, global::System.Collections.Generic.IList<object>>?), TypeInfoPropertyName = "NullableOneOfCreateDeploymentResponseVariant2FlagsIListObject2")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

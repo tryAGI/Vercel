@@ -7799,6 +7799,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseCustomEnvironmentType?), TypeInfoPropertyName = "NullableUpdateProjectResponseCustomEnvironmentType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseCustomEnvironmentBranchMatcherType?), TypeInfoPropertyName = "NullableUpdateProjectResponseCustomEnvironmentBranchMatcherType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseFramework?), TypeInfoPropertyName = "NullableUpdateProjectResponseFramework2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseServiceServiceType?), TypeInfoPropertyName = "NullableUpdateProjectResponseServiceServiceType2")]
@@ -8298,7 +8299,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction?), TypeInfoPropertyName = "NullableUpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction?), TypeInfoPropertyName = "NullableUpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.UpdateMicrofrontendsResponseSecurityLogHeaders?>?), TypeInfoPropertyName = "NullableOneOfIListStringUpdateMicrofrontendsResponseSecurityLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityLogHeaders?), TypeInfoPropertyName = "NullableUpdateMicrofrontendsResponseSecurityLogHeaders2")]
     internal sealed partial class SourceGenerationContextChunk027 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

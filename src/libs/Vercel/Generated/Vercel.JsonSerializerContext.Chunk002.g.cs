@@ -7799,6 +7799,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestDataRuleConditionLhsVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestDataRuleConditionCmp), TypeInfoPropertyName = "UpdateFlagSegmentRequestDataRuleConditionCmp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFlagSegmentRequestDataRuleConditionRhsVariant1, global::Vercel.UpdateFlagSegmentRequestDataRuleConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "UpdateFlagSegmentRequestDataRuleConditionRhsVariant2_string_double_bool_ab9190413d5e4920")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestDataRuleConditionRhsVariant1))]
@@ -8298,7 +8299,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2AllowItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2AllowItemMatch))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2AllowItemMatchPath))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2AllowItemMatchQueryStringItem>))]
     internal sealed partial class SourceGenerationContextChunk002 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

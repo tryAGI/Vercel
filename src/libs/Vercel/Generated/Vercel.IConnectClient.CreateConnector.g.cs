@@ -39,10 +39,19 @@ namespace Vercel
         /// <param name="backgroundColor"></param>
         /// <param name="accentColor"></param>
         /// <param name="type">
-        /// Known types: api-key, github, linear, oauth, photon, salesforce, slack, snowflake.
+        /// Known types: api-key, github, linear, oauth, photon, salesforce, slack, snowflake. Optional when \"connectionMethod\" is set.
         /// </param>
         /// <param name="service">
         /// Service slug or URL for which the connector is used.
+        /// </param>
+        /// <param name="connectionMethod">
+        /// Connection method slug of the service.
+        /// </param>
+        /// <param name="params">
+        /// Values for the connection method's templateFields.
+        /// </param>
+        /// <param name="target">
+        /// Which of the service's targets this connector is for. Requires \"connectionMethod\" and must be one that method serves. Optional.
         /// </param>
         /// <param name="uid"></param>
         /// <param name="name"></param>
@@ -63,11 +72,14 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateConnectorResponse> CreateConnectorAsync(
             global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, global::Vercel.CreateConnectorRequestDataTypePhoton, object> data,
-            string type,
             string? icon = default,
             string? backgroundColor = default,
             string? accentColor = default,
+            string? type = default,
             string? service = default,
+            string? connectionMethod = default,
+            global::System.Collections.Generic.Dictionary<string, string>? @params = default,
+            string? target = default,
             string? uid = default,
             string? name = default,
             string? projectId = default,
