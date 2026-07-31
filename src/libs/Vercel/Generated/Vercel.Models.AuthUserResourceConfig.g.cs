@@ -89,6 +89,12 @@ namespace Vercel
         /// <summary>
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("serverlessFunctionMaxDuration")]
+        public double? ServerlessFunctionMaxDuration { get; set; }
+
+        /// <summary>
+        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serverlessFunctionMaxMemorySize")]
         public double? ServerlessFunctionMaxMemorySize { get; set; }
 
@@ -212,6 +218,9 @@ namespace Vercel
         /// <param name="edgeFunctionExecutionTimeoutMs">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
+        /// <param name="serverlessFunctionMaxDuration">
+        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
+        /// </param>
         /// <param name="serverlessFunctionMaxMemorySize">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
@@ -268,6 +277,7 @@ namespace Vercel
             double? edgeConfigSize,
             double? edgeFunctionMaxSizeBytes,
             double? edgeFunctionExecutionTimeoutMs,
+            double? serverlessFunctionMaxDuration,
             double? serverlessFunctionMaxMemorySize,
             double? kvDatabases,
             double? postgresDatabases,
@@ -295,6 +305,7 @@ namespace Vercel
             this.EdgeConfigSize = edgeConfigSize;
             this.EdgeFunctionMaxSizeBytes = edgeFunctionMaxSizeBytes;
             this.EdgeFunctionExecutionTimeoutMs = edgeFunctionExecutionTimeoutMs;
+            this.ServerlessFunctionMaxDuration = serverlessFunctionMaxDuration;
             this.ServerlessFunctionMaxMemorySize = serverlessFunctionMaxMemorySize;
             this.KvDatabases = kvDatabases;
             this.PostgresDatabases = postgresDatabases;
