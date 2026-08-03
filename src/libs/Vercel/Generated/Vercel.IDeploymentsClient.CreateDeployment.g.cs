@@ -95,6 +95,10 @@ namespace Vercel
         /// <param name="files">
         /// The files to include in the deployment. Each entry is either an inlined file (with `data` and `encoding`) or a reference to a previously uploaded file (with `sha` and `size`). Required for non-git deployments. Cannot be used together with `gitSource`.
         /// </param>
+        /// <param name="gitAccessToken">
+        /// A read-only GitHub access token scoped to the requested repository. Use a token with a lifetime of 24 hours or less that remains valid until source retrieval completes.<br/>
+        /// Included only in requests
+        /// </param>
         /// <param name="gitMetadata">
         /// Populates initial git metadata for different git providers.
         /// </param>
@@ -130,6 +134,7 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant1, global::Vercel.CreateDeploymentResponseVariant2>> CreateDeploymentAsync(
+            string gitAccessToken,
             string name,
             global::Vercel.CreateDeploymentForceNew? forceNew = default,
             global::Vercel.CreateDeploymentSkipAutoDetectionConfirmation? skipAutoDetectionConfirmation = default,

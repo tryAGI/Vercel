@@ -29871,6 +29871,12 @@
                     },
                     "type": "array"
                   },
+                  "gitAccessToken": {
+                    "description": "A read-only GitHub access token scoped to the requested repository. Use a token with a lifetime of 24 hours or less that remains valid until source retrieval completes.",
+                    "maxLength": 1024,
+                    "type": "string",
+                    "writeOnly": true
+                  },
                   "gitMetadata": {
                     "description": "Populates initial git metadata for different git providers.",
                     "additionalProperties": false,
@@ -73342,6 +73348,11 @@
                     "required": [
                       "limitAmount"
                     ]
+                  },
+                  "metadata": {
+                    "type": "object",
+                    "description": "Optional generic metadata for the API key. The accepted shape depends on the key's `purpose` and is validated on creation; for `ai-gateway` keys this accepts `environment`.",
+                    "additionalProperties": true
                   }
                 }
               }
@@ -77650,6 +77661,12 @@
                                 "type": "array"
                               },
                               "aiGatewayApiKeyOwnedBySelf": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
+                              "aiGatewayApiKeyZdrExemption": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
                                 },
@@ -100214,6 +100231,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "aiGatewayApiKeyZdrExemption": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "aiGatewayBudget": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -107815,6 +107838,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyZdrExemption": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -115588,6 +115617,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayApiKeyZdrExemption": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayBudget": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -122710,6 +122745,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyZdrExemption": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -131103,6 +131144,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyZdrExemption": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -147412,6 +147459,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyZdrExemption": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -196865,6 +196918,13 @@
           },
           "quota": {
             "$ref": "#/components/schemas/APIKeyQuota"
+          },
+          "metadata": {
+            "description": "Generic metadata attached to the API key.\n\nThe accepted shape depends on the key's `purpose` and is validated when the key is created. For `ai-gateway` keys this carries `environment`.",
+            "type": "object",
+            "patternProperties": {
+              "^(.*)$": {}
+            }
           }
         },
         "required": [

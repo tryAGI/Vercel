@@ -695,6 +695,9 @@ namespace Vercel
         /// <param name="aiGatewayQuota">
         /// Optional AI Gateway quota configuration for the API key.
         /// </param>
+        /// <param name="metadata">
+        /// Optional generic metadata for the API key. The accepted shape depends on the key's `purpose` and is validated on creation; for `ai-gateway` keys this accepts `environment`.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -704,6 +707,7 @@ namespace Vercel
             string? name = default,
             double? expiresAt = default,
             global::Vercel.CreateApiKeysRequestAiGatewayQuota? aiGatewayQuota = default,
+            object? metadata = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -714,6 +718,7 @@ namespace Vercel
                 Name = name,
                 ExpiresAt = expiresAt,
                 AiGatewayQuota = aiGatewayQuota,
+                Metadata = metadata,
             };
 
             return await CreateApiKeysAsync(
