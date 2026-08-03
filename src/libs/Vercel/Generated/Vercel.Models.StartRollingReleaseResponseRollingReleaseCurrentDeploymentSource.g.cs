@@ -32,6 +32,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        GitDeployHook,
+        /// <summary>
+        /// 
+        /// </summary>
         Import,
         /// <summary>
         /// 
@@ -64,6 +68,7 @@ namespace Vercel
                 StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.CloneRepo => "clone/repo",
                 StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Drop => "drop",
                 StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Git => "git",
+                StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.GitDeployHook => "git-deploy-hook",
                 StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Import => "import",
                 StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.ImportRepo => "import/repo",
                 StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Redeploy => "redeploy",
@@ -83,6 +88,7 @@ namespace Vercel
                 "clone/repo" => StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.CloneRepo,
                 "drop" => StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Drop,
                 "git" => StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Git,
+                "git-deploy-hook" => StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.GitDeployHook,
                 "import" => StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Import,
                 "import/repo" => StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.ImportRepo,
                 "redeploy" => StartRollingReleaseResponseRollingReleaseCurrentDeploymentSource.Redeploy,

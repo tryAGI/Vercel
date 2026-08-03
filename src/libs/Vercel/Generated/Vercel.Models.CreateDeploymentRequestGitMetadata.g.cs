@@ -97,6 +97,14 @@ namespace Vercel
         public string? CiGitRepoVisibility { get; set; }
 
         /// <summary>
+        /// Path of the deployed directory relative to the detected git repository root. Empty string when deploying from the repository root.<br/>
+        /// Example: apps/web
+        /// </summary>
+        /// <example>apps/web</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rootDirectory")]
+        public string? RootDirectory { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -149,6 +157,10 @@ namespace Vercel
         /// The visibility of the Git repository if their CI (e.g. GitHub Actions) was used, if available<br/>
         /// Example: private
         /// </param>
+        /// <param name="rootDirectory">
+        /// Path of the deployed directory relative to the detected git repository root. Empty string when deploying from the repository root.<br/>
+        /// Example: apps/web
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -163,7 +175,8 @@ namespace Vercel
             bool? ci,
             string? ciType,
             string? ciGitProviderUsername,
-            string? ciGitRepoVisibility)
+            string? ciGitRepoVisibility,
+            string? rootDirectory)
         {
             this.RemoteUrl = remoteUrl;
             this.CommitAuthorName = commitAuthorName;
@@ -176,6 +189,7 @@ namespace Vercel
             this.CiType = ciType;
             this.CiGitProviderUsername = ciGitProviderUsername;
             this.CiGitRepoVisibility = ciGitRepoVisibility;
+            this.RootDirectory = rootDirectory;
         }
 
         /// <summary>

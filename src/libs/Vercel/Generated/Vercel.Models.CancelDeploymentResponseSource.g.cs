@@ -32,6 +32,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        GitDeployHook,
+        /// <summary>
+        /// 
+        /// </summary>
         Import,
         /// <summary>
         /// 
@@ -64,6 +68,7 @@ namespace Vercel
                 CancelDeploymentResponseSource.CloneRepo => "clone/repo",
                 CancelDeploymentResponseSource.Drop => "drop",
                 CancelDeploymentResponseSource.Git => "git",
+                CancelDeploymentResponseSource.GitDeployHook => "git-deploy-hook",
                 CancelDeploymentResponseSource.Import => "import",
                 CancelDeploymentResponseSource.ImportRepo => "import/repo",
                 CancelDeploymentResponseSource.Redeploy => "redeploy",
@@ -83,6 +88,7 @@ namespace Vercel
                 "clone/repo" => CancelDeploymentResponseSource.CloneRepo,
                 "drop" => CancelDeploymentResponseSource.Drop,
                 "git" => CancelDeploymentResponseSource.Git,
+                "git-deploy-hook" => CancelDeploymentResponseSource.GitDeployHook,
                 "import" => CancelDeploymentResponseSource.Import,
                 "import/repo" => CancelDeploymentResponseSource.ImportRepo,
                 "redeploy" => CancelDeploymentResponseSource.Redeploy,

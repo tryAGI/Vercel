@@ -32,6 +32,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        GitDeployHook,
+        /// <summary>
+        /// 
+        /// </summary>
         Import,
         /// <summary>
         /// 
@@ -64,6 +68,7 @@ namespace Vercel
                 StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.CloneRepo => "clone/repo",
                 StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Drop => "drop",
                 StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Git => "git",
+                StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.GitDeployHook => "git-deploy-hook",
                 StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Import => "import",
                 StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.ImportRepo => "import/repo",
                 StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Redeploy => "redeploy",
@@ -83,6 +88,7 @@ namespace Vercel
                 "clone/repo" => StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.CloneRepo,
                 "drop" => StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Drop,
                 "git" => StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Git,
+                "git-deploy-hook" => StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.GitDeployHook,
                 "import" => StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Import,
                 "import/repo" => StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.ImportRepo,
                 "redeploy" => StartRollingReleaseResponseRollingReleaseCanaryDeploymentSource.Redeploy,

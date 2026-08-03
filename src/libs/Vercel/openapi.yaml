@@ -17412,6 +17412,7 @@
                             "clone/repo",
                             "drop",
                             "git",
+                            "git-deploy-hook",
                             "import",
                             "import/repo",
                             "redeploy",
@@ -23208,6 +23209,7 @@
                             "clone/repo",
                             "drop",
                             "git",
+                            "git-deploy-hook",
                             "import",
                             "import/repo",
                             "redeploy",
@@ -25136,6 +25138,7 @@
                             "clone/repo",
                             "drop",
                             "git",
+                            "git-deploy-hook",
                             "import",
                             "import/repo",
                             "redeploy",
@@ -29936,6 +29939,11 @@
                         "type": "string",
                         "description": "The visibility of the Git repository if their CI (e.g. GitHub Actions) was used, if available",
                         "example": "private"
+                      },
+                      "rootDirectory": {
+                        "type": "string",
+                        "description": "Path of the deployed directory relative to the detected git repository root. Empty string when deploying from the repository root.",
+                        "example": "apps/web"
                       }
                     }
                   },
@@ -32046,6 +32054,7 @@
                         "clone/repo",
                         "drop",
                         "git",
+                        "git-deploy-hook",
                         "import",
                         "import/repo",
                         "redeploy",
@@ -80323,15 +80332,6 @@
                           "tier": {
                             "type": "string"
                           },
-                          "flatRateTier": {
-                            "type": "string",
-                            "enum": [
-                              "advanced",
-                              "base",
-                              "critical",
-                              "standard"
-                            ]
-                          },
                           "usageStatus": {
                             "properties": {
                               "kind": {
@@ -102877,15 +102877,6 @@
                               "tier": {
                                 "type": "string"
                               },
-                              "flatRateTier": {
-                                "type": "string",
-                                "enum": [
-                                  "advanced",
-                                  "base",
-                                  "critical",
-                                  "standard"
-                                ]
-                              },
                               "usageStatus": {
                                 "properties": {
                                   "kind": {
@@ -110488,15 +110479,6 @@
                     },
                     "tier": {
                       "type": "string"
-                    },
-                    "flatRateTier": {
-                      "type": "string",
-                      "enum": [
-                        "advanced",
-                        "base",
-                        "critical",
-                        "standard"
-                      ]
                     },
                     "usageStatus": {
                       "properties": {
@@ -118263,15 +118245,6 @@
                     "tier": {
                       "type": "string"
                     },
-                    "flatRateTier": {
-                      "type": "string",
-                      "enum": [
-                        "advanced",
-                        "base",
-                        "critical",
-                        "standard"
-                      ]
-                    },
                     "usageStatus": {
                       "properties": {
                         "kind": {
@@ -125395,15 +125368,6 @@
                     },
                     "tier": {
                       "type": "string"
-                    },
-                    "flatRateTier": {
-                      "type": "string",
-                      "enum": [
-                        "advanced",
-                        "base",
-                        "critical",
-                        "standard"
-                      ]
                     },
                     "usageStatus": {
                       "properties": {
@@ -133795,15 +133759,6 @@
                     "tier": {
                       "type": "string"
                     },
-                    "flatRateTier": {
-                      "type": "string",
-                      "enum": [
-                        "advanced",
-                        "base",
-                        "critical",
-                        "standard"
-                      ]
-                    },
                     "usageStatus": {
                       "properties": {
                         "kind": {
@@ -141007,6 +140962,7 @@
                                 "clone/repo",
                                 "drop",
                                 "git",
+                                "git-deploy-hook",
                                 "import",
                                 "import/repo",
                                 "redeploy",
@@ -141095,6 +141051,7 @@
                                 "clone/repo",
                                 "drop",
                                 "git",
+                                "git-deploy-hook",
                                 "import",
                                 "import/repo",
                                 "redeploy",
@@ -141589,6 +141546,7 @@
                                 "clone/repo",
                                 "drop",
                                 "git",
+                                "git-deploy-hook",
                                 "import",
                                 "import/repo",
                                 "redeploy",
@@ -141677,6 +141635,7 @@
                                 "clone/repo",
                                 "drop",
                                 "git",
+                                "git-deploy-hook",
                                 "import",
                                 "import/repo",
                                 "redeploy",
@@ -142182,6 +142141,7 @@
                                 "clone/repo",
                                 "drop",
                                 "git",
+                                "git-deploy-hook",
                                 "import",
                                 "import/repo",
                                 "redeploy",
@@ -142270,6 +142230,7 @@
                                 "clone/repo",
                                 "drop",
                                 "git",
+                                "git-deploy-hook",
                                 "import",
                                 "import/repo",
                                 "redeploy",
@@ -142773,6 +142734,7 @@
                                 "clone/repo",
                                 "drop",
                                 "git",
+                                "git-deploy-hook",
                                 "import",
                                 "import/repo",
                                 "redeploy",
@@ -142861,6 +142823,7 @@
                                 "clone/repo",
                                 "drop",
                                 "git",
+                                "git-deploy-hook",
                                 "import",
                                 "import/repo",
                                 "redeploy",
@@ -150109,15 +150072,6 @@
                     },
                     "tier": {
                       "type": "string"
-                    },
-                    "flatRateTier": {
-                      "type": "string",
-                      "enum": [
-                        "advanced",
-                        "base",
-                        "critical",
-                        "standard"
-                      ]
                     },
                     "usageStatus": {
                       "properties": {
@@ -190592,6 +190546,7 @@
                               "clone/repo",
                               "drop",
                               "git",
+                              "git-deploy-hook",
                               "import",
                               "import/repo",
                               "redeploy",
@@ -193476,6 +193431,8 @@
               "log-drain-disabled",
               "log-drain-enabled",
               "login",
+              "login-connection-linked",
+              "login-connection-unlinked",
               "manual-deployment-promotion-created",
               "marketplace-flex-commit-opt-in",
               "marketplace-integration-allowlist-updated",
@@ -193772,6 +193729,7 @@
               "user-mfa-challenge-verified",
               "user-mfa-change-failed",
               "user-mfa-configuration-updated",
+              "user-mfa-recovery-code-used",
               "user-mfa-recovery-codes-regenerated",
               "user-mfa-removed",
               "user-mfa-setup-skipped",
@@ -194381,6 +194339,8 @@
               "log-drain-disabled",
               "log-drain-enabled",
               "login",
+              "login-connection-linked",
+              "login-connection-unlinked",
               "manual-deployment-promotion-created",
               "marketplace-flex-commit-opt-in",
               "marketplace-integration-allowlist-updated",
@@ -194677,6 +194637,7 @@
               "user-mfa-challenge-verified",
               "user-mfa-change-failed",
               "user-mfa-configuration-updated",
+              "user-mfa-recovery-code-used",
               "user-mfa-recovery-codes-regenerated",
               "user-mfa-removed",
               "user-mfa-setup-skipped",
@@ -195027,6 +194988,8 @@
                 "log-drain-disabled",
                 "log-drain-enabled",
                 "login",
+                "login-connection-linked",
+                "login-connection-unlinked",
                 "manual-deployment-promotion-created",
                 "marketplace-flex-commit-opt-in",
                 "marketplace-integration-allowlist-updated",
@@ -195323,6 +195286,7 @@
                 "user-mfa-challenge-verified",
                 "user-mfa-change-failed",
                 "user-mfa-configuration-updated",
+                "user-mfa-recovery-code-used",
                 "user-mfa-recovery-codes-regenerated",
                 "user-mfa-removed",
                 "user-mfa-setup-skipped",
