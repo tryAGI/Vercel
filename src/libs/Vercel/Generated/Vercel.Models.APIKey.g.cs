@@ -124,6 +124,13 @@ namespace Vercel
         public global::Vercel.APIKeyQuota? Quota { get; set; }
 
         /// <summary>
+        /// Generic metadata attached to the API key.<br/>
+        /// The accepted shape depends on the key's `purpose` and is validated when the key is created. For `ai-gateway` keys this carries `environment`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
+        public object? Metadata { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -186,6 +193,10 @@ namespace Vercel
         /// <param name="quota">
         /// AI Gateway quota associated with an API key.
         /// </param>
+        /// <param name="metadata">
+        /// Generic metadata attached to the API key.<br/>
+        /// The accepted shape depends on the key's `purpose` and is validated when the key is created. For `ai-gateway` keys this carries `environment`.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -203,7 +214,8 @@ namespace Vercel
             double? leakedAt,
             string? leakedUrl,
             string? createdByAppId,
-            global::Vercel.APIKeyQuota? quota)
+            global::Vercel.APIKeyQuota? quota,
+            object? metadata)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
@@ -219,6 +231,7 @@ namespace Vercel
             this.LeakedUrl = leakedUrl;
             this.CreatedByAppId = createdByAppId;
             this.Quota = quota;
+            this.Metadata = metadata;
         }
 
         /// <summary>

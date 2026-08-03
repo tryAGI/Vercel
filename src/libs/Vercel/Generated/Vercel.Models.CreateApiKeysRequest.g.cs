@@ -44,6 +44,12 @@ namespace Vercel
         public global::Vercel.CreateApiKeysRequestAiGatewayQuota? AiGatewayQuota { get; set; }
 
         /// <summary>
+        /// Optional generic metadata for the API key. The accepted shape depends on the key's `purpose` and is validated on creation; for `ai-gateway` keys this accepts `environment`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
+        public object? Metadata { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -69,6 +75,9 @@ namespace Vercel
         /// <param name="aiGatewayQuota">
         /// Optional AI Gateway quota configuration for the API key.
         /// </param>
+        /// <param name="metadata">
+        /// Optional generic metadata for the API key. The accepted shape depends on the key's `purpose` and is validated on creation; for `ai-gateway` keys this accepts `environment`.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -77,13 +86,15 @@ namespace Vercel
             string? projectId,
             string? name,
             double? expiresAt,
-            global::Vercel.CreateApiKeysRequestAiGatewayQuota? aiGatewayQuota)
+            global::Vercel.CreateApiKeysRequestAiGatewayQuota? aiGatewayQuota,
+            object? metadata)
         {
             this.Purpose = purpose ?? throw new global::System.ArgumentNullException(nameof(purpose));
             this.ProjectId = projectId;
             this.Name = name;
             this.ExpiresAt = expiresAt;
             this.AiGatewayQuota = aiGatewayQuota;
+            this.Metadata = metadata;
         }
 
         /// <summary>
