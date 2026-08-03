@@ -59,6 +59,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("traceState")]
+        public string? TraceState { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("traceFlags")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TraceFlags { get; set; }
@@ -128,6 +134,7 @@ namespace Vercel
         /// <param name="endTime"></param>
         /// <param name="duration"></param>
         /// <param name="parentSpanId"></param>
+        /// <param name="traceState"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -145,7 +152,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<double> startTime,
             global::System.Collections.Generic.IList<double> endTime,
             global::System.Collections.Generic.IList<double> duration,
-            string? parentSpanId)
+            string? parentSpanId,
+            string? traceState)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Kind = kind;
@@ -154,6 +162,7 @@ namespace Vercel
             this.SpanId = spanId ?? throw new global::System.ArgumentNullException(nameof(spanId));
             this.ParentSpanId = parentSpanId;
             this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
+            this.TraceState = traceState;
             this.TraceFlags = traceFlags;
             this.Attributes = attributes ?? throw new global::System.ArgumentNullException(nameof(attributes));
             this.Links = links ?? throw new global::System.ArgumentNullException(nameof(links));
