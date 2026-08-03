@@ -18,6 +18,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineSelection")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectRequestResourceConfigBuildMachineSelectionJsonConverter))]
+        public global::Vercel.UpdateProjectRequestResourceConfigBuildMachineSelection? BuildMachineSelection { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildQueue")]
         public global::Vercel.UpdateProjectRequestResourceConfigBuildQueue? BuildQueue { get; set; }
 
@@ -61,13 +68,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineSelection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectRequestResourceConfigBuildMachineSelectionJsonConverter))]
-        public global::Vercel.UpdateProjectRequestResourceConfigBuildMachineSelection? BuildMachineSelection { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticLastUpdated")]
         public double? BuildMachineElasticLastUpdated { get; set; }
 
@@ -100,6 +100,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateProjectRequestResourceConfig" /> class.
         /// </summary>
         /// <param name="buildMachineType"></param>
+        /// <param name="buildMachineSelection"></param>
         /// <param name="buildQueue"></param>
         /// <param name="fluid"></param>
         /// <param name="functionDefaultRegions">
@@ -111,7 +112,6 @@ namespace Vercel
         /// Specifies whether Zero Config Failover is enabled for this project.
         /// </param>
         /// <param name="elasticConcurrencyEnabled"></param>
-        /// <param name="buildMachineSelection"></param>
         /// <param name="buildMachineElasticLastUpdated"></param>
         /// <param name="buildMachineElasticReason"></param>
         /// <param name="isNSNBDisabled"></param>
@@ -121,6 +121,7 @@ namespace Vercel
 #endif
         public UpdateProjectRequestResourceConfig(
             global::Vercel.UpdateProjectRequestResourceConfigBuildMachineType? buildMachineType,
+            global::Vercel.UpdateProjectRequestResourceConfigBuildMachineSelection? buildMachineSelection,
             global::Vercel.UpdateProjectRequestResourceConfigBuildQueue? buildQueue,
             bool? fluid,
             global::System.Collections.Generic.IList<string>? functionDefaultRegions,
@@ -128,13 +129,13 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestResourceConfigFunctionDefaultMemoryType? functionDefaultMemoryType,
             bool? functionZeroConfigFailover,
             bool? elasticConcurrencyEnabled,
-            global::Vercel.UpdateProjectRequestResourceConfigBuildMachineSelection? buildMachineSelection,
             double? buildMachineElasticLastUpdated,
             global::Vercel.UpdateProjectRequestResourceConfigBuildMachineElasticReason? buildMachineElasticReason,
             bool? isNSNBDisabled,
             bool? enableFunctionsBeta)
         {
             this.BuildMachineType = buildMachineType;
+            this.BuildMachineSelection = buildMachineSelection;
             this.BuildQueue = buildQueue;
             this.Fluid = fluid;
             this.FunctionDefaultRegions = functionDefaultRegions;
@@ -142,7 +143,6 @@ namespace Vercel
             this.FunctionDefaultMemoryType = functionDefaultMemoryType;
             this.FunctionZeroConfigFailover = functionZeroConfigFailover;
             this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
-            this.BuildMachineSelection = buildMachineSelection;
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
             this.BuildMachineElasticReason = buildMachineElasticReason;
             this.IsNSNBDisabled = isNSNBDisabled;

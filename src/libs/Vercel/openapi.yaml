@@ -15857,6 +15857,51 @@
                           },
                           "type": "array"
                         },
+                        "resourceConfig": {
+                          "properties": {
+                            "buildMachine": {
+                              "properties": {
+                                "purchaseType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "basic",
+                                    "enhanced",
+                                    "standard",
+                                    "turbo"
+                                  ],
+                                  "description": "Machine type which was purchased/selected for this build. `basic` is the 2vCPU tier, recorded on the deployment so the build pipeline can detect a basic build without consulting the project."
+                                },
+                                "defaultPurchaseType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "enhanced",
+                                    "standard"
+                                  ],
+                                  "description": "The default plan type for the build machine \u2014 what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds."
+                                },
+                                "machineSelectionType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "elastic",
+                                    "fixed"
+                                  ],
+                                  "description": "Whether the build ran on a fixed or elastic machine. Used to drive billing for the build."
+                                },
+                                "cores": {
+                                  "type": "number",
+                                  "description": "Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive."
+                                },
+                                "memory": {
+                                  "type": "number",
+                                  "description": "Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive."
+                                }
+                              },
+                              "type": "object",
+                              "description": "Build machine configuration recorded for this deployment's build. See {@link DeploymentBuildMachine}. Distinct from the team/user `resourceConfig.buildMachine`, which only carries `default`."
+                            }
+                          },
+                          "type": "object"
+                        },
                         "inspectorUrl": {
                           "nullable": true,
                           "type": "string"
@@ -23583,6 +23628,51 @@
                           },
                           "type": "array"
                         },
+                        "resourceConfig": {
+                          "properties": {
+                            "buildMachine": {
+                              "properties": {
+                                "purchaseType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "basic",
+                                    "enhanced",
+                                    "standard",
+                                    "turbo"
+                                  ],
+                                  "description": "Machine type which was purchased/selected for this build. `basic` is the 2vCPU tier, recorded on the deployment so the build pipeline can detect a basic build without consulting the project."
+                                },
+                                "defaultPurchaseType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "enhanced",
+                                    "standard"
+                                  ],
+                                  "description": "The default plan type for the build machine \u2014 what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds."
+                                },
+                                "machineSelectionType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "elastic",
+                                    "fixed"
+                                  ],
+                                  "description": "Whether the build ran on a fixed or elastic machine. Used to drive billing for the build."
+                                },
+                                "cores": {
+                                  "type": "number",
+                                  "description": "Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive."
+                                },
+                                "memory": {
+                                  "type": "number",
+                                  "description": "Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive."
+                                }
+                              },
+                              "type": "object",
+                              "description": "Build machine configuration recorded for this deployment's build. See {@link DeploymentBuildMachine}. Distinct from the team/user `resourceConfig.buildMachine`, which only carries `default`."
+                            }
+                          },
+                          "type": "object"
+                        },
                         "inspectorUrl": {
                           "nullable": true,
                           "type": "string"
@@ -30498,6 +30588,51 @@
                         "type": "string"
                       },
                       "type": "array"
+                    },
+                    "resourceConfig": {
+                      "properties": {
+                        "buildMachine": {
+                          "properties": {
+                            "purchaseType": {
+                              "type": "string",
+                              "enum": [
+                                "basic",
+                                "enhanced",
+                                "standard",
+                                "turbo"
+                              ],
+                              "description": "Machine type which was purchased/selected for this build. `basic` is the 2vCPU tier, recorded on the deployment so the build pipeline can detect a basic build without consulting the project."
+                            },
+                            "defaultPurchaseType": {
+                              "type": "string",
+                              "enum": [
+                                "enhanced",
+                                "standard"
+                              ],
+                              "description": "The default plan type for the build machine \u2014 what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds."
+                            },
+                            "machineSelectionType": {
+                              "type": "string",
+                              "enum": [
+                                "elastic",
+                                "fixed"
+                              ],
+                              "description": "Whether the build ran on a fixed or elastic machine. Used to drive billing for the build."
+                            },
+                            "cores": {
+                              "type": "number",
+                              "description": "Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive."
+                            },
+                            "memory": {
+                              "type": "number",
+                              "description": "Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive."
+                            }
+                          },
+                          "type": "object",
+                          "description": "Build machine configuration recorded for this deployment's build. See {@link DeploymentBuildMachine}. Distinct from the team/user `resourceConfig.buildMachine`, which only carries `default`."
+                        }
+                      },
+                      "type": "object"
                     },
                     "inspectorUrl": {
                       "nullable": true,
@@ -126532,6 +126667,13 @@
                           "elastic"
                         ]
                       },
+                      "buildMachineSelection": {
+                        "type": "string",
+                        "enum": [
+                          "elastic",
+                          "fixed"
+                        ]
+                      },
                       "buildQueue": {
                         "type": "object",
                         "properties": {
@@ -126580,12 +126722,6 @@
                       },
                       "elasticConcurrencyEnabled": {
                         "type": "boolean"
-                      },
-                      "buildMachineSelection": {
-                        "enum": [
-                          "elastic",
-                          "fixed"
-                        ]
                       },
                       "buildMachineElasticLastUpdated": {
                         "type": "number"
@@ -176822,7 +176958,7 @@
                               "elastic"
                             ],
                             "example": "standard",
-                            "description": "Default build machine type for new builds: standard, enhanced, turbo, or elastic."
+                            "description": "Default build machine type for new builds: basic, standard, enhanced, turbo, or elastic."
                           }
                         }
                       }
@@ -193464,6 +193600,7 @@
               "oidc-policy-used-to-obtain-app-token",
               "organization-create",
               "organization-delete",
+              "organization-dsync-group-upsert",
               "organization-slug-update",
               "organization-team-add",
               "organization-team-create",
@@ -194372,6 +194509,7 @@
               "oidc-policy-used-to-obtain-app-token",
               "organization-create",
               "organization-delete",
+              "organization-dsync-group-upsert",
               "organization-slug-update",
               "organization-team-add",
               "organization-team-create",
@@ -195021,6 +195159,7 @@
                 "oidc-policy-used-to-obtain-app-token",
                 "organization-create",
                 "organization-delete",
+                "organization-dsync-group-upsert",
                 "organization-slug-update",
                 "organization-team-add",
                 "organization-team-create",

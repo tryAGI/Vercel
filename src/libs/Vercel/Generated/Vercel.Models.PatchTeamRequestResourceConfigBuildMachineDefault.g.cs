@@ -4,29 +4,29 @@
 namespace Vercel
 {
     /// <summary>
-    /// Default build machine type for new builds: standard, enhanced, turbo, or elastic.<br/>
+    /// Default build machine type for new builds: basic, standard, enhanced, turbo, or elastic.<br/>
     /// Example: standard
     /// </summary>
     public enum PatchTeamRequestResourceConfigBuildMachineDefault
     {
         /// <summary>
-        /// 
+        /// basic, standard, enhanced, turbo, or elastic.
         /// </summary>
         Basic,
         /// <summary>
-        /// standard, enhanced, turbo, or elastic.
+        /// basic, standard, enhanced, turbo, or elastic.
         /// </summary>
         Elastic,
         /// <summary>
-        /// standard, enhanced, turbo, or elastic.
+        /// basic, standard, enhanced, turbo, or elastic.
         /// </summary>
         Enhanced,
         /// <summary>
-        /// standard, enhanced, turbo, or elastic.
+        /// basic, standard, enhanced, turbo, or elastic.
         /// </summary>
         Standard,
         /// <summary>
-        /// standard, enhanced, turbo, or elastic.
+        /// basic, standard, enhanced, turbo, or elastic.
         /// </summary>
         Turbo,
     }

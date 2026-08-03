@@ -1144,6 +1144,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        OrganizationDsyncGroupUpsert,
+        /// <summary>
+        /// 
+        /// </summary>
         OrganizationSlugUpdate,
         /// <summary>
         /// 
@@ -2670,6 +2674,7 @@ namespace Vercel
                 UserEventType.OidcPolicyUsedToObtainAppToken => "oidc-policy-used-to-obtain-app-token",
                 UserEventType.OrganizationCreate => "organization-create",
                 UserEventType.OrganizationDelete => "organization-delete",
+                UserEventType.OrganizationDsyncGroupUpsert => "organization-dsync-group-upsert",
                 UserEventType.OrganizationSlugUpdate => "organization-slug-update",
                 UserEventType.OrganizationTeamAdd => "organization-team-add",
                 UserEventType.OrganizationTeamCreate => "organization-team-create",
@@ -3271,6 +3276,7 @@ namespace Vercel
                 "oidc-policy-used-to-obtain-app-token" => UserEventType.OidcPolicyUsedToObtainAppToken,
                 "organization-create" => UserEventType.OrganizationCreate,
                 "organization-delete" => UserEventType.OrganizationDelete,
+                "organization-dsync-group-upsert" => UserEventType.OrganizationDsyncGroupUpsert,
                 "organization-slug-update" => UserEventType.OrganizationSlugUpdate,
                 "organization-team-add" => UserEventType.OrganizationTeamAdd,
                 "organization-team-create" => UserEventType.OrganizationTeamCreate,
