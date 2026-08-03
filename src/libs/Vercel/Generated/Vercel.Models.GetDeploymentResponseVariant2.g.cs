@@ -50,6 +50,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
+        public global::Vercel.GetDeploymentResponseVariant2ResourceConfig? ResourceConfig { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inspectorUrl")]
         public string? InspectorUrl { get; set; }
 
@@ -693,6 +699,7 @@ namespace Vercel
         /// <param name="alwaysRefuseToBuild"></param>
         /// <param name="buildArtifactUrls"></param>
         /// <param name="builds"></param>
+        /// <param name="resourceConfig"></param>
         /// <param name="inspectorUrl"></param>
         /// <param name="integrations"></param>
         /// <param name="images"></param>
@@ -847,6 +854,7 @@ namespace Vercel
             bool? alwaysRefuseToBuild,
             global::System.Collections.Generic.IList<string>? buildArtifactUrls,
             global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Build2>? builds,
+            global::Vercel.GetDeploymentResponseVariant2ResourceConfig? resourceConfig,
             string? inspectorUrl,
             global::Vercel.GetDeploymentResponseVariant2Integrations? integrations,
             global::Vercel.GetDeploymentResponseVariant2Images? images,
@@ -916,6 +924,7 @@ namespace Vercel
             this.BuildArtifactUrls = buildArtifactUrls;
             this.Builds = builds;
             this.Env = env ?? throw new global::System.ArgumentNullException(nameof(env));
+            this.ResourceConfig = resourceConfig;
             this.InspectorUrl = inspectorUrl;
             this.IsInConcurrentBuildsQueue = isInConcurrentBuildsQueue;
             this.IsInSystemBuildsQueue = isInSystemBuildsQueue;
