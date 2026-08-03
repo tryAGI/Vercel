@@ -104088,12 +104088,18 @@
                                 "properties": {
                                   "code": {
                                     "type": "number"
+                                  },
+                                  "message": {
+                                    "type": "string"
                                   }
                                 },
                                 "required": [
                                   "code"
                                 ],
                                 "type": "object"
+                              },
+                              "traceState": {
+                                "type": "string"
                               },
                               "traceFlags": {
                                 "type": "number"
