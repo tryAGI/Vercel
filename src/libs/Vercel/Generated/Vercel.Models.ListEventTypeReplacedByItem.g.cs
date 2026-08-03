@@ -1011,6 +1011,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        LoginConnectionLinked,
+        /// <summary>
+        /// 
+        /// </summary>
+        LoginConnectionUnlinked,
+        /// <summary>
+        /// 
+        /// </summary>
         ManualDeploymentPromotionCreated,
         /// <summary>
         /// 
@@ -2195,6 +2203,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserMfaRecoveryCodeUsed,
+        /// <summary>
+        /// 
+        /// </summary>
         UserMfaRecoveryCodesRegenerated,
         /// <summary>
         /// 
@@ -2624,6 +2636,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.LogDrainDisabled => "log-drain-disabled",
                 ListEventTypeReplacedByItem.LogDrainEnabled => "log-drain-enabled",
                 ListEventTypeReplacedByItem.Login => "login",
+                ListEventTypeReplacedByItem.LoginConnectionLinked => "login-connection-linked",
+                ListEventTypeReplacedByItem.LoginConnectionUnlinked => "login-connection-unlinked",
                 ListEventTypeReplacedByItem.ManualDeploymentPromotionCreated => "manual-deployment-promotion-created",
                 ListEventTypeReplacedByItem.MarketplaceFlexCommitOptIn => "marketplace-flex-commit-opt-in",
                 ListEventTypeReplacedByItem.MarketplaceIntegrationAllowlistUpdated => "marketplace-integration-allowlist-updated",
@@ -2920,6 +2934,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.UserMfaChallengeVerified => "user-mfa-challenge-verified",
                 ListEventTypeReplacedByItem.UserMfaChangeFailed => "user-mfa-change-failed",
                 ListEventTypeReplacedByItem.UserMfaConfigurationUpdated => "user-mfa-configuration-updated",
+                ListEventTypeReplacedByItem.UserMfaRecoveryCodeUsed => "user-mfa-recovery-code-used",
                 ListEventTypeReplacedByItem.UserMfaRecoveryCodesRegenerated => "user-mfa-recovery-codes-regenerated",
                 ListEventTypeReplacedByItem.UserMfaRemoved => "user-mfa-removed",
                 ListEventTypeReplacedByItem.UserMfaSetupSkipped => "user-mfa-setup-skipped",
@@ -3222,6 +3237,8 @@ namespace Vercel
                 "log-drain-disabled" => ListEventTypeReplacedByItem.LogDrainDisabled,
                 "log-drain-enabled" => ListEventTypeReplacedByItem.LogDrainEnabled,
                 "login" => ListEventTypeReplacedByItem.Login,
+                "login-connection-linked" => ListEventTypeReplacedByItem.LoginConnectionLinked,
+                "login-connection-unlinked" => ListEventTypeReplacedByItem.LoginConnectionUnlinked,
                 "manual-deployment-promotion-created" => ListEventTypeReplacedByItem.ManualDeploymentPromotionCreated,
                 "marketplace-flex-commit-opt-in" => ListEventTypeReplacedByItem.MarketplaceFlexCommitOptIn,
                 "marketplace-integration-allowlist-updated" => ListEventTypeReplacedByItem.MarketplaceIntegrationAllowlistUpdated,
@@ -3518,6 +3535,7 @@ namespace Vercel
                 "user-mfa-challenge-verified" => ListEventTypeReplacedByItem.UserMfaChallengeVerified,
                 "user-mfa-change-failed" => ListEventTypeReplacedByItem.UserMfaChangeFailed,
                 "user-mfa-configuration-updated" => ListEventTypeReplacedByItem.UserMfaConfigurationUpdated,
+                "user-mfa-recovery-code-used" => ListEventTypeReplacedByItem.UserMfaRecoveryCodeUsed,
                 "user-mfa-recovery-codes-regenerated" => ListEventTypeReplacedByItem.UserMfaRecoveryCodesRegenerated,
                 "user-mfa-removed" => ListEventTypeReplacedByItem.UserMfaRemoved,
                 "user-mfa-setup-skipped" => ListEventTypeReplacedByItem.UserMfaSetupSkipped,

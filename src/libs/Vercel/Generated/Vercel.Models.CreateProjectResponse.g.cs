@@ -543,13 +543,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("flatRateTier")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseFlatRateTierJsonConverter))]
-        public global::Vercel.CreateProjectResponseFlatRateTier? FlatRateTier { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("usageStatus")]
         public global::Vercel.CreateProjectResponseUsageStatus? UsageStatus { get; set; }
 
@@ -716,7 +709,6 @@ namespace Vercel
         /// Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident.
         /// </param>
         /// <param name="tier"></param>
-        /// <param name="flatRateTier"></param>
         /// <param name="usageStatus"></param>
         /// <param name="features"></param>
         /// <param name="v0"></param>
@@ -818,7 +810,6 @@ namespace Vercel
             global::Vercel.CreateProjectResponseOidcTokenConfig? oidcTokenConfig,
             global::Vercel.CreateProjectResponseDeploymentPolicy? deploymentPolicy,
             string? tier,
-            global::Vercel.CreateProjectResponseFlatRateTier? flatRateTier,
             global::Vercel.CreateProjectResponseUsageStatus? usageStatus,
             global::Vercel.CreateProjectResponseFeatures? features,
             bool? v0,
@@ -917,7 +908,6 @@ namespace Vercel
             this.OidcTokenConfig = oidcTokenConfig;
             this.DeploymentPolicy = deploymentPolicy;
             this.Tier = tier;
-            this.FlatRateTier = flatRateTier;
             this.UsageStatus = usageStatus;
             this.Features = features;
             this.V0 = v0;
