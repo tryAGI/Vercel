@@ -36,6 +36,15 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
+        /// Whether the repository is public. Images in public repositories can be pulled by anyone. Defaults to `false` (private).<br/>
+        /// Example: false
+        /// </summary>
+        /// <example>false</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("public")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Public { get; set; }
+
+        /// <summary>
         /// ISO 8601 timestamp of when the repository was created.<br/>
         /// Example: 2026-06-30T10:00:00.000Z
         /// </summary>
@@ -74,6 +83,10 @@ namespace Vercel
         /// Name of the repository.<br/>
         /// Example: my-app
         /// </param>
+        /// <param name="public">
+        /// Whether the repository is public. Images in public repositories can be pulled by anyone. Defaults to `false` (private).<br/>
+        /// Example: false
+        /// </param>
         /// <param name="createdAt">
         /// ISO 8601 timestamp of when the repository was created.<br/>
         /// Example: 2026-06-30T10:00:00.000Z
@@ -89,12 +102,14 @@ namespace Vercel
             string id,
             string projectId,
             string name,
+            bool @public,
             string createdAt,
             string updatedAt)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Public = @public;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
         }

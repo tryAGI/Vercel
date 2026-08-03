@@ -1735,6 +1735,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SandboxSnapshotRegionsUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         Scale,
         /// <summary>
         /// 
@@ -2271,6 +2275,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        VcrRepositoryVisibilityChanged,
+        /// <summary>
+        /// 
+        /// </summary>
         VercelAgentElevatedPermissionsApproved,
         /// <summary>
         /// 
@@ -2797,6 +2805,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.RuntimeCachePurgeAll => "runtime-cache-purge-all",
                 ListEventTypeReplacedByItem.SandboxAliasAssigned => "sandbox-alias-assigned",
                 ListEventTypeReplacedByItem.SandboxAliasDelete => "sandbox-alias-delete",
+                ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated => "sandbox-snapshot-regions-updated",
                 ListEventTypeReplacedByItem.Scale => "scale",
                 ListEventTypeReplacedByItem.ScaleAuto => "scale-auto",
                 ListEventTypeReplacedByItem.SecondaryEmailAdded => "secondary-email-added",
@@ -2931,6 +2940,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.VcrRepositoryPermissionAdded => "vcr-repository-permission-added",
                 ListEventTypeReplacedByItem.VcrRepositoryPermissionRemoved => "vcr-repository-permission-removed",
                 ListEventTypeReplacedByItem.VcrRepositoryPermissionsCleared => "vcr-repository-permissions-cleared",
+                ListEventTypeReplacedByItem.VcrRepositoryVisibilityChanged => "vcr-repository-visibility-changed",
                 ListEventTypeReplacedByItem.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
                 ListEventTypeReplacedByItem.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
                 ListEventTypeReplacedByItem.VercelAgentSessionCreated => "vercel-agent-session-created",
@@ -3393,6 +3403,7 @@ namespace Vercel
                 "runtime-cache-purge-all" => ListEventTypeReplacedByItem.RuntimeCachePurgeAll,
                 "sandbox-alias-assigned" => ListEventTypeReplacedByItem.SandboxAliasAssigned,
                 "sandbox-alias-delete" => ListEventTypeReplacedByItem.SandboxAliasDelete,
+                "sandbox-snapshot-regions-updated" => ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated,
                 "scale" => ListEventTypeReplacedByItem.Scale,
                 "scale-auto" => ListEventTypeReplacedByItem.ScaleAuto,
                 "secondary-email-added" => ListEventTypeReplacedByItem.SecondaryEmailAdded,
@@ -3527,6 +3538,7 @@ namespace Vercel
                 "vcr-repository-permission-added" => ListEventTypeReplacedByItem.VcrRepositoryPermissionAdded,
                 "vcr-repository-permission-removed" => ListEventTypeReplacedByItem.VcrRepositoryPermissionRemoved,
                 "vcr-repository-permissions-cleared" => ListEventTypeReplacedByItem.VcrRepositoryPermissionsCleared,
+                "vcr-repository-visibility-changed" => ListEventTypeReplacedByItem.VcrRepositoryVisibilityChanged,
                 "vercel-agent-elevated-permissions-approved" => ListEventTypeReplacedByItem.VercelAgentElevatedPermissionsApproved,
                 "vercel-agent-elevated-permissions-requested" => ListEventTypeReplacedByItem.VercelAgentElevatedPermissionsRequested,
                 "vercel-agent-session-created" => ListEventTypeReplacedByItem.VercelAgentSessionCreated,

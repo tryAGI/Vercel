@@ -8259,6 +8259,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageListItemVhsConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageList))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.VcrImageListItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrRepositoryPermission))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrTag))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrTagKind), TypeInfoPropertyName = "VcrTagKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrTagStatus), TypeInfoPropertyName = "VcrTagStatus2")]
@@ -8281,6 +8282,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailKind), TypeInfoPropertyName = "VcrImageDetailKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailVhs))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailVhsConfig))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrRepositoryPermissionList))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.VcrRepositoryPermission>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FileTree))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FileTreeType), TypeInfoPropertyName = "FileTreeType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.FileTree>))]
@@ -8296,9 +8299,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelBadRequestErrorError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelRateLimitError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AllOf<global::Vercel.VercelBaseError, global::Vercel.VercelRateLimitErrorError>), TypeInfoPropertyName = "AllOfVercelBaseErrorVercelRateLimitErrorError2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelRateLimitErrorError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RateLimitNotice))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
