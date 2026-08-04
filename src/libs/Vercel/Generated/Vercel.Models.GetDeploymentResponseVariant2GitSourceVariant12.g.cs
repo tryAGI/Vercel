@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    /// Allows custom git sources (local folder mounted to the container) in test mode
     /// </summary>
     public sealed partial class GetDeploymentResponseVariant2GitSourceVariant12
     {
@@ -32,21 +32,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitUrl")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double RepoId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("org")]
-        public string? Org { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
-        public string? Repo { get; set; }
+        public required string GitUrl { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,27 +47,21 @@ namespace Vercel
         /// </summary>
         /// <param name="ref"></param>
         /// <param name="sha"></param>
-        /// <param name="repoId"></param>
+        /// <param name="gitUrl"></param>
         /// <param name="type"></param>
-        /// <param name="org"></param>
-        /// <param name="repo"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2GitSourceVariant12(
             string @ref,
             string sha,
-            double repoId,
-            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant12Type type,
-            string? org,
-            string? repo)
+            string gitUrl,
+            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant12Type type)
         {
             this.Type = type;
             this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
             this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
-            this.RepoId = repoId;
-            this.Org = org;
-            this.Repo = repo;
+            this.GitUrl = gitUrl ?? throw new global::System.ArgumentNullException(nameof(gitUrl));
         }
 
         /// <summary>

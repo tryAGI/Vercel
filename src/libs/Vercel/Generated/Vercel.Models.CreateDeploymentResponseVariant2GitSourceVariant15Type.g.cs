@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Gitlab,
+        GithubLimited,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                CreateDeploymentResponseVariant2GitSourceVariant15Type.Gitlab => "gitlab",
+                CreateDeploymentResponseVariant2GitSourceVariant15Type.GithubLimited => "github-limited",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "gitlab" => CreateDeploymentResponseVariant2GitSourceVariant15Type.Gitlab,
+                "github-limited" => CreateDeploymentResponseVariant2GitSourceVariant15Type.GithubLimited,
                 _ => null,
             };
         }
