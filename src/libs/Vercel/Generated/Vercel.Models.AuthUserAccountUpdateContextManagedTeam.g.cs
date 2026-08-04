@@ -36,6 +36,13 @@ namespace Vercel
         public string? Avatar { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("workEmail")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string WorkEmail { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -47,6 +54,7 @@ namespace Vercel
         /// <param name="teamId"></param>
         /// <param name="slug"></param>
         /// <param name="name"></param>
+        /// <param name="workEmail"></param>
         /// <param name="avatar"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -55,12 +63,14 @@ namespace Vercel
             string teamId,
             string slug,
             string name,
+            string workEmail,
             string? avatar)
         {
             this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Avatar = avatar;
+            this.WorkEmail = workEmail ?? throw new global::System.ArgumentNullException(nameof(workEmail));
         }
 
         /// <summary>

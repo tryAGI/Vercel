@@ -55,6 +55,12 @@ namespace Vercel
         public string? InviteCode { get; set; }
 
         /// <summary>
+        /// The team's billing plan.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("billing")]
+        public global::Vercel.TeamBilling? Billing { get; set; }
+
+        /// <summary>
         /// A short description of the Team.<br/>
         /// Example: Our mission is to make cloud computing accessible to everyone.
         /// </summary>
@@ -355,6 +361,9 @@ namespace Vercel
         /// Code that can be used to join this Team. Only visible to Team owners.<br/>
         /// Example: hasihf9e89
         /// </param>
+        /// <param name="billing">
+        /// The team's billing plan.
+        /// </param>
         /// <param name="description">
         /// A short description of the Team.<br/>
         /// Example: Our mission is to make cloud computing accessible to everyone.
@@ -472,6 +481,7 @@ namespace Vercel
             string? emailDomain,
             global::Vercel.TeamSaml? saml,
             string? inviteCode,
+            global::Vercel.TeamBilling? billing,
             string? description,
             global::Vercel.TeamDefaultRoles? defaultRoles,
             global::Vercel.TeamResourceConfig? resourceConfig,
@@ -513,6 +523,7 @@ namespace Vercel
             this.EmailDomain = emailDomain;
             this.Saml = saml;
             this.InviteCode = inviteCode;
+            this.Billing = billing;
             this.Description = description;
             this.DefaultRoles = defaultRoles;
             this.StagingPrefix = stagingPrefix ?? throw new global::System.ArgumentNullException(nameof(stagingPrefix));

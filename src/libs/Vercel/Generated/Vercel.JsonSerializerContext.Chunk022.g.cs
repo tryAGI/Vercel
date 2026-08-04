@@ -218,6 +218,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.TeamSamlDefaultRedirectUriNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2JsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamPermissionJsonConverter),
@@ -7849,6 +7851,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckSourceVariant3Provider?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckSourceVariant3Provider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckBlocks?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckBlocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckSourceKind?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckSourceKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckResponseRequires?), TypeInfoPropertyName = "NullableCreateProjectCheckResponseRequires2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateProjectCheckResponseSourceVariant1, global::Vercel.CreateProjectCheckResponseSourceVariant2, global::Vercel.CreateProjectCheckResponseSourceVariant3>?), TypeInfoPropertyName = "CreateProjectCheckResponseSourceVariant3_409927ec3cd01f58")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckResponseSourceVariant1Kind?), TypeInfoPropertyName = "NullableCreateProjectCheckResponseSourceVariant1Kind2")]
@@ -8346,9 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2RouteVariant1DestinationType?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2RouteVariant1DestinationType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2RouteVariant2Handle?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2RouteVariant2Handle2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2ServiceVariant1, global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2>?), TypeInfoPropertyName = "NullableOneOfCreateDeploymentResponseVariant2ServiceVariant1CreateDeploymentResponseVariant2ServiceVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant1Schema?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ServiceVariant1Schema2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant1Type?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ServiceVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant1Trigger?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ServiceVariant1Trigger2")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -27,6 +27,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ImportRecommendedIntegrations,
+        /// <summary>
+        /// 
+        /// </summary>
         Marketplace,
         /// <summary>
         /// 
@@ -58,6 +62,7 @@ namespace Vercel
                 GetBillingPlansSource.Cli => "cli",
                 GetBillingPlansSource.DeployButton => "deploy-button",
                 GetBillingPlansSource.External => "external",
+                GetBillingPlansSource.ImportRecommendedIntegrations => "import-recommended-integrations",
                 GetBillingPlansSource.Marketplace => "marketplace",
                 GetBillingPlansSource.Oauth => "oauth",
                 GetBillingPlansSource.ResourceClaims => "resource-claims",
@@ -76,6 +81,7 @@ namespace Vercel
                 "cli" => GetBillingPlansSource.Cli,
                 "deploy-button" => GetBillingPlansSource.DeployButton,
                 "external" => GetBillingPlansSource.External,
+                "import-recommended-integrations" => GetBillingPlansSource.ImportRecommendedIntegrations,
                 "marketplace" => GetBillingPlansSource.Marketplace,
                 "oauth" => GetBillingPlansSource.Oauth,
                 "resource-claims" => GetBillingPlansSource.ResourceClaims,
