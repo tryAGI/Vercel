@@ -27,6 +27,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ConnectorManager,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateProject,
         /// <summary>
         /// 
@@ -86,6 +90,7 @@ namespace Vercel
                 UpdateTeamMemberRequestTeamPermission.AiGatewayBudgetManager => "AiGatewayBudgetManager",
                 UpdateTeamMemberRequestTeamPermission.AiGatewayCredits => "AiGatewayCredits",
                 UpdateTeamMemberRequestTeamPermission.AiGatewaySettings => "AiGatewaySettings",
+                UpdateTeamMemberRequestTeamPermission.ConnectorManager => "ConnectorManager",
                 UpdateTeamMemberRequestTeamPermission.CreateProject => "CreateProject",
                 UpdateTeamMemberRequestTeamPermission.EnvVariableManager => "EnvVariableManager",
                 UpdateTeamMemberRequestTeamPermission.EnvironmentManager => "EnvironmentManager",
@@ -111,6 +116,7 @@ namespace Vercel
                 "AiGatewayBudgetManager" => UpdateTeamMemberRequestTeamPermission.AiGatewayBudgetManager,
                 "AiGatewayCredits" => UpdateTeamMemberRequestTeamPermission.AiGatewayCredits,
                 "AiGatewaySettings" => UpdateTeamMemberRequestTeamPermission.AiGatewaySettings,
+                "ConnectorManager" => UpdateTeamMemberRequestTeamPermission.ConnectorManager,
                 "CreateProject" => UpdateTeamMemberRequestTeamPermission.CreateProject,
                 "EnvVariableManager" => UpdateTeamMemberRequestTeamPermission.EnvVariableManager,
                 "EnvironmentManager" => UpdateTeamMemberRequestTeamPermission.EnvironmentManager,

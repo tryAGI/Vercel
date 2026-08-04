@@ -218,6 +218,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.TeamSamlDefaultRedirectUriNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2JsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamPermissionJsonConverter),
@@ -7849,6 +7851,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2AllowItem>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2AllowItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2AllowItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2AllowItemMatch))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2AllowItemMatchPath))]
@@ -8347,8 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResource))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Type), TypeInfoPropertyName = "BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentStatus), TypeInfoPropertyName = "BuyCreditsResponseVariant3OrbSubscriptionIntentStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRedirectsResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRedirectsResponseVersion))]
     internal sealed partial class SourceGenerationContextChunk003 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

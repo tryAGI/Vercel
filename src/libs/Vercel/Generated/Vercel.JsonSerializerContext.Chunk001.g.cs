@@ -218,6 +218,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.TeamSamlDefaultRedirectUriNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2JsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamPermissionJsonConverter),
@@ -7849,6 +7851,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelRateLimitError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AllOf<global::Vercel.VercelBaseError, global::Vercel.VercelRateLimitErrorError>), TypeInfoPropertyName = "AllOfVercelBaseErrorVercelRateLimitErrorError2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelRateLimitErrorError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RateLimitNotice))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
@@ -8347,8 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestOperationValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentRequestDataRule>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSegmentRequestDataRule))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentRequestDataRuleCondition>))]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

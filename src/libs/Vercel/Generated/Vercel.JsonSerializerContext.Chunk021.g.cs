@@ -218,6 +218,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.TeamSamlDefaultRedirectUriNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2JsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamPermissionJsonConverter),
@@ -7849,6 +7851,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestRequires?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestRequires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestBlocks?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestBlocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateProjectCheckRequestSourceVariant1, global::Vercel.CreateProjectCheckRequestSourceVariant2, global::Vercel.CreateProjectCheckRequestSourceVariant3>?), TypeInfoPropertyName = "CreateProjectCheckRequestSourceVariant3_4bffb2ae56c97b5e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestSourceVariant3Provider?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestSourceVariant3Provider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectCheckRequestRequires?), TypeInfoPropertyName = "NullableUpdateProjectCheckRequestRequires2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectCheckRequestBlocks?), TypeInfoPropertyName = "NullableUpdateProjectCheckRequestBlocks2")]
@@ -8346,9 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckSourceVariant1Kind?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckSourceVariant1Kind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckSourceVariant2Kind?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckSourceVariant2Kind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckSourceVariant3Kind?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckSourceVariant3Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckSourceVariant3Provider?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckSourceVariant3Provider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckBlocks?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckBlocks2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckSourceKind?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckSourceKind2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

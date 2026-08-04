@@ -218,6 +218,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.TeamSamlDefaultRedirectUriNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2JsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamPermissionJsonConverter),
@@ -7849,6 +7851,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant2Status), TypeInfoPropertyName = "GetConfigurationResponseVariant2Status2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant2Source), TypeInfoPropertyName = "GetConfigurationResponseVariant2Source2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant2Type), TypeInfoPropertyName = "GetConfigurationResponseVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant2DisabledReason), TypeInfoPropertyName = "GetConfigurationResponseVariant2DisabledReason2")]
@@ -8347,8 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectProtectionConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectProtectionConfigSandboxUrls))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSandbox))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSandboxRegion), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectSandboxRegion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectSandboxFailoverRegion>))]
     internal sealed partial class SourceGenerationContextChunk010 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

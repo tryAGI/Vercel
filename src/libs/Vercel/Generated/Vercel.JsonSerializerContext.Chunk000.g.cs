@@ -218,6 +218,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.TeamSamlDefaultRedirectUriNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2JsonConverter),
             typeof(global::Vercel.JsonConverters.TeamSamlRolesEnum2NullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanJsonConverter),
+            typeof(global::Vercel.JsonConverters.TeamBillingPlanNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamRoleNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.TeamDefaultRolesTeamPermissionJsonConverter),
@@ -8164,6 +8166,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.TeamSamlRolesEnum, global::Vercel.TeamSamlRolesEnum2?>), TypeInfoPropertyName = "OneOfTeamSamlRolesEnumTeamSamlRolesEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamSamlRolesEnum))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamSamlRolesEnum2), TypeInfoPropertyName = "TeamSamlRolesEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamBilling))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamBillingPlan), TypeInfoPropertyName = "TeamBillingPlan2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamDefaultRoles))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamRole>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamDefaultRolesTeamRole), TypeInfoPropertyName = "TeamDefaultRolesTeamRole2")]
@@ -8347,8 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelBadRequestError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AllOf<global::Vercel.VercelBaseError, global::Vercel.VercelBadRequestErrorError>), TypeInfoPropertyName = "AllOfVercelBaseErrorVercelBadRequestErrorError2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelBadRequestErrorError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelRateLimitError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AllOf<global::Vercel.VercelBaseError, global::Vercel.VercelRateLimitErrorError>), TypeInfoPropertyName = "AllOfVercelBaseErrorVercelRateLimitErrorError2")]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

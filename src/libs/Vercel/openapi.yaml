@@ -45,6 +45,7 @@
                           "AiGatewayBudgetManager",
                           "AiGatewayCredits",
                           "AiGatewaySettings",
+                          "ConnectorManager",
                           "CreateProject",
                           "EnvVariableManager",
                           "EnvironmentManager",
@@ -65387,7 +65388,8 @@
                 "resource-claims",
                 "cli",
                 "oauth",
-                "backoffice"
+                "backoffice",
+                "import-recommended-integrations"
               ]
             }
           },
@@ -68374,6 +68376,7 @@
                               "cli",
                               "deploy-button",
                               "external",
+                              "import-recommended-integrations",
                               "marketplace",
                               "oauth",
                               "resource-claims",
@@ -68598,6 +68601,7 @@
                               "cli",
                               "deploy-button",
                               "external",
+                              "import-recommended-integrations",
                               "marketplace",
                               "oauth",
                               "resource-claims",
@@ -69095,6 +69099,7 @@
                             "cli",
                             "deploy-button",
                             "external",
+                            "import-recommended-integrations",
                             "marketplace",
                             "oauth",
                             "resource-claims",
@@ -69238,6 +69243,7 @@
                             "cli",
                             "deploy-button",
                             "external",
+                            "import-recommended-integrations",
                             "marketplace",
                             "oauth",
                             "resource-claims",
@@ -69401,6 +69407,7 @@
                             "cli",
                             "deploy-button",
                             "external",
+                            "import-recommended-integrations",
                             "marketplace",
                             "oauth",
                             "resource-claims",
@@ -175836,7 +175843,8 @@
                       "resource-claims",
                       "cli",
                       "oauth",
-                      "backoffice"
+                      "backoffice",
+                      "import-recommended-integrations"
                     ],
                     "description": "Source of the store creation request",
                     "example": "marketplace",
@@ -176146,6 +176154,7 @@
                                 "AiGatewayBudgetManager",
                                 "AiGatewayCredits",
                                 "AiGatewaySettings",
+                                "ConnectorManager",
                                 "CreateProject",
                                 "EnvVariableManager",
                                 "EnvironmentManager",
@@ -177203,6 +177212,7 @@
                     "items": {
                       "type": "string",
                       "enum": [
+                        "ConnectorManager",
                         "IntegrationManager",
                         "CreateProject",
                         "FullProductionDeployment",
@@ -199093,6 +199103,7 @@
                 "AiGatewayBudgetManager",
                 "AiGatewayCredits",
                 "AiGatewaySettings",
+                "ConnectorManager",
                 "CreateProject",
                 "EnvVariableManager",
                 "EnvironmentManager",
@@ -199312,6 +199323,24 @@
             "description": "Code that can be used to join this Team. Only visible to Team owners.",
             "example": "hasihf9e89"
           },
+          "billing": {
+            "nullable": true,
+            "properties": {
+              "plan": {
+                "type": "string",
+                "enum": [
+                  "enterprise",
+                  "hobby",
+                  "pro"
+                ]
+              }
+            },
+            "required": [
+              "plan"
+            ],
+            "type": "object",
+            "description": "The team's billing plan."
+          },
           "description": {
             "nullable": true,
             "type": "string",
@@ -199344,6 +199373,7 @@
                     "AiGatewayBudgetManager",
                     "AiGatewayCredits",
                     "AiGatewaySettings",
+                    "ConnectorManager",
                     "CreateProject",
                     "EnvVariableManager",
                     "EnvironmentManager",
@@ -200118,6 +200148,7 @@
                     "AiGatewayBudgetManager",
                     "AiGatewayCredits",
                     "AiGatewaySettings",
+                    "ConnectorManager",
                     "CreateProject",
                     "EnvVariableManager",
                     "EnvironmentManager",
@@ -200236,6 +200267,7 @@
         },
         "required": [
           "avatar",
+          "billing",
           "createdAt",
           "creatorId",
           "description",
@@ -200468,6 +200500,7 @@
                     "AiGatewayBudgetManager",
                     "AiGatewayCredits",
                     "AiGatewaySettings",
+                    "ConnectorManager",
                     "CreateProject",
                     "EnvVariableManager",
                     "EnvironmentManager",
@@ -201397,13 +201430,17 @@
                     "avatar": {
                       "nullable": true,
                       "type": "string"
+                    },
+                    "workEmail": {
+                      "type": "string"
                     }
                   },
                   "required": [
                     "avatar",
                     "name",
                     "slug",
-                    "teamId"
+                    "teamId",
+                    "workEmail"
                   ],
                   "type": "object"
                 },

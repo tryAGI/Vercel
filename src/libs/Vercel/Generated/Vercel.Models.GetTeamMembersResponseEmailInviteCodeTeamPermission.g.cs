@@ -27,6 +27,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ConnectorManager,
+        /// <summary>
+        /// 
+        /// </summary>
         CreateProject,
         /// <summary>
         /// 
@@ -86,6 +90,7 @@ namespace Vercel
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayBudgetManager => "AiGatewayBudgetManager",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayCredits => "AiGatewayCredits",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewaySettings => "AiGatewaySettings",
+                GetTeamMembersResponseEmailInviteCodeTeamPermission.ConnectorManager => "ConnectorManager",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.CreateProject => "CreateProject",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.EnvVariableManager => "EnvVariableManager",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.EnvironmentManager => "EnvironmentManager",
@@ -111,6 +116,7 @@ namespace Vercel
                 "AiGatewayBudgetManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayBudgetManager,
                 "AiGatewayCredits" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayCredits,
                 "AiGatewaySettings" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewaySettings,
+                "ConnectorManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.ConnectorManager,
                 "CreateProject" => GetTeamMembersResponseEmailInviteCodeTeamPermission.CreateProject,
                 "EnvVariableManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.EnvVariableManager,
                 "EnvironmentManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.EnvironmentManager,

@@ -29,6 +29,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ImportRecommendedIntegrations,
+        /// <summary>
+        /// 
+        /// </summary>
         Marketplace,
         /// <summary>
         /// 
@@ -60,6 +64,7 @@ namespace Vercel
                 CreateIntegrationStoreDirectRequestSource.Cli => "cli",
                 CreateIntegrationStoreDirectRequestSource.DeployButton => "deploy-button",
                 CreateIntegrationStoreDirectRequestSource.External => "external",
+                CreateIntegrationStoreDirectRequestSource.ImportRecommendedIntegrations => "import-recommended-integrations",
                 CreateIntegrationStoreDirectRequestSource.Marketplace => "marketplace",
                 CreateIntegrationStoreDirectRequestSource.Oauth => "oauth",
                 CreateIntegrationStoreDirectRequestSource.ResourceClaims => "resource-claims",
@@ -78,6 +83,7 @@ namespace Vercel
                 "cli" => CreateIntegrationStoreDirectRequestSource.Cli,
                 "deploy-button" => CreateIntegrationStoreDirectRequestSource.DeployButton,
                 "external" => CreateIntegrationStoreDirectRequestSource.External,
+                "import-recommended-integrations" => CreateIntegrationStoreDirectRequestSource.ImportRecommendedIntegrations,
                 "marketplace" => CreateIntegrationStoreDirectRequestSource.Marketplace,
                 "oauth" => CreateIntegrationStoreDirectRequestSource.Oauth,
                 "resource-claims" => CreateIntegrationStoreDirectRequestSource.ResourceClaims,
