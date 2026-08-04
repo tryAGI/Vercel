@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Vercel,
+        Bitbucket,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                CreateDeploymentResponseVariant2GitSourceVariant17Type.Vercel => "vercel",
+                CreateDeploymentResponseVariant2GitSourceVariant17Type.Bitbucket => "bitbucket",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "vercel" => CreateDeploymentResponseVariant2GitSourceVariant17Type.Vercel,
+                "bitbucket" => CreateDeploymentResponseVariant2GitSourceVariant17Type.Bitbucket,
                 _ => null,
             };
         }

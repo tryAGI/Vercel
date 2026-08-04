@@ -18,13 +18,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("host")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Host { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Ref { get; set; }
@@ -64,7 +57,6 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CancelDeploymentResponseGitSourceVariant13" /> class.
         /// </summary>
-        /// <param name="host"></param>
         /// <param name="ref"></param>
         /// <param name="sha"></param>
         /// <param name="repoId"></param>
@@ -75,7 +67,6 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CancelDeploymentResponseGitSourceVariant13(
-            string host,
             string @ref,
             string sha,
             double repoId,
@@ -84,7 +75,6 @@ namespace Vercel
             string? repo)
         {
             this.Type = type;
-            this.Host = host ?? throw new global::System.ArgumentNullException(nameof(host));
             this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
             this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
             this.RepoId = repoId;

@@ -32,28 +32,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
-        public string? Owner { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        public string? Slug { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("workspaceUuid")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string WorkspaceUuid { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repoUuid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RepoUuid { get; set; }
+        public required double ProjectId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -66,30 +47,21 @@ namespace Vercel
         /// </summary>
         /// <param name="ref"></param>
         /// <param name="sha"></param>
-        /// <param name="workspaceUuid"></param>
-        /// <param name="repoUuid"></param>
+        /// <param name="projectId"></param>
         /// <param name="type"></param>
-        /// <param name="owner"></param>
-        /// <param name="slug"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant3GitSourceVariant16(
             string @ref,
             string sha,
-            string workspaceUuid,
-            string repoUuid,
-            global::Vercel.GetDeploymentResponseVariant3GitSourceVariant16Type type,
-            string? owner,
-            string? slug)
+            double projectId,
+            global::Vercel.GetDeploymentResponseVariant3GitSourceVariant16Type type)
         {
             this.Type = type;
             this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
             this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
-            this.Owner = owner;
-            this.Slug = slug;
-            this.WorkspaceUuid = workspaceUuid ?? throw new global::System.ArgumentNullException(nameof(workspaceUuid));
-            this.RepoUuid = repoUuid ?? throw new global::System.ArgumentNullException(nameof(repoUuid));
+            this.ProjectId = projectId;
         }
 
         /// <summary>

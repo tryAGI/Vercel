@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Custom,
+        CursorOrigin,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                CancelDeploymentResponseGitSourceVariant11Type.Custom => "custom",
+                CancelDeploymentResponseGitSourceVariant11Type.CursorOrigin => "cursor-origin",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "custom" => CancelDeploymentResponseGitSourceVariant11Type.Custom,
+                "cursor-origin" => CancelDeploymentResponseGitSourceVariant11Type.CursorOrigin,
                 _ => null,
             };
         }

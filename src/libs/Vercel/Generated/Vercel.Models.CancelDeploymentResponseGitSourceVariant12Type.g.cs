@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        Github,
+        Custom,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                CancelDeploymentResponseGitSourceVariant12Type.Github => "github",
+                CancelDeploymentResponseGitSourceVariant12Type.Custom => "custom",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "github" => CancelDeploymentResponseGitSourceVariant12Type.Github,
+                "custom" => CancelDeploymentResponseGitSourceVariant12Type.Custom,
                 _ => null,
             };
         }

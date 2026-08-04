@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        CursorOrigin,
+        /// <summary>
+        /// 
+        /// </summary>
         Github,
         /// <summary>
         /// 
@@ -47,6 +51,7 @@ namespace Vercel
             return value switch
             {
                 AuthUserImportFlowGitProvider.Bitbucket => "bitbucket",
+                AuthUserImportFlowGitProvider.CursorOrigin => "cursor-origin",
                 AuthUserImportFlowGitProvider.Github => "github",
                 AuthUserImportFlowGitProvider.GithubCustomHost => "github-custom-host",
                 AuthUserImportFlowGitProvider.GithubLimited => "github-limited",
@@ -63,6 +68,7 @@ namespace Vercel
             return value switch
             {
                 "bitbucket" => AuthUserImportFlowGitProvider.Bitbucket,
+                "cursor-origin" => AuthUserImportFlowGitProvider.CursorOrigin,
                 "github" => AuthUserImportFlowGitProvider.Github,
                 "github-custom-host" => AuthUserImportFlowGitProvider.GithubCustomHost,
                 "github-limited" => AuthUserImportFlowGitProvider.GithubLimited,

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Allows custom git sources (local folder mounted to the container) in test mode
+    /// 
     /// </summary>
     public sealed partial class GetDeploymentResponseVariant2GitSourceVariant11
     {
@@ -16,25 +16,41 @@ namespace Vercel
         public global::Vercel.GetDeploymentResponseVariant2GitSourceVariant11Type Type { get; set; }
 
         /// <summary>
+        /// Origin repository id.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RepoId { get; set; }
+
+        /// <summary>
+        /// Owner (namespace) slug.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
+        public string? Owner { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
+        public string? Repo { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Ref { get; set; }
+        public string? Ref { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Sha { get; set; }
+        public string? Sha { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitUrl")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitUrl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
+        public double? PrId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +61,36 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2GitSourceVariant11" /> class.
         /// </summary>
+        /// <param name="repoId">
+        /// Origin repository id.
+        /// </param>
+        /// <param name="type"></param>
+        /// <param name="owner">
+        /// Owner (namespace) slug.
+        /// </param>
+        /// <param name="repo"></param>
         /// <param name="ref"></param>
         /// <param name="sha"></param>
-        /// <param name="gitUrl"></param>
-        /// <param name="type"></param>
+        /// <param name="prId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2GitSourceVariant11(
-            string @ref,
-            string sha,
-            string gitUrl,
-            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant11Type type)
+            string repoId,
+            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant11Type type,
+            string? owner,
+            string? repo,
+            string? @ref,
+            string? sha,
+            double? prId)
         {
             this.Type = type;
-            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
-            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
-            this.GitUrl = gitUrl ?? throw new global::System.ArgumentNullException(nameof(gitUrl));
+            this.RepoId = repoId ?? throw new global::System.ArgumentNullException(nameof(repoId));
+            this.Owner = owner;
+            this.Repo = repo;
+            this.Ref = @ref;
+            this.Sha = sha;
+            this.PrId = prId;
         }
 
         /// <summary>
