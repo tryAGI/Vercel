@@ -942,6 +942,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("codingAgent")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CodingAgent { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isByok")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsByok { get; set; }
@@ -1655,6 +1662,7 @@ namespace Vercel
         /// <param name="keyName"></param>
         /// <param name="authMethod"></param>
         /// <param name="appName"></param>
+        /// <param name="codingAgent"></param>
         /// <param name="isByok"></param>
         /// <param name="isPrivateModel"></param>
         /// <param name="isRequestZdr"></param>
@@ -1874,6 +1882,7 @@ namespace Vercel
             string keyName,
             string authMethod,
             string appName,
+            string codingAgent,
             string isByok,
             string isPrivateModel,
             string isRequestZdr,
@@ -2090,6 +2099,7 @@ namespace Vercel
             this.KeyName = keyName ?? throw new global::System.ArgumentNullException(nameof(keyName));
             this.AuthMethod = authMethod ?? throw new global::System.ArgumentNullException(nameof(authMethod));
             this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
+            this.CodingAgent = codingAgent ?? throw new global::System.ArgumentNullException(nameof(codingAgent));
             this.IsByok = isByok ?? throw new global::System.ArgumentNullException(nameof(isByok));
             this.IsPrivateModel = isPrivateModel ?? throw new global::System.ArgumentNullException(nameof(isPrivateModel));
             this.IsRequestZdr = isRequestZdr ?? throw new global::System.ArgumentNullException(nameof(isRequestZdr));

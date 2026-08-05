@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class VercelClient
+    public partial class VcrClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_GetRootSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,35 +21,67 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetRootSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_GetRootSecurityRequirement0,
+            {                s_DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirement0,
             };
-        partial void PrepareGetRootArguments(
-            global::System.Net.Http.HttpClient httpClient);
-        partial void PrepareGetRootRequest(
+        partial void PrepareDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceArguments(
             global::System.Net.Http.HttpClient httpClient,
-            global::System.Net.Http.HttpRequestMessage httpRequestMessage);
-        partial void ProcessGetRootResponse(
+            ref string teamSlug,
+            ref string projectSlug,
+            ref string repositoryName,
+            ref string reference);
+        partial void PrepareDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceRequest(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            string teamSlug,
+            string projectSlug,
+            string repositoryName,
+            string reference);
+        partial void ProcessDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessGetRootResponseContent(
+        partial void ProcessDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// GET /v2/ Docker Registry v2 version check. Returns a 401 challenge when no credentials are provided, prompting the Docker client to send auth. With valid credentials, returns 200 so the client can proceed.
+        /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.
         /// </summary>
+        /// <param name="teamSlug">
+        /// Single Docker repository team slug component.<br/>
+        /// Example: team-slug
+        /// </param>
+        /// <param name="projectSlug">
+        /// Single Docker repository project slug component.<br/>
+        /// Example: project-slug
+        /// </param>
+        /// <param name="repositoryName">
+        /// Single Docker repository name component.<br/>
+        /// Example: nginx
+        /// </param>
+        /// <param name="reference">
+        /// Content-addressable digest (algorithm:hex).<br/>
+        /// Example: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<string> GetRootAsync(
+        public async global::System.Threading.Tasks.Task<string> DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync(
+            string teamSlug,
+            string projectSlug,
+            string repositoryName,
+            string reference,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await GetRootAsResponseAsync(
+            var __response = await DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsResponseAsync(
+                teamSlug: teamSlug,
+                projectSlug: projectSlug,
+                repositoryName: repositoryName,
+                reference: reference,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -57,25 +89,49 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// GET /v2/ Docker Registry v2 version check. Returns a 401 challenge when no credentials are provided, prompting the Docker client to send auth. With valid credentials, returns 200 so the client can proceed.
+        /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.
         /// </summary>
+        /// <param name="teamSlug">
+        /// Single Docker repository team slug component.<br/>
+        /// Example: team-slug
+        /// </param>
+        /// <param name="projectSlug">
+        /// Single Docker repository project slug component.<br/>
+        /// Example: project-slug
+        /// </param>
+        /// <param name="repositoryName">
+        /// Single Docker repository name component.<br/>
+        /// Example: nginx
+        /// </param>
+        /// <param name="reference">
+        /// Content-addressable digest (algorithm:hex).<br/>
+        /// Example: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> GetRootAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsResponseAsync(
+            string teamSlug,
+            string projectSlug,
+            string repositoryName,
+            string reference,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareGetRootArguments(
-                httpClient: HttpClient);
+            PrepareDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceArguments(
+                httpClient: HttpClient,
+                teamSlug: ref teamSlug,
+                projectSlug: ref projectSlug,
+                repositoryName: ref repositoryName,
+                reference: ref reference);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_GetRootSecurityRequirements,
-                operationName: "GetRootAsync");
+                securityRequirements: s_DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirements,
+                operationName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -95,7 +151,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: "/v2/",
+                                path: $"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -103,7 +159,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Get,
+                    method: global::System.Net.Http.HttpMethod.Delete,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -134,9 +190,13 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareGetRootRequest(
+                PrepareDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceRequest(
                     httpClient: HttpClient,
-                    httpRequestMessage: __httpRequest);
+                    httpRequestMessage: __httpRequest,
+                    teamSlug: teamSlug!,
+                    projectSlug: projectSlug!,
+                    repositoryName: repositoryName!,
+                    reference: reference!);
 
                 return __httpRequest;
             }
@@ -153,10 +213,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetRoot",
-                                methodName: "GetRootAsync",
-                                pathTemplate: "\"/v2/\"",
-                                httpMethod: "GET",
+                                operationId: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
+                                methodName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -187,10 +247,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetRoot",
-                                methodName: "GetRootAsync",
-                                pathTemplate: "\"/v2/\"",
-                                httpMethod: "GET",
+                                operationId: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
+                                methodName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -228,10 +288,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetRoot",
-                                methodName: "GetRootAsync",
-                                pathTemplate: "\"/v2/\"",
-                                httpMethod: "GET",
+                                operationId: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
+                                methodName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -268,7 +328,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessGetRootResponse(
+                ProcessDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -276,10 +336,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetRoot",
-                                methodName: "GetRootAsync",
-                                pathTemplate: "\"/v2/\"",
-                                httpMethod: "GET",
+                                operationId: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
+                                methodName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -298,10 +358,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetRoot",
-                                methodName: "GetRootAsync",
-                                pathTemplate: "\"/v2/\"",
-                                httpMethod: "GET",
+                                operationId: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
+                                methodName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -520,7 +580,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessGetRootResponseContent(
+                                ProcessDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);

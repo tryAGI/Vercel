@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class VercelClient
+    public partial class VcrClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,34 +21,34 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirement0,
+            {                s_GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidSecurityRequirement0,
             };
-        partial void PrepareDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceArguments(
+        partial void PrepareGetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string teamSlug,
             ref string projectSlug,
             ref string repositoryName,
-            ref string reference);
-        partial void PrepareDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceRequest(
+            ref string uuid);
+        partial void PrepareGetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string reference);
-        partial void ProcessDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceResponse(
+            string uuid);
+        partial void ProcessGetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceResponseContent(
+        partial void ProcessGetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.
+        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Query the status of an in-progress blob upload. Used by clients to resume a partial upload after an interruption.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -62,26 +62,26 @@ namespace Vercel
         /// Single Docker repository name component.<br/>
         /// Example: nginx
         /// </param>
-        /// <param name="reference">
-        /// Content-addressable digest (algorithm:hex).<br/>
-        /// Example: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+        /// <param name="uuid">
+        /// Blob upload session identifier.<br/>
+        /// Example: 0123456789abcdef0123456789abcdef01234567
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<string> DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync(
+        public async global::System.Threading.Tasks.Task<string> GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string reference,
+            string uuid,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsResponseAsync(
+            var __response = await GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsResponseAsync(
                 teamSlug: teamSlug,
                 projectSlug: projectSlug,
                 repositoryName: repositoryName,
-                reference: reference,
+                uuid: uuid,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -89,7 +89,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.
+        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Query the status of an in-progress blob upload. Used by clients to resume a partial upload after an interruption.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -103,35 +103,35 @@ namespace Vercel
         /// Single Docker repository name component.<br/>
         /// Example: nginx
         /// </param>
-        /// <param name="reference">
-        /// Content-addressable digest (algorithm:hex).<br/>
-        /// Example: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+        /// <param name="uuid">
+        /// Blob upload session identifier.<br/>
+        /// Example: 0123456789abcdef0123456789abcdef01234567
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsResponseAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string reference,
+            string uuid,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceArguments(
+            PrepareGetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidArguments(
                 httpClient: HttpClient,
                 teamSlug: ref teamSlug,
                 projectSlug: ref projectSlug,
                 repositoryName: ref repositoryName,
-                reference: ref reference);
+                uuid: ref uuid);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirements,
-                operationName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync");
+                securityRequirements: s_GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidSecurityRequirements,
+                operationName: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -151,7 +151,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}",
+                                path: $"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/{uuid}",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -159,7 +159,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Delete,
+                    method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -190,13 +190,13 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceRequest(
+                PrepareGetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     teamSlug: teamSlug!,
                     projectSlug: projectSlug!,
                     repositoryName: repositoryName!,
-                    reference: reference!);
+                    uuid: uuid!);
 
                 return __httpRequest;
             }
@@ -213,10 +213,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
-                                methodName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
-                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid",
+                                methodName: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/{uuid}\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -247,10 +247,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
-                                methodName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
-                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid",
+                                methodName: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/{uuid}\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -288,10 +288,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
-                                methodName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
-                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid",
+                                methodName: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/{uuid}\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -328,7 +328,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceResponse(
+                ProcessGetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -336,10 +336,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
-                                methodName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
-                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid",
+                                methodName: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/{uuid}\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -358,10 +358,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
-                                methodName: "DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
-                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid",
+                                methodName: "GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/{uuid}\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -580,7 +580,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessDeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceResponseContent(
+                                ProcessGetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);

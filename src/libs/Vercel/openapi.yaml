@@ -87307,7 +87307,13 @@
           "404": {
             "description": ""
           },
+          "409": {
+            "description": ""
+          },
           "410": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -180975,7 +180981,9 @@
         "description": "GET /v2/ Docker Registry v2 version check. Returns a 401 challenge when no credentials are provided, prompting the Docker client to send auth. With valid credentials, returns 200 so the client can proceed.",
         "operationId": "getRoot",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "200": {
             "description": "",
@@ -181014,7 +181022,9 @@
         "description": "HEAD /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Check whether a blob exists. Used by the Docker client before pushing a layer to avoid re-uploading content that already exists.",
         "operationId": "headByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "200": {
             "description": "",
@@ -181104,7 +181114,9 @@
         "description": "GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Fetch a blob by digest.",
         "operationId": "getByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "400": {
             "description": "One of the provided values in the request query is invalid."
@@ -181187,7 +181199,9 @@
         "description": "DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Blob deletion is intentionally not supported. Matches the behaviour of most public registries.",
         "operationId": "deleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigest",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "400": {
             "description": "One of the provided values in the request query is invalid."
@@ -181272,7 +181286,9 @@
         "description": "GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Query the status of an in-progress blob upload. Used by clients to resume a partial upload after an interruption.",
         "operationId": "getByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "204": {
             "description": "",
@@ -181362,7 +181378,9 @@
         "description": "DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Cancel an in-flight blob upload. Aborts the underlying S3 multipart upload (if one was started) and discards the session.",
         "operationId": "deleteByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "204": {
             "description": "",
@@ -181452,7 +181470,9 @@
         "description": "PATCH /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Upload a chunk of blob data. The request body is streamed directly to S3 as a multipart upload part while hashing incrementally. The client may call this multiple times for chunked uploads.",
         "operationId": "updateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "202": {
             "description": "",
@@ -181545,7 +181565,9 @@
         "description": "PUT /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid?digest=<digest> Complete the blob upload. This may include a final chunk of data in the request body (monolithic upload) or just finalize a previous chunked upload.",
         "operationId": "replaceByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuid",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "201": {
             "description": "",
@@ -181653,7 +181675,9 @@
         "description": "POST /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/[?mount=<digest>&from=<repo>] Initiate a blob upload. Returns a UUID in the Location header that the client uses for subsequent PATCH (chunk) and PUT (complete) requests.",
         "operationId": "createByTeamSlugByProjectSlugByRepositoryNameBlobsUploads",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "202": {
             "description": "",
@@ -181756,7 +181780,9 @@
         "description": "PUT /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Upload an image manifest. The digest is computed from the body and returned in the Docker-Content-Digest header.",
         "operationId": "replaceByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "201": {
             "description": "",
@@ -181849,7 +181875,9 @@
         "description": "HEAD /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Check whether a manifest exists. Used by Docker client during push to determine if a manifest (or config blob referenced by digest) is already present.",
         "operationId": "headByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "200": {
             "description": "",
@@ -181939,7 +181967,9 @@
         "description": "GET /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Fetch a manifest by tag or digest.",
         "operationId": "getByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "400": {
             "description": "One of the provided values in the request query is invalid."
@@ -182019,7 +182049,9 @@
         "description": "DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.",
         "operationId": "deleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "202": {
             "description": "",
@@ -182111,7 +182143,9 @@
         "description": "GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository.",
         "operationId": "getByTeamSlugByProjectSlugByRepositoryNameTagsList",
         "security": [],
-        "tags": [],
+        "tags": [
+          "vcr"
+        ],
         "responses": {
           "200": {
             "description": "",
@@ -182768,6 +182802,9 @@
                                 "type": "string"
                               },
                               "appName": {
+                                "type": "string"
+                              },
+                              "codingAgent": {
                                 "type": "string"
                               },
                               "isByok": {
@@ -183430,6 +183467,9 @@
                               "appName": {
                                 "type": "string"
                               },
+                              "codingAgent": {
+                                "type": "string"
+                              },
                               "isByok": {
                                 "type": "string"
                               },
@@ -183715,6 +183755,7 @@
                               "clientIpCountry",
                               "clientJa4Digest",
                               "clientUserAgent",
+                              "codingAgent",
                               "commitSha",
                               "consumerGroup",
                               "contentCaptureInputs",
@@ -184554,6 +184595,9 @@
                               "appName": {
                                 "type": "string"
                               },
+                              "codingAgent": {
+                                "type": "string"
+                              },
                               "isByok": {
                                 "type": "string"
                               },
@@ -185214,6 +185258,9 @@
                               "appName": {
                                 "type": "string"
                               },
+                              "codingAgent": {
+                                "type": "string"
+                              },
                               "isByok": {
                                 "type": "string"
                               },
@@ -185499,6 +185546,7 @@
                               "clientIpCountry",
                               "clientJa4Digest",
                               "clientUserAgent",
+                              "codingAgent",
                               "commitSha",
                               "consumerGroup",
                               "contentCaptureInputs",
@@ -186302,6 +186350,9 @@
                         "appName": {
                           "type": "string"
                         },
+                        "codingAgent": {
+                          "type": "string"
+                        },
                         "isByok": {
                           "type": "string"
                         },
@@ -186587,6 +186638,7 @@
                         "clientIpCountry",
                         "clientJa4Digest",
                         "clientUserAgent",
+                        "codingAgent",
                         "commitSha",
                         "consumerGroup",
                         "contentCaptureInputs",
@@ -187321,6 +187373,9 @@
                         "appName": {
                           "type": "string"
                         },
+                        "codingAgent": {
+                          "type": "string"
+                        },
                         "isByok": {
                           "type": "string"
                         },
@@ -187606,6 +187661,7 @@
                         "clientIpCountry",
                         "clientJa4Digest",
                         "clientUserAgent",
+                        "codingAgent",
                         "commitSha",
                         "consumerGroup",
                         "contentCaptureInputs",

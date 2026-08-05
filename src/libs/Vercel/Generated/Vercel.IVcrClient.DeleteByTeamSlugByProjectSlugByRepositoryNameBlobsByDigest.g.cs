@@ -2,10 +2,10 @@
 
 namespace Vercel
 {
-    public partial interface IVercelClient
+    public partial interface IVcrClient
     {
         /// <summary>
-        /// POST /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/[?mount=&lt;digest&gt;&amp;from=&lt;repo&gt;] Initiate a blob upload. Returns a UUID in the Location header that the client uses for subsequent PATCH (chunk) and PUT (complete) requests.
+        /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Blob deletion is intentionally not supported. Matches the behaviour of most public registries.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -19,25 +19,22 @@ namespace Vercel
         /// Single Docker repository name component.<br/>
         /// Example: nginx
         /// </param>
-        /// <param name="mount">
-        /// Digest of the blob to mount from another repository.
-        /// </param>
-        /// <param name="from">
-        /// Source repository to mount the blob from.
+        /// <param name="digest">
+        /// Content-addressable digest (algorithm:hex).<br/>
+        /// Example: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<string> CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsync(
+        global::System.Threading.Tasks.Task DeleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigestAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string? mount = default,
-            string? from = default,
+            string digest,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// POST /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/[?mount=&lt;digest&gt;&amp;from=&lt;repo&gt;] Initiate a blob upload. Returns a UUID in the Location header that the client uses for subsequent PATCH (chunk) and PUT (complete) requests.
+        /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Blob deletion is intentionally not supported. Matches the behaviour of most public registries.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -51,21 +48,18 @@ namespace Vercel
         /// Single Docker repository name component.<br/>
         /// Example: nginx
         /// </param>
-        /// <param name="mount">
-        /// Digest of the blob to mount from another repository.
-        /// </param>
-        /// <param name="from">
-        /// Source repository to mount the blob from.
+        /// <param name="digest">
+        /// Content-addressable digest (algorithm:hex).<br/>
+        /// Example: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse> DeleteByTeamSlugByProjectSlugByRepositoryNameBlobsByDigestAsResponseAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string? mount = default,
-            string? from = default,
+            string digest,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

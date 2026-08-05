@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class VercelClient
+    public partial class VcrClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,29 +21,36 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirement0,
+            {                s_CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsSecurityRequirement0,
             };
-        partial void PrepareGetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceArguments(
+        partial void PrepareCreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string teamSlug,
             ref string projectSlug,
             ref string repositoryName,
-            ref string reference);
-        partial void PrepareGetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceRequest(
+            ref string? mount,
+            ref string? from);
+        partial void PrepareCreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string reference);
-        partial void ProcessGetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceResponse(
+            string? mount,
+            string? from);
+        partial void ProcessCreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
+        partial void ProcessCreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsResponseContent(
+            global::System.Net.Http.HttpClient httpClient,
+            global::System.Net.Http.HttpResponseMessage httpResponseMessage,
+            ref string content);
+
         /// <summary>
-        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Fetch a manifest by tag or digest.
+        /// POST /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/[?mount=&lt;digest&gt;&amp;from=&lt;repo&gt;] Initiate a blob upload. Returns a UUID in the Location header that the client uses for subsequent PATCH (chunk) and PUT (complete) requests.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -57,32 +64,38 @@ namespace Vercel
         /// Single Docker repository name component.<br/>
         /// Example: nginx
         /// </param>
-        /// <param name="reference">
-        /// Manifest reference: a tag or digest.<br/>
-        /// Example: latest
+        /// <param name="mount">
+        /// Digest of the blob to mount from another repository.
+        /// </param>
+        /// <param name="from">
+        /// Source repository to mount the blob from.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync(
+        public async global::System.Threading.Tasks.Task<string> CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string reference,
+            string? mount = default,
+            string? from = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            await GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsResponseAsync(
+            var __response = await CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsResponseAsync(
                 teamSlug: teamSlug,
                 projectSlug: projectSlug,
                 repositoryName: repositoryName,
-                reference: reference,
+                mount: mount,
+                from: from,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
+
+            return __response.Body;
         }
         /// <summary>
-        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Fetch a manifest by tag or digest.
+        /// POST /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/[?mount=&lt;digest&gt;&amp;from=&lt;repo&gt;] Initiate a blob upload. Returns a UUID in the Location header that the client uses for subsequent PATCH (chunk) and PUT (complete) requests.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -96,35 +109,39 @@ namespace Vercel
         /// Single Docker repository name component.<br/>
         /// Example: nginx
         /// </param>
-        /// <param name="reference">
-        /// Manifest reference: a tag or digest.<br/>
-        /// Example: latest
+        /// <param name="mount">
+        /// Digest of the blob to mount from another repository.
+        /// </param>
+        /// <param name="from">
+        /// Source repository to mount the blob from.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse> GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsResponseAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string reference,
+            string? mount = default,
+            string? from = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareGetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceArguments(
+            PrepareCreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsArguments(
                 httpClient: HttpClient,
                 teamSlug: ref teamSlug,
                 projectSlug: ref projectSlug,
                 repositoryName: ref repositoryName,
-                reference: ref reference);
+                mount: ref mount,
+                from: ref from);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceSecurityRequirements,
-                operationName: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync");
+                securityRequirements: s_CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsSecurityRequirements,
+                operationName: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -144,15 +161,19 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}",
+                                path: $"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("mount", mount)
+                                .AddOptionalParameter("from", from)
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Get,
+                    method: global::System.Net.Http.HttpMethod.Post,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -183,13 +204,14 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareGetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceRequest(
+                PrepareCreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     teamSlug: teamSlug!,
                     projectSlug: projectSlug!,
                     repositoryName: repositoryName!,
-                    reference: reference!);
+                    mount: mount,
+                    from: from);
 
                 return __httpRequest;
             }
@@ -206,10 +228,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
-                                methodName: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
-                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
-                                httpMethod: "GET",
+                                operationId: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploads",
+                                methodName: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -240,10 +262,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
-                                methodName: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
-                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
-                                httpMethod: "GET",
+                                operationId: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploads",
+                                methodName: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -281,10 +303,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
-                                methodName: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
-                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
-                                httpMethod: "GET",
+                                operationId: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploads",
+                                methodName: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -321,7 +343,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessGetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceResponse(
+                ProcessCreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -329,10 +351,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
-                                methodName: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
-                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
-                                httpMethod: "GET",
+                                operationId: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploads",
+                                methodName: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -351,10 +373,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReference",
-                                methodName: "GetByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync",
-                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/manifests/{reference}\"",
-                                httpMethod: "GET",
+                                operationId: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploads",
+                                methodName: "CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsync",
+                                pathTemplate: "$\"/v2/{teamSlug}/{projectSlug}/{repositoryName}/blobs/uploads/\"",
+                                httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -573,15 +595,20 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
+                                ProcessCreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsResponseContent(
+                                    httpClient: HttpClient,
+                                    httpResponseMessage: __response,
+                                    content: ref __content);
 
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                return new global::Vercel.AutoSDKHttpResponse(
+                                    return new global::Vercel.AutoSDKHttpResponse<string>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
-                                        requestUri: __response.RequestMessage?.RequestUri);
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __content);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -601,10 +628,17 @@ namespace Vercel
                                 try
                                 {
                                     __response.EnsureSuccessStatusCode();
-                                    return new global::Vercel.AutoSDKHttpResponse(
+                                    var __content = await __response.Content.ReadAsStringAsync(
+                #if NET5_0_OR_GREATER
+                                        __effectiveCancellationToken
+                #endif
+                                    ).ConfigureAwait(false);
+
+                                    return new global::Vercel.AutoSDKHttpResponse<string>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
-                                        requestUri: __response.RequestMessage?.RequestUri);
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __content);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

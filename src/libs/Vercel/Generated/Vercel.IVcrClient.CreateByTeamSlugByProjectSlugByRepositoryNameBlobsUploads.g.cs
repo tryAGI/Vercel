@@ -2,10 +2,10 @@
 
 namespace Vercel
 {
-    public partial interface IVercelClient
+    public partial interface IVcrClient
     {
         /// <summary>
-        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Query the status of an in-progress blob upload. Used by clients to resume a partial upload after an interruption.
+        /// POST /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/[?mount=&lt;digest&gt;&amp;from=&lt;repo&gt;] Initiate a blob upload. Returns a UUID in the Location header that the client uses for subsequent PATCH (chunk) and PUT (complete) requests.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -19,22 +19,25 @@ namespace Vercel
         /// Single Docker repository name component.<br/>
         /// Example: nginx
         /// </param>
-        /// <param name="uuid">
-        /// Blob upload session identifier.<br/>
-        /// Example: 0123456789abcdef0123456789abcdef01234567
+        /// <param name="mount">
+        /// Digest of the blob to mount from another repository.
+        /// </param>
+        /// <param name="from">
+        /// Source repository to mount the blob from.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<string> GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsync(
+        global::System.Threading.Tasks.Task<string> CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string uuid,
+            string? mount = default,
+            string? from = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Query the status of an in-progress blob upload. Used by clients to resume a partial upload after an interruption.
+        /// POST /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/[?mount=&lt;digest&gt;&amp;from=&lt;repo&gt;] Initiate a blob upload. Returns a UUID in the Location header that the client uses for subsequent PATCH (chunk) and PUT (complete) requests.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -48,18 +51,21 @@ namespace Vercel
         /// Single Docker repository name component.<br/>
         /// Example: nginx
         /// </param>
-        /// <param name="uuid">
-        /// Blob upload session identifier.<br/>
-        /// Example: 0123456789abcdef0123456789abcdef01234567
+        /// <param name="mount">
+        /// Digest of the blob to mount from another repository.
+        /// </param>
+        /// <param name="from">
+        /// Source repository to mount the blob from.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> GetByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsByUuidAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> CreateByTeamSlugByProjectSlugByRepositoryNameBlobsUploadsAsResponseAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string uuid,
+            string? mount = default,
+            string? from = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

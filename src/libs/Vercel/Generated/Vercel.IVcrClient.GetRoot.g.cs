@@ -2,7 +2,7 @@
 
 namespace Vercel
 {
-    public partial interface IVercelClient
+    public partial interface IVcrClient
     {
         /// <summary>
         /// GET /v2/ Docker Registry v2 version check. Returns a 401 challenge when no credentials are provided, prompting the Docker client to send auth. With valid credentials, returns 200 so the client can proceed.
