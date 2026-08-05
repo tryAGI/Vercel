@@ -2,10 +2,10 @@
 
 namespace Vercel
 {
-    public partial interface IVercelClient
+    public partial interface IVcrClient
     {
         /// <summary>
-        /// PUT /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Upload an image manifest. The digest is computed from the body and returned in the Docker-Content-Digest header.
+        /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -20,13 +20,13 @@ namespace Vercel
         /// Example: nginx
         /// </param>
         /// <param name="reference">
-        /// Manifest reference: a tag or digest.<br/>
-        /// Example: latest
+        /// Content-addressable digest (algorithm:hex).<br/>
+        /// Example: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<string> ReplaceByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync(
+        global::System.Threading.Tasks.Task<string> DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
@@ -34,7 +34,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// PUT /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Upload an image manifest. The digest is computed from the body and returned in the Docker-Content-Digest header.
+        /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -49,13 +49,13 @@ namespace Vercel
         /// Example: nginx
         /// </param>
         /// <param name="reference">
-        /// Manifest reference: a tag or digest.<br/>
-        /// Example: latest
+        /// Content-addressable digest (algorithm:hex).<br/>
+        /// Example: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> ReplaceByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> DeleteByTeamSlugByProjectSlugByRepositoryNameManifestsByReferenceAsResponseAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,

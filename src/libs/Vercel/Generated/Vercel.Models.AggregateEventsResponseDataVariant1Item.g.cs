@@ -809,6 +809,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("codingAgent")]
+        public string? CodingAgent { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isByok")]
         public string? IsByok { get; set; }
 
@@ -1448,6 +1454,7 @@ namespace Vercel
         /// <param name="keyName"></param>
         /// <param name="authMethod"></param>
         /// <param name="appName"></param>
+        /// <param name="codingAgent"></param>
         /// <param name="isByok"></param>
         /// <param name="isPrivateModel"></param>
         /// <param name="isRequestZdr"></param>
@@ -1668,6 +1675,7 @@ namespace Vercel
             string? keyName,
             string? authMethod,
             string? appName,
+            string? codingAgent,
             string? isByok,
             string? isPrivateModel,
             string? isRequestZdr,
@@ -1884,6 +1892,7 @@ namespace Vercel
             this.KeyName = keyName;
             this.AuthMethod = authMethod;
             this.AppName = appName;
+            this.CodingAgent = codingAgent;
             this.IsByok = isByok;
             this.IsPrivateModel = isPrivateModel;
             this.IsRequestZdr = isRequestZdr;

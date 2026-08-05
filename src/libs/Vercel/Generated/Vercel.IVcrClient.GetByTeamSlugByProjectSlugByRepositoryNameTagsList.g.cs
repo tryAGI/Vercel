@@ -2,10 +2,10 @@
 
 namespace Vercel
 {
-    public partial interface IVercelClient
+    public partial interface IVcrClient
     {
         /// <summary>
-        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Fetch a blob by digest.
+        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -19,22 +19,23 @@ namespace Vercel
         /// Single Docker repository name component.<br/>
         /// Example: nginx
         /// </param>
-        /// <param name="digest">
-        /// Content-addressable digest (algorithm:hex).<br/>
-        /// Example: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+        /// <param name="n"></param>
+        /// <param name="last">
+        /// Opaque pagination cursor returned by a previous list response.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task GetByTeamSlugByProjectSlugByRepositoryNameBlobsByDigestAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse> GetByTeamSlugByProjectSlugByRepositoryNameTagsListAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string digest,
+            int? n = default,
+            string? last = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Fetch a blob by digest.
+        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -48,18 +49,19 @@ namespace Vercel
         /// Single Docker repository name component.<br/>
         /// Example: nginx
         /// </param>
-        /// <param name="digest">
-        /// Content-addressable digest (algorithm:hex).<br/>
-        /// Example: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+        /// <param name="n"></param>
+        /// <param name="last">
+        /// Opaque pagination cursor returned by a previous list response.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse> GetByTeamSlugByProjectSlugByRepositoryNameBlobsByDigestAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse>> GetByTeamSlugByProjectSlugByRepositoryNameTagsListAsResponseAsync(
             string teamSlug,
             string projectSlug,
             string repositoryName,
-            string digest,
+            int? n = default,
+            string? last = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
