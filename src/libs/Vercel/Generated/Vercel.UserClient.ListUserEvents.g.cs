@@ -34,6 +34,7 @@ namespace Vercel
             ref string? userId,
             ref string? principalId,
             ref string? projectIds,
+            ref string? entityId,
             ref string? withPayload,
             ref string? teamId,
             ref string? slug);
@@ -47,6 +48,7 @@ namespace Vercel
             string? userId,
             string? principalId,
             string? projectIds,
+            string? entityId,
             string? withPayload,
             string? teamId,
             string? slug);
@@ -91,6 +93,10 @@ namespace Vercel
         /// Comma-delimited list of project IDs to filter the results by.<br/>
         /// Example: aeIInYVk59zbFF2SxfyxxmuO
         /// </param>
+        /// <param name="entityId">
+        /// Filters events to those associated with a specific entity (matched against `payload.id`). For example, a connector ID.<br/>
+        /// Example: scl_123
+        /// </param>
         /// <param name="withPayload">
         /// When set to `true`, the response will include the `payload` field for each event.<br/>
         /// Example: true
@@ -112,6 +118,7 @@ namespace Vercel
             string? userId = default,
             string? principalId = default,
             string? projectIds = default,
+            string? entityId = default,
             string? withPayload = default,
             string? teamId = default,
             string? slug = default,
@@ -126,6 +133,7 @@ namespace Vercel
                 userId: userId,
                 principalId: principalId,
                 projectIds: projectIds,
+                entityId: entityId,
                 withPayload: withPayload,
                 teamId: teamId,
                 slug: slug,
@@ -167,6 +175,10 @@ namespace Vercel
         /// Comma-delimited list of project IDs to filter the results by.<br/>
         /// Example: aeIInYVk59zbFF2SxfyxxmuO
         /// </param>
+        /// <param name="entityId">
+        /// Filters events to those associated with a specific entity (matched against `payload.id`). For example, a connector ID.<br/>
+        /// Example: scl_123
+        /// </param>
         /// <param name="withPayload">
         /// When set to `true`, the response will include the `payload` field for each event.<br/>
         /// Example: true
@@ -188,6 +200,7 @@ namespace Vercel
             string? userId = default,
             string? principalId = default,
             string? projectIds = default,
+            string? entityId = default,
             string? withPayload = default,
             string? teamId = default,
             string? slug = default,
@@ -205,6 +218,7 @@ namespace Vercel
                 userId: ref userId,
                 principalId: ref principalId,
                 projectIds: ref projectIds,
+                entityId: ref entityId,
                 withPayload: ref withPayload,
                 teamId: ref teamId,
                 slug: ref slug);
@@ -243,6 +257,7 @@ namespace Vercel
                                 .AddOptionalParameter("userId", userId)
                                 .AddOptionalParameter("principalId", principalId)
                                 .AddOptionalParameter("projectIds", projectIds)
+                                .AddOptionalParameter("entityId", entityId)
                                 .AddOptionalParameter("withPayload", withPayload)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
@@ -294,6 +309,7 @@ namespace Vercel
                     userId: userId,
                     principalId: principalId,
                     projectIds: projectIds,
+                    entityId: entityId,
                     withPayload: withPayload,
                     teamId: teamId,
                     slug: slug);

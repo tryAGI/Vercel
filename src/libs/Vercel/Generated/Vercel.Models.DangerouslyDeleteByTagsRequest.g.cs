@@ -12,7 +12,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("revalidationDeadlineSeconds")]
-        public double? RevalidationDeadlineSeconds { get; set; }
+        public int? RevalidationDeadlineSeconds { get; set; }
 
         /// <summary>
         /// 
@@ -46,7 +46,7 @@ namespace Vercel
 #endif
         public DangerouslyDeleteByTagsRequest(
             global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, string> tags,
-            double? revalidationDeadlineSeconds,
+            int? revalidationDeadlineSeconds,
             global::Vercel.DangerouslyDeleteByTagsRequestTarget? target)
         {
             this.RevalidationDeadlineSeconds = revalidationDeadlineSeconds;

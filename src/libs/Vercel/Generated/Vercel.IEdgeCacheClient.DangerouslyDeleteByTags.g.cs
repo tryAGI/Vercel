@@ -72,7 +72,7 @@ namespace Vercel
             global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, string> tags,
             string? teamId = default,
             string? slug = default,
-            double? revalidationDeadlineSeconds = default,
+            int? revalidationDeadlineSeconds = default,
             global::Vercel.DangerouslyDeleteByTagsRequestTarget? target = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
