@@ -7851,6 +7851,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant1DeliveryVariant5Type), TypeInfoPropertyName = "CreateDrainResponseVariant1DeliveryVariant5Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant1DeliveryVariant5Target), TypeInfoPropertyName = "CreateDrainResponseVariant1DeliveryVariant5Target2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateDrainResponseVariant1SamplingItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant1SamplingItem))]
@@ -8350,7 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>), TypeInfoPropertyName = "OneOfStringIListCreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>))]
     internal sealed partial class SourceGenerationContextChunk008 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

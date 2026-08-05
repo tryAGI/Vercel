@@ -7851,6 +7851,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item), TypeInfoPropertyName = "CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget?>), TypeInfoPropertyName = "OneOfIListCreateSharedEnvVariableResponseFailedItemErrorTargetItemCreateSharedEnvVariableResponseFailedItemErrorTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem>))]
@@ -8350,7 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant1Type), TypeInfoPropertyName = "GetConfigurationResponseVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant1Source), TypeInfoPropertyName = "GetConfigurationResponseVariant1Source2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant1DisabledReason), TypeInfoPropertyName = "GetConfigurationResponseVariant1DisabledReason2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant1InstallationType), TypeInfoPropertyName = "GetConfigurationResponseVariant1InstallationType2")]
     internal sealed partial class SourceGenerationContextChunk009 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

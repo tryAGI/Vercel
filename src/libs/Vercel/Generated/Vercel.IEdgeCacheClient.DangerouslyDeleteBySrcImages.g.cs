@@ -71,7 +71,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<string> srcImages,
             string? teamId = default,
             string? slug = default,
-            double? revalidationDeadlineSeconds = default,
+            int? revalidationDeadlineSeconds = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

@@ -7851,6 +7851,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.NamedSandbox>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSandboxesResponsePagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.SandboxPublicRoute>))]
@@ -8350,7 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionOp), TypeInfoPropertyName = "GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionOp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1Action))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1ActionMitigate))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1ActionMitigateAction), TypeInfoPropertyName = "GetFirewallConfigResponseRuleVariant1ActionMitigateAction2")]
     internal sealed partial class SourceGenerationContextChunk018 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

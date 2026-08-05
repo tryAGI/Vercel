@@ -7851,6 +7851,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ManualProvisioningState), TypeInfoPropertyName = "GetDeploymentResponseVariant2ManualProvisioningState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2NodeVersion), TypeInfoPropertyName = "GetDeploymentResponseVariant2NodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2Project))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ReadySubstate), TypeInfoPropertyName = "GetDeploymentResponseVariant2ReadySubstate2")]
@@ -8350,7 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.CreateDeploymentResponseVariant2RouteVariant1MissingItemVariant1Value>), TypeInfoPropertyName = "OneOfStringCreateDeploymentResponseVariant2RouteVariant1MissingItemVariant1Value2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2RouteVariant1MissingItemVariant1Value))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2RouteVariant1MissingItemVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2RouteVariant1MissingItemVariant2Type), TypeInfoPropertyName = "CreateDeploymentResponseVariant2RouteVariant1MissingItemVariant2Type2")]
     internal sealed partial class SourceGenerationContextChunk005 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

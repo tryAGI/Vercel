@@ -7851,6 +7851,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2DeliveryVariant5Type?), TypeInfoPropertyName = "NullableCreateDrainResponseVariant2DeliveryVariant5Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2DeliveryVariant5Target?), TypeInfoPropertyName = "NullableCreateDrainResponseVariant2DeliveryVariant5Target2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2SamplingItemType?), TypeInfoPropertyName = "NullableCreateDrainResponseVariant2SamplingItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainResponseVariant2SamplingItemEnv?), TypeInfoPropertyName = "NullableCreateDrainResponseVariant2SamplingItemEnv2")]
@@ -8350,7 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiReadOnlyEnum2?), TypeInfoPropertyName = "NullableGetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiReadOnlyEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiHiddenEnum, bool?, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiHiddenEnum2?>?), TypeInfoPropertyName = "GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiHiddenEnum2_5567987aab6dec3d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiHiddenEnum2?), TypeInfoPropertyName = "NullableGetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiHiddenEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiDisabledEnum, bool?, global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiDisabledEnum2?>?), TypeInfoPropertyName = "GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4UiDisabledEnum2_3a4c72bddafad84a")]
     internal sealed partial class SourceGenerationContextChunk024 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

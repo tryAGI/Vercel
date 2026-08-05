@@ -11717,6 +11717,19 @@
                       ],
                       "description": "How the connector row was originally created. New create paths stamp this explicitly; older rows may omit it."
                     },
+                    "managed": {
+                      "properties": {
+                        "sync": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        }
+                      },
+                      "type": "object",
+                      "description": "Managed-client metadata exposed without leaking the manager client or installation identifiers."
+                    },
                     "public": {
                       "type": "boolean",
                       "enum": [
@@ -52015,7 +52028,8 @@
                 "properties": {
                   "revalidationDeadlineSeconds": {
                     "minimum": 0,
-                    "type": "number"
+                    "maximum": 31536000,
+                    "type": "integer"
                   },
                   "tags": {
                     "oneOf": [
@@ -52214,7 +52228,8 @@
                 "properties": {
                   "revalidationDeadlineSeconds": {
                     "minimum": 0,
-                    "type": "number"
+                    "maximum": 31536000,
+                    "type": "integer"
                   },
                   "srcImages": {
                     "items": {
@@ -56269,6 +56284,16 @@
             "schema": {
               "description": "Comma-delimited list of project IDs to filter the results by.",
               "example": "aeIInYVk59zbFF2SxfyxxmuO",
+              "type": "string"
+            }
+          },
+          {
+            "name": "entityId",
+            "description": "Filters events to those associated with a specific entity (matched against `payload.id`). For example, a connector ID.",
+            "in": "query",
+            "schema": {
+              "description": "Filters events to those associated with a specific entity (matched against `payload.id`). For example, a connector ID.",
+              "example": "scl_123",
               "type": "string"
             }
           },
@@ -195115,6 +195140,7 @@
                 "ai",
                 "ai-gateway",
                 "billing",
+                "connect",
                 "deployment",
                 "domain",
                 "edge",
@@ -196029,6 +196055,7 @@
                 "ai",
                 "ai-gateway",
                 "billing",
+                "connect",
                 "deployment",
                 "domain",
                 "edge",
@@ -196697,6 +196724,7 @@
                     "ai",
                     "ai-gateway",
                     "billing",
+                    "connect",
                     "deployment",
                     "domain",
                     "edge",

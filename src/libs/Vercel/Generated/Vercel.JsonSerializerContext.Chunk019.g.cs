@@ -7851,6 +7851,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1ActionMitigateAction), TypeInfoPropertyName = "GetFirewallConfigResponseRuleVariant1ActionMitigateAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1ActionMitigateRateLimit))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1ActionMitigateRateLimitAlgo), TypeInfoPropertyName = "GetFirewallConfigResponseRuleVariant1ActionMitigateRateLimitAlgo2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1ActionMitigateRateLimitAction), TypeInfoPropertyName = "GetFirewallConfigResponseRuleVariant1ActionMitigateRateLimitAction2")]
@@ -8350,7 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiDisabledEnum2), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiDisabledEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiDescription>), TypeInfoPropertyName = "OneOfStringCreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiDescription2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiDescription))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiFormattedValue))]
     internal sealed partial class SourceGenerationContextChunk019 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

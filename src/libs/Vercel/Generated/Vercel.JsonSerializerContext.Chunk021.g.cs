@@ -7851,6 +7851,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateVersionRequestAction?), TypeInfoPropertyName = "NullableUpdateVersionRequestAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestRequires?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestRequires2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestBlocks?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestBlocks2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateProjectCheckRequestSourceVariant1, global::Vercel.CreateProjectCheckRequestSourceVariant2, global::Vercel.CreateProjectCheckRequestSourceVariant3>?), TypeInfoPropertyName = "CreateProjectCheckRequestSourceVariant3_4bffb2ae56c97b5e")]
@@ -8350,7 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListProjectChecksResponseCheckSourceVariant1, global::Vercel.ListProjectChecksResponseCheckSourceVariant2, global::Vercel.ListProjectChecksResponseCheckSourceVariant3>?), TypeInfoPropertyName = "ListProjectChecksResponseCheckSourceVariant3_0677437d6b7e0acc")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckSourceVariant1Kind?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckSourceVariant1Kind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckSourceVariant2Kind?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListProjectChecksResponseCheckSourceVariant3Kind?), TypeInfoPropertyName = "NullableListProjectChecksResponseCheckSourceVariant3Kind2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

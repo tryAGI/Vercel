@@ -12,7 +12,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("revalidationDeadlineSeconds")]
-        public double? RevalidationDeadlineSeconds { get; set; }
+        public int? RevalidationDeadlineSeconds { get; set; }
 
         /// <summary>
         /// 
@@ -37,7 +37,7 @@ namespace Vercel
 #endif
         public DangerouslyDeleteBySrcImagesRequest(
             global::System.Collections.Generic.IList<string> srcImages,
-            double? revalidationDeadlineSeconds)
+            int? revalidationDeadlineSeconds)
         {
             this.RevalidationDeadlineSeconds = revalidationDeadlineSeconds;
             this.SrcImages = srcImages ?? throw new global::System.ArgumentNullException(nameof(srcImages));

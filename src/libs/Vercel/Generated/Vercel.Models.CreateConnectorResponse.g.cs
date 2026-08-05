@@ -70,6 +70,12 @@ namespace Vercel
         public global::Vercel.CreateConnectorResponseCreationMode? CreationMode { get; set; }
 
         /// <summary>
+        /// Managed-client metadata exposed without leaking the manager client or installation identifiers.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("managed")]
+        public global::Vercel.CreateConnectorResponseManaged? Managed { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("public")]
@@ -313,6 +319,9 @@ namespace Vercel
         /// <param name="creationMode">
         /// How the connector row was originally created. New create paths stamp this explicitly; older rows may omit it.
         /// </param>
+        /// <param name="managed">
+        /// Managed-client metadata exposed without leaking the manager client or installation identifiers.
+        /// </param>
         /// <param name="connectionMethod">
         /// The connection method this connector was created from, when the create request named one.
         /// </param>
@@ -380,6 +389,7 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.CreateConnectorResponseCreatedByVariant1, global::Vercel.CreateConnectorResponseCreatedByVariant2>? createdBy,
             global::Vercel.OneOf<global::Vercel.CreateConnectorResponseUpdatedByVariant1, global::Vercel.CreateConnectorResponseUpdatedByVariant2>? updatedBy,
             global::Vercel.CreateConnectorResponseCreationMode? creationMode,
+            global::Vercel.CreateConnectorResponseManaged? managed,
             string? connectionMethod,
             string? target,
             string? clientUrl,
@@ -410,6 +420,7 @@ namespace Vercel
             this.CreatedBy = createdBy;
             this.UpdatedBy = updatedBy;
             this.CreationMode = creationMode;
+            this.Managed = managed;
             this.Public = @public;
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Type = type;

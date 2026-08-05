@@ -28,6 +28,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Connect,
+        /// <summary>
+        /// 
+        /// </summary>
         Deployment,
         /// <summary>
         /// 
@@ -115,6 +119,7 @@ namespace Vercel
                 ListEventTypeCategorie.Ai => "ai",
                 ListEventTypeCategorie.AiGateway => "ai-gateway",
                 ListEventTypeCategorie.Billing => "billing",
+                ListEventTypeCategorie.Connect => "connect",
                 ListEventTypeCategorie.Deployment => "deployment",
                 ListEventTypeCategorie.Domain => "domain",
                 ListEventTypeCategorie.Edge => "edge",
@@ -147,6 +152,7 @@ namespace Vercel
                 "ai" => ListEventTypeCategorie.Ai,
                 "ai-gateway" => ListEventTypeCategorie.AiGateway,
                 "billing" => ListEventTypeCategorie.Billing,
+                "connect" => ListEventTypeCategorie.Connect,
                 "deployment" => ListEventTypeCategorie.Deployment,
                 "domain" => ListEventTypeCategorie.Domain,
                 "edge" => ListEventTypeCategorie.Edge,

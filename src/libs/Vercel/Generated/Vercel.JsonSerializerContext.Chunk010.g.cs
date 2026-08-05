@@ -7851,6 +7851,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant1InstallationType), TypeInfoPropertyName = "GetConfigurationResponseVariant1InstallationType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant2Status), TypeInfoPropertyName = "GetConfigurationResponseVariant2Status2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant2Source), TypeInfoPropertyName = "GetConfigurationResponseVariant2Source2")]
@@ -8350,7 +8351,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectPassportDeploymentType), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectPassportDeploymentType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectProtectionConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectProtectionConfigSandboxUrls))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSandbox))]
     internal sealed partial class SourceGenerationContextChunk010 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
