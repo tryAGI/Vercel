@@ -159,6 +159,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayTranscriptsDefaultDisabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsDefaultEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsDisabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsRetentionUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayVirtualModelConfigArchived,
         /// <summary>
         /// 
@@ -1871,6 +1891,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SsoLogin,
+        /// <summary>
+        /// 
+        /// </summary>
         StorageAcceptTos,
         /// <summary>
         /// 
@@ -2431,6 +2455,11 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayRuleDeleted => "ai-gateway-rule-deleted",
                 ListEventTypeReplacedByItem.AiGatewayRuleUpdated => "ai-gateway-rule-updated",
                 ListEventTypeReplacedByItem.AiGatewayScopeBudgetUpdated => "ai-gateway-scope-budget-updated",
+                ListEventTypeReplacedByItem.AiGatewayTranscriptsDefaultDisabled => "ai-gateway-transcripts-default-disabled",
+                ListEventTypeReplacedByItem.AiGatewayTranscriptsDefaultEnabled => "ai-gateway-transcripts-default-enabled",
+                ListEventTypeReplacedByItem.AiGatewayTranscriptsDisabled => "ai-gateway-transcripts-disabled",
+                ListEventTypeReplacedByItem.AiGatewayTranscriptsEnabled => "ai-gateway-transcripts-enabled",
+                ListEventTypeReplacedByItem.AiGatewayTranscriptsRetentionUpdated => "ai-gateway-transcripts-retention-updated",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
@@ -2859,6 +2888,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.SpendCreated => "spend-created",
                 ListEventTypeReplacedByItem.SpendDeleted => "spend-deleted",
                 ListEventTypeReplacedByItem.SpendUpdated => "spend-updated",
+                ListEventTypeReplacedByItem.SsoLogin => "sso-login",
                 ListEventTypeReplacedByItem.StorageAcceptTos => "storage-accept-tos",
                 ListEventTypeReplacedByItem.StorageAccessTokenSet => "storage-access-token-set",
                 ListEventTypeReplacedByItem.StorageAccessedDataBrowser => "storage-accessed-data-browser",
@@ -3034,6 +3064,11 @@ namespace Vercel
                 "ai-gateway-rule-deleted" => ListEventTypeReplacedByItem.AiGatewayRuleDeleted,
                 "ai-gateway-rule-updated" => ListEventTypeReplacedByItem.AiGatewayRuleUpdated,
                 "ai-gateway-scope-budget-updated" => ListEventTypeReplacedByItem.AiGatewayScopeBudgetUpdated,
+                "ai-gateway-transcripts-default-disabled" => ListEventTypeReplacedByItem.AiGatewayTranscriptsDefaultDisabled,
+                "ai-gateway-transcripts-default-enabled" => ListEventTypeReplacedByItem.AiGatewayTranscriptsDefaultEnabled,
+                "ai-gateway-transcripts-disabled" => ListEventTypeReplacedByItem.AiGatewayTranscriptsDisabled,
+                "ai-gateway-transcripts-enabled" => ListEventTypeReplacedByItem.AiGatewayTranscriptsEnabled,
+                "ai-gateway-transcripts-retention-updated" => ListEventTypeReplacedByItem.AiGatewayTranscriptsRetentionUpdated,
                 "ai-gateway-virtual-model-config-archived" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigArchived,
                 "ai-gateway-virtual-model-config-created" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigCreated,
                 "ai-gateway-virtual-model-config-restored" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigRestored,
@@ -3462,6 +3497,7 @@ namespace Vercel
                 "spend-created" => ListEventTypeReplacedByItem.SpendCreated,
                 "spend-deleted" => ListEventTypeReplacedByItem.SpendDeleted,
                 "spend-updated" => ListEventTypeReplacedByItem.SpendUpdated,
+                "sso-login" => ListEventTypeReplacedByItem.SsoLogin,
                 "storage-accept-tos" => ListEventTypeReplacedByItem.StorageAcceptTos,
                 "storage-access-token-set" => ListEventTypeReplacedByItem.StorageAccessTokenSet,
                 "storage-accessed-data-browser" => ListEventTypeReplacedByItem.StorageAccessedDataBrowser,

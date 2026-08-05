@@ -160,6 +160,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayTranscriptsDefaultDisabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsDefaultEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsDisabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsRetentionUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayVirtualModelConfigArchived,
         /// <summary>
         /// 
@@ -1872,6 +1892,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SsoLogin,
+        /// <summary>
+        /// 
+        /// </summary>
         StorageAcceptTos,
         /// <summary>
         /// 
@@ -2432,6 +2456,11 @@ namespace Vercel
                 UserEventType.AiGatewayRuleDeleted => "ai-gateway-rule-deleted",
                 UserEventType.AiGatewayRuleUpdated => "ai-gateway-rule-updated",
                 UserEventType.AiGatewayScopeBudgetUpdated => "ai-gateway-scope-budget-updated",
+                UserEventType.AiGatewayTranscriptsDefaultDisabled => "ai-gateway-transcripts-default-disabled",
+                UserEventType.AiGatewayTranscriptsDefaultEnabled => "ai-gateway-transcripts-default-enabled",
+                UserEventType.AiGatewayTranscriptsDisabled => "ai-gateway-transcripts-disabled",
+                UserEventType.AiGatewayTranscriptsEnabled => "ai-gateway-transcripts-enabled",
+                UserEventType.AiGatewayTranscriptsRetentionUpdated => "ai-gateway-transcripts-retention-updated",
                 UserEventType.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
                 UserEventType.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
                 UserEventType.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
@@ -2860,6 +2889,7 @@ namespace Vercel
                 UserEventType.SpendCreated => "spend-created",
                 UserEventType.SpendDeleted => "spend-deleted",
                 UserEventType.SpendUpdated => "spend-updated",
+                UserEventType.SsoLogin => "sso-login",
                 UserEventType.StorageAcceptTos => "storage-accept-tos",
                 UserEventType.StorageAccessTokenSet => "storage-access-token-set",
                 UserEventType.StorageAccessedDataBrowser => "storage-accessed-data-browser",
@@ -3035,6 +3065,11 @@ namespace Vercel
                 "ai-gateway-rule-deleted" => UserEventType.AiGatewayRuleDeleted,
                 "ai-gateway-rule-updated" => UserEventType.AiGatewayRuleUpdated,
                 "ai-gateway-scope-budget-updated" => UserEventType.AiGatewayScopeBudgetUpdated,
+                "ai-gateway-transcripts-default-disabled" => UserEventType.AiGatewayTranscriptsDefaultDisabled,
+                "ai-gateway-transcripts-default-enabled" => UserEventType.AiGatewayTranscriptsDefaultEnabled,
+                "ai-gateway-transcripts-disabled" => UserEventType.AiGatewayTranscriptsDisabled,
+                "ai-gateway-transcripts-enabled" => UserEventType.AiGatewayTranscriptsEnabled,
+                "ai-gateway-transcripts-retention-updated" => UserEventType.AiGatewayTranscriptsRetentionUpdated,
                 "ai-gateway-virtual-model-config-archived" => UserEventType.AiGatewayVirtualModelConfigArchived,
                 "ai-gateway-virtual-model-config-created" => UserEventType.AiGatewayVirtualModelConfigCreated,
                 "ai-gateway-virtual-model-config-restored" => UserEventType.AiGatewayVirtualModelConfigRestored,
@@ -3463,6 +3498,7 @@ namespace Vercel
                 "spend-created" => UserEventType.SpendCreated,
                 "spend-deleted" => UserEventType.SpendDeleted,
                 "spend-updated" => UserEventType.SpendUpdated,
+                "sso-login" => UserEventType.SsoLogin,
                 "storage-accept-tos" => UserEventType.StorageAcceptTos,
                 "storage-access-token-set" => UserEventType.StorageAccessTokenSet,
                 "storage-accessed-data-browser" => UserEventType.StorageAccessedDataBrowser,

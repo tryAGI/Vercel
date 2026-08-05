@@ -160,6 +160,26 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayTranscriptsDefaultDisabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsDefaultEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsDisabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayTranscriptsRetentionUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayVirtualModelConfigArchived,
         /// <summary>
         /// 
@@ -1872,6 +1892,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SsoLogin,
+        /// <summary>
+        /// 
+        /// </summary>
         StorageAcceptTos,
         /// <summary>
         /// 
@@ -2432,6 +2456,11 @@ namespace Vercel
                 ListEventTypeName.AiGatewayRuleDeleted => "ai-gateway-rule-deleted",
                 ListEventTypeName.AiGatewayRuleUpdated => "ai-gateway-rule-updated",
                 ListEventTypeName.AiGatewayScopeBudgetUpdated => "ai-gateway-scope-budget-updated",
+                ListEventTypeName.AiGatewayTranscriptsDefaultDisabled => "ai-gateway-transcripts-default-disabled",
+                ListEventTypeName.AiGatewayTranscriptsDefaultEnabled => "ai-gateway-transcripts-default-enabled",
+                ListEventTypeName.AiGatewayTranscriptsDisabled => "ai-gateway-transcripts-disabled",
+                ListEventTypeName.AiGatewayTranscriptsEnabled => "ai-gateway-transcripts-enabled",
+                ListEventTypeName.AiGatewayTranscriptsRetentionUpdated => "ai-gateway-transcripts-retention-updated",
                 ListEventTypeName.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
                 ListEventTypeName.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
                 ListEventTypeName.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
@@ -2860,6 +2889,7 @@ namespace Vercel
                 ListEventTypeName.SpendCreated => "spend-created",
                 ListEventTypeName.SpendDeleted => "spend-deleted",
                 ListEventTypeName.SpendUpdated => "spend-updated",
+                ListEventTypeName.SsoLogin => "sso-login",
                 ListEventTypeName.StorageAcceptTos => "storage-accept-tos",
                 ListEventTypeName.StorageAccessTokenSet => "storage-access-token-set",
                 ListEventTypeName.StorageAccessedDataBrowser => "storage-accessed-data-browser",
@@ -3035,6 +3065,11 @@ namespace Vercel
                 "ai-gateway-rule-deleted" => ListEventTypeName.AiGatewayRuleDeleted,
                 "ai-gateway-rule-updated" => ListEventTypeName.AiGatewayRuleUpdated,
                 "ai-gateway-scope-budget-updated" => ListEventTypeName.AiGatewayScopeBudgetUpdated,
+                "ai-gateway-transcripts-default-disabled" => ListEventTypeName.AiGatewayTranscriptsDefaultDisabled,
+                "ai-gateway-transcripts-default-enabled" => ListEventTypeName.AiGatewayTranscriptsDefaultEnabled,
+                "ai-gateway-transcripts-disabled" => ListEventTypeName.AiGatewayTranscriptsDisabled,
+                "ai-gateway-transcripts-enabled" => ListEventTypeName.AiGatewayTranscriptsEnabled,
+                "ai-gateway-transcripts-retention-updated" => ListEventTypeName.AiGatewayTranscriptsRetentionUpdated,
                 "ai-gateway-virtual-model-config-archived" => ListEventTypeName.AiGatewayVirtualModelConfigArchived,
                 "ai-gateway-virtual-model-config-created" => ListEventTypeName.AiGatewayVirtualModelConfigCreated,
                 "ai-gateway-virtual-model-config-restored" => ListEventTypeName.AiGatewayVirtualModelConfigRestored,
@@ -3463,6 +3498,7 @@ namespace Vercel
                 "spend-created" => ListEventTypeName.SpendCreated,
                 "spend-deleted" => ListEventTypeName.SpendDeleted,
                 "spend-updated" => ListEventTypeName.SpendUpdated,
+                "sso-login" => ListEventTypeName.SsoLogin,
                 "storage-accept-tos" => ListEventTypeName.StorageAcceptTos,
                 "storage-access-token-set" => ListEventTypeName.StorageAccessTokenSet,
                 "storage-accessed-data-browser" => ListEventTypeName.StorageAccessedDataBrowser,
