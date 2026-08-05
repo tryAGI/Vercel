@@ -78378,6 +78378,12 @@
                                 },
                                 "type": "array"
                               },
+                              "aiGatewayApiKeySpendAttribution": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "aiGatewayApiKeyZdrExemption": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -101192,6 +101198,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "aiGatewayApiKeySpendAttribution": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "aiGatewayApiKeyZdrExemption": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -108874,6 +108886,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeySpendAttribution": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -116728,6 +116746,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayApiKeySpendAttribution": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aiGatewayApiKeyZdrExemption": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -123931,6 +123955,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeySpendAttribution": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -132403,6 +132433,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeySpendAttribution": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -148801,6 +148837,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKeyOwnedBySelf": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeySpendAttribution": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -195094,6 +195136,7 @@
               "subscription-product-added",
               "subscription-product-removed",
               "subscription-updated",
+              "support-session-created",
               "team",
               "team-agent-billing-migration-decision-changed",
               "team-avatar-update",
@@ -195144,11 +195187,15 @@
               "tracing-configured",
               "tracing-disabled",
               "unlink-login-connection",
+              "update-account-flow-dismissed",
               "update-account-flow-triggered",
+              "user-blocked",
               "user-delete",
               "user-emu-account-archived",
               "user-emu-account-deleted",
               "user-emu-account-recovered",
+              "user-emu-recovery-initiated",
+              "user-emu-toggled",
               "user-mfa-challenge-failed",
               "user-mfa-challenge-verified",
               "user-mfa-change-failed",
@@ -195159,10 +195206,14 @@
               "user-mfa-setup-skipped",
               "user-mfa-totp-verification-started",
               "user-mfa-totp-verified",
+              "user-phone-removed",
+              "user-phone-updated",
               "user-primary-email-updated",
+              "user-sudo-mode-removed",
               "user-token-created",
               "user-token-deleted",
               "user-tokens-deleted",
+              "user-unblocked",
               "username",
               "v0-chat-ai-usage",
               "v0-chat-created",
@@ -196011,6 +196062,7 @@
               "subscription-product-added",
               "subscription-product-removed",
               "subscription-updated",
+              "support-session-created",
               "team",
               "team-agent-billing-migration-decision-changed",
               "team-avatar-update",
@@ -196061,11 +196113,15 @@
               "tracing-configured",
               "tracing-disabled",
               "unlink-login-connection",
+              "update-account-flow-dismissed",
               "update-account-flow-triggered",
+              "user-blocked",
               "user-delete",
               "user-emu-account-archived",
               "user-emu-account-deleted",
               "user-emu-account-recovered",
+              "user-emu-recovery-initiated",
+              "user-emu-toggled",
               "user-mfa-challenge-failed",
               "user-mfa-challenge-verified",
               "user-mfa-change-failed",
@@ -196076,10 +196132,14 @@
               "user-mfa-setup-skipped",
               "user-mfa-totp-verification-started",
               "user-mfa-totp-verified",
+              "user-phone-removed",
+              "user-phone-updated",
               "user-primary-email-updated",
+              "user-sudo-mode-removed",
               "user-token-created",
               "user-token-deleted",
               "user-tokens-deleted",
+              "user-unblocked",
               "username",
               "v0-chat-ai-usage",
               "v0-chat-created",
@@ -196669,6 +196729,7 @@
                 "subscription-product-added",
                 "subscription-product-removed",
                 "subscription-updated",
+                "support-session-created",
                 "team",
                 "team-agent-billing-migration-decision-changed",
                 "team-avatar-update",
@@ -196719,11 +196780,15 @@
                 "tracing-configured",
                 "tracing-disabled",
                 "unlink-login-connection",
+                "update-account-flow-dismissed",
                 "update-account-flow-triggered",
+                "user-blocked",
                 "user-delete",
                 "user-emu-account-archived",
                 "user-emu-account-deleted",
                 "user-emu-account-recovered",
+                "user-emu-recovery-initiated",
+                "user-emu-toggled",
                 "user-mfa-challenge-failed",
                 "user-mfa-challenge-verified",
                 "user-mfa-change-failed",
@@ -196734,10 +196799,14 @@
                 "user-mfa-setup-skipped",
                 "user-mfa-totp-verification-started",
                 "user-mfa-totp-verified",
+                "user-phone-removed",
+                "user-phone-updated",
                 "user-primary-email-updated",
+                "user-sudo-mode-removed",
                 "user-token-created",
                 "user-token-deleted",
                 "user-tokens-deleted",
+                "user-unblocked",
                 "username",
                 "v0-chat-ai-usage",
                 "v0-chat-created",
@@ -198327,7 +198396,7 @@
             "$ref": "#/components/schemas/APIKeyQuota"
           },
           "metadata": {
-            "description": "Generic metadata attached to the API key.\n\nThe accepted shape depends on the key's `purpose` and is validated when the key is created. For `ai-gateway` keys this carries `environment`.",
+            "description": "Generic metadata attached to the API key.\n\nThe accepted shape depends on the key's `purpose` and is validated when the key is created. For `ai-gateway` keys this carries `environment` and `spendAttribution`.",
             "type": "object",
             "patternProperties": {
               "^(.*)$": {}
