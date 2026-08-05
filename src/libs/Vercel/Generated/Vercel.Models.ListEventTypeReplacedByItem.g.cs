@@ -1763,6 +1763,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SamlConnectionCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        SamlConnectionDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         SandboxAliasAssigned,
         /// <summary>
         /// 
@@ -2211,6 +2219,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserAutoBlockConfigured,
+        /// <summary>
+        /// 
+        /// </summary>
         UserBlocked,
         /// <summary>
         /// 
@@ -2228,6 +2240,10 @@ namespace Vercel
         /// 
         /// </summary>
         UserEmuAccountRecovered,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserEmuRecoveryEmailSent,
         /// <summary>
         /// 
         /// </summary>
@@ -2892,6 +2908,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProtectedGitScopeAdded => "protected-git-scope-added",
                 ListEventTypeReplacedByItem.ProtectedGitScopeRemoved => "protected-git-scope-removed",
                 ListEventTypeReplacedByItem.RuntimeCachePurgeAll => "runtime-cache-purge-all",
+                ListEventTypeReplacedByItem.SamlConnectionCreated => "saml-connection-created",
+                ListEventTypeReplacedByItem.SamlConnectionDeleted => "saml-connection-deleted",
                 ListEventTypeReplacedByItem.SandboxAliasAssigned => "sandbox-alias-assigned",
                 ListEventTypeReplacedByItem.SandboxAliasDelete => "sandbox-alias-delete",
                 ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated => "sandbox-snapshot-regions-updated",
@@ -3004,11 +3022,13 @@ namespace Vercel
                 ListEventTypeReplacedByItem.UnlinkLoginConnection => "unlink-login-connection",
                 ListEventTypeReplacedByItem.UpdateAccountFlowDismissed => "update-account-flow-dismissed",
                 ListEventTypeReplacedByItem.UpdateAccountFlowTriggered => "update-account-flow-triggered",
+                ListEventTypeReplacedByItem.UserAutoBlockConfigured => "user-auto-block-configured",
                 ListEventTypeReplacedByItem.UserBlocked => "user-blocked",
                 ListEventTypeReplacedByItem.UserDelete => "user-delete",
                 ListEventTypeReplacedByItem.UserEmuAccountArchived => "user-emu-account-archived",
                 ListEventTypeReplacedByItem.UserEmuAccountDeleted => "user-emu-account-deleted",
                 ListEventTypeReplacedByItem.UserEmuAccountRecovered => "user-emu-account-recovered",
+                ListEventTypeReplacedByItem.UserEmuRecoveryEmailSent => "user-emu-recovery-email-sent",
                 ListEventTypeReplacedByItem.UserEmuRecoveryInitiated => "user-emu-recovery-initiated",
                 ListEventTypeReplacedByItem.UserEmuToggled => "user-emu-toggled",
                 ListEventTypeReplacedByItem.UserMfaChallengeFailed => "user-mfa-challenge-failed",
@@ -3510,6 +3530,8 @@ namespace Vercel
                 "protected-git-scope-added" => ListEventTypeReplacedByItem.ProtectedGitScopeAdded,
                 "protected-git-scope-removed" => ListEventTypeReplacedByItem.ProtectedGitScopeRemoved,
                 "runtime-cache-purge-all" => ListEventTypeReplacedByItem.RuntimeCachePurgeAll,
+                "saml-connection-created" => ListEventTypeReplacedByItem.SamlConnectionCreated,
+                "saml-connection-deleted" => ListEventTypeReplacedByItem.SamlConnectionDeleted,
                 "sandbox-alias-assigned" => ListEventTypeReplacedByItem.SandboxAliasAssigned,
                 "sandbox-alias-delete" => ListEventTypeReplacedByItem.SandboxAliasDelete,
                 "sandbox-snapshot-regions-updated" => ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated,
@@ -3622,11 +3644,13 @@ namespace Vercel
                 "unlink-login-connection" => ListEventTypeReplacedByItem.UnlinkLoginConnection,
                 "update-account-flow-dismissed" => ListEventTypeReplacedByItem.UpdateAccountFlowDismissed,
                 "update-account-flow-triggered" => ListEventTypeReplacedByItem.UpdateAccountFlowTriggered,
+                "user-auto-block-configured" => ListEventTypeReplacedByItem.UserAutoBlockConfigured,
                 "user-blocked" => ListEventTypeReplacedByItem.UserBlocked,
                 "user-delete" => ListEventTypeReplacedByItem.UserDelete,
                 "user-emu-account-archived" => ListEventTypeReplacedByItem.UserEmuAccountArchived,
                 "user-emu-account-deleted" => ListEventTypeReplacedByItem.UserEmuAccountDeleted,
                 "user-emu-account-recovered" => ListEventTypeReplacedByItem.UserEmuAccountRecovered,
+                "user-emu-recovery-email-sent" => ListEventTypeReplacedByItem.UserEmuRecoveryEmailSent,
                 "user-emu-recovery-initiated" => ListEventTypeReplacedByItem.UserEmuRecoveryInitiated,
                 "user-emu-toggled" => ListEventTypeReplacedByItem.UserEmuToggled,
                 "user-mfa-challenge-failed" => ListEventTypeReplacedByItem.UserMfaChallengeFailed,
