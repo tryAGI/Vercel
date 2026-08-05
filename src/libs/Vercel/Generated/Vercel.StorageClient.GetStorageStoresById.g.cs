@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class VercelClient
+    public partial class StorageClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_DeleteStorageStoresBlobByIdSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_GetStorageStoresByIdSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,22 +21,26 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_DeleteStorageStoresBlobByIdSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetStorageStoresByIdSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_DeleteStorageStoresBlobByIdSecurityRequirement0,
+            {                s_GetStorageStoresByIdSecurityRequirement0,
             };
-        partial void PrepareDeleteStorageStoresBlobByIdArguments(
+        partial void PrepareGetStorageStoresByIdArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string id);
-        partial void PrepareDeleteStorageStoresBlobByIdRequest(
+            ref string id,
+            ref bool? x_skipMetadata_,
+            ref bool? x_includeGuides_);
+        partial void PrepareGetStorageStoresByIdRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string id);
-        partial void ProcessDeleteStorageStoresBlobByIdResponse(
+            string id,
+            bool? x_skipMetadata_,
+            bool? x_includeGuides_);
+        partial void ProcessGetStorageStoresByIdResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessDeleteStorageStoresBlobByIdResponseContent(
+        partial void ProcessGetStorageStoresByIdResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
@@ -45,16 +49,22 @@ namespace Vercel
         /// 
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="x_skipMetadata_"></param>
+        /// <param name="x_includeGuides_"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.DeleteStorageStoresBlobByIdResponse> DeleteStorageStoresBlobByIdAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.GetStorageStoresByIdResponse> GetStorageStoresByIdAsync(
             string id,
+            bool? x_skipMetadata_ = default,
+            bool? x_includeGuides_ = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await DeleteStorageStoresBlobByIdAsResponseAsync(
+            var __response = await GetStorageStoresByIdAsResponseAsync(
                 id: id,
+                x_skipMetadata_: x_skipMetadata_,
+                x_includeGuides_: x_includeGuides_,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -65,25 +75,31 @@ namespace Vercel
         /// 
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="x_skipMetadata_"></param>
+        /// <param name="x_includeGuides_"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteStorageStoresBlobByIdResponse>> DeleteStorageStoresBlobByIdAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetStorageStoresByIdResponse>> GetStorageStoresByIdAsResponseAsync(
             string id,
+            bool? x_skipMetadata_ = default,
+            bool? x_includeGuides_ = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareDeleteStorageStoresBlobByIdArguments(
+            PrepareGetStorageStoresByIdArguments(
                 httpClient: HttpClient,
-                id: ref id);
+                id: ref id,
+                x_skipMetadata_: ref x_skipMetadata_,
+                x_includeGuides_: ref x_includeGuides_);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_DeleteStorageStoresBlobByIdSecurityRequirements,
-                operationName: "DeleteStorageStoresBlobByIdAsync");
+                securityRequirements: s_GetStorageStoresByIdSecurityRequirements,
+                operationName: "GetStorageStoresByIdAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -103,15 +119,19 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/storage/stores/blob/{id}",
+                                path: $"/storage/stores/{id}",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("'skip-metadata'", x_skipMetadata_?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("'include-guides'", x_includeGuides_?.ToString().ToLowerInvariant())
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Delete,
+                    method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -142,10 +162,12 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareDeleteStorageStoresBlobByIdRequest(
+                PrepareGetStorageStoresByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id!);
+                    id: id!,
+                    x_skipMetadata_: x_skipMetadata_,
+                    x_includeGuides_: x_includeGuides_);
 
                 return __httpRequest;
             }
@@ -162,10 +184,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteStorageStoresBlobById",
-                                methodName: "DeleteStorageStoresBlobByIdAsync",
-                                pathTemplate: "$\"/storage/stores/blob/{id}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetStorageStoresById",
+                                methodName: "GetStorageStoresByIdAsync",
+                                pathTemplate: "$\"/storage/stores/{id}\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -196,10 +218,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteStorageStoresBlobById",
-                                methodName: "DeleteStorageStoresBlobByIdAsync",
-                                pathTemplate: "$\"/storage/stores/blob/{id}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetStorageStoresById",
+                                methodName: "GetStorageStoresByIdAsync",
+                                pathTemplate: "$\"/storage/stores/{id}\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -237,10 +259,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteStorageStoresBlobById",
-                                methodName: "DeleteStorageStoresBlobByIdAsync",
-                                pathTemplate: "$\"/storage/stores/blob/{id}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetStorageStoresById",
+                                methodName: "GetStorageStoresByIdAsync",
+                                pathTemplate: "$\"/storage/stores/{id}\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -277,7 +299,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessDeleteStorageStoresBlobByIdResponse(
+                ProcessGetStorageStoresByIdResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -285,10 +307,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteStorageStoresBlobById",
-                                methodName: "DeleteStorageStoresBlobByIdAsync",
-                                pathTemplate: "$\"/storage/stores/blob/{id}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetStorageStoresById",
+                                methodName: "GetStorageStoresByIdAsync",
+                                pathTemplate: "$\"/storage/stores/{id}\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -307,10 +329,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "DeleteStorageStoresBlobById",
-                                methodName: "DeleteStorageStoresBlobByIdAsync",
-                                pathTemplate: "$\"/storage/stores/blob/{id}\"",
-                                httpMethod: "DELETE",
+                                operationId: "GetStorageStoresById",
+                                methodName: "GetStorageStoresByIdAsync",
+                                pathTemplate: "$\"/storage/stores/{id}\"",
+                                httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -453,38 +475,6 @@ namespace Vercel
                                         h => h.Value));
                             }
                             // 
-                            if ((int)__response.StatusCode == 409)
-                            {
-                                string? __content_409 = null;
-                                global::System.Exception? __exception_409 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_409 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_409 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_409,
-                                    responseBody: __content_409,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            // 
                             if ((int)__response.StatusCode == 410)
                             {
                                 string? __content_410 = null;
@@ -529,7 +519,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessDeleteStorageStoresBlobByIdResponseContent(
+                                ProcessGetStorageStoresByIdResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -538,9 +528,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.DeleteStorageStoresBlobByIdResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.GetStorageStoresByIdResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteStorageStoresBlobByIdResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetStorageStoresByIdResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -570,9 +560,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.DeleteStorageStoresBlobByIdResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.GetStorageStoresByIdResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteStorageStoresBlobByIdResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetStorageStoresByIdResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
