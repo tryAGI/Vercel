@@ -2,7 +2,7 @@
 
 namespace Vercel
 {
-    public partial interface IVercelClient
+    public partial interface IStorageClient
     {
         /// <summary>
         /// 

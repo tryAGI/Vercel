@@ -170758,7 +170758,9 @@
         "description": "",
         "operationId": "getStorageStoresById",
         "security": [],
-        "tags": [],
+        "tags": [
+          "storage"
+        ],
         "responses": {
           "200": {
             "description": "",
@@ -171078,7 +171080,9 @@
         "description": "",
         "operationId": "createStorageStoresBlob",
         "security": [],
-        "tags": [],
+        "tags": [
+          "storage"
+        ],
         "responses": {
           "200": {
             "description": "",
@@ -171499,7 +171503,9 @@
         "description": "",
         "operationId": "deleteStorageStoresBlobById",
         "security": [],
-        "tags": [],
+        "tags": [
+          "storage"
+        ],
         "responses": {
           "200": {
             "description": "",
