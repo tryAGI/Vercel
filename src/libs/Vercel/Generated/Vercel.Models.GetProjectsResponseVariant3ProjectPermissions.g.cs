@@ -77,6 +77,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKeySpendAttribution")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKeySpendAttribution { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKeyZdrExemption")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKeyZdrExemption { get; set; }
 
@@ -1636,6 +1642,7 @@ namespace Vercel
         /// <param name="agent"></param>
         /// <param name="aiGatewayApiKey"></param>
         /// <param name="aiGatewayApiKeyOwnedBySelf"></param>
+        /// <param name="aiGatewayApiKeySpendAttribution"></param>
         /// <param name="aiGatewayApiKeyZdrExemption"></param>
         /// <param name="aiGatewayBudget"></param>
         /// <param name="aiGatewayCredits"></param>
@@ -1908,6 +1915,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? agent,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKey,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKeyOwnedBySelf,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKeySpendAttribution,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKeyZdrExemption,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayBudget,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayCredits,
@@ -2177,6 +2185,7 @@ namespace Vercel
             this.Agent = agent;
             this.AiGatewayApiKey = aiGatewayApiKey;
             this.AiGatewayApiKeyOwnedBySelf = aiGatewayApiKeyOwnedBySelf;
+            this.AiGatewayApiKeySpendAttribution = aiGatewayApiKeySpendAttribution;
             this.AiGatewayApiKeyZdrExemption = aiGatewayApiKeyZdrExemption;
             this.AiGatewayBudget = aiGatewayBudget;
             this.AiGatewayCredits = aiGatewayCredits;

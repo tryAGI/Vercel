@@ -1999,6 +1999,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SupportSessionCreated,
+        /// <summary>
+        /// 
+        /// </summary>
         Team,
         /// <summary>
         /// 
@@ -2199,7 +2203,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UpdateAccountFlowDismissed,
+        /// <summary>
+        /// 
+        /// </summary>
         UpdateAccountFlowTriggered,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserBlocked,
         /// <summary>
         /// 
         /// </summary>
@@ -2216,6 +2228,14 @@ namespace Vercel
         /// 
         /// </summary>
         UserEmuAccountRecovered,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserEmuRecoveryInitiated,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserEmuToggled,
         /// <summary>
         /// 
         /// </summary>
@@ -2259,7 +2279,19 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserPhoneRemoved,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserPhoneUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         UserPrimaryEmailUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserSudoModeRemoved,
         /// <summary>
         /// 
         /// </summary>
@@ -2272,6 +2304,10 @@ namespace Vercel
         /// 
         /// </summary>
         UserTokensDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserUnblocked,
         /// <summary>
         /// 
         /// </summary>
@@ -2915,6 +2951,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.SubscriptionProductAdded => "subscription-product-added",
                 ListEventTypeReplacedByItem.SubscriptionProductRemoved => "subscription-product-removed",
                 ListEventTypeReplacedByItem.SubscriptionUpdated => "subscription-updated",
+                ListEventTypeReplacedByItem.SupportSessionCreated => "support-session-created",
                 ListEventTypeReplacedByItem.Team => "team",
                 ListEventTypeReplacedByItem.TeamAgentBillingMigrationDecisionChanged => "team-agent-billing-migration-decision-changed",
                 ListEventTypeReplacedByItem.TeamAvatarUpdate => "team-avatar-update",
@@ -2965,11 +3002,15 @@ namespace Vercel
                 ListEventTypeReplacedByItem.TracingConfigured => "tracing-configured",
                 ListEventTypeReplacedByItem.TracingDisabled => "tracing-disabled",
                 ListEventTypeReplacedByItem.UnlinkLoginConnection => "unlink-login-connection",
+                ListEventTypeReplacedByItem.UpdateAccountFlowDismissed => "update-account-flow-dismissed",
                 ListEventTypeReplacedByItem.UpdateAccountFlowTriggered => "update-account-flow-triggered",
+                ListEventTypeReplacedByItem.UserBlocked => "user-blocked",
                 ListEventTypeReplacedByItem.UserDelete => "user-delete",
                 ListEventTypeReplacedByItem.UserEmuAccountArchived => "user-emu-account-archived",
                 ListEventTypeReplacedByItem.UserEmuAccountDeleted => "user-emu-account-deleted",
                 ListEventTypeReplacedByItem.UserEmuAccountRecovered => "user-emu-account-recovered",
+                ListEventTypeReplacedByItem.UserEmuRecoveryInitiated => "user-emu-recovery-initiated",
+                ListEventTypeReplacedByItem.UserEmuToggled => "user-emu-toggled",
                 ListEventTypeReplacedByItem.UserMfaChallengeFailed => "user-mfa-challenge-failed",
                 ListEventTypeReplacedByItem.UserMfaChallengeVerified => "user-mfa-challenge-verified",
                 ListEventTypeReplacedByItem.UserMfaChangeFailed => "user-mfa-change-failed",
@@ -2980,10 +3021,14 @@ namespace Vercel
                 ListEventTypeReplacedByItem.UserMfaSetupSkipped => "user-mfa-setup-skipped",
                 ListEventTypeReplacedByItem.UserMfaTotpVerificationStarted => "user-mfa-totp-verification-started",
                 ListEventTypeReplacedByItem.UserMfaTotpVerified => "user-mfa-totp-verified",
+                ListEventTypeReplacedByItem.UserPhoneRemoved => "user-phone-removed",
+                ListEventTypeReplacedByItem.UserPhoneUpdated => "user-phone-updated",
                 ListEventTypeReplacedByItem.UserPrimaryEmailUpdated => "user-primary-email-updated",
+                ListEventTypeReplacedByItem.UserSudoModeRemoved => "user-sudo-mode-removed",
                 ListEventTypeReplacedByItem.UserTokenCreated => "user-token-created",
                 ListEventTypeReplacedByItem.UserTokenDeleted => "user-token-deleted",
                 ListEventTypeReplacedByItem.UserTokensDeleted => "user-tokens-deleted",
+                ListEventTypeReplacedByItem.UserUnblocked => "user-unblocked",
                 ListEventTypeReplacedByItem.Username => "username",
                 ListEventTypeReplacedByItem.V0ChatAiUsage => "v0-chat-ai-usage",
                 ListEventTypeReplacedByItem.V0ChatCreated => "v0-chat-created",
@@ -3524,6 +3569,7 @@ namespace Vercel
                 "subscription-product-added" => ListEventTypeReplacedByItem.SubscriptionProductAdded,
                 "subscription-product-removed" => ListEventTypeReplacedByItem.SubscriptionProductRemoved,
                 "subscription-updated" => ListEventTypeReplacedByItem.SubscriptionUpdated,
+                "support-session-created" => ListEventTypeReplacedByItem.SupportSessionCreated,
                 "team" => ListEventTypeReplacedByItem.Team,
                 "team-agent-billing-migration-decision-changed" => ListEventTypeReplacedByItem.TeamAgentBillingMigrationDecisionChanged,
                 "team-avatar-update" => ListEventTypeReplacedByItem.TeamAvatarUpdate,
@@ -3574,11 +3620,15 @@ namespace Vercel
                 "tracing-configured" => ListEventTypeReplacedByItem.TracingConfigured,
                 "tracing-disabled" => ListEventTypeReplacedByItem.TracingDisabled,
                 "unlink-login-connection" => ListEventTypeReplacedByItem.UnlinkLoginConnection,
+                "update-account-flow-dismissed" => ListEventTypeReplacedByItem.UpdateAccountFlowDismissed,
                 "update-account-flow-triggered" => ListEventTypeReplacedByItem.UpdateAccountFlowTriggered,
+                "user-blocked" => ListEventTypeReplacedByItem.UserBlocked,
                 "user-delete" => ListEventTypeReplacedByItem.UserDelete,
                 "user-emu-account-archived" => ListEventTypeReplacedByItem.UserEmuAccountArchived,
                 "user-emu-account-deleted" => ListEventTypeReplacedByItem.UserEmuAccountDeleted,
                 "user-emu-account-recovered" => ListEventTypeReplacedByItem.UserEmuAccountRecovered,
+                "user-emu-recovery-initiated" => ListEventTypeReplacedByItem.UserEmuRecoveryInitiated,
+                "user-emu-toggled" => ListEventTypeReplacedByItem.UserEmuToggled,
                 "user-mfa-challenge-failed" => ListEventTypeReplacedByItem.UserMfaChallengeFailed,
                 "user-mfa-challenge-verified" => ListEventTypeReplacedByItem.UserMfaChallengeVerified,
                 "user-mfa-change-failed" => ListEventTypeReplacedByItem.UserMfaChangeFailed,
@@ -3589,10 +3639,14 @@ namespace Vercel
                 "user-mfa-setup-skipped" => ListEventTypeReplacedByItem.UserMfaSetupSkipped,
                 "user-mfa-totp-verification-started" => ListEventTypeReplacedByItem.UserMfaTotpVerificationStarted,
                 "user-mfa-totp-verified" => ListEventTypeReplacedByItem.UserMfaTotpVerified,
+                "user-phone-removed" => ListEventTypeReplacedByItem.UserPhoneRemoved,
+                "user-phone-updated" => ListEventTypeReplacedByItem.UserPhoneUpdated,
                 "user-primary-email-updated" => ListEventTypeReplacedByItem.UserPrimaryEmailUpdated,
+                "user-sudo-mode-removed" => ListEventTypeReplacedByItem.UserSudoModeRemoved,
                 "user-token-created" => ListEventTypeReplacedByItem.UserTokenCreated,
                 "user-token-deleted" => ListEventTypeReplacedByItem.UserTokenDeleted,
                 "user-tokens-deleted" => ListEventTypeReplacedByItem.UserTokensDeleted,
+                "user-unblocked" => ListEventTypeReplacedByItem.UserUnblocked,
                 "username" => ListEventTypeReplacedByItem.Username,
                 "v0-chat-ai-usage" => ListEventTypeReplacedByItem.V0ChatAiUsage,
                 "v0-chat-created" => ListEventTypeReplacedByItem.V0ChatCreated,
