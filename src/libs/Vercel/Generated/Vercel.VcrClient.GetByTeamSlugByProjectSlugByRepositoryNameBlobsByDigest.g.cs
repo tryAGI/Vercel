@@ -43,6 +43,7 @@ namespace Vercel
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
         /// <summary>
+        /// Download a blob<br/>
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Fetch a blob by digest.
         /// </summary>
         /// <param name="teamSlug">
@@ -82,6 +83,7 @@ namespace Vercel
             ).ConfigureAwait(false);
         }
         /// <summary>
+        /// Download a blob<br/>
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Fetch a blob by digest.
         /// </summary>
         /// <param name="teamSlug">

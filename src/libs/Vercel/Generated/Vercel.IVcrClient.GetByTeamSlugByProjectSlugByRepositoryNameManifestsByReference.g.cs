@@ -5,6 +5,7 @@ namespace Vercel
     public partial interface IVcrClient
     {
         /// <summary>
+        /// Pull an image manifest<br/>
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Fetch a manifest by tag or digest.
         /// </summary>
         /// <param name="teamSlug">
@@ -34,6 +35,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
+        /// Pull an image manifest<br/>
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Fetch a manifest by tag or digest.
         /// </summary>
         /// <param name="teamSlug">

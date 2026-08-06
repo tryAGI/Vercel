@@ -48,6 +48,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
+        /// Get blob upload status<br/>
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Query the status of an in-progress blob upload. Used by clients to resume a partial upload after an interruption.
         /// </summary>
         /// <param name="teamSlug">
@@ -89,6 +90,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
+        /// Get blob upload status<br/>
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Query the status of an in-progress blob upload. Used by clients to resume a partial upload after an interruption.
         /// </summary>
         /// <param name="teamSlug">

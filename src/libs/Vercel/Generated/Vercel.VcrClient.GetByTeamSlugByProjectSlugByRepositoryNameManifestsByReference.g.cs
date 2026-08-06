@@ -43,6 +43,7 @@ namespace Vercel
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
         /// <summary>
+        /// Pull an image manifest<br/>
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Fetch a manifest by tag or digest.
         /// </summary>
         /// <param name="teamSlug">
@@ -82,6 +83,7 @@ namespace Vercel
             ).ConfigureAwait(false);
         }
         /// <summary>
+        /// Pull an image manifest<br/>
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Fetch a manifest by tag or digest.
         /// </summary>
         /// <param name="teamSlug">

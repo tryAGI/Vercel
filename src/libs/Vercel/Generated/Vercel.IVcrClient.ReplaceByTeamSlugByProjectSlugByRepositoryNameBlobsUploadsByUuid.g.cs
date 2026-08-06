@@ -5,6 +5,7 @@ namespace Vercel
     public partial interface IVcrClient
     {
         /// <summary>
+        /// Complete a blob upload<br/>
         /// PUT /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid?digest=&lt;digest&gt; Complete the blob upload. This may include a final chunk of data in the request body (monolithic upload) or just finalize a previous chunked upload.
         /// </summary>
         /// <param name="teamSlug">
@@ -39,6 +40,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
+        /// Complete a blob upload<br/>
         /// PUT /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid?digest=&lt;digest&gt; Complete the blob upload. This may include a final chunk of data in the request body (monolithic upload) or just finalize a previous chunked upload.
         /// </summary>
         /// <param name="teamSlug">

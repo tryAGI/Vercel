@@ -43,6 +43,7 @@ namespace Vercel
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
         /// <summary>
+        /// Delete a blob<br/>
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Blob deletion is intentionally not supported. Matches the behaviour of most public registries.
         /// </summary>
         /// <param name="teamSlug">
@@ -82,6 +83,7 @@ namespace Vercel
             ).ConfigureAwait(false);
         }
         /// <summary>
+        /// Delete a blob<br/>
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Blob deletion is intentionally not supported. Matches the behaviour of most public registries.
         /// </summary>
         /// <param name="teamSlug">

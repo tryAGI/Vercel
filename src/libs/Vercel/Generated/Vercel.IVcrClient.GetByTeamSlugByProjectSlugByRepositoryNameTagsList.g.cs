@@ -5,6 +5,7 @@ namespace Vercel
     public partial interface IVcrClient
     {
         /// <summary>
+        /// List image tags<br/>
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository.
         /// </summary>
         /// <param name="teamSlug">
@@ -35,6 +36,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
+        /// List image tags<br/>
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository.
         /// </summary>
         /// <param name="teamSlug">
