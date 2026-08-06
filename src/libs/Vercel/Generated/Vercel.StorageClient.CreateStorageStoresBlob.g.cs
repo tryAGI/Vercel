@@ -42,7 +42,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
-        /// 
+        /// Create a Blob store
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -64,7 +64,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// 
+        /// Create a Blob store
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -688,7 +688,7 @@ namespace Vercel
             }
         }
         /// <summary>
-        /// 
+        /// Create a Blob store
         /// </summary>
         /// <param name="name"></param>
         /// <param name="region"></param>

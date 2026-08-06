@@ -171695,6 +171695,7 @@
         "description": "",
         "operationId": "getStorageStoresById",
         "security": [],
+        "summary": "Get a store",
         "tags": [
           "storage"
         ],
@@ -172017,6 +172018,7 @@
         "description": "",
         "operationId": "createStorageStoresBlob",
         "security": [],
+        "summary": "Create a Blob store",
         "tags": [
           "storage"
         ],
@@ -172440,6 +172442,7 @@
         "description": "",
         "operationId": "deleteStorageStoresBlobById",
         "security": [],
+        "summary": "Delete a Blob store",
         "tags": [
           "storage"
         ],

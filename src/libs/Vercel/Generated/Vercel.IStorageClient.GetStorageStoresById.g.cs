@@ -5,7 +5,7 @@ namespace Vercel
     public partial interface IStorageClient
     {
         /// <summary>
-        /// 
+        /// Get a store
         /// </summary>
         /// <param name="id"></param>
         /// <param name="x_skipMetadata_"></param>
@@ -20,7 +20,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        /// Get a store
         /// </summary>
         /// <param name="id"></param>
         /// <param name="x_skipMetadata_"></param>

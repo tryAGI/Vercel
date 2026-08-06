@@ -42,7 +42,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
-        /// 
+        /// Delete a Blob store
         /// </summary>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -62,7 +62,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// 
+        /// Delete a Blob store
         /// </summary>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
