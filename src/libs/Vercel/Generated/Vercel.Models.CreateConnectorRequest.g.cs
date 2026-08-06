@@ -95,6 +95,12 @@ namespace Vercel
         public bool? Triggers { get; set; }
 
         /// <summary>
+        /// Initial trigger destination routing for the linked project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("triggerDestination")]
+        public global::Vercel.CreateConnectorRequestTriggerDestination? TriggerDestination { get; set; }
+
+        /// <summary>
         /// The list of the defaults trigger events for this connector.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("events")]
@@ -139,6 +145,9 @@ namespace Vercel
         /// <param name="triggers">
         /// Whether the triggers are enabled for this connector.
         /// </param>
+        /// <param name="triggerDestination">
+        /// Initial trigger destination routing for the linked project.
+        /// </param>
         /// <param name="events">
         /// The list of the defaults trigger events for this connector.
         /// </param>
@@ -160,6 +169,7 @@ namespace Vercel
             string? projectId,
             global::System.Collections.Generic.IList<string>? environments,
             bool? triggers,
+            global::Vercel.CreateConnectorRequestTriggerDestination? triggerDestination,
             global::System.Collections.Generic.IList<string>? events)
         {
             this.Data = data;
@@ -176,6 +186,7 @@ namespace Vercel
             this.ProjectId = projectId;
             this.Environments = environments;
             this.Triggers = triggers;
+            this.TriggerDestination = triggerDestination;
             this.Events = events;
         }
 

@@ -32,6 +32,12 @@ namespace Vercel
         public bool? CanaryResponseHeader { get; set; }
 
         /// <summary>
+        /// Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gate")]
+        public global::Vercel.GetProjectsResponseVariant2ProjectRollingReleaseGate? Gate { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -51,17 +57,22 @@ namespace Vercel
         /// Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.<br/>
         /// Example: false
         /// </param>
+        /// <param name="gate">
+        /// Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant2ProjectRollingRelease(
             string target,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant2ProjectRollingReleaseStage>? stages,
-            bool? canaryResponseHeader)
+            bool? canaryResponseHeader,
+            global::Vercel.GetProjectsResponseVariant2ProjectRollingReleaseGate? gate)
         {
             this.Target = target ?? throw new global::System.ArgumentNullException(nameof(target));
             this.Stages = stages;
             this.CanaryResponseHeader = canaryResponseHeader;
+            this.Gate = gate;
         }
 
         /// <summary>

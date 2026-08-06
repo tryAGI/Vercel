@@ -119,7 +119,7 @@ namespace Vercel
         /// Example: 1
         /// </param>
         /// <param name="buildMachineTypes">
-        /// Filter results by build machine types. Accepts comma-separated values. Use "default" for projects without a build machine type set.<br/>
+        /// Filter results by effective build machine types. Accepts comma-separated values. Use "elastic" for projects with elastic selection and "default" for projects without a build machine type set.<br/>
         /// Example: default,enhanced
         /// </param>
         /// <param name="buildQueueConfiguration">
@@ -226,7 +226,7 @@ namespace Vercel
         /// Example: 1
         /// </param>
         /// <param name="buildMachineTypes">
-        /// Filter results by build machine types. Accepts comma-separated values. Use "default" for projects without a build machine type set.<br/>
+        /// Filter results by effective build machine types. Accepts comma-separated values. Use "elastic" for projects with elastic selection and "default" for projects without a build machine type set.<br/>
         /// Example: default,enhanced
         /// </param>
         /// <param name="buildQueueConfiguration">

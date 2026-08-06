@@ -12973,6 +12973,37 @@
                     "description": "Whether the triggers are enabled for this connector.",
                     "type": "boolean"
                   },
+                  "triggerDestination": {
+                    "type": "object",
+                    "minProperties": 1,
+                    "additionalProperties": false,
+                    "not": {
+                      "required": [
+                        "branch",
+                        "customEnvironmentId"
+                      ]
+                    },
+                    "properties": {
+                      "projectId": {
+                        "type": "string"
+                      },
+                      "path": {
+                        "type": "string",
+                        "maxLength": 2048,
+                        "description": "Route path on the linked project that receives forwarded trigger requests."
+                      },
+                      "branch": {
+                        "type": "string",
+                        "maxLength": 250
+                      },
+                      "customEnvironmentId": {
+                        "type": "string",
+                        "pattern": "^env_",
+                        "description": "The stable env_* ID of a custom environment."
+                      }
+                    },
+                    "description": "Initial trigger destination routing for the linked project."
+                  },
                   "events": {
                     "type": "array",
                     "description": "The list of the defaults trigger events for this connector.",
@@ -77864,6 +77895,102 @@
                                 ],
                                 "description": "Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.",
                                 "example": false
+                              },
+                              "gate": {
+                                "properties": {
+                                  "enabled": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ],
+                                    "description": "Whether automated gating is enabled for this project's rollouts."
+                                  },
+                                  "checks": {
+                                    "items": {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "error-rate-5xx"
+                                          ],
+                                          "description": "The metric this check evaluates."
+                                        },
+                                        "minSampleSize": {
+                                          "type": "number",
+                                          "description": "Minimum number of requests required in the window before the check can fail. Below this, the check is inconclusive rather than failing, so low-traffic stages don't gate on noise. Defaults to `100` when omitted.",
+                                          "example": 100
+                                        },
+                                        "excludeStatusCodes": {
+                                          "items": {
+                                            "type": "number"
+                                          },
+                                          "type": "array",
+                                          "description": "Response status codes to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                          "example": [
+                                            503
+                                          ]
+                                        },
+                                        "excludePaths": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array",
+                                          "description": "Request paths to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                          "example": [
+                                            "/api/health"
+                                          ]
+                                        },
+                                        "ingestWatermarkSeconds": {
+                                          "type": "number",
+                                          "description": "Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.",
+                                          "example": 30
+                                        }
+                                      },
+                                      "required": [
+                                        "type"
+                                      ],
+                                      "type": "object",
+                                      "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                                    },
+                                    "type": "array",
+                                    "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                                  },
+                                  "failureThreshold": {
+                                    "type": "number",
+                                    "description": "How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.",
+                                    "example": 3
+                                  },
+                                  "windowSize": {
+                                    "type": "number",
+                                    "description": "How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.",
+                                    "example": 5
+                                  },
+                                  "action": {
+                                    "type": "string",
+                                    "enum": [
+                                      "pause",
+                                      "rollback"
+                                    ],
+                                    "description": "What to do when the gate trips: pause the rollout, or roll it back."
+                                  },
+                                  "dryRun": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ],
+                                    "description": "When true, a tripped gate is only reported \u2014 {@link action} is not taken."
+                                  }
+                                },
+                                "required": [
+                                  "action",
+                                  "checks",
+                                  "dryRun",
+                                  "enabled"
+                                ],
+                                "type": "object",
+                                "description": "Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`."
                               }
                             },
                             "required": [
@@ -91219,6 +91346,102 @@
                                 ],
                                 "description": "Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.",
                                 "example": false
+                              },
+                              "gate": {
+                                "properties": {
+                                  "enabled": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ],
+                                    "description": "Whether automated gating is enabled for this project's rollouts."
+                                  },
+                                  "checks": {
+                                    "items": {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "error-rate-5xx"
+                                          ],
+                                          "description": "The metric this check evaluates."
+                                        },
+                                        "minSampleSize": {
+                                          "type": "number",
+                                          "description": "Minimum number of requests required in the window before the check can fail. Below this, the check is inconclusive rather than failing, so low-traffic stages don't gate on noise. Defaults to `100` when omitted.",
+                                          "example": 100
+                                        },
+                                        "excludeStatusCodes": {
+                                          "items": {
+                                            "type": "number"
+                                          },
+                                          "type": "array",
+                                          "description": "Response status codes to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                          "example": [
+                                            503
+                                          ]
+                                        },
+                                        "excludePaths": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array",
+                                          "description": "Request paths to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                          "example": [
+                                            "/api/health"
+                                          ]
+                                        },
+                                        "ingestWatermarkSeconds": {
+                                          "type": "number",
+                                          "description": "Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.",
+                                          "example": 30
+                                        }
+                                      },
+                                      "required": [
+                                        "type"
+                                      ],
+                                      "type": "object",
+                                      "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                                    },
+                                    "type": "array",
+                                    "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                                  },
+                                  "failureThreshold": {
+                                    "type": "number",
+                                    "description": "How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.",
+                                    "example": 3
+                                  },
+                                  "windowSize": {
+                                    "type": "number",
+                                    "description": "How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.",
+                                    "example": 5
+                                  },
+                                  "action": {
+                                    "type": "string",
+                                    "enum": [
+                                      "pause",
+                                      "rollback"
+                                    ],
+                                    "description": "What to do when the gate trips: pause the rollout, or roll it back."
+                                  },
+                                  "dryRun": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ],
+                                    "description": "When true, a tripped gate is only reported \u2014 {@link action} is not taken."
+                                  }
+                                },
+                                "required": [
+                                  "action",
+                                  "checks",
+                                  "dryRun",
+                                  "enabled"
+                                ],
+                                "type": "object",
+                                "description": "Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`."
                               }
                             },
                             "required": [
@@ -95514,6 +95737,102 @@
                                     ],
                                     "description": "Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.",
                                     "example": false
+                                  },
+                                  "gate": {
+                                    "properties": {
+                                      "enabled": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ],
+                                        "description": "Whether automated gating is enabled for this project's rollouts."
+                                      },
+                                      "checks": {
+                                        "items": {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "error-rate-5xx"
+                                              ],
+                                              "description": "The metric this check evaluates."
+                                            },
+                                            "minSampleSize": {
+                                              "type": "number",
+                                              "description": "Minimum number of requests required in the window before the check can fail. Below this, the check is inconclusive rather than failing, so low-traffic stages don't gate on noise. Defaults to `100` when omitted.",
+                                              "example": 100
+                                            },
+                                            "excludeStatusCodes": {
+                                              "items": {
+                                                "type": "number"
+                                              },
+                                              "type": "array",
+                                              "description": "Response status codes to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                              "example": [
+                                                503
+                                              ]
+                                            },
+                                            "excludePaths": {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array",
+                                              "description": "Request paths to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                              "example": [
+                                                "/api/health"
+                                              ]
+                                            },
+                                            "ingestWatermarkSeconds": {
+                                              "type": "number",
+                                              "description": "Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.",
+                                              "example": 30
+                                            }
+                                          },
+                                          "required": [
+                                            "type"
+                                          ],
+                                          "type": "object",
+                                          "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                                        },
+                                        "type": "array",
+                                        "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                                      },
+                                      "failureThreshold": {
+                                        "type": "number",
+                                        "description": "How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.",
+                                        "example": 3
+                                      },
+                                      "windowSize": {
+                                        "type": "number",
+                                        "description": "How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.",
+                                        "example": 5
+                                      },
+                                      "action": {
+                                        "type": "string",
+                                        "enum": [
+                                          "pause",
+                                          "rollback"
+                                        ],
+                                        "description": "What to do when the gate trips: pause the rollout, or roll it back."
+                                      },
+                                      "dryRun": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ],
+                                        "description": "When true, a tripped gate is only reported \u2014 {@link action} is not taken."
+                                      }
+                                    },
+                                    "required": [
+                                      "action",
+                                      "checks",
+                                      "dryRun",
+                                      "enabled"
+                                    ],
+                                    "type": "object",
+                                    "description": "Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`."
                                   }
                                 },
                                 "required": [
@@ -100684,6 +101003,102 @@
                                     ],
                                     "description": "Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.",
                                     "example": false
+                                  },
+                                  "gate": {
+                                    "properties": {
+                                      "enabled": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ],
+                                        "description": "Whether automated gating is enabled for this project's rollouts."
+                                      },
+                                      "checks": {
+                                        "items": {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "error-rate-5xx"
+                                              ],
+                                              "description": "The metric this check evaluates."
+                                            },
+                                            "minSampleSize": {
+                                              "type": "number",
+                                              "description": "Minimum number of requests required in the window before the check can fail. Below this, the check is inconclusive rather than failing, so low-traffic stages don't gate on noise. Defaults to `100` when omitted.",
+                                              "example": 100
+                                            },
+                                            "excludeStatusCodes": {
+                                              "items": {
+                                                "type": "number"
+                                              },
+                                              "type": "array",
+                                              "description": "Response status codes to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                              "example": [
+                                                503
+                                              ]
+                                            },
+                                            "excludePaths": {
+                                              "items": {
+                                                "type": "string"
+                                              },
+                                              "type": "array",
+                                              "description": "Request paths to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                              "example": [
+                                                "/api/health"
+                                              ]
+                                            },
+                                            "ingestWatermarkSeconds": {
+                                              "type": "number",
+                                              "description": "Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.",
+                                              "example": 30
+                                            }
+                                          },
+                                          "required": [
+                                            "type"
+                                          ],
+                                          "type": "object",
+                                          "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                                        },
+                                        "type": "array",
+                                        "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                                      },
+                                      "failureThreshold": {
+                                        "type": "number",
+                                        "description": "How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.",
+                                        "example": 3
+                                      },
+                                      "windowSize": {
+                                        "type": "number",
+                                        "description": "How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.",
+                                        "example": 5
+                                      },
+                                      "action": {
+                                        "type": "string",
+                                        "enum": [
+                                          "pause",
+                                          "rollback"
+                                        ],
+                                        "description": "What to do when the gate trips: pause the rollout, or roll it back."
+                                      },
+                                      "dryRun": {
+                                        "type": "boolean",
+                                        "enum": [
+                                          false,
+                                          true
+                                        ],
+                                        "description": "When true, a tripped gate is only reported \u2014 {@link action} is not taken."
+                                      }
+                                    },
+                                    "required": [
+                                      "action",
+                                      "checks",
+                                      "dryRun",
+                                      "enabled"
+                                    ],
+                                    "type": "object",
+                                    "description": "Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`."
                                   }
                                 },
                                 "required": [
@@ -105115,10 +105530,10 @@
           },
           {
             "name": "buildMachineTypes",
-            "description": "Filter results by build machine types. Accepts comma-separated values. Use \"default\" for projects without a build machine type set.",
+            "description": "Filter results by effective build machine types. Accepts comma-separated values. Use \"elastic\" for projects with elastic selection and \"default\" for projects without a build machine type set.",
             "in": "query",
             "schema": {
-              "description": "Filter results by build machine types. Accepts comma-separated values. Use \"default\" for projects without a build machine type set.",
+              "description": "Filter results by effective build machine types. Accepts comma-separated values. Use \"elastic\" for projects with elastic selection and \"default\" for projects without a build machine type set.",
               "type": "string",
               "example": "default,enhanced"
             }
@@ -108377,6 +108792,102 @@
                           ],
                           "description": "Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.",
                           "example": false
+                        },
+                        "gate": {
+                          "properties": {
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "Whether automated gating is enabled for this project's rollouts."
+                            },
+                            "checks": {
+                              "items": {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "error-rate-5xx"
+                                    ],
+                                    "description": "The metric this check evaluates."
+                                  },
+                                  "minSampleSize": {
+                                    "type": "number",
+                                    "description": "Minimum number of requests required in the window before the check can fail. Below this, the check is inconclusive rather than failing, so low-traffic stages don't gate on noise. Defaults to `100` when omitted.",
+                                    "example": 100
+                                  },
+                                  "excludeStatusCodes": {
+                                    "items": {
+                                      "type": "number"
+                                    },
+                                    "type": "array",
+                                    "description": "Response status codes to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      503
+                                    ]
+                                  },
+                                  "excludePaths": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array",
+                                    "description": "Request paths to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      "/api/health"
+                                    ]
+                                  },
+                                  "ingestWatermarkSeconds": {
+                                    "type": "number",
+                                    "description": "Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.",
+                                    "example": 30
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ],
+                                "type": "object",
+                                "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                              },
+                              "type": "array",
+                              "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                            },
+                            "failureThreshold": {
+                              "type": "number",
+                              "description": "How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.",
+                              "example": 3
+                            },
+                            "windowSize": {
+                              "type": "number",
+                              "description": "How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.",
+                              "example": 5
+                            },
+                            "action": {
+                              "type": "string",
+                              "enum": [
+                                "pause",
+                                "rollback"
+                              ],
+                              "description": "What to do when the gate trips: pause the rollout, or roll it back."
+                            },
+                            "dryRun": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "When true, a tripped gate is only reported \u2014 {@link action} is not taken."
+                            }
+                          },
+                          "required": [
+                            "action",
+                            "checks",
+                            "dryRun",
+                            "enabled"
+                          ],
+                          "type": "object",
+                          "description": "Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`."
                         }
                       },
                       "required": [
@@ -116233,6 +116744,102 @@
                           ],
                           "description": "Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.",
                           "example": false
+                        },
+                        "gate": {
+                          "properties": {
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "Whether automated gating is enabled for this project's rollouts."
+                            },
+                            "checks": {
+                              "items": {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "error-rate-5xx"
+                                    ],
+                                    "description": "The metric this check evaluates."
+                                  },
+                                  "minSampleSize": {
+                                    "type": "number",
+                                    "description": "Minimum number of requests required in the window before the check can fail. Below this, the check is inconclusive rather than failing, so low-traffic stages don't gate on noise. Defaults to `100` when omitted.",
+                                    "example": 100
+                                  },
+                                  "excludeStatusCodes": {
+                                    "items": {
+                                      "type": "number"
+                                    },
+                                    "type": "array",
+                                    "description": "Response status codes to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      503
+                                    ]
+                                  },
+                                  "excludePaths": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array",
+                                    "description": "Request paths to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      "/api/health"
+                                    ]
+                                  },
+                                  "ingestWatermarkSeconds": {
+                                    "type": "number",
+                                    "description": "Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.",
+                                    "example": 30
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ],
+                                "type": "object",
+                                "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                              },
+                              "type": "array",
+                              "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                            },
+                            "failureThreshold": {
+                              "type": "number",
+                              "description": "How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.",
+                              "example": 3
+                            },
+                            "windowSize": {
+                              "type": "number",
+                              "description": "How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.",
+                              "example": 5
+                            },
+                            "action": {
+                              "type": "string",
+                              "enum": [
+                                "pause",
+                                "rollback"
+                              ],
+                              "description": "What to do when the gate trips: pause the rollout, or roll it back."
+                            },
+                            "dryRun": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "When true, a tripped gate is only reported \u2014 {@link action} is not taken."
+                            }
+                          },
+                          "required": [
+                            "action",
+                            "checks",
+                            "dryRun",
+                            "enabled"
+                          ],
+                          "type": "object",
+                          "description": "Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`."
                         }
                       },
                       "required": [
@@ -123447,6 +124054,102 @@
                           ],
                           "description": "Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.",
                           "example": false
+                        },
+                        "gate": {
+                          "properties": {
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "Whether automated gating is enabled for this project's rollouts."
+                            },
+                            "checks": {
+                              "items": {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "error-rate-5xx"
+                                    ],
+                                    "description": "The metric this check evaluates."
+                                  },
+                                  "minSampleSize": {
+                                    "type": "number",
+                                    "description": "Minimum number of requests required in the window before the check can fail. Below this, the check is inconclusive rather than failing, so low-traffic stages don't gate on noise. Defaults to `100` when omitted.",
+                                    "example": 100
+                                  },
+                                  "excludeStatusCodes": {
+                                    "items": {
+                                      "type": "number"
+                                    },
+                                    "type": "array",
+                                    "description": "Response status codes to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      503
+                                    ]
+                                  },
+                                  "excludePaths": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array",
+                                    "description": "Request paths to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      "/api/health"
+                                    ]
+                                  },
+                                  "ingestWatermarkSeconds": {
+                                    "type": "number",
+                                    "description": "Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.",
+                                    "example": 30
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ],
+                                "type": "object",
+                                "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                              },
+                              "type": "array",
+                              "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                            },
+                            "failureThreshold": {
+                              "type": "number",
+                              "description": "How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.",
+                              "example": 3
+                            },
+                            "windowSize": {
+                              "type": "number",
+                              "description": "How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.",
+                              "example": 5
+                            },
+                            "action": {
+                              "type": "string",
+                              "enum": [
+                                "pause",
+                                "rollback"
+                              ],
+                              "description": "What to do when the gate trips: pause the rollout, or roll it back."
+                            },
+                            "dryRun": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "When true, a tripped gate is only reported \u2014 {@link action} is not taken."
+                            }
+                          },
+                          "required": [
+                            "action",
+                            "checks",
+                            "dryRun",
+                            "enabled"
+                          ],
+                          "type": "object",
+                          "description": "Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`."
                         }
                       },
                       "required": [
@@ -131925,6 +132628,102 @@
                           ],
                           "description": "Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.",
                           "example": false
+                        },
+                        "gate": {
+                          "properties": {
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "Whether automated gating is enabled for this project's rollouts."
+                            },
+                            "checks": {
+                              "items": {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "error-rate-5xx"
+                                    ],
+                                    "description": "The metric this check evaluates."
+                                  },
+                                  "minSampleSize": {
+                                    "type": "number",
+                                    "description": "Minimum number of requests required in the window before the check can fail. Below this, the check is inconclusive rather than failing, so low-traffic stages don't gate on noise. Defaults to `100` when omitted.",
+                                    "example": 100
+                                  },
+                                  "excludeStatusCodes": {
+                                    "items": {
+                                      "type": "number"
+                                    },
+                                    "type": "array",
+                                    "description": "Response status codes to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      503
+                                    ]
+                                  },
+                                  "excludePaths": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array",
+                                    "description": "Request paths to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      "/api/health"
+                                    ]
+                                  },
+                                  "ingestWatermarkSeconds": {
+                                    "type": "number",
+                                    "description": "Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.",
+                                    "example": 30
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ],
+                                "type": "object",
+                                "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                              },
+                              "type": "array",
+                              "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                            },
+                            "failureThreshold": {
+                              "type": "number",
+                              "description": "How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.",
+                              "example": 3
+                            },
+                            "windowSize": {
+                              "type": "number",
+                              "description": "How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.",
+                              "example": 5
+                            },
+                            "action": {
+                              "type": "string",
+                              "enum": [
+                                "pause",
+                                "rollback"
+                              ],
+                              "description": "What to do when the gate trips: pause the rollout, or roll it back."
+                            },
+                            "dryRun": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "When true, a tripped gate is only reported \u2014 {@link action} is not taken."
+                            }
+                          },
+                          "required": [
+                            "action",
+                            "checks",
+                            "dryRun",
+                            "enabled"
+                          ],
+                          "type": "object",
+                          "description": "Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`."
                         }
                       },
                       "required": [
@@ -142083,6 +142882,102 @@
                           ],
                           "description": "Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.",
                           "example": false
+                        },
+                        "gate": {
+                          "properties": {
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "Whether automated gating is enabled for this project's rollouts."
+                            },
+                            "checks": {
+                              "items": {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "error-rate-5xx"
+                                    ],
+                                    "description": "The metric this check evaluates."
+                                  },
+                                  "minSampleSize": {
+                                    "type": "number",
+                                    "description": "Minimum number of requests required in the window before the check can fail. Below this, the check is inconclusive rather than failing, so low-traffic stages don't gate on noise. Defaults to `100` when omitted.",
+                                    "example": 100
+                                  },
+                                  "excludeStatusCodes": {
+                                    "items": {
+                                      "type": "number"
+                                    },
+                                    "type": "array",
+                                    "description": "Response status codes to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      503
+                                    ]
+                                  },
+                                  "excludePaths": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array",
+                                    "description": "Request paths to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      "/api/health"
+                                    ]
+                                  },
+                                  "ingestWatermarkSeconds": {
+                                    "type": "number",
+                                    "description": "Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.",
+                                    "example": 30
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ],
+                                "type": "object",
+                                "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                              },
+                              "type": "array",
+                              "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                            },
+                            "failureThreshold": {
+                              "type": "number",
+                              "description": "How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.",
+                              "example": 3
+                            },
+                            "windowSize": {
+                              "type": "number",
+                              "description": "How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.",
+                              "example": 5
+                            },
+                            "action": {
+                              "type": "string",
+                              "enum": [
+                                "pause",
+                                "rollback"
+                              ],
+                              "description": "What to do when the gate trips: pause the rollout, or roll it back."
+                            },
+                            "dryRun": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "When true, a tripped gate is only reported \u2014 {@link action} is not taken."
+                            }
+                          },
+                          "required": [
+                            "action",
+                            "checks",
+                            "dryRun",
+                            "enabled"
+                          ],
+                          "type": "object",
+                          "description": "Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`."
                         }
                       },
                       "required": [
@@ -148329,6 +149224,102 @@
                           ],
                           "description": "Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.",
                           "example": false
+                        },
+                        "gate": {
+                          "properties": {
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "Whether automated gating is enabled for this project's rollouts."
+                            },
+                            "checks": {
+                              "items": {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "error-rate-5xx"
+                                    ],
+                                    "description": "The metric this check evaluates."
+                                  },
+                                  "minSampleSize": {
+                                    "type": "number",
+                                    "description": "Minimum number of requests required in the window before the check can fail. Below this, the check is inconclusive rather than failing, so low-traffic stages don't gate on noise. Defaults to `100` when omitted.",
+                                    "example": 100
+                                  },
+                                  "excludeStatusCodes": {
+                                    "items": {
+                                      "type": "number"
+                                    },
+                                    "type": "array",
+                                    "description": "Response status codes to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      503
+                                    ]
+                                  },
+                                  "excludePaths": {
+                                    "items": {
+                                      "type": "string"
+                                    },
+                                    "type": "array",
+                                    "description": "Request paths to ignore entirely \u2014 dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.",
+                                    "example": [
+                                      "/api/health"
+                                    ]
+                                  },
+                                  "ingestWatermarkSeconds": {
+                                    "type": "number",
+                                    "description": "Seconds of ingest lag to allow for: the query's upper bound is `now() - this value`, so the check never reads a window that is still filling. Defaults to `30` when omitted.",
+                                    "example": 30
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ],
+                                "type": "object",
+                                "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                              },
+                              "type": "array",
+                              "description": "The checks to evaluate. An empty array means nothing is evaluated."
+                            },
+                            "failureThreshold": {
+                              "type": "number",
+                              "description": "How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.",
+                              "example": 3
+                            },
+                            "windowSize": {
+                              "type": "number",
+                              "description": "How many of the most recent evaluations {@link failureThreshold} is counted against. Defaults to `5` when omitted.",
+                              "example": 5
+                            },
+                            "action": {
+                              "type": "string",
+                              "enum": [
+                                "pause",
+                                "rollback"
+                              ],
+                              "description": "What to do when the gate trips: pause the rollout, or roll it back."
+                            },
+                            "dryRun": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ],
+                              "description": "When true, a tripped gate is only reported \u2014 {@link action} is not taken."
+                            }
+                          },
+                          "required": [
+                            "action",
+                            "checks",
+                            "dryRun",
+                            "enabled"
+                          ],
+                          "type": "object",
+                          "description": "Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`."
                         }
                       },
                       "required": [
@@ -195770,6 +196761,7 @@
               "flags-segment",
               "flags-settings",
               "flags-transferred",
+              "git-integration-repo-push",
               "git_account_integration_link_added",
               "instant-rollback-created",
               "integration-configuration-owner-changed",
@@ -196700,6 +197692,7 @@
               "flags-segment",
               "flags-settings",
               "flags-transferred",
+              "git-integration-repo-push",
               "git_account_integration_link_added",
               "instant-rollback-created",
               "integration-configuration-owner-changed",
@@ -197371,6 +198364,7 @@
                 "flags-segment",
                 "flags-settings",
                 "flags-transferred",
+                "git-integration-repo-push",
                 "git_account_integration_link_added",
                 "instant-rollback-created",
                 "integration-configuration-owner-changed",

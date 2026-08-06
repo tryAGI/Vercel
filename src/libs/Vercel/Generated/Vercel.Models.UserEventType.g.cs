@@ -912,6 +912,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        GitIntegrationRepoPush,
+        /// <summary>
+        /// 
+        /// </summary>
         GitAccountIntegrationLinkAdded,
         /// <summary>
         /// 
@@ -2696,6 +2700,7 @@ namespace Vercel
                 UserEventType.FlagsSegment => "flags-segment",
                 UserEventType.FlagsSettings => "flags-settings",
                 UserEventType.FlagsTransferred => "flags-transferred",
+                UserEventType.GitIntegrationRepoPush => "git-integration-repo-push",
                 UserEventType.GitAccountIntegrationLinkAdded => "git_account_integration_link_added",
                 UserEventType.InstantRollbackCreated => "instant-rollback-created",
                 UserEventType.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
@@ -3318,6 +3323,7 @@ namespace Vercel
                 "flags-segment" => UserEventType.FlagsSegment,
                 "flags-settings" => UserEventType.FlagsSettings,
                 "flags-transferred" => UserEventType.FlagsTransferred,
+                "git-integration-repo-push" => UserEventType.GitIntegrationRepoPush,
                 "git_account_integration_link_added" => UserEventType.GitAccountIntegrationLinkAdded,
                 "instant-rollback-created" => UserEventType.InstantRollbackCreated,
                 "integration-configuration-owner-changed" => UserEventType.IntegrationConfigurationOwnerChanged,
