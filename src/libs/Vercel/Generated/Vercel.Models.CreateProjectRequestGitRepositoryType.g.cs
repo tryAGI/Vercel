@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        CursorOrigin,
+        /// <summary>
+        /// 
+        /// </summary>
         Github,
         /// <summary>
         /// 
@@ -43,6 +47,7 @@ namespace Vercel
             return value switch
             {
                 CreateProjectRequestGitRepositoryType.Bitbucket => "bitbucket",
+                CreateProjectRequestGitRepositoryType.CursorOrigin => "cursor-origin",
                 CreateProjectRequestGitRepositoryType.Github => "github",
                 CreateProjectRequestGitRepositoryType.GithubLimited => "github-limited",
                 CreateProjectRequestGitRepositoryType.Gitlab => "gitlab",
@@ -58,6 +63,7 @@ namespace Vercel
             return value switch
             {
                 "bitbucket" => CreateProjectRequestGitRepositoryType.Bitbucket,
+                "cursor-origin" => CreateProjectRequestGitRepositoryType.CursorOrigin,
                 "github" => CreateProjectRequestGitRepositoryType.Github,
                 "github-limited" => CreateProjectRequestGitRepositoryType.GithubLimited,
                 "gitlab" => CreateProjectRequestGitRepositoryType.Gitlab,

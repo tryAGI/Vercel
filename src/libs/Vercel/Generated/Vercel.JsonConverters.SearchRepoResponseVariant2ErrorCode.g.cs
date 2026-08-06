@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class SearchRepoResponseVariant2RepoProviderJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.SearchRepoResponseVariant2RepoProvider>
+    public sealed class SearchRepoResponseVariant2ErrorCodeJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.SearchRepoResponseVariant2ErrorCode>
     {
         /// <inheritdoc />
-        public override global::Vercel.SearchRepoResponseVariant2RepoProvider Read(
+        public override global::Vercel.SearchRepoResponseVariant2ErrorCode Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.SearchRepoResponseVariant2RepoProviderExtensions.ToEnum(stringValue) ?? default;
+                        return global::Vercel.SearchRepoResponseVariant2ErrorCodeExtensions.ToEnum(stringValue) ?? default;
                     }
                     
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.SearchRepoResponseVariant2RepoProvider)numValue;
+                    return (global::Vercel.SearchRepoResponseVariant2ErrorCode)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.SearchRepoResponseVariant2RepoProvider);
+                    return default(global::Vercel.SearchRepoResponseVariant2ErrorCode);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,12 +42,12 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.SearchRepoResponseVariant2RepoProvider value,
+            global::Vercel.SearchRepoResponseVariant2ErrorCode value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            writer.WriteStringValue(global::Vercel.SearchRepoResponseVariant2RepoProviderExtensions.ToValueString(value));
+            writer.WriteStringValue(global::Vercel.SearchRepoResponseVariant2ErrorCodeExtensions.ToValueString(value));
         }
     }
 }

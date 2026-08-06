@@ -41,6 +41,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? SupportedAuthorizationDetails { get; set; }
 
         /// <summary>
+        /// Link to the page on the service where this client's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("permissionsUrl")]
+        public string? PermissionsUrl { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -58,6 +64,9 @@ namespace Vercel
         /// Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document.
         /// </param>
         /// <param name="supportedAuthorizationDetails"></param>
+        /// <param name="permissionsUrl">
+        /// Link to the page on the service where this client's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -66,13 +75,15 @@ namespace Vercel
             bool supportsRefinement,
             bool? requiresReinstallation,
             global::System.Collections.Generic.IList<string>? scopes,
-            global::System.Collections.Generic.IList<string>? supportedAuthorizationDetails)
+            global::System.Collections.Generic.IList<string>? supportedAuthorizationDetails,
+            string? permissionsUrl)
         {
             this.CrossInstallation = crossInstallation;
             this.SupportsRefinement = supportsRefinement;
             this.RequiresReinstallation = requiresReinstallation;
             this.Scopes = scopes;
             this.SupportedAuthorizationDetails = supportedAuthorizationDetails;
+            this.PermissionsUrl = permissionsUrl;
         }
 
         /// <summary>
