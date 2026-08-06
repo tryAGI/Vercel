@@ -46,7 +46,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
-        /// 
+        /// Get a store
         /// </summary>
         /// <param name="id"></param>
         /// <param name="x_skipMetadata_"></param>
@@ -72,7 +72,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// 
+        /// Get a store
         /// </summary>
         /// <param name="id"></param>
         /// <param name="x_skipMetadata_"></param>
