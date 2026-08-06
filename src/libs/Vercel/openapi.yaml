@@ -11856,6 +11856,10 @@
                             "type": "string"
                           },
                           "type": "array"
+                        },
+                        "permissionsUrl": {
+                          "type": "string",
+                          "description": "Link to the page on the service where this client's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`."
                         }
                       },
                       "required": [
@@ -30303,12 +30307,6 @@
                     },
                     "type": "array"
                   },
-                  "gitAccessToken": {
-                    "description": "A read-only GitHub access token scoped to the requested repository. Use a token with a lifetime of 24 hours or less that remains valid until source retrieval completes.",
-                    "maxLength": 1024,
-                    "type": "string",
-                    "writeOnly": true
-                  },
                   "gitMetadata": {
                     "description": "Populates initial git metadata for different git providers.",
                     "additionalProperties": false,
@@ -30631,6 +30629,42 @@
                           "ref",
                           "owner",
                           "slug"
+                        ],
+                        "type": "object"
+                      },
+                      {
+                        "properties": {
+                          "owner": {
+                            "type": "string",
+                            "example": "bitbucket_user"
+                          },
+                          "ref": {
+                            "type": "string",
+                            "example": "main"
+                          },
+                          "repo": {
+                            "type": "string",
+                            "example": "next.js"
+                          },
+                          "repoId": {
+                            "type": "string",
+                            "example": 123456789
+                          },
+                          "sha": {
+                            "type": "string",
+                            "example": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0"
+                          },
+                          "type": {
+                            "enum": [
+                              "cursor-origin"
+                            ],
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "ref",
+                          "repoId"
                         ],
                         "type": "object"
                       }
@@ -64960,6 +64994,133 @@
                     },
                     {
                       "properties": {
+                        "error": {
+                          "properties": {
+                            "code": {
+                              "type": "string",
+                              "enum": [
+                                "installation_not_found"
+                              ]
+                            },
+                            "message": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "code",
+                            "message"
+                          ],
+                          "type": "object"
+                        }
+                      },
+                      "required": [
+                        "error"
+                      ],
+                      "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "gitAccount": {
+                          "properties": {
+                            "provider": {
+                              "type": "string"
+                            },
+                            "namespaceId": {
+                              "nullable": true,
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "namespaceId",
+                            "provider"
+                          ],
+                          "type": "object"
+                        },
+                        "repos": {
+                          "items": {
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "provider": {
+                                "type": "string",
+                                "enum": [
+                                  "cursor-origin"
+                                ]
+                              },
+                              "url": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "slug": {
+                                "type": "string"
+                              },
+                              "namespace": {
+                                "type": "string"
+                              },
+                              "ownerType": {
+                                "type": "string",
+                                "enum": [
+                                  "team"
+                                ]
+                              },
+                              "owner": {
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "name"
+                                ],
+                                "type": "object"
+                              },
+                              "private": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
+                              },
+                              "defaultBranch": {
+                                "type": "string"
+                              },
+                              "updatedAt": {
+                                "type": "number"
+                              }
+                            },
+                            "required": [
+                              "defaultBranch",
+                              "id",
+                              "name",
+                              "namespace",
+                              "owner",
+                              "ownerType",
+                              "private",
+                              "provider",
+                              "slug",
+                              "updatedAt",
+                              "url"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "required": [
+                        "gitAccount",
+                        "repos"
+                      ],
+                      "type": "object"
+                    },
+                    {
+                      "properties": {
                         "gitAccount": {
                           "properties": {
                             "provider": {
@@ -65119,6 +65280,9 @@
           },
           "500": {
             "description": ""
+          },
+          "502": {
+            "description": ""
           }
         },
         "parameters": [
@@ -65153,7 +65317,8 @@
                 "github-limited",
                 "github-custom-host",
                 "gitlab",
-                "bitbucket"
+                "bitbucket",
+                "cursor-origin"
               ]
             }
           },
@@ -112702,7 +112867,8 @@
                           "github-limited",
                           "gitlab",
                           "bitbucket",
-                          "vercel"
+                          "vercel",
+                          "cursor-origin"
                         ]
                       }
                     },

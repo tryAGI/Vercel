@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        CursorOrigin,
+        /// <summary>
+        /// 
+        /// </summary>
         Github,
         /// <summary>
         /// 
@@ -43,6 +47,7 @@ namespace Vercel
             return value switch
             {
                 SearchRepoProvider.Bitbucket => "bitbucket",
+                SearchRepoProvider.CursorOrigin => "cursor-origin",
                 SearchRepoProvider.Github => "github",
                 SearchRepoProvider.GithubCustomHost => "github-custom-host",
                 SearchRepoProvider.GithubLimited => "github-limited",
@@ -58,6 +63,7 @@ namespace Vercel
             return value switch
             {
                 "bitbucket" => SearchRepoProvider.Bitbucket,
+                "cursor-origin" => SearchRepoProvider.CursorOrigin,
                 "github" => SearchRepoProvider.Github,
                 "github-custom-host" => SearchRepoProvider.GithubCustomHost,
                 "github-limited" => SearchRepoProvider.GithubLimited,

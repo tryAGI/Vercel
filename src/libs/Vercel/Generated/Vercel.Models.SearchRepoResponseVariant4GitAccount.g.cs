@@ -6,15 +6,15 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class SearchRepoResponseVariant2GitAccount
+    public sealed partial class SearchRepoResponseVariant4GitAccount
     {
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SearchRepoResponseVariant2GitAccountProviderJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SearchRepoResponseVariant4GitAccountProviderJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.SearchRepoResponseVariant2GitAccountProvider Provider { get; set; }
+        public required global::Vercel.SearchRepoResponseVariant4GitAccountProvider Provider { get; set; }
 
         /// <summary>
         /// 
@@ -30,15 +30,15 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SearchRepoResponseVariant2GitAccount" /> class.
+        /// Initializes a new instance of the <see cref="SearchRepoResponseVariant4GitAccount" /> class.
         /// </summary>
         /// <param name="provider"></param>
         /// <param name="namespaceId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public SearchRepoResponseVariant2GitAccount(
-            global::Vercel.SearchRepoResponseVariant2GitAccountProvider provider,
+        public SearchRepoResponseVariant4GitAccount(
+            global::Vercel.SearchRepoResponseVariant4GitAccountProvider provider,
             global::Vercel.OneOf<string, double?>? namespaceId)
         {
             this.Provider = provider;
@@ -46,9 +46,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SearchRepoResponseVariant2GitAccount" /> class.
+        /// Initializes a new instance of the <see cref="SearchRepoResponseVariant4GitAccount" /> class.
         /// </summary>
-        public SearchRepoResponseVariant2GitAccount()
+        public SearchRepoResponseVariant4GitAccount()
         {
         }
 

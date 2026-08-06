@@ -11,16 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitAccount")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.SearchRepoResponseVariant2GitAccount GitAccount { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repos")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.SearchRepoResponseVariant2Repo> Repos { get; set; }
+        public required global::Vercel.SearchRepoResponseVariant2Error Error { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="SearchRepoResponseVariant2" /> class.
         /// </summary>
-        /// <param name="gitAccount"></param>
-        /// <param name="repos"></param>
+        /// <param name="error"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SearchRepoResponseVariant2(
-            global::Vercel.SearchRepoResponseVariant2GitAccount gitAccount,
-            global::System.Collections.Generic.IList<global::Vercel.SearchRepoResponseVariant2Repo> repos)
+            global::Vercel.SearchRepoResponseVariant2Error error)
         {
-            this.GitAccount = gitAccount ?? throw new global::System.ArgumentNullException(nameof(gitAccount));
-            this.Repos = repos ?? throw new global::System.ArgumentNullException(nameof(repos));
+            this.Error = error ?? throw new global::System.ArgumentNullException(nameof(error));
         }
 
         /// <summary>
