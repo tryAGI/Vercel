@@ -48,6 +48,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
+        /// Cancel a blob upload<br/>
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Cancel an in-flight blob upload. Aborts the underlying S3 multipart upload (if one was started) and discards the session.
         /// </summary>
         /// <param name="teamSlug">
@@ -89,6 +90,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
+        /// Cancel a blob upload<br/>
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Cancel an in-flight blob upload. Aborts the underlying S3 multipart upload (if one was started) and discards the session.
         /// </summary>
         /// <param name="teamSlug">

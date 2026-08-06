@@ -48,6 +48,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
+        /// Check if a manifest exists<br/>
         /// HEAD /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Check whether a manifest exists. Used by Docker client during push to determine if a manifest (or config blob referenced by digest) is already present.
         /// </summary>
         /// <param name="teamSlug">
@@ -89,6 +90,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
+        /// Check if a manifest exists<br/>
         /// HEAD /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Check whether a manifest exists. Used by Docker client during push to determine if a manifest (or config blob referenced by digest) is already present.
         /// </summary>
         /// <param name="teamSlug">

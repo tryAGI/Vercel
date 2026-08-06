@@ -48,6 +48,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
+        /// Delete an image manifest<br/>
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.
         /// </summary>
         /// <param name="teamSlug">
@@ -89,6 +90,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
+        /// Delete an image manifest<br/>
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.
         /// </summary>
         /// <param name="teamSlug">

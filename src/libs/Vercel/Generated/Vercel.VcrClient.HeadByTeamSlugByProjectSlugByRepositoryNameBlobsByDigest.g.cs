@@ -48,6 +48,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
+        /// Check if a blob exists<br/>
         /// HEAD /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Check whether a blob exists. Used by the Docker client before pushing a layer to avoid re-uploading content that already exists.
         /// </summary>
         /// <param name="teamSlug">
@@ -89,6 +90,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
+        /// Check if a blob exists<br/>
         /// HEAD /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Check whether a blob exists. Used by the Docker client before pushing a layer to avoid re-uploading content that already exists.
         /// </summary>
         /// <param name="teamSlug">

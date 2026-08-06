@@ -40,6 +40,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
+        /// Check registry API version support<br/>
         /// GET /v2/ Docker Registry v2 version check. Returns a 401 challenge when no credentials are provided, prompting the Docker client to send auth. With valid credentials, returns 200 so the client can proceed.
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -57,6 +58,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
+        /// Check registry API version support<br/>
         /// GET /v2/ Docker Registry v2 version check. Returns a 401 challenge when no credentials are provided, prompting the Docker client to send auth. With valid credentials, returns 200 so the client can proceed.
         /// </summary>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

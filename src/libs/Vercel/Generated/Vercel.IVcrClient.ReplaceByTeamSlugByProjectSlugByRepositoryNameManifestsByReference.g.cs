@@ -5,6 +5,7 @@ namespace Vercel
     public partial interface IVcrClient
     {
         /// <summary>
+        /// Push an image manifest<br/>
         /// PUT /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Upload an image manifest. The digest is computed from the body and returned in the Docker-Content-Digest header.
         /// </summary>
         /// <param name="teamSlug">
@@ -34,6 +35,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
+        /// Push an image manifest<br/>
         /// PUT /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Upload an image manifest. The digest is computed from the body and returned in the Docker-Content-Digest header.
         /// </summary>
         /// <param name="teamSlug">

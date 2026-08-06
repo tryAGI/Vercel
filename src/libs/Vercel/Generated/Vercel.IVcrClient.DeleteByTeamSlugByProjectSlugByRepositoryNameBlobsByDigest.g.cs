@@ -5,6 +5,7 @@ namespace Vercel
     public partial interface IVcrClient
     {
         /// <summary>
+        /// Delete a blob<br/>
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Blob deletion is intentionally not supported. Matches the behaviour of most public registries.
         /// </summary>
         /// <param name="teamSlug">
@@ -34,6 +35,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
+        /// Delete a blob<br/>
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Blob deletion is intentionally not supported. Matches the behaviour of most public registries.
         /// </summary>
         /// <param name="teamSlug">
