@@ -755,6 +755,9 @@ namespace Vercel
         /// <param name="triggers">
         /// Whether the triggers are enabled for this connector.
         /// </param>
+        /// <param name="triggerDestination">
+        /// Initial trigger destination routing for the linked project.
+        /// </param>
         /// <param name="events">
         /// The list of the defaults trigger events for this connector.
         /// </param>
@@ -776,6 +779,7 @@ namespace Vercel
             string? projectId = default,
             global::System.Collections.Generic.IList<string>? environments = default,
             bool? triggers = default,
+            global::Vercel.CreateConnectorRequestTriggerDestination? triggerDestination = default,
             global::System.Collections.Generic.IList<string>? events = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -796,6 +800,7 @@ namespace Vercel
                 ProjectId = projectId,
                 Environments = environments,
                 Triggers = triggers,
+                TriggerDestination = triggerDestination,
                 Events = events,
             };
 
