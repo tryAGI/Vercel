@@ -16,12 +16,6 @@ namespace Vercel
         public global::Vercel.OneOf<global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
 
         /// <summary>
-        /// Image to use for the sandbox.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("image")]
-        public string? Image { get; set; }
-
-        /// <summary>
         /// Resources to define the VM
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resources")]
@@ -34,6 +28,12 @@ namespace Vercel
         /// <example>[3000, 4000]</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("ports")]
         public global::System.Collections.Generic.IList<int>? Ports { get; set; }
+
+        /// <summary>
+        /// Image to use for the sandbox.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("image")]
+        public string? Image { get; set; }
 
         /// <summary>
         /// Maximum duration in milliseconds that the sandbox can run before being automatically stopped.<br/>
@@ -105,15 +105,15 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateSandboxesByNameForkRequest" /> class.
         /// </summary>
         /// <param name="networkPolicy"></param>
-        /// <param name="image">
-        /// Image to use for the sandbox.
-        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
         /// <param name="ports">
         /// List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.<br/>
         /// Example: [3000, 4000]
+        /// </param>
+        /// <param name="image">
+        /// Image to use for the sandbox.
         /// </param>
         /// <param name="timeout">
         /// Maximum duration in milliseconds that the sandbox can run before being automatically stopped.<br/>
@@ -150,9 +150,9 @@ namespace Vercel
 #endif
         public CreateSandboxesByNameForkRequest(
             global::Vercel.OneOf<global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2>? networkPolicy,
-            string? image,
             global::Vercel.CreateSandboxesByNameForkRequestResources? resources,
             global::System.Collections.Generic.IList<int>? ports,
+            string? image,
             int? timeout,
             global::System.Collections.Generic.Dictionary<string, string>? env,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesByNameForkRequestMounts2>? mounts,
@@ -163,9 +163,9 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, string>? tags)
         {
             this.NetworkPolicy = networkPolicy;
-            this.Image = image;
             this.Resources = resources;
             this.Ports = ports;
+            this.Image = image;
             this.Timeout = timeout;
             this.Env = env;
             this.Mounts = mounts;

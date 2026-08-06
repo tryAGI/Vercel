@@ -79,15 +79,15 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="networkPolicy"></param>
-        /// <param name="image">
-        /// Image to use for the sandbox.
-        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
         /// <param name="ports">
         /// List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.<br/>
         /// Example: [3000, 4000]
+        /// </param>
+        /// <param name="image">
+        /// Image to use for the sandbox.
         /// </param>
         /// <param name="timeout">
         /// Maximum duration in milliseconds that the sandbox can run before being automatically stopped.<br/>
@@ -128,9 +128,9 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2>? networkPolicy = default,
-            string? image = default,
             global::Vercel.CreateSandboxesByNameForkRequestResources? resources = default,
             global::System.Collections.Generic.IList<int>? ports = default,
+            string? image = default,
             int? timeout = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesByNameForkRequestMounts2>? mounts = default,

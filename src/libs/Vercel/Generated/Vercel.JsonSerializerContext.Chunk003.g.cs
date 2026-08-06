@@ -758,12 +758,12 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.EditProjectEnvRequestTargetItemNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.EditProjectEnvRequestTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.EditProjectEnvRequestTypeNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateSandboxesRequestNetworkPolicyVariant1ModeJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateSandboxesRequestNetworkPolicyVariant1ModeNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateSandboxesRequestRuntimeJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateSandboxesRequestRuntimeNullableJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateSandboxesRequestMountsModeJsonConverter),
-            typeof(global::Vercel.JsonConverters.CreateSandboxesRequestMountsModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestNetworkPolicyVariant1ModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestNetworkPolicyVariant1ModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestRuntimeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestRuntimeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestMountsModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestMountsModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestRuntimeJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestRuntimeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestNetworkPolicyVariant1ModeJsonConverter),
@@ -774,6 +774,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateSandboxesByNameForkRequestNetworkPolicyVariant1ModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSandboxesByNameForkRequestMountsModeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSandboxesByNameForkRequestMountsModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateSandboxesV3RequestNetworkPolicyVariant1ModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateSandboxesV3RequestNetworkPolicyVariant1ModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateSandboxesV3RequestMountsModeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateSandboxesV3RequestMountsModeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PutFirewallConfigRequestCrsSdActionJsonConverter),
             typeof(global::Vercel.JsonConverters.PutFirewallConfigRequestCrsSdActionNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.PutFirewallConfigRequestCrsMaActionJsonConverter),
@@ -6969,9 +6973,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, string, bool?, double?, global::Vercel.UpdateProjectRequestDismissedToastValue>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?, string>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateProjectEnvRequest2, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvRequestItem>>),
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2>),
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesRequestNetworkPolicyVariant2AllowItem>>>),
-            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesRequestSourceVariant1, global::Vercel.CreateSandboxesRequestSourceVariant2, global::Vercel.CreateSandboxesRequestSourceVariant3>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant2AllowItem>>>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesV2RequestSourceVariant1, global::Vercel.CreateSandboxesV2RequestSourceVariant2, global::Vercel.CreateSandboxesV2RequestSourceVariant3>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UpdateSandboxRequestKeepLastSnapshots>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>),
@@ -6980,6 +6984,9 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItem>>>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant2AllowItem>>>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItem>>>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesV3RequestSourceVariant1, global::Vercel.CreateSandboxesV3RequestSourceVariant2, global::Vercel.CreateSandboxesV3RequestSourceVariant3>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateAttackChallengeModeRequestVariant1, global::Vercel.UpdateAttackChallengeModeRequestVariant2>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PutFirewallConfigRequestRuleActionMitigateRateLimitVariant1, object>),
@@ -7882,6 +7889,49 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestMounts2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestMountsMode), TypeInfoPropertyName = "CreateSandboxesByNameForkRequestMountsMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestKeepLastSnapshots))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3Request))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2>), TypeInfoPropertyName = "OneOfCreateSandboxesV3RequestNetworkPolicyVariant1CreateSandboxesV3RequestNetworkPolicyVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1Mode), TypeInfoPropertyName = "CreateSandboxesV3RequestNetworkPolicyVariant1Mode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRule>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRule))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRuleMatch))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRuleMatchPath))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRuleMatchQueryStringItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRuleMatchQueryStringItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRuleMatchQueryStringItemKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRuleMatchQueryStringItemValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRuleMatchHeader>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRuleMatchHeader))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRuleMatchHeaderKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1InjectionRuleMatchHeaderValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItem>>>), TypeInfoPropertyName = "OneOfIListStringDictionaryStringIListCreateSandboxesV3RequestNetworkPolicyVariant2AllowItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItem>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemMatch))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemMatchPath))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemMatchQueryStringItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemMatchQueryStringItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemMatchQueryStringItemKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemMatchQueryStringItemValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemMatchHeader>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemMatchHeader))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemMatchHeaderKey))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemMatchHeaderValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemTransformItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2AllowItemTransformItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2Subnets))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestResources))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateSandboxesV3RequestSourceVariant1, global::Vercel.CreateSandboxesV3RequestSourceVariant2, global::Vercel.CreateSandboxesV3RequestSourceVariant3>), TypeInfoPropertyName = "OneOfCreateSandboxesV3RequestSourceVariant1CreateSandboxesV3RequestSourceVariant2CreateSandboxesV3RequestSourceVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestSourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestSourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestSourceVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesV3RequestMounts2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestMounts2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestMountsMode), TypeInfoPropertyName = "CreateSandboxesV3RequestMountsMode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV3RequestKeepLastSnapshots))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateAttackChallengeModeRequestVariant1, global::Vercel.UpdateAttackChallengeModeRequestVariant2>), TypeInfoPropertyName = "OneOfUpdateAttackChallengeModeRequestVariant1UpdateAttackChallengeModeRequestVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateAttackChallengeModeRequestVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateAttackChallengeModeRequestVariant2))]
@@ -8316,49 +8366,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5OptionsReplacePrice))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5Output))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5Type), TypeInfoPropertyName = "BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6Options))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6OptionsLineItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6OptionsLineItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6Output))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6Type), TypeInfoPropertyName = "BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentCurrency), TypeInfoPropertyName = "BuyCreditsResponseVariant2PurchaseIntentCurrency2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentProvider))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentProviderType), TypeInfoPropertyName = "BuyCreditsResponseVariant2PurchaseIntentProviderType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentStatus), TypeInfoPropertyName = "BuyCreditsResponseVariant2PurchaseIntentStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentDispute))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentLineItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentLineItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4>), TypeInfoPropertyName = "BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4_3c12922a4994d304")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1Options))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1Output))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1OutputEffectiveBehavior), TypeInfoPropertyName = "BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1OutputEffectiveBehavior2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1OutputChangedResource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1OutputChangedResource))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1Type), TypeInfoPropertyName = "BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Options))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Output))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2OutputEffectiveBehavior), TypeInfoPropertyName = "BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2OutputEffectiveBehavior2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2OutputChangedResource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2OutputChangedResource))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Type), TypeInfoPropertyName = "BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3Options))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3Output))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior), TypeInfoPropertyName = "BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3OutputChangedResource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3OutputChangedResource))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3Type), TypeInfoPropertyName = "BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Options))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Output))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputEffectiveBehavior), TypeInfoPropertyName = "BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputEffectiveBehavior2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResource))]
     internal sealed partial class SourceGenerationContextChunk003 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
