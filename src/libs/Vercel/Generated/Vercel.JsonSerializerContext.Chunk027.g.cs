@@ -382,6 +382,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateCheckRequestOutputMetricsVirtualExperienceScoreSourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeOauthServerConfigJwksKeyUseJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeOauthServerConfigJwksKeyUseNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeApiKeySubjectTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeApiKeySubjectTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeGithubOwnerTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeGithubOwnerTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetConnectorTokenRequestSubjectTypeAppTypeJsonConverter),
@@ -7906,6 +7908,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant1Preset?), TypeInfoPropertyName = "NullableCreateProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant1Preset2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant2Preset?), TypeInfoPropertyName = "NullableCreateProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant2Preset2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateProjectResponseTrustedSourcesOidcProviderToVariant1, global::Vercel.CreateProjectResponseTrustedSourcesOidcProviderToVariant2>?), TypeInfoPropertyName = "CreateProjectResponseTrustedSourcesOidcProviderToVariant2_489970f78d63ac4f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseTrustedSourcesOidcProviderToVariant1Preset?), TypeInfoPropertyName = "NullableCreateProjectResponseTrustedSourcesOidcProviderToVariant1Preset2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseTrustedSourcesOidcProviderToVariant2Preset?), TypeInfoPropertyName = "NullableCreateProjectResponseTrustedSourcesOidcProviderToVariant2Preset2")]
@@ -8404,8 +8408,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2HaVariant2Type?), TypeInfoPropertyName = "NullableUploadProjectAvatarResponseInternalRouteVariant2HaVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2MitigateAction?), TypeInfoPropertyName = "NullableUploadProjectAvatarResponseInternalRouteVariant2MitigateAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseDismissedToastAction?), TypeInfoPropertyName = "NullableUploadProjectAvatarResponseDismissedToastAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.UploadProjectAvatarResponseDismissedToastValue, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleUploadProjectAvatarResponseDismissedToastValueBoolean2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseTracingSamplingRuleEnv?), TypeInfoPropertyName = "NullableUploadProjectAvatarResponseTracingSamplingRuleEnv2")]
     internal sealed partial class SourceGenerationContextChunk027 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

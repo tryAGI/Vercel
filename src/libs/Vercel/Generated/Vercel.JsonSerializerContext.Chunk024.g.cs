@@ -382,6 +382,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateCheckRequestOutputMetricsVirtualExperienceScoreSourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeOauthServerConfigJwksKeyUseJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeOauthServerConfigJwksKeyUseNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeApiKeySubjectTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeApiKeySubjectTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeGithubOwnerTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeGithubOwnerTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetConnectorTokenRequestSubjectTypeAppTypeJsonConverter),
@@ -7906,6 +7908,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Secret>?), TypeInfoPropertyName = "NullableOneOfStringGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Secret2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Encoding?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Secret>?), TypeInfoPropertyName = "NullableOneOfStringGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Secret2")]
@@ -8404,8 +8408,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentResponseDataRuleConditionLhsVariant1Type?), TypeInfoPropertyName = "NullableCreateFlagSegmentResponseDataRuleConditionLhsVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentResponseDataRuleConditionLhsVariant2Type?), TypeInfoPropertyName = "NullableCreateFlagSegmentResponseDataRuleConditionLhsVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentResponseDataRuleConditionCmp?), TypeInfoPropertyName = "NullableCreateFlagSegmentResponseDataRuleConditionCmp2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentResponseTypeName?), TypeInfoPropertyName = "NullableCreateFlagSegmentResponseTypeName2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateFlagSegmentResponse2, global::Vercel.Segment>?), TypeInfoPropertyName = "NullableOneOfUpdateFlagSegmentResponse2Segment2")]
     internal sealed partial class SourceGenerationContextChunk024 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

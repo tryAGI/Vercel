@@ -11896,6 +11896,14 @@
                             "type": "string"
                           },
                           "type": "array"
+                        },
+                        "manualCredentialInput": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "User authorization is completed by the Connect consent screen submitting a credential instead of an OAuth redirect."
                         }
                       },
                       "required": [
@@ -12526,6 +12534,13 @@
                       {
                         "type": "object",
                         "properties": {
+                          "subjectType": {
+                            "type": "string",
+                            "enum": [
+                              "app",
+                              "user"
+                            ]
+                          },
                           "values": {
                             "type": "array",
                             "items": {
@@ -12546,13 +12561,9 @@
                                 "value"
                               ],
                               "additionalProperties": false
-                            },
-                            "minItems": 1
+                            }
                           }
                         },
-                        "required": [
-                          "values"
-                        ],
                         "additionalProperties": false,
                         "title": "type:api-key"
                       },
@@ -17733,6 +17744,9 @@
                                   }
                                 ]
                               },
+                              "maxConcurrency": {
+                                "type": "number"
+                              },
                               "regions": {
                                 "items": {
                                   "type": "string"
@@ -18695,6 +18709,9 @@
                                                     }
                                                   ]
                                                 },
+                                                "maxConcurrency": {
+                                                  "type": "number"
+                                                },
                                                 "regions": {
                                                   "items": {
                                                     "type": "string"
@@ -19188,6 +19205,9 @@
                                                     }
                                                   ]
                                                 },
+                                                "maxConcurrency": {
+                                                  "type": "number"
+                                                },
                                                 "regions": {
                                                   "items": {
                                                     "type": "string"
@@ -19516,6 +19536,9 @@
                                               ]
                                             }
                                           ]
+                                        },
+                                        "maxConcurrency": {
+                                          "type": "number"
                                         },
                                         "regions": {
                                           "items": {
@@ -25702,6 +25725,9 @@
                                   }
                                 ]
                               },
+                              "maxConcurrency": {
+                                "type": "number"
+                              },
                               "regions": {
                                 "items": {
                                   "type": "string"
@@ -26664,6 +26690,9 @@
                                                     }
                                                   ]
                                                 },
+                                                "maxConcurrency": {
+                                                  "type": "number"
+                                                },
                                                 "regions": {
                                                   "items": {
                                                     "type": "string"
@@ -27157,6 +27186,9 @@
                                                     }
                                                   ]
                                                 },
+                                                "maxConcurrency": {
+                                                  "type": "number"
+                                                },
                                                 "regions": {
                                                   "items": {
                                                     "type": "string"
@@ -27485,6 +27517,9 @@
                                               ]
                                             }
                                           ]
+                                        },
+                                        "maxConcurrency": {
+                                          "type": "number"
                                         },
                                         "regions": {
                                           "items": {
@@ -32820,6 +32855,9 @@
                               }
                             ]
                           },
+                          "maxConcurrency": {
+                            "type": "number"
+                          },
                           "regions": {
                             "items": {
                               "type": "string"
@@ -33782,6 +33820,9 @@
                                                 }
                                               ]
                                             },
+                                            "maxConcurrency": {
+                                              "type": "number"
+                                            },
                                             "regions": {
                                               "items": {
                                                 "type": "string"
@@ -34275,6 +34316,9 @@
                                                 }
                                               ]
                                             },
+                                            "maxConcurrency": {
+                                              "type": "number"
+                                            },
                                             "regions": {
                                               "items": {
                                                 "type": "string"
@@ -34603,6 +34647,9 @@
                                           ]
                                         }
                                       ]
+                                    },
+                                    "maxConcurrency": {
+                                      "type": "number"
                                     },
                                     "regions": {
                                       "items": {

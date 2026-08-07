@@ -382,6 +382,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateCheckRequestOutputMetricsVirtualExperienceScoreSourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeOauthServerConfigJwksKeyUseJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeOauthServerConfigJwksKeyUseNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeApiKeySubjectTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeApiKeySubjectTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeGithubOwnerTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeGithubOwnerTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetConnectorTokenRequestSubjectTypeAppTypeJsonConverter),
@@ -7906,6 +7908,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource?), TypeInfoPropertyName = "NullablePatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>?), TypeInfoPropertyName = "NullableAnyOfPatchTeamRequestNsnbConfigString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestNsnbConfigPreference?), TypeInfoPropertyName = "NullablePatchTeamRequestNsnbConfigPreference2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.PatchTeamRequestDefaultProjectJobs, string>?), TypeInfoPropertyName = "NullableOneOfPatchTeamRequestDefaultProjectJobsString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestResourceConfigBuildMachineDefault?), TypeInfoPropertyName = "NullablePatchTeamRequestResourceConfigBuildMachineDefault2")]
@@ -8404,8 +8408,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigFunctionType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ConfigFunctionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigFunctionMemoryType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ConfigFunctionMemoryType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfigBuildQueueConfiguration?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ConfigResourceConfigBuildQueueConfiguration2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfigElasticConcurrency?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ConfigResourceConfigElasticConcurrency2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfigBuildMachinePurchaseType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ConfigResourceConfigBuildMachinePurchaseType2")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

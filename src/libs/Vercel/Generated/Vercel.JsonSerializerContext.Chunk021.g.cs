@@ -382,6 +382,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.UpdateCheckRequestOutputMetricsVirtualExperienceScoreSourceNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeOauthServerConfigJwksKeyUseJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeOauthServerConfigJwksKeyUseNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeApiKeySubjectTypeJsonConverter),
+            typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeApiKeySubjectTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeGithubOwnerTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeGithubOwnerTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.GetConnectorTokenRequestSubjectTypeAppTypeJsonConverter),
@@ -7906,6 +7908,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SegmentDataRuleOutcomeVariant1Type?), TypeInfoPropertyName = "NullableSegmentDataRuleOutcomeVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SegmentDataRuleOutcomeVariant2Type?), TypeInfoPropertyName = "NullableSegmentDataRuleOutcomeVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SegmentDataRuleOutcomeVariant2BaseType?), TypeInfoPropertyName = "NullableSegmentDataRuleOutcomeVariant2BaseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.SegmentDataRuleConditionRhsVariant3, global::Vercel.SegmentDataRuleConditionRhsVariant4, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleSegmentDataRuleConditionRhsVariant3SegmentDataRuleConditionRhsVariant4Boolean2")]
@@ -8031,6 +8034,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckRequestOutputMetricsVirtualExperienceScoreSource?), TypeInfoPropertyName = "NullableUpdateCheckRequestOutputMetricsVirtualExperienceScoreSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, global::Vercel.CreateConnectorRequestDataTypePhoton, object>?), TypeInfoPropertyName = "CreateConnectorRequestDataTypePhoton_object_06a1d176f035cf8d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequestDataTypeOauthServerConfigJwksKeyUse?), TypeInfoPropertyName = "NullableCreateConnectorRequestDataTypeOauthServerConfigJwksKeyUse2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequestDataTypeApiKeySubjectType?), TypeInfoPropertyName = "NullableCreateConnectorRequestDataTypeApiKeySubjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorRequestDataTypeGithubOwnerType?), TypeInfoPropertyName = "NullableCreateConnectorRequestDataTypeGithubOwnerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.GetConnectorTokenRequestSubjectTypeApp, global::Vercel.GetConnectorTokenRequestSubjectTypeUser, global::Vercel.GetConnectorTokenRequestSubjectTypeJwtBearer, global::Vercel.GetConnectorTokenRequestSubjectTypeToken, global::Vercel.GetConnectorTokenRequestSubjectTypeOther>?), TypeInfoPropertyName = "GetConnectorTokenRequestSubjectTypeOther_d34ea1913f9b5b00")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConnectorTokenRequestSubjectTypeAppType?), TypeInfoPropertyName = "NullableGetConnectorTokenRequestSubjectTypeAppType2")]
@@ -8404,8 +8408,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1Type?), TypeInfoPropertyName = "NullablePatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1Target?), TypeInfoPropertyName = "NullablePatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant1Target2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant2Type?), TypeInfoPropertyName = "NullablePatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemEnvironmentVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource?), TypeInfoPropertyName = "NullablePatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>?), TypeInfoPropertyName = "NullableAnyOfPatchTeamRequestNsnbConfigString2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

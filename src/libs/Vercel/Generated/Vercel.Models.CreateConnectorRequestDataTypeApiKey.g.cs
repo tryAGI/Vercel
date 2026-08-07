@@ -11,9 +11,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("subjectType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateConnectorRequestDataTypeApiKeySubjectTypeJsonConverter))]
+        public global::Vercel.CreateConnectorRequestDataTypeApiKeySubjectType? SubjectType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("values")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.CreateConnectorRequestDataTypeApiKeyValue> Values { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateConnectorRequestDataTypeApiKeyValue>? Values { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateConnectorRequestDataTypeApiKey" /> class.
         /// </summary>
+        /// <param name="subjectType"></param>
         /// <param name="values"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateConnectorRequestDataTypeApiKey(
-            global::System.Collections.Generic.IList<global::Vercel.CreateConnectorRequestDataTypeApiKeyValue> values)
+            global::Vercel.CreateConnectorRequestDataTypeApiKeySubjectType? subjectType,
+            global::System.Collections.Generic.IList<global::Vercel.CreateConnectorRequestDataTypeApiKeyValue>? values)
         {
-            this.Values = values ?? throw new global::System.ArgumentNullException(nameof(values));
+            this.SubjectType = subjectType;
+            this.Values = values;
         }
 
         /// <summary>
