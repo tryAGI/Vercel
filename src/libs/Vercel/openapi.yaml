@@ -17866,6 +17866,14 @@
                           },
                           "type": "object"
                         },
+                        "isInstantStatic": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Whether this deployment completed through the instant static fast path."
+                        },
                         "monorepoManager": {
                           "nullable": true,
                           "type": "string"
@@ -25847,6 +25855,14 @@
                           },
                           "type": "object"
                         },
+                        "isInstantStatic": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Whether this deployment completed through the instant static fast path."
+                        },
                         "monorepoManager": {
                           "nullable": true,
                           "type": "string"
@@ -32976,6 +32992,14 @@
                         "type": "object"
                       },
                       "type": "object"
+                    },
+                    "isInstantStatic": {
+                      "type": "boolean",
+                      "enum": [
+                        false,
+                        true
+                      ],
+                      "description": "Whether this deployment completed through the instant static fast path."
                     },
                     "monorepoManager": {
                       "nullable": true,
