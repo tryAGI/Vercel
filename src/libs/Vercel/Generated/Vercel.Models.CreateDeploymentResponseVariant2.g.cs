@@ -552,6 +552,12 @@ namespace Vercel
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateDeploymentResponseVariant2Functions2>? Functions { get; set; }
 
         /// <summary>
+        /// Whether this deployment completed through the instant static fast path.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isInstantStatic")]
+        public bool? IsInstantStatic { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("monorepoManager")]
@@ -798,6 +804,9 @@ namespace Vercel
         /// <param name="connectConfigurationId"></param>
         /// <param name="crons"></param>
         /// <param name="functions"></param>
+        /// <param name="isInstantStatic">
+        /// Whether this deployment completed through the instant static fast path.
+        /// </param>
         /// <param name="monorepoManager"></param>
         /// <param name="passiveConnectConfigurationId">
         /// Since November 2023 this field defines a Secure Compute network that will only be used to deploy passive lambdas to (as in passiveRegions)
@@ -905,6 +914,7 @@ namespace Vercel
             string? connectConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseVariant2Cron>? crons,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateDeploymentResponseVariant2Functions2>? functions,
+            bool? isInstantStatic,
             string? monorepoManager,
             string? passiveConnectConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2RouteVariant1, global::Vercel.CreateDeploymentResponseVariant2RouteVariant2, global::Vercel.CreateDeploymentResponseVariant2RouteVariant3>>? routes,
@@ -996,6 +1006,7 @@ namespace Vercel
             this.CreatedIn = createdIn ?? throw new global::System.ArgumentNullException(nameof(createdIn));
             this.Crons = crons;
             this.Functions = functions;
+            this.IsInstantStatic = isInstantStatic;
             this.MonorepoManager = monorepoManager;
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.PassiveConnectConfigurationId = passiveConnectConfigurationId;
