@@ -35,6 +35,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? SupportedAuthorizationDetails { get; set; }
 
         /// <summary>
+        /// User authorization is completed by the Connect consent screen submitting a credential instead of an OAuth redirect.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("manualCredentialInput")]
+        public bool? ManualCredentialInput { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -49,6 +55,9 @@ namespace Vercel
         /// Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document.
         /// </param>
         /// <param name="supportedAuthorizationDetails"></param>
+        /// <param name="manualCredentialInput">
+        /// User authorization is completed by the Connect consent screen submitting a credential instead of an OAuth redirect.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -56,12 +65,14 @@ namespace Vercel
             bool crossInstallation,
             bool supportsRefinement,
             global::System.Collections.Generic.IList<string>? scopes,
-            global::System.Collections.Generic.IList<string>? supportedAuthorizationDetails)
+            global::System.Collections.Generic.IList<string>? supportedAuthorizationDetails,
+            bool? manualCredentialInput)
         {
             this.CrossInstallation = crossInstallation;
             this.SupportsRefinement = supportsRefinement;
             this.Scopes = scopes;
             this.SupportedAuthorizationDetails = supportedAuthorizationDetails;
+            this.ManualCredentialInput = manualCredentialInput;
         }
 
         /// <summary>
