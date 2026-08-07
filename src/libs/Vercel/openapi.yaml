@@ -15934,6 +15934,7 @@
                                 "defaultPurchaseType": {
                                   "type": "string",
                                   "enum": [
+                                    "basic",
                                     "enhanced",
                                     "standard"
                                   ],
@@ -23923,6 +23924,7 @@
                                 "defaultPurchaseType": {
                                   "type": "string",
                                   "enum": [
+                                    "basic",
                                     "enhanced",
                                     "standard"
                                   ],
@@ -31061,6 +31063,7 @@
                             "defaultPurchaseType": {
                               "type": "string",
                               "enum": [
+                                "basic",
                                 "enhanced",
                                 "standard"
                               ],

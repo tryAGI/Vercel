@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Basic,
+        /// <summary>
+        /// 
+        /// </summary>
         Enhanced,
         /// <summary>
         /// 
@@ -30,6 +34,7 @@ namespace Vercel
         {
             return value switch
             {
+                GetDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType.Basic => "basic",
                 GetDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType.Enhanced => "enhanced",
                 GetDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType.Standard => "standard",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -42,6 +47,7 @@ namespace Vercel
         {
             return value switch
             {
+                "basic" => GetDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType.Basic,
                 "enhanced" => GetDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType.Enhanced,
                 "standard" => GetDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType.Standard,
                 _ => null,
