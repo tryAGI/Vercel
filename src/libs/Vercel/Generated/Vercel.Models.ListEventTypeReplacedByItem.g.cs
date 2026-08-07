@@ -359,6 +359,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ComplianceDocumentPreviewed,
+        /// <summary>
+        /// 
+        /// </summary>
         ComplianceDocumentsBulkDownloaded,
         /// <summary>
         /// 
@@ -2239,6 +2243,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserDeleteRequested,
+        /// <summary>
+        /// 
+        /// </summary>
         UserEmuAccountArchived,
         /// <summary>
         /// 
@@ -2565,6 +2573,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.CertSystemCreate => "cert-system-create",
                 ListEventTypeReplacedByItem.CodeOwnersConfigUpdated => "code-owners-config-updated",
                 ListEventTypeReplacedByItem.ComplianceDocumentDownloaded => "compliance-document-downloaded",
+                ListEventTypeReplacedByItem.ComplianceDocumentPreviewed => "compliance-document-previewed",
                 ListEventTypeReplacedByItem.ComplianceDocumentsBulkDownloaded => "compliance-documents-bulk-downloaded",
                 ListEventTypeReplacedByItem.ConcurrentBuildsUpdate => "concurrent-builds-update",
                 ListEventTypeReplacedByItem.ConnectAttachProject => "connect-attach-project",
@@ -3035,6 +3044,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.UserAutoBlockConfigured => "user-auto-block-configured",
                 ListEventTypeReplacedByItem.UserBlocked => "user-blocked",
                 ListEventTypeReplacedByItem.UserDelete => "user-delete",
+                ListEventTypeReplacedByItem.UserDeleteRequested => "user-delete-requested",
                 ListEventTypeReplacedByItem.UserEmuAccountArchived => "user-emu-account-archived",
                 ListEventTypeReplacedByItem.UserEmuAccountDeleted => "user-emu-account-deleted",
                 ListEventTypeReplacedByItem.UserEmuAccountRecovered => "user-emu-account-recovered",
@@ -3189,6 +3199,7 @@ namespace Vercel
                 "cert-system-create" => ListEventTypeReplacedByItem.CertSystemCreate,
                 "code-owners-config-updated" => ListEventTypeReplacedByItem.CodeOwnersConfigUpdated,
                 "compliance-document-downloaded" => ListEventTypeReplacedByItem.ComplianceDocumentDownloaded,
+                "compliance-document-previewed" => ListEventTypeReplacedByItem.ComplianceDocumentPreviewed,
                 "compliance-documents-bulk-downloaded" => ListEventTypeReplacedByItem.ComplianceDocumentsBulkDownloaded,
                 "concurrent-builds-update" => ListEventTypeReplacedByItem.ConcurrentBuildsUpdate,
                 "connect-attach-project" => ListEventTypeReplacedByItem.ConnectAttachProject,
@@ -3659,6 +3670,7 @@ namespace Vercel
                 "user-auto-block-configured" => ListEventTypeReplacedByItem.UserAutoBlockConfigured,
                 "user-blocked" => ListEventTypeReplacedByItem.UserBlocked,
                 "user-delete" => ListEventTypeReplacedByItem.UserDelete,
+                "user-delete-requested" => ListEventTypeReplacedByItem.UserDeleteRequested,
                 "user-emu-account-archived" => ListEventTypeReplacedByItem.UserEmuAccountArchived,
                 "user-emu-account-deleted" => ListEventTypeReplacedByItem.UserEmuAccountDeleted,
                 "user-emu-account-recovered" => ListEventTypeReplacedByItem.UserEmuAccountRecovered,
