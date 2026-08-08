@@ -79038,6 +79038,12 @@
                                 },
                                 "type": "array"
                               },
+                              "cursorOriginInstallation": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "dataCacheBillingSettings": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -102152,6 +102158,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "cursorOriginInstallation": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "dataCacheBillingSettings": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -109942,6 +109954,12 @@
                           "type": "array"
                         },
                         "buildMachineDefault": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "cursorOriginInstallation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -117905,6 +117923,12 @@
                           },
                           "type": "array"
                         },
+                        "cursorOriginInstallation": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "dataCacheBillingSettings": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -125216,6 +125240,12 @@
                           "type": "array"
                         },
                         "buildMachineDefault": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "cursorOriginInstallation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -133796,6 +133826,12 @@
                           "type": "array"
                         },
                         "buildMachineDefault": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "cursorOriginInstallation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -150398,6 +150434,12 @@
                           "type": "array"
                         },
                         "buildMachineDefault": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "cursorOriginInstallation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
