@@ -371,6 +371,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cursorOriginInstallation")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? CursorOriginInstallation { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dataCacheBillingSettings")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DataCacheBillingSettings { get; set; }
 
@@ -1697,6 +1703,7 @@ namespace Vercel
         /// <param name="connexInstallation"></param>
         /// <param name="connexToken"></param>
         /// <param name="buildMachineDefault"></param>
+        /// <param name="cursorOriginInstallation"></param>
         /// <param name="dataCacheBillingSettings"></param>
         /// <param name="defaultDeploymentProtection"></param>
         /// <param name="deploymentPolicy"></param>
@@ -1971,6 +1978,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexInstallation,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexToken,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? buildMachineDefault,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? cursorOriginInstallation,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? dataCacheBillingSettings,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? defaultDeploymentProtection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentPolicy,
@@ -2242,6 +2250,7 @@ namespace Vercel
             this.ConnexInstallation = connexInstallation;
             this.ConnexToken = connexToken;
             this.BuildMachineDefault = buildMachineDefault;
+            this.CursorOriginInstallation = cursorOriginInstallation;
             this.DataCacheBillingSettings = dataCacheBillingSettings;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
             this.DeploymentPolicy = deploymentPolicy;
