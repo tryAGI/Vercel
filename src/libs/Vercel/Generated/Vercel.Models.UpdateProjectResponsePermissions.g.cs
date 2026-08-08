@@ -131,6 +131,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayVirtualModelConfigs")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayVirtualModelConfigs { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alerts")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Alerts { get; set; }
 
@@ -1651,6 +1657,7 @@ namespace Vercel
         /// <param name="aiGatewayRules"></param>
         /// <param name="aiGatewaySettings"></param>
         /// <param name="aiGatewayUsage"></param>
+        /// <param name="aiGatewayVirtualModelConfigs"></param>
         /// <param name="alerts"></param>
         /// <param name="alertRules"></param>
         /// <param name="aliasGlobal"></param>
@@ -1924,6 +1931,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayRules,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewaySettings,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayUsage,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayVirtualModelConfigs,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? alerts,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? alertRules,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aliasGlobal,
@@ -2194,6 +2202,7 @@ namespace Vercel
             this.AiGatewayRules = aiGatewayRules;
             this.AiGatewaySettings = aiGatewaySettings;
             this.AiGatewayUsage = aiGatewayUsage;
+            this.AiGatewayVirtualModelConfigs = aiGatewayVirtualModelConfigs;
             this.Alerts = alerts;
             this.AlertRules = alertRules;
             this.AliasGlobal = aliasGlobal;

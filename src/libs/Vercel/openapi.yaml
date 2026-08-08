@@ -78798,6 +78798,12 @@
                                 },
                                 "type": "array"
                               },
+                              "aiGatewayVirtualModelConfigs": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "alerts": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -101906,6 +101912,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "aiGatewayVirtualModelConfigs": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "alerts": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -109690,6 +109702,12 @@
                           "type": "array"
                         },
                         "aiGatewayUsage": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayVirtualModelConfigs": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -117647,6 +117665,12 @@
                           },
                           "type": "array"
                         },
+                        "aiGatewayVirtualModelConfigs": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "alerts": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -124952,6 +124976,12 @@
                           "type": "array"
                         },
                         "aiGatewayUsage": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayVirtualModelConfigs": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -133526,6 +133556,12 @@
                           "type": "array"
                         },
                         "aiGatewayUsage": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayVirtualModelConfigs": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -150122,6 +150158,12 @@
                           "type": "array"
                         },
                         "aiGatewayUsage": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayVirtualModelConfigs": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
