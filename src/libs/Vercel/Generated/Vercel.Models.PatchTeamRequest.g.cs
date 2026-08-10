@@ -92,6 +92,14 @@ namespace Vercel
         public string? SensitiveEnvironmentVariablePolicy { get; set; }
 
         /// <summary>
+        /// Require production secrets to be in their own environment group: one of on, off or default.<br/>
+        /// Example: on
+        /// </summary>
+        /// <example>on</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("disjunctiveProductionSecretPolicy")]
+        public string? DisjunctiveProductionSecretPolicy { get; set; }
+
+        /// <summary>
         /// Whether or not remote caching is enabled for the team
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("remoteCaching")]
@@ -249,6 +257,10 @@ namespace Vercel
         /// Sensitive environment variable policy: one of on, off or default.<br/>
         /// Example: on
         /// </param>
+        /// <param name="disjunctiveProductionSecretPolicy">
+        /// Require production secrets to be in their own environment group: one of on, off or default.<br/>
+        /// Example: on
+        /// </param>
         /// <param name="remoteCaching">
         /// Whether or not remote caching is enabled for the team
         /// </param>
@@ -309,6 +321,7 @@ namespace Vercel
             string? enablePreviewFeedback,
             string? enableProductionFeedback,
             string? sensitiveEnvironmentVariablePolicy,
+            string? disjunctiveProductionSecretPolicy,
             global::Vercel.PatchTeamRequestRemoteCaching? remoteCaching,
             bool? hideIpAddresses,
             bool? hideIpAddressesInLogDrains,
@@ -337,6 +350,7 @@ namespace Vercel
             this.EnablePreviewFeedback = enablePreviewFeedback;
             this.EnableProductionFeedback = enableProductionFeedback;
             this.SensitiveEnvironmentVariablePolicy = sensitiveEnvironmentVariablePolicy;
+            this.DisjunctiveProductionSecretPolicy = disjunctiveProductionSecretPolicy;
             this.RemoteCaching = remoteCaching;
             this.HideIpAddresses = hideIpAddresses;
             this.HideIpAddressesInLogDrains = hideIpAddressesInLogDrains;

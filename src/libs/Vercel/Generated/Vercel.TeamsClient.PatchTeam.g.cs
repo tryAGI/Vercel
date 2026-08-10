@@ -703,6 +703,10 @@ namespace Vercel
         /// Sensitive environment variable policy: one of on, off or default.<br/>
         /// Example: on
         /// </param>
+        /// <param name="disjunctiveProductionSecretPolicy">
+        /// Require production secrets to be in their own environment group: one of on, off or default.<br/>
+        /// Example: on
+        /// </param>
         /// <param name="remoteCaching">
         /// Whether or not remote caching is enabled for the team
         /// </param>
@@ -765,6 +769,7 @@ namespace Vercel
             string? enablePreviewFeedback = default,
             string? enableProductionFeedback = default,
             string? sensitiveEnvironmentVariablePolicy = default,
+            string? disjunctiveProductionSecretPolicy = default,
             global::Vercel.PatchTeamRequestRemoteCaching? remoteCaching = default,
             bool? hideIpAddresses = default,
             bool? hideIpAddressesInLogDrains = default,
@@ -797,6 +802,7 @@ namespace Vercel
                 EnablePreviewFeedback = enablePreviewFeedback,
                 EnableProductionFeedback = enableProductionFeedback,
                 SensitiveEnvironmentVariablePolicy = sensitiveEnvironmentVariablePolicy,
+                DisjunctiveProductionSecretPolicy = disjunctiveProductionSecretPolicy,
                 RemoteCaching = remoteCaching,
                 HideIpAddresses = hideIpAddresses,
                 HideIpAddressesInLogDrains = hideIpAddressesInLogDrains,

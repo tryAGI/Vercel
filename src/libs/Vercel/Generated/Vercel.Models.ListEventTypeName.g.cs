@@ -780,6 +780,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        EnforceDisjunctiveProductionSecrets,
+        /// <summary>
+        /// 
+        /// </summary>
         EnforceSensitiveEnvironmentVariables,
         /// <summary>
         /// 
@@ -2695,6 +2699,7 @@ namespace Vercel
                 ListEventTypeName.EmailNotificationRuleRemoved => "email-notification-rule-removed",
                 ListEventTypeName.EmailNotificationRuleUpdated => "email-notification-rule-updated",
                 ListEventTypeName.EmuMemberRemovedUnverifiedDomain => "emu-member-removed-unverified-domain",
+                ListEventTypeName.EnforceDisjunctiveProductionSecrets => "enforce-disjunctive-production-secrets",
                 ListEventTypeName.EnforceSensitiveEnvironmentVariables => "enforce-sensitive-environment-variables",
                 ListEventTypeName.EnvVariableAdd => "env-variable-add",
                 ListEventTypeName.EnvVariableDelete => "env-variable-delete",
@@ -3325,6 +3330,7 @@ namespace Vercel
                 "email-notification-rule-removed" => ListEventTypeName.EmailNotificationRuleRemoved,
                 "email-notification-rule-updated" => ListEventTypeName.EmailNotificationRuleUpdated,
                 "emu-member-removed-unverified-domain" => ListEventTypeName.EmuMemberRemovedUnverifiedDomain,
+                "enforce-disjunctive-production-secrets" => ListEventTypeName.EnforceDisjunctiveProductionSecrets,
                 "enforce-sensitive-environment-variables" => ListEventTypeName.EnforceSensitiveEnvironmentVariables,
                 "env-variable-add" => ListEventTypeName.EnvVariableAdd,
                 "env-variable-delete" => ListEventTypeName.EnvVariableDelete,

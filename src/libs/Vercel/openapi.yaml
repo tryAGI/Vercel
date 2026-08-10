@@ -179750,6 +179750,11 @@
                     "example": "on",
                     "description": "Sensitive environment variable policy: one of on, off or default."
                   },
+                  "disjunctiveProductionSecretPolicy": {
+                    "type": "string",
+                    "example": "on",
+                    "description": "Require production secrets to be in their own environment group: one of on, off or default."
+                  },
                   "remoteCaching": {
                     "type": "object",
                     "description": "Whether or not remote caching is enabled for the team",
@@ -196900,6 +196905,7 @@
               "email-notification-rule-removed",
               "email-notification-rule-updated",
               "emu-member-removed-unverified-domain",
+              "enforce-disjunctive-production-secrets",
               "enforce-sensitive-environment-variables",
               "env-variable-add",
               "env-variable-delete",
@@ -197838,6 +197844,7 @@
               "email-notification-rule-removed",
               "email-notification-rule-updated",
               "emu-member-removed-unverified-domain",
+              "enforce-disjunctive-production-secrets",
               "enforce-sensitive-environment-variables",
               "env-variable-add",
               "env-variable-delete",
@@ -198517,6 +198524,7 @@
                 "email-notification-rule-removed",
                 "email-notification-rule-updated",
                 "emu-member-removed-unverified-domain",
+                "enforce-disjunctive-production-secrets",
                 "enforce-sensitive-environment-variables",
                 "env-variable-add",
                 "env-variable-delete",
@@ -201952,6 +201960,17 @@
               null
             ],
             "description": "Sensitive environment variable policy for this team"
+          },
+          "disjunctiveProductionSecretPolicy": {
+            "nullable": true,
+            "type": "string",
+            "enum": [
+              "default",
+              "off",
+              "on",
+              null
+            ],
+            "description": "Require production secrets to use a different value than preview or development."
           },
           "hideIpAddresses": {
             "nullable": true,
