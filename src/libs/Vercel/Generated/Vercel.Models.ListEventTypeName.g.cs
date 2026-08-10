@@ -480,6 +480,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        CustomMetricMetadataDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        CustomMetricMetadataUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         CustomSuffixClear,
         /// <summary>
         /// 
@@ -2612,6 +2620,8 @@ namespace Vercel
                 ListEventTypeName.CustomAlertDeleted => "custom-alert-deleted",
                 ListEventTypeName.CustomAlertUpdated => "custom-alert-updated",
                 ListEventTypeName.CustomEnvironmentsSettingsUpdated => "custom-environments-settings-updated",
+                ListEventTypeName.CustomMetricMetadataDeleted => "custom-metric-metadata-deleted",
+                ListEventTypeName.CustomMetricMetadataUpdated => "custom-metric-metadata-updated",
                 ListEventTypeName.CustomSuffixClear => "custom-suffix-clear",
                 ListEventTypeName.CustomSuffixDisable => "custom-suffix-disable",
                 ListEventTypeName.CustomSuffixEnable => "custom-suffix-enable",
@@ -3240,6 +3250,8 @@ namespace Vercel
                 "custom-alert-deleted" => ListEventTypeName.CustomAlertDeleted,
                 "custom-alert-updated" => ListEventTypeName.CustomAlertUpdated,
                 "custom-environments-settings-updated" => ListEventTypeName.CustomEnvironmentsSettingsUpdated,
+                "custom-metric-metadata-deleted" => ListEventTypeName.CustomMetricMetadataDeleted,
+                "custom-metric-metadata-updated" => ListEventTypeName.CustomMetricMetadataUpdated,
                 "custom-suffix-clear" => ListEventTypeName.CustomSuffixClear,
                 "custom-suffix-disable" => ListEventTypeName.CustomSuffixDisable,
                 "custom-suffix-enable" => ListEventTypeName.CustomSuffixEnable,
