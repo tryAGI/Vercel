@@ -36,6 +36,15 @@ namespace Vercel
         public required double MaxSizeBytes { get; set; }
 
         /// <summary>
+        /// The region where the drive is stored.<br/>
+        /// Example: iad1
+        /// </summary>
+        /// <example>iad1</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Region { get; set; }
+
+        /// <summary>
         /// Current session ID the drive is attached to, if any.<br/>
         /// Example: sbx_123
         /// </summary>
@@ -90,6 +99,10 @@ namespace Vercel
         /// The maximum drive size in bytes.<br/>
         /// Example: 107374182400L
         /// </param>
+        /// <param name="region">
+        /// The region where the drive is stored.<br/>
+        /// Example: iad1
+        /// </param>
         /// <param name="createdAt">
         /// The time when the drive was created, in milliseconds since the epoch.<br/>
         /// Example: 1750344501629L
@@ -113,6 +126,7 @@ namespace Vercel
             string name,
             string projectId,
             double maxSizeBytes,
+            string region,
             double createdAt,
             double updatedAt,
             string? currentSessionId,
@@ -121,6 +135,7 @@ namespace Vercel
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.MaxSizeBytes = maxSizeBytes;
+            this.Region = region ?? throw new global::System.ArgumentNullException(nameof(region));
             this.CurrentSessionId = currentSessionId;
             this.CurrentSandboxName = currentSandboxName;
             this.CreatedAt = createdAt;

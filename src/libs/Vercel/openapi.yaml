@@ -105908,6 +105908,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "410": {
             "description": ""
           }
@@ -155391,6 +155394,17 @@
                   "maxSizeBytes": {
                     "type": "integer",
                     "description": "Maximum drive size in bytes. Defaults to 100 GiB when omitted."
+                  },
+                  "region": {
+                    "type": "string",
+                    "description": "Region where the drive is stored. Defaults to iad1.",
+                    "enum": [
+                      "iad1",
+                      "sfo1",
+                      "cle1"
+                    ],
+                    "default": "iad1",
+                    "example": "iad1"
                   }
                 }
               }
@@ -197139,6 +197153,8 @@
               "saml-connection-deleted",
               "sandbox-alias-assigned",
               "sandbox-alias-delete",
+              "sandbox-drive-created",
+              "sandbox-drive-deleted",
               "sandbox-snapshot-regions-updated",
               "scale",
               "scale-auto",
@@ -198073,6 +198089,8 @@
               "saml-connection-deleted",
               "sandbox-alias-assigned",
               "sandbox-alias-delete",
+              "sandbox-drive-created",
+              "sandbox-drive-deleted",
               "sandbox-snapshot-regions-updated",
               "scale",
               "scale-auto",
@@ -198748,6 +198766,8 @@
                 "saml-connection-deleted",
                 "sandbox-alias-assigned",
                 "sandbox-alias-delete",
+                "sandbox-drive-created",
+                "sandbox-drive-deleted",
                 "sandbox-snapshot-regions-updated",
                 "scale",
                 "scale-auto",
@@ -201101,6 +201121,11 @@
             "description": "The maximum drive size in bytes.",
             "example": 107374182400
           },
+          "region": {
+            "type": "string",
+            "description": "The region where the drive is stored.",
+            "example": "iad1"
+          },
           "currentSessionId": {
             "type": "string",
             "description": "Current session ID the drive is attached to, if any.",
@@ -201127,6 +201152,7 @@
           "maxSizeBytes",
           "name",
           "projectId",
+          "region",
           "updatedAt"
         ],
         "type": "object",

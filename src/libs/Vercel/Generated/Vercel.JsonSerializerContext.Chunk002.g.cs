@@ -766,6 +766,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestRuntimeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestMountsModeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestMountsModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetOrCreateDriveRequestRegionJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetOrCreateDriveRequestRegionNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestRuntimeJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestRuntimeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestNetworkPolicyVariant1ModeJsonConverter),
@@ -8317,6 +8319,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<object, int?>), TypeInfoPropertyName = "OneOfObjectInt322")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV2RequestKeepLastSnapshots))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrCreateDriveRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrCreateDriveRequestRegion), TypeInfoPropertyName = "GetOrCreateDriveRequestRegion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestResources))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestRuntime), TypeInfoPropertyName = "UpdateSandboxRequestRuntime2")]
@@ -8407,7 +8410,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant1InjectionRuleMatchQueryStringItemKey))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant1InjectionRuleMatchQueryStringItemValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant1InjectionRuleMatchHeader>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesByNameForkRequestNetworkPolicyVariant1InjectionRuleMatchHeader))]
     internal sealed partial class SourceGenerationContextChunk002 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

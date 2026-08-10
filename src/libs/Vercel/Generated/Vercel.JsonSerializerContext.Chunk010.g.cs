@@ -766,6 +766,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestRuntimeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestMountsModeJsonConverter),
             typeof(global::Vercel.JsonConverters.CreateSandboxesV2RequestMountsModeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetOrCreateDriveRequestRegionJsonConverter),
+            typeof(global::Vercel.JsonConverters.GetOrCreateDriveRequestRegionNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestRuntimeJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestRuntimeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.UpdateSandboxRequestNetworkPolicyVariant1ModeJsonConverter),
@@ -7908,6 +7910,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourcesResponseResourceProtocolSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourcesResponseResourceProtocolSettingsExperimentation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourcesResponseResourceNotification))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourcesResponseResourceNotificationLevel), TypeInfoPropertyName = "GetIntegrationResourcesResponseResourceNotificationLevel2")]
@@ -8407,7 +8410,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectJobs))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsLint))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsTypecheck))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsMfeConfigPresent))]
     internal sealed partial class SourceGenerationContextChunk010 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
