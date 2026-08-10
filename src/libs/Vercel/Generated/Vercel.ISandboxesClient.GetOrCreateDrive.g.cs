@@ -77,6 +77,11 @@ namespace Vercel
         /// <param name="maxSizeBytes">
         /// Maximum drive size in bytes. Defaults to 100 GiB when omitted.
         /// </param>
+        /// <param name="region">
+        /// Region where the drive is stored. Defaults to iad1.<br/>
+        /// Default Value: iad1<br/>
+        /// Example: iad1
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -86,6 +91,7 @@ namespace Vercel
             string? slug = default,
             string? projectId = default,
             int? maxSizeBytes = default,
+            global::Vercel.GetOrCreateDriveRequestRegion? region = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

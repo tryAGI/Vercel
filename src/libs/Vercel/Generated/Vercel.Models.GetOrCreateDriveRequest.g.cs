@@ -23,6 +23,16 @@ namespace Vercel
         public int? MaxSizeBytes { get; set; }
 
         /// <summary>
+        /// Region where the drive is stored. Defaults to iad1.<br/>
+        /// Default Value: iad1<br/>
+        /// Example: iad1
+        /// </summary>
+        /// <example>iad1</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetOrCreateDriveRequestRegionJsonConverter))]
+        public global::Vercel.GetOrCreateDriveRequestRegion? Region { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -38,15 +48,22 @@ namespace Vercel
         /// <param name="maxSizeBytes">
         /// Maximum drive size in bytes. Defaults to 100 GiB when omitted.
         /// </param>
+        /// <param name="region">
+        /// Region where the drive is stored. Defaults to iad1.<br/>
+        /// Default Value: iad1<br/>
+        /// Example: iad1
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetOrCreateDriveRequest(
             string? projectId,
-            int? maxSizeBytes)
+            int? maxSizeBytes,
+            global::Vercel.GetOrCreateDriveRequestRegion? region)
         {
             this.ProjectId = projectId;
             this.MaxSizeBytes = maxSizeBytes;
+            this.Region = region;
         }
 
         /// <summary>

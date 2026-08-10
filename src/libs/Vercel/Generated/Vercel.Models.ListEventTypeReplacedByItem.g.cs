@@ -1791,6 +1791,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SandboxDriveCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        SandboxDriveDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
         SandboxSnapshotRegionsUpdated,
         /// <summary>
         /// 
@@ -2931,6 +2939,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.SamlConnectionDeleted => "saml-connection-deleted",
                 ListEventTypeReplacedByItem.SandboxAliasAssigned => "sandbox-alias-assigned",
                 ListEventTypeReplacedByItem.SandboxAliasDelete => "sandbox-alias-delete",
+                ListEventTypeReplacedByItem.SandboxDriveCreated => "sandbox-drive-created",
+                ListEventTypeReplacedByItem.SandboxDriveDeleted => "sandbox-drive-deleted",
                 ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated => "sandbox-snapshot-regions-updated",
                 ListEventTypeReplacedByItem.Scale => "scale",
                 ListEventTypeReplacedByItem.ScaleAuto => "scale-auto",
@@ -3557,6 +3567,8 @@ namespace Vercel
                 "saml-connection-deleted" => ListEventTypeReplacedByItem.SamlConnectionDeleted,
                 "sandbox-alias-assigned" => ListEventTypeReplacedByItem.SandboxAliasAssigned,
                 "sandbox-alias-delete" => ListEventTypeReplacedByItem.SandboxAliasDelete,
+                "sandbox-drive-created" => ListEventTypeReplacedByItem.SandboxDriveCreated,
+                "sandbox-drive-deleted" => ListEventTypeReplacedByItem.SandboxDriveDeleted,
                 "sandbox-snapshot-regions-updated" => ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated,
                 "scale" => ListEventTypeReplacedByItem.Scale,
                 "scale-auto" => ListEventTypeReplacedByItem.ScaleAuto,
