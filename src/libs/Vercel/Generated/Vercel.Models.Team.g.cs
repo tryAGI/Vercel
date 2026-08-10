@@ -162,6 +162,13 @@ namespace Vercel
         public global::Vercel.TeamSensitiveEnvironmentVariablePolicy? SensitiveEnvironmentVariablePolicy { get; set; }
 
         /// <summary>
+        /// Require production secrets to use a different value than preview or development.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("disjunctiveProductionSecretPolicy")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamDisjunctiveProductionSecretPolicyJsonConverter))]
+        public global::Vercel.TeamDisjunctiveProductionSecretPolicy? DisjunctiveProductionSecretPolicy { get; set; }
+
+        /// <summary>
         /// Indicates if IP addresses should be accessible in observability (o11y) tooling
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hideIpAddresses")]
@@ -405,6 +412,9 @@ namespace Vercel
         /// <param name="sensitiveEnvironmentVariablePolicy">
         /// Sensitive environment variable policy for this team
         /// </param>
+        /// <param name="disjunctiveProductionSecretPolicy">
+        /// Require production secrets to use a different value than preview or development.
+        /// </param>
         /// <param name="hideIpAddresses">
         /// Indicates if IP addresses should be accessible in observability (o11y) tooling
         /// </param>
@@ -496,6 +506,7 @@ namespace Vercel
             global::Vercel.TeamEnablePreviewFeedback? enablePreviewFeedback,
             global::Vercel.TeamEnableProductionFeedback? enableProductionFeedback,
             global::Vercel.TeamSensitiveEnvironmentVariablePolicy? sensitiveEnvironmentVariablePolicy,
+            global::Vercel.TeamDisjunctiveProductionSecretPolicy? disjunctiveProductionSecretPolicy,
             bool? hideIpAddresses,
             bool? hideIpAddressesInLogDrains,
             global::Vercel.TeamDpAccessRequestsMode? dpAccessRequestsMode,
@@ -539,6 +550,7 @@ namespace Vercel
             this.EnablePreviewFeedback = enablePreviewFeedback;
             this.EnableProductionFeedback = enableProductionFeedback;
             this.SensitiveEnvironmentVariablePolicy = sensitiveEnvironmentVariablePolicy;
+            this.DisjunctiveProductionSecretPolicy = disjunctiveProductionSecretPolicy;
             this.HideIpAddresses = hideIpAddresses;
             this.HideIpAddressesInLogDrains = hideIpAddressesInLogDrains;
             this.DpAccessRequestsMode = dpAccessRequestsMode;
