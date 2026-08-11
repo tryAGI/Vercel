@@ -42,6 +42,13 @@ namespace Vercel
         public string? ServiceName { get; set; }
 
         /// <summary>
+        /// Provider-facing display name when the connector type exposes one, falling back to the stored connector name.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("displayName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DisplayName { get; set; }
+
+        /// <summary>
         /// The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
@@ -66,6 +73,9 @@ namespace Vercel
         /// <param name="type">
         /// Client type (e.g. `oauth`, `salesforce`).
         /// </param>
+        /// <param name="displayName">
+        /// Provider-facing display name when the connector type exposes one, falling back to the stored connector name.
+        /// </param>
         /// <param name="name">
         /// The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one.
         /// </param>
@@ -82,6 +92,7 @@ namespace Vercel
             string id,
             string uid,
             string type,
+            string displayName,
             string name,
             string? service,
             string? serviceName)
@@ -91,6 +102,7 @@ namespace Vercel
             this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.Service = service;
             this.ServiceName = serviceName;
+            this.DisplayName = displayName ?? throw new global::System.ArgumentNullException(nameof(displayName));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 

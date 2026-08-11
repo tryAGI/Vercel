@@ -52,7 +52,7 @@ namespace Vercel
         /// HEAD /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Check whether a manifest exists. Used by Docker client during push to determine if a manifest (or config blob referenced by digest) is already present.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
@@ -94,7 +94,7 @@ namespace Vercel
         /// HEAD /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Check whether a manifest exists. Used by Docker client during push to determine if a manifest (or config blob referenced by digest) is already present.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">

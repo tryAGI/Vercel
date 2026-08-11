@@ -54,7 +54,7 @@ namespace Vercel
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
@@ -98,7 +98,7 @@ namespace Vercel
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">

@@ -126,6 +126,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("displayName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DisplayName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientUrl")]
         public string? ClientUrl { get; set; }
 
@@ -301,6 +308,7 @@ namespace Vercel
         /// Best-effort identifier of the third-party service this client represents, independent of `type`. Examples: `'slack'`, `'mcp.linear.app'`, `'auth.example.com'`. Always non-empty on the API response — falls back through `storedClient.service ?? typeDef.service ?? typeDef.type`.
         /// </param>
         /// <param name="name"></param>
+        /// <param name="displayName"></param>
         /// <param name="data"></param>
         /// <param name="typeName"></param>
         /// <param name="supportedSubjectTypes"></param>
@@ -377,6 +385,7 @@ namespace Vercel
             global::Vercel.CreateConnectorResponseType type,
             string service,
             string name,
+            string displayName,
             object data,
             string typeName,
             global::System.Collections.Generic.IList<string> supportedSubjectTypes,
@@ -428,6 +437,7 @@ namespace Vercel
             this.ConnectionMethod = connectionMethod;
             this.Target = target;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.DisplayName = displayName ?? throw new global::System.ArgumentNullException(nameof(displayName));
             this.ClientUrl = clientUrl;
             this.RedirectUri = redirectUri;
             this.DefaultInstallationId = defaultInstallationId;
