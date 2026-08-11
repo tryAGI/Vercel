@@ -9,7 +9,7 @@ namespace Vercel
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
@@ -39,7 +39,7 @@ namespace Vercel
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Reference must be a digest.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">

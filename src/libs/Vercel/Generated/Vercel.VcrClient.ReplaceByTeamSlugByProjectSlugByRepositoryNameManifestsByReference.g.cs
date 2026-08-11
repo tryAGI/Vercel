@@ -52,7 +52,7 @@ namespace Vercel
         /// PUT /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Upload an image manifest. The digest is computed from the body and returned in the Docker-Content-Digest header.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
@@ -94,7 +94,7 @@ namespace Vercel
         /// PUT /v2/:teamSlug/:projectSlug/:repositoryName/manifests/:reference Upload an image manifest. The digest is computed from the body and returned in the Docker-Content-Digest header.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">

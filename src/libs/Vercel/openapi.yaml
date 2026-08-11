@@ -11772,6 +11772,9 @@
                     "name": {
                       "type": "string"
                     },
+                    "displayName": {
+                      "type": "string"
+                    },
                     "clientUrl": {
                       "nullable": true,
                       "type": "string"
@@ -12112,6 +12115,7 @@
                   "required": [
                     "createdAt",
                     "data",
+                    "displayName",
                     "id",
                     "name",
                     "ownerId",
@@ -13785,12 +13789,17 @@
                           "type": "string",
                           "description": "Curated display name of the resolved service (e.g. \"Salesforce\"), present when the service is a known service. Suited for end-user surfaces like \"Sign in with {serviceName}\"."
                         },
+                        "displayName": {
+                          "type": "string",
+                          "description": "Provider-facing display name when the connector type exposes one, falling back to the stored connector name."
+                        },
                         "name": {
                           "type": "string",
                           "description": "The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one."
                         }
                       },
                       "required": [
+                        "displayName",
                         "id",
                         "name",
                         "type",
@@ -14081,12 +14090,17 @@
                           "type": "string",
                           "description": "Curated display name of the resolved service (e.g. \"Salesforce\"), present when the service is a known service. Suited for end-user surfaces like \"Sign in with {serviceName}\"."
                         },
+                        "displayName": {
+                          "type": "string",
+                          "description": "Provider-facing display name when the connector type exposes one, falling back to the stored connector name."
+                        },
                         "name": {
                           "type": "string",
                           "description": "The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one."
                         }
                       },
                       "required": [
+                        "displayName",
                         "id",
                         "name",
                         "type",
@@ -183166,14 +183180,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -183252,14 +183266,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -183338,14 +183352,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -183433,14 +183447,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -183526,14 +183540,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -183622,14 +183636,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -183718,14 +183732,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -183826,14 +183840,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -183882,7 +183896,7 @@
             "required": false,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\\\\/[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\\\\/[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)\\\\/[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?\\\\/[a-z0-9]+(?:(?:\\\\.|_|__|-+)[a-z0-9]+)*$",
               "maxLength": 255,
               "description": "Source repository to mount the blob from."
             }
@@ -183935,14 +183949,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -184028,14 +184042,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -184111,14 +184125,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -184204,14 +184218,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },
@@ -184314,14 +184328,14 @@
         "parameters": [
           {
             "name": "teamSlug",
-            "description": "Single Docker repository team slug component.",
+            "description": "Single Docker repository team slug or team ID component.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "pattern": "^[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?$",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]{0,46}[a-z0-9])?|team_[a-zA-Z0-9]+)$",
               "maxLength": 255,
-              "description": "Single Docker repository team slug component.",
+              "description": "Single Docker repository team slug or team ID component.",
               "example": "team-slug"
             }
           },

@@ -52,7 +52,7 @@ namespace Vercel
         /// HEAD /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Check whether a blob exists. Used by the Docker client before pushing a layer to avoid re-uploading content that already exists.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
@@ -94,7 +94,7 @@ namespace Vercel
         /// HEAD /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Check whether a blob exists. Used by the Docker client before pushing a layer to avoid re-uploading content that already exists.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">

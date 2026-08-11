@@ -9,7 +9,7 @@ namespace Vercel
         /// POST /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/[?mount=&lt;digest&gt;&amp;from=&lt;repo&gt;] Initiate a blob upload. Returns a UUID in the Location header that the client uses for subsequent PATCH (chunk) and PUT (complete) requests.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
@@ -42,7 +42,7 @@ namespace Vercel
         /// POST /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/[?mount=&lt;digest&gt;&amp;from=&lt;repo&gt;] Initiate a blob upload. Returns a UUID in the Location header that the client uses for subsequent PATCH (chunk) and PUT (complete) requests.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug component.<br/>
+        /// Single Docker repository team slug or team ID component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
