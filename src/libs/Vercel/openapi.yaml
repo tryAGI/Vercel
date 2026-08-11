@@ -154808,7 +154808,7 @@
                                       },
                                       "forwardURL": {
                                         "type": "string",
-                                        "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
+                                        "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
                                       }
                                     }
                                   }
@@ -156830,7 +156830,7 @@
                                       },
                                       "forwardURL": {
                                         "type": "string",
-                                        "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
+                                        "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
                                       }
                                     }
                                   }
@@ -158410,7 +158410,7 @@
                                   },
                                   "forwardURL": {
                                     "type": "string",
-                                    "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
+                                    "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
                                   }
                                 }
                               }
@@ -159341,7 +159341,7 @@
                                       },
                                       "forwardURL": {
                                         "type": "string",
-                                        "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
+                                        "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
                                       }
                                     }
                                   }
@@ -159975,7 +159975,7 @@
                                       },
                                       "forwardURL": {
                                         "type": "string",
-                                        "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment."
+                                        "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
                                       }
                                     }
                                   }

@@ -21,7 +21,7 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemTransformItem>? Transform { get; set; }
 
         /// <summary>
-        /// HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment.
+        /// HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("forwardURL")]
         public string? ForwardURL { get; set; }
@@ -40,7 +40,7 @@ namespace Vercel
         /// </param>
         /// <param name="transform"></param>
         /// <param name="forwardURL">
-        /// HTTP/1.1 proxy URL to forward traffic to. Must not include query string or fragment.
+        /// HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
