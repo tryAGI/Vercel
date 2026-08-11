@@ -26,8 +26,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.EdgeConfigItemValueJsonConverter))]
-        public global::Vercel.EdgeConfigItemValue? Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GlobalConfigItemValueJsonConverter))]
+        public global::Vercel.GlobalConfigItemValue? Value { get; set; }
 
         /// <summary>
         /// 
@@ -54,7 +54,7 @@ namespace Vercel
         public GetEdgeConfigBackupResponseVariant2BackupItems2(
             double createdAt,
             double updatedAt,
-            global::Vercel.EdgeConfigItemValue? value,
+            global::Vercel.GlobalConfigItemValue? value,
             string? description)
         {
             this.CreatedAt = createdAt;

@@ -53231,7 +53231,7 @@
               "application/json": {
                 "schema": {
                   "items": {
-                    "$ref": "#/components/schemas/EdgeConfigItem"
+                    "$ref": "#/components/schemas/GlobalConfigItem"
                   },
                   "type": "array"
                 }
@@ -53738,7 +53738,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EdgeConfigItem"
+                  "$ref": "#/components/schemas/GlobalConfigItem"
                 }
               }
             }
@@ -53817,7 +53817,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EdgeConfigToken"
+                  "$ref": "#/components/schemas/GlobalConfigToken"
                 }
               }
             }
@@ -53993,7 +53993,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EdgeConfigToken"
+                  "$ref": "#/components/schemas/GlobalConfigToken"
                 }
               }
             }
@@ -54207,7 +54207,7 @@
                                     "type": "number"
                                   },
                                   "value": {
-                                    "$ref": "#/components/schemas/EdgeConfigItemValue"
+                                    "$ref": "#/components/schemas/GlobalConfigItemValue"
                                   },
                                   "description": {
                                     "type": "string"
@@ -54338,7 +54338,7 @@
                                     "type": "number"
                                   },
                                   "value": {
-                                    "$ref": "#/components/schemas/EdgeConfigItemValue"
+                                    "$ref": "#/components/schemas/GlobalConfigItemValue"
                                   },
                                   "description": {
                                     "type": "string"
@@ -74709,7 +74709,7 @@
                   "properties": {
                     "items": {
                       "additionalProperties": {
-                        "$ref": "#/components/schemas/EdgeConfigItemValue"
+                        "$ref": "#/components/schemas/GlobalConfigItemValue"
                       },
                       "type": "object"
                     },
@@ -74796,7 +74796,7 @@
                   "properties": {
                     "items": {
                       "additionalProperties": {
-                        "$ref": "#/components/schemas/EdgeConfigItemValue"
+                        "$ref": "#/components/schemas/GlobalConfigItemValue"
                       },
                       "type": "object"
                     },
@@ -74883,7 +74883,7 @@
                   "properties": {
                     "items": {
                       "additionalProperties": {
-                        "$ref": "#/components/schemas/EdgeConfigItemValue"
+                        "$ref": "#/components/schemas/GlobalConfigItemValue"
                       },
                       "type": "object"
                     },
@@ -196552,7 +196552,7 @@
         ],
         "description": "Schema definition for registrant fields."
       },
-      "EdgeConfigItemValue": {
+      "GlobalConfigItemValue": {
         "nullable": true,
         "oneOf": [
           {
@@ -196563,13 +196563,13 @@
           },
           {
             "additionalProperties": {
-              "$ref": "#/components/schemas/EdgeConfigItemValue"
+              "$ref": "#/components/schemas/GlobalConfigItemValue"
             },
             "type": "object"
           },
           {
             "items": {
-              "$ref": "#/components/schemas/EdgeConfigItemValue"
+              "$ref": "#/components/schemas/GlobalConfigItemValue"
             },
             "type": "array"
           },
@@ -196582,13 +196582,13 @@
           }
         ]
       },
-      "EdgeConfigItem": {
+      "GlobalConfigItem": {
         "properties": {
           "key": {
             "type": "string"
           },
           "value": {
-            "$ref": "#/components/schemas/EdgeConfigItemValue"
+            "$ref": "#/components/schemas/GlobalConfigItemValue"
           },
           "description": {
             "type": "string"
@@ -196613,7 +196613,7 @@
         "type": "object",
         "description": "The Global Config."
       },
-      "EdgeConfigToken": {
+      "GlobalConfigToken": {
         "properties": {
           "partialToken": {
             "type": "string",

@@ -62,7 +62,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.EdgeConfigItem> GetEdgeConfigItemAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.GlobalConfigItem> GetEdgeConfigItemAsync(
             string edgeConfigId,
             string edgeConfigItemKey,
             string? teamId = default,
@@ -96,7 +96,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.EdgeConfigItem>> GetEdgeConfigItemAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GlobalConfigItem>> GetEdgeConfigItemAsResponseAsync(
             string edgeConfigId,
             string edgeConfigItemKey,
             string? teamId = default,
@@ -547,9 +547,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.EdgeConfigItem.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.GlobalConfigItem.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.EdgeConfigItem>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GlobalConfigItem>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -579,9 +579,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.EdgeConfigItem.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.GlobalConfigItem.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.EdgeConfigItem>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GlobalConfigItem>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

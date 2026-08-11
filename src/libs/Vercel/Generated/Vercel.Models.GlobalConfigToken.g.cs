@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// The Global Config.
     /// </summary>
-    public sealed partial class EdgeConfigToken
+    public sealed partial class GlobalConfigToken
     {
         /// <summary>
         /// A partially-masked representation of the token, safe to display in UIs. The format is the first 3 characters of the token followed by a fixed 8-character `*` mask (e.g. `550e8400-e29b-41d4-a716-446655440000` → `550********`). The mask length is intentionally fixed (not proportional to the original token length) to avoid leaking the token length. Prefer this field for display/reference in UIs and logs. The full, plaintext token is only disclosed once at creation time via `POST /v1/edge-config/:edgeConfigId/token`; use `id` to reference a token in subsequent calls (e.g. when deleting).
@@ -56,7 +56,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="EdgeConfigToken" /> class.
+        /// Initializes a new instance of the <see cref="GlobalConfigToken" /> class.
         /// </summary>
         /// <param name="partialToken">
         /// A partially-masked representation of the token, safe to display in UIs. The format is the first 3 characters of the token followed by a fixed 8-character `*` mask (e.g. `550e8400-e29b-41d4-a716-446655440000` → `550********`). The mask length is intentionally fixed (not proportional to the original token length) to avoid leaking the token length. Prefer this field for display/reference in UIs and logs. The full, plaintext token is only disclosed once at creation time via `POST /v1/edge-config/:edgeConfigId/token`; use `id` to reference a token in subsequent calls (e.g. when deleting).
@@ -73,7 +73,7 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public EdgeConfigToken(
+        public GlobalConfigToken(
             string partialToken,
             string label,
             string id,
@@ -90,9 +90,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="EdgeConfigToken" /> class.
+        /// Initializes a new instance of the <see cref="GlobalConfigToken" /> class.
         /// </summary>
-        public EdgeConfigToken()
+        public GlobalConfigToken()
         {
         }
 
