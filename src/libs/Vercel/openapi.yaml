@@ -155734,7 +155734,9 @@
             "schema": {
               "type": "string",
               "description": "The unique identifier of the snapshot to retrieve.",
-              "example": "snap_abc123"
+              "pattern": "^(?:snap_[A-Za-z0-9]{28}|vhs_[a-z0-9]{28})$",
+              "maxLength": 33,
+              "example": "snap_1234567890123456789012345678"
             }
           },
           {
@@ -155816,7 +155818,9 @@
             "schema": {
               "type": "string",
               "description": "The unique identifier of the snapshot to delete.",
-              "example": "snap_abc123"
+              "pattern": "^(?:snap_[A-Za-z0-9]{28}|vhs_[a-z0-9]{28})$",
+              "maxLength": 33,
+              "example": "snap_1234567890123456789012345678"
             }
           },
           {

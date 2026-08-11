@@ -51,7 +51,7 @@ namespace Vercel
         /// </summary>
         /// <param name="snapshotId">
         /// The unique identifier of the snapshot to delete.<br/>
-        /// Example: snap_abc123
+        /// Example: snap_1234567890123456789012345678
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -85,7 +85,7 @@ namespace Vercel
         /// </summary>
         /// <param name="snapshotId">
         /// The unique identifier of the snapshot to delete.<br/>
-        /// Example: snap_abc123
+        /// Example: snap_1234567890123456789012345678
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
