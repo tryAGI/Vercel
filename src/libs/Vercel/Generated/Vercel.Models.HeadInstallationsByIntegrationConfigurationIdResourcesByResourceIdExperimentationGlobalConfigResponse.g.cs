@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("items")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?> Items { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?> Items { get; set; }
 
         /// <summary>
         /// 
@@ -53,7 +53,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse(
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?> items,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?> items,
             double updatedAt,
             string digest,
             global::Vercel.HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose? purpose)

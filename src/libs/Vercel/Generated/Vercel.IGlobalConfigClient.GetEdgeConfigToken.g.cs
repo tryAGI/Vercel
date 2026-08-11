@@ -19,7 +19,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.EdgeConfigToken> GetEdgeConfigTokenAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.GlobalConfigToken> GetEdgeConfigTokenAsync(
             string edgeConfigId,
             string token,
             string? teamId = default,
@@ -41,7 +41,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.EdgeConfigToken>> GetEdgeConfigTokenAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GlobalConfigToken>> GetEdgeConfigTokenAsResponseAsync(
             string edgeConfigId,
             string token,
             string? teamId = default,

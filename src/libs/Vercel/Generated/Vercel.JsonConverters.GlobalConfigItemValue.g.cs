@@ -4,10 +4,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public class EdgeConfigItemValueJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.EdgeConfigItemValue>
+    public class GlobalConfigItemValueJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.GlobalConfigItemValue>
     {
         /// <inheritdoc />
-        public override global::Vercel.EdgeConfigItemValue Read(
+        public override global::Vercel.GlobalConfigItemValue Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -51,7 +51,7 @@ namespace Vercel.JsonConverters
             }
             var __score2 = 0;
             {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>), options);
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>), options);
                 if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
                 {
                     foreach (var __prop in __ti.Properties)
@@ -62,7 +62,7 @@ namespace Vercel.JsonConverters
             }
             var __score3 = 0;
             {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>), options);
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>), options);
                 if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
                 {
                     foreach (var __prop in __ti.Properties)
@@ -90,11 +90,11 @@ namespace Vercel.JsonConverters
             if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
             if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
 
-            string? edgeConfigItemValueVariant1 = default;
-            double? edgeConfigItemValueVariant2 = default;
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>? edgeConfigItemValueVariant3 = default;
-            global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>? edgeConfigItemValueVariant4 = default;
-            bool? edgeConfigItemValueVariant5 = default;
+            string? globalConfigItemValueVariant1 = default;
+            double? globalConfigItemValueVariant2 = default;
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>? globalConfigItemValueVariant3 = default;
+            global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>? globalConfigItemValueVariant4 = default;
+            bool? globalConfigItemValueVariant5 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -104,7 +104,7 @@ namespace Vercel.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                        edgeConfigItemValueVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        globalConfigItemValueVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -121,7 +121,7 @@ namespace Vercel.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(double), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<double> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(double).Name}");
-                        edgeConfigItemValueVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        globalConfigItemValueVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -136,9 +136,9 @@ namespace Vercel.JsonConverters
                     try
                     {
 
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>).Name}");
-                        edgeConfigItemValueVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>).Name}");
+                        globalConfigItemValueVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -153,9 +153,9 @@ namespace Vercel.JsonConverters
                     try
                     {
 
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>).Name}");
-                        edgeConfigItemValueVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>).Name}");
+                        globalConfigItemValueVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -172,7 +172,7 @@ namespace Vercel.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(bool), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<bool> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(bool).Name}");
-                        edgeConfigItemValueVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        globalConfigItemValueVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -183,14 +183,14 @@ namespace Vercel.JsonConverters
                 }
             }
 
-            if (edgeConfigItemValueVariant1 == null && edgeConfigItemValueVariant2 == null && edgeConfigItemValueVariant3 == null && edgeConfigItemValueVariant4 == null && edgeConfigItemValueVariant5 == null)
+            if (globalConfigItemValueVariant1 == null && globalConfigItemValueVariant2 == null && globalConfigItemValueVariant3 == null && globalConfigItemValueVariant4 == null && globalConfigItemValueVariant5 == null)
             {
                 try
                 {
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                    edgeConfigItemValueVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    globalConfigItemValueVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -200,14 +200,14 @@ namespace Vercel.JsonConverters
                 }
             }
 
-            if (edgeConfigItemValueVariant1 == null && edgeConfigItemValueVariant2 == null && edgeConfigItemValueVariant3 == null && edgeConfigItemValueVariant4 == null && edgeConfigItemValueVariant5 == null)
+            if (globalConfigItemValueVariant1 == null && globalConfigItemValueVariant2 == null && globalConfigItemValueVariant3 == null && globalConfigItemValueVariant4 == null && globalConfigItemValueVariant5 == null)
             {
                 try
                 {
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(double), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<double> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(double).Name}");
-                    edgeConfigItemValueVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    globalConfigItemValueVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -217,14 +217,14 @@ namespace Vercel.JsonConverters
                 }
             }
 
-            if (edgeConfigItemValueVariant1 == null && edgeConfigItemValueVariant2 == null && edgeConfigItemValueVariant3 == null && edgeConfigItemValueVariant4 == null && edgeConfigItemValueVariant5 == null)
+            if (globalConfigItemValueVariant1 == null && globalConfigItemValueVariant2 == null && globalConfigItemValueVariant3 == null && globalConfigItemValueVariant4 == null && globalConfigItemValueVariant5 == null)
             {
                 try
                 {
 
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>).Name}");
-                    edgeConfigItemValueVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>).Name}");
+                    globalConfigItemValueVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -234,14 +234,14 @@ namespace Vercel.JsonConverters
                 }
             }
 
-            if (edgeConfigItemValueVariant1 == null && edgeConfigItemValueVariant2 == null && edgeConfigItemValueVariant3 == null && edgeConfigItemValueVariant4 == null && edgeConfigItemValueVariant5 == null)
+            if (globalConfigItemValueVariant1 == null && globalConfigItemValueVariant2 == null && globalConfigItemValueVariant3 == null && globalConfigItemValueVariant4 == null && globalConfigItemValueVariant5 == null)
             {
                 try
                 {
 
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>).Name}");
-                    edgeConfigItemValueVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>).Name}");
+                    globalConfigItemValueVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -251,14 +251,14 @@ namespace Vercel.JsonConverters
                 }
             }
 
-            if (edgeConfigItemValueVariant1 == null && edgeConfigItemValueVariant2 == null && edgeConfigItemValueVariant3 == null && edgeConfigItemValueVariant4 == null && edgeConfigItemValueVariant5 == null)
+            if (globalConfigItemValueVariant1 == null && globalConfigItemValueVariant2 == null && globalConfigItemValueVariant3 == null && globalConfigItemValueVariant4 == null && globalConfigItemValueVariant5 == null)
             {
                 try
                 {
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(bool), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<bool> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(bool).Name}");
-                    edgeConfigItemValueVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    globalConfigItemValueVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -268,16 +268,16 @@ namespace Vercel.JsonConverters
                 }
             }
 
-            var __value = new global::Vercel.EdgeConfigItemValue(
-                edgeConfigItemValueVariant1,
+            var __value = new global::Vercel.GlobalConfigItemValue(
+                globalConfigItemValueVariant1,
 
-                edgeConfigItemValueVariant2,
+                globalConfigItemValueVariant2,
 
-                edgeConfigItemValueVariant3,
+                globalConfigItemValueVariant3,
 
-                edgeConfigItemValueVariant4,
+                globalConfigItemValueVariant4,
 
-                edgeConfigItemValueVariant5
+                globalConfigItemValueVariant5
                 );
 
             return __value;
@@ -286,41 +286,41 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.EdgeConfigItemValue value,
+            global::Vercel.GlobalConfigItemValue value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsEdgeConfigItemValueVariant1)
+            if (value.IsGlobalConfigItemValueVariant1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.EdgeConfigItemValueVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GlobalConfigItemValueVariant1!, typeInfo);
             }
-            else if (value.IsEdgeConfigItemValueVariant2)
+            else if (value.IsGlobalConfigItemValueVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(double), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<double> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(double).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.EdgeConfigItemValueVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GlobalConfigItemValueVariant2!.Value, typeInfo);
             }
-            else if (value.IsEdgeConfigItemValueVariant3)
+            else if (value.IsGlobalConfigItemValueVariant3)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.EdgeConfigItemValue?>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.EdgeConfigItemValueVariant3!, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GlobalConfigItemValueVariant3!, typeInfo);
             }
-            else if (value.IsEdgeConfigItemValueVariant4)
+            else if (value.IsGlobalConfigItemValueVariant4)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.EdgeConfigItemValue>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.EdgeConfigItemValueVariant4!, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GlobalConfigItemValueVariant4!, typeInfo);
             }
-            else if (value.IsEdgeConfigItemValueVariant5)
+            else if (value.IsGlobalConfigItemValueVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(bool), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<bool> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(bool).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.EdgeConfigItemValueVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GlobalConfigItemValueVariant5!.Value, typeInfo);
             }
         }
     }

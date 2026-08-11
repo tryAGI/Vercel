@@ -6935,7 +6935,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.FlagJSONValueJsonConverter),
             typeof(global::Vercel.JsonConverters.PropertyKeyJsonConverter),
             typeof(global::Vercel.JsonConverters.RegistrantFieldJsonConverter),
-            typeof(global::Vercel.JsonConverters.EdgeConfigItemValueJsonConverter),
+            typeof(global::Vercel.JsonConverters.GlobalConfigItemValueJsonConverter),
             typeof(global::Vercel.JsonConverters.VcrImageLayerJsonConverter),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::Vercel.RegistrantFieldVariant1RequiredWhen>),
             typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::Vercel.RegistrantFieldVariant2RequiredWhen>),
@@ -8358,7 +8358,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RegistrantFieldVariant3Type?), TypeInfoPropertyName = "NullableRegistrantFieldVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<string, global::Vercel.RegistrantFieldVariant4RequiredWhen>?), TypeInfoPropertyName = "NullableAnyOfStringRegistrantFieldVariant4RequiredWhen2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RegistrantFieldVariant4Type?), TypeInfoPropertyName = "NullableRegistrantFieldVariant4Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EdgeConfigItemValue?), TypeInfoPropertyName = "NullableEdgeConfigItemValue2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GlobalConfigItemValue?), TypeInfoPropertyName = "NullableGlobalConfigItemValue2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventEntitieType?), TypeInfoPropertyName = "NullableUserEventEntitieType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventType?), TypeInfoPropertyName = "NullableUserEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEventCategorie?), TypeInfoPropertyName = "NullableUserEventCategorie2")]

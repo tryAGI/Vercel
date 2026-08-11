@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class EdgeConfigItemValueVariant3
+    public sealed partial class GlobalConfigItemValueVariant3
     {
 
         /// <summary>

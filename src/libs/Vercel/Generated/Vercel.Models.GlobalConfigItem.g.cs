@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// The Global Config.
     /// </summary>
-    public sealed partial class EdgeConfigItem
+    public sealed partial class GlobalConfigItem
     {
         /// <summary>
         /// 
@@ -19,8 +19,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.EdgeConfigItemValueJsonConverter))]
-        public global::Vercel.EdgeConfigItemValue? Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GlobalConfigItemValueJsonConverter))]
+        public global::Vercel.GlobalConfigItemValue? Value { get; set; }
 
         /// <summary>
         /// 
@@ -56,7 +56,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="EdgeConfigItem" /> class.
+        /// Initializes a new instance of the <see cref="GlobalConfigItem" /> class.
         /// </summary>
         /// <param name="key"></param>
         /// <param name="edgeConfigId"></param>
@@ -67,12 +67,12 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public EdgeConfigItem(
+        public GlobalConfigItem(
             string key,
             string edgeConfigId,
             double createdAt,
             double updatedAt,
-            global::Vercel.EdgeConfigItemValue? value,
+            global::Vercel.GlobalConfigItemValue? value,
             string? description)
         {
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
@@ -84,9 +84,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="EdgeConfigItem" /> class.
+        /// Initializes a new instance of the <see cref="GlobalConfigItem" /> class.
         /// </summary>
-        public EdgeConfigItem()
+        public GlobalConfigItem()
         {
         }
 
