@@ -9,7 +9,7 @@ namespace Vercel
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Cancel an in-flight blob upload. Aborts the underlying S3 multipart upload (if one was started) and discards the session.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug or team ID component.<br/>
+        /// Single Docker repository team slug component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
@@ -39,7 +39,7 @@ namespace Vercel
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Cancel an in-flight blob upload. Aborts the underlying S3 multipart upload (if one was started) and discards the session.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug or team ID component.<br/>
+        /// Single Docker repository team slug component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">

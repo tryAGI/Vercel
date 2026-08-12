@@ -13,8 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateProjectEnvResponseCreated, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedItem>>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<global::Vercel.CreateProjectEnvResponseCreated, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedItem>> Created { get; set; }
+        public global::Vercel.OneOf<global::Vercel.CreateProjectEnvResponseCreated, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedItem>>? Created { get; set; }
 
         /// <summary>
         /// 
@@ -32,14 +31,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectEnvResponse" /> class.
         /// </summary>
-        /// <param name="created"></param>
         /// <param name="failed"></param>
+        /// <param name="created"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectEnvResponse(
-            global::Vercel.OneOf<global::Vercel.CreateProjectEnvResponseCreated, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedItem>> created,
-            global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItem> failed)
+            global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItem> failed,
+            global::Vercel.OneOf<global::Vercel.CreateProjectEnvResponseCreated, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedItem>>? created)
         {
             this.Created = created;
             this.Failed = failed ?? throw new global::System.ArgumentNullException(nameof(failed));

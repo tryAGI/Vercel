@@ -23,8 +23,7 @@ namespace Vercel
         /// </summary>
         /// <example>my-instant-deployment-3ij3cxz9qr.now.sh</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
+        public string? Url { get; set; }
 
         /// <summary>
         /// The deployment metadata<br/>
@@ -60,11 +59,11 @@ namespace Vercel
 #endif
         public ListAliasesResponseAliaseDeployment(
             string id,
-            string url,
+            string? url,
             string? meta)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Url = url;
             this.Meta = meta;
         }
 

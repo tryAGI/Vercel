@@ -12,8 +12,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetRedirectsResponseVariant2Version Version { get; set; }
+        public global::Vercel.GetRedirectsResponseVariant2Version? Version { get; set; }
 
         /// <summary>
         /// 
@@ -38,18 +37,18 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetRedirectsResponseVariant2" /> class.
         /// </summary>
-        /// <param name="version"></param>
         /// <param name="redirects"></param>
         /// <param name="pagination"></param>
+        /// <param name="version"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetRedirectsResponseVariant2(
-            global::Vercel.GetRedirectsResponseVariant2Version version,
             global::System.Collections.Generic.IList<global::Vercel.GetRedirectsResponseVariant2Redirect> redirects,
-            global::Vercel.GetRedirectsResponseVariant2Pagination pagination)
+            global::Vercel.GetRedirectsResponseVariant2Pagination pagination,
+            global::Vercel.GetRedirectsResponseVariant2Version? version)
         {
-            this.Version = version ?? throw new global::System.ArgumentNullException(nameof(version));
+            this.Version = version;
             this.Redirects = redirects ?? throw new global::System.ArgumentNullException(nameof(redirects));
             this.Pagination = pagination ?? throw new global::System.ArgumentNullException(nameof(pagination));
         }

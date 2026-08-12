@@ -7920,6 +7920,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant2Item>>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AggregateEventsResponseQueryGroupByItem?>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant2Item>>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CountPageviewsResponseDataVariant1, global::Vercel.CountPageviewsResponseDataVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CountEventsResponseDataVariant1, global::Vercel.CountEventsResponseDataVariant2>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant2Item>>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1, global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2, global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant3, global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant4>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant1, global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant2, global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant3, global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant4>),
@@ -7928,6 +7930,10 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentPrimaryMetricDirectionality?), TypeInfoPropertyName = "NullableFlagExperimentPrimaryMetricDirectionality2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentStatus?), TypeInfoPropertyName = "NullableFlagExperimentStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsPausedOutcomeType?), TypeInfoPropertyName = "NullableFlagEnvironmentsPausedOutcomeType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.FlagEnvironmentsFallthroughVariant1, global::Vercel.FlagEnvironmentsFallthroughVariant2, global::Vercel.FlagEnvironmentsFallthroughVariant3>?), TypeInfoPropertyName = "NullableOneOfFlagEnvironmentsFallthroughVariant1FlagEnvironmentsFallthroughVariant2FlagEnvironmentsFallthroughVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant1Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsFallthroughVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant2Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsFallthroughVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant2BaseType?), TypeInfoPropertyName = "NullableFlagEnvironmentsFallthroughVariant2BaseType2")]
@@ -8424,10 +8430,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant17ValueAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant17ValueAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>, string>?), TypeInfoPropertyName = "NullableOneOfStringIListStringString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobRequestRegion?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobRequestRegion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobRequestAccess?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobRequestAccess2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>>?), TypeInfoPropertyName = "NullableOneOfStringDoubleBooleanIListStringIListDouble2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectRequestSource?), TypeInfoPropertyName = "NullableCreateIntegrationStoreDirectRequestSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InviteUserToTeamRequestItemRole?), TypeInfoPropertyName = "NullableInviteUserToTeamRequestItemRole2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

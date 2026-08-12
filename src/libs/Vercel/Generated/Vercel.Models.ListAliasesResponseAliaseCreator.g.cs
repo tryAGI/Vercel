@@ -23,8 +23,7 @@ namespace Vercel
         /// </summary>
         /// <example>john-doe@gmail.com</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("email")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Email { get; set; }
+        public string? Email { get; set; }
 
         /// <summary>
         /// Username of the user who created the alias<br/>
@@ -32,8 +31,7 @@ namespace Vercel
         /// </summary>
         /// <example>john-doe</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("username")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Username { get; set; }
+        public string? Username { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,12 +59,12 @@ namespace Vercel
 #endif
         public ListAliasesResponseAliaseCreator(
             string uid,
-            string email,
-            string username)
+            string? email,
+            string? username)
         {
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
+            this.Email = email;
+            this.Username = username;
         }
 
         /// <summary>

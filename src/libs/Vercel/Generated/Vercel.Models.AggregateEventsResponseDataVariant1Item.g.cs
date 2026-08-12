@@ -821,6 +821,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("spendAttribution")]
+        public string? SpendAttribution { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isPrivateModel")]
         public string? IsPrivateModel { get; set; }
 
@@ -1456,6 +1462,7 @@ namespace Vercel
         /// <param name="appName"></param>
         /// <param name="codingAgent"></param>
         /// <param name="isByok"></param>
+        /// <param name="spendAttribution"></param>
         /// <param name="isPrivateModel"></param>
         /// <param name="isRequestZdr"></param>
         /// <param name="hipaaRequested"></param>
@@ -1677,6 +1684,7 @@ namespace Vercel
             string? appName,
             string? codingAgent,
             string? isByok,
+            string? spendAttribution,
             string? isPrivateModel,
             string? isRequestZdr,
             string? hipaaRequested,
@@ -1894,6 +1902,7 @@ namespace Vercel
             this.AppName = appName;
             this.CodingAgent = codingAgent;
             this.IsByok = isByok;
+            this.SpendAttribution = spendAttribution;
             this.IsPrivateModel = isPrivateModel;
             this.IsRequestZdr = isRequestZdr;
             this.HipaaRequested = hipaaRequested;

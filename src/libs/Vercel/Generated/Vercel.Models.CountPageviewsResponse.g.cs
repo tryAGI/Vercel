@@ -26,8 +26,9 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CountPageviewsResponseDataVariant1, global::Vercel.CountPageviewsResponseDataVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CountPageviewsResponseData Data { get; set; }
+        public required global::Vercel.OneOf<global::Vercel.CountPageviewsResponseDataVariant1, global::Vercel.CountPageviewsResponseDataVariant2> Data { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,11 +48,11 @@ namespace Vercel
         public CountPageviewsResponse(
             double version,
             global::Vercel.CountPageviewsResponseQuery query,
-            global::Vercel.CountPageviewsResponseData data)
+            global::Vercel.OneOf<global::Vercel.CountPageviewsResponseDataVariant1, global::Vercel.CountPageviewsResponseDataVariant2> data)
         {
             this.Version = version;
             this.Query = query ?? throw new global::System.ArgumentNullException(nameof(query));
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
+            this.Data = data;
         }
 
         /// <summary>
