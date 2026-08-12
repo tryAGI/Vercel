@@ -12,8 +12,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
+        public string? Uid { get; set; }
 
         /// <summary>
         /// 
@@ -31,16 +30,16 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateRecordResponseVariant1" /> class.
         /// </summary>
-        /// <param name="uid"></param>
         /// <param name="updated"></param>
+        /// <param name="uid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateRecordResponseVariant1(
-            string uid,
-            double updated)
+            double updated,
+            string? uid)
         {
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
+            this.Uid = uid;
             this.Updated = updated;
         }
 

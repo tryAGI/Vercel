@@ -7920,6 +7920,8 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant2Item>>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AggregateEventsResponseQueryGroupByItem?>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant2Item>>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CountPageviewsResponseDataVariant1, global::Vercel.CountPageviewsResponseDataVariant2>),
+            typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CountEventsResponseDataVariant1, global::Vercel.CountEventsResponseDataVariant2>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant2Item>>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1, global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2, global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant3, global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant4>),
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant1, global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant2, global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant3, global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant4>),
@@ -8002,9 +8004,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRedirectsResponseVariant2Redirect))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRedirectsResponseVariant2Pagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRedirectsResponseVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRedirectsResponseVariant3Version))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetRedirectsResponseVariant3Redirect>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRedirectsResponseVariant3Redirect))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRedirectsResponseVariant3Version))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRedirectsResponseVariant3Pagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.DeleteRedirectsResponseVariant1, global::Vercel.DeleteRedirectsResponseVariant2, global::Vercel.DeleteRedirectsResponseVariant3>), TypeInfoPropertyName = "OneOfDeleteRedirectsResponseVariant1DeleteRedirectsResponseVariant2DeleteRedirectsResponseVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteRedirectsResponseVariant1))]

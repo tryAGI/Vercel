@@ -52,7 +52,7 @@ namespace Vercel
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Query the status of an in-progress blob upload. Used by clients to resume a partial upload after an interruption.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug or team ID component.<br/>
+        /// Single Docker repository team slug component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
@@ -94,7 +94,7 @@ namespace Vercel
         /// GET /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Query the status of an in-progress blob upload. Used by clients to resume a partial upload after an interruption.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug or team ID component.<br/>
+        /// Single Docker repository team slug component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">

@@ -52,7 +52,7 @@ namespace Vercel
         /// PATCH /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Upload a chunk of blob data. The request body is streamed directly to S3 as a multipart upload part while hashing incrementally. The client may call this multiple times for chunked uploads.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug or team ID component.<br/>
+        /// Single Docker repository team slug component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
@@ -94,7 +94,7 @@ namespace Vercel
         /// PATCH /v2/:teamSlug/:projectSlug/:repositoryName/blobs/uploads/:uuid Upload a chunk of blob data. The request body is streamed directly to S3 as a multipart upload part while hashing incrementally. The client may call this multiple times for chunked uploads.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug or team ID component.<br/>
+        /// Single Docker repository team slug component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">

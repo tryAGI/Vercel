@@ -956,6 +956,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("spendAttribution")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string SpendAttribution { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isPrivateModel")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsPrivateModel { get; set; }
@@ -1664,6 +1671,7 @@ namespace Vercel
         /// <param name="appName"></param>
         /// <param name="codingAgent"></param>
         /// <param name="isByok"></param>
+        /// <param name="spendAttribution"></param>
         /// <param name="isPrivateModel"></param>
         /// <param name="isRequestZdr"></param>
         /// <param name="hipaaRequested"></param>
@@ -1884,6 +1892,7 @@ namespace Vercel
             string appName,
             string codingAgent,
             string isByok,
+            string spendAttribution,
             string isPrivateModel,
             string isRequestZdr,
             string hipaaRequested,
@@ -2101,6 +2110,7 @@ namespace Vercel
             this.AppName = appName ?? throw new global::System.ArgumentNullException(nameof(appName));
             this.CodingAgent = codingAgent ?? throw new global::System.ArgumentNullException(nameof(codingAgent));
             this.IsByok = isByok ?? throw new global::System.ArgumentNullException(nameof(isByok));
+            this.SpendAttribution = spendAttribution ?? throw new global::System.ArgumentNullException(nameof(spendAttribution));
             this.IsPrivateModel = isPrivateModel ?? throw new global::System.ArgumentNullException(nameof(isPrivateModel));
             this.IsRequestZdr = isRequestZdr ?? throw new global::System.ArgumentNullException(nameof(isRequestZdr));
             this.HipaaRequested = hipaaRequested ?? throw new global::System.ArgumentNullException(nameof(hipaaRequested));

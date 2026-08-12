@@ -9,7 +9,7 @@ namespace Vercel
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Blob deletion is intentionally not supported. Matches the behaviour of most public registries.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug or team ID component.<br/>
+        /// Single Docker repository team slug component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">
@@ -39,7 +39,7 @@ namespace Vercel
         /// DELETE /v2/:teamSlug/:projectSlug/:repositoryName/blobs/:digest Blob deletion is intentionally not supported. Matches the behaviour of most public registries.
         /// </summary>
         /// <param name="teamSlug">
-        /// Single Docker repository team slug or team ID component.<br/>
+        /// Single Docker repository team slug component.<br/>
         /// Example: team-slug
         /// </param>
         /// <param name="projectSlug">

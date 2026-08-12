@@ -32,7 +32,7 @@ namespace Vercel
         public global::System.Collections.Generic.IList<double>? ExcludeStatusCodes { get; set; }
 
         /// <summary>
-        /// Request paths to ignore entirely — dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.<br/>
+        /// Request paths to ignore entirely — dropped from both the numerator (errors) and the denominator (total requests). Matched exactly against the request path with any query string removed; no prefix or glob matching. Defaults to `[]` when omitted.<br/>
         /// Example: [/api/health]
         /// </summary>
         /// <example>[/api/health]</example>
@@ -68,7 +68,7 @@ namespace Vercel
         /// Example: [503]
         /// </param>
         /// <param name="excludePaths">
-        /// Request paths to ignore entirely — dropped from both the numerator (errors) and the denominator (total requests). Defaults to `[]` when omitted.<br/>
+        /// Request paths to ignore entirely — dropped from both the numerator (errors) and the denominator (total requests). Matched exactly against the request path with any query string removed; no prefix or glob matching. Defaults to `[]` when omitted.<br/>
         /// Example: [/api/health]
         /// </param>
         /// <param name="ingestWatermarkSeconds">
