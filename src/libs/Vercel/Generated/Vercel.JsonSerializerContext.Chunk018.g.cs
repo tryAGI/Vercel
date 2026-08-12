@@ -10,6 +10,22 @@ namespace Vercel
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionProvidersScopeJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionProvidersScopeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionScopeJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionScopeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSelectorJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSelectorNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSortJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSortNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigHaJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigHaNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigCachingJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigCachingNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigServiceTierJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigServiceTierNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSpeedJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSpeedNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.AiGatewayRuleTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.AiGatewayRuleTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.NetworkStatusJsonConverter),
@@ -7912,6 +7928,22 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityRulesetsRedirect))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.UpdateMicrofrontendsResponseSecurityRulesetsLogHeaders?>), TypeInfoPropertyName = "OneOfIListStringUpdateMicrofrontendsResponseSecurityRulesetsLogHeaders2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityRulesetsLogHeaders), TypeInfoPropertyName = "UpdateMicrofrontendsResponseSecurityRulesetsLogHeaders2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRules))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesVercelRuleset))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction), TypeInfoPropertyName = "UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSources))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction), TypeInfoPropertyName = "UpdateMicrofrontendsResponseSecurityManagedRulesTrafficSourcesAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesBotFilter))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction), TypeInfoPropertyName = "UpdateMicrofrontendsResponseSecurityManagedRulesBotFilterAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesAiBots))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction), TypeInfoPropertyName = "UpdateMicrofrontendsResponseSecurityManagedRulesAiBotsAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesOwasp))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction), TypeInfoPropertyName = "UpdateMicrofrontendsResponseSecurityManagedRulesOwaspAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.UpdateMicrofrontendsResponseSecurityLogHeaders?>), TypeInfoPropertyName = "OneOfIListStringUpdateMicrofrontendsResponseSecurityLogHeaders2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurityLogHeaders), TypeInfoPropertyName = "UpdateMicrofrontendsResponseSecurityLogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecuritySecurityPlusMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseOidcTokenConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode), TypeInfoPropertyName = "UpdateMicrofrontendsResponseOidcTokenConfigIssuerMode2")]
@@ -8396,22 +8428,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsLfiAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveCrsLfiAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsRfi))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsRfiAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveCrsRfiAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsRce))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsRceAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveCrsRceAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsPhp))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsPhpAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveCrsPhpAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsGen))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsGenAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveCrsGenAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsXss))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsXssAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveCrsXssAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsSqli))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsSqliAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveCrsSqliAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsSf))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsSfAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveCrsSfAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsJava))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveCrsJavaAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveCrsJavaAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.PutFirewallConfigResponseActiveRuleVariant1, global::Vercel.PutFirewallConfigResponseActiveRuleVariant2>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.PutFirewallConfigResponseActiveRuleVariant1, global::Vercel.PutFirewallConfigResponseActiveRuleVariant2>), TypeInfoPropertyName = "OneOfPutFirewallConfigResponseActiveRuleVariant1PutFirewallConfigResponseActiveRuleVariant22")]
     internal sealed partial class SourceGenerationContextChunk018 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

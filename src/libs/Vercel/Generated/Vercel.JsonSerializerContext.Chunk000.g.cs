@@ -10,6 +10,22 @@ namespace Vercel
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionProvidersScopeJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionProvidersScopeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionScopeJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionScopeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSelectorJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSelectorNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSortJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSortNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigHaJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigHaNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigCachingJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigCachingNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigServiceTierJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigServiceTierNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSpeedJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSpeedNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.AiGatewayRuleTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.AiGatewayRuleTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.NetworkStatusJsonConverter),
@@ -7915,17 +7931,34 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayRule))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigInferenceRegion))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.AiGatewayVirtualModelConfigInferenceRegionProviders2?>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigInferenceRegionProviders2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigInferenceRegionProvidersScope), TypeInfoPropertyName = "AiGatewayVirtualModelConfigInferenceRegionProvidersScope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigInferenceRegionScope), TypeInfoPropertyName = "AiGatewayVirtualModelConfigInferenceRegionScope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigSelector), TypeInfoPropertyName = "AiGatewayVirtualModelConfigSelector2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigSort), TypeInfoPropertyName = "AiGatewayVirtualModelConfigSort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AiGatewayVirtualModelConfigHa>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigHa), TypeInfoPropertyName = "AiGatewayVirtualModelConfigHa2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigCaching), TypeInfoPropertyName = "AiGatewayVirtualModelConfigCaching2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigServiceTier), TypeInfoPropertyName = "AiGatewayVirtualModelConfigServiceTier2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigProviderTimeouts))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, double>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigSpeed), TypeInfoPropertyName = "AiGatewayVirtualModelConfigSpeed2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigList))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AiGatewayVirtualModelConfig>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayRule))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayRuleType), TypeInfoPropertyName = "AiGatewayRuleType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayRuleMatch))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayRuleAction))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayRuleList))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AiGatewayRule>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Network))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkHostedZones))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkPeeringConnections))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkProjects))]
@@ -8094,7 +8127,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant2Type), TypeInfoPropertyName = "FlagEnvironmentsFallthroughVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant2Base))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant2BaseType), TypeInfoPropertyName = "FlagEnvironmentsFallthroughVariant2BaseType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, double>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant3Type), TypeInfoPropertyName = "FlagEnvironmentsFallthroughVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant3Base))]
@@ -8396,22 +8428,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.VcrImageLayer>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailStatus), TypeInfoPropertyName = "VcrImageDetailStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailKind), TypeInfoPropertyName = "VcrImageDetailKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailVhs))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailVhsConfig))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrRepositoryPermissionList))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.VcrRepositoryPermission>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FileTree))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FileTreeType), TypeInfoPropertyName = "FileTreeType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.FileTree>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelBaseError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelForbiddenError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AllOf<global::Vercel.VercelBaseError, global::Vercel.VercelForbiddenErrorError>), TypeInfoPropertyName = "AllOfVercelBaseErrorVercelForbiddenErrorError2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelForbiddenErrorError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelNotFoundError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AllOf<global::Vercel.VercelBaseError, global::Vercel.VercelNotFoundErrorError>), TypeInfoPropertyName = "AllOfVercelBaseErrorVercelNotFoundErrorError2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelNotFoundErrorError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelBadRequestError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AllOf<global::Vercel.VercelBaseError, global::Vercel.VercelBadRequestErrorError>), TypeInfoPropertyName = "AllOfVercelBaseErrorVercelBadRequestErrorError2")]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

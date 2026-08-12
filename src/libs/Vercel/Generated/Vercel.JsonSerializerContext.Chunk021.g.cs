@@ -10,6 +10,22 @@ namespace Vercel
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionProvidersScopeJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionProvidersScopeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionScopeJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigInferenceRegionScopeNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSelectorJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSelectorNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSortJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSortNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigHaJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigHaNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigCachingJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigCachingNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigServiceTierJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigServiceTierNullableJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSpeedJsonConverter),
+            typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSpeedNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.AiGatewayRuleTypeJsonConverter),
             typeof(global::Vercel.JsonConverters.AiGatewayRuleTypeNullableJsonConverter),
             typeof(global::Vercel.JsonConverters.NetworkStatusJsonConverter),
@@ -7912,6 +7928,30 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant1Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsFallthroughVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant2Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsFallthroughVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant2BaseType?), TypeInfoPropertyName = "NullableFlagEnvironmentsFallthroughVariant2BaseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant3Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsFallthroughVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsFallthroughVariant3BaseType?), TypeInfoPropertyName = "NullableFlagEnvironmentsFallthroughVariant3BaseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.FlagEnvironmentsRuleOutcomeVariant1, global::Vercel.FlagEnvironmentsRuleOutcomeVariant2, global::Vercel.FlagEnvironmentsRuleOutcomeVariant3>?), TypeInfoPropertyName = "NullableOneOfFlagEnvironmentsRuleOutcomeVariant1FlagEnvironmentsRuleOutcomeVariant2FlagEnvironmentsRuleOutcomeVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleOutcomeVariant1Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleOutcomeVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleOutcomeVariant2Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleOutcomeVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleOutcomeVariant2BaseType?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleOutcomeVariant2BaseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleOutcomeVariant3Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleOutcomeVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleOutcomeVariant3BaseType?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleOutcomeVariant3BaseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant4, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleFlagEnvironmentsRuleConditionRhsVariant3FlagEnvironmentsRuleConditionRhsVariant4Boolean2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleConditionRhsVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3ItemVariant1, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3ItemVariant2>?), TypeInfoPropertyName = "NullableOneOfFlagEnvironmentsRuleConditionRhsVariant3ItemVariant1FlagEnvironmentsRuleConditionRhsVariant3ItemVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleConditionRhsVariant4Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleConditionRhsVariant4Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.FlagEnvironmentsRuleConditionLhsVariant1, global::Vercel.FlagEnvironmentsRuleConditionLhsVariant2>?), TypeInfoPropertyName = "NullableOneOfFlagEnvironmentsRuleConditionLhsVariant1FlagEnvironmentsRuleConditionLhsVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleConditionLhsVariant1Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleConditionLhsVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleConditionLhsVariant2Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleConditionLhsVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleConditionCmp?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleConditionCmp2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagKind?), TypeInfoPropertyName = "NullableFlagKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagState?), TypeInfoPropertyName = "NullableFlagState2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagTypeName?), TypeInfoPropertyName = "NullableFlagTypeName2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.MarketplaceFlagTypeName?), TypeInfoPropertyName = "NullableMarketplaceFlagTypeName2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.MarketplaceFlagState?), TypeInfoPropertyName = "NullableMarketplaceFlagState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.MarketplaceFlagCategory?), TypeInfoPropertyName = "NullableMarketplaceFlagCategory2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.SegmentDataRuleOutcomeVariant1, global::Vercel.SegmentDataRuleOutcomeVariant2>?), TypeInfoPropertyName = "NullableOneOfSegmentDataRuleOutcomeVariant1SegmentDataRuleOutcomeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SegmentDataRuleOutcomeVariant1Type?), TypeInfoPropertyName = "NullableSegmentDataRuleOutcomeVariant1Type2")]
@@ -8388,30 +8428,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>>?), TypeInfoPropertyName = "NullableOneOfStringDoubleBooleanIListStringIListDouble2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectRequestSource?), TypeInfoPropertyName = "NullableCreateIntegrationStoreDirectRequestSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InviteUserToTeamRequestItemRole?), TypeInfoPropertyName = "NullableInviteUserToTeamRequestItemRole2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InviteUserToTeamRequestItemProjectRole?), TypeInfoPropertyName = "NullableInviteUserToTeamRequestItemProjectRole2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RequestAccessToTeamRequestJoinedFromOrigin?), TypeInfoPropertyName = "NullableRequestAccessToTeamRequestJoinedFromOrigin2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateTeamMemberRequestTeamPermission?), TypeInfoPropertyName = "NullableUpdateTeamMemberRequestTeamPermission2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateTeamMemberRequestProjectRole?), TypeInfoPropertyName = "NullableUpdateTeamMemberRequestProjectRole2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PatchTeamRequestSamlRolesEnum?, global::Vercel.PatchTeamRequestSamlRolesEnum2>?), TypeInfoPropertyName = "NullableAnyOfPatchTeamRequestSamlRolesEnumPatchTeamRequestSamlRolesEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestSamlRolesEnum?), TypeInfoPropertyName = "NullablePatchTeamRequestSamlRolesEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDpAccessRequestsMode?), TypeInfoPropertyName = "NullablePatchTeamRequestDpAccessRequestsMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDefaultDeploymentProtectionPasswordProtectionDeploymentType?), TypeInfoPropertyName = "NullablePatchTeamRequestDefaultDeploymentProtectionPasswordProtectionDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDefaultDeploymentProtectionSsoProtectionDeploymentType?), TypeInfoPropertyName = "NullablePatchTeamRequestDefaultDeploymentProtectionSsoProtectionDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDefaultPassportDeploymentType?), TypeInfoPropertyName = "NullablePatchTeamRequestDefaultPassportDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpiration?), TypeInfoPropertyName = "NullablePatchTeamRequestDefaultExpirationSettingsExpiration2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpirationProduction?), TypeInfoPropertyName = "NullablePatchTeamRequestDefaultExpirationSettingsExpirationProduction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpirationCanceled?), TypeInfoPropertyName = "NullablePatchTeamRequestDefaultExpirationSettingsExpirationCanceled2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpirationErrored?), TypeInfoPropertyName = "NullablePatchTeamRequestDefaultExpirationSettingsExpirationErrored2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicy, string>?), TypeInfoPropertyName = "NullableAnyOfPatchTeamRequestDeploymentPolicyString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1Item>, string>?), TypeInfoPropertyName = "NullableAnyOfIListPatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2>?), TypeInfoPropertyName = "PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2_1dbba40ee7c23e2c")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1Type?), TypeInfoPropertyName = "NullablePatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1Target?), TypeInfoPropertyName = "NullablePatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1Target2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2Type?), TypeInfoPropertyName = "NullablePatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1, global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2>?), TypeInfoPropertyName = "PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2_ce3a3a0b08ee73bc")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1Provider?), TypeInfoPropertyName = "NullablePatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant1Provider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider?), TypeInfoPropertyName = "NullablePatchTeamRequestDeploymentPolicyGitSourcesVariant1ItemSourceVariant2Provider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.PatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1Item>, string>?), TypeInfoPropertyName = "NullableAnyOfIListPatchTeamRequestDeploymentPolicyDeploymentSourcesVariant1ItemString2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
