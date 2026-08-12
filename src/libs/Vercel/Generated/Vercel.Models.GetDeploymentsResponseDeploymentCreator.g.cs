@@ -4,18 +4,25 @@
 namespace Vercel
 {
     /// <summary>
-    /// Metadata information of the user who created the deployment.
+    /// Metadata information of the deployment creator.
     /// </summary>
     public sealed partial class GetDeploymentsResponseDeploymentCreator
     {
         /// <summary>
-        /// The unique identifier of the user.<br/>
+        /// Stable creator id across principal types. This may be a user ID, an app ID, an integration configuration ID, or `system`.<br/>
         /// Example: eLrCnEgbKhsHyfbiNR7E8496
         /// </summary>
         /// <example>eLrCnEgbKhsHyfbiNR7E8496</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Uid { get; set; }
+
+        /// <summary>
+        /// Principal type of the deployment creator. Defaults to `"user"` if absent (legacy deployments created before principal attribution was recorded).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentCreatorTypeJsonConverter))]
+        public global::Vercel.GetDeploymentsResponseDeploymentCreatorType? Type { get; set; }
 
         /// <summary>
         /// The email address of the user.<br/>
@@ -59,8 +66,11 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetDeploymentsResponseDeploymentCreator" /> class.
         /// </summary>
         /// <param name="uid">
-        /// The unique identifier of the user.<br/>
+        /// Stable creator id across principal types. This may be a user ID, an app ID, an integration configuration ID, or `system`.<br/>
         /// Example: eLrCnEgbKhsHyfbiNR7E8496
+        /// </param>
+        /// <param name="type">
+        /// Principal type of the deployment creator. Defaults to `"user"` if absent (legacy deployments created before principal attribution was recorded).
         /// </param>
         /// <param name="email">
         /// The email address of the user.<br/>
@@ -83,12 +93,14 @@ namespace Vercel
 #endif
         public GetDeploymentsResponseDeploymentCreator(
             string uid,
+            global::Vercel.GetDeploymentsResponseDeploymentCreatorType? type,
             string? email,
             string? username,
             string? githubLogin,
             string? gitlabLogin)
         {
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
+            this.Type = type;
             this.Email = email;
             this.Username = username;
             this.GithubLogin = githubLogin;

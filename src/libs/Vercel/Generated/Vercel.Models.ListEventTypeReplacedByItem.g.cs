@@ -35,6 +35,42 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AdminAgenticProvisioningAccountUnlinked,
+        /// <summary>
+        /// 
+        /// </summary>
+        AdminPlanUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AdminSecondaryEmailAdded,
+        /// <summary>
+        /// 
+        /// </summary>
+        AdminSecondaryEmailRemoved,
+        /// <summary>
+        /// 
+        /// </summary>
+        AdminTeamNameUpdate,
+        /// <summary>
+        /// 
+        /// </summary>
+        AdminTeamSlugUpdate,
+        /// <summary>
+        /// 
+        /// </summary>
+        AdminUserDelete,
+        /// <summary>
+        /// 
+        /// </summary>
+        AdminUserPrimaryEmailUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AdminUsernameUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AgenticProvisioningAccountBlocked,
         /// <summary>
         /// 
@@ -2295,6 +2331,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserMfaChallengeInitiated,
+        /// <summary>
+        /// 
+        /// </summary>
         UserMfaChallengeVerified,
         /// <summary>
         /// 
@@ -2340,6 +2380,10 @@ namespace Vercel
         /// 
         /// </summary>
         UserPrimaryEmailUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserProviderEmailClaimEvaluated,
         /// <summary>
         /// 
         /// </summary>
@@ -2512,6 +2556,15 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AccessGroupUpdated => "access-group-updated",
                 ListEventTypeReplacedByItem.AccessGroupUserAdded => "access-group-user-added",
                 ListEventTypeReplacedByItem.AccessGroupUserRemoved => "access-group-user-removed",
+                ListEventTypeReplacedByItem.AdminAgenticProvisioningAccountUnlinked => "admin-agentic-provisioning-account-unlinked",
+                ListEventTypeReplacedByItem.AdminPlanUpdated => "admin-plan-updated",
+                ListEventTypeReplacedByItem.AdminSecondaryEmailAdded => "admin-secondary-email-added",
+                ListEventTypeReplacedByItem.AdminSecondaryEmailRemoved => "admin-secondary-email-removed",
+                ListEventTypeReplacedByItem.AdminTeamNameUpdate => "admin-team-name-update",
+                ListEventTypeReplacedByItem.AdminTeamSlugUpdate => "admin-team-slug-update",
+                ListEventTypeReplacedByItem.AdminUserDelete => "admin-user-delete",
+                ListEventTypeReplacedByItem.AdminUserPrimaryEmailUpdated => "admin-user-primary-email-updated",
+                ListEventTypeReplacedByItem.AdminUsernameUpdated => "admin-username-updated",
                 ListEventTypeReplacedByItem.AgenticProvisioningAccountBlocked => "agentic-provisioning-account-blocked",
                 ListEventTypeReplacedByItem.AgenticProvisioningAccountLinked => "agentic-provisioning-account-linked",
                 ListEventTypeReplacedByItem.AgenticProvisioningAccountRelinked => "agentic-provisioning-account-relinked",
@@ -3077,6 +3130,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.UserEmuRecoveryInitiated => "user-emu-recovery-initiated",
                 ListEventTypeReplacedByItem.UserEmuToggled => "user-emu-toggled",
                 ListEventTypeReplacedByItem.UserMfaChallengeFailed => "user-mfa-challenge-failed",
+                ListEventTypeReplacedByItem.UserMfaChallengeInitiated => "user-mfa-challenge-initiated",
                 ListEventTypeReplacedByItem.UserMfaChallengeVerified => "user-mfa-challenge-verified",
                 ListEventTypeReplacedByItem.UserMfaChangeFailed => "user-mfa-change-failed",
                 ListEventTypeReplacedByItem.UserMfaConfigurationUpdated => "user-mfa-configuration-updated",
@@ -3089,6 +3143,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.UserPhoneRemoved => "user-phone-removed",
                 ListEventTypeReplacedByItem.UserPhoneUpdated => "user-phone-updated",
                 ListEventTypeReplacedByItem.UserPrimaryEmailUpdated => "user-primary-email-updated",
+                ListEventTypeReplacedByItem.UserProviderEmailClaimEvaluated => "user-provider-email-claim-evaluated",
                 ListEventTypeReplacedByItem.UserSudoModeRemoved => "user-sudo-mode-removed",
                 ListEventTypeReplacedByItem.UserTokenCreated => "user-token-created",
                 ListEventTypeReplacedByItem.UserTokenDeleted => "user-token-deleted",
@@ -3143,6 +3198,15 @@ namespace Vercel
                 "access-group-updated" => ListEventTypeReplacedByItem.AccessGroupUpdated,
                 "access-group-user-added" => ListEventTypeReplacedByItem.AccessGroupUserAdded,
                 "access-group-user-removed" => ListEventTypeReplacedByItem.AccessGroupUserRemoved,
+                "admin-agentic-provisioning-account-unlinked" => ListEventTypeReplacedByItem.AdminAgenticProvisioningAccountUnlinked,
+                "admin-plan-updated" => ListEventTypeReplacedByItem.AdminPlanUpdated,
+                "admin-secondary-email-added" => ListEventTypeReplacedByItem.AdminSecondaryEmailAdded,
+                "admin-secondary-email-removed" => ListEventTypeReplacedByItem.AdminSecondaryEmailRemoved,
+                "admin-team-name-update" => ListEventTypeReplacedByItem.AdminTeamNameUpdate,
+                "admin-team-slug-update" => ListEventTypeReplacedByItem.AdminTeamSlugUpdate,
+                "admin-user-delete" => ListEventTypeReplacedByItem.AdminUserDelete,
+                "admin-user-primary-email-updated" => ListEventTypeReplacedByItem.AdminUserPrimaryEmailUpdated,
+                "admin-username-updated" => ListEventTypeReplacedByItem.AdminUsernameUpdated,
                 "agentic-provisioning-account-blocked" => ListEventTypeReplacedByItem.AgenticProvisioningAccountBlocked,
                 "agentic-provisioning-account-linked" => ListEventTypeReplacedByItem.AgenticProvisioningAccountLinked,
                 "agentic-provisioning-account-relinked" => ListEventTypeReplacedByItem.AgenticProvisioningAccountRelinked,
@@ -3708,6 +3772,7 @@ namespace Vercel
                 "user-emu-recovery-initiated" => ListEventTypeReplacedByItem.UserEmuRecoveryInitiated,
                 "user-emu-toggled" => ListEventTypeReplacedByItem.UserEmuToggled,
                 "user-mfa-challenge-failed" => ListEventTypeReplacedByItem.UserMfaChallengeFailed,
+                "user-mfa-challenge-initiated" => ListEventTypeReplacedByItem.UserMfaChallengeInitiated,
                 "user-mfa-challenge-verified" => ListEventTypeReplacedByItem.UserMfaChallengeVerified,
                 "user-mfa-change-failed" => ListEventTypeReplacedByItem.UserMfaChangeFailed,
                 "user-mfa-configuration-updated" => ListEventTypeReplacedByItem.UserMfaConfigurationUpdated,
@@ -3720,6 +3785,7 @@ namespace Vercel
                 "user-phone-removed" => ListEventTypeReplacedByItem.UserPhoneRemoved,
                 "user-phone-updated" => ListEventTypeReplacedByItem.UserPhoneUpdated,
                 "user-primary-email-updated" => ListEventTypeReplacedByItem.UserPrimaryEmailUpdated,
+                "user-provider-email-claim-evaluated" => ListEventTypeReplacedByItem.UserProviderEmailClaimEvaluated,
                 "user-sudo-mode-removed" => ListEventTypeReplacedByItem.UserSudoModeRemoved,
                 "user-token-created" => ListEventTypeReplacedByItem.UserTokenCreated,
                 "user-token-deleted" => ListEventTypeReplacedByItem.UserTokenDeleted,

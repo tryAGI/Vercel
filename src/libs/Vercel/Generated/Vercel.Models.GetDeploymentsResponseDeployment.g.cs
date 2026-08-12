@@ -126,7 +126,7 @@ namespace Vercel
         public global::Vercel.GetDeploymentsResponseDeploymentType Type { get; set; }
 
         /// <summary>
-        /// Metadata information of the user who created the deployment.
+        /// Metadata information of the deployment creator.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -345,7 +345,7 @@ namespace Vercel
         /// Example: 1609492210000L
         /// </param>
         /// <param name="creator">
-        /// Metadata information of the user who created the deployment.
+        /// Metadata information of the deployment creator.
         /// </param>
         /// <param name="defaultRoute">
         /// The default route that should be used for screenshots and links if configured with microfrontends.<br/>

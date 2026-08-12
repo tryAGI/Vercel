@@ -9,13 +9,20 @@ namespace Vercel
     public sealed partial class CreateDeploymentResponseVariant2Creator
     {
         /// <summary>
-        /// The ID of the user that created the deployment<br/>
+        /// Stable creator id across principal types (user id, app id, integration configuration id, or `system`).<br/>
         /// Example: 96SnxkFiMyVKsK3pnoHfx3Hz
         /// </summary>
         /// <example>96SnxkFiMyVKsK3pnoHfx3Hz</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Uid { get; set; }
+
+        /// <summary>
+        /// Principal type of the deployment creator.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2CreatorTypeJsonConverter))]
+        public global::Vercel.CreateDeploymentResponseVariant2CreatorType? Type { get; set; }
 
         /// <summary>
         /// The username of the user that created the deployment<br/>
@@ -41,8 +48,11 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseVariant2Creator" /> class.
         /// </summary>
         /// <param name="uid">
-        /// The ID of the user that created the deployment<br/>
+        /// Stable creator id across principal types (user id, app id, integration configuration id, or `system`).<br/>
         /// Example: 96SnxkFiMyVKsK3pnoHfx3Hz
+        /// </param>
+        /// <param name="type">
+        /// Principal type of the deployment creator.
         /// </param>
         /// <param name="username">
         /// The username of the user that created the deployment<br/>
@@ -56,10 +66,12 @@ namespace Vercel
 #endif
         public CreateDeploymentResponseVariant2Creator(
             string uid,
+            global::Vercel.CreateDeploymentResponseVariant2CreatorType? type,
             string? username,
             string? avatar)
         {
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
+            this.Type = type;
             this.Username = username;
             this.Avatar = avatar;
         }

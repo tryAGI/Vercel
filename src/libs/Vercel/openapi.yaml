@@ -56,7 +56,8 @@
                           "UsageViewer",
                           "V0Builder",
                           "V0Chatter",
-                          "V0Viewer"
+                          "V0Viewer",
+                          "WorkflowDecryptor"
                         ]
                       },
                       "type": "array"
@@ -16719,8 +16720,18 @@
                           "properties": {
                             "uid": {
                               "type": "string",
-                              "description": "The ID of the user that created the deployment",
+                              "description": "Stable creator id across principal types (user id, app id, integration configuration id, or `system`).",
                               "example": "96SnxkFiMyVKsK3pnoHfx3Hz"
+                            },
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "app",
+                                "integration",
+                                "system",
+                                "user"
+                              ],
+                              "description": "Principal type of the deployment creator."
                             },
                             "username": {
                               "type": "string",
@@ -22663,8 +22674,18 @@
                           "properties": {
                             "uid": {
                               "type": "string",
-                              "description": "The ID of the user that created the deployment",
+                              "description": "Stable creator id across principal types (user id, app id, integration configuration id, or `system`).",
                               "example": "96SnxkFiMyVKsK3pnoHfx3Hz"
+                            },
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "app",
+                                "integration",
+                                "system",
+                                "user"
+                              ],
+                              "description": "Principal type of the deployment creator."
                             },
                             "username": {
                               "type": "string",
@@ -24709,8 +24730,18 @@
                           "properties": {
                             "uid": {
                               "type": "string",
-                              "description": "The ID of the user that created the deployment",
+                              "description": "Stable creator id across principal types (user id, app id, integration configuration id, or `system`).",
                               "example": "96SnxkFiMyVKsK3pnoHfx3Hz"
+                            },
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "app",
+                                "integration",
+                                "system",
+                                "user"
+                              ],
+                              "description": "Principal type of the deployment creator."
                             },
                             "username": {
                               "type": "string",
@@ -31848,8 +31879,18 @@
                       "properties": {
                         "uid": {
                           "type": "string",
-                          "description": "The ID of the user that created the deployment",
+                          "description": "Stable creator id across principal types (user id, app id, integration configuration id, or `system`).",
                           "example": "96SnxkFiMyVKsK3pnoHfx3Hz"
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "app",
+                            "integration",
+                            "system",
+                            "user"
+                          ],
+                          "description": "Principal type of the deployment creator."
                         },
                         "username": {
                           "type": "string",
@@ -80218,6 +80259,12 @@
                                 },
                                 "type": "array"
                               },
+                              "workflowRunData": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "aliasProject": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -103338,6 +103385,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "workflowRunData": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "aliasProject": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -111137,6 +111190,12 @@
                           "type": "array"
                         },
                         "webhook-event": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "workflowRunData": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -119106,6 +119165,12 @@
                           },
                           "type": "array"
                         },
+                        "workflowRunData": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "aliasProject": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -126423,6 +126488,12 @@
                           "type": "array"
                         },
                         "webhook-event": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "workflowRunData": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -135009,6 +135080,12 @@
                           "type": "array"
                         },
                         "webhook-event": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "workflowRunData": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -151616,6 +151693,12 @@
                           "type": "array"
                         },
                         "webhook-event": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "workflowRunData": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -178690,7 +178773,8 @@
                                 "UsageViewer",
                                 "V0Builder",
                                 "V0Chatter",
-                                "V0Viewer"
+                                "V0Viewer",
+                                "WorkflowDecryptor"
                               ]
                             },
                             "type": "array"
@@ -179744,6 +179828,7 @@
                         "UsageViewer",
                         "EnvVariableManager",
                         "EnvironmentManager",
+                        "WorkflowDecryptor",
                         "OrgAdmin",
                         "OrgViewer",
                         "AiGatewaySettings",
@@ -194559,8 +194644,18 @@
                             "properties": {
                               "uid": {
                                 "type": "string",
-                                "description": "The unique identifier of the user.",
+                                "description": "Stable creator id across principal types. This may be a user ID, an app ID, an integration configuration ID, or `system`.",
                                 "example": "eLrCnEgbKhsHyfbiNR7E8496"
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "app",
+                                  "integration",
+                                  "system",
+                                  "user"
+                                ],
+                                "description": "Principal type of the deployment creator. Defaults to `\"user\"` if absent (legacy deployments created before principal attribution was recorded)."
                               },
                               "email": {
                                 "type": "string",
@@ -194587,7 +194682,7 @@
                               "uid"
                             ],
                             "type": "object",
-                            "description": "Metadata information of the user who created the deployment."
+                            "description": "Metadata information of the deployment creator."
                           },
                           "meta": {
                             "additionalProperties": {
@@ -197454,6 +197549,15 @@
               "access-group-updated",
               "access-group-user-added",
               "access-group-user-removed",
+              "admin-agentic-provisioning-account-unlinked",
+              "admin-plan-updated",
+              "admin-secondary-email-added",
+              "admin-secondary-email-removed",
+              "admin-team-name-update",
+              "admin-team-slug-update",
+              "admin-user-delete",
+              "admin-user-primary-email-updated",
+              "admin-username-updated",
               "agentic-provisioning-account-blocked",
               "agentic-provisioning-account-linked",
               "agentic-provisioning-account-relinked",
@@ -198019,6 +198123,7 @@
               "user-emu-recovery-initiated",
               "user-emu-toggled",
               "user-mfa-challenge-failed",
+              "user-mfa-challenge-initiated",
               "user-mfa-challenge-verified",
               "user-mfa-change-failed",
               "user-mfa-configuration-updated",
@@ -198031,6 +198136,7 @@
               "user-phone-removed",
               "user-phone-updated",
               "user-primary-email-updated",
+              "user-provider-email-claim-evaluated",
               "user-sudo-mode-removed",
               "user-token-created",
               "user-token-deleted",
@@ -198393,6 +198499,15 @@
               "access-group-updated",
               "access-group-user-added",
               "access-group-user-removed",
+              "admin-agentic-provisioning-account-unlinked",
+              "admin-plan-updated",
+              "admin-secondary-email-added",
+              "admin-secondary-email-removed",
+              "admin-team-name-update",
+              "admin-team-slug-update",
+              "admin-user-delete",
+              "admin-user-primary-email-updated",
+              "admin-username-updated",
               "agentic-provisioning-account-blocked",
               "agentic-provisioning-account-linked",
               "agentic-provisioning-account-relinked",
@@ -198958,6 +199073,7 @@
               "user-emu-recovery-initiated",
               "user-emu-toggled",
               "user-mfa-challenge-failed",
+              "user-mfa-challenge-initiated",
               "user-mfa-challenge-verified",
               "user-mfa-change-failed",
               "user-mfa-configuration-updated",
@@ -198970,6 +199086,7 @@
               "user-phone-removed",
               "user-phone-updated",
               "user-primary-email-updated",
+              "user-provider-email-claim-evaluated",
               "user-sudo-mode-removed",
               "user-token-created",
               "user-token-deleted",
@@ -199073,6 +199190,15 @@
                 "access-group-updated",
                 "access-group-user-added",
                 "access-group-user-removed",
+                "admin-agentic-provisioning-account-unlinked",
+                "admin-plan-updated",
+                "admin-secondary-email-added",
+                "admin-secondary-email-removed",
+                "admin-team-name-update",
+                "admin-team-slug-update",
+                "admin-user-delete",
+                "admin-user-primary-email-updated",
+                "admin-username-updated",
                 "agentic-provisioning-account-blocked",
                 "agentic-provisioning-account-linked",
                 "agentic-provisioning-account-relinked",
@@ -199638,6 +199764,7 @@
                 "user-emu-recovery-initiated",
                 "user-emu-toggled",
                 "user-mfa-challenge-failed",
+                "user-mfa-challenge-initiated",
                 "user-mfa-challenge-verified",
                 "user-mfa-change-failed",
                 "user-mfa-configuration-updated",
@@ -199650,6 +199777,7 @@
                 "user-phone-removed",
                 "user-phone-updated",
                 "user-primary-email-updated",
+                "user-provider-email-claim-evaluated",
                 "user-sudo-mode-removed",
                 "user-token-created",
                 "user-token-deleted",
@@ -202123,7 +202251,8 @@
                 "UsageViewer",
                 "V0Builder",
                 "V0Chatter",
-                "V0Viewer"
+                "V0Viewer",
+                "WorkflowDecryptor"
               ],
               "description": "The team permissions of the user",
               "example": [
@@ -202393,7 +202522,8 @@
                     "UsageViewer",
                     "V0Builder",
                     "V0Chatter",
-                    "V0Viewer"
+                    "V0Viewer",
+                    "WorkflowDecryptor"
                   ]
                 },
                 "type": "array"
@@ -203179,7 +203309,8 @@
                     "UsageViewer",
                     "V0Builder",
                     "V0Chatter",
-                    "V0Viewer"
+                    "V0Viewer",
+                    "WorkflowDecryptor"
                   ]
                 },
                 "type": "array"
@@ -203531,7 +203662,8 @@
                     "UsageViewer",
                     "V0Builder",
                     "V0Chatter",
-                    "V0Viewer"
+                    "V0Viewer",
+                    "WorkflowDecryptor"
                   ]
                 },
                 "type": "array"
