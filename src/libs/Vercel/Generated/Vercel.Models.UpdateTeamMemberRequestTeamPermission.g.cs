@@ -72,6 +72,10 @@ namespace Vercel
         /// 
         /// </summary>
         V0Viewer,
+        /// <summary>
+        /// 
+        /// </summary>
+        WorkflowDecryptor,
     }
 
     /// <summary>
@@ -102,6 +106,7 @@ namespace Vercel
                 UpdateTeamMemberRequestTeamPermission.V0Builder => "V0Builder",
                 UpdateTeamMemberRequestTeamPermission.V0Chatter => "V0Chatter",
                 UpdateTeamMemberRequestTeamPermission.V0Viewer => "V0Viewer",
+                UpdateTeamMemberRequestTeamPermission.WorkflowDecryptor => "WorkflowDecryptor",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -128,6 +133,7 @@ namespace Vercel
                 "V0Builder" => UpdateTeamMemberRequestTeamPermission.V0Builder,
                 "V0Chatter" => UpdateTeamMemberRequestTeamPermission.V0Chatter,
                 "V0Viewer" => UpdateTeamMemberRequestTeamPermission.V0Viewer,
+                "WorkflowDecryptor" => UpdateTeamMemberRequestTeamPermission.WorkflowDecryptor,
                 _ => null,
             };
         }

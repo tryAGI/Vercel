@@ -1163,6 +1163,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("workflowRunData")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WorkflowRunData { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasProject")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AliasProject { get; set; }
 
@@ -1835,6 +1841,7 @@ namespace Vercel
         /// <param name="webAnalyticsPlan"></param>
         /// <param name="webhook"></param>
         /// <param name="webhookEvent"></param>
+        /// <param name="workflowRunData"></param>
         /// <param name="aliasProject"></param>
         /// <param name="aliasProtectionBypass"></param>
         /// <param name="bulkRedirects"></param>
@@ -2110,6 +2117,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalyticsPlan,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webhook,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webhookEvent,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? workflowRunData,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aliasProject,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aliasProtectionBypass,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? bulkRedirects,
@@ -2382,6 +2390,7 @@ namespace Vercel
             this.WebAnalyticsPlan = webAnalyticsPlan;
             this.Webhook = webhook;
             this.WebhookEvent = webhookEvent;
+            this.WorkflowRunData = workflowRunData;
             this.AliasProject = aliasProject;
             this.AliasProtectionBypass = aliasProtectionBypass;
             this.BulkRedirects = bulkRedirects;
