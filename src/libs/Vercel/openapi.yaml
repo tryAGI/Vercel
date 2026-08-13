@@ -4053,6 +4053,78 @@
                                   ],
                                   "type": "object",
                                   "description": "The configuration for a credit purchase"
+                                },
+                                {
+                                  "properties": {
+                                    "options": {
+                                      "properties": {
+                                        "planId": {
+                                          "type": "string",
+                                          "description": "The ID of the plan to subscribe to"
+                                        },
+                                        "planItemQuantities": {
+                                          "items": {
+                                            "properties": {
+                                              "planItemId": {
+                                                "type": "string",
+                                                "description": "The ID of the plan item to set the quantity for"
+                                              },
+                                              "quantity": {
+                                                "type": "number",
+                                                "description": "The nonnegative integer quantity for the plan item"
+                                              },
+                                              "resourceIds": {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array",
+                                                "description": "The resource IDs to associate with the plan item quantity"
+                                              }
+                                            },
+                                            "required": [
+                                              "planItemId",
+                                              "quantity"
+                                            ],
+                                            "type": "object",
+                                            "description": "The plan item quantities to set for the subscription"
+                                          },
+                                          "type": "array",
+                                          "description": "The plan item quantities to set for the subscription"
+                                        },
+                                        "rateVariantKey": {
+                                          "type": "string",
+                                          "description": "The rate variant key to apply to the subscription"
+                                        }
+                                      },
+                                      "required": [
+                                        "planId"
+                                      ],
+                                      "type": "object",
+                                      "description": "Purchase configuration specific options"
+                                    },
+                                    "output": {
+                                      "properties": {
+                                        "planChangeId": {
+                                          "type": "string",
+                                          "description": "The committed Plan revision used to calculate the purchase price"
+                                        }
+                                      },
+                                      "type": "object"
+                                    },
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "subscription"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "options",
+                                    "output",
+                                    "type"
+                                  ],
+                                  "type": "object",
+                                  "description": "The configuration for a credit purchase"
                                 }
                               ]
                             },
@@ -4824,6 +4896,77 @@
                               "type": "string",
                               "description": "The Orb subscription ID this intent is associated with."
                             },
+                            "orbUpdate": {
+                              "oneOf": [
+                                {
+                                  "properties": {
+                                    "mode": {
+                                      "type": "string",
+                                      "enum": [
+                                        "sync"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "mode"
+                                  ],
+                                  "type": "object",
+                                  "description": "How the subscription change is applied to Orb."
+                                },
+                                {
+                                  "properties": {
+                                    "mode": {
+                                      "type": "string",
+                                      "enum": [
+                                        "async"
+                                      ]
+                                    },
+                                    "status": {
+                                      "type": "string",
+                                      "enum": [
+                                        "canceled",
+                                        "failed",
+                                        "pending",
+                                        "running"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "mode",
+                                    "status"
+                                  ],
+                                  "type": "object",
+                                  "description": "How the subscription change is applied to Orb."
+                                },
+                                {
+                                  "properties": {
+                                    "appliedAt": {
+                                      "type": "string",
+                                      "description": "The ISO 8601 date-time that the subscription change was applied to Orb."
+                                    },
+                                    "mode": {
+                                      "type": "string",
+                                      "enum": [
+                                        "async"
+                                      ]
+                                    },
+                                    "status": {
+                                      "type": "string",
+                                      "enum": [
+                                        "succeeded"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "appliedAt",
+                                    "mode",
+                                    "status"
+                                  ],
+                                  "type": "object",
+                                  "description": "How the subscription change is applied to Orb."
+                                }
+                              ]
+                            },
                             "ownerId": {
                               "type": "string",
                               "description": "The owner ID for this intent (e.g., team or user ID)."
@@ -4851,6 +4994,7 @@
                             "createdAt",
                             "id",
                             "orbSubscriptionId",
+                            "orbUpdate",
                             "ownerId",
                             "status",
                             "updatedAt"
@@ -75990,7 +76134,8 @@
                                       "type": "string"
                                     },
                                     "userId": {
-                                      "type": "string"
+                                      "type": "string",
+                                      "description": "Present for user creators; omitted for app/integration/system creators."
                                     },
                                     "withCache": {
                                       "type": "boolean",
@@ -76011,8 +76156,7 @@
                                     "private",
                                     "readyState",
                                     "type",
-                                    "url",
-                                    "userId"
+                                    "url"
                                   ],
                                   "type": "object"
                                 },
@@ -77332,7 +77476,8 @@
                                   "type": "string"
                                 },
                                 "userId": {
-                                  "type": "string"
+                                  "type": "string",
+                                  "description": "Present for user creators; omitted for app/integration/system creators."
                                 },
                                 "withCache": {
                                   "type": "boolean",
@@ -77353,8 +77498,7 @@
                                 "private",
                                 "readyState",
                                 "type",
-                                "url",
-                                "userId"
+                                "url"
                               ],
                               "type": "object"
                             },
@@ -79046,7 +79190,8 @@
                                   "type": "string"
                                 },
                                 "userId": {
-                                  "type": "string"
+                                  "type": "string",
+                                  "description": "Present for user creators; omitted for app/integration/system creators."
                                 },
                                 "withCache": {
                                   "type": "boolean",
@@ -79067,8 +79212,7 @@
                                 "private",
                                 "readyState",
                                 "type",
-                                "url",
-                                "userId"
+                                "url"
                               ],
                               "type": "object"
                             },
@@ -90299,7 +90443,8 @@
                                       "type": "string"
                                     },
                                     "userId": {
-                                      "type": "string"
+                                      "type": "string",
+                                      "description": "Present for user creators; omitted for app/integration/system creators."
                                     },
                                     "withCache": {
                                       "type": "boolean",
@@ -90320,8 +90465,7 @@
                                     "private",
                                     "readyState",
                                     "type",
-                                    "url",
-                                    "userId"
+                                    "url"
                                   ],
                                   "type": "object"
                                 },
@@ -91060,7 +91204,8 @@
                                   "type": "string"
                                 },
                                 "userId": {
-                                  "type": "string"
+                                  "type": "string",
+                                  "description": "Present for user creators; omitted for app/integration/system creators."
                                 },
                                 "withCache": {
                                   "type": "boolean",
@@ -91081,8 +91226,7 @@
                                 "private",
                                 "readyState",
                                 "type",
-                                "url",
-                                "userId"
+                                "url"
                               ],
                               "type": "object"
                             },
@@ -92385,7 +92529,8 @@
                                   "type": "string"
                                 },
                                 "userId": {
-                                  "type": "string"
+                                  "type": "string",
+                                  "description": "Present for user creators; omitted for app/integration/system creators."
                                 },
                                 "withCache": {
                                   "type": "boolean",
@@ -92406,8 +92551,7 @@
                                 "private",
                                 "readyState",
                                 "type",
-                                "url",
-                                "userId"
+                                "url"
                               ],
                               "type": "object"
                             },
@@ -94690,7 +94834,8 @@
                                           "type": "string"
                                         },
                                         "userId": {
-                                          "type": "string"
+                                          "type": "string",
+                                          "description": "Present for user creators; omitted for app/integration/system creators."
                                         },
                                         "withCache": {
                                           "type": "boolean",
@@ -94711,8 +94856,7 @@
                                         "private",
                                         "readyState",
                                         "type",
-                                        "url",
-                                        "userId"
+                                        "url"
                                       ],
                                       "type": "object"
                                     },
@@ -95451,7 +95595,8 @@
                                       "type": "string"
                                     },
                                     "userId": {
-                                      "type": "string"
+                                      "type": "string",
+                                      "description": "Present for user creators; omitted for app/integration/system creators."
                                     },
                                     "withCache": {
                                       "type": "boolean",
@@ -95472,8 +95617,7 @@
                                     "private",
                                     "readyState",
                                     "type",
-                                    "url",
-                                    "userId"
+                                    "url"
                                   ],
                                   "type": "object"
                                 },
@@ -96776,7 +96920,8 @@
                                       "type": "string"
                                     },
                                     "userId": {
-                                      "type": "string"
+                                      "type": "string",
+                                      "description": "Present for user creators; omitted for app/integration/system creators."
                                     },
                                     "withCache": {
                                       "type": "boolean",
@@ -96797,8 +96942,7 @@
                                     "private",
                                     "readyState",
                                     "type",
-                                    "url",
-                                    "userId"
+                                    "url"
                                   ],
                                   "type": "object"
                                 },
@@ -99116,7 +99260,8 @@
                                           "type": "string"
                                         },
                                         "userId": {
-                                          "type": "string"
+                                          "type": "string",
+                                          "description": "Present for user creators; omitted for app/integration/system creators."
                                         },
                                         "withCache": {
                                           "type": "boolean",
@@ -99137,8 +99282,7 @@
                                         "private",
                                         "readyState",
                                         "type",
-                                        "url",
-                                        "userId"
+                                        "url"
                                       ],
                                       "type": "object"
                                     },
@@ -100458,7 +100602,8 @@
                                       "type": "string"
                                     },
                                     "userId": {
-                                      "type": "string"
+                                      "type": "string",
+                                      "description": "Present for user creators; omitted for app/integration/system creators."
                                     },
                                     "withCache": {
                                       "type": "boolean",
@@ -100479,8 +100624,7 @@
                                     "private",
                                     "readyState",
                                     "type",
-                                    "url",
-                                    "userId"
+                                    "url"
                                   ],
                                   "type": "object"
                                 },
@@ -102172,7 +102316,8 @@
                                       "type": "string"
                                     },
                                     "userId": {
-                                      "type": "string"
+                                      "type": "string",
+                                      "description": "Present for user creators; omitted for app/integration/system creators."
                                     },
                                     "withCache": {
                                       "type": "boolean",
@@ -102193,8 +102338,7 @@
                                     "private",
                                     "readyState",
                                     "type",
-                                    "url",
-                                    "userId"
+                                    "url"
                                   ],
                                   "type": "object"
                                 },
@@ -106926,7 +107070,8 @@
                                 "type": "string"
                               },
                               "userId": {
-                                "type": "string"
+                                "type": "string",
+                                "description": "Present for user creators; omitted for app/integration/system creators."
                               },
                               "withCache": {
                                 "type": "boolean",
@@ -106947,8 +107092,7 @@
                               "private",
                               "readyState",
                               "type",
-                              "url",
-                              "userId"
+                              "url"
                             ],
                             "type": "object"
                           },
@@ -108268,7 +108412,8 @@
                             "type": "string"
                           },
                           "userId": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Present for user creators; omitted for app/integration/system creators."
                           },
                           "withCache": {
                             "type": "boolean",
@@ -108289,8 +108434,7 @@
                           "private",
                           "readyState",
                           "type",
-                          "url",
-                          "userId"
+                          "url"
                         ],
                         "type": "object"
                       },
@@ -109982,7 +110126,8 @@
                             "type": "string"
                           },
                           "userId": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Present for user creators; omitted for app/integration/system creators."
                           },
                           "withCache": {
                             "type": "boolean",
@@ -110003,8 +110148,7 @@
                           "private",
                           "readyState",
                           "type",
-                          "url",
-                          "userId"
+                          "url"
                         ],
                         "type": "object"
                       },
@@ -114898,7 +115042,8 @@
                                 "type": "string"
                               },
                               "userId": {
-                                "type": "string"
+                                "type": "string",
+                                "description": "Present for user creators; omitted for app/integration/system creators."
                               },
                               "withCache": {
                                 "type": "boolean",
@@ -114919,8 +115064,7 @@
                               "private",
                               "readyState",
                               "type",
-                              "url",
-                              "userId"
+                              "url"
                             ],
                             "type": "object"
                           },
@@ -116238,7 +116382,8 @@
                             "type": "string"
                           },
                           "userId": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Present for user creators; omitted for app/integration/system creators."
                           },
                           "withCache": {
                             "type": "boolean",
@@ -116259,8 +116404,7 @@
                           "private",
                           "readyState",
                           "type",
-                          "url",
-                          "userId"
+                          "url"
                         ],
                         "type": "object"
                       },
@@ -117952,7 +118096,8 @@
                             "type": "string"
                           },
                           "userId": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Present for user creators; omitted for app/integration/system creators."
                           },
                           "withCache": {
                             "type": "boolean",
@@ -117973,8 +118118,7 @@
                           "private",
                           "readyState",
                           "type",
-                          "url",
-                          "userId"
+                          "url"
                         ],
                         "type": "object"
                       },
@@ -122233,7 +122377,8 @@
                                 "type": "string"
                               },
                               "userId": {
-                                "type": "string"
+                                "type": "string",
+                                "description": "Present for user creators; omitted for app/integration/system creators."
                               },
                               "withCache": {
                                 "type": "boolean",
@@ -122254,8 +122399,7 @@
                               "private",
                               "readyState",
                               "type",
-                              "url",
-                              "userId"
+                              "url"
                             ],
                             "type": "object"
                           },
@@ -123566,7 +123710,8 @@
                             "type": "string"
                           },
                           "userId": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Present for user creators; omitted for app/integration/system creators."
                           },
                           "withCache": {
                             "type": "boolean",
@@ -123587,8 +123732,7 @@
                           "private",
                           "readyState",
                           "type",
-                          "url",
-                          "userId"
+                          "url"
                         ],
                         "type": "object"
                       },
@@ -125280,7 +125424,8 @@
                             "type": "string"
                           },
                           "userId": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Present for user creators; omitted for app/integration/system creators."
                           },
                           "withCache": {
                             "type": "boolean",
@@ -125301,8 +125446,7 @@
                           "private",
                           "readyState",
                           "type",
-                          "url",
-                          "userId"
+                          "url"
                         ],
                         "type": "object"
                       },
@@ -130816,7 +130960,8 @@
                                 "type": "string"
                               },
                               "userId": {
-                                "type": "string"
+                                "type": "string",
+                                "description": "Present for user creators; omitted for app/integration/system creators."
                               },
                               "withCache": {
                                 "type": "boolean",
@@ -130837,8 +130982,7 @@
                               "private",
                               "readyState",
                               "type",
-                              "url",
-                              "userId"
+                              "url"
                             ],
                             "type": "object"
                           },
@@ -132158,7 +132302,8 @@
                             "type": "string"
                           },
                           "userId": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Present for user creators; omitted for app/integration/system creators."
                           },
                           "withCache": {
                             "type": "boolean",
@@ -132179,8 +132324,7 @@
                           "private",
                           "readyState",
                           "type",
-                          "url",
-                          "userId"
+                          "url"
                         ],
                         "type": "object"
                       },
@@ -133872,7 +134016,8 @@
                             "type": "string"
                           },
                           "userId": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Present for user creators; omitted for app/integration/system creators."
                           },
                           "withCache": {
                             "type": "boolean",
@@ -133893,8 +134038,7 @@
                           "private",
                           "readyState",
                           "type",
-                          "url",
-                          "userId"
+                          "url"
                         ],
                         "type": "object"
                       },
@@ -147429,7 +147573,8 @@
                                 "type": "string"
                               },
                               "userId": {
-                                "type": "string"
+                                "type": "string",
+                                "description": "Present for user creators; omitted for app/integration/system creators."
                               },
                               "withCache": {
                                 "type": "boolean",
@@ -147450,8 +147595,7 @@
                               "private",
                               "readyState",
                               "type",
-                              "url",
-                              "userId"
+                              "url"
                             ],
                             "type": "object"
                           },
@@ -148771,7 +148915,8 @@
                             "type": "string"
                           },
                           "userId": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Present for user creators; omitted for app/integration/system creators."
                           },
                           "withCache": {
                             "type": "boolean",
@@ -148792,8 +148937,7 @@
                           "private",
                           "readyState",
                           "type",
-                          "url",
-                          "userId"
+                          "url"
                         ],
                         "type": "object"
                       },
@@ -150485,7 +150629,8 @@
                             "type": "string"
                           },
                           "userId": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "Present for user creators; omitted for app/integration/system creators."
                           },
                           "withCache": {
                             "type": "boolean",
@@ -150506,8 +150651,7 @@
                           "private",
                           "readyState",
                           "type",
-                          "url",
-                          "userId"
+                          "url"
                         ],
                         "type": "object"
                       },

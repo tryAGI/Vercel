@@ -38,6 +38,14 @@ namespace Vercel
         public required string OrbSubscriptionId { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("orbUpdate")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant1, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant2, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant3>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant1, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant2, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant3> OrbUpdate { get; set; }
+
+        /// <summary>
         /// The owner ID for this intent (e.g., team or user ID).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
@@ -84,6 +92,7 @@ namespace Vercel
         /// <param name="orbSubscriptionId">
         /// The Orb subscription ID this intent is associated with.
         /// </param>
+        /// <param name="orbUpdate"></param>
         /// <param name="ownerId">
         /// The owner ID for this intent (e.g., team or user ID).
         /// </param>
@@ -104,6 +113,7 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4> configuration,
             string createdAt,
             string orbSubscriptionId,
+            global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant1, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant2, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant3> orbUpdate,
             string ownerId,
             global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentStatus status,
             string updatedAt,
@@ -113,6 +123,7 @@ namespace Vercel
             this.Configuration = configuration;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.OrbSubscriptionId = orbSubscriptionId ?? throw new global::System.ArgumentNullException(nameof(orbSubscriptionId));
+            this.OrbUpdate = orbUpdate;
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.Status = status;
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
