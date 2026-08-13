@@ -12469,14 +12469,23 @@
                                 true
                               ]
                             },
-                            "cursor": {
-                              "nullable": true,
-                              "type": "string"
+                            "pagination": {
+                              "properties": {
+                                "next": {
+                                  "nullable": true,
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "next"
+                              ],
+                              "type": "object"
                             }
                           },
                           "required": [
                             "hasMore",
-                            "items"
+                            "items",
+                            "pagination"
                           ],
                           "type": "object",
                           "description": "Set by `?include=projects`. Capped at 100 per client."

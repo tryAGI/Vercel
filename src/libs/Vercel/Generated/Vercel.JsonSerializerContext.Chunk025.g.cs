@@ -7940,6 +7940,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataExperimentPrimaryMetricMetricUnit?), TypeInfoPropertyName = "NullableListFlagVersionsResponseVersionDataExperimentPrimaryMetricMetricUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataExperimentPrimaryMetricDirectionality?), TypeInfoPropertyName = "NullableListFlagVersionsResponseVersionDataExperimentPrimaryMetricDirectionality2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataExperimentStatus?), TypeInfoPropertyName = "NullableListFlagVersionsResponseVersionDataExperimentStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsPausedOutcomeType?), TypeInfoPropertyName = "NullableListFlagVersionsResponseVersionDataEnvironmentsPausedOutcomeType2")]
@@ -8439,7 +8440,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRoutesResponseVariant3RouteRouteType?), TypeInfoPropertyName = "NullableGetRoutesResponseVariant3RouteRouteType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetRoutesResponseVariant4RouteRouteHaVariant1, global::Vercel.GetRoutesResponseVariant4RouteRouteHaVariant2>?), TypeInfoPropertyName = "NullableOneOfGetRoutesResponseVariant4RouteRouteHaVariant1GetRoutesResponseVariant4RouteRouteHaVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRoutesResponseVariant4RouteRouteHaVariant1Type?), TypeInfoPropertyName = "NullableGetRoutesResponseVariant4RouteRouteHaVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetRoutesResponseVariant4RouteRouteHaVariant1Value>?), TypeInfoPropertyName = "NullableOneOfStringGetRoutesResponseVariant4RouteRouteHaVariant1Value2")]
     internal sealed partial class SourceGenerationContextChunk025 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -25,8 +25,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cursor")]
-        public string? Cursor { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.CreateConnectorResponseIncludesProjectsPagination Pagination { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,18 +40,18 @@ namespace Vercel
         /// </summary>
         /// <param name="items"></param>
         /// <param name="hasMore"></param>
-        /// <param name="cursor"></param>
+        /// <param name="pagination"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateConnectorResponseIncludesProjects(
             global::System.Collections.Generic.IList<global::Vercel.CreateConnectorResponseIncludesProjectsItem> items,
             bool hasMore,
-            string? cursor)
+            global::Vercel.CreateConnectorResponseIncludesProjectsPagination pagination)
         {
             this.Items = items ?? throw new global::System.ArgumentNullException(nameof(items));
             this.HasMore = hasMore;
-            this.Cursor = cursor;
+            this.Pagination = pagination ?? throw new global::System.ArgumentNullException(nameof(pagination));
         }
 
         /// <summary>
