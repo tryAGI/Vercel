@@ -231,11 +231,10 @@ namespace Vercel
         public required string Url { get; set; }
 
         /// <summary>
-        /// 
+        /// Present for user creators; omitted for app/integration/system creators.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string UserId { get; set; }
+        public string? UserId { get; set; }
 
         /// <summary>
         /// 
@@ -261,7 +260,6 @@ namespace Vercel
         /// <param name="private"></param>
         /// <param name="readyState"></param>
         /// <param name="url"></param>
-        /// <param name="userId"></param>
         /// <param name="alias"></param>
         /// <param name="aliasAssigned"></param>
         /// <param name="aliasError"></param>
@@ -290,6 +288,9 @@ namespace Vercel
         /// <param name="target"></param>
         /// <param name="teamId"></param>
         /// <param name="type"></param>
+        /// <param name="userId">
+        /// Present for user creators; omitted for app/integration/system creators.
+        /// </param>
         /// <param name="withCache"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -304,7 +305,6 @@ namespace Vercel
             bool @private,
             global::Vercel.UpdateProjectResponseAliaDeploymentReadyState readyState,
             string url,
-            string userId,
             global::System.Collections.Generic.IList<string>? alias,
             global::Vercel.OneOf<double?, bool?>? aliasAssigned,
             global::Vercel.UpdateProjectResponseAliaDeploymentAliasError? aliasError,
@@ -330,6 +330,7 @@ namespace Vercel
             string? target,
             string? teamId,
             global::Vercel.UpdateProjectResponseAliaDeploymentType type,
+            string? userId,
             bool? withCache)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
@@ -366,7 +367,7 @@ namespace Vercel
             this.TeamId = teamId;
             this.Type = type;
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
+            this.UserId = userId;
             this.WithCache = withCache;
         }
 
