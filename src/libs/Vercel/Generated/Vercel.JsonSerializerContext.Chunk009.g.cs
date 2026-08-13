@@ -7940,6 +7940,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateDrainResponseVariant2ProjectAccessVariant1, global::Vercel.UpdateDrainResponseVariant2ProjectAccessVariant2>), TypeInfoPropertyName = "OneOfUpdateDrainResponseVariant2ProjectAccessVariant1UpdateDrainResponseVariant2ProjectAccessVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDrainResponseVariant2ProjectAccessVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDrainResponseVariant2ProjectAccessVariant1Access), TypeInfoPropertyName = "UpdateDrainResponseVariant2ProjectAccessVariant1Access2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDrainResponseVariant2ProjectAccessVariant1ManagedBy), TypeInfoPropertyName = "UpdateDrainResponseVariant2ProjectAccessVariant1ManagedBy2")]
@@ -8439,7 +8440,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchRepoResponseVariant4GitAccountProvider), TypeInfoPropertyName = "SearchRepoResponseVariant4GitAccountProvider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.SearchRepoResponseVariant4Repo>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchRepoResponseVariant4Repo))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchRepoResponseVariant4RepoProvider), TypeInfoPropertyName = "SearchRepoResponseVariant4RepoProvider2")]
     internal sealed partial class SourceGenerationContextChunk009 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

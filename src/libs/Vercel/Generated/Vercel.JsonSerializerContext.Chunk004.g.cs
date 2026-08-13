@@ -8331,6 +8331,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.CreateConnectorEnvironments?>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.CreateConnectorEnvironments?>), TypeInfoPropertyName = "OneOfStringCreateConnectorEnvironments2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorEnvironments), TypeInfoPropertyName = "CreateConnectorEnvironments2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorResponseIncludesProjectsPagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConnectorTokenResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConnectorTokenResponseConnector))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ImportConnectorTokensResponse))]
@@ -8439,7 +8440,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2ImagesFormat>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ImagesFormat), TypeInfoPropertyName = "GetDeploymentResponseVariant2ImagesFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ImagesContentDispositionType), TypeInfoPropertyName = "GetDeploymentResponseVariant2ImagesContentDispositionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2Creator))]
     internal sealed partial class SourceGenerationContextChunk004 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

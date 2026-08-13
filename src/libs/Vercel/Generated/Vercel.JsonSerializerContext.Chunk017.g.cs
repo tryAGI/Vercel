@@ -7940,6 +7940,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponseBranchMatcher))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponseBranchMatcherType), TypeInfoPropertyName = "UpdateCustomEnvironmentResponseBranchMatcherType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateCustomEnvironmentResponseDomain>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponseDomain))]
@@ -8439,7 +8440,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseGitProviderOptionsConsolidatedGitCommitStatus))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseWebAnalytics))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseSecurity))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateMicrofrontendsResponseSecurityRulesets2>))]
     internal sealed partial class SourceGenerationContextChunk017 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

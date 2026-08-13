@@ -7940,6 +7940,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchRepoResponseVariant4RepoProvider), TypeInfoPropertyName = "SearchRepoResponseVariant4RepoProvider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchRepoResponseVariant4RepoOwner))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchRepoResponseVariant4RepoOwnerType), TypeInfoPropertyName = "SearchRepoResponseVariant4RepoOwnerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetBillingPlansResponse))]
@@ -8439,7 +8440,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectEnvItemTargetItem), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectEnvItemTargetItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectEnvItemTarget), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectEnvItemTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectEnvItemType), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectEnvItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectEnvItemVisibility), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectEnvItemVisibility2")]
     internal sealed partial class SourceGenerationContextChunk010 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

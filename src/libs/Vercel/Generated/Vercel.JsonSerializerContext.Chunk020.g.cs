@@ -7940,6 +7940,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6UiReadOnlyEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6UiReadOnlyEnum2?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6UiReadOnlyEnum2_493fff6ca7b9fd1b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6UiReadOnlyEnum))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6UiReadOnlyEnum2), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6UiReadOnlyEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6UiHiddenEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6UiHiddenEnum2?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6UiHiddenEnum2_4465329692202ce1")]
@@ -8439,7 +8440,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseCategorieName?), TypeInfoPropertyName = "NullableListEventTypesResponseCategorieName2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentGuardrailMetricMetricType?), TypeInfoPropertyName = "NullableFlagExperimentGuardrailMetricMetricType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentGuardrailMetricMetricUnit?), TypeInfoPropertyName = "NullableFlagExperimentGuardrailMetricMetricUnit2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentGuardrailMetricDirectionality?), TypeInfoPropertyName = "NullableFlagExperimentGuardrailMetricDirectionality2")]
     internal sealed partial class SourceGenerationContextChunk020 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

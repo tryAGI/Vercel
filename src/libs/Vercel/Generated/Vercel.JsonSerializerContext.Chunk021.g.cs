@@ -7940,6 +7940,7 @@ namespace Vercel
             typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant2Item>, global::System.Collections.Generic.IList<global::Vercel.GetAliasResponseMicrofrontendsApplicationsVariant3Item>>),
             typeof(global::Vercel.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentGuardrailMetricDirectionality?), TypeInfoPropertyName = "NullableFlagExperimentGuardrailMetricDirectionality2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentDevice?), TypeInfoPropertyName = "NullableFlagExperimentDevice2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentDurationUnit?), TypeInfoPropertyName = "NullableFlagExperimentDurationUnit2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentAllocationUnit?), TypeInfoPropertyName = "NullableFlagExperimentAllocationUnit2")]
@@ -8439,7 +8440,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant11ValueAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant11ValueAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant13ValueAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant13ValueAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant14ValueAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant14ValueAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant16Id?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant16Id2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
