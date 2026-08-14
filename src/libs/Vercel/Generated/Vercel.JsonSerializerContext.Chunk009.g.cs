@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant2Type), TypeInfoPropertyName = "GetDrainResponseVariant2FilterV2FilterVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDrainResponseVariant2ProjectAccessVariant1, global::Vercel.GetDrainResponseVariant2ProjectAccessVariant2>), TypeInfoPropertyName = "OneOfGetDrainResponseVariant2ProjectAccessVariant1GetDrainResponseVariant2ProjectAccessVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2ProjectAccessVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2ProjectAccessVariant1Access), TypeInfoPropertyName = "GetDrainResponseVariant2ProjectAccessVariant1Access2")]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListTeamFlagSettingsResponseVariant2DataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2DataItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemTypeName), TypeInfoPropertyName = "ListTeamFlagSettingsResponseVariant2DataItemTypeName2")]
     internal sealed partial class SourceGenerationContextChunk009 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

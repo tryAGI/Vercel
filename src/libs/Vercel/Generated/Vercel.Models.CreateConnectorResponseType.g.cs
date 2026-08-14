@@ -31,6 +31,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Linq,
+        /// <summary>
+        /// 
+        /// </summary>
         MicrosoftEntra,
         /// <summary>
         /// 
@@ -75,6 +79,7 @@ namespace Vercel
                 CreateConnectorResponseType.Discord => "discord",
                 CreateConnectorResponseType.Github => "github",
                 CreateConnectorResponseType.Linear => "linear",
+                CreateConnectorResponseType.Linq => "linq",
                 CreateConnectorResponseType.MicrosoftEntra => "microsoft-entra",
                 CreateConnectorResponseType.Oauth => "oauth",
                 CreateConnectorResponseType.Photon => "photon",
@@ -97,6 +102,7 @@ namespace Vercel
                 "discord" => CreateConnectorResponseType.Discord,
                 "github" => CreateConnectorResponseType.Github,
                 "linear" => CreateConnectorResponseType.Linear,
+                "linq" => CreateConnectorResponseType.Linq,
                 "microsoft-entra" => CreateConnectorResponseType.MicrosoftEntra,
                 "oauth" => CreateConnectorResponseType.Oauth,
                 "photon" => CreateConnectorResponseType.Photon,

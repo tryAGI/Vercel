@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectCreatorVariant2Type?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectCreatorVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectCreatorVariant3Type?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectCreatorVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectCreatorVariant4Type?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectCreatorVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectAliaConfiguredBy?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectAliaConfiguredBy2")]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseRollingReleaseGateCheckType?), TypeInfoPropertyName = "NullableUpdateProjectResponseRollingReleaseGateCheckType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseRollingReleaseGateAction?), TypeInfoPropertyName = "NullableUpdateProjectResponseRollingReleaseGateAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseDefaultResourceConfigFunctionDefaultMemoryType?), TypeInfoPropertyName = "NullableUpdateProjectResponseDefaultResourceConfigFunctionDefaultMemoryType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseDefaultResourceConfigBuildMachineType?), TypeInfoPropertyName = "NullableUpdateProjectResponseDefaultResourceConfigBuildMachineType2")]
     internal sealed partial class SourceGenerationContextChunk027 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

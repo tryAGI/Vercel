@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainVerificationRecordResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ClaimDomainOwnershipResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ClaimDomainOwnershipResponseDomain))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ClaimDomainOwnershipResponseDomainCreator))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1DeploymentEnvironment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1DeploymentEnvironment), TypeInfoPropertyName = "GetDrainResponseVariant2FilterV2FilterVariant1DeploymentEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant2Type), TypeInfoPropertyName = "GetDrainResponseVariant2FilterV2FilterVariant2Type2")]
     internal sealed partial class SourceGenerationContextChunk008 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

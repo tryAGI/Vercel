@@ -12266,6 +12266,7 @@
                         "discord",
                         "github",
                         "linear",
+                        "linq",
                         "microsoft-entra",
                         "oauth",
                         "photon",
@@ -13299,6 +13300,27 @@
                       {
                         "type": "object",
                         "properties": {
+                          "apiToken": {
+                            "type": "string",
+                            "description": "Linq partner API token for the shared line."
+                          },
+                          "phoneNumbers": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "pattern": "^\\\\+[1-9]\\\\d{1,14}$"
+                            }
+                          }
+                        },
+                        "required": [
+                          "apiToken"
+                        ],
+                        "additionalProperties": false,
+                        "title": "type:linq"
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
                           "consumerKey": {
                             "type": "string"
                           },
@@ -13460,7 +13482,7 @@
                   },
                   "type": {
                     "type": "string",
-                    "description": "Known types: api-key, github, linear, oauth, photon, salesforce, slack, snowflake. Optional when \\\"connectionMethod\\\" is set."
+                    "description": "Known types: api-key, github, linear, linq, oauth, photon, salesforce, slack, snowflake. Optional when \\\"connectionMethod\\\" is set."
                   },
                   "service": {
                     "type": "string",

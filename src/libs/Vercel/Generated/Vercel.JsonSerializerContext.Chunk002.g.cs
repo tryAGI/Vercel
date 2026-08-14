@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleConditionRhsVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleConditionCmpOptions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagSegmentRequestDataRuleOutcomeVariant1, global::Vercel.CreateFlagSegmentRequestDataRuleOutcomeVariant2>), TypeInfoPropertyName = "AnyOfCreateFlagSegmentRequestDataRuleOutcomeVariant1CreateFlagSegmentRequestDataRuleOutcomeVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleOutcomeVariant1))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchHeaderKey))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchHeaderValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemTransformItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemTransformItem))]
     internal sealed partial class SourceGenerationContextChunk002 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

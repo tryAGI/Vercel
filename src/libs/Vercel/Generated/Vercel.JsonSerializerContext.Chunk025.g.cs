@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDrainResponseVariant2ProjectAccessVariant1, global::Vercel.GetDrainResponseVariant2ProjectAccessVariant2>?), TypeInfoPropertyName = "NullableOneOfGetDrainResponseVariant2ProjectAccessVariant1GetDrainResponseVariant2ProjectAccessVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2ProjectAccessVariant1Access?), TypeInfoPropertyName = "NullableGetDrainResponseVariant2ProjectAccessVariant1Access2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2ProjectAccessVariant1ManagedBy?), TypeInfoPropertyName = "NullableGetDrainResponseVariant2ProjectAccessVariant1ManagedBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2ProjectAccessVariant2Access?), TypeInfoPropertyName = "NullableGetDrainResponseVariant2ProjectAccessVariant2Access2")]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectAliaDeploymentChecksConclusion?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectAliaDeploymentChecksConclusion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectAliaDeploymentChecksState?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectAliaDeploymentChecksState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectAliaDeploymentPlan?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectAliaDeploymentPlan2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectAliaDeploymentReadyState?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectAliaDeploymentReadyState2")]
     internal sealed partial class SourceGenerationContextChunk025 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
