@@ -6,46 +6,39 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public enum UpdateFirewallConfigRequestVariant11ValueAction
+    public sealed partial class UpdateFirewallConfigRequestVariant11ValueAction
     {
         /// <summary>
         /// 
         /// </summary>
-        Deny,
-        /// <summary>
-        /// 
-        /// </summary>
-        Log,
-    }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mitigate")]
+        public global::Vercel.UpdateFirewallConfigRequestVariant11ValueActionMitigate? Mitigate { get; set; }
 
-    /// <summary>
-    /// Enum extensions to do fast conversions without the reflection.
-    /// </summary>
-    public static class UpdateFirewallConfigRequestVariant11ValueActionExtensions
-    {
         /// <summary>
-        /// Converts an enum to a string.
+        /// Additional properties that are not explicitly defined in the schema
         /// </summary>
-        public static string ToValueString(this UpdateFirewallConfigRequestVariant11ValueAction value)
-        {
-            return value switch
-            {
-                UpdateFirewallConfigRequestVariant11ValueAction.Deny => "deny",
-                UpdateFirewallConfigRequestVariant11ValueAction.Log => "log",
-                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
-            };
-        }
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
         /// <summary>
-        /// Converts an string to a enum.
+        /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant11ValueAction" /> class.
         /// </summary>
-        public static UpdateFirewallConfigRequestVariant11ValueAction? ToEnum(string value)
+        /// <param name="mitigate"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public UpdateFirewallConfigRequestVariant11ValueAction(
+            global::Vercel.UpdateFirewallConfigRequestVariant11ValueActionMitigate? mitigate)
         {
-            return value switch
-            {
-                "deny" => UpdateFirewallConfigRequestVariant11ValueAction.Deny,
-                "log" => UpdateFirewallConfigRequestVariant11ValueAction.Log,
-                _ => null,
-            };
+            this.Mitigate = mitigate;
         }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant11ValueAction" /> class.
+        /// </summary>
+        public UpdateFirewallConfigRequestVariant11ValueAction()
+        {
+        }
+
     }
 }

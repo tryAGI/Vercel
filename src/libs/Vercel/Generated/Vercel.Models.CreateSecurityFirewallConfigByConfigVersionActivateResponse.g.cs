@@ -80,6 +80,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("conditions")]
+        public global::System.Collections.Generic.IList<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseCondition>? Conditions { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("changes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<object> Changes { get; set; }
@@ -123,6 +129,7 @@ namespace Vercel
         /// <param name="changes"></param>
         /// <param name="crs"></param>
         /// <param name="rulesets"></param>
+        /// <param name="conditions"></param>
         /// <param name="managedRules"></param>
         /// <param name="botIdEnabled"></param>
         /// <param name="logHeaders"></param>
@@ -141,6 +148,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<object> changes,
             global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseCrs? crs,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleset>, global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesets2>>? rulesets,
+            global::System.Collections.Generic.IList<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseCondition>? conditions,
             global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseManagedRules? managedRules,
             bool? botIdEnabled,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseLogHeaders?>? logHeaders)
@@ -155,6 +163,7 @@ namespace Vercel
             this.Rules = rules ?? throw new global::System.ArgumentNullException(nameof(rules));
             this.Ips = ips ?? throw new global::System.ArgumentNullException(nameof(ips));
             this.Rulesets = rulesets;
+            this.Conditions = conditions;
             this.Changes = changes ?? throw new global::System.ArgumentNullException(nameof(changes));
             this.ManagedRules = managedRules;
             this.BotIdEnabled = botIdEnabled;

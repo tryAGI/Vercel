@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Update a custom rule
+    /// Remove the action for a consumed ruleset (project scope)
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant8
     {
@@ -25,8 +25,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateFirewallConfigRequestVariant8Value Value { get; set; }
+        public string? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,20 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant8" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="action"></param>
         /// <param name="id"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant8(
-            global::Vercel.UpdateFirewallConfigRequestVariant8Value value,
             global::Vercel.UpdateFirewallConfigRequestVariant8Action action,
-            object? id)
+            object? id,
+            string? value)
         {
             this.Action = action;
             this.Id = id;
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
+            this.Value = value;
         }
 
         /// <summary>

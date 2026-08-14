@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Reorder a custom rule
+    /// Add a custom rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant10
     {
@@ -19,8 +19,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public string? Id { get; set; }
 
         /// <summary>
         /// 
@@ -37,19 +36,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant10" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="action"></param>
+        /// <param name="id"></param>
         /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant10(
-            string id,
             global::Vercel.UpdateFirewallConfigRequestVariant10Action action,
+            string? id,
             object? value)
         {
             this.Action = action;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Id = id;
             this.Value = value;
         }
 
