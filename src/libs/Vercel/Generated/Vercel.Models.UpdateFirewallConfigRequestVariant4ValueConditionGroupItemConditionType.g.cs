@@ -123,6 +123,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SharedCondition,
+        /// <summary>
+        /// 
+        /// </summary>
         TargetPath,
         /// <summary>
         /// 
@@ -170,6 +174,7 @@ namespace Vercel
                 UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.Ruleset => "ruleset",
                 UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.Scheme => "scheme",
                 UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.ServerAction => "server_action",
+                UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.TargetPath => "target_path",
                 UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.UserAgent => "user_agent",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -210,6 +215,7 @@ namespace Vercel
                 "ruleset" => UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.Ruleset,
                 "scheme" => UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.Scheme,
                 "server_action" => UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.ServerAction,
+                "shared_condition" => UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.SharedCondition,
                 "target_path" => UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.TargetPath,
                 "user_agent" => UpdateFirewallConfigRequestVariant4ValueConditionGroupItemConditionType.UserAgent,
                 _ => null,

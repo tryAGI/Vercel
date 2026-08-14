@@ -123,6 +123,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SharedCondition,
+        /// <summary>
+        /// 
+        /// </summary>
         TargetPath,
         /// <summary>
         /// 
@@ -174,6 +178,7 @@ namespace Vercel
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.Ruleset => "ruleset",
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.Scheme => "scheme",
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.ServerAction => "server_action",
+                CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.TargetPath => "target_path",
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.UserAgent => "user_agent",
@@ -215,6 +220,7 @@ namespace Vercel
                 "ruleset" => CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.Ruleset,
                 "scheme" => CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.Scheme,
                 "server_action" => CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.ServerAction,
+                "shared_condition" => CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.SharedCondition,
                 "target_path" => CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.TargetPath,
                 "trusted_source" => CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemConditionType.UserAgent,

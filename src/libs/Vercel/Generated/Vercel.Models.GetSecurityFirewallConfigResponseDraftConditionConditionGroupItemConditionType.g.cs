@@ -123,6 +123,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SharedCondition,
+        /// <summary>
+        /// 
+        /// </summary>
         TargetPath,
         /// <summary>
         /// 
@@ -174,6 +178,7 @@ namespace Vercel
                 GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.Ruleset => "ruleset",
                 GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.Scheme => "scheme",
                 GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.ServerAction => "server_action",
+                GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.TargetPath => "target_path",
                 GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.UserAgent => "user_agent",
@@ -215,6 +220,7 @@ namespace Vercel
                 "ruleset" => GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.Ruleset,
                 "scheme" => GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.Scheme,
                 "server_action" => GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.ServerAction,
+                "shared_condition" => GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.SharedCondition,
                 "target_path" => GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.TargetPath,
                 "trusted_source" => GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => GetSecurityFirewallConfigResponseDraftConditionConditionGroupItemConditionType.UserAgent,

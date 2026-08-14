@@ -123,6 +123,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SharedCondition,
+        /// <summary>
+        /// 
+        /// </summary>
         TargetPath,
         /// <summary>
         /// 
@@ -174,6 +178,7 @@ namespace Vercel
                 GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.Ruleset => "ruleset",
                 GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.Scheme => "scheme",
                 GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.ServerAction => "server_action",
+                GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.TargetPath => "target_path",
                 GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.UserAgent => "user_agent",
@@ -215,6 +220,7 @@ namespace Vercel
                 "ruleset" => GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.Ruleset,
                 "scheme" => GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.Scheme,
                 "server_action" => GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.ServerAction,
+                "shared_condition" => GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.SharedCondition,
                 "target_path" => GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.TargetPath,
                 "trusted_source" => GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => GetSecurityFirewallConfigResponseActiveRuleVariant2ConditionGroupItemConditionType.UserAgent,
