@@ -6,39 +6,58 @@ namespace Vercel
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class UpdateFirewallConfigRequestVariant7ValueAction
+    public enum UpdateFirewallConfigRequestVariant7ValueAction
     {
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mitigate")]
-        public global::Vercel.UpdateFirewallConfigRequestVariant7ValueActionMitigate? Mitigate { get; set; }
-
+        Allow,
         /// <summary>
-        /// Additional properties that are not explicitly defined in the schema
+        /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonExtensionData]
-        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
-
+        Challenge,
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant7ValueAction" /> class.
+        /// 
         /// </summary>
-        /// <param name="mitigate"></param>
-#if NET7_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
-#endif
-        public UpdateFirewallConfigRequestVariant7ValueAction(
-            global::Vercel.UpdateFirewallConfigRequestVariant7ValueActionMitigate? mitigate)
+        Deny,
+        /// <summary>
+        /// 
+        /// </summary>
+        Log,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class UpdateFirewallConfigRequestVariant7ValueActionExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this UpdateFirewallConfigRequestVariant7ValueAction value)
         {
-            this.Mitigate = mitigate;
+            return value switch
+            {
+                UpdateFirewallConfigRequestVariant7ValueAction.Allow => "allow",
+                UpdateFirewallConfigRequestVariant7ValueAction.Challenge => "challenge",
+                UpdateFirewallConfigRequestVariant7ValueAction.Deny => "deny",
+                UpdateFirewallConfigRequestVariant7ValueAction.Log => "log",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
         }
-
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant7ValueAction" /> class.
+        /// Converts an string to a enum.
         /// </summary>
-        public UpdateFirewallConfigRequestVariant7ValueAction()
+        public static UpdateFirewallConfigRequestVariant7ValueAction? ToEnum(string value)
         {
+            return value switch
+            {
+                "allow" => UpdateFirewallConfigRequestVariant7ValueAction.Allow,
+                "challenge" => UpdateFirewallConfigRequestVariant7ValueAction.Challenge,
+                "deny" => UpdateFirewallConfigRequestVariant7ValueAction.Deny,
+                "log" => UpdateFirewallConfigRequestVariant7ValueAction.Log,
+                _ => null,
+            };
         }
-
     }
 }

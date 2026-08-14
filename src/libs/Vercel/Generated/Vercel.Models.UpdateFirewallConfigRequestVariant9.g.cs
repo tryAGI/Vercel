@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Remove a custom rule
+    /// Enable Firewall
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant9
     {
@@ -19,14 +19,14 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public string? Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        public string? Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,19 +37,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant9" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="action"></param>
         /// <param name="value"></param>
+        /// <param name="action"></param>
+        /// <param name="id"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant9(
-            string id,
+            bool value,
             global::Vercel.UpdateFirewallConfigRequestVariant9Action action,
-            string? value)
+            string? id)
         {
             this.Action = action;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Id = id;
             this.Value = value;
         }
 

@@ -11,16 +11,30 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant16ValueActionJsonConverter))]
-        public global::Vercel.UpdateFirewallConfigRequestVariant16ValueAction? Action { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("hostname")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Hostname { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ip")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Active { get; set; }
+        public required string Ip { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("notes")]
+        public string? Notes { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant16ValueActionJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateFirewallConfigRequestVariant16ValueAction Action { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant16Value" /> class.
         /// </summary>
-        /// <param name="active"></param>
+        /// <param name="hostname"></param>
+        /// <param name="ip"></param>
         /// <param name="action"></param>
+        /// <param name="notes"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant16Value(
-            bool active,
-            global::Vercel.UpdateFirewallConfigRequestVariant16ValueAction? action)
+            string hostname,
+            string ip,
+            global::Vercel.UpdateFirewallConfigRequestVariant16ValueAction action,
+            string? notes)
         {
+            this.Hostname = hostname ?? throw new global::System.ArgumentNullException(nameof(hostname));
+            this.Ip = ip ?? throw new global::System.ArgumentNullException(nameof(ip));
+            this.Notes = notes;
             this.Action = action;
-            this.Active = active;
         }
 
         /// <summary>

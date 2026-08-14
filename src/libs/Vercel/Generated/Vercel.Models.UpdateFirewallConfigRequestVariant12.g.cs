@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Disable a managed rule
+    /// Remove a custom rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant12
     {
@@ -19,7 +19,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
         /// 
@@ -44,11 +45,11 @@ namespace Vercel
 #endif
         public UpdateFirewallConfigRequestVariant12(
             string action,
-            string? id,
+            string id,
             string? value)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
-            this.Id = id;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Value = value;
         }
 

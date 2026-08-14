@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Bypass,
+        /// <summary>
+        /// 
+        /// </summary>
         Challenge,
         /// <summary>
         /// 
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                UpdateFirewallConfigRequestVariant17ValueAction.Bypass => "bypass",
                 UpdateFirewallConfigRequestVariant17ValueAction.Challenge => "challenge",
                 UpdateFirewallConfigRequestVariant17ValueAction.Deny => "deny",
                 UpdateFirewallConfigRequestVariant17ValueAction.Log => "log",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "bypass" => UpdateFirewallConfigRequestVariant17ValueAction.Bypass,
                 "challenge" => UpdateFirewallConfigRequestVariant17ValueAction.Challenge,
                 "deny" => UpdateFirewallConfigRequestVariant17ValueAction.Deny,
                 "log" => UpdateFirewallConfigRequestVariant17ValueAction.Log,

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Update a managed rule group
+    /// Update an IP Blocking rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant17
     {
@@ -19,16 +19,15 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant17IdJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateFirewallConfigRequestVariant17Id Id { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateFirewallConfigRequestVariant17Value2> Value { get; set; }
+        public required global::Vercel.UpdateFirewallConfigRequestVariant17Value Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,11 +46,11 @@ namespace Vercel
 #endif
         public UpdateFirewallConfigRequestVariant17(
             string action,
-            global::Vercel.UpdateFirewallConfigRequestVariant17Id id,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateFirewallConfigRequestVariant17Value2> value)
+            string id,
+            global::Vercel.UpdateFirewallConfigRequestVariant17Value value)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
-            this.Id = id;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 

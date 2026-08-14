@@ -11,22 +11,9 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("hostname")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Hostname { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ip")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Ip { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("notes")]
-        public string? Notes { get; set; }
+        public required bool Active { get; set; }
 
         /// <summary>
         /// 
@@ -45,22 +32,16 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant14Value" /> class.
         /// </summary>
-        /// <param name="hostname"></param>
-        /// <param name="ip"></param>
+        /// <param name="active"></param>
         /// <param name="action"></param>
-        /// <param name="notes"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant14Value(
-            string hostname,
-            string ip,
-            global::Vercel.UpdateFirewallConfigRequestVariant14ValueAction action,
-            string? notes)
+            bool active,
+            global::Vercel.UpdateFirewallConfigRequestVariant14ValueAction action)
         {
-            this.Hostname = hostname ?? throw new global::System.ArgumentNullException(nameof(hostname));
-            this.Ip = ip ?? throw new global::System.ArgumentNullException(nameof(ip));
-            this.Notes = notes;
+            this.Active = active;
             this.Action = action;
         }
 

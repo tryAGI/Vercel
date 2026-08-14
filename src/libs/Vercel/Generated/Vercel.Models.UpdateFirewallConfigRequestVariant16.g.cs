@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Update a managed ruleset
+    /// Add an IP Blocking rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant16
     {
@@ -19,9 +19,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant16IdJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateFirewallConfigRequestVariant16Id Id { get; set; }
+        public string? Id { get; set; }
 
         /// <summary>
         /// 
@@ -40,15 +38,15 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant16" /> class.
         /// </summary>
         /// <param name="action"></param>
-        /// <param name="id"></param>
         /// <param name="value"></param>
+        /// <param name="id"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant16(
             string action,
-            global::Vercel.UpdateFirewallConfigRequestVariant16Id id,
-            global::Vercel.UpdateFirewallConfigRequestVariant16Value value)
+            global::Vercel.UpdateFirewallConfigRequestVariant16Value value,
+            string? id)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
             this.Id = id;
