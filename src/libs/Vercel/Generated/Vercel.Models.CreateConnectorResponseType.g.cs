@@ -51,6 +51,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Sendblue,
+        /// <summary>
+        /// 
+        /// </summary>
         Slack,
         /// <summary>
         /// 
@@ -84,6 +88,7 @@ namespace Vercel
                 CreateConnectorResponseType.Oauth => "oauth",
                 CreateConnectorResponseType.Photon => "photon",
                 CreateConnectorResponseType.Salesforce => "salesforce",
+                CreateConnectorResponseType.Sendblue => "sendblue",
                 CreateConnectorResponseType.Slack => "slack",
                 CreateConnectorResponseType.Snowflake => "snowflake",
                 CreateConnectorResponseType.SnowflakeWif => "snowflake-wif",
@@ -107,6 +112,7 @@ namespace Vercel
                 "oauth" => CreateConnectorResponseType.Oauth,
                 "photon" => CreateConnectorResponseType.Photon,
                 "salesforce" => CreateConnectorResponseType.Salesforce,
+                "sendblue" => CreateConnectorResponseType.Sendblue,
                 "slack" => CreateConnectorResponseType.Slack,
                 "snowflake" => CreateConnectorResponseType.Snowflake,
                 "snowflake-wif" => CreateConnectorResponseType.SnowflakeWif,

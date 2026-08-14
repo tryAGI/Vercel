@@ -12271,6 +12271,7 @@
                         "oauth",
                         "photon",
                         "salesforce",
+                        "sendblue",
                         "slack",
                         "snowflake",
                         "snowflake-wif"
@@ -13342,6 +13343,32 @@
                       {
                         "type": "object",
                         "properties": {
+                          "apiKeyId": {
+                            "type": "string",
+                            "description": "Sendblue API key id (`sb-api-key-id`)."
+                          },
+                          "apiSecretKey": {
+                            "type": "string",
+                            "description": "Sendblue API secret key (`sb-api-secret-key`)."
+                          },
+                          "phoneNumbers": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "pattern": "^\\\\+[1-9]\\\\d{1,14}$"
+                            }
+                          }
+                        },
+                        "required": [
+                          "apiKeyId",
+                          "apiSecretKey"
+                        ],
+                        "additionalProperties": false,
+                        "title": "type:sendblue"
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
                           "appId": {
                             "type": "string"
                           },
@@ -13482,7 +13509,7 @@
                   },
                   "type": {
                     "type": "string",
-                    "description": "Known types: api-key, github, linear, linq, oauth, photon, salesforce, slack, snowflake. Optional when \\\"connectionMethod\\\" is set."
+                    "description": "Known types: api-key, github, linear, linq, oauth, photon, salesforce, sendblue, slack, snowflake. Optional when \\\"connectionMethod\\\" is set."
                   },
                   "service": {
                     "type": "string",
