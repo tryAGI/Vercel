@@ -123,6 +123,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SharedCondition,
+        /// <summary>
+        /// 
+        /// </summary>
         TargetPath,
         /// <summary>
         /// 
@@ -174,6 +178,7 @@ namespace Vercel
                 GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.Ruleset => "ruleset",
                 GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.Scheme => "scheme",
                 GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.ServerAction => "server_action",
+                GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.TargetPath => "target_path",
                 GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.UserAgent => "user_agent",
@@ -215,6 +220,7 @@ namespace Vercel
                 "ruleset" => GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.Ruleset,
                 "scheme" => GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.Scheme,
                 "server_action" => GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.ServerAction,
+                "shared_condition" => GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.SharedCondition,
                 "target_path" => GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.TargetPath,
                 "trusted_source" => GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => GetSecurityFirewallConfigResponseActiveConditionConditionGroupItemConditionType.UserAgent,

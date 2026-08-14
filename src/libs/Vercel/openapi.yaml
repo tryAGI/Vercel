@@ -162885,6 +162885,7 @@
                                                   "ruleset",
                                                   "scheme",
                                                   "server_action",
+                                                  "shared_condition",
                                                   "target_path",
                                                   "trusted_source",
                                                   "user_agent"
@@ -163145,6 +163146,7 @@
                                                   "ruleset",
                                                   "scheme",
                                                   "server_action",
+                                                  "shared_condition",
                                                   "target_path",
                                                   "trusted_source",
                                                   "user_agent"
@@ -163450,6 +163452,7 @@
                                                   "ruleset",
                                                   "scheme",
                                                   "server_action",
+                                                  "shared_condition",
                                                   "target_path",
                                                   "trusted_source",
                                                   "user_agent"
@@ -163817,6 +163820,7 @@
                                               "ruleset",
                                               "scheme",
                                               "server_action",
+                                              "shared_condition",
                                               "target_path",
                                               "trusted_source",
                                               "user_agent"
@@ -164458,6 +164462,7 @@
                                                   "ruleset",
                                                   "scheme",
                                                   "server_action",
+                                                  "shared_condition",
                                                   "target_path",
                                                   "trusted_source",
                                                   "user_agent"
@@ -164718,6 +164723,7 @@
                                                   "ruleset",
                                                   "scheme",
                                                   "server_action",
+                                                  "shared_condition",
                                                   "target_path",
                                                   "trusted_source",
                                                   "user_agent"
@@ -165023,6 +165029,7 @@
                                                   "ruleset",
                                                   "scheme",
                                                   "server_action",
+                                                  "shared_condition",
                                                   "target_path",
                                                   "trusted_source",
                                                   "user_agent"
@@ -165390,6 +165397,7 @@
                                               "ruleset",
                                               "scheme",
                                               "server_action",
+                                              "shared_condition",
                                               "target_path",
                                               "trusted_source",
                                               "user_agent"
@@ -166031,6 +166039,7 @@
                                                     "ruleset",
                                                     "scheme",
                                                     "server_action",
+                                                    "shared_condition",
                                                     "target_path",
                                                     "trusted_source",
                                                     "user_agent"
@@ -166291,6 +166300,7 @@
                                                     "ruleset",
                                                     "scheme",
                                                     "server_action",
+                                                    "shared_condition",
                                                     "target_path",
                                                     "trusted_source",
                                                     "user_agent"
@@ -166596,6 +166606,7 @@
                                                     "ruleset",
                                                     "scheme",
                                                     "server_action",
+                                                    "shared_condition",
                                                     "target_path",
                                                     "trusted_source",
                                                     "user_agent"
@@ -166963,6 +166974,7 @@
                                                 "ruleset",
                                                 "scheme",
                                                 "server_action",
+                                                "shared_condition",
                                                 "target_path",
                                                 "trusted_source",
                                                 "user_agent"
@@ -167665,6 +167677,7 @@
                                                   "ruleset",
                                                   "scheme",
                                                   "server_action",
+                                                  "shared_condition",
                                                   "target_path",
                                                   "trusted_source",
                                                   "user_agent"
@@ -167925,6 +167938,7 @@
                                                   "ruleset",
                                                   "scheme",
                                                   "server_action",
+                                                  "shared_condition",
                                                   "target_path",
                                                   "trusted_source",
                                                   "user_agent"
@@ -168230,6 +168244,7 @@
                                                   "ruleset",
                                                   "scheme",
                                                   "server_action",
+                                                  "shared_condition",
                                                   "target_path",
                                                   "trusted_source",
                                                   "user_agent"
@@ -168597,6 +168612,7 @@
                                               "ruleset",
                                               "scheme",
                                               "server_action",
+                                              "shared_condition",
                                               "target_path",
                                               "trusted_source",
                                               "user_agent"
@@ -169254,6 +169270,7 @@
                                         "bot_category",
                                         "bot_status",
                                         "bot_protection",
+                                        "shared_condition",
                                         "ruleset"
                                       ],
                                       "description": "[Parameter](https://vercel.com/docs/security/vercel-waf/rule-configuration#parameters) from the incoming traffic."
@@ -169529,6 +169546,7 @@
                                             "bot_category",
                                             "bot_status",
                                             "bot_protection",
+                                            "shared_condition",
                                             "ruleset"
                                           ]
                                         },
@@ -169873,6 +169891,7 @@
                                           "bot_category",
                                           "bot_status",
                                           "bot_protection",
+                                          "shared_condition",
                                           "ruleset"
                                         ]
                                       },
@@ -170059,6 +170078,7 @@
                                           "bot_category",
                                           "bot_status",
                                           "bot_protection",
+                                          "shared_condition",
                                           "ruleset"
                                         ]
                                       },
@@ -170268,6 +170288,7 @@
                                           "bot_category",
                                           "bot_status",
                                           "bot_protection",
+                                          "shared_condition",
                                           "ruleset"
                                         ]
                                       },
@@ -170432,6 +170453,7 @@
                                           "bot_category",
                                           "bot_status",
                                           "bot_protection",
+                                          "shared_condition",
                                           "ruleset"
                                         ]
                                       },
@@ -170705,6 +170727,7 @@
                                           "bot_category",
                                           "bot_status",
                                           "bot_protection",
+                                          "shared_condition",
                                           "ruleset"
                                         ]
                                       },
@@ -170994,6 +171017,7 @@
                                           "bot_category",
                                           "bot_status",
                                           "bot_protection",
+                                          "shared_condition",
                                           "ruleset"
                                         ]
                                       },
@@ -171977,6 +172001,7 @@
                                               "ruleset",
                                               "scheme",
                                               "server_action",
+                                              "shared_condition",
                                               "target_path",
                                               "trusted_source",
                                               "user_agent"
@@ -172237,6 +172262,7 @@
                                               "ruleset",
                                               "scheme",
                                               "server_action",
+                                              "shared_condition",
                                               "target_path",
                                               "trusted_source",
                                               "user_agent"
@@ -172542,6 +172568,7 @@
                                               "ruleset",
                                               "scheme",
                                               "server_action",
+                                              "shared_condition",
                                               "target_path",
                                               "trusted_source",
                                               "user_agent"
@@ -172909,6 +172936,7 @@
                                           "ruleset",
                                           "scheme",
                                           "server_action",
+                                          "shared_condition",
                                           "target_path",
                                           "trusted_source",
                                           "user_agent"
@@ -173674,6 +173702,7 @@
                                               "ruleset",
                                               "scheme",
                                               "server_action",
+                                              "shared_condition",
                                               "target_path",
                                               "trusted_source",
                                               "user_agent"
@@ -173934,6 +173963,7 @@
                                               "ruleset",
                                               "scheme",
                                               "server_action",
+                                              "shared_condition",
                                               "target_path",
                                               "trusted_source",
                                               "user_agent"
@@ -174239,6 +174269,7 @@
                                               "ruleset",
                                               "scheme",
                                               "server_action",
+                                              "shared_condition",
                                               "target_path",
                                               "trusted_source",
                                               "user_agent"
@@ -174606,6 +174637,7 @@
                                           "ruleset",
                                           "scheme",
                                           "server_action",
+                                          "shared_condition",
                                           "target_path",
                                           "trusted_source",
                                           "user_agent"

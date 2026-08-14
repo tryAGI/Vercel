@@ -123,6 +123,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SharedCondition,
+        /// <summary>
+        /// 
+        /// </summary>
         TargetPath,
         /// <summary>
         /// 
@@ -174,6 +178,7 @@ namespace Vercel
                 GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.Ruleset => "ruleset",
                 GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.Scheme => "scheme",
                 GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.ServerAction => "server_action",
+                GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.TargetPath => "target_path",
                 GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.UserAgent => "user_agent",
@@ -215,6 +220,7 @@ namespace Vercel
                 "ruleset" => GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.Ruleset,
                 "scheme" => GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.Scheme,
                 "server_action" => GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.ServerAction,
+                "shared_condition" => GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.SharedCondition,
                 "target_path" => GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.TargetPath,
                 "trusted_source" => GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => GetSecurityFirewallConfigResponseVersionRuleVariant1ConditionGroupItemConditionType.UserAgent,

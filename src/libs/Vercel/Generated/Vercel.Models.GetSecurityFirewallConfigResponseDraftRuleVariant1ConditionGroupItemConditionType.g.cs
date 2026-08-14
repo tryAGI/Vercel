@@ -123,6 +123,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SharedCondition,
+        /// <summary>
+        /// 
+        /// </summary>
         TargetPath,
         /// <summary>
         /// 
@@ -174,6 +178,7 @@ namespace Vercel
                 GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.Ruleset => "ruleset",
                 GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.Scheme => "scheme",
                 GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.ServerAction => "server_action",
+                GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.TargetPath => "target_path",
                 GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.UserAgent => "user_agent",
@@ -215,6 +220,7 @@ namespace Vercel
                 "ruleset" => GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.Ruleset,
                 "scheme" => GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.Scheme,
                 "server_action" => GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.ServerAction,
+                "shared_condition" => GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.SharedCondition,
                 "target_path" => GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.TargetPath,
                 "trusted_source" => GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => GetSecurityFirewallConfigResponseDraftRuleVariant1ConditionGroupItemConditionType.UserAgent,

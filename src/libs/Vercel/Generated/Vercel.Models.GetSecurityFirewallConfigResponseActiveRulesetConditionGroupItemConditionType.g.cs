@@ -123,6 +123,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SharedCondition,
+        /// <summary>
+        /// 
+        /// </summary>
         TargetPath,
         /// <summary>
         /// 
@@ -174,6 +178,7 @@ namespace Vercel
                 GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.Ruleset => "ruleset",
                 GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.Scheme => "scheme",
                 GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.ServerAction => "server_action",
+                GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.TargetPath => "target_path",
                 GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.UserAgent => "user_agent",
@@ -215,6 +220,7 @@ namespace Vercel
                 "ruleset" => GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.Ruleset,
                 "scheme" => GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.Scheme,
                 "server_action" => GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.ServerAction,
+                "shared_condition" => GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.SharedCondition,
                 "target_path" => GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.TargetPath,
                 "trusted_source" => GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => GetSecurityFirewallConfigResponseActiveRulesetConditionGroupItemConditionType.UserAgent,

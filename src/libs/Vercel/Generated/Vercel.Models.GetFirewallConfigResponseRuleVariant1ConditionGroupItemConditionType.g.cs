@@ -123,6 +123,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        SharedCondition,
+        /// <summary>
+        /// 
+        /// </summary>
         TargetPath,
         /// <summary>
         /// 
@@ -174,6 +178,7 @@ namespace Vercel
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.Ruleset => "ruleset",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.Scheme => "scheme",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.ServerAction => "server_action",
+                GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TargetPath => "target_path",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.UserAgent => "user_agent",
@@ -215,6 +220,7 @@ namespace Vercel
                 "ruleset" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.Ruleset,
                 "scheme" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.Scheme,
                 "server_action" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.ServerAction,
+                "shared_condition" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.SharedCondition,
                 "target_path" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TargetPath,
                 "trusted_source" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.UserAgent,
