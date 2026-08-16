@@ -92,6 +92,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? ProviderOnly { get; set; }
 
         /// <summary>
+        /// Arbitrary per-provider AI SDK options, keyed by gateway provider slug.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("providerOptions")]
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AiGatewayProviderOptionBag>? ProviderOptions { get; set; }
+
+        /// <summary>
         /// Region pinned on the VMC for system-credential routing (alias/router only).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inferenceRegion")]
@@ -266,6 +272,9 @@ namespace Vercel
         /// <param name="providerOnly">
         /// Restrict routing to only these providers.
         /// </param>
+        /// <param name="providerOptions">
+        /// Arbitrary per-provider AI SDK options, keyed by gateway provider slug.
+        /// </param>
         /// <param name="inferenceRegion">
         /// Region pinned on the VMC for system-credential routing (alias/router only).
         /// </param>
@@ -336,6 +345,7 @@ namespace Vercel
             string? instanceId,
             global::System.Collections.Generic.IList<string>? providerOrder,
             global::System.Collections.Generic.IList<string>? providerOnly,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AiGatewayProviderOptionBag>? providerOptions,
             global::Vercel.AiGatewayVirtualModelConfigInferenceRegion? inferenceRegion,
             string? modelSlug,
             global::System.Collections.Generic.IList<string>? models,
@@ -367,6 +377,7 @@ namespace Vercel
             this.InstanceId = instanceId;
             this.ProviderOrder = providerOrder;
             this.ProviderOnly = providerOnly;
+            this.ProviderOptions = providerOptions;
             this.InferenceRegion = inferenceRegion;
             this.ModelSlug = modelSlug;
             this.Models = models;

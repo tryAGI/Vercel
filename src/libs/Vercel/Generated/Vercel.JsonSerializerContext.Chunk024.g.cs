@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseReadySubstate?), TypeInfoPropertyName = "NullableCancelDeploymentResponseReadySubstate2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseSource?), TypeInfoPropertyName = "NullableCancelDeploymentResponseSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponsePlan?), TypeInfoPropertyName = "NullableCancelDeploymentResponsePlan2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseFunctionsArchitecture?), TypeInfoPropertyName = "NullableCancelDeploymentResponseFunctionsArchitecture2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<double?, global::Vercel.CancelDeploymentResponseFunctionsMaxDuration?>?), TypeInfoPropertyName = "NullableOneOfDoubleCancelDeploymentResponseFunctionsMaxDuration2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2Version?), TypeInfoPropertyName = "NullableGetDrainResponseVariant2FilterV2Version2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1, global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant2>?), TypeInfoPropertyName = "NullableOneOfGetDrainResponseVariant2FilterV2FilterVariant1GetDrainResponseVariant2FilterV2FilterVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1Type?), TypeInfoPropertyName = "NullableGetDrainResponseVariant2FilterV2FilterVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1LogSource?), TypeInfoPropertyName = "NullableGetDrainResponseVariant2FilterV2FilterVariant1LogSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1DeploymentEnvironment?), TypeInfoPropertyName = "NullableGetDrainResponseVariant2FilterV2FilterVariant1DeploymentEnvironment2")]
     internal sealed partial class SourceGenerationContextChunk024 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
