@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2Access), TypeInfoPropertyName = "ListDeploymentAliasesResponseAliaseProtectionBypassVariant2Access2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2Scope), TypeInfoPropertyName = "ListDeploymentAliasesResponseAliaseProtectionBypassVariant2Scope2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant3Scope), TypeInfoPropertyName = "ListDeploymentAliasesResponseAliaseProtectionBypassVariant3Scope2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant4))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateApiKeysRequestAiGatewayQuotaRefreshPeriod?), TypeInfoPropertyName = "NullableCreateApiKeysRequestAiGatewayQuotaRefreshPeriod2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItemCategory?), TypeInfoPropertyName = "NullableCreateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsRequestItemCategory2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestCategory?), TypeInfoPropertyName = "NullableUpdateInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationItemsByItemIdRequestCategory2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateObservabilityQueryRequestOrderDirection?), TypeInfoPropertyName = "NullableCreateObservabilityQueryRequestOrderDirection2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddProjectMemberRequestRole?), TypeInfoPropertyName = "NullableAddProjectMemberRequestRole2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailStatus), TypeInfoPropertyName = "VcrImageDetailStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailKind), TypeInfoPropertyName = "VcrImageDetailKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailVhs))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailVhsConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrRepositoryPermissionList))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleConditionRhsVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleConditionRhsVariant1Type), TypeInfoPropertyName = "CreateFlagSegmentRequestDataRuleConditionRhsVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.CreateFlagSegmentRequestDataRuleConditionRhsVariant1ItemVariant1, global::Vercel.CreateFlagSegmentRequestDataRuleConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "CreateFlagSegmentRequestDataRuleConditionRhsVariant1ItemVariant2_2a2846bfa168024e")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagSegmentRequestDataRuleConditionRhsVariant1ItemVariant1, global::Vercel.CreateFlagSegmentRequestDataRuleConditionRhsVariant1ItemVariant2>), TypeInfoPropertyName = "CreateFlagSegmentRequestDataRuleConditionRhsVariant1ItemVariant2_0a718fcbc6d54a91")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleConditionRhsVariant1ItemVariant1))]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

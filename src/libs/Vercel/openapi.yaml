@@ -198580,6 +198580,11 @@
   },
   "components": {
     "schemas": {
+      "AiGatewayProviderOptionBag": {
+        "additionalProperties": true,
+        "type": "object",
+        "description": "Arbitrary per-provider AI SDK options, keyed by gateway provider slug."
+      },
       "AiGatewayVirtualModelConfig": {
         "properties": {
           "ownerId": {
@@ -198643,6 +198648,13 @@
             },
             "type": "array",
             "description": "Restrict routing to only these providers."
+          },
+          "providerOptions": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/AiGatewayProviderOptionBag"
+            },
+            "type": "object",
+            "description": "Arbitrary per-provider AI SDK options, keyed by gateway provider slug."
           },
           "inferenceRegion": {
             "properties": {

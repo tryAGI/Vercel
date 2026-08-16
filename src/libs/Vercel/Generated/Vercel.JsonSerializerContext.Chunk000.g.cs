@@ -14,10 +14,12 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayProviderOptionBag))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.AiGatewayProviderOptionBag>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigInferenceRegion))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.AiGatewayVirtualModelConfigInferenceRegionProviders2?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfigInferenceRegionProviders2))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageLayerVariant4Type), TypeInfoPropertyName = "VcrImageLayerVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetail))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.VcrImageLayer>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailStatus), TypeInfoPropertyName = "VcrImageDetailStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageDetailKind), TypeInfoPropertyName = "VcrImageDetailKind2")]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

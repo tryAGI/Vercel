@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateObservabilityQueryRequestOrderDirection?), TypeInfoPropertyName = "NullableCreateObservabilityQueryRequestOrderDirection2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddProjectMemberRequestRole?), TypeInfoPropertyName = "NullableAddProjectMemberRequestRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRoutesRequestRouteRouteHaType?), TypeInfoPropertyName = "NullableStageRoutesRequestRouteRouteHaType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRoutesRequestRouteRouteMissingItemType?), TypeInfoPropertyName = "NullableStageRoutesRequestRouteRouteMissingItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StageRoutesRequestRouteRouteTransformType?), TypeInfoPropertyName = "NullableStageRoutesRequestRouteRouteTransformType2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCheckResponseOutputMetricsClsSource?), TypeInfoPropertyName = "NullableGetCheckResponseOutputMetricsClsSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCheckResponseOutputMetricsTbtSource?), TypeInfoPropertyName = "NullableGetCheckResponseOutputMetricsTbtSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCheckResponseOutputMetricsVirtualExperienceScoreSource?), TypeInfoPropertyName = "NullableGetCheckResponseOutputMetricsVirtualExperienceScoreSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseStatus?), TypeInfoPropertyName = "NullableUpdateCheckResponseStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseConclusion?), TypeInfoPropertyName = "NullableUpdateCheckResponseConclusion2")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

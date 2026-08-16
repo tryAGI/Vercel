@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant3ProjectCreatorVariant1ViaVariant1, global::Vercel.GetProjectsResponseVariant3ProjectCreatorVariant1ViaVariant2>?), TypeInfoPropertyName = "GetProjectsResponseVariant3ProjectCreatorVariant1ViaVariant2_a73b8b5270fa78a6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectCreatorVariant1ViaVariant1Type?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectCreatorVariant1ViaVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectCreatorVariant1ViaVariant2Type?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectCreatorVariant1ViaVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectCreatorVariant2Type?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectCreatorVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectCreatorVariant3Type?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectCreatorVariant3Type2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseResourceConfigBuildMachineSelection?), TypeInfoPropertyName = "NullableUpdateProjectResponseResourceConfigBuildMachineSelection2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseResourceConfigBuildMachineElasticReason?), TypeInfoPropertyName = "NullableUpdateProjectResponseResourceConfigBuildMachineElasticReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseResourceConfigBuildQueueConfiguration?), TypeInfoPropertyName = "NullableUpdateProjectResponseResourceConfigBuildQueueConfiguration2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseRollingReleaseGateCheckType?), TypeInfoPropertyName = "NullableUpdateProjectResponseRollingReleaseGateCheckType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseRollingReleaseGateAction?), TypeInfoPropertyName = "NullableUpdateProjectResponseRollingReleaseGateAction2")]
     internal sealed partial class SourceGenerationContextChunk027 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

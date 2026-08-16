@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainConfigResponseRecommendedIPv4Item))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDomainConfigResponseRecommendedCNAMEItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainConfigResponseRecommendedCNAMEItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainVerificationRecordResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ClaimDomainOwnershipResponse))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1LogSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1LogSource), TypeInfoPropertyName = "GetDrainResponseVariant2FilterV2FilterVariant1LogSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1Deployment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1DeploymentEnvironment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2FilterV2FilterVariant1DeploymentEnvironment), TypeInfoPropertyName = "GetDrainResponseVariant2FilterV2FilterVariant1DeploymentEnvironment2")]
     internal sealed partial class SourceGenerationContextChunk008 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
