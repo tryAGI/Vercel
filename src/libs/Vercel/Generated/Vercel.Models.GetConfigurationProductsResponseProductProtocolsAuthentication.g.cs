@@ -17,6 +17,12 @@ namespace Vercel
         public required global::Vercel.GetConfigurationProductsResponseProductProtocolsAuthenticationStatus Status { get; set; }
 
         /// <summary>
+        /// The partner accepts Vercel-managed app URLs via `protocolSettings.authentication.appUrls` on provision-resource and update-resource, and reconciles them into its trusted-origin / redirect-URL allowlist. When absent, consumers surface the URL for a one-time manual registration instead.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("appUrlRegistrationSupport")]
+        public bool? AppUrlRegistrationSupport { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -26,13 +32,18 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetConfigurationProductsResponseProductProtocolsAuthentication" /> class.
         /// </summary>
         /// <param name="status"></param>
+        /// <param name="appUrlRegistrationSupport">
+        /// The partner accepts Vercel-managed app URLs via `protocolSettings.authentication.appUrls` on provision-resource and update-resource, and reconciles them into its trusted-origin / redirect-URL allowlist. When absent, consumers surface the URL for a one-time manual registration instead.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConfigurationProductsResponseProductProtocolsAuthentication(
-            global::Vercel.GetConfigurationProductsResponseProductProtocolsAuthenticationStatus status)
+            global::Vercel.GetConfigurationProductsResponseProductProtocolsAuthenticationStatus status,
+            bool? appUrlRegistrationSupport)
         {
             this.Status = status;
+            this.AppUrlRegistrationSupport = appUrlRegistrationSupport;
         }
 
         /// <summary>
