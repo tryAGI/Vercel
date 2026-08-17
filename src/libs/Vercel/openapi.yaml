@@ -193719,6 +193719,12 @@
                       "type": "string",
                       "description": "The webhook secret used to sign the payload"
                     },
+                    "alertRuleIds": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
                     "events": {
                       "items": {
                         "type": "string",
@@ -194347,6 +194353,12 @@
                             },
                             "type": "array"
                           },
+                          "alertRuleIds": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
                           "events": {
                             "items": {
                               "type": "string",
@@ -194595,6 +194607,12 @@
                     {
                       "items": {
                         "properties": {
+                          "alertRuleIds": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
                           "events": {
                             "items": {
                               "type": "string",
@@ -194907,6 +194925,12 @@
               "application/json": {
                 "schema": {
                   "properties": {
+                    "alertRuleIds": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
                     "events": {
                       "items": {
                         "type": "string",
