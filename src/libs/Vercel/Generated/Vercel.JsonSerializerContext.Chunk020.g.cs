@@ -11,6 +11,9 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddBypassIpResponseVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AddBypassIpResponseVariant2ResultItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddBypassIpResponseVariant2ResultItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddBypassIpResponseVariant2ResultItemAction), TypeInfoPropertyName = "AddBypassIpResponseVariant2ResultItemAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveBypassIpResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallEventsResponse))]
@@ -508,9 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework), TypeInfoPropertyName = "GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1ItemEvent>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetWebhooksResponseVariant1ItemEvent), TypeInfoPropertyName = "GetWebhooksResponseVariant1ItemEvent2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant2Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetWebhooksResponseVariant2Item))]
     internal sealed partial class SourceGenerationContextChunk020 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

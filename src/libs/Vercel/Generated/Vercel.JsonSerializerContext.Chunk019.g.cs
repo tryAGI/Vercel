@@ -11,6 +11,9 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetConditionGroupItemCondition))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetConditionGroupItemConditionType), TypeInfoPropertyName = "GetSecurityFirewallConfigResponseDraftRulesetConditionGroupItemConditionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetConditionGroupItemConditionOp), TypeInfoPropertyName = "GetSecurityFirewallConfigResponseDraftRulesetConditionGroupItemConditionOp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetAction))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetActionMitigate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRulesetActionMitigateAction), TypeInfoPropertyName = "GetSecurityFirewallConfigResponseDraftRulesetActionMitigateAction2")]
@@ -508,9 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddBypassIpResponseVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AddBypassIpResponseVariant1ResultItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddBypassIpResponseVariant1ResultItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddBypassIpResponseVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AddBypassIpResponseVariant2ResultItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddBypassIpResponseVariant2ResultItem))]
     internal sealed partial class SourceGenerationContextChunk019 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

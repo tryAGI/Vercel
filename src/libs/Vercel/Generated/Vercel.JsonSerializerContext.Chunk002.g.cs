@@ -80,6 +80,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateInstallationRequestNotification, string>), TypeInfoPropertyName = "OneOfUpdateInstallationRequestNotificationString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequestNotification))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequestNotificationLevel), TypeInfoPropertyName = "UpdateInstallationRequestNotificationLevel2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RotateInstallationCredentialRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateEventRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateEventRequestEventVariant1, global::Vercel.CreateEventRequestEventVariant2>), TypeInfoPropertyName = "OneOfCreateEventRequestEventVariant1CreateEventRequestEventVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateEventRequestEventVariant1))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchQueryStringItemKey))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchQueryStringItemValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchHeader>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatchHeader))]
     internal sealed partial class SourceGenerationContextChunk002 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

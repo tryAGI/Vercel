@@ -11,6 +11,9 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetWebhooksResponseVariant1ItemEvent), TypeInfoPropertyName = "GetWebhooksResponseVariant1ItemEvent2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetWebhooksResponseVariant2Item))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant2ItemEvent>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetWebhooksResponseVariant2ItemEvent), TypeInfoPropertyName = "GetWebhooksResponseVariant2ItemEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetWebhookResponse))]
@@ -508,9 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequestBillingPlanType?), TypeInfoPropertyName = "NullableUpdateResourceRequestBillingPlanType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateResourceRequestNotification, string>?), TypeInfoPropertyName = "NullableOneOfUpdateResourceRequestNotificationString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequestNotificationLevel?), TypeInfoPropertyName = "NullableUpdateResourceRequestNotificationLevel2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestSecret>, global::Vercel.UpdateResourceRequestSecrets>?), TypeInfoPropertyName = "NullableOneOfIListUpdateResourceRequestSecretUpdateResourceRequestSecrets2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestBillingItem>, global::Vercel.SubmitBillingDataRequestBilling>?), TypeInfoPropertyName = "NullableOneOfIListSubmitBillingDataRequestBillingItemSubmitBillingDataRequestBilling2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -11,6 +11,9 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestSecret>, global::Vercel.UpdateResourceRequestSecrets>?), TypeInfoPropertyName = "NullableOneOfIListUpdateResourceRequestSecretUpdateResourceRequestSecrets2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestBillingItem>, global::Vercel.SubmitBillingDataRequestBilling>?), TypeInfoPropertyName = "NullableOneOfIListSubmitBillingDataRequestBillingItemSubmitBillingDataRequestBilling2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SubmitBillingDataRequestUsageItemType?), TypeInfoPropertyName = "NullableSubmitBillingDataRequestUsageItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SubmitInvoiceRequestTestResult?), TypeInfoPropertyName = "NullableSubmitInvoiceRequestTestResult2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInvoiceRequestAction?), TypeInfoPropertyName = "NullableUpdateInvoiceRequestAction2")]
@@ -508,9 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCheckResponseOutputMetricsLcpSource?), TypeInfoPropertyName = "NullableCreateCheckResponseOutputMetricsLcpSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCheckResponseOutputMetricsClsSource?), TypeInfoPropertyName = "NullableCreateCheckResponseOutputMetricsClsSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCheckResponseOutputMetricsTbtSource?), TypeInfoPropertyName = "NullableCreateCheckResponseOutputMetricsTbtSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCheckResponseOutputMetricsVirtualExperienceScoreSource?), TypeInfoPropertyName = "NullableCreateCheckResponseOutputMetricsVirtualExperienceScoreSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckConclusion?), TypeInfoPropertyName = "NullableGetAllChecksResponseCheckConclusion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsFcpSource?), TypeInfoPropertyName = "NullableGetAllChecksResponseCheckOutputMetricsFcpSource2")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
