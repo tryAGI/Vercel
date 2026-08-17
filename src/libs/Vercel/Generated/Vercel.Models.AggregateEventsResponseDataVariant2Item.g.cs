@@ -473,6 +473,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ruleCategory")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RuleCategory { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("skewProtection")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SkewProtection { get; set; }
@@ -1602,6 +1609,7 @@ namespace Vercel
         /// <param name="deepAnalysisCheck"></param>
         /// <param name="wafAction"></param>
         /// <param name="wafRuleId"></param>
+        /// <param name="ruleCategory"></param>
         /// <param name="skewProtection"></param>
         /// <param name="functionStartType"></param>
         /// <param name="functionDispatcher"></param>
@@ -1823,6 +1831,7 @@ namespace Vercel
             string deepAnalysisCheck,
             string wafAction,
             string wafRuleId,
+            string ruleCategory,
             string skewProtection,
             string functionStartType,
             string functionDispatcher,
@@ -2041,6 +2050,7 @@ namespace Vercel
             this.DeepAnalysisCheck = deepAnalysisCheck ?? throw new global::System.ArgumentNullException(nameof(deepAnalysisCheck));
             this.WafAction = wafAction ?? throw new global::System.ArgumentNullException(nameof(wafAction));
             this.WafRuleId = wafRuleId ?? throw new global::System.ArgumentNullException(nameof(wafRuleId));
+            this.RuleCategory = ruleCategory ?? throw new global::System.ArgumentNullException(nameof(ruleCategory));
             this.SkewProtection = skewProtection ?? throw new global::System.ArgumentNullException(nameof(skewProtection));
             this.FunctionStartType = functionStartType ?? throw new global::System.ArgumentNullException(nameof(functionStartType));
             this.FunctionDispatcher = functionDispatcher ?? throw new global::System.ArgumentNullException(nameof(functionDispatcher));
