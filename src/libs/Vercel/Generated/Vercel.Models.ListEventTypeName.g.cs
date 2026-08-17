@@ -120,6 +120,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        AiGatewayAutoReloadUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         AiGatewayBudgetDefaultUpdated,
         /// <summary>
         /// 
@@ -133,6 +137,10 @@ namespace Vercel
         /// 
         /// </summary>
         AiGatewayByokCredentialUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        AiGatewayCreditsPurchased,
         /// <summary>
         /// 
         /// </summary>
@@ -2582,10 +2590,12 @@ namespace Vercel
                 ListEventTypeName.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
                 ListEventTypeName.AiGatewayApiKeyDeleted => "ai-gateway-api-key-deleted",
                 ListEventTypeName.AiGatewayApiKeyQuotaUpdated => "ai-gateway-api-key-quota-updated",
+                ListEventTypeName.AiGatewayAutoReloadUpdated => "ai-gateway-auto-reload-updated",
                 ListEventTypeName.AiGatewayBudgetDefaultUpdated => "ai-gateway-budget-default-updated",
                 ListEventTypeName.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeName.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeName.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                ListEventTypeName.AiGatewayCreditsPurchased => "ai-gateway-credits-purchased",
                 ListEventTypeName.AiGatewayGuardrailsUpdated => "ai-gateway-guardrails-updated",
                 ListEventTypeName.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
                 ListEventTypeName.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
@@ -3225,10 +3235,12 @@ namespace Vercel
                 "ai-gateway-api-key-created" => ListEventTypeName.AiGatewayApiKeyCreated,
                 "ai-gateway-api-key-deleted" => ListEventTypeName.AiGatewayApiKeyDeleted,
                 "ai-gateway-api-key-quota-updated" => ListEventTypeName.AiGatewayApiKeyQuotaUpdated,
+                "ai-gateway-auto-reload-updated" => ListEventTypeName.AiGatewayAutoReloadUpdated,
                 "ai-gateway-budget-default-updated" => ListEventTypeName.AiGatewayBudgetDefaultUpdated,
                 "ai-gateway-byok-credential-created" => ListEventTypeName.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeName.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeName.AiGatewayByokCredentialUpdated,
+                "ai-gateway-credits-purchased" => ListEventTypeName.AiGatewayCreditsPurchased,
                 "ai-gateway-guardrails-updated" => ListEventTypeName.AiGatewayGuardrailsUpdated,
                 "ai-gateway-model-allowlist-models-updated" => ListEventTypeName.AiGatewayModelAllowlistModelsUpdated,
                 "ai-gateway-model-allowlist-toggled" => ListEventTypeName.AiGatewayModelAllowlistToggled,

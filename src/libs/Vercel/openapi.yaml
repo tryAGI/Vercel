@@ -183878,7 +183878,7 @@
                               "elastic"
                             ],
                             "example": "standard",
-                            "description": "Default build machine type for new builds: basic, standard, enhanced, turbo, or elastic."
+                            "description": "Default build machine type for new builds: standard, enhanced, turbo, or elastic."
                           }
                         }
                       }
@@ -200718,10 +200718,12 @@
               "ai-gateway-api-key-created",
               "ai-gateway-api-key-deleted",
               "ai-gateway-api-key-quota-updated",
+              "ai-gateway-auto-reload-updated",
               "ai-gateway-budget-default-updated",
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-credits-purchased",
               "ai-gateway-guardrails-updated",
               "ai-gateway-model-allowlist-models-updated",
               "ai-gateway-model-allowlist-toggled",
@@ -201669,10 +201671,12 @@
               "ai-gateway-api-key-created",
               "ai-gateway-api-key-deleted",
               "ai-gateway-api-key-quota-updated",
+              "ai-gateway-auto-reload-updated",
               "ai-gateway-budget-default-updated",
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-credits-purchased",
               "ai-gateway-guardrails-updated",
               "ai-gateway-model-allowlist-models-updated",
               "ai-gateway-model-allowlist-toggled",
@@ -202361,10 +202365,12 @@
                 "ai-gateway-api-key-created",
                 "ai-gateway-api-key-deleted",
                 "ai-gateway-api-key-quota-updated",
+                "ai-gateway-auto-reload-updated",
                 "ai-gateway-budget-default-updated",
                 "ai-gateway-byok-credential-created",
                 "ai-gateway-byok-credential-deleted",
                 "ai-gateway-byok-credential-updated",
+                "ai-gateway-credits-purchased",
                 "ai-gateway-guardrails-updated",
                 "ai-gateway-model-allowlist-models-updated",
                 "ai-gateway-model-allowlist-toggled",
