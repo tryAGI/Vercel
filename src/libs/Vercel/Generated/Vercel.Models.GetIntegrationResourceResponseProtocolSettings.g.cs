@@ -15,6 +15,12 @@ namespace Vercel
         public global::Vercel.GetIntegrationResourceResponseProtocolSettingsExperimentation? Experimentation { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("authentication")]
+        public global::Vercel.GetIntegrationResourceResponseProtocolSettingsAuthentication? Authentication { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -24,13 +30,16 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetIntegrationResourceResponseProtocolSettings" /> class.
         /// </summary>
         /// <param name="experimentation"></param>
+        /// <param name="authentication"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetIntegrationResourceResponseProtocolSettings(
-            global::Vercel.GetIntegrationResourceResponseProtocolSettingsExperimentation? experimentation)
+            global::Vercel.GetIntegrationResourceResponseProtocolSettingsExperimentation? experimentation,
+            global::Vercel.GetIntegrationResourceResponseProtocolSettingsAuthentication? authentication)
         {
             this.Experimentation = experimentation;
+            this.Authentication = authentication;
         }
 
         /// <summary>

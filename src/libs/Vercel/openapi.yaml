@@ -66976,6 +66976,34 @@
                                   }
                                 },
                                 "type": "object"
+                              },
+                              "authentication": {
+                                "properties": {
+                                  "appUrls": {
+                                    "items": {
+                                      "properties": {
+                                        "url": {
+                                          "type": "string"
+                                        },
+                                        "target": {
+                                          "type": "string",
+                                          "enum": [
+                                            "development",
+                                            "preview",
+                                            "production"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "target",
+                                        "url"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "type": "array"
+                                  }
+                                },
+                                "type": "object"
                               }
                             },
                             "type": "object",
@@ -67153,6 +67181,34 @@
                             },
                             "globalConfigId": {
                               "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "authentication": {
+                          "properties": {
+                            "appUrls": {
+                              "items": {
+                                "properties": {
+                                  "url": {
+                                    "type": "string"
+                                  },
+                                  "target": {
+                                    "type": "string",
+                                    "enum": [
+                                      "development",
+                                      "preview",
+                                      "production"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "target",
+                                  "url"
+                                ],
+                                "type": "object"
+                              },
+                              "type": "array"
                             }
                           },
                           "type": "object"
@@ -70660,6 +70716,14 @@
                                       "disabled",
                                       "enabled"
                                     ]
+                                  },
+                                  "appUrlRegistrationSupport": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ],
+                                    "description": "The partner accepts Vercel-managed app URLs via `protocolSettings.authentication.appUrls` on provision-resource and update-resource, and reconciles them into its trusted-origin / redirect-URL allowlist. When absent, consumers surface the URL for a one-time manual registration instead."
                                   }
                                 },
                                 "required": [
@@ -180967,6 +181031,34 @@
                                 },
                                 "edgeConfigTokenId": {
                                   "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "authentication": {
+                              "properties": {
+                                "appUrls": {
+                                  "items": {
+                                    "properties": {
+                                      "url": {
+                                        "type": "string"
+                                      },
+                                      "target": {
+                                        "type": "string",
+                                        "enum": [
+                                          "development",
+                                          "preview",
+                                          "production"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "target",
+                                      "url"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  "type": "array"
                                 }
                               },
                               "type": "object"
