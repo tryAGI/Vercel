@@ -407,6 +407,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ruleCategory")]
+        public string? RuleCategory { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("skewProtection")]
         public string? SkewProtection { get; set; }
 
@@ -1393,6 +1399,7 @@ namespace Vercel
         /// <param name="deepAnalysisCheck"></param>
         /// <param name="wafAction"></param>
         /// <param name="wafRuleId"></param>
+        /// <param name="ruleCategory"></param>
         /// <param name="skewProtection"></param>
         /// <param name="functionStartType"></param>
         /// <param name="functionDispatcher"></param>
@@ -1615,6 +1622,7 @@ namespace Vercel
             string? deepAnalysisCheck,
             string? wafAction,
             string? wafRuleId,
+            string? ruleCategory,
             string? skewProtection,
             string? functionStartType,
             string? functionDispatcher,
@@ -1833,6 +1841,7 @@ namespace Vercel
             this.DeepAnalysisCheck = deepAnalysisCheck;
             this.WafAction = wafAction;
             this.WafRuleId = wafRuleId;
+            this.RuleCategory = ruleCategory;
             this.SkewProtection = skewProtection;
             this.FunctionStartType = functionStartType;
             this.FunctionDispatcher = functionDispatcher;

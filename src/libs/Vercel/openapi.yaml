@@ -188285,6 +188285,9 @@
                               "wafRuleId": {
                                 "type": "string"
                               },
+                              "ruleCategory": {
+                                "type": "string"
+                              },
                               "skewProtection": {
                                 "type": "string"
                               },
@@ -188951,6 +188954,9 @@
                               "wafRuleId": {
                                 "type": "string"
                               },
+                              "ruleCategory": {
+                                "type": "string"
+                              },
                               "skewProtection": {
                                 "type": "string"
                               },
@@ -189571,6 +189577,7 @@
                               "reviewStatus",
                               "rewriteDestinationHostname",
                               "route",
+                              "ruleCategory",
                               "runtime",
                               "sandboxName",
                               "sandboxSessionId",
@@ -190083,6 +190090,9 @@
                               "wafRuleId": {
                                 "type": "string"
                               },
+                              "ruleCategory": {
+                                "type": "string"
+                              },
                               "skewProtection": {
                                 "type": "string"
                               },
@@ -190749,6 +190759,9 @@
                               "wafRuleId": {
                                 "type": "string"
                               },
+                              "ruleCategory": {
+                                "type": "string"
+                              },
                               "skewProtection": {
                                 "type": "string"
                               },
@@ -191369,6 +191382,7 @@
                               "reviewStatus",
                               "rewriteDestinationHostname",
                               "route",
+                              "ruleCategory",
                               "runtime",
                               "sandboxName",
                               "sandboxSessionId",
@@ -191847,6 +191861,9 @@
                             "wafRuleId": {
                               "type": "string"
                             },
+                            "ruleCategory": {
+                              "type": "string"
+                            },
                             "skewProtection": {
                               "type": "string"
                             },
@@ -192467,6 +192484,7 @@
                             "reviewStatus",
                             "rewriteDestinationHostname",
                             "route",
+                            "ruleCategory",
                             "runtime",
                             "sandboxName",
                             "sandboxSessionId",
@@ -192893,6 +192911,9 @@
                             "wafRuleId": {
                               "type": "string"
                             },
+                            "ruleCategory": {
+                              "type": "string"
+                            },
                             "skewProtection": {
                               "type": "string"
                             },
@@ -193513,6 +193534,7 @@
                             "reviewStatus",
                             "rewriteDestinationHostname",
                             "route",
+                            "ruleCategory",
                             "runtime",
                             "sandboxName",
                             "sandboxSessionId",
