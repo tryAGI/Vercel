@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class PatchTeamRequestResourceConfigBuildMachine
     {
         /// <summary>
-        /// Default build machine type for new builds: basic, standard, enhanced, turbo, or elastic.<br/>
+        /// Default build machine type for new builds: standard, enhanced, turbo, or elastic.<br/>
         /// Example: standard
         /// </summary>
         /// <example>standard</example>
@@ -27,7 +27,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="PatchTeamRequestResourceConfigBuildMachine" /> class.
         /// </summary>
         /// <param name="default">
-        /// Default build machine type for new builds: basic, standard, enhanced, turbo, or elastic.<br/>
+        /// Default build machine type for new builds: standard, enhanced, turbo, or elastic.<br/>
         /// Example: standard
         /// </param>
 #if NET7_0_OR_GREATER
