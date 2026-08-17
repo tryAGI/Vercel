@@ -158203,8 +158203,9 @@
                   },
                   "timeout": {
                     "type": "integer",
-                    "description": "Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.",
+                    "description": "Maximum duration in milliseconds the command may run before it is killed with SIGKILL, up to 5 hours. Enforced at exec time, independently of `wait`.",
                     "minimum": 100,
+                    "maximum": 18000000,
                     "example": 30000
                   }
                 }

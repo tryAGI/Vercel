@@ -114,7 +114,7 @@ namespace Vercel
         /// Default Value: false
         /// </param>
         /// <param name="timeout">
-        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.<br/>
+        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL, up to 5 hours. Enforced at exec time, independently of `wait`.<br/>
         /// Example: 30000
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

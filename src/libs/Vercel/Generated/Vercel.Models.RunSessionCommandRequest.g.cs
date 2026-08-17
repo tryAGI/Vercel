@@ -64,7 +64,7 @@ namespace Vercel
         public bool? Logs { get; set; }
 
         /// <summary>
-        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.<br/>
+        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL, up to 5 hours. Enforced at exec time, independently of `wait`.<br/>
         /// Example: 30000
         /// </summary>
         /// <example>30000</example>
@@ -110,7 +110,7 @@ namespace Vercel
         /// Default Value: false
         /// </param>
         /// <param name="timeout">
-        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL. Enforced at exec time, independently of `wait`.<br/>
+        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL, up to 5 hours. Enforced at exec time, independently of `wait`.<br/>
         /// Example: 30000
         /// </param>
 #if NET7_0_OR_GREATER
