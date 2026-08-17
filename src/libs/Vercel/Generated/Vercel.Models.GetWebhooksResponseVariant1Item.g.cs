@@ -15,6 +15,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItem>? ProjectsMetadata { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("alertRuleIds")]
+        public global::System.Collections.Generic.IList<string>? AlertRuleIds { get; set; }
+
+        /// <summary>
         /// The webhooks events<br/>
         /// Example: deployment.created
         /// </summary>
@@ -110,6 +116,7 @@ namespace Vercel
         /// Example: 1567024758130L
         /// </param>
         /// <param name="projectsMetadata"></param>
+        /// <param name="alertRuleIds"></param>
         /// <param name="projectIds">
         /// The ID of the projects the webhook is associated with<br/>
         /// Example: [prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB]
@@ -125,9 +132,11 @@ namespace Vercel
             double createdAt,
             double updatedAt,
             global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItem>? projectsMetadata,
+            global::System.Collections.Generic.IList<string>? alertRuleIds,
             global::System.Collections.Generic.IList<string>? projectIds)
         {
             this.ProjectsMetadata = projectsMetadata;
+            this.AlertRuleIds = alertRuleIds;
             this.Events = events ?? throw new global::System.ArgumentNullException(nameof(events));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));

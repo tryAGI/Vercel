@@ -16,6 +16,12 @@ namespace Vercel
         public required string Secret { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("alertRuleIds")]
+        public global::System.Collections.Generic.IList<string>? AlertRuleIds { get; set; }
+
+        /// <summary>
         /// The webhooks events<br/>
         /// Example: deployment.created
         /// </summary>
@@ -113,6 +119,7 @@ namespace Vercel
         /// A number containing the date when the webhook was updated in in milliseconds<br/>
         /// Example: 1567024758130L
         /// </param>
+        /// <param name="alertRuleIds"></param>
         /// <param name="projectIds">
         /// The ID of the projects the webhook is associated with<br/>
         /// Example: [prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB]
@@ -128,9 +135,11 @@ namespace Vercel
             string ownerId,
             double createdAt,
             double updatedAt,
+            global::System.Collections.Generic.IList<string>? alertRuleIds,
             global::System.Collections.Generic.IList<string>? projectIds)
         {
             this.Secret = secret ?? throw new global::System.ArgumentNullException(nameof(secret));
+            this.AlertRuleIds = alertRuleIds;
             this.Events = events ?? throw new global::System.ArgumentNullException(nameof(events));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
