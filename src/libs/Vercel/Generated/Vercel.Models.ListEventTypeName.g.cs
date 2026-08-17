@@ -976,6 +976,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        IntegrationConfigurationCredentialRotated,
+        /// <summary>
+        /// 
+        /// </summary>
         IntegrationConfigurationOwnerChanged,
         /// <summary>
         /// 
@@ -2792,6 +2796,7 @@ namespace Vercel
                 ListEventTypeName.GitIntegrationRepoPush => "git-integration-repo-push",
                 ListEventTypeName.GitAccountIntegrationLinkAdded => "git_account_integration_link_added",
                 ListEventTypeName.InstantRollbackCreated => "instant-rollback-created",
+                ListEventTypeName.IntegrationConfigurationCredentialRotated => "integration-configuration-credential-rotated",
                 ListEventTypeName.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
                 ListEventTypeName.IntegrationConfigurationScopeChangeConfirmed => "integration-configuration-scope-change-confirmed",
                 ListEventTypeName.IntegrationConfigurationTransferInSuccess => "integration-configuration-transfer-in-success",
@@ -3434,6 +3439,7 @@ namespace Vercel
                 "git-integration-repo-push" => ListEventTypeName.GitIntegrationRepoPush,
                 "git_account_integration_link_added" => ListEventTypeName.GitAccountIntegrationLinkAdded,
                 "instant-rollback-created" => ListEventTypeName.InstantRollbackCreated,
+                "integration-configuration-credential-rotated" => ListEventTypeName.IntegrationConfigurationCredentialRotated,
                 "integration-configuration-owner-changed" => ListEventTypeName.IntegrationConfigurationOwnerChanged,
                 "integration-configuration-scope-change-confirmed" => ListEventTypeName.IntegrationConfigurationScopeChangeConfirmed,
                 "integration-configuration-transfer-in-success" => ListEventTypeName.IntegrationConfigurationTransferInSuccess,

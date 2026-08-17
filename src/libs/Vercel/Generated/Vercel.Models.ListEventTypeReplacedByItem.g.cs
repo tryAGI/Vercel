@@ -975,6 +975,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        IntegrationConfigurationCredentialRotated,
+        /// <summary>
+        /// 
+        /// </summary>
         IntegrationConfigurationOwnerChanged,
         /// <summary>
         /// 
@@ -2791,6 +2795,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.GitIntegrationRepoPush => "git-integration-repo-push",
                 ListEventTypeReplacedByItem.GitAccountIntegrationLinkAdded => "git_account_integration_link_added",
                 ListEventTypeReplacedByItem.InstantRollbackCreated => "instant-rollback-created",
+                ListEventTypeReplacedByItem.IntegrationConfigurationCredentialRotated => "integration-configuration-credential-rotated",
                 ListEventTypeReplacedByItem.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
                 ListEventTypeReplacedByItem.IntegrationConfigurationScopeChangeConfirmed => "integration-configuration-scope-change-confirmed",
                 ListEventTypeReplacedByItem.IntegrationConfigurationTransferInSuccess => "integration-configuration-transfer-in-success",
@@ -3433,6 +3438,7 @@ namespace Vercel
                 "git-integration-repo-push" => ListEventTypeReplacedByItem.GitIntegrationRepoPush,
                 "git_account_integration_link_added" => ListEventTypeReplacedByItem.GitAccountIntegrationLinkAdded,
                 "instant-rollback-created" => ListEventTypeReplacedByItem.InstantRollbackCreated,
+                "integration-configuration-credential-rotated" => ListEventTypeReplacedByItem.IntegrationConfigurationCredentialRotated,
                 "integration-configuration-owner-changed" => ListEventTypeReplacedByItem.IntegrationConfigurationOwnerChanged,
                 "integration-configuration-scope-change-confirmed" => ListEventTypeReplacedByItem.IntegrationConfigurationScopeChangeConfirmed,
                 "integration-configuration-transfer-in-success" => ListEventTypeReplacedByItem.IntegrationConfigurationTransferInSuccess,
