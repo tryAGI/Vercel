@@ -57591,19 +57591,11 @@
                         },
                         "defaultVariantId": {
                           "type": "string"
-                        },
-                        "exposureLogging": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
                         }
                       },
                       "required": [
                         "base",
                         "defaultVariantId",
-                        "exposureLogging",
                         "id",
                         "weights"
                       ],
@@ -59208,19 +59200,11 @@
                             },
                             "defaultVariantId": {
                               "type": "string"
-                            },
-                            "exposureLogging": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
                             }
                           },
                           "required": [
                             "base",
                             "defaultVariantId",
-                            "exposureLogging",
                             "id",
                             "weights"
                           ],
@@ -60857,19 +60841,11 @@
                                   },
                                   "defaultVariantId": {
                                     "type": "string"
-                                  },
-                                  "exposureLogging": {
-                                    "type": "boolean",
-                                    "enum": [
-                                      false,
-                                      true
-                                    ]
                                   }
                                 },
                                 "required": [
                                   "base",
                                   "defaultVariantId",
-                                  "exposureLogging",
                                   "id",
                                   "weights"
                                 ],
@@ -202824,19 +202800,11 @@
               },
               "defaultVariantId": {
                 "type": "string"
-              },
-              "exposureLogging": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
               }
             },
             "required": [
               "base",
               "defaultVariantId",
-              "exposureLogging",
               "id",
               "weights"
             ],

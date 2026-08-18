@@ -49,13 +49,6 @@ namespace Vercel
         public required string DefaultVariantId { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("exposureLogging")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool ExposureLogging { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -68,7 +61,6 @@ namespace Vercel
         /// <param name="base"></param>
         /// <param name="weights"></param>
         /// <param name="defaultVariantId"></param>
-        /// <param name="exposureLogging"></param>
         /// <param name="rampId"></param>
         /// <param name="rampPercentage"></param>
 #if NET7_0_OR_GREATER
@@ -79,7 +71,6 @@ namespace Vercel
             global::Vercel.UpdateFlagResponseExperimentBase @base,
             global::System.Collections.Generic.Dictionary<string, double> weights,
             string defaultVariantId,
-            bool exposureLogging,
             string? rampId,
             double? rampPercentage)
         {
@@ -89,7 +80,6 @@ namespace Vercel
             this.Base = @base ?? throw new global::System.ArgumentNullException(nameof(@base));
             this.Weights = weights ?? throw new global::System.ArgumentNullException(nameof(weights));
             this.DefaultVariantId = defaultVariantId ?? throw new global::System.ArgumentNullException(nameof(defaultVariantId));
-            this.ExposureLogging = exposureLogging;
         }
 
         /// <summary>
