@@ -17,6 +17,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("experiment")]
+        public global::Vercel.ListFlagVersionsResponseVersionDataExperiment? Experiment { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maintainerIds")]
         public global::System.Collections.Generic.IList<string>? MaintainerIds { get; set; }
 
@@ -31,12 +37,6 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
         public global::System.Collections.Generic.IList<string>? Tags { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("experiment")]
-        public global::Vercel.ListFlagVersionsResponseVersionDataExperiment? Experiment { get; set; }
 
         /// <summary>
         /// 
@@ -81,10 +81,10 @@ namespace Vercel
         /// <param name="seed"></param>
         /// <param name="state"></param>
         /// <param name="description"></param>
+        /// <param name="experiment"></param>
         /// <param name="maintainerIds"></param>
         /// <param name="permanent"></param>
         /// <param name="tags"></param>
-        /// <param name="experiment"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -94,16 +94,16 @@ namespace Vercel
             double seed,
             global::Vercel.ListFlagVersionsResponseVersionDataState state,
             string? description,
+            global::Vercel.ListFlagVersionsResponseVersionDataExperiment? experiment,
             global::System.Collections.Generic.IList<string>? maintainerIds,
             bool? permanent,
-            global::System.Collections.Generic.IList<string>? tags,
-            global::Vercel.ListFlagVersionsResponseVersionDataExperiment? experiment)
+            global::System.Collections.Generic.IList<string>? tags)
         {
             this.Description = description;
+            this.Experiment = experiment;
             this.MaintainerIds = maintainerIds;
             this.Permanent = permanent;
             this.Tags = tags;
-            this.Experiment = experiment;
             this.Variants = variants ?? throw new global::System.ArgumentNullException(nameof(variants));
             this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
             this.Seed = seed;
