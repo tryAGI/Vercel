@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Cdg1,
+        /// <summary>
+        /// 
+        /// </summary>
         Cle1,
         /// <summary>
         /// 
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                UpdateMicrofrontendsResponseSandboxRegion.Cdg1 => "cdg1",
                 UpdateMicrofrontendsResponseSandboxRegion.Cle1 => "cle1",
                 UpdateMicrofrontendsResponseSandboxRegion.Iad1 => "iad1",
                 UpdateMicrofrontendsResponseSandboxRegion.Sfo1 => "sfo1",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "cdg1" => UpdateMicrofrontendsResponseSandboxRegion.Cdg1,
                 "cle1" => UpdateMicrofrontendsResponseSandboxRegion.Cle1,
                 "iad1" => UpdateMicrofrontendsResponseSandboxRegion.Iad1,
                 "sfo1" => UpdateMicrofrontendsResponseSandboxRegion.Sfo1,

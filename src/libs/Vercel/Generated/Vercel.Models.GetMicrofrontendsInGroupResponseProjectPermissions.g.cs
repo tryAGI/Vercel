@@ -353,6 +353,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connexContact")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexContact { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connexInstallation")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexInstallation { get; set; }
 
@@ -1343,6 +1349,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("productionShareableLink")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProductionShareableLink { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Project { get; set; }
 
@@ -1589,6 +1601,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("shareableLink")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ShareableLink { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("shareableLinkStrict")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ShareableLinkStrict { get; set; }
 
@@ -1627,6 +1645,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("v0Chat")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? V0Chat { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vercelAuth")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelAuth { get; set; }
 
         /// <summary>
         /// 
@@ -1706,6 +1730,7 @@ namespace Vercel
         /// <param name="connectLogs"></param>
         /// <param name="connexClient"></param>
         /// <param name="connexClientProject"></param>
+        /// <param name="connexContact"></param>
         /// <param name="connexInstallation"></param>
         /// <param name="connexToken"></param>
         /// <param name="buildMachineDefault"></param>
@@ -1871,6 +1896,7 @@ namespace Vercel
         /// <param name="passwordProtection"></param>
         /// <param name="privateLinkEndpoint"></param>
         /// <param name="productionAliasProtectionBypass"></param>
+        /// <param name="productionShareableLink"></param>
         /// <param name="project"></param>
         /// <param name="projectAccessGroup"></param>
         /// <param name="projectAnalyticsSampling"></param>
@@ -1912,6 +1938,7 @@ namespace Vercel
         /// <param name="pageIntegrity"></param>
         /// <param name="seawallConfig"></param>
         /// <param name="securityPlusConfiguration"></param>
+        /// <param name="shareableLink"></param>
         /// <param name="shareableLinkStrict"></param>
         /// <param name="sharedEnvVarConnection"></param>
         /// <param name="skewProtection"></param>
@@ -1919,6 +1946,7 @@ namespace Vercel
         /// <param name="trustedIps"></param>
         /// <param name="trustedSources"></param>
         /// <param name="v0Chat"></param>
+        /// <param name="vercelAuth"></param>
         /// <param name="vercelRun"></param>
         /// <param name="webAnalytics"></param>
 #if NET7_0_OR_GREATER
@@ -1982,6 +2010,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connectLogs,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexClient,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexClientProject,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexContact,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexInstallation,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connexToken,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? buildMachineDefault,
@@ -2147,6 +2176,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? passwordProtection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? privateLinkEndpoint,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? productionAliasProtectionBypass,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? productionShareableLink,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? project,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectAccessGroup,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectAnalyticsSampling,
@@ -2188,6 +2218,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? pageIntegrity,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? seawallConfig,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? securityPlusConfiguration,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? shareableLink,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? shareableLinkStrict,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVarConnection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? skewProtection,
@@ -2195,6 +2226,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? trustedIps,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? trustedSources,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? v0Chat,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelAuth,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelRun,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalytics)
         {
@@ -2255,6 +2287,7 @@ namespace Vercel
             this.ConnectLogs = connectLogs;
             this.ConnexClient = connexClient;
             this.ConnexClientProject = connexClientProject;
+            this.ConnexContact = connexContact;
             this.ConnexInstallation = connexInstallation;
             this.ConnexToken = connexToken;
             this.BuildMachineDefault = buildMachineDefault;
@@ -2420,6 +2453,7 @@ namespace Vercel
             this.PasswordProtection = passwordProtection;
             this.PrivateLinkEndpoint = privateLinkEndpoint;
             this.ProductionAliasProtectionBypass = productionAliasProtectionBypass;
+            this.ProductionShareableLink = productionShareableLink;
             this.Project = project;
             this.ProjectAccessGroup = projectAccessGroup;
             this.ProjectAnalyticsSampling = projectAnalyticsSampling;
@@ -2461,6 +2495,7 @@ namespace Vercel
             this.PageIntegrity = pageIntegrity;
             this.SeawallConfig = seawallConfig;
             this.SecurityPlusConfiguration = securityPlusConfiguration;
+            this.ShareableLink = shareableLink;
             this.ShareableLinkStrict = shareableLinkStrict;
             this.SharedEnvVarConnection = sharedEnvVarConnection;
             this.SkewProtection = skewProtection;
@@ -2468,6 +2503,7 @@ namespace Vercel
             this.TrustedIps = trustedIps;
             this.TrustedSources = trustedSources;
             this.V0Chat = v0Chat;
+            this.VercelAuth = vercelAuth;
             this.VercelRun = vercelRun;
             this.WebAnalytics = webAnalytics;
         }

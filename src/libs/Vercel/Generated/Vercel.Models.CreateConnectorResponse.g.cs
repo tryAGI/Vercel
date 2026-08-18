@@ -259,6 +259,12 @@ namespace Vercel
         public required global::Vercel.CreateConnectorResponseSupportsIcon SupportsIcon { get; set; }
 
         /// <summary>
+        /// Whether this connector can verify and list messaging contacts. Derived from the type definition's `supportsContacts`; indicates that the `/connect/connectors/:connectorId/contacts` endpoints are meaningful for this connector.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("supportsContacts")]
+        public bool? SupportsContacts { get; set; }
+
+        /// <summary>
         /// Incoming trigger configuration. Only present when enabled.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("triggers")]
@@ -357,6 +363,9 @@ namespace Vercel
         /// <param name="appTokens"></param>
         /// <param name="userTokens"></param>
         /// <param name="ownerTenantId"></param>
+        /// <param name="supportsContacts">
+        /// Whether this connector can verify and list messaging contacts. Derived from the type definition's `supportsContacts`; indicates that the `/connect/connectors/:connectorId/contacts` endpoints are meaningful for this connector.
+        /// </param>
         /// <param name="triggers">
         /// Incoming trigger configuration. Only present when enabled.
         /// </param>
@@ -414,6 +423,7 @@ namespace Vercel
             global::Vercel.CreateConnectorResponseAppTokens? appTokens,
             global::Vercel.CreateConnectorResponseUserTokens? userTokens,
             string? ownerTenantId,
+            bool? supportsContacts,
             global::Vercel.CreateConnectorResponseTriggers? triggers,
             global::System.Collections.Generic.IList<string>? events,
             global::System.Collections.Generic.IList<global::Vercel.CreateConnectorResponseTriggerDestination>? triggerDestinations,
@@ -458,6 +468,7 @@ namespace Vercel
             this.OwnerTenantId = ownerTenantId;
             this.SupportsTriggers = supportsTriggers;
             this.SupportsIcon = supportsIcon;
+            this.SupportsContacts = supportsContacts;
             this.Triggers = triggers;
             this.Events = events;
             this.TriggerDestinations = triggerDestinations;

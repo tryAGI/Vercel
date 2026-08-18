@@ -17,30 +17,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("experiment")]
-        public global::Vercel.ListFlagVersionsResponseVersionDataExperiment? Experiment { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maintainerIds")]
-        public global::System.Collections.Generic.IList<string>? MaintainerIds { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
-        public bool? Permanent { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
-        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("variants")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<object> Variants { get; set; }
@@ -68,6 +44,24 @@ namespace Vercel
         public required global::Vercel.ListFlagVersionsResponseVersionDataState State { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("maintainerIds")]
+        public global::System.Collections.Generic.IList<string>? MaintainerIds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
+        public bool? Permanent { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -81,7 +75,6 @@ namespace Vercel
         /// <param name="seed"></param>
         /// <param name="state"></param>
         /// <param name="description"></param>
-        /// <param name="experiment"></param>
         /// <param name="maintainerIds"></param>
         /// <param name="permanent"></param>
         /// <param name="tags"></param>
@@ -94,20 +87,18 @@ namespace Vercel
             double seed,
             global::Vercel.ListFlagVersionsResponseVersionDataState state,
             string? description,
-            global::Vercel.ListFlagVersionsResponseVersionDataExperiment? experiment,
             global::System.Collections.Generic.IList<string>? maintainerIds,
             bool? permanent,
             global::System.Collections.Generic.IList<string>? tags)
         {
             this.Description = description;
-            this.Experiment = experiment;
-            this.MaintainerIds = maintainerIds;
-            this.Permanent = permanent;
-            this.Tags = tags;
             this.Variants = variants ?? throw new global::System.ArgumentNullException(nameof(variants));
             this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
             this.Seed = seed;
             this.State = state;
+            this.MaintainerIds = maintainerIds;
+            this.Permanent = permanent;
+            this.Tags = tags;
         }
 
         /// <summary>

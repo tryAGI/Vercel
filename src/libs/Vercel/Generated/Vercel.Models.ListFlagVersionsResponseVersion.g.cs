@@ -11,25 +11,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
-        public string? CreatedBy { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("message")]
-        public string? Message { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.ListFlagVersionsResponseVersionData Data { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
@@ -51,6 +32,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
+        public string? CreatedBy { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("message")]
+        public string? Message { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flagId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FlagId { get; set; }
@@ -61,6 +54,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("changedEnvironments")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<string> ChangedEnvironments { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.ListFlagVersionsResponseVersionData Data { get; set; }
 
         /// <summary>
         /// 
@@ -77,12 +77,12 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListFlagVersionsResponseVersion" /> class.
         /// </summary>
-        /// <param name="data"></param>
         /// <param name="id"></param>
         /// <param name="revision"></param>
         /// <param name="createdAt"></param>
         /// <param name="flagId"></param>
         /// <param name="changedEnvironments"></param>
+        /// <param name="data"></param>
         /// <param name="createdBy"></param>
         /// <param name="message"></param>
         /// <param name="metadata"></param>
@@ -90,24 +90,24 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListFlagVersionsResponseVersion(
-            global::Vercel.ListFlagVersionsResponseVersionData data,
             string id,
             double revision,
             double createdAt,
             string flagId,
             global::System.Collections.Generic.IList<string> changedEnvironments,
+            global::Vercel.ListFlagVersionsResponseVersionData data,
             string? createdBy,
             string? message,
             global::Vercel.ListFlagVersionsResponseVersionMetadata? metadata)
         {
-            this.CreatedBy = createdBy;
-            this.Message = message;
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Revision = revision;
             this.CreatedAt = createdAt;
+            this.CreatedBy = createdBy;
+            this.Message = message;
             this.FlagId = flagId ?? throw new global::System.ArgumentNullException(nameof(flagId));
             this.ChangedEnvironments = changedEnvironments ?? throw new global::System.ArgumentNullException(nameof(changedEnvironments));
+            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Metadata = metadata;
         }
 

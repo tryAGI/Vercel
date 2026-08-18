@@ -31,6 +31,13 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentRequestFileInlinedFile, global::Vercel.CreateDeploymentRequestFileUploadedFile>>? Files { get; set; }
 
         /// <summary>
+        /// Available only to Vercel platform accounts. A read-only GitHub access token scoped to the requested repository. Use a token with a lifetime of 24 hours or less that remains valid until source retrieval completes.<br/>
+        /// Included only in requests
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitAccessToken")]
+        public string? GitAccessToken { get; set; }
+
+        /// <summary>
         /// Populates initial git metadata for different git providers.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitMetadata")]
@@ -118,6 +125,10 @@ namespace Vercel
         /// <param name="files">
         /// The files to include in the deployment. Each entry is either an inlined file (with `data` and `encoding`) or a reference to a previously uploaded file (with `sha` and `size`). Required for non-git deployments. Cannot be used together with `gitSource`.
         /// </param>
+        /// <param name="gitAccessToken">
+        /// Available only to Vercel platform accounts. A read-only GitHub access token scoped to the requested repository. Use a token with a lifetime of 24 hours or less that remains valid until source retrieval completes.<br/>
+        /// Included only in requests
+        /// </param>
         /// <param name="gitMetadata">
         /// Populates initial git metadata for different git providers.
         /// </param>
@@ -153,6 +164,7 @@ namespace Vercel
             string? customEnvironmentSlugOrId,
             string? deploymentId,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentRequestFileInlinedFile, global::Vercel.CreateDeploymentRequestFileUploadedFile>>? files,
+            string? gitAccessToken,
             global::Vercel.CreateDeploymentRequestGitMetadata? gitMetadata,
             global::Vercel.AnyOf<global::Vercel.CreateDeploymentRequestGitSourceVariant1, global::Vercel.CreateDeploymentRequestGitSourceVariant2, global::Vercel.CreateDeploymentRequestGitSourceVariant3, global::Vercel.CreateDeploymentRequestGitSourceVariant4, global::Vercel.CreateDeploymentRequestGitSourceVariant5, global::Vercel.CreateDeploymentRequestGitSourceVariant6, global::Vercel.CreateDeploymentRequestGitSourceVariant7, global::Vercel.CreateDeploymentRequestGitSourceVariant8, global::Vercel.CreateDeploymentRequestGitSourceVariant9>? gitSource,
             global::System.Collections.Generic.Dictionary<string, string>? meta,
@@ -165,6 +177,7 @@ namespace Vercel
             this.CustomEnvironmentSlugOrId = customEnvironmentSlugOrId;
             this.DeploymentId = deploymentId;
             this.Files = files;
+            this.GitAccessToken = gitAccessToken;
             this.GitMetadata = gitMetadata;
             this.GitSource = gitSource;
             this.Meta = meta;
