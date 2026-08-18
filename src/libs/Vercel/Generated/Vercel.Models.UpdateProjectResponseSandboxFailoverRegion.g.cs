@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Cdg1,
+        /// <summary>
+        /// 
+        /// </summary>
         Cle1,
         /// <summary>
         /// 
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                UpdateProjectResponseSandboxFailoverRegion.Cdg1 => "cdg1",
                 UpdateProjectResponseSandboxFailoverRegion.Cle1 => "cle1",
                 UpdateProjectResponseSandboxFailoverRegion.Iad1 => "iad1",
                 UpdateProjectResponseSandboxFailoverRegion.Sfo1 => "sfo1",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "cdg1" => UpdateProjectResponseSandboxFailoverRegion.Cdg1,
                 "cle1" => UpdateProjectResponseSandboxFailoverRegion.Cle1,
                 "iad1" => UpdateProjectResponseSandboxFailoverRegion.Iad1,
                 "sfo1" => UpdateProjectResponseSandboxFailoverRegion.Sfo1,

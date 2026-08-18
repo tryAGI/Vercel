@@ -239,6 +239,15 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public KmsClient Kms => new KmsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        /// 
+        /// </summary>
         public LogDrainsClient LogDrains => new LogDrainsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

@@ -153,6 +153,11 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        public KmsClient Kms { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public LogDrainsClient LogDrains { get; }
 
         /// <summary>

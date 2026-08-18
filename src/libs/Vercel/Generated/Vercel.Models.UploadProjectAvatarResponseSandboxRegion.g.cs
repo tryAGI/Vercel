@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        Cdg1,
+        /// <summary>
+        /// 
+        /// </summary>
         Cle1,
         /// <summary>
         /// 
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                UploadProjectAvatarResponseSandboxRegion.Cdg1 => "cdg1",
                 UploadProjectAvatarResponseSandboxRegion.Cle1 => "cle1",
                 UploadProjectAvatarResponseSandboxRegion.Iad1 => "iad1",
                 UploadProjectAvatarResponseSandboxRegion.Sfo1 => "sfo1",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "cdg1" => UploadProjectAvatarResponseSandboxRegion.Cdg1,
                 "cle1" => UploadProjectAvatarResponseSandboxRegion.Cle1,
                 "iad1" => UploadProjectAvatarResponseSandboxRegion.Iad1,
                 "sfo1" => UploadProjectAvatarResponseSandboxRegion.Sfo1,

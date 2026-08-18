@@ -17,36 +17,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("experiment")]
-        public global::Vercel.FlagExperiment? Experiment { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maintainerIds")]
-        public global::System.Collections.Generic.IList<string>? MaintainerIds { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
-        public bool? Permanent { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
-        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedBy")]
-        public string? UpdatedBy { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("variants")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<object> Variants { get; set; }
@@ -98,6 +68,24 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("maintainerIds")]
+        public global::System.Collections.Generic.IList<string>? MaintainerIds { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
+        public bool? Permanent { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Slug { get; set; }
@@ -115,6 +103,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double UpdatedAt { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedBy")]
+        public string? UpdatedBy { get; set; }
 
         /// <summary>
         /// 
@@ -173,7 +167,6 @@ namespace Vercel
         /// <param name="ownerId"></param>
         /// <param name="projectId"></param>
         /// <param name="description"></param>
-        /// <param name="experiment"></param>
         /// <param name="maintainerIds"></param>
         /// <param name="permanent"></param>
         /// <param name="tags"></param>
@@ -198,7 +191,6 @@ namespace Vercel
             string ownerId,
             string projectId,
             string? description,
-            global::Vercel.FlagExperiment? experiment,
             global::System.Collections.Generic.IList<string>? maintainerIds,
             bool? permanent,
             global::System.Collections.Generic.IList<string>? tags,
@@ -207,11 +199,6 @@ namespace Vercel
             global::Vercel.FlagMetadata? metadata)
         {
             this.Description = description;
-            this.Experiment = experiment;
-            this.MaintainerIds = maintainerIds;
-            this.Permanent = permanent;
-            this.Tags = tags;
-            this.UpdatedBy = updatedBy;
             this.Variants = variants ?? throw new global::System.ArgumentNullException(nameof(variants));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
@@ -219,9 +206,13 @@ namespace Vercel
             this.Revision = revision;
             this.Seed = seed;
             this.State = state;
+            this.MaintainerIds = maintainerIds;
+            this.Permanent = permanent;
+            this.Tags = tags;
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
+            this.UpdatedBy = updatedBy;
             this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));

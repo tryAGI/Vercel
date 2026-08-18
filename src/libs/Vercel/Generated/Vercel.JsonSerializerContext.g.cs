@@ -66,7 +66,8 @@ public sealed class SourceGenerationContext : JsonSerializerContext
             new global::Vercel.SourceGenerationContextChunk029(CreateChildOptions(Options)),
             new global::Vercel.SourceGenerationContextChunk030(CreateChildOptions(Options)),
             new global::Vercel.SourceGenerationContextChunk031(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk032(CreateChildOptions(Options))
+            new global::Vercel.SourceGenerationContextChunk032(CreateChildOptions(Options)),
+            new global::Vercel.SourceGenerationContextChunk033(CreateChildOptions(Options))
         ];
     }
 

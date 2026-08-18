@@ -179,9 +179,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseCategorie))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseCategorieName), TypeInfoPropertyName = "ListEventTypesResponseCategorieName2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Flag))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperiment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentBase))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagExperimentBaseType), TypeInfoPropertyName = "FlagExperimentBaseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagEnvironments2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironments2))]
@@ -511,6 +508,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.VcrRepositoryPermission>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FileTree))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FileTreeType), TypeInfoPropertyName = "FileTreeType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.FileTree>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelBaseError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelForbiddenError))]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
