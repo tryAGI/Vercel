@@ -57549,6 +57549,66 @@
                     "description": {
                       "type": "string"
                     },
+                    "experiment": {
+                      "nullable": true,
+                      "properties": {
+                        "rampId": {
+                          "type": "string"
+                        },
+                        "rampPercentage": {
+                          "type": "number"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "base": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "entity"
+                              ]
+                            },
+                            "kind": {
+                              "type": "string"
+                            },
+                            "attribute": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "attribute",
+                            "kind",
+                            "type"
+                          ],
+                          "type": "object"
+                        },
+                        "weights": {
+                          "additionalProperties": {
+                            "type": "number"
+                          },
+                          "type": "object"
+                        },
+                        "defaultVariantId": {
+                          "type": "string"
+                        },
+                        "exposureLogging": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        }
+                      },
+                      "required": [
+                        "base",
+                        "defaultVariantId",
+                        "exposureLogging",
+                        "id",
+                        "weights"
+                      ],
+                      "type": "object"
+                    },
                     "maintainerIds": {
                       "items": {
                         "type": "string"
@@ -57567,187 +57627,6 @@
                         "type": "string"
                       },
                       "type": "array"
-                    },
-                    "experiment": {
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "numVariants": {
-                          "type": "number"
-                        },
-                        "surfaceArea": {
-                          "type": "string"
-                        },
-                        "stickyRequirement": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "layer": {
-                          "type": "string"
-                        },
-                        "guardrailMetrics": {
-                          "items": {
-                            "properties": {
-                              "description": {
-                                "type": "string"
-                              },
-                              "metricFormula": {
-                                "type": "string"
-                              },
-                              "name": {
-                                "type": "string"
-                              },
-                              "metricType": {
-                                "type": "string",
-                                "enum": [
-                                  "count",
-                                  "currency",
-                                  "percentage"
-                                ]
-                              },
-                              "metricUnit": {
-                                "type": "string",
-                                "enum": [
-                                  "session",
-                                  "user",
-                                  "visitor"
-                                ]
-                              },
-                              "directionality": {
-                                "type": "string",
-                                "enum": [
-                                  "decreaseIsGood",
-                                  "increaseIsGood"
-                                ]
-                              }
-                            },
-                            "required": [
-                              "directionality",
-                              "metricType",
-                              "metricUnit",
-                              "name"
-                            ],
-                            "type": "object"
-                          },
-                          "type": "array"
-                        },
-                        "hypothesis": {
-                          "type": "string"
-                        },
-                        "device": {
-                          "type": "string",
-                          "enum": [
-                            "android",
-                            "desktop",
-                            "ios",
-                            "mweb"
-                          ]
-                        },
-                        "controlVariantId": {
-                          "type": "string"
-                        },
-                        "startedAt": {
-                          "type": "number"
-                        },
-                        "endedAt": {
-                          "type": "number"
-                        },
-                        "decision": {
-                          "type": "string"
-                        },
-                        "decisionReason": {
-                          "type": "string"
-                        },
-                        "duration": {
-                          "type": "number"
-                        },
-                        "durationUnit": {
-                          "type": "string",
-                          "enum": [
-                            "days",
-                            "exposures"
-                          ]
-                        },
-                        "allocationPercent": {
-                          "type": "number"
-                        },
-                        "allocationUnit": {
-                          "type": "string",
-                          "enum": [
-                            "cookieId",
-                            "userId",
-                            "visitorId"
-                          ]
-                        },
-                        "primaryMetrics": {
-                          "items": {
-                            "properties": {
-                              "description": {
-                                "type": "string"
-                              },
-                              "metricFormula": {
-                                "type": "string"
-                              },
-                              "name": {
-                                "type": "string"
-                              },
-                              "metricType": {
-                                "type": "string",
-                                "enum": [
-                                  "count",
-                                  "currency",
-                                  "percentage"
-                                ]
-                              },
-                              "metricUnit": {
-                                "type": "string",
-                                "enum": [
-                                  "session",
-                                  "user",
-                                  "visitor"
-                                ]
-                              },
-                              "directionality": {
-                                "type": "string",
-                                "enum": [
-                                  "decreaseIsGood",
-                                  "increaseIsGood"
-                                ]
-                              }
-                            },
-                            "required": [
-                              "directionality",
-                              "metricType",
-                              "metricUnit",
-                              "name"
-                            ],
-                            "type": "object"
-                          },
-                          "type": "array"
-                        },
-                        "status": {
-                          "type": "string",
-                          "enum": [
-                            "closed",
-                            "draft",
-                            "paused",
-                            "running"
-                          ]
-                        }
-                      },
-                      "required": [
-                        "allocationUnit",
-                        "primaryMetrics",
-                        "status"
-                      ],
-                      "type": "object"
                     },
                     "updatedBy": {
                       "type": "string"
@@ -57969,6 +57848,20 @@
                                   "type"
                                 ],
                                 "type": "object"
+                              },
+                              {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "experiment"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ],
+                                "type": "object"
                               }
                             ]
                           },
@@ -58121,6 +58014,20 @@
                                         "rollToVariantId",
                                         "slots",
                                         "startTimestamp",
+                                        "type"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "experiment"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
                                         "type"
                                       ],
                                       "type": "object"
@@ -59259,6 +59166,66 @@
                         "description": {
                           "type": "string"
                         },
+                        "experiment": {
+                          "nullable": true,
+                          "properties": {
+                            "rampId": {
+                              "type": "string"
+                            },
+                            "rampPercentage": {
+                              "type": "number"
+                            },
+                            "id": {
+                              "type": "string"
+                            },
+                            "base": {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "entity"
+                                  ]
+                                },
+                                "kind": {
+                                  "type": "string"
+                                },
+                                "attribute": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "attribute",
+                                "kind",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            "weights": {
+                              "additionalProperties": {
+                                "type": "number"
+                              },
+                              "type": "object"
+                            },
+                            "defaultVariantId": {
+                              "type": "string"
+                            },
+                            "exposureLogging": {
+                              "type": "boolean",
+                              "enum": [
+                                false,
+                                true
+                              ]
+                            }
+                          },
+                          "required": [
+                            "base",
+                            "defaultVariantId",
+                            "exposureLogging",
+                            "id",
+                            "weights"
+                          ],
+                          "type": "object"
+                        },
                         "maintainerIds": {
                           "items": {
                             "type": "string"
@@ -59277,187 +59244,6 @@
                             "type": "string"
                           },
                           "type": "array"
-                        },
-                        "experiment": {
-                          "properties": {
-                            "id": {
-                              "type": "string"
-                            },
-                            "name": {
-                              "type": "string"
-                            },
-                            "numVariants": {
-                              "type": "number"
-                            },
-                            "surfaceArea": {
-                              "type": "string"
-                            },
-                            "stickyRequirement": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            },
-                            "layer": {
-                              "type": "string"
-                            },
-                            "guardrailMetrics": {
-                              "items": {
-                                "properties": {
-                                  "description": {
-                                    "type": "string"
-                                  },
-                                  "metricFormula": {
-                                    "type": "string"
-                                  },
-                                  "name": {
-                                    "type": "string"
-                                  },
-                                  "metricType": {
-                                    "type": "string",
-                                    "enum": [
-                                      "count",
-                                      "currency",
-                                      "percentage"
-                                    ]
-                                  },
-                                  "metricUnit": {
-                                    "type": "string",
-                                    "enum": [
-                                      "session",
-                                      "user",
-                                      "visitor"
-                                    ]
-                                  },
-                                  "directionality": {
-                                    "type": "string",
-                                    "enum": [
-                                      "decreaseIsGood",
-                                      "increaseIsGood"
-                                    ]
-                                  }
-                                },
-                                "required": [
-                                  "directionality",
-                                  "metricType",
-                                  "metricUnit",
-                                  "name"
-                                ],
-                                "type": "object"
-                              },
-                              "type": "array"
-                            },
-                            "hypothesis": {
-                              "type": "string"
-                            },
-                            "device": {
-                              "type": "string",
-                              "enum": [
-                                "android",
-                                "desktop",
-                                "ios",
-                                "mweb"
-                              ]
-                            },
-                            "controlVariantId": {
-                              "type": "string"
-                            },
-                            "startedAt": {
-                              "type": "number"
-                            },
-                            "endedAt": {
-                              "type": "number"
-                            },
-                            "decision": {
-                              "type": "string"
-                            },
-                            "decisionReason": {
-                              "type": "string"
-                            },
-                            "duration": {
-                              "type": "number"
-                            },
-                            "durationUnit": {
-                              "type": "string",
-                              "enum": [
-                                "days",
-                                "exposures"
-                              ]
-                            },
-                            "allocationPercent": {
-                              "type": "number"
-                            },
-                            "allocationUnit": {
-                              "type": "string",
-                              "enum": [
-                                "cookieId",
-                                "userId",
-                                "visitorId"
-                              ]
-                            },
-                            "primaryMetrics": {
-                              "items": {
-                                "properties": {
-                                  "description": {
-                                    "type": "string"
-                                  },
-                                  "metricFormula": {
-                                    "type": "string"
-                                  },
-                                  "name": {
-                                    "type": "string"
-                                  },
-                                  "metricType": {
-                                    "type": "string",
-                                    "enum": [
-                                      "count",
-                                      "currency",
-                                      "percentage"
-                                    ]
-                                  },
-                                  "metricUnit": {
-                                    "type": "string",
-                                    "enum": [
-                                      "session",
-                                      "user",
-                                      "visitor"
-                                    ]
-                                  },
-                                  "directionality": {
-                                    "type": "string",
-                                    "enum": [
-                                      "decreaseIsGood",
-                                      "increaseIsGood"
-                                    ]
-                                  }
-                                },
-                                "required": [
-                                  "directionality",
-                                  "metricType",
-                                  "metricUnit",
-                                  "name"
-                                ],
-                                "type": "object"
-                              },
-                              "type": "array"
-                            },
-                            "status": {
-                              "type": "string",
-                              "enum": [
-                                "closed",
-                                "draft",
-                                "paused",
-                                "running"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "allocationUnit",
-                            "primaryMetrics",
-                            "status"
-                          ],
-                          "type": "object"
                         },
                         "updatedBy": {
                           "type": "string"
@@ -59679,6 +59465,20 @@
                                       "type"
                                     ],
                                     "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "experiment"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "type"
+                                    ],
+                                    "type": "object"
                                   }
                                 ]
                               },
@@ -59831,6 +59631,20 @@
                                             "rollToVariantId",
                                             "slots",
                                             "startTimestamp",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "experiment"
+                                              ]
+                                            }
+                                          },
+                                          "required": [
                                             "type"
                                           ],
                                           "type": "object"
@@ -61001,6 +60815,66 @@
                               "description": {
                                 "type": "string"
                               },
+                              "experiment": {
+                                "nullable": true,
+                                "properties": {
+                                  "rampId": {
+                                    "type": "string"
+                                  },
+                                  "rampPercentage": {
+                                    "type": "number"
+                                  },
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "base": {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "entity"
+                                        ]
+                                      },
+                                      "kind": {
+                                        "type": "string"
+                                      },
+                                      "attribute": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "attribute",
+                                      "kind",
+                                      "type"
+                                    ],
+                                    "type": "object"
+                                  },
+                                  "weights": {
+                                    "additionalProperties": {
+                                      "type": "number"
+                                    },
+                                    "type": "object"
+                                  },
+                                  "defaultVariantId": {
+                                    "type": "string"
+                                  },
+                                  "exposureLogging": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "base",
+                                  "defaultVariantId",
+                                  "exposureLogging",
+                                  "id",
+                                  "weights"
+                                ],
+                                "type": "object"
+                              },
                               "maintainerIds": {
                                 "items": {
                                   "type": "string"
@@ -61019,187 +60893,6 @@
                                   "type": "string"
                                 },
                                 "type": "array"
-                              },
-                              "experiment": {
-                                "properties": {
-                                  "id": {
-                                    "type": "string"
-                                  },
-                                  "name": {
-                                    "type": "string"
-                                  },
-                                  "numVariants": {
-                                    "type": "number"
-                                  },
-                                  "surfaceArea": {
-                                    "type": "string"
-                                  },
-                                  "stickyRequirement": {
-                                    "type": "boolean",
-                                    "enum": [
-                                      false,
-                                      true
-                                    ]
-                                  },
-                                  "layer": {
-                                    "type": "string"
-                                  },
-                                  "guardrailMetrics": {
-                                    "items": {
-                                      "properties": {
-                                        "description": {
-                                          "type": "string"
-                                        },
-                                        "metricFormula": {
-                                          "type": "string"
-                                        },
-                                        "name": {
-                                          "type": "string"
-                                        },
-                                        "metricType": {
-                                          "type": "string",
-                                          "enum": [
-                                            "count",
-                                            "currency",
-                                            "percentage"
-                                          ]
-                                        },
-                                        "metricUnit": {
-                                          "type": "string",
-                                          "enum": [
-                                            "session",
-                                            "user",
-                                            "visitor"
-                                          ]
-                                        },
-                                        "directionality": {
-                                          "type": "string",
-                                          "enum": [
-                                            "decreaseIsGood",
-                                            "increaseIsGood"
-                                          ]
-                                        }
-                                      },
-                                      "required": [
-                                        "directionality",
-                                        "metricType",
-                                        "metricUnit",
-                                        "name"
-                                      ],
-                                      "type": "object"
-                                    },
-                                    "type": "array"
-                                  },
-                                  "hypothesis": {
-                                    "type": "string"
-                                  },
-                                  "device": {
-                                    "type": "string",
-                                    "enum": [
-                                      "android",
-                                      "desktop",
-                                      "ios",
-                                      "mweb"
-                                    ]
-                                  },
-                                  "controlVariantId": {
-                                    "type": "string"
-                                  },
-                                  "startedAt": {
-                                    "type": "number"
-                                  },
-                                  "endedAt": {
-                                    "type": "number"
-                                  },
-                                  "decision": {
-                                    "type": "string"
-                                  },
-                                  "decisionReason": {
-                                    "type": "string"
-                                  },
-                                  "duration": {
-                                    "type": "number"
-                                  },
-                                  "durationUnit": {
-                                    "type": "string",
-                                    "enum": [
-                                      "days",
-                                      "exposures"
-                                    ]
-                                  },
-                                  "allocationPercent": {
-                                    "type": "number"
-                                  },
-                                  "allocationUnit": {
-                                    "type": "string",
-                                    "enum": [
-                                      "cookieId",
-                                      "userId",
-                                      "visitorId"
-                                    ]
-                                  },
-                                  "primaryMetrics": {
-                                    "items": {
-                                      "properties": {
-                                        "description": {
-                                          "type": "string"
-                                        },
-                                        "metricFormula": {
-                                          "type": "string"
-                                        },
-                                        "name": {
-                                          "type": "string"
-                                        },
-                                        "metricType": {
-                                          "type": "string",
-                                          "enum": [
-                                            "count",
-                                            "currency",
-                                            "percentage"
-                                          ]
-                                        },
-                                        "metricUnit": {
-                                          "type": "string",
-                                          "enum": [
-                                            "session",
-                                            "user",
-                                            "visitor"
-                                          ]
-                                        },
-                                        "directionality": {
-                                          "type": "string",
-                                          "enum": [
-                                            "decreaseIsGood",
-                                            "increaseIsGood"
-                                          ]
-                                        }
-                                      },
-                                      "required": [
-                                        "directionality",
-                                        "metricType",
-                                        "metricUnit",
-                                        "name"
-                                      ],
-                                      "type": "object"
-                                    },
-                                    "type": "array"
-                                  },
-                                  "status": {
-                                    "type": "string",
-                                    "enum": [
-                                      "closed",
-                                      "draft",
-                                      "paused",
-                                      "running"
-                                    ]
-                                  }
-                                },
-                                "required": [
-                                  "allocationUnit",
-                                  "primaryMetrics",
-                                  "status"
-                                ],
-                                "type": "object"
                               },
                               "variants": {
                                 "items": {
@@ -61415,6 +61108,20 @@
                                             "type"
                                           ],
                                           "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "experiment"
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "type"
+                                          ],
+                                          "type": "object"
                                         }
                                       ]
                                     },
@@ -61567,6 +61274,20 @@
                                                   "rollToVariantId",
                                                   "slots",
                                                   "startTimestamp",
+                                                  "type"
+                                                ],
+                                                "type": "object"
+                                              },
+                                              {
+                                                "properties": {
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "experiment"
+                                                    ]
+                                                  }
+                                                },
+                                                "required": [
                                                   "type"
                                                 ],
                                                 "type": "object"
@@ -200910,6 +200631,9 @@
               "env-variable-read:unknown-source",
               "env-variable-read:v0:env:pull",
               "env-variable-rotated",
+              "experiment-created",
+              "experiment-transitioned",
+              "experiment-updated",
               "firewall-bypass-created",
               "firewall-bypass-deleted",
               "firewall-config-modified",
@@ -201863,6 +201587,9 @@
               "env-variable-read:unknown-source",
               "env-variable-read:v0:env:pull",
               "env-variable-rotated",
+              "experiment-created",
+              "experiment-transitioned",
+              "experiment-updated",
               "firewall-bypass-created",
               "firewall-bypass-deleted",
               "firewall-config-modified",
@@ -202557,6 +202284,9 @@
                 "env-variable-read:unknown-source",
                 "env-variable-read:v0:env:pull",
                 "env-variable-rotated",
+                "experiment-created",
+                "experiment-transitioned",
+                "experiment-updated",
                 "firewall-bypass-created",
                 "firewall-bypass-deleted",
                 "firewall-config-modified",
@@ -203052,6 +202782,66 @@
           "description": {
             "type": "string"
           },
+          "experiment": {
+            "nullable": true,
+            "properties": {
+              "rampId": {
+                "type": "string"
+              },
+              "rampPercentage": {
+                "type": "number"
+              },
+              "id": {
+                "type": "string"
+              },
+              "base": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "entity"
+                    ]
+                  },
+                  "kind": {
+                    "type": "string"
+                  },
+                  "attribute": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "attribute",
+                  "kind",
+                  "type"
+                ],
+                "type": "object"
+              },
+              "weights": {
+                "additionalProperties": {
+                  "type": "number"
+                },
+                "type": "object"
+              },
+              "defaultVariantId": {
+                "type": "string"
+              },
+              "exposureLogging": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              }
+            },
+            "required": [
+              "base",
+              "defaultVariantId",
+              "exposureLogging",
+              "id",
+              "weights"
+            ],
+            "type": "object"
+          },
           "maintainerIds": {
             "items": {
               "type": "string"
@@ -203070,187 +202860,6 @@
               "type": "string"
             },
             "type": "array"
-          },
-          "experiment": {
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "numVariants": {
-                "type": "number"
-              },
-              "surfaceArea": {
-                "type": "string"
-              },
-              "stickyRequirement": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "layer": {
-                "type": "string"
-              },
-              "guardrailMetrics": {
-                "items": {
-                  "properties": {
-                    "description": {
-                      "type": "string"
-                    },
-                    "metricFormula": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "metricType": {
-                      "type": "string",
-                      "enum": [
-                        "count",
-                        "currency",
-                        "percentage"
-                      ]
-                    },
-                    "metricUnit": {
-                      "type": "string",
-                      "enum": [
-                        "session",
-                        "user",
-                        "visitor"
-                      ]
-                    },
-                    "directionality": {
-                      "type": "string",
-                      "enum": [
-                        "decreaseIsGood",
-                        "increaseIsGood"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "directionality",
-                    "metricType",
-                    "metricUnit",
-                    "name"
-                  ],
-                  "type": "object"
-                },
-                "type": "array"
-              },
-              "hypothesis": {
-                "type": "string"
-              },
-              "device": {
-                "type": "string",
-                "enum": [
-                  "android",
-                  "desktop",
-                  "ios",
-                  "mweb"
-                ]
-              },
-              "controlVariantId": {
-                "type": "string"
-              },
-              "startedAt": {
-                "type": "number"
-              },
-              "endedAt": {
-                "type": "number"
-              },
-              "decision": {
-                "type": "string"
-              },
-              "decisionReason": {
-                "type": "string"
-              },
-              "duration": {
-                "type": "number"
-              },
-              "durationUnit": {
-                "type": "string",
-                "enum": [
-                  "days",
-                  "exposures"
-                ]
-              },
-              "allocationPercent": {
-                "type": "number"
-              },
-              "allocationUnit": {
-                "type": "string",
-                "enum": [
-                  "cookieId",
-                  "userId",
-                  "visitorId"
-                ]
-              },
-              "primaryMetrics": {
-                "items": {
-                  "properties": {
-                    "description": {
-                      "type": "string"
-                    },
-                    "metricFormula": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "metricType": {
-                      "type": "string",
-                      "enum": [
-                        "count",
-                        "currency",
-                        "percentage"
-                      ]
-                    },
-                    "metricUnit": {
-                      "type": "string",
-                      "enum": [
-                        "session",
-                        "user",
-                        "visitor"
-                      ]
-                    },
-                    "directionality": {
-                      "type": "string",
-                      "enum": [
-                        "decreaseIsGood",
-                        "increaseIsGood"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "directionality",
-                    "metricType",
-                    "metricUnit",
-                    "name"
-                  ],
-                  "type": "object"
-                },
-                "type": "array"
-              },
-              "status": {
-                "type": "string",
-                "enum": [
-                  "closed",
-                  "draft",
-                  "paused",
-                  "running"
-                ]
-              }
-            },
-            "required": [
-              "allocationUnit",
-              "primaryMetrics",
-              "status"
-            ],
-            "type": "object"
           },
           "updatedBy": {
             "type": "string"
@@ -203472,6 +203081,20 @@
                         "type"
                       ],
                       "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "experiment"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "type"
+                      ],
+                      "type": "object"
                     }
                   ]
                 },
@@ -203624,6 +203247,20 @@
                               "rollToVariantId",
                               "slots",
                               "startTimestamp",
+                              "type"
+                            ],
+                            "type": "object"
+                          },
+                          {
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "experiment"
+                                ]
+                              }
+                            },
+                            "required": [
                               "type"
                             ],
                             "type": "object"

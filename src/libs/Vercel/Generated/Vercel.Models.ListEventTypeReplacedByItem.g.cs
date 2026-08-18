@@ -887,6 +887,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ExperimentCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        ExperimentTransitioned,
+        /// <summary>
+        /// 
+        /// </summary>
+        ExperimentUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         FirewallBypassCreated,
         /// <summary>
         /// 
@@ -2781,6 +2793,9 @@ namespace Vercel
                 ListEventTypeReplacedByItem.EnvVariableRead_unknownSource => "env-variable-read:unknown-source",
                 ListEventTypeReplacedByItem.EnvVariableRead_v0_env_pull => "env-variable-read:v0:env:pull",
                 ListEventTypeReplacedByItem.EnvVariableRotated => "env-variable-rotated",
+                ListEventTypeReplacedByItem.ExperimentCreated => "experiment-created",
+                ListEventTypeReplacedByItem.ExperimentTransitioned => "experiment-transitioned",
+                ListEventTypeReplacedByItem.ExperimentUpdated => "experiment-updated",
                 ListEventTypeReplacedByItem.FirewallBypassCreated => "firewall-bypass-created",
                 ListEventTypeReplacedByItem.FirewallBypassDeleted => "firewall-bypass-deleted",
                 ListEventTypeReplacedByItem.FirewallConfigModified => "firewall-config-modified",
@@ -3426,6 +3441,9 @@ namespace Vercel
                 "env-variable-read:unknown-source" => ListEventTypeReplacedByItem.EnvVariableRead_unknownSource,
                 "env-variable-read:v0:env:pull" => ListEventTypeReplacedByItem.EnvVariableRead_v0_env_pull,
                 "env-variable-rotated" => ListEventTypeReplacedByItem.EnvVariableRotated,
+                "experiment-created" => ListEventTypeReplacedByItem.ExperimentCreated,
+                "experiment-transitioned" => ListEventTypeReplacedByItem.ExperimentTransitioned,
+                "experiment-updated" => ListEventTypeReplacedByItem.ExperimentUpdated,
                 "firewall-bypass-created" => ListEventTypeReplacedByItem.FirewallBypassCreated,
                 "firewall-bypass-deleted" => ListEventTypeReplacedByItem.FirewallBypassDeleted,
                 "firewall-config-modified" => ListEventTypeReplacedByItem.FirewallConfigModified,

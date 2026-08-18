@@ -888,6 +888,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ExperimentCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        ExperimentTransitioned,
+        /// <summary>
+        /// 
+        /// </summary>
+        ExperimentUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         FirewallBypassCreated,
         /// <summary>
         /// 
@@ -2782,6 +2794,9 @@ namespace Vercel
                 ListEventTypeName.EnvVariableRead_unknownSource => "env-variable-read:unknown-source",
                 ListEventTypeName.EnvVariableRead_v0_env_pull => "env-variable-read:v0:env:pull",
                 ListEventTypeName.EnvVariableRotated => "env-variable-rotated",
+                ListEventTypeName.ExperimentCreated => "experiment-created",
+                ListEventTypeName.ExperimentTransitioned => "experiment-transitioned",
+                ListEventTypeName.ExperimentUpdated => "experiment-updated",
                 ListEventTypeName.FirewallBypassCreated => "firewall-bypass-created",
                 ListEventTypeName.FirewallBypassDeleted => "firewall-bypass-deleted",
                 ListEventTypeName.FirewallConfigModified => "firewall-config-modified",
@@ -3427,6 +3442,9 @@ namespace Vercel
                 "env-variable-read:unknown-source" => ListEventTypeName.EnvVariableRead_unknownSource,
                 "env-variable-read:v0:env:pull" => ListEventTypeName.EnvVariableRead_v0_env_pull,
                 "env-variable-rotated" => ListEventTypeName.EnvVariableRotated,
+                "experiment-created" => ListEventTypeName.ExperimentCreated,
+                "experiment-transitioned" => ListEventTypeName.ExperimentTransitioned,
+                "experiment-updated" => ListEventTypeName.ExperimentUpdated,
                 "firewall-bypass-created" => ListEventTypeName.FirewallBypassCreated,
                 "firewall-bypass-deleted" => ListEventTypeName.FirewallBypassDeleted,
                 "firewall-config-modified" => ListEventTypeName.FirewallConfigModified,

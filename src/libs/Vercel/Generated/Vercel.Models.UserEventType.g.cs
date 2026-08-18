@@ -888,6 +888,18 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        ExperimentCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        ExperimentTransitioned,
+        /// <summary>
+        /// 
+        /// </summary>
+        ExperimentUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         FirewallBypassCreated,
         /// <summary>
         /// 
@@ -2782,6 +2794,9 @@ namespace Vercel
                 UserEventType.EnvVariableRead_unknownSource => "env-variable-read:unknown-source",
                 UserEventType.EnvVariableRead_v0_env_pull => "env-variable-read:v0:env:pull",
                 UserEventType.EnvVariableRotated => "env-variable-rotated",
+                UserEventType.ExperimentCreated => "experiment-created",
+                UserEventType.ExperimentTransitioned => "experiment-transitioned",
+                UserEventType.ExperimentUpdated => "experiment-updated",
                 UserEventType.FirewallBypassCreated => "firewall-bypass-created",
                 UserEventType.FirewallBypassDeleted => "firewall-bypass-deleted",
                 UserEventType.FirewallConfigModified => "firewall-config-modified",
@@ -3427,6 +3442,9 @@ namespace Vercel
                 "env-variable-read:unknown-source" => UserEventType.EnvVariableRead_unknownSource,
                 "env-variable-read:v0:env:pull" => UserEventType.EnvVariableRead_v0_env_pull,
                 "env-variable-rotated" => UserEventType.EnvVariableRotated,
+                "experiment-created" => UserEventType.ExperimentCreated,
+                "experiment-transitioned" => UserEventType.ExperimentTransitioned,
+                "experiment-updated" => UserEventType.ExperimentUpdated,
                 "firewall-bypass-created" => UserEventType.FirewallBypassCreated,
                 "firewall-bypass-deleted" => UserEventType.FirewallBypassDeleted,
                 "firewall-config-modified" => UserEventType.FirewallConfigModified,

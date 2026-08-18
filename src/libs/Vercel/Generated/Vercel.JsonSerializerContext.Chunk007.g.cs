@@ -11,14 +11,6 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant4Type), TypeInfoPropertyName = "CancelDeploymentResponseGitSourceVariant4Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant5))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant5Type), TypeInfoPropertyName = "CancelDeploymentResponseGitSourceVariant5Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant6))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant6Type), TypeInfoPropertyName = "CancelDeploymentResponseGitSourceVariant6Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant7))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant7Type), TypeInfoPropertyName = "CancelDeploymentResponseGitSourceVariant7Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant8))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant8Type), TypeInfoPropertyName = "CancelDeploymentResponseGitSourceVariant8Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant9))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant9Type), TypeInfoPropertyName = "CancelDeploymentResponseGitSourceVariant9Type2")]
@@ -511,6 +503,14 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainConfigResponseConfiguredBy), TypeInfoPropertyName = "GetDomainConfigResponseConfiguredBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDomainConfigResponseAcceptedChallenge>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainConfigResponseAcceptedChallenge), TypeInfoPropertyName = "GetDomainConfigResponseAcceptedChallenge2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDomainConfigResponseRecommendedIPv4Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainConfigResponseRecommendedIPv4Item))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDomainConfigResponseRecommendedCNAMEItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainConfigResponseRecommendedCNAMEItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainVerificationRecordResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ClaimDomainOwnershipResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ClaimDomainOwnershipResponseDomain))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ClaimDomainOwnershipResponseDomainCreator))]
     internal sealed partial class SourceGenerationContextChunk007 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
