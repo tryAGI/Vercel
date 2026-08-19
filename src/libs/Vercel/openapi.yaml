@@ -83307,6 +83307,12 @@
                                 },
                                 "type": "array"
                               },
+                              "productionShareableLink": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "project": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -83553,6 +83559,12 @@
                                 },
                                 "type": "array"
                               },
+                              "shareableLink": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "shareableLinkStrict": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -83590,6 +83602,12 @@
                                 "type": "array"
                               },
                               "v0Chat": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
+                              "vercelAuth": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
                                 },
@@ -106441,6 +106459,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "productionShareableLink": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "project": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -106687,6 +106711,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "shareableLink": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "shareableLinkStrict": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -106724,6 +106754,12 @@
                                     "type": "array"
                                   },
                                   "v0Chat": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "vercelAuth": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
                                     },
@@ -114259,6 +114295,12 @@
                           },
                           "type": "array"
                         },
+                        "productionShareableLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "project": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -114505,6 +114547,12 @@
                           },
                           "type": "array"
                         },
+                        "shareableLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "shareableLinkStrict": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -114542,6 +114590,12 @@
                           "type": "array"
                         },
                         "v0Chat": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "vercelAuth": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -122237,6 +122291,12 @@
                           },
                           "type": "array"
                         },
+                        "productionShareableLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "project": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -122483,6 +122543,12 @@
                           },
                           "type": "array"
                         },
+                        "shareableLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "shareableLinkStrict": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -122520,6 +122586,12 @@
                           "type": "array"
                         },
                         "v0Chat": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "vercelAuth": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -129573,6 +129645,12 @@
                           },
                           "type": "array"
                         },
+                        "productionShareableLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "project": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -129819,6 +129897,12 @@
                           },
                           "type": "array"
                         },
+                        "shareableLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "shareableLinkStrict": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -129856,6 +129940,12 @@
                           "type": "array"
                         },
                         "v0Chat": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "vercelAuth": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -138173,6 +138263,12 @@
                           },
                           "type": "array"
                         },
+                        "productionShareableLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "project": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -138419,6 +138515,12 @@
                           },
                           "type": "array"
                         },
+                        "shareableLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "shareableLinkStrict": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -138456,6 +138558,12 @@
                           "type": "array"
                         },
                         "v0Chat": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "vercelAuth": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -154794,6 +154902,12 @@
                           },
                           "type": "array"
                         },
+                        "productionShareableLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "project": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -155040,6 +155154,12 @@
                           },
                           "type": "array"
                         },
+                        "shareableLink": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "shareableLinkStrict": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -155077,6 +155197,12 @@
                           "type": "array"
                         },
                         "v0Chat": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "vercelAuth": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
