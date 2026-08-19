@@ -35,6 +35,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? DeniedCIDRs { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("s3Key")]
+        public string? S3Key { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -47,6 +53,7 @@ namespace Vercel
         /// <param name="allowedDomains"></param>
         /// <param name="allowedCIDRs"></param>
         /// <param name="deniedCIDRs"></param>
+        /// <param name="s3Key"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -54,12 +61,14 @@ namespace Vercel
             global::Vercel.NamedSandboxNetworkPolicyMode mode,
             global::System.Collections.Generic.IList<string>? allowedDomains,
             global::System.Collections.Generic.IList<string>? allowedCIDRs,
-            global::System.Collections.Generic.IList<string>? deniedCIDRs)
+            global::System.Collections.Generic.IList<string>? deniedCIDRs,
+            string? s3Key)
         {
             this.Mode = mode;
             this.AllowedDomains = allowedDomains;
             this.AllowedCIDRs = allowedCIDRs;
             this.DeniedCIDRs = deniedCIDRs;
+            this.S3Key = s3Key;
         }
 
         /// <summary>

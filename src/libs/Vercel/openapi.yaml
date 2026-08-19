@@ -207309,6 +207309,9 @@
                   "type": "string"
                 },
                 "type": "array"
+              },
+              "s3Key": {
+                "type": "string"
               }
             },
             "required": [
