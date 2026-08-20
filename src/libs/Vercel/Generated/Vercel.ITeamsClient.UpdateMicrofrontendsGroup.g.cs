@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Update a microfrontends group<br/>
-        /// Updates the name (and slug) of a microfrontends group.
+        /// Updates a microfrontends group's settings.
         /// </summary>
         /// <param name="groupId"></param>
         /// <param name="teamId">
@@ -29,7 +29,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a microfrontends group<br/>
-        /// Updates the name (and slug) of a microfrontends group.
+        /// Updates a microfrontends group's settings.
         /// </summary>
         /// <param name="groupId"></param>
         /// <param name="teamId">
@@ -52,7 +52,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a microfrontends group<br/>
-        /// Updates the name (and slug) of a microfrontends group.
+        /// Updates a microfrontends group's settings.
         /// </summary>
         /// <param name="groupId"></param>
         /// <param name="teamId">
@@ -68,6 +68,9 @@ namespace Vercel
         /// <param name="fallbackEnvironment">
         /// The new fallback environment for the microfrontends group. Must be "SAME_ENV", "PRODUCTION", or a valid custom environment slug from the default app.
         /// </param>
+        /// <param name="enablePolyrepoBranchRouting">
+        /// Whether Preview Deployments can link to branches with the same name in other Git repositories.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -77,6 +80,7 @@ namespace Vercel
             string? slug = default,
             string? name = default,
             string? fallbackEnvironment = default,
+            bool? enablePolyrepoBranchRouting = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

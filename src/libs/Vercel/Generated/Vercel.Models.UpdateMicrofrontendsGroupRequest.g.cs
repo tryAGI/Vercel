@@ -23,6 +23,12 @@ namespace Vercel
         public string? FallbackEnvironment { get; set; }
 
         /// <summary>
+        /// Whether Preview Deployments can link to branches with the same name in other Git repositories.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enablePolyrepoBranchRouting")]
+        public bool? EnablePolyrepoBranchRouting { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -38,15 +44,20 @@ namespace Vercel
         /// <param name="fallbackEnvironment">
         /// The new fallback environment for the microfrontends group. Must be "SAME_ENV", "PRODUCTION", or a valid custom environment slug from the default app.
         /// </param>
+        /// <param name="enablePolyrepoBranchRouting">
+        /// Whether Preview Deployments can link to branches with the same name in other Git repositories.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateMicrofrontendsGroupRequest(
             string? name,
-            string? fallbackEnvironment)
+            string? fallbackEnvironment,
+            bool? enablePolyrepoBranchRouting)
         {
             this.Name = name;
             this.FallbackEnvironment = fallbackEnvironment;
+            this.EnablePolyrepoBranchRouting = enablePolyrepoBranchRouting;
         }
 
         /// <summary>

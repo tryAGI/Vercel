@@ -34,6 +34,12 @@ namespace Vercel
         public string? FallbackEnvironment { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enablePolyrepoBranchRouting")]
+        public bool? EnablePolyrepoBranchRouting { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -46,6 +52,7 @@ namespace Vercel
         /// <param name="name"></param>
         /// <param name="slug"></param>
         /// <param name="fallbackEnvironment"></param>
+        /// <param name="enablePolyrepoBranchRouting"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -53,12 +60,14 @@ namespace Vercel
             string id,
             string? name,
             string? slug,
-            string? fallbackEnvironment)
+            string? fallbackEnvironment,
+            bool? enablePolyrepoBranchRouting)
         {
             this.Name = name;
             this.Slug = slug;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.FallbackEnvironment = fallbackEnvironment;
+            this.EnablePolyrepoBranchRouting = enablePolyrepoBranchRouting;
         }
 
         /// <summary>

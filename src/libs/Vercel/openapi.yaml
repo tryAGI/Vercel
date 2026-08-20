@@ -16726,6 +16726,10 @@
                                     true
                                   ]
                                 },
+                                "dataReceivedAt": {
+                                  "type": "number",
+                                  "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                                },
                                 "paidAt": {
                                   "type": "number"
                                 }
@@ -24736,6 +24740,10 @@
                                     true
                                   ]
                                 },
+                                "dataReceivedAt": {
+                                  "type": "number",
+                                  "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                                },
                                 "paidAt": {
                                   "type": "number"
                                 }
@@ -31890,6 +31898,10 @@
                                 false,
                                 true
                               ]
+                            },
+                            "dataReceivedAt": {
+                              "type": "number",
+                              "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
                             },
                             "paidAt": {
                               "type": "number"
@@ -57790,20 +57802,6 @@
                                   "type"
                                 ],
                                 "type": "object"
-                              },
-                              {
-                                "properties": {
-                                  "type": {
-                                    "type": "string",
-                                    "enum": [
-                                      "experiment"
-                                    ]
-                                  }
-                                },
-                                "required": [
-                                  "type"
-                                ],
-                                "type": "object"
                               }
                             ]
                           },
@@ -57956,20 +57954,6 @@
                                         "rollToVariantId",
                                         "slots",
                                         "startTimestamp",
-                                        "type"
-                                      ],
-                                      "type": "object"
-                                    },
-                                    {
-                                      "properties": {
-                                        "type": {
-                                          "type": "string",
-                                          "enum": [
-                                            "experiment"
-                                          ]
-                                        }
-                                      },
-                                      "required": [
                                         "type"
                                       ],
                                       "type": "object"
@@ -59347,20 +59331,6 @@
                                       "type"
                                     ],
                                     "type": "object"
-                                  },
-                                  {
-                                    "properties": {
-                                      "type": {
-                                        "type": "string",
-                                        "enum": [
-                                          "experiment"
-                                        ]
-                                      }
-                                    },
-                                    "required": [
-                                      "type"
-                                    ],
-                                    "type": "object"
                                   }
                                 ]
                               },
@@ -59513,20 +59483,6 @@
                                             "rollToVariantId",
                                             "slots",
                                             "startTimestamp",
-                                            "type"
-                                          ],
-                                          "type": "object"
-                                        },
-                                        {
-                                          "properties": {
-                                            "type": {
-                                              "type": "string",
-                                              "enum": [
-                                                "experiment"
-                                              ]
-                                            }
-                                          },
-                                          "required": [
                                             "type"
                                           ],
                                           "type": "object"
@@ -60951,20 +60907,6 @@
                                             "type"
                                           ],
                                           "type": "object"
-                                        },
-                                        {
-                                          "properties": {
-                                            "type": {
-                                              "type": "string",
-                                              "enum": [
-                                                "experiment"
-                                              ]
-                                            }
-                                          },
-                                          "required": [
-                                            "type"
-                                          ],
-                                          "type": "object"
                                         }
                                       ]
                                     },
@@ -61117,20 +61059,6 @@
                                                   "rollToVariantId",
                                                   "slots",
                                                   "startTimestamp",
-                                                  "type"
-                                                ],
-                                                "type": "object"
-                                              },
-                                              {
-                                                "properties": {
-                                                  "type": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "experiment"
-                                                    ]
-                                                  }
-                                                },
-                                                "required": [
                                                   "type"
                                                 ],
                                                 "type": "object"
@@ -78987,6 +78915,10 @@
                                   true
                                 ]
                               },
+                              "dataReceivedAt": {
+                                "type": "number",
+                                "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                              },
                               "paidAt": {
                                 "type": "number"
                               }
@@ -82034,6 +81966,12 @@
                                 "type": "array"
                               },
                               "aiGatewayApiKey": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
+                              "aiGatewayApiKeyBypassAll": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
                                 },
@@ -86222,6 +86160,13 @@
                         "fallbackEnvironment": {
                           "type": "string"
                         },
+                        "enablePolyrepoBranchRouting": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        },
                         "createdAt": {
                           "type": "number"
                         },
@@ -86231,6 +86176,7 @@
                       },
                       "required": [
                         "createdAt",
+                        "enablePolyrepoBranchRouting",
                         "fallbackEnvironment",
                         "id",
                         "name",
@@ -94902,6 +94848,10 @@
                                   true
                                 ]
                               },
+                              "dataReceivedAt": {
+                                "type": "number",
+                                "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                              },
                               "paidAt": {
                                 "type": "number"
                               }
@@ -99293,6 +99243,10 @@
                                       true
                                     ]
                                   },
+                                  "dataReceivedAt": {
+                                    "type": "number",
+                                    "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                                  },
                                   "paidAt": {
                                     "type": "number"
                                   }
@@ -102138,6 +102092,10 @@
                                       false,
                                       true
                                     ]
+                                  },
+                                  "dataReceivedAt": {
+                                    "type": "number",
+                                    "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
                                   },
                                   "paidAt": {
                                     "type": "number"
@@ -105186,6 +105144,12 @@
                                     "type": "array"
                                   },
                                   "aiGatewayApiKey": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "aiGatewayApiKeyBypassAll": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
                                     },
@@ -109975,6 +109939,10 @@
                             true
                           ]
                         },
+                        "dataReceivedAt": {
+                          "type": "number",
+                          "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                        },
                         "paidAt": {
                           "type": "number"
                         }
@@ -113022,6 +112990,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyBypassAll": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -117973,6 +117947,10 @@
                             true
                           ]
                         },
+                        "dataReceivedAt": {
+                          "type": "number",
+                          "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                        },
                         "paidAt": {
                           "type": "number"
                         }
@@ -121018,6 +120996,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyBypassAll": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -125334,6 +125318,10 @@
                             true
                           ]
                         },
+                        "dataReceivedAt": {
+                          "type": "number",
+                          "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                        },
                         "paidAt": {
                           "type": "number"
                         }
@@ -128372,6 +128360,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyBypassAll": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -133943,6 +133937,10 @@
                             true
                           ]
                         },
+                        "dataReceivedAt": {
+                          "type": "number",
+                          "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                        },
                         "paidAt": {
                           "type": "number"
                         }
@@ -136990,6 +136988,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyBypassAll": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -150582,6 +150586,10 @@
                             true
                           ]
                         },
+                        "dataReceivedAt": {
+                          "type": "number",
+                          "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                        },
                         "paidAt": {
                           "type": "number"
                         }
@@ -153629,6 +153637,12 @@
                           "type": "array"
                         },
                         "aiGatewayApiKey": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "aiGatewayApiKeyBypassAll": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -187161,7 +187175,7 @@
     },
     "/v1/teams/{teamId}/microfrontends/{groupId}": {
       "patch": {
-        "description": "Updates the name (and slug) of a microfrontends group.",
+        "description": "Updates a microfrontends group's settings.",
         "operationId": "updateMicrofrontendsGroup",
         "security": [
           {
@@ -187192,6 +187206,13 @@
                         },
                         "fallbackEnvironment": {
                           "type": "string"
+                        },
+                        "enablePolyrepoBranchRouting": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
                         }
                       },
                       "required": [
@@ -187267,6 +187288,10 @@
                   "fallbackEnvironment": {
                     "type": "string",
                     "description": "The new fallback environment for the microfrontends group. Must be \"SAME_ENV\", \"PRODUCTION\", or a valid custom environment slug from the default app."
+                  },
+                  "enablePolyrepoBranchRouting": {
+                    "type": "boolean",
+                    "description": "Whether Preview Deployments can link to branches with the same name in other Git repositories."
                   }
                 }
               }
@@ -200867,6 +200892,10 @@
                                       true
                                     ]
                                   },
+                                  "dataReceivedAt": {
+                                    "type": "number",
+                                    "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+                                  },
                                   "paidAt": {
                                     "type": "number"
                                   }
@@ -203626,6 +203655,17 @@
               "flags-transferred",
               "git-integration-repo-push",
               "git_account_integration_link_added",
+              "global-config-backup-restored",
+              "global-config-created",
+              "global-config-deleted",
+              "global-config-items-updated",
+              "global-config-schema-deleted",
+              "global-config-schema-updated",
+              "global-config-token-created",
+              "global-config-token-deleted",
+              "global-config-transfer-in",
+              "global-config-transfer-out",
+              "global-config-updated",
               "instant-rollback-created",
               "integration-configuration-credential-rotated",
               "integration-configuration-owner-changed",
@@ -203830,6 +203870,7 @@
               "project-source-files-outside-root-directory-updated",
               "project-speed-insights-disabled",
               "project-speed-insights-enabled",
+              "project-speed-insights-free-data-started",
               "project-sso-protection",
               "project-static-ips-updated",
               "project-trusted-ips",
@@ -204582,6 +204623,17 @@
               "flags-transferred",
               "git-integration-repo-push",
               "git_account_integration_link_added",
+              "global-config-backup-restored",
+              "global-config-created",
+              "global-config-deleted",
+              "global-config-items-updated",
+              "global-config-schema-deleted",
+              "global-config-schema-updated",
+              "global-config-token-created",
+              "global-config-token-deleted",
+              "global-config-transfer-in",
+              "global-config-transfer-out",
+              "global-config-updated",
               "instant-rollback-created",
               "integration-configuration-credential-rotated",
               "integration-configuration-owner-changed",
@@ -204786,6 +204838,7 @@
               "project-source-files-outside-root-directory-updated",
               "project-speed-insights-disabled",
               "project-speed-insights-enabled",
+              "project-speed-insights-free-data-started",
               "project-sso-protection",
               "project-static-ips-updated",
               "project-trusted-ips",
@@ -205279,6 +205332,17 @@
                 "flags-transferred",
                 "git-integration-repo-push",
                 "git_account_integration_link_added",
+                "global-config-backup-restored",
+                "global-config-created",
+                "global-config-deleted",
+                "global-config-items-updated",
+                "global-config-schema-deleted",
+                "global-config-schema-updated",
+                "global-config-token-created",
+                "global-config-token-deleted",
+                "global-config-transfer-in",
+                "global-config-transfer-out",
+                "global-config-updated",
                 "instant-rollback-created",
                 "integration-configuration-credential-rotated",
                 "integration-configuration-owner-changed",
@@ -205483,6 +205547,7 @@
                 "project-source-files-outside-root-directory-updated",
                 "project-speed-insights-disabled",
                 "project-speed-insights-enabled",
+                "project-speed-insights-free-data-started",
                 "project-sso-protection",
                 "project-static-ips-updated",
                 "project-trusted-ips",
@@ -205968,20 +206033,6 @@
                         "type"
                       ],
                       "type": "object"
-                    },
-                    {
-                      "properties": {
-                        "type": {
-                          "type": "string",
-                          "enum": [
-                            "experiment"
-                          ]
-                        }
-                      },
-                      "required": [
-                        "type"
-                      ],
-                      "type": "object"
                     }
                   ]
                 },
@@ -206134,20 +206185,6 @@
                               "rollToVariantId",
                               "slots",
                               "startTimestamp",
-                              "type"
-                            ],
-                            "type": "object"
-                          },
-                          {
-                            "properties": {
-                              "type": {
-                                "type": "string",
-                                "enum": [
-                                  "experiment"
-                                ]
-                              }
-                            },
-                            "required": [
                               "type"
                             ],
                             "type": "object"

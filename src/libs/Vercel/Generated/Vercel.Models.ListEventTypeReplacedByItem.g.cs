@@ -991,6 +991,50 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        GlobalConfigBackupRestored,
+        /// <summary>
+        /// 
+        /// </summary>
+        GlobalConfigCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        GlobalConfigDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        GlobalConfigItemsUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        GlobalConfigSchemaDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        GlobalConfigSchemaUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
+        GlobalConfigTokenCreated,
+        /// <summary>
+        /// 
+        /// </summary>
+        GlobalConfigTokenDeleted,
+        /// <summary>
+        /// 
+        /// </summary>
+        GlobalConfigTransferIn,
+        /// <summary>
+        /// 
+        /// </summary>
+        GlobalConfigTransferOut,
+        /// <summary>
+        /// 
+        /// </summary>
+        GlobalConfigUpdated,
+        /// <summary>
+        /// 
+        /// </summary>
         InstantRollbackCreated,
         /// <summary>
         /// 
@@ -1804,6 +1848,10 @@ namespace Vercel
         /// 
         /// </summary>
         ProjectSpeedInsightsEnabled,
+        /// <summary>
+        /// 
+        /// </summary>
+        ProjectSpeedInsightsFreeDataStarted,
         /// <summary>
         /// 
         /// </summary>
@@ -2819,6 +2867,17 @@ namespace Vercel
                 ListEventTypeReplacedByItem.FlagsTransferred => "flags-transferred",
                 ListEventTypeReplacedByItem.GitIntegrationRepoPush => "git-integration-repo-push",
                 ListEventTypeReplacedByItem.GitAccountIntegrationLinkAdded => "git_account_integration_link_added",
+                ListEventTypeReplacedByItem.GlobalConfigBackupRestored => "global-config-backup-restored",
+                ListEventTypeReplacedByItem.GlobalConfigCreated => "global-config-created",
+                ListEventTypeReplacedByItem.GlobalConfigDeleted => "global-config-deleted",
+                ListEventTypeReplacedByItem.GlobalConfigItemsUpdated => "global-config-items-updated",
+                ListEventTypeReplacedByItem.GlobalConfigSchemaDeleted => "global-config-schema-deleted",
+                ListEventTypeReplacedByItem.GlobalConfigSchemaUpdated => "global-config-schema-updated",
+                ListEventTypeReplacedByItem.GlobalConfigTokenCreated => "global-config-token-created",
+                ListEventTypeReplacedByItem.GlobalConfigTokenDeleted => "global-config-token-deleted",
+                ListEventTypeReplacedByItem.GlobalConfigTransferIn => "global-config-transfer-in",
+                ListEventTypeReplacedByItem.GlobalConfigTransferOut => "global-config-transfer-out",
+                ListEventTypeReplacedByItem.GlobalConfigUpdated => "global-config-updated",
                 ListEventTypeReplacedByItem.InstantRollbackCreated => "instant-rollback-created",
                 ListEventTypeReplacedByItem.IntegrationConfigurationCredentialRotated => "integration-configuration-credential-rotated",
                 ListEventTypeReplacedByItem.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
@@ -3023,6 +3082,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectSourceFilesOutsideRootDirectoryUpdated => "project-source-files-outside-root-directory-updated",
                 ListEventTypeReplacedByItem.ProjectSpeedInsightsDisabled => "project-speed-insights-disabled",
                 ListEventTypeReplacedByItem.ProjectSpeedInsightsEnabled => "project-speed-insights-enabled",
+                ListEventTypeReplacedByItem.ProjectSpeedInsightsFreeDataStarted => "project-speed-insights-free-data-started",
                 ListEventTypeReplacedByItem.ProjectSsoProtection => "project-sso-protection",
                 ListEventTypeReplacedByItem.ProjectStaticIpsUpdated => "project-static-ips-updated",
                 ListEventTypeReplacedByItem.ProjectTrustedIps => "project-trusted-ips",
@@ -3467,6 +3527,17 @@ namespace Vercel
                 "flags-transferred" => ListEventTypeReplacedByItem.FlagsTransferred,
                 "git-integration-repo-push" => ListEventTypeReplacedByItem.GitIntegrationRepoPush,
                 "git_account_integration_link_added" => ListEventTypeReplacedByItem.GitAccountIntegrationLinkAdded,
+                "global-config-backup-restored" => ListEventTypeReplacedByItem.GlobalConfigBackupRestored,
+                "global-config-created" => ListEventTypeReplacedByItem.GlobalConfigCreated,
+                "global-config-deleted" => ListEventTypeReplacedByItem.GlobalConfigDeleted,
+                "global-config-items-updated" => ListEventTypeReplacedByItem.GlobalConfigItemsUpdated,
+                "global-config-schema-deleted" => ListEventTypeReplacedByItem.GlobalConfigSchemaDeleted,
+                "global-config-schema-updated" => ListEventTypeReplacedByItem.GlobalConfigSchemaUpdated,
+                "global-config-token-created" => ListEventTypeReplacedByItem.GlobalConfigTokenCreated,
+                "global-config-token-deleted" => ListEventTypeReplacedByItem.GlobalConfigTokenDeleted,
+                "global-config-transfer-in" => ListEventTypeReplacedByItem.GlobalConfigTransferIn,
+                "global-config-transfer-out" => ListEventTypeReplacedByItem.GlobalConfigTransferOut,
+                "global-config-updated" => ListEventTypeReplacedByItem.GlobalConfigUpdated,
                 "instant-rollback-created" => ListEventTypeReplacedByItem.InstantRollbackCreated,
                 "integration-configuration-credential-rotated" => ListEventTypeReplacedByItem.IntegrationConfigurationCredentialRotated,
                 "integration-configuration-owner-changed" => ListEventTypeReplacedByItem.IntegrationConfigurationOwnerChanged,
@@ -3671,6 +3742,7 @@ namespace Vercel
                 "project-source-files-outside-root-directory-updated" => ListEventTypeReplacedByItem.ProjectSourceFilesOutsideRootDirectoryUpdated,
                 "project-speed-insights-disabled" => ListEventTypeReplacedByItem.ProjectSpeedInsightsDisabled,
                 "project-speed-insights-enabled" => ListEventTypeReplacedByItem.ProjectSpeedInsightsEnabled,
+                "project-speed-insights-free-data-started" => ListEventTypeReplacedByItem.ProjectSpeedInsightsFreeDataStarted,
                 "project-sso-protection" => ListEventTypeReplacedByItem.ProjectSsoProtection,
                 "project-static-ips-updated" => ListEventTypeReplacedByItem.ProjectStaticIpsUpdated,
                 "project-trusted-ips" => ListEventTypeReplacedByItem.ProjectTrustedIps,
