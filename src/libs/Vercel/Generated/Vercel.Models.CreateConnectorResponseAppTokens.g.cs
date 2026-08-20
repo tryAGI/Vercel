@@ -29,7 +29,7 @@ namespace Vercel
         public bool? RequiresReinstallation { get; set; }
 
         /// <summary>
-        /// Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document.
+        /// Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is the connector's enabled `clientCredentials.scopes` configuration.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
         public global::System.Collections.Generic.IList<string>? Scopes { get; set; }
@@ -61,7 +61,7 @@ namespace Vercel
         /// True when changing app token grants requires reinstalling the app, so tokens cannot be partitioned independently by requester environment.
         /// </param>
         /// <param name="scopes">
-        /// Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document.
+        /// Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is the connector's enabled `clientCredentials.scopes` configuration.
         /// </param>
         /// <param name="supportedAuthorizationDetails"></param>
         /// <param name="permissionsUrl">

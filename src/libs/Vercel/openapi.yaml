@@ -12372,7 +12372,7 @@
                             "type": "string"
                           },
                           "type": "array",
-                          "description": "Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document."
+                          "description": "Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is the connector's enabled `clientCredentials.scopes` configuration."
                         },
                         "supportedAuthorizationDetails": {
                           "items": {
@@ -12412,7 +12412,7 @@
                             "type": "string"
                           },
                           "type": "array",
-                          "description": "Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document."
+                          "description": "Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is the connector's enabled `userAuthorization.scopes` configuration."
                         },
                         "supportedAuthorizationDetails": {
                           "items": {
@@ -18472,6 +18472,21 @@
                                       ],
                                       "type": "object",
                                       "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                    },
+                                    {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "schedule/v1beta"
+                                          ],
+                                          "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                        }
+                                      },
+                                      "required": [
+                                        "type"
+                                      ],
+                                      "type": "object"
                                     }
                                   ]
                                 },
@@ -19445,6 +19460,21 @@
                                                         ],
                                                         "type": "object",
                                                         "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                                      },
+                                                      {
+                                                        "properties": {
+                                                          "type": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "schedule/v1beta"
+                                                            ],
+                                                            "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "type"
+                                                        ],
+                                                        "type": "object"
                                                       }
                                                     ]
                                                   },
@@ -19941,6 +19971,21 @@
                                                         ],
                                                         "type": "object",
                                                         "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                                      },
+                                                      {
+                                                        "properties": {
+                                                          "type": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "schedule/v1beta"
+                                                            ],
+                                                            "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "type"
+                                                        ],
+                                                        "type": "object"
                                                       }
                                                     ]
                                                   },
@@ -20273,6 +20318,21 @@
                                                 ],
                                                 "type": "object",
                                                 "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                              },
+                                              {
+                                                "properties": {
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "schedule/v1beta"
+                                                    ],
+                                                    "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "type"
+                                                ],
+                                                "type": "object"
                                               }
                                             ]
                                           },
@@ -26486,6 +26546,21 @@
                                       ],
                                       "type": "object",
                                       "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                    },
+                                    {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "schedule/v1beta"
+                                          ],
+                                          "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                        }
+                                      },
+                                      "required": [
+                                        "type"
+                                      ],
+                                      "type": "object"
                                     }
                                   ]
                                 },
@@ -27459,6 +27534,21 @@
                                                         ],
                                                         "type": "object",
                                                         "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                                      },
+                                                      {
+                                                        "properties": {
+                                                          "type": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "schedule/v1beta"
+                                                            ],
+                                                            "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "type"
+                                                        ],
+                                                        "type": "object"
                                                       }
                                                     ]
                                                   },
@@ -27955,6 +28045,21 @@
                                                         ],
                                                         "type": "object",
                                                         "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                                      },
+                                                      {
+                                                        "properties": {
+                                                          "type": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "schedule/v1beta"
+                                                            ],
+                                                            "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "type"
+                                                        ],
+                                                        "type": "object"
                                                       }
                                                     ]
                                                   },
@@ -28287,6 +28392,21 @@
                                                 ],
                                                 "type": "object",
                                                 "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                              },
+                                              {
+                                                "properties": {
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "schedule/v1beta"
+                                                    ],
+                                                    "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "type"
+                                                ],
+                                                "type": "object"
                                               }
                                             ]
                                           },
@@ -33645,6 +33765,21 @@
                                   ],
                                   "type": "object",
                                   "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                },
+                                {
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "schedule/v1beta"
+                                      ],
+                                      "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                    }
+                                  },
+                                  "required": [
+                                    "type"
+                                  ],
+                                  "type": "object"
                                 }
                               ]
                             },
@@ -34618,6 +34753,21 @@
                                                     ],
                                                     "type": "object",
                                                     "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                                  },
+                                                  {
+                                                    "properties": {
+                                                      "type": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "schedule/v1beta"
+                                                        ],
+                                                        "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "type"
+                                                    ],
+                                                    "type": "object"
                                                   }
                                                 ]
                                               },
@@ -35114,6 +35264,21 @@
                                                     ],
                                                     "type": "object",
                                                     "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                                  },
+                                                  {
+                                                    "properties": {
+                                                      "type": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "schedule/v1beta"
+                                                        ],
+                                                        "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "type"
+                                                    ],
+                                                    "type": "object"
                                                   }
                                                 ]
                                               },
@@ -35446,6 +35611,21 @@
                                             ],
                                             "type": "object",
                                             "description": "Queue trigger input event for v2beta (from vercel.json config). Consumer name is implicitly derived from the function path. Only one trigger per function is allowed."
+                                          },
+                                          {
+                                            "properties": {
+                                              "type": {
+                                                "type": "string",
+                                                "enum": [
+                                                  "schedule/v1beta"
+                                                ],
+                                                "description": "Event type - must be \"schedule/v1beta\" (REQUIRED)"
+                                              }
+                                            },
+                                            "required": [
+                                              "type"
+                                            ],
+                                            "type": "object"
                                           }
                                         ]
                                       },
@@ -132521,34 +132701,9 @@
                   },
                   "passport": {
                     "description": "Passport configuration for the project.",
+                    "type": "object",
+                    "additionalProperties": false,
                     "properties": {
-                      "publicPathRules": {
-                        "type": "array",
-                        "maxItems": 100,
-                        "uniqueItems": true,
-                        "items": {
-                          "type": "object",
-                          "additionalProperties": false,
-                          "required": [
-                            "type",
-                            "value"
-                          ],
-                          "properties": {
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "equals",
-                                "startsWith"
-                              ]
-                            },
-                            "value": {
-                              "type": "string",
-                              "maxLength": 2048,
-                              "pattern": "^/[^?#\\\\s]*$"
-                            }
-                          }
-                        }
-                      },
                       "connectorId": {
                         "type": "string"
                       },
@@ -132563,8 +132718,6 @@
                         ]
                       }
                     },
-                    "type": "object",
-                    "additionalProperties": false,
                     "required": [
                       "connectorId"
                     ],

@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class UpdateProjectRequestPassportPublicPathRuleTypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.UpdateProjectRequestPassportPublicPathRuleType?>
+    public sealed class CreateDeploymentResponseVariant2FunctionsExperimentalTriggerVariant3TypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.CreateDeploymentResponseVariant2FunctionsExperimentalTriggerVariant3Type?>
     {
         /// <inheritdoc />
-        public override global::Vercel.UpdateProjectRequestPassportPublicPathRuleType? Read(
+        public override global::Vercel.CreateDeploymentResponseVariant2FunctionsExperimentalTriggerVariant3Type? Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.UpdateProjectRequestPassportPublicPathRuleTypeExtensions.ToEnum(stringValue);
+                        return global::Vercel.CreateDeploymentResponseVariant2FunctionsExperimentalTriggerVariant3TypeExtensions.ToEnum(stringValue);
                     }
                     
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.UpdateProjectRequestPassportPublicPathRuleType)numValue;
+                    return (global::Vercel.CreateDeploymentResponseVariant2FunctionsExperimentalTriggerVariant3Type)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.UpdateProjectRequestPassportPublicPathRuleType?);
+                    return default(global::Vercel.CreateDeploymentResponseVariant2FunctionsExperimentalTriggerVariant3Type?);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,7 +42,7 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.UpdateProjectRequestPassportPublicPathRuleType? value,
+            global::Vercel.CreateDeploymentResponseVariant2FunctionsExperimentalTriggerVariant3Type? value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
@@ -53,7 +53,7 @@ namespace Vercel.JsonConverters
             }
             else
             {
-                writer.WriteStringValue(global::Vercel.UpdateProjectRequestPassportPublicPathRuleTypeExtensions.ToValueString(value.Value));
+                writer.WriteStringValue(global::Vercel.CreateDeploymentResponseVariant2FunctionsExperimentalTriggerVariant3TypeExtensions.ToValueString(value.Value));
             }
         }
     }

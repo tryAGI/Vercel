@@ -11,12 +11,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("publicPathRules")]
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestPassportPublicPathRule>? PublicPathRules { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectorId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ConnectorId { get; set; }
@@ -38,7 +32,6 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateProjectRequestPassport" /> class.
         /// </summary>
         /// <param name="connectorId"></param>
-        /// <param name="publicPathRules"></param>
         /// <param name="deploymentType">
         /// Default Value: all
         /// </param>
@@ -47,10 +40,8 @@ namespace Vercel
 #endif
         public UpdateProjectRequestPassport(
             string connectorId,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestPassportPublicPathRule>? publicPathRules,
             global::Vercel.UpdateProjectRequestPassportDeploymentType? deploymentType)
         {
-            this.PublicPathRules = publicPathRules;
             this.ConnectorId = connectorId ?? throw new global::System.ArgumentNullException(nameof(connectorId));
             this.DeploymentType = deploymentType;
         }
