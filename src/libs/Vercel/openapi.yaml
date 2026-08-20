@@ -203630,6 +203630,7 @@
               "env-variable-read:v0:env:pull",
               "env-variable-rotated",
               "experiment-created",
+              "experiment-deleted",
               "experiment-transitioned",
               "experiment-updated",
               "firewall-bypass-created",
@@ -204598,6 +204599,7 @@
               "env-variable-read:v0:env:pull",
               "env-variable-rotated",
               "experiment-created",
+              "experiment-deleted",
               "experiment-transitioned",
               "experiment-updated",
               "firewall-bypass-created",
@@ -205307,6 +205309,7 @@
                 "env-variable-read:v0:env:pull",
                 "env-variable-rotated",
                 "experiment-created",
+                "experiment-deleted",
                 "experiment-transitioned",
                 "experiment-updated",
                 "firewall-bypass-created",
@@ -210560,17 +210563,6 @@
       },
       "VcrImageListItem": {
         "properties": {
-          "status": {
-            "nullable": true,
-            "type": "string",
-            "enum": [
-              "preparing",
-              "ready",
-              "unoptimized",
-              null
-            ],
-            "description": "VHS-readiness status, or `null` for a multi-platform index."
-          },
           "tags": {
             "items": {
               "type": "string"
@@ -210620,42 +210612,16 @@
             "type": "number",
             "description": "Total size in bytes of the image's resources (manifest, config and layer blobs) stored by the registry."
           },
-          "vhs": {
-            "properties": {
-              "path": {
-                "type": "string"
-              },
-              "digest": {
-                "type": "string"
-              },
-              "config": {
-                "properties": {
-                  "command": {
-                    "items": {
-                      "type": "string"
-                    },
-                    "type": "array"
-                  },
-                  "entrypoint": {
-                    "items": {
-                      "type": "string"
-                    },
-                    "type": "array"
-                  },
-                  "workingDir": {
-                    "type": "string"
-                  }
-                },
-                "type": "object",
-                "description": "Optional VHS drive configuration captured for an optimized image."
-              }
-            },
-            "required": [
-              "digest",
-              "path"
+          "status": {
+            "nullable": true,
+            "type": "string",
+            "enum": [
+              "preparing",
+              "ready",
+              "unoptimized",
+              null
             ],
-            "type": "object",
-            "description": "Converted VHS drive data, present once an image has been optimized for sandbox launch."
+            "description": "VHS-readiness status, or `null` for a multi-platform index."
           },
           "createdAt": {
             "type": "string",
@@ -211079,17 +211045,6 @@
             },
             "type": "array"
           },
-          "status": {
-            "nullable": true,
-            "type": "string",
-            "enum": [
-              "preparing",
-              "ready",
-              "unoptimized",
-              null
-            ],
-            "description": "VHS-readiness status, or `null` for a multi-platform index."
-          },
           "tags": {
             "items": {
               "type": "string"
@@ -211139,42 +211094,16 @@
             "type": "number",
             "description": "Total size in bytes of the image's resources (manifest, config and layer blobs) stored by the registry."
           },
-          "vhs": {
-            "properties": {
-              "path": {
-                "type": "string"
-              },
-              "digest": {
-                "type": "string"
-              },
-              "config": {
-                "properties": {
-                  "command": {
-                    "items": {
-                      "type": "string"
-                    },
-                    "type": "array"
-                  },
-                  "entrypoint": {
-                    "items": {
-                      "type": "string"
-                    },
-                    "type": "array"
-                  },
-                  "workingDir": {
-                    "type": "string"
-                  }
-                },
-                "type": "object",
-                "description": "Optional VHS drive configuration captured for an optimized image."
-              }
-            },
-            "required": [
-              "digest",
-              "path"
+          "status": {
+            "nullable": true,
+            "type": "string",
+            "enum": [
+              "preparing",
+              "ready",
+              "unoptimized",
+              null
             ],
-            "type": "object",
-            "description": "Converted VHS drive data, present once an image has been optimized for sandbox launch."
+            "description": "VHS-readiness status, or `null` for a multi-platform index."
           },
           "createdAt": {
             "type": "string",

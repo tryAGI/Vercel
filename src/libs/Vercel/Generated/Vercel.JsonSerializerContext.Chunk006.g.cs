@@ -11,10 +11,6 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3OomReport), TypeInfoPropertyName = "GetDeploymentResponseVariant3OomReport2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3Target), TypeInfoPropertyName = "GetDeploymentResponseVariant3Target2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3ReadyState), TypeInfoPropertyName = "GetDeploymentResponseVariant3ReadyState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3AliasError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3AliasWarning))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3Type), TypeInfoPropertyName = "GetDeploymentResponseVariant3Type2")]
@@ -511,6 +507,10 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant1Type), TypeInfoPropertyName = "CancelDeploymentResponseGitSourceVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant2Type), TypeInfoPropertyName = "CancelDeploymentResponseGitSourceVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant3Type), TypeInfoPropertyName = "CancelDeploymentResponseGitSourceVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseGitSourceVariant4Type), TypeInfoPropertyName = "CancelDeploymentResponseGitSourceVariant4Type2")]
     internal sealed partial class SourceGenerationContextChunk006 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

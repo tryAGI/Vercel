@@ -11,10 +11,6 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1Type?), TypeInfoPropertyName = "NullableUpdateFlagRequestEnvironmentsRuleConditionRhsVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1ItemVariant1, global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1ItemVariant2>?), TypeInfoPropertyName = "UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1ItemVariant2_3f1ee38da2d5b20c")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFlagRequestEnvironmentsRuleOutcomeVariant1, global::Vercel.UpdateFlagRequestEnvironmentsRuleOutcomeVariant2, global::Vercel.UpdateFlagRequestEnvironmentsRuleOutcomeVariant3>?), TypeInfoPropertyName = "UpdateFlagRequestEnvironmentsRuleOutcomeVariant3_97dc5cb611741ca5")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFlagRequestEnvironmentsFallthroughVariant1, global::Vercel.UpdateFlagRequestEnvironmentsFallthroughVariant2, global::Vercel.UpdateFlagRequestEnvironmentsFallthroughVariant3>?), TypeInfoPropertyName = "UpdateFlagRequestEnvironmentsFallthroughVariant3_3fc65bea4f3564d9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagRequestState?), TypeInfoPropertyName = "NullableUpdateFlagRequestState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagSegmentRequestDataRuleConditionLhsVariant1, global::Vercel.CreateFlagSegmentRequestDataRuleConditionLhsVariant2>?), TypeInfoPropertyName = "NullableAnyOfCreateFlagSegmentRequestDataRuleConditionLhsVariant1CreateFlagSegmentRequestDataRuleConditionLhsVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleConditionCmp?), TypeInfoPropertyName = "NullableCreateFlagSegmentRequestDataRuleConditionCmp2")]
@@ -511,6 +507,10 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentCheckRunResponseVariant1, global::Vercel.GetDeploymentCheckRunResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfGetDeploymentCheckRunResponseVariant1GetDeploymentCheckRunResponseVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1Requires?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant1Requires2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1Blocks?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant1Blocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1Status?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant1Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1Conclusion?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant1Conclusion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant1, global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant2, global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant3, global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant4>?), TypeInfoPropertyName = "GetDeploymentCheckRunResponseVariant1SourceVariant4_7399bd8695867728")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant1Kind?), TypeInfoPropertyName = "NullableGetDeploymentCheckRunResponseVariant1SourceVariant1Kind2")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
