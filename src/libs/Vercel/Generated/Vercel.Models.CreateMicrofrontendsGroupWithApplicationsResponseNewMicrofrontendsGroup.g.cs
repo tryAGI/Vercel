@@ -39,6 +39,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enablePolyrepoBranchRouting")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool EnablePolyrepoBranchRouting { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
@@ -63,6 +70,7 @@ namespace Vercel
         /// <param name="slug"></param>
         /// <param name="name"></param>
         /// <param name="fallbackEnvironment"></param>
+        /// <param name="enablePolyrepoBranchRouting"></param>
         /// <param name="createdAt"></param>
         /// <param name="updatedAt"></param>
 #if NET7_0_OR_GREATER
@@ -73,6 +81,7 @@ namespace Vercel
             string slug,
             string name,
             string fallbackEnvironment,
+            bool enablePolyrepoBranchRouting,
             double createdAt,
             double updatedAt)
         {
@@ -80,6 +89,7 @@ namespace Vercel
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.FallbackEnvironment = fallbackEnvironment ?? throw new global::System.ArgumentNullException(nameof(fallbackEnvironment));
+            this.EnablePolyrepoBranchRouting = enablePolyrepoBranchRouting;
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
         }

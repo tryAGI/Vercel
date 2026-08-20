@@ -40,6 +40,12 @@ namespace Vercel
         public bool? HasData { get; set; }
 
         /// <summary>
+        /// When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads "first free data point observed", not necessarily "first ever".
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dataReceivedAt")]
+        public double? DataReceivedAt { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("paidAt")]
@@ -59,6 +65,9 @@ namespace Vercel
         /// <param name="disabledAt"></param>
         /// <param name="canceledAt"></param>
         /// <param name="hasData"></param>
+        /// <param name="dataReceivedAt">
+        /// When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads "first free data point observed", not necessarily "first ever".
+        /// </param>
         /// <param name="paidAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -69,6 +78,7 @@ namespace Vercel
             double? disabledAt,
             double? canceledAt,
             bool? hasData,
+            double? dataReceivedAt,
             double? paidAt)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
@@ -76,6 +86,7 @@ namespace Vercel
             this.DisabledAt = disabledAt;
             this.CanceledAt = canceledAt;
             this.HasData = hasData;
+            this.DataReceivedAt = dataReceivedAt;
             this.PaidAt = paidAt;
         }
 

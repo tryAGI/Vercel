@@ -71,6 +71,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKeyBypassAll")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKeyBypassAll { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKeyOwnedBySelf")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKeyOwnedBySelf { get; set; }
 
@@ -1683,6 +1689,7 @@ namespace Vercel
         /// <param name="accessGroup"></param>
         /// <param name="agent"></param>
         /// <param name="aiGatewayApiKey"></param>
+        /// <param name="aiGatewayApiKeyBypassAll"></param>
         /// <param name="aiGatewayApiKeyOwnedBySelf"></param>
         /// <param name="aiGatewayApiKeySpendAttribution"></param>
         /// <param name="aiGatewayApiKeyZdrExemption"></param>
@@ -1963,6 +1970,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? accessGroup,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? agent,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKey,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKeyBypassAll,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKeyOwnedBySelf,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKeySpendAttribution,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayApiKeyZdrExemption,
@@ -2240,6 +2248,7 @@ namespace Vercel
             this.AccessGroup = accessGroup;
             this.Agent = agent;
             this.AiGatewayApiKey = aiGatewayApiKey;
+            this.AiGatewayApiKeyBypassAll = aiGatewayApiKeyBypassAll;
             this.AiGatewayApiKeyOwnedBySelf = aiGatewayApiKeyOwnedBySelf;
             this.AiGatewayApiKeySpendAttribution = aiGatewayApiKeySpendAttribution;
             this.AiGatewayApiKeyZdrExemption = aiGatewayApiKeyZdrExemption;
