@@ -11,10 +11,6 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchRepoProvider), TypeInfoPropertyName = "SearchRepoProvider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetBillingPlansSource), TypeInfoPropertyName = "GetBillingPlansSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationsView), TypeInfoPropertyName = "GetConfigurationsView2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationsInstallationType), TypeInfoPropertyName = "GetConfigurationsInstallationType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateKmsIssuerPolicyKind), TypeInfoPropertyName = "UpdateKmsIssuerPolicyKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteKmsIssuerPolicyKind), TypeInfoPropertyName = "DeleteKmsIssuerPolicyKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRoutesFilter), TypeInfoPropertyName = "GetRoutesFilter2")]
@@ -511,6 +507,10 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorResponseManaged))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorResponseType), TypeInfoPropertyName = "CreateConnectorResponseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorResponseAppTokens))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorResponseUserTokens))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorResponseSupportsIcon), TypeInfoPropertyName = "CreateConnectorResponseSupportsIcon2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorResponseTriggers))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateConnectorResponseTriggerDestination>))]
     internal sealed partial class SourceGenerationContextChunk004 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -16,13 +16,6 @@ namespace Vercel
         public required global::System.Collections.Generic.IList<global::Vercel.VcrImageLayer> Layers { get; set; }
 
         /// <summary>
-        /// VHS-readiness status, or `null` for a multi-platform index.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.VcrImageDetailStatusJsonConverter))]
-        public global::Vercel.VcrImageDetailStatus? Status { get; set; }
-
-        /// <summary>
         /// Tags pointing at this image's manifest.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
@@ -94,10 +87,11 @@ namespace Vercel
         public required double SizeInBytes { get; set; }
 
         /// <summary>
-        /// Converted VHS drive data, present once an image has been optimized for sandbox launch.
+        /// VHS-readiness status, or `null` for a multi-platform index.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vhs")]
-        public global::Vercel.VcrImageDetailVhs? Vhs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.VcrImageDetailStatusJsonConverter))]
+        public global::Vercel.VcrImageDetailStatus? Status { get; set; }
 
         /// <summary>
         /// ISO 8601 timestamp of when the image was created.<br/>
@@ -143,9 +137,6 @@ namespace Vercel
         /// ISO 8601 timestamp of when the image was created.<br/>
         /// Example: 2026-06-30T10:00:00.000Z
         /// </param>
-        /// <param name="status">
-        /// VHS-readiness status, or `null` for a multi-platform index.
-        /// </param>
         /// <param name="platform">
         /// Operating system the manifest targets. Only present for single-platform manifests.<br/>
         /// Example: linux
@@ -157,8 +148,8 @@ namespace Vercel
         /// <param name="pushedBy">
         /// Identifier of the actor that pushed the image.
         /// </param>
-        /// <param name="vhs">
-        /// Converted VHS drive data, present once an image has been optimized for sandbox launch.
+        /// <param name="status">
+        /// VHS-readiness status, or `null` for a multi-platform index.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -172,14 +163,12 @@ namespace Vercel
             global::Vercel.VcrImageDetailKind kind,
             double sizeInBytes,
             string createdAt,
-            global::Vercel.VcrImageDetailStatus? status,
             string? platform,
             string? arch,
             string? pushedBy,
-            global::Vercel.VcrImageDetailVhs? vhs)
+            global::Vercel.VcrImageDetailStatus? status)
         {
             this.Layers = layers ?? throw new global::System.ArgumentNullException(nameof(layers));
-            this.Status = status;
             this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.RepositoryId = repositoryId ?? throw new global::System.ArgumentNullException(nameof(repositoryId));
@@ -189,7 +178,7 @@ namespace Vercel
             this.Arch = arch;
             this.PushedBy = pushedBy;
             this.SizeInBytes = sizeInBytes;
-            this.Vhs = vhs;
+            this.Status = status;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
         }
 
