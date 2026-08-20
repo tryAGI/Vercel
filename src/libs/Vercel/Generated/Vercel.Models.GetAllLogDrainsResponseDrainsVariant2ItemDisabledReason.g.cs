@@ -24,6 +24,10 @@ namespace Vercel
         /// 
         /// </summary>
         FeatureNotAvailable,
+        /// <summary>
+        /// 
+        /// </summary>
+        LimitsExceeded,
     }
 
     /// <summary>
@@ -42,6 +46,7 @@ namespace Vercel
                 GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason.DisabledByAdmin => "disabled-by-admin",
                 GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason.DisabledByOwner => "disabled-by-owner",
                 GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason.FeatureNotAvailable => "feature-not-available",
+                GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason.LimitsExceeded => "limits-exceeded",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -56,6 +61,7 @@ namespace Vercel
                 "disabled-by-admin" => GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason.DisabledByAdmin,
                 "disabled-by-owner" => GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason.DisabledByOwner,
                 "feature-not-available" => GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason.FeatureNotAvailable,
+                "limits-exceeded" => GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason.LimitsExceeded,
                 _ => null,
             };
         }

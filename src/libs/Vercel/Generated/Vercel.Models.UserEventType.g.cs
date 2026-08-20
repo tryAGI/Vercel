@@ -2352,6 +2352,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        TracingPaused,
+        /// <summary>
+        /// 
+        /// </summary>
+        TracingResumed,
+        /// <summary>
+        /// 
+        /// </summary>
         UnlinkLoginConnection,
         /// <summary>
         /// 
@@ -3212,6 +3220,8 @@ namespace Vercel
                 UserEventType.TeamTokensInvalidated => "team-tokens-invalidated",
                 UserEventType.TracingConfigured => "tracing-configured",
                 UserEventType.TracingDisabled => "tracing-disabled",
+                UserEventType.TracingPaused => "tracing-paused",
+                UserEventType.TracingResumed => "tracing-resumed",
                 UserEventType.UnlinkLoginConnection => "unlink-login-connection",
                 UserEventType.UpdateAccountFlowDismissed => "update-account-flow-dismissed",
                 UserEventType.UpdateAccountFlowTriggered => "update-account-flow-triggered",
@@ -3873,6 +3883,8 @@ namespace Vercel
                 "team-tokens-invalidated" => UserEventType.TeamTokensInvalidated,
                 "tracing-configured" => UserEventType.TracingConfigured,
                 "tracing-disabled" => UserEventType.TracingDisabled,
+                "tracing-paused" => UserEventType.TracingPaused,
+                "tracing-resumed" => UserEventType.TracingResumed,
                 "unlink-login-connection" => UserEventType.UnlinkLoginConnection,
                 "update-account-flow-dismissed" => UserEventType.UpdateAccountFlowDismissed,
                 "update-account-flow-triggered" => UserEventType.UpdateAccountFlowTriggered,
