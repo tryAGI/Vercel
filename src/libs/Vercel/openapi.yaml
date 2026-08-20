@@ -45592,7 +45592,8 @@
                                       "account-plan-downgrade",
                                       "disabled-by-admin",
                                       "disabled-by-owner",
-                                      "feature-not-available"
+                                      "feature-not-available",
+                                      "limits-exceeded"
                                     ]
                                   },
                                   "schemas": {
@@ -46106,7 +46107,8 @@
                                       "account-plan-downgrade",
                                       "disabled-by-admin",
                                       "disabled-by-owner",
-                                      "feature-not-available"
+                                      "feature-not-available",
+                                      "limits-exceeded"
                                     ]
                                   },
                                   "schemas": {
@@ -46925,7 +46927,8 @@
                             "account-plan-downgrade",
                             "disabled-by-admin",
                             "disabled-by-owner",
-                            "feature-not-available"
+                            "feature-not-available",
+                            "limits-exceeded"
                           ]
                         },
                         "schemas": {
@@ -47436,7 +47439,8 @@
                             "account-plan-downgrade",
                             "disabled-by-admin",
                             "disabled-by-owner",
-                            "feature-not-available"
+                            "feature-not-available",
+                            "limits-exceeded"
                           ]
                         },
                         "schemas": {
@@ -48484,7 +48488,8 @@
                                   "account-plan-downgrade",
                                   "disabled-by-admin",
                                   "disabled-by-owner",
-                                  "feature-not-available"
+                                  "feature-not-available",
+                                  "limits-exceeded"
                                 ]
                               },
                               "schemas": {
@@ -48998,7 +49003,8 @@
                                   "account-plan-downgrade",
                                   "disabled-by-admin",
                                   "disabled-by-owner",
-                                  "feature-not-available"
+                                  "feature-not-available",
+                                  "limits-exceeded"
                                 ]
                               },
                               "schemas": {
@@ -49720,7 +49726,8 @@
                             "account-plan-downgrade",
                             "disabled-by-admin",
                             "disabled-by-owner",
-                            "feature-not-available"
+                            "feature-not-available",
+                            "limits-exceeded"
                           ]
                         },
                         "schemas": {
@@ -50231,7 +50238,8 @@
                             "account-plan-downgrade",
                             "disabled-by-admin",
                             "disabled-by-owner",
-                            "feature-not-available"
+                            "feature-not-available",
+                            "limits-exceeded"
                           ]
                         },
                         "schemas": {
@@ -50875,7 +50883,8 @@
                             "account-plan-downgrade",
                             "disabled-by-admin",
                             "disabled-by-owner",
-                            "feature-not-available"
+                            "feature-not-available",
+                            "limits-exceeded"
                           ]
                         },
                         "schemas": {
@@ -51386,7 +51395,8 @@
                             "account-plan-downgrade",
                             "disabled-by-admin",
                             "disabled-by-owner",
-                            "feature-not-available"
+                            "feature-not-available",
+                            "limits-exceeded"
                           ]
                         },
                         "schemas": {
@@ -203995,6 +204005,8 @@
               "team-tokens-invalidated",
               "tracing-configured",
               "tracing-disabled",
+              "tracing-paused",
+              "tracing-resumed",
               "unlink-login-connection",
               "update-account-flow-dismissed",
               "update-account-flow-triggered",
@@ -204974,6 +204986,8 @@
               "team-tokens-invalidated",
               "tracing-configured",
               "tracing-disabled",
+              "tracing-paused",
+              "tracing-resumed",
               "unlink-login-connection",
               "update-account-flow-dismissed",
               "update-account-flow-triggered",
@@ -205684,6 +205698,8 @@
                 "team-tokens-invalidated",
                 "tracing-configured",
                 "tracing-disabled",
+                "tracing-paused",
+                "tracing-resumed",
                 "unlink-login-connection",
                 "update-account-flow-dismissed",
                 "update-account-flow-triggered",
@@ -210289,6 +210305,37 @@
                   "isCurrentlyBlocked"
                 ],
                 "type": "object"
+              },
+              "speedInsightsFree": {
+                "properties": {
+                  "blockedFrom": {
+                    "type": "number"
+                  },
+                  "blockedUntil": {
+                    "type": "number"
+                  },
+                  "blockReason": {
+                    "type": "string",
+                    "enum": [
+                      "admin_override",
+                      "hard_blocked",
+                      "limits_exceeded"
+                    ]
+                  },
+                  "isCurrentlyBlocked": {
+                    "type": "boolean",
+                    "enum": [
+                      false,
+                      true
+                    ]
+                  }
+                },
+                "required": [
+                  "blockReason",
+                  "isCurrentlyBlocked"
+                ],
+                "type": "object",
+                "description": "Client-facing view of the `speedInsightsFree` ingestion block. The dashboard needs `blockReason` to tell usage pauses apart from admin blocks."
               }
             },
             "type": "object",

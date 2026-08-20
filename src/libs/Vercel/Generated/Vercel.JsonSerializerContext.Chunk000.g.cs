@@ -462,6 +462,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserDataCache))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserFeatureBlocks))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserFeatureBlocksWebAnalytics))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserFeatureBlocksSpeedInsightsFree))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserFeatureBlocksSpeedInsightsFreeBlockReason), TypeInfoPropertyName = "AuthUserFeatureBlocksSpeedInsightsFreeBlockReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserAccountUpdateContext))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserAccountUpdateContextOrganization))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AuthUserAccountUpdateContextManagedTeam>))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AllOf<global::Vercel.VercelBaseError, global::Vercel.VercelNotFoundErrorError>), TypeInfoPropertyName = "AllOfVercelBaseErrorVercelNotFoundErrorError2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelNotFoundErrorError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelBadRequestError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AllOf<global::Vercel.VercelBaseError, global::Vercel.VercelBadRequestErrorError>), TypeInfoPropertyName = "AllOfVercelBaseErrorVercelBadRequestErrorError2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VercelBadRequestErrorError))]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

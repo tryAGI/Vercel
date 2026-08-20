@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListRepositoryTagsResponseTagStatus), TypeInfoPropertyName = "ListRepositoryTagsResponseTagStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRepositoryTagResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRepositoryImageResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateWebInsightsToggleResponse))]
@@ -345,6 +347,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserActiveDashboardViewFavoritesViewPreference?), TypeInfoPropertyName = "NullableAuthUserActiveDashboardViewFavoritesViewPreference2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserActiveDashboardViewRecentsViewPreference?), TypeInfoPropertyName = "NullableAuthUserActiveDashboardViewRecentsViewPreference2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserImportFlowGitProvider?), TypeInfoPropertyName = "NullableAuthUserImportFlowGitProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserFeatureBlocksSpeedInsightsFreeBlockReason?), TypeInfoPropertyName = "NullableAuthUserFeatureBlocksSpeedInsightsFreeBlockReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageListItemKind?), TypeInfoPropertyName = "NullableVcrImageListItemKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrImageListItemStatus?), TypeInfoPropertyName = "NullableVcrImageListItemStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.VcrTagKind?), TypeInfoPropertyName = "NullableVcrTagKind2")]
@@ -508,9 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionCmp?), TypeInfoPropertyName = "NullableUpdateFlagRequestEnvironmentsRuleConditionCmp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1, global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant2, string, double?, bool?>?), TypeInfoPropertyName = "UpdateFlagRequestEnvironmentsRuleConditionRhsVariant2_string_double_bool_18b3a79839c54459")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1Type?), TypeInfoPropertyName = "NullableUpdateFlagRequestEnvironmentsRuleConditionRhsVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1ItemVariant1, global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1ItemVariant2>?), TypeInfoPropertyName = "UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1ItemVariant2_3f1ee38da2d5b20c")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFlagRequestEnvironmentsRuleOutcomeVariant1, global::Vercel.UpdateFlagRequestEnvironmentsRuleOutcomeVariant2, global::Vercel.UpdateFlagRequestEnvironmentsRuleOutcomeVariant3>?), TypeInfoPropertyName = "UpdateFlagRequestEnvironmentsRuleOutcomeVariant3_97dc5cb611741ca5")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFlagRequestEnvironmentsFallthroughVariant1, global::Vercel.UpdateFlagRequestEnvironmentsFallthroughVariant2, global::Vercel.UpdateFlagRequestEnvironmentsFallthroughVariant3>?), TypeInfoPropertyName = "UpdateFlagRequestEnvironmentsFallthroughVariant3_3fc65bea4f3564d9")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
