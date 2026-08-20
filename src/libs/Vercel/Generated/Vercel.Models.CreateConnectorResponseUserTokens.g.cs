@@ -23,7 +23,7 @@ namespace Vercel
         public required bool SupportsRefinement { get; set; }
 
         /// <summary>
-        /// Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document.
+        /// Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is the connector's enabled `userAuthorization.scopes` configuration.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
         public global::System.Collections.Generic.IList<string>? Scopes { get; set; }
@@ -52,7 +52,7 @@ namespace Vercel
         /// <param name="crossInstallation"></param>
         /// <param name="supportsRefinement"></param>
         /// <param name="scopes">
-        /// Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is `scopes_supported` from the server's discovery document.
+        /// Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is the connector's enabled `userAuthorization.scopes` configuration.
         /// </param>
         /// <param name="supportedAuthorizationDetails"></param>
         /// <param name="manualCredentialInput">

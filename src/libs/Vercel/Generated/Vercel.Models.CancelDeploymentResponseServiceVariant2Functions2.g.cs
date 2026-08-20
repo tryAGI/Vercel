@@ -68,7 +68,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experimentalTriggers")]
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant1, global::Vercel.CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant2>>? ExperimentalTriggers { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant1, global::Vercel.CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant2, global::Vercel.CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant3>>? ExperimentalTriggers { get; set; }
 
         /// <summary>
         /// 
@@ -109,7 +109,7 @@ namespace Vercel
             string? runtime,
             string? includeFiles,
             string? excludeFiles,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant1, global::Vercel.CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant2>>? experimentalTriggers,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant1, global::Vercel.CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant2, global::Vercel.CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant3>>? experimentalTriggers,
             bool? supportsCancellation)
         {
             this.Architecture = architecture;

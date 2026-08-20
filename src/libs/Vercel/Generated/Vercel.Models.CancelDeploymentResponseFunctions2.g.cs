@@ -68,7 +68,7 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experimentalTriggers")]
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant1, global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant2>>? ExperimentalTriggers { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant1, global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant2, global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant3>>? ExperimentalTriggers { get; set; }
 
         /// <summary>
         /// 
@@ -109,7 +109,7 @@ namespace Vercel
             string? runtime,
             string? includeFiles,
             string? excludeFiles,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant1, global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant2>>? experimentalTriggers,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant1, global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant2, global::Vercel.CancelDeploymentResponseFunctionsExperimentalTriggerVariant3>>? experimentalTriggers,
             bool? supportsCancellation)
         {
             this.Architecture = architecture;
