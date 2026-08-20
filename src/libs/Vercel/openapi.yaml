@@ -204179,8 +204179,13 @@
                       "app"
                     ]
                   },
+                  "id": {
+                    "type": "string",
+                    "description": "The backing Vercel App ID. When absent, defaults to `clientId`."
+                  },
                   "clientId": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "The OAuth 2.0 client ID, which may be a CIMD URL."
                   },
                   "name": {
                     "type": "string"
@@ -204281,8 +204286,13 @@
                         "app"
                       ]
                     },
+                    "id": {
+                      "type": "string",
+                      "description": "The backing Vercel App ID. When absent, defaults to `clientId`."
+                    },
                     "clientId": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "The OAuth 2.0 client ID, which may be a CIMD URL."
                     },
                     "name": {
                       "type": "string"
