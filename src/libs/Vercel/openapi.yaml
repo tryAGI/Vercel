@@ -65564,7 +65564,8 @@
                               "ownerType": {
                                 "type": "string",
                                 "enum": [
-                                  "team"
+                                  "team",
+                                  "user"
                                 ]
                               },
                               "owner": {
