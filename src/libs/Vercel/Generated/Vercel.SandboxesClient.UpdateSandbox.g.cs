@@ -871,6 +871,14 @@ namespace Vercel
         /// Protect the N most recent snapshots with different expiration/deletion behavior. Set to null to clear.
         /// </param>
         /// <param name="networkPolicy"></param>
+        /// <param name="region">
+        /// The Vercel region in which to create the sandbox.<br/>
+        /// Example: iad1
+        /// </param>
+        /// <param name="failoverRegions">
+        /// The regions the sandbox falls back to when it cannot be created in `region`.<br/>
+        /// Example: [sfo1, cle1]
+        /// </param>
         /// <param name="env">
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
@@ -902,6 +910,8 @@ namespace Vercel
             global::Vercel.OneOf<object, int?>? snapshotExpiration = default,
             global::Vercel.OneOf<string, global::Vercel.UpdateSandboxRequestKeepLastSnapshots>? keepLastSnapshots = default,
             global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? networkPolicy = default,
+            global::Vercel.UpdateSandboxRequestRegion? region = default,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestFailoverRegion>? failoverRegions = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
             global::System.Collections.Generic.IList<int>? ports = default,
             string? currentSnapshotId = default,
@@ -918,6 +928,8 @@ namespace Vercel
                 SnapshotExpiration = snapshotExpiration,
                 KeepLastSnapshots = keepLastSnapshots,
                 NetworkPolicy = networkPolicy,
+                Region = region,
+                FailoverRegions = failoverRegions,
                 Env = env,
                 Ports = ports,
                 CurrentSnapshotId = currentSnapshotId,

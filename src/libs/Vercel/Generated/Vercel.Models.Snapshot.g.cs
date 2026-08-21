@@ -35,6 +35,14 @@ namespace Vercel
         public string? Region { get; set; }
 
         /// <summary>
+        /// The regions where the snapshot is available.<br/>
+        /// Example: [iad1, sfo1]
+        /// </summary>
+        /// <example>[iad1, sfo1]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("regions")]
+        public global::System.Collections.Generic.IList<string>? Regions { get; set; }
+
+        /// <summary>
         /// The status of the snapshot.<br/>
         /// Example: created
         /// </summary>
@@ -146,6 +154,10 @@ namespace Vercel
         /// The region where the snapshot is stored.<br/>
         /// Example: iad1
         /// </param>
+        /// <param name="regions">
+        /// The regions where the snapshot is available.<br/>
+        /// Example: [iad1, sfo1]
+        /// </param>
         /// <param name="expiresAt">
         /// The time when the snapshot will expire, in milliseconds since the epoch. If not set, the snapshot does not have any expiration.<br/>
         /// Example: 1750344501629L
@@ -170,6 +182,7 @@ namespace Vercel
             double updatedAt,
             double lastUsedAt,
             string? region,
+            global::System.Collections.Generic.IList<string>? regions,
             double? expiresAt,
             global::Vercel.SnapshotCreationMethod? creationMethod,
             string? parentId)
@@ -177,6 +190,7 @@ namespace Vercel
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.SourceSessionId = sourceSessionId ?? throw new global::System.ArgumentNullException(nameof(sourceSessionId));
             this.Region = region;
+            this.Regions = regions;
             this.Status = status;
             this.SizeBytes = sizeBytes;
             this.ExpiresAt = expiresAt;

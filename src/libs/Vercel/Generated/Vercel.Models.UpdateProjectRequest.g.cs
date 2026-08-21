@@ -239,6 +239,12 @@ namespace Vercel
         public global::Vercel.UpdateProjectRequestPassport? Passport { get; set; }
 
         /// <summary>
+        /// Specifies the default region and failover regions for sandboxes created in the project
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sandbox")]
+        public global::Vercel.UpdateProjectRequestSandbox? Sandbox { get; set; }
+
+        /// <summary>
         /// Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ssoProtection")]
@@ -384,6 +390,9 @@ namespace Vercel
         /// <param name="passport">
         /// Passport configuration for the project.
         /// </param>
+        /// <param name="sandbox">
+        /// Specifies the default region and failover regions for sandboxes created in the project
+        /// </param>
         /// <param name="ssoProtection">
         /// Ensures visitors to your Preview Deployments are logged into Vercel and have a minimum of Viewer access on your team
         /// </param>
@@ -442,6 +451,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestOidcTokenConfig? oidcTokenConfig,
             global::Vercel.UpdateProjectRequestPasswordProtection? passwordProtection,
             global::Vercel.UpdateProjectRequestPassport? passport,
+            global::Vercel.UpdateProjectRequestSandbox? sandbox,
             global::Vercel.UpdateProjectRequestSsoProtection? ssoProtection,
             global::Vercel.UpdateProjectRequestTrustedIps? trustedIps,
             global::Vercel.UpdateProjectRequestTrustedSources? trustedSources,
@@ -485,6 +495,7 @@ namespace Vercel
             this.OidcTokenConfig = oidcTokenConfig;
             this.PasswordProtection = passwordProtection;
             this.Passport = passport;
+            this.Sandbox = sandbox;
             this.SsoProtection = ssoProtection;
             this.TrustedIps = trustedIps;
             this.TrustedSources = trustedSources;

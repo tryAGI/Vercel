@@ -61,6 +61,23 @@ namespace Vercel
         public global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
 
         /// <summary>
+        /// The Vercel region in which to create the sandbox.<br/>
+        /// Example: iad1
+        /// </summary>
+        /// <example>iad1</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateSandboxRequestRegionJsonConverter))]
+        public global::Vercel.UpdateSandboxRequestRegion? Region { get; set; }
+
+        /// <summary>
+        /// The regions the sandbox falls back to when it cannot be created in `region`.<br/>
+        /// Example: [sfo1, cle1]
+        /// </summary>
+        /// <example>[sfo1, cle1]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("failoverRegions")]
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestFailoverRegion>? FailoverRegions { get; set; }
+
+        /// <summary>
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </summary>
@@ -121,6 +138,14 @@ namespace Vercel
         /// Protect the N most recent snapshots with different expiration/deletion behavior. Set to null to clear.
         /// </param>
         /// <param name="networkPolicy"></param>
+        /// <param name="region">
+        /// The Vercel region in which to create the sandbox.<br/>
+        /// Example: iad1
+        /// </param>
+        /// <param name="failoverRegions">
+        /// The regions the sandbox falls back to when it cannot be created in `region`.<br/>
+        /// Example: [sfo1, cle1]
+        /// </param>
         /// <param name="env">
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
@@ -147,6 +172,8 @@ namespace Vercel
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
             global::Vercel.OneOf<string, global::Vercel.UpdateSandboxRequestKeepLastSnapshots>? keepLastSnapshots,
             global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? networkPolicy,
+            global::Vercel.UpdateSandboxRequestRegion? region,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestFailoverRegion>? failoverRegions,
             global::System.Collections.Generic.Dictionary<string, string>? env,
             global::System.Collections.Generic.IList<int>? ports,
             string? currentSnapshotId,
@@ -159,6 +186,8 @@ namespace Vercel
             this.SnapshotExpiration = snapshotExpiration;
             this.KeepLastSnapshots = keepLastSnapshots;
             this.NetworkPolicy = networkPolicy;
+            this.Region = region;
+            this.FailoverRegions = failoverRegions;
             this.Env = env;
             this.Ports = ports;
             this.CurrentSnapshotId = currentSnapshotId;
