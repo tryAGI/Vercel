@@ -55,7 +55,8 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ownerType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SearchRepoResponseVariant3RepoOwnerTypeJsonConverter))]
-        public global::Vercel.SearchRepoResponseVariant3RepoOwnerType OwnerType { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.SearchRepoResponseVariant3RepoOwnerType OwnerType { get; set; }
 
         /// <summary>
         /// 
@@ -99,12 +100,12 @@ namespace Vercel
         /// <param name="name"></param>
         /// <param name="slug"></param>
         /// <param name="namespace"></param>
+        /// <param name="ownerType"></param>
         /// <param name="owner"></param>
         /// <param name="private"></param>
         /// <param name="defaultBranch"></param>
         /// <param name="updatedAt"></param>
         /// <param name="provider"></param>
-        /// <param name="ownerType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -114,12 +115,12 @@ namespace Vercel
             string name,
             string slug,
             string @namespace,
+            global::Vercel.SearchRepoResponseVariant3RepoOwnerType ownerType,
             global::Vercel.SearchRepoResponseVariant3RepoOwner owner,
             bool @private,
             string defaultBranch,
             double updatedAt,
-            global::Vercel.SearchRepoResponseVariant3RepoProvider provider,
-            global::Vercel.SearchRepoResponseVariant3RepoOwnerType ownerType)
+            global::Vercel.SearchRepoResponseVariant3RepoProvider provider)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Provider = provider;

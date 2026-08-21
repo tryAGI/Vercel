@@ -12,6 +12,10 @@ namespace Vercel
         /// 
         /// </summary>
         Team,
+        /// <summary>
+        /// 
+        /// </summary>
+        User,
     }
 
     /// <summary>
@@ -27,6 +31,7 @@ namespace Vercel
             return value switch
             {
                 SearchRepoResponseVariant3RepoOwnerType.Team => "team",
+                SearchRepoResponseVariant3RepoOwnerType.User => "user",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -38,6 +43,7 @@ namespace Vercel
             return value switch
             {
                 "team" => SearchRepoResponseVariant3RepoOwnerType.Team,
+                "user" => SearchRepoResponseVariant3RepoOwnerType.User,
                 _ => null,
             };
         }
