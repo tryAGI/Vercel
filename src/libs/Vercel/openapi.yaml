@@ -117097,6 +117097,41 @@
                     ],
                     "nullable": true
                   },
+                  "sandbox": {
+                    "type": "object",
+                    "description": "Specifies the default region and failover regions for sandboxes created in the project",
+                    "properties": {
+                      "region": {
+                        "description": "The Vercel region sandboxes in this project are created in by default.",
+                        "enum": [
+                          "iad1",
+                          "sfo1",
+                          "cle1",
+                          "cdg1"
+                        ],
+                        "example": "iad1"
+                      },
+                      "failoverRegions": {
+                        "description": "The regions sandboxes in this project fall back to when they cannot be created in `region`.",
+                        "type": "array",
+                        "uniqueItems": true,
+                        "maxItems": 4,
+                        "items": {
+                          "enum": [
+                            "iad1",
+                            "sfo1",
+                            "cle1",
+                            "cdg1"
+                          ]
+                        },
+                        "example": [
+                          "sfo1",
+                          "cle1"
+                        ]
+                      }
+                    },
+                    "additionalProperties": false
+                  },
                   "outputDirectory": {
                     "description": "The output directory of the project. When `null` is used this value will be automatically detected",
                     "maxLength": 256,
@@ -132722,6 +132757,41 @@
                       "connectorId"
                     ],
                     "nullable": true
+                  },
+                  "sandbox": {
+                    "type": "object",
+                    "description": "Specifies the default region and failover regions for sandboxes created in the project",
+                    "properties": {
+                      "region": {
+                        "description": "The Vercel region sandboxes in this project are created in by default.",
+                        "enum": [
+                          "iad1",
+                          "sfo1",
+                          "cle1",
+                          "cdg1"
+                        ],
+                        "example": "iad1"
+                      },
+                      "failoverRegions": {
+                        "description": "The regions sandboxes in this project fall back to when they cannot be created in `region`.",
+                        "type": "array",
+                        "uniqueItems": true,
+                        "maxItems": 4,
+                        "items": {
+                          "enum": [
+                            "iad1",
+                            "sfo1",
+                            "cle1",
+                            "cdg1"
+                          ]
+                        },
+                        "example": [
+                          "sfo1",
+                          "cle1"
+                        ]
+                      }
+                    },
+                    "additionalProperties": false
                   },
                   "ssoProtection": {
                     "additionalProperties": false,
@@ -158733,6 +158803,42 @@
                       }
                     }
                   },
+                  "region": {
+                    "type": "string",
+                    "enum": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "default": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "description": "The Vercel region in which to create the sandbox.",
+                    "example": "iad1"
+                  },
+                  "failoverRegions": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "iad1",
+                        "sfo1",
+                        "cle1",
+                        "cdg1"
+                      ]
+                    },
+                    "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
+                    "example": [
+                      "sfo1",
+                      "cle1"
+                    ]
+                  },
                   "name": {
                     "example": "my-sandbox",
                     "type": "string",
@@ -160561,6 +160667,36 @@
                           }
                         }
                       }
+                    ]
+                  },
+                  "region": {
+                    "type": "string",
+                    "enum": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "description": "The Vercel region in which to create the sandbox.",
+                    "example": "iad1"
+                  },
+                  "failoverRegions": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "iad1",
+                        "sfo1",
+                        "cle1",
+                        "cdg1"
+                      ]
+                    },
+                    "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
+                    "example": [
+                      "sfo1",
+                      "cle1"
                     ]
                   },
                   "env": {
@@ -163168,6 +163304,42 @@
                       }
                     }
                   },
+                  "region": {
+                    "type": "string",
+                    "enum": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "default": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "description": "The Vercel region in which to create the sandbox.",
+                    "example": "iad1"
+                  },
+                  "failoverRegions": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "iad1",
+                        "sfo1",
+                        "cle1",
+                        "cdg1"
+                      ]
+                    },
+                    "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
+                    "example": [
+                      "sfo1",
+                      "cle1"
+                    ]
+                  },
                   "name": {
                     "example": "my-sandbox-fork",
                     "type": "string",
@@ -163889,6 +164061,42 @@
                         }
                       }
                     }
+                  },
+                  "region": {
+                    "type": "string",
+                    "enum": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "default": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "description": "The Vercel region in which to create the sandbox.",
+                    "example": "iad1"
+                  },
+                  "failoverRegions": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "iad1",
+                        "sfo1",
+                        "cle1",
+                        "cdg1"
+                      ]
+                    },
+                    "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
+                    "example": [
+                      "sfo1",
+                      "cle1"
+                    ]
                   },
                   "name": {
                     "example": "my-sandbox",
@@ -164666,6 +164874,42 @@
                       }
                     }
                   },
+                  "region": {
+                    "type": "string",
+                    "enum": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "default": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "description": "The Vercel region in which to create the sandbox.",
+                    "example": "iad1"
+                  },
+                  "failoverRegions": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "iad1",
+                        "sfo1",
+                        "cle1",
+                        "cdg1"
+                      ]
+                    },
+                    "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
+                    "example": [
+                      "sfo1",
+                      "cle1"
+                    ]
+                  },
                   "name": {
                     "example": "my-sandbox-fork",
                     "type": "string",
@@ -165394,6 +165638,42 @@
                         }
                       }
                     }
+                  },
+                  "region": {
+                    "type": "string",
+                    "enum": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "default": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1"
+                    ],
+                    "description": "The Vercel region in which to create the sandbox.",
+                    "example": "iad1"
+                  },
+                  "failoverRegions": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "iad1",
+                        "sfo1",
+                        "cle1",
+                        "cdg1"
+                      ]
+                    },
+                    "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
+                    "example": [
+                      "sfo1",
+                      "cle1"
+                    ]
                   },
                   "name": {
                     "example": "my-sandbox",
@@ -207450,6 +207730,28 @@
             "description": "The region the sandbox is pinned to: the region stored on the sandbox, otherwise the platform default. Where a running session actually landed is reported by `session.region`.",
             "example": "iad1"
           },
+          "failoverRegions": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "cdg1",
+                "cle1",
+                "iad1",
+                "sfo1"
+              ],
+              "description": "The regions the sandbox fails over to. Empty when it does not fail over.",
+              "example": [
+                "sfo1",
+                "cle1"
+              ]
+            },
+            "type": "array",
+            "description": "The regions the sandbox fails over to. Empty when it does not fail over.",
+            "example": [
+              "sfo1",
+              "cle1"
+            ]
+          },
           "vcpus": {
             "type": "number",
             "description": "Number of virtual CPUs allocated.",
@@ -207976,6 +208278,17 @@
             "type": "string",
             "description": "The region where the snapshot is stored.",
             "example": "iad1"
+          },
+          "regions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "description": "The regions where the snapshot is available.",
+            "example": [
+              "iad1",
+              "sfo1"
+            ]
           },
           "status": {
             "type": "string",

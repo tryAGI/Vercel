@@ -96,6 +96,9 @@ namespace Vercel
         /// <param name="ssoProtection">
         /// The Vercel Auth setting for the project (historically named \"SSO Protection\")
         /// </param>
+        /// <param name="sandbox">
+        /// Specifies the default region and failover regions for sandboxes created in the project
+        /// </param>
         /// <param name="outputDirectory">
         /// The output directory of the project. When `null` is used this value will be automatically detected
         /// </param>
@@ -136,6 +139,7 @@ namespace Vercel
             global::Vercel.CreateProjectRequestGitRepository? gitRepository = default,
             string? installCommand = default,
             global::Vercel.CreateProjectRequestSsoProtection? ssoProtection = default,
+            global::Vercel.CreateProjectRequestSandbox? sandbox = default,
             string? outputDirectory = default,
             string? rootDirectory = default,
             string? serverlessFunctionRegion = default,

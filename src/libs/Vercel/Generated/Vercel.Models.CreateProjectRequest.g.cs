@@ -100,6 +100,12 @@ namespace Vercel
         public global::Vercel.CreateProjectRequestSsoProtection? SsoProtection { get; set; }
 
         /// <summary>
+        /// Specifies the default region and failover regions for sandboxes created in the project
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sandbox")]
+        public global::Vercel.CreateProjectRequestSandbox? Sandbox { get; set; }
+
+        /// <summary>
         /// The output directory of the project. When `null` is used this value will be automatically detected
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("outputDirectory")]
@@ -195,6 +201,9 @@ namespace Vercel
         /// <param name="ssoProtection">
         /// The Vercel Auth setting for the project (historically named \"SSO Protection\")
         /// </param>
+        /// <param name="sandbox">
+        /// Specifies the default region and failover regions for sandboxes created in the project
+        /// </param>
         /// <param name="outputDirectory">
         /// The output directory of the project. When `null` is used this value will be automatically detected
         /// </param>
@@ -233,6 +242,7 @@ namespace Vercel
             global::Vercel.CreateProjectRequestGitRepository? gitRepository,
             string? installCommand,
             global::Vercel.CreateProjectRequestSsoProtection? ssoProtection,
+            global::Vercel.CreateProjectRequestSandbox? sandbox,
             string? outputDirectory,
             string? rootDirectory,
             string? serverlessFunctionRegion,
@@ -254,6 +264,7 @@ namespace Vercel
             this.InstallCommand = installCommand;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.SsoProtection = ssoProtection;
+            this.Sandbox = sandbox;
             this.OutputDirectory = outputDirectory;
             this.RootDirectory = rootDirectory;
             this.ServerlessFunctionRegion = serverlessFunctionRegion;

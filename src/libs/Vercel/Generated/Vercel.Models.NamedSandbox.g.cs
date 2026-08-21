@@ -67,6 +67,14 @@ namespace Vercel
         public string? Region { get; set; }
 
         /// <summary>
+        /// The regions the sandbox fails over to. Empty when it does not fail over.<br/>
+        /// Example: [sfo1, cle1]
+        /// </summary>
+        /// <example>[sfo1, cle1]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("failoverRegions")]
+        public global::System.Collections.Generic.IList<global::Vercel.NamedSandboxFailoverRegion>? FailoverRegions { get; set; }
+
+        /// <summary>
         /// Number of virtual CPUs allocated.<br/>
         /// Example: 2
         /// </summary>
@@ -249,6 +257,10 @@ namespace Vercel
         /// The region the sandbox is pinned to: the region stored on the sandbox, otherwise the platform default. Where a running session actually landed is reported by `session.region`.<br/>
         /// Example: iad1
         /// </param>
+        /// <param name="failoverRegions">
+        /// The regions the sandbox fails over to. Empty when it does not fail over.<br/>
+        /// Example: [sfo1, cle1]
+        /// </param>
         /// <param name="vcpus">
         /// Number of virtual CPUs allocated.<br/>
         /// Example: 2
@@ -323,6 +335,7 @@ namespace Vercel
             double updatedAt,
             string? currentSnapshotId,
             string? region,
+            global::System.Collections.Generic.IList<global::Vercel.NamedSandboxFailoverRegion>? failoverRegions,
             double? vcpus,
             double? memory,
             string? runtime,
@@ -347,6 +360,7 @@ namespace Vercel
             this.StatusUpdatedAt = statusUpdatedAt;
             this.Persistent = persistent;
             this.Region = region;
+            this.FailoverRegions = failoverRegions;
             this.Vcpus = vcpus;
             this.Memory = memory;
             this.Runtime = runtime;

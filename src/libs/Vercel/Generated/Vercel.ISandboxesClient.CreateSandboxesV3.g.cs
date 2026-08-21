@@ -86,6 +86,15 @@ namespace Vercel
         /// <param name="mounts">
         /// List of drives to mount to the sandbox at the provided path.
         /// </param>
+        /// <param name="region">
+        /// The Vercel region in which to create the sandbox.<br/>
+        /// Default Value: [iad1, sfo1, cle1, cdg1]<br/>
+        /// Example: iad1
+        /// </param>
+        /// <param name="failoverRegions">
+        /// The regions the sandbox falls back to when it cannot be created in `region`.<br/>
+        /// Example: [sfo1, cle1]
+        /// </param>
         /// <param name="name">
         /// Name for the sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
         /// Example: my-sandbox
@@ -120,6 +129,8 @@ namespace Vercel
             int? timeout = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesV3RequestMounts2>? mounts = default,
+            global::Vercel.CreateSandboxesV3RequestRegion? region = default,
+            global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV3RequestFailoverRegion>? failoverRegions = default,
             string? name = default,
             bool? persistent = default,
             global::Vercel.OneOf<object, int?>? snapshotExpiration = default,

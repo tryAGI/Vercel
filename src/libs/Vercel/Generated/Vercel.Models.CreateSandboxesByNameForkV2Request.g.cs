@@ -59,6 +59,24 @@ namespace Vercel
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesByNameForkV2RequestMounts2>? Mounts { get; set; }
 
         /// <summary>
+        /// The Vercel region in which to create the sandbox.<br/>
+        /// Default Value: [iad1, sfo1, cle1, cdg1]<br/>
+        /// Example: iad1
+        /// </summary>
+        /// <example>iad1</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateSandboxesByNameForkV2RequestRegionJsonConverter))]
+        public global::Vercel.CreateSandboxesByNameForkV2RequestRegion? Region { get; set; }
+
+        /// <summary>
+        /// The regions the sandbox falls back to when it cannot be created in `region`.<br/>
+        /// Example: [sfo1, cle1]
+        /// </summary>
+        /// <example>[sfo1, cle1]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("failoverRegions")]
+        public global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesByNameForkV2RequestFailoverRegion>? FailoverRegions { get; set; }
+
+        /// <summary>
         /// Name for the forked sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores). A random name is generated when omitted.<br/>
         /// Example: my-sandbox-fork
         /// </summary>
@@ -127,6 +145,15 @@ namespace Vercel
         /// <param name="mounts">
         /// List of drives to mount to the sandbox at the provided path.
         /// </param>
+        /// <param name="region">
+        /// The Vercel region in which to create the sandbox.<br/>
+        /// Default Value: [iad1, sfo1, cle1, cdg1]<br/>
+        /// Example: iad1
+        /// </param>
+        /// <param name="failoverRegions">
+        /// The regions the sandbox falls back to when it cannot be created in `region`.<br/>
+        /// Example: [sfo1, cle1]
+        /// </param>
         /// <param name="name">
         /// Name for the forked sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores). A random name is generated when omitted.<br/>
         /// Example: my-sandbox-fork
@@ -156,6 +183,8 @@ namespace Vercel
             int? timeout,
             global::System.Collections.Generic.Dictionary<string, string>? env,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesByNameForkV2RequestMounts2>? mounts,
+            global::Vercel.CreateSandboxesByNameForkV2RequestRegion? region,
+            global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesByNameForkV2RequestFailoverRegion>? failoverRegions,
             string? name,
             bool? persistent,
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
@@ -169,6 +198,8 @@ namespace Vercel
             this.Timeout = timeout;
             this.Env = env;
             this.Mounts = mounts;
+            this.Region = region;
+            this.FailoverRegions = failoverRegions;
             this.Name = name;
             this.Persistent = persistent;
             this.SnapshotExpiration = snapshotExpiration;
