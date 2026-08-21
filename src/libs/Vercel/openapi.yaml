@@ -57992,6 +57992,20 @@
                                   "type"
                                 ],
                                 "type": "object"
+                              },
+                              {
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "experiment"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ],
+                                "type": "object"
                               }
                             ]
                           },
@@ -58144,6 +58158,20 @@
                                         "rollToVariantId",
                                         "slots",
                                         "startTimestamp",
+                                        "type"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    {
+                                      "properties": {
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "experiment"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
                                         "type"
                                       ],
                                       "type": "object"
@@ -59521,6 +59549,20 @@
                                       "type"
                                     ],
                                     "type": "object"
+                                  },
+                                  {
+                                    "properties": {
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "experiment"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "type"
+                                    ],
+                                    "type": "object"
                                   }
                                 ]
                               },
@@ -59673,6 +59715,20 @@
                                             "rollToVariantId",
                                             "slots",
                                             "startTimestamp",
+                                            "type"
+                                          ],
+                                          "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "experiment"
+                                              ]
+                                            }
+                                          },
+                                          "required": [
                                             "type"
                                           ],
                                           "type": "object"
@@ -61097,6 +61153,20 @@
                                             "type"
                                           ],
                                           "type": "object"
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "experiment"
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "type"
+                                          ],
+                                          "type": "object"
                                         }
                                       ]
                                     },
@@ -61249,6 +61319,20 @@
                                                   "rollToVariantId",
                                                   "slots",
                                                   "startTimestamp",
+                                                  "type"
+                                                ],
+                                                "type": "object"
+                                              },
+                                              {
+                                                "properties": {
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "experiment"
+                                                    ]
+                                                  }
+                                                },
+                                                "required": [
                                                   "type"
                                                 ],
                                                 "type": "object"
@@ -206495,6 +206579,20 @@
                         "type"
                       ],
                       "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "experiment"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "type"
+                      ],
+                      "type": "object"
                     }
                   ]
                 },
@@ -206647,6 +206745,20 @@
                               "rollToVariantId",
                               "slots",
                               "startTimestamp",
+                              "type"
+                            ],
+                            "type": "object"
+                          },
+                          {
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "experiment"
+                                ]
+                              }
+                            },
+                            "required": [
                               "type"
                             ],
                             "type": "object"
