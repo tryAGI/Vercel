@@ -11,14 +11,6 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchUrlProtectionBypassRequestVariant1Revoke))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchUrlProtectionBypassRequestVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchUrlProtectionBypassRequestVariant2Scope))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchUrlProtectionBypassRequestVariant2ScopeAccess), TypeInfoPropertyName = "PatchUrlProtectionBypassRequestVariant2ScopeAccess2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchUrlProtectionBypassRequestVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchUrlProtectionBypassRequestVariant3Override))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchUrlProtectionBypassRequestVariant3OverrideScope), TypeInfoPropertyName = "PatchUrlProtectionBypassRequestVariant3OverrideScope2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchUrlProtectionBypassRequestVariant3OverrideAction), TypeInfoPropertyName = "PatchUrlProtectionBypassRequestVariant3OverrideAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.IssueCertRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadCertRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListAiGatewayRulesIncludeDisabled), TypeInfoPropertyName = "ListAiGatewayRulesIncludeDisabled2")]
@@ -511,6 +503,14 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsFcp))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsFcpSource), TypeInfoPropertyName = "UpdateCheckResponseOutputMetricsFcpSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsLcp))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsLcpSource), TypeInfoPropertyName = "UpdateCheckResponseOutputMetricsLcpSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsCls))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsClsSource), TypeInfoPropertyName = "UpdateCheckResponseOutputMetricsClsSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsTbt))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsTbtSource), TypeInfoPropertyName = "UpdateCheckResponseOutputMetricsTbtSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsVirtualExperienceScore))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource), TypeInfoPropertyName = "UpdateCheckResponseOutputMetricsVirtualExperienceScoreSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.Network>))]
     internal sealed partial class SourceGenerationContextChunk004 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -1,0 +1,47 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// Incoming trigger configuration. Only present when enabled.
+    /// </summary>
+    public sealed partial class ConnectTriggerConfiguration
+    {
+        /// <summary>
+        /// Whether incoming triggers are enabled for the connector.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Enabled { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConnectTriggerConfiguration" /> class.
+        /// </summary>
+        /// <param name="enabled">
+        /// Whether incoming triggers are enabled for the connector.
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public ConnectTriggerConfiguration(
+            bool enabled)
+        {
+            this.Enabled = enabled;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConnectTriggerConfiguration" /> class.
+        /// </summary>
+        public ConnectTriggerConfiguration()
+        {
+        }
+
+    }
+}
