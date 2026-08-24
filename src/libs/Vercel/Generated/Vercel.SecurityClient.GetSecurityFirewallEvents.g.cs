@@ -30,14 +30,18 @@ namespace Vercel
             ref string projectId,
             ref double? startTimestamp,
             ref double? endTimestamp,
-            ref string? hosts);
+            ref string? hosts,
+            ref string? teamId,
+            ref string? slug);
         partial void PrepareGetSecurityFirewallEventsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string projectId,
             double? startTimestamp,
             double? endTimestamp,
-            string? hosts);
+            string? hosts,
+            string? teamId,
+            string? slug);
         partial void ProcessGetSecurityFirewallEventsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -49,12 +53,18 @@ namespace Vercel
 
         /// <summary>
         /// Read Firewall Actions by Project<br/>
-        /// Retrieve firewall actions for a project
+        /// Retrieve firewall actions for a project Rule names are resolved against the project's *current* active firewall configuration and the team's active rulesets, so a rule that has since been renamed reports its new name and one that has been deleted reports `null`. System rules such as `sys_dos_mitigation` and `ip_blocking` have no configured name and always report `null`.
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="startTimestamp"></param>
         /// <param name="endTimestamp"></param>
         /// <param name="hosts"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
@@ -63,6 +73,8 @@ namespace Vercel
             double? startTimestamp = default,
             double? endTimestamp = default,
             string? hosts = default,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -71,6 +83,8 @@ namespace Vercel
                 startTimestamp: startTimestamp,
                 endTimestamp: endTimestamp,
                 hosts: hosts,
+                teamId: teamId,
+                slug: slug,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -79,12 +93,18 @@ namespace Vercel
         }
         /// <summary>
         /// Read Firewall Actions by Project<br/>
-        /// Retrieve firewall actions for a project
+        /// Retrieve firewall actions for a project Rule names are resolved against the project's *current* active firewall configuration and the team's active rulesets, so a rule that has since been renamed reports its new name and one that has been deleted reports `null`. System rules such as `sys_dos_mitigation` and `ip_blocking` have no configured name and always report `null`.
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="startTimestamp"></param>
         /// <param name="endTimestamp"></param>
         /// <param name="hosts"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
@@ -93,6 +113,8 @@ namespace Vercel
             double? startTimestamp = default,
             double? endTimestamp = default,
             string? hosts = default,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -103,7 +125,9 @@ namespace Vercel
                 projectId: ref projectId,
                 startTimestamp: ref startTimestamp,
                 endTimestamp: ref endTimestamp,
-                hosts: ref hosts);
+                hosts: ref hosts,
+                teamId: ref teamId,
+                slug: ref slug);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
@@ -136,6 +160,8 @@ namespace Vercel
                                 .AddOptionalParameter("startTimestamp", startTimestamp?.ToString())
                                 .AddOptionalParameter("endTimestamp", endTimestamp?.ToString())
                                 .AddOptionalParameter("hosts", hosts)
+                                .AddOptionalParameter("teamId", teamId)
+                                .AddOptionalParameter("slug", slug)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -180,7 +206,9 @@ namespace Vercel
                     projectId: projectId!,
                     startTimestamp: startTimestamp,
                     endTimestamp: endTimestamp,
-                    hosts: hosts);
+                    hosts: hosts,
+                    teamId: teamId,
+                    slug: slug);
 
                 return __httpRequest;
             }
