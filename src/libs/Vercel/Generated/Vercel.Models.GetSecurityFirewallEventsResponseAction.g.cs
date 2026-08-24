@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ruleName")]
+        public string? RuleName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("startTime")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string StartTime { get; set; }
@@ -35,6 +41,19 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("action_type")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ActionType { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Action { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ruleId")]
+        public string? RuleId { get; set; }
 
         /// <summary>
         /// 
@@ -70,9 +89,12 @@ namespace Vercel
         /// <param name="endTime"></param>
         /// <param name="isActive"></param>
         /// <param name="actionType"></param>
+        /// <param name="action"></param>
         /// <param name="host"></param>
         /// <param name="publicIp"></param>
         /// <param name="count"></param>
+        /// <param name="ruleName"></param>
+        /// <param name="ruleId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -81,14 +103,20 @@ namespace Vercel
             string endTime,
             bool isActive,
             string actionType,
+            string action,
             string host,
             string publicIp,
-            double count)
+            double count,
+            string? ruleName,
+            string? ruleId)
         {
+            this.RuleName = ruleName;
             this.StartTime = startTime ?? throw new global::System.ArgumentNullException(nameof(startTime));
             this.EndTime = endTime ?? throw new global::System.ArgumentNullException(nameof(endTime));
             this.IsActive = isActive;
             this.ActionType = actionType ?? throw new global::System.ArgumentNullException(nameof(actionType));
+            this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
+            this.RuleId = ruleId;
             this.Host = host ?? throw new global::System.ArgumentNullException(nameof(host));
             this.PublicIp = publicIp ?? throw new global::System.ArgumentNullException(nameof(publicIp));
             this.Count = count;

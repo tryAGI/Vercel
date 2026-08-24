@@ -49,6 +49,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? EgressIpAddresses { get; set; }
 
         /// <summary>
+        /// The BYOIP egress (NAT gateway) IP addresses pre-allocated for this network from the region's egress IPAM pool. Present in regions that have an egress pool. Customers can allowlist these addresses before egress is switched over to them, since they are reserved ahead of the switch.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reservedEgressIpAddresses")]
+        public global::System.Collections.Generic.IList<string>? ReservedEgressIpAddresses { get; set; }
+
+        /// <summary>
         /// The single contiguous CIDR block from which all egress (NAT gateway) IP addresses are allocated. Present only for networks created with the egress CIDR block feature enabled. Customers can allowlist this range instead of individual egress IPs so it keeps working when AZs are added.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("egressCidrBlock")]
@@ -150,6 +156,9 @@ namespace Vercel
         /// The IDs of the AWS Availability Zones in which the network exists, if specified during creation.
         /// </param>
         /// <param name="egressIpAddresses"></param>
+        /// <param name="reservedEgressIpAddresses">
+        /// The BYOIP egress (NAT gateway) IP addresses pre-allocated for this network from the region's egress IPAM pool. Present in regions that have an egress pool. Customers can allowlist these addresses before egress is switched over to them, since they are reserved ahead of the switch.
+        /// </param>
         /// <param name="egressCidrBlock">
         /// The single contiguous CIDR block from which all egress (NAT gateway) IP addresses are allocated. Present only for networks created with the egress CIDR block feature enabled. Customers can allowlist this range instead of individual egress IPs so it keeps working when AZs are added.
         /// </param>
@@ -182,6 +191,7 @@ namespace Vercel
             string teamId,
             global::System.Collections.Generic.IList<string>? awsAvailabilityZoneIds,
             global::System.Collections.Generic.IList<string>? egressIpAddresses,
+            global::System.Collections.Generic.IList<string>? reservedEgressIpAddresses,
             string? egressCidrBlock,
             global::Vercel.NetworkHostedZones? hostedZones,
             global::Vercel.NetworkPeeringConnections? peeringConnections,
@@ -195,6 +205,7 @@ namespace Vercel
             this.Cidr = cidr ?? throw new global::System.ArgumentNullException(nameof(cidr));
             this.CreatedAt = createdAt;
             this.EgressIpAddresses = egressIpAddresses;
+            this.ReservedEgressIpAddresses = reservedEgressIpAddresses;
             this.EgressCidrBlock = egressCidrBlock;
             this.HostedZones = hostedZones;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
