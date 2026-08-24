@@ -1044,6 +1044,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        IntegrationConfigurationCredentialRevoked,
+        /// <summary>
+        /// 
+        /// </summary>
         IntegrationConfigurationCredentialRotated,
         /// <summary>
         /// 
@@ -2893,6 +2897,7 @@ namespace Vercel
                 UserEventType.GlobalConfigTransferOut => "global-config-transfer-out",
                 UserEventType.GlobalConfigUpdated => "global-config-updated",
                 UserEventType.InstantRollbackCreated => "instant-rollback-created",
+                UserEventType.IntegrationConfigurationCredentialRevoked => "integration-configuration-credential-revoked",
                 UserEventType.IntegrationConfigurationCredentialRotated => "integration-configuration-credential-rotated",
                 UserEventType.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
                 UserEventType.IntegrationConfigurationScopeChangeConfirmed => "integration-configuration-scope-change-confirmed",
@@ -3556,6 +3561,7 @@ namespace Vercel
                 "global-config-transfer-out" => UserEventType.GlobalConfigTransferOut,
                 "global-config-updated" => UserEventType.GlobalConfigUpdated,
                 "instant-rollback-created" => UserEventType.InstantRollbackCreated,
+                "integration-configuration-credential-revoked" => UserEventType.IntegrationConfigurationCredentialRevoked,
                 "integration-configuration-credential-rotated" => UserEventType.IntegrationConfigurationCredentialRotated,
                 "integration-configuration-owner-changed" => UserEventType.IntegrationConfigurationOwnerChanged,
                 "integration-configuration-scope-change-confirmed" => UserEventType.IntegrationConfigurationScopeChangeConfirmed,

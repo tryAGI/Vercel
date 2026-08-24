@@ -1043,6 +1043,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        IntegrationConfigurationCredentialRevoked,
+        /// <summary>
+        /// 
+        /// </summary>
         IntegrationConfigurationCredentialRotated,
         /// <summary>
         /// 
@@ -2892,6 +2896,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.GlobalConfigTransferOut => "global-config-transfer-out",
                 ListEventTypeReplacedByItem.GlobalConfigUpdated => "global-config-updated",
                 ListEventTypeReplacedByItem.InstantRollbackCreated => "instant-rollback-created",
+                ListEventTypeReplacedByItem.IntegrationConfigurationCredentialRevoked => "integration-configuration-credential-revoked",
                 ListEventTypeReplacedByItem.IntegrationConfigurationCredentialRotated => "integration-configuration-credential-rotated",
                 ListEventTypeReplacedByItem.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
                 ListEventTypeReplacedByItem.IntegrationConfigurationScopeChangeConfirmed => "integration-configuration-scope-change-confirmed",
@@ -3555,6 +3560,7 @@ namespace Vercel
                 "global-config-transfer-out" => ListEventTypeReplacedByItem.GlobalConfigTransferOut,
                 "global-config-updated" => ListEventTypeReplacedByItem.GlobalConfigUpdated,
                 "instant-rollback-created" => ListEventTypeReplacedByItem.InstantRollbackCreated,
+                "integration-configuration-credential-revoked" => ListEventTypeReplacedByItem.IntegrationConfigurationCredentialRevoked,
                 "integration-configuration-credential-rotated" => ListEventTypeReplacedByItem.IntegrationConfigurationCredentialRotated,
                 "integration-configuration-owner-changed" => ListEventTypeReplacedByItem.IntegrationConfigurationOwnerChanged,
                 "integration-configuration-scope-change-confirmed" => ListEventTypeReplacedByItem.IntegrationConfigurationScopeChangeConfirmed,

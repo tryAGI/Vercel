@@ -1,0 +1,69 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class ConnectCreateConnectorRequestTriggerDestinationBranch
+    {
+        /// <summary>
+        /// Project that receives triggers. During connector creation, omit it to use the top-level projectId.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
+
+        /// <summary>
+        /// Git branch used to select a preview deployment.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("branch")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Branch { get; set; }
+
+        /// <summary>
+        /// Route path on the linked project that receives forwarded trigger requests.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("path")]
+        public string? Path { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConnectCreateConnectorRequestTriggerDestinationBranch" /> class.
+        /// </summary>
+        /// <param name="branch">
+        /// Git branch used to select a preview deployment.
+        /// </param>
+        /// <param name="projectId">
+        /// Project that receives triggers. During connector creation, omit it to use the top-level projectId.
+        /// </param>
+        /// <param name="path">
+        /// Route path on the linked project that receives forwarded trigger requests.
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public ConnectCreateConnectorRequestTriggerDestinationBranch(
+            string branch,
+            string? projectId,
+            string? path)
+        {
+            this.ProjectId = projectId;
+            this.Branch = branch ?? throw new global::System.ArgumentNullException(nameof(branch));
+            this.Path = path;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConnectCreateConnectorRequestTriggerDestinationBranch" /> class.
+        /// </summary>
+        public ConnectCreateConnectorRequestTriggerDestinationBranch()
+        {
+        }
+
+    }
+}

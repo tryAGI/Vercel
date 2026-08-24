@@ -27,11 +27,15 @@ namespace Vercel
             };
         partial void PrepareCreateConnectorArguments(
             global::System.Net.Http.HttpClient httpClient,
-            global::Vercel.CreateConnectorRequest request);
+            ref string? teamId,
+            ref string? slug,
+            global::Vercel.ConnectCreateConnectorRequest request);
         partial void PrepareCreateConnectorRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::Vercel.CreateConnectorRequest request);
+            string? teamId,
+            string? slug,
+            global::Vercel.ConnectCreateConnectorRequest request);
         partial void ProcessCreateConnectorResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -43,21 +47,31 @@ namespace Vercel
 
         /// <summary>
         /// Create a connector<br/>
-        /// Create a connector from type-specific configuration and optionally link it to a project during creation.
+        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults.
         /// </summary>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.CreateConnectorResponse> CreateConnectorAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.ConnectConnectorCreateResult> CreateConnectorAsync(
 
-            global::Vercel.CreateConnectorRequest request,
+            global::Vercel.ConnectCreateConnectorRequest request,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await CreateConnectorAsResponseAsync(
 
                 request: request,
+                teamId: teamId,
+                slug: slug,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -66,15 +80,23 @@ namespace Vercel
         }
         /// <summary>
         /// Create a connector<br/>
-        /// Create a connector from type-specific configuration and optionally link it to a project during creation.
+        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults.
         /// </summary>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateConnectorResponse>> CreateConnectorAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ConnectConnectorCreateResult>> CreateConnectorAsResponseAsync(
 
-            global::Vercel.CreateConnectorRequest request,
+            global::Vercel.ConnectCreateConnectorRequest request,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -84,6 +106,8 @@ namespace Vercel
                 client: HttpClient);
             PrepareCreateConnectorArguments(
                 httpClient: HttpClient,
+                teamId: ref teamId,
+                slug: ref slug,
                 request: request);
 
 
@@ -112,6 +136,10 @@ namespace Vercel
                             var __pathBuilder = new global::Vercel.PathBuilder(
                                 path: "/v1/connect/connectors",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("teamId", teamId)
+                                .AddOptionalParameter("slug", slug)
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
@@ -158,6 +186,8 @@ namespace Vercel
                 PrepareCreateConnectorRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    teamId: teamId,
+                    slug: slug,
                     request: request);
 
                 return __httpRequest;
@@ -337,20 +367,24 @@ namespace Vercel
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // 
+                            // One of the provided values in the request body is invalid.
                             if ((int)__response.StatusCode == 400)
                             {
                                 string? __content_400 = null;
                                 global::System.Exception? __exception_400 = null;
+                                global::Vercel.ConnectError? __value_400 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_400 = global::Vercel.ConnectError.FromJson(__content_400, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_400 = global::Vercel.ConnectError.FromJson(__content_400, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -359,30 +393,35 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.ConnectError>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
+                                    responseObject: __value_400,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            // The request is not authorized.
                             if ((int)__response.StatusCode == 401)
                             {
                                 string? __content_401 = null;
                                 global::System.Exception? __exception_401 = null;
+                                global::Vercel.ConnectError? __value_401 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_401 = global::Vercel.ConnectError.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_401 = global::Vercel.ConnectError.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -391,30 +430,35 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.ConnectError>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
+                                    responseObject: __value_401,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            // You do not have permission to access this resource.
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
                                 global::System.Exception? __exception_403 = null;
+                                global::Vercel.ConnectError? __value_403 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_403 = global::Vercel.ConnectError.FromJson(__content_403, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_403 = global::Vercel.ConnectError.FromJson(__content_403, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -423,30 +467,35 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.ConnectError>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
+                                    responseObject: __value_403,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            // The requested resource was not found.
                             if ((int)__response.StatusCode == 404)
                             {
                                 string? __content_404 = null;
                                 global::System.Exception? __exception_404 = null;
+                                global::Vercel.ConnectError? __value_404 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_404 = global::Vercel.ConnectError.FromJson(__content_404, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_404 = global::Vercel.ConnectError.FromJson(__content_404, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -455,30 +504,35 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.ConnectError>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     responseBody: __content_404,
+                                    responseObject: __value_404,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            // The request conflicts with the current resource state.
                             if ((int)__response.StatusCode == 409)
                             {
                                 string? __content_409 = null;
                                 global::System.Exception? __exception_409 = null;
+                                global::Vercel.ConnectError? __value_409 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_409 = global::Vercel.ConnectError.FromJson(__content_409, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_409 = global::Vercel.ConnectError.FromJson(__content_409, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -487,30 +541,35 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.ConnectError>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_409 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_409,
                                     responseBody: __content_409,
+                                    responseObject: __value_409,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            // The requested resource is no longer available.
                             if ((int)__response.StatusCode == 410)
                             {
                                 string? __content_410 = null;
                                 global::System.Exception? __exception_410 = null;
+                                global::Vercel.ConnectError? __value_410 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_410 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_410 = global::Vercel.ConnectError.FromJson(__content_410, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_410 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_410 = global::Vercel.ConnectError.FromJson(__content_410, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -519,30 +578,35 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.ConnectError>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_410 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_410,
                                     responseBody: __content_410,
+                                    responseObject: __value_410,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            // The request cannot be completed in the current state.
                             if ((int)__response.StatusCode == 422)
                             {
                                 string? __content_422 = null;
                                 global::System.Exception? __exception_422 = null;
+                                global::Vercel.ConnectError? __value_422 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_422 = global::Vercel.ConnectError.FromJson(__content_422, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_422 = global::Vercel.ConnectError.FromJson(__content_422, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -551,30 +615,35 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.ConnectError>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_422 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_422,
                                     responseBody: __content_422,
+                                    responseObject: __value_422,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            // An internal error occurred.
                             if ((int)__response.StatusCode == 500)
                             {
                                 string? __content_500 = null;
                                 global::System.Exception? __exception_500 = null;
+                                global::Vercel.ConnectError? __value_500 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_500 = global::Vercel.ConnectError.FromJson(__content_500, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_500 = global::Vercel.ConnectError.FromJson(__content_500, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -583,30 +652,35 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.ConnectError>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_500,
                                     responseBody: __content_500,
+                                    responseObject: __value_500,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            // A dependency returned an invalid or unsuccessful response.
                             if ((int)__response.StatusCode == 502)
                             {
                                 string? __content_502 = null;
                                 global::System.Exception? __exception_502 = null;
+                                global::Vercel.ConnectError? __value_502 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_502 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_502 = global::Vercel.ConnectError.FromJson(__content_502, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_502 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_502 = global::Vercel.ConnectError.FromJson(__content_502, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -615,11 +689,12 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.ConnectError>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_502 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_502,
                                     responseBody: __content_502,
+                                    responseObject: __value_502,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -647,9 +722,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.CreateConnectorResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.ConnectConnectorCreateResult.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateConnectorResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.ConnectConnectorCreateResult>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -679,9 +754,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.CreateConnectorResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.ConnectConnectorCreateResult.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateConnectorResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.ConnectConnectorCreateResult>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -723,49 +798,96 @@ namespace Vercel
         }
         /// <summary>
         /// Create a connector<br/>
-        /// Create a connector from type-specific configuration and optionally link it to a project during creation.
+        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults.
         /// </summary>
-        /// <param name="data"></param>
-        /// <param name="icon"></param>
-        /// <param name="backgroundColor"></param>
-        /// <param name="accentColor"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
+        /// <param name="data">
+        /// Provider configuration. With type, provide the complete configuration for that type. With service and connectionMethod, provide only credentials and preferences; Connect supplies the type, endpoints, templates, and defaults. Other connector types accept an arbitrary object.
+        /// </param>
+        /// <param name="icon">
+        /// SHA-1 digest of a PNG or JPEG icon that is at least 640 by 640 pixels. This field does not accept a URL or image bytes.<br/>
+        /// First compute the digest and upload the raw image with [POST /v2/files](https://vercel.com/docs/rest-api/deployments/upload-deployment-files). Send `Content-Length` and the same 40-character digest in `x-vercel-digest`. Then set `icon` to that digest.<br/>
+        /// ```js<br/>
+        /// import { createHash } from 'node:crypto';<br/>
+        /// import { readFile } from 'node:fs/promises';<br/>
+        /// const VERCEL_TOKEN = process.env.VERCEL_TOKEN;<br/>
+        /// const connectorId = 'scl_...';<br/>
+        /// const bytes = await readFile('icon.png');<br/>
+        /// const digest = createHash('sha1').update(bytes).digest('hex');<br/>
+        /// await fetch('https://api.vercel.com/v2/files', {<br/>
+        ///   method: 'POST',<br/>
+        ///   headers: {<br/>
+        ///     Authorization: `Bearer ${VERCEL_TOKEN}`,<br/>
+        ///     'Content-Type': 'application/octet-stream',<br/>
+        ///     'Content-Length': String(bytes.length),<br/>
+        ///     'x-vercel-digest': digest,<br/>
+        ///   },<br/>
+        ///   body: bytes,<br/>
+        /// });<br/>
+        /// await fetch(`https://api.vercel.com/v2/connect/connectors/${connectorId}`, {<br/>
+        ///   method: 'PATCH',<br/>
+        ///   headers: {<br/>
+        ///     Authorization: `Bearer ${VERCEL_TOKEN}`,<br/>
+        ///     'Content-Type': 'application/json',<br/>
+        ///   },<br/>
+        ///   body: JSON.stringify({ icon: digest }),<br/>
+        /// });<br/>
+        /// ```
+        /// </param>
+        /// <param name="backgroundColor">
+        /// Branding background color (6-digit hex, for example
+        /// </param>
+        /// <param name="accentColor">
+        /// Branding accent color (6-digit hex, for example
+        /// </param>
         /// <param name="type">
-        /// Known types: api-key, github, linear, linq, oauth, photon, salesforce, sendblue, slack, snowflake. Optional when \"connectionMethod\" is set.
+        /// Connector implementation type for full configuration. Known types: api-key, discord, github, linear, linq, microsoft-entra, oauth, photon, salesforce, sendblue, slack, snowflake, snowflake-wif. Optional when service and connectionMethod select the type.
         /// </param>
         /// <param name="service">
-        /// Service slug or URL for which the connector is used.
+        /// Service slug or URL for which the connector is used. Required when connectionMethod is set. Service alone does not enable preset configuration.
         /// </param>
         /// <param name="connectionMethod">
-        /// Connection method slug of the service.
+        /// Connection method slug of the service. Use it with service to select preset configuration.
         /// </param>
         /// <param name="params">
-        /// Values for the connection method's templateFields.
+        /// Values for the selected connection method's template fields. Requires connectionMethod.
         /// </param>
         /// <param name="target">
         /// Which of the service's targets this connector is for. Requires \"connectionMethod\" and must be one that method serves. Optional.
         /// </param>
-        /// <param name="uid"></param>
-        /// <param name="name"></param>
+        /// <param name="uid">
+        /// Optional team-scoped unique identifier for the connector. If omitted or empty, Connect generates a value.
+        /// </param>
+        /// <param name="name">
+        /// Connector name. The value is trimmed and cannot contain control characters. If omitted or empty, the project name is used. A name or projectId is required. API key connectors require name.
+        /// </param>
         /// <param name="projectId">
-        /// Link to the specified project when specified. See environments.
+        /// Project to connect during creation. If environments is omitted, the connection uses development, preview, and production.
         /// </param>
         /// <param name="environments">
-        /// Use these built-in environment names or stable custom environment IDs when linking to projectId.
+        /// Environments for the project connection. Requires projectId. Use one or more built-in environment names or stable custom environment IDs that belong to the project. Duplicate values are accepted and removed.
         /// </param>
         /// <param name="triggers">
         /// Whether the triggers are enabled for this connector.
         /// </param>
         /// <param name="triggerDestination">
-        /// Initial trigger destination routing for the linked project.
+        /// Initial trigger destination. Requires triggers to be enabled and a projectId here or at the top level. Connector responses expose the resulting set as triggerDestinations. Replace the complete set with PATCH /v1/connect/connectors/{connector}/trigger-destinations.
         /// </param>
         /// <param name="events">
-        /// The list of the defaults trigger events for this connector.
+        /// Default trigger events for this connector.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.CreateConnectorResponse> CreateConnectorAsync(
-            global::Vercel.AnyOf<global::Vercel.CreateConnectorRequestDataTypeOauth, global::Vercel.CreateConnectorRequestDataTypeApiKey, global::Vercel.CreateConnectorRequestDataTypeGithub, global::Vercel.CreateConnectorRequestDataTypeLinear, global::Vercel.CreateConnectorRequestDataTypeLinq, global::Vercel.CreateConnectorRequestDataTypeSalesforce, global::Vercel.CreateConnectorRequestDataTypeSendblue, global::Vercel.CreateConnectorRequestDataTypeSlack, global::Vercel.CreateConnectorRequestDataTypeSnowflake, global::Vercel.CreateConnectorRequestDataTypeSnowflakeWif, global::Vercel.CreateConnectorRequestDataTypePhoton, object> data,
+        public async global::System.Threading.Tasks.Task<global::Vercel.ConnectConnectorCreateResult> CreateConnectorAsync(
+            global::Vercel.ConnectConnectorCreateData data,
+            string? teamId = default,
+            string? slug = default,
             string? icon = default,
             string? backgroundColor = default,
             string? accentColor = default,
@@ -777,14 +899,14 @@ namespace Vercel
             string? uid = default,
             string? name = default,
             string? projectId = default,
-            global::System.Collections.Generic.IList<string>? environments = default,
+            global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.ConnectCreateConnectorRequestEnvironment?, string>>? environments = default,
             bool? triggers = default,
-            global::Vercel.CreateConnectorRequestTriggerDestination? triggerDestination = default,
+            global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>? triggerDestination = default,
             global::System.Collections.Generic.IList<string>? events = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Vercel.CreateConnectorRequest
+            var __request = new global::Vercel.ConnectCreateConnectorRequest
             {
                 Data = data,
                 Icon = icon,
@@ -805,6 +927,8 @@ namespace Vercel
             };
 
             return await CreateConnectorAsync(
+                teamId: teamId,
+                slug: slug,
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);
