@@ -665,7 +665,7 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="avatar">
-        /// The hash value of an uploaded image.
+        /// The hash value of an uploaded image, or `null` to clear the avatar.
         /// </param>
         /// <param name="description">
         /// A short text that describes the team.<br/>

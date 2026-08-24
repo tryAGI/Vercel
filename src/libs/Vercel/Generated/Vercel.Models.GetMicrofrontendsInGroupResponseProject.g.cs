@@ -538,7 +538,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tier")]
-        public string? Tier { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectTierJsonConverter))]
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectTier? Tier { get; set; }
 
         /// <summary>
         /// 
@@ -809,7 +810,7 @@ namespace Vercel
             global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurity? security,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectOidcTokenConfig? oidcTokenConfig,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectDeploymentPolicy? deploymentPolicy,
-            string? tier,
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectTier? tier,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectUsageStatus? usageStatus,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectFeatures? features,
             bool? v0,

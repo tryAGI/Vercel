@@ -337,7 +337,8 @@ namespace Vercel
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tier")]
-        public string? Tier { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemTierJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant1ItemTier? Tier { get; set; }
 
         /// <summary>
         /// 
@@ -475,7 +476,7 @@ namespace Vercel
             global::Vercel.GetProjectsResponseVariant1ItemWebAnalytics? webAnalytics,
             global::Vercel.GetProjectsResponseVariant1ItemSecurity? security,
             global::Vercel.GetProjectsResponseVariant1ItemOidcTokenConfig? oidcTokenConfig,
-            string? tier,
+            global::Vercel.GetProjectsResponseVariant1ItemTier? tier,
             global::Vercel.GetProjectsResponseVariant1ItemAbuse? abuse,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant1ItemInternalRouteVariant1, global::Vercel.GetProjectsResponseVariant1ItemInternalRouteVariant2>>? internalRoutes)
         {

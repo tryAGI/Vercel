@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class PatchTeamRequest
     {
         /// <summary>
-        /// The hash value of an uploaded image.
+        /// The hash value of an uploaded image, or `null` to clear the avatar.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
         public string? Avatar { get; set; }
@@ -219,7 +219,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="PatchTeamRequest" /> class.
         /// </summary>
         /// <param name="avatar">
-        /// The hash value of an uploaded image.
+        /// The hash value of an uploaded image, or `null` to clear the avatar.
         /// </param>
         /// <param name="description">
         /// A short text that describes the team.<br/>
