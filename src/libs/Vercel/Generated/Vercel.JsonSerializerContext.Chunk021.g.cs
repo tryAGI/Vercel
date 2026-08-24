@@ -11,6 +11,15 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAuthTokenResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteAuthTokenResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAuthUserResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AuthUser, global::Vercel.AuthUserLimited>), TypeInfoPropertyName = "OneOfAuthUserAuthUserLimited2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RequestDeleteResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateRepositoryResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRepositoryResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AddRepositoryPermissionResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListRepositoryTagsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListRepositoryTagsResponseTag>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListRepositoryTagsResponseTag))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListRepositoryTagsResponseTagKind), TypeInfoPropertyName = "ListRepositoryTagsResponseTagKind2")]
@@ -502,15 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemOperation?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemOperation2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation2?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemEnumOperation22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation3?), TypeInfoPropertyName = "NullablePatchEdgeConfigItemsRequestItemEnumOperation32")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableRequestType?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableRequestType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableRequestTargetItem?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableRequestTargetItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesTargetItem?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableRequestUpdatesTargetItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesType?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableRequestUpdatesType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagRequestKind?), TypeInfoPropertyName = "NullableCreateFlagRequestKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<string, double?, bool?, object, global::System.Collections.Generic.IList<object>, string>?), TypeInfoPropertyName = "NullableAnyOfStringDoubleBooleanObjectIListObjectString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagRequestEnvironmentsRuleConditionLhsVariant1, global::Vercel.CreateFlagRequestEnvironmentsRuleConditionLhsVariant2>?), TypeInfoPropertyName = "NullableAnyOfCreateFlagRequestEnvironmentsRuleConditionLhsVariant1CreateFlagRequestEnvironmentsRuleConditionLhsVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagRequestEnvironmentsRuleConditionCmp?), TypeInfoPropertyName = "NullableCreateFlagRequestEnvironmentsRuleConditionCmp2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagRequestEnvironmentsRuleConditionRhsVariant1, global::Vercel.CreateFlagRequestEnvironmentsRuleConditionRhsVariant2, string, double?, bool?>?), TypeInfoPropertyName = "CreateFlagRequestEnvironmentsRuleConditionRhsVariant2_string_double_bool_5aadb6b6ee02286b")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

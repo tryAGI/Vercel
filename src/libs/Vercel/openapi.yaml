@@ -82468,7 +82468,11 @@
                             "description": "Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident."
                           },
                           "tier": {
-                            "type": "string"
+                            "type": "string",
+                            "enum": [
+                              "advanced",
+                              "critical"
+                            ]
                           },
                           "usageStatus": {
                             "properties": {
@@ -94121,7 +94125,11 @@
                             "type": "object"
                           },
                           "tier": {
-                            "type": "string"
+                            "type": "string",
+                            "enum": [
+                              "advanced",
+                              "critical"
+                            ]
                           },
                           "abuse": {
                             "properties": {
@@ -98516,7 +98524,11 @@
                                 "type": "object"
                               },
                               "tier": {
-                                "type": "string"
+                                "type": "string",
+                                "enum": [
+                                  "advanced",
+                                  "critical"
+                                ]
                               },
                               "abuse": {
                                 "properties": {
@@ -105635,7 +105647,11 @@
                                 "description": "Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident."
                               },
                               "tier": {
-                                "type": "string"
+                                "type": "string",
+                                "enum": [
+                                  "advanced",
+                                  "critical"
+                                ]
                               },
                               "usageStatus": {
                                 "properties": {
@@ -113481,7 +113497,11 @@
                       "description": "Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident."
                     },
                     "tier": {
-                      "type": "string"
+                      "type": "string",
+                      "enum": [
+                        "advanced",
+                        "critical"
+                      ]
                     },
                     "usageStatus": {
                       "properties": {
@@ -121522,7 +121542,11 @@
                       "description": "Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident."
                     },
                     "tier": {
-                      "type": "string"
+                      "type": "string",
+                      "enum": [
+                        "advanced",
+                        "critical"
+                      ]
                     },
                     "usageStatus": {
                       "properties": {
@@ -128886,7 +128910,11 @@
                       "description": "Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident."
                     },
                     "tier": {
-                      "type": "string"
+                      "type": "string",
+                      "enum": [
+                        "advanced",
+                        "critical"
+                      ]
                     },
                     "usageStatus": {
                       "properties": {
@@ -137522,7 +137550,11 @@
                       "description": "Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident."
                     },
                     "tier": {
-                      "type": "string"
+                      "type": "string",
+                      "enum": [
+                        "advanced",
+                        "critical"
+                      ]
                     },
                     "usageStatus": {
                       "properties": {
@@ -154171,7 +154203,11 @@
                       "description": "Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident."
                     },
                     "tier": {
-                      "type": "string"
+                      "type": "string",
+                      "enum": [
+                        "advanced",
+                        "critical"
+                      ]
                     },
                     "usageStatus": {
                       "properties": {
@@ -183993,8 +184029,10 @@
                 "properties": {
                   "avatar": {
                     "type": "string",
-                    "format": "regex",
-                    "description": "The hash value of an uploaded image."
+                    "maxLength": 40,
+                    "pattern": "^[0-9a-f]+$",
+                    "description": "The hash value of an uploaded image, or `null` to clear the avatar.",
+                    "nullable": true
                   },
                   "description": {
                     "type": "string",
