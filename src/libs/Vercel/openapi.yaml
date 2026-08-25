@@ -12214,6 +12214,595 @@
         }
       }
     },
+    "/v1/connect/token/{connector}": {
+      "post": {
+        "description": "Get an access token for a connector identified by the path parameter and scoped to the requester.",
+        "operationId": "getConnectorToken",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Get a Connect token",
+        "tags": [
+          "connect"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "token": {
+                      "type": "string"
+                    },
+                    "tokenId": {
+                      "type": "string"
+                    },
+                    "expiresAt": {
+                      "type": "number"
+                    },
+                    "connector": {
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "uid": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type",
+                        "uid"
+                      ],
+                      "type": "object"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "installationId": {
+                      "type": "string"
+                    },
+                    "tenantId": {
+                      "type": "string"
+                    },
+                    "externalSubject": {
+                      "type": "string"
+                    },
+                    "authorizationId": {
+                      "type": "string",
+                      "description": "Stable id correlating all tokens (including refreshes) back to the original authorization."
+                    },
+                    "tokenGroupId": {
+                      "type": "string",
+                      "description": "Stable id that groups all tokens with the same parameters across refreshes."
+                    },
+                    "claims": {
+                      "additionalProperties": true,
+                      "type": "object",
+                      "description": "Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only."
+                    },
+                    "metadata": {
+                      "additionalProperties": true,
+                      "type": "object",
+                      "description": "Driver-specific metadata (e.g., botUserId for Slack)."
+                    }
+                  },
+                  "required": [
+                    "connector",
+                    "expiresAt",
+                    "token",
+                    "tokenId"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "422": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "connector",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "subject": {
+                    "anyOf": [
+                      {
+                        "title": "type:app",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "app"
+                            ]
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:user",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "user"
+                            ]
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "issuer": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:jwt-bearer",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "jwt-bearer"
+                            ]
+                          },
+                          "sub": {
+                            "type": "string"
+                          },
+                          "iss": {
+                            "type": "string"
+                          },
+                          "aud": {
+                            "type": "string"
+                          },
+                          "additionalClaims": {
+                            "type": "object",
+                            "additionalProperties": true
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:token",
+                        "type": "object",
+                        "required": [
+                          "type",
+                          "token"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "token"
+                            ]
+                          },
+                          "token": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      {
+                        "title": "type:other",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        "not": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "token"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "additionalProperties": true
+                      }
+                    ]
+                  },
+                  "installationId": {
+                    "type": "string"
+                  },
+                  "audience": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "scopes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "resources": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "authorizationDetails": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  },
+                  "validityBufferMs": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/connect/authorize/{connector}": {
+      "post": {
+        "description": "Create an authorization request for a connector and return the URL and verifier details needed to complete the flow.",
+        "operationId": "createConnectorAuthorizationRequest",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Create a Connect authorization request",
+        "tags": [
+          "connect"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "url": {
+                      "type": "string"
+                    },
+                    "request": {
+                      "type": "string"
+                    },
+                    "verifier": {
+                      "type": "string"
+                    },
+                    "deviceCode": {
+                      "type": "string"
+                    },
+                    "expiresAt": {
+                      "type": "number"
+                    },
+                    "connector": {
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "Client id (e.g. `scl_\u2026`)."
+                        },
+                        "uid": {
+                          "type": "string",
+                          "description": "Client uid (e.g. `salesforce/my-org`)."
+                        },
+                        "type": {
+                          "type": "string",
+                          "description": "Client type (e.g. `oauth`, `salesforce`)."
+                        },
+                        "service": {
+                          "type": "string",
+                          "description": "Resolved service id when known (e.g. `salesforce`), following the `stored.service ?? typeDef.service ?? stored.type` convention."
+                        },
+                        "serviceName": {
+                          "type": "string",
+                          "description": "Curated display name of the resolved service (e.g. \"Salesforce\"), present when the service is a known service. Suited for end-user surfaces like \"Sign in with {serviceName}\"."
+                        },
+                        "displayName": {
+                          "type": "string",
+                          "description": "Provider-facing display name when the connector type exposes one, falling back to the stored connector name."
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": "The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one."
+                        }
+                      },
+                      "required": [
+                        "displayName",
+                        "id",
+                        "name",
+                        "type",
+                        "uid"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "connector",
+                    "expiresAt",
+                    "request",
+                    "url",
+                    "verifier"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "connector",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "subject": {
+                    "anyOf": [
+                      {
+                        "title": "type:app",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "app"
+                            ]
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:user",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "user"
+                            ]
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "issuer": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:jwt-bearer",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "jwt-bearer"
+                            ]
+                          },
+                          "sub": {
+                            "type": "string"
+                          },
+                          "iss": {
+                            "type": "string"
+                          },
+                          "aud": {
+                            "type": "string"
+                          },
+                          "additionalClaims": {
+                            "type": "object",
+                            "additionalProperties": true
+                          }
+                        },
+                        "additionalProperties": true
+                      },
+                      {
+                        "title": "type:token",
+                        "type": "object",
+                        "required": [
+                          "type",
+                          "token"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "token"
+                            ]
+                          },
+                          "token": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      {
+                        "title": "type:other",
+                        "type": "object",
+                        "required": [
+                          "type"
+                        ],
+                        "properties": {
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        "not": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "token"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "additionalProperties": true
+                      }
+                    ]
+                  },
+                  "installationId": {
+                    "type": "string"
+                  },
+                  "audience": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "scopes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "resources": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "authorizationDetails": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  },
+                  "validityBufferMs": {
+                    "type": "number"
+                  },
+                  "returnUrl": {
+                    "type": "string"
+                  },
+                  "webhook": {
+                    "type": "string"
+                  },
+                  "prompt": {
+                    "type": "string"
+                  },
+                  "deviceCode": {
+                    "type": "boolean"
+                  },
+                  "expiresInMs": {
+                    "type": "number"
+                  },
+                  "additionalParams": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v3/deployments/{idOrUrl}/events": {
       "get": {
         "description": "Get the build logs of a deployment by deployment ID and build ID. It can work as an infinite stream of logs or as a JSON endpoint depending on the input parameters.",
