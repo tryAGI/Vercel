@@ -1175,12 +1175,6 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("workflowRunData")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WorkflowRunData { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasProject")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AliasProject { get; set; }
 
@@ -1671,6 +1665,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WebAnalytics { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("workflowRunData")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WorkflowRunData { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -1873,7 +1873,6 @@ namespace Vercel
         /// <param name="webAnalyticsPlan"></param>
         /// <param name="webhook"></param>
         /// <param name="webhookEvent"></param>
-        /// <param name="workflowRunData"></param>
         /// <param name="aliasProject"></param>
         /// <param name="aliasProtectionBypass"></param>
         /// <param name="bulkRedirects"></param>
@@ -1956,6 +1955,7 @@ namespace Vercel
         /// <param name="vercelAuth"></param>
         /// <param name="vercelRun"></param>
         /// <param name="webAnalytics"></param>
+        /// <param name="workflowRunData"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -2154,7 +2154,6 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalyticsPlan,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webhook,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webhookEvent,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? workflowRunData,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aliasProject,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aliasProtectionBypass,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? bulkRedirects,
@@ -2236,7 +2235,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? v0Chat,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelAuth,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelRun,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalytics)
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalytics,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? workflowRunData)
         {
             this.Oauth2Connection = oauth2Connection;
             this.User = user;
@@ -2432,7 +2432,6 @@ namespace Vercel
             this.WebAnalyticsPlan = webAnalyticsPlan;
             this.Webhook = webhook;
             this.WebhookEvent = webhookEvent;
-            this.WorkflowRunData = workflowRunData;
             this.AliasProject = aliasProject;
             this.AliasProtectionBypass = aliasProtectionBypass;
             this.BulkRedirects = bulkRedirects;
@@ -2515,6 +2514,7 @@ namespace Vercel
             this.VercelAuth = vercelAuth;
             this.VercelRun = vercelRun;
             this.WebAnalytics = webAnalytics;
+            this.WorkflowRunData = workflowRunData;
         }
 
         /// <summary>

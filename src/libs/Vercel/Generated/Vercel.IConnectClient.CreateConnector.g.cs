@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Create a connector<br/>
-        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults. Production project OIDC tokens may create OAuth connectors, plus credential-less API key connectors whose credentials are supplied per user. OIDC-created connectors are automatically linked within the deployment token's eligible project environments.
+        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -18,7 +18,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateConnectorResponse> CreateConnectorAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.ConnectConnectorCreateResult> CreateConnectorAsync(
 
             global::Vercel.ConnectCreateConnectorRequest request,
             string? teamId = default,
@@ -27,7 +27,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a connector<br/>
-        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults. Production project OIDC tokens may create OAuth connectors, plus credential-less API key connectors whose credentials are supplied per user. OIDC-created connectors are automatically linked within the deployment token's eligible project environments.
+        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -39,7 +39,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateConnectorResponse>> CreateConnectorAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ConnectConnectorCreateResult>> CreateConnectorAsResponseAsync(
 
             global::Vercel.ConnectCreateConnectorRequest request,
             string? teamId = default,
@@ -48,7 +48,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a connector<br/>
-        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults. Production project OIDC tokens may create OAuth connectors, plus credential-less API key connectors whose credentials are supplied per user. OIDC-created connectors are automatically linked within the deployment token's eligible project environments.
+        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -134,7 +134,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateConnectorResponse> CreateConnectorAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.ConnectConnectorCreateResult> CreateConnectorAsync(
             global::Vercel.ConnectConnectorCreateData data,
             string? teamId = default,
             string? slug = default,

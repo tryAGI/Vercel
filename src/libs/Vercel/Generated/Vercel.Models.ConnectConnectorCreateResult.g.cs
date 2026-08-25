@@ -29,21 +29,6 @@ namespace Vercel
         public string? DefaultInstallationId { get; set; }
 
         /// <summary>
-        /// Connector implementation type.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ConnectConnectorCreateResultTypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.ConnectConnectorCreateResultType Type { get; set; }
-
-        /// <summary>
-        /// Connector name within the owning team.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
-
-        /// <summary>
         /// Creation time in epoch milliseconds.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
@@ -56,61 +41,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double UpdatedAt { get; set; }
-
-        /// <summary>
-        /// Connector branding icon. SHA-1 hash that resolves to the uploaded icon through the Vercel avatar service. Consumers render this with `https://vercel.com/api/www/avatar/{icon}`.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("icon")]
-        public string? Icon { get; set; }
-
-        /// <summary>
-        /// Hex background color (e.g., `#000000`) for branding.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("backgroundColor")]
-        public string? BackgroundColor { get; set; }
-
-        /// <summary>
-        /// Hex accent color (e.g., `#000000`) for branding.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("accentColor")]
-        public string? AccentColor { get; set; }
-
-        /// <summary>
-        /// Best-effort identifier of the third-party service this connector represents, independent of `type`. Examples: `'slack'`, `'mcp.linear.app'`, and `'auth.example.com'`. Always present in API responses.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("service")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Service { get; set; }
-
-        /// <summary>
-        /// The connection method this connector was created from, when the create request named one.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("connectionMethod")]
-        public string? ConnectionMethod { get; set; }
-
-        /// <summary>
-        /// Which of the service's products/surfaces this connector points at.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        public string? Target { get; set; }
-
-        /// <summary>
-        /// Incoming trigger configuration. Only present when enabled.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("triggers")]
-        public global::Vercel.ConnectTriggerConfiguration? Triggers { get; set; }
-
-        /// <summary>
-        /// Known events this connector subscribes to (e.g. Slack bot events, GitHub webhook events). Names are type-specific and validated by the managed-create flow when forwarded to the third-party service.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("events")]
-        public global::System.Collections.Generic.IList<string>? Events { get; set; }
-
-        /// <summary>
-        /// Managed connector metadata exposed without leaking the manager connector or installation identifiers.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("managed")]
-        public global::Vercel.ConnectConnectorCreateResultManaged? Managed { get; set; }
 
         /// <summary>
         /// Time when this connector started requiring reinstallation because an installation-affecting app-token grant changed.
@@ -138,6 +68,46 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("creationMode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ConnectConnectorCreateResultCreationModeJsonConverter))]
         public global::Vercel.ConnectConnectorCreateResultCreationMode? CreationMode { get; set; }
+
+        /// <summary>
+        /// Managed connector metadata exposed without leaking the manager connector or installation identifiers.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("managed")]
+        public global::Vercel.ConnectConnectorCreateResultManaged? Managed { get; set; }
+
+        /// <summary>
+        /// Connector implementation type.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ConnectConnectorCreateResultTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.ConnectConnectorCreateResultType Type { get; set; }
+
+        /// <summary>
+        /// Best-effort identifier of the third-party service this connector represents, independent of `type`. Examples: `'slack'`, `'mcp.linear.app'`, and `'auth.example.com'`. Always present in API responses.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("service")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Service { get; set; }
+
+        /// <summary>
+        /// The connection method this connector was created from, when the create request named one.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectionMethod")]
+        public string? ConnectionMethod { get; set; }
+
+        /// <summary>
+        /// Which of the service's products/surfaces this connector points at.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        public string? Target { get; set; }
+
+        /// <summary>
+        /// Connector name within the owning team.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         /// Human-readable connector name.
@@ -190,6 +160,24 @@ namespace Vercel
         public string? Docsite { get; set; }
 
         /// <summary>
+        /// Connector branding icon. SHA-1 hash that resolves to the uploaded icon through the Vercel avatar service. Consumers render this with `https://vercel.com/api/www/avatar/{icon}`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("icon")]
+        public string? Icon { get; set; }
+
+        /// <summary>
+        /// Hex background color (e.g., `#000000`) for branding.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("backgroundColor")]
+        public string? BackgroundColor { get; set; }
+
+        /// <summary>
+        /// Hex accent color (e.g., `#000000`) for branding.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("accentColor")]
+        public string? AccentColor { get; set; }
+
+        /// <summary>
         /// Token subject types supported by the connector.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("supportedSubjectTypes")]
@@ -238,6 +226,18 @@ namespace Vercel
         public required global::Vercel.ConnectConnectorCreateResultSupportsIcon SupportsIcon { get; set; }
 
         /// <summary>
+        /// Incoming trigger configuration. Only present when enabled.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("triggers")]
+        public global::Vercel.ConnectTriggerConfiguration? Triggers { get; set; }
+
+        /// <summary>
+        /// Known events this connector subscribes to (e.g. Slack bot events, GitHub webhook events). Names are type-specific and validated by the managed-create flow when forwarded to the third-party service.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("events")]
+        public global::System.Collections.Generic.IList<string>? Events { get; set; }
+
+        /// <summary>
         /// Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("triggerDestinations")]
@@ -258,20 +258,20 @@ namespace Vercel
         /// <param name="uid">
         /// Team-scoped UID. URL-encode this value before using it in `{connector}`.
         /// </param>
-        /// <param name="type">
-        /// Connector implementation type.
-        /// </param>
-        /// <param name="name">
-        /// Connector name within the owning team.
-        /// </param>
         /// <param name="createdAt">
         /// Creation time in epoch milliseconds.
         /// </param>
         /// <param name="updatedAt">
         /// Last update time in epoch milliseconds.
         /// </param>
+        /// <param name="type">
+        /// Connector implementation type.
+        /// </param>
         /// <param name="service">
         /// Best-effort identifier of the third-party service this connector represents, independent of `type`. Examples: `'slack'`, `'mcp.linear.app'`, and `'auth.example.com'`. Always present in API responses.
+        /// </param>
+        /// <param name="name">
+        /// Connector name within the owning team.
         /// </param>
         /// <param name="displayName">
         /// Human-readable connector name.
@@ -297,30 +297,6 @@ namespace Vercel
         /// <param name="defaultInstallationId">
         /// Installation used when a token request does not specify an installation.
         /// </param>
-        /// <param name="icon">
-        /// Connector branding icon. SHA-1 hash that resolves to the uploaded icon through the Vercel avatar service. Consumers render this with `https://vercel.com/api/www/avatar/{icon}`.
-        /// </param>
-        /// <param name="backgroundColor">
-        /// Hex background color (e.g., `#000000`) for branding.
-        /// </param>
-        /// <param name="accentColor">
-        /// Hex accent color (e.g., `#000000`) for branding.
-        /// </param>
-        /// <param name="connectionMethod">
-        /// The connection method this connector was created from, when the create request named one.
-        /// </param>
-        /// <param name="target">
-        /// Which of the service's products/surfaces this connector points at.
-        /// </param>
-        /// <param name="triggers">
-        /// Incoming trigger configuration. Only present when enabled.
-        /// </param>
-        /// <param name="events">
-        /// Known events this connector subscribes to (e.g. Slack bot events, GitHub webhook events). Names are type-specific and validated by the managed-create flow when forwarded to the third-party service.
-        /// </param>
-        /// <param name="managed">
-        /// Managed connector metadata exposed without leaking the manager connector or installation identifiers.
-        /// </param>
         /// <param name="reinstallAt">
         /// Time when this connector started requiring reinstallation because an installation-affecting app-token grant changed.
         /// </param>
@@ -332,6 +308,15 @@ namespace Vercel
         /// </param>
         /// <param name="creationMode">
         /// How the connector row was originally created. New create paths stamp this explicitly; older rows may omit it.
+        /// </param>
+        /// <param name="managed">
+        /// Managed connector metadata exposed without leaking the manager connector or installation identifiers.
+        /// </param>
+        /// <param name="connectionMethod">
+        /// The connection method this connector was created from, when the create request named one.
+        /// </param>
+        /// <param name="target">
+        /// Which of the service's products/surfaces this connector points at.
         /// </param>
         /// <param name="clientUrl">
         /// Provider-side URL for viewing or managing the resource represented by the connector. The destination can be an app, account, phone line, or service instance, depending on the connector type.
@@ -351,11 +336,26 @@ namespace Vercel
         /// <param name="docsite">
         /// Developer documentation for the connected service.
         /// </param>
+        /// <param name="icon">
+        /// Connector branding icon. SHA-1 hash that resolves to the uploaded icon through the Vercel avatar service. Consumers render this with `https://vercel.com/api/www/avatar/{icon}`.
+        /// </param>
+        /// <param name="backgroundColor">
+        /// Hex background color (e.g., `#000000`) for branding.
+        /// </param>
+        /// <param name="accentColor">
+        /// Hex accent color (e.g., `#000000`) for branding.
+        /// </param>
         /// <param name="appTokens">
         /// App-token capabilities and known grants for the connector.
         /// </param>
         /// <param name="userTokens">
         /// User-token capabilities and known grants for the connector.
+        /// </param>
+        /// <param name="triggers">
+        /// Incoming trigger configuration. Only present when enabled.
+        /// </param>
+        /// <param name="events">
+        /// Known events this connector subscribes to (e.g. Slack bot events, GitHub webhook events). Names are type-specific and validated by the managed-create flow when forwarded to the third-party service.
         /// </param>
         /// <param name="triggerDestinations">
         /// Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`.
@@ -366,11 +366,11 @@ namespace Vercel
         public ConnectConnectorCreateResult(
             string id,
             string uid,
-            global::Vercel.ConnectConnectorCreateResultType type,
-            string name,
             double createdAt,
             double updatedAt,
+            global::Vercel.ConnectConnectorCreateResultType type,
             string service,
+            string name,
             string displayName,
             string typeName,
             global::System.Collections.Generic.IList<string> supportedSubjectTypes,
@@ -379,48 +379,43 @@ namespace Vercel
             bool supportsTriggers,
             global::Vercel.ConnectConnectorCreateResultSupportsIcon supportsIcon,
             string? defaultInstallationId,
-            string? icon,
-            string? backgroundColor,
-            string? accentColor,
-            string? connectionMethod,
-            string? target,
-            global::Vercel.ConnectTriggerConfiguration? triggers,
-            global::System.Collections.Generic.IList<string>? events,
-            global::Vercel.ConnectConnectorCreateResultManaged? managed,
             double? reinstallAt,
             global::Vercel.OneOf<global::Vercel.ConnectConnectorCreateResultCreatedByVariant1, global::Vercel.ConnectConnectorCreateResultCreatedByVariant2>? createdBy,
             global::Vercel.OneOf<global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2>? updatedBy,
             global::Vercel.ConnectConnectorCreateResultCreationMode? creationMode,
+            global::Vercel.ConnectConnectorCreateResultManaged? managed,
+            string? connectionMethod,
+            string? target,
             string? clientUrl,
             string? redirectUri,
             string? typeIcon,
             string? website,
             string? devsite,
             string? docsite,
+            string? icon,
+            string? backgroundColor,
+            string? accentColor,
             global::Vercel.ConnectConnectorCreateResultAppTokens? appTokens,
             global::Vercel.ConnectConnectorCreateResultUserTokens? userTokens,
+            global::Vercel.ConnectTriggerConfiguration? triggers,
+            global::System.Collections.Generic.IList<string>? events,
             global::System.Collections.Generic.IList<global::Vercel.ConnectTriggerDestination>? triggerDestinations)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.DefaultInstallationId = defaultInstallationId;
-            this.Type = type;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
-            this.Icon = icon;
-            this.BackgroundColor = backgroundColor;
-            this.AccentColor = accentColor;
-            this.Service = service ?? throw new global::System.ArgumentNullException(nameof(service));
-            this.ConnectionMethod = connectionMethod;
-            this.Target = target;
-            this.Triggers = triggers;
-            this.Events = events;
-            this.Managed = managed;
             this.ReinstallAt = reinstallAt;
             this.CreatedBy = createdBy;
             this.UpdatedBy = updatedBy;
             this.CreationMode = creationMode;
+            this.Managed = managed;
+            this.Type = type;
+            this.Service = service ?? throw new global::System.ArgumentNullException(nameof(service));
+            this.ConnectionMethod = connectionMethod;
+            this.Target = target;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.DisplayName = displayName ?? throw new global::System.ArgumentNullException(nameof(displayName));
             this.ClientUrl = clientUrl;
             this.RedirectUri = redirectUri;
@@ -429,6 +424,9 @@ namespace Vercel
             this.Website = website;
             this.Devsite = devsite;
             this.Docsite = docsite;
+            this.Icon = icon;
+            this.BackgroundColor = backgroundColor;
+            this.AccentColor = accentColor;
             this.SupportedSubjectTypes = supportedSubjectTypes ?? throw new global::System.ArgumentNullException(nameof(supportedSubjectTypes));
             this.AppTokens = appTokens;
             this.UserTokens = userTokens;
@@ -436,6 +434,8 @@ namespace Vercel
             this.SupportsRevocation = supportsRevocation;
             this.SupportsTriggers = supportsTriggers;
             this.SupportsIcon = supportsIcon;
+            this.Triggers = triggers;
+            this.Events = events;
             this.TriggerDestinations = triggerDestinations;
         }
 

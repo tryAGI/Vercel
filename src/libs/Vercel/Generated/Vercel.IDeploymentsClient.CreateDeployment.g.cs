@@ -134,7 +134,6 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant1, global::Vercel.CreateDeploymentResponseVariant2>> CreateDeploymentAsync(
-            string gitAccessToken,
             string name,
             global::Vercel.CreateDeploymentForceNew? forceNew = default,
             global::Vercel.CreateDeploymentSkipAutoDetectionConfirmation? skipAutoDetectionConfirmation = default,
@@ -143,6 +142,7 @@ namespace Vercel
             string? customEnvironmentSlugOrId = default,
             string? deploymentId = default,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentRequestFileInlinedFile, global::Vercel.CreateDeploymentRequestFileUploadedFile>>? files = default,
+            string? gitAccessToken = default,
             global::Vercel.CreateDeploymentRequestGitMetadata? gitMetadata = default,
             global::Vercel.AnyOf<global::Vercel.CreateDeploymentRequestGitSourceVariant1, global::Vercel.CreateDeploymentRequestGitSourceVariant2, global::Vercel.CreateDeploymentRequestGitSourceVariant3, global::Vercel.CreateDeploymentRequestGitSourceVariant4, global::Vercel.CreateDeploymentRequestGitSourceVariant5, global::Vercel.CreateDeploymentRequestGitSourceVariant6, global::Vercel.CreateDeploymentRequestGitSourceVariant7, global::Vercel.CreateDeploymentRequestGitSourceVariant8, global::Vercel.CreateDeploymentRequestGitSourceVariant9>? gitSource = default,
             global::System.Collections.Generic.Dictionary<string, string>? meta = default,
