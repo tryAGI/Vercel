@@ -16,6 +16,12 @@ namespace Vercel
         public required double MaxDelayHours { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customRotationWarning")]
+        public string? CustomRotationWarning { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -25,13 +31,16 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation" /> class.
         /// </summary>
         /// <param name="maxDelayHours"></param>
+        /// <param name="customRotationWarning"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation(
-            double maxDelayHours)
+            double maxDelayHours,
+            string? customRotationWarning)
         {
             this.MaxDelayHours = maxDelayHours;
+            this.CustomRotationWarning = customRotationWarning;
         }
 
         /// <summary>

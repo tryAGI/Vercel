@@ -178436,6 +178436,9 @@
                                   "properties": {
                                     "maxDelayHours": {
                                       "type": "number"
+                                    },
+                                    "customRotationWarning": {
+                                      "type": "string"
                                     }
                                   },
                                   "required": [
@@ -178598,6 +178601,9 @@
                                       "properties": {
                                         "maxDelayHours": {
                                           "type": "number"
+                                        },
+                                        "customRotationWarning": {
+                                          "type": "string"
                                         }
                                       },
                                       "required": [
@@ -181881,6 +181887,9 @@
                                           "properties": {
                                             "maxDelayHours": {
                                               "type": "number"
+                                            },
+                                            "customRotationWarning": {
+                                              "type": "string"
                                             }
                                           },
                                           "required": [
@@ -189168,6 +189177,9 @@
                               "cacheReason": {
                                 "type": "string"
                               },
+                              "pprState": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -189837,6 +189849,9 @@
                               "cacheReason": {
                                 "type": "string"
                               },
+                              "pprState": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -190459,6 +190474,7 @@
                               "pathType",
                               "pathTypeVariant",
                               "piiRedactionApplied",
+                              "pprState",
                               "privatelinkDnsName",
                               "privatelinkEndpointId",
                               "privatelinkIpAddress",
@@ -190973,6 +190989,9 @@
                               "cacheReason": {
                                 "type": "string"
                               },
+                              "pprState": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -191642,6 +191661,9 @@
                               "cacheReason": {
                                 "type": "string"
                               },
+                              "pprState": {
+                                "type": "string"
+                              },
                               "clientIp": {
                                 "type": "string"
                               },
@@ -192264,6 +192286,7 @@
                               "pathType",
                               "pathTypeVariant",
                               "piiRedactionApplied",
+                              "pprState",
                               "privatelinkDnsName",
                               "privatelinkEndpointId",
                               "privatelinkIpAddress",
@@ -192744,6 +192767,9 @@
                             "cacheReason": {
                               "type": "string"
                             },
+                            "pprState": {
+                              "type": "string"
+                            },
                             "clientIp": {
                               "type": "string"
                             },
@@ -193366,6 +193392,7 @@
                             "pathType",
                             "pathTypeVariant",
                             "piiRedactionApplied",
+                            "pprState",
                             "privatelinkDnsName",
                             "privatelinkEndpointId",
                             "privatelinkIpAddress",
@@ -193794,6 +193821,9 @@
                             "cacheReason": {
                               "type": "string"
                             },
+                            "pprState": {
+                              "type": "string"
+                            },
                             "clientIp": {
                               "type": "string"
                             },
@@ -194416,6 +194446,7 @@
                             "pathType",
                             "pathTypeVariant",
                             "piiRedactionApplied",
+                            "pprState",
                             "privatelinkDnsName",
                             "privatelinkEndpointId",
                             "privatelinkIpAddress",
