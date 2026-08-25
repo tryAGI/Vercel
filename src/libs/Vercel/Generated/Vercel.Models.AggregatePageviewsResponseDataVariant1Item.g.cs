@@ -317,6 +317,12 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pprState")]
+        public string? PprState { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientIp")]
         public string? ClientIp { get; set; }
 
@@ -1384,6 +1390,7 @@ namespace Vercel
         /// <param name="cacheHitLevel"></param>
         /// <param name="cacheApi"></param>
         /// <param name="cacheReason"></param>
+        /// <param name="pprState"></param>
         /// <param name="clientIp"></param>
         /// <param name="clientIpCountry"></param>
         /// <param name="clientUserAgent"></param>
@@ -1607,6 +1614,7 @@ namespace Vercel
             string? cacheHitLevel,
             string? cacheApi,
             string? cacheReason,
+            string? pprState,
             string? clientIp,
             string? clientIpCountry,
             string? clientUserAgent,
@@ -1826,6 +1834,7 @@ namespace Vercel
             this.CacheHitLevel = cacheHitLevel;
             this.CacheApi = cacheApi;
             this.CacheReason = cacheReason;
+            this.PprState = pprState;
             this.ClientIp = clientIp;
             this.ClientIpCountry = clientIpCountry;
             this.ClientUserAgent = clientUserAgent;
