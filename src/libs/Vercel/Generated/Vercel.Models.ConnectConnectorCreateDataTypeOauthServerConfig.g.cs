@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Authorization server metadata. Values override discovered metadata.<br/>
+    /// Authorization server metadata. Values override discovered metadata. Empty known string fields remove their stored overrides.<br/>
     /// Default Value: {}
     /// </summary>
     public sealed partial class ConnectConnectorCreateDataTypeOauthServerConfig

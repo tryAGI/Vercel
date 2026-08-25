@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class ConnectConnectorCreateDataTypeOauthClientAssertion
     {
         /// <summary>
-        /// OAuth client assertion type. Defaults to urn:ietf:params:oauth:client-assertion-type:jwt-bearer.
+        /// OAuth client assertion type. Defaults to urn:ietf:params:oauth:client-assertion-type:jwt-bearer. An empty string clears the configured type.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         public string? Type { get; set; }
@@ -36,7 +36,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="ConnectConnectorCreateDataTypeOauthClientAssertion" /> class.
         /// </summary>
         /// <param name="type">
-        /// OAuth client assertion type. Defaults to urn:ietf:params:oauth:client-assertion-type:jwt-bearer.
+        /// OAuth client assertion type. Defaults to urn:ietf:params:oauth:client-assertion-type:jwt-bearer. An empty string clears the configured type.
         /// </param>
         /// <param name="ttl">
         /// Client assertion lifetime in seconds.
