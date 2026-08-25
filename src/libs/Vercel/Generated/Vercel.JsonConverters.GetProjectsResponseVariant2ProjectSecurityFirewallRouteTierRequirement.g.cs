@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class CreateConnectorResponseCreationModeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.CreateConnectorResponseCreationMode?>
+    public sealed class GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirementJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement>
     {
         /// <inheritdoc />
-        public override global::Vercel.CreateConnectorResponseCreationMode? Read(
+        public override global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.CreateConnectorResponseCreationModeExtensions.ToEnum(stringValue);
+                        return global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirementExtensions.ToEnum(stringValue) ?? default;
                     }
                     
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.CreateConnectorResponseCreationMode)numValue;
+                    return (global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.CreateConnectorResponseCreationMode?);
+                    return default(global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,19 +42,12 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.CreateConnectorResponseCreationMode? value,
+            global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            if (value == null)
-            {
-                writer.WriteNullValue();
-            }
-            else
-            {
-                writer.WriteStringValue(global::Vercel.CreateConnectorResponseCreationModeExtensions.ToValueString(value.Value));
-            }
+            writer.WriteStringValue(global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirementExtensions.ToValueString(value));
         }
     }
 }

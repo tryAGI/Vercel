@@ -12070,7 +12070,7 @@
     },
     "/v1/connect/connectors": {
       "post": {
-        "description": "Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults. Production project OIDC tokens may create OAuth connectors, plus credential-less API key connectors whose credentials are supplied per user. OIDC-created connectors are automatically linked within the deployment token's eligible project environments.",
+        "description": "Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults.",
         "operationId": "createConnector",
         "security": [
           {
@@ -12082,602 +12082,6 @@
           "connect"
         ],
         "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                      "description": "Stable `scl_` connector ID."
-                    },
-                    "ownerId": {
-                      "type": "string",
-                      "description": "Vercel team ID that owns the connector."
-                    },
-                    "createdAt": {
-                      "type": "number",
-                      "description": "Creation time in epoch milliseconds."
-                    },
-                    "updatedAt": {
-                      "type": "number",
-                      "description": "Last update time in epoch milliseconds."
-                    },
-                    "deletedAt": {
-                      "type": "number",
-                      "description": "Deletion time in epoch milliseconds, when the connector is deleted."
-                    },
-                    "reinstallAt": {
-                      "type": "number",
-                      "description": "Time when this connector started requiring reinstallation because an installation-affecting app-token grant changed."
-                    },
-                    "createdBy": {
-                      "oneOf": [
-                        {
-                          "properties": {
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "user"
-                              ],
-                              "description": "Principal kind."
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "Vercel user ID."
-                            }
-                          },
-                          "required": [
-                            "id",
-                            "type"
-                          ],
-                          "type": "object",
-                          "description": "Principal that originally created the connector \u2014 either a Vercel user (interactive dashboard / CLI flow) or a Vercel deployment (OIDC-authenticated project, used by runtime auto-provisioning). See {@link ConnexPrincipal}. Optional: pre-existing rows from before this shape was introduced may carry no attribution at all."
-                        },
-                        {
-                          "properties": {
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "project"
-                              ],
-                              "description": "Principal kind."
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "Vercel project ID."
-                            },
-                            "environment": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "string",
-                                  "enum": [
-                                    "development",
-                                    "preview",
-                                    "production"
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          "required": [
-                            "environment",
-                            "id",
-                            "type"
-                          ],
-                          "type": "object",
-                          "description": "Principal that originally created the connector \u2014 either a Vercel user (interactive dashboard / CLI flow) or a Vercel deployment (OIDC-authenticated project, used by runtime auto-provisioning). See {@link ConnexPrincipal}. Optional: pre-existing rows from before this shape was introduced may carry no attribution at all."
-                        }
-                      ]
-                    },
-                    "updatedBy": {
-                      "oneOf": [
-                        {
-                          "properties": {
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "user"
-                              ],
-                              "description": "Principal kind."
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "Vercel user ID."
-                            }
-                          },
-                          "required": [
-                            "id",
-                            "type"
-                          ],
-                          "type": "object",
-                          "description": "Principal that most recently mutated the connector. Same shape as {@link createdBy} but tracks the most recent updater, not the original creator. At create time the two fields point at the same principal; they diverge on the first subsequent update."
-                        },
-                        {
-                          "properties": {
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "project"
-                              ],
-                              "description": "Principal kind."
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "Vercel project ID."
-                            },
-                            "environment": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "string",
-                                  "enum": [
-                                    "development",
-                                    "preview",
-                                    "production"
-                                  ]
-                                }
-                              ]
-                            }
-                          },
-                          "required": [
-                            "environment",
-                            "id",
-                            "type"
-                          ],
-                          "type": "object",
-                          "description": "Principal that most recently mutated the connector. Same shape as {@link createdBy} but tracks the most recent updater, not the original creator. At create time the two fields point at the same principal; they diverge on the first subsequent update."
-                        }
-                      ]
-                    },
-                    "creationMode": {
-                      "type": "string",
-                      "enum": [
-                        "managed",
-                        "manual"
-                      ],
-                      "description": "How the connector row was originally created. New create paths stamp this explicitly; older rows may omit it."
-                    },
-                    "managed": {
-                      "properties": {
-                        "sync": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ],
-                          "description": "Whether Vercel synchronizes provider-side configuration."
-                        }
-                      },
-                      "type": "object",
-                      "description": "Managed connector metadata exposed without leaking the manager connector or installation identifiers."
-                    },
-                    "public": {
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true
-                      ],
-                      "description": "Whether the connector is available outside its owning team."
-                    },
-                    "uid": {
-                      "type": "string",
-                      "description": "Team-scoped connector UID."
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "api-key",
-                        "custom",
-                        "discord",
-                        "github",
-                        "linear",
-                        "linq",
-                        "microsoft-entra",
-                        "oauth",
-                        "photon",
-                        "salesforce",
-                        "sendblue",
-                        "slack",
-                        "snowflake",
-                        "snowflake-wif"
-                      ],
-                      "description": "Connector implementation type."
-                    },
-                    "service": {
-                      "type": "string",
-                      "description": "Best-effort identifier of the third-party service this connector represents, independent of `type`. Examples: `'slack'`, `'mcp.linear.app'`, and `'auth.example.com'`. Always present in API responses."
-                    },
-                    "connectionMethod": {
-                      "type": "string",
-                      "description": "The connection method this connector was created from, when the create request named one."
-                    },
-                    "target": {
-                      "type": "string",
-                      "description": "Which of the service's products/surfaces this connector points at."
-                    },
-                    "name": {
-                      "type": "string",
-                      "description": "Connector name within the owning team."
-                    },
-                    "displayName": {
-                      "type": "string",
-                      "description": "Human-readable connector name."
-                    },
-                    "clientUrl": {
-                      "nullable": true,
-                      "type": "string",
-                      "description": "Provider-side URL for viewing or managing the resource represented by the connector. The destination can be an app, account, phone line, or service instance, depending on the connector type."
-                    },
-                    "redirectUri": {
-                      "type": "string",
-                      "description": "Redirect URI registered with the third-party service for this connector, if any. Used by `startAuthorization`/`startInstallation` to replay the exact URI back to the provider's token endpoint. Absent on connectors created before this field was introduced; those callers fall back to the `https://connect.vercel.com/callback` default."
-                    },
-                    "defaultInstallationId": {
-                      "type": "string",
-                      "description": "Installation used when a token request omits an installation ID."
-                    },
-                    "data": {
-                      "additionalProperties": true,
-                      "type": "object",
-                      "description": "Provider configuration stored for this connector."
-                    },
-                    "typeName": {
-                      "type": "string",
-                      "description": "Human-readable name of the connector type."
-                    },
-                    "typeIcon": {
-                      "type": "string",
-                      "description": "Icon identifier supplied by the connector type."
-                    },
-                    "website": {
-                      "type": "string",
-                      "description": "Public website for the connected service."
-                    },
-                    "devsite": {
-                      "type": "string",
-                      "description": "Developer website for the connected service."
-                    },
-                    "docsite": {
-                      "type": "string",
-                      "description": "Developer documentation for the connected service."
-                    },
-                    "icon": {
-                      "type": "string",
-                      "description": "Connector branding icon. SHA-1 hash that resolves to the uploaded icon through the Vercel avatar service. Consumers render this with `https://vercel.com/api/www/avatar/{icon}`."
-                    },
-                    "backgroundColor": {
-                      "type": "string",
-                      "description": "Hex background color (e.g., `#000000`) for branding."
-                    },
-                    "accentColor": {
-                      "type": "string",
-                      "description": "Hex accent color (e.g., `#000000`) for branding."
-                    },
-                    "supportedSubjectTypes": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array",
-                      "description": "Token subject types supported by the connector."
-                    },
-                    "appTokens": {
-                      "properties": {
-                        "crossInstallation": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ],
-                          "description": "Whether one app token can be used across installations."
-                        },
-                        "supportsRefinement": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ],
-                          "description": "Whether callers can narrow app-token grants per request."
-                        },
-                        "requiresReinstallation": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ],
-                          "description": "True when changing app token grants requires reinstalling the app, so tokens cannot be partitioned independently by requester environment."
-                        },
-                        "scopes": {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array",
-                          "description": "Known allowed app-level scopes. For Slack this is the bot scope set configured on the app; for OAuth it is the connector's enabled `clientCredentials.scopes` configuration."
-                        },
-                        "supportedAuthorizationDetails": {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array",
-                          "description": "Supported OAuth authorization-detail type names."
-                        },
-                        "permissionsUrl": {
-                          "type": "string",
-                          "description": "Link to the page on the service where this connector's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`."
-                        }
-                      },
-                      "required": [
-                        "crossInstallation",
-                        "supportsRefinement"
-                      ],
-                      "type": "object"
-                    },
-                    "userTokens": {
-                      "properties": {
-                        "crossInstallation": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ],
-                          "description": "Whether one user token can be used across installations."
-                        },
-                        "supportsRefinement": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ],
-                          "description": "Whether callers can narrow user-token grants per request."
-                        },
-                        "scopes": {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array",
-                          "description": "Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is the connector's enabled `userAuthorization.scopes` configuration."
-                        },
-                        "supportedAuthorizationDetails": {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array",
-                          "description": "Supported OAuth authorization-detail type names."
-                        },
-                        "manualCredentialInput": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ],
-                          "description": "User authorization is completed by the Connect consent screen submitting a credential instead of an OAuth redirect."
-                        }
-                      },
-                      "required": [
-                        "crossInstallation",
-                        "supportsRefinement"
-                      ],
-                      "type": "object"
-                    },
-                    "supportsInstallation": {
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true
-                      ],
-                      "description": "Whether the connector supports an installation flow."
-                    },
-                    "supportsRevocation": {
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true
-                      ],
-                      "description": "Whether Connect can revoke tokens for this connector."
-                    },
-                    "ownerTenantId": {
-                      "type": "string",
-                      "description": "Provider tenant ID associated with the connector owner."
-                    },
-                    "supportsTriggers": {
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true
-                      ],
-                      "description": "Whether this connector type supports trigger webhooks. Derived from the type definition; indicates that `triggers` and `triggerDestinations` may be meaningful for this connector."
-                    },
-                    "supportsIcon": {
-                      "enum": [
-                        false,
-                        "maybe",
-                        true
-                      ]
-                    },
-                    "supportsContacts": {
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true
-                      ],
-                      "description": "Whether this connector can verify and list messaging contacts. Derived from the type definition's `supportsContacts`; indicates that the `/connect/connectors/:connectorId/contacts` endpoints are meaningful for this connector."
-                    },
-                    "triggers": {
-                      "$ref": "#/components/schemas/ConnectTriggerConfiguration"
-                    },
-                    "events": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array",
-                      "description": "Known events this connector subscribes to (e.g. Slack bot events, GitHub webhook events). Names are type-specific and validated by the managed-create flow when forwarded to the third-party service."
-                    },
-                    "triggerDestinations": {
-                      "items": {
-                        "$ref": "#/components/schemas/ConnectTriggerDestination"
-                      },
-                      "type": "array",
-                      "description": "Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`."
-                    },
-                    "isConnectedToPrioritizedProject": {
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true
-                      ],
-                      "description": "Whether this connector is linked to the project supplied through `prioritizedProjectId`. Only present on prioritized list responses."
-                    },
-                    "includes": {
-                      "properties": {
-                        "projects": {
-                          "properties": {
-                            "items": {
-                              "items": {
-                                "properties": {
-                                  "clientId": {
-                                    "type": "string"
-                                  },
-                                  "project": {
-                                    "properties": {
-                                      "id": {
-                                        "type": "string",
-                                        "description": "Same Vercel project ID as the connection's top-level `projectId`."
-                                      },
-                                      "name": {
-                                        "type": "string",
-                                        "description": "Current Vercel project name."
-                                      },
-                                      "customEnvironments": {
-                                        "items": {
-                                          "properties": {
-                                            "id": {
-                                              "type": "string",
-                                              "description": "Stable custom environment ID."
-                                            },
-                                            "slug": {
-                                              "type": "string",
-                                              "description": "Current human-readable custom environment slug."
-                                            }
-                                          },
-                                          "required": [
-                                            "id",
-                                            "slug"
-                                          ],
-                                          "type": "object",
-                                          "description": "Custom environments available on the project. This list can include environments where the connector is not enabled."
-                                        },
-                                        "type": "array",
-                                        "description": "Custom environments available on the project. This list can include environments where the connector is not enabled."
-                                      }
-                                    },
-                                    "required": [
-                                      "id",
-                                      "name"
-                                    ],
-                                    "type": "object",
-                                    "description": "Project metadata. `project.id` contains the same value as `projectId`."
-                                  },
-                                  "environments": {
-                                    "items": {
-                                      "oneOf": [
-                                        {
-                                          "type": "string"
-                                        },
-                                        {
-                                          "type": "string",
-                                          "enum": [
-                                            "development",
-                                            "preview",
-                                            "production"
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    "type": "array",
-                                    "description": "Environments where this connector is enabled for the project."
-                                  },
-                                  "createdAt": {
-                                    "type": "number",
-                                    "description": "Time when the project connection was created, in epoch milliseconds."
-                                  },
-                                  "updatedAt": {
-                                    "type": "number",
-                                    "description": "Time when the project connection was last updated, in epoch milliseconds."
-                                  }
-                                },
-                                "required": [
-                                  "clientId",
-                                  "createdAt",
-                                  "environments",
-                                  "updatedAt"
-                                ],
-                                "type": "object"
-                              },
-                              "type": "array"
-                            },
-                            "hasMore": {
-                              "type": "boolean",
-                              "enum": [
-                                false,
-                                true
-                              ]
-                            },
-                            "pagination": {
-                              "properties": {
-                                "next": {
-                                  "nullable": true,
-                                  "type": "string"
-                                }
-                              },
-                              "required": [
-                                "next"
-                              ],
-                              "type": "object"
-                            }
-                          },
-                          "required": [
-                            "hasMore",
-                            "items",
-                            "pagination"
-                          ],
-                          "type": "object",
-                          "description": "Set by `?include=projects`. Capped at 100 per client."
-                        }
-                      },
-                      "type": "object",
-                      "description": "Optional expansions populated by `?include=...` on the list endpoint."
-                    }
-                  },
-                  "required": [
-                    "createdAt",
-                    "data",
-                    "displayName",
-                    "id",
-                    "name",
-                    "ownerId",
-                    "public",
-                    "service",
-                    "supportedSubjectTypes",
-                    "supportsIcon",
-                    "supportsInstallation",
-                    "supportsRevocation",
-                    "supportsTriggers",
-                    "type",
-                    "typeName",
-                    "uid",
-                    "updatedAt"
-                  ],
-                  "type": "object"
-                }
-              }
-            }
-          },
           "201": {
             "description": "The connector was created.",
             "content": {
@@ -76689,7 +76093,12 @@
                                           "app": {
                                             "properties": {
                                               "id": {
-                                                "type": "string"
+                                                "type": "string",
+                                                "description": "The internal ID of the Vercel App backing this principal."
+                                              },
+                                              "clientId": {
+                                                "type": "string",
+                                                "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                               }
                                             },
                                             "required": [
@@ -76768,7 +76177,12 @@
                                   "app": {
                                     "properties": {
                                       "id": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "description": "The internal ID of the Vercel App backing this principal."
+                                      },
+                                      "clientId": {
+                                        "type": "string",
+                                        "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                       }
                                     },
                                     "required": [
@@ -81453,12 +80867,6 @@
                                 },
                                 "type": "array"
                               },
-                              "workflowRunData": {
-                                "items": {
-                                  "$ref": "#/components/schemas/ACLAction"
-                                },
-                                "type": "array"
-                              },
                               "aliasProject": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -81946,6 +81354,12 @@
                                 "type": "array"
                               },
                               "webAnalytics": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
+                              "workflowRunData": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
                                 },
@@ -91046,7 +90460,12 @@
                                           "app": {
                                             "properties": {
                                               "id": {
-                                                "type": "string"
+                                                "type": "string",
+                                                "description": "The internal ID of the Vercel App backing this principal."
+                                              },
+                                              "clientId": {
+                                                "type": "string",
+                                                "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                               }
                                             },
                                             "required": [
@@ -91125,7 +90544,12 @@
                                   "app": {
                                     "properties": {
                                       "id": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "description": "The internal ID of the Vercel App backing this principal."
+                                      },
+                                      "clientId": {
+                                        "type": "string",
+                                        "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                       }
                                     },
                                     "required": [
@@ -94073,6 +93497,13 @@
                                         }
                                       ]
                                     },
+                                    "tierRequirement": {
+                                      "type": "string",
+                                      "enum": [
+                                        "advanced",
+                                        "critical"
+                                      ]
+                                    },
                                     "has": {
                                       "items": {
                                         "properties": {
@@ -95445,7 +94876,12 @@
                                               "app": {
                                                 "properties": {
                                                   "id": {
-                                                    "type": "string"
+                                                    "type": "string",
+                                                    "description": "The internal ID of the Vercel App backing this principal."
+                                                  },
+                                                  "clientId": {
+                                                    "type": "string",
+                                                    "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                                   }
                                                 },
                                                 "required": [
@@ -95524,7 +94960,12 @@
                                       "app": {
                                         "properties": {
                                           "id": {
-                                            "type": "string"
+                                            "type": "string",
+                                            "description": "The internal ID of the Vercel App backing this principal."
+                                          },
+                                          "clientId": {
+                                            "type": "string",
+                                            "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                           }
                                         },
                                         "required": [
@@ -98472,6 +97913,13 @@
                                             }
                                           ]
                                         },
+                                        "tierRequirement": {
+                                          "type": "string",
+                                          "enum": [
+                                            "advanced",
+                                            "critical"
+                                          ]
+                                        },
                                         "has": {
                                           "items": {
                                             "properties": {
@@ -99879,7 +99327,12 @@
                                               "app": {
                                                 "properties": {
                                                   "id": {
-                                                    "type": "string"
+                                                    "type": "string",
+                                                    "description": "The internal ID of the Vercel App backing this principal."
+                                                  },
+                                                  "clientId": {
+                                                    "type": "string",
+                                                    "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                                   }
                                                 },
                                                 "required": [
@@ -99958,7 +99411,12 @@
                                       "app": {
                                         "properties": {
                                           "id": {
-                                            "type": "string"
+                                            "type": "string",
+                                            "description": "The internal ID of the Vercel App backing this principal."
+                                          },
+                                          "clientId": {
+                                            "type": "string",
+                                            "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                           }
                                         },
                                         "required": [
@@ -104643,12 +104101,6 @@
                                     },
                                     "type": "array"
                                   },
-                                  "workflowRunData": {
-                                    "items": {
-                                      "$ref": "#/components/schemas/ACLAction"
-                                    },
-                                    "type": "array"
-                                  },
                                   "aliasProject": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -105136,6 +104588,12 @@
                                     "type": "array"
                                   },
                                   "webAnalytics": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
+                                  "workflowRunData": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
                                     },
@@ -107729,7 +107187,12 @@
                                     "app": {
                                       "properties": {
                                         "id": {
-                                          "type": "string"
+                                          "type": "string",
+                                          "description": "The internal ID of the Vercel App backing this principal."
+                                        },
+                                        "clientId": {
+                                          "type": "string",
+                                          "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                         }
                                       },
                                       "required": [
@@ -107808,7 +107271,12 @@
                             "app": {
                               "properties": {
                                 "id": {
-                                  "type": "string"
+                                  "type": "string",
+                                  "description": "The internal ID of the Vercel App backing this principal."
+                                },
+                                "clientId": {
+                                  "type": "string",
+                                  "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                 }
                               },
                               "required": [
@@ -112493,12 +111961,6 @@
                           },
                           "type": "array"
                         },
-                        "workflowRunData": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
                         "aliasProject": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -112986,6 +112448,12 @@
                           "type": "array"
                         },
                         "webAnalytics": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "workflowRunData": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -115776,7 +115244,12 @@
                                     "app": {
                                       "properties": {
                                         "id": {
-                                          "type": "string"
+                                          "type": "string",
+                                          "description": "The internal ID of the Vercel App backing this principal."
+                                        },
+                                        "clientId": {
+                                          "type": "string",
+                                          "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                         }
                                       },
                                       "required": [
@@ -115855,7 +115328,12 @@
                             "app": {
                               "properties": {
                                 "id": {
-                                  "type": "string"
+                                  "type": "string",
+                                  "description": "The internal ID of the Vercel App backing this principal."
+                                },
+                                "clientId": {
+                                  "type": "string",
+                                  "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                 }
                               },
                               "required": [
@@ -120538,12 +120016,6 @@
                           },
                           "type": "array"
                         },
-                        "workflowRunData": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
                         "aliasProject": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -121031,6 +120503,12 @@
                           "type": "array"
                         },
                         "webAnalytics": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "workflowRunData": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -123151,7 +122629,12 @@
                                     "app": {
                                       "properties": {
                                         "id": {
-                                          "type": "string"
+                                          "type": "string",
+                                          "description": "The internal ID of the Vercel App backing this principal."
+                                        },
+                                        "clientId": {
+                                          "type": "string",
+                                          "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                         }
                                       },
                                       "required": [
@@ -123230,7 +122713,12 @@
                             "app": {
                               "properties": {
                                 "id": {
-                                  "type": "string"
+                                  "type": "string",
+                                  "description": "The internal ID of the Vercel App backing this principal."
+                                },
+                                "clientId": {
+                                  "type": "string",
+                                  "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                 }
                               },
                               "required": [
@@ -127906,12 +127394,6 @@
                           },
                           "type": "array"
                         },
-                        "workflowRunData": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
                         "aliasProject": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -128399,6 +127881,12 @@
                           "type": "array"
                         },
                         "webAnalytics": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "workflowRunData": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -131782,7 +131270,12 @@
                                     "app": {
                                       "properties": {
                                         "id": {
-                                          "type": "string"
+                                          "type": "string",
+                                          "description": "The internal ID of the Vercel App backing this principal."
+                                        },
+                                        "clientId": {
+                                          "type": "string",
+                                          "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                         }
                                       },
                                       "required": [
@@ -131861,7 +131354,12 @@
                             "app": {
                               "properties": {
                                 "id": {
-                                  "type": "string"
+                                  "type": "string",
+                                  "description": "The internal ID of the Vercel App backing this principal."
+                                },
+                                "clientId": {
+                                  "type": "string",
+                                  "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                 }
                               },
                               "required": [
@@ -136546,12 +136044,6 @@
                           },
                           "type": "array"
                         },
-                        "workflowRunData": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
                         "aliasProject": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -137039,6 +136531,12 @@
                           "type": "array"
                         },
                         "webAnalytics": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "workflowRunData": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -148435,7 +147933,12 @@
                                     "app": {
                                       "properties": {
                                         "id": {
-                                          "type": "string"
+                                          "type": "string",
+                                          "description": "The internal ID of the Vercel App backing this principal."
+                                        },
+                                        "clientId": {
+                                          "type": "string",
+                                          "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                         }
                                       },
                                       "required": [
@@ -148514,7 +148017,12 @@
                             "app": {
                               "properties": {
                                 "id": {
-                                  "type": "string"
+                                  "type": "string",
+                                  "description": "The internal ID of the Vercel App backing this principal."
+                                },
+                                "clientId": {
+                                  "type": "string",
+                                  "description": "The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used."
                                 }
                               },
                               "required": [
@@ -153199,12 +152707,6 @@
                           },
                           "type": "array"
                         },
-                        "workflowRunData": {
-                          "items": {
-                            "$ref": "#/components/schemas/ACLAction"
-                          },
-                          "type": "array"
-                        },
                         "aliasProject": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -153692,6 +153194,12 @@
                           "type": "array"
                         },
                         "webAnalytics": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "workflowRunData": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -200820,30 +200328,6 @@
             "type": "string",
             "description": "Installation used when a token request does not specify an installation."
           },
-          "type": {
-            "type": "string",
-            "enum": [
-              "api-key",
-              "custom",
-              "discord",
-              "github",
-              "linear",
-              "linq",
-              "microsoft-entra",
-              "oauth",
-              "photon",
-              "salesforce",
-              "sendblue",
-              "slack",
-              "snowflake",
-              "snowflake-wif"
-            ],
-            "description": "Connector implementation type."
-          },
-          "name": {
-            "type": "string",
-            "description": "Connector name within the owning team."
-          },
           "createdAt": {
             "type": "number",
             "description": "Creation time in epoch milliseconds."
@@ -200851,55 +200335,6 @@
           "updatedAt": {
             "type": "number",
             "description": "Last update time in epoch milliseconds."
-          },
-          "icon": {
-            "type": "string",
-            "description": "Connector branding icon. SHA-1 hash that resolves to the uploaded icon through the Vercel avatar service. Consumers render this with `https://vercel.com/api/www/avatar/{icon}`."
-          },
-          "backgroundColor": {
-            "type": "string",
-            "description": "Hex background color (e.g., `#000000`) for branding."
-          },
-          "accentColor": {
-            "type": "string",
-            "description": "Hex accent color (e.g., `#000000`) for branding."
-          },
-          "service": {
-            "type": "string",
-            "description": "Best-effort identifier of the third-party service this connector represents, independent of `type`. Examples: `'slack'`, `'mcp.linear.app'`, and `'auth.example.com'`. Always present in API responses."
-          },
-          "connectionMethod": {
-            "type": "string",
-            "description": "The connection method this connector was created from, when the create request named one."
-          },
-          "target": {
-            "type": "string",
-            "description": "Which of the service's products/surfaces this connector points at."
-          },
-          "triggers": {
-            "$ref": "#/components/schemas/ConnectTriggerConfiguration",
-            "description": "Incoming trigger configuration for the connector."
-          },
-          "events": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "description": "Known events this connector subscribes to (e.g. Slack bot events, GitHub webhook events). Names are type-specific and validated by the managed-create flow when forwarded to the third-party service."
-          },
-          "managed": {
-            "properties": {
-              "sync": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether Vercel synchronizes provider-side configuration."
-              }
-            },
-            "type": "object",
-            "description": "Managed connector metadata exposed without leaking the manager connector or installation identifiers."
           },
           "reinstallAt": {
             "type": "number",
@@ -201045,6 +200480,56 @@
             ],
             "description": "How the connector row was originally created. New create paths stamp this explicitly; older rows may omit it."
           },
+          "managed": {
+            "properties": {
+              "sync": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether Vercel synchronizes provider-side configuration."
+              }
+            },
+            "type": "object",
+            "description": "Managed connector metadata exposed without leaking the manager connector or installation identifiers."
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "api-key",
+              "custom",
+              "discord",
+              "github",
+              "linear",
+              "linq",
+              "microsoft-entra",
+              "oauth",
+              "photon",
+              "salesforce",
+              "sendblue",
+              "slack",
+              "snowflake",
+              "snowflake-wif"
+            ],
+            "description": "Connector implementation type."
+          },
+          "service": {
+            "type": "string",
+            "description": "Best-effort identifier of the third-party service this connector represents, independent of `type`. Examples: `'slack'`, `'mcp.linear.app'`, and `'auth.example.com'`. Always present in API responses."
+          },
+          "connectionMethod": {
+            "type": "string",
+            "description": "The connection method this connector was created from, when the create request named one."
+          },
+          "target": {
+            "type": "string",
+            "description": "Which of the service's products/surfaces this connector points at."
+          },
+          "name": {
+            "type": "string",
+            "description": "Connector name within the owning team."
+          },
           "displayName": {
             "type": "string",
             "description": "Human-readable connector name."
@@ -201077,6 +200562,18 @@
           "docsite": {
             "type": "string",
             "description": "Developer documentation for the connected service."
+          },
+          "icon": {
+            "type": "string",
+            "description": "Connector branding icon. SHA-1 hash that resolves to the uploaded icon through the Vercel avatar service. Consumers render this with `https://vercel.com/api/www/avatar/{icon}`."
+          },
+          "backgroundColor": {
+            "type": "string",
+            "description": "Hex background color (e.g., `#000000`) for branding."
+          },
+          "accentColor": {
+            "type": "string",
+            "description": "Hex accent color (e.g., `#000000`) for branding."
           },
           "supportedSubjectTypes": {
             "items": {
@@ -201216,6 +200713,17 @@
               true
             ],
             "description": "Whether the connector icon can propagate to the provider."
+          },
+          "triggers": {
+            "$ref": "#/components/schemas/ConnectTriggerConfiguration",
+            "description": "Incoming trigger configuration for the connector."
+          },
+          "events": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "description": "Known events this connector subscribes to (e.g. Slack bot events, GitHub webhook events). Names are type-specific and validated by the managed-create flow when forwarded to the third-party service."
           },
           "triggerDestinations": {
             "items": {

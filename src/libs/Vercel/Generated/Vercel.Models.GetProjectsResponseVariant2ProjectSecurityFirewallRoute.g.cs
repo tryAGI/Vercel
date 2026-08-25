@@ -18,6 +18,13 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tierRequirement")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirementJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement? TierRequirement { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("has")]
         public global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteHa>? Has { get; set; }
 
@@ -68,6 +75,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant2ProjectSecurityFirewallRoute" /> class.
         /// </summary>
         /// <param name="src"></param>
+        /// <param name="tierRequirement"></param>
         /// <param name="has"></param>
         /// <param name="missing"></param>
         /// <param name="dest"></param>
@@ -80,6 +88,7 @@ namespace Vercel
 #endif
         public GetProjectsResponseVariant2ProjectSecurityFirewallRoute(
             global::Vercel.OneOf<string, global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteSrc>? src,
+            global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement? tierRequirement,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteHa>? has,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteMissingItem>? missing,
             string? dest,
@@ -89,6 +98,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransform>? transforms)
         {
             this.Src = src;
+            this.TierRequirement = tierRequirement;
             this.Has = has;
             this.Missing = missing;
             this.Dest = dest;
