@@ -47,7 +47,7 @@ namespace Vercel
 
         /// <summary>
         /// Create a connector<br/>
-        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults.
+        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults. Production project OIDC tokens may create OAuth connectors, plus credential-less API key connectors whose credentials are supplied per user. OIDC-created connectors are automatically linked within the deployment token's eligible project environments.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -59,7 +59,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.ConnectConnectorCreateResult> CreateConnectorAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.CreateConnectorResponse> CreateConnectorAsync(
 
             global::Vercel.ConnectCreateConnectorRequest request,
             string? teamId = default,
@@ -80,7 +80,7 @@ namespace Vercel
         }
         /// <summary>
         /// Create a connector<br/>
-        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults.
+        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults. Production project OIDC tokens may create OAuth connectors, plus credential-less API key connectors whose credentials are supplied per user. OIDC-created connectors are automatically linked within the deployment token's eligible project environments.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -92,7 +92,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ConnectConnectorCreateResult>> CreateConnectorAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateConnectorResponse>> CreateConnectorAsResponseAsync(
 
             global::Vercel.ConnectCreateConnectorRequest request,
             string? teamId = default,
@@ -722,9 +722,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.ConnectConnectorCreateResult.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.CreateConnectorResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.ConnectConnectorCreateResult>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateConnectorResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -754,9 +754,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.ConnectConnectorCreateResult.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.CreateConnectorResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.ConnectConnectorCreateResult>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateConnectorResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -798,7 +798,7 @@ namespace Vercel
         }
         /// <summary>
         /// Create a connector<br/>
-        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults.
+        /// Create a connector and optionally link it to a project. Use `type` with complete provider data, or use `service` with `connectionMethod` so Connect can supply the type, endpoints, templates, and defaults. Production project OIDC tokens may create OAuth connectors, plus credential-less API key connectors whose credentials are supplied per user. OIDC-created connectors are automatically linked within the deployment token's eligible project environments.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -884,7 +884,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.ConnectConnectorCreateResult> CreateConnectorAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.CreateConnectorResponse> CreateConnectorAsync(
             global::Vercel.ConnectConnectorCreateData data,
             string? teamId = default,
             string? slug = default,

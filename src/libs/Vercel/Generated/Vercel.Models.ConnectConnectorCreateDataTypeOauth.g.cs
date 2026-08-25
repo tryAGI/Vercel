@@ -15,7 +15,7 @@ namespace Vercel
         public string? ServerUrl { get; set; }
 
         /// <summary>
-        /// Authorization server metadata. Values override discovered metadata.<br/>
+        /// Authorization server metadata. Values override discovered metadata. Empty known string fields remove their stored overrides.<br/>
         /// Default Value: {}
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serverConfig")]
@@ -48,7 +48,7 @@ namespace Vercel
         public string? TokenEndpointAuthMethod { get; set; }
 
         /// <summary>
-        /// OAuth authorization response type. Defaults to code. Other provider-supported values are accepted.
+        /// OAuth authorization response type. Defaults to code. Other provider-supported values are accepted. An empty string clears the configured type.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("responseType")]
         public string? ResponseType { get; set; }
@@ -60,7 +60,7 @@ namespace Vercel
         public bool? PkceRequired { get; set; }
 
         /// <summary>
-        /// PKCE code challenge method. Supported values are S256 and plain. Vercel prefers S256 when the provider supports it.
+        /// PKCE code challenge method. Supported values are S256 and plain. Vercel prefers S256 when the provider supports it. An empty string clears the configured method.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("codeChallengeMethod")]
         public string? CodeChallengeMethod { get; set; }
@@ -90,7 +90,7 @@ namespace Vercel
         public global::Vercel.ConnectConnectorCreateDataTypeOauthForwardedClaims? ForwardedClaims { get; set; }
 
         /// <summary>
-        /// Default audience used when a token request omits one.
+        /// Default audience used when a token request omits one. An empty string clears the default.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultAudience")]
         public string? DefaultAudience { get; set; }
@@ -135,7 +135,7 @@ namespace Vercel
         /// Authorization server base URL used for discovery.
         /// </param>
         /// <param name="serverConfig">
-        /// Authorization server metadata. Values override discovered metadata.<br/>
+        /// Authorization server metadata. Values override discovered metadata. Empty known string fields remove their stored overrides.<br/>
         /// Default Value: {}
         /// </param>
         /// <param name="clientName">
@@ -149,13 +149,13 @@ namespace Vercel
         /// OAuth token endpoint authentication method. Common values are client_secret_post, client_secret_basic, none, and private_key_jwt. If omitted, Vercel selects a supported method from serverConfig and otherwise uses client_secret_post.
         /// </param>
         /// <param name="responseType">
-        /// OAuth authorization response type. Defaults to code. Other provider-supported values are accepted.
+        /// OAuth authorization response type. Defaults to code. Other provider-supported values are accepted. An empty string clears the configured type.
         /// </param>
         /// <param name="pkceRequired">
         /// Whether user authorization must use PKCE.
         /// </param>
         /// <param name="codeChallengeMethod">
-        /// PKCE code challenge method. Supported values are S256 and plain. Vercel prefers S256 when the provider supports it.
+        /// PKCE code challenge method. Supported values are S256 and plain. Vercel prefers S256 when the provider supports it. An empty string clears the configured method.
         /// </param>
         /// <param name="userAuthorization">
         /// User authorization grant settings.
@@ -170,7 +170,7 @@ namespace Vercel
         /// Allow-list of extra claims to propagate, keyed by source (idToken). Only claims named here and present in that source are exposed.
         /// </param>
         /// <param name="defaultAudience">
-        /// Default audience used when a token request omits one.
+        /// Default audience used when a token request omits one. An empty string clears the default.
         /// </param>
         /// <param name="defaultTokenExpiresIn">
         /// Default token lifetime in seconds to use when the token response omits expires_in.
