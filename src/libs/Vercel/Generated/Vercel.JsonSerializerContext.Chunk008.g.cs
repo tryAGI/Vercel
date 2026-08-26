@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseErrorVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseErrorVariant1Code), TypeInfoPropertyName = "GetOrderResponseErrorVariant1Code2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseErrorVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseErrorVariant2Code), TypeInfoPropertyName = "GetOrderResponseErrorVariant2Code2")]
@@ -63,6 +64,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchDomainResponseVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchDomainResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchDomainResponseVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchDomainResponseVariant3EchMode), TypeInfoPropertyName = "PatchDomainResponseVariant3EchMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteDomainResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurableLogDrainResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetConfigurableLogDrainResponseProjectsMetadataItem>))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2DeliveryVariant4Encoding), TypeInfoPropertyName = "GetDrainResponseVariant2DeliveryVariant4Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2DeliveryVariant4Compression), TypeInfoPropertyName = "GetDrainResponseVariant2DeliveryVariant4Compression2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2DeliveryVariant4FileStructure), TypeInfoPropertyName = "GetDrainResponseVariant2DeliveryVariant4FileStructure2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2DeliveryVariant4ServerSideEncryption), TypeInfoPropertyName = "GetDrainResponseVariant2DeliveryVariant4ServerSideEncryption2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant2DeliveryVariant4ObjectAcl), TypeInfoPropertyName = "GetDrainResponseVariant2DeliveryVariant4ObjectAcl2")]
     internal sealed partial class SourceGenerationContextChunk008 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

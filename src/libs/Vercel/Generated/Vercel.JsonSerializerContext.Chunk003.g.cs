@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemTransformItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2Subnets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestRegion), TypeInfoPropertyName = "UpdateSandboxRequestRegion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestFailoverRegion>))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PostTeamDsyncRolesRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PostTeamDsyncRolesRequestRolesEnum?, global::Vercel.PostTeamDsyncRolesRequestRolesEnum2>), TypeInfoPropertyName = "AnyOfPostTeamDsyncRolesRequestRolesEnumPostTeamDsyncRolesRequestRolesEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PostTeamDsyncRolesRequestRolesEnum), TypeInfoPropertyName = "PostTeamDsyncRolesRequestRolesEnum2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PostTeamDsyncRolesRequestRolesEnum2))]
     internal sealed partial class SourceGenerationContextChunk003 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

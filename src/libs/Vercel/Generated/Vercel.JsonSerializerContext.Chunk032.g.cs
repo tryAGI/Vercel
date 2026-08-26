@@ -11,6 +11,10 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetProjectsResponseVariant1ItemTrustedSourcesOidcProvider>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRoute>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteHa>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteMitigateLogHeaders?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteTransform>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.GetProjectsResponseVariant1ItemSecurityRulesetsLogHeaders?>))]
@@ -507,10 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1, global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2>>), TypeInfoPropertyName = "CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2_89f0cbc254469030")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ConditionGroupItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ConditionGroupItemCondition>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateLogHeaders?>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItemCondition>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ActionMitigateLogHeaders?>))]
     internal sealed partial class SourceGenerationContextChunk032 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

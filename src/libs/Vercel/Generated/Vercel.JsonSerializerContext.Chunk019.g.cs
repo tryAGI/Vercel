@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRulesetsRedirect))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetSecurityFirewallConfigResponseActiveRulesetsLogHeaders?>), TypeInfoPropertyName = "OneOfIListStringGetSecurityFirewallConfigResponseActiveRulesetsLogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRulesetsLogHeaders), TypeInfoPropertyName = "GetSecurityFirewallConfigResponseActiveRulesetsLogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallConfigResponseActiveCondition>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveCondition))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateAction), TypeInfoPropertyName = "CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateRateLimit))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateRateLimitAlgo), TypeInfoPropertyName = "CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateRateLimitAlgo2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateRateLimitAction), TypeInfoPropertyName = "CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateRateLimitAction2")]
     internal sealed partial class SourceGenerationContextChunk019 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

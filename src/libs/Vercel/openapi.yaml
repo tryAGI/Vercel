@@ -43094,8 +43094,19 @@
                             false,
                             true
                           ]
+                        },
+                        "echMode": {
+                          "type": "string",
+                          "enum": [
+                            "auto",
+                            "disabled",
+                            "enabled"
+                          ]
                         }
                       },
+                      "required": [
+                        "echMode"
+                      ],
                       "type": "object"
                     }
                   ]
@@ -43186,6 +43197,15 @@
                       "zone": {
                         "description": "Specifies whether this is a DNS zone that intends to use Vercel's nameservers.",
                         "type": "boolean"
+                      },
+                      "echMode": {
+                        "description": "Encrypted Client Hello enrollment. 'auto' leaves it to Vercel, 'enabled' always enrolls, 'disabled' never enrolls and opts out of automatic enrollment.",
+                        "type": "string",
+                        "enum": [
+                          "auto",
+                          "enabled",
+                          "disabled"
+                        ]
                       }
                     }
                   },
@@ -204106,6 +204126,7 @@
               "domain-custom-ns-change",
               "domain-delegated",
               "domain-delete",
+              "domain-ech-change",
               "domain-move-in",
               "domain-move-out",
               "domain-move-out-request-sent",
@@ -205088,6 +205109,7 @@
               "domain-custom-ns-change",
               "domain-delegated",
               "domain-delete",
+              "domain-ech-change",
               "domain-move-in",
               "domain-move-out",
               "domain-move-out-request-sent",
@@ -205801,6 +205823,7 @@
                 "domain-custom-ns-change",
                 "domain-delegated",
                 "domain-delete",
+                "domain-ech-change",
                 "domain-move-in",
                 "domain-move-out",
                 "domain-move-out-request-sent",

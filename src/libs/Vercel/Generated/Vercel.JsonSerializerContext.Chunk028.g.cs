@@ -11,6 +11,10 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseSandboxRegion?), TypeInfoPropertyName = "NullableGetProjectResponseSandboxRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseSandboxFailoverRegion?), TypeInfoPropertyName = "NullableGetProjectResponseSandboxFailoverRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseResourceConfigFunctionDefaultMemoryType?), TypeInfoPropertyName = "NullableGetProjectResponseResourceConfigFunctionDefaultMemoryType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseResourceConfigBuildMachineType?), TypeInfoPropertyName = "NullableGetProjectResponseResourceConfigBuildMachineType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseResourceConfigBuildMachineSelection?), TypeInfoPropertyName = "NullableGetProjectResponseResourceConfigBuildMachineSelection2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseResourceConfigBuildMachineElasticReason?), TypeInfoPropertyName = "NullableGetProjectResponseResourceConfigBuildMachineElasticReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseResourceConfigBuildQueueConfiguration?), TypeInfoPropertyName = "NullableGetProjectResponseResourceConfigBuildQueueConfiguration2")]
@@ -507,10 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentTarget?), TypeInfoPropertyName = "NullableGetRollingReleaseResponseRollingReleaseCanaryDeploymentTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseCanaryDeploymentSource?), TypeInfoPropertyName = "NullableGetRollingReleaseResponseRollingReleaseCanaryDeploymentSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseResponseRollingReleaseAdvancementType?), TypeInfoPropertyName = "NullableGetRollingReleaseResponseRollingReleaseAdvancementType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseState?), TypeInfoPropertyName = "NullableApproveRollingReleaseStageResponseRollingReleaseState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseSubstate?), TypeInfoPropertyName = "NullableApproveRollingReleaseStageResponseRollingReleaseSubstate2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentReadyState?), TypeInfoPropertyName = "NullableApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentReadyState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentTarget?), TypeInfoPropertyName = "NullableApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentTarget2")]
     internal sealed partial class SourceGenerationContextChunk028 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

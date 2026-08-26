@@ -263,6 +263,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateOrTransferDomainRequestVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.PatchDomainRequestVariant1, global::Vercel.PatchDomainRequestVariant2>), TypeInfoPropertyName = "OneOfPatchDomainRequestVariant1PatchDomainRequestVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchDomainRequestVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchDomainRequestVariant1EchMode), TypeInfoPropertyName = "PatchDomainRequestVariant1EchMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchDomainRequestVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConfigurableLogDrainRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConfigurableLogDrainRequestDeliveryFormat), TypeInfoPropertyName = "CreateConfigurableLogDrainRequestDeliveryFormat2")]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateFlagSegmentRequestDataRuleCondition>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleCondition))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagSegmentRequestDataRuleConditionLhsVariant1, global::Vercel.CreateFlagSegmentRequestDataRuleConditionLhsVariant2>), TypeInfoPropertyName = "AnyOfCreateFlagSegmentRequestDataRuleConditionLhsVariant1CreateFlagSegmentRequestDataRuleConditionLhsVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleConditionLhsVariant1))]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

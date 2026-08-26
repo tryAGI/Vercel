@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateRateLimitAlgo), TypeInfoPropertyName = "CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateRateLimitAlgo2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateRateLimitAction), TypeInfoPropertyName = "CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateRateLimitAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateRedirect))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateLogHeaders?>), TypeInfoPropertyName = "OneOfIListStringCreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateLogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateLogHeaders), TypeInfoPropertyName = "CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant1ActionMitigateLogHeaders2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamPermission>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamPermission), TypeInfoPropertyName = "GetTeamMembersResponseEmailInviteCodeTeamPermission2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GetTeamMembersResponseEmailInviteCodeProjects2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTeamMembersResponseEmailInviteCodeProjects2), TypeInfoPropertyName = "GetTeamMembersResponseEmailInviteCodeProjects22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTeamMembersResponsePagination))]
     internal sealed partial class SourceGenerationContextChunk020 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

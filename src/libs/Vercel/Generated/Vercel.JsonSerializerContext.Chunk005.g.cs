@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCheckResponseOutputMetrics))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCheckResponseOutputMetricsFcp))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCheckResponseOutputMetricsFcpSource), TypeInfoPropertyName = "GetCheckResponseOutputMetricsFcpSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCheckResponseOutputMetricsLcp))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant1BranchMatcher))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant1BranchMatcherType), TypeInfoPropertyName = "GetDeploymentResponseVariant3CustomEnvironmentVariant1BranchMatcherType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant1Domain>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant1Domain))]
     internal sealed partial class SourceGenerationContextChunk005 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

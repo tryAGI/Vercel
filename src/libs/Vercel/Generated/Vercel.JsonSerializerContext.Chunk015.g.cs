@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseDeploymentPolicyGitSource))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateProjectResponseDeploymentPolicyGitSourceSourceVariant1, global::Vercel.CreateProjectResponseDeploymentPolicyGitSourceSourceVariant2>>), TypeInfoPropertyName = "CreateProjectResponseDeploymentPolicyGitSourceSourceVariant2_d02afea13c58d503")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateProjectResponseDeploymentPolicyGitSourceSourceVariant1, global::Vercel.CreateProjectResponseDeploymentPolicyGitSourceSourceVariant2>), TypeInfoPropertyName = "CreateProjectResponseDeploymentPolicyGitSourceSourceVariant2_8e2601a1dacbee8b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseDeploymentPolicyGitSourceSourceVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseDeploymentPolicyGitSourceSourceVariant1Provider), TypeInfoPropertyName = "CreateProjectResponseDeploymentPolicyGitSourceSourceVariant1Provider2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAliaDeploymentChecksState), TypeInfoPropertyName = "UpdateProjectResponseAliaDeploymentChecksState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAliaDeploymentCreator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAliaDeploymentOidcTokenClaims))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAliaDeploymentPlan), TypeInfoPropertyName = "UpdateProjectResponseAliaDeploymentPlan2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseAliaDeploymentReadyState), TypeInfoPropertyName = "UpdateProjectResponseAliaDeploymentReadyState2")]
     internal sealed partial class SourceGenerationContextChunk015 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
