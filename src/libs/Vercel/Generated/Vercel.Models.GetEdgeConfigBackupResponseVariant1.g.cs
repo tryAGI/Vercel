@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// The object the API responds with when requesting an Edge Config backup
+    /// The object the API responds with when requesting a Global Config backup
     /// </summary>
     public sealed partial class GetEdgeConfigBackupResponseVariant1
     {

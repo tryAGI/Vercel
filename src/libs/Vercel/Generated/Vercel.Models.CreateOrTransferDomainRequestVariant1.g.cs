@@ -18,7 +18,7 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        /// Whether the domain has the Vercel Edge Network enabled or not.<br/>
+        /// Whether the domain has the Vercel CDN enabled or not.<br/>
         /// Example: true
         /// </summary>
         /// <example>true</example>
@@ -53,7 +53,7 @@ namespace Vercel
         /// Example: example.com
         /// </param>
         /// <param name="cdnEnabled">
-        /// Whether the domain has the Vercel Edge Network enabled or not.<br/>
+        /// Whether the domain has the Vercel CDN enabled or not.<br/>
         /// Example: true
         /// </param>
         /// <param name="zone">

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Keeps track of the current state of the Edge Config while it gets transferred.
+    /// Keeps track of the current state of the Global Config while it gets transferred.
     /// </summary>
     public sealed partial class CreateEdgeConfigResponseTransfer
     {

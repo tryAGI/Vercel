@@ -15,6 +15,10 @@ namespace Vercel
         /// <param name="projectId">
         /// The project ID that owns the named sandbox. When provided, takes precedence over OIDC project context.
         /// </param>
+        /// <param name="deleteOrphanSnapshots">
+        /// When true, snapshots of the deleted sandbox that are not referenced by any other sandbox are also deleted asynchronously. Defaults to false.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -27,6 +31,7 @@ namespace Vercel
         global::System.Threading.Tasks.Task<global::Vercel.DeleteSandboxResponse> DeleteSandboxAsync(
             string name,
             string? projectId = default,
+            bool? deleteOrphanSnapshots = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -42,6 +47,10 @@ namespace Vercel
         /// <param name="projectId">
         /// The project ID that owns the named sandbox. When provided, takes precedence over OIDC project context.
         /// </param>
+        /// <param name="deleteOrphanSnapshots">
+        /// When true, snapshots of the deleted sandbox that are not referenced by any other sandbox are also deleted asynchronously. Defaults to false.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -54,6 +63,7 @@ namespace Vercel
         global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteSandboxResponse>> DeleteSandboxAsResponseAsync(
             string name,
             string? projectId = default,
+            bool? deleteOrphanSnapshots = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
