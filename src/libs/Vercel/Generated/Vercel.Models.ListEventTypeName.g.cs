@@ -2408,6 +2408,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserEmuAccountUpdateOptedIn,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserEmuAccountUpdateOptedOut,
+        /// <summary>
+        /// 
+        /// </summary>
         UserEmuRecoveryEmailSent,
         /// <summary>
         /// 
@@ -3242,6 +3250,8 @@ namespace Vercel
                 ListEventTypeName.UserEmuAccountArchived => "user-emu-account-archived",
                 ListEventTypeName.UserEmuAccountDeleted => "user-emu-account-deleted",
                 ListEventTypeName.UserEmuAccountRecovered => "user-emu-account-recovered",
+                ListEventTypeName.UserEmuAccountUpdateOptedIn => "user-emu-account-update-opted-in",
+                ListEventTypeName.UserEmuAccountUpdateOptedOut => "user-emu-account-update-opted-out",
                 ListEventTypeName.UserEmuRecoveryEmailSent => "user-emu-recovery-email-sent",
                 ListEventTypeName.UserEmuRecoveryInitiated => "user-emu-recovery-initiated",
                 ListEventTypeName.UserEmuToggled => "user-emu-toggled",
@@ -3907,6 +3917,8 @@ namespace Vercel
                 "user-emu-account-archived" => ListEventTypeName.UserEmuAccountArchived,
                 "user-emu-account-deleted" => ListEventTypeName.UserEmuAccountDeleted,
                 "user-emu-account-recovered" => ListEventTypeName.UserEmuAccountRecovered,
+                "user-emu-account-update-opted-in" => ListEventTypeName.UserEmuAccountUpdateOptedIn,
+                "user-emu-account-update-opted-out" => ListEventTypeName.UserEmuAccountUpdateOptedOut,
                 "user-emu-recovery-email-sent" => ListEventTypeName.UserEmuRecoveryEmailSent,
                 "user-emu-recovery-initiated" => ListEventTypeName.UserEmuRecoveryInitiated,
                 "user-emu-toggled" => ListEventTypeName.UserEmuToggled,

@@ -2407,6 +2407,14 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        UserEmuAccountUpdateOptedIn,
+        /// <summary>
+        /// 
+        /// </summary>
+        UserEmuAccountUpdateOptedOut,
+        /// <summary>
+        /// 
+        /// </summary>
         UserEmuRecoveryEmailSent,
         /// <summary>
         /// 
@@ -3241,6 +3249,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.UserEmuAccountArchived => "user-emu-account-archived",
                 ListEventTypeReplacedByItem.UserEmuAccountDeleted => "user-emu-account-deleted",
                 ListEventTypeReplacedByItem.UserEmuAccountRecovered => "user-emu-account-recovered",
+                ListEventTypeReplacedByItem.UserEmuAccountUpdateOptedIn => "user-emu-account-update-opted-in",
+                ListEventTypeReplacedByItem.UserEmuAccountUpdateOptedOut => "user-emu-account-update-opted-out",
                 ListEventTypeReplacedByItem.UserEmuRecoveryEmailSent => "user-emu-recovery-email-sent",
                 ListEventTypeReplacedByItem.UserEmuRecoveryInitiated => "user-emu-recovery-initiated",
                 ListEventTypeReplacedByItem.UserEmuToggled => "user-emu-toggled",
@@ -3906,6 +3916,8 @@ namespace Vercel
                 "user-emu-account-archived" => ListEventTypeReplacedByItem.UserEmuAccountArchived,
                 "user-emu-account-deleted" => ListEventTypeReplacedByItem.UserEmuAccountDeleted,
                 "user-emu-account-recovered" => ListEventTypeReplacedByItem.UserEmuAccountRecovered,
+                "user-emu-account-update-opted-in" => ListEventTypeReplacedByItem.UserEmuAccountUpdateOptedIn,
+                "user-emu-account-update-opted-out" => ListEventTypeReplacedByItem.UserEmuAccountUpdateOptedOut,
                 "user-emu-recovery-email-sent" => ListEventTypeReplacedByItem.UserEmuRecoveryEmailSent,
                 "user-emu-recovery-initiated" => ListEventTypeReplacedByItem.UserEmuRecoveryInitiated,
                 "user-emu-toggled" => ListEventTypeReplacedByItem.UserEmuToggled,
