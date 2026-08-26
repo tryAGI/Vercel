@@ -59,6 +59,16 @@ namespace Vercel
         public required global::Vercel.ClaimDomainOwnershipResponseDomainCreator Creator { get; set; }
 
         /// <summary>
+        /// Whether the domain is enrolled in Encrypted Client Hello. `auto` leaves the decision to Vercel, `enabled` always enrolls, and `disabled` never enrolls and opts out of automatic enrollment.<br/>
+        /// Example: auto
+        /// </summary>
+        /// <example>auto</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("echMode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ClaimDomainOwnershipResponseDomainEchModeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.ClaimDomainOwnershipResponseDomainEchMode EchMode { get; set; }
+
+        /// <summary>
         /// The domain name.<br/>
         /// Example: example.com
         /// </summary>
@@ -165,6 +175,10 @@ namespace Vercel
         /// An object containing information of the domain creator, including the user's id, username, and email.<br/>
         /// Example: {"id":"ZspSRT4ljIEEmMHgoDwKWDei","username":"vercel_user","email":"demo@example.com"}
         /// </param>
+        /// <param name="echMode">
+        /// Whether the domain is enrolled in Encrypted Client Hello. `auto` leaves the decision to Vercel, `enabled` always enrolls, and `disabled` never enrolls and opts out of automatic enrollment.<br/>
+        /// Example: auto
+        /// </param>
         /// <param name="name">
         /// The domain name.<br/>
         /// Example: example.com
@@ -214,6 +228,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<string> nameservers,
             global::System.Collections.Generic.IList<string> intendedNameservers,
             global::Vercel.ClaimDomainOwnershipResponseDomainCreator creator,
+            global::Vercel.ClaimDomainOwnershipResponseDomainEchMode echMode,
             string name,
             double createdAt,
             string id,
@@ -233,6 +248,7 @@ namespace Vercel
             this.IntendedNameservers = intendedNameservers ?? throw new global::System.ArgumentNullException(nameof(intendedNameservers));
             this.CustomNameservers = customNameservers;
             this.Creator = creator ?? throw new global::System.ArgumentNullException(nameof(creator));
+            this.EchMode = echMode;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.TeamId = teamId;
             this.BoughtAt = boughtAt;
