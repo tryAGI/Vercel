@@ -60377,7 +60377,7 @@
                               },
                               "labels": {
                                 "type": "array",
-                                "maxItems": 128,
+                                "maxItems": 256,
                                 "items": {
                                   "type": "object",
                                   "additionalProperties": false,
