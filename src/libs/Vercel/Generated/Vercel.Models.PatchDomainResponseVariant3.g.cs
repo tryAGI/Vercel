@@ -27,6 +27,14 @@ namespace Vercel
         public bool? Zone { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("echMode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.PatchDomainResponseVariant3EchModeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.PatchDomainResponseVariant3EchMode EchMode { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -35,6 +43,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="PatchDomainResponseVariant3" /> class.
         /// </summary>
+        /// <param name="echMode"></param>
         /// <param name="renew"></param>
         /// <param name="customNameservers"></param>
         /// <param name="zone"></param>
@@ -42,6 +51,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PatchDomainResponseVariant3(
+            global::Vercel.PatchDomainResponseVariant3EchMode echMode,
             bool? renew,
             global::System.Collections.Generic.IList<string>? customNameservers,
             bool? zone)
@@ -49,6 +59,7 @@ namespace Vercel
             this.Renew = renew;
             this.CustomNameservers = customNameservers;
             this.Zone = zone;
+            this.EchMode = echMode;
         }
 
         /// <summary>

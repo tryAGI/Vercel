@@ -675,6 +675,10 @@ namespace Vercel
         /// <summary>
         /// 
         /// </summary>
+        DomainEchChange,
+        /// <summary>
+        /// 
+        /// </summary>
         DomainMoveIn,
         /// <summary>
         /// 
@@ -2804,6 +2808,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.DomainCustomNsChange => "domain-custom-ns-change",
                 ListEventTypeReplacedByItem.DomainDelegated => "domain-delegated",
                 ListEventTypeReplacedByItem.DomainDelete => "domain-delete",
+                ListEventTypeReplacedByItem.DomainEchChange => "domain-ech-change",
                 ListEventTypeReplacedByItem.DomainMoveIn => "domain-move-in",
                 ListEventTypeReplacedByItem.DomainMoveOut => "domain-move-out",
                 ListEventTypeReplacedByItem.DomainMoveOutRequestSent => "domain-move-out-request-sent",
@@ -3468,6 +3473,7 @@ namespace Vercel
                 "domain-custom-ns-change" => ListEventTypeReplacedByItem.DomainCustomNsChange,
                 "domain-delegated" => ListEventTypeReplacedByItem.DomainDelegated,
                 "domain-delete" => ListEventTypeReplacedByItem.DomainDelete,
+                "domain-ech-change" => ListEventTypeReplacedByItem.DomainEchChange,
                 "domain-move-in" => ListEventTypeReplacedByItem.DomainMoveIn,
                 "domain-move-out" => ListEventTypeReplacedByItem.DomainMoveOut,
                 "domain-move-out-request-sent" => ListEventTypeReplacedByItem.DomainMoveOutRequestSent,

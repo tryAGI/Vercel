@@ -11,6 +11,9 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDrainRequestDeliveryVariant1, global::Vercel.CreateDrainRequestDeliveryVariant2, global::Vercel.CreateDrainRequestDeliveryVariant3>?), TypeInfoPropertyName = "NullableOneOfCreateDrainRequestDeliveryVariant1CreateDrainRequestDeliveryVariant2CreateDrainRequestDeliveryVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainRequestDeliveryVariant1Compression?), TypeInfoPropertyName = "NullableCreateDrainRequestDeliveryVariant1Compression2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainRequestDeliveryVariant1Encoding?), TypeInfoPropertyName = "NullableCreateDrainRequestDeliveryVariant1Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainRequestDeliveryVariant2Encoding?), TypeInfoPropertyName = "NullableCreateDrainRequestDeliveryVariant2Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainRequestDeliveryVariant3Encoding?), TypeInfoPropertyName = "NullableCreateDrainRequestDeliveryVariant3Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainRequestDeliveryVariant3Compression?), TypeInfoPropertyName = "NullableCreateDrainRequestDeliveryVariant3Compression2")]
@@ -508,9 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseSourceVariant1Kind?), TypeInfoPropertyName = "NullableGetProjectCheckResponseSourceVariant1Kind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseSourceVariant2Kind?), TypeInfoPropertyName = "NullableGetProjectCheckResponseSourceVariant2Kind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseSourceVariant3Kind?), TypeInfoPropertyName = "NullableGetProjectCheckResponseSourceVariant3Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseSourceVariant3Provider?), TypeInfoPropertyName = "NullableGetProjectCheckResponseSourceVariant3Provider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseBlocks?), TypeInfoPropertyName = "NullableGetProjectCheckResponseBlocks2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseSourceKind?), TypeInfoPropertyName = "NullableGetProjectCheckResponseSourceKind2")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

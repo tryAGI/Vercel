@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTeamMembersResponseEmailInviteCodeProjects2), TypeInfoPropertyName = "GetTeamMembersResponseEmailInviteCodeProjects22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTeamMembersResponsePagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RequestAccessToTeamResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RequestAccessToTeamResponseJoinedFrom))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RequestAccessToTeamResponseJoinedFromOrigin), TypeInfoPropertyName = "RequestAccessToTeamResponseJoinedFromOrigin2")]
@@ -501,6 +503,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateRecordRequestEnumType10?), TypeInfoPropertyName = "NullableCreateRecordRequestEnumType102")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateRecordRequestType?), TypeInfoPropertyName = "NullableUpdateRecordRequestType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.PatchDomainRequestVariant1, global::Vercel.PatchDomainRequestVariant2>?), TypeInfoPropertyName = "NullableOneOfPatchDomainRequestVariant1PatchDomainRequestVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchDomainRequestVariant1EchMode?), TypeInfoPropertyName = "NullablePatchDomainRequestVariant1EchMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConfigurableLogDrainRequestDeliveryFormat?), TypeInfoPropertyName = "NullableCreateConfigurableLogDrainRequestDeliveryFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConfigurableLogDrainRequestSource?), TypeInfoPropertyName = "NullableCreateConfigurableLogDrainRequestSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConfigurableLogDrainRequestEnvironment?), TypeInfoPropertyName = "NullableCreateConfigurableLogDrainRequestEnvironment2")]
@@ -508,9 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDrainRequestFilterFilterVariant1, global::Vercel.CreateDrainRequestFilterFilterVariant2>?), TypeInfoPropertyName = "NullableOneOfCreateDrainRequestFilterFilterVariant1CreateDrainRequestFilterFilterVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainRequestFilterFilterVariant1LogSource?), TypeInfoPropertyName = "NullableCreateDrainRequestFilterFilterVariant1LogSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainRequestFilterFilterVariant1DeploymentEnvironment?), TypeInfoPropertyName = "NullableCreateDrainRequestFilterFilterVariant1DeploymentEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDrainRequestDeliveryVariant1, global::Vercel.CreateDrainRequestDeliveryVariant2, global::Vercel.CreateDrainRequestDeliveryVariant3>?), TypeInfoPropertyName = "NullableOneOfCreateDrainRequestDeliveryVariant1CreateDrainRequestDeliveryVariant2CreateDrainRequestDeliveryVariant32")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainRequestDeliveryVariant1Compression?), TypeInfoPropertyName = "NullableCreateDrainRequestDeliveryVariant1Compression2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDrainRequestDeliveryVariant1Encoding?), TypeInfoPropertyName = "NullableCreateDrainRequestDeliveryVariant1Encoding2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
