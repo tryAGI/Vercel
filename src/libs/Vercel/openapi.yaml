@@ -41846,6 +41846,16 @@
                             "email": "demo@example.com"
                           }
                         },
+                        "echMode": {
+                          "type": "string",
+                          "enum": [
+                            "auto",
+                            "disabled",
+                            "enabled"
+                          ],
+                          "description": "Whether the domain is enrolled in Encrypted Client Hello. `auto` leaves the decision to Vercel, `enabled` always enrolls, and `disabled` never enrolls and opts out of automatic enrollment.",
+                          "example": "auto"
+                        },
                         "name": {
                           "type": "string",
                           "description": "The domain name.",
@@ -41909,6 +41919,7 @@
                         "boughtAt",
                         "createdAt",
                         "creator",
+                        "echMode",
                         "expiresAt",
                         "id",
                         "intendedNameservers",
@@ -42294,6 +42305,16 @@
                             "email": "demo@example.com"
                           }
                         },
+                        "echMode": {
+                          "type": "string",
+                          "enum": [
+                            "auto",
+                            "disabled",
+                            "enabled"
+                          ],
+                          "description": "Whether the domain is enrolled in Encrypted Client Hello. `auto` leaves the decision to Vercel, `enabled` always enrolls, and `disabled` never enrolls and opts out of automatic enrollment.",
+                          "example": "auto"
+                        },
                         "name": {
                           "type": "string",
                           "description": "The domain name.",
@@ -42357,6 +42378,7 @@
                         "boughtAt",
                         "createdAt",
                         "creator",
+                        "echMode",
                         "expiresAt",
                         "id",
                         "intendedNameservers",
@@ -42541,6 +42563,16 @@
                               "email": "demo@example.com"
                             }
                           },
+                          "echMode": {
+                            "type": "string",
+                            "enum": [
+                              "auto",
+                              "disabled",
+                              "enabled"
+                            ],
+                            "description": "Whether the domain is enrolled in Encrypted Client Hello. `auto` leaves the decision to Vercel, `enabled` always enrolls, and `disabled` never enrolls and opts out of automatic enrollment.",
+                            "example": "auto"
+                          },
                           "name": {
                             "type": "string",
                             "description": "The domain name.",
@@ -42604,6 +42636,7 @@
                           "boughtAt",
                           "createdAt",
                           "creator",
+                          "echMode",
                           "expiresAt",
                           "id",
                           "intendedNameservers",
@@ -42812,6 +42845,16 @@
                             "email": "demo@example.com"
                           }
                         },
+                        "echMode": {
+                          "type": "string",
+                          "enum": [
+                            "auto",
+                            "disabled",
+                            "enabled"
+                          ],
+                          "description": "Whether the domain is enrolled in Encrypted Client Hello. `auto` leaves the decision to Vercel, `enabled` always enrolls, and `disabled` never enrolls and opts out of automatic enrollment.",
+                          "example": "auto"
+                        },
                         "name": {
                           "type": "string",
                           "description": "The domain name.",
@@ -42875,6 +42918,7 @@
                         "boughtAt",
                         "createdAt",
                         "creator",
+                        "echMode",
                         "expiresAt",
                         "id",
                         "intendedNameservers",

@@ -11,6 +11,10 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetProjectCheckResponseSourceVariant1, global::Vercel.GetProjectCheckResponseSourceVariant2, global::Vercel.GetProjectCheckResponseSourceVariant3>?), TypeInfoPropertyName = "GetProjectCheckResponseSourceVariant3_d266062a6e8c2905")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseSourceVariant1Kind?), TypeInfoPropertyName = "NullableGetProjectCheckResponseSourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseSourceVariant2Kind?), TypeInfoPropertyName = "NullableGetProjectCheckResponseSourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseSourceVariant3Kind?), TypeInfoPropertyName = "NullableGetProjectCheckResponseSourceVariant3Kind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseSourceVariant3Provider?), TypeInfoPropertyName = "NullableGetProjectCheckResponseSourceVariant3Provider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseBlocks?), TypeInfoPropertyName = "NullableGetProjectCheckResponseBlocks2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectCheckResponseSourceKind?), TypeInfoPropertyName = "NullableGetProjectCheckResponseSourceKind2")]
@@ -507,10 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BuilderConfigFunctionsExperimentalTriggerVariant3Type?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ServiceVariant2BuilderConfigFunctionsExperimentalTriggerVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BuilderConfigMiddlewareRuntime?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ServiceVariant2BuilderConfigMiddlewareRuntime2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BindingType?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ServiceVariant2BindingType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BindingFormat?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ServiceVariant2BindingFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2FunctionsArchitecture?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ServiceVariant2FunctionsArchitecture2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<double?, global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2FunctionsMaxDuration?>?), TypeInfoPropertyName = "NullableOneOfDoubleCreateDeploymentResponseVariant2ServiceVariant2FunctionsMaxDuration2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2FunctionsMaxDuration?), TypeInfoPropertyName = "NullableCreateDeploymentResponseVariant2ServiceVariant2FunctionsMaxDuration2")]
     internal sealed partial class SourceGenerationContextChunk023 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
