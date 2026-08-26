@@ -104,10 +104,10 @@ namespace Vercel
         /// Filter results by excluding those projects that belong to a repo
         /// </param>
         /// <param name="edgeConfigId">
-        /// Filter results by connected Edge Config ID
+        /// Filter results by connected Global Config ID
         /// </param>
         /// <param name="edgeConfigTokenId">
-        /// Filter results by connected Edge Config Token ID
+        /// Filter results by connected Global Config Token ID
         /// </param>
         /// <param name="deprecated"></param>
         /// <param name="elasticConcurrencyEnabled">
@@ -211,10 +211,10 @@ namespace Vercel
         /// Filter results by excluding those projects that belong to a repo
         /// </param>
         /// <param name="edgeConfigId">
-        /// Filter results by connected Edge Config ID
+        /// Filter results by connected Global Config ID
         /// </param>
         /// <param name="edgeConfigTokenId">
-        /// Filter results by connected Edge Config Token ID
+        /// Filter results by connected Global Config Token ID
         /// </param>
         /// <param name="deprecated"></param>
         /// <param name="elasticConcurrencyEnabled">

@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class GetEdgeConfigBackupResponseVariant1Backup
     {
         /// <summary>
-        /// Name for the Edge Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
+        /// Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -46,7 +46,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetEdgeConfigBackupResponseVariant1Backup" /> class.
         /// </summary>
         /// <param name="slug">
-        /// Name for the Edge Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
+        /// Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
         /// </param>
         /// <param name="updatedAt"></param>
         /// <param name="items"></param>

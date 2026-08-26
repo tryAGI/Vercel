@@ -23,7 +23,7 @@ namespace Vercel
         public required double CreatedAt { get; set; }
 
         /// <summary>
-        /// The ID of the user who created the Edge Config, optional because it is not always set.
+        /// The ID of the user who created the Global Config, optional because it is not always set.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
         public string? CreatedBy { get; set; }
@@ -36,7 +36,7 @@ namespace Vercel
         public required string OwnerId { get; set; }
 
         /// <summary>
-        /// Name for the Edge Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
+        /// Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -70,7 +70,7 @@ namespace Vercel
         public double? DeletedAt { get; set; }
 
         /// <summary>
-        /// Keeps track of the current state of the Edge Config while it gets transferred.
+        /// Keeps track of the current state of the Global Config while it gets transferred.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transfer")]
         public global::Vercel.GetEdgeConfigsResponseTransfer? Transfer { get; set; }
@@ -82,7 +82,7 @@ namespace Vercel
         public object? Schema { get; set; }
 
         /// <summary>
-        /// Timestamp of when the Edge Config was synced to DynamoDB initially. It is only set when syncing the entire Edge Config, not when updating.
+        /// Timestamp of when the Global Config was synced to DynamoDB initially. It is only set when syncing the entire Global Config, not when updating.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("syncedToDynamoAt")]
         public double? SyncedToDynamoAt { get; set; }
@@ -114,23 +114,23 @@ namespace Vercel
         /// <param name="createdAt"></param>
         /// <param name="ownerId"></param>
         /// <param name="slug">
-        /// Name for the Edge Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
+        /// Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
         /// </param>
         /// <param name="updatedAt"></param>
         /// <param name="digest"></param>
         /// <param name="sizeInBytes"></param>
         /// <param name="itemCount"></param>
         /// <param name="createdBy">
-        /// The ID of the user who created the Edge Config, optional because it is not always set.
+        /// The ID of the user who created the Global Config, optional because it is not always set.
         /// </param>
         /// <param name="purpose"></param>
         /// <param name="deletedAt"></param>
         /// <param name="transfer">
-        /// Keeps track of the current state of the Edge Config while it gets transferred.
+        /// Keeps track of the current state of the Global Config while it gets transferred.
         /// </param>
         /// <param name="schema"></param>
         /// <param name="syncedToDynamoAt">
-        /// Timestamp of when the Edge Config was synced to DynamoDB initially. It is only set when syncing the entire Edge Config, not when updating.
+        /// Timestamp of when the Global Config was synced to DynamoDB initially. It is only set when syncing the entire Global Config, not when updating.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

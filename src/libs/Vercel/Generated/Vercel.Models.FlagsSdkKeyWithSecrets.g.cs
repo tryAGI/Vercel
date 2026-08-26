@@ -85,7 +85,7 @@ namespace Vercel
         public required string KeyValue { get; set; }
 
         /// <summary>
-        /// Cleartext value of the Edge Config token, when the project has an Edge Config connection.
+        /// Cleartext value of the Global Config token, when the project has a Global Config connection.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tokenValue")]
         public string? TokenValue { get; set; }
@@ -115,7 +115,7 @@ namespace Vercel
         /// <param name="label"></param>
         /// <param name="deletedAt"></param>
         /// <param name="tokenValue">
-        /// Cleartext value of the Edge Config token, when the project has an Edge Config connection.
+        /// Cleartext value of the Global Config token, when the project has a Global Config connection.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
