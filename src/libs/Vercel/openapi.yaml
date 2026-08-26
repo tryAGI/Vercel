@@ -43164,6 +43164,9 @@
           "401": {
             "description": "The request is not authorized."
           },
+          "402": {
+            "description": ""
+          },
           "403": {
             "description": "You do not have permission to access this resource."
           },
@@ -74755,7 +74758,7 @@
     },
     "/v1/kms/issuers/{issuerId}": {
       "get": {
-        "description": "Retrieve a single KMS issuer by its ID.",
+        "description": "Retrieve a single KMS issuer by its ID. Accepts either a team bearer token (existing path) or an OIDC token authorized by one of the issuer's policies (e.g. a connex-grant token). The OIDC path returns the issuer without policies, since a policy token only proves signing access, not management access.",
         "operationId": "getKmsIssuer",
         "security": [
           {
