@@ -9,15 +9,15 @@ namespace Vercel
     public enum GetRollingReleaseState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aborted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Complete,
     }

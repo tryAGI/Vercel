@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant11ValueActionMitigate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant11ValueActionMitigateActionJsonConverter))]
@@ -17,33 +17,33 @@ namespace Vercel
         public required global::Vercel.UpdateFirewallConfigRequestVariant11ValueActionMitigateAction Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rateLimit")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateFirewallConfigRequestVariant11ValueActionMitigateRateLimit, string>))]
         public global::Vercel.AnyOf<global::Vercel.UpdateFirewallConfigRequestVariant11ValueActionMitigateRateLimit, string>? RateLimit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateFirewallConfigRequestVariant11ValueActionMitigateRedirect, string>))]
         public global::Vercel.AnyOf<global::Vercel.UpdateFirewallConfigRequestVariant11ValueActionMitigateRedirect, string>? Redirect { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("actionDuration")]
         public string? ActionDuration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bypassSystem")]
         public bool? BypassSystem { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logHeaders")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>))]

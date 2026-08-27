@@ -4,25 +4,25 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateProjectResponseDataCache
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userDisabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool UserDisabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("storageSizeBytes")]
         public double? StorageSizeBytes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("unlimited")]
         public bool? Unlimited { get; set; }

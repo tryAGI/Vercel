@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectRequestDeploymentPolicyGitSourcesVariant1ItemEnvironmentVariant1Target
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

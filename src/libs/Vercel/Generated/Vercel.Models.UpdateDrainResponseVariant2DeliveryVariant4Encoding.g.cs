@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateDrainResponseVariant2DeliveryVariant4Encoding
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Json,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ndjson,
     }

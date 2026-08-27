@@ -20,7 +20,7 @@ namespace Vercel.JsonConverters
                     {
                         return global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2AccessExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

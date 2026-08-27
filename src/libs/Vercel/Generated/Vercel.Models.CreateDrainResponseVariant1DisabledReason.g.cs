@@ -4,28 +4,28 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDrainResponseVariant1DisabledReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccountPlanDowngrade,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisabledByAdmin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisabledByOwner,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FeatureNotAvailable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LimitsExceeded,
     }

@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetDeploymentCheckRunResponseVariant1SourceVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant3KindJsonConverter))]
         public global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant3Kind Kind { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant1SourceVariant3ProviderJsonConverter))]
@@ -24,7 +24,7 @@ namespace Vercel
         public required global::Vercel.GetDeploymentCheckRunResponseVariant1SourceVariant3Provider Provider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalCheckName")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -9,19 +9,19 @@ namespace Vercel
     public enum ConnectConnectorCreateDataTypeGithubOwnerType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Organization2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Organization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RegistrantFieldVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         String,
     }

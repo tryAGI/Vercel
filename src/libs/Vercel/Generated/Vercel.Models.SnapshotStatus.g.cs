@@ -10,15 +10,15 @@ namespace Vercel
     public enum SnapshotStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Created,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
     }

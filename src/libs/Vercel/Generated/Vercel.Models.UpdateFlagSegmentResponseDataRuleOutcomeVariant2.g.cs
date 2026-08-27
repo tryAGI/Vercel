@@ -4,26 +4,26 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateFlagSegmentResponseDataRuleOutcomeVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFlagSegmentResponseDataRuleOutcomeVariant2TypeJsonConverter))]
         public global::Vercel.UpdateFlagSegmentResponseDataRuleOutcomeVariant2Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("base")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateFlagSegmentResponseDataRuleOutcomeVariant2Base Base { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("passPromille")]
         [global::System.Text.Json.Serialization.JsonRequired]

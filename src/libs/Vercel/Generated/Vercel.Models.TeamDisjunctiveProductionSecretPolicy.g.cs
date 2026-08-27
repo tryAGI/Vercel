@@ -9,15 +9,15 @@ namespace Vercel
     public enum TeamDisjunctiveProductionSecretPolicy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Off,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         On,
     }

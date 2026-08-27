@@ -10,11 +10,11 @@ namespace Vercel
     public enum ListDrivesSortOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BuyDomainsRequestDomain
     {
@@ -30,7 +30,7 @@ namespace Vercel
         public required double Years { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expectedPrice")]
         [global::System.Text.Json.Serialization.JsonRequired]

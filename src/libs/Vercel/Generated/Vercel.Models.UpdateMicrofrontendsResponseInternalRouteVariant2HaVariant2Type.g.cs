@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateMicrofrontendsResponseInternalRouteVariant2HaVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Host,
     }

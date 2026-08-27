@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class CancelDeploymentResponseFlags
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("definitions")]
         [global::System.Text.Json.Serialization.JsonRequired]

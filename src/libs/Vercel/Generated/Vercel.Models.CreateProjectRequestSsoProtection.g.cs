@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class CreateProjectRequestSsoProtection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectRequestSsoProtectionDeploymentTypeJsonConverter))]

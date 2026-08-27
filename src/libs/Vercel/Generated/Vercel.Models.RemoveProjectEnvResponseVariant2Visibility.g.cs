@@ -9,11 +9,11 @@ namespace Vercel
     public enum RemoveProjectEnvResponseVariant2Visibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Config,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Secret,
     }

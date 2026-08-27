@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PutFirewallConfigRequestRuleActionMitigateRateLimitVariant1ActionEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Challenge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deny,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Log,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RateLimit,
     }

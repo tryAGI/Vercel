@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDeploymentResponseVariant2ImagesContentDispositionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Attachment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inline,
     }

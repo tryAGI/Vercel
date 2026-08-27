@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetMicrofrontendsInGroupResponseProjectDeploymentPolicyGitSourceEnvironmentVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
     }

@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GenerateRouteResponseRouteActionSubType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ResponseHeaders,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TransformRequestHeader,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TransformRequestQuery,
     }

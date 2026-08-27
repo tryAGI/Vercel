@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class UpdateProjectRequestOptionsAllowlist
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("paths")]
         [global::System.Text.Json.Serialization.JsonRequired]

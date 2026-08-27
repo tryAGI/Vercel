@@ -9,7 +9,7 @@ namespace Vercel
     public enum UpdateMicrofrontendsResponseUsageStatusKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flat,
     }

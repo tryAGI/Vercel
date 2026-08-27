@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateProjectResponseAliaTarget
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Staging,
     }

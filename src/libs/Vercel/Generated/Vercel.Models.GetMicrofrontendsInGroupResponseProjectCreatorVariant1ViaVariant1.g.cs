@@ -9,14 +9,14 @@ namespace Vercel
     public sealed partial class GetMicrofrontendsInGroupResponseProjectCreatorVariant1ViaVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectCreatorVariant1ViaVariant1TypeJsonConverter))]
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant1ViaVariant1Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         [global::System.Text.Json.Serialization.JsonRequired]

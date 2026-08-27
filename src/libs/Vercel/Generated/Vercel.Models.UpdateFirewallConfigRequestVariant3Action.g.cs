@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFirewallConfigRequestVariant3Action
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RulesUpdate,
     }

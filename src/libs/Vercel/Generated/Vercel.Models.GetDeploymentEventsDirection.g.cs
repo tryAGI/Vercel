@@ -11,11 +11,11 @@ namespace Vercel
     public enum GetDeploymentEventsDirection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Backward,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Forward,
     }

@@ -4,100 +4,100 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFlagSegmentResponseDataRuleConditionCmp
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x_contains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x_endsWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x_eq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x_ex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x_oneOf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x_regex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x_startsWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         After,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Before,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Contains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContainsAllOf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContainsAnyOf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContainsNoneOf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndsWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gte,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lte,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneOf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Regex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartsWith,
     }

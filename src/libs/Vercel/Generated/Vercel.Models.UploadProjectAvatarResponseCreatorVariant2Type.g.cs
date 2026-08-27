@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UploadProjectAvatarResponseCreatorVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
     }

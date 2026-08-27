@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseServiceVariant2Schema
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExperimentalServicesV2,
     }

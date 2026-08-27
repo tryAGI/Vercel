@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateProjectResponseAliaDeploymentPlan
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enterprise,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hobby,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pro,
     }

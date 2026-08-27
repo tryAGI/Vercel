@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UserEventViaItemVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
     }

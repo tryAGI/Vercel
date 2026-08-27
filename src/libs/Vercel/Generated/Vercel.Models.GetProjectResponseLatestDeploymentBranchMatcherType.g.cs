@@ -9,15 +9,15 @@ namespace Vercel
     public enum GetProjectResponseLatestDeploymentBranchMatcherType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndsWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Equals,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartsWith,
     }

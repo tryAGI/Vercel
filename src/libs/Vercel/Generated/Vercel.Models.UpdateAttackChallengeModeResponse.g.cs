@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateAttackChallengeModeResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attackModeEnabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool AttackModeEnabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attackModeUpdatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]

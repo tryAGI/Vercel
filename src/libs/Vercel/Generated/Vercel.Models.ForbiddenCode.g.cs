@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ForbiddenCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Forbidden,
     }

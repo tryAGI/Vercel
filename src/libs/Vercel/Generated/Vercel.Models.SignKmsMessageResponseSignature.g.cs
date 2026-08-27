@@ -9,14 +9,14 @@ namespace Vercel
     public sealed partial class SignKmsMessageResponseSignature
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("payload")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Payload { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("signature")]
         [global::System.Text.Json.Serialization.JsonRequired]

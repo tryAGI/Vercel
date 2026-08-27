@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateStorageStoresBlobResponseStoreProjectFilterGitProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
     }

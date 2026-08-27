@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant3OptionsEffectiveDateEnum2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndOfSubscriptionTerm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Immediate,
     }

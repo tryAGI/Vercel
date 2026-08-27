@@ -9,20 +9,20 @@ namespace Vercel
     public sealed partial class AuthUserAccountUpdateContext
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("organization")]
         public global::Vercel.AuthUserAccountUpdateContextOrganization? Organization { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("managedTeams")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.AuthUserAccountUpdateContextManagedTeam> ManagedTeams { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("verifiedEmuDomains")]
         [global::System.Text.Json.Serialization.JsonRequired]

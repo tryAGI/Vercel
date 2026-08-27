@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateDrainRequestFilterFilterVariant1Deployment
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateDrainRequestFilterFilterVariant1DeploymentEnvironment>? Environments { get; set; }

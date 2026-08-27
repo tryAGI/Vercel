@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant3UiControl
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Toggle,
     }

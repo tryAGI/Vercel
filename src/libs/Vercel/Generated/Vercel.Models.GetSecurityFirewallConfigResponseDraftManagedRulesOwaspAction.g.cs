@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetSecurityFirewallConfigResponseDraftManagedRulesOwaspAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Challenge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deny,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Log,
     }

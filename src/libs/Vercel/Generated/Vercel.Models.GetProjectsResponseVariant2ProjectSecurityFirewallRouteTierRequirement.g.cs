@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Advanced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Critical,
     }

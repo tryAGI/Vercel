@@ -23,7 +23,7 @@ namespace Vercel
         public required global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Output Output { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2TypeJsonConverter))]

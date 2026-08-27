@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetRoutesResponseVariant3RouteRouteMissingItemVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cookie,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Header,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Query,
     }

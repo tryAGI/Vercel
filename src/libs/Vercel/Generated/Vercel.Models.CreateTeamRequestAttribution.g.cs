@@ -27,7 +27,7 @@ namespace Vercel
         public string? PageBeforeConversionPage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("utm")]
         public global::Vercel.CreateTeamRequestAttributionUtm? Utm { get; set; }

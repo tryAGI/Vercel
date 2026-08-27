@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetSecurityFirewallConfigResponseVersionCrsSfAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deny,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Log,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseDomainVariant3ErrorVariant2Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IncorrectLanguageCode,
     }

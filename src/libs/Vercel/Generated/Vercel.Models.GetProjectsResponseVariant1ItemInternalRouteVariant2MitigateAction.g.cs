@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant1ItemInternalRouteVariant2MitigateAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BlockLegalCwc,
     }

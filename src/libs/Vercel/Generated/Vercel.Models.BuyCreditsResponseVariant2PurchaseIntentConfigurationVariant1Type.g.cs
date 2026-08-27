@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreditTopup,
     }

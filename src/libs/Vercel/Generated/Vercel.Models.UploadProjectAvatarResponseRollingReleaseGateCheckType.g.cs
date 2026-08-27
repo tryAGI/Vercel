@@ -9,7 +9,7 @@ namespace Vercel
     public enum UploadProjectAvatarResponseRollingReleaseGateCheckType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ErrorRate5xx,
     }

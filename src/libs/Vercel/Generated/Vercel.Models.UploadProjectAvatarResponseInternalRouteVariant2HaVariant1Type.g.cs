@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UploadProjectAvatarResponseInternalRouteVariant2HaVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Header,
     }

@@ -4,123 +4,123 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateProjectResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accountId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AccountId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectResponseCreatorVariant1, global::Vercel.UpdateProjectResponseCreatorVariant2, global::Vercel.UpdateProjectResponseCreatorVariant3, global::Vercel.UpdateProjectResponseCreatorVariant4>))]
         public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseCreatorVariant1, global::Vercel.UpdateProjectResponseCreatorVariant2, global::Vercel.UpdateProjectResponseCreatorVariant3, global::Vercel.UpdateProjectResponseCreatorVariant4>? Creator { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseAlia> Alias { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("analytics")]
         public global::Vercel.UpdateProjectResponseAnalytics? Analytics { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appliedCve55182Migration")]
         public bool? AppliedCve55182Migration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speedInsights")]
         public global::Vercel.UpdateProjectResponseSpeedInsights? SpeedInsights { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("autoExposeSystemEnvs")]
         public bool? AutoExposeSystemEnvs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("autoAssignCustomDomains")]
         public bool? AutoAssignCustomDomains { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("autoAssignCustomDomainsUpdatedBy")]
         public string? AutoAssignCustomDomainsUpdatedBy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildCommand")]
         public string? BuildCommand { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("commandForIgnoringBuildStep")]
         public string? CommandForIgnoringBuildStep { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurations")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseConnectConfiguration>? ConnectConfigurations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurationId")]
         public string? ConnectConfigurationId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectBuildsEnabled")]
         public bool? ConnectBuildsEnabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("passiveConnectConfigurationId")]
         public string? PassiveConnectConfigurationId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         public double? CreatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customerSupportCodeVisibility")]
         public bool? CustomerSupportCodeVisibility { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("crons")]
         public global::Vercel.UpdateProjectResponseCrons? Crons { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dataCache")]
         public global::Vercel.UpdateProjectResponseDataCache? DataCache { get; set; }
@@ -133,122 +133,122 @@ namespace Vercel
         public required global::Vercel.UpdateProjectResponseDeploymentExpiration DeploymentExpiration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expiration")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectResponseExpirationVariant1, global::Vercel.UpdateProjectResponseExpirationVariant2>))]
         public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseExpirationVariant1, global::Vercel.UpdateProjectResponseExpirationVariant2>? Expiration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("devCommand")]
         public string? DevCommand { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("directoryListing")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool DirectoryListing { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("installCommand")]
         public string? InstallCommand { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("env")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseEnvItem>? Env { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironments")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseCustomEnvironment>? CustomEnvironments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("framework")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectResponseFrameworkJsonConverter))]
         public global::Vercel.UpdateProjectResponseFramework? Framework { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("services")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseService>? Services { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitForkProtection")]
         public bool? GitForkProtection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitLFS")]
         public bool? GitLFS { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ipBuckets")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseIpBucket>? IpBuckets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("jobs")]
         public global::Vercel.UpdateProjectResponseJobs? Jobs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latestDeployments")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseLatestDeployment>? LatestDeployments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("link")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectResponseLinkVariant1, global::Vercel.UpdateProjectResponseLinkVariant2, global::Vercel.UpdateProjectResponseLinkVariant3, global::Vercel.UpdateProjectResponseLinkVariant4, global::Vercel.UpdateProjectResponseLinkVariant5, global::Vercel.UpdateProjectResponseLinkVariant6, global::Vercel.UpdateProjectResponseLinkVariant7>))]
         public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseLinkVariant1, global::Vercel.UpdateProjectResponseLinkVariant2, global::Vercel.UpdateProjectResponseLinkVariant3, global::Vercel.UpdateProjectResponseLinkVariant4, global::Vercel.UpdateProjectResponseLinkVariant5, global::Vercel.UpdateProjectResponseLinkVariant6, global::Vercel.UpdateProjectResponseLinkVariant7>? Link { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blobs")]
         public global::Vercel.UpdateProjectResponseBlobs? Blobs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectResponseMicrofrontendsVariant1, global::Vercel.UpdateProjectResponseMicrofrontendsVariant2, global::Vercel.UpdateProjectResponseMicrofrontendsVariant3>))]
         public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseMicrofrontendsVariant1, global::Vercel.UpdateProjectResponseMicrofrontendsVariant2, global::Vercel.UpdateProjectResponseMicrofrontendsVariant3>? Microfrontends { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nodeVersion")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectResponseNodeVersionJsonConverter))]
@@ -256,49 +256,49 @@ namespace Vercel
         public required global::Vercel.UpdateProjectResponseNodeVersion NodeVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
         public global::Vercel.UpdateProjectResponseOptionsAllowlist? OptionsAllowlist { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("outputDirectory")]
         public string? OutputDirectory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("passwordProtection")]
         public object? PasswordProtection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("passport")]
         public global::Vercel.UpdateProjectResponsePassport? Passport { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("protectionConfig")]
         public global::Vercel.UpdateProjectResponseProtectionConfig? ProtectionConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sandbox")]
         public global::Vercel.UpdateProjectResponseSandbox? Sandbox { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productionDeploymentsFastLane")]
         public bool? ProductionDeploymentsFastLane { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -317,213 +317,213 @@ namespace Vercel
         public global::Vercel.UpdateProjectResponseRollingRelease? RollingRelease { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultResourceConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateProjectResponseDefaultResourceConfig DefaultResourceConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rootDirectory")]
         public string? RootDirectory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serverlessFunctionZeroConfigFailover")]
         public bool? ServerlessFunctionZeroConfigFailover { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("skewProtectionBoundaryAt")]
         public double? SkewProtectionBoundaryAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("skewProtectionMaxAge")]
         public double? SkewProtectionMaxAge { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("skewProtectionAllowedDomains")]
         public global::System.Collections.Generic.IList<string>? SkewProtectionAllowedDomains { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("skipGitConnectDuringLink")]
         public bool? SkipGitConnectDuringLink { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("staticIps")]
         public global::Vercel.UpdateProjectResponseStaticIps? StaticIps { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceFilesOutsideRootDirectory")]
         public bool? SourceFilesOutsideRootDirectory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enableAffectedProjectsDeployments")]
         public bool? EnableAffectedProjectsDeployments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enableExternalRewriteCaching")]
         public bool? EnableExternalRewriteCaching { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ssoProtection")]
         public global::Vercel.UpdateProjectResponseSsoProtection? SsoProtection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateProjectResponseTargets2?>? Targets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transferCompletedAt")]
         public double? TransferCompletedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transferStartedAt")]
         public double? TransferStartedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transferToAccountId")]
         public string? TransferToAccountId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transferredFromAccountId")]
         public string? TransferredFromAccountId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         public double? UpdatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("live")]
         public bool? Live { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enablePreviewFeedback")]
         public bool? EnablePreviewFeedback { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enableProductionFeedback")]
         public bool? EnableProductionFeedback { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
         public global::Vercel.UpdateProjectResponsePermissions? Permissions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lastRollbackTarget")]
         public object? LastRollbackTarget { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lastAliasRequest")]
         public global::Vercel.UpdateProjectResponseLastAliasRequest? LastAliasRequest { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("protectionBypass")]
         public object? ProtectionBypass { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hasActiveBranches")]
         public bool? HasActiveBranches { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trustedIps")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectResponseTrustedIpsVariant1, global::Vercel.UpdateProjectResponseTrustedIpsVariant2>))]
         public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseTrustedIpsVariant1, global::Vercel.UpdateProjectResponseTrustedIpsVariant2>? TrustedIps { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
         public global::Vercel.UpdateProjectResponseTrustedSources? TrustedSources { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitComments")]
         public global::Vercel.UpdateProjectResponseGitComments? GitComments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitProviderOptions")]
         public global::Vercel.UpdateProjectResponseGitProviderOptions? GitProviderOptions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("paused")]
         public bool? Paused { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("concurrencyBucketName")]
         public string? ConcurrencyBucketName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("webAnalytics")]
         public global::Vercel.UpdateProjectResponseWebAnalytics? WebAnalytics { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("security")]
         public global::Vercel.UpdateProjectResponseSecurity? Security { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oidcTokenConfig")]
         public global::Vercel.UpdateProjectResponseOidcTokenConfig? OidcTokenConfig { get; set; }
@@ -535,74 +535,74 @@ namespace Vercel
         public global::Vercel.UpdateProjectResponseDeploymentPolicy? DeploymentPolicy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tier")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectResponseTierJsonConverter))]
         public global::Vercel.UpdateProjectResponseTier? Tier { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("usageStatus")]
         public global::Vercel.UpdateProjectResponseUsageStatus? UsageStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("features")]
         public global::Vercel.UpdateProjectResponseFeatures? Features { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("v0")]
         public bool? V0 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("v0Created")]
         public bool? V0Created { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("abuse")]
         public global::Vercel.UpdateProjectResponseAbuse? Abuse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("internalRoutes")]
         public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UpdateProjectResponseInternalRouteVariant1, global::Vercel.UpdateProjectResponseInternalRouteVariant2>>? InternalRoutes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hasDeployments")]
         public bool? HasDeployments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dismissedToasts")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseDismissedToast>? DismissedToasts { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("protectedSourcemaps")]
         public bool? ProtectedSourcemaps { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tracing")]
         public global::Vercel.UpdateProjectResponseTracing? Tracing { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
         public string? Avatar { get; set; }

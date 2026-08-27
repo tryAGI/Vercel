@@ -9,79 +9,79 @@ namespace Vercel
     public enum ListBillingChargesResponseServiceCategory
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiAndMachineLearning,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Analytics,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BusinessApplications,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Compute,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Databases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperTools,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Identity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternetOfThings,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManagementAndGovernance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Media,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Migration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mobile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Multicloud,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Networking,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Security,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Storage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Web,
     }

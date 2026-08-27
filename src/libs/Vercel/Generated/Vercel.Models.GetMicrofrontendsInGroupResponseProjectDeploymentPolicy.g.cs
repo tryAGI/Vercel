@@ -9,13 +9,13 @@ namespace Vercel
     public sealed partial class GetMicrofrontendsInGroupResponseProjectDeploymentPolicy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitSources")]
         public global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectDeploymentPolicyGitSource>? GitSources { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentSources")]
         public global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectDeploymentPolicyDeploymentSource>? DeploymentSources { get; set; }

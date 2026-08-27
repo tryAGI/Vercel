@@ -4,33 +4,33 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateFlagResponseEnvironmentsRuleOutcomeVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateFlagResponseEnvironmentsRuleOutcomeVariant2TypeJsonConverter))]
         public global::Vercel.CreateFlagResponseEnvironmentsRuleOutcomeVariant2Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("base")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.CreateFlagResponseEnvironmentsRuleOutcomeVariant2Base Base { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("weights")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.Dictionary<string, double> Weights { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultVariantId")]
         [global::System.Text.Json.Serialization.JsonRequired]

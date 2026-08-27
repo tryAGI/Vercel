@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentEventsResponseItemVariant3Variant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasAssigned,
     }

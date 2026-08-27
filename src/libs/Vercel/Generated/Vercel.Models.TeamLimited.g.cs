@@ -16,7 +16,7 @@ namespace Vercel
         public required bool Limited { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("limitedBy")]
         [global::System.Text.Json.Serialization.JsonRequired]

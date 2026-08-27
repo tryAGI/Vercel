@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AddRouteResponseRouteRouteMitigateAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Challenge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deny,
     }

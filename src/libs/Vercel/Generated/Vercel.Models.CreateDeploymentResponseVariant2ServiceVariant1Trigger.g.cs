@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDeploymentResponseVariant2ServiceVariant1Trigger
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Queue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Schedule,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workflow,
     }

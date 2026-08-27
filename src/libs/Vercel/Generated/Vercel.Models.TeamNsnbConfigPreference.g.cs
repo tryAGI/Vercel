@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TeamNsnbConfigPreference
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutoApproval,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Block,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualApproval,
     }

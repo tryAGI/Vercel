@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class CancelDeploymentResponseChecksDeploymentAlias
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseChecksDeploymentAliasStateJsonConverter))]
@@ -17,14 +17,14 @@ namespace Vercel
         public required global::Vercel.CancelDeploymentResponseChecksDeploymentAliasState State { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("startedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double StartedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("completedAt")]
         public double? CompletedAt { get; set; }

@@ -9,7 +9,7 @@ namespace Vercel
     public enum GetDeploymentResponseVariant2FunctionsExperimentalTriggerVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         QueueV2beta,
     }

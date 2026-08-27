@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RotateInstallationCredentialResponseTokenType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Oauth2Token,
     }

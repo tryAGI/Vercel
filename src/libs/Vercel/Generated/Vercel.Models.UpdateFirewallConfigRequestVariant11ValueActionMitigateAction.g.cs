@@ -4,32 +4,32 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFirewallConfigRequestVariant11ValueActionMitigateAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bypass,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Challenge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deny,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Log,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RateLimit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Redirect,
     }

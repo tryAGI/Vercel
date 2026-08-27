@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsActionEnvironment
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Development,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

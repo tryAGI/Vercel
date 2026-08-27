@@ -9,7 +9,7 @@ namespace Vercel
     public enum ConnectConnectorCreateResultUpdatedByVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

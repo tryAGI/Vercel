@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFlagSegmentResponseDataRuleOutcomeVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
     }

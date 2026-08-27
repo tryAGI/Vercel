@@ -16,7 +16,7 @@ namespace Vercel
         public required global::System.Collections.Generic.IList<string> Slugs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preset")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseTrustedSourcesProjectsCustomAllowItemToVariant1PresetJsonConverter))]

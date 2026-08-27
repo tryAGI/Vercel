@@ -10,15 +10,15 @@ namespace Vercel
     public enum ApproveRollingReleaseStageResponseRollingReleaseState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aborted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Complete,
     }

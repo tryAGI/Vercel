@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateStaticIpsRequest
     {
@@ -15,7 +15,7 @@ namespace Vercel
         public bool? Builds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("regions")]
         public global::System.Collections.Generic.IList<string>? Regions { get; set; }

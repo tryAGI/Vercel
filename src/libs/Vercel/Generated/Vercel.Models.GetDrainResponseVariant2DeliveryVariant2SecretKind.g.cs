@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDrainResponseVariant2DeliveryVariant2SecretKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationSecret,
     }

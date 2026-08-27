@@ -9,7 +9,7 @@ namespace Vercel
     public enum CreateRecordRequestEnumType6
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mx,
     }

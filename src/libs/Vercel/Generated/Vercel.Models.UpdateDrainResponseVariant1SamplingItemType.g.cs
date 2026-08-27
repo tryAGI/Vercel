@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateDrainResponseVariant1SamplingItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HeadSampling,
     }

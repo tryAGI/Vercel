@@ -10,11 +10,11 @@ namespace Vercel
     public enum CreateLogDrainRequestDeliveryFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Json,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ndjson,
     }

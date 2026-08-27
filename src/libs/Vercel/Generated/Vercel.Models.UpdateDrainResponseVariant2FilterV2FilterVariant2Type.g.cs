@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateDrainResponseVariant2FilterV2FilterVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Odata,
     }

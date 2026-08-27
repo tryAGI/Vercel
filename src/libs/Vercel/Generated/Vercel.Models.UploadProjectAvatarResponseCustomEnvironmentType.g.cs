@@ -9,15 +9,15 @@ namespace Vercel
     public enum UploadProjectAvatarResponseCustomEnvironmentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Development,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

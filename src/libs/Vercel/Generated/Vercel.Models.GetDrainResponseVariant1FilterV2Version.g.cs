@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDrainResponseVariant1FilterV2Version
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V2,
     }

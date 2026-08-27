@@ -4,84 +4,84 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetTeamAccessRequestResponseJoinedFromOrigin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccountUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dsync,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Feedback,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Import,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Link,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NsnbAutoApprove,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NsnbHobbyUpgrade,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NsnbInvite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NsnbRedeploy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NsnbRedeployAttributionCard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NsnbRequestAccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NsnbViewerUpgrade,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationTeams,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Saml,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Teams,
     }

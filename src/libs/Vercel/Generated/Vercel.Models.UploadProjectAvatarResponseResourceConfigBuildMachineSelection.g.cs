@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UploadProjectAvatarResponseResourceConfigBuildMachineSelection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elastic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fixed,
     }

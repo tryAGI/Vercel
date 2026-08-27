@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentResponseVariant2ServiceVariant2RouteVariant1HaVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cookie,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Header,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Query,
     }

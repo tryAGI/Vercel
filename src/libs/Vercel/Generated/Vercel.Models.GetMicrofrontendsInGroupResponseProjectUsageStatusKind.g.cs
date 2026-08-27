@@ -9,7 +9,7 @@ namespace Vercel
     public enum GetMicrofrontendsInGroupResponseProjectUsageStatusKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flat,
     }

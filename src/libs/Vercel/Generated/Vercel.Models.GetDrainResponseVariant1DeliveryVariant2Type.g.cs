@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDrainResponseVariant1DeliveryVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Otlphttp,
     }

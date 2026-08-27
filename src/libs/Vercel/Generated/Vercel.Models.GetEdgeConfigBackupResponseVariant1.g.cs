@@ -9,35 +9,35 @@ namespace Vercel
     public sealed partial class GetEdgeConfigBackupResponseVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lastModified")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double LastModified { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("backup")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetEdgeConfigBackupResponseVariant1Backup Backup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetEdgeConfigBackupResponseVariant1Metadata Metadata { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         public global::Vercel.GetEdgeConfigBackupResponseVariant1User? User { get; set; }

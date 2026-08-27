@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateMicrofrontendsResponseDefaultResourceConfigBuildMachineSelection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elastic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fixed,
     }

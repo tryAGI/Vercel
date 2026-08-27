@@ -9,11 +9,11 @@ namespace Vercel
     public enum CreateProjectResponseTracingSamplingRuleDestination
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Internal,
     }

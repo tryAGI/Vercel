@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectResponseDeploymentPolicyDeploymentSourceEnvironmentVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         System,
     }

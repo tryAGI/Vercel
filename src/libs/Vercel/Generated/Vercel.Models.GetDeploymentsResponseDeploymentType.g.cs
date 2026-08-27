@@ -10,7 +10,7 @@ namespace Vercel
     public enum GetDeploymentsResponseDeploymentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lambdas,
     }

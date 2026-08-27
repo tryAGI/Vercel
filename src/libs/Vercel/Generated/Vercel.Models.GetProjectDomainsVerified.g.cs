@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetProjectDomainsVerified
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

@@ -9,28 +9,28 @@ namespace Vercel
     public sealed partial class CreateDeploymentResponseVariant2GitSourceVariant12
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2GitSourceVariant12TypeJsonConverter))]
         public global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant12Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Ref { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Sha { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitUrl")]
         [global::System.Text.Json.Serialization.JsonRequired]

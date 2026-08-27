@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListCheckRunsResponseRunVariant1SourceVariant3Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
     }

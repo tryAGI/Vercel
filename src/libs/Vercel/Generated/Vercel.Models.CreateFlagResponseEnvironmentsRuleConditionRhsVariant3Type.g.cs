@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateFlagResponseEnvironmentsRuleConditionRhsVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         List,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ListInline,
     }

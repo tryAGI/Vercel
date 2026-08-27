@@ -4,89 +4,89 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateProjectResponseResourceConfig
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("elasticConcurrencyEnabled")]
         public bool? ElasticConcurrencyEnabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fluid")]
         public bool? Fluid { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionDefaultRegions")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<string> FunctionDefaultRegions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionDefaultTimeout")]
         public double? FunctionDefaultTimeout { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionDefaultMemoryType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseResourceConfigFunctionDefaultMemoryTypeJsonConverter))]
         public global::Vercel.CreateProjectResponseResourceConfigFunctionDefaultMemoryType? FunctionDefaultMemoryType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionZeroConfigFailover")]
         public bool? FunctionZeroConfigFailover { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseResourceConfigBuildMachineTypeJsonConverter))]
         public global::Vercel.CreateProjectResponseResourceConfigBuildMachineType? BuildMachineType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineSelection")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseResourceConfigBuildMachineSelectionJsonConverter))]
         public global::Vercel.CreateProjectResponseResourceConfigBuildMachineSelection? BuildMachineSelection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticLastUpdated")]
         public double? BuildMachineElasticLastUpdated { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticReason")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseResourceConfigBuildMachineElasticReasonJsonConverter))]
         public global::Vercel.CreateProjectResponseResourceConfigBuildMachineElasticReason? BuildMachineElasticReason { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isNSNBDisabled")]
         public bool? IsNSNBDisabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildQueue")]
         public global::Vercel.CreateProjectResponseResourceConfigBuildQueue? BuildQueue { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enableFunctionsBeta")]
         public bool? EnableFunctionsBeta { get; set; }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFirewallConfigRequestVariant8Action
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IpInsert,
     }

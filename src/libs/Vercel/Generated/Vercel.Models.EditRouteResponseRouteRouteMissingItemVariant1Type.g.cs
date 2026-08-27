@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EditRouteResponseRouteRouteMissingItemVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Host,
     }

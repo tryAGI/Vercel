@@ -4,56 +4,56 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite_deployment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite_deploymentCheck,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite_domain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite_drains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite_globalProjectEnvVars,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite_integrationDeploymentAction,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite_logDrain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite_projectEnvVars,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite_projectProtectionBypass,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Read_deployment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Read_domain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Read_project,
     }

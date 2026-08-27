@@ -10,11 +10,11 @@ namespace Vercel
     public enum UpdateSharedEnvVariableRequestUpdatesType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Encrypted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sensitive,
     }

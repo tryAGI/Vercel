@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectResponseLinkVariant4Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
     }

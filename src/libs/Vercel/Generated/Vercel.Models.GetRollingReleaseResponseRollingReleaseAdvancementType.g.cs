@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetRollingReleaseResponseRollingReleaseAdvancementType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Automatic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualApproval,
     }

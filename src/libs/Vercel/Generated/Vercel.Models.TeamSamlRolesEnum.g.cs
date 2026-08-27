@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class TeamSamlRolesEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accessGroupId")]
         [global::System.Text.Json.Serialization.JsonRequired]

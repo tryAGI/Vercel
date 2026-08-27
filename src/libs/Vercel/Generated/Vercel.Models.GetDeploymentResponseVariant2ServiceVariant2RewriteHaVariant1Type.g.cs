@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Host,
     }

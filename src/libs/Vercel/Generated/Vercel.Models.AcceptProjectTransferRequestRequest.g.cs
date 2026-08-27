@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AcceptProjectTransferRequestRequest
     {
@@ -17,13 +17,13 @@ namespace Vercel
         public string? NewProjectName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("paidFeatures")]
         public global::Vercel.AcceptProjectTransferRequestRequestPaidFeatures? PaidFeatures { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("acceptedPolicies")]
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.AcceptProjectTransferRequestRequestAcceptedPolicies2>? AcceptedPolicies { get; set; }

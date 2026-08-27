@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetSecurityFirewallConfigResponseDraftRulesetsLogHeaders
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Multiply,
     }

@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BuyCreditsResponseVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("checkoutSessionId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CheckoutSessionId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("checkoutSessionUrl")]
         [global::System.Text.Json.Serialization.JsonRequired]

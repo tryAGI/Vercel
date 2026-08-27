@@ -4,18 +4,18 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetWebhooksResponseVariant1Item
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectsMetadata")]
         public global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItem>? ProjectsMetadata { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alertRuleIds")]
         public global::System.Collections.Generic.IList<string>? AlertRuleIds { get; set; }

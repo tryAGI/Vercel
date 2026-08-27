@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectResponseDismissedToastAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accept,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cancel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delete,
     }

@@ -4,48 +4,48 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant3ProjectDefaultResourceConfigBuildMachineElasticReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BasicFloor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildTimeoutFailure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnospcFailure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnterpriseFloor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HighPeakDisk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HighPeakMemory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LongBuildDuration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OomFailure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ShortBuildDuration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SustainedHighCpu,
     }

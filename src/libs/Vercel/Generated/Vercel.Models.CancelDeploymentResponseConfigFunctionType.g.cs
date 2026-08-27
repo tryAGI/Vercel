@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseConfigFunctionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fluid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standard,
     }

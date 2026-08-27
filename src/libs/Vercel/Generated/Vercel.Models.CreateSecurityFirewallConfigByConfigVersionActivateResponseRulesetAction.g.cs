@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mitigate")]
         public global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigate? Mitigate { get; set; }

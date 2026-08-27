@@ -9,19 +9,19 @@ namespace Vercel
     public enum NetworkStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreateInProgress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeleteInProgress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ready,
     }

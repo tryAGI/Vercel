@@ -9,15 +9,15 @@ namespace Vercel
     public enum VcrTagKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Attestation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Index,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manifest,
     }

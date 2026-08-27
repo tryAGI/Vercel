@@ -4,28 +4,28 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1DeploymentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllExceptCustomDomains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProdDeploymentUrlsAndAllPreviews,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

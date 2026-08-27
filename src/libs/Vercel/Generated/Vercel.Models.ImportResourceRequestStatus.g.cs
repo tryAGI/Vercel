@@ -4,36 +4,36 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ImportResourceRequestStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Onboarding,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ready,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Resumed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Suspended,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Uninstalled,
     }

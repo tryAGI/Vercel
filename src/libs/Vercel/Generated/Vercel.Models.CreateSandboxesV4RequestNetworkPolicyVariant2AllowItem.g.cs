@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateSandboxesV4RequestNetworkPolicyVariant2AllowItem
     {
@@ -15,7 +15,7 @@ namespace Vercel
         public global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2AllowItemMatch? Match { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transform")]
         public global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2AllowItemTransformItem>? Transform { get; set; }

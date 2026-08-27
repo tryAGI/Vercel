@@ -9,7 +9,7 @@ namespace Vercel
     public enum UpdateMicrofrontendsResponseCronsDefinitionSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Api,
     }

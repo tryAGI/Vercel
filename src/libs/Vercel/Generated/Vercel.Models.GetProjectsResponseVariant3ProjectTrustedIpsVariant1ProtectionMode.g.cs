@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant3ProjectTrustedIpsVariant1ProtectionMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Additional,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Exclusive,
     }

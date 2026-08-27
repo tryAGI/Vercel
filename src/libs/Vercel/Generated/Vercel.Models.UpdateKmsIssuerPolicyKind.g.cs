@@ -9,7 +9,7 @@ namespace Vercel
     public enum UpdateKmsIssuerPolicyKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGrant,
     }

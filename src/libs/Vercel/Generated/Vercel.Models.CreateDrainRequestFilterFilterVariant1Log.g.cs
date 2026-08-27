@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateDrainRequestFilterFilterVariant1Log
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sources")]
         public global::System.Collections.Generic.IList<global::Vercel.CreateDrainRequestFilterFilterVariant1LogSource>? Sources { get; set; }

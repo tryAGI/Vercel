@@ -17,7 +17,7 @@ namespace Vercel
         public required global::Vercel.UpdateProjectRequestTrustedIpsDeploymentType DeploymentType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("addresses")]
         [global::System.Text.Json.Serialization.JsonRequired]

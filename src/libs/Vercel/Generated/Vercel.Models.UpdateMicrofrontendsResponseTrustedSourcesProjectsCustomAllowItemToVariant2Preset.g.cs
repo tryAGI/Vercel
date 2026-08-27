@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateMicrofrontendsResponseTrustedSourcesProjectsCustomAllowItemToVariant2Preset
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllCustom,
     }

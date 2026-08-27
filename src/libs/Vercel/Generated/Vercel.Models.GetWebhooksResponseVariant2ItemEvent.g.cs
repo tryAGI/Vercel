@@ -10,451 +10,451 @@ namespace Vercel
     public enum GetWebhooksResponseVariant2ItemEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayAutoReloadLimitReached,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayBalanceDepleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlertsTriggered,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BotidAnomaly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BudgetReached,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommentCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommentDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommentMentioned,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommentReactionAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommentReactionRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommentResolved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommentUnresolved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommentUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deployment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCanceledHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCheckRerequestedHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentChecksCompleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentErrorHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentPreparedHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentReadyHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentBlocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentBuildRequested,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCanceled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCheckRerequested,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCheckrunCancel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCheckrunStart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentChecksFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentChecksSucceeded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCleanup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentIntegrationActionCancel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentIntegrationActionCleanup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentIntegrationActionStart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentPromoted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentReady,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentRollback,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentSucceeded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainCreatedHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainAutoRenewChanged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainCertificateAdd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainCertificateAddFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainCertificateDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainCertificateRenew,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainCertificateRenewFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainDnsRecordsChanged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainRenewal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainRenewalFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainTransferInCompleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainTransferInFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainTransferInStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigItemsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirewallAttack,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirewallCustomRuleAnomaly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirewallSystemRuleAnomaly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagSegmentCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagSegmentDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagSegmentUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionArchivalRequired,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionRemovalRequired,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationPermissionUpdatedHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationRemovedHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationScopeChangeConfirmedHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationPermissionUpgraded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationScopeChangeConfirmed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationTransferred,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationResourceProjectConnected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationResourceProjectDisconnected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MarketplaceInvoiceCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MarketplaceInvoiceNotpaid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MarketplaceInvoiceOverdue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MarketplaceInvoicePaid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MarketplaceInvoiceRefunded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MarketplaceMemberChanged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageMentioned,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageReactionAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageReactionRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObservabilityAnomaly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObservabilityAnomalyError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObservabilityErrorAnomaly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObservabilityUsageAnomaly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectCreatedHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRemovedHyphen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainMoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainUnverified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainVerified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectEnvVariableCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectEnvVariableDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectEnvVariableUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRenamed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseAborted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseApproved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseCompleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TestWebhook,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ThreadResolved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ThreadUnresolved,
     }

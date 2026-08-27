@@ -9,15 +9,15 @@ namespace Vercel
     public enum BuyCreditsResponseVariant3OrbSubscriptionIntentStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Succeeded,
     }

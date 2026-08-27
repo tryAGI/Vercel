@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDeploymentResponseVariant2GitRepoVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
     }

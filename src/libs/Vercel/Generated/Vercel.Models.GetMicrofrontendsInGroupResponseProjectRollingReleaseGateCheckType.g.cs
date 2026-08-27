@@ -9,7 +9,7 @@ namespace Vercel
     public enum GetMicrofrontendsInGroupResponseProjectRollingReleaseGateCheckType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ErrorRate5xx,
     }

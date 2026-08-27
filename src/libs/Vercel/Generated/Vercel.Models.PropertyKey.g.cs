@@ -5,12 +5,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct PropertyKey : global::System.IEquatable<PropertyKey>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? PropertyKeyVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PropertyKeyVariant1))]
@@ -27,7 +27,7 @@ namespace Vercel
         public bool IsPropertyKeyVariant1 => PropertyKeyVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPropertyKeyVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickPropertyKeyVariant1() => IsPropertyKeyVariant1
             ? PropertyKeyVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PropertyKeyVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public double? PropertyKeyVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PropertyKeyVariant2))]
@@ -64,7 +64,7 @@ namespace Vercel
         public bool IsPropertyKeyVariant2 => PropertyKeyVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPropertyKeyVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public double PickPropertyKeyVariant2() => IsPropertyKeyVariant2
             ? PropertyKeyVariant2!.Value
@@ -93,7 +93,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PropertyKeyVariant3))]
@@ -101,7 +101,7 @@ namespace Vercel
         public bool IsPropertyKeyVariant3 => PropertyKeyVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPropertyKeyVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.PropertyKeyVariant3 PickPropertyKeyVariant3() => IsPropertyKeyVariant3
             ? PropertyKeyVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PropertyKeyVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PropertyKey(string value) => new PropertyKey((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(PropertyKey @this) => @this.PropertyKeyVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PropertyKey(string? value)
         {
@@ -138,22 +138,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PropertyKey FromPropertyKeyVariant1(string? value) => new PropertyKey(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PropertyKey(double value) => new PropertyKey((double?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator double?(PropertyKey @this) => @this.PropertyKeyVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PropertyKey(double? value)
         {
@@ -161,22 +161,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PropertyKey FromPropertyKeyVariant2(double? value) => new PropertyKey(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PropertyKey(global::Vercel.PropertyKeyVariant3 value) => new PropertyKey((global::Vercel.PropertyKeyVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.PropertyKeyVariant3?(PropertyKey @this) => @this.PropertyKeyVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PropertyKey(global::Vercel.PropertyKeyVariant3? value)
         {
@@ -184,12 +184,12 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PropertyKey FromPropertyKeyVariant3(global::Vercel.PropertyKeyVariant3? value) => new PropertyKey(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PropertyKey(
             string? propertyKeyVariant1,
@@ -203,25 +203,25 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             PropertyKeyVariant3 as object ??
             PropertyKeyVariant2 as object ??
-            PropertyKeyVariant1 as object 
+            PropertyKeyVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             PropertyKeyVariant1?.ToString() ??
             PropertyKeyVariant2?.ToString() ??
-            PropertyKeyVariant3?.ToString() 
+            PropertyKeyVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? propertyKeyVariant1 = null,
@@ -259,7 +259,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? propertyKeyVariant1 = null,
@@ -289,7 +289,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? propertyKeyVariant1 = null,
@@ -317,7 +317,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(PropertyKey other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(PropertyKeyVariant1, other.PropertyKeyVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(PropertyKeyVariant2, other.PropertyKeyVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vercel.PropertyKeyVariant3?>.Default.Equals(PropertyKeyVariant3, other.PropertyKeyVariant3) 
+                global::System.Collections.Generic.EqualityComparer<global::Vercel.PropertyKeyVariant3?>.Default.Equals(PropertyKeyVariant3, other.PropertyKeyVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(PropertyKey obj1, PropertyKey obj2)
         {
@@ -360,7 +360,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(PropertyKey obj1, PropertyKey obj2)
         {
@@ -368,7 +368,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

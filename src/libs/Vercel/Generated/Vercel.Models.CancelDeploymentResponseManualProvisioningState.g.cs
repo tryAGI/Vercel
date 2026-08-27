@@ -9,15 +9,15 @@ namespace Vercel
     public enum CancelDeploymentResponseManualProvisioningState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Complete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Timeout,
     }

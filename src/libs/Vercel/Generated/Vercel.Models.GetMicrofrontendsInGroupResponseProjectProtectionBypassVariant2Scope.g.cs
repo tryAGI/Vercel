@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetMicrofrontendsInGroupResponseProjectProtectionBypassVariant2Scope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutomationBypass,
     }

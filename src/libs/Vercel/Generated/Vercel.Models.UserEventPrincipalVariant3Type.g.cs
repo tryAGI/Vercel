@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UserEventPrincipalVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
     }

@@ -10,15 +10,15 @@ namespace Vercel
     public enum GetIntegrationLogDrainsResponseItemDeliveryFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Json,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ndjson,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Protobuf,
     }

@@ -10,14 +10,14 @@ namespace Vercel
     public sealed partial class SessionNetworkTransfer
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ingress")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Ingress { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("egress")]
         [global::System.Text.Json.Serialization.JsonRequired]

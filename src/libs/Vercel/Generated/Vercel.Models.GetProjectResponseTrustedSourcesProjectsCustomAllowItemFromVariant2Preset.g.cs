@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectResponseTrustedSourcesProjectsCustomAllowItemFromVariant2Preset
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllCustom,
     }

@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class GetTeamsResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teams")]
         [global::System.Text.Json.Serialization.JsonRequired]

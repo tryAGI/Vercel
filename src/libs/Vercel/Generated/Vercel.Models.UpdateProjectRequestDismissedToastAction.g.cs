@@ -9,15 +9,15 @@ namespace Vercel
     public enum UpdateProjectRequestDismissedToastAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accept,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cancel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delete,
     }

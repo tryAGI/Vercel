@@ -4,32 +4,32 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConfigurationResponseVariant1DisabledReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccountPlanDowngrade,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisabledByAdmin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisabledByOwner,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FeatureNotAvailable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OriginalOwnerLeftTheTeam,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OriginalOwnerRoleDowngraded,
     }

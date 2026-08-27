@@ -9,23 +9,23 @@ namespace Vercel
     public enum CreateProjectCheckRequestBlocks
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildStart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentAlias,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentPromotion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentStart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

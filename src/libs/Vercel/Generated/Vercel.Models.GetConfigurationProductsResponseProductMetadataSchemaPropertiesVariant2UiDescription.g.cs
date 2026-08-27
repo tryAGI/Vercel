@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant2UiDescription
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expr")]
         [global::System.Text.Json.Serialization.JsonRequired]

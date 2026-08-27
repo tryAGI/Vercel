@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant12UiControl
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitNamespace,
     }

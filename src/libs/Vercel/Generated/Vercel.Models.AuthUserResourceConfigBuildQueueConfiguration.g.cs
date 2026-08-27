@@ -9,11 +9,11 @@ namespace Vercel
     public enum AuthUserResourceConfigBuildQueueConfiguration
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SkipNamespaceQueue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitForNamespaceQueue,
     }

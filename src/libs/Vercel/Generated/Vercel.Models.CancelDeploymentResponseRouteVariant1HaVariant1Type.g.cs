@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseRouteVariant1HaVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Host,
     }

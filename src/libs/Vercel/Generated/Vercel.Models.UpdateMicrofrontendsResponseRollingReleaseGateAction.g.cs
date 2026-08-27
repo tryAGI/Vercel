@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         Pause,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rollback,
     }

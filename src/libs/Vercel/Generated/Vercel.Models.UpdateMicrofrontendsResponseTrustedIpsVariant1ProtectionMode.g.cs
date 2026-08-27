@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateMicrofrontendsResponseTrustedIpsVariant1ProtectionMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Additional,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Exclusive,
     }

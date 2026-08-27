@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListAliasesResponseAliaseProtectionBypassVariant2Scope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

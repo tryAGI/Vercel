@@ -5,7 +5,7 @@ namespace Vercel
     public partial interface IVercelClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="recordId">
         /// The unique ID of the DNS record
@@ -18,7 +18,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="recordId">
         /// The unique ID of the DNS record

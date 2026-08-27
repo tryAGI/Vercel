@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListCheckRunsResponseRunVariant2SourceVariant2Origin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
     }

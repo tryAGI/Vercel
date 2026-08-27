@@ -9,19 +9,19 @@ namespace Vercel
     public enum ListBillingChargesResponsePricingCategory
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Committed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dynamic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standard,
     }

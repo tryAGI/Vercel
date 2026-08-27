@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectResponseAbuseBlockHistoryItemVariant3RouteVariant2HaVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Host,
     }

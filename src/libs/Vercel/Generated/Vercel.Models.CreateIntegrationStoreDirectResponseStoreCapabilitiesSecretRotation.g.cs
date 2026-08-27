@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxDelayHours")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double MaxDelayHours { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customRotationWarning")]
         public string? CustomRotationWarning { get; set; }

@@ -9,13 +9,13 @@ namespace Vercel
     public sealed partial class TeamDefaultRoles
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
         public global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamRole>? TeamRoles { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
         public global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamPermission>? TeamPermissions { get; set; }

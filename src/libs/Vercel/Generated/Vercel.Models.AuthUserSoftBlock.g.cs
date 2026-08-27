@@ -9,14 +9,14 @@ namespace Vercel
     public sealed partial class AuthUserSoftBlock
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blockedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double BlockedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserSoftBlockReasonJsonConverter))]
@@ -24,7 +24,7 @@ namespace Vercel
         public required global::Vercel.AuthUserSoftBlockReason Reason { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blockedDueToOverageType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserSoftBlockBlockedDueToOverageTypeJsonConverter))]

@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateFlagResponseEnvironmentsRuleOutcomeVariant3Slot
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("promille")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Promille { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("durationMs")]
         [global::System.Text.Json.Serialization.JsonRequired]

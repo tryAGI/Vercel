@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseGitSourceVariant19Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CursorOrigin,
     }

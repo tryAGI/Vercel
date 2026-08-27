@@ -22,7 +22,7 @@ namespace Vercel
         public global::Vercel.CancelDeploymentResponseConfigResourceConfigElasticConcurrency? ElasticConcurrency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildMachine")]
         public global::Vercel.CancelDeploymentResponseConfigResourceConfigBuildMachine? BuildMachine { get; set; }

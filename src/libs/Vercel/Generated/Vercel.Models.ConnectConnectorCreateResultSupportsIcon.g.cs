@@ -9,15 +9,15 @@ namespace Vercel
     public enum ConnectConnectorCreateResultSupportsIcon
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Maybe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

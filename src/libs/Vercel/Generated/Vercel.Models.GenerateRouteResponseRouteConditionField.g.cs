@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GenerateRouteResponseRouteConditionField
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cookie,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Header,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Host,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Query,
     }

@@ -9,15 +9,15 @@ namespace Vercel
     public enum PatchTeamRequestNsnbConfigPreference
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutoApproval,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Block,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualApproval,
     }

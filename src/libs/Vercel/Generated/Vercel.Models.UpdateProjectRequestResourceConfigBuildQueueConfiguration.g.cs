@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectRequestResourceConfigBuildQueueConfiguration
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SkipNamespaceQueue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitForNamespaceQueue,
     }

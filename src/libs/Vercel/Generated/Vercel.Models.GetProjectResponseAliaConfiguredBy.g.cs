@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectResponseAliaConfiguredBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         A,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dns01,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Http,
     }

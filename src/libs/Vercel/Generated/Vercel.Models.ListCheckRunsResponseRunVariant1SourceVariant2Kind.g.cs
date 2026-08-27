@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListCheckRunsResponseRunVariant1SourceVariant2Kind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webhook,
     }

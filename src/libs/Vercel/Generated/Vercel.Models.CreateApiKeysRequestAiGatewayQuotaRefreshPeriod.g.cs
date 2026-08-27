@@ -10,19 +10,19 @@ namespace Vercel
     public enum CreateApiKeysRequestAiGatewayQuotaRefreshPeriod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Daily,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Monthly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Weekly,
     }

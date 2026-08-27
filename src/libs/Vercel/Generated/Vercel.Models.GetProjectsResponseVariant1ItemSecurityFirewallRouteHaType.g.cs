@@ -4,68 +4,68 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant1ItemSecurityFirewallRouteHaType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cookie,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainEnvironment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Environment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Header,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Headers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Host,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InitialRequestPath,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IpAddress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Method,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Path,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Protocol,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Query,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Region,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scheme,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TrustedSource,
     }

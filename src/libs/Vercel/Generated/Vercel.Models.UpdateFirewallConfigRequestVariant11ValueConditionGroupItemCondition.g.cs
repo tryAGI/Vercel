@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant11ValueConditionGroupItemCondition
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant11ValueConditionGroupItemConditionTypeJsonConverter))]
@@ -17,7 +17,7 @@ namespace Vercel
         public required global::Vercel.UpdateFirewallConfigRequestVariant11ValueConditionGroupItemConditionType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("op")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant11ValueConditionGroupItemConditionOpJsonConverter))]
@@ -25,23 +25,23 @@ namespace Vercel
         public required global::Vercel.UpdateFirewallConfigRequestVariant11ValueConditionGroupItemConditionOp Op { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("neg")]
         public bool? Neg { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("key")]
         public string? Key { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>))]
-        public global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>, double?>? Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>))]
+        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>, double?>? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,7 +65,7 @@ namespace Vercel
             global::Vercel.UpdateFirewallConfigRequestVariant11ValueConditionGroupItemConditionOp op,
             bool? neg,
             string? key,
-            global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>, double?>? value)
+            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>, double?>? value)
         {
             this.Type = type;
             this.Op = op;

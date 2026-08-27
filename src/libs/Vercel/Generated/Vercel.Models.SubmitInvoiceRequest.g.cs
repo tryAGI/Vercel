@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SubmitInvoiceRequest
     {
@@ -35,14 +35,14 @@ namespace Vercel
         public required global::Vercel.SubmitInvoiceRequestPeriod Period { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("items")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.SubmitInvoiceRequestItem> Items { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("discounts")]
         public global::System.Collections.Generic.IList<global::Vercel.SubmitInvoiceRequestDiscount>? Discounts { get; set; }

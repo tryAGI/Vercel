@@ -4,36 +4,36 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateMicrofrontendsResponseSecurityRulesetsAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Allow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bypass,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Challenge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deny,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Log,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RateLimit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Redirect,
     }

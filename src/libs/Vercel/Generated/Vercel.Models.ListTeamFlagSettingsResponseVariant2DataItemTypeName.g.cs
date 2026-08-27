@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListTeamFlagSettingsResponseVariant2DataItemTypeName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Settings,
     }

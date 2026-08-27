@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class AiGatewayVirtualModelConfigProviderTimeouts
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("byok")]
         public global::System.Collections.Generic.Dictionary<string, double>? Byok { get; set; }

@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class NamedSandboxNetworkPolicy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.NamedSandboxNetworkPolicyModeJsonConverter))]
@@ -17,25 +17,25 @@ namespace Vercel
         public required global::Vercel.NamedSandboxNetworkPolicyMode Mode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("allowedDomains")]
         public global::System.Collections.Generic.IList<string>? AllowedDomains { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("allowedCIDRs")]
         public global::System.Collections.Generic.IList<string>? AllowedCIDRs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deniedCIDRs")]
         public global::System.Collections.Generic.IList<string>? DeniedCIDRs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("s3Key")]
         public string? S3Key { get; set; }

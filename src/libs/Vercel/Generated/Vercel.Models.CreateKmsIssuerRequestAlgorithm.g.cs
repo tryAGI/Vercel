@@ -10,43 +10,43 @@ namespace Vercel
     public enum CreateKmsIssuerRequestAlgorithm
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Es256,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Es384,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Es512,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdDSA,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ps256,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ps384,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ps512,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rs256,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rs384,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rs512,
     }

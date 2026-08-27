@@ -4,40 +4,40 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapAnomalyAlerts2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("at_minute")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AtMinute { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("zscore")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Zscore { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_requests_minute")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TotalRequestsMinute { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("avg_requests")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double AvgRequests { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stddev_requests")]
         [global::System.Text.Json.Serialization.JsonRequired]

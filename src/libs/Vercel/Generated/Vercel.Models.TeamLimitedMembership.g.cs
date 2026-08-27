@@ -9,38 +9,38 @@ namespace Vercel
     public sealed partial class TeamLimitedMembership
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
         public string? Uid { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
         public global::System.Collections.Generic.IList<global::Vercel.TeamLimitedMembershipEntitlement>? Entitlements { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
         public string? TeamId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confirmed")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Confirmed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accessRequestedAt")]
         public double? AccessRequestedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamLimitedMembershipRoleJsonConverter))]
@@ -48,33 +48,33 @@ namespace Vercel
         public required global::Vercel.TeamLimitedMembershipRole Role { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
         public global::System.Collections.Generic.IList<global::Vercel.TeamLimitedMembershipTeamRole>? TeamRoles { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
         public global::System.Collections.Generic.IList<global::Vercel.TeamLimitedMembershipTeamPermission>? TeamPermissions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Created { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("joinedFrom")]
         public global::Vercel.TeamLimitedMembershipJoinedFrom? JoinedFrom { get; set; }

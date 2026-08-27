@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AddBypassIpResponseVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ok")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Ok { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("result")]
         public global::System.Collections.Generic.IList<global::Vercel.AddBypassIpResponseVariant2ResultItem>? Result { get; set; }

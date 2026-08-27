@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateMicrofrontendsGroupWithApplicationsResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("newMicrofrontendsGroup")]
         [global::System.Text.Json.Serialization.JsonRequired]

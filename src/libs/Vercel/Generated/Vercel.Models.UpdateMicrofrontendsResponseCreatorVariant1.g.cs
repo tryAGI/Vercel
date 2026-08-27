@@ -4,26 +4,26 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateMicrofrontendsResponseCreatorVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseCreatorVariant1TypeJsonConverter))]
         public global::Vercel.UpdateMicrofrontendsResponseCreatorVariant1Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("via")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateMicrofrontendsResponseCreatorVariant1ViaVariant1, global::Vercel.UpdateMicrofrontendsResponseCreatorVariant1ViaVariant2>))]
         public global::Vercel.OneOf<global::Vercel.UpdateMicrofrontendsResponseCreatorVariant1ViaVariant1, global::Vercel.UpdateMicrofrontendsResponseCreatorVariant1ViaVariant2>? Via { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         [global::System.Text.Json.Serialization.JsonRequired]

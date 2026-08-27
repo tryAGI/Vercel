@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateSessionNetworkPolicyRequestVariant2AllowItem
     {
@@ -15,7 +15,7 @@ namespace Vercel
         public global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemMatch? Match { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transform")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateSessionNetworkPolicyRequestVariant2AllowItemTransformItem>? Transform { get; set; }

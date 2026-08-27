@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetProjectDomainsTarget
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

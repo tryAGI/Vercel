@@ -9,21 +9,21 @@ namespace Vercel
     public sealed partial class CreateEdgeConfigResponseTransfer
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fromAccountId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FromAccountId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("startedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double StartedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("doneAt")]
         public double? DoneAt { get; set; }

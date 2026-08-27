@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateLogDrainResponseSourceVariant2Kind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
     }

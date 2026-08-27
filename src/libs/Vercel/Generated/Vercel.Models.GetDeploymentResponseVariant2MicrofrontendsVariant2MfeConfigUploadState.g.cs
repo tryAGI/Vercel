@@ -9,15 +9,15 @@ namespace Vercel
     public enum GetDeploymentResponseVariant2MicrofrontendsVariant2MfeConfigUploadState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoConfig,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingOnBuild,
     }

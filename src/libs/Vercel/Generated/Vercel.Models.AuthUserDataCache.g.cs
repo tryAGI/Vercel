@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class AuthUserDataCache
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("excessBillingEnabled")]
         public bool? ExcessBillingEnabled { get; set; }

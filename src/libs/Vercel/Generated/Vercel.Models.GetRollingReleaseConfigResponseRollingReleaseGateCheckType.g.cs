@@ -9,7 +9,7 @@ namespace Vercel
     public enum GetRollingReleaseConfigResponseRollingReleaseGateCheckType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ErrorRate5xx,
     }

@@ -9,15 +9,15 @@ namespace Vercel
     public enum CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Basic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enhanced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standard,
     }

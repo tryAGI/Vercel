@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFlagResponseEnvironmentsFallthroughVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Split,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFlagSettingsResponseTypeName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Settings,
     }

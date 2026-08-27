@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListCheckRunsResponseRunVariant1SourceVariant4SubKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelNativeCheck,
     }

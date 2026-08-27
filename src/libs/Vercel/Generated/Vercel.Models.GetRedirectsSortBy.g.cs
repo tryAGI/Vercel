@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetRedirectsSortBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Destination,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Source,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StatusCode,
     }

@@ -9,23 +9,23 @@ namespace Vercel
     public enum ListBillingChargesResponseChargeCategory
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Adjustment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Credit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Purchase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tax,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Usage,
     }

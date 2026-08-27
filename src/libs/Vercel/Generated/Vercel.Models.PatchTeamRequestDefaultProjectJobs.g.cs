@@ -9,13 +9,13 @@ namespace Vercel
     public sealed partial class PatchTeamRequestDefaultProjectJobs
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lint")]
         public global::Vercel.PatchTeamRequestDefaultProjectJobsLint? Lint { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("typecheck")]
         public global::Vercel.PatchTeamRequestDefaultProjectJobsTypecheck? Typecheck { get; set; }

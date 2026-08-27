@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConfigurationsResponseVariant2ItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfiguration,
     }

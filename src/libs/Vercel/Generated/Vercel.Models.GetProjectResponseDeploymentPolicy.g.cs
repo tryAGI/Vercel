@@ -9,13 +9,13 @@ namespace Vercel
     public sealed partial class GetProjectResponseDeploymentPolicy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitSources")]
         public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDeploymentPolicyGitSource>? GitSources { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentSources")]
         public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDeploymentPolicyDeploymentSource>? DeploymentSources { get; set; }

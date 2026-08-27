@@ -4,76 +4,76 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AuthTokenScopeVariant1Origin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apple,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Chatgpt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Email,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Emu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GithubWebhook,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Invite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manual,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Otp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Passkey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Saml,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sms,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TokenExchangeOidc,
     }

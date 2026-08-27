@@ -9,11 +9,11 @@ namespace Vercel
     public enum CancelDeploymentResponsePlatformOriginType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Id,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
     }

@@ -50,28 +50,28 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.AuthUserActiveDashboardView>? ActiveDashboardViews { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("importFlowGitNamespace")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
         public global::Vercel.OneOf<string, double?>? ImportFlowGitNamespace { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("importFlowGitNamespaceId")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
         public global::Vercel.OneOf<string, double?>? ImportFlowGitNamespaceId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("importFlowGitProvider")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserImportFlowGitProviderJsonConverter))]
         public global::Vercel.AuthUserImportFlowGitProvider? ImportFlowGitProvider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preferredScopesAndGitNamespaces")]
         public global::System.Collections.Generic.IList<global::Vercel.AuthUserPreferredScopesAndGitNamespace>? PreferredScopesAndGitNamespaces { get; set; }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFirewallConfigRequestVariant7Action
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CrsDisable,
     }

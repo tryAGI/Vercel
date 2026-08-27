@@ -10,11 +10,11 @@ namespace Vercel
     public enum ListSandboxesSortOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

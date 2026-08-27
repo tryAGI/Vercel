@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateDrainRequestDeliveryVariant3Compression
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

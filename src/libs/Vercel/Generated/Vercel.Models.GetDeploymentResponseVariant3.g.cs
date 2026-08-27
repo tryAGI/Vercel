@@ -26,14 +26,14 @@ namespace Vercel
         public required bool AliasAssigned { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bootedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double BootedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildingAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -46,7 +46,7 @@ namespace Vercel
         public double? BuildContainerFinishedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildSkipped")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -60,19 +60,19 @@ namespace Vercel
         public required global::Vercel.GetDeploymentResponseVariant3Creator Creator { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("initReadyAt")]
         public double? InitReadyAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isFirstBranchDeployment")]
         public bool? IsFirstBranchDeployment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lambdas")]
         public global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant3Lambda>? Lambdas { get; set; }
@@ -87,13 +87,13 @@ namespace Vercel
         public required bool Public { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ready")]
         public double? Ready { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant3StatusJsonConverter))]
@@ -123,27 +123,27 @@ namespace Vercel
         public bool? PreviewCommentsEnabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ttyBuildLogs")]
         public bool? TtyBuildLogs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironment")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant2>))]
         public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant2>? CustomEnvironment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oomReport")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant3OomReportJsonConverter))]
         public global::Vercel.GetDeploymentResponseVariant3OomReport? OomReport { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("readyStateReason")]
         public string? ReadyStateReason { get; set; }
@@ -185,19 +185,19 @@ namespace Vercel
         public global::Vercel.GetDeploymentResponseVariant3AliasError? AliasError { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasWarning")]
         public global::Vercel.GetDeploymentResponseVariant3AliasWarning? AliasWarning { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorCode")]
         public string? ErrorCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorMessage")]
         public string? ErrorMessage { get; set; }
@@ -221,14 +221,14 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant3TypeJsonConverter))]
         public global::Vercel.GetDeploymentResponseVariant3Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasFinal")]
         public string? AliasFinal { get; set; }
@@ -240,26 +240,26 @@ namespace Vercel
         public bool? AutoAssignCustomDomains { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("automaticAliases")]
         public global::System.Collections.Generic.IList<string>? AutomaticAliases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildErrorAt")]
         public double? BuildErrorAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("checksState")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant3ChecksStateJsonConverter))]
         public global::Vercel.GetDeploymentResponseVariant3ChecksState? ChecksState { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("checksConclusion")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant3ChecksConclusionJsonConverter))]
@@ -280,19 +280,19 @@ namespace Vercel
         public string? DefaultRoute { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("canceledAt")]
         public double? CanceledAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorLink")]
         public string? ErrorLink { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorStep")]
         public string? ErrorStep { get; set; }
@@ -304,7 +304,7 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? PassiveRegions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitSource")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant3GitSourceVariant1, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant2, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant3, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant4, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant5, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant6, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant7, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant8, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant9, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant10, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant11, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant12, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant13, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant14, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant15, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant16, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant17, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant18, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant19>))]
@@ -317,14 +317,14 @@ namespace Vercel
         public global::Vercel.GetDeploymentResponseVariant3ManualProvisioning? ManualProvisioning { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.Dictionary<string, string> Meta { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("originCacheRegion")]
         public string? OriginCacheRegion { get; set; }
@@ -343,7 +343,7 @@ namespace Vercel
         public global::Vercel.GetDeploymentResponseVariant3Project? Project { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prebuilt")]
         public bool? Prebuilt { get; set; }
@@ -416,7 +416,7 @@ namespace Vercel
         public required double Version { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oidcTokenClaims")]
         public global::Vercel.GetDeploymentResponseVariant3OidcTokenClaims? OidcTokenClaims { get; set; }

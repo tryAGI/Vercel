@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectResponseLinkVariant5Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
     }

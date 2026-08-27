@@ -10,19 +10,19 @@ namespace Vercel
     public enum PatchTeamRequestDefaultDeploymentProtectionSsoProtectionDeploymentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllExceptCustomDomains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProdDeploymentUrlsAndAllPreviews,
     }

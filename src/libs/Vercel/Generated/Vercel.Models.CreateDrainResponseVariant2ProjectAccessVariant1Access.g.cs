@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDrainResponseVariant2ProjectAccessVariant1Access
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
     }

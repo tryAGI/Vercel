@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TeamLimitedLimitedByItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Invalidated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mfa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scope,
     }

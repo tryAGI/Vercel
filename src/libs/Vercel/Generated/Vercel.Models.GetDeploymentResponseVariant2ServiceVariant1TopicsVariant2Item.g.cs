@@ -4,25 +4,25 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetDeploymentResponseVariant2ServiceVariant1TopicsVariant2Item
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("topic")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Topic { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("retryAfterSeconds")]
         public double? RetryAfterSeconds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("initialDelaySeconds")]
         public double? InitialDelaySeconds { get; set; }

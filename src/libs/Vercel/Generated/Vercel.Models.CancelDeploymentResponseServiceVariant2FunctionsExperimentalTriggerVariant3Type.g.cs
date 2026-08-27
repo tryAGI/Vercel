@@ -9,7 +9,7 @@ namespace Vercel
     public enum CancelDeploymentResponseServiceVariant2FunctionsExperimentalTriggerVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScheduleV1beta,
     }

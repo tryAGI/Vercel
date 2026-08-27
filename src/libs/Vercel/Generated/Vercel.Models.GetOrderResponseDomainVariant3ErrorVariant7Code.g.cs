@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseDomainVariant3ErrorVariant7Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccountTransferRequired,
     }

@@ -9,7 +9,7 @@ namespace Vercel
     public enum CreateDeploymentResponseVariant2RouteVariant1DestinationType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Service,
     }

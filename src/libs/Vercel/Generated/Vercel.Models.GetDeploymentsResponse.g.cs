@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetDeploymentsResponse
     {
@@ -16,7 +16,7 @@ namespace Vercel
         public required global::Vercel.Pagination Pagination { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deployments")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -9,19 +9,19 @@ namespace Vercel
     public enum UpdateProjectRequestPasswordProtectionDeploymentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllExceptCustomDomains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProdDeploymentUrlsAndAllPreviews,
     }

@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentResponseVariant2ConfigFunctionMemoryType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Performance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PerformanceXl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StandardLegacy,
     }

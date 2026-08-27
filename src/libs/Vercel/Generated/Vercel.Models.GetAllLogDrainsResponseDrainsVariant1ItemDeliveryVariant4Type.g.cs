@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         S3,
     }

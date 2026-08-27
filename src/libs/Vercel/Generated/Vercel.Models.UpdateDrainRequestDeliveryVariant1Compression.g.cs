@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateDrainRequestDeliveryVariant1Compression
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gzip,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

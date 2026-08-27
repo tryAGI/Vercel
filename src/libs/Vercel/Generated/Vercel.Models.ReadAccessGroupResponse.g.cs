@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ReadAccessGroupResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
         public global::System.Collections.Generic.IList<global::Vercel.ReadAccessGroupResponseTeamPermission>? TeamPermissions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
         public global::System.Collections.Generic.IList<global::Vercel.ReadAccessGroupResponseEntitlement>? Entitlements { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isDsyncManaged")]
         [global::System.Text.Json.Serialization.JsonRequired]

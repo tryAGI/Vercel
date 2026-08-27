@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectResponseTier
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Advanced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Critical,
     }

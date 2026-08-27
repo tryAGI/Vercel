@@ -9,35 +9,35 @@ namespace Vercel
     public enum BuyCreditsResponseVariant2PurchaseIntentProviderType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppleInAppPurchase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrbLedger,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StripeElements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StripeHosted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StripeInvoiceDeferred,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StripeInvoiceElements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StripeInvoiceImmediate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TackleAwsMarketplace,
     }

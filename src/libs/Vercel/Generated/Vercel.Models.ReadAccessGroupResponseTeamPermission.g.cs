@@ -4,76 +4,76 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ReadAccessGroupResponseTeamPermission
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayApiKeyOwnedBySelf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayBudgetManager,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayCredits,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewaySettings,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectorManager,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreateProject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableManager,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvironmentManager,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FullProductionDeployment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationManager,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrgAdmin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrgViewer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsageViewer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Builder,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Chatter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Viewer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkflowDecryptor,
     }

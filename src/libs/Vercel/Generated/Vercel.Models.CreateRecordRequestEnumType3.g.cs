@@ -9,7 +9,7 @@ namespace Vercel
     public enum CreateRecordRequestEnumType3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alias,
     }

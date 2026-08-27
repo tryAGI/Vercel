@@ -9,19 +9,19 @@ namespace Vercel
     public enum GetRoutesResponseVariant2RouteRouteType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Redirect,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rewrite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SetStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transform,
     }

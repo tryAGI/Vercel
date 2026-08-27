@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentResponseVariant2ServiceVariant2RouteVariant1TransformVariant2Op
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Set,
     }

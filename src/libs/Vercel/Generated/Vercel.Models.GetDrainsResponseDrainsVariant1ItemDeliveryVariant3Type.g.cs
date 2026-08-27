@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDrainsResponseDrainsVariant1ItemDeliveryVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clickhouse,
     }

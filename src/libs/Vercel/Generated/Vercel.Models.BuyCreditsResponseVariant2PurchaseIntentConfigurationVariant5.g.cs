@@ -9,21 +9,21 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("options")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5Options Options { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5Output Output { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5TypeJsonConverter))]

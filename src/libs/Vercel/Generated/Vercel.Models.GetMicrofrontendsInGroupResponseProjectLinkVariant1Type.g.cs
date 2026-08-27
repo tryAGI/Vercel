@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetMicrofrontendsInGroupResponseProjectLinkVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
     }

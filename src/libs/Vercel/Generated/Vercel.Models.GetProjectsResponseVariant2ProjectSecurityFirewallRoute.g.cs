@@ -4,63 +4,63 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetProjectsResponseVariant2ProjectSecurityFirewallRoute
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("src")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteSrc>))]
         public global::Vercel.OneOf<string, global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteSrc>? Src { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tierRequirement")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirementJsonConverter))]
         public global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement? TierRequirement { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("has")]
         public global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteHa>? Has { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("missing")]
         public global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteMissingItem>? Missing { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dest")]
         public string? Dest { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         public double? Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("handle")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant2ProjectSecurityFirewallRouteHandleJsonConverter))]
         public global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteHandle? Handle { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mitigate")]
         public global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteMitigate? Mitigate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transforms")]
         public global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransform>? Transforms { get; set; }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant2ProjectAliaDeploymentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lambdas,
     }

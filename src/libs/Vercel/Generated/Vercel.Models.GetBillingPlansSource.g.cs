@@ -4,44 +4,44 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetBillingPlansSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Backoffice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cli,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeployButton,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImportRecommendedIntegrations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Marketplace,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Oauth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ResourceClaims,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0,
     }

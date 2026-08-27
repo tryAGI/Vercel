@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectResponseTargetsReadySubstate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Promoted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rolling,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Staged,
     }

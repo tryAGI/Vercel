@@ -9,11 +9,11 @@ namespace Vercel
     public enum ListTeamFlagsV2State
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archived,
     }

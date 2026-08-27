@@ -10,19 +10,19 @@ namespace Vercel
     public enum CreateSharedEnvVariableResponseCreatedItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Encrypted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Plain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sensitive,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         System,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateEdgeConfigResponsePurposeVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experimentation,
     }

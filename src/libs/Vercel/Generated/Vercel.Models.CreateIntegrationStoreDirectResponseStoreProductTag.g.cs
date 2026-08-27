@@ -4,236 +4,236 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateIntegrationStoreDirectResponseStoreProductTag
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Authentication,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Blob,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Checks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Drains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfig,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experimentation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Libsql,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogDrain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mcp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Messaging,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mysql,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Observability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Postgres,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Redis,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sqlite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Storage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagAgents,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagAnalytics,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagAuthentication,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagChecks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCms,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCodeRepository,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCodeReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCodeSecurity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCodeTesting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCommerce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagDatabases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagDevTools,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagExperimentation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagFlags,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagLogDrain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagLogging,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagMessaging,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagMonitoring,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagObservability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagOther,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagPayments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagPerformance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagProductivity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagSearching,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagSecurity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagStorage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagSupportAgent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagTesting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagTraceDrain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagVideo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagWebAutomation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagWorkflow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TraceDrain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vector,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Video,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workflow,
     }

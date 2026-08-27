@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant2OptionsItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Purchase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Renewal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transfer,
     }

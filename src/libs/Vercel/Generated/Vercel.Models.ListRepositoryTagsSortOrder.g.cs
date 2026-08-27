@@ -10,11 +10,11 @@ namespace Vercel
     public enum ListRepositoryTagsSortOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

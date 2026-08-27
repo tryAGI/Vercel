@@ -4,82 +4,82 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetSecurityFirewallConfigResponseDraftCrs
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sd")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseDraftCrsSd Sd { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ma")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseDraftCrsMa Ma { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lfi")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseDraftCrsLfi Lfi { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rfi")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseDraftCrsRfi Rfi { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rce")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseDraftCrsRce Rce { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("php")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseDraftCrsPhp Php { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gen")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseDraftCrsGen Gen { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xss")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseDraftCrsXss Xss { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sqli")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseDraftCrsSqli Sqli { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sf")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseDraftCrsSf Sf { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("java")]
         [global::System.Text.Json.Serialization.JsonRequired]

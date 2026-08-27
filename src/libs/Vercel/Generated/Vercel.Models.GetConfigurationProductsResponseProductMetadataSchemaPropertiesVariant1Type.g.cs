@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         String,
     }

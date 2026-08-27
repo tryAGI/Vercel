@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant3Status
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Succeeded,
     }

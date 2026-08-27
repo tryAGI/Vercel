@@ -4,68 +4,68 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionOp
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gte,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         List,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lte,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ninc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pre,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Re,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sub,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Suf,
     }

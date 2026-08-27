@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetMicrofrontendsInGroupResponseProjectTier
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Advanced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Critical,
     }

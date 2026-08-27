@@ -10,43 +10,43 @@ namespace Vercel
     public enum ApproveRollingReleaseStageResponseRollingReleaseCanaryDeploymentSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiTriggerGitDeploy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cli,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CloneRepo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Drop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Git,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitDeployHook,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Import,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImportRepo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Redeploy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Web,
     }

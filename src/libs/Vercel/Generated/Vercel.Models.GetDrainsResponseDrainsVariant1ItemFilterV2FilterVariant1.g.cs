@@ -4,31 +4,31 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1TypeJsonConverter))]
         public global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         public global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Project? Project { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("log")]
         public global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Log? Log { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
         public global::Vercel.GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Deployment? Deployment { get; set; }

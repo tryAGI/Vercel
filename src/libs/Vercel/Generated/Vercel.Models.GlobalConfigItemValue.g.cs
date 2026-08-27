@@ -5,12 +5,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct GlobalConfigItemValue : global::System.IEquatable<GlobalConfigItemValue>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? GlobalConfigItemValueVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GlobalConfigItemValueVariant1))]
@@ -27,7 +27,7 @@ namespace Vercel
         public bool IsGlobalConfigItemValueVariant1 => GlobalConfigItemValueVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGlobalConfigItemValueVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickGlobalConfigItemValueVariant1() => IsGlobalConfigItemValueVariant1
             ? GlobalConfigItemValueVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public double? GlobalConfigItemValueVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GlobalConfigItemValueVariant2))]
@@ -64,7 +64,7 @@ namespace Vercel
         public bool IsGlobalConfigItemValueVariant2 => GlobalConfigItemValueVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGlobalConfigItemValueVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public double PickGlobalConfigItemValueVariant2() => IsGlobalConfigItemValueVariant2
             ? GlobalConfigItemValueVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>? GlobalConfigItemValueVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GlobalConfigItemValueVariant3))]
@@ -101,7 +101,7 @@ namespace Vercel
         public bool IsGlobalConfigItemValueVariant3 => GlobalConfigItemValueVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGlobalConfigItemValueVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?> PickGlobalConfigItemValueVariant3() => IsGlobalConfigItemValueVariant3
             ? GlobalConfigItemValueVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>? GlobalConfigItemValueVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GlobalConfigItemValueVariant4))]
@@ -138,7 +138,7 @@ namespace Vercel
         public bool IsGlobalConfigItemValueVariant4 => GlobalConfigItemValueVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGlobalConfigItemValueVariant4(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue> PickGlobalConfigItemValueVariant4() => IsGlobalConfigItemValueVariant4
             ? GlobalConfigItemValueVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public bool? GlobalConfigItemValueVariant5 { get; init; }
@@ -167,7 +167,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GlobalConfigItemValueVariant5))]
@@ -175,7 +175,7 @@ namespace Vercel
         public bool IsGlobalConfigItemValueVariant5 => GlobalConfigItemValueVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGlobalConfigItemValueVariant5(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool PickGlobalConfigItemValueVariant5() => IsGlobalConfigItemValueVariant5
             ? GlobalConfigItemValueVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant5' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator GlobalConfigItemValue(string value) => new GlobalConfigItemValue((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(GlobalConfigItemValue @this) => @this.GlobalConfigItemValueVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GlobalConfigItemValue(string? value)
         {
@@ -212,22 +212,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static GlobalConfigItemValue FromGlobalConfigItemValueVariant1(string? value) => new GlobalConfigItemValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator GlobalConfigItemValue(double value) => new GlobalConfigItemValue((double?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator double?(GlobalConfigItemValue @this) => @this.GlobalConfigItemValueVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GlobalConfigItemValue(double? value)
         {
@@ -235,22 +235,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static GlobalConfigItemValue FromGlobalConfigItemValueVariant2(double? value) => new GlobalConfigItemValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator GlobalConfigItemValue(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?> value) => new GlobalConfigItemValue((global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>?(GlobalConfigItemValue @this) => @this.GlobalConfigItemValueVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GlobalConfigItemValue(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>? value)
         {
@@ -258,22 +258,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static GlobalConfigItemValue FromGlobalConfigItemValueVariant3(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>? value) => new GlobalConfigItemValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator GlobalConfigItemValue(bool value) => new GlobalConfigItemValue((bool?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator bool?(GlobalConfigItemValue @this) => @this.GlobalConfigItemValueVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GlobalConfigItemValue(bool? value)
         {
@@ -281,12 +281,12 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static GlobalConfigItemValue FromGlobalConfigItemValueVariant5(bool? value) => new GlobalConfigItemValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GlobalConfigItemValue(
             string? globalConfigItemValueVariant1,
@@ -304,29 +304,29 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             GlobalConfigItemValueVariant5 as object ??
             GlobalConfigItemValueVariant4 as object ??
             GlobalConfigItemValueVariant3 as object ??
             GlobalConfigItemValueVariant2 as object ??
-            GlobalConfigItemValueVariant1 as object 
+            GlobalConfigItemValueVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             GlobalConfigItemValueVariant1?.ToString() ??
             GlobalConfigItemValueVariant2?.ToString() ??
             GlobalConfigItemValueVariant3?.ToString() ??
             GlobalConfigItemValueVariant4?.ToString() ??
-            GlobalConfigItemValueVariant5?.ToString().ToLowerInvariant() 
+            GlobalConfigItemValueVariant5?.ToString().ToLowerInvariant()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -334,7 +334,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? globalConfigItemValueVariant1 = null,
@@ -374,7 +374,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? globalConfigItemValueVariant1 = null,
@@ -416,7 +416,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? globalConfigItemValueVariant1 = null,
@@ -454,7 +454,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -481,7 +481,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(GlobalConfigItemValue other)
         {
@@ -490,12 +490,12 @@ namespace Vercel
                 global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(GlobalConfigItemValueVariant2, other.GlobalConfigItemValueVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>?>.Default.Equals(GlobalConfigItemValueVariant3, other.GlobalConfigItemValueVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>?>.Default.Equals(GlobalConfigItemValueVariant4, other.GlobalConfigItemValueVariant4) &&
-                global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(GlobalConfigItemValueVariant5, other.GlobalConfigItemValueVariant5) 
+                global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(GlobalConfigItemValueVariant5, other.GlobalConfigItemValueVariant5)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(GlobalConfigItemValue obj1, GlobalConfigItemValue obj2)
         {
@@ -503,7 +503,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(GlobalConfigItemValue obj1, GlobalConfigItemValue obj2)
         {
@@ -511,7 +511,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

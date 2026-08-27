@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseServiceVariant2RewriteTransformType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequestPath,
     }

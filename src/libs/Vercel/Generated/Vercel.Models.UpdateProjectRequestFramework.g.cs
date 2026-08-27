@@ -9,295 +9,295 @@ namespace Vercel
     public enum UpdateProjectRequestFramework
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActixWeb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Angular,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ash,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Astro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Axum,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Blitzjs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brunch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bun,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Container,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreateReactApp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Django,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Docusaurus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Docusaurus2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dojo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eleventy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elysia,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ember,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eve,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Express,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fastapi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fasthtml,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fastify,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flask,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gatsby,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Go,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gridsome,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         H3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hexo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hono,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hugo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hydrogen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IonicAngular,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IonicReact,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jekyll,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Koa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mastra,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Middleman,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nestjs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nextjs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nitro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Node,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nuxtjs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parcel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Polymer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preact,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Python,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReactRouter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Redwoodjs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Remix,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ruby,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rust,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Saber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sanity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SanityV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sapper,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scully,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Services,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Solidstart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Solidstart1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stencil,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Storybook,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Svelte,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sveltekit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sveltekit1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TanstackStart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TanstackStartLovable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Umijs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vitepress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vuepress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xmcp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zola,
     }

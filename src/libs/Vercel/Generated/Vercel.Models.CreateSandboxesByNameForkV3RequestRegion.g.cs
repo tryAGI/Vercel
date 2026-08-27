@@ -11,19 +11,19 @@ namespace Vercel
     public enum CreateSandboxesByNameForkV3RequestRegion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cdg1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cle1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iad1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sfo1,
     }

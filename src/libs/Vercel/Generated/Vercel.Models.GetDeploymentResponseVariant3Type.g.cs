@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentResponseVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lambdas,
     }

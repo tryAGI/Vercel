@@ -9,7 +9,7 @@ namespace Vercel
     public enum AiGatewayVirtualModelConfigCaching
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
     }

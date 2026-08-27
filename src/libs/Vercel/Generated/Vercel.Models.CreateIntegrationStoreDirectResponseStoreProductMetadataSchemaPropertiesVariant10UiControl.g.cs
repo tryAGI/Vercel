@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant10UiControl
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelCountry,
     }

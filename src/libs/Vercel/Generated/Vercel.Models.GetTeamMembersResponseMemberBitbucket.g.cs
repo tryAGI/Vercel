@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class GetTeamMembersResponseMemberBitbucket
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("login")]
         public string? Login { get; set; }

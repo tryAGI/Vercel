@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant1ItemLinkVariant7Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CursorOrigin,
     }

@@ -9,11 +9,11 @@ namespace Vercel
     public enum ListContractCommitmentsResponseContractCommitmentCategory
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Spend,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Usage,
     }

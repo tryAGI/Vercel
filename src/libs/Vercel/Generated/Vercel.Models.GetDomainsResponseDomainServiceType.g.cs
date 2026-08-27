@@ -10,15 +10,15 @@ namespace Vercel
     public enum GetDomainsResponseDomainServiceType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Na,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZeitWorld,
     }

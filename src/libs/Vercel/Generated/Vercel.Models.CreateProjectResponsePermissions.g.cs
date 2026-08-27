@@ -4,1668 +4,1668 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateProjectResponsePermissions
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oauth2Connection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Oauth2Connection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? User { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userConnection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? UserConnection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userMfaConfiguration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? UserMfaConfiguration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userPreference")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? UserPreference { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userSudo")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? UserSudo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("webAuthn")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WebAuthn { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accessGroup")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AccessGroup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("agent")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Agent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKey")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKeyBypassAll")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKeyBypassAll { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKeyOwnedBySelf")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKeyOwnedBySelf { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKeySpendAttribution")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKeySpendAttribution { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayApiKeyZdrExemption")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayApiKeyZdrExemption { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayBudget")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayBudget { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayCredits")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayCredits { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayPrivateModels")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayPrivateModels { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayGuardrails")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayGuardrails { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayRules")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayRules { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewaySettings")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewaySettings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayUsage")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayUsage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayVirtualModelConfigs")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayVirtualModelConfigs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alerts")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Alerts { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alertRules")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AlertRules { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasGlobal")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AliasGlobal { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("analyticsSampling")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AnalyticsSampling { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("analyticsUsage")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AnalyticsUsage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("apiKey")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ApiKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("apiKeyAiGateway")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ApiKeyAiGateway { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("apiKeyOwnedBySelf")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ApiKeyOwnedBySelf { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oauth2Application")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Oauth2Application { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vercelAppInstallation")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelAppInstallation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vercelAppInstallationRequest")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelAppInstallationRequest { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("auditLog")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AuditLog { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingAddress")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BillingAddress { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingInformation")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BillingInformation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingInvoice")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BillingInvoice { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingInvoiceEmailRecipient")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BillingInvoiceEmailRecipient { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingInvoiceLanguage")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BillingInvoiceLanguage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingPlan")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BillingPlan { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingPurchaseOrder")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BillingPurchaseOrder { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingRefund")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BillingRefund { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingTaxId")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BillingTaxId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blob")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Blob { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blobStoreTokenSet")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BlobStoreTokenSet { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("budget")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Budget { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheArtifact")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? CacheArtifact { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheArtifactUsageEvent")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? CacheArtifactUsageEvent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("codeChecks")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? CodeChecks { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("codeOwners")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? CodeOwners { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ciInvocations")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? CiInvocations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ciLogs")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? CiLogs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("concurrentBuilds")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConcurrentBuilds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connect")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Connect { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectConfiguration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnectConfiguration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectLogs")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnectLogs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connexClient")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexClient { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connexClientProject")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexClientProject { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connexContact")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexContact { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connexInstallation")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexInstallation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connexToken")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnexToken { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineDefault")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BuildMachineDefault { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cursorOriginInstallation")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? CursorOriginInstallation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dataCacheBillingSettings")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DataCacheBillingSettings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultDeploymentProtection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DefaultDeploymentProtection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPolicy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Domain { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domainAcceptDelegation")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DomainAcceptDelegation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domainAuthCodes")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DomainAuthCodes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domainCertificate")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DomainCertificate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domainCheckConfig")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DomainCheckConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domainMove")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DomainMove { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domainPurchase")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DomainPurchase { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domainRecord")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DomainRecord { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domainTransferIn")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DomainTransferIn { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("drain")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Drain { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfig")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? EdgeConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigItem")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? EdgeConfigItem { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSchema")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? EdgeConfigSchema { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigToken")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? EdgeConfigToken { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("endpointVerification")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? EndpointVerification { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("event")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Event { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fileUpload")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? FileUpload { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flagsExplorerSubscription")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? FlagsExplorerSubscription { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitRepository")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? GitRepository { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("imageOptimizationNewPrice")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ImageOptimizationNewPrice { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Integration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationAccount")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationAccount { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationConfiguration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationConfiguration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationConfigurationProjects")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationConfigurationProjects { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationConfigurationRole")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationConfigurationRole { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationConfigurationTransfer")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationConfigurationTransfer { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationDeploymentAction")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationDeploymentAction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationEvent")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationEvent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationLog")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationLog { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationResource")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationResource { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationResourceData")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationResourceData { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationResourceReplCommand")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationResourceReplCommand { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationResourceSecrets")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationResourceSecrets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationSSOSession")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationSSOSession { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationStrict")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationStrict { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationStoreTokenSet")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationStoreTokenSet { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationVercelConfigurationOverride")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationVercelConfigurationOverride { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationPullRequest")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IntegrationPullRequest { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ipBlocking")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? IpBlocking { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("jobGlobal")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? JobGlobal { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kmsIssuer")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? KmsIssuer { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kmsProjectGrant")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? KmsProjectGrant { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logDrain")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? LogDrain { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("marketplaceBillingData")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MarketplaceBillingData { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("marketplaceExperimentationEdgeConfigData")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MarketplaceExperimentationEdgeConfigData { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("marketplaceExperimentationItem")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MarketplaceExperimentationItem { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("marketplaceFlexCommit")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MarketplaceFlexCommit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("marketplaceInstallationMember")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MarketplaceInstallationMember { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("marketplaceInvoice")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MarketplaceInvoice { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("marketplaceSettings")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MarketplaceSettings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("Monitoring")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Monitoring { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("monitoringAlert")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MonitoringAlert { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("monitoringChart")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MonitoringChart { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("monitoringQuery")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MonitoringQuery { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("monitoringSettings")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? MonitoringSettings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationCustomerBudget")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationCustomerBudget { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationDeploymentFailed")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationDeploymentFailed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationDomainConfiguration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationDomainConfiguration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationDomainExpire")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationDomainExpire { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationDomainMoved")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationDomainMoved { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationDomainPurchase")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationDomainPurchase { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationDomainRenewal")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationDomainRenewal { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationDomainTransfer")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationDomainTransfer { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationDomainUnverified")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationDomainUnverified { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("NotificationMonitoringAlert")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationMonitoringAlert { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationPaymentFailed")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationPaymentFailed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationPreferences")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationPreferences { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationStatementOfReasons")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationStatementOfReasons { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationUsageAlert")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? NotificationUsageAlert { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oidcFederationPolicy")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OidcFederationPolicy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("observabilityConfiguration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ObservabilityConfiguration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("observabilityFunnel")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ObservabilityFunnel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("observabilityNotebook")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ObservabilityNotebook { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("openTelemetryEndpoint")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OpenTelemetryEndpoint { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ownEvent")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OwnEvent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("organization")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Organization { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("organizationDomain")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OrganizationDomain { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("organizationTeam")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OrganizationTeam { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("passwordProtectionInvoiceItem")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PasswordProtectionInvoiceItem { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("paymentMethod")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PaymentMethod { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Permissions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("postgres")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Postgres { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("postgresStoreTokenSet")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PostgresStoreTokenSet { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentSuffix")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PreviewDeploymentSuffix { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("privateCloudAccount")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PrivateCloudAccount { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectTransferIn")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTransferIn { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("proTrialOnboarding")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProTrialOnboarding { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rateLimit")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? RateLimit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("redis")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Redis { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("redisStoreTokenSet")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? RedisStoreTokenSet { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("remoteCaching")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? RemoteCaching { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repository")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Repository { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("samlConfig")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SamlConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secret")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Secret { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("securityConfig")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SecurityConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sensitiveEnvironmentVariablePolicy")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SensitiveEnvironmentVariablePolicy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharedEnvVars")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SharedEnvVars { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharedEnvVarsProduction")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SharedEnvVarsProduction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("space")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Space { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("spaceRun")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SpaceRun { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("storeIsLocked")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? StoreIsLocked { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("storeTokenSetSensitive")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? StoreTokenSetSensitive { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("storeTransfer")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? StoreTransfer { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("supportCase")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SupportCase { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("supportCaseComment")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SupportCaseComment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("team")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Team { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamAccessRequest")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamAccessRequest { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamFellowMembership")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamFellowMembership { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamGitExclusivity")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamGitExclusivity { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamInvite")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamInvite { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamInviteCode")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamInviteCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamInviteLink")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamInviteLink { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamJoin")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamJoin { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamMemberMfaStatus")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamMemberMfaStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamMicrofrontends")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamMicrofrontends { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamOwnMembership")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamOwnMembership { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamOwnMembershipDisconnectSAML")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamOwnMembershipDisconnectSAML { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamSudo")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamSudo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamTokenInvalidation")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TeamTokenInvalidation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("token")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Token { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("toolbarComment")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ToolbarComment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("usage")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Usage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("usageCycle")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? UsageCycle { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vcrRepository")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VcrRepository { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vpcPeeringConnection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VpcPeeringConnection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("webAnalyticsPlan")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WebAnalyticsPlan { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("webhook")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Webhook { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("webhook-event")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WebhookEvent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasProject")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AliasProject { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasProtectionBypass")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AliasProtectionBypass { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bulkRedirects")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BulkRedirects { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildMachine")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BuildMachine { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurationLink")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnectConfigurationLink { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dataCacheNamespace")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DataCacheNamespace { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Deployment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentBuildLogs")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentBuildLogs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentCheck")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentCheck { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentCheckPreview")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentCheckPreview { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentCheckReRunFromProductionBranch")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentCheckReRunFromProductionBranch { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentProductionGit")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentProductionGit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentV0")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentV0 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPreview")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPreview { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPrivate")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPrivate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPromote")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPromote { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentRollback")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentRollback { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeCacheNamespace")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? EdgeCacheNamespace { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Environments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("job")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Job { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logs")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Logs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logsPreset")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? LogsPreset { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("observabilityData")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ObservabilityData { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("onDemandBuild")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OnDemandBuild { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("onDemandConcurrency")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OnDemandConcurrency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OptionsAllowlist { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("passwordProtection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PasswordProtection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("privateLinkEndpoint")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PrivateLinkEndpoint { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productionAliasProtectionBypass")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProductionAliasProtectionBypass { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productionShareableLink")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProductionShareableLink { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Project { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectAccessGroup")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectAccessGroup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalyticsSampling")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectAnalyticsSampling { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalyticsUsage")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectAnalyticsUsage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectCheck")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectCheck { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectCheckRun")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectCheckRun { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectDeploymentExpiration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDeploymentExpiration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectDeploymentHook")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDeploymentHook { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectDeploymentProtectionStrict")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDeploymentProtectionStrict { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectDomain")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomain { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectDomainCheckConfig")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomainCheckConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectDomainMove")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomainMove { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectDomainVerify")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomainVerify { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectEvent")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEvent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectEnvVars")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEnvVars { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectEnvVarsProduction")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEnvVarsProduction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectEnvVarsUnownedByIntegration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEnvVarsUnownedByIntegration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectFlags")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlags { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectFlagsProduction")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlagsProduction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectFlagsSdkKey")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlagsSdkKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectFromV0")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFromV0 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectIntegrationConfiguration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectIntegrationConfiguration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectLink")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectLink { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectMember")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectMember { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectMonitoring")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectMonitoring { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectOIDCToken")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectOIDCToken { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectPermissions")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectPermissions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectProductionBranch")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectProductionBranch { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectProtectionBypass")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectProtectionBypass { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectRollingRelease")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectRollingRelease { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectRoutes")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectRoutes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectSupportCase")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectSupportCase { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectSupportCaseComment")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectSupportCaseComment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectTier")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTier { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectTransfer")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTransfer { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectTransferOut")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTransferOut { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectUsage")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectUsage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pageIntegrity")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PageIntegrity { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("seawallConfig")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SeawallConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("securityPlusConfiguration")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SecurityPlusConfiguration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("shareableLink")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ShareableLink { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("shareableLinkStrict")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ShareableLinkStrict { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sharedEnvVarConnection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SharedEnvVarConnection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("skewProtection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SkewProtection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("analytics")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Analytics { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trustedIps")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TrustedIps { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TrustedSources { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("v0Chat")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? V0Chat { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vercelAuth")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelAuth { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vercelRun")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelRun { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("webAnalytics")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WebAnalytics { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflowRunData")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WorkflowRunData { get; set; }

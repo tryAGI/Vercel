@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseGitSourceVariant10Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vercel,
     }

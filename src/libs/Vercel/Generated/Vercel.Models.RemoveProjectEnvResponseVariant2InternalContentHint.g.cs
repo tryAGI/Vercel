@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class RemoveProjectEnvResponseVariant2InternalContentHint
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.RemoveProjectEnvResponseVariant2InternalContentHintTypeJsonConverter))]

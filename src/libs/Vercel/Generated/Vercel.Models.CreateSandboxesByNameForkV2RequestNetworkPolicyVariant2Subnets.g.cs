@@ -4,18 +4,18 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateSandboxesByNameForkV2RequestNetworkPolicyVariant2Subnets
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("allow")]
         public global::System.Collections.Generic.IList<string>? Allow { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deny")]
         public global::System.Collections.Generic.IList<string>? Deny { get; set; }

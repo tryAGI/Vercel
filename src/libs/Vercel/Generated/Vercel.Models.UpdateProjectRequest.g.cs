@@ -6,24 +6,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateProjectRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("autoExposeSystemEnvs")]
         public bool? AutoExposeSystemEnvs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("autoAssignCustomDomains")]
         public bool? AutoAssignCustomDomains { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("autoAssignCustomDomainsUpdatedBy")]
         public string? AutoAssignCustomDomainsUpdatedBy { get; set; }
@@ -35,7 +35,7 @@ namespace Vercel
         public string? BuildCommand { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("commandForIgnoringBuildStep")]
         public string? CommandForIgnoringBuildStep { get; set; }
@@ -53,7 +53,7 @@ namespace Vercel
         public string? DevCommand { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("directoryListing")]
         public bool? DirectoryListing { get; set; }
@@ -98,7 +98,7 @@ namespace Vercel
         public string? Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nodeVersion")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectRequestNodeVersionJsonConverter))]
@@ -263,7 +263,7 @@ namespace Vercel
         public global::Vercel.UpdateProjectRequestTrustedSources? TrustedSources { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateProjectRequestDeploymentPolicy, string>))]

@@ -16334,6 +16334,75 @@
                           },
                           "type": "array"
                         },
+                        "atproto": {
+                          "oneOf": [
+                            {
+                              "properties": {
+                                "enabled": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "enabled"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "enabled": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    true
+                                  ]
+                                },
+                                "subscription": {
+                                  "properties": {
+                                    "collections": {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
+                                    },
+                                    "dids": {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
+                                    },
+                                    "kinds": {
+                                      "items": {
+                                        "type": "string",
+                                        "enum": [
+                                          "account",
+                                          "commit",
+                                          "identity",
+                                          "sync"
+                                        ]
+                                      },
+                                      "type": "array"
+                                    },
+                                    "path": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "collections",
+                                    "path"
+                                  ],
+                                  "type": "object"
+                                }
+                              },
+                              "required": [
+                                "enabled",
+                                "subscription"
+                              ],
+                              "type": "object"
+                            }
+                          ]
+                        },
                         "functions": {
                           "nullable": true,
                           "additionalProperties": {
@@ -24408,6 +24477,75 @@
                           },
                           "type": "array"
                         },
+                        "atproto": {
+                          "oneOf": [
+                            {
+                              "properties": {
+                                "enabled": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "enabled"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "enabled": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    true
+                                  ]
+                                },
+                                "subscription": {
+                                  "properties": {
+                                    "collections": {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
+                                    },
+                                    "dids": {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
+                                    },
+                                    "kinds": {
+                                      "items": {
+                                        "type": "string",
+                                        "enum": [
+                                          "account",
+                                          "commit",
+                                          "identity",
+                                          "sync"
+                                        ]
+                                      },
+                                      "type": "array"
+                                    },
+                                    "path": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "collections",
+                                    "path"
+                                  ],
+                                  "type": "object"
+                                }
+                              },
+                              "required": [
+                                "enabled",
+                                "subscription"
+                              ],
+                              "type": "object"
+                            }
+                          ]
+                        },
                         "functions": {
                           "nullable": true,
                           "additionalProperties": {
@@ -31626,6 +31764,75 @@
                         "type": "object"
                       },
                       "type": "array"
+                    },
+                    "atproto": {
+                      "oneOf": [
+                        {
+                          "properties": {
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                false
+                              ]
+                            }
+                          },
+                          "required": [
+                            "enabled"
+                          ],
+                          "type": "object"
+                        },
+                        {
+                          "properties": {
+                            "enabled": {
+                              "type": "boolean",
+                              "enum": [
+                                true
+                              ]
+                            },
+                            "subscription": {
+                              "properties": {
+                                "collections": {
+                                  "items": {
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
+                                "dids": {
+                                  "items": {
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
+                                "kinds": {
+                                  "items": {
+                                    "type": "string",
+                                    "enum": [
+                                      "account",
+                                      "commit",
+                                      "identity",
+                                      "sync"
+                                    ]
+                                  },
+                                  "type": "array"
+                                },
+                                "path": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "collections",
+                                "path"
+                              ],
+                              "type": "object"
+                            }
+                          },
+                          "required": [
+                            "enabled",
+                            "subscription"
+                          ],
+                          "type": "object"
+                        }
+                      ]
                     },
                     "functions": {
                       "nullable": true,
@@ -73819,6 +74026,14 @@
                             },
                             "jwk": {
                               "properties": {
+                                "n": {
+                                  "type": "string",
+                                  "description": "RSA JWK \"n\" (Modulus) Parameter"
+                                },
+                                "e": {
+                                  "type": "string",
+                                  "description": "RSA JWK \"e\" (Exponent) Parameter"
+                                },
                                 "kty": {
                                   "type": "string",
                                   "description": "JWK \"kty\" (Key Type) Parameter"
@@ -73834,14 +74049,6 @@
                                 "y": {
                                   "type": "string",
                                   "description": "EC JWK \"y\" (Y Coordinate) Parameter"
-                                },
-                                "e": {
-                                  "type": "string",
-                                  "description": "RSA JWK \"e\" (Exponent) Parameter"
-                                },
-                                "n": {
-                                  "type": "string",
-                                  "description": "RSA JWK \"n\" (Modulus) Parameter"
                                 },
                                 "alg": {
                                   "type": "string",
@@ -171981,7 +172188,7 @@
                     "additionalProperties": false
                   },
                   {
-                    "description": "Add a named condition",
+                    "description": "Reorder a ruleset",
                     "type": "object",
                     "properties": {
                       "action": {
@@ -171994,6 +172201,31 @@
                         "type": "string"
                       },
                       "value": {
+                        "nullable": true
+                      }
+                    },
+                    "required": [
+                      "action",
+                      "id",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "description": "Add a named condition",
+                    "type": "object",
+                    "properties": {
+                      "action": {
+                        "type": "string",
+                        "enum": [
+                          "rules.priority"
+                        ]
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "object",
                         "properties": {
                           "name": {
                             "type": "string",
@@ -172134,8 +172366,7 @@
                           "active",
                           "conditionGroup"
                         ],
-                        "additionalProperties": false,
-                        "nullable": true
+                        "additionalProperties": false
                       }
                     },
                     "required": [
@@ -172151,7 +172382,7 @@
                       "action": {
                         "type": "string",
                         "enum": [
-                          "rules.priority"
+                          "crs.update"
                         ]
                       },
                       "id": {
@@ -172316,14 +172547,14 @@
                       "action": {
                         "type": "string",
                         "enum": [
-                          "crs.update"
+                          "crs.disable"
                         ]
                       },
                       "id": {
-                        "type": "string"
+                        "nullable": true
                       },
                       "value": {
-                        "type": "string"
+                        "nullable": true
                       }
                     },
                     "required": [
@@ -172339,7 +172570,7 @@
                       "action": {
                         "type": "string",
                         "enum": [
-                          "crs.disable"
+                          "ip.insert"
                         ]
                       },
                       "id": {
@@ -172347,6 +172578,7 @@
                         "nullable": true
                       },
                       "value": {
+                        "type": "object",
                         "properties": {
                           "action": {
                             "type": "string",
@@ -172361,8 +172593,7 @@
                         "required": [
                           "action"
                         ],
-                        "additionalProperties": false,
-                        "nullable": true
+                        "additionalProperties": false
                       }
                     },
                     "required": [
@@ -172379,12 +172610,12 @@
                       "action": {
                         "type": "string",
                         "enum": [
-                          "ip.insert"
+                          "ip.update"
                         ]
                       },
                       "id": {
-                        "maxLength": 180,
-                        "nullable": true
+                        "type": "string",
+                        "maxLength": 180
                       },
                       "value": {
                         "type": "string"
@@ -172403,14 +172634,14 @@
                       "action": {
                         "type": "string",
                         "enum": [
-                          "ip.update"
+                          "ip.remove"
                         ]
                       },
                       "id": {
                         "type": "string"
                       },
                       "value": {
-                        "type": "boolean"
+                        "nullable": true
                       }
                     },
                     "required": [
@@ -172426,13 +172657,14 @@
                       "action": {
                         "type": "string",
                         "enum": [
-                          "ip.remove"
+                          "managedRules.update"
                         ]
                       },
                       "id": {
                         "type": "string"
                       },
                       "value": {
+                        "type": "object",
                         "properties": {
                           "name": {
                             "type": "string",
@@ -172698,8 +172930,7 @@
                           "conditionGroup",
                           "action"
                         ],
-                        "additionalProperties": false,
-                        "nullable": true
+                        "additionalProperties": false
                       }
                     },
                     "required": [
@@ -172713,10 +172944,7 @@
                     "type": "object",
                     "properties": {
                       "action": {
-                        "type": "string",
-                        "enum": [
-                          "managedRules.update"
-                        ]
+                        "type": "string"
                       },
                       "id": {
                         "type": "string"
@@ -204731,13 +204959,13 @@
               "avatar": {
                 "type": "string"
               },
-              "uid": {
-                "type": "string"
-              },
               "email": {
                 "type": "string"
               },
               "username": {
+                "type": "string"
+              },
+              "uid": {
                 "type": "string"
               }
             },
@@ -210595,12 +210823,12 @@
           },
           "resourceConfig": {
             "properties": {
-              "nodeType": {
-                "type": "string",
-                "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
-              },
               "concurrentBuilds": {
                 "type": "number",
+                "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
+              },
+              "nodeType": {
+                "type": "string",
                 "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
               },
               "elasticConcurrencyEnabled": {

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateAccessGroupResponseEntitlement
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0,
     }

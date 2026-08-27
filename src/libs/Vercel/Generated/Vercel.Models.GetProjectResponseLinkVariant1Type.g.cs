@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectResponseLinkVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
     }

@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDrainResponseVariant2ProjectAccessVariant1ManagedBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Drain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
     }

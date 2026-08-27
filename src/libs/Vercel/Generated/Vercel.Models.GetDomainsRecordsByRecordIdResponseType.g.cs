@@ -4,48 +4,48 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDomainsRecordsByRecordIdResponseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         A,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aaaa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alias,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Caa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Https,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ns,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Srv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Txt,
     }

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ConnectConnectorCreateDataTypeLinq
     {
@@ -16,7 +16,7 @@ namespace Vercel
         public string? ApiToken { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("phoneNumbers")]
         public global::System.Collections.Generic.IList<string>? PhoneNumbers { get; set; }

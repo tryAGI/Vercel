@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFlagSegmentRequestOperationField
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Exclude,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Include,
     }

@@ -5,12 +5,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct VcrImageLayer : global::System.IEquatable<VcrImageLayer>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.VcrImageLayerVariant1? VcrImageLayerVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VcrImageLayerVariant1))]
@@ -27,7 +27,7 @@ namespace Vercel
         public bool IsVcrImageLayerVariant1 => VcrImageLayerVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVcrImageLayerVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.VcrImageLayerVariant1 PickVcrImageLayerVariant1() => IsVcrImageLayerVariant1
             ? VcrImageLayerVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VcrImageLayerVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.VcrImageLayerVariant2? VcrImageLayerVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VcrImageLayerVariant2))]
@@ -64,7 +64,7 @@ namespace Vercel
         public bool IsVcrImageLayerVariant2 => VcrImageLayerVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVcrImageLayerVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.VcrImageLayerVariant2 PickVcrImageLayerVariant2() => IsVcrImageLayerVariant2
             ? VcrImageLayerVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VcrImageLayerVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.VcrImageLayerVariant3? VcrImageLayerVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VcrImageLayerVariant3))]
@@ -101,7 +101,7 @@ namespace Vercel
         public bool IsVcrImageLayerVariant3 => VcrImageLayerVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVcrImageLayerVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.VcrImageLayerVariant3 PickVcrImageLayerVariant3() => IsVcrImageLayerVariant3
             ? VcrImageLayerVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VcrImageLayerVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.VcrImageLayerVariant4? VcrImageLayerVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VcrImageLayerVariant4))]
@@ -138,7 +138,7 @@ namespace Vercel
         public bool IsVcrImageLayerVariant4 => VcrImageLayerVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVcrImageLayerVariant4(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.VcrImageLayerVariant4 PickVcrImageLayerVariant4() => IsVcrImageLayerVariant4
             ? VcrImageLayerVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VcrImageLayerVariant4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VcrImageLayer(global::Vercel.VcrImageLayerVariant1 value) => new VcrImageLayer((global::Vercel.VcrImageLayerVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.VcrImageLayerVariant1?(VcrImageLayer @this) => @this.VcrImageLayerVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VcrImageLayer(global::Vercel.VcrImageLayerVariant1? value)
         {
@@ -175,22 +175,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VcrImageLayer FromVcrImageLayerVariant1(global::Vercel.VcrImageLayerVariant1? value) => new VcrImageLayer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VcrImageLayer(global::Vercel.VcrImageLayerVariant2 value) => new VcrImageLayer((global::Vercel.VcrImageLayerVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.VcrImageLayerVariant2?(VcrImageLayer @this) => @this.VcrImageLayerVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VcrImageLayer(global::Vercel.VcrImageLayerVariant2? value)
         {
@@ -198,22 +198,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VcrImageLayer FromVcrImageLayerVariant2(global::Vercel.VcrImageLayerVariant2? value) => new VcrImageLayer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VcrImageLayer(global::Vercel.VcrImageLayerVariant3 value) => new VcrImageLayer((global::Vercel.VcrImageLayerVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.VcrImageLayerVariant3?(VcrImageLayer @this) => @this.VcrImageLayerVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VcrImageLayer(global::Vercel.VcrImageLayerVariant3? value)
         {
@@ -221,22 +221,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VcrImageLayer FromVcrImageLayerVariant3(global::Vercel.VcrImageLayerVariant3? value) => new VcrImageLayer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VcrImageLayer(global::Vercel.VcrImageLayerVariant4 value) => new VcrImageLayer((global::Vercel.VcrImageLayerVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.VcrImageLayerVariant4?(VcrImageLayer @this) => @this.VcrImageLayerVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VcrImageLayer(global::Vercel.VcrImageLayerVariant4? value)
         {
@@ -244,12 +244,12 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VcrImageLayer FromVcrImageLayerVariant4(global::Vercel.VcrImageLayerVariant4? value) => new VcrImageLayer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VcrImageLayer(
             global::Vercel.VcrImageLayerVariant1? vcrImageLayerVariant1,
@@ -265,27 +265,27 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             VcrImageLayerVariant4 as object ??
             VcrImageLayerVariant3 as object ??
             VcrImageLayerVariant2 as object ??
-            VcrImageLayerVariant1 as object 
+            VcrImageLayerVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             VcrImageLayerVariant1?.ToString() ??
             VcrImageLayerVariant2?.ToString() ??
             VcrImageLayerVariant3?.ToString() ??
-            VcrImageLayerVariant4?.ToString() 
+            VcrImageLayerVariant4?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -293,7 +293,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vercel.VcrImageLayerVariant1, TResult>? vcrImageLayerVariant1 = null,
@@ -328,7 +328,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vercel.VcrImageLayerVariant1>? vcrImageLayerVariant1 = null,
@@ -364,7 +364,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vercel.VcrImageLayerVariant1>? vcrImageLayerVariant1 = null,
@@ -397,7 +397,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -422,7 +422,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(VcrImageLayer other)
         {
@@ -430,12 +430,12 @@ namespace Vercel
                 global::System.Collections.Generic.EqualityComparer<global::Vercel.VcrImageLayerVariant1?>.Default.Equals(VcrImageLayerVariant1, other.VcrImageLayerVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vercel.VcrImageLayerVariant2?>.Default.Equals(VcrImageLayerVariant2, other.VcrImageLayerVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vercel.VcrImageLayerVariant3?>.Default.Equals(VcrImageLayerVariant3, other.VcrImageLayerVariant3) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vercel.VcrImageLayerVariant4?>.Default.Equals(VcrImageLayerVariant4, other.VcrImageLayerVariant4) 
+                global::System.Collections.Generic.EqualityComparer<global::Vercel.VcrImageLayerVariant4?>.Default.Equals(VcrImageLayerVariant4, other.VcrImageLayerVariant4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(VcrImageLayer obj1, VcrImageLayer obj2)
         {
@@ -443,7 +443,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(VcrImageLayer obj1, VcrImageLayer obj2)
         {
@@ -451,7 +451,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

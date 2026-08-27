@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant1ItemResourceConfigBuildMachineType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Basic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enhanced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Turbo,
     }

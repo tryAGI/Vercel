@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseServiceVariant1RoutePrefixSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Configured,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Generated,
     }

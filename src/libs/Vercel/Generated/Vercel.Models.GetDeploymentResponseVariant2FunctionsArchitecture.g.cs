@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentResponseVariant2FunctionsArchitecture
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Arm64,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         X8664,
     }

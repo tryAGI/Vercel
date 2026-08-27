@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateDrainResponseVariant2DeliveryVariant5Target
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelOtelTracesDb,
     }

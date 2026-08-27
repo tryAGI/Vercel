@@ -9,11 +9,11 @@ namespace Vercel
     public enum UpdateMicrofrontendsResponseEnvItemVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Config,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Secret,
     }

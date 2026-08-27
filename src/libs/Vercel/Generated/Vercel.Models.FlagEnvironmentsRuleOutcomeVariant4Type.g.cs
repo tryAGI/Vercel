@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FlagEnvironmentsRuleOutcomeVariant4Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experiment,
     }

@@ -9,13 +9,13 @@ namespace Vercel
     public sealed partial class CreateDeploymentResponseVariant2Config
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         public double? Version { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2ConfigFunctionTypeJsonConverter))]
@@ -23,7 +23,7 @@ namespace Vercel
         public required global::Vercel.CreateDeploymentResponseVariant2ConfigFunctionType FunctionType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionMemoryType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2ConfigFunctionMemoryTypeJsonConverter))]
@@ -31,25 +31,25 @@ namespace Vercel
         public required global::Vercel.CreateDeploymentResponseVariant2ConfigFunctionMemoryType FunctionMemoryType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionTimeout")]
         public double? FunctionTimeout { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secureComputePrimaryRegion")]
         public string? SecureComputePrimaryRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secureComputeFallbackRegion")]
         public string? SecureComputeFallbackRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isUsingActiveCPU")]
         public bool? IsUsingActiveCPU { get; set; }

@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class CreateProjectResponseTrustedSourcesProjectsCustomAllowItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("from")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateProjectResponseTrustedSourcesProjectsCustomAllowItemFromVariant1, global::Vercel.CreateProjectResponseTrustedSourcesProjectsCustomAllowItemFromVariant2>))]
@@ -17,7 +17,7 @@ namespace Vercel
         public required global::Vercel.OneOf<global::Vercel.CreateProjectResponseTrustedSourcesProjectsCustomAllowItemFromVariant1, global::Vercel.CreateProjectResponseTrustedSourcesProjectsCustomAllowItemFromVariant2> From { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("to")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant1, global::Vercel.CreateProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant2>))]

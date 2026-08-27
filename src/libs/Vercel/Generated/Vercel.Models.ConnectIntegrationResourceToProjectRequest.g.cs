@@ -4,25 +4,25 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ConnectIntegrationResourceToProjectRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("envVarEnvironments")]
         public global::System.Collections.Generic.IList<global::Vercel.ConnectIntegrationResourceToProjectRequestEnvVarEnvironment>? EnvVarEnvironments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("makeEnvVarsSensitive")]
         public bool? MakeEnvVarsSensitive { get; set; }

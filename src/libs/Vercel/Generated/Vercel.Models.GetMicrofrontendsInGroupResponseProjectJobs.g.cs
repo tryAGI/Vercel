@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetMicrofrontendsInGroupResponseProjectJobs
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lint")]
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsLint? Lint { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("typecheck")]
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsTypecheck? Typecheck { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mfe-config-present")]
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsMfeConfigPresent? MfeConfigPresent { get; set; }

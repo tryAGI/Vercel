@@ -4,25 +4,25 @@
 namespace Vercel
 {
     /// <summary>
-    /// Set the action for a consumed ruleset (project scope)
+    /// Remove a named condition
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant7
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant7ActionJsonConverter))]
         public global::Vercel.UpdateFirewallConfigRequestVariant7Action Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         public object? Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         public object? Value { get; set; }

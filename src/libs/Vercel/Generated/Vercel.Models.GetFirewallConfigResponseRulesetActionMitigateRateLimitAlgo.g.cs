@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetFirewallConfigResponseRulesetActionMitigateRateLimitAlgo
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FixedWindow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TokenBucket,
     }

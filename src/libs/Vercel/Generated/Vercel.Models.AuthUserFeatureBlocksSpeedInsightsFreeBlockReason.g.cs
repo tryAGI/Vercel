@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AuthUserFeatureBlocksSpeedInsightsFreeBlockReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdminOverride,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HardBlocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LimitsExceeded,
     }

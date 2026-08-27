@@ -9,15 +9,15 @@ namespace Vercel
     public enum UpdateProjectResponseCustomEnvironmentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Development,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

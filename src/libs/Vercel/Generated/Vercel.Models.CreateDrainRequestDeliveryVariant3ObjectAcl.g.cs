@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDrainRequestDeliveryVariant3ObjectAcl
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BucketOwnerFullControl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BucketOwnerRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
     }

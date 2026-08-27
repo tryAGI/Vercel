@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetMicrofrontendsInGroupResponseProjectTracingSamplingRuleDestination
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Internal,
     }

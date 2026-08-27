@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListDeploymentCheckRunsResponseRunVariant2Requires
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildReady,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

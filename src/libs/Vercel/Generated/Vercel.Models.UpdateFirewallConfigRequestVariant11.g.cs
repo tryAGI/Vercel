@@ -4,26 +4,25 @@
 namespace Vercel
 {
     /// <summary>
-    /// Update a custom rule
+    /// Add a custom rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant11
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant11ActionJsonConverter))]
         public global::Vercel.UpdateFirewallConfigRequestVariant11Action Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public string? Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -38,19 +37,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant11" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="value"></param>
         /// <param name="action"></param>
+        /// <param name="id"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant11(
-            string id,
             global::Vercel.UpdateFirewallConfigRequestVariant11Value value,
-            global::Vercel.UpdateFirewallConfigRequestVariant11Action action)
+            global::Vercel.UpdateFirewallConfigRequestVariant11Action action,
+            string? id)
         {
             this.Action = action;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Id = id;
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 

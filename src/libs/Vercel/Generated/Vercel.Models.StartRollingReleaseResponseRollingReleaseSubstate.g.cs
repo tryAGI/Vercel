@@ -9,7 +9,7 @@ namespace Vercel
     public enum StartRollingReleaseResponseRollingReleaseSubstate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Paused,
     }

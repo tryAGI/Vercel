@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateEventRequestEventVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InstallationUpdated,
     }

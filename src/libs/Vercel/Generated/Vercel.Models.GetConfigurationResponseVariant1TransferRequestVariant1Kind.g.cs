@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConfigurationResponseVariant1TransferRequestVariant1Kind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TransferToMarketplace,
     }

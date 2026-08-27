@@ -5,7 +5,7 @@ namespace Vercel
     public partial interface IVercelClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="domain">
         /// The domain name<br/>
@@ -19,7 +19,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="domain">
         /// The domain name<br/>

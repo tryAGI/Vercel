@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListRepositoryTagsResponseTagStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preparing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ready,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unoptimized,
     }

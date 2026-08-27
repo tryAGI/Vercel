@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectResponseDefaultResourceConfigBuildMachineSelection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elastic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fixed,
     }

@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateProjectCheckResponseSourceKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitProvider,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vercel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webhook,
     }

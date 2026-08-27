@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class Network
     {
@@ -43,7 +43,7 @@ namespace Vercel
         public required double CreatedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("egressIpAddresses")]
         public global::System.Collections.Generic.IList<string>? EgressIpAddresses { get; set; }

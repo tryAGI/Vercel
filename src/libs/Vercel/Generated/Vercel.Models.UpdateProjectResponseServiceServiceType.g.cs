@@ -9,19 +9,19 @@ namespace Vercel
     public enum UpdateProjectResponseServiceServiceType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cron,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Job,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Web,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Worker,
     }

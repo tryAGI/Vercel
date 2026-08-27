@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FlagTypeName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flag,
     }

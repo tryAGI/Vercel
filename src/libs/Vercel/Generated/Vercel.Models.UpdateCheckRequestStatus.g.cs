@@ -9,11 +9,11 @@ namespace Vercel
     public enum UpdateCheckRequestStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Completed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Running,
     }

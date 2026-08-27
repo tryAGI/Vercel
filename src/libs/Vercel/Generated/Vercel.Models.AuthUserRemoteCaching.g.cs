@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class AuthUserRemoteCaching
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
         public bool? Enabled { get; set; }

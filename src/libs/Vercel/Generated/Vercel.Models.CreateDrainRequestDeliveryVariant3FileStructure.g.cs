@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDrainRequestDeliveryVariant3FileStructure
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hive,
     }

@@ -9,2631 +9,2631 @@ namespace Vercel
     public enum ListEventTypeReplacedByItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccessGroupCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccessGroupDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccessGroupProjectUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccessGroupUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccessGroupUserAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccessGroupUserRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdminAgenticProvisioningAccountUnlinked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdminPlanUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdminSecondaryEmailAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdminSecondaryEmailRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdminTeamNameUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdminTeamSlugUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdminUserDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdminUserPrimaryEmailUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdminUsernameUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgenticProvisioningAccountBlocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgenticProvisioningAccountLinked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgenticProvisioningAccountRelinked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgenticProvisioningAccountUnlinked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgenticProvisioningCredentialsRotated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgenticProvisioningPlanChanged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgenticProvisioningTeamCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiAlertInvestigation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiCodeReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayApiKeyCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayApiKeyDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayApiKeyQuotaUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayAutoReloadUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayBudgetDefaultUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayByokCredentialCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayByokCredentialDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayByokCredentialUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayCreditsPurchased,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayGuardrailsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayModelAllowlistModelsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayModelAllowlistToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayPrivateModelCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayPrivateModelDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayPrivateModelUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayPrivateProviderCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayPrivateProviderDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayPrivateProviderUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayProviderAllowlistProvidersUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayProviderAllowlistToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayRuleCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayRuleDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayRuleUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayScopeBudgetUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayTranscriptsDefaultDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayTranscriptsDefaultEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayTranscriptsDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayTranscriptsEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayTranscriptsRetentionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayVirtualModelConfigArchived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayVirtualModelConfigCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayVirtualModelConfigRestored,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayVirtualModelConfigUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiOmniagent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlertInvestigationProjectAllowlistUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlertRuleCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlertRuleDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlertRuleUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alias,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasChown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasInviteCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasInviteJoined,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasInviteRevoked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasProtectionBypassCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasProtectionBypassException,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasProtectionBypassRegenerated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasProtectionBypassRevoked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasSystem,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasUserScopedAccessDenied,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasUserScopedAccessGranted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasUserScopedAccessRequested,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasUserScopedAccessRevoked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasesAssigned,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AttackModeDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AttackModeEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuditLogExportDownloaded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuditLogExportRequested,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthorizeGitDeployment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutoExposeSystemEnvs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Avatar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BulkRedirectsSettingsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BulkRedirectsVersionPromoted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BulkRedirectsVersionRestored,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cert,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CertAutorenew,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CertChown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CertClone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CertDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CertRenew,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CertReplace,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CertSystemCreate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CodeOwnersConfigUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComplianceDocumentDownloaded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComplianceDocumentPreviewed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComplianceDocumentsBulkDownloaded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConcurrentBuildsUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectAttachProject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectBitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectBitbucketApp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectConfigurationCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectConfigurationDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectConfigurationLinkUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectConfigurationLinked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectConfigurationUnlinked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectConfigurationUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectCreateConnector,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectDeleteConnector,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectDeleteInstallation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectDetachProject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectGithub,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectGithubCustomHost,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectGithubLimited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectGitlab,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectGitlabApp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectImportTokens,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectRevokeAllTokens,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectUpdateConnector,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectUpdateTriggerDestinations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectUpsertInstallation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomAlertCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomAlertDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomAlertUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomEnvironmentsSettingsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomMetricMetadataDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomMetricMetadataUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomSuffixClear,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomSuffixDisable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomSuffixEnable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomSuffixPending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomSuffixReady,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeployHookCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeployHookDeduped,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeployHookDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeployHookProcessed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deployment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCheckCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCheckDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCheckUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentChown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentCreationBlocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentPolicyBlocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentUndeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisabledIntegrationInstallationRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisconnectBitbucketApp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisconnectGithub,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisconnectGithubCustomHost,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisconnectGithubLimited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisconnectGitlabApp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DnsAdd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DnsDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DnsRecordInternal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DnsUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DnsZonefileImport,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Domain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainBuy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainCdn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainChown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainCustomNsChange,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainDelegated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainEchChange,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainMoveIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainMoveOut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainMoveOutRequestSent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainRenewChange,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainServiceTypeUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainTransferIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainTransferInCanceled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainTransferInCompleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainZoneChange,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainZoneChangeInternal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DrainCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DrainDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DrainDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DrainEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DrainUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeCacheDangerouslyDeleteBySrcImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeCacheDangerouslyDeleteByTags,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeCacheDangerouslyDeleteImmutableStatic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeCacheInvalidateBySrcImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeCacheInvalidateByTags,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeCachePurgeAll,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeCacheRollbackPurge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigBackupRestored,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigItemsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigSchemaDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigSchemaUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigTokenCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigTokenDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigTransferIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigTransferOut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Email,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EmailNotificationRuleRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EmailNotificationRuleUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EmuMemberRemovedUnverifiedDomain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnforceDisjunctiveProductionSecrets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnforceSensitiveEnvironmentVariables,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableAdd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableEdit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableMasked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableRead_cli_dev,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableRead_cli_env_add,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableRead_cli_env_ls,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableRead_cli_env_pull,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableRead_cli_env_rm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableRead_cli_pull,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableRead_unknownSource,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableRead_v0_env_pull,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariableRotated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExperimentCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExperimentDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExperimentTransitioned,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExperimentUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirewallBypassCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirewallBypassDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirewallConfigModified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirewallConfigPromoted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirewallConfigRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirewallManagedRulegroupUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirewallManagedRulesetUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flag,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagArchived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagUnarchived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsExplorerSubscription,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsSdkKey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsSdkKeyAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsSdkKeyDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsSdkKeyRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsSegment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsSettings,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsTransferred,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitIntegrationRepoPush,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitAccountIntegrationLinkAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigBackupRestored,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigItemsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigSchemaDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigSchemaUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigTokenCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigTokenDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigTransferIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigTransferOut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GlobalConfigUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InstantRollbackCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationCredentialRevoked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationCredentialRotated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationOwnerChanged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationScopeChangeConfirmed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationTransferInSuccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationTransferOutSuccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationConfigurationsDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationInstallationBillingPlanUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationInstallationCompleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationInstallationPermissionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationInstallationRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationResourceRedisCommandExecuted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationResourceSqlQueryExecuted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationScopeChanged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvoiceModified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvoiceRefunded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KmsIssuerCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KmsIssuerDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KmsIssuerKeyActivated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KmsIssuerKeyCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KmsIssuerKeyRevoked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KmsIssuerKeyRotated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KmsIssuerPolicyCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KmsIssuerPolicyDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KmsIssuerPolicyUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KmsIssuerUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogDrainCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogDrainDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogDrainDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogDrainEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Login,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LoginConnectionLinked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LoginConnectionUnlinked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualDeploymentPromotionCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MarketplaceFlexCommitOptIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MarketplaceIntegrationAllowlistUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MicrofrontendGroupAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MicrofrontendGroupDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MicrofrontendGroupUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MicrofrontendProjectAddedToGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MicrofrontendProjectRemovedFromGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MicrofrontendProjectUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MonitoringAlertUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MonitoringDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MonitoringEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OauthAppConnectionCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OauthAppConnectionRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OauthAppConnectionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OauthAppCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OauthAppDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OauthAppSecretDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OauthAppSecretGenerated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OauthAppTokenCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OauthAppUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObservabilityDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObservabilityEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObservabilityPlusProjectDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObservabilityPlusProjectEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OidcPolicyCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OidcPolicyDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OidcPolicyUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OidcPolicyUsedToObtainAppToken,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationCreate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationDsyncGroupDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationDsyncGroupUpsert,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationSlugUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationTeamAdd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationTeamCreate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationTeamDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OwnerBlocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OwnerSoftBlocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OwnerSoftUnblocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OwnerUnblocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PageIntegrityConfigUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PageIntegrityHeaderApproved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PageIntegrityHeaderRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PageIntegrityInventoryCleared,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PageIntegrityResourceApproved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PageIntegrityResourceDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PageIntegrityResourceRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PageIntegrityScriptApprovalRuleCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PageIntegrityScriptApprovalRuleDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PasskeyCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PasskeyDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PasskeyUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PassportAccessGranted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PasswordProtectionDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PasswordProtectionEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PaymentMethodAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PaymentMethodDefaultUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PaymentMethodRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Plan,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviewDeploymentSuffixDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviewDeploymentSuffixEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviewDeploymentSuffixUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrivatelinkEndpointCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrivatelinkEndpointDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrivatelinkEndpointUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProductionBranchUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectAddAlias,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectAddRedirect,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectAffectedProjectsDeploymentsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectAliasConfiguredChange,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectAnalyticsDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectAnalyticsEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectAutoAssignCustomProductionDomainsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectAutomationBypass,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectAvatarUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectBuildCommandUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectBuildLogsAndSourceProtectionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectBuildMachineUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectCardWidgetPreferenceUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectClientCertDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectClientCertUpload,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectConnectConfigurations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectConsolidatedGitCommitStatusUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectCronJobsToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectCustomEnvironmentCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectCustomEnvironmentDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectCustomEnvironmentUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectCustomerSuccessCodeVisibilityUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDeploymentPolicyUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDeploymentRetentionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDirectoryListing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainMoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainUnverified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDomainVerified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectElasticConcurrencyUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectExpirationLocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectExpirationReached,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectExpirationScheduled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectExpirationUnlocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectExternalRewriteCachingUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectFrameworkUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectFunctionCpuMemory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectFunctionFailover,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectFunctionMaxDuration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectFunctionRegions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectFunctionsBetaUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectFunctionsFluidDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectFunctionsFluidEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGitCommitCommentsToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGitCommitStatusToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGitCreateDeploymentsToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGitForkProtectionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGitLfsToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGitPrCommentsToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGitRepositoryConnected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGitRepositoryDisconnected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGitRepositoryDispatchEventsToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGitRequireVerifiedCommitsToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectIgnoredBuildStepUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectInstallCommandUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectMemberAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectMemberInvited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectMemberRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectMemberRemovedBatch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectMemberUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectMoveInSuccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectMoveOutFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectMoveOutStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectMoveOutSuccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectNodeVersionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectOidcIssuerModeUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectOidcTokenCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectOptionsAllowlist,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectOutputDirectoryUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectPassportUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectPasswordProtection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectPaused,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectPreviewDeploymentSuffix,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectPreviewEnvironmentBranchTrackingUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectPrioritizeProductionBuildsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectProgramEnrollmentChanged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectProtectedSourcemapsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollbackDescriptionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseAborted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseApproved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseCompleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseConfigured,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseContinued,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleasePaused,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseSuggestedActionsGenerated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRollingReleaseTimer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRootDirectoryUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRoutesVersionPromoted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectRoutesVersionRestored,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectSandboxConfigUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectSandboxUrlProtectionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectSkewProtectionAllowedDomainsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectSkewProtectionMaxAgeUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectSkewProtectionThresholdUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectSourceFilesOutsideRootDirectoryUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectSpeedInsightsDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectSpeedInsightsEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectSpeedInsightsFreeDataStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectSsoProtection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectStaticIpsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectTrustedIps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectTrustedSources,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectUnpaused,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectWebAnalyticsDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectWebAnalyticsEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProtectedGitScopeAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProtectedGitScopeRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RuntimeCachePurgeAll,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SamlConnectionCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SamlConnectionDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxAliasAssigned,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxAliasDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxDriveCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxDriveDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxSnapshotRegionsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScaleAuto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecondaryEmailAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecondaryEmailRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecondaryEmailVerified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecretAdd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecretDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecretRename,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityListCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityListDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityListUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecurityPlusUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SetBio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SetName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SetProfiles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SetScale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SharedEnvVariableCreate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SharedEnvVariableDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SharedEnvVariableRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SharedEnvVariableUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ShowIpAddresses,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Signup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SignupViaBitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SignupViaGithub,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SignupViaGitlab,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpeedInsightsSettingsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpendCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpendDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpendUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SsoLogin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageAcceptTos,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageAccessTokenSet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageAccessedDataBrowser,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageConnectProject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageCreate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageDisconnectProject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageDisconnectProjects,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageInactiveStoreDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageResetCredentials,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageResourceReplCommand,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageSetLocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageTransferInSuccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageTransferOutSuccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageTransferRequestCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageUpdateProjectConnection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageUpgradeProjectConnectionToOidc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StorageViewSecret,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StrictDeploymentProtectionSettings,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StrictPasswordProtectionSettings,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StrictShareableLinks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionProductAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionProductRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportSessionCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Team,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamAgentBillingMigrationDecisionChanged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamAvatarUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamCollaborationSettingsUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamDefaultBuildMachineUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamDefaultPassportUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamDeploymentPolicyUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamDomainVerificationCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamDomainVerificationDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamDomainVerificationVerified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamEmailDomainUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamEmuUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamEndedTrial,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamFirewallConfigModified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamFirewallConfigPromoted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamGitRepositoryDispatchEventsToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamGitRequireVerifiedCommitsToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamInviteBulkDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamInviteCodeReset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamInviteLinkCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamInviteLinkDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamIpBlockingRulesCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamIpBlockingRulesRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberAdd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberConfirmRequest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberDeclineRequest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberEntitlementAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberEntitlementCanceled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberEntitlementReactivated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberEntitlementRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberJoin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberLeave,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberRequestAccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberRoleUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMemberSsoAuthorizationAttempt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamMfaEnforcementUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamNameUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamPaidInvoice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamProgramEnrollmentChanged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamRemoteCachingPurge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamRemoteCachingUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamSamlEnforced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamSamlRoles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamSlugUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamTokensInvalidated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TracingConfigured,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TracingDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TracingPaused,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TracingResumed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnlinkLoginConnection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UpdateAccountFlowDismissed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UpdateAccountFlowTriggered,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserAutoBlockConfigured,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserBlocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserDelete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserDeleteRequested,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserEmuAccountArchived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserEmuAccountDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserEmuAccountRecovered,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserEmuAccountUpdateOptedIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserEmuAccountUpdateOptedOut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserEmuRecoveryEmailSent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserEmuRecoveryInitiated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserEmuToggled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaChallengeFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaChallengeInitiated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaChallengeVerified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaChangeFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaConfigurationUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaRecoveryCodeUsed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaRecoveryCodesRegenerated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaSetupSkipped,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaTotpVerificationStarted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMfaTotpVerified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserPhoneRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserPhoneUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserPrimaryEmailUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserProviderEmailClaimEvaluated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserSudoModeRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserTokenCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserTokenDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserTokensDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserUnblocked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Username,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0ChatAiUsage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0ChatCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0ChatMessageSent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VcrImageDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VcrImagePushed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VcrRepositoryCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VcrRepositoryDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VcrRepositoryPermissionAdded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VcrRepositoryPermissionRemoved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VcrRepositoryPermissionsCleared,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VcrRepositoryVisibilityChanged,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAgentElevatedPermissionsApproved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAgentElevatedPermissionsRequested,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAgentSessionCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAgentTeamTrialCreditsApplied,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAppInstallationRequestDismissed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAppInstallationRequested,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAppInstallationUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAppInstalled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAppTokensRevoked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAppUninstalled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelToolbar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VpcPeeringConnectionAccepted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VpcPeeringConnectionDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VpcPeeringConnectionRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VpcPeeringConnectionUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VulnerabilityBannerDismissed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebAnalyticsTierUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebhookCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebhookDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebhookUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkflowDeploymentKeyAccessed,
     }

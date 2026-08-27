@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FlagEnvironmentsRuleConditionLhsVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Segment,
     }

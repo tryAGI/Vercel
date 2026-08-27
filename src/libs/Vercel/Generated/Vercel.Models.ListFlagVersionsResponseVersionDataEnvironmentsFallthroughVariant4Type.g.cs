@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant4Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experiment,
     }

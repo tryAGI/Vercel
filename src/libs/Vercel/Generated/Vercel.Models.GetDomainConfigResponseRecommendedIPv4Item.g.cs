@@ -9,14 +9,14 @@ namespace Vercel
     public sealed partial class GetDomainConfigResponseRecommendedIPv4Item
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rank")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Rank { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]

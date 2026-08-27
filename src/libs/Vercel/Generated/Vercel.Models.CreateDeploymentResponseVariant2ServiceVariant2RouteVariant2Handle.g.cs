@@ -4,32 +4,32 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDeploymentResponseVariant2ServiceVariant2RouteVariant2Handle
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Filesystem,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Miss,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Resource,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rewrite,
     }

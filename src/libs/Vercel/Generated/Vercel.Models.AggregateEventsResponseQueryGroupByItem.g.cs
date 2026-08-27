@@ -4,72 +4,72 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AggregateEventsResponseQueryGroupByItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrowserName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Country,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeviceType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Environment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventData,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flags,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OsName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferrerHostname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequestPath,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Route,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtmCampaign,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtmContent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtmMedium,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtmSource,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtmTerm,
     }

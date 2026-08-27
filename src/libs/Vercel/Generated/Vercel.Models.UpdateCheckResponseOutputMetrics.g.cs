@@ -4,40 +4,40 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateCheckResponseOutputMetrics
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("FCP")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateCheckResponseOutputMetricsFcp Fcp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("LCP")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateCheckResponseOutputMetricsLcp Lcp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("CLS")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateCheckResponseOutputMetricsCls Cls { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("TBT")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateCheckResponseOutputMetricsTbt Tbt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("virtualExperienceScore")]
         public global::Vercel.UpdateCheckResponseOutputMetricsVirtualExperienceScore? VirtualExperienceScore { get; set; }

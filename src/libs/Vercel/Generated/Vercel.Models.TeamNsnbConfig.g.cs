@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class TeamNsnbConfig
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preference")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamNsnbConfigPreferenceJsonConverter))]

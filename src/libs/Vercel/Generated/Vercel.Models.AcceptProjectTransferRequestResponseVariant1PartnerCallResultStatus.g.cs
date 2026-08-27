@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Errored,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fulfilled,
     }

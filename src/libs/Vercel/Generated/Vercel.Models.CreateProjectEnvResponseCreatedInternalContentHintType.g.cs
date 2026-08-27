@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateProjectEnvResponseCreatedInternalContentHintType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsSecret,
     }

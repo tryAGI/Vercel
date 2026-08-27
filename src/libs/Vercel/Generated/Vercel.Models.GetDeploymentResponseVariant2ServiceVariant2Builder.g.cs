@@ -9,20 +9,20 @@ namespace Vercel
     public sealed partial class GetDeploymentResponseVariant2ServiceVariant2Builder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("use")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Use { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("src")]
         public string? Src { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
         public global::Vercel.GetDeploymentResponseVariant2ServiceVariant2BuilderConfig? Config { get; set; }

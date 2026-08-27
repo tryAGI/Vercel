@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateFlagRequestEnvironmentsRuleCondition
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lhs")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionLhsVariant1, global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionLhsVariant2>))]
@@ -17,7 +17,7 @@ namespace Vercel
         public required global::Vercel.AnyOf<global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionLhsVariant1, global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionLhsVariant2> Lhs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cmp")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFlagRequestEnvironmentsRuleConditionCmpJsonConverter))]
@@ -25,14 +25,14 @@ namespace Vercel
         public required global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionCmp Cmp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rhs")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1, global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant2, string, double?, bool?>))]
         public global::Vercel.AnyOf<global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant1, global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionRhsVariant2, string, double?, bool?>? Rhs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cmpOptions")]
         public global::Vercel.UpdateFlagRequestEnvironmentsRuleConditionCmpOptions? CmpOptions { get; set; }

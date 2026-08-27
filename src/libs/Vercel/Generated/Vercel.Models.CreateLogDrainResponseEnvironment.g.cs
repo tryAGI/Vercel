@@ -10,11 +10,11 @@ namespace Vercel
     public enum CreateLogDrainResponseEnvironment
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

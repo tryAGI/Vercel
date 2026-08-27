@@ -5,12 +5,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct FlagJSONValue : global::System.IEquatable<FlagJSONValue>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? FlagJSONValueVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FlagJSONValueVariant1))]
@@ -27,7 +27,7 @@ namespace Vercel
         public bool IsFlagJSONValueVariant1 => FlagJSONValueVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFlagJSONValueVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickFlagJSONValueVariant1() => IsFlagJSONValueVariant1
             ? FlagJSONValueVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public double? FlagJSONValueVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FlagJSONValueVariant2))]
@@ -64,7 +64,7 @@ namespace Vercel
         public bool IsFlagJSONValueVariant2 => FlagJSONValueVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFlagJSONValueVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public double PickFlagJSONValueVariant2() => IsFlagJSONValueVariant2
             ? FlagJSONValueVariant2!.Value
@@ -93,7 +93,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FlagJSONValueVariant3))]
@@ -101,7 +101,7 @@ namespace Vercel
         public bool IsFlagJSONValueVariant3 => FlagJSONValueVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFlagJSONValueVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue> PickFlagJSONValueVariant3() => IsFlagJSONValueVariant3
             ? FlagJSONValueVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>? FlagJSONValueVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FlagJSONValueVariant4))]
@@ -138,7 +138,7 @@ namespace Vercel
         public bool IsFlagJSONValueVariant4 => FlagJSONValueVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFlagJSONValueVariant4(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?> PickFlagJSONValueVariant4() => IsFlagJSONValueVariant4
             ? FlagJSONValueVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public bool? FlagJSONValueVariant5 { get; init; }
@@ -167,7 +167,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FlagJSONValueVariant5))]
@@ -175,7 +175,7 @@ namespace Vercel
         public bool IsFlagJSONValueVariant5 => FlagJSONValueVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFlagJSONValueVariant5(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool PickFlagJSONValueVariant5() => IsFlagJSONValueVariant5
             ? FlagJSONValueVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant5' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FlagJSONValue(string value) => new FlagJSONValue((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(FlagJSONValue @this) => @this.FlagJSONValueVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FlagJSONValue(string? value)
         {
@@ -212,22 +212,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FlagJSONValue FromFlagJSONValueVariant1(string? value) => new FlagJSONValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FlagJSONValue(double value) => new FlagJSONValue((double?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator double?(FlagJSONValue @this) => @this.FlagJSONValueVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FlagJSONValue(double? value)
         {
@@ -235,22 +235,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FlagJSONValue FromFlagJSONValueVariant2(double? value) => new FlagJSONValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FlagJSONValue(global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?> value) => new FlagJSONValue((global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>?(FlagJSONValue @this) => @this.FlagJSONValueVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FlagJSONValue(global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>? value)
         {
@@ -258,22 +258,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FlagJSONValue FromFlagJSONValueVariant4(global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>? value) => new FlagJSONValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FlagJSONValue(bool value) => new FlagJSONValue((bool?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator bool?(FlagJSONValue @this) => @this.FlagJSONValueVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FlagJSONValue(bool? value)
         {
@@ -281,12 +281,12 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FlagJSONValue FromFlagJSONValueVariant5(bool? value) => new FlagJSONValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FlagJSONValue(
             string? flagJSONValueVariant1,
@@ -304,29 +304,29 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             FlagJSONValueVariant5 as object ??
             FlagJSONValueVariant4 as object ??
             FlagJSONValueVariant3 as object ??
             FlagJSONValueVariant2 as object ??
-            FlagJSONValueVariant1 as object 
+            FlagJSONValueVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             FlagJSONValueVariant1?.ToString() ??
             FlagJSONValueVariant2?.ToString() ??
             FlagJSONValueVariant3?.ToString() ??
             FlagJSONValueVariant4?.ToString() ??
-            FlagJSONValueVariant5?.ToString().ToLowerInvariant() 
+            FlagJSONValueVariant5?.ToString().ToLowerInvariant()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -334,7 +334,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? flagJSONValueVariant1 = null,
@@ -374,7 +374,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? flagJSONValueVariant1 = null,
@@ -416,7 +416,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? flagJSONValueVariant1 = null,
@@ -454,7 +454,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -481,7 +481,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(FlagJSONValue other)
         {
@@ -490,12 +490,12 @@ namespace Vercel
                 global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(FlagJSONValueVariant2, other.FlagJSONValueVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>?>.Default.Equals(FlagJSONValueVariant3, other.FlagJSONValueVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>?>.Default.Equals(FlagJSONValueVariant4, other.FlagJSONValueVariant4) &&
-                global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(FlagJSONValueVariant5, other.FlagJSONValueVariant5) 
+                global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(FlagJSONValueVariant5, other.FlagJSONValueVariant5)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(FlagJSONValue obj1, FlagJSONValue obj2)
         {
@@ -503,7 +503,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(FlagJSONValue obj1, FlagJSONValue obj2)
         {
@@ -511,7 +511,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

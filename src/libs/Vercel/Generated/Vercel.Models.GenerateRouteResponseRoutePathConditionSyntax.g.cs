@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GenerateRouteResponseRoutePathConditionSyntax
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Equals,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PathToRegexp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Regex,
     }

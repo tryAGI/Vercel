@@ -9,11 +9,11 @@ namespace Vercel
     public enum CreateDeploymentRequestFileInlinedFileEncoding
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Base64,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Utf8,
     }

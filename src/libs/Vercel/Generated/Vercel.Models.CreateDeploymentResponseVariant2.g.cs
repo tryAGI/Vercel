@@ -9,85 +9,85 @@ namespace Vercel
     public sealed partial class CreateDeploymentResponseVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasAssignedAt")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>))]
         public global::Vercel.OneOf<double?, bool?>? AliasAssignedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alwaysRefuseToBuild")]
         public bool? AlwaysRefuseToBuild { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("build")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.CreateDeploymentResponseVariant2Build Build { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildArtifactUrls")]
         public global::System.Collections.Generic.IList<string>? BuildArtifactUrls { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("builds")]
         public global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseVariant2Build2>? Builds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("env")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<string> Env { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
         public global::Vercel.CreateDeploymentResponseVariant2ResourceConfig? ResourceConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inspectorUrl")]
         public string? InspectorUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isInConcurrentBuildsQueue")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool IsInConcurrentBuildsQueue { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isInSystemBuildsQueue")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool IsInSystemBuildsQueue { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectSettings")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.CreateDeploymentResponseVariant2ProjectSettings ProjectSettings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrations")]
         public global::Vercel.CreateDeploymentResponseVariant2Integrations? Integrations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("images")]
         public global::Vercel.CreateDeploymentResponseVariant2Images? Images { get; set; }
@@ -110,14 +110,14 @@ namespace Vercel
         public required bool AliasAssigned { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bootedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double BootedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildingAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -130,7 +130,7 @@ namespace Vercel
         public double? BuildContainerFinishedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildSkipped")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -144,19 +144,19 @@ namespace Vercel
         public required global::Vercel.CreateDeploymentResponseVariant2Creator Creator { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("initReadyAt")]
         public double? InitReadyAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isFirstBranchDeployment")]
         public bool? IsFirstBranchDeployment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lambdas")]
         public global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseVariant2Lambda>? Lambdas { get; set; }
@@ -171,13 +171,13 @@ namespace Vercel
         public required bool Public { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ready")]
         public double? Ready { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2StatusJsonConverter))]
@@ -207,27 +207,27 @@ namespace Vercel
         public bool? PreviewCommentsEnabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ttyBuildLogs")]
         public bool? TtyBuildLogs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironment")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDeploymentResponseVariant2CustomEnvironmentVariant1, global::Vercel.CreateDeploymentResponseVariant2CustomEnvironmentVariant2>))]
         public global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2CustomEnvironmentVariant1, global::Vercel.CreateDeploymentResponseVariant2CustomEnvironmentVariant2>? CustomEnvironment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oomReport")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2OomReportJsonConverter))]
         public global::Vercel.CreateDeploymentResponseVariant2OomReport? OomReport { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("readyStateReason")]
         public string? ReadyStateReason { get; set; }
@@ -269,19 +269,19 @@ namespace Vercel
         public global::Vercel.CreateDeploymentResponseVariant2AliasError? AliasError { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasWarning")]
         public global::Vercel.CreateDeploymentResponseVariant2AliasWarning? AliasWarning { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorCode")]
         public string? ErrorCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorMessage")]
         public string? ErrorMessage { get; set; }
@@ -305,14 +305,14 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2TypeJsonConverter))]
         public global::Vercel.CreateDeploymentResponseVariant2Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasFinal")]
         public string? AliasFinal { get; set; }
@@ -324,26 +324,26 @@ namespace Vercel
         public bool? AutoAssignCustomDomains { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("automaticAliases")]
         public global::System.Collections.Generic.IList<string>? AutomaticAliases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildErrorAt")]
         public double? BuildErrorAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("checksState")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2ChecksStateJsonConverter))]
         public global::Vercel.CreateDeploymentResponseVariant2ChecksState? ChecksState { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("checksConclusion")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2ChecksConclusionJsonConverter))]
@@ -364,19 +364,19 @@ namespace Vercel
         public string? DefaultRoute { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("canceledAt")]
         public double? CanceledAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorLink")]
         public string? ErrorLink { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorStep")]
         public string? ErrorStep { get; set; }
@@ -388,7 +388,7 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? PassiveRegions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitSource")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant1, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant2, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant3, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant4, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant5, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant6, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant7, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant8, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant9, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant10, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant11, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant12, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant13, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant14, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant15, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant16, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant17, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant18, global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant19>))]
@@ -401,14 +401,14 @@ namespace Vercel
         public global::Vercel.CreateDeploymentResponseVariant2ManualProvisioning? ManualProvisioning { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.Dictionary<string, string> Meta { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("originCacheRegion")]
         public string? OriginCacheRegion { get; set; }
@@ -427,7 +427,7 @@ namespace Vercel
         public global::Vercel.CreateDeploymentResponseVariant2Project? Project { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prebuilt")]
         public bool? Prebuilt { get; set; }
@@ -500,20 +500,20 @@ namespace Vercel
         public required double Version { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oidcTokenClaims")]
         public global::Vercel.CreateDeploymentResponseVariant2OidcTokenClaims? OidcTokenClaims { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2PlanJsonConverter))]
@@ -521,32 +521,39 @@ namespace Vercel
         public required global::Vercel.CreateDeploymentResponseVariant2Plan Plan { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectBuildsEnabled")]
         public bool? ConnectBuildsEnabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurationId")]
         public string? ConnectConfigurationId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdIn")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CreatedIn { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("crons")]
         public global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseVariant2Cron>? Crons { get; set; }
 
         /// <summary>
-        /// 
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("atproto")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDeploymentResponseVariant2AtprotoVariant1, global::Vercel.CreateDeploymentResponseVariant2AtprotoVariant2>))]
+        public global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2AtprotoVariant1, global::Vercel.CreateDeploymentResponseVariant2AtprotoVariant2>? Atproto { get; set; }
+
+        /// <summary>
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functions")]
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateDeploymentResponseVariant2Functions2>? Functions { get; set; }
@@ -558,13 +565,13 @@ namespace Vercel
         public bool? IsInstantStatic { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("monorepoManager")]
         public string? MonorepoManager { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -577,7 +584,7 @@ namespace Vercel
         public string? PassiveConnectConfigurationId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("routes")]
         public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2RouteVariant1, global::Vercel.CreateDeploymentResponseVariant2RouteVariant2, global::Vercel.CreateDeploymentResponseVariant2RouteVariant3>>? Routes { get; set; }
@@ -589,21 +596,21 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2ServiceVariant1, global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2>>? Services { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitRepo")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant1, global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant2, global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant3, global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant4, global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant5>))]
         public global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant1, global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant2, global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant3, global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant4, global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant5>? GitRepo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flags")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDeploymentResponseVariant2Flags, global::System.Collections.Generic.IList<object>>))]
         public global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2Flags, global::System.Collections.Generic.IList<object>>? Flags { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateDeploymentResponseVariant2MicrofrontendsVariant1, global::Vercel.CreateDeploymentResponseVariant2MicrofrontendsVariant2>))]
@@ -622,7 +629,7 @@ namespace Vercel
         public global::Vercel.CreateDeploymentResponseVariant2Config? Config { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("checks")]
         public global::Vercel.CreateDeploymentResponseVariant2Checks? Checks { get; set; }
@@ -803,6 +810,7 @@ namespace Vercel
         /// <param name="connectBuildsEnabled"></param>
         /// <param name="connectConfigurationId"></param>
         /// <param name="crons"></param>
+        /// <param name="atproto"></param>
         /// <param name="functions"></param>
         /// <param name="isInstantStatic">
         /// Whether this deployment completed through the instant static fast path.
@@ -913,6 +921,7 @@ namespace Vercel
             bool? connectBuildsEnabled,
             string? connectConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseVariant2Cron>? crons,
+            global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2AtprotoVariant1, global::Vercel.CreateDeploymentResponseVariant2AtprotoVariant2>? atproto,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateDeploymentResponseVariant2Functions2>? functions,
             bool? isInstantStatic,
             string? monorepoManager,
@@ -1005,6 +1014,7 @@ namespace Vercel
             this.ConnectConfigurationId = connectConfigurationId;
             this.CreatedIn = createdIn ?? throw new global::System.ArgumentNullException(nameof(createdIn));
             this.Crons = crons;
+            this.Atproto = atproto;
             this.Functions = functions;
             this.IsInstantStatic = isInstantStatic;
             this.MonorepoManager = monorepoManager;

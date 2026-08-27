@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDrainResponseVariant2DeliveryVariant1Compression
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gzip,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

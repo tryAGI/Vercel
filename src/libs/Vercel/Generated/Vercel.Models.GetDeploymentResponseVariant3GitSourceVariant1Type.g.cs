@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentResponseVariant3GitSourceVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
     }

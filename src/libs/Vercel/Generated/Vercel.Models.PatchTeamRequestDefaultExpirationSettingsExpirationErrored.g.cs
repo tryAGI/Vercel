@@ -10,39 +10,39 @@ namespace Vercel
     public enum PatchTeamRequestDefaultExpirationSettingsExpirationErrored
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1d,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1m,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1w,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1y,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x2m,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x2w,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x3m,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x6m,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unlimited,
     }

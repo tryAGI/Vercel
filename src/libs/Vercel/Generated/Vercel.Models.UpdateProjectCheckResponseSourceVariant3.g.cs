@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateProjectCheckResponseSourceVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectCheckResponseSourceVariant3KindJsonConverter))]
         public global::Vercel.UpdateProjectCheckResponseSourceVariant3Kind Kind { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectCheckResponseSourceVariant3ProviderJsonConverter))]
@@ -24,7 +24,7 @@ namespace Vercel
         public required global::Vercel.UpdateProjectCheckResponseSourceVariant3Provider Provider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalCheckName")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant1ItemSecurityFirewallRouteHandle
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Finalize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Init,
     }

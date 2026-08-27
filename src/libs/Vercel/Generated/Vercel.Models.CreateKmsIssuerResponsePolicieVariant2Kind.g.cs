@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateKmsIssuerResponsePolicieVariant2Kind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnexGrant,
     }

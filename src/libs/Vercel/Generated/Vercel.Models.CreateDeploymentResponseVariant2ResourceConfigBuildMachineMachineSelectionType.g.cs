@@ -9,11 +9,11 @@ namespace Vercel
     public enum CreateDeploymentResponseVariant2ResourceConfigBuildMachineMachineSelectionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elastic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fixed,
     }

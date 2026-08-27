@@ -4,28 +4,28 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant1ItemEnvItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Encrypted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Plain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Secret,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sensitive,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         System,
     }

@@ -9,7 +9,7 @@ namespace Vercel
     public enum CreateRecordRequestEnumType4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Caa,
     }

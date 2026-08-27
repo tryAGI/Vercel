@@ -9,11 +9,11 @@ namespace Vercel
     public enum RecordEventsRequestItemEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Miss,
     }

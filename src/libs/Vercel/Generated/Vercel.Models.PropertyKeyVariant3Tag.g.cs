@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PropertyKeyVariant3Tag
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Symbol,
     }

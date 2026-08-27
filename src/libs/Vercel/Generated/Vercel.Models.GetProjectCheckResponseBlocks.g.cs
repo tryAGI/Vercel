@@ -4,28 +4,28 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectCheckResponseBlocks
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildStart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentAlias,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentPromotion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentStart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

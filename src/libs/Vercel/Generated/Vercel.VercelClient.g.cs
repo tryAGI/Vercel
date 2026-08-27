@@ -38,7 +38,7 @@ namespace Vercel
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Vercel.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -48,7 +48,7 @@ namespace Vercel
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AccessGroupsClient AccessGroups => new AccessGroupsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -57,7 +57,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AiGatewayClient AiGateway => new AiGatewayClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -66,7 +66,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AliasesClient Aliases => new AliasesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -75,7 +75,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiAiGatewayClient ApiAiGateway => new ApiAiGatewayClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -84,7 +84,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArtifactsClient Artifacts => new ArtifactsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -93,7 +93,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AuthenticationClient Authentication => new AuthenticationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -102,7 +102,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BillingClient Billing => new BillingClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -111,7 +111,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BulkRedirectsClient BulkRedirects => new BulkRedirectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -120,7 +120,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CertsClient Certs => new CertsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -129,7 +129,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChecksV2Client ChecksV2 => new ChecksV2Client(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -138,7 +138,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectClient Connect => new ConnectClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -147,7 +147,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeploymentsClient Deployments => new DeploymentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -156,7 +156,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DnsClient Dns => new DnsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -165,7 +165,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DomainsClient Domains => new DomainsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -174,7 +174,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DomainsRegistrarClient DomainsRegistrar => new DomainsRegistrarClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -183,7 +183,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DrainsClient Drains => new DrainsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -192,7 +192,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EdgeCacheClient EdgeCache => new EdgeCacheClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -201,7 +201,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvironmentClient Environment => new EnvironmentClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -210,7 +210,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FeatureFlagsClient FeatureFlags => new FeatureFlagsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -219,7 +219,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GlobalConfigClient GlobalConfig => new GlobalConfigClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -228,7 +228,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IntegrationsClient Integrations => new IntegrationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -237,7 +237,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public KmsClient Kms => new KmsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -246,7 +246,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogDrainsClient LogDrains => new LogDrainsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -255,7 +255,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogsClient Logs => new LogsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -264,7 +264,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MarketplaceClient Marketplace => new MarketplaceClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -273,7 +273,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MicrofrontendsClient Microfrontends => new MicrofrontendsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -282,7 +282,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NetworkingClient Networking => new NetworkingClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -291,7 +291,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ObservabilityClient Observability => new ObservabilityClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -300,7 +300,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectMembersClient ProjectMembers => new ProjectMembersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -309,7 +309,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectRoutesClient ProjectRoutes => new ProjectRoutesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -318,7 +318,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectsClient Projects => new ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -327,7 +327,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RollingReleaseClient RollingRelease => new RollingReleaseClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -336,7 +336,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SandboxesClient Sandboxes => new SandboxesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -345,7 +345,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SecurityClient Security => new SecurityClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -354,7 +354,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StorageClient Storage => new StorageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -363,7 +363,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TeamsClient Teams => new TeamsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -372,7 +372,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserClient User => new UserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -381,7 +381,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VcrClient Vcr => new VcrClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -390,7 +390,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebAnalyticsClient WebAnalytics => new WebAnalyticsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -399,7 +399,7 @@ namespace Vercel
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhooksClient Webhooks => new WebhooksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

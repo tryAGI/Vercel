@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateProjectResponseProtectionBypassVariant1Scope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationAutomationBypass,
     }

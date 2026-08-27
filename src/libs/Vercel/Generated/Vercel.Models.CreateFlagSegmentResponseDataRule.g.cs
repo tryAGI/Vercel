@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateFlagSegmentResponseDataRule
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("outcome")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateFlagSegmentResponseDataRuleOutcomeVariant1, global::Vercel.CreateFlagSegmentResponseDataRuleOutcomeVariant2>))]
@@ -24,7 +24,7 @@ namespace Vercel
         public required global::Vercel.OneOf<global::Vercel.CreateFlagSegmentResponseDataRuleOutcomeVariant1, global::Vercel.CreateFlagSegmentResponseDataRuleOutcomeVariant2> Outcome { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("conditions")]
         [global::System.Text.Json.Serialization.JsonRequired]

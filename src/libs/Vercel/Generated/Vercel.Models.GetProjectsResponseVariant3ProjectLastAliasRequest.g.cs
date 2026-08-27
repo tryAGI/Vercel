@@ -4,18 +4,18 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetProjectsResponseVariant3ProjectLastAliasRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fromDeploymentId")]
         public string? FromDeploymentId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("toDeploymentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -28,7 +28,7 @@ namespace Vercel
         public string? FromRollingReleaseId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("jobStatus")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant3ProjectLastAliasRequestJobStatusJsonConverter))]
@@ -36,14 +36,14 @@ namespace Vercel
         public required global::Vercel.GetProjectsResponseVariant3ProjectLastAliasRequestJobStatus JobStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double RequestedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant3ProjectLastAliasRequestTypeJsonConverter))]

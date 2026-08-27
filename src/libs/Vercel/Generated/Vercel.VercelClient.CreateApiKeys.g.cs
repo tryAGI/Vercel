@@ -42,7 +42,7 @@ namespace Vercel
             ref string content);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -64,7 +64,7 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -137,7 +137,7 @@ namespace Vercel
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
@@ -335,7 +335,7 @@ namespace Vercel
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 400)
                             {
                                 string? __content_400 = null;
@@ -441,7 +441,7 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 409)
                             {
                                 string? __content_409 = null;
@@ -473,7 +473,7 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 410)
                             {
                                 string? __content_410 = null;
@@ -505,7 +505,7 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 429)
                             {
                                 string? __content_429 = null;
@@ -542,7 +542,7 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            // 
+                            //
                             if ((int)__response.StatusCode == 500)
                             {
                                 string? __content_500 = null;
@@ -676,7 +676,7 @@ namespace Vercel
             }
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="purpose">
         /// The API key's purpose, which restricts how it can be used.

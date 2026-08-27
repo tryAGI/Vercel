@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum NamedSandboxMountsMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadOnly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite,
     }

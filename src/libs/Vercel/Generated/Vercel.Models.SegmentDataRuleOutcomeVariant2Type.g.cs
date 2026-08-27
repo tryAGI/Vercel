@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SegmentDataRuleOutcomeVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Split,
     }

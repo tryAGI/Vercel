@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateFlagResponseEnvironmentsRuleOutcomeVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rollout,
     }

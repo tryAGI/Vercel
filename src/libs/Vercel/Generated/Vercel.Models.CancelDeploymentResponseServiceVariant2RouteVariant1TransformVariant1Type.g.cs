@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequestHeaders,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequestQuery,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ResponseHeaders,
     }

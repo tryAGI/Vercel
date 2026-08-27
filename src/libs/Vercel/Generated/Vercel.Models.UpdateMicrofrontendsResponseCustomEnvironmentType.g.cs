@@ -9,15 +9,15 @@ namespace Vercel
     public enum UpdateMicrofrontendsResponseCustomEnvironmentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Development,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

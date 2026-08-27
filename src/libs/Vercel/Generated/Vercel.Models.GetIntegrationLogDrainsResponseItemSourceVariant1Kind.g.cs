@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetIntegrationLogDrainsResponseItemSourceVariant1Kind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfServed,
     }

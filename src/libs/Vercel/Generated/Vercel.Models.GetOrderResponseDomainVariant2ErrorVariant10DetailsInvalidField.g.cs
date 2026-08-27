@@ -4,56 +4,56 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseDomainVariant2ErrorVariant10DetailsInvalidField
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Address1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Address2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         City,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CompanyName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Country,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Email,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fax,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirstName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Phone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zip,
     }

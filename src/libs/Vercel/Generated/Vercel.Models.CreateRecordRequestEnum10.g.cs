@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateRecordRequestEnum10
     {
@@ -24,7 +24,7 @@ namespace Vercel
         public double? Ttl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("https")]
         [global::System.Text.Json.Serialization.JsonRequired]

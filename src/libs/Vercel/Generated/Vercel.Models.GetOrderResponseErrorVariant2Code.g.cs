@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseErrorVariant2Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TldOutage,
     }

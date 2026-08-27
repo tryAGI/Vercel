@@ -9,6 +9,18 @@ namespace Vercel
     public sealed partial class SignKmsMessageResponseSignatureHeaderJwk
     {
         /// <summary>
+        /// RSA JWK "n" (Modulus) Parameter
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("n")]
+        public string? N { get; set; }
+
+        /// <summary>
+        /// RSA JWK "e" (Exponent) Parameter
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("e")]
+        public string? E { get; set; }
+
+        /// <summary>
         /// JWK "kty" (Key Type) Parameter
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kty")]
@@ -33,18 +45,6 @@ namespace Vercel
         public string? Y { get; set; }
 
         /// <summary>
-        /// RSA JWK "e" (Exponent) Parameter
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("e")]
-        public string? E { get; set; }
-
-        /// <summary>
-        /// RSA JWK "n" (Modulus) Parameter
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("n")]
-        public string? N { get; set; }
-
-        /// <summary>
         /// JWK "alg" (Algorithm) Parameter
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alg")]
@@ -65,6 +65,12 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="SignKmsMessageResponseSignatureHeaderJwk" /> class.
         /// </summary>
+        /// <param name="n">
+        /// RSA JWK "n" (Modulus) Parameter
+        /// </param>
+        /// <param name="e">
+        /// RSA JWK "e" (Exponent) Parameter
+        /// </param>
         /// <param name="kty">
         /// JWK "kty" (Key Type) Parameter
         /// </param>
@@ -77,12 +83,6 @@ namespace Vercel
         /// <param name="y">
         /// EC JWK "y" (Y Coordinate) Parameter
         /// </param>
-        /// <param name="e">
-        /// RSA JWK "e" (Exponent) Parameter
-        /// </param>
-        /// <param name="n">
-        /// RSA JWK "n" (Modulus) Parameter
-        /// </param>
         /// <param name="alg">
         /// JWK "alg" (Algorithm) Parameter
         /// </param>
@@ -93,21 +93,21 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SignKmsMessageResponseSignatureHeaderJwk(
+            string? n,
+            string? e,
             string? kty,
             string? crv,
             string? x,
             string? y,
-            string? e,
-            string? n,
             string? alg,
             string? pub)
         {
+            this.N = n;
+            this.E = e;
             this.Kty = kty;
             this.Crv = crv;
             this.X = x;
             this.Y = y;
-            this.E = e;
-            this.N = n;
             this.Alg = alg;
             this.Pub = pub;
         }

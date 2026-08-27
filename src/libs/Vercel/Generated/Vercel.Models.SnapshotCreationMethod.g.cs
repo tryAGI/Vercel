@@ -10,11 +10,11 @@ namespace Vercel
     public enum SnapshotCreationMethod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Automatic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manual,
     }

@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetDeploymentsResponseDeploymentTarget
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Staging,
     }

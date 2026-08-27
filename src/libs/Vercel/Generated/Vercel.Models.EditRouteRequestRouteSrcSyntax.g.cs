@@ -9,15 +9,15 @@ namespace Vercel
     public enum EditRouteRequestRouteSrcSyntax
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Equals,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PathToRegexp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Regex,
     }

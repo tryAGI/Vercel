@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class CreateDeploymentResponseVariant2CustomEnvironmentVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]

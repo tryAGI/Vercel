@@ -9,13 +9,13 @@ namespace Vercel
     public sealed partial class SubmitInvoiceRequestTest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("validate")]
         public bool? Validate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("result")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SubmitInvoiceRequestTestResultJsonConverter))]

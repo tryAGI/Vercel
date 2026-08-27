@@ -10,95 +10,95 @@ namespace Vercel
     public enum ListEventTypeCategorie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Account,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGateway,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Billing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Connect,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deployment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Domain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Edge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVariable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FeatureFlags,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Firewall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Microfrontends,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Network,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Observability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Project,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Security,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Storage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Team,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelApp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workflow,
     }

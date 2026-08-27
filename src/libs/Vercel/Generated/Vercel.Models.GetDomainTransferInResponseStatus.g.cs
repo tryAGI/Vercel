@@ -4,60 +4,60 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDomainTransferInResponseStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canceled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CanceledPendingRefund,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Completed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Created,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingInsert,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingNewAuthCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingRegistryUnlock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingTransfer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingUnlock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubmittingTransfer,
     }

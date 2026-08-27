@@ -9,11 +9,11 @@ namespace Vercel
     public enum CreateDeploymentResponseVariant2ImagesRemotePatternProtocol
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Http,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Https,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetRollingReleaseBillingStatusResponseVariant4Reason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AvailableSlots,
     }

@@ -9,11 +9,11 @@ namespace Vercel
     public enum BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2OutputEffectiveBehavior
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndOfTerm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Immediate,
     }

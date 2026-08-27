@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListDeploymentCheckRunsResponseRunVariant1SourceVariant1Kind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
     }

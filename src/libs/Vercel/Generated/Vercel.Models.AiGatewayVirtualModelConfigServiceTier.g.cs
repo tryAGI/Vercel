@@ -9,15 +9,15 @@ namespace Vercel
     public enum AiGatewayVirtualModelConfigServiceTier
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fast,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Priority,
     }

@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateRecordResponseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Record,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RecordSys,
     }

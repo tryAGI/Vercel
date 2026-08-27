@@ -9,28 +9,28 @@ namespace Vercel
     public sealed partial class AuthUserActiveDashboardView
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scopeId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ScopeId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("viewPreference")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserActiveDashboardViewViewPreferenceJsonConverter))]
         public global::Vercel.AuthUserActiveDashboardViewViewPreference? ViewPreference { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("favoritesViewPreference")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserActiveDashboardViewFavoritesViewPreferenceJsonConverter))]
         public global::Vercel.AuthUserActiveDashboardViewFavoritesViewPreference? FavoritesViewPreference { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recentsViewPreference")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserActiveDashboardViewRecentsViewPreferenceJsonConverter))]

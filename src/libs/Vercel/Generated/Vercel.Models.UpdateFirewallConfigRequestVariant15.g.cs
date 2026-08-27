@@ -4,28 +4,31 @@
 namespace Vercel
 {
     /// <summary>
-    /// Disable a managed rule
+    /// Enable a managed rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant15
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant15IdJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateFirewallConfigRequestVariant15Id Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        public string? Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateFirewallConfigRequestVariant15Value Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,12 +47,12 @@ namespace Vercel
 #endif
         public UpdateFirewallConfigRequestVariant15(
             string action,
-            string? id,
-            string? value)
+            global::Vercel.UpdateFirewallConfigRequestVariant15Id id,
+            global::Vercel.UpdateFirewallConfigRequestVariant15Value value)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
             this.Id = id;
-            this.Value = value;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>

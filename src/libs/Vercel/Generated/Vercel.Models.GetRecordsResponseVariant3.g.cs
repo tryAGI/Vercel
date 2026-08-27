@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class GetRecordsResponseVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("records")]
         [global::System.Text.Json.Serialization.JsonRequired]

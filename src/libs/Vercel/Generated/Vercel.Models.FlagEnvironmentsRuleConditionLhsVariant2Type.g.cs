@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FlagEnvironmentsRuleConditionLhsVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Entity,
     }

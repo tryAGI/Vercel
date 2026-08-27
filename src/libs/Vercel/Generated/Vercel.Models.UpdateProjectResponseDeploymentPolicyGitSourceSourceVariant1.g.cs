@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant1ProviderJsonConverter))]
@@ -17,14 +17,14 @@ namespace Vercel
         public required global::Vercel.UpdateProjectResponseDeploymentPolicyGitSourceSourceVariant1Provider Provider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("org")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Org { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
         public string? Repo { get; set; }

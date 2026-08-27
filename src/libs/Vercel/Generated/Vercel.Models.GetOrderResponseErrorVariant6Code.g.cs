@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseErrorVariant6Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainMismatch,
     }

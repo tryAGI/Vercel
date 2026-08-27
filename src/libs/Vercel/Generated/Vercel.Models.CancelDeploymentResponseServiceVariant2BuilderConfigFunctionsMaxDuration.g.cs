@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseServiceVariant2BuilderConfigFunctionsMaxDuration
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Max,
     }

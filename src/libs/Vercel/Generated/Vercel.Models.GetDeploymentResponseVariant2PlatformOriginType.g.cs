@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetDeploymentResponseVariant2PlatformOriginType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Id,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
     }

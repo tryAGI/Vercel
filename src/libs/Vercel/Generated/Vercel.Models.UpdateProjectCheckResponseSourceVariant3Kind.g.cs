@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectCheckResponseSourceVariant3Kind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitProvider,
     }

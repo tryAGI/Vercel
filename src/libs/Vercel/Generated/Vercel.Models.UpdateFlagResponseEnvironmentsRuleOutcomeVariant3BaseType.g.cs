@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFlagResponseEnvironmentsRuleOutcomeVariant3BaseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Entity,
     }

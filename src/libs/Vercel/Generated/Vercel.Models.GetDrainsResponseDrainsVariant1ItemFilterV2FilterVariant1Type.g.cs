@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Basic,
     }

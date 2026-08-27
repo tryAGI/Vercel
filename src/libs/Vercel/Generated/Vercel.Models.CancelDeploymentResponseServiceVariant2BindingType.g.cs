@@ -9,7 +9,7 @@ namespace Vercel
     public enum CancelDeploymentResponseServiceVariant2BindingType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Service,
     }

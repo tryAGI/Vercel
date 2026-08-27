@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListCheckRunsResponseRunVariant1SourceVariant3Kind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitProvider,
     }

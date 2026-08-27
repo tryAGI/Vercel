@@ -4,32 +4,32 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetRuntimeLogsResponseLevel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Debug,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fatal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Info,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Trace,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Warning,
     }

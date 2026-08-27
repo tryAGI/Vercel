@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectResponseCreatorVariant1ViaVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
     }

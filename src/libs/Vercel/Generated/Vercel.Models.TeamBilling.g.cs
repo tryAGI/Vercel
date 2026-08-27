@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class TeamBilling
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamBillingPlanJsonConverter))]

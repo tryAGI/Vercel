@@ -59,7 +59,7 @@ namespace Vercel
         public global::Vercel.TeamLimitedSamlConnectionSyncState? SyncState { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonRequired]

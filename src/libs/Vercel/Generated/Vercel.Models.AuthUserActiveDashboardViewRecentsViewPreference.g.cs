@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AuthUserActiveDashboardViewRecentsViewPreference
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Closed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Open,
     }

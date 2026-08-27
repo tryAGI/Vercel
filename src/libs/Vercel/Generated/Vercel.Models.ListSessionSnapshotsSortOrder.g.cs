@@ -10,11 +10,11 @@ namespace Vercel
     public enum ListSessionSnapshotsSortOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }
