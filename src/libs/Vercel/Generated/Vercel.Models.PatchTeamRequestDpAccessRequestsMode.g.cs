@@ -10,15 +10,15 @@ namespace Vercel
     public enum PatchTeamRequestDpAccessRequestsMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EmailDomain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

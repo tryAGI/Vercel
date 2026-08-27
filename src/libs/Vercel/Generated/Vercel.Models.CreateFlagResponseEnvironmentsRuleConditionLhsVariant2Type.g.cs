@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateFlagResponseEnvironmentsRuleConditionLhsVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Entity,
     }

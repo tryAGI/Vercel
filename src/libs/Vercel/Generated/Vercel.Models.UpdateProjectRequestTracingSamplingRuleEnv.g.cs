@@ -9,11 +9,11 @@ namespace Vercel
     public enum UpdateProjectRequestTracingSamplingRuleEnv
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

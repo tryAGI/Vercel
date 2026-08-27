@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseErrorVariant1Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PaymentFailed,
     }

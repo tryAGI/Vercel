@@ -9,7 +9,7 @@ namespace Vercel
     public enum GetProjectsResponseVariant3ProjectCronsDefinitionSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Api,
     }

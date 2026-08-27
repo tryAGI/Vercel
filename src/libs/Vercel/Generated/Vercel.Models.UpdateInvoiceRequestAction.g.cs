@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateInvoiceRequestAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Refund,
     }

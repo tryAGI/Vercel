@@ -9,11 +9,11 @@ namespace Vercel
     public enum CreateDeploymentResponseVariant2ConfigResourceConfigBuildQueueConfiguration
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SkipNamespaceQueue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitForNamespaceQueue,
     }

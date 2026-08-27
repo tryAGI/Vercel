@@ -10,11 +10,11 @@ namespace Vercel
     public enum CreateDeploymentResponseVariant2Target
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Staging,
     }

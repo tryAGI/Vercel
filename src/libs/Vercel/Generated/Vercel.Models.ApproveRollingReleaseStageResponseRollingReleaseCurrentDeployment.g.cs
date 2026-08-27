@@ -56,7 +56,7 @@ namespace Vercel
         public global::Vercel.ApproveRollingReleaseStageResponseRollingReleaseCurrentDeploymentTarget? Target { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("readyStateAt")]
         public double? ReadyStateAt { get; set; }

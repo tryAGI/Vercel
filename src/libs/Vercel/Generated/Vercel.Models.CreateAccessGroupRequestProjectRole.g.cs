@@ -10,15 +10,15 @@ namespace Vercel
     public enum CreateAccessGroupRequestProjectRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Admin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDeveloper,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectViewer,
     }

@@ -33,7 +33,7 @@ namespace Vercel
         public string? FallbackHost { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("branchAlias")]
         public string? BranchAlias { get; set; }

@@ -9,11 +9,11 @@ namespace Vercel
     public enum CreateStorageStoresBlobRequestAccess
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Public,
     }

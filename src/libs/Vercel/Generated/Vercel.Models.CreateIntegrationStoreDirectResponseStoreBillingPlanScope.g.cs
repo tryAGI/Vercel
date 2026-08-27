@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateIntegrationStoreDirectResponseStoreBillingPlanScope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Installation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Resource,
     }

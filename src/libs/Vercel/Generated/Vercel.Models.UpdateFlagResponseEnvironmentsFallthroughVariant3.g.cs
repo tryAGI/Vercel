@@ -4,54 +4,54 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateFlagResponseEnvironmentsFallthroughVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFlagResponseEnvironmentsFallthroughVariant3TypeJsonConverter))]
         public global::Vercel.UpdateFlagResponseEnvironmentsFallthroughVariant3Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("base")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateFlagResponseEnvironmentsFallthroughVariant3Base Base { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultVariantId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DefaultVariantId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("startTimestamp")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double StartTimestamp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollFromVariantId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RollFromVariantId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollToVariantId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RollToVariantId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slots")]
         [global::System.Text.Json.Serialization.JsonRequired]

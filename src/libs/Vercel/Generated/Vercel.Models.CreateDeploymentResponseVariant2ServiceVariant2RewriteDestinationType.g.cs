@@ -9,7 +9,7 @@ namespace Vercel
     public enum CreateDeploymentResponseVariant2ServiceVariant2RewriteDestinationType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Service,
     }

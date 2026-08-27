@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseFunctionsArchitecture
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Arm64,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         X8664,
     }

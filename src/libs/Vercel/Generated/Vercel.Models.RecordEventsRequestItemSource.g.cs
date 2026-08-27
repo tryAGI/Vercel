@@ -9,11 +9,11 @@ namespace Vercel
     public enum RecordEventsRequestItemSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Local,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Remote,
     }

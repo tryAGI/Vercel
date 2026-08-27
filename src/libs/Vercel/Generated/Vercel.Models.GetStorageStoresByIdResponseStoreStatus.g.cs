@@ -4,40 +4,40 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetStorageStoresByIdResponseStoreStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Available,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Initializing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LimitsExceededSuspended,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LimitsExceededSuspendedStoreCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Onboarding,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Suspended,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Uninstalled,
     }

@@ -9,15 +9,15 @@ namespace Vercel
     public enum UpdateDrainRequestDeliveryVariant3ServerSideEncryption
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aes256,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aws_kms,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aws_kms_dsse,
     }

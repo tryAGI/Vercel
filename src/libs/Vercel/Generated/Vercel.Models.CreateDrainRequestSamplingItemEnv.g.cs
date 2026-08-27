@@ -9,11 +9,11 @@ namespace Vercel
     public enum CreateDrainRequestSamplingItemEnv
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

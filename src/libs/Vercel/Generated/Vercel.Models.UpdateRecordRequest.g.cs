@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateRecordRequest
     {
@@ -48,13 +48,13 @@ namespace Vercel
         public int? MxPriority { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("srv")]
         public global::Vercel.UpdateRecordRequestSrv? Srv { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("https")]
         public global::Vercel.UpdateRecordRequestHttps? Https { get; set; }

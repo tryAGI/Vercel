@@ -4,29 +4,30 @@
 namespace Vercel
 {
     /// <summary>
-    /// Remove a named condition
+    /// Update a named condition
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant6
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant6ActionJsonConverter))]
         public global::Vercel.UpdateFirewallConfigRequestVariant6Action Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        public string? Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateFirewallConfigRequestVariant6Value Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,19 +39,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant6" /> class.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="action"></param>
         /// <param name="value"></param>
+        /// <param name="action"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant6(
             string id,
-            global::Vercel.UpdateFirewallConfigRequestVariant6Action action,
-            string? value)
+            global::Vercel.UpdateFirewallConfigRequestVariant6Value value,
+            global::Vercel.UpdateFirewallConfigRequestVariant6Action action)
         {
             this.Action = action;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Value = value;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>

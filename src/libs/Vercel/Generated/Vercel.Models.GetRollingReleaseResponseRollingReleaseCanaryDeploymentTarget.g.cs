@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetRollingReleaseResponseRollingReleaseCanaryDeploymentTarget
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Staging,
     }

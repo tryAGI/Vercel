@@ -10,11 +10,11 @@ namespace Vercel
     public enum CreateSandboxesByNameForkV2RequestMountsMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadOnly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadWrite,
     }

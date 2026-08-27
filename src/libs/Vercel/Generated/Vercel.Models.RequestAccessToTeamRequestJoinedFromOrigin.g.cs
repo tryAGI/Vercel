@@ -10,31 +10,31 @@ namespace Vercel
     public enum RequestAccessToTeamRequestJoinedFromOrigin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Feedback,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Import,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrganizationTeams,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Teams,
     }

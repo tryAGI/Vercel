@@ -4,44 +4,44 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant3ProjectNodeVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x10X,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x12X,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x14X,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x16X,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x18X,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x20X,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x22X,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x24X,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x810X,
     }

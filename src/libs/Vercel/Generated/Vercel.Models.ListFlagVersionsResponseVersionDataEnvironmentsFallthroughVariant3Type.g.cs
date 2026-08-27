@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rollout,
     }

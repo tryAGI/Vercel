@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetProjectsResponseVariant1ItemAbuseBlockHistoryItemVariant2Action
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unblocked,
     }

@@ -10,11 +10,11 @@ namespace Vercel
     public enum FilterProjectEnvsDecrypt
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

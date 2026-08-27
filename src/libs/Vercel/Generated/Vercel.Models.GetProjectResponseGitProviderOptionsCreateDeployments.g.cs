@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetProjectResponseGitProviderOptionsCreateDeployments
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

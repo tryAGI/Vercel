@@ -9,11 +9,11 @@ namespace Vercel
     public enum BuyCreditsResponseVariant2PurchaseIntentCurrency
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Miu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Usd,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UploadProjectAvatarResponseAbuseBlockHistoryItemVariant4Action
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RouteUnblocked,
     }

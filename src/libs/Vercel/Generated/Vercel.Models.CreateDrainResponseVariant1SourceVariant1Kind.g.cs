@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDrainResponseVariant1SourceVariant1Kind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfServed,
     }

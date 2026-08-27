@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetIntegrationResourceResponseProtocolSettingsAuthentication
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appUrls")]
         public global::System.Collections.Generic.IList<global::Vercel.GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrl>? AppUrls { get; set; }

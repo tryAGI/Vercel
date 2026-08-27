@@ -91,7 +91,7 @@ namespace Vercel
         public required string ContractPeriodEnd { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("BillingCurrency")]
         [global::System.Text.Json.Serialization.JsonRequired]

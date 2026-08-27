@@ -4,36 +4,36 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateDrainRequestFilterFilterVariant1LogSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Build,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Edge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Firewall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lambda,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Redirect,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Static,
     }

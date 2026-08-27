@@ -4,136 +4,136 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PutFirewallConfigResponseActiveRuleVariant1ConditionGroupItemConditionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BotCategory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BotName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BotProtection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BotStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cookie,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainEnvironment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Environment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GeoAsNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GeoCity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GeoContinent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GeoCountry,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GeoCountryRegion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Header,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Host,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IpAddress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ja3Digest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ja4Digest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Method,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Path,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Protocol,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Query,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RateLimitApiId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RawPath,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Region,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Route,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ruleset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scheme,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ServerAction,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SharedCondition,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TargetPath,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TrustedSource,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserAgent,
     }

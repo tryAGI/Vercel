@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateProjectResponseLastAliasRequestType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Promote,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rollback,
     }

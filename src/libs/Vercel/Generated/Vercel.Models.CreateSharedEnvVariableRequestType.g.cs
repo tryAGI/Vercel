@@ -10,11 +10,11 @@ namespace Vercel
     public enum CreateSharedEnvVariableRequestType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Encrypted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sensitive,
     }

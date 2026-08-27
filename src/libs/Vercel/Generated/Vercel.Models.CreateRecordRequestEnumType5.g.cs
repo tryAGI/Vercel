@@ -9,7 +9,7 @@ namespace Vercel
     public enum CreateRecordRequestEnumType5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cname,
     }

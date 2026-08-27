@@ -4,1538 +4,1538 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CountPageviewsResponseDataVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("country")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Country { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deviceType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DeviceType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Environment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestPath")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RequestPath { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("referrerHostname")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReferrerHostname { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("osName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OsName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("browserName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BrowserName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("route")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Route { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("utmSource")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string UtmSource { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("utmMedium")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string UtmMedium { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("utmCampaign")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string UtmCampaign { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("utmContent")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string UtmContent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("utmTerm")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string UtmTerm { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flags")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Flags { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorMessage")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ErrorMessage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entryRevalidateSeconds")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EntryRevalidateSeconds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DeploymentId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pathType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PathType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pathTypeVariant")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PathTypeVariant { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestHostname")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RequestHostname { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestResolvedIp")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RequestResolvedIp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestMethod")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RequestMethod { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestExtension")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RequestExtension { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RequestId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestApi")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RequestApi { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("referrerUrl")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReferrerUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serverActionName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ServerActionName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("httpStatus")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string HttpStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorCode")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ErrorCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Source { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EdgeType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Reason { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeNetworkRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EdgeNetworkRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FunctionRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("imageTransformationRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ImageTransformationRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dataCacheRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DataCacheRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cause")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Cause { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("runtime")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Runtime { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Provider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isrCacheRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsrCacheRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isrAction")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsrAction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheResult")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CacheResult { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheOperation")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CacheOperation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheHostname")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CacheHostname { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cachePath")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CachePath { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheHitState")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CacheHitState { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheHitLevel")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CacheHitLevel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheApi")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CacheApi { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheReason")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CacheReason { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pprState")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PprState { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientIp")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ClientIp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientIpCountry")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ClientIpCountry { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientUserAgent")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ClientUserAgent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("httpAccept")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string HttpAccept { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientJa4Digest")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ClientJa4Digest { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("asnId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AsnId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("asnName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AsnName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("botName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BotName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("botCategory")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BotCategory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("botCategoryLegacy")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BotCategoryLegacy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("botVerified")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BotVerified { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("botCheckResult")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BotCheckResult { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deepAnalysisCheck")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string DeepAnalysisCheck { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("wafAction")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string WafAction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("wafRuleId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string WafRuleId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ruleCategory")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RuleCategory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("skewProtection")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SkewProtection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionStartType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FunctionStartType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionDispatcher")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FunctionDispatcher { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isAdditionalRequest")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsAdditionalRequest { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("originHostname")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OriginHostname { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("originPath")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OriginPath { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("originRoute")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OriginRoute { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fetchType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FetchType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fetchIndex")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FetchIndex { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("imageSource")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ImageSource { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceImage")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SourceImage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceImagePathname")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SourceImagePathname { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceImageHostname")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SourceImageHostname { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceImageHash")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SourceImageHash { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("optimizedQuality")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OptimizedQuality { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("optimizedWidthPixels")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OptimizedWidthPixels { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("optimizedFormatMimeType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OptimizedFormatMimeType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vdcOperationOrigin")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VdcOperationOrigin { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entryName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EntryName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entryId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EntryId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entryItemId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EntryItemId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tagName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TagName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheTags")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CacheTags { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("storeId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string StoreId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("storeName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string StoreName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blobOperationType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BlobOperationType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blobOperationLevel")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BlobOperationLevel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("visitorId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VisitorId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eventName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EventName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attributionTarget")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AttributionTarget { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attributionEventName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AttributionEventName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metricName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MetricName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attributes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Attributes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flagKey")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FlagKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flagVariant")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FlagVariant { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flagEvaluationReason")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FlagEvaluationReason { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flagClientName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FlagClientName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sdkKeyId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SdkKeyId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sdkKeyEnvironment")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SdkKeyEnvironment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reportingProjectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReportingProjectId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reportingProjectName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReportingProjectName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eventData")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EventData { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("middlewareAction")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MiddlewareAction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("middlewareActionTarget")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MiddlewareActionTarget { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiModel")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AiModel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayModelId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AiGatewayModelId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiProvider")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AiProvider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiModelType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AiModelType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("servedSpeed")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ServedSpeed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("virtualModelSlug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VirtualModelSlug { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("virtualModelKind")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VirtualModelKind { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inferenceEndpointSlug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string InferenceEndpointSlug { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inferenceScope")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string InferenceScope { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inferenceGeoRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string InferenceGeoRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inferenceProviderRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string InferenceProviderRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestedInferenceRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RequestedInferenceRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("costCurrency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CostCurrency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("marketCostCurrency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MarketCostCurrency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cachedInputTokensCurrency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CachedInputTokensCurrency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheCreationInputTokensCurrency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CacheCreationInputTokensCurrency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheCreation1hInputTokensCurrency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CacheCreation1hInputTokensCurrency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("surchargeCostCurrency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SurchargeCostCurrency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gatewayCostCurrency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string GatewayCostCurrency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string KeyId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string KeyName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("authMethod")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AuthMethod { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AppName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("codingAgent")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CodingAgent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isByok")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsByok { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("spendAttribution")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SpendAttribution { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isPrivateModel")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsPrivateModel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isRequestZdr")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsRequestZdr { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hipaaRequested")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string HipaaRequested { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("quotaRequested")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string QuotaRequested { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("quotaEntityId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string QuotaEntityId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("quotaEntityType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string QuotaEntityType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("videoResolution")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VideoResolution { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("videoAspectRatio")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VideoAspectRatio { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("piiRedactionApplied")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PiiRedactionApplied { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("moderationApplied")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ModerationApplied { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("queueName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string QueueName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("consumerGroup")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ConsumerGroup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("messageId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MessageId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eventType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EventType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notificationUrl")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string NotificationUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sandboxSessionId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SandboxSessionId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sandboxName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SandboxName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflowRunId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string WorkflowRunId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflowName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string WorkflowName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflowStatus")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string WorkflowStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stepRunId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string StepRunId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflowStepName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string WorkflowStepName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflowEventType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string WorkflowEventType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("region")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Region { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("specVersion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SpecVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contentType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ContentType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rewriteDestinationHostname")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RewriteDestinationHostname { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalRewriteTargetHost")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ExternalRewriteTargetHost { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalRewriteTargetPath")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ExternalRewriteTargetPath { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("commitSha")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CommitSha { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reviewConclusion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReviewConclusion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pullRequestNumber")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PullRequestNumber { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repositoryName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RepositoryName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repositoryOwner")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RepositoryOwner { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reviewStatus")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReviewStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pullRequestState")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PullRequestState { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("triggeringTag")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TriggeringTag { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("redirectLocation")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RedirectLocation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontendsResponseReason")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MicrofrontendsResponseReason { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontendsMatchedPath")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MicrofrontendsMatchedPath { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontendsDefaultAppDeploymentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MicrofrontendsDefaultAppDeploymentId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontendsDefaultAppProjectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MicrofrontendsDefaultAppProjectId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("service")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Service { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isPrefetchRequest")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsPrefetchRequest { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("spendReportGroupBy")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SpendReportGroupBy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("spendReportDatePart")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SpendReportDatePart { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptCanonicalSlug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptCanonicalSlug { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptCredentialType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptCredentialType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptSuccess")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptSuccess { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptStatusCode")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptStatusCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptTimeout")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptTimeout { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptIsFinal")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptIsFinal { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptNumber")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptNumber { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptTotalInRequest")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptTotalInRequest { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("generationId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string GenerationId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sessionId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SessionId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contentCaptureStatus")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ContentCaptureStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contentCaptureInputs")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ContentCaptureInputs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contentCaptureOutputs")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ContentCaptureOutputs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transcriptStatus")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TranscriptStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transcriptInputs")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TranscriptInputs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transcriptOutputs")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TranscriptOutputs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptError")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptError { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptSafetyIdentifier")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptSafetyIdentifier { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptDevSafetyIdentifier")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptDevSafetyIdentifier { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerAttemptModelIndex")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderAttemptModelIndex { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("toolCallType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ToolCallType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("toolCallProvider")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ToolCallProvider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("toolCallSuccess")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ToolCallSuccess { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("toolCallErrorType")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ToolCallErrorType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("toolCallStatusCode")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ToolCallStatusCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environmentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EnvironmentId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billableRegion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BillableRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("direction")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Direction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("networkTenancy")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string NetworkTenancy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trafficSource")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TrafficSource { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("networkId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string NetworkId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("privatelinkEndpointId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PrivatelinkEndpointId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("privatelinkDnsName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PrivatelinkDnsName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("privatelinkIpAddress")]
         [global::System.Text.Json.Serialization.JsonRequired]

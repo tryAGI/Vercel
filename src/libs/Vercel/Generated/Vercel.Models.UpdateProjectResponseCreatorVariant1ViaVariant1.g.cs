@@ -9,14 +9,14 @@ namespace Vercel
     public sealed partial class UpdateProjectResponseCreatorVariant1ViaVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectResponseCreatorVariant1ViaVariant1TypeJsonConverter))]
         public global::Vercel.UpdateProjectResponseCreatorVariant1ViaVariant1Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         [global::System.Text.Json.Serialization.JsonRequired]

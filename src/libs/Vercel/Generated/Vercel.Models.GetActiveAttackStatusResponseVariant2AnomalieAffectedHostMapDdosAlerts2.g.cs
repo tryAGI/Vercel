@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapDdosAlerts2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("atMinute")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AtMinute { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("totalReqs")]
         [global::System.Text.Json.Serialization.JsonRequired]

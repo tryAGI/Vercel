@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateProjectCheckResponseRequires
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildReady,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateStorageStoresBlobResponseStoreProjectFilter
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("git")]
         public global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGit? Git { get; set; }

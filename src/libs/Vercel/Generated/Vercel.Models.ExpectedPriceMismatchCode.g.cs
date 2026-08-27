@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ExpectedPriceMismatchCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpectedPriceMismatch,
     }

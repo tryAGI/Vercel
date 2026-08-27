@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SearchRepoResponseVariant2ErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InstallationNotFound,
     }

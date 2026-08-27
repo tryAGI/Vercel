@@ -9,15 +9,15 @@ namespace Vercel
     public enum CreateDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Basic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enhanced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standard,
     }

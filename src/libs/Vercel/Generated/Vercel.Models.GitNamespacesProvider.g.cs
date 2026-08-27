@@ -4,28 +4,28 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GitNamespacesProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GithubCustomHost,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GithubLimited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
     }

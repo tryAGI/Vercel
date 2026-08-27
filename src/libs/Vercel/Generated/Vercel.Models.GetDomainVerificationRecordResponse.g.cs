@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetDomainVerificationRecordResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("txtRecord")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TxtRecord { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("verificationDomain")]
         [global::System.Text.Json.Serialization.JsonRequired]

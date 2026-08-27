@@ -10,15 +10,15 @@ namespace Vercel
     public enum CreateLogDrainResponseDeliveryFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Json,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ndjson,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Protobuf,
     }

@@ -9,15 +9,15 @@ namespace Vercel
     public enum GetProjectsResponseVariant3ProjectCustomEnvironmentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Development,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

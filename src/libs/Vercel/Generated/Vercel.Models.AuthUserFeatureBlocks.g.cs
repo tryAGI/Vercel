@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class AuthUserFeatureBlocks
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("webAnalytics")]
         public global::Vercel.AuthUserFeatureBlocksWebAnalytics? WebAnalytics { get; set; }

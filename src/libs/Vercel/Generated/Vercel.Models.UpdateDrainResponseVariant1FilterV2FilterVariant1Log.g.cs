@@ -4,18 +4,18 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateDrainResponseVariant1FilterV2FilterVariant1Log
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sources")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateDrainResponseVariant1FilterV2FilterVariant1LogSource>? Sources { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("legacy_excludeCachedStaticAssetLogs")]
         public bool? LegacyExcludeCachedStaticAssetLogs { get; set; }

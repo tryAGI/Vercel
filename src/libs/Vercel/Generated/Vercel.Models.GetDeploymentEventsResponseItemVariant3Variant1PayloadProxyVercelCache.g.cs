@@ -4,32 +4,32 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentEventsResponseItemVariant3Variant1PayloadProxyVercelCache
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bypass,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Miss,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prerender,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Revalidated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stale,
     }

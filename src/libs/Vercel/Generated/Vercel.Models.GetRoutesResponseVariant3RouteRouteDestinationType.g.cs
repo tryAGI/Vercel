@@ -9,7 +9,7 @@ namespace Vercel
     public enum GetRoutesResponseVariant3RouteRouteDestinationType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Service,
     }

@@ -9,20 +9,20 @@ namespace Vercel
     public sealed partial class CancelDeploymentResponseServiceVariant2Builder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("use")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Use { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("src")]
         public string? Src { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
         public global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfig? Config { get; set; }

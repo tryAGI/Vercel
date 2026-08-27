@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SubmitBillingDataRequestUsageItem
     {
@@ -26,7 +26,7 @@ namespace Vercel
         ///               - total: measured total value, such as Database size<br/>
         ///               - interval: usage during the period, such as i/o or number of queries.<br/>
         ///               - rate: rate of usage, such as queries per second.<br/>
-        ///             
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SubmitBillingDataRequestUsageItemTypeJsonConverter))]
@@ -77,7 +77,7 @@ namespace Vercel
         ///               - total: measured total value, such as Database size<br/>
         ///               - interval: usage during the period, such as i/o or number of queries.<br/>
         ///               - rate: rate of usage, such as queries per second.<br/>
-        ///             
+        ///
         /// </param>
         /// <param name="units">
         /// Metric units. Example: "GB"

@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListDeploymentAliasesResponseAliaseProtectionBypassVariant2Access
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Granted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Requested,
     }

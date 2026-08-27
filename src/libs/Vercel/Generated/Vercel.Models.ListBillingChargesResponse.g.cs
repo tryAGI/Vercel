@@ -112,21 +112,21 @@ namespace Vercel
         public required global::Vercel.ListBillingChargesResponsePricingCategory PricingCategory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("PricingCurrency")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListBillingChargesResponsePricingCurrencyJsonConverter))]
         public global::Vercel.ListBillingChargesResponsePricingCurrency PricingCurrency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("PricingQuantity")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double PricingQuantity { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("PricingUnit")]
         [global::System.Text.Json.Serialization.JsonRequired]

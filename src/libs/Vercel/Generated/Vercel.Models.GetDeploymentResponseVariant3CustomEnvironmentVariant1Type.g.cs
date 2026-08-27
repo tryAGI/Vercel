@@ -9,15 +9,15 @@ namespace Vercel
     public enum GetDeploymentResponseVariant3CustomEnvironmentVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Development,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

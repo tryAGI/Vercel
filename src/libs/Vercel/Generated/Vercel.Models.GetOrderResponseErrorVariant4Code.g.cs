@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseErrorVariant4Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnexpectedError,
     }

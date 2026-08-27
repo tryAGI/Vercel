@@ -9,7 +9,7 @@ namespace Vercel
     public enum ExchangeSsoTokenRequestVariant1GrantType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthorizationCode,
     }

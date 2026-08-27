@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateKmsIssuerPolicyRequestKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGrant,
     }

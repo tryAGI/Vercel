@@ -4,56 +4,56 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConfigurationProductsResponseProductPrimaryProtocol
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Authentication,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Checks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experimentation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogDrain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Messaging,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Observability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Storage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TraceDrain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Video,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workflow,
     }

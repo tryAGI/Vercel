@@ -9,15 +9,15 @@ namespace Vercel
     public enum VcrImageListItemKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Attestation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Index,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manifest,
     }

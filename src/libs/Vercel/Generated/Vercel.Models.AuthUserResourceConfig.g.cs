@@ -11,14 +11,14 @@ namespace Vercel
         /// <summary>
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nodeType")]
-        public string? NodeType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("concurrentBuilds")]
+        public double? ConcurrentBuilds { get; set; }
 
         /// <summary>
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("concurrentBuilds")]
-        public double? ConcurrentBuilds { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("nodeType")]
+        public string? NodeType { get; set; }
 
         /// <summary>
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
@@ -179,10 +179,10 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="AuthUserResourceConfig" /> class.
         /// </summary>
-        /// <param name="nodeType">
+        /// <param name="concurrentBuilds">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
-        /// <param name="concurrentBuilds">
+        /// <param name="nodeType">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
         /// <param name="elasticConcurrencyEnabled">
@@ -264,8 +264,8 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthUserResourceConfig(
-            string? nodeType,
             double? concurrentBuilds,
+            string? nodeType,
             bool? elasticConcurrencyEnabled,
             global::Vercel.AuthUserResourceConfigBuildEntitlements? buildEntitlements,
             global::Vercel.AuthUserResourceConfigBuildQueue? buildQueue,
@@ -292,8 +292,8 @@ namespace Vercel
             global::Vercel.AuthUserResourceConfigSecurity? security,
             double? bulkRedirectsFreeLimitOverride)
         {
-            this.NodeType = nodeType;
             this.ConcurrentBuilds = concurrentBuilds;
+            this.NodeType = nodeType;
             this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
             this.BuildEntitlements = buildEntitlements;
             this.BuildQueue = buildQueue;

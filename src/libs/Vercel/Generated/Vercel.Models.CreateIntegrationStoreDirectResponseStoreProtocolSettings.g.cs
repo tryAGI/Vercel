@@ -4,18 +4,18 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateIntegrationStoreDirectResponseStoreProtocolSettings
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experimentation")]
         public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation? Experimentation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("authentication")]
         public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication? Authentication { get; set; }

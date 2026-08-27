@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AcceptProjectTransferRequestRequestAcceptedPolicies2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eula")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime Eula { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("privacy")]
         [global::System.Text.Json.Serialization.JsonRequired]

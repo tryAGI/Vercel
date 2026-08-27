@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetMicrofrontendsInGroupResponseProjectEnvItemVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Config,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Secret,
     }

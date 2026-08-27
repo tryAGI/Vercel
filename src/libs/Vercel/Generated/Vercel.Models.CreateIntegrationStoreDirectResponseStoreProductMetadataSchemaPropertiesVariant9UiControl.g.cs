@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant9UiControl
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MultiVercelRegion,
     }

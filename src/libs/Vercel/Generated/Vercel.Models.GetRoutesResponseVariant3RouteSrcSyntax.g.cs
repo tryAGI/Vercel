@@ -9,15 +9,15 @@ namespace Vercel
     public enum GetRoutesResponseVariant3RouteSrcSyntax
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Equals,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PathToRegexp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Regex,
     }

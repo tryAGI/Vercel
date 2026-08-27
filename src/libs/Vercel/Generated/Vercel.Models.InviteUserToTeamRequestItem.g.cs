@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InviteUserToTeamRequestItem
     {
@@ -28,7 +28,7 @@ namespace Vercel
         public global::Vercel.InviteUserToTeamRequestItemRole? Role { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         public global::System.Collections.Generic.IList<global::Vercel.InviteUserToTeamRequestItemProject>? Projects { get; set; }

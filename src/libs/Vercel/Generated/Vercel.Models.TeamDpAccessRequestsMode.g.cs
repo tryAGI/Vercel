@@ -9,15 +9,15 @@ namespace Vercel
     public enum TeamDpAccessRequestsMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EmailDomain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

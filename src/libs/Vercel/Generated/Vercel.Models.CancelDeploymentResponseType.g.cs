@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lambdas,
     }

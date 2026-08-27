@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experimentation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flags,
     }

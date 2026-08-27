@@ -9,19 +9,19 @@ namespace Vercel
     public enum AddRouteRequestPositionPlacement
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         After,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Before,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         End,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Start,
     }

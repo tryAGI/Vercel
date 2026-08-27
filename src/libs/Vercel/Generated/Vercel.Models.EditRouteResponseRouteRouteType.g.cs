@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EditRouteResponseRouteRouteType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Redirect,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rewrite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SetStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transform,
     }

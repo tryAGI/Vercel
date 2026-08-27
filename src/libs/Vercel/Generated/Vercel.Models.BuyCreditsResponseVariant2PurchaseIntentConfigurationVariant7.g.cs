@@ -16,14 +16,14 @@ namespace Vercel
         public required global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Options Options { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Output Output { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7TypeJsonConverter))]

@@ -9,23 +9,23 @@ namespace Vercel
     public enum AuthTokenScopeVariant1SudoOrigin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EmailOtp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Otp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RecoveryCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Totp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webauthn,
     }

@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PatchEdgeConfigItemsRequestItemEnumOperation2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Update,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Upsert,
     }

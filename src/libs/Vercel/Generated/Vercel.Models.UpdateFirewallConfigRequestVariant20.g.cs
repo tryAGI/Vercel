@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// Update a managed rule group
+    /// Update a managed ruleset
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant20
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant20IdJsonConverter))]
@@ -24,11 +24,11 @@ namespace Vercel
         public required global::Vercel.UpdateFirewallConfigRequestVariant20Id Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateFirewallConfigRequestVariant20Value2> Value { get; set; }
+        public required global::Vercel.UpdateFirewallConfigRequestVariant20Value Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,7 +48,7 @@ namespace Vercel
         public UpdateFirewallConfigRequestVariant20(
             string action,
             global::Vercel.UpdateFirewallConfigRequestVariant20Id id,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateFirewallConfigRequestVariant20Value2> value)
+            global::Vercel.UpdateFirewallConfigRequestVariant20Value value)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
             this.Id = id;

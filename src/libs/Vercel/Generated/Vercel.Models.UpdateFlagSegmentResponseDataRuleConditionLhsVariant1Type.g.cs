@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFlagSegmentResponseDataRuleConditionLhsVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Segment,
     }

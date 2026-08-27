@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateNetworkRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("awsAvailabilityZoneIds")]
         public global::System.Collections.Generic.IList<string>? AwsAvailabilityZoneIds { get; set; }

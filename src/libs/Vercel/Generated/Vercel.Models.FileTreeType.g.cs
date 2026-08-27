@@ -10,27 +10,27 @@ namespace Vercel
     public enum FileTreeType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Directory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         File,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Invalid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lambda,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Middleware,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Symlink,
     }

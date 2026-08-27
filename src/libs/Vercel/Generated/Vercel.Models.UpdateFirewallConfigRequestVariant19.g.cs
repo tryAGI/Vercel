@@ -4,31 +4,29 @@
 namespace Vercel
 {
     /// <summary>
-    /// Update a managed ruleset
+    /// Remove an IP Blocking rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant19
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant19IdJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateFirewallConfigRequestVariant19Id Id { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateFirewallConfigRequestVariant19Value Value { get; set; }
+        public string? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,12 +45,12 @@ namespace Vercel
 #endif
         public UpdateFirewallConfigRequestVariant19(
             string action,
-            global::Vercel.UpdateFirewallConfigRequestVariant19Id id,
-            global::Vercel.UpdateFirewallConfigRequestVariant19Value value)
+            string id,
+            string? value)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
-            this.Id = id;
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Value = value;
         }
 
         /// <summary>

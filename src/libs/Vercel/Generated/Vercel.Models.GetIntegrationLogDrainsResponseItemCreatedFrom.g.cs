@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetIntegrationLogDrainsResponseItemCreatedFrom
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfServed,
     }

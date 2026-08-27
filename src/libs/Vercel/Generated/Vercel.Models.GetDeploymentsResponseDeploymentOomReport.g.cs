@@ -10,7 +10,7 @@ namespace Vercel
     public enum GetDeploymentsResponseDeploymentOomReport
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OutOfMemory,
     }

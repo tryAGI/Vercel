@@ -10,15 +10,15 @@ namespace Vercel
     public enum ClaimDomainOwnershipResponseDomainServiceType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Na,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZeitWorld,
     }

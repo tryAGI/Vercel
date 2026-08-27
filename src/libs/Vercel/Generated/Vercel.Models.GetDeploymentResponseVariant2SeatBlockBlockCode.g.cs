@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetDeploymentResponseVariant2SeatBlockBlockCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommitAuthorRequired,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamAccessRequired,
     }

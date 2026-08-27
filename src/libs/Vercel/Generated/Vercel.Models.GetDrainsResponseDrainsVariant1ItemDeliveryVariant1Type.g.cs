@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDrainsResponseDrainsVariant1ItemDeliveryVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Http,
     }

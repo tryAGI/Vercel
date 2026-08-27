@@ -9,7 +9,7 @@ namespace Vercel
     public enum AiGatewayVirtualModelConfigSpeed
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fast,
     }

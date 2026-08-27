@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetBulkAvailabilityResponseResult
     {
@@ -16,7 +16,7 @@ namespace Vercel
         public required string Domain { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("available")]
         [global::System.Text.Json.Serialization.JsonRequired]

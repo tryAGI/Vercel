@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BuySingleDomainResponse
     {
@@ -16,7 +16,7 @@ namespace Vercel
         public required string OrderId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("_links")]
         [global::System.Text.Json.Serialization.JsonRequired]

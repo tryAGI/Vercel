@@ -4,32 +4,32 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFirewallConfigRequestVariant20Id
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiBots,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BotFilter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BotProtection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Owasp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TrafficSources,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelRuleset,
     }

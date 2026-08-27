@@ -4,40 +4,40 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetProjectsResponseVariant1ItemSecurityManagedRules
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vercel_ruleset")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetProjectsResponseVariant1ItemSecurityManagedRulesVercelRuleset VercelRuleset { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("traffic_sources")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetProjectsResponseVariant1ItemSecurityManagedRulesTrafficSources TrafficSources { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bot_filter")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetProjectsResponseVariant1ItemSecurityManagedRulesBotFilter BotFilter { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ai_bots")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetProjectsResponseVariant1ItemSecurityManagedRulesAiBots AiBots { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("owasp")]
         [global::System.Text.Json.Serialization.JsonRequired]

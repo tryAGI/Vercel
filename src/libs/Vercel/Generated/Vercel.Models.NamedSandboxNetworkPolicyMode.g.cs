@@ -4,28 +4,28 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum NamedSandboxNetworkPolicyMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllowAll,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultAllow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultDeny,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DenyAll,
     }

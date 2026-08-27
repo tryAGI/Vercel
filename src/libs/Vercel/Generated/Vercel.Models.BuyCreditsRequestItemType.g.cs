@@ -9,7 +9,7 @@ namespace Vercel
     public enum BuyCreditsRequestItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Credits,
     }

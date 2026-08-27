@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetTeamMembersResponseEmailInviteCodeProjects2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Admin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDeveloper,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGuest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectViewer,
     }

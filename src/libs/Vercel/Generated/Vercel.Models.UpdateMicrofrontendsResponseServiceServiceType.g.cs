@@ -9,19 +9,19 @@ namespace Vercel
     public enum UpdateMicrofrontendsResponseServiceServiceType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cron,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Job,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Web,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Worker,
     }

@@ -10,95 +10,95 @@ namespace Vercel
     public enum UserEventEntitieType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Author,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BitbucketLogin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bold,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentHost,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentInspector,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DnsRecord,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfig,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvVarName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flag,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsSegment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FlagsSettings,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitLink,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GithubLogin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitlabLogin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HookName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Link,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScalingRules,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Store,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         System,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Target,
     }

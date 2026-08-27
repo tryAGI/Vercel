@@ -9,15 +9,15 @@ namespace Vercel
     public enum BuyCreditsRequestItemCreditType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Agent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gateway,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0,
     }

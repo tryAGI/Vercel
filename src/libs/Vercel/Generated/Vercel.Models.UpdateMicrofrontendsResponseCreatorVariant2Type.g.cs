@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateMicrofrontendsResponseCreatorVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
     }

@@ -10,15 +10,15 @@ namespace Vercel
     public enum CreateSharedEnvVariableResponseCreatedItemTargetItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Development,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

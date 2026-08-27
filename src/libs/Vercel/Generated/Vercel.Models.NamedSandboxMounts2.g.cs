@@ -9,14 +9,14 @@ namespace Vercel
     public sealed partial class NamedSandboxMounts2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("drive")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Drive { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.NamedSandboxMountsModeJsonConverter))]

@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class ContactVerified
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("verified")]
         [global::System.Text.Json.Serialization.JsonRequired]

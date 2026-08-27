@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetRoutesResponseVariant4RouteRouteTransformVariant2Op
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Set,
     }

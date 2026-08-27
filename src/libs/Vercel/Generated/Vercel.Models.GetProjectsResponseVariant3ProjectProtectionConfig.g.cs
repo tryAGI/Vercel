@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetProjectsResponseVariant3ProjectProtectionConfig
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sandboxUrls")]
         public global::Vercel.GetProjectsResponseVariant3ProjectProtectionConfigSandboxUrls? SandboxUrls { get; set; }

@@ -9,35 +9,35 @@ namespace Vercel
     public sealed partial class UpdateCheckRequestOutputMetrics
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("FCP")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateCheckRequestOutputMetricsFcp Fcp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("LCP")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateCheckRequestOutputMetricsLcp Lcp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("CLS")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateCheckRequestOutputMetricsCls Cls { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("TBT")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateCheckRequestOutputMetricsTbt Tbt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("virtualExperienceScore")]
         public global::Vercel.UpdateCheckRequestOutputMetricsVirtualExperienceScore? VirtualExperienceScore { get; set; }

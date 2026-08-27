@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetMemberResponseRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Admin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum VcrImageLayerVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Env,
     }

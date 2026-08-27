@@ -4,36 +4,36 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PutFirewallConfigResponseActiveManagedRules
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bot_protection")]
         public global::Vercel.PutFirewallConfigResponseActiveManagedRulesBotProtection? BotProtection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ai_bots")]
         public global::Vercel.PutFirewallConfigResponseActiveManagedRulesAiBots? AiBots { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("owasp")]
         public global::Vercel.PutFirewallConfigResponseActiveManagedRulesOwasp? Owasp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vercel_ruleset")]
         public global::Vercel.PutFirewallConfigResponseActiveManagedRulesVercelRuleset? VercelRuleset { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("traffic_sources")]
         public global::Vercel.PutFirewallConfigResponseActiveManagedRulesTrafficSources? TrafficSources { get; set; }

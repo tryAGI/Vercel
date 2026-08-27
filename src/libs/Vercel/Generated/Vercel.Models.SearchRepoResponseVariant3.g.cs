@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SearchRepoResponseVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitAccount")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.SearchRepoResponseVariant3GitAccount GitAccount { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repos")]
         [global::System.Text.Json.Serialization.JsonRequired]

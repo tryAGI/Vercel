@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateSandboxesV4RequestFailoverRegion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cdg1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cle1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iad1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sfo1,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateFlagResponseEnvironmentsRuleConditionRhsVariant4Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Regex,
     }

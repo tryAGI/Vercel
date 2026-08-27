@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectResponseTargetsType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lambdas,
     }

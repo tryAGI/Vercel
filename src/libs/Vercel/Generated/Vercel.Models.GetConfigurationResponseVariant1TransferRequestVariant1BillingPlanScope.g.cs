@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConfigurationResponseVariant1TransferRequestVariant1BillingPlanScope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Installation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Resource,
     }

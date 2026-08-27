@@ -9,15 +9,15 @@ namespace Vercel
     public enum GetMicrofrontendsInGroupResponseProjectLatestDeploymentBranchMatcherType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndsWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Equals,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartsWith,
     }

@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetProjectsStaticIpsEnabled
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x0,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1,
     }

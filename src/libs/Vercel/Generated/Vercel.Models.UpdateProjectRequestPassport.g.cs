@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class UpdateProjectRequestPassport
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectorId")]
         [global::System.Text.Json.Serialization.JsonRequired]

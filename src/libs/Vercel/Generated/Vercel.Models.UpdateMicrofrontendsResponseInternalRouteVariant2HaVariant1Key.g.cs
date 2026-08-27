@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateMicrofrontendsResponseInternalRouteVariant2HaVariant1Key
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         XVercelIpCountry,
     }

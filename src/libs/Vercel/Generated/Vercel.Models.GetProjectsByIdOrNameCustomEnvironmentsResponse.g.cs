@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetProjectsByIdOrNameCustomEnvironmentsResponse
     {
@@ -16,7 +16,7 @@ namespace Vercel
         public required global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseAccountLimit AccountLimit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AuthTokenScopeVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Team,
     }

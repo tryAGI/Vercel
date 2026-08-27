@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConfigurationsView
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Account,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Project,
     }

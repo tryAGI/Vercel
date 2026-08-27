@@ -4,88 +4,88 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateStorageStoresBlobResponseStoreRegion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Arn1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bom1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cdg1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cle1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cpt1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dub1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dxb1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fra1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gru1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hkg1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hnd1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iad1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icn1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kix1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lhr1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pdx1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sfo1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sin1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Syd1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Yul1,
     }

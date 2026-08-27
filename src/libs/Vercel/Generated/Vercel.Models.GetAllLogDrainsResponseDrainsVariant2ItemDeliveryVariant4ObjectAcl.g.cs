@@ -4,36 +4,36 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAcl
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthenticatedRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwsExecRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BucketOwnerFullControl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BucketOwnerRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublicRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublicReadWrite,
     }

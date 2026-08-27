@@ -40,208 +40,208 @@ namespace Vercel
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AccessGroupsClient AccessGroups { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AiGatewayClient AiGateway { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AliasesClient Aliases { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiAiGatewayClient ApiAiGateway { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArtifactsClient Artifacts { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AuthenticationClient Authentication { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BillingClient Billing { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BulkRedirectsClient BulkRedirects { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CertsClient Certs { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChecksV2Client ChecksV2 { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectClient Connect { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeploymentsClient Deployments { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DnsClient Dns { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DomainsClient Domains { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DomainsRegistrarClient DomainsRegistrar { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DrainsClient Drains { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EdgeCacheClient EdgeCache { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvironmentClient Environment { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FeatureFlagsClient FeatureFlags { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GlobalConfigClient GlobalConfig { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IntegrationsClient Integrations { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public KmsClient Kms { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogDrainsClient LogDrains { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogsClient Logs { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MarketplaceClient Marketplace { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MicrofrontendsClient Microfrontends { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NetworkingClient Networking { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ObservabilityClient Observability { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectMembersClient ProjectMembers { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectRoutesClient ProjectRoutes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectsClient Projects { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RollingReleaseClient RollingRelease { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SandboxesClient Sandboxes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SecurityClient Security { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StorageClient Storage { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TeamsClient Teams { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserClient User { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VcrClient Vcr { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebAnalyticsClient WebAnalytics { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhooksClient Webhooks { get; }
 

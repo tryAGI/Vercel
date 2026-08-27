@@ -9,11 +9,11 @@ namespace Vercel
     public enum ConnectConnectorCreateDataTypeApiKeySubjectType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

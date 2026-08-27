@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class Team
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connect")]
         public global::Vercel.TeamConnect? Connect { get; set; }
@@ -82,7 +82,7 @@ namespace Vercel
         public required string StagingPrefix { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
         public global::Vercel.TeamResourceConfig? ResourceConfig { get; set; }
@@ -104,7 +104,7 @@ namespace Vercel
         public bool? Platform { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("disableHardAutoBlocks")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>))]
@@ -188,7 +188,7 @@ namespace Vercel
         public global::Vercel.TeamDpAccessRequestsMode? DpAccessRequestsMode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ipBuckets")]
         public global::System.Collections.Generic.IList<global::Vercel.TeamIpBucket>? IpBuckets { get; set; }

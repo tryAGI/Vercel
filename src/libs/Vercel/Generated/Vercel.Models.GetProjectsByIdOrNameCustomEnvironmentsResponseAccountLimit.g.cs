@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class GetProjectsByIdOrNameCustomEnvironmentsResponseAccountLimit
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total")]
         [global::System.Text.Json.Serialization.JsonRequired]

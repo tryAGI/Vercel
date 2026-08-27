@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant1Action
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Blocked,
     }

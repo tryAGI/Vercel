@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PatchUrlProtectionBypassRequestVariant3OverrideScope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasProtectionOverride,
     }

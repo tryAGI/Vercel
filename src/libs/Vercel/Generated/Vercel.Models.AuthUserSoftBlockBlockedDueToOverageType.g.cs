@@ -4,164 +4,164 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AuthUserSoftBlockBlockedDueToOverageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnalyticsUsage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Artifacts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bandwidth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BlobDataTransfer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BlobTotalAdvancedRequests,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BlobTotalAvgSizeInBytes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BlobTotalGetResponseObjectSizeInBytes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BlobTotalSimpleRequests,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectDataTransfer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DataCacheRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DataCacheWrite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeConfigWrite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeFunctionExecutionUnits,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeMiddlewareInvocations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeRequest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeRequestAdditionalCpuDuration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ElasticConcurrencyBuildSlots,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FastDataTransfer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FastOriginTransfer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FluidCpuDuration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FluidDuration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionDuration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionInvocation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageOptimizationCacheRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageOptimizationCacheWrite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageOptimizationTransformation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogDrainsVolume,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MonitoringMetric,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ObservabilityEvent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OnDemandConcurrencyMinutes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RuntimeCacheRead,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RuntimeCacheWrite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ServerlessFunctionExecution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WafOwaspExcessBytes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WafOwaspRequests,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WafRateLimitRequest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebAnalyticsEvent,
     }

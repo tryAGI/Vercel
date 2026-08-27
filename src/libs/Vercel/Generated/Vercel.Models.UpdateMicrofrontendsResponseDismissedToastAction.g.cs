@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateMicrofrontendsResponseDismissedToastAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accept,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cancel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delete,
     }

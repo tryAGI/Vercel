@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateProjectCheckRequestSourceVariant3Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
     }

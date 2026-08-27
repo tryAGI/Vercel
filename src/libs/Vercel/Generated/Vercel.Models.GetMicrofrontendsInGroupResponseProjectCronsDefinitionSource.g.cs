@@ -9,7 +9,7 @@ namespace Vercel
     public enum GetMicrofrontendsInGroupResponseProjectCronsDefinitionSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Api,
     }

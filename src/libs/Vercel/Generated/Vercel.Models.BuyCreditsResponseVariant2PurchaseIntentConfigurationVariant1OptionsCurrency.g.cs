@@ -9,23 +9,23 @@ namespace Vercel
     public enum BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant1OptionsCurrency
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiCredits,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiGatewayCredits,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CopperTestUnits,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0UserCredits,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelAgentCredits,
     }

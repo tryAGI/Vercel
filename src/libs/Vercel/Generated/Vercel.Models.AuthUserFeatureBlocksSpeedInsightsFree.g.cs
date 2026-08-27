@@ -9,19 +9,19 @@ namespace Vercel
     public sealed partial class AuthUserFeatureBlocksSpeedInsightsFree
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blockedFrom")]
         public double? BlockedFrom { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blockedUntil")]
         public double? BlockedUntil { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blockReason")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserFeatureBlocksSpeedInsightsFreeBlockReasonJsonConverter))]
@@ -29,7 +29,7 @@ namespace Vercel
         public required global::Vercel.AuthUserFeatureBlocksSpeedInsightsFreeBlockReason BlockReason { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isCurrentlyBlocked")]
         [global::System.Text.Json.Serialization.JsonRequired]

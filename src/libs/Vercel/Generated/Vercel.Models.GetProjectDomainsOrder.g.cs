@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetProjectDomainsOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

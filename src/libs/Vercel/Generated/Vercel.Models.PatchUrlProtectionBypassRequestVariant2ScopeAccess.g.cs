@@ -9,11 +9,11 @@ namespace Vercel
     public enum PatchUrlProtectionBypassRequestVariant2ScopeAccess
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Denied,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Granted,
     }

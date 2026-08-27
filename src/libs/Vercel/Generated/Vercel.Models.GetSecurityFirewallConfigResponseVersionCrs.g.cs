@@ -4,82 +4,82 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetSecurityFirewallConfigResponseVersionCrs
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sd")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSd Sd { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ma")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsMa Ma { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lfi")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsLfi Lfi { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rfi")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsRfi Rfi { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rce")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsRce Rce { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("php")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsPhp Php { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gen")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsGen Gen { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xss")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsXss Xss { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sqli")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSqli Sqli { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sf")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSf Sf { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("java")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateFlagSegmentRequestDataRuleCondition
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lhs")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateFlagSegmentRequestDataRuleConditionLhsVariant1, global::Vercel.UpdateFlagSegmentRequestDataRuleConditionLhsVariant2>))]
@@ -17,7 +17,7 @@ namespace Vercel
         public required global::Vercel.AnyOf<global::Vercel.UpdateFlagSegmentRequestDataRuleConditionLhsVariant1, global::Vercel.UpdateFlagSegmentRequestDataRuleConditionLhsVariant2> Lhs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cmp")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFlagSegmentRequestDataRuleConditionCmpJsonConverter))]
@@ -25,14 +25,14 @@ namespace Vercel
         public required global::Vercel.UpdateFlagSegmentRequestDataRuleConditionCmp Cmp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rhs")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateFlagSegmentRequestDataRuleConditionRhsVariant1, global::Vercel.UpdateFlagSegmentRequestDataRuleConditionRhsVariant2, string, double?, bool?>))]
         public global::Vercel.AnyOf<global::Vercel.UpdateFlagSegmentRequestDataRuleConditionRhsVariant1, global::Vercel.UpdateFlagSegmentRequestDataRuleConditionRhsVariant2, string, double?, bool?>? Rhs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cmpOptions")]
         public global::Vercel.UpdateFlagSegmentRequestDataRuleConditionCmpOptions? CmpOptions { get; set; }

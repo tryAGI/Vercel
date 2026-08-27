@@ -9,7 +9,7 @@ namespace Vercel
     public enum GetProjectsResponseVariant3ProjectUsageStatusKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flat,
     }

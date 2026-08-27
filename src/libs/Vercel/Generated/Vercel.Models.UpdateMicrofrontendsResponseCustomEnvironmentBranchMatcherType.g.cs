@@ -9,15 +9,15 @@ namespace Vercel
     public enum UpdateMicrofrontendsResponseCustomEnvironmentBranchMatcherType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndsWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Equals,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartsWith,
     }

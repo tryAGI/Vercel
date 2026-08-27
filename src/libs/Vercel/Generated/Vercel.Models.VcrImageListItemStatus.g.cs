@@ -9,15 +9,15 @@ namespace Vercel
     public enum VcrImageListItemStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preparing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ready,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unoptimized,
     }

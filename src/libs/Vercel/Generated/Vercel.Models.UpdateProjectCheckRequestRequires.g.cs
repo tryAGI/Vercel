@@ -9,11 +9,11 @@ namespace Vercel
     public enum UpdateProjectCheckRequestRequires
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildReady,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentUrl,
     }

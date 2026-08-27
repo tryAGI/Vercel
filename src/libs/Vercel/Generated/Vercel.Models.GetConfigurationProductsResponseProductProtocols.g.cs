@@ -4,78 +4,78 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetConfigurationProductsResponseProductProtocols
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("storage")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsStorage? Storage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experimentation")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsExperimentation? Experimentation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ai")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsAi? Ai { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("authentication")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsAuthentication? Authentication { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("observability")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsObservability? Observability { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("video")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsVideo? Video { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflow")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsWorkflow? Workflow { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("checks")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsChecks? Checks { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("logDrain")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsLogDrain? LogDrain { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("traceDrain")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsTraceDrain? TraceDrain { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("messaging")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsMessaging? Messaging { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("other")]
         public global::Vercel.GetConfigurationProductsResponseProductProtocolsOther? Other { get; set; }

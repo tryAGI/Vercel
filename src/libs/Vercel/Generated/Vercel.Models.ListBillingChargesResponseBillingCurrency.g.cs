@@ -9,7 +9,7 @@ namespace Vercel
     public enum ListBillingChargesResponseBillingCurrency
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Usd,
     }

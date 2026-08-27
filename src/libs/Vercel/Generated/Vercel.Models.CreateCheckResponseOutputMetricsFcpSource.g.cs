@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateCheckResponseOutputMetricsFcpSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebVitals,
     }

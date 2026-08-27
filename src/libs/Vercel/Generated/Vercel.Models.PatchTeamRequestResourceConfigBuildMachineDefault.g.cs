@@ -10,7 +10,7 @@ namespace Vercel
     public enum PatchTeamRequestResourceConfigBuildMachineDefault
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Basic,
         /// <summary>

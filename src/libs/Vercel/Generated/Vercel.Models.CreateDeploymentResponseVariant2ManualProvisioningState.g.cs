@@ -9,15 +9,15 @@ namespace Vercel
     public enum CreateDeploymentResponseVariant2ManualProvisioningState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Complete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Timeout,
     }

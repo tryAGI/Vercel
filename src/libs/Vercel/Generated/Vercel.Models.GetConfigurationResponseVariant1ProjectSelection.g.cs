@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetConfigurationResponseVariant1ProjectSelection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Selected,
     }

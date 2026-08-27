@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateFlagResponseEnvironmentsPausedOutcomeType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Variant,
     }

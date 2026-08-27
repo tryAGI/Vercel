@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetDomainConfigStrict
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

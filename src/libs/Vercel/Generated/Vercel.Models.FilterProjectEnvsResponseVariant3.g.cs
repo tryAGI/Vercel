@@ -9,14 +9,14 @@ namespace Vercel
     public sealed partial class FilterProjectEnvsResponseVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("envs")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3Env> Envs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hiddenProductionEnvCount")]
         [global::System.Text.Json.Serialization.JsonRequired]

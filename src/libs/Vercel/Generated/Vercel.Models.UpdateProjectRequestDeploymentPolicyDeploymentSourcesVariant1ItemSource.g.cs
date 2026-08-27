@@ -4,32 +4,32 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectRequestDeploymentPolicyDeploymentSourcesVariant1ItemSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cli,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeployHook,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Git,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RestApi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0,
     }

@@ -4,28 +4,28 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetRuntimeLogsResponseSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delimiter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeFunction,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeMiddleware,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Request,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Serverless,
     }

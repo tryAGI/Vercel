@@ -4,36 +4,36 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SearchRepoResponseVariant4GitAccountProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CursorOrigin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GithubCustomHost,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GithubLimited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vercel,
     }

@@ -9,31 +9,31 @@ namespace Vercel
     public enum GetIntegrationResourcesResponseResourceStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Onboarding,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ready,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Resumed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Suspended,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Uninstalled,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetAliasResponseProtectionBypassVariant3Scope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AliasProtectionOverride,
     }

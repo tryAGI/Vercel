@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetDeploymentResponseVariant2ServiceVariant2RouteVariant1Destination
     {
@@ -16,7 +16,7 @@ namespace Vercel
         public global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RouteVariant1DestinationType? Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("service")]
         [global::System.Text.Json.Serialization.JsonRequired]

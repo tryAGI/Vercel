@@ -9,7 +9,7 @@ namespace Vercel
     public enum GetDeploymentResponseVariant2ServiceVariant1BuilderConfigMiddlewareRuntime
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nodejs,
     }

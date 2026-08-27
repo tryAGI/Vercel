@@ -11,19 +11,19 @@ namespace Vercel
     public enum CreateSandboxesV2RequestRuntime
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Node22,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Node24,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Node26,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Python313,
     }

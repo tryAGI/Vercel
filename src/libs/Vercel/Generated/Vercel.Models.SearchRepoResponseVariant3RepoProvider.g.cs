@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SearchRepoResponseVariant3RepoProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CursorOrigin,
     }

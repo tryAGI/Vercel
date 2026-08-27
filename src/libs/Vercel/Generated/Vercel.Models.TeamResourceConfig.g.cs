@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TeamResourceConfig
     {
@@ -63,7 +63,7 @@ namespace Vercel
         public double? ServerlessFunctionMaxMemorySize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildEntitlements")]
         public global::Vercel.TeamResourceConfigBuildEntitlements? BuildEntitlements { get; set; }

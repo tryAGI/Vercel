@@ -10,35 +10,35 @@ namespace Vercel
     public enum GetProjectMembersResponseVariant2MemberTeamRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Billing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Contributor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Developer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Member,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Owner,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Security,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Viewer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ViewerForPlus,
     }

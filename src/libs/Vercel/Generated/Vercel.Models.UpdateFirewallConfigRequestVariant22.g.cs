@@ -4,30 +4,29 @@
 namespace Vercel
 {
     /// <summary>
-    /// Update log headers configuration
+    /// Toggle bot ID
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant22
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         public string? Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>, string>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>, string> Value { get; set; }
+        public required bool Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,7 +45,7 @@ namespace Vercel
 #endif
         public UpdateFirewallConfigRequestVariant22(
             string action,
-            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>, string> value,
+            bool value,
             string? id)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));

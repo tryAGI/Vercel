@@ -9,11 +9,11 @@ namespace Vercel
     public enum EditProjectEnvResponseVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Config,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Secret,
     }

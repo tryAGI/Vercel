@@ -9,11 +9,11 @@ namespace Vercel
     public enum CreateObservabilityQueryRequestOrderDirection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class VcrRepositoryList
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repositories")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -10,19 +10,19 @@ namespace Vercel
     public enum ListSandboxesSortBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedAt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CurrentSnapshotId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StatusUpdatedAt,
     }

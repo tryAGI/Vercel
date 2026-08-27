@@ -9,28 +9,28 @@ namespace Vercel
     public sealed partial class UpdateDeploymentCheckRunResponseVariant2SourceVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subKind")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2SourceVariant1SubKindJsonConverter))]
         public global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant1SubKind SubKind { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2SourceVariant1OriginJsonConverter))]
         public global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant1Origin Origin { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("invocationId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string InvocationId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("jobDefinitionId")]
         [global::System.Text.Json.Serialization.JsonRequired]

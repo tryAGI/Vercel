@@ -4,29 +4,30 @@
 namespace Vercel
 {
     /// <summary>
-    /// Remove a custom rule
+    /// Update a custom rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant12
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        public string? Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateFirewallConfigRequestVariant12Value Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,11 +47,11 @@ namespace Vercel
         public UpdateFirewallConfigRequestVariant12(
             string action,
             string id,
-            string? value)
+            global::Vercel.UpdateFirewallConfigRequestVariant12Value value)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Value = value;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>

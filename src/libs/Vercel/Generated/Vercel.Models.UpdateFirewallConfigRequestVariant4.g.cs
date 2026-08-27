@@ -4,25 +4,26 @@
 namespace Vercel
 {
     /// <summary>
-    /// Add a named condition
+    /// Reorder a ruleset
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant4ActionJsonConverter))]
         public global::Vercel.UpdateFirewallConfigRequestVariant4Action Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         public object? Value { get; set; }
@@ -36,19 +37,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant4" /> class.
         /// </summary>
-        /// <param name="action"></param>
         /// <param name="id"></param>
+        /// <param name="action"></param>
         /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant4(
+            string id,
             global::Vercel.UpdateFirewallConfigRequestVariant4Action action,
-            string? id,
             object? value)
         {
             this.Action = action;
-            this.Id = id;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Value = value;
         }
 

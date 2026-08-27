@@ -10,19 +10,19 @@ namespace Vercel
     public enum UpdateProjectRequestSandboxRegion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cdg1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cle1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iad1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sfo1,
     }

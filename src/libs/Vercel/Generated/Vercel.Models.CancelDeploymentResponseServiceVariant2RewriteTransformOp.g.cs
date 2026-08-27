@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseServiceVariant2RewriteTransformOp
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Set,
     }

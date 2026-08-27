@@ -9,27 +9,27 @@ namespace Vercel
     public enum AiGatewayVirtualModelConfigSort
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cost,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Latency,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Price,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Throughput,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ttft,
     }

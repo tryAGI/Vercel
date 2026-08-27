@@ -10,15 +10,15 @@ namespace Vercel
     public enum CreateOrTransferDomainResponseDomainEchMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

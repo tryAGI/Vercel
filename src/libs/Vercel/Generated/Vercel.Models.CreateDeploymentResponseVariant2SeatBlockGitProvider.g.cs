@@ -9,15 +9,15 @@ namespace Vercel
     public enum CreateDeploymentResponseVariant2SeatBlockGitProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
     }

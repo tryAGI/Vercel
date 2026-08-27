@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class GetAuthUserResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AuthUser, global::Vercel.AuthUserLimited>))]

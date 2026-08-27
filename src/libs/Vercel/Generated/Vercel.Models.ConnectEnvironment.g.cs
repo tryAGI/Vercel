@@ -10,7 +10,7 @@ namespace Vercel
     public readonly partial struct ConnectEnvironment : global::System.IEquatable<ConnectEnvironment>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectEnvironmentEnum? Enum { get; init; }
@@ -19,7 +19,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
@@ -27,7 +27,7 @@ namespace Vercel
         public bool IsEnum => Enum != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEnum(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectEnvironmentEnum PickEnum() => IsEnum
             ? Enum!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? ConnectEnvironmentVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ConnectEnvironmentVariant2))]
@@ -64,7 +64,7 @@ namespace Vercel
         public bool IsConnectEnvironmentVariant2 => ConnectEnvironmentVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickConnectEnvironmentVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickConnectEnvironmentVariant2() => IsConnectEnvironmentVariant2
             ? ConnectEnvironmentVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ConnectEnvironmentVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectEnvironment(global::Vercel.ConnectEnvironmentEnum value) => new ConnectEnvironment((global::Vercel.ConnectEnvironmentEnum?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectEnvironmentEnum?(ConnectEnvironment @this) => @this.Enum;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectEnvironment(global::Vercel.ConnectEnvironmentEnum? value)
         {
@@ -101,22 +101,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectEnvironment FromEnum(global::Vercel.ConnectEnvironmentEnum? value) => new ConnectEnvironment(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectEnvironment(string value) => new ConnectEnvironment((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(ConnectEnvironment @this) => @this.ConnectEnvironmentVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectEnvironment(string? value)
         {
@@ -124,12 +124,12 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectEnvironment FromConnectEnvironmentVariant2(string? value) => new ConnectEnvironment(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectEnvironment(
             global::Vercel.ConnectEnvironmentEnum? @enum,
@@ -141,23 +141,23 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ConnectEnvironmentVariant2 as object ??
-            Enum as object 
+            Enum as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Enum?.ToValueString() ??
-            ConnectEnvironmentVariant2?.ToString() 
+            ConnectEnvironmentVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vercel.ConnectEnvironmentEnum?, TResult>? @enum = null,
@@ -190,7 +190,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vercel.ConnectEnvironmentEnum?>? @enum = null,
@@ -214,7 +214,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vercel.ConnectEnvironmentEnum?>? @enum = null,
@@ -237,7 +237,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ConnectEnvironment other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Vercel.ConnectEnvironmentEnum?>.Default.Equals(Enum, other.Enum) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(ConnectEnvironmentVariant2, other.ConnectEnvironmentVariant2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(ConnectEnvironmentVariant2, other.ConnectEnvironmentVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ConnectEnvironment obj1, ConnectEnvironment obj2)
         {
@@ -277,7 +277,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ConnectEnvironment obj1, ConnectEnvironment obj2)
         {
@@ -285,7 +285,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

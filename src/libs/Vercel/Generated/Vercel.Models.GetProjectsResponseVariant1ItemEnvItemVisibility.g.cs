@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetProjectsResponseVariant1ItemEnvItemVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Config,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Secret,
     }

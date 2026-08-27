@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubmitInvoiceRequestTestResult
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Notpaid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Overdue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Paid,
     }

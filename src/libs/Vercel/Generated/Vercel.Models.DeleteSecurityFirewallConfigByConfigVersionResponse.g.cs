@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DeleteSecurityFirewallConfigByConfigVersionResponse
     {

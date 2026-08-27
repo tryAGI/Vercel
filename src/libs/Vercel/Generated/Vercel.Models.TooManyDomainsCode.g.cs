@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TooManyDomainsCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TooManyDomains,
     }

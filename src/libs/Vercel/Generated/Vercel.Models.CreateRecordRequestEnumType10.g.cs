@@ -9,7 +9,7 @@ namespace Vercel
     public enum CreateRecordRequestEnumType10
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Https,
     }

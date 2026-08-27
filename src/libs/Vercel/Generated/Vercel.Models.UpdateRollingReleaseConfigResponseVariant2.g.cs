@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateRollingReleaseConfigResponseVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollingRelease")]
         public global::Vercel.UpdateRollingReleaseConfigResponseVariant2RollingRelease? RollingRelease { get; set; }

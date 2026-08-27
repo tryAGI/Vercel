@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentCheckRunResponseVariant2SourceVariant2SubKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelCiSentinel,
     }

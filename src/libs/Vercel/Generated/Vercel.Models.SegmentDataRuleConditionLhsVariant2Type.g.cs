@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SegmentDataRuleConditionLhsVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Entity,
     }

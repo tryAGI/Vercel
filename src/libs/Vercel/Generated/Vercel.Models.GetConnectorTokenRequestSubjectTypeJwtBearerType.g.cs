@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConnectorTokenRequestSubjectTypeJwtBearerType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         JwtBearer,
     }

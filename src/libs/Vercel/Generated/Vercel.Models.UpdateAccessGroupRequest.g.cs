@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateAccessGroupRequest
     {
@@ -17,7 +17,7 @@ namespace Vercel
         public string? Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateAccessGroupRequestProject>? Projects { get; set; }

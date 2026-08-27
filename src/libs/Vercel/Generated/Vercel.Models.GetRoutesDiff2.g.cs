@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetRoutesDiff2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Only,
     }

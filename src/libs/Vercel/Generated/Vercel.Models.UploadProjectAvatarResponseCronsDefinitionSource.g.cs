@@ -9,7 +9,7 @@ namespace Vercel
     public enum UploadProjectAvatarResponseCronsDefinitionSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Api,
     }

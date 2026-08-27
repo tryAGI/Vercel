@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseImagesFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageAvif,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageWebp,
     }

@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateResourceRequestBillingPlanType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prepayment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscription,
     }

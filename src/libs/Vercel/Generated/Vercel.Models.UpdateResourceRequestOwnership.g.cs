@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateResourceRequestOwnership
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Owned,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sandbox,
     }

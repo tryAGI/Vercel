@@ -9,15 +9,15 @@ namespace Vercel
     public enum TeamSamlDefaultRedirectUri
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Dev,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VercelCom,
     }

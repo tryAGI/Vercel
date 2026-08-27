@@ -10,15 +10,15 @@ namespace Vercel
     public enum NamedSandboxStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Running,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stopped,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stopping,
     }

@@ -9,23 +9,23 @@ namespace Vercel
     public enum UpdateProjectRequestTrustedIpsDeploymentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllExceptCustomDomains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProdDeploymentUrlsAndAllPreviews,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

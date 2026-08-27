@@ -9,11 +9,11 @@ namespace Vercel
     public enum AiGatewayVirtualModelConfigHa
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImplicitCaching,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vision,
     }

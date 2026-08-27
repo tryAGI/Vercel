@@ -9,11 +9,11 @@ namespace Vercel
     public enum FilterProjectEnvsResponseVariant3EnvVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Config,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Secret,
     }

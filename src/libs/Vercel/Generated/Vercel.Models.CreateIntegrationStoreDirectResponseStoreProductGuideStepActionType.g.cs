@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateIntegrationStoreDirectResponseStoreProductGuideStepActionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AddDrain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConfigureProjectConnections,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectToProject,
     }

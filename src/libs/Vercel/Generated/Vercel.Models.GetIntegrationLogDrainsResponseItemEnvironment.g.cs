@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetIntegrationLogDrainsResponseItemEnvironment
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

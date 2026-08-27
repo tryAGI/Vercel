@@ -4,56 +4,56 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentEventsResponseItemVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Command,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Delimiter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeploymentState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EdgeFunctionInvocation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Exit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fatal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Metric,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Middleware,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MiddlewareInvocation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Report,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stderr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stdout,
     }

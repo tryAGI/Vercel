@@ -9,27 +9,27 @@ namespace Vercel
     public enum CreateProjectRequestGitRepositoryType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CursorOrigin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GithubLimited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vercel,
     }

@@ -22,7 +22,7 @@ namespace Vercel
         public global::Vercel.GetMicrofrontendsConfigResponseConfigVersion? Version { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("applications")]
         [global::System.Text.Json.Serialization.JsonRequired]

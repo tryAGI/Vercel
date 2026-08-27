@@ -9,27 +9,27 @@ namespace Vercel
     public enum TeamEnableProductionFeedback
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultForce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Off,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OffForce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         On,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OnForce,
     }

@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseErrorVariant3Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PriceMismatch,
     }

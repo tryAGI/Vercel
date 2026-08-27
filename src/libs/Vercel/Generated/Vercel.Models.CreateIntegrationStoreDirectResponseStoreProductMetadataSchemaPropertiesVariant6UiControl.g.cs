@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant6UiControl
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RadioButton,
     }

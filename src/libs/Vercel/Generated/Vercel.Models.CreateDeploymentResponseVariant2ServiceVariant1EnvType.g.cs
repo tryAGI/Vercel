@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateDeploymentResponseVariant2ServiceVariant1EnvType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ServiceRef,
     }

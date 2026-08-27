@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateProjectRequestTrustedSourcesOidcProvider
     {
@@ -22,7 +22,7 @@ namespace Vercel
         public required global::Vercel.UpdateProjectRequestTrustedSourcesOidcProviderTo To { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("claims")]
         [global::System.Text.Json.Serialization.JsonRequired]

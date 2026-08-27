@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PatchTeamRequest
     {
@@ -54,7 +54,7 @@ namespace Vercel
         public bool? RegenerateInviteCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("saml")]
         public global::Vercel.PatchTeamRequestSaml? Saml { get; set; }
@@ -159,13 +159,13 @@ namespace Vercel
         public global::Vercel.PatchTeamRequestDefaultPassport? DefaultPassport { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultExpirationSettings")]
         public global::Vercel.PatchTeamRequestDefaultExpirationSettings? DefaultExpirationSettings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestDeploymentPolicy, string>))]
@@ -190,14 +190,14 @@ namespace Vercel
         public global::Vercel.PatchTeamRequestStrictPasswordProtectionSettings? StrictPasswordProtectionSettings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nsnbConfig")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestNsnbConfig, string>))]
         public global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>? NsnbConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultProjectJobs")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.PatchTeamRequestDefaultProjectJobs, string>))]

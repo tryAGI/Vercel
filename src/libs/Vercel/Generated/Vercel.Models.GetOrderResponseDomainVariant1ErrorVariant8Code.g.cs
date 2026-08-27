@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseDomainVariant1ErrorVariant8Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PriceChange,
     }

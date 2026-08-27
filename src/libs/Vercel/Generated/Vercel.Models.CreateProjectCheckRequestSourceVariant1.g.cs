@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateProjectCheckRequestSourceVariant1
     {
@@ -15,7 +15,7 @@ namespace Vercel
         public string? Kind { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalResourceId")]
         public string? ExternalResourceId { get; set; }

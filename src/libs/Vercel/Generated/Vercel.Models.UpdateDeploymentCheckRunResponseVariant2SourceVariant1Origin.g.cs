@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateDeploymentCheckRunResponseVariant2SourceVariant1Origin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Config,
     }

@@ -9,15 +9,15 @@ namespace Vercel
     public enum GetDeploymentResponseVariant3CustomEnvironmentVariant1BranchMatcherType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndsWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Equals,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartsWith,
     }

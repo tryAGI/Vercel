@@ -10,15 +10,15 @@ namespace Vercel
     public enum ListSharedEnvVariableResponseDataItemTargetItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Development,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
     }

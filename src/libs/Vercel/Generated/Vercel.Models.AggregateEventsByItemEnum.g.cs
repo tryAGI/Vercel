@@ -4,92 +4,92 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AggregateEventsByItemEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrowserName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Country,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Day,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeviceType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Environment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventData,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flags,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hour,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Month,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OsName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferrerHostname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequestPath,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Route,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtmCampaign,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtmContent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtmMedium,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtmSource,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UtmTerm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Week,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Year,
     }

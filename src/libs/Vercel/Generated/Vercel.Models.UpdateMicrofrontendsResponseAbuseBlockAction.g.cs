@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateMicrofrontendsResponseAbuseBlockAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Blocked,
     }

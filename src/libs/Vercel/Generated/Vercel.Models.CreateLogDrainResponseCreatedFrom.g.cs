@@ -10,11 +10,11 @@ namespace Vercel
     public enum CreateLogDrainResponseCreatedFrom
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfServed,
     }

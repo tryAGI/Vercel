@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RunSessionCommandResponseVariant1DataCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxStreamClosed,
     }

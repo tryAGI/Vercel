@@ -4,68 +4,68 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum VcrImageLayerVariant4Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Add,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Arg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cmd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Copy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Entrypoint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Expose,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Healthcheck,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Label,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Onbuild,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shell,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stopsignal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Volume,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workdir,
     }

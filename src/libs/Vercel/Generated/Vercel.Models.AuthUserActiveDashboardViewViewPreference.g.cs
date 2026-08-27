@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AuthUserActiveDashboardViewViewPreference
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cards,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         List,
     }

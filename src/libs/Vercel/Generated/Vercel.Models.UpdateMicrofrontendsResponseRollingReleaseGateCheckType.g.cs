@@ -9,7 +9,7 @@ namespace Vercel
     public enum UpdateMicrofrontendsResponseRollingReleaseGateCheckType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ErrorRate5xx,
     }

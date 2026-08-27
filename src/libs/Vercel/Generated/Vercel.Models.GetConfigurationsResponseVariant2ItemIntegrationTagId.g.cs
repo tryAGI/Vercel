@@ -4,120 +4,120 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConfigurationsResponseVariant2ItemIntegrationTagId
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagAgents,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagAnalytics,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagAuthentication,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCms,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCodeRepository,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCodeReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCodeSecurity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCodeTesting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagCommerce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagDatabases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagDevTools,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagExperimentation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagFlags,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagLogging,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagMessaging,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagMonitoring,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagObservability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagPayments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagPerformance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagProductivity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagSearching,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagSecurity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagSupportAgent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagTesting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagVideo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagWebAutomation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagWorkflow,
     }

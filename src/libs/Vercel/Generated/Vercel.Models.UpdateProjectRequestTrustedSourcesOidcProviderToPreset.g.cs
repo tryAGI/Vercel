@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateProjectRequestTrustedSourcesOidcProviderToPreset
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllCustom,
     }

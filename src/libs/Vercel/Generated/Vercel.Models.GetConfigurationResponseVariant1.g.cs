@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetConfigurationResponseVariant1
     {
@@ -19,14 +19,14 @@ namespace Vercel
         public required global::Vercel.GetConfigurationResponseVariant1ProjectSelection ProjectSelection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("notification")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetConfigurationResponseVariant1Notification Notification { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transferRequest")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant1, global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant2>))]
@@ -49,7 +49,7 @@ namespace Vercel
         public global::Vercel.GetConfigurationResponseVariant1Status? Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetConfigurationResponseVariant1TypeJsonConverter))]
@@ -144,7 +144,7 @@ namespace Vercel
         public required string OwnerId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("canConfigureOpenTelemetry")]
         public bool? CanConfigureOpenTelemetry { get; set; }
@@ -195,7 +195,7 @@ namespace Vercel
         public double? CustomerDeleteRequestedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("disabledReason")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetConfigurationResponseVariant1DisabledReasonJsonConverter))]

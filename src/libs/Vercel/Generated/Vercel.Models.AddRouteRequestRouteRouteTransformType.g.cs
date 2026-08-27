@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AddRouteRequestRouteRouteTransformType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequestHeaders,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequestQuery,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ResponseHeaders,
     }

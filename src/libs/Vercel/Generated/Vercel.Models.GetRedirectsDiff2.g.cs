@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetRedirectsDiff2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Only,
     }

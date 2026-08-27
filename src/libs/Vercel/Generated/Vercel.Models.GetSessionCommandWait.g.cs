@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetSessionCommandWait
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

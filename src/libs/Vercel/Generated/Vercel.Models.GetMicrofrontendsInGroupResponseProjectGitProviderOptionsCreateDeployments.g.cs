@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetMicrofrontendsInGroupResponseProjectGitProviderOptionsCreateDeployments
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

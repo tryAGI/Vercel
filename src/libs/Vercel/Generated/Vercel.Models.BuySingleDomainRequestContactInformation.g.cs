@@ -90,7 +90,7 @@ namespace Vercel
         public string? Fax { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("additional")]
         public object? Additional { get; set; }

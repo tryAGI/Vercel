@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class VcrImageDetail
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("layers")]
         [global::System.Text.Json.Serialization.JsonRequired]

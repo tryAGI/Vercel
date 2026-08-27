@@ -4,26 +4,25 @@
 namespace Vercel
 {
     /// <summary>
-    /// Update an IP Blocking rule
+    /// Add an IP Blocking rule
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant17
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public string? Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -39,18 +38,18 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateFirewallConfigRequestVariant17" /> class.
         /// </summary>
         /// <param name="action"></param>
-        /// <param name="id"></param>
         /// <param name="value"></param>
+        /// <param name="id"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFirewallConfigRequestVariant17(
             string action,
-            string id,
-            global::Vercel.UpdateFirewallConfigRequestVariant17Value value)
+            global::Vercel.UpdateFirewallConfigRequestVariant17Value value,
+            string? id)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Id = id;
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 

@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class GetProjectResponseIntegrationResource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalResourceId")]
         [global::System.Text.Json.Serialization.JsonRequired]

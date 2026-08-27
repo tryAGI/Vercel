@@ -10,7 +10,7 @@ namespace Vercel
     public readonly partial struct ConnectConnectorCreateData : global::System.IEquatable<ConnectConnectorCreateData>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypeOauth? TypeOauth { get; init; }
@@ -19,7 +19,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeOauth))]
@@ -27,7 +27,7 @@ namespace Vercel
         public bool IsTypeOauth => TypeOauth != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeOauth(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypeOauth PickTypeOauth() => IsTypeOauth
             ? TypeOauth!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeOauth' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypeApiKey? TypeApiKey { get; init; }
@@ -56,7 +56,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeApiKey))]
@@ -64,7 +64,7 @@ namespace Vercel
         public bool IsTypeApiKey => TypeApiKey != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeApiKey(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypeApiKey PickTypeApiKey() => IsTypeApiKey
             ? TypeApiKey!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeApiKey' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypeGithub? TypeGithub { get; init; }
@@ -93,7 +93,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeGithub))]
@@ -101,7 +101,7 @@ namespace Vercel
         public bool IsTypeGithub => TypeGithub != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeGithub(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypeGithub PickTypeGithub() => IsTypeGithub
             ? TypeGithub!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeGithub' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypeLinear? TypeLinear { get; init; }
@@ -130,7 +130,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeLinear))]
@@ -138,7 +138,7 @@ namespace Vercel
         public bool IsTypeLinear => TypeLinear != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeLinear(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypeLinear PickTypeLinear() => IsTypeLinear
             ? TypeLinear!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeLinear' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypeLinq? TypeLinq { get; init; }
@@ -167,7 +167,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeLinq))]
@@ -175,7 +175,7 @@ namespace Vercel
         public bool IsTypeLinq => TypeLinq != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeLinq(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypeLinq PickTypeLinq() => IsTypeLinq
             ? TypeLinq!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeLinq' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypeSalesforce? TypeSalesforce { get; init; }
@@ -204,7 +204,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeSalesforce))]
@@ -212,7 +212,7 @@ namespace Vercel
         public bool IsTypeSalesforce => TypeSalesforce != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeSalesforce(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypeSalesforce PickTypeSalesforce() => IsTypeSalesforce
             ? TypeSalesforce!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeSalesforce' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypeSendblue? TypeSendblue { get; init; }
@@ -241,7 +241,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeSendblue))]
@@ -249,7 +249,7 @@ namespace Vercel
         public bool IsTypeSendblue => TypeSendblue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeSendblue(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypeSendblue PickTypeSendblue() => IsTypeSendblue
             ? TypeSendblue!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeSendblue' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypeSlack? TypeSlack { get; init; }
@@ -278,7 +278,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeSlack))]
@@ -286,7 +286,7 @@ namespace Vercel
         public bool IsTypeSlack => TypeSlack != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeSlack(
 #if NET6_0_OR_GREATER
@@ -299,14 +299,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypeSlack PickTypeSlack() => IsTypeSlack
             ? TypeSlack!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeSlack' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypeSnowflake? TypeSnowflake { get; init; }
@@ -315,7 +315,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeSnowflake))]
@@ -323,7 +323,7 @@ namespace Vercel
         public bool IsTypeSnowflake => TypeSnowflake != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeSnowflake(
 #if NET6_0_OR_GREATER
@@ -336,14 +336,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypeSnowflake PickTypeSnowflake() => IsTypeSnowflake
             ? TypeSnowflake!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeSnowflake' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif? TypeSnowflakeWif { get; init; }
@@ -352,7 +352,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeSnowflakeWif))]
@@ -360,7 +360,7 @@ namespace Vercel
         public bool IsTypeSnowflakeWif => TypeSnowflakeWif != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeSnowflakeWif(
 #if NET6_0_OR_GREATER
@@ -373,14 +373,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif PickTypeSnowflakeWif() => IsTypeSnowflakeWif
             ? TypeSnowflakeWif!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeSnowflakeWif' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.ConnectConnectorCreateDataTypePhoton? TypePhoton { get; init; }
@@ -389,7 +389,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypePhoton))]
@@ -397,7 +397,7 @@ namespace Vercel
         public bool IsTypePhoton => TypePhoton != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypePhoton(
 #if NET6_0_OR_GREATER
@@ -410,14 +410,14 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vercel.ConnectConnectorCreateDataTypePhoton PickTypePhoton() => IsTypePhoton
             ? TypePhoton!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypePhoton' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? TypeOther { get; init; }
@@ -426,7 +426,7 @@ namespace Vercel
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TypeOther))]
@@ -434,7 +434,7 @@ namespace Vercel
         public bool IsTypeOther => TypeOther != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTypeOther(
 #if NET6_0_OR_GREATER
@@ -447,23 +447,23 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickTypeOther() => IsTypeOther
             ? TypeOther!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeOther' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeOauth value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypeOauth?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypeOauth?(ConnectConnectorCreateData @this) => @this.TypeOauth;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeOauth? value)
         {
@@ -471,22 +471,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypeOauth(global::Vercel.ConnectConnectorCreateDataTypeOauth? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeApiKey value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypeApiKey?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypeApiKey?(ConnectConnectorCreateData @this) => @this.TypeApiKey;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeApiKey? value)
         {
@@ -494,22 +494,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypeApiKey(global::Vercel.ConnectConnectorCreateDataTypeApiKey? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeGithub value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypeGithub?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypeGithub?(ConnectConnectorCreateData @this) => @this.TypeGithub;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeGithub? value)
         {
@@ -517,22 +517,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypeGithub(global::Vercel.ConnectConnectorCreateDataTypeGithub? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeLinear value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypeLinear?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypeLinear?(ConnectConnectorCreateData @this) => @this.TypeLinear;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeLinear? value)
         {
@@ -540,22 +540,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypeLinear(global::Vercel.ConnectConnectorCreateDataTypeLinear? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeLinq value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypeLinq?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypeLinq?(ConnectConnectorCreateData @this) => @this.TypeLinq;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeLinq? value)
         {
@@ -563,22 +563,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypeLinq(global::Vercel.ConnectConnectorCreateDataTypeLinq? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeSalesforce value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypeSalesforce?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypeSalesforce?(ConnectConnectorCreateData @this) => @this.TypeSalesforce;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeSalesforce? value)
         {
@@ -586,22 +586,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypeSalesforce(global::Vercel.ConnectConnectorCreateDataTypeSalesforce? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeSendblue value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypeSendblue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypeSendblue?(ConnectConnectorCreateData @this) => @this.TypeSendblue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeSendblue? value)
         {
@@ -609,22 +609,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypeSendblue(global::Vercel.ConnectConnectorCreateDataTypeSendblue? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeSlack value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypeSlack?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypeSlack?(ConnectConnectorCreateData @this) => @this.TypeSlack;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeSlack? value)
         {
@@ -632,22 +632,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypeSlack(global::Vercel.ConnectConnectorCreateDataTypeSlack? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeSnowflake value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypeSnowflake?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypeSnowflake?(ConnectConnectorCreateData @this) => @this.TypeSnowflake;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeSnowflake? value)
         {
@@ -655,22 +655,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypeSnowflake(global::Vercel.ConnectConnectorCreateDataTypeSnowflake? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif?(ConnectConnectorCreateData @this) => @this.TypeSnowflakeWif;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif? value)
         {
@@ -678,22 +678,22 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypeSnowflakeWif(global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypePhoton value) => new ConnectConnectorCreateData((global::Vercel.ConnectConnectorCreateDataTypePhoton?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vercel.ConnectConnectorCreateDataTypePhoton?(ConnectConnectorCreateData @this) => @this.TypePhoton;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(global::Vercel.ConnectConnectorCreateDataTypePhoton? value)
         {
@@ -701,12 +701,12 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ConnectConnectorCreateData FromTypePhoton(global::Vercel.ConnectConnectorCreateDataTypePhoton? value) => new ConnectConnectorCreateData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConnectConnectorCreateData(
             global::Vercel.ConnectConnectorCreateDataTypeOauth? typeOauth,
@@ -738,7 +738,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             TypeOther as object ??
@@ -752,11 +752,11 @@ namespace Vercel
             TypeLinear as object ??
             TypeGithub as object ??
             TypeApiKey as object ??
-            TypeOauth as object 
+            TypeOauth as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             TypeOauth?.ToString() ??
@@ -770,11 +770,11 @@ namespace Vercel
             TypeSnowflake?.ToString() ??
             TypeSnowflakeWif?.ToString() ??
             TypePhoton?.ToString() ??
-            TypeOther?.ToString() 
+            TypeOther?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -782,7 +782,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vercel.ConnectConnectorCreateDataTypeOauth, TResult>? typeOauth = null,
@@ -857,7 +857,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vercel.ConnectConnectorCreateDataTypeOauth>? typeOauth = null,
@@ -941,7 +941,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vercel.ConnectConnectorCreateDataTypeOauth>? typeOauth = null,
@@ -1014,7 +1014,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1055,7 +1055,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ConnectConnectorCreateData other)
         {
@@ -1071,12 +1071,12 @@ namespace Vercel
                 global::System.Collections.Generic.EqualityComparer<global::Vercel.ConnectConnectorCreateDataTypeSnowflake?>.Default.Equals(TypeSnowflake, other.TypeSnowflake) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif?>.Default.Equals(TypeSnowflakeWif, other.TypeSnowflakeWif) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vercel.ConnectConnectorCreateDataTypePhoton?>.Default.Equals(TypePhoton, other.TypePhoton) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(TypeOther, other.TypeOther) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(TypeOther, other.TypeOther)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ConnectConnectorCreateData obj1, ConnectConnectorCreateData obj2)
         {
@@ -1084,7 +1084,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ConnectConnectorCreateData obj1, ConnectConnectorCreateData obj2)
         {
@@ -1092,7 +1092,7 @@ namespace Vercel
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

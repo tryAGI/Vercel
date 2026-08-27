@@ -9,75 +9,75 @@ namespace Vercel
     public enum VcrImageLayerVariant1Operation
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Add,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Arg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cmd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Copy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Entrypoint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Env,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Expose,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         From,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Healthcheck,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Label,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Onbuild,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Run,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shell,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stopsignal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Volume,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workdir,
     }

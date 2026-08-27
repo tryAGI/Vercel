@@ -10,23 +10,23 @@ namespace Vercel
     public enum UpdateSessionNetworkPolicyRequestVariant1Mode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllowAll,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultAllow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultDeny,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DenyAll,
     }

@@ -9,11 +9,11 @@ namespace Vercel
     public enum DeleteKmsIssuerPolicyKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnexGrant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGrant,
     }

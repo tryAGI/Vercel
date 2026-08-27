@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseDomainVariant1ErrorVariant3Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClientTransferProhibited,
     }

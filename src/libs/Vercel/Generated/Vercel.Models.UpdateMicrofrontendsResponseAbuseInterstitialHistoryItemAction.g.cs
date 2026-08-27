@@ -4,24 +4,24 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateMicrofrontendsResponseAbuseInterstitialHistoryItemAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AddDeploymentInterstitial,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AddProjectInterstitial,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RemoveDeploymentInterstitial,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RemoveProjectInterstitial,
     }

@@ -9,13 +9,13 @@ namespace Vercel
     public sealed partial class UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemTo
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slugs")]
         public global::System.Collections.Generic.IList<string>? Slugs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preset")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItemToPresetJsonConverter))]

@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateRouteVersionsRequestAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Discard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Promote,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Restore,
     }

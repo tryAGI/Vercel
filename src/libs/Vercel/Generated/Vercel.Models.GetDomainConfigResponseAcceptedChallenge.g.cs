@@ -9,11 +9,11 @@ namespace Vercel
     public enum GetDomainConfigResponseAcceptedChallenge
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dns01,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Http01,
     }

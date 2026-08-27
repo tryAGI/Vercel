@@ -9,11 +9,11 @@ namespace Vercel
     public enum UploadProjectAvatarResponseTracingSamplingRuleDestination
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Internal,
     }

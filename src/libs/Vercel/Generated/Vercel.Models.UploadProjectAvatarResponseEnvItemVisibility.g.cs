@@ -9,11 +9,11 @@ namespace Vercel
     public enum UploadProjectAvatarResponseEnvItemVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Config,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Secret,
     }

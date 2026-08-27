@@ -9,39 +9,39 @@ namespace Vercel
     public enum GetInvoiceResponseState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Draft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Invoiced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Notpaid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Overdue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Paid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RefundRequested,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Refunded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scheduled,
     }

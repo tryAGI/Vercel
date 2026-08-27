@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateWebhookResponse
     {
@@ -16,7 +16,7 @@ namespace Vercel
         public required string Secret { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alertRuleIds")]
         public global::System.Collections.Generic.IList<string>? AlertRuleIds { get; set; }

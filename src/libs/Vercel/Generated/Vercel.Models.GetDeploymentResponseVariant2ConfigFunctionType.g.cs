@@ -4,16 +4,16 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetDeploymentResponseVariant2ConfigFunctionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fluid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standard,
     }

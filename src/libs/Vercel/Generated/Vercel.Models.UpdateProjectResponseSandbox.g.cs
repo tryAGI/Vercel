@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateProjectResponseSandbox
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("region")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectResponseSandboxRegionJsonConverter))]
         public global::Vercel.UpdateProjectResponseSandboxRegion? Region { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("failoverRegions")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseSandboxFailoverRegion>? FailoverRegions { get; set; }

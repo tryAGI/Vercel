@@ -4,25 +4,25 @@
 namespace Vercel
 {
     /// <summary>
-    /// Add a custom rule
+    /// Enable Firewall
     /// </summary>
     public sealed partial class UpdateFirewallConfigRequestVariant10
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFirewallConfigRequestVariant10ActionJsonConverter))]
         public global::Vercel.UpdateFirewallConfigRequestVariant10Action Action { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         public string? Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         public object? Value { get; set; }

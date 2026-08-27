@@ -9,31 +9,31 @@ namespace Vercel
     public enum GetConfigurationResponseVariant3Status
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Onboarding,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ready,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Resumed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Suspended,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Uninstalled,
     }

@@ -9,7 +9,7 @@ namespace Vercel
     public enum GetMicrofrontendsConfigResponseConfigVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1,
     }

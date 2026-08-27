@@ -9,11 +9,11 @@ namespace Vercel
     public enum UpdateMicrofrontendsResponseGitProviderOptionsCreateDeployments
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

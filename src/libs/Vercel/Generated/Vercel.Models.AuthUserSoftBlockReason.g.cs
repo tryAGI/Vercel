@@ -4,48 +4,48 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AuthUserSoftBlockReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BlockedForPlatformAbuse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainOwnerDeletionRequest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnterpriseTrialEnded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnterpriseUnpaidInvoice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExposureCapExceeded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FairUseLimitsExceeded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HobbyAllocationPaused,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionCanceled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionExpired,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnpaidInvoice,
     }

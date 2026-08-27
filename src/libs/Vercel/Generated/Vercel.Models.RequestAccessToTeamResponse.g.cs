@@ -4,56 +4,56 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RequestAccessToTeamResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamSlug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TeamSlug { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TeamName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confirmed")]
         public bool? Confirmed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("joinedFrom")]
         public global::Vercel.RequestAccessToTeamResponseJoinedFrom? JoinedFrom { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accessRequestedAt")]
         public double? AccessRequestedAt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("github")]
         public global::Vercel.RequestAccessToTeamResponseGithub? Github { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitlab")]
         public global::Vercel.RequestAccessToTeamResponseGitlab? Gitlab { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bitbucket")]
         public global::Vercel.RequestAccessToTeamResponseBitbucket? Bitbucket { get; set; }

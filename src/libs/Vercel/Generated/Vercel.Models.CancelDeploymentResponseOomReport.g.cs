@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CancelDeploymentResponseOomReport
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OutOfMemory,
     }

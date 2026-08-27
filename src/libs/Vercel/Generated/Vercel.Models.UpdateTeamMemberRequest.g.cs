@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateTeamMemberRequest
     {
@@ -34,13 +34,13 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.UpdateTeamMemberRequestTeamPermission>? TeamPermissions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateTeamMemberRequestProject>? Projects { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("joinedFrom")]
         public global::Vercel.UpdateTeamMemberRequestJoinedFrom? JoinedFrom { get; set; }

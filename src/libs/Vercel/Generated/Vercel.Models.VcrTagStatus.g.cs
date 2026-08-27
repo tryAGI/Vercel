@@ -9,15 +9,15 @@ namespace Vercel
     public enum VcrTagStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preparing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ready,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unoptimized,
     }

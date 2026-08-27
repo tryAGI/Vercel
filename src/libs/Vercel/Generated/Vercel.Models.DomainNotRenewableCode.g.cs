@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DomainNotRenewableCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DomainNotRenewable,
     }

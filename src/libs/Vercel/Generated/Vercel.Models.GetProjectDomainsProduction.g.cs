@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetProjectDomainsProduction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

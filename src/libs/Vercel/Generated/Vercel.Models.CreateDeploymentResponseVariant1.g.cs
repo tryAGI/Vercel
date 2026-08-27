@@ -9,13 +9,13 @@ namespace Vercel
     public sealed partial class CreateDeploymentResponseVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         public global::System.Collections.Generic.IList<string>? Alias { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasAssigned")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -58,19 +58,19 @@ namespace Vercel
         public global::Vercel.CreateDeploymentResponseVariant1AliasError? AliasError { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasWarning")]
         public global::Vercel.CreateDeploymentResponseVariant1AliasWarning? AliasWarning { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorCode")]
         public string? ErrorCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorMessage")]
         public string? ErrorMessage { get; set; }

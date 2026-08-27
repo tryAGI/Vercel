@@ -9,13 +9,13 @@ namespace Vercel
     public sealed partial class GetIntegrationResourceResponseProtocolSettings
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experimentation")]
         public global::Vercel.GetIntegrationResourceResponseProtocolSettingsExperimentation? Experimentation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("authentication")]
         public global::Vercel.GetIntegrationResourceResponseProtocolSettingsAuthentication? Authentication { get; set; }

@@ -10,15 +10,15 @@ namespace Vercel
     public enum ClaimDomainOwnershipResponseDomainEchMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

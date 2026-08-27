@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetProjectDomainsRedirects
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

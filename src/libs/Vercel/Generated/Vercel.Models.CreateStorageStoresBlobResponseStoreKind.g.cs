@@ -9,11 +9,11 @@ namespace Vercel
     public enum CreateStorageStoresBlobResponseStoreKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectDefault,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserCreated,
     }

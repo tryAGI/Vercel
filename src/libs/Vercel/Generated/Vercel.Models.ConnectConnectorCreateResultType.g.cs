@@ -9,59 +9,59 @@ namespace Vercel
     public enum ConnectConnectorCreateResultType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiKey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Discord,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linear,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MicrosoftEntra,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Oauth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Photon,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Salesforce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sendblue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slack,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Snowflake,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SnowflakeWif,
     }

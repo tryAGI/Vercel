@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetConnectorTokenRequestSubjectTypeTokenType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Token,
     }

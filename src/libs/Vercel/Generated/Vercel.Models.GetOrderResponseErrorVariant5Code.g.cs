@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetOrderResponseErrorVariant5Code
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClaimsRequired,
     }

@@ -10,11 +10,11 @@ namespace Vercel
     public enum GetProjectsGitForkProtection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x0,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1,
     }

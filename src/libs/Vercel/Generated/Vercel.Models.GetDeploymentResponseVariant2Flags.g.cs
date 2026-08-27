@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class GetDeploymentResponseVariant2Flags
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("definitions")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -10,11 +10,11 @@ namespace Vercel
     public enum StartRollingReleaseResponseRollingReleaseCurrentDeploymentTarget
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Production,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Staging,
     }

@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RevokeInstallationCredentialResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("revoked")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Revoked { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("already_revoked")]
         [global::System.Text.Json.Serialization.JsonRequired]

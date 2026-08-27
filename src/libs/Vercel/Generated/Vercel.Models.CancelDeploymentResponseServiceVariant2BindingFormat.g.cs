@@ -9,7 +9,7 @@ namespace Vercel
     public enum CancelDeploymentResponseServiceVariant2BindingFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
     }

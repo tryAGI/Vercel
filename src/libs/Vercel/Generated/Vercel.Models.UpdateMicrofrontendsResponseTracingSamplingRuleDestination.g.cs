@@ -9,11 +9,11 @@ namespace Vercel
     public enum UpdateMicrofrontendsResponseTracingSamplingRuleDestination
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Internal,
     }

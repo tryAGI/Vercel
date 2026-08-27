@@ -9,11 +9,11 @@ namespace Vercel
     public enum ListFlagsState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archived,
     }

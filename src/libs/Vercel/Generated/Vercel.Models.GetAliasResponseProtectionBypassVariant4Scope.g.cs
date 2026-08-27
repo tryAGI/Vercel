@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetAliasResponseProtectionBypassVariant4Scope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EmailInvite,
     }

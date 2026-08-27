@@ -4,20 +4,20 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpdateDrainResponseVariant1DeliveryVariant4ServerSideEncryption
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aes256,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aws_kms,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aws_kms_dsse,
     }

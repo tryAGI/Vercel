@@ -9,19 +9,19 @@ namespace Vercel
     public enum AiGatewayVirtualModelConfigSelector
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cost,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Priority,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ttft,
     }

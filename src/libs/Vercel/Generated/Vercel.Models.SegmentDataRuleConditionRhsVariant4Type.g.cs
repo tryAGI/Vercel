@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SegmentDataRuleConditionRhsVariant4Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Regex,
     }

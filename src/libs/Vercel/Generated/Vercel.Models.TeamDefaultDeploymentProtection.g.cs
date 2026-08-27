@@ -9,13 +9,13 @@ namespace Vercel
     public sealed partial class TeamDefaultDeploymentProtection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("passwordProtection")]
         public global::Vercel.TeamDefaultDeploymentProtectionPasswordProtection? PasswordProtection { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ssoProtection")]
         public global::Vercel.TeamDefaultDeploymentProtectionSsoProtection? SsoProtection { get; set; }
