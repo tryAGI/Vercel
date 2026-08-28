@@ -75,7 +75,7 @@ namespace Vercel
 
         /// <summary>
         /// The Vercel region in which to create the sandbox.<br/>
-        /// Default Value: [iad1, sfo1, cle1, cdg1]<br/>
+        /// Default Value: [iad1, sfo1, cle1, cdg1, fra1, arn1, sin1, pdx1, lhr1, icn1, bom1, cpt1, dub1, gru1, hkg1, syd1, yul1, hnd1, kix1]<br/>
         /// Example: iad1
         /// </summary>
         /// <example>iad1</example>
@@ -171,7 +171,7 @@ namespace Vercel
         /// </param>
         /// <param name="region">
         /// The Vercel region in which to create the sandbox.<br/>
-        /// Default Value: [iad1, sfo1, cle1, cdg1]<br/>
+        /// Default Value: [iad1, sfo1, cle1, cdg1, fra1, arn1, sin1, pdx1, lhr1, icn1, bom1, cpt1, dub1, gru1, hkg1, syd1, yul1, hnd1, kix1]<br/>
         /// Example: iad1
         /// </param>
         /// <param name="failoverRegions">

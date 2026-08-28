@@ -78896,6 +78896,9 @@
                                   "createdAt": {
                                     "type": "number"
                                   },
+                                  "updatedAt": {
+                                    "type": "number"
+                                  },
                                   "org": {
                                     "type": "string"
                                   },
@@ -78940,9 +78943,6 @@
                                   },
                                   "gitCredentialId": {
                                     "type": "string"
-                                  },
-                                  "updatedAt": {
-                                    "type": "number"
                                   },
                                   "sourceless": {
                                     "type": "boolean",
@@ -79632,20 +79632,50 @@
                               "region": {
                                 "type": "string",
                                 "enum": [
+                                  "arn1",
+                                  "bom1",
                                   "cdg1",
                                   "cle1",
+                                  "cpt1",
+                                  "dub1",
+                                  "fra1",
+                                  "gru1",
+                                  "hkg1",
+                                  "hnd1",
                                   "iad1",
-                                  "sfo1"
+                                  "icn1",
+                                  "kix1",
+                                  "lhr1",
+                                  "pdx1",
+                                  "sfo1",
+                                  "sin1",
+                                  "syd1",
+                                  "yul1"
                                 ]
                               },
                               "failoverRegions": {
                                 "items": {
                                   "type": "string",
                                   "enum": [
+                                    "arn1",
+                                    "bom1",
                                     "cdg1",
                                     "cle1",
+                                    "cpt1",
+                                    "dub1",
+                                    "fra1",
+                                    "gru1",
+                                    "hkg1",
+                                    "hnd1",
                                     "iad1",
-                                    "sfo1"
+                                    "icn1",
+                                    "kix1",
+                                    "lhr1",
+                                    "pdx1",
+                                    "sfo1",
+                                    "sin1",
+                                    "syd1",
+                                    "yul1"
                                   ]
                                 },
                                 "type": "array"
@@ -102866,20 +102896,50 @@
                                   "region": {
                                     "type": "string",
                                     "enum": [
+                                      "arn1",
+                                      "bom1",
                                       "cdg1",
                                       "cle1",
+                                      "cpt1",
+                                      "dub1",
+                                      "fra1",
+                                      "gru1",
+                                      "hkg1",
+                                      "hnd1",
                                       "iad1",
-                                      "sfo1"
+                                      "icn1",
+                                      "kix1",
+                                      "lhr1",
+                                      "pdx1",
+                                      "sfo1",
+                                      "sin1",
+                                      "syd1",
+                                      "yul1"
                                     ]
                                   },
                                   "failoverRegions": {
                                     "items": {
                                       "type": "string",
                                       "enum": [
+                                        "arn1",
+                                        "bom1",
                                         "cdg1",
                                         "cle1",
+                                        "cpt1",
+                                        "dub1",
+                                        "fra1",
+                                        "gru1",
+                                        "hkg1",
+                                        "hnd1",
                                         "iad1",
-                                        "sfo1"
+                                        "icn1",
+                                        "kix1",
+                                        "lhr1",
+                                        "pdx1",
+                                        "sfo1",
+                                        "sin1",
+                                        "syd1",
+                                        "yul1"
                                       ]
                                     },
                                     "type": "array"
@@ -110726,20 +110786,50 @@
                         "region": {
                           "type": "string",
                           "enum": [
+                            "arn1",
+                            "bom1",
                             "cdg1",
                             "cle1",
+                            "cpt1",
+                            "dub1",
+                            "fra1",
+                            "gru1",
+                            "hkg1",
+                            "hnd1",
                             "iad1",
-                            "sfo1"
+                            "icn1",
+                            "kix1",
+                            "lhr1",
+                            "pdx1",
+                            "sfo1",
+                            "sin1",
+                            "syd1",
+                            "yul1"
                           ]
                         },
                         "failoverRegions": {
                           "items": {
                             "type": "string",
                             "enum": [
+                              "arn1",
+                              "bom1",
                               "cdg1",
                               "cle1",
+                              "cpt1",
+                              "dub1",
+                              "fra1",
+                              "gru1",
+                              "hkg1",
+                              "hnd1",
                               "iad1",
-                              "sfo1"
+                              "icn1",
+                              "kix1",
+                              "lhr1",
+                              "pdx1",
+                              "sfo1",
+                              "sin1",
+                              "syd1",
+                              "yul1"
                             ]
                           },
                           "type": "array"
@@ -115642,7 +115732,22 @@
                           "iad1",
                           "sfo1",
                           "cle1",
-                          "cdg1"
+                          "cdg1",
+                          "fra1",
+                          "arn1",
+                          "sin1",
+                          "pdx1",
+                          "lhr1",
+                          "icn1",
+                          "bom1",
+                          "cpt1",
+                          "dub1",
+                          "gru1",
+                          "hkg1",
+                          "syd1",
+                          "yul1",
+                          "hnd1",
+                          "kix1"
                         ],
                         "example": "iad1"
                       },
@@ -115650,13 +115755,28 @@
                         "description": "The regions sandboxes in this project fall back to when they cannot be created in `region`.",
                         "type": "array",
                         "uniqueItems": true,
-                        "maxItems": 4,
+                        "maxItems": 19,
                         "items": {
                           "enum": [
                             "iad1",
                             "sfo1",
                             "cle1",
-                            "cdg1"
+                            "cdg1",
+                            "fra1",
+                            "arn1",
+                            "sin1",
+                            "pdx1",
+                            "lhr1",
+                            "icn1",
+                            "bom1",
+                            "cpt1",
+                            "dub1",
+                            "gru1",
+                            "hkg1",
+                            "syd1",
+                            "yul1",
+                            "hnd1",
+                            "kix1"
                           ]
                         },
                         "example": [
@@ -118781,20 +118901,50 @@
                         "region": {
                           "type": "string",
                           "enum": [
+                            "arn1",
+                            "bom1",
                             "cdg1",
                             "cle1",
+                            "cpt1",
+                            "dub1",
+                            "fra1",
+                            "gru1",
+                            "hkg1",
+                            "hnd1",
                             "iad1",
-                            "sfo1"
+                            "icn1",
+                            "kix1",
+                            "lhr1",
+                            "pdx1",
+                            "sfo1",
+                            "sin1",
+                            "syd1",
+                            "yul1"
                           ]
                         },
                         "failoverRegions": {
                           "items": {
                             "type": "string",
                             "enum": [
+                              "arn1",
+                              "bom1",
                               "cdg1",
                               "cle1",
+                              "cpt1",
+                              "dub1",
+                              "fra1",
+                              "gru1",
+                              "hkg1",
+                              "hnd1",
                               "iad1",
-                              "sfo1"
+                              "icn1",
+                              "kix1",
+                              "lhr1",
+                              "pdx1",
+                              "sfo1",
+                              "sin1",
+                              "syd1",
+                              "yul1"
                             ]
                           },
                           "type": "array"
@@ -126159,20 +126309,50 @@
                         "region": {
                           "type": "string",
                           "enum": [
+                            "arn1",
+                            "bom1",
                             "cdg1",
                             "cle1",
+                            "cpt1",
+                            "dub1",
+                            "fra1",
+                            "gru1",
+                            "hkg1",
+                            "hnd1",
                             "iad1",
-                            "sfo1"
+                            "icn1",
+                            "kix1",
+                            "lhr1",
+                            "pdx1",
+                            "sfo1",
+                            "sin1",
+                            "syd1",
+                            "yul1"
                           ]
                         },
                         "failoverRegions": {
                           "items": {
                             "type": "string",
                             "enum": [
+                              "arn1",
+                              "bom1",
                               "cdg1",
                               "cle1",
+                              "cpt1",
+                              "dub1",
+                              "fra1",
+                              "gru1",
+                              "hkg1",
+                              "hnd1",
                               "iad1",
-                              "sfo1"
+                              "icn1",
+                              "kix1",
+                              "lhr1",
+                              "pdx1",
+                              "sfo1",
+                              "sin1",
+                              "syd1",
+                              "yul1"
                             ]
                           },
                           "type": "array"
@@ -131331,7 +131511,22 @@
                           "iad1",
                           "sfo1",
                           "cle1",
-                          "cdg1"
+                          "cdg1",
+                          "fra1",
+                          "arn1",
+                          "sin1",
+                          "pdx1",
+                          "lhr1",
+                          "icn1",
+                          "bom1",
+                          "cpt1",
+                          "dub1",
+                          "gru1",
+                          "hkg1",
+                          "syd1",
+                          "yul1",
+                          "hnd1",
+                          "kix1"
                         ],
                         "example": "iad1"
                       },
@@ -131339,13 +131534,28 @@
                         "description": "The regions sandboxes in this project fall back to when they cannot be created in `region`.",
                         "type": "array",
                         "uniqueItems": true,
-                        "maxItems": 4,
+                        "maxItems": 19,
                         "items": {
                           "enum": [
                             "iad1",
                             "sfo1",
                             "cle1",
-                            "cdg1"
+                            "cdg1",
+                            "fra1",
+                            "arn1",
+                            "sin1",
+                            "pdx1",
+                            "lhr1",
+                            "icn1",
+                            "bom1",
+                            "cpt1",
+                            "dub1",
+                            "gru1",
+                            "hkg1",
+                            "syd1",
+                            "yul1",
+                            "hnd1",
+                            "kix1"
                           ]
                         },
                         "example": [
@@ -134809,20 +135019,50 @@
                         "region": {
                           "type": "string",
                           "enum": [
+                            "arn1",
+                            "bom1",
                             "cdg1",
                             "cle1",
+                            "cpt1",
+                            "dub1",
+                            "fra1",
+                            "gru1",
+                            "hkg1",
+                            "hnd1",
                             "iad1",
-                            "sfo1"
+                            "icn1",
+                            "kix1",
+                            "lhr1",
+                            "pdx1",
+                            "sfo1",
+                            "sin1",
+                            "syd1",
+                            "yul1"
                           ]
                         },
                         "failoverRegions": {
                           "items": {
                             "type": "string",
                             "enum": [
+                              "arn1",
+                              "bom1",
                               "cdg1",
                               "cle1",
+                              "cpt1",
+                              "dub1",
+                              "fra1",
+                              "gru1",
+                              "hkg1",
+                              "hnd1",
                               "iad1",
-                              "sfo1"
+                              "icn1",
+                              "kix1",
+                              "lhr1",
+                              "pdx1",
+                              "sfo1",
+                              "sin1",
+                              "syd1",
+                              "yul1"
                             ]
                           },
                           "type": "array"
@@ -151472,20 +151712,50 @@
                         "region": {
                           "type": "string",
                           "enum": [
+                            "arn1",
+                            "bom1",
                             "cdg1",
                             "cle1",
+                            "cpt1",
+                            "dub1",
+                            "fra1",
+                            "gru1",
+                            "hkg1",
+                            "hnd1",
                             "iad1",
-                            "sfo1"
+                            "icn1",
+                            "kix1",
+                            "lhr1",
+                            "pdx1",
+                            "sfo1",
+                            "sin1",
+                            "syd1",
+                            "yul1"
                           ]
                         },
                         "failoverRegions": {
                           "items": {
                             "type": "string",
                             "enum": [
+                              "arn1",
+                              "bom1",
                               "cdg1",
                               "cle1",
+                              "cpt1",
+                              "dub1",
+                              "fra1",
+                              "gru1",
+                              "hkg1",
+                              "hnd1",
                               "iad1",
-                              "sfo1"
+                              "icn1",
+                              "kix1",
+                              "lhr1",
+                              "pdx1",
+                              "sfo1",
+                              "sin1",
+                              "syd1",
+                              "yul1"
                             ]
                           },
                           "type": "array"
@@ -157400,20 +157670,50 @@
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "default": [
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "description": "The Vercel region in which to create the sandbox.",
                     "example": "iad1"
                   },
                   "failoverRegions": {
                     "type": "array",
-                    "maxItems": 4,
+                    "maxItems": 19,
                     "uniqueItems": true,
                     "items": {
                       "type": "string",
@@ -157421,7 +157721,22 @@
                         "iad1",
                         "sfo1",
                         "cle1",
-                        "cdg1"
+                        "cdg1",
+                        "fra1",
+                        "arn1",
+                        "sin1",
+                        "pdx1",
+                        "lhr1",
+                        "icn1",
+                        "bom1",
+                        "cpt1",
+                        "dub1",
+                        "gru1",
+                        "hkg1",
+                        "syd1",
+                        "yul1",
+                        "hnd1",
+                        "kix1"
                       ]
                     },
                     "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
@@ -157801,7 +158116,22 @@
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "default": "iad1",
                     "example": "iad1"
@@ -159266,14 +159596,29 @@
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "description": "The Vercel region in which to create the sandbox.",
                     "example": "iad1"
                   },
                   "failoverRegions": {
                     "type": "array",
-                    "maxItems": 4,
+                    "maxItems": 19,
                     "uniqueItems": true,
                     "items": {
                       "type": "string",
@@ -159281,7 +159626,22 @@
                         "iad1",
                         "sfo1",
                         "cle1",
-                        "cdg1"
+                        "cdg1",
+                        "fra1",
+                        "arn1",
+                        "sin1",
+                        "pdx1",
+                        "lhr1",
+                        "icn1",
+                        "bom1",
+                        "cpt1",
+                        "dub1",
+                        "gru1",
+                        "hkg1",
+                        "syd1",
+                        "yul1",
+                        "hnd1",
+                        "kix1"
                       ]
                     },
                     "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
@@ -161912,20 +162272,50 @@
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "default": [
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "description": "The Vercel region in which to create the sandbox.",
                     "example": "iad1"
                   },
                   "failoverRegions": {
                     "type": "array",
-                    "maxItems": 4,
+                    "maxItems": 19,
                     "uniqueItems": true,
                     "items": {
                       "type": "string",
@@ -161933,7 +162323,22 @@
                         "iad1",
                         "sfo1",
                         "cle1",
-                        "cdg1"
+                        "cdg1",
+                        "fra1",
+                        "arn1",
+                        "sin1",
+                        "pdx1",
+                        "lhr1",
+                        "icn1",
+                        "bom1",
+                        "cpt1",
+                        "dub1",
+                        "gru1",
+                        "hkg1",
+                        "syd1",
+                        "yul1",
+                        "hnd1",
+                        "kix1"
                       ]
                     },
                     "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
@@ -162670,20 +163075,50 @@
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "default": [
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "description": "The Vercel region in which to create the sandbox.",
                     "example": "iad1"
                   },
                   "failoverRegions": {
                     "type": "array",
-                    "maxItems": 4,
+                    "maxItems": 19,
                     "uniqueItems": true,
                     "items": {
                       "type": "string",
@@ -162691,7 +163126,22 @@
                         "iad1",
                         "sfo1",
                         "cle1",
-                        "cdg1"
+                        "cdg1",
+                        "fra1",
+                        "arn1",
+                        "sin1",
+                        "pdx1",
+                        "lhr1",
+                        "icn1",
+                        "bom1",
+                        "cpt1",
+                        "dub1",
+                        "gru1",
+                        "hkg1",
+                        "syd1",
+                        "yul1",
+                        "hnd1",
+                        "kix1"
                       ]
                     },
                     "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
@@ -163482,20 +163932,50 @@
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "default": [
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "description": "The Vercel region in which to create the sandbox.",
                     "example": "iad1"
                   },
                   "failoverRegions": {
                     "type": "array",
-                    "maxItems": 4,
+                    "maxItems": 19,
                     "uniqueItems": true,
                     "items": {
                       "type": "string",
@@ -163503,7 +163983,22 @@
                         "iad1",
                         "sfo1",
                         "cle1",
-                        "cdg1"
+                        "cdg1",
+                        "fra1",
+                        "arn1",
+                        "sin1",
+                        "pdx1",
+                        "lhr1",
+                        "icn1",
+                        "bom1",
+                        "cpt1",
+                        "dub1",
+                        "gru1",
+                        "hkg1",
+                        "syd1",
+                        "yul1",
+                        "hnd1",
+                        "kix1"
                       ]
                     },
                     "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
@@ -164247,20 +164742,50 @@
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "default": [
                       "iad1",
                       "sfo1",
                       "cle1",
-                      "cdg1"
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
                     ],
                     "description": "The Vercel region in which to create the sandbox.",
                     "example": "iad1"
                   },
                   "failoverRegions": {
                     "type": "array",
-                    "maxItems": 4,
+                    "maxItems": 19,
                     "uniqueItems": true,
                     "items": {
                       "type": "string",
@@ -164268,7 +164793,22 @@
                         "iad1",
                         "sfo1",
                         "cle1",
-                        "cdg1"
+                        "cdg1",
+                        "fra1",
+                        "arn1",
+                        "sin1",
+                        "pdx1",
+                        "lhr1",
+                        "icn1",
+                        "bom1",
+                        "cpt1",
+                        "dub1",
+                        "gru1",
+                        "hkg1",
+                        "syd1",
+                        "yul1",
+                        "hnd1",
+                        "kix1"
                       ]
                     },
                     "description": "The regions the sandbox falls back to when it cannot be created in `region`.",
@@ -201448,6 +201988,7 @@
               "linear",
               "linq",
               "microsoft-entra",
+              "microsoft-teams",
               "oauth",
               "photon",
               "salesforce",
@@ -208185,10 +208726,25 @@
             "items": {
               "type": "string",
               "enum": [
+                "arn1",
+                "bom1",
                 "cdg1",
                 "cle1",
+                "cpt1",
+                "dub1",
+                "fra1",
+                "gru1",
+                "hkg1",
+                "hnd1",
                 "iad1",
-                "sfo1"
+                "icn1",
+                "kix1",
+                "lhr1",
+                "pdx1",
+                "sfo1",
+                "sin1",
+                "syd1",
+                "yul1"
               ],
               "description": "The regions the sandbox fails over to. Empty when it does not fail over.",
               "example": [
@@ -211268,6 +211824,14 @@
           },
           "accountUpdateContext": {
             "properties": {
+              "canOptOut": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether this user can cancel their optional Account Update flow."
+              },
               "organization": {
                 "properties": {
                   "id": {
@@ -211326,6 +211890,7 @@
               }
             },
             "required": [
+              "canOptOut",
               "managedTeams",
               "verifiedEmuDomains"
             ],
