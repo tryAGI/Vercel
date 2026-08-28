@@ -929,6 +929,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("queueRegion")]
+        public string? QueueRegion { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sandboxSessionId")]
         public string? SandboxSessionId { get; set; }
 
@@ -1492,6 +1498,7 @@ namespace Vercel
         /// <param name="messageId"></param>
         /// <param name="eventType"></param>
         /// <param name="notificationUrl"></param>
+        /// <param name="queueRegion"></param>
         /// <param name="sandboxSessionId"></param>
         /// <param name="sandboxName"></param>
         /// <param name="workflowRunId"></param>
@@ -1716,6 +1723,7 @@ namespace Vercel
             string? messageId,
             string? eventType,
             string? notificationUrl,
+            string? queueRegion,
             string? sandboxSessionId,
             string? sandboxName,
             string? workflowRunId,
@@ -1936,6 +1944,7 @@ namespace Vercel
             this.MessageId = messageId;
             this.EventType = eventType;
             this.NotificationUrl = notificationUrl;
+            this.QueueRegion = queueRegion;
             this.SandboxSessionId = sandboxSessionId;
             this.SandboxName = sandboxName;
             this.WorkflowRunId = workflowRunId;

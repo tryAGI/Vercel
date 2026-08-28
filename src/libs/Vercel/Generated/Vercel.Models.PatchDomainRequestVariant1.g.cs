@@ -38,7 +38,7 @@ namespace Vercel
         public bool? Zone { get; set; }
 
         /// <summary>
-        /// Encrypted Client Hello enrollment. 'auto' leaves it to Vercel, 'enabled' always enrolls, 'disabled' never enrolls and opts out of automatic enrollment.
+        /// Encrypted Client Hello enrollment. 'auto' leaves it to Vercel, 'disabled' never enrolls and opts out of automatic enrollment.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("echMode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.PatchDomainRequestVariant1EchModeJsonConverter))]
@@ -60,7 +60,7 @@ namespace Vercel
         /// Specifies whether this is a DNS zone that intends to use Vercel's nameservers.
         /// </param>
         /// <param name="echMode">
-        /// Encrypted Client Hello enrollment. 'auto' leaves it to Vercel, 'enabled' always enrolls, 'disabled' never enrolls and opts out of automatic enrollment.
+        /// Encrypted Client Hello enrollment. 'auto' leaves it to Vercel, 'disabled' never enrolls and opts out of automatic enrollment.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

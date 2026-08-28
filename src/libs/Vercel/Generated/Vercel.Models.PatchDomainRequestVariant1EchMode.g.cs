@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Encrypted Client Hello enrollment. 'auto' leaves it to Vercel, 'enabled' always enrolls, 'disabled' never enrolls and opts out of automatic enrollment.
+    /// Encrypted Client Hello enrollment. 'auto' leaves it to Vercel, 'disabled' never enrolls and opts out of automatic enrollment.
     /// </summary>
     public enum PatchDomainRequestVariant1EchMode
     {
@@ -16,10 +16,6 @@ namespace Vercel
         ///
         /// </summary>
         Disabled,
-        /// <summary>
-        ///
-        /// </summary>
-        Enabled,
     }
 
     /// <summary>
@@ -36,7 +32,6 @@ namespace Vercel
             {
                 PatchDomainRequestVariant1EchMode.Auto => "auto",
                 PatchDomainRequestVariant1EchMode.Disabled => "disabled",
-                PatchDomainRequestVariant1EchMode.Enabled => "enabled",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -49,7 +44,6 @@ namespace Vercel
             {
                 "auto" => PatchDomainRequestVariant1EchMode.Auto,
                 "disabled" => PatchDomainRequestVariant1EchMode.Disabled,
-                "enabled" => PatchDomainRequestVariant1EchMode.Enabled,
                 _ => null,
             };
         }
