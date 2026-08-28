@@ -43371,9 +43371,6 @@
           "401": {
             "description": "The request is not authorized."
           },
-          "402": {
-            "description": ""
-          },
           "403": {
             "description": "You do not have permission to access this resource."
           },
@@ -43453,11 +43450,10 @@
                         "type": "boolean"
                       },
                       "echMode": {
-                        "description": "Encrypted Client Hello enrollment. 'auto' leaves it to Vercel, 'enabled' always enrolls, 'disabled' never enrolls and opts out of automatic enrollment.",
+                        "description": "Encrypted Client Hello enrollment. 'auto' leaves it to Vercel, 'disabled' never enrolls and opts out of automatic enrollment.",
                         "type": "string",
                         "enum": [
                           "auto",
-                          "enabled",
                           "disabled"
                         ]
                       }
@@ -190378,6 +190374,9 @@
                               "notificationUrl": {
                                 "type": "string"
                               },
+                              "queueRegion": {
+                                "type": "string"
+                              },
                               "sandboxSessionId": {
                                 "type": "string"
                               },
@@ -191050,6 +191049,9 @@
                               "notificationUrl": {
                                 "type": "string"
                               },
+                              "queueRegion": {
+                                "type": "string"
+                              },
                               "sandboxSessionId": {
                                 "type": "string"
                               },
@@ -191392,6 +191394,7 @@
                               "pullRequestNumber",
                               "pullRequestState",
                               "queueName",
+                              "queueRegion",
                               "quotaEntityId",
                               "quotaEntityType",
                               "quotaRequested",
@@ -192190,6 +192193,9 @@
                               "notificationUrl": {
                                 "type": "string"
                               },
+                              "queueRegion": {
+                                "type": "string"
+                              },
                               "sandboxSessionId": {
                                 "type": "string"
                               },
@@ -192862,6 +192868,9 @@
                               "notificationUrl": {
                                 "type": "string"
                               },
+                              "queueRegion": {
+                                "type": "string"
+                              },
                               "sandboxSessionId": {
                                 "type": "string"
                               },
@@ -193204,6 +193213,7 @@
                               "pullRequestNumber",
                               "pullRequestState",
                               "queueName",
+                              "queueRegion",
                               "quotaEntityId",
                               "quotaEntityType",
                               "quotaRequested",
@@ -193968,6 +193978,9 @@
                             "notificationUrl": {
                               "type": "string"
                             },
+                            "queueRegion": {
+                              "type": "string"
+                            },
                             "sandboxSessionId": {
                               "type": "string"
                             },
@@ -194310,6 +194323,7 @@
                             "pullRequestNumber",
                             "pullRequestState",
                             "queueName",
+                            "queueRegion",
                             "quotaEntityId",
                             "quotaEntityType",
                             "quotaRequested",
@@ -195022,6 +195036,9 @@
                             "notificationUrl": {
                               "type": "string"
                             },
+                            "queueRegion": {
+                              "type": "string"
+                            },
                             "sandboxSessionId": {
                               "type": "string"
                             },
@@ -195364,6 +195381,7 @@
                             "pullRequestNumber",
                             "pullRequestState",
                             "queueName",
+                            "queueRegion",
                             "quotaEntityId",
                             "quotaEntityType",
                             "quotaRequested",

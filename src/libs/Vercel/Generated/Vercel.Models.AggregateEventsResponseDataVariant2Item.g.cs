@@ -1082,6 +1082,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("queueRegion")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string QueueRegion { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sandboxSessionId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SandboxSessionId { get; set; }
@@ -1703,6 +1710,7 @@ namespace Vercel
         /// <param name="messageId"></param>
         /// <param name="eventType"></param>
         /// <param name="notificationUrl"></param>
+        /// <param name="queueRegion"></param>
         /// <param name="sandboxSessionId"></param>
         /// <param name="sandboxName"></param>
         /// <param name="workflowRunId"></param>
@@ -1926,6 +1934,7 @@ namespace Vercel
             string messageId,
             string eventType,
             string notificationUrl,
+            string queueRegion,
             string sandboxSessionId,
             string sandboxName,
             string workflowRunId,
@@ -2146,6 +2155,7 @@ namespace Vercel
             this.MessageId = messageId ?? throw new global::System.ArgumentNullException(nameof(messageId));
             this.EventType = eventType ?? throw new global::System.ArgumentNullException(nameof(eventType));
             this.NotificationUrl = notificationUrl ?? throw new global::System.ArgumentNullException(nameof(notificationUrl));
+            this.QueueRegion = queueRegion ?? throw new global::System.ArgumentNullException(nameof(queueRegion));
             this.SandboxSessionId = sandboxSessionId ?? throw new global::System.ArgumentNullException(nameof(sandboxSessionId));
             this.SandboxName = sandboxName ?? throw new global::System.ArgumentNullException(nameof(sandboxName));
             this.WorkflowRunId = workflowRunId ?? throw new global::System.ArgumentNullException(nameof(workflowRunId));
