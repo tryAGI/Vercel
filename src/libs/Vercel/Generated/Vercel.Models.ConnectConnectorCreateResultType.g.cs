@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MicrosoftTeams,
+        /// <summary>
+        ///
+        /// </summary>
         Oauth,
         /// <summary>
         ///
@@ -85,6 +89,7 @@ namespace Vercel
                 ConnectConnectorCreateResultType.Linear => "linear",
                 ConnectConnectorCreateResultType.Linq => "linq",
                 ConnectConnectorCreateResultType.MicrosoftEntra => "microsoft-entra",
+                ConnectConnectorCreateResultType.MicrosoftTeams => "microsoft-teams",
                 ConnectConnectorCreateResultType.Oauth => "oauth",
                 ConnectConnectorCreateResultType.Photon => "photon",
                 ConnectConnectorCreateResultType.Salesforce => "salesforce",
@@ -109,6 +114,7 @@ namespace Vercel
                 "linear" => ConnectConnectorCreateResultType.Linear,
                 "linq" => ConnectConnectorCreateResultType.Linq,
                 "microsoft-entra" => ConnectConnectorCreateResultType.MicrosoftEntra,
+                "microsoft-teams" => ConnectConnectorCreateResultType.MicrosoftTeams,
                 "oauth" => ConnectConnectorCreateResultType.Oauth,
                 "photon" => ConnectConnectorCreateResultType.Photon,
                 "salesforce" => ConnectConnectorCreateResultType.Salesforce,
