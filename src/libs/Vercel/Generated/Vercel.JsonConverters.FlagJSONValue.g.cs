@@ -51,7 +51,7 @@ namespace Vercel.JsonConverters
             }
             var __score2 = 0;
             {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>), options);
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>), options);
                 if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
                 {
                     foreach (var __prop in __ti.Properties)
@@ -92,7 +92,7 @@ namespace Vercel.JsonConverters
 
             string? flagJSONValueVariant1 = default;
             double? flagJSONValueVariant2 = default;
-            global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>? flagJSONValueVariant3 = default;
+            global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>? flagJSONValueVariant3 = default;
             global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>? flagJSONValueVariant4 = default;
             bool? flagJSONValueVariant5 = default;
             if (__bestIndex >= 0)
@@ -136,8 +136,8 @@ namespace Vercel.JsonConverters
                     try
                     {
 
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>).Name}");
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>).Name}");
                         flagJSONValueVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
@@ -222,8 +222,8 @@ namespace Vercel.JsonConverters
                 try
                 {
 
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>).Name}");
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>).Name}");
                     flagJSONValueVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
@@ -306,8 +306,8 @@ namespace Vercel.JsonConverters
             }
             else if (value.IsFlagJSONValueVariant3)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.FlagJSONValueVariant3!, typeInfo);
             }
             else if (value.IsFlagJSONValueVariant4)

@@ -3947,10 +3947,6 @@
                                           "type": "string",
                                           "description": "The external ID of the Orb plan to create"
                                         },
-                                        "orbPendingSubscriptionChangeId": {
-                                          "type": "string",
-                                          "description": "The ID of the pending subscription change"
-                                        },
                                         "orbPlanId": {
                                           "type": "string",
                                           "description": "The ID of the Orb plan to create"
@@ -4015,13 +4011,16 @@
                                           },
                                           "type": "array",
                                           "description": "The line items that make up the Purchase Intent."
+                                        },
+                                        "orbPendingSubscriptionChangeId": {
+                                          "type": "string",
+                                          "description": "The ID of the pending subscription change"
                                         }
                                       },
                                       "required": [
                                         "orbCustomerId",
                                         "orbExternalCustomerId",
                                         "orbExternalPlanId",
-                                        "orbPendingSubscriptionChangeId",
                                         "orbPlanId",
                                         "orbSubscriptionId"
                                       ],
@@ -4034,9 +4033,6 @@
                                           "description": "The ID of the pending subscription change"
                                         }
                                       },
-                                      "required": [
-                                        "pendingSubscriptionChangeId"
-                                      ],
                                       "type": "object"
                                     },
                                     "type": {
@@ -4403,6 +4399,14 @@
                                           "type": "string",
                                           "description": "The Orb price ID for the subscription item being modified."
                                         },
+                                        "pricingSource": {
+                                          "type": "string",
+                                          "enum": [
+                                            "copper",
+                                            "orb"
+                                          ],
+                                          "description": "The source used as the authoritative price for this intent."
+                                        },
                                         "productId": {
                                           "type": "string",
                                           "description": "The product ID associated with this intent."
@@ -4474,6 +4478,7 @@
                                       "required": [
                                         "effectiveBehavior",
                                         "orbPriceId",
+                                        "pricingSource",
                                         "productId"
                                       ],
                                       "type": "object",
@@ -4531,6 +4536,14 @@
                                           "type": "string",
                                           "description": "The Orb price ID for the subscription item being modified."
                                         },
+                                        "pricingSource": {
+                                          "type": "string",
+                                          "enum": [
+                                            "copper",
+                                            "orb"
+                                          ],
+                                          "description": "The source used as the authoritative price for this intent."
+                                        },
                                         "productId": {
                                           "type": "string",
                                           "description": "The product ID associated with this intent."
@@ -4602,6 +4615,7 @@
                                       "required": [
                                         "effectiveBehavior",
                                         "orbPriceId",
+                                        "pricingSource",
                                         "productId"
                                       ],
                                       "type": "object",
@@ -4659,6 +4673,14 @@
                                           "type": "string",
                                           "description": "The Orb price ID for the subscription item being modified."
                                         },
+                                        "pricingSource": {
+                                          "type": "string",
+                                          "enum": [
+                                            "copper",
+                                            "orb"
+                                          ],
+                                          "description": "The source used as the authoritative price for this intent."
+                                        },
                                         "productId": {
                                           "type": "string",
                                           "description": "The product ID associated with this intent."
@@ -4730,6 +4752,7 @@
                                       "required": [
                                         "effectiveBehavior",
                                         "orbPriceId",
+                                        "pricingSource",
                                         "productId"
                                       ],
                                       "type": "object",
@@ -4795,6 +4818,14 @@
                                           "type": "string",
                                           "description": "The Orb price ID for the subscription item being modified."
                                         },
+                                        "pricingSource": {
+                                          "type": "string",
+                                          "enum": [
+                                            "copper",
+                                            "orb"
+                                          ],
+                                          "description": "The source used as the authoritative price for this intent."
+                                        },
                                         "productId": {
                                           "type": "string",
                                           "description": "The product ID associated with this intent."
@@ -4866,6 +4897,7 @@
                                       "required": [
                                         "effectiveBehavior",
                                         "orbPriceId",
+                                        "pricingSource",
                                         "productId"
                                       ],
                                       "type": "object",
@@ -5025,6 +5057,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "409": {
             "description": ""
           },
           "410": {
@@ -51396,7 +51431,6 @@
                 "properties": {
                   "srcImages": {
                     "items": {
-                      "maxLength": 8192,
                       "type": "string"
                     },
                     "maxItems": 8,
@@ -51491,7 +51525,6 @@
                   },
                   "srcImages": {
                     "items": {
-                      "maxLength": 8192,
                       "type": "string"
                     },
                     "maxItems": 8,

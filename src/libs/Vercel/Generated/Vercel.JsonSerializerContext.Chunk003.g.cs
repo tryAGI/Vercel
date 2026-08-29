@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemTransformItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2AllowItemTransformItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2Subnets))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSandboxRequestRegion), TypeInfoPropertyName = "UpdateSandboxRequestRegion2")]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestResourceConfigBuildMachine))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestResourceConfigBuildMachineDefault), TypeInfoPropertyName = "PatchTeamRequestResourceConfigBuildMachineDefault2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateTeamRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateTeamRequestAttribution))]
     internal sealed partial class SourceGenerationContextChunk003 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -24,6 +24,14 @@ namespace Vercel
         public required string OrbPriceId { get; set; }
 
         /// <summary>
+        /// The source used as the authoritative price for this intent.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pricingSource")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2OutputPricingSourceJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2OutputPricingSource PricingSource { get; set; }
+
+        /// <summary>
         /// The product ID associated with this intent.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productId")]
@@ -63,6 +71,9 @@ namespace Vercel
         /// <param name="orbPriceId">
         /// The Orb price ID for the subscription item being modified.
         /// </param>
+        /// <param name="pricingSource">
+        /// The source used as the authoritative price for this intent.
+        /// </param>
         /// <param name="productId">
         /// The product ID associated with this intent.
         /// </param>
@@ -81,6 +92,7 @@ namespace Vercel
         public BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Output(
             global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2OutputEffectiveBehavior effectiveBehavior,
             string orbPriceId,
+            global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2OutputPricingSource pricingSource,
             string productId,
             global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2OutputChangedResource>? changedResources,
             global::System.Collections.Generic.Dictionary<string, string>? metadata,
@@ -88,6 +100,7 @@ namespace Vercel
         {
             this.EffectiveBehavior = effectiveBehavior;
             this.OrbPriceId = orbPriceId ?? throw new global::System.ArgumentNullException(nameof(orbPriceId));
+            this.PricingSource = pricingSource;
             this.ProductId = productId ?? throw new global::System.ArgumentNullException(nameof(productId));
             this.ChangedResources = changedResources;
             this.Metadata = metadata;

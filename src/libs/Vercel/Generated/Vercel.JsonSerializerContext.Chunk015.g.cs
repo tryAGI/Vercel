@@ -11,6 +11,11 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseGitProviderOptions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseGitProviderOptionsCreateDeployments), TypeInfoPropertyName = "CreateProjectResponseGitProviderOptionsCreateDeployments2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseGitProviderOptionsConsolidatedGitCommitStatus))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseWebAnalytics))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseSecurity))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateProjectResponseSecurityRulesets2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseSecurityRulesets2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseSecurityRulesetsAction), TypeInfoPropertyName = "CreateProjectResponseSecurityRulesetsAction2")]
@@ -506,11 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseTracingSamplingRuleDestination), TypeInfoPropertyName = "GetProjectResponseTracingSamplingRuleDestination2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateProjectResponseCreatorVariant1, global::Vercel.UpdateProjectResponseCreatorVariant2, global::Vercel.UpdateProjectResponseCreatorVariant3, global::Vercel.UpdateProjectResponseCreatorVariant4>), TypeInfoPropertyName = "UpdateProjectResponseCreatorVariant4_8300b0deec3f2ba5")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseCreatorVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseCreatorVariant1Type), TypeInfoPropertyName = "UpdateProjectResponseCreatorVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateProjectResponseCreatorVariant1ViaVariant1, global::Vercel.UpdateProjectResponseCreatorVariant1ViaVariant2>), TypeInfoPropertyName = "OneOfUpdateProjectResponseCreatorVariant1ViaVariant1UpdateProjectResponseCreatorVariant1ViaVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseCreatorVariant1ViaVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseCreatorVariant1ViaVariant1Type), TypeInfoPropertyName = "UpdateProjectResponseCreatorVariant1ViaVariant1Type2")]
     internal sealed partial class SourceGenerationContextChunk015 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
