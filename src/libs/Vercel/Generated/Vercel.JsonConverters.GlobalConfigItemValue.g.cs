@@ -62,7 +62,7 @@ namespace Vercel.JsonConverters
             }
             var __score3 = 0;
             {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>), options);
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>), options);
                 if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
                 {
                     foreach (var __prop in __ti.Properties)
@@ -93,7 +93,7 @@ namespace Vercel.JsonConverters
             string? globalConfigItemValueVariant1 = default;
             double? globalConfigItemValueVariant2 = default;
             global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>? globalConfigItemValueVariant3 = default;
-            global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>? globalConfigItemValueVariant4 = default;
+            global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>? globalConfigItemValueVariant4 = default;
             bool? globalConfigItemValueVariant5 = default;
             if (__bestIndex >= 0)
             {
@@ -153,8 +153,8 @@ namespace Vercel.JsonConverters
                     try
                     {
 
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>).Name}");
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>).Name}");
                         globalConfigItemValueVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
@@ -239,8 +239,8 @@ namespace Vercel.JsonConverters
                 try
                 {
 
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>).Name}");
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>).Name}");
                     globalConfigItemValueVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
@@ -312,8 +312,8 @@ namespace Vercel.JsonConverters
             }
             else if (value.IsGlobalConfigItemValueVariant4)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.GlobalConfigItemValueVariant4!, typeInfo);
             }
             else if (value.IsGlobalConfigItemValueVariant5)

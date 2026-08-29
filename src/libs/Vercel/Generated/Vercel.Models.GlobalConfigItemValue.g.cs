@@ -124,9 +124,9 @@ namespace Vercel
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>? GlobalConfigItemValueVariant4 { get; init; }
+        public global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>? GlobalConfigItemValueVariant4 { get; init; }
 #else
-        public global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>? GlobalConfigItemValueVariant4 { get; }
+        public global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>? GlobalConfigItemValueVariant4 { get; }
 #endif
 
         /// <summary>
@@ -144,7 +144,7 @@ namespace Vercel
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>? value)
+            out global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>? value)
         {
             value = GlobalConfigItemValueVariant4;
             return IsGlobalConfigItemValueVariant4;
@@ -153,7 +153,7 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue> PickGlobalConfigItemValueVariant4() => IsGlobalConfigItemValueVariant4
+        public global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?> PickGlobalConfigItemValueVariant4() => IsGlobalConfigItemValueVariant4
             ? GlobalConfigItemValueVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant4' but the value was {ToString()}.");
 
@@ -292,7 +292,7 @@ namespace Vercel
             string? globalConfigItemValueVariant1,
             double? globalConfigItemValueVariant2,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>? globalConfigItemValueVariant3,
-            global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>? globalConfigItemValueVariant4,
+            global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>? globalConfigItemValueVariant4,
             bool? globalConfigItemValueVariant5
             )
         {
@@ -340,7 +340,7 @@ namespace Vercel
             global::System.Func<string, TResult>? globalConfigItemValueVariant1 = null,
             global::System.Func<double?, TResult>? globalConfigItemValueVariant2 = null,
             global::System.Func<global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>, TResult>? globalConfigItemValueVariant3 = null,
-            global::System.Func<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>, TResult>? globalConfigItemValueVariant4 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>, TResult>? globalConfigItemValueVariant4 = null,
             global::System.Func<bool?, TResult>? globalConfigItemValueVariant5 = null,
             bool validate = true)
         {
@@ -383,7 +383,7 @@ namespace Vercel
 
             global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>>? globalConfigItemValueVariant3 = null,
 
-            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>>? globalConfigItemValueVariant4 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>>? globalConfigItemValueVariant4 = null,
 
             global::System.Action<bool?>? globalConfigItemValueVariant5 = null,
             bool validate = true)
@@ -422,7 +422,7 @@ namespace Vercel
             global::System.Action<string>? globalConfigItemValueVariant1 = null,
             global::System.Action<double?>? globalConfigItemValueVariant2 = null,
             global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>>? globalConfigItemValueVariant3 = null,
-            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>>? globalConfigItemValueVariant4 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>>? globalConfigItemValueVariant4 = null,
             global::System.Action<bool?>? globalConfigItemValueVariant5 = null,
             bool validate = true)
         {
@@ -467,7 +467,7 @@ namespace Vercel
                 GlobalConfigItemValueVariant3,
                 typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>),
                 GlobalConfigItemValueVariant4,
-                typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>),
+                typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>),
                 GlobalConfigItemValueVariant5,
                 typeof(bool),
             };
@@ -489,7 +489,7 @@ namespace Vercel
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(GlobalConfigItemValueVariant1, other.GlobalConfigItemValueVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(GlobalConfigItemValueVariant2, other.GlobalConfigItemValueVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>?>.Default.Equals(GlobalConfigItemValueVariant3, other.GlobalConfigItemValueVariant3) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>?>.Default.Equals(GlobalConfigItemValueVariant4, other.GlobalConfigItemValueVariant4) &&
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>?>.Default.Equals(GlobalConfigItemValueVariant4, other.GlobalConfigItemValueVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(GlobalConfigItemValueVariant5, other.GlobalConfigItemValueVariant5)
                 ;
         }

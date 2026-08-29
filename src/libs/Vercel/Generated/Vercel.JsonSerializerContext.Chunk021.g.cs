@@ -11,6 +11,11 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlan))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanType), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreBillingPlanType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanScope), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreBillingPlanScope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanDetail>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanDetail))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetail>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetail))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>))]
@@ -506,11 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestFileInlinedFileEncoding?), TypeInfoPropertyName = "NullableCreateDeploymentRequestFileInlinedFileEncoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateDeploymentRequestGitSourceVariant1, global::Vercel.CreateDeploymentRequestGitSourceVariant2, global::Vercel.CreateDeploymentRequestGitSourceVariant3, global::Vercel.CreateDeploymentRequestGitSourceVariant4, global::Vercel.CreateDeploymentRequestGitSourceVariant5, global::Vercel.CreateDeploymentRequestGitSourceVariant6, global::Vercel.CreateDeploymentRequestGitSourceVariant7, global::Vercel.CreateDeploymentRequestGitSourceVariant8, global::Vercel.CreateDeploymentRequestGitSourceVariant9>?), TypeInfoPropertyName = "CreateDeploymentRequestGitSourceVariant9_63b1c1f3b846ca2f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant1Type?), TypeInfoPropertyName = "NullableCreateDeploymentRequestGitSourceVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant2Type?), TypeInfoPropertyName = "NullableCreateDeploymentRequestGitSourceVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant3Type?), TypeInfoPropertyName = "NullableCreateDeploymentRequestGitSourceVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant4Type?), TypeInfoPropertyName = "NullableCreateDeploymentRequestGitSourceVariant4Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant5Type?), TypeInfoPropertyName = "NullableCreateDeploymentRequestGitSourceVariant5Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentRequestGitSourceVariant6Type?), TypeInfoPropertyName = "NullableCreateDeploymentRequestGitSourceVariant6Type2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

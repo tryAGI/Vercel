@@ -11,6 +11,11 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CompleteRollingReleaseResponseRollingReleaseStage>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CompleteRollingReleaseResponseRollingReleaseStage))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CompleteRollingReleaseResponseRollingReleaseActiveStage))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CompleteRollingReleaseResponseRollingReleaseNextStage))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectTransferRequestResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AcceptProjectTransferRequestResponseVariant1, object>), TypeInfoPropertyName = "OneOfAcceptProjectTransferRequestResponseVariant1Object2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AcceptProjectTransferRequestResponseVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCall>))]
@@ -506,11 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateAction), TypeInfoPropertyName = "GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateRateLimit))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateRateLimitAlgo), TypeInfoPropertyName = "GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateRateLimitAlgo2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateRateLimitAction), TypeInfoPropertyName = "GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateRateLimitAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateRedirect))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateLogHeaders?>), TypeInfoPropertyName = "OneOfIListStringGetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateLogHeaders), TypeInfoPropertyName = "GetSecurityFirewallConfigResponseActiveRuleVariant2ActionMitigateLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallConfigResponseActiveIp>))]
     internal sealed partial class SourceGenerationContextChunk018 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

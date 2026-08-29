@@ -12,8 +12,7 @@ namespace Vercel
         /// The ID of the pending subscription change
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pendingSubscriptionChangeId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PendingSubscriptionChangeId { get; set; }
+        public string? PendingSubscriptionChangeId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,9 +30,9 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6Output(
-            string pendingSubscriptionChangeId)
+            string? pendingSubscriptionChangeId)
         {
-            this.PendingSubscriptionChangeId = pendingSubscriptionChangeId ?? throw new global::System.ArgumentNullException(nameof(pendingSubscriptionChangeId));
+            this.PendingSubscriptionChangeId = pendingSubscriptionChangeId;
         }
 
         /// <summary>

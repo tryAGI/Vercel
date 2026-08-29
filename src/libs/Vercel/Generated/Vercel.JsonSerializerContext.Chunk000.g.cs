@@ -13,6 +13,7 @@ namespace Vercel
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayProviderOptionBag))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AiGatewayVirtualModelConfig))]
@@ -118,7 +119,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectEnvironment), TypeInfoPropertyName = "ConnectEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectEnvironmentEnum), TypeInfoPropertyName = "ConnectEnvironmentEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagJSONValue), TypeInfoPropertyName = "FlagJSONValue2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Pagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.HttpApiDecodeError))]
@@ -205,7 +206,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RegistrantFieldVariant4Type), TypeInfoPropertyName = "RegistrantFieldVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GlobalConfigItemValue), TypeInfoPropertyName = "GlobalConfigItemValue2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GlobalConfigItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GlobalConfigToken))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEvent))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockReason), TypeInfoPropertyName = "AuthUserSoftBlockReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockBlockedDueToOverageType), TypeInfoPropertyName = "AuthUserSoftBlockBlockedDueToOverageType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockHobbyAllocationPause))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AuthUserSoftBlockHobbyAllocationPauseTrigger>))]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

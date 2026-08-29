@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AuthUserSoftBlockHobbyAllocationPauseTrigger>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockHobbyAllocationPauseTrigger))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockHobbyAllocationPauseTriggerAllocation), TypeInfoPropertyName = "AuthUserSoftBlockHobbyAllocationPauseTriggerAllocation2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserResourceConfig))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRule))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateFlagSegmentRequestDataRuleCondition>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleCondition))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.CreateFlagSegmentRequestDataRuleConditionLhsVariant1, global::Vercel.CreateFlagSegmentRequestDataRuleConditionLhsVariant2>), TypeInfoPropertyName = "AnyOfCreateFlagSegmentRequestDataRuleConditionLhsVariant1CreateFlagSegmentRequestDataRuleConditionLhsVariant22")]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -30,13 +30,6 @@ namespace Vercel
         public required string OrbExternalPlanId { get; set; }
 
         /// <summary>
-        /// The ID of the pending subscription change
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("orbPendingSubscriptionChangeId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OrbPendingSubscriptionChangeId { get; set; }
-
-        /// <summary>
         /// The ID of the Orb plan to create
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("orbPlanId")]
@@ -57,6 +50,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6OptionsLineItem>? LineItems { get; set; }
 
         /// <summary>
+        /// The ID of the pending subscription change
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("orbPendingSubscriptionChangeId")]
+        public string? OrbPendingSubscriptionChangeId { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -74,9 +73,6 @@ namespace Vercel
         /// <param name="orbExternalPlanId">
         /// The external ID of the Orb plan to create
         /// </param>
-        /// <param name="orbPendingSubscriptionChangeId">
-        /// The ID of the pending subscription change
-        /// </param>
         /// <param name="orbPlanId">
         /// The ID of the Orb plan to create
         /// </param>
@@ -86,6 +82,9 @@ namespace Vercel
         /// <param name="lineItems">
         /// The line items that make up the Purchase Intent.
         /// </param>
+        /// <param name="orbPendingSubscriptionChangeId">
+        /// The ID of the pending subscription change
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -93,18 +92,18 @@ namespace Vercel
             string orbCustomerId,
             string orbExternalCustomerId,
             string orbExternalPlanId,
-            string orbPendingSubscriptionChangeId,
             string orbPlanId,
             string orbSubscriptionId,
-            global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6OptionsLineItem>? lineItems)
+            global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6OptionsLineItem>? lineItems,
+            string? orbPendingSubscriptionChangeId)
         {
             this.OrbCustomerId = orbCustomerId ?? throw new global::System.ArgumentNullException(nameof(orbCustomerId));
             this.OrbExternalCustomerId = orbExternalCustomerId ?? throw new global::System.ArgumentNullException(nameof(orbExternalCustomerId));
             this.OrbExternalPlanId = orbExternalPlanId ?? throw new global::System.ArgumentNullException(nameof(orbExternalPlanId));
-            this.OrbPendingSubscriptionChangeId = orbPendingSubscriptionChangeId ?? throw new global::System.ArgumentNullException(nameof(orbPendingSubscriptionChangeId));
             this.OrbPlanId = orbPlanId ?? throw new global::System.ArgumentNullException(nameof(orbPlanId));
             this.OrbSubscriptionId = orbSubscriptionId ?? throw new global::System.ArgumentNullException(nameof(orbSubscriptionId));
             this.LineItems = lineItems;
+            this.OrbPendingSubscriptionChangeId = orbPendingSubscriptionChangeId;
         }
 
         /// <summary>

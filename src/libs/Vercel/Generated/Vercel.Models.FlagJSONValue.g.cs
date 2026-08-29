@@ -87,9 +87,9 @@ namespace Vercel
         /// TODO: The following types will eventually be exported by a more relevant package.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>? FlagJSONValueVariant3 { get; init; }
+        public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>? FlagJSONValueVariant3 { get; init; }
 #else
-        public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>? FlagJSONValueVariant3 { get; }
+        public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>? FlagJSONValueVariant3 { get; }
 #endif
 
         /// <summary>
@@ -107,7 +107,7 @@ namespace Vercel
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>? value)
+            out global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>? value)
         {
             value = FlagJSONValueVariant3;
             return IsFlagJSONValueVariant3;
@@ -116,7 +116,7 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue> PickFlagJSONValueVariant3() => IsFlagJSONValueVariant3
+        public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?> PickFlagJSONValueVariant3() => IsFlagJSONValueVariant3
             ? FlagJSONValueVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant3' but the value was {ToString()}.");
 
@@ -291,7 +291,7 @@ namespace Vercel
         public FlagJSONValue(
             string? flagJSONValueVariant1,
             double? flagJSONValueVariant2,
-            global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>? flagJSONValueVariant3,
+            global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>? flagJSONValueVariant3,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>? flagJSONValueVariant4,
             bool? flagJSONValueVariant5
             )
@@ -339,7 +339,7 @@ namespace Vercel
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? flagJSONValueVariant1 = null,
             global::System.Func<double?, TResult>? flagJSONValueVariant2 = null,
-            global::System.Func<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>, TResult>? flagJSONValueVariant3 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>, TResult>? flagJSONValueVariant3 = null,
             global::System.Func<global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>, TResult>? flagJSONValueVariant4 = null,
             global::System.Func<bool?, TResult>? flagJSONValueVariant5 = null,
             bool validate = true)
@@ -381,7 +381,7 @@ namespace Vercel
 
             global::System.Action<double?>? flagJSONValueVariant2 = null,
 
-            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>>? flagJSONValueVariant3 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>>? flagJSONValueVariant3 = null,
 
             global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>>? flagJSONValueVariant4 = null,
 
@@ -421,7 +421,7 @@ namespace Vercel
         public void Switch(
             global::System.Action<string>? flagJSONValueVariant1 = null,
             global::System.Action<double?>? flagJSONValueVariant2 = null,
-            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>>? flagJSONValueVariant3 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>>? flagJSONValueVariant3 = null,
             global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>>? flagJSONValueVariant4 = null,
             global::System.Action<bool?>? flagJSONValueVariant5 = null,
             bool validate = true)
@@ -465,7 +465,7 @@ namespace Vercel
                 FlagJSONValueVariant2,
                 typeof(double),
                 FlagJSONValueVariant3,
-                typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>),
+                typeof(global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>),
                 FlagJSONValueVariant4,
                 typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>),
                 FlagJSONValueVariant5,
@@ -488,7 +488,7 @@ namespace Vercel
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(FlagJSONValueVariant1, other.FlagJSONValueVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(FlagJSONValueVariant2, other.FlagJSONValueVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue>?>.Default.Equals(FlagJSONValueVariant3, other.FlagJSONValueVariant3) &&
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>?>.Default.Equals(FlagJSONValueVariant3, other.FlagJSONValueVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?>?>.Default.Equals(FlagJSONValueVariant4, other.FlagJSONValueVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(FlagJSONValueVariant5, other.FlagJSONValueVariant5)
                 ;
