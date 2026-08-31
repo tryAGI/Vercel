@@ -27,6 +27,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayTranscriptsManager,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayTranscriptsViewer,
+        /// <summary>
+        ///
+        /// </summary>
         ConnectorManager,
         /// <summary>
         ///
@@ -94,6 +102,8 @@ namespace Vercel
                 TeamLimitedMembershipTeamPermission.AiGatewayBudgetManager => "AiGatewayBudgetManager",
                 TeamLimitedMembershipTeamPermission.AiGatewayCredits => "AiGatewayCredits",
                 TeamLimitedMembershipTeamPermission.AiGatewaySettings => "AiGatewaySettings",
+                TeamLimitedMembershipTeamPermission.AiGatewayTranscriptsManager => "AiGatewayTranscriptsManager",
+                TeamLimitedMembershipTeamPermission.AiGatewayTranscriptsViewer => "AiGatewayTranscriptsViewer",
                 TeamLimitedMembershipTeamPermission.ConnectorManager => "ConnectorManager",
                 TeamLimitedMembershipTeamPermission.CreateProject => "CreateProject",
                 TeamLimitedMembershipTeamPermission.EnvVariableManager => "EnvVariableManager",
@@ -121,6 +131,8 @@ namespace Vercel
                 "AiGatewayBudgetManager" => TeamLimitedMembershipTeamPermission.AiGatewayBudgetManager,
                 "AiGatewayCredits" => TeamLimitedMembershipTeamPermission.AiGatewayCredits,
                 "AiGatewaySettings" => TeamLimitedMembershipTeamPermission.AiGatewaySettings,
+                "AiGatewayTranscriptsManager" => TeamLimitedMembershipTeamPermission.AiGatewayTranscriptsManager,
+                "AiGatewayTranscriptsViewer" => TeamLimitedMembershipTeamPermission.AiGatewayTranscriptsViewer,
                 "ConnectorManager" => TeamLimitedMembershipTeamPermission.ConnectorManager,
                 "CreateProject" => TeamLimitedMembershipTeamPermission.CreateProject,
                 "EnvVariableManager" => TeamLimitedMembershipTeamPermission.EnvVariableManager,

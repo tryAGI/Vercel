@@ -131,6 +131,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        TrafficSource,
+        /// <summary>
+        ///
+        /// </summary>
         TrustedSource,
         /// <summary>
         ///
@@ -180,6 +184,7 @@ namespace Vercel
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.ServerAction => "server_action",
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.TargetPath => "target_path",
+                CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.TrafficSource => "traffic_source",
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.UserAgent => "user_agent",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -222,6 +227,7 @@ namespace Vercel
                 "server_action" => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.ServerAction,
                 "shared_condition" => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.SharedCondition,
                 "target_path" => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.TargetPath,
+                "traffic_source" => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.TrafficSource,
                 "trusted_source" => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => CreateSecurityFirewallConfigByConfigVersionActivateResponseConditionConditionGroupItemConditionType.UserAgent,
                 _ => null,

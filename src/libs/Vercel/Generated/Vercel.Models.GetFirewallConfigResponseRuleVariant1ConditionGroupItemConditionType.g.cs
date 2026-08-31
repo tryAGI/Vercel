@@ -131,6 +131,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        TrafficSource,
+        /// <summary>
+        ///
+        /// </summary>
         TrustedSource,
         /// <summary>
         ///
@@ -180,6 +184,7 @@ namespace Vercel
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.ServerAction => "server_action",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TargetPath => "target_path",
+                GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TrafficSource => "traffic_source",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TrustedSource => "trusted_source",
                 GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.UserAgent => "user_agent",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -222,6 +227,7 @@ namespace Vercel
                 "server_action" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.ServerAction,
                 "shared_condition" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.SharedCondition,
                 "target_path" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TargetPath,
+                "traffic_source" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TrafficSource,
                 "trusted_source" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.TrustedSource,
                 "user_agent" => GetFirewallConfigResponseRuleVariant1ConditionGroupItemConditionType.UserAgent,
                 _ => null,

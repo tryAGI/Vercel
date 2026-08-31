@@ -27,6 +27,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayTranscriptsManager,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayTranscriptsViewer,
+        /// <summary>
+        ///
+        /// </summary>
         ConnectorManager,
         /// <summary>
         ///
@@ -94,6 +102,8 @@ namespace Vercel
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayBudgetManager => "AiGatewayBudgetManager",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayCredits => "AiGatewayCredits",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewaySettings => "AiGatewaySettings",
+                GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayTranscriptsManager => "AiGatewayTranscriptsManager",
+                GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayTranscriptsViewer => "AiGatewayTranscriptsViewer",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.ConnectorManager => "ConnectorManager",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.CreateProject => "CreateProject",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.EnvVariableManager => "EnvVariableManager",
@@ -121,6 +131,8 @@ namespace Vercel
                 "AiGatewayBudgetManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayBudgetManager,
                 "AiGatewayCredits" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayCredits,
                 "AiGatewaySettings" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewaySettings,
+                "AiGatewayTranscriptsManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayTranscriptsManager,
+                "AiGatewayTranscriptsViewer" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayTranscriptsViewer,
                 "ConnectorManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.ConnectorManager,
                 "CreateProject" => GetTeamMembersResponseEmailInviteCodeTeamPermission.CreateProject,
                 "EnvVariableManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.EnvVariableManager,
