@@ -11,6 +11,504 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasProject")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AliasProject { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasProtectionBypass")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AliasProtectionBypass { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bulkRedirects")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BulkRedirects { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachine")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BuildMachine { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurationLink")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnectConfigurationLink { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dataCacheNamespace")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DataCacheNamespace { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Deployment { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentBuildLogs")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentBuildLogs { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentCheck")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentCheck { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentCheckPreview")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentCheckPreview { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentCheckReRunFromProductionBranch")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentCheckReRunFromProductionBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentProductionGit")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentProductionGit { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentV0")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentV0 { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPreview")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPreview { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPrivate")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPrivate { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPromote")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPromote { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentRollback")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentRollback { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeCacheNamespace")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? EdgeCacheNamespace { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Environments { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("job")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Job { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("logs")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Logs { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("logsPreset")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? LogsPreset { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("observabilityData")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ObservabilityData { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("onDemandBuild")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OnDemandBuild { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("onDemandConcurrency")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OnDemandConcurrency { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OptionsAllowlist { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passwordProtection")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PasswordProtection { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("privateLinkEndpoint")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PrivateLinkEndpoint { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("productionAliasProtectionBypass")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProductionAliasProtectionBypass { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("productionShareableLink")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProductionShareableLink { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Project { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectAccessGroup")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectAccessGroup { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalyticsSampling")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectAnalyticsSampling { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalyticsUsage")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectAnalyticsUsage { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectCheck")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectCheck { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectCheckRun")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectCheckRun { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectDeploymentExpiration")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDeploymentExpiration { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectDeploymentHook")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDeploymentHook { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectDeploymentProtectionStrict")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDeploymentProtectionStrict { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectDomain")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomain { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectDomainCheckConfig")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomainCheckConfig { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectDomainMove")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomainMove { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectDomainVerify")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomainVerify { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectEvent")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEvent { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectEnvVars")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEnvVars { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectEnvVarsProduction")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEnvVarsProduction { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectEnvVarsUnownedByIntegration")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEnvVarsUnownedByIntegration { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectFlags")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlags { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectFlagsProduction")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlagsProduction { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectFlagsSdkKey")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlagsSdkKey { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectFromV0")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFromV0 { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectIntegrationConfiguration")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectIntegrationConfiguration { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectLink")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectLink { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectMember")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectMember { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectMonitoring")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectMonitoring { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectOIDCToken")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectOIDCToken { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectPermissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectPermissions { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectProductionBranch")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectProductionBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectProtectionBypass")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectProtectionBypass { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectRollingRelease")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectRollingRelease { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectRoutes")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectRoutes { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectSupportCase")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectSupportCase { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectSupportCaseComment")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectSupportCaseComment { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectTier")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTier { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectTransfer")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTransfer { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectTransferOut")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTransferOut { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectUsage")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectUsage { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pageIntegrity")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PageIntegrity { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("seawallConfig")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SeawallConfig { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("securityPlusConfiguration")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SecurityPlusConfiguration { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("shareableLink")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ShareableLink { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("shareableLinkStrict")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ShareableLinkStrict { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sharedEnvVarConnection")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SharedEnvVarConnection { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("skewProtection")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SkewProtection { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("analytics")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Analytics { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trustedIps")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TrustedIps { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TrustedSources { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("v0Chat")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? V0Chat { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vercelAuth")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelAuth { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vercelRun")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelRun { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("webAnalytics")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WebAnalytics { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("workflowRunData")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WorkflowRunData { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oauth2Connection")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Oauth2Connection { get; set; }
 
@@ -1185,504 +1683,6 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WebhookEvent { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("aliasProject")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AliasProject { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("aliasProtectionBypass")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AliasProtectionBypass { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bulkRedirects")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BulkRedirects { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachine")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BuildMachine { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurationLink")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ConnectConfigurationLink { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dataCacheNamespace")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DataCacheNamespace { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deployment")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Deployment { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentBuildLogs")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentBuildLogs { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentCheck")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentCheck { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentCheckPreview")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentCheckPreview { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentCheckReRunFromProductionBranch")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentCheckReRunFromProductionBranch { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentProductionGit")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentProductionGit { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentV0")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentV0 { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPreview")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPreview { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPrivate")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPrivate { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPromote")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentPromote { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentRollback")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? DeploymentRollback { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeCacheNamespace")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? EdgeCacheNamespace { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Environments { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("job")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Job { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("logs")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Logs { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("logsPreset")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? LogsPreset { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("observabilityData")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ObservabilityData { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("onDemandBuild")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OnDemandBuild { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("onDemandConcurrency")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OnDemandConcurrency { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("optionsAllowlist")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? OptionsAllowlist { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("passwordProtection")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PasswordProtection { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("privateLinkEndpoint")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PrivateLinkEndpoint { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("productionAliasProtectionBypass")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProductionAliasProtectionBypass { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("productionShareableLink")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProductionShareableLink { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Project { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectAccessGroup")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectAccessGroup { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalyticsSampling")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectAnalyticsSampling { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectAnalyticsUsage")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectAnalyticsUsage { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectCheck")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectCheck { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectCheckRun")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectCheckRun { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectDeploymentExpiration")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDeploymentExpiration { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectDeploymentHook")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDeploymentHook { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectDeploymentProtectionStrict")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDeploymentProtectionStrict { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectDomain")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomain { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectDomainCheckConfig")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomainCheckConfig { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectDomainMove")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomainMove { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectDomainVerify")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectDomainVerify { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectEvent")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEvent { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectEnvVars")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEnvVars { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectEnvVarsProduction")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEnvVarsProduction { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectEnvVarsUnownedByIntegration")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectEnvVarsUnownedByIntegration { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectFlags")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlags { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectFlagsProduction")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlagsProduction { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectFlagsSdkKey")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFlagsSdkKey { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectFromV0")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectFromV0 { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectIntegrationConfiguration")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectIntegrationConfiguration { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectLink")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectLink { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectMember")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectMember { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectMonitoring")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectMonitoring { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectOIDCToken")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectOIDCToken { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectPermissions")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectPermissions { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectProductionBranch")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectProductionBranch { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectProtectionBypass")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectProtectionBypass { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectRollingRelease")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectRollingRelease { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectRoutes")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectRoutes { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectSupportCase")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectSupportCase { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectSupportCaseComment")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectSupportCaseComment { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectTier")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTier { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectTransfer")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTransfer { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectTransferOut")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTransferOut { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectUsage")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectUsage { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pageIntegrity")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? PageIntegrity { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("seawallConfig")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SeawallConfig { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("securityPlusConfiguration")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SecurityPlusConfiguration { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("shareableLink")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ShareableLink { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("shareableLinkStrict")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ShareableLinkStrict { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sharedEnvVarConnection")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SharedEnvVarConnection { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("skewProtection")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? SkewProtection { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("analytics")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Analytics { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("trustedIps")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TrustedIps { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? TrustedSources { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("v0Chat")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? V0Chat { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vercelAuth")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelAuth { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vercelRun")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? VercelRun { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("webAnalytics")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WebAnalytics { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("workflowRunData")]
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? WorkflowRunData { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -1691,6 +1691,89 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetMicrofrontendsInGroupResponseProjectPermissions" /> class.
         /// </summary>
+        /// <param name="aliasProject"></param>
+        /// <param name="aliasProtectionBypass"></param>
+        /// <param name="bulkRedirects"></param>
+        /// <param name="buildMachine"></param>
+        /// <param name="connectConfigurationLink"></param>
+        /// <param name="dataCacheNamespace"></param>
+        /// <param name="deployment"></param>
+        /// <param name="deploymentBuildLogs"></param>
+        /// <param name="deploymentCheck"></param>
+        /// <param name="deploymentCheckPreview"></param>
+        /// <param name="deploymentCheckReRunFromProductionBranch"></param>
+        /// <param name="deploymentProductionGit"></param>
+        /// <param name="deploymentV0"></param>
+        /// <param name="deploymentPreview"></param>
+        /// <param name="deploymentPrivate"></param>
+        /// <param name="deploymentPromote"></param>
+        /// <param name="deploymentRollback"></param>
+        /// <param name="edgeCacheNamespace"></param>
+        /// <param name="environments"></param>
+        /// <param name="job"></param>
+        /// <param name="logs"></param>
+        /// <param name="logsPreset"></param>
+        /// <param name="observabilityData"></param>
+        /// <param name="onDemandBuild"></param>
+        /// <param name="onDemandConcurrency"></param>
+        /// <param name="optionsAllowlist"></param>
+        /// <param name="passwordProtection"></param>
+        /// <param name="privateLinkEndpoint"></param>
+        /// <param name="productionAliasProtectionBypass"></param>
+        /// <param name="productionShareableLink"></param>
+        /// <param name="project"></param>
+        /// <param name="projectAccessGroup"></param>
+        /// <param name="projectAnalyticsSampling"></param>
+        /// <param name="projectAnalyticsUsage"></param>
+        /// <param name="projectCheck"></param>
+        /// <param name="projectCheckRun"></param>
+        /// <param name="projectDeploymentExpiration"></param>
+        /// <param name="projectDeploymentHook"></param>
+        /// <param name="projectDeploymentProtectionStrict"></param>
+        /// <param name="projectDomain"></param>
+        /// <param name="projectDomainCheckConfig"></param>
+        /// <param name="projectDomainMove"></param>
+        /// <param name="projectDomainVerify"></param>
+        /// <param name="projectEvent"></param>
+        /// <param name="projectEnvVars"></param>
+        /// <param name="projectEnvVarsProduction"></param>
+        /// <param name="projectEnvVarsUnownedByIntegration"></param>
+        /// <param name="projectFlags"></param>
+        /// <param name="projectFlagsProduction"></param>
+        /// <param name="projectFlagsSdkKey"></param>
+        /// <param name="projectFromV0"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectIntegrationConfiguration"></param>
+        /// <param name="projectLink"></param>
+        /// <param name="projectMember"></param>
+        /// <param name="projectMonitoring"></param>
+        /// <param name="projectOIDCToken"></param>
+        /// <param name="projectPermissions"></param>
+        /// <param name="projectProductionBranch"></param>
+        /// <param name="projectProtectionBypass"></param>
+        /// <param name="projectRollingRelease"></param>
+        /// <param name="projectRoutes"></param>
+        /// <param name="projectSupportCase"></param>
+        /// <param name="projectSupportCaseComment"></param>
+        /// <param name="projectTier"></param>
+        /// <param name="projectTransfer"></param>
+        /// <param name="projectTransferOut"></param>
+        /// <param name="projectUsage"></param>
+        /// <param name="pageIntegrity"></param>
+        /// <param name="seawallConfig"></param>
+        /// <param name="securityPlusConfiguration"></param>
+        /// <param name="shareableLink"></param>
+        /// <param name="shareableLinkStrict"></param>
+        /// <param name="sharedEnvVarConnection"></param>
+        /// <param name="skewProtection"></param>
+        /// <param name="analytics"></param>
+        /// <param name="trustedIps"></param>
+        /// <param name="trustedSources"></param>
+        /// <param name="v0Chat"></param>
+        /// <param name="vercelAuth"></param>
+        /// <param name="vercelRun"></param>
+        /// <param name="webAnalytics"></param>
+        /// <param name="workflowRunData"></param>
         /// <param name="oauth2Connection"></param>
         /// <param name="user"></param>
         /// <param name="userConnection"></param>
@@ -1887,93 +1970,93 @@ namespace Vercel
         /// <param name="webAnalyticsPlan"></param>
         /// <param name="webhook"></param>
         /// <param name="webhookEvent"></param>
-        /// <param name="aliasProject"></param>
-        /// <param name="aliasProtectionBypass"></param>
-        /// <param name="bulkRedirects"></param>
-        /// <param name="buildMachine"></param>
-        /// <param name="connectConfigurationLink"></param>
-        /// <param name="dataCacheNamespace"></param>
-        /// <param name="deployment"></param>
-        /// <param name="deploymentBuildLogs"></param>
-        /// <param name="deploymentCheck"></param>
-        /// <param name="deploymentCheckPreview"></param>
-        /// <param name="deploymentCheckReRunFromProductionBranch"></param>
-        /// <param name="deploymentProductionGit"></param>
-        /// <param name="deploymentV0"></param>
-        /// <param name="deploymentPreview"></param>
-        /// <param name="deploymentPrivate"></param>
-        /// <param name="deploymentPromote"></param>
-        /// <param name="deploymentRollback"></param>
-        /// <param name="edgeCacheNamespace"></param>
-        /// <param name="environments"></param>
-        /// <param name="job"></param>
-        /// <param name="logs"></param>
-        /// <param name="logsPreset"></param>
-        /// <param name="observabilityData"></param>
-        /// <param name="onDemandBuild"></param>
-        /// <param name="onDemandConcurrency"></param>
-        /// <param name="optionsAllowlist"></param>
-        /// <param name="passwordProtection"></param>
-        /// <param name="privateLinkEndpoint"></param>
-        /// <param name="productionAliasProtectionBypass"></param>
-        /// <param name="productionShareableLink"></param>
-        /// <param name="project"></param>
-        /// <param name="projectAccessGroup"></param>
-        /// <param name="projectAnalyticsSampling"></param>
-        /// <param name="projectAnalyticsUsage"></param>
-        /// <param name="projectCheck"></param>
-        /// <param name="projectCheckRun"></param>
-        /// <param name="projectDeploymentExpiration"></param>
-        /// <param name="projectDeploymentHook"></param>
-        /// <param name="projectDeploymentProtectionStrict"></param>
-        /// <param name="projectDomain"></param>
-        /// <param name="projectDomainCheckConfig"></param>
-        /// <param name="projectDomainMove"></param>
-        /// <param name="projectDomainVerify"></param>
-        /// <param name="projectEvent"></param>
-        /// <param name="projectEnvVars"></param>
-        /// <param name="projectEnvVarsProduction"></param>
-        /// <param name="projectEnvVarsUnownedByIntegration"></param>
-        /// <param name="projectFlags"></param>
-        /// <param name="projectFlagsProduction"></param>
-        /// <param name="projectFlagsSdkKey"></param>
-        /// <param name="projectFromV0"></param>
-        /// <param name="projectId"></param>
-        /// <param name="projectIntegrationConfiguration"></param>
-        /// <param name="projectLink"></param>
-        /// <param name="projectMember"></param>
-        /// <param name="projectMonitoring"></param>
-        /// <param name="projectOIDCToken"></param>
-        /// <param name="projectPermissions"></param>
-        /// <param name="projectProductionBranch"></param>
-        /// <param name="projectProtectionBypass"></param>
-        /// <param name="projectRollingRelease"></param>
-        /// <param name="projectRoutes"></param>
-        /// <param name="projectSupportCase"></param>
-        /// <param name="projectSupportCaseComment"></param>
-        /// <param name="projectTier"></param>
-        /// <param name="projectTransfer"></param>
-        /// <param name="projectTransferOut"></param>
-        /// <param name="projectUsage"></param>
-        /// <param name="pageIntegrity"></param>
-        /// <param name="seawallConfig"></param>
-        /// <param name="securityPlusConfiguration"></param>
-        /// <param name="shareableLink"></param>
-        /// <param name="shareableLinkStrict"></param>
-        /// <param name="sharedEnvVarConnection"></param>
-        /// <param name="skewProtection"></param>
-        /// <param name="analytics"></param>
-        /// <param name="trustedIps"></param>
-        /// <param name="trustedSources"></param>
-        /// <param name="v0Chat"></param>
-        /// <param name="vercelAuth"></param>
-        /// <param name="vercelRun"></param>
-        /// <param name="webAnalytics"></param>
-        /// <param name="workflowRunData"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetMicrofrontendsInGroupResponseProjectPermissions(
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aliasProject,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aliasProtectionBypass,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? bulkRedirects,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? buildMachine,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connectConfigurationLink,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? dataCacheNamespace,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deployment,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentBuildLogs,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentCheck,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentCheckPreview,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentCheckReRunFromProductionBranch,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentProductionGit,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentV0,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentPreview,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentPrivate,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentPromote,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentRollback,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? edgeCacheNamespace,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? environments,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? job,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? logs,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? logsPreset,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? observabilityData,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? onDemandBuild,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? onDemandConcurrency,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? optionsAllowlist,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? passwordProtection,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? privateLinkEndpoint,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? productionAliasProtectionBypass,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? productionShareableLink,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? project,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectAccessGroup,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectAnalyticsSampling,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectAnalyticsUsage,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectCheck,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectCheckRun,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDeploymentExpiration,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDeploymentHook,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDeploymentProtectionStrict,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomain,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomainCheckConfig,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomainMove,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomainVerify,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEvent,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEnvVars,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEnvVarsProduction,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEnvVarsUnownedByIntegration,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlags,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlagsProduction,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlagsSdkKey,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFromV0,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectId,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectIntegrationConfiguration,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectLink,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectMember,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectMonitoring,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectOIDCToken,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectPermissions,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectProductionBranch,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectProtectionBypass,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectRollingRelease,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectRoutes,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectSupportCase,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectSupportCaseComment,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectTier,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectTransfer,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectTransferOut,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectUsage,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? pageIntegrity,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? seawallConfig,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? securityPlusConfiguration,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? shareableLink,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? shareableLinkStrict,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVarConnection,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? skewProtection,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? analytics,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? trustedIps,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? trustedSources,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? v0Chat,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelAuth,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelRun,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalytics,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? workflowRunData,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? oauth2Connection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? user,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? userConnection,
@@ -2169,91 +2252,91 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vpcPeeringConnection,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalyticsPlan,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webhook,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webhookEvent,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aliasProject,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aliasProtectionBypass,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? bulkRedirects,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? buildMachine,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? connectConfigurationLink,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? dataCacheNamespace,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deployment,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentBuildLogs,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentCheck,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentCheckPreview,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentCheckReRunFromProductionBranch,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentProductionGit,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentV0,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentPreview,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentPrivate,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentPromote,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? deploymentRollback,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? edgeCacheNamespace,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? environments,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? job,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? logs,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? logsPreset,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? observabilityData,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? onDemandBuild,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? onDemandConcurrency,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? optionsAllowlist,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? passwordProtection,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? privateLinkEndpoint,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? productionAliasProtectionBypass,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? productionShareableLink,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? project,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectAccessGroup,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectAnalyticsSampling,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectAnalyticsUsage,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectCheck,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectCheckRun,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDeploymentExpiration,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDeploymentHook,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDeploymentProtectionStrict,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomain,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomainCheckConfig,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomainMove,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectDomainVerify,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEvent,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEnvVars,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEnvVarsProduction,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectEnvVarsUnownedByIntegration,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlags,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlagsProduction,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFlagsSdkKey,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectFromV0,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectId,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectIntegrationConfiguration,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectLink,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectMember,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectMonitoring,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectOIDCToken,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectPermissions,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectProductionBranch,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectProtectionBypass,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectRollingRelease,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectRoutes,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectSupportCase,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectSupportCaseComment,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectTier,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectTransfer,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectTransferOut,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectUsage,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? pageIntegrity,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? seawallConfig,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? securityPlusConfiguration,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? shareableLink,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? shareableLinkStrict,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? sharedEnvVarConnection,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? skewProtection,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? analytics,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? trustedIps,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? trustedSources,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? v0Chat,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelAuth,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelRun,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webAnalytics,
-            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? workflowRunData)
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? webhookEvent)
         {
+            this.AliasProject = aliasProject;
+            this.AliasProtectionBypass = aliasProtectionBypass;
+            this.BulkRedirects = bulkRedirects;
+            this.BuildMachine = buildMachine;
+            this.ConnectConfigurationLink = connectConfigurationLink;
+            this.DataCacheNamespace = dataCacheNamespace;
+            this.Deployment = deployment;
+            this.DeploymentBuildLogs = deploymentBuildLogs;
+            this.DeploymentCheck = deploymentCheck;
+            this.DeploymentCheckPreview = deploymentCheckPreview;
+            this.DeploymentCheckReRunFromProductionBranch = deploymentCheckReRunFromProductionBranch;
+            this.DeploymentProductionGit = deploymentProductionGit;
+            this.DeploymentV0 = deploymentV0;
+            this.DeploymentPreview = deploymentPreview;
+            this.DeploymentPrivate = deploymentPrivate;
+            this.DeploymentPromote = deploymentPromote;
+            this.DeploymentRollback = deploymentRollback;
+            this.EdgeCacheNamespace = edgeCacheNamespace;
+            this.Environments = environments;
+            this.Job = job;
+            this.Logs = logs;
+            this.LogsPreset = logsPreset;
+            this.ObservabilityData = observabilityData;
+            this.OnDemandBuild = onDemandBuild;
+            this.OnDemandConcurrency = onDemandConcurrency;
+            this.OptionsAllowlist = optionsAllowlist;
+            this.PasswordProtection = passwordProtection;
+            this.PrivateLinkEndpoint = privateLinkEndpoint;
+            this.ProductionAliasProtectionBypass = productionAliasProtectionBypass;
+            this.ProductionShareableLink = productionShareableLink;
+            this.Project = project;
+            this.ProjectAccessGroup = projectAccessGroup;
+            this.ProjectAnalyticsSampling = projectAnalyticsSampling;
+            this.ProjectAnalyticsUsage = projectAnalyticsUsage;
+            this.ProjectCheck = projectCheck;
+            this.ProjectCheckRun = projectCheckRun;
+            this.ProjectDeploymentExpiration = projectDeploymentExpiration;
+            this.ProjectDeploymentHook = projectDeploymentHook;
+            this.ProjectDeploymentProtectionStrict = projectDeploymentProtectionStrict;
+            this.ProjectDomain = projectDomain;
+            this.ProjectDomainCheckConfig = projectDomainCheckConfig;
+            this.ProjectDomainMove = projectDomainMove;
+            this.ProjectDomainVerify = projectDomainVerify;
+            this.ProjectEvent = projectEvent;
+            this.ProjectEnvVars = projectEnvVars;
+            this.ProjectEnvVarsProduction = projectEnvVarsProduction;
+            this.ProjectEnvVarsUnownedByIntegration = projectEnvVarsUnownedByIntegration;
+            this.ProjectFlags = projectFlags;
+            this.ProjectFlagsProduction = projectFlagsProduction;
+            this.ProjectFlagsSdkKey = projectFlagsSdkKey;
+            this.ProjectFromV0 = projectFromV0;
+            this.ProjectId = projectId;
+            this.ProjectIntegrationConfiguration = projectIntegrationConfiguration;
+            this.ProjectLink = projectLink;
+            this.ProjectMember = projectMember;
+            this.ProjectMonitoring = projectMonitoring;
+            this.ProjectOIDCToken = projectOIDCToken;
+            this.ProjectPermissions = projectPermissions;
+            this.ProjectProductionBranch = projectProductionBranch;
+            this.ProjectProtectionBypass = projectProtectionBypass;
+            this.ProjectRollingRelease = projectRollingRelease;
+            this.ProjectRoutes = projectRoutes;
+            this.ProjectSupportCase = projectSupportCase;
+            this.ProjectSupportCaseComment = projectSupportCaseComment;
+            this.ProjectTier = projectTier;
+            this.ProjectTransfer = projectTransfer;
+            this.ProjectTransferOut = projectTransferOut;
+            this.ProjectUsage = projectUsage;
+            this.PageIntegrity = pageIntegrity;
+            this.SeawallConfig = seawallConfig;
+            this.SecurityPlusConfiguration = securityPlusConfiguration;
+            this.ShareableLink = shareableLink;
+            this.ShareableLinkStrict = shareableLinkStrict;
+            this.SharedEnvVarConnection = sharedEnvVarConnection;
+            this.SkewProtection = skewProtection;
+            this.Analytics = analytics;
+            this.TrustedIps = trustedIps;
+            this.TrustedSources = trustedSources;
+            this.V0Chat = v0Chat;
+            this.VercelAuth = vercelAuth;
+            this.VercelRun = vercelRun;
+            this.WebAnalytics = webAnalytics;
+            this.WorkflowRunData = workflowRunData;
             this.Oauth2Connection = oauth2Connection;
             this.User = user;
             this.UserConnection = userConnection;
@@ -2450,89 +2533,6 @@ namespace Vercel
             this.WebAnalyticsPlan = webAnalyticsPlan;
             this.Webhook = webhook;
             this.WebhookEvent = webhookEvent;
-            this.AliasProject = aliasProject;
-            this.AliasProtectionBypass = aliasProtectionBypass;
-            this.BulkRedirects = bulkRedirects;
-            this.BuildMachine = buildMachine;
-            this.ConnectConfigurationLink = connectConfigurationLink;
-            this.DataCacheNamespace = dataCacheNamespace;
-            this.Deployment = deployment;
-            this.DeploymentBuildLogs = deploymentBuildLogs;
-            this.DeploymentCheck = deploymentCheck;
-            this.DeploymentCheckPreview = deploymentCheckPreview;
-            this.DeploymentCheckReRunFromProductionBranch = deploymentCheckReRunFromProductionBranch;
-            this.DeploymentProductionGit = deploymentProductionGit;
-            this.DeploymentV0 = deploymentV0;
-            this.DeploymentPreview = deploymentPreview;
-            this.DeploymentPrivate = deploymentPrivate;
-            this.DeploymentPromote = deploymentPromote;
-            this.DeploymentRollback = deploymentRollback;
-            this.EdgeCacheNamespace = edgeCacheNamespace;
-            this.Environments = environments;
-            this.Job = job;
-            this.Logs = logs;
-            this.LogsPreset = logsPreset;
-            this.ObservabilityData = observabilityData;
-            this.OnDemandBuild = onDemandBuild;
-            this.OnDemandConcurrency = onDemandConcurrency;
-            this.OptionsAllowlist = optionsAllowlist;
-            this.PasswordProtection = passwordProtection;
-            this.PrivateLinkEndpoint = privateLinkEndpoint;
-            this.ProductionAliasProtectionBypass = productionAliasProtectionBypass;
-            this.ProductionShareableLink = productionShareableLink;
-            this.Project = project;
-            this.ProjectAccessGroup = projectAccessGroup;
-            this.ProjectAnalyticsSampling = projectAnalyticsSampling;
-            this.ProjectAnalyticsUsage = projectAnalyticsUsage;
-            this.ProjectCheck = projectCheck;
-            this.ProjectCheckRun = projectCheckRun;
-            this.ProjectDeploymentExpiration = projectDeploymentExpiration;
-            this.ProjectDeploymentHook = projectDeploymentHook;
-            this.ProjectDeploymentProtectionStrict = projectDeploymentProtectionStrict;
-            this.ProjectDomain = projectDomain;
-            this.ProjectDomainCheckConfig = projectDomainCheckConfig;
-            this.ProjectDomainMove = projectDomainMove;
-            this.ProjectDomainVerify = projectDomainVerify;
-            this.ProjectEvent = projectEvent;
-            this.ProjectEnvVars = projectEnvVars;
-            this.ProjectEnvVarsProduction = projectEnvVarsProduction;
-            this.ProjectEnvVarsUnownedByIntegration = projectEnvVarsUnownedByIntegration;
-            this.ProjectFlags = projectFlags;
-            this.ProjectFlagsProduction = projectFlagsProduction;
-            this.ProjectFlagsSdkKey = projectFlagsSdkKey;
-            this.ProjectFromV0 = projectFromV0;
-            this.ProjectId = projectId;
-            this.ProjectIntegrationConfiguration = projectIntegrationConfiguration;
-            this.ProjectLink = projectLink;
-            this.ProjectMember = projectMember;
-            this.ProjectMonitoring = projectMonitoring;
-            this.ProjectOIDCToken = projectOIDCToken;
-            this.ProjectPermissions = projectPermissions;
-            this.ProjectProductionBranch = projectProductionBranch;
-            this.ProjectProtectionBypass = projectProtectionBypass;
-            this.ProjectRollingRelease = projectRollingRelease;
-            this.ProjectRoutes = projectRoutes;
-            this.ProjectSupportCase = projectSupportCase;
-            this.ProjectSupportCaseComment = projectSupportCaseComment;
-            this.ProjectTier = projectTier;
-            this.ProjectTransfer = projectTransfer;
-            this.ProjectTransferOut = projectTransferOut;
-            this.ProjectUsage = projectUsage;
-            this.PageIntegrity = pageIntegrity;
-            this.SeawallConfig = seawallConfig;
-            this.SecurityPlusConfiguration = securityPlusConfiguration;
-            this.ShareableLink = shareableLink;
-            this.ShareableLinkStrict = shareableLinkStrict;
-            this.SharedEnvVarConnection = sharedEnvVarConnection;
-            this.SkewProtection = skewProtection;
-            this.Analytics = analytics;
-            this.TrustedIps = trustedIps;
-            this.TrustedSources = trustedSources;
-            this.V0Chat = v0Chat;
-            this.VercelAuth = vercelAuth;
-            this.VercelRun = vercelRun;
-            this.WebAnalytics = webAnalytics;
-            this.WorkflowRunData = workflowRunData;
         }
 
         /// <summary>
