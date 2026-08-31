@@ -131,6 +131,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayTranscripts")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayTranscripts { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayTranscriptsSettings")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayTranscriptsSettings { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aiGatewayUsage")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? AiGatewayUsage { get; set; }
 
@@ -1699,6 +1711,8 @@ namespace Vercel
         /// <param name="aiGatewayGuardrails"></param>
         /// <param name="aiGatewayRules"></param>
         /// <param name="aiGatewaySettings"></param>
+        /// <param name="aiGatewayTranscripts"></param>
+        /// <param name="aiGatewayTranscriptsSettings"></param>
         /// <param name="aiGatewayUsage"></param>
         /// <param name="aiGatewayVirtualModelConfigs"></param>
         /// <param name="alerts"></param>
@@ -1980,6 +1994,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayGuardrails,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayRules,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewaySettings,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayTranscripts,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayTranscriptsSettings,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayUsage,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? aiGatewayVirtualModelConfigs,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? alerts,
@@ -2258,6 +2274,8 @@ namespace Vercel
             this.AiGatewayGuardrails = aiGatewayGuardrails;
             this.AiGatewayRules = aiGatewayRules;
             this.AiGatewaySettings = aiGatewaySettings;
+            this.AiGatewayTranscripts = aiGatewayTranscripts;
+            this.AiGatewayTranscriptsSettings = aiGatewayTranscriptsSettings;
             this.AiGatewayUsage = aiGatewayUsage;
             this.AiGatewayVirtualModelConfigs = aiGatewayVirtualModelConfigs;
             this.Alerts = alerts;

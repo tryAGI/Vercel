@@ -27,6 +27,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayTranscriptsManager,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayTranscriptsViewer,
+        /// <summary>
+        ///
+        /// </summary>
         ConnectorManager,
         /// <summary>
         ///
@@ -94,6 +102,8 @@ namespace Vercel
                 ReadAccessGroupResponseTeamPermission.AiGatewayBudgetManager => "AiGatewayBudgetManager",
                 ReadAccessGroupResponseTeamPermission.AiGatewayCredits => "AiGatewayCredits",
                 ReadAccessGroupResponseTeamPermission.AiGatewaySettings => "AiGatewaySettings",
+                ReadAccessGroupResponseTeamPermission.AiGatewayTranscriptsManager => "AiGatewayTranscriptsManager",
+                ReadAccessGroupResponseTeamPermission.AiGatewayTranscriptsViewer => "AiGatewayTranscriptsViewer",
                 ReadAccessGroupResponseTeamPermission.ConnectorManager => "ConnectorManager",
                 ReadAccessGroupResponseTeamPermission.CreateProject => "CreateProject",
                 ReadAccessGroupResponseTeamPermission.EnvVariableManager => "EnvVariableManager",
@@ -121,6 +131,8 @@ namespace Vercel
                 "AiGatewayBudgetManager" => ReadAccessGroupResponseTeamPermission.AiGatewayBudgetManager,
                 "AiGatewayCredits" => ReadAccessGroupResponseTeamPermission.AiGatewayCredits,
                 "AiGatewaySettings" => ReadAccessGroupResponseTeamPermission.AiGatewaySettings,
+                "AiGatewayTranscriptsManager" => ReadAccessGroupResponseTeamPermission.AiGatewayTranscriptsManager,
+                "AiGatewayTranscriptsViewer" => ReadAccessGroupResponseTeamPermission.AiGatewayTranscriptsViewer,
                 "ConnectorManager" => ReadAccessGroupResponseTeamPermission.ConnectorManager,
                 "CreateProject" => ReadAccessGroupResponseTeamPermission.CreateProject,
                 "EnvVariableManager" => ReadAccessGroupResponseTeamPermission.EnvVariableManager,

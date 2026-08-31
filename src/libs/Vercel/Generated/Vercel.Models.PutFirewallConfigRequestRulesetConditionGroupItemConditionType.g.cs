@@ -131,6 +131,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        TrafficSource,
+        /// <summary>
+        ///
+        /// </summary>
         UserAgent,
     }
 
@@ -176,6 +180,7 @@ namespace Vercel
                 PutFirewallConfigRequestRulesetConditionGroupItemConditionType.ServerAction => "server_action",
                 PutFirewallConfigRequestRulesetConditionGroupItemConditionType.SharedCondition => "shared_condition",
                 PutFirewallConfigRequestRulesetConditionGroupItemConditionType.TargetPath => "target_path",
+                PutFirewallConfigRequestRulesetConditionGroupItemConditionType.TrafficSource => "traffic_source",
                 PutFirewallConfigRequestRulesetConditionGroupItemConditionType.UserAgent => "user_agent",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -217,6 +222,7 @@ namespace Vercel
                 "server_action" => PutFirewallConfigRequestRulesetConditionGroupItemConditionType.ServerAction,
                 "shared_condition" => PutFirewallConfigRequestRulesetConditionGroupItemConditionType.SharedCondition,
                 "target_path" => PutFirewallConfigRequestRulesetConditionGroupItemConditionType.TargetPath,
+                "traffic_source" => PutFirewallConfigRequestRulesetConditionGroupItemConditionType.TrafficSource,
                 "user_agent" => PutFirewallConfigRequestRulesetConditionGroupItemConditionType.UserAgent,
                 _ => null,
             };
