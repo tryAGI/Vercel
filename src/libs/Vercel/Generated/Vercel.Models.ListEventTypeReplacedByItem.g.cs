@@ -147,6 +147,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayInferenceRegionsUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayModelAllowlistModelsUpdated,
         /// <summary>
         ///
@@ -2684,6 +2688,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
                 ListEventTypeReplacedByItem.AiGatewayCreditsPurchased => "ai-gateway-credits-purchased",
                 ListEventTypeReplacedByItem.AiGatewayGuardrailsUpdated => "ai-gateway-guardrails-updated",
+                ListEventTypeReplacedByItem.AiGatewayInferenceRegionsUpdated => "ai-gateway-inference-regions-updated",
                 ListEventTypeReplacedByItem.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
                 ListEventTypeReplacedByItem.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
                 ListEventTypeReplacedByItem.AiGatewayPrivateModelCreated => "ai-gateway-private-model-created",
@@ -3351,6 +3356,7 @@ namespace Vercel
                 "ai-gateway-byok-credential-updated" => ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated,
                 "ai-gateway-credits-purchased" => ListEventTypeReplacedByItem.AiGatewayCreditsPurchased,
                 "ai-gateway-guardrails-updated" => ListEventTypeReplacedByItem.AiGatewayGuardrailsUpdated,
+                "ai-gateway-inference-regions-updated" => ListEventTypeReplacedByItem.AiGatewayInferenceRegionsUpdated,
                 "ai-gateway-model-allowlist-models-updated" => ListEventTypeReplacedByItem.AiGatewayModelAllowlistModelsUpdated,
                 "ai-gateway-model-allowlist-toggled" => ListEventTypeReplacedByItem.AiGatewayModelAllowlistToggled,
                 "ai-gateway-private-model-created" => ListEventTypeReplacedByItem.AiGatewayPrivateModelCreated,
