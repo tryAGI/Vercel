@@ -31,6 +31,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("affinity")]
+        public global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BuilderConfigFunctionsAffinity? Affinity { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxConcurrency")]
         public double? MaxConcurrency { get; set; }
 
@@ -88,6 +94,7 @@ namespace Vercel
         /// <param name="architecture"></param>
         /// <param name="memory"></param>
         /// <param name="maxDuration"></param>
+        /// <param name="affinity"></param>
         /// <param name="maxConcurrency"></param>
         /// <param name="regions"></param>
         /// <param name="functionFailoverRegions"></param>
@@ -103,6 +110,7 @@ namespace Vercel
             global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BuilderConfigFunctionsArchitecture? architecture,
             double? memory,
             global::Vercel.OneOf<double?, global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BuilderConfigFunctionsMaxDuration?>? maxDuration,
+            global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BuilderConfigFunctionsAffinity? affinity,
             double? maxConcurrency,
             global::System.Collections.Generic.IList<string>? regions,
             global::System.Collections.Generic.IList<string>? functionFailoverRegions,
@@ -115,6 +123,7 @@ namespace Vercel
             this.Architecture = architecture;
             this.Memory = memory;
             this.MaxDuration = maxDuration;
+            this.Affinity = affinity;
             this.MaxConcurrency = maxConcurrency;
             this.Regions = regions;
             this.FunctionFailoverRegions = functionFailoverRegions;

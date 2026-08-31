@@ -16467,6 +16467,20 @@
                                   }
                                 ]
                               },
+                              "affinity": {
+                                "properties": {
+                                  "mode": {
+                                    "type": "string",
+                                    "enum": [
+                                      "strict"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "mode"
+                                ],
+                                "type": "object"
+                              },
                               "maxConcurrency": {
                                 "type": "number"
                               },
@@ -17455,6 +17469,20 @@
                                                     }
                                                   ]
                                                 },
+                                                "affinity": {
+                                                  "properties": {
+                                                    "mode": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "strict"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "mode"
+                                                  ],
+                                                  "type": "object"
+                                                },
                                                 "maxConcurrency": {
                                                   "type": "number"
                                                 },
@@ -17966,6 +17994,20 @@
                                                     }
                                                   ]
                                                 },
+                                                "affinity": {
+                                                  "properties": {
+                                                    "mode": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "strict"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "mode"
+                                                  ],
+                                                  "type": "object"
+                                                },
                                                 "maxConcurrency": {
                                                   "type": "number"
                                                 },
@@ -18312,6 +18354,20 @@
                                               ]
                                             }
                                           ]
+                                        },
+                                        "affinity": {
+                                          "properties": {
+                                            "mode": {
+                                              "type": "string",
+                                              "enum": [
+                                                "strict"
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "mode"
+                                          ],
+                                          "type": "object"
                                         },
                                         "maxConcurrency": {
                                           "type": "number"
@@ -24610,6 +24666,20 @@
                                   }
                                 ]
                               },
+                              "affinity": {
+                                "properties": {
+                                  "mode": {
+                                    "type": "string",
+                                    "enum": [
+                                      "strict"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "mode"
+                                ],
+                                "type": "object"
+                              },
                               "maxConcurrency": {
                                 "type": "number"
                               },
@@ -25598,6 +25668,20 @@
                                                     }
                                                   ]
                                                 },
+                                                "affinity": {
+                                                  "properties": {
+                                                    "mode": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "strict"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "mode"
+                                                  ],
+                                                  "type": "object"
+                                                },
                                                 "maxConcurrency": {
                                                   "type": "number"
                                                 },
@@ -26109,6 +26193,20 @@
                                                     }
                                                   ]
                                                 },
+                                                "affinity": {
+                                                  "properties": {
+                                                    "mode": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "strict"
+                                                      ]
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "mode"
+                                                  ],
+                                                  "type": "object"
+                                                },
                                                 "maxConcurrency": {
                                                   "type": "number"
                                                 },
@@ -26455,6 +26553,20 @@
                                               ]
                                             }
                                           ]
+                                        },
+                                        "affinity": {
+                                          "properties": {
+                                            "mode": {
+                                              "type": "string",
+                                              "enum": [
+                                                "strict"
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "mode"
+                                          ],
+                                          "type": "object"
                                         },
                                         "maxConcurrency": {
                                           "type": "number"
@@ -31898,6 +32010,20 @@
                               }
                             ]
                           },
+                          "affinity": {
+                            "properties": {
+                              "mode": {
+                                "type": "string",
+                                "enum": [
+                                  "strict"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "mode"
+                            ],
+                            "type": "object"
+                          },
                           "maxConcurrency": {
                             "type": "number"
                           },
@@ -32886,6 +33012,20 @@
                                                 }
                                               ]
                                             },
+                                            "affinity": {
+                                              "properties": {
+                                                "mode": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "strict"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "mode"
+                                              ],
+                                              "type": "object"
+                                            },
                                             "maxConcurrency": {
                                               "type": "number"
                                             },
@@ -33397,6 +33537,20 @@
                                                 }
                                               ]
                                             },
+                                            "affinity": {
+                                              "properties": {
+                                                "mode": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "strict"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "mode"
+                                              ],
+                                              "type": "object"
+                                            },
                                             "maxConcurrency": {
                                               "type": "number"
                                             },
@@ -33743,6 +33897,20 @@
                                           ]
                                         }
                                       ]
+                                    },
+                                    "affinity": {
+                                      "properties": {
+                                        "mode": {
+                                          "type": "string",
+                                          "enum": [
+                                            "strict"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "mode"
+                                      ],
+                                      "type": "object"
                                     },
                                     "maxConcurrency": {
                                       "type": "number"
@@ -178519,6 +178687,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "408": {
             "description": ""
           },
           "410": {
