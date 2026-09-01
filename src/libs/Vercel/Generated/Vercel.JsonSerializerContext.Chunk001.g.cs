@@ -11,6 +11,11 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUser))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlock))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockReason), TypeInfoPropertyName = "AuthUserSoftBlockReason2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockBlockedDueToOverageType), TypeInfoPropertyName = "AuthUserSoftBlockBlockedDueToOverageType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockHobbyAllocationPause))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AuthUserSoftBlockHobbyAllocationPauseTrigger>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockHobbyAllocationPauseTrigger))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockHobbyAllocationPauseTriggerAllocation), TypeInfoPropertyName = "AuthUserSoftBlockHobbyAllocationPauseTriggerAllocation2")]
@@ -506,11 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsRequestEntitieAttributeLabel>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsRequestEntitieAttributeLabel))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateFlagSegmentRequestDataRule>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRule))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateFlagSegmentRequestDataRuleCondition>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagSegmentRequestDataRuleCondition))]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

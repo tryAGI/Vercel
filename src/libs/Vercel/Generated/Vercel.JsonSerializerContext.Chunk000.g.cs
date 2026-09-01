@@ -103,6 +103,11 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeSendblue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeSlack))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeSlackSlackTeam))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorCreateDataTypeSlackSlashCommand>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeSlackSlashCommand))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorCreateDataTypeSlackShortcut>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeSlackShortcut))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeSlackShortcutType), TypeInfoPropertyName = "ConnectConnectorCreateDataTypeSlackShortcutType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeSnowflake))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypePhoton))]
@@ -506,11 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant2Type), TypeInfoPropertyName = "AuthTokenScopeVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant2Origin), TypeInfoPropertyName = "AuthTokenScopeVariant2Origin2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUser))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlock))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockReason), TypeInfoPropertyName = "AuthUserSoftBlockReason2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockBlockedDueToOverageType), TypeInfoPropertyName = "AuthUserSoftBlockBlockedDueToOverageType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserSoftBlockHobbyAllocationPause))]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -16,6 +16,12 @@ namespace Vercel
         public required string PlanId { get; set; }
 
         /// <summary>
+        /// The current plan being replaced by this purchase
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fromPlan")]
+        public global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlan? FromPlan { get; set; }
+
+        /// <summary>
         /// The plan item quantities to set for the subscription
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("planItemQuantities")]
@@ -39,6 +45,9 @@ namespace Vercel
         /// <param name="planId">
         /// The ID of the plan to subscribe to
         /// </param>
+        /// <param name="fromPlan">
+        /// The current plan being replaced by this purchase
+        /// </param>
         /// <param name="planItemQuantities">
         /// The plan item quantities to set for the subscription
         /// </param>
@@ -50,10 +59,12 @@ namespace Vercel
 #endif
         public BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Options(
             string planId,
+            global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlan? fromPlan,
             global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsPlanItemQuantitie>? planItemQuantities,
             string? rateVariantKey)
         {
             this.PlanId = planId ?? throw new global::System.ArgumentNullException(nameof(planId));
+            this.FromPlan = fromPlan;
             this.PlanItemQuantities = planItemQuantities;
             this.RateVariantKey = rateVariantKey;
         }

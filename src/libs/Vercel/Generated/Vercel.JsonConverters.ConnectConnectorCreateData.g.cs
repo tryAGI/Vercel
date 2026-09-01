@@ -170,11 +170,13 @@ namespace Vercel.JsonConverters
             if (__jsonProps.Contains("clientId")) __score7++;
             if (__jsonProps.Contains("clientSecret")) __score7++;
             if (__jsonProps.Contains("extras")) __score7++;
+            if (__jsonProps.Contains("shortcuts")) __score7++;
             if (__jsonProps.Contains("signingSecret")) __score7++;
             if (__jsonProps.Contains("slackTeam")) __score7++;
             if (__jsonProps.Contains("slackTeam.domain")) __score7++;
             if (__jsonProps.Contains("slackTeam.id")) __score7++;
             if (__jsonProps.Contains("slackTeam.name")) __score7++;
+            if (__jsonProps.Contains("slashCommands")) __score7++;
             if (__jsonProps.Contains("userScopes")) __score7++;
             if (__jsonProps.Contains("verificationToken")) __score7++;
             var __score8 = 0;

@@ -11,6 +11,15 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Target?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Target2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemType?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemSamplingItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnv?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnv2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2>?), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2_112bdb30db32220c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1Kind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2Kind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2Version?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemFilterV2Version2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2>?), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2_99596490ccace210")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment2")]
@@ -502,15 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant3Source?), TypeInfoPropertyName = "NullableGetConfigurationResponseVariant3Source2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant3Type?), TypeInfoPropertyName = "NullableGetConfigurationResponseVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant3DisabledReason?), TypeInfoPropertyName = "NullableGetConfigurationResponseVariant3DisabledReason2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationResponseVariant3InstallationType?), TypeInfoPropertyName = "NullableGetConfigurationResponseVariant3InstallationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationProductsResponseProductProtocolsStorageStatus?), TypeInfoPropertyName = "NullableGetConfigurationProductsResponseProductProtocolsStorageStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationProductsResponseProductProtocolsExperimentationStatus?), TypeInfoPropertyName = "NullableGetConfigurationProductsResponseProductProtocolsExperimentationStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationProductsResponseProductProtocolsAiStatus?), TypeInfoPropertyName = "NullableGetConfigurationProductsResponseProductProtocolsAiStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationProductsResponseProductProtocolsAuthenticationStatus?), TypeInfoPropertyName = "NullableGetConfigurationProductsResponseProductProtocolsAuthenticationStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationProductsResponseProductProtocolsObservabilityStatus?), TypeInfoPropertyName = "NullableGetConfigurationProductsResponseProductProtocolsObservabilityStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationProductsResponseProductProtocolsVideoStatus?), TypeInfoPropertyName = "NullableGetConfigurationProductsResponseProductProtocolsVideoStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationProductsResponseProductProtocolsWorkflowStatus?), TypeInfoPropertyName = "NullableGetConfigurationProductsResponseProductProtocolsWorkflowStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationProductsResponseProductProtocolsChecksStatus?), TypeInfoPropertyName = "NullableGetConfigurationProductsResponseProductProtocolsChecksStatus2")]
     internal sealed partial class SourceGenerationContextChunk025 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

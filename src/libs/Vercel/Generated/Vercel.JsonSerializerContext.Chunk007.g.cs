@@ -11,6 +11,14 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseBuild))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CancelDeploymentResponseBuild2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseBuild2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseResourceConfig))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseResourceConfigBuildMachine))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseResourceConfigBuildMachinePurchaseType), TypeInfoPropertyName = "CancelDeploymentResponseResourceConfigBuildMachinePurchaseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType), TypeInfoPropertyName = "CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType), TypeInfoPropertyName = "CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseProjectSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseProjectSettingsNodeVersion), TypeInfoPropertyName = "CancelDeploymentResponseProjectSettingsNodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseProjectSettingsFramework), TypeInfoPropertyName = "CancelDeploymentResponseProjectSettingsFramework2")]
@@ -503,14 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AnyOf<global::Vercel.GetOrderResponseDomainVariant2ErrorVariant1, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant2, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant3, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant4, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant5, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant6, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant7, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant8, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant9, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant10>?, global::Vercel.GetOrderResponseDomainVariant2Error>), TypeInfoPropertyName = "GetOrderResponseDomainVariant2Error_c4ae4b401e5bc310")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.GetOrderResponseDomainVariant2ErrorVariant1, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant2, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant3, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant4, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant5, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant6, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant7, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant8, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant9, global::Vercel.GetOrderResponseDomainVariant2ErrorVariant10>), TypeInfoPropertyName = "GetOrderResponseDomainVariant2ErrorVariant10_2e56d9b0e4244953")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseDomainVariant2ErrorVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseDomainVariant2ErrorVariant1Code), TypeInfoPropertyName = "GetOrderResponseDomainVariant2ErrorVariant1Code2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseDomainVariant2ErrorVariant1Details))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseDomainVariant2ErrorVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseDomainVariant2ErrorVariant2Code), TypeInfoPropertyName = "GetOrderResponseDomainVariant2ErrorVariant2Code2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseDomainVariant2ErrorVariant2Details))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseDomainVariant2ErrorVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseDomainVariant2ErrorVariant3Code), TypeInfoPropertyName = "GetOrderResponseDomainVariant2ErrorVariant3Code2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseDomainVariant2ErrorVariant4))]
     internal sealed partial class SourceGenerationContextChunk007 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
