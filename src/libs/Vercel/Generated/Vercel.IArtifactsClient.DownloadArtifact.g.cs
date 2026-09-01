@@ -8,11 +8,11 @@ namespace Vercel
         /// Download a cache artifact<br/>
         /// Downloads a cache artifact indentified by its `hash` specified on the request path. The artifact is downloaded as an octet-stream. The client should verify the content-length header and response body.
         /// </summary>
-        /// <param name="x_xArtifactClientCi_">
+        /// <param name="xArtifactClientCi">
         /// The continuous integration or delivery environment where this artifact is downloaded.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="x_xArtifactClientInteractive_">
+        /// <param name="xArtifactClientInteractive">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
@@ -31,8 +31,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<byte[]> DownloadArtifactAsync(
             string hash,
-            string? x_xArtifactClientCi_ = default,
-            int? x_xArtifactClientInteractive_ = default,
+            string? xArtifactClientCi = default,
+            int? xArtifactClientInteractive = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -41,11 +41,11 @@ namespace Vercel
         /// Download a cache artifact<br/>
         /// Downloads a cache artifact indentified by its `hash` specified on the request path. The artifact is downloaded as an octet-stream. The client should verify the content-length header and response body.
         /// </summary>
-        /// <param name="x_xArtifactClientCi_">
+        /// <param name="xArtifactClientCi">
         /// The continuous integration or delivery environment where this artifact is downloaded.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="x_xArtifactClientInteractive_">
+        /// <param name="xArtifactClientInteractive">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
@@ -64,8 +64,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::System.IO.Stream> DownloadArtifactAsStreamAsync(
             string hash,
-            string? x_xArtifactClientCi_ = default,
-            int? x_xArtifactClientInteractive_ = default,
+            string? xArtifactClientCi = default,
+            int? xArtifactClientInteractive = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -74,11 +74,11 @@ namespace Vercel
         /// Download a cache artifact<br/>
         /// Downloads a cache artifact indentified by its `hash` specified on the request path. The artifact is downloaded as an octet-stream. The client should verify the content-length header and response body.
         /// </summary>
-        /// <param name="x_xArtifactClientCi_">
+        /// <param name="xArtifactClientCi">
         /// The continuous integration or delivery environment where this artifact is downloaded.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="x_xArtifactClientInteractive_">
+        /// <param name="xArtifactClientInteractive">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
@@ -97,8 +97,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<byte[]>> DownloadArtifactAsResponseAsync(
             string hash,
-            string? x_xArtifactClientCi_ = default,
-            int? x_xArtifactClientInteractive_ = default,
+            string? xArtifactClientCi = default,
+            int? xArtifactClientInteractive = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

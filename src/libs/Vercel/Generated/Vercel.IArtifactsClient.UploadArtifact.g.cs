@@ -8,29 +8,29 @@ namespace Vercel
         /// Upload a cache artifact<br/>
         /// Uploads a cache artifact identified by the `hash` specified on the path. The cache artifact can then be downloaded with the provided `hash`.
         /// </summary>
-        /// <param name="x_contentLength_">
+        /// <param name="contentLength">
         /// The artifact size in bytes
         /// </param>
-        /// <param name="x_xArtifactDuration_">
+        /// <param name="xArtifactDuration">
         /// The time taken to generate the uploaded artifact in milliseconds.<br/>
         /// Example: 400
         /// </param>
-        /// <param name="x_xArtifactClientCi_">
+        /// <param name="xArtifactClientCi">
         /// The continuous integration or delivery environment where this artifact was generated.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="x_xArtifactClientInteractive_">
+        /// <param name="xArtifactClientInteractive">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
-        /// <param name="x_xArtifactTag_">
+        /// <param name="xArtifactTag">
         /// The base64 encoded tag for this artifact. The value is sent back to clients when the artifact is downloaded as the header `x-artifact-tag`<br/>
         /// Example: Tc0BmHvJYMIYJ62/zx87YqO0Flxk+5Ovip25NY825CQ=
         /// </param>
-        /// <param name="x_xArtifactSha_">
+        /// <param name="xArtifactSha">
         /// The SHA of the source control revision that generated this artifact.
         /// </param>
-        /// <param name="x_xArtifactDirtyHash_">
+        /// <param name="xArtifactDirtyHash">
         /// A hash representing uncommitted changes in the working directory when this artifact was generated.
         /// </param>
         /// <param name="hash">
@@ -48,16 +48,16 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.UploadArtifactResponse> UploadArtifactAsync(
+            double contentLength,
             string hash,
 
             byte[] request,
-            double? x_contentLength_ = default,
-            double? x_xArtifactDuration_ = default,
-            string? x_xArtifactClientCi_ = default,
-            int? x_xArtifactClientInteractive_ = default,
-            string? x_xArtifactTag_ = default,
-            string? x_xArtifactSha_ = default,
-            string? x_xArtifactDirtyHash_ = default,
+            double? xArtifactDuration = default,
+            string? xArtifactClientCi = default,
+            int? xArtifactClientInteractive = default,
+            string? xArtifactTag = default,
+            string? xArtifactSha = default,
+            string? xArtifactDirtyHash = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -66,29 +66,29 @@ namespace Vercel
         /// Upload a cache artifact<br/>
         /// Uploads a cache artifact identified by the `hash` specified on the path. The cache artifact can then be downloaded with the provided `hash`.
         /// </summary>
-        /// <param name="x_contentLength_">
+        /// <param name="contentLength">
         /// The artifact size in bytes
         /// </param>
-        /// <param name="x_xArtifactDuration_">
+        /// <param name="xArtifactDuration">
         /// The time taken to generate the uploaded artifact in milliseconds.<br/>
         /// Example: 400
         /// </param>
-        /// <param name="x_xArtifactClientCi_">
+        /// <param name="xArtifactClientCi">
         /// The continuous integration or delivery environment where this artifact was generated.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="x_xArtifactClientInteractive_">
+        /// <param name="xArtifactClientInteractive">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
-        /// <param name="x_xArtifactTag_">
+        /// <param name="xArtifactTag">
         /// The base64 encoded tag for this artifact. The value is sent back to clients when the artifact is downloaded as the header `x-artifact-tag`<br/>
         /// Example: Tc0BmHvJYMIYJ62/zx87YqO0Flxk+5Ovip25NY825CQ=
         /// </param>
-        /// <param name="x_xArtifactSha_">
+        /// <param name="xArtifactSha">
         /// The SHA of the source control revision that generated this artifact.
         /// </param>
-        /// <param name="x_xArtifactDirtyHash_">
+        /// <param name="xArtifactDirtyHash">
         /// A hash representing uncommitted changes in the working directory when this artifact was generated.
         /// </param>
         /// <param name="hash">
@@ -106,16 +106,16 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UploadArtifactResponse>> UploadArtifactAsResponseAsync(
+            double contentLength,
             string hash,
 
             byte[] request,
-            double? x_contentLength_ = default,
-            double? x_xArtifactDuration_ = default,
-            string? x_xArtifactClientCi_ = default,
-            int? x_xArtifactClientInteractive_ = default,
-            string? x_xArtifactTag_ = default,
-            string? x_xArtifactSha_ = default,
-            string? x_xArtifactDirtyHash_ = default,
+            double? xArtifactDuration = default,
+            string? xArtifactClientCi = default,
+            int? xArtifactClientInteractive = default,
+            string? xArtifactTag = default,
+            string? xArtifactSha = default,
+            string? xArtifactDirtyHash = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
