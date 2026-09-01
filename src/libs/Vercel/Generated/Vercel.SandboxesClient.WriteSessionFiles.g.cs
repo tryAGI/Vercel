@@ -27,14 +27,14 @@ namespace Vercel
             };
         partial void PrepareWriteSessionFilesArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string? x_xCwd_,
+            ref string? xCwd,
             ref string sessionId,
             ref string? teamId,
             ref string? slug);
         partial void PrepareWriteSessionFilesRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string? x_xCwd_,
+            string? xCwd,
             string sessionId,
             string? teamId,
             string? slug);
@@ -51,7 +51,7 @@ namespace Vercel
         /// Write files<br/>
         /// Uploads and extracts files to a session's filesystem. Files must be uploaded as a gzipped tarball (`.tar.gz`) with the `Content-Type` header set to `application/gzip`. The tarball contents are extracted to the session's working directory, or to a custom directory specified via the `x-cwd` header.
         /// </summary>
-        /// <param name="x_xCwd_">
+        /// <param name="xCwd">
         /// The target directory where the tarball contents will be extracted. If not specified, files are extracted to the sandbox home directory.<br/>
         /// Example: /home/vercel-sandbox
         /// </param>
@@ -70,7 +70,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<string> WriteSessionFilesAsync(
             string sessionId,
-            string? x_xCwd_ = default,
+            string? xCwd = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -78,7 +78,7 @@ namespace Vercel
         {
             var __response = await WriteSessionFilesAsResponseAsync(
                 sessionId: sessionId,
-                x_xCwd_: x_xCwd_,
+                xCwd: xCwd,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -91,7 +91,7 @@ namespace Vercel
         /// Write files<br/>
         /// Uploads and extracts files to a session's filesystem. Files must be uploaded as a gzipped tarball (`.tar.gz`) with the `Content-Type` header set to `application/gzip`. The tarball contents are extracted to the session's working directory, or to a custom directory specified via the `x-cwd` header.
         /// </summary>
-        /// <param name="x_xCwd_">
+        /// <param name="xCwd">
         /// The target directory where the tarball contents will be extracted. If not specified, files are extracted to the sandbox home directory.<br/>
         /// Example: /home/vercel-sandbox
         /// </param>
@@ -110,7 +110,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> WriteSessionFilesAsResponseAsync(
             string sessionId,
-            string? x_xCwd_ = default,
+            string? xCwd = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -120,7 +120,7 @@ namespace Vercel
                 client: HttpClient);
             PrepareWriteSessionFilesArguments(
                 httpClient: HttpClient,
-                x_xCwd_: ref x_xCwd_,
+                xCwd: ref xCwd,
                 sessionId: ref sessionId,
                 teamId: ref teamId,
                 slug: ref slug);
@@ -185,9 +185,9 @@ namespace Vercel
                 }
             }
 
-            if (x_xCwd_ != default)
+            if (xCwd != default)
             {
-                __httpRequest.Headers.TryAddWithoutValidation("'x-Cwd'", x_xCwd_.ToString());
+                __httpRequest.Headers.TryAddWithoutValidation("x-cwd", xCwd.ToString());
             }
 
                 global::Vercel.AutoSDKRequestOptionsSupport.ApplyHeaders(
@@ -201,7 +201,7 @@ namespace Vercel
                 PrepareWriteSessionFilesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    x_xCwd_: x_xCwd_,
+                    xCwd: xCwd,
                     sessionId: sessionId!,
                     teamId: teamId,
                     slug: slug);

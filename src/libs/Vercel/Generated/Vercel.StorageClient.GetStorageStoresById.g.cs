@@ -28,14 +28,14 @@ namespace Vercel
         partial void PrepareGetStorageStoresByIdArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id,
-            ref bool? x_skipMetadata_,
-            ref bool? x_includeGuides_);
+            ref bool? skipMetadata,
+            ref bool? includeGuides);
         partial void PrepareGetStorageStoresByIdRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string id,
-            bool? x_skipMetadata_,
-            bool? x_includeGuides_);
+            bool? skipMetadata,
+            bool? includeGuides);
         partial void ProcessGetStorageStoresByIdResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -49,22 +49,22 @@ namespace Vercel
         /// Get a store
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="x_skipMetadata_"></param>
-        /// <param name="x_includeGuides_"></param>
+        /// <param name="skipMetadata"></param>
+        /// <param name="includeGuides"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.GetStorageStoresByIdResponse> GetStorageStoresByIdAsync(
             string id,
-            bool? x_skipMetadata_ = default,
-            bool? x_includeGuides_ = default,
+            bool? skipMetadata = default,
+            bool? includeGuides = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await GetStorageStoresByIdAsResponseAsync(
                 id: id,
-                x_skipMetadata_: x_skipMetadata_,
-                x_includeGuides_: x_includeGuides_,
+                skipMetadata: skipMetadata,
+                includeGuides: includeGuides,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -75,15 +75,15 @@ namespace Vercel
         /// Get a store
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="x_skipMetadata_"></param>
-        /// <param name="x_includeGuides_"></param>
+        /// <param name="skipMetadata"></param>
+        /// <param name="includeGuides"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetStorageStoresByIdResponse>> GetStorageStoresByIdAsResponseAsync(
             string id,
-            bool? x_skipMetadata_ = default,
-            bool? x_includeGuides_ = default,
+            bool? skipMetadata = default,
+            bool? includeGuides = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -92,8 +92,8 @@ namespace Vercel
             PrepareGetStorageStoresByIdArguments(
                 httpClient: HttpClient,
                 id: ref id,
-                x_skipMetadata_: ref x_skipMetadata_,
-                x_includeGuides_: ref x_includeGuides_);
+                skipMetadata: ref skipMetadata,
+                includeGuides: ref includeGuides);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
@@ -122,8 +122,8 @@ namespace Vercel
                                 path: $"/storage/stores/{id}",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("'skip-metadata'", x_skipMetadata_?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("'include-guides'", x_includeGuides_?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("skip-metadata", skipMetadata?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("include-guides", includeGuides?.ToString().ToLowerInvariant())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -166,8 +166,8 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     id: id!,
-                    x_skipMetadata_: x_skipMetadata_,
-                    x_includeGuides_: x_includeGuides_);
+                    skipMetadata: skipMetadata,
+                    includeGuides: includeGuides);
 
                 return __httpRequest;
             }

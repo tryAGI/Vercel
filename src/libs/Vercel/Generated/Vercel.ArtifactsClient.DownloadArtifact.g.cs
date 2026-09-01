@@ -27,16 +27,16 @@ namespace Vercel
             };
         partial void PrepareDownloadArtifactArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string? x_xArtifactClientCi_,
-            ref int? x_xArtifactClientInteractive_,
+            ref string? xArtifactClientCi,
+            ref int? xArtifactClientInteractive,
             ref string hash,
             ref string? teamId,
             ref string? slug);
         partial void PrepareDownloadArtifactRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string? x_xArtifactClientCi_,
-            int? x_xArtifactClientInteractive_,
+            string? xArtifactClientCi,
+            int? xArtifactClientInteractive,
             string hash,
             string? teamId,
             string? slug);
@@ -53,11 +53,11 @@ namespace Vercel
         /// Download a cache artifact<br/>
         /// Downloads a cache artifact indentified by its `hash` specified on the request path. The artifact is downloaded as an octet-stream. The client should verify the content-length header and response body.
         /// </summary>
-        /// <param name="x_xArtifactClientCi_">
+        /// <param name="xArtifactClientCi">
         /// The continuous integration or delivery environment where this artifact is downloaded.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="x_xArtifactClientInteractive_">
+        /// <param name="xArtifactClientInteractive">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
@@ -76,8 +76,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<byte[]> DownloadArtifactAsync(
             string hash,
-            string? x_xArtifactClientCi_ = default,
-            int? x_xArtifactClientInteractive_ = default,
+            string? xArtifactClientCi = default,
+            int? xArtifactClientInteractive = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -85,8 +85,8 @@ namespace Vercel
         {
             var __response = await DownloadArtifactAsResponseAsync(
                 hash: hash,
-                x_xArtifactClientCi_: x_xArtifactClientCi_,
-                x_xArtifactClientInteractive_: x_xArtifactClientInteractive_,
+                xArtifactClientCi: xArtifactClientCi,
+                xArtifactClientInteractive: xArtifactClientInteractive,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -99,11 +99,11 @@ namespace Vercel
         /// Download a cache artifact<br/>
         /// Downloads a cache artifact indentified by its `hash` specified on the request path. The artifact is downloaded as an octet-stream. The client should verify the content-length header and response body.
         /// </summary>
-        /// <param name="x_xArtifactClientCi_">
+        /// <param name="xArtifactClientCi">
         /// The continuous integration or delivery environment where this artifact is downloaded.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="x_xArtifactClientInteractive_">
+        /// <param name="xArtifactClientInteractive">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
@@ -122,8 +122,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.IO.Stream> DownloadArtifactAsStreamAsync(
             string hash,
-            string? x_xArtifactClientCi_ = default,
-            int? x_xArtifactClientInteractive_ = default,
+            string? xArtifactClientCi = default,
+            int? xArtifactClientInteractive = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -133,8 +133,8 @@ namespace Vercel
                 client: HttpClient);
             PrepareDownloadArtifactArguments(
                 httpClient: HttpClient,
-                x_xArtifactClientCi_: ref x_xArtifactClientCi_,
-                x_xArtifactClientInteractive_: ref x_xArtifactClientInteractive_,
+                xArtifactClientCi: ref xArtifactClientCi,
+                xArtifactClientInteractive: ref xArtifactClientInteractive,
                 hash: ref hash,
                 teamId: ref teamId,
                 slug: ref slug);
@@ -199,13 +199,13 @@ namespace Vercel
                 }
             }
 
-            if (x_xArtifactClientCi_ != default)
+            if (xArtifactClientCi != default)
             {
-                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Ci'", x_xArtifactClientCi_.ToString());
+                __httpRequest.Headers.TryAddWithoutValidation("x-artifact-client-ci", xArtifactClientCi.ToString());
             }
-            if (x_xArtifactClientInteractive_ != default)
+            if (xArtifactClientInteractive != default)
             {
-                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Interactive'", x_xArtifactClientInteractive_.ToString());
+                __httpRequest.Headers.TryAddWithoutValidation("x-artifact-client-interactive", xArtifactClientInteractive.ToString());
             }
 
                 global::Vercel.AutoSDKRequestOptionsSupport.ApplyHeaders(
@@ -219,8 +219,8 @@ namespace Vercel
                 PrepareDownloadArtifactRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    x_xArtifactClientCi_: x_xArtifactClientCi_,
-                    x_xArtifactClientInteractive_: x_xArtifactClientInteractive_,
+                    xArtifactClientCi: xArtifactClientCi,
+                    xArtifactClientInteractive: xArtifactClientInteractive,
                     hash: hash!,
                     teamId: teamId,
                     slug: slug);
@@ -649,11 +649,11 @@ namespace Vercel
         /// Download a cache artifact<br/>
         /// Downloads a cache artifact indentified by its `hash` specified on the request path. The artifact is downloaded as an octet-stream. The client should verify the content-length header and response body.
         /// </summary>
-        /// <param name="x_xArtifactClientCi_">
+        /// <param name="xArtifactClientCi">
         /// The continuous integration or delivery environment where this artifact is downloaded.<br/>
         /// Example: VERCEL
         /// </param>
-        /// <param name="x_xArtifactClientInteractive_">
+        /// <param name="xArtifactClientInteractive">
         /// 1 if the client is an interactive shell. Otherwise 0<br/>
         /// Example: 0
         /// </param>
@@ -672,8 +672,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<byte[]>> DownloadArtifactAsResponseAsync(
             string hash,
-            string? x_xArtifactClientCi_ = default,
-            int? x_xArtifactClientInteractive_ = default,
+            string? xArtifactClientCi = default,
+            int? xArtifactClientInteractive = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -683,8 +683,8 @@ namespace Vercel
                 client: HttpClient);
             PrepareDownloadArtifactArguments(
                 httpClient: HttpClient,
-                x_xArtifactClientCi_: ref x_xArtifactClientCi_,
-                x_xArtifactClientInteractive_: ref x_xArtifactClientInteractive_,
+                xArtifactClientCi: ref xArtifactClientCi,
+                xArtifactClientInteractive: ref xArtifactClientInteractive,
                 hash: ref hash,
                 teamId: ref teamId,
                 slug: ref slug);
@@ -749,13 +749,13 @@ namespace Vercel
                 }
             }
 
-            if (x_xArtifactClientCi_ != default)
+            if (xArtifactClientCi != default)
             {
-                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Ci'", x_xArtifactClientCi_.ToString());
+                __httpRequest.Headers.TryAddWithoutValidation("x-artifact-client-ci", xArtifactClientCi.ToString());
             }
-            if (x_xArtifactClientInteractive_ != default)
+            if (xArtifactClientInteractive != default)
             {
-                __httpRequest.Headers.TryAddWithoutValidation("'x-Artifact-Client-Interactive'", x_xArtifactClientInteractive_.ToString());
+                __httpRequest.Headers.TryAddWithoutValidation("x-artifact-client-interactive", xArtifactClientInteractive.ToString());
             }
 
                 global::Vercel.AutoSDKRequestOptionsSupport.ApplyHeaders(
@@ -769,8 +769,8 @@ namespace Vercel
                 PrepareDownloadArtifactRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    x_xArtifactClientCi_: x_xArtifactClientCi_,
-                    x_xArtifactClientInteractive_: x_xArtifactClientInteractive_,
+                    xArtifactClientCi: xArtifactClientCi,
+                    xArtifactClientInteractive: xArtifactClientInteractive,
                     hash: hash!,
                     teamId: teamId,
                     slug: slug);
