@@ -47,6 +47,12 @@ namespace Vercel
         public string? ReadyState { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("serviceName")]
+        public string? ServiceName { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -61,6 +67,7 @@ namespace Vercel
         /// <param name="path"></param>
         /// <param name="step"></param>
         /// <param name="readyState"></param>
+        /// <param name="serviceName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -70,7 +77,8 @@ namespace Vercel
             string? entrypoint,
             string? path,
             string? step,
-            string? readyState)
+            string? readyState,
+            string? serviceName)
         {
             this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
@@ -78,6 +86,7 @@ namespace Vercel
             this.Path = path;
             this.Step = step;
             this.ReadyState = readyState;
+            this.ServiceName = serviceName;
         }
 
         /// <summary>

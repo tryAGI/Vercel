@@ -12908,6 +12908,9 @@
                                   },
                                   "readyState": {
                                     "type": "string"
+                                  },
+                                  "serviceName": {
+                                    "type": "string"
                                   }
                                 },
                                 "required": [
@@ -13072,6 +13075,9 @@
                               },
                               "readyState": {
                                 "type": "string"
+                              },
+                              "serviceName": {
+                                "type": "string"
                               }
                             },
                             "required": [
@@ -13169,6 +13175,9 @@
                                         "type": "string"
                                       },
                                       "readyState": {
+                                        "type": "string"
+                                      },
+                                      "serviceName": {
                                         "type": "string"
                                       }
                                     },
@@ -13333,6 +13342,9 @@
                                     "type": "string"
                                   },
                                   "readyState": {
+                                    "type": "string"
+                                  },
+                                  "serviceName": {
                                     "type": "string"
                                   }
                                 },
@@ -13510,6 +13522,9 @@
                                 },
                                 "readyState": {
                                   "type": "string"
+                                },
+                                "serviceName": {
+                                  "type": "string"
                                 }
                               },
                               "required": [
@@ -13674,6 +13689,9 @@
                             },
                             "readyState": {
                               "type": "string"
+                            },
+                            "serviceName": {
+                              "type": "string"
                             }
                           },
                           "required": [
@@ -13771,6 +13789,9 @@
                                       "type": "string"
                                     },
                                     "readyState": {
+                                      "type": "string"
+                                    },
+                                    "serviceName": {
                                       "type": "string"
                                     }
                                   },
@@ -13935,6 +13956,9 @@
                                   "type": "string"
                                 },
                                 "readyState": {
+                                  "type": "string"
+                                },
+                                "serviceName": {
                                   "type": "string"
                                 }
                               },
@@ -187005,6 +187029,9 @@
           },
           "410": {
             "description": ""
+          },
+          "503": {
+            "description": ""
           }
         },
         "parameters": [
@@ -205206,6 +205233,7 @@
               "authorize-git-deployment",
               "auto-expose-system-envs",
               "avatar",
+              "billing-settings-updated",
               "bulk-redirects-settings-updated",
               "bulk-redirects-version-promoted",
               "bulk-redirects-version-restored",
@@ -206192,6 +206220,7 @@
               "authorize-git-deployment",
               "auto-expose-system-envs",
               "avatar",
+              "billing-settings-updated",
               "bulk-redirects-settings-updated",
               "bulk-redirects-version-promoted",
               "bulk-redirects-version-restored",
@@ -206909,6 +206938,7 @@
                 "authorize-git-deployment",
                 "auto-expose-system-envs",
                 "avatar",
+                "billing-settings-updated",
                 "bulk-redirects-settings-updated",
                 "bulk-redirects-version-promoted",
                 "bulk-redirects-version-restored",

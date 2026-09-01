@@ -224,7 +224,10 @@ namespace Vercel
                                 path: "/v4/aliases",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("domain", domain?.ToString())
+                                .AddOptionalParameter("domain", domain?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("from", from?.ToString())
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 .AddOptionalParameter("projectId", projectId)
