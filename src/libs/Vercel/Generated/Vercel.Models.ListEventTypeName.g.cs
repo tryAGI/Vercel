@@ -356,6 +356,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        BillingSettingsUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         BulkRedirectsSettingsUpdated,
         /// <summary>
         ///
@@ -2741,6 +2745,7 @@ namespace Vercel
                 ListEventTypeName.AuthorizeGitDeployment => "authorize-git-deployment",
                 ListEventTypeName.AutoExposeSystemEnvs => "auto-expose-system-envs",
                 ListEventTypeName.Avatar => "avatar",
+                ListEventTypeName.BillingSettingsUpdated => "billing-settings-updated",
                 ListEventTypeName.BulkRedirectsSettingsUpdated => "bulk-redirects-settings-updated",
                 ListEventTypeName.BulkRedirectsVersionPromoted => "bulk-redirects-version-promoted",
                 ListEventTypeName.BulkRedirectsVersionRestored => "bulk-redirects-version-restored",
@@ -3409,6 +3414,7 @@ namespace Vercel
                 "authorize-git-deployment" => ListEventTypeName.AuthorizeGitDeployment,
                 "auto-expose-system-envs" => ListEventTypeName.AutoExposeSystemEnvs,
                 "avatar" => ListEventTypeName.Avatar,
+                "billing-settings-updated" => ListEventTypeName.BillingSettingsUpdated,
                 "bulk-redirects-settings-updated" => ListEventTypeName.BulkRedirectsSettingsUpdated,
                 "bulk-redirects-version-promoted" => ListEventTypeName.BulkRedirectsVersionPromoted,
                 "bulk-redirects-version-restored" => ListEventTypeName.BulkRedirectsVersionRestored,
