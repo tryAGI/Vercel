@@ -11,6 +11,15 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant1TargetItem?), TypeInfoPropertyName = "NullableFilterProjectEnvsResponseVariant1TargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant1Target?), TypeInfoPropertyName = "NullableFilterProjectEnvsResponseVariant1Target2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant1Type?), TypeInfoPropertyName = "NullableFilterProjectEnvsResponseVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant1Visibility?), TypeInfoPropertyName = "NullableFilterProjectEnvsResponseVariant1Visibility2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant1InternalContentHintType?), TypeInfoPropertyName = "NullableFilterProjectEnvsResponseVariant1InternalContentHintType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2EnvTargetItem>, global::Vercel.FilterProjectEnvsResponseVariant2EnvTarget?>?), TypeInfoPropertyName = "NullableOneOfIListFilterProjectEnvsResponseVariant2EnvTargetItemFilterProjectEnvsResponseVariant2EnvTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant2EnvTargetItem?), TypeInfoPropertyName = "NullableFilterProjectEnvsResponseVariant2EnvTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant2EnvTarget?), TypeInfoPropertyName = "NullableFilterProjectEnvsResponseVariant2EnvTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant2EnvType?), TypeInfoPropertyName = "NullableFilterProjectEnvsResponseVariant2EnvType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant2EnvVisibility?), TypeInfoPropertyName = "NullableFilterProjectEnvsResponseVariant2EnvVisibility2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsResponseVariant2EnvInternalContentHintType?), TypeInfoPropertyName = "NullableFilterProjectEnvsResponseVariant2EnvInternalContentHintType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3EnvTargetItem>, global::Vercel.FilterProjectEnvsResponseVariant3EnvTarget?>?), TypeInfoPropertyName = "NullableOneOfIListFilterProjectEnvsResponseVariant3EnvTargetItemFilterProjectEnvsResponseVariant3EnvTarget2")]
@@ -502,15 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1ActionMitigateRateLimitAlgo?), TypeInfoPropertyName = "NullableGetFirewallConfigResponseRuleVariant1ActionMitigateRateLimitAlgo2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1ActionMitigateRateLimitAction?), TypeInfoPropertyName = "NullableGetFirewallConfigResponseRuleVariant1ActionMitigateRateLimitAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetFirewallConfigResponseRuleVariant1ActionMitigateLogHeaders?>?), TypeInfoPropertyName = "NullableOneOfIListStringGetFirewallConfigResponseRuleVariant1ActionMitigateLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant1ActionMitigateLogHeaders?), TypeInfoPropertyName = "NullableGetFirewallConfigResponseRuleVariant1ActionMitigateLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionType?), TypeInfoPropertyName = "NullableGetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp?), TypeInfoPropertyName = "NullableGetFirewallConfigResponseRuleVariant2ConditionGroupItemConditionOp2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant2ActionMitigateAction?), TypeInfoPropertyName = "NullableGetFirewallConfigResponseRuleVariant2ActionMitigateAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant2ActionMitigateRateLimitAlgo?), TypeInfoPropertyName = "NullableGetFirewallConfigResponseRuleVariant2ActionMitigateRateLimitAlgo2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant2ActionMitigateRateLimitAction?), TypeInfoPropertyName = "NullableGetFirewallConfigResponseRuleVariant2ActionMitigateRateLimitAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetFirewallConfigResponseRuleVariant2ActionMitigateLogHeaders?>?), TypeInfoPropertyName = "NullableOneOfIListStringGetFirewallConfigResponseRuleVariant2ActionMitigateLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseRuleVariant2ActionMitigateLogHeaders?), TypeInfoPropertyName = "NullableGetFirewallConfigResponseRuleVariant2ActionMitigateLogHeaders2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFirewallConfigResponseIpAction?), TypeInfoPropertyName = "NullableGetFirewallConfigResponseIpAction2")]
     internal sealed partial class SourceGenerationContextChunk029 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -11,6 +11,14 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductTag2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductRepl))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStep>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStep))]
@@ -304,6 +312,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeApiKeySubjectType?), TypeInfoPropertyName = "NullableConnectConnectorCreateDataTypeApiKeySubjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeGithubOwnerType?), TypeInfoPropertyName = "NullableConnectConnectorCreateDataTypeGithubOwnerType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeSlackShortcutType?), TypeInfoPropertyName = "NullableConnectConnectorCreateDataTypeSlackShortcutType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.ConnectCreateConnectorRequestEnvironment?, string>?), TypeInfoPropertyName = "NullableAnyOfConnectCreateConnectorRequestEnvironmentString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectCreateConnectorRequestEnvironment?), TypeInfoPropertyName = "NullableConnectCreateConnectorRequestEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>?), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_2fb5011fd0044493")]
@@ -502,15 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RecordEventsRequestItemSource?), TypeInfoPropertyName = "NullableRecordEventsRequestItemSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RecordEventsRequestItemEvent?), TypeInfoPropertyName = "NullableRecordEventsRequestItemEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequestItemType?), TypeInfoPropertyName = "NullableBuyCreditsRequestItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequestItemCreditType?), TypeInfoPropertyName = "NullableBuyCreditsRequestItemCreditType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<double?, string>?), TypeInfoPropertyName = "NullableOneOfDoubleString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateVersionRequestAction?), TypeInfoPropertyName = "NullableUpdateVersionRequestAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestRequires?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestRequires2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestBlocks?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestBlocks2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateProjectCheckRequestSourceVariant1, global::Vercel.CreateProjectCheckRequestSourceVariant2, global::Vercel.CreateProjectCheckRequestSourceVariant3>?), TypeInfoPropertyName = "CreateProjectCheckRequestSourceVariant3_4bffb2ae56c97b5e")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestSourceVariant3Provider?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestSourceVariant3Provider2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectCheckRequestRequires?), TypeInfoPropertyName = "NullableUpdateProjectCheckRequestRequires2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectCheckRequestBlocks?), TypeInfoPropertyName = "NullableUpdateProjectCheckRequestBlocks2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

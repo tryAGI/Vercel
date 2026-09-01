@@ -11,6 +11,11 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestDefaultProjectJobsTypecheck))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestResourceConfig))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestResourceConfigBuildMachine))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestResourceConfigBuildMachineDefault), TypeInfoPropertyName = "PatchTeamRequestResourceConfigBuildMachineDefault2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateTeamRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateTeamRequestAttribution))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateTeamRequestAttributionUtm))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PostTeamDsyncRolesRequest))]
@@ -199,6 +204,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6Type), TypeInfoPropertyName = "BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Options))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlan))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlanPlanItemQuantitie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlanPlanItemQuantitie))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsPlanItemQuantitie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsPlanItemQuantitie))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Output))]
@@ -503,14 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllChecksResponseCheck>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheck))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckConclusion), TypeInfoPropertyName = "GetAllChecksResponseCheckConclusion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutput))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetrics))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsFcp))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsFcpSource), TypeInfoPropertyName = "GetAllChecksResponseCheckOutputMetricsFcpSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsLcp))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsLcpSource), TypeInfoPropertyName = "GetAllChecksResponseCheckOutputMetricsLcpSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsCls))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsClsSource), TypeInfoPropertyName = "GetAllChecksResponseCheckOutputMetricsClsSource2")]
     internal sealed partial class SourceGenerationContextChunk004 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

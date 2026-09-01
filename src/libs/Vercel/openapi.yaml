@@ -4060,6 +4060,62 @@
                                           "type": "string",
                                           "description": "The ID of the plan to subscribe to"
                                         },
+                                        "fromPlan": {
+                                          "properties": {
+                                            "currentCycleEndDate": {
+                                              "type": "string",
+                                              "description": "The end of the current plan billing cycle"
+                                            },
+                                            "orbSubscriptionId": {
+                                              "type": "string",
+                                              "description": "The Orb subscription ID currently active for the owner on the source plan"
+                                            },
+                                            "planId": {
+                                              "type": "string",
+                                              "description": "The ID of the plan currently assigned"
+                                            },
+                                            "planItemQuantities": {
+                                              "items": {
+                                                "properties": {
+                                                  "planItemId": {
+                                                    "type": "string",
+                                                    "description": "The ID of the current plan item to set the quantity for"
+                                                  },
+                                                  "quantity": {
+                                                    "type": "number",
+                                                    "description": "The nonnegative integer quantity for the current plan item"
+                                                  },
+                                                  "resourceIds": {
+                                                    "items": {
+                                                      "type": "string"
+                                                    },
+                                                    "type": "array",
+                                                    "description": "The resource IDs associated with the current plan item quantity"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "planItemId",
+                                                  "quantity"
+                                                ],
+                                                "type": "object",
+                                                "description": "The current plan item quantities"
+                                              },
+                                              "type": "array",
+                                              "description": "The current plan item quantities"
+                                            },
+                                            "rateVariantKey": {
+                                              "type": "string",
+                                              "description": "The rate variant currently assigned"
+                                            }
+                                          },
+                                          "required": [
+                                            "currentCycleEndDate",
+                                            "orbSubscriptionId",
+                                            "planId"
+                                          ],
+                                          "type": "object",
+                                          "description": "The current plan being replaced by this purchase"
+                                        },
                                         "planItemQuantities": {
                                           "items": {
                                             "properties": {
@@ -82241,6 +82297,12 @@
                                 },
                                 "type": "array"
                               },
+                              "projectTransferRequest": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "proTrialOnboarding": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -105019,6 +105081,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "projectTransferRequest": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "proTrialOnboarding": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -112916,6 +112984,12 @@
                           "type": "array"
                         },
                         "projectTransferIn": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectTransferRequest": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -121048,6 +121122,12 @@
                           },
                           "type": "array"
                         },
+                        "projectTransferRequest": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "proTrialOnboarding": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -128463,6 +128543,12 @@
                           "type": "array"
                         },
                         "projectTransferIn": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectTransferRequest": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -137185,6 +137271,12 @@
                           "type": "array"
                         },
                         "projectTransferIn": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectTransferRequest": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -148630,9 +148722,7 @@
                 "schema": {
                   "properties": {
                     "code": {
-                      "type": "string",
-                      "description": "Code that can be used to accept the project transfer request.",
-                      "example": "f99cc49a-602e-4786-a748-762dfb205880"
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -148651,6 +148741,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "409": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -153890,6 +153983,12 @@
                           "type": "array"
                         },
                         "projectTransferIn": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "projectTransferRequest": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -203456,6 +203555,80 @@
                   "type": "string"
                 },
                 "description": "OAuth scopes requested for Slack user tokens."
+              },
+              "slashCommands": {
+                "type": "array",
+                "maxItems": 50,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "command": {
+                      "type": "string",
+                      "pattern": "^\\\\/",
+                      "maxLength": 32,
+                      "description": "Slash command including its leading slash."
+                    },
+                    "description": {
+                      "type": "string",
+                      "maxLength": 2000,
+                      "description": "Description shown for the slash command in Slack."
+                    },
+                    "usageHint": {
+                      "type": "string",
+                      "maxLength": 1000,
+                      "description": "Optional usage hint shown for the slash command."
+                    },
+                    "shouldEscape": {
+                      "type": "boolean",
+                      "description": "Whether Slack should escape command arguments."
+                    }
+                  },
+                  "required": [
+                    "command",
+                    "description"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Slash commands configured for the managed Slack app."
+              },
+              "shortcuts": {
+                "type": "array",
+                "maxItems": 10,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "global",
+                        "message"
+                      ],
+                      "description": "Where Slack exposes the shortcut."
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Shortcut display name."
+                    },
+                    "callbackId": {
+                      "type": "string",
+                      "maxLength": 255,
+                      "description": "Identifier included in the shortcut callback."
+                    },
+                    "description": {
+                      "type": "string",
+                      "maxLength": 150,
+                      "description": "Description shown for the shortcut in Slack."
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "name",
+                    "callbackId",
+                    "description"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Global and message shortcuts configured for the Slack app."
               },
               "extras": {
                 "type": "object",

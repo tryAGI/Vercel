@@ -11,6 +11,14 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutput))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetrics))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsFcp))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsFcpSource), TypeInfoPropertyName = "GetAllChecksResponseCheckOutputMetricsFcpSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsLcp))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsLcpSource), TypeInfoPropertyName = "GetAllChecksResponseCheckOutputMetricsLcpSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsCls))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsClsSource), TypeInfoPropertyName = "GetAllChecksResponseCheckOutputMetricsClsSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsTbt))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsTbtSource), TypeInfoPropertyName = "GetAllChecksResponseCheckOutputMetricsTbtSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllChecksResponseCheckOutputMetricsVirtualExperienceScore))]
@@ -503,14 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigFunctionType), TypeInfoPropertyName = "GetDeploymentResponseVariant2ConfigFunctionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigFunctionMemoryType), TypeInfoPropertyName = "GetDeploymentResponseVariant2ConfigFunctionMemoryType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfig))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfigBuildQueue))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfigBuildQueueConfiguration), TypeInfoPropertyName = "GetDeploymentResponseVariant2ConfigResourceConfigBuildQueueConfiguration2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfigElasticConcurrency), TypeInfoPropertyName = "GetDeploymentResponseVariant2ConfigResourceConfigElasticConcurrency2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfigBuildMachine))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfigBuildMachinePurchaseType), TypeInfoPropertyName = "GetDeploymentResponseVariant2ConfigResourceConfigBuildMachinePurchaseType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2Checks))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ChecksDeploymentAlias))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ChecksDeploymentAliasState), TypeInfoPropertyName = "GetDeploymentResponseVariant2ChecksDeploymentAliasState2")]
     internal sealed partial class SourceGenerationContextChunk005 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

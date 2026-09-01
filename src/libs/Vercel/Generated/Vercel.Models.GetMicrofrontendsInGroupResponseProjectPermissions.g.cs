@@ -1433,6 +1433,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectTransferRequest")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProjectTransferRequest { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("proTrialOnboarding")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? ProTrialOnboarding { get; set; }
 
@@ -1928,6 +1934,7 @@ namespace Vercel
         /// <param name="previewDeploymentSuffix"></param>
         /// <param name="privateCloudAccount"></param>
         /// <param name="projectTransferIn"></param>
+        /// <param name="projectTransferRequest"></param>
         /// <param name="proTrialOnboarding"></param>
         /// <param name="rateLimit"></param>
         /// <param name="redis"></param>
@@ -2211,6 +2218,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? previewDeploymentSuffix,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? privateCloudAccount,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectTransferIn,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? projectTransferRequest,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? proTrialOnboarding,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? rateLimit,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? redis,
@@ -2491,6 +2499,7 @@ namespace Vercel
             this.PreviewDeploymentSuffix = previewDeploymentSuffix;
             this.PrivateCloudAccount = privateCloudAccount;
             this.ProjectTransferIn = projectTransferIn;
+            this.ProjectTransferRequest = projectTransferRequest;
             this.ProTrialOnboarding = proTrialOnboarding;
             this.RateLimit = rateLimit;
             this.Redis = redis;

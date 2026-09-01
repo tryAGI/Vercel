@@ -11,6 +11,15 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsRequestItemCreditType?), TypeInfoPropertyName = "NullableBuyCreditsRequestItemCreditType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<double?, string>?), TypeInfoPropertyName = "NullableOneOfDoubleString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateVersionRequestAction?), TypeInfoPropertyName = "NullableUpdateVersionRequestAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestRequires?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestRequires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestBlocks?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestBlocks2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateProjectCheckRequestSourceVariant1, global::Vercel.CreateProjectCheckRequestSourceVariant2, global::Vercel.CreateProjectCheckRequestSourceVariant3>?), TypeInfoPropertyName = "CreateProjectCheckRequestSourceVariant3_4bffb2ae56c97b5e")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectCheckRequestSourceVariant3Provider?), TypeInfoPropertyName = "NullableCreateProjectCheckRequestSourceVariant3Provider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectCheckRequestRequires?), TypeInfoPropertyName = "NullableUpdateProjectCheckRequestRequires2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectCheckRequestBlocks?), TypeInfoPropertyName = "NullableUpdateProjectCheckRequestBlocks2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunRequestStatus?), TypeInfoPropertyName = "NullableUpdateDeploymentCheckRunRequestStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDeploymentCheckRunRequestConclusion?), TypeInfoPropertyName = "NullableUpdateDeploymentCheckRunRequestConclusion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCheckRequestStatus?), TypeInfoPropertyName = "NullableUpdateCheckRequestStatus2")]
@@ -502,15 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ReadAccessGroupProjectResponseRole?), TypeInfoPropertyName = "NullableReadAccessGroupProjectResponseRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateAccessGroupProjectResponseRole?), TypeInfoPropertyName = "NullableUpdateAccessGroupProjectResponseRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.StatusResponseVariant1, global::Vercel.StatusResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfStatusResponseVariant1StatusResponseVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.StatusResponseVariant2Status?), TypeInfoPropertyName = "NullableStatusResponseVariant2Status2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ArtifactQueryResponseVariant1, global::Vercel.ArtifactQueryResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfArtifactQueryResponseVariant1ArtifactQueryResponseVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListBillingChargesResponseBillingCurrency?), TypeInfoPropertyName = "NullableListBillingChargesResponseBillingCurrency2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListBillingChargesResponseChargeCategory?), TypeInfoPropertyName = "NullableListBillingChargesResponseChargeCategory2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListBillingChargesResponseServiceCategory?), TypeInfoPropertyName = "NullableListBillingChargesResponseServiceCategory2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListBillingChargesResponsePricingCategory?), TypeInfoPropertyName = "NullableListBillingChargesResponsePricingCategory2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListBillingChargesResponsePricingCurrency?), TypeInfoPropertyName = "NullableListBillingChargesResponsePricingCurrency2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListContractCommitmentsResponseContractCommitmentCategory?), TypeInfoPropertyName = "NullableListContractCommitmentsResponseContractCommitmentCategory2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant1, global::Vercel.BuyCreditsResponseVariant2, global::Vercel.BuyCreditsResponseVariant3>?), TypeInfoPropertyName = "NullableOneOfBuyCreditsResponseVariant1BuyCreditsResponseVariant2BuyCreditsResponseVariant32")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

@@ -9,10 +9,8 @@ namespace Vercel
     public sealed partial class CreateProjectTransferRequestResponse
     {
         /// <summary>
-        /// Code that can be used to accept the project transfer request.<br/>
-        /// Example: f99cc49a-602e-4786-a748-762dfb205880
+        ///
         /// </summary>
-        /// <example>f99cc49a-602e-4786-a748-762dfb205880</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Code { get; set; }
@@ -26,10 +24,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectTransferRequestResponse" /> class.
         /// </summary>
-        /// <param name="code">
-        /// Code that can be used to accept the project transfer request.<br/>
-        /// Example: f99cc49a-602e-4786-a748-762dfb205880
-        /// </param>
+        /// <param name="code"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

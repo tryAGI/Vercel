@@ -11,6 +11,14 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant2Secret))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant2SecretKind), TypeInfoPropertyName = "GetDrainResponseVariant1DeliveryVariant2SecretKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant3Type), TypeInfoPropertyName = "GetDrainResponseVariant1DeliveryVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant4Type), TypeInfoPropertyName = "GetDrainResponseVariant1DeliveryVariant4Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant4Encoding), TypeInfoPropertyName = "GetDrainResponseVariant1DeliveryVariant4Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant4Compression), TypeInfoPropertyName = "GetDrainResponseVariant1DeliveryVariant4Compression2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant4FileStructure), TypeInfoPropertyName = "GetDrainResponseVariant1DeliveryVariant4FileStructure2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant4ServerSideEncryption), TypeInfoPropertyName = "GetDrainResponseVariant1DeliveryVariant4ServerSideEncryption2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainResponseVariant1DeliveryVariant4ObjectAcl), TypeInfoPropertyName = "GetDrainResponseVariant1DeliveryVariant4ObjectAcl2")]
@@ -503,14 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3Type), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3Base))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3BaseType), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3BaseType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3Slot>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3Slot))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant4Type), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant4Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleCondition>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleCondition))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleConditionRhsVariant3, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleConditionRhsVariant4, bool?>), TypeInfoPropertyName = "ListFlagVersionsResponseVersionDataEnvironmentsRuleConditionRhsVariant4_bool_3db63234b48d0763")]
     internal sealed partial class SourceGenerationContextChunk009 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
