@@ -87,6 +87,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FactoryEve,
+        /// <summary>
+        ///
+        /// </summary>
         Fastapi,
         /// <summary>
         ///
@@ -333,6 +337,7 @@ namespace Vercel
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Ember => "ember",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Eve => "eve",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Express => "express",
+                GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.FactoryEve => "factory-eve",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fastapi => "fastapi",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fasthtml => "fasthtml",
                 GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fastify => "fastify",
@@ -416,6 +421,7 @@ namespace Vercel
                 "ember" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Ember,
                 "eve" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Eve,
                 "express" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Express,
+                "factory-eve" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.FactoryEve,
                 "fastapi" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fastapi,
                 "fasthtml" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fasthtml,
                 "fastify" => GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework.Fastify,

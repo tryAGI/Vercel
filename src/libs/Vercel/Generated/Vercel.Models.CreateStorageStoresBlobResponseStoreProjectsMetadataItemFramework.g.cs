@@ -87,6 +87,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FactoryEve,
+        /// <summary>
+        ///
+        /// </summary>
         Fastapi,
         /// <summary>
         ///
@@ -333,6 +337,7 @@ namespace Vercel
                 CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Ember => "ember",
                 CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Eve => "eve",
                 CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Express => "express",
+                CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.FactoryEve => "factory-eve",
                 CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Fastapi => "fastapi",
                 CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Fasthtml => "fasthtml",
                 CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Fastify => "fastify",
@@ -416,6 +421,7 @@ namespace Vercel
                 "ember" => CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Ember,
                 "eve" => CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Eve,
                 "express" => CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Express,
+                "factory-eve" => CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.FactoryEve,
                 "fastapi" => CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Fastapi,
                 "fasthtml" => CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Fasthtml,
                 "fastify" => CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework.Fastify,

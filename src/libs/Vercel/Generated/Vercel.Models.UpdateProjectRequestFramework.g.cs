@@ -87,6 +87,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FactoryEve,
+        /// <summary>
+        ///
+        /// </summary>
         Fastapi,
         /// <summary>
         ///
@@ -333,6 +337,7 @@ namespace Vercel
                 UpdateProjectRequestFramework.Ember => "ember",
                 UpdateProjectRequestFramework.Eve => "eve",
                 UpdateProjectRequestFramework.Express => "express",
+                UpdateProjectRequestFramework.FactoryEve => "factory-eve",
                 UpdateProjectRequestFramework.Fastapi => "fastapi",
                 UpdateProjectRequestFramework.Fasthtml => "fasthtml",
                 UpdateProjectRequestFramework.Fastify => "fastify",
@@ -416,6 +421,7 @@ namespace Vercel
                 "ember" => UpdateProjectRequestFramework.Ember,
                 "eve" => UpdateProjectRequestFramework.Eve,
                 "express" => UpdateProjectRequestFramework.Express,
+                "factory-eve" => UpdateProjectRequestFramework.FactoryEve,
                 "fastapi" => UpdateProjectRequestFramework.Fastapi,
                 "fasthtml" => UpdateProjectRequestFramework.Fasthtml,
                 "fastify" => UpdateProjectRequestFramework.Fastify,

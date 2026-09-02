@@ -87,6 +87,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FactoryEve,
+        /// <summary>
+        ///
+        /// </summary>
         Fastapi,
         /// <summary>
         ///
@@ -333,6 +337,7 @@ namespace Vercel
                 GetDeploymentsResponseDeploymentProjectSettingsFramework.Ember => "ember",
                 GetDeploymentsResponseDeploymentProjectSettingsFramework.Eve => "eve",
                 GetDeploymentsResponseDeploymentProjectSettingsFramework.Express => "express",
+                GetDeploymentsResponseDeploymentProjectSettingsFramework.FactoryEve => "factory-eve",
                 GetDeploymentsResponseDeploymentProjectSettingsFramework.Fastapi => "fastapi",
                 GetDeploymentsResponseDeploymentProjectSettingsFramework.Fasthtml => "fasthtml",
                 GetDeploymentsResponseDeploymentProjectSettingsFramework.Fastify => "fastify",
@@ -416,6 +421,7 @@ namespace Vercel
                 "ember" => GetDeploymentsResponseDeploymentProjectSettingsFramework.Ember,
                 "eve" => GetDeploymentsResponseDeploymentProjectSettingsFramework.Eve,
                 "express" => GetDeploymentsResponseDeploymentProjectSettingsFramework.Express,
+                "factory-eve" => GetDeploymentsResponseDeploymentProjectSettingsFramework.FactoryEve,
                 "fastapi" => GetDeploymentsResponseDeploymentProjectSettingsFramework.Fastapi,
                 "fasthtml" => GetDeploymentsResponseDeploymentProjectSettingsFramework.Fasthtml,
                 "fastify" => GetDeploymentsResponseDeploymentProjectSettingsFramework.Fastify,
