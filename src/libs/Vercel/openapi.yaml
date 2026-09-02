@@ -133139,6 +133139,9 @@
           },
           "428": {
             "description": "Owner does not have protection add-on"
+          },
+          "429": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
