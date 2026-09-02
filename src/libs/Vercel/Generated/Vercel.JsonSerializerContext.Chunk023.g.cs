@@ -11,6 +11,12 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFirewallConfigRequestVariant12ValueActionMitigateRateLimitAction?, string>?), TypeInfoPropertyName = "NullableAnyOfUpdateFirewallConfigRequestVariant12ValueActionMitigateRateLimitActionString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant12ValueActionMitigateRateLimitAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant12ValueActionMitigateRateLimitAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFirewallConfigRequestVariant12ValueActionMitigateRedirect, string>?), TypeInfoPropertyName = "NullableAnyOfUpdateFirewallConfigRequestVariant12ValueActionMitigateRedirectString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant15Id?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant15Id2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant15ValueAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant15ValueAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant17ValueAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant17ValueAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant18ValueAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant18ValueAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant20Id?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant20Id2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant20ValueAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant20ValueAction2")]
@@ -505,12 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteDestination>?), TypeInfoPropertyName = "NullableOneOfStringGetDeploymentResponseVariant2ServiceVariant2RewriteDestination2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteDestinationType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2RewriteDestinationType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteTransformType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2RewriteTransformType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteTransformOp?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2RewriteTransformOp2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant1, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant2>?), TypeInfoPropertyName = "GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant2_be138c3db749d261")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant1Type?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant1Value>?), TypeInfoPropertyName = "NullableOneOfStringGetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant1Value2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant2Type?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant2Value>?), TypeInfoPropertyName = "NullableOneOfStringGetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant2Value2")]
     internal sealed partial class SourceGenerationContextChunk023 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

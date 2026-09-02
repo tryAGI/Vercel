@@ -100,6 +100,24 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? ViaIds { get; set; }
 
         /// <summary>
+        /// The public ID of the token that the principal authenticated with, when the request behind this event carried one.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenId")]
+        public string? TokenId { get; set; }
+
+        /// <summary>
+        /// The ID of the session that the principal's token belongs to, when it belongs to one.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sessionId")]
+        public string? SessionId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("requestId")]
+        public string? RequestId { get; set; }
+
+        /// <summary>
         /// The payload of the event, if requested.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("payload")]
@@ -154,6 +172,13 @@ namespace Vercel
         /// <param name="viaIds">
         /// If the principal delegated its authority (for example, a user delegating to an app), then this array contains the ID of the current actor. For example, if `principalId` is "user123" and `viaIds` is `["app456"]`, we can say the event was triggered by - "app456 on behalf of user123", or - "user123 via app4556". Both are equivalent. Arbitrarily long chains of delegation can be represented. For example, if `principalId` is "user123" and `viaIds` is `["service1", "service2"]`, we can say the event was triggered by "user123 via service1 via service2".
         /// </param>
+        /// <param name="tokenId">
+        /// The public ID of the token that the principal authenticated with, when the request behind this event carried one.
+        /// </param>
+        /// <param name="sessionId">
+        /// The ID of the session that the principal's token belongs to, when it belongs to one.
+        /// </param>
+        /// <param name="requestId"></param>
         /// <param name="payload">
         /// The payload of the event, if requested.
         /// </param>
@@ -173,6 +198,9 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3, global::Vercel.UserEventViaItemVariant4>>? via,
             string? userId,
             global::System.Collections.Generic.IList<string>? viaIds,
+            string? tokenId,
+            string? sessionId,
+            string? requestId,
             object? payload)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
@@ -187,6 +215,9 @@ namespace Vercel
             this.UserId = userId;
             this.PrincipalId = principalId ?? throw new global::System.ArgumentNullException(nameof(principalId));
             this.ViaIds = viaIds;
+            this.TokenId = tokenId;
+            this.SessionId = sessionId;
+            this.RequestId = requestId;
             this.Payload = payload;
         }
 

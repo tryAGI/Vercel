@@ -87,6 +87,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FactoryEve,
+        /// <summary>
+        ///
+        /// </summary>
         Fastapi,
         /// <summary>
         ///
@@ -333,6 +337,7 @@ namespace Vercel
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Ember => "ember",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Eve => "eve",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Express => "express",
+                CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.FactoryEve => "factory-eve",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fastapi => "fastapi",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fasthtml => "fasthtml",
                 CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fastify => "fastify",
@@ -416,6 +421,7 @@ namespace Vercel
                 "ember" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Ember,
                 "eve" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Eve,
                 "express" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Express,
+                "factory-eve" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.FactoryEve,
                 "fastapi" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fastapi,
                 "fasthtml" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fasthtml,
                 "fastify" => CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework.Fastify,

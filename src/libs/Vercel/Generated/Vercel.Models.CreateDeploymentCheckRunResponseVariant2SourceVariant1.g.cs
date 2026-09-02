@@ -32,6 +32,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("invocationAttempt")]
+        public double? InvocationAttempt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("jobDefinitionId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string JobDefinitionId { get; set; }
@@ -49,6 +55,7 @@ namespace Vercel
         /// <param name="jobDefinitionId"></param>
         /// <param name="subKind"></param>
         /// <param name="origin"></param>
+        /// <param name="invocationAttempt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -56,11 +63,13 @@ namespace Vercel
             string invocationId,
             string jobDefinitionId,
             global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant1SubKind subKind,
-            global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant1Origin origin)
+            global::Vercel.CreateDeploymentCheckRunResponseVariant2SourceVariant1Origin origin,
+            double? invocationAttempt)
         {
             this.SubKind = subKind;
             this.Origin = origin;
             this.InvocationId = invocationId ?? throw new global::System.ArgumentNullException(nameof(invocationId));
+            this.InvocationAttempt = invocationAttempt;
             this.JobDefinitionId = jobDefinitionId ?? throw new global::System.ArgumentNullException(nameof(jobDefinitionId));
         }
 

@@ -49,6 +49,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkPeeringConnections))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkProjects))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkStatus), TypeInfoPropertyName = "NetworkStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PrivateLinkEndpoint))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PrivateLinkEndpointStatus), TypeInfoPropertyName = "PrivateLinkEndpointStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectTriggerConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectTriggerDestination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnector))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamResourceConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamResourceConfigBuildEntitlements))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamResourceConfigBuildMachine))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamResourceConfigBuildMachineDefault), TypeInfoPropertyName = "TeamResourceConfigBuildMachineDefault2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<double?, bool?>), TypeInfoPropertyName = "OneOfDoubleBoolean2")]
     internal sealed partial class SourceGenerationContextChunk000 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

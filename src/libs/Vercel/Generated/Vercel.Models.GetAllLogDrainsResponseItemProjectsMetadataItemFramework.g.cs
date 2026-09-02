@@ -87,6 +87,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FactoryEve,
+        /// <summary>
+        ///
+        /// </summary>
         Fastapi,
         /// <summary>
         ///
@@ -333,6 +337,7 @@ namespace Vercel
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Ember => "ember",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Eve => "eve",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Express => "express",
+                GetAllLogDrainsResponseItemProjectsMetadataItemFramework.FactoryEve => "factory-eve",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Fastapi => "fastapi",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Fasthtml => "fasthtml",
                 GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Fastify => "fastify",
@@ -416,6 +421,7 @@ namespace Vercel
                 "ember" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Ember,
                 "eve" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Eve,
                 "express" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Express,
+                "factory-eve" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.FactoryEve,
                 "fastapi" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Fastapi,
                 "fasthtml" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Fasthtml,
                 "fastify" => GetAllLogDrainsResponseItemProjectsMetadataItemFramework.Fastify,
