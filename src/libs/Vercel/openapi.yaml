@@ -194309,6 +194309,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "410": {
             "description": ""
           }
@@ -196128,6 +196131,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "410": {
             "description": ""
           }
@@ -197251,6 +197257,9 @@
           "403": {
             "description": "You do not have permission to access this resource."
           },
+          "404": {
+            "description": ""
+          },
           "410": {
             "description": ""
           }
@@ -198308,6 +198317,9 @@
           },
           "403": {
             "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
           },
           "410": {
             "description": ""
@@ -209630,6 +209642,8 @@
               "shared-env-variable-create",
               "shared-env-variable-delete",
               "shared-env-variable-read",
+              "shared-env-variable-repo-link",
+              "shared-env-variable-repo-unlink",
               "shared-env-variable-update",
               "show-ip-addresses",
               "signup",
@@ -210629,6 +210643,8 @@
               "shared-env-variable-create",
               "shared-env-variable-delete",
               "shared-env-variable-read",
+              "shared-env-variable-repo-link",
+              "shared-env-variable-repo-unlink",
               "shared-env-variable-update",
               "show-ip-addresses",
               "signup",
@@ -211348,6 +211364,8 @@
                 "shared-env-variable-create",
                 "shared-env-variable-delete",
                 "shared-env-variable-read",
+                "shared-env-variable-repo-link",
+                "shared-env-variable-repo-unlink",
                 "shared-env-variable-update",
                 "show-ip-addresses",
                 "signup",

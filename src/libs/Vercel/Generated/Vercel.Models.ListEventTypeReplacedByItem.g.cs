@@ -2019,6 +2019,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        SharedEnvVariableRepoLink,
+        /// <summary>
+        ///
+        /// </summary>
+        SharedEnvVariableRepoUnlink,
+        /// <summary>
+        ///
+        /// </summary>
         SharedEnvVariableUpdate,
         /// <summary>
         ///
@@ -3164,6 +3172,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.SharedEnvVariableCreate => "shared-env-variable-create",
                 ListEventTypeReplacedByItem.SharedEnvVariableDelete => "shared-env-variable-delete",
                 ListEventTypeReplacedByItem.SharedEnvVariableRead => "shared-env-variable-read",
+                ListEventTypeReplacedByItem.SharedEnvVariableRepoLink => "shared-env-variable-repo-link",
+                ListEventTypeReplacedByItem.SharedEnvVariableRepoUnlink => "shared-env-variable-repo-unlink",
                 ListEventTypeReplacedByItem.SharedEnvVariableUpdate => "shared-env-variable-update",
                 ListEventTypeReplacedByItem.ShowIpAddresses => "show-ip-addresses",
                 ListEventTypeReplacedByItem.Signup => "signup",
@@ -3834,6 +3844,8 @@ namespace Vercel
                 "shared-env-variable-create" => ListEventTypeReplacedByItem.SharedEnvVariableCreate,
                 "shared-env-variable-delete" => ListEventTypeReplacedByItem.SharedEnvVariableDelete,
                 "shared-env-variable-read" => ListEventTypeReplacedByItem.SharedEnvVariableRead,
+                "shared-env-variable-repo-link" => ListEventTypeReplacedByItem.SharedEnvVariableRepoLink,
+                "shared-env-variable-repo-unlink" => ListEventTypeReplacedByItem.SharedEnvVariableRepoUnlink,
                 "shared-env-variable-update" => ListEventTypeReplacedByItem.SharedEnvVariableUpdate,
                 "show-ip-addresses" => ListEventTypeReplacedByItem.ShowIpAddresses,
                 "signup" => ListEventTypeReplacedByItem.Signup,
