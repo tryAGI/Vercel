@@ -159014,19 +159014,12 @@
         ]
       }
     },
-    "/v2/sandboxes": {
+    "/sandboxes": {
       "get": {
-        "description": "Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.",
-        "operationId": "listSandboxes",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "List sandboxes",
-        "tags": [
-          "sandboxes"
-        ],
+        "description": "",
+        "operationId": "getSandboxes",
+        "security": [],
+        "tags": [],
         "responses": {
           "200": {
             "description": "",
@@ -159197,27 +159190,11 @@
                 }
               ]
             }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
           }
         ]
-      },
+      }
+    },
+    "/v2/sandboxes": {
       "post": {
         "description": "Creates a named sandbox environment. Named sandboxes have a unique name within a project and support automatic snapshotting on shutdown.",
         "operationId": "createSandboxesV2",
@@ -180037,6 +180014,9 @@
           "401": {
             "description": "The request is not authorized."
           },
+          "402": {
+            "description": ""
+          },
           "403": {
             "description": "You do not have permission to access this resource."
           },
@@ -180307,6 +180287,9 @@
           "401": {
             "description": "The request is not authorized."
           },
+          "402": {
+            "description": ""
+          },
           "403": {
             "description": "You do not have permission to access this resource."
           },
@@ -180436,6 +180419,9 @@
           },
           "401": {
             "description": "The request is not authorized."
+          },
+          "402": {
+            "description": ""
           },
           "403": {
             "description": "You do not have permission to access this resource."
@@ -188398,6 +188384,21 @@
                         "type": "boolean",
                         "example": true,
                         "description": "Enable or disable requiring Owner role to change project password protection."
+                      }
+                    },
+                    "required": [
+                      "enabled"
+                    ]
+                  },
+                  "strictConnectors": {
+                    "type": "object",
+                    "description": "When enabled, creating and managing connectors requires Owner role.",
+                    "additionalProperties": false,
+                    "properties": {
+                      "enabled": {
+                        "type": "boolean",
+                        "example": true,
+                        "description": "Enable or disable requiring Owner role to manage connectors."
                       }
                     },
                     "required": [
@@ -209659,6 +209660,7 @@
               "storage-update-project-connection",
               "storage-upgrade-project-connection-to-oidc",
               "storage-view-secret",
+              "strict-connectors",
               "strict-deployment-protection-settings",
               "strict-password-protection-settings",
               "strict-shareable-links",
@@ -210657,6 +210659,7 @@
               "storage-update-project-connection",
               "storage-upgrade-project-connection-to-oidc",
               "storage-view-secret",
+              "strict-connectors",
               "strict-deployment-protection-settings",
               "strict-password-protection-settings",
               "strict-shareable-links",
@@ -211375,6 +211378,7 @@
                 "storage-update-project-connection",
                 "storage-upgrade-project-connection-to-oidc",
                 "storage-view-secret",
+                "strict-connectors",
                 "strict-deployment-protection-settings",
                 "strict-password-protection-settings",
                 "strict-shareable-links",
@@ -213556,6 +213560,11 @@
       },
       "Drive": {
         "properties": {
+          "id": {
+            "type": "string",
+            "description": "The unique drive ID.",
+            "example": "drive_abc123"
+          },
           "name": {
             "type": "string",
             "description": "The unique drive name within the project.",
@@ -213599,6 +213608,7 @@
         },
         "required": [
           "createdAt",
+          "id",
           "maxSizeBytes",
           "name",
           "projectId",
@@ -214553,6 +214563,26 @@
             ],
             "type": "object",
             "description": "When enabled, adding, changing, or removing project password protection requires Owner role."
+          },
+          "strictConnectors": {
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "updatedAt": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "enabled",
+              "updatedAt"
+            ],
+            "type": "object",
+            "description": "When enabled, creating and managing connectors requires Owner role or the ConnectorManager permission."
           },
           "nsnbConfig": {
             "properties": {
@@ -215877,6 +215907,10 @@
               },
               "security": {
                 "properties": {
+                  "rateLimit": {
+                    "type": "number",
+                    "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
+                  },
                   "customRules": {
                     "type": "number",
                     "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
@@ -215886,10 +215920,6 @@
                     "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
                   },
                   "ipBypass": {
-                    "type": "number",
-                    "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
-                  },
-                  "rateLimit": {
                     "type": "number",
                     "description": "An object containing infomation related to the amount of platform resources may be allocated to the User account."
                   }

@@ -9,6 +9,15 @@ namespace Vercel
     public sealed partial class Drive
     {
         /// <summary>
+        /// The unique drive ID.<br/>
+        /// Example: drive_abc123
+        /// </summary>
+        /// <example>drive_abc123</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
         /// The unique drive name within the project.<br/>
         /// Example: workspace
         /// </summary>
@@ -87,6 +96,10 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="Drive" /> class.
         /// </summary>
+        /// <param name="id">
+        /// The unique drive ID.<br/>
+        /// Example: drive_abc123
+        /// </param>
         /// <param name="name">
         /// The unique drive name within the project.<br/>
         /// Example: workspace
@@ -123,6 +136,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public Drive(
+            string id,
             string name,
             string projectId,
             double maxSizeBytes,
@@ -132,6 +146,7 @@ namespace Vercel
             string? currentSessionId,
             string? currentSandboxName)
         {
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.MaxSizeBytes = maxSizeBytes;

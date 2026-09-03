@@ -4,47 +4,52 @@
 namespace Vercel
 {
     /// <summary>
-    /// Sort direction. Defaults to desc.<br/>
-    /// Default Value: desc
+    /// Filter named sandboxes by status. Only valid when sortBy is createdAt.
     /// </summary>
-    public enum ListSandboxesSortOrder
+    public enum GetSandboxesStatus
     {
         /// <summary>
         ///
         /// </summary>
-        Asc,
+        Running,
         /// <summary>
         ///
         /// </summary>
-        Desc,
+        Stopped,
+        /// <summary>
+        ///
+        /// </summary>
+        Stopping,
     }
 
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class ListSandboxesSortOrderExtensions
+    public static class GetSandboxesStatusExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this ListSandboxesSortOrder value)
+        public static string ToValueString(this GetSandboxesStatus value)
         {
             return value switch
             {
-                ListSandboxesSortOrder.Asc => "asc",
-                ListSandboxesSortOrder.Desc => "desc",
+                GetSandboxesStatus.Running => "running",
+                GetSandboxesStatus.Stopped => "stopped",
+                GetSandboxesStatus.Stopping => "stopping",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static ListSandboxesSortOrder? ToEnum(string value)
+        public static GetSandboxesStatus? ToEnum(string value)
         {
             return value switch
             {
-                "asc" => ListSandboxesSortOrder.Asc,
-                "desc" => ListSandboxesSortOrder.Desc,
+                "running" => GetSandboxesStatus.Running,
+                "stopped" => GetSandboxesStatus.Stopped,
+                "stopping" => GetSandboxesStatus.Stopping,
                 _ => null,
             };
         }

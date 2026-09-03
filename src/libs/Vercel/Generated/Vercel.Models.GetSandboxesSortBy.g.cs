@@ -7,7 +7,7 @@ namespace Vercel
     /// Field to sort by.<br/>
     /// Default Value: createdAt
     /// </summary>
-    public enum ListSandboxesSortBy
+    public enum GetSandboxesSortBy
     {
         /// <summary>
         ///
@@ -30,33 +30,33 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class ListSandboxesSortByExtensions
+    public static class GetSandboxesSortByExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this ListSandboxesSortBy value)
+        public static string ToValueString(this GetSandboxesSortBy value)
         {
             return value switch
             {
-                ListSandboxesSortBy.CreatedAt => "createdAt",
-                ListSandboxesSortBy.CurrentSnapshotId => "currentSnapshotId",
-                ListSandboxesSortBy.Name => "name",
-                ListSandboxesSortBy.StatusUpdatedAt => "statusUpdatedAt",
+                GetSandboxesSortBy.CreatedAt => "createdAt",
+                GetSandboxesSortBy.CurrentSnapshotId => "currentSnapshotId",
+                GetSandboxesSortBy.Name => "name",
+                GetSandboxesSortBy.StatusUpdatedAt => "statusUpdatedAt",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static ListSandboxesSortBy? ToEnum(string value)
+        public static GetSandboxesSortBy? ToEnum(string value)
         {
             return value switch
             {
-                "createdAt" => ListSandboxesSortBy.CreatedAt,
-                "currentSnapshotId" => ListSandboxesSortBy.CurrentSnapshotId,
-                "name" => ListSandboxesSortBy.Name,
-                "statusUpdatedAt" => ListSandboxesSortBy.StatusUpdatedAt,
+                "createdAt" => GetSandboxesSortBy.CreatedAt,
+                "currentSnapshotId" => GetSandboxesSortBy.CurrentSnapshotId,
+                "name" => GetSandboxesSortBy.Name,
+                "statusUpdatedAt" => GetSandboxesSortBy.StatusUpdatedAt,
                 _ => null,
             };
         }
