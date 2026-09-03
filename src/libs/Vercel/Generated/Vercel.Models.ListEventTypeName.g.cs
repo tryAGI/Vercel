@@ -2020,6 +2020,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        SharedEnvVariableRepoLink,
+        /// <summary>
+        ///
+        /// </summary>
+        SharedEnvVariableRepoUnlink,
+        /// <summary>
+        ///
+        /// </summary>
         SharedEnvVariableUpdate,
         /// <summary>
         ///
@@ -3165,6 +3173,8 @@ namespace Vercel
                 ListEventTypeName.SharedEnvVariableCreate => "shared-env-variable-create",
                 ListEventTypeName.SharedEnvVariableDelete => "shared-env-variable-delete",
                 ListEventTypeName.SharedEnvVariableRead => "shared-env-variable-read",
+                ListEventTypeName.SharedEnvVariableRepoLink => "shared-env-variable-repo-link",
+                ListEventTypeName.SharedEnvVariableRepoUnlink => "shared-env-variable-repo-unlink",
                 ListEventTypeName.SharedEnvVariableUpdate => "shared-env-variable-update",
                 ListEventTypeName.ShowIpAddresses => "show-ip-addresses",
                 ListEventTypeName.Signup => "signup",
@@ -3835,6 +3845,8 @@ namespace Vercel
                 "shared-env-variable-create" => ListEventTypeName.SharedEnvVariableCreate,
                 "shared-env-variable-delete" => ListEventTypeName.SharedEnvVariableDelete,
                 "shared-env-variable-read" => ListEventTypeName.SharedEnvVariableRead,
+                "shared-env-variable-repo-link" => ListEventTypeName.SharedEnvVariableRepoLink,
+                "shared-env-variable-repo-unlink" => ListEventTypeName.SharedEnvVariableRepoUnlink,
                 "shared-env-variable-update" => ListEventTypeName.SharedEnvVariableUpdate,
                 "show-ip-addresses" => ListEventTypeName.ShowIpAddresses,
                 "signup" => ListEventTypeName.Signup,
