@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleOutcomeVariant4Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleOutcomeVariant4Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant4, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleFlagEnvironmentsRuleConditionRhsVariant3FlagEnvironmentsRuleConditionRhsVariant4Boolean2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleConditionRhsVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3ItemVariant1, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3ItemVariant2>?), TypeInfoPropertyName = "NullableOneOfFlagEnvironmentsRuleConditionRhsVariant3ItemVariant1FlagEnvironmentsRuleConditionRhsVariant3ItemVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsRuleConditionRhsVariant4Type?), TypeInfoPropertyName = "NullableFlagEnvironmentsRuleConditionRhsVariant4Type2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant12ValueConditionGroupItemConditionType?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant12ValueConditionGroupItemConditionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant12ValueConditionGroupItemConditionOp?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant12ValueConditionGroupItemConditionOp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant12ValueActionMitigateAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant12ValueActionMitigateAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.UpdateFirewallConfigRequestVariant12ValueActionMitigateRateLimit, string>?), TypeInfoPropertyName = "NullableAnyOfUpdateFirewallConfigRequestVariant12ValueActionMitigateRateLimitString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant12ValueActionMitigateRateLimitAlgo?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant12ValueActionMitigateRateLimitAlgo2")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

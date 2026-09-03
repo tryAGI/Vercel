@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant20Id), TypeInfoPropertyName = "UpdateFirewallConfigRequestVariant20Id2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant20Value))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant20ValueAction), TypeInfoPropertyName = "UpdateFirewallConfigRequestVariant20ValueAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant21))]
@@ -99,6 +100,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestStrictShareableLinks))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestStrictPasswordProtectionSettings))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestStrictConnectors))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>), TypeInfoPropertyName = "AnyOfPatchTeamRequestNsnbConfigString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestNsnbConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PatchTeamRequestNsnbConfigPreference), TypeInfoPropertyName = "PatchTeamRequestNsnbConfigPreference2")]
@@ -182,9 +184,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectDomainsOrder), TypeInfoPropertyName = "GetProjectDomainsOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsDecrypt), TypeInfoPropertyName = "FilterProjectEnvsDecrypt2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseState), TypeInfoPropertyName = "GetRollingReleaseState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSandboxesSortBy), TypeInfoPropertyName = "ListSandboxesSortBy2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSandboxesSortOrder), TypeInfoPropertyName = "ListSandboxesSortOrder2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSandboxesStatus), TypeInfoPropertyName = "ListSandboxesStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSandboxesSortBy), TypeInfoPropertyName = "GetSandboxesSortBy2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSandboxesSortOrder), TypeInfoPropertyName = "GetSandboxesSortOrder2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSandboxesStatus), TypeInfoPropertyName = "GetSandboxesStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>), TypeInfoPropertyName = "AnyOfStringIListString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDrivesSortBy), TypeInfoPropertyName = "ListDrivesSortBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDrivesSortOrder), TypeInfoPropertyName = "ListDrivesSortOrder2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant1, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant2, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant3, global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant4>), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant4_ad84c822855afa4d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant1Kind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateDeploymentCheckRunResponseVariant1SourceVariant2Kind), TypeInfoPropertyName = "CreateDeploymentCheckRunResponseVariant1SourceVariant2Kind2")]
     internal sealed partial class SourceGenerationContextChunk004 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

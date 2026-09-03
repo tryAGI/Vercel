@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.ContactVerified, global::Vercel.ContactPendingVerification>?), TypeInfoPropertyName = "NullableAnyOfContactVerifiedContactPendingVerification2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BoughtTooRecently, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "NullableAnyOfBoughtTooRecentlyDomainNotRegisteredHttpApiDecodeError2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BadRequest, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "NullableAnyOfBadRequestHttpApiDecodeError2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.GetOrderResponseDomainVariant1, global::Vercel.GetOrderResponseDomainVariant2, global::Vercel.GetOrderResponseDomainVariant3>?), TypeInfoPropertyName = "NullableAnyOfGetOrderResponseDomainVariant1GetOrderResponseDomainVariant2GetOrderResponseDomainVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponseDomainVariant1PurchaseType?), TypeInfoPropertyName = "NullableGetOrderResponseDomainVariant1PurchaseType2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant1, global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant2, global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant3, global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant4>?), TypeInfoPropertyName = "UpdateFlagResponseEnvironmentsRuleOutcomeVariant4_6caf14b7b87d21cf")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant1Type?), TypeInfoPropertyName = "NullableUpdateFlagResponseEnvironmentsRuleOutcomeVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant2Type?), TypeInfoPropertyName = "NullableUpdateFlagResponseEnvironmentsRuleOutcomeVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant2BaseType?), TypeInfoPropertyName = "NullableUpdateFlagResponseEnvironmentsRuleOutcomeVariant2BaseType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant3Type?), TypeInfoPropertyName = "NullableUpdateFlagResponseEnvironmentsRuleOutcomeVariant3Type2")]
     internal sealed partial class SourceGenerationContextChunk025 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

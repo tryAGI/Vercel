@@ -2,11 +2,10 @@
 
 namespace Vercel
 {
-    public partial interface ISandboxesClient
+    public partial interface IVercelClient
     {
         /// <summary>
-        /// List sandboxes<br/>
-        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.
+        ///
         /// </summary>
         /// <param name="project">
         /// The unique identifier or name of the project to list named sandboxes for.<br/>
@@ -37,31 +36,22 @@ namespace Vercel
         /// <param name="tags">
         /// Filter sandboxes by tag. Format: \"key:value\". Only one tag filter is supported at a time.
         /// </param>
-        /// <param name="teamId">
-        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
-        /// </param>
-        /// <param name="slug">
-        /// Example: my-team-url-slug
-        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.ListSandboxesResponse> ListSandboxesAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.GetSandboxesResponse> GetSandboxesAsync(
             string? project = default,
             double? limit = default,
-            global::Vercel.ListSandboxesSortBy? sortBy = default,
+            global::Vercel.GetSandboxesSortBy? sortBy = default,
             string? namePrefix = default,
             string? cursor = default,
-            global::Vercel.ListSandboxesSortOrder? sortOrder = default,
-            global::Vercel.ListSandboxesStatus? status = default,
+            global::Vercel.GetSandboxesSortOrder? sortOrder = default,
+            global::Vercel.GetSandboxesStatus? status = default,
             global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>? tags = default,
-            string? teamId = default,
-            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List sandboxes<br/>
-        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.
+        ///
         /// </summary>
         /// <param name="project">
         /// The unique identifier or name of the project to list named sandboxes for.<br/>
@@ -92,26 +82,18 @@ namespace Vercel
         /// <param name="tags">
         /// Filter sandboxes by tag. Format: \"key:value\". Only one tag filter is supported at a time.
         /// </param>
-        /// <param name="teamId">
-        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
-        /// </param>
-        /// <param name="slug">
-        /// Example: my-team-url-slug
-        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ListSandboxesResponse>> ListSandboxesAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSandboxesResponse>> GetSandboxesAsResponseAsync(
             string? project = default,
             double? limit = default,
-            global::Vercel.ListSandboxesSortBy? sortBy = default,
+            global::Vercel.GetSandboxesSortBy? sortBy = default,
             string? namePrefix = default,
             string? cursor = default,
-            global::Vercel.ListSandboxesSortOrder? sortOrder = default,
-            global::Vercel.ListSandboxesStatus? status = default,
+            global::Vercel.GetSandboxesSortOrder? sortOrder = default,
+            global::Vercel.GetSandboxesStatus? status = default,
             global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>? tags = default,
-            string? teamId = default,
-            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

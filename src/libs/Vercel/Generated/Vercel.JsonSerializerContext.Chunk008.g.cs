@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseAttributionVercelUser))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetRecordsResponseVariant2, global::Vercel.GetRecordsResponseVariant3>), TypeInfoPropertyName = "OneOfStringGetRecordsResponseVariant2GetRecordsResponseVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRecordsResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetRecordsResponseVariant2Record>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRecordsResponseVariant2Record))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemSamplingItemType), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemSamplingItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemSamplingItemEnv), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemSamplingItemEnv2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDrainsResponseDrainsVariant1ItemSourceVariant1, global::Vercel.GetDrainsResponseDrainsVariant1ItemSourceVariant2>), TypeInfoPropertyName = "OneOfGetDrainsResponseDrainsVariant1ItemSourceVariant1GetDrainsResponseDrainsVariant1ItemSourceVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemSourceVariant1Kind), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemSourceVariant1Kind2")]
     internal sealed partial class SourceGenerationContextChunk008 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

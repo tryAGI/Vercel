@@ -190,6 +190,12 @@ namespace Vercel
         public global::Vercel.PatchTeamRequestStrictPasswordProtectionSettings? StrictPasswordProtectionSettings { get; set; }
 
         /// <summary>
+        /// When enabled, creating and managing connectors requires Owner role.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("strictConnectors")]
+        public global::Vercel.PatchTeamRequestStrictConnectors? StrictConnectors { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nsnbConfig")]
@@ -301,6 +307,9 @@ namespace Vercel
         /// <param name="strictPasswordProtectionSettings">
         /// When enabled, adding, changing, or removing project password protection requires Owner role.
         /// </param>
+        /// <param name="strictConnectors">
+        /// When enabled, creating and managing connectors requires Owner role.
+        /// </param>
         /// <param name="nsnbConfig"></param>
         /// <param name="defaultProjectJobs"></param>
         /// <param name="resourceConfig">
@@ -335,6 +344,7 @@ namespace Vercel
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.PatchTeamRequestStrictShareableLinks? strictShareableLinks,
             global::Vercel.PatchTeamRequestStrictPasswordProtectionSettings? strictPasswordProtectionSettings,
+            global::Vercel.PatchTeamRequestStrictConnectors? strictConnectors,
             global::Vercel.AnyOf<global::Vercel.PatchTeamRequestNsnbConfig, string>? nsnbConfig,
             global::Vercel.OneOf<global::Vercel.PatchTeamRequestDefaultProjectJobs, string>? defaultProjectJobs,
             global::Vercel.PatchTeamRequestResourceConfig? resourceConfig)
@@ -364,6 +374,7 @@ namespace Vercel
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
             this.StrictShareableLinks = strictShareableLinks;
             this.StrictPasswordProtectionSettings = strictPasswordProtectionSettings;
+            this.StrictConnectors = strictConnectors;
             this.NsnbConfig = nsnbConfig;
             this.DefaultProjectJobs = defaultProjectJobs;
             this.ResourceConfig = resourceConfig;

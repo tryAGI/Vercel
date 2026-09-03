@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteDestinationType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2RewriteDestinationType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteTransformType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2RewriteTransformType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteTransformOp?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2RewriteTransformOp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant1, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant2>?), TypeInfoPropertyName = "GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant2_be138c3db749d261")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant1Type?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2RewriteHaVariant1Type2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RenewDomainResponseLinksMethod?), TypeInfoPropertyName = "NullableRenewDomainResponseLinksMethod2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BadRequest, global::Vercel.DomainTooShort, global::Vercel.DomainNotRegistered, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "HttpApiDecodeError_e5b73838d134854f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.DomainAlreadyRenewing, global::Vercel.DomainNotRenewable, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "NullableAnyOfDomainAlreadyRenewingDomainNotRenewableDomainNotRegisteredHttpApiDecodeError2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.ContactVerified, global::Vercel.ContactPendingVerification>?), TypeInfoPropertyName = "NullableAnyOfContactVerifiedContactPendingVerification2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BoughtTooRecently, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "NullableAnyOfBoughtTooRecentlyDomainNotRegisteredHttpApiDecodeError2")]
     internal sealed partial class SourceGenerationContextChunk024 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

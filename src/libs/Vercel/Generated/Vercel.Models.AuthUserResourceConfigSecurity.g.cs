@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rateLimit")]
+        public double? RateLimit { get; set; }
+
+        /// <summary>
+        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customRules")]
         public double? CustomRules { get; set; }
 
@@ -27,12 +33,6 @@ namespace Vercel
         public double? IpBypass { get; set; }
 
         /// <summary>
-        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rateLimit")]
-        public double? RateLimit { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -41,6 +41,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="AuthUserResourceConfigSecurity" /> class.
         /// </summary>
+        /// <param name="rateLimit">
+        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
+        /// </param>
         /// <param name="customRules">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
@@ -50,22 +53,19 @@ namespace Vercel
         /// <param name="ipBypass">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
-        /// <param name="rateLimit">
-        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthUserResourceConfigSecurity(
+            double? rateLimit,
             double? customRules,
             double? ipBlocks,
-            double? ipBypass,
-            double? rateLimit)
+            double? ipBypass)
         {
+            this.RateLimit = rateLimit;
             this.CustomRules = customRules;
             this.IpBlocks = ipBlocks;
             this.IpBypass = ipBypass;
-            this.RateLimit = rateLimit;
         }
 
         /// <summary>

@@ -2139,6 +2139,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        StrictConnectors,
+        /// <summary>
+        ///
+        /// </summary>
         StrictDeploymentProtectionSettings,
         /// <summary>
         ///
@@ -3190,6 +3194,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.StorageUpdateProjectConnection => "storage-update-project-connection",
                 ListEventTypeReplacedByItem.StorageUpgradeProjectConnectionToOidc => "storage-upgrade-project-connection-to-oidc",
                 ListEventTypeReplacedByItem.StorageViewSecret => "storage-view-secret",
+                ListEventTypeReplacedByItem.StrictConnectors => "strict-connectors",
                 ListEventTypeReplacedByItem.StrictDeploymentProtectionSettings => "strict-deployment-protection-settings",
                 ListEventTypeReplacedByItem.StrictPasswordProtectionSettings => "strict-password-protection-settings",
                 ListEventTypeReplacedByItem.StrictShareableLinks => "strict-shareable-links",
@@ -3859,6 +3864,7 @@ namespace Vercel
                 "storage-update-project-connection" => ListEventTypeReplacedByItem.StorageUpdateProjectConnection,
                 "storage-upgrade-project-connection-to-oidc" => ListEventTypeReplacedByItem.StorageUpgradeProjectConnectionToOidc,
                 "storage-view-secret" => ListEventTypeReplacedByItem.StorageViewSecret,
+                "strict-connectors" => ListEventTypeReplacedByItem.StrictConnectors,
                 "strict-deployment-protection-settings" => ListEventTypeReplacedByItem.StrictDeploymentProtectionSettings,
                 "strict-password-protection-settings" => ListEventTypeReplacedByItem.StrictPasswordProtectionSettings,
                 "strict-shareable-links" => ListEventTypeReplacedByItem.StrictShareableLinks,

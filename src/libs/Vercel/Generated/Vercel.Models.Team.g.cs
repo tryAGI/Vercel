@@ -224,6 +224,12 @@ namespace Vercel
         public global::Vercel.TeamStrictPasswordProtectionSettings? StrictPasswordProtectionSettings { get; set; }
 
         /// <summary>
+        /// When enabled, creating and managing connectors requires Owner role or the ConnectorManager permission.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("strictConnectors")]
+        public global::Vercel.TeamStrictConnectors? StrictConnectors { get; set; }
+
+        /// <summary>
         /// NSNB configuration for the team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nsnbConfig")]
@@ -440,6 +446,9 @@ namespace Vercel
         /// <param name="strictPasswordProtectionSettings">
         /// When enabled, adding, changing, or removing project password protection requires Owner role.
         /// </param>
+        /// <param name="strictConnectors">
+        /// When enabled, creating and managing connectors requires Owner role or the ConnectorManager permission.
+        /// </param>
         /// <param name="nsnbConfig">
         /// NSNB configuration for the team.
         /// </param>
@@ -516,6 +525,7 @@ namespace Vercel
             global::Vercel.TeamStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.TeamStrictShareableLinks? strictShareableLinks,
             global::Vercel.TeamStrictPasswordProtectionSettings? strictPasswordProtectionSettings,
+            global::Vercel.TeamStrictConnectors? strictConnectors,
             global::Vercel.TeamNsnbConfig? nsnbConfig,
             global::Vercel.TeamDeploymentPolicy? deploymentPolicy,
             double? personalAccessTokensInvalidatedAt,
@@ -560,6 +570,7 @@ namespace Vercel
             this.StrictDeploymentProtectionSettings = strictDeploymentProtectionSettings;
             this.StrictShareableLinks = strictShareableLinks;
             this.StrictPasswordProtectionSettings = strictPasswordProtectionSettings;
+            this.StrictConnectors = strictConnectors;
             this.NsnbConfig = nsnbConfig;
             this.DeploymentPolicy = deploymentPolicy;
             this.PersonalAccessTokensInvalidatedAt = personalAccessTokensInvalidatedAt;

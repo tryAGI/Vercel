@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant2BaseType?), TypeInfoPropertyName = "NullableUpdateFlagResponseEnvironmentsRuleOutcomeVariant2BaseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant3Type?), TypeInfoPropertyName = "NullableUpdateFlagResponseEnvironmentsRuleOutcomeVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant3BaseType?), TypeInfoPropertyName = "NullableUpdateFlagResponseEnvironmentsRuleOutcomeVariant3BaseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagResponseEnvironmentsRuleOutcomeVariant4Type?), TypeInfoPropertyName = "NullableUpdateFlagResponseEnvironmentsRuleOutcomeVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.UpdateFlagResponseEnvironmentsRuleConditionRhsVariant3, global::Vercel.UpdateFlagResponseEnvironmentsRuleConditionRhsVariant4, bool?>?), TypeInfoPropertyName = "UpdateFlagResponseEnvironmentsRuleConditionRhsVariant4_bool_6580a0e875bf0665")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectInternalRouteVariant2MitigateAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectInternalRouteVariant2MitigateAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectDismissedToastAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectDismissedToastAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.GetMicrofrontendsInGroupResponseProjectDismissedToastValue, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleGetMicrofrontendsInGroupResponseProjectDismissedToastValueBoolean2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleBoolean2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTracingSamplingRuleEnv?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectTracingSamplingRuleEnv2")]
     internal sealed partial class SourceGenerationContextChunk026 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

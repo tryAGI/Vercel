@@ -34,6 +34,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamStrictDeploymentProtectionSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamStrictShareableLinks))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamStrictPasswordProtectionSettings))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamStrictConnectors))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamNsnbConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamNsnbConfigPreference), TypeInfoPropertyName = "TeamNsnbConfigPreference2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamDeploymentPolicy))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<string, double?, bool?, object, global::System.Collections.Generic.IList<object>, string>), TypeInfoPropertyName = "AnyOfStringDoubleBooleanObjectIListObjectString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateFlagRequestEnvironments2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagRequestEnvironments2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagRequestEnvironmentsReuse))]
     internal sealed partial class SourceGenerationContextChunk001 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

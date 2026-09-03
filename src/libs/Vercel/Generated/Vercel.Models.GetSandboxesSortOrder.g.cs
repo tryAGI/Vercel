@@ -4,52 +4,47 @@
 namespace Vercel
 {
     /// <summary>
-    /// Filter named sandboxes by status. Only valid when sortBy is createdAt.
+    /// Sort direction. Defaults to desc.<br/>
+    /// Default Value: desc
     /// </summary>
-    public enum ListSandboxesStatus
+    public enum GetSandboxesSortOrder
     {
         /// <summary>
         ///
         /// </summary>
-        Running,
+        Asc,
         /// <summary>
         ///
         /// </summary>
-        Stopped,
-        /// <summary>
-        ///
-        /// </summary>
-        Stopping,
+        Desc,
     }
 
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class ListSandboxesStatusExtensions
+    public static class GetSandboxesSortOrderExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this ListSandboxesStatus value)
+        public static string ToValueString(this GetSandboxesSortOrder value)
         {
             return value switch
             {
-                ListSandboxesStatus.Running => "running",
-                ListSandboxesStatus.Stopped => "stopped",
-                ListSandboxesStatus.Stopping => "stopping",
+                GetSandboxesSortOrder.Asc => "asc",
+                GetSandboxesSortOrder.Desc => "desc",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static ListSandboxesStatus? ToEnum(string value)
+        public static GetSandboxesSortOrder? ToEnum(string value)
         {
             return value switch
             {
-                "running" => ListSandboxesStatus.Running,
-                "stopped" => ListSandboxesStatus.Stopped,
-                "stopping" => ListSandboxesStatus.Stopping,
+                "asc" => GetSandboxesSortOrder.Asc,
+                "desc" => GetSandboxesSortOrder.Desc,
                 _ => null,
             };
         }
