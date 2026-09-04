@@ -178,6 +178,12 @@ namespace Vercel
         public global::Vercel.GetConfigurationResponseVariant2InstallationType? InstallationType { get; set; }
 
         /// <summary>
+        /// Historical parent installation from which acceptedPolicies were inherited. This is immutable provenance, not current authorization or relationship truth.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("acceptedPoliciesInheritedFromInstallationId")]
+        public string? AcceptedPoliciesInheritedFromInstallationId { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -260,6 +266,9 @@ namespace Vercel
         /// <param name="installationType">
         /// Defines the installation type. - 'external' integrations are installed via the existing integrations flow - 'marketplace' integrations are natively installed: - when accepting the TOS of a partner during the store creation process - if undefined, assume 'external'
         /// </param>
+        /// <param name="acceptedPoliciesInheritedFromInstallationId">
+        /// Historical parent installation from which acceptedPolicies were inherited. This is immutable provenance, not current authorization or relationship truth.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -284,7 +293,8 @@ namespace Vercel
             double? deleteRequestedAt,
             double? customerDeleteRequestedAt,
             global::Vercel.GetConfigurationResponseVariant2DisabledReason? disabledReason,
-            global::Vercel.GetConfigurationResponseVariant2InstallationType? installationType)
+            global::Vercel.GetConfigurationResponseVariant2InstallationType? installationType,
+            string? acceptedPoliciesInheritedFromInstallationId)
         {
             this.CompletedAt = completedAt;
             this.CreatedAt = createdAt;
@@ -307,6 +317,7 @@ namespace Vercel
             this.CustomerDeleteRequestedAt = customerDeleteRequestedAt;
             this.DisabledReason = disabledReason;
             this.InstallationType = installationType;
+            this.AcceptedPoliciesInheritedFromInstallationId = acceptedPoliciesInheritedFromInstallationId;
         }
 
         /// <summary>
