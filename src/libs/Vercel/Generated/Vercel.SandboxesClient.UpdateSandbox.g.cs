@@ -879,6 +879,9 @@ namespace Vercel
         /// The regions the sandbox falls back to when it cannot be created in `region`.<br/>
         /// Example: [sfo1, cle1]
         /// </param>
+        /// <param name="mounts">
+        /// Drives to mount to the sandbox at the provided path. Replaces the current mounts; an empty object removes them all. Changes take effect when the next session starts.
+        /// </param>
         /// <param name="env">
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
@@ -912,6 +915,7 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? networkPolicy = default,
             global::Vercel.UpdateSandboxRequestRegion? region = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestFailoverRegion>? failoverRegions = default,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateSandboxRequestMounts2>? mounts = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
             global::System.Collections.Generic.IList<int>? ports = default,
             string? currentSnapshotId = default,
@@ -930,6 +934,7 @@ namespace Vercel
                 NetworkPolicy = networkPolicy,
                 Region = region,
                 FailoverRegions = failoverRegions,
+                Mounts = mounts,
                 Env = env,
                 Ports = ports,
                 CurrentSnapshotId = currentSnapshotId,

@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class VercelClient
+    public partial class SandboxesClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_GetSandboxesSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_ListNamedSandboxesSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,42 +21,47 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetSandboxesSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_ListNamedSandboxesSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_GetSandboxesSecurityRequirement0,
+            {                s_ListNamedSandboxesSecurityRequirement0,
             };
-        partial void PrepareGetSandboxesArguments(
+        partial void PrepareListNamedSandboxesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? project,
             ref double? limit,
-            ref global::Vercel.GetSandboxesSortBy? sortBy,
+            ref global::Vercel.ListNamedSandboxesSortBy? sortBy,
             ref string? namePrefix,
             ref string? cursor,
-            ref global::Vercel.GetSandboxesSortOrder? sortOrder,
-            ref global::Vercel.GetSandboxesStatus? status,
-            ref global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>? tags);
-        partial void PrepareGetSandboxesRequest(
+            ref global::Vercel.ListNamedSandboxesSortOrder? sortOrder,
+            ref global::Vercel.ListNamedSandboxesStatus? status,
+            ref global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>? tags,
+            ref string? teamId,
+            ref string? slug);
+        partial void PrepareListNamedSandboxesRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string? project,
             double? limit,
-            global::Vercel.GetSandboxesSortBy? sortBy,
+            global::Vercel.ListNamedSandboxesSortBy? sortBy,
             string? namePrefix,
             string? cursor,
-            global::Vercel.GetSandboxesSortOrder? sortOrder,
-            global::Vercel.GetSandboxesStatus? status,
-            global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>? tags);
-        partial void ProcessGetSandboxesResponse(
+            global::Vercel.ListNamedSandboxesSortOrder? sortOrder,
+            global::Vercel.ListNamedSandboxesStatus? status,
+            global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>? tags,
+            string? teamId,
+            string? slug);
+        partial void ProcessListNamedSandboxesResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessGetSandboxesResponseContent(
+        partial void ProcessListNamedSandboxesResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        ///
+        /// List sandboxes<br/>
+        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.
         /// </summary>
         /// <param name="project">
         /// The unique identifier or name of the project to list named sandboxes for.<br/>
@@ -87,22 +92,30 @@ namespace Vercel
         /// <param name="tags">
         /// Filter sandboxes by tag. Format: \"key:value\". Only one tag filter is supported at a time.
         /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.GetSandboxesResponse> GetSandboxesAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.ListNamedSandboxesResponse> ListNamedSandboxesAsync(
             string? project = default,
             double? limit = default,
-            global::Vercel.GetSandboxesSortBy? sortBy = default,
+            global::Vercel.ListNamedSandboxesSortBy? sortBy = default,
             string? namePrefix = default,
             string? cursor = default,
-            global::Vercel.GetSandboxesSortOrder? sortOrder = default,
-            global::Vercel.GetSandboxesStatus? status = default,
+            global::Vercel.ListNamedSandboxesSortOrder? sortOrder = default,
+            global::Vercel.ListNamedSandboxesStatus? status = default,
             global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>? tags = default,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await GetSandboxesAsResponseAsync(
+            var __response = await ListNamedSandboxesAsResponseAsync(
                 project: project,
                 limit: limit,
                 sortBy: sortBy,
@@ -111,6 +124,8 @@ namespace Vercel
                 sortOrder: sortOrder,
                 status: status,
                 tags: tags,
+                teamId: teamId,
+                slug: slug,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -118,7 +133,8 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        ///
+        /// List sandboxes<br/>
+        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.
         /// </summary>
         /// <param name="project">
         /// The unique identifier or name of the project to list named sandboxes for.<br/>
@@ -149,24 +165,32 @@ namespace Vercel
         /// <param name="tags">
         /// Filter sandboxes by tag. Format: \"key:value\". Only one tag filter is supported at a time.
         /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSandboxesResponse>> GetSandboxesAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ListNamedSandboxesResponse>> ListNamedSandboxesAsResponseAsync(
             string? project = default,
             double? limit = default,
-            global::Vercel.GetSandboxesSortBy? sortBy = default,
+            global::Vercel.ListNamedSandboxesSortBy? sortBy = default,
             string? namePrefix = default,
             string? cursor = default,
-            global::Vercel.GetSandboxesSortOrder? sortOrder = default,
-            global::Vercel.GetSandboxesStatus? status = default,
+            global::Vercel.ListNamedSandboxesSortOrder? sortOrder = default,
+            global::Vercel.ListNamedSandboxesStatus? status = default,
             global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>>? tags = default,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareGetSandboxesArguments(
+            PrepareListNamedSandboxesArguments(
                 httpClient: HttpClient,
                 project: ref project,
                 limit: ref limit,
@@ -175,13 +199,15 @@ namespace Vercel
                 cursor: ref cursor,
                 sortOrder: ref sortOrder,
                 status: ref status,
-                tags: ref tags);
+                tags: ref tags,
+                teamId: ref teamId,
+                slug: ref slug);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_GetSandboxesSecurityRequirements,
-                operationName: "GetSandboxesAsync");
+                securityRequirements: s_ListNamedSandboxesSecurityRequirements,
+                operationName: "ListNamedSandboxesAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -201,7 +227,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: "/sandboxes",
+                                path: "/v2/sandboxes",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("project", project)
@@ -215,6 +241,8 @@ namespace Vercel
                 static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x },
                 static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item),
                 validate: false), delimiter: ",", explode: true)
+                                .AddOptionalParameter("teamId", teamId)
+                                .AddOptionalParameter("slug", slug)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -253,7 +281,7 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareGetSandboxesRequest(
+                PrepareListNamedSandboxesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     project: project,
@@ -263,7 +291,9 @@ namespace Vercel
                     cursor: cursor,
                     sortOrder: sortOrder,
                     status: status,
-                    tags: tags);
+                    tags: tags,
+                    teamId: teamId,
+                    slug: slug);
 
                 return __httpRequest;
             }
@@ -280,9 +310,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetSandboxes",
-                                methodName: "GetSandboxesAsync",
-                                pathTemplate: "\"/sandboxes\"",
+                                operationId: "ListNamedSandboxes",
+                                methodName: "ListNamedSandboxesAsync",
+                                pathTemplate: "\"/v2/sandboxes\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -314,9 +344,9 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetSandboxes",
-                                methodName: "GetSandboxesAsync",
-                                pathTemplate: "\"/sandboxes\"",
+                                operationId: "ListNamedSandboxes",
+                                methodName: "ListNamedSandboxesAsync",
+                                pathTemplate: "\"/v2/sandboxes\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -355,9 +385,9 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetSandboxes",
-                                methodName: "GetSandboxesAsync",
-                                pathTemplate: "\"/sandboxes\"",
+                                operationId: "ListNamedSandboxes",
+                                methodName: "ListNamedSandboxesAsync",
+                                pathTemplate: "\"/v2/sandboxes\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -395,7 +425,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessGetSandboxesResponse(
+                ProcessListNamedSandboxesResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -403,9 +433,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetSandboxes",
-                                methodName: "GetSandboxesAsync",
-                                pathTemplate: "\"/sandboxes\"",
+                                operationId: "ListNamedSandboxes",
+                                methodName: "ListNamedSandboxesAsync",
+                                pathTemplate: "\"/v2/sandboxes\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -425,9 +455,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetSandboxes",
-                                methodName: "GetSandboxesAsync",
-                                pathTemplate: "\"/sandboxes\"",
+                                operationId: "ListNamedSandboxes",
+                                methodName: "ListNamedSandboxesAsync",
+                                pathTemplate: "\"/v2/sandboxes\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -647,7 +677,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessGetSandboxesResponseContent(
+                                ProcessListNamedSandboxesResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -656,9 +686,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.GetSandboxesResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.ListNamedSandboxesResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSandboxesResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.ListNamedSandboxesResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -688,9 +718,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.GetSandboxesResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.ListNamedSandboxesResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSandboxesResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.ListNamedSandboxesResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

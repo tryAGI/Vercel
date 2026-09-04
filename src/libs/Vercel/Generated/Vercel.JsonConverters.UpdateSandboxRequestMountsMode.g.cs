@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class GetSandboxesSortByJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.GetSandboxesSortBy>
+    public sealed class UpdateSandboxRequestMountsModeJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.UpdateSandboxRequestMountsMode>
     {
         /// <inheritdoc />
-        public override global::Vercel.GetSandboxesSortBy Read(
+        public override global::Vercel.UpdateSandboxRequestMountsMode Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.GetSandboxesSortByExtensions.ToEnum(stringValue) ?? default;
+                        return global::Vercel.UpdateSandboxRequestMountsModeExtensions.ToEnum(stringValue) ?? default;
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.GetSandboxesSortBy)numValue;
+                    return (global::Vercel.UpdateSandboxRequestMountsMode)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.GetSandboxesSortBy);
+                    return default(global::Vercel.UpdateSandboxRequestMountsMode);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,12 +42,12 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.GetSandboxesSortBy value,
+            global::Vercel.UpdateSandboxRequestMountsMode value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            writer.WriteStringValue(global::Vercel.GetSandboxesSortByExtensions.ToValueString(value));
+            writer.WriteStringValue(global::Vercel.UpdateSandboxRequestMountsModeExtensions.ToValueString(value));
         }
     }
 }

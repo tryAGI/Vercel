@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class GetSandboxesSortOrderNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.GetSandboxesSortOrder?>
+    public sealed class UpdateSandboxRequestMountsModeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.UpdateSandboxRequestMountsMode?>
     {
         /// <inheritdoc />
-        public override global::Vercel.GetSandboxesSortOrder? Read(
+        public override global::Vercel.UpdateSandboxRequestMountsMode? Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.GetSandboxesSortOrderExtensions.ToEnum(stringValue);
+                        return global::Vercel.UpdateSandboxRequestMountsModeExtensions.ToEnum(stringValue);
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.GetSandboxesSortOrder)numValue;
+                    return (global::Vercel.UpdateSandboxRequestMountsMode)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.GetSandboxesSortOrder?);
+                    return default(global::Vercel.UpdateSandboxRequestMountsMode?);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,7 +42,7 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.GetSandboxesSortOrder? value,
+            global::Vercel.UpdateSandboxRequestMountsMode? value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
@@ -53,7 +53,7 @@ namespace Vercel.JsonConverters
             }
             else
             {
-                writer.WriteStringValue(global::Vercel.GetSandboxesSortOrderExtensions.ToValueString(value.Value));
+                writer.WriteStringValue(global::Vercel.UpdateSandboxRequestMountsModeExtensions.ToValueString(value.Value));
             }
         }
     }

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.
+    /// A rule applied to requests matching a domain in the network policy. Only one of `transform`, `forwardURL`, or `response` can be specified per rule.
     /// </summary>
     public sealed partial class CreateSandboxesByNameForkV2RequestNetworkPolicyVariant2Allow
     {
