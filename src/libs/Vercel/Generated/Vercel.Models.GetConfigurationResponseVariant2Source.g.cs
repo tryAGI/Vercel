@@ -40,6 +40,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Organization,
+        /// <summary>
+        ///
+        /// </summary>
         ResourceClaims,
         /// <summary>
         ///
@@ -66,6 +70,7 @@ namespace Vercel
                 GetConfigurationResponseVariant2Source.ImportRecommendedIntegrations => "import-recommended-integrations",
                 GetConfigurationResponseVariant2Source.Marketplace => "marketplace",
                 GetConfigurationResponseVariant2Source.Oauth => "oauth",
+                GetConfigurationResponseVariant2Source.Organization => "organization",
                 GetConfigurationResponseVariant2Source.ResourceClaims => "resource-claims",
                 GetConfigurationResponseVariant2Source.V0 => "v0",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -85,6 +90,7 @@ namespace Vercel
                 "import-recommended-integrations" => GetConfigurationResponseVariant2Source.ImportRecommendedIntegrations,
                 "marketplace" => GetConfigurationResponseVariant2Source.Marketplace,
                 "oauth" => GetConfigurationResponseVariant2Source.Oauth,
+                "organization" => GetConfigurationResponseVariant2Source.Organization,
                 "resource-claims" => GetConfigurationResponseVariant2Source.ResourceClaims,
                 "v0" => GetConfigurationResponseVariant2Source.V0,
                 _ => null,

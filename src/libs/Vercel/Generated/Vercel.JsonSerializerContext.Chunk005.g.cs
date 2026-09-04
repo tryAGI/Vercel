@@ -239,6 +239,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ResourceConfigBuildMachinePurchaseType), TypeInfoPropertyName = "GetDeploymentResponseVariant2ResourceConfigBuildMachinePurchaseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType), TypeInfoPropertyName = "GetDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ResourceConfigBuildMachineMachineSelectionType), TypeInfoPropertyName = "GetDeploymentResponseVariant2ResourceConfigBuildMachineMachineSelectionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource), TypeInfoPropertyName = "GetDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ProjectSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ProjectSettingsNodeVersion), TypeInfoPropertyName = "GetDeploymentResponseVariant2ProjectSettingsNodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ProjectSettingsFramework), TypeInfoPropertyName = "GetDeploymentResponseVariant2ProjectSettingsFramework2")]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RedirectMissingItemVariant1Value>), TypeInfoPropertyName = "OneOfStringGetDeploymentResponseVariant2ServiceVariant2RedirectMissingItemVariant1Value2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RedirectMissingItemVariant1Value))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RedirectMissingItemVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RedirectMissingItemVariant2Type), TypeInfoPropertyName = "GetDeploymentResponseVariant2ServiceVariant2RedirectMissingItemVariant2Type2")]
     internal sealed partial class SourceGenerationContextChunk005 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

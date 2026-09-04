@@ -11,6 +11,9 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant10Action?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant10Action2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant11Action?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant11Action2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant11ValueConditionGroupItemConditionType?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant11ValueConditionGroupItemConditionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant11ValueConditionGroupItemConditionOp?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant11ValueConditionGroupItemConditionOp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>, double?>?), TypeInfoPropertyName = "NullableOneOfStringIListStringDouble2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFirewallConfigRequestVariant11ValueActionMitigateAction?), TypeInfoPropertyName = "NullableUpdateFirewallConfigRequestVariant11ValueActionMitigateAction2")]
@@ -391,6 +394,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ResourceConfigBuildMachinePurchaseType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ResourceConfigBuildMachinePurchaseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ResourceConfigBuildMachineMachineSelectionType?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ResourceConfigBuildMachineMachineSelectionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ProjectSettingsNodeVersion?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ProjectSettingsNodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ProjectSettingsFramework?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ProjectSettingsFramework2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2IntegrationsStatus?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2IntegrationsStatus2")]
@@ -507,10 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2Type?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2Value>?), TypeInfoPropertyName = "NullableOneOfStringGetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2Value2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant1, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant2>?), TypeInfoPropertyName = "GetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant2_fb219d6e176c3b7f")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant1Type?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant1Value>?), TypeInfoPropertyName = "NullableOneOfStringGetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant1Value2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant2Type?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant2Value>?), TypeInfoPropertyName = "NullableOneOfStringGetDeploymentResponseVariant2ServiceVariant2HeaderMissingItemVariant2Value2")]
     internal sealed partial class SourceGenerationContextChunk023 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

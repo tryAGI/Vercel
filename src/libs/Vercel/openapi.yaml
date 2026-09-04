@@ -16447,6 +16447,16 @@
                                   ],
                                   "description": "Whether the build ran on a fixed or elastic machine. Used to drive billing for the build."
                                 },
+                                "selectionSource": {
+                                  "type": "string",
+                                  "enum": [
+                                    "elastic-algorithm",
+                                    "plan-default",
+                                    "project-setting",
+                                    "team-setting"
+                                  ],
+                                  "description": "The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history."
+                                },
                                 "cores": {
                                   "type": "number",
                                   "description": "Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive."
@@ -24647,6 +24657,16 @@
                                   ],
                                   "description": "Whether the build ran on a fixed or elastic machine. Used to drive billing for the build."
                                 },
+                                "selectionSource": {
+                                  "type": "string",
+                                  "enum": [
+                                    "elastic-algorithm",
+                                    "plan-default",
+                                    "project-setting",
+                                    "team-setting"
+                                  ],
+                                  "description": "The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history."
+                                },
                                 "cores": {
                                   "type": "number",
                                   "description": "Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive."
@@ -31992,6 +32012,16 @@
                                 "fixed"
                               ],
                               "description": "Whether the build ran on a fixed or elastic machine. Used to drive billing for the build."
+                            },
+                            "selectionSource": {
+                              "type": "string",
+                              "enum": [
+                                "elastic-algorithm",
+                                "plan-default",
+                                "project-setting",
+                                "team-setting"
+                              ],
+                              "description": "The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history."
                             },
                             "cores": {
                               "type": "number",
@@ -66416,7 +66446,8 @@
                 "cli",
                 "oauth",
                 "backoffice",
-                "import-recommended-integrations"
+                "import-recommended-integrations",
+                "organization"
               ]
             }
           },
@@ -69664,6 +69695,7 @@
                               "import-recommended-integrations",
                               "marketplace",
                               "oauth",
+                              "organization",
                               "resource-claims",
                               "v0"
                             ],
@@ -69893,6 +69925,7 @@
                               "import-recommended-integrations",
                               "marketplace",
                               "oauth",
+                              "organization",
                               "resource-claims",
                               "v0"
                             ],
@@ -70417,6 +70450,7 @@
                             "import-recommended-integrations",
                             "marketplace",
                             "oauth",
+                            "organization",
                             "resource-claims",
                             "v0"
                           ],
@@ -70543,6 +70577,7 @@
                             "import-recommended-integrations",
                             "marketplace",
                             "oauth",
+                            "organization",
                             "resource-claims",
                             "v0"
                           ],
@@ -70711,6 +70746,7 @@
                             "import-recommended-integrations",
                             "marketplace",
                             "oauth",
+                            "organization",
                             "resource-claims",
                             "v0"
                           ],
@@ -160387,7 +160423,7 @@
                   },
                   "maxSizeBytes": {
                     "type": "integer",
-                    "description": "Maximum drive size in bytes. Defaults to 1 TiB when omitted."
+                    "description": "Maximum drive size in bytes. Defaults to 1 TiB when omitted. The maximum quota is 16 TiB. Request a quota above 16 TiB at https://vercel.com/help."
                   },
                   "region": {
                     "type": "string",
@@ -186439,7 +186475,8 @@
                       "cli",
                       "oauth",
                       "backoffice",
-                      "import-recommended-integrations"
+                      "import-recommended-integrations",
+                      "organization"
                     ],
                     "description": "Source of the store creation request",
                     "example": "marketplace",
@@ -213897,7 +213934,7 @@
           "maxSizeBytes": {
             "type": "number",
             "description": "The maximum drive size in bytes.",
-            "example": 107374182400
+            "example": 1099511627776
           },
           "region": {
             "type": "string",

@@ -30,6 +30,13 @@ namespace Vercel
         public global::Vercel.CreateDeploymentResponseVariant2ResourceConfigBuildMachineMachineSelectionType? MachineSelectionType { get; set; }
 
         /// <summary>
+        /// The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("selectionSource")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSourceJsonConverter))]
+        public global::Vercel.CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource? SelectionSource { get; set; }
+
+        /// <summary>
         /// Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cores")]
@@ -59,6 +66,9 @@ namespace Vercel
         /// <param name="machineSelectionType">
         /// Whether the build ran on a fixed or elastic machine. Used to drive billing for the build.
         /// </param>
+        /// <param name="selectionSource">
+        /// The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history.
+        /// </param>
         /// <param name="cores">
         /// Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive.
         /// </param>
@@ -72,12 +82,14 @@ namespace Vercel
             global::Vercel.CreateDeploymentResponseVariant2ResourceConfigBuildMachinePurchaseType? purchaseType,
             global::Vercel.CreateDeploymentResponseVariant2ResourceConfigBuildMachineDefaultPurchaseType? defaultPurchaseType,
             global::Vercel.CreateDeploymentResponseVariant2ResourceConfigBuildMachineMachineSelectionType? machineSelectionType,
+            global::Vercel.CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource? selectionSource,
             double? cores,
             double? memory)
         {
             this.PurchaseType = purchaseType;
             this.DefaultPurchaseType = defaultPurchaseType;
             this.MachineSelectionType = machineSelectionType;
+            this.SelectionSource = selectionSource;
             this.Cores = cores;
             this.Memory = memory;
         }

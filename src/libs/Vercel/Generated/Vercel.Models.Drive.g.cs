@@ -37,9 +37,9 @@ namespace Vercel
 
         /// <summary>
         /// The maximum drive size in bytes.<br/>
-        /// Example: 107374182400L
+        /// Example: 1099511627776L
         /// </summary>
-        /// <example>107374182400L</example>
+        /// <example>1099511627776L</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("maxSizeBytes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double MaxSizeBytes { get; set; }
@@ -110,7 +110,7 @@ namespace Vercel
         /// </param>
         /// <param name="maxSizeBytes">
         /// The maximum drive size in bytes.<br/>
-        /// Example: 107374182400L
+        /// Example: 1099511627776L
         /// </param>
         /// <param name="region">
         /// The region where the drive is stored.<br/>
