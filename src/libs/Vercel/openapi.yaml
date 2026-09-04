@@ -160321,7 +160321,7 @@
                   },
                   "maxSizeBytes": {
                     "type": "integer",
-                    "description": "Maximum drive size in bytes. Defaults to 100 GiB when omitted."
+                    "description": "Maximum drive size in bytes. Defaults to 1 TiB when omitted."
                   },
                   "region": {
                     "type": "string",

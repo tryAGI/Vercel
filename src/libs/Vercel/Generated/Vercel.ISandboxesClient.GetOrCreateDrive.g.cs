@@ -75,7 +75,7 @@ namespace Vercel
         /// Example: prj_abc123
         /// </param>
         /// <param name="maxSizeBytes">
-        /// Maximum drive size in bytes. Defaults to 100 GiB when omitted.
+        /// Maximum drive size in bytes. Defaults to 1 TiB when omitted.
         /// </param>
         /// <param name="region">
         /// Region where the drive is stored. Defaults to iad1.<br/>
