@@ -27,6 +27,12 @@ namespace Vercel
         public string? ForwardURL { get; set; }
 
         /// <summary>
+        /// Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("response")]
+        public global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2AllowItemResponse? Response { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -42,17 +48,22 @@ namespace Vercel
         /// <param name="forwardURL">
         /// HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment.
         /// </param>
+        /// <param name="response">
+        /// Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSandboxesV4RequestNetworkPolicyVariant2AllowItem(
             global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2AllowItemMatch? match,
             global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2AllowItemTransformItem>? transform,
-            string? forwardURL)
+            string? forwardURL,
+            global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2AllowItemResponse? response)
         {
             this.Match = match;
             this.Transform = transform;
             this.ForwardURL = forwardURL;
+            this.Response = response;
         }
 
         /// <summary>

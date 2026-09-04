@@ -87311,6 +87311,18 @@
           },
           "410": {
             "description": ""
+          },
+          "413": {
+            "description": ""
+          },
+          "422": {
+            "description": ""
+          },
+          "500": {
+            "description": ""
+          },
+          "503": {
+            "description": ""
           }
         },
         "parameters": [],
@@ -159034,12 +159046,19 @@
         ]
       }
     },
-    "/sandboxes": {
+    "/v2/sandboxes": {
       "get": {
-        "description": "",
-        "operationId": "getSandboxes",
-        "security": [],
-        "tags": [],
+        "description": "Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.",
+        "operationId": "listNamedSandboxes",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List sandboxes",
+        "tags": [
+          "sandboxes"
+        ],
         "responses": {
           "200": {
             "description": "",
@@ -159210,11 +159229,27 @@
                 }
               ]
             }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
           }
         ]
-      }
-    },
-    "/v2/sandboxes": {
+      },
       "post": {
         "description": "Creates a named sandbox environment. Named sandboxes have a unique name within a project and support automatic snapshotting on shutdown.",
         "operationId": "createSandboxesV2",
@@ -159521,7 +159556,7 @@
                                 }
                               },
                               {
-                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.",
+                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform`, `forwardURL`, or `response` can be specified per rule.",
                                 "type": "object",
                                 "additionalProperties": {
                                   "type": "array",
@@ -159656,6 +159691,37 @@
                                       "forwardURL": {
                                         "type": "string",
                                         "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
+                                      },
+                                      "response": {
+                                        "description": "Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "required": [
+                                          "statusCode"
+                                        ],
+                                        "properties": {
+                                          "statusCode": {
+                                            "type": "integer",
+                                            "minimum": 200,
+                                            "maximum": 599,
+                                            "description": "HTTP status code returned to the sandbox."
+                                          },
+                                          "headers": {
+                                            "type": "object",
+                                            "additionalProperties": {
+                                              "type": "string"
+                                            },
+                                            "description": "HTTP response headers. Framing and hop-by-hop headers are managed by the proxy and cannot be set."
+                                          },
+                                          "body": {
+                                            "type": "string",
+                                            "description": "UTF-8 response body. Requires `contentType`."
+                                          },
+                                          "contentType": {
+                                            "type": "string",
+                                            "description": "Value of the `Content-Type` response header. Required when `body` is set."
+                                          }
+                                        }
                                       }
                                     }
                                   }
@@ -161640,7 +161706,7 @@
                                 }
                               },
                               {
-                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.",
+                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform`, `forwardURL`, or `response` can be specified per rule.",
                                 "type": "object",
                                 "additionalProperties": {
                                   "type": "array",
@@ -161775,6 +161841,37 @@
                                       "forwardURL": {
                                         "type": "string",
                                         "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
+                                      },
+                                      "response": {
+                                        "description": "Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "required": [
+                                          "statusCode"
+                                        ],
+                                        "properties": {
+                                          "statusCode": {
+                                            "type": "integer",
+                                            "minimum": 200,
+                                            "maximum": 599,
+                                            "description": "HTTP status code returned to the sandbox."
+                                          },
+                                          "headers": {
+                                            "type": "object",
+                                            "additionalProperties": {
+                                              "type": "string"
+                                            },
+                                            "description": "HTTP response headers. Framing and hop-by-hop headers are managed by the proxy and cannot be set."
+                                          },
+                                          "body": {
+                                            "type": "string",
+                                            "description": "UTF-8 response body. Requires `contentType`."
+                                          },
+                                          "contentType": {
+                                            "type": "string",
+                                            "description": "Value of the `Content-Type` response header. Required when `body` is set."
+                                          }
+                                        }
                                       }
                                     }
                                   }
@@ -161863,6 +161960,35 @@
                       "sfo1",
                       "cle1"
                     ]
+                  },
+                  "mounts": {
+                    "description": "Drives to mount to the sandbox at the provided path. Replaces the current mounts; an empty object removes them all. Changes take effect when the next session starts.",
+                    "type": "object",
+                    "maxProperties": 4,
+                    "additionalProperties": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "drive"
+                      ],
+                      "properties": {
+                        "drive": {
+                          "type": "string",
+                          "description": "Name of the drive to mount. The drive must already exist.",
+                          "maxLength": 64,
+                          "pattern": "^[a-zA-Z0-9_-]+$"
+                        },
+                        "mode": {
+                          "type": "string",
+                          "enum": [
+                            "read-only",
+                            "read-write"
+                          ],
+                          "description": "Mount the drive read-only or read-write.",
+                          "default": "read-write"
+                        }
+                      }
+                    }
                   },
                   "env": {
                     "type": "object",
@@ -163292,7 +163418,7 @@
                             }
                           },
                           {
-                            "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.",
+                            "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform`, `forwardURL`, or `response` can be specified per rule.",
                             "type": "object",
                             "additionalProperties": {
                               "type": "array",
@@ -163427,6 +163553,37 @@
                                   "forwardURL": {
                                     "type": "string",
                                     "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
+                                  },
+                                  "response": {
+                                    "description": "Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.",
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "required": [
+                                      "statusCode"
+                                    ],
+                                    "properties": {
+                                      "statusCode": {
+                                        "type": "integer",
+                                        "minimum": 200,
+                                        "maximum": 599,
+                                        "description": "HTTP status code returned to the sandbox."
+                                      },
+                                      "headers": {
+                                        "type": "object",
+                                        "additionalProperties": {
+                                          "type": "string"
+                                        },
+                                        "description": "HTTP response headers. Framing and hop-by-hop headers are managed by the proxy and cannot be set."
+                                      },
+                                      "body": {
+                                        "type": "string",
+                                        "description": "UTF-8 response body. Requires `contentType`."
+                                      },
+                                      "contentType": {
+                                        "type": "string",
+                                        "description": "Value of the `Content-Type` response header. Required when `body` is set."
+                                      }
+                                    }
                                   }
                                 }
                               }
@@ -164223,7 +164380,7 @@
                                 }
                               },
                               {
-                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.",
+                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform`, `forwardURL`, or `response` can be specified per rule.",
                                 "type": "object",
                                 "additionalProperties": {
                                   "type": "array",
@@ -164358,6 +164515,37 @@
                                       "forwardURL": {
                                         "type": "string",
                                         "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
+                                      },
+                                      "response": {
+                                        "description": "Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "required": [
+                                          "statusCode"
+                                        ],
+                                        "properties": {
+                                          "statusCode": {
+                                            "type": "integer",
+                                            "minimum": 200,
+                                            "maximum": 599,
+                                            "description": "HTTP status code returned to the sandbox."
+                                          },
+                                          "headers": {
+                                            "type": "object",
+                                            "additionalProperties": {
+                                              "type": "string"
+                                            },
+                                            "description": "HTTP response headers. Framing and hop-by-hop headers are managed by the proxy and cannot be set."
+                                          },
+                                          "body": {
+                                            "type": "string",
+                                            "description": "UTF-8 response body. Requires `contentType`."
+                                          },
+                                          "contentType": {
+                                            "type": "string",
+                                            "description": "Value of the `Content-Type` response header. Required when `body` is set."
+                                          }
+                                        }
                                       }
                                     }
                                   }
@@ -164938,7 +165126,7 @@
                                 }
                               },
                               {
-                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.",
+                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform`, `forwardURL`, or `response` can be specified per rule.",
                                 "type": "object",
                                 "additionalProperties": {
                                   "type": "array",
@@ -165073,6 +165261,37 @@
                                       "forwardURL": {
                                         "type": "string",
                                         "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
+                                      },
+                                      "response": {
+                                        "description": "Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "required": [
+                                          "statusCode"
+                                        ],
+                                        "properties": {
+                                          "statusCode": {
+                                            "type": "integer",
+                                            "minimum": 200,
+                                            "maximum": 599,
+                                            "description": "HTTP status code returned to the sandbox."
+                                          },
+                                          "headers": {
+                                            "type": "object",
+                                            "additionalProperties": {
+                                              "type": "string"
+                                            },
+                                            "description": "HTTP response headers. Framing and hop-by-hop headers are managed by the proxy and cannot be set."
+                                          },
+                                          "body": {
+                                            "type": "string",
+                                            "description": "UTF-8 response body. Requires `contentType`."
+                                          },
+                                          "contentType": {
+                                            "type": "string",
+                                            "description": "Value of the `Content-Type` response header. Required when `body` is set."
+                                          }
+                                        }
                                       }
                                     }
                                   }
@@ -165883,7 +166102,7 @@
                                 }
                               },
                               {
-                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.",
+                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform`, `forwardURL`, or `response` can be specified per rule.",
                                 "type": "object",
                                 "additionalProperties": {
                                   "type": "array",
@@ -166018,6 +166237,37 @@
                                       "forwardURL": {
                                         "type": "string",
                                         "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
+                                      },
+                                      "response": {
+                                        "description": "Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "required": [
+                                          "statusCode"
+                                        ],
+                                        "properties": {
+                                          "statusCode": {
+                                            "type": "integer",
+                                            "minimum": 200,
+                                            "maximum": 599,
+                                            "description": "HTTP status code returned to the sandbox."
+                                          },
+                                          "headers": {
+                                            "type": "object",
+                                            "additionalProperties": {
+                                              "type": "string"
+                                            },
+                                            "description": "HTTP response headers. Framing and hop-by-hop headers are managed by the proxy and cannot be set."
+                                          },
+                                          "body": {
+                                            "type": "string",
+                                            "description": "UTF-8 response body. Requires `contentType`."
+                                          },
+                                          "contentType": {
+                                            "type": "string",
+                                            "description": "Value of the `Content-Type` response header. Required when `body` is set."
+                                          }
+                                        }
                                       }
                                     }
                                   }
@@ -166605,7 +166855,7 @@
                                 }
                               },
                               {
-                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform` or `forwardURL` can be specified per rule.",
+                                "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform`, `forwardURL`, or `response` can be specified per rule.",
                                 "type": "object",
                                 "additionalProperties": {
                                   "type": "array",
@@ -166740,6 +166990,37 @@
                                       "forwardURL": {
                                         "type": "string",
                                         "description": "HTTP/1.1 proxy URL to forward traffic to. Must not include username, password, query string, or fragment."
+                                      },
+                                      "response": {
+                                        "description": "Answer matching requests from the proxy with this response instead of forwarding them to the origin. Combine with a `match` on an earlier rule to allow one sub-path and reject the rest of a domain.",
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "required": [
+                                          "statusCode"
+                                        ],
+                                        "properties": {
+                                          "statusCode": {
+                                            "type": "integer",
+                                            "minimum": 200,
+                                            "maximum": 599,
+                                            "description": "HTTP status code returned to the sandbox."
+                                          },
+                                          "headers": {
+                                            "type": "object",
+                                            "additionalProperties": {
+                                              "type": "string"
+                                            },
+                                            "description": "HTTP response headers. Framing and hop-by-hop headers are managed by the proxy and cannot be set."
+                                          },
+                                          "body": {
+                                            "type": "string",
+                                            "description": "UTF-8 response body. Requires `contentType`."
+                                          },
+                                          "contentType": {
+                                            "type": "string",
+                                            "description": "Value of the `Content-Type` response header. Required when `body` is set."
+                                          }
+                                        }
                                       }
                                     }
                                   }

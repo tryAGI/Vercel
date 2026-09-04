@@ -4,47 +4,47 @@
 namespace Vercel
 {
     /// <summary>
-    /// Sort direction. Defaults to desc.<br/>
-    /// Default Value: desc
+    /// Mount the drive read-only or read-write.<br/>
+    /// Default Value: read-write
     /// </summary>
-    public enum GetSandboxesSortOrder
+    public enum UpdateSandboxRequestMountsMode
     {
         /// <summary>
         ///
         /// </summary>
-        Asc,
+        ReadOnly,
         /// <summary>
         ///
         /// </summary>
-        Desc,
+        ReadWrite,
     }
 
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class GetSandboxesSortOrderExtensions
+    public static class UpdateSandboxRequestMountsModeExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this GetSandboxesSortOrder value)
+        public static string ToValueString(this UpdateSandboxRequestMountsMode value)
         {
             return value switch
             {
-                GetSandboxesSortOrder.Asc => "asc",
-                GetSandboxesSortOrder.Desc => "desc",
+                UpdateSandboxRequestMountsMode.ReadOnly => "read-only",
+                UpdateSandboxRequestMountsMode.ReadWrite => "read-write",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static GetSandboxesSortOrder? ToEnum(string value)
+        public static UpdateSandboxRequestMountsMode? ToEnum(string value)
         {
             return value switch
             {
-                "asc" => GetSandboxesSortOrder.Asc,
-                "desc" => GetSandboxesSortOrder.Desc,
+                "read-only" => UpdateSandboxRequestMountsMode.ReadOnly,
+                "read-write" => UpdateSandboxRequestMountsMode.ReadWrite,
                 _ => null,
             };
         }

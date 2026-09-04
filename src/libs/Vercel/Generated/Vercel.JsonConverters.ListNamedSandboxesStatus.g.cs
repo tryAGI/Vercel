@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class GetSandboxesStatusJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.GetSandboxesStatus>
+    public sealed class ListNamedSandboxesStatusJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.ListNamedSandboxesStatus>
     {
         /// <inheritdoc />
-        public override global::Vercel.GetSandboxesStatus Read(
+        public override global::Vercel.ListNamedSandboxesStatus Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.GetSandboxesStatusExtensions.ToEnum(stringValue) ?? default;
+                        return global::Vercel.ListNamedSandboxesStatusExtensions.ToEnum(stringValue) ?? default;
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.GetSandboxesStatus)numValue;
+                    return (global::Vercel.ListNamedSandboxesStatus)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.GetSandboxesStatus);
+                    return default(global::Vercel.ListNamedSandboxesStatus);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,12 +42,12 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.GetSandboxesStatus value,
+            global::Vercel.ListNamedSandboxesStatus value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            writer.WriteStringValue(global::Vercel.GetSandboxesStatusExtensions.ToValueString(value));
+            writer.WriteStringValue(global::Vercel.ListNamedSandboxesStatusExtensions.ToValueString(value));
         }
     }
 }
