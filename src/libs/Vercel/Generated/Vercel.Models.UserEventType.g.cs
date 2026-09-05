@@ -148,6 +148,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayHipaaComplianceToggled,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayInferenceRegionsUpdated,
         /// <summary>
         ///
@@ -181,6 +185,10 @@ namespace Vercel
         ///
         /// </summary>
         AiGatewayPrivateProviderUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayPromptTrainingOptOutToggled,
         /// <summary>
         ///
         /// </summary>
@@ -241,6 +249,10 @@ namespace Vercel
         ///
         /// </summary>
         AiGatewayVirtualModelConfigUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayZeroDataRetentionToggled,
         /// <summary>
         ///
         /// </summary>
@@ -2705,6 +2717,7 @@ namespace Vercel
                 UserEventType.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
                 UserEventType.AiGatewayCreditsPurchased => "ai-gateway-credits-purchased",
                 UserEventType.AiGatewayGuardrailsUpdated => "ai-gateway-guardrails-updated",
+                UserEventType.AiGatewayHipaaComplianceToggled => "ai-gateway-hipaa-compliance-toggled",
                 UserEventType.AiGatewayInferenceRegionsUpdated => "ai-gateway-inference-regions-updated",
                 UserEventType.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
                 UserEventType.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
@@ -2714,6 +2727,7 @@ namespace Vercel
                 UserEventType.AiGatewayPrivateProviderCreated => "ai-gateway-private-provider-created",
                 UserEventType.AiGatewayPrivateProviderDeleted => "ai-gateway-private-provider-deleted",
                 UserEventType.AiGatewayPrivateProviderUpdated => "ai-gateway-private-provider-updated",
+                UserEventType.AiGatewayPromptTrainingOptOutToggled => "ai-gateway-prompt-training-opt-out-toggled",
                 UserEventType.AiGatewayProviderAllowlistProvidersUpdated => "ai-gateway-provider-allowlist-providers-updated",
                 UserEventType.AiGatewayProviderAllowlistToggled => "ai-gateway-provider-allowlist-toggled",
                 UserEventType.AiGatewayRuleCreated => "ai-gateway-rule-created",
@@ -2729,6 +2743,7 @@ namespace Vercel
                 UserEventType.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
                 UserEventType.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
                 UserEventType.AiGatewayVirtualModelConfigUpdated => "ai-gateway-virtual-model-config-updated",
+                UserEventType.AiGatewayZeroDataRetentionToggled => "ai-gateway-zero-data-retention-toggled",
                 UserEventType.AiOmniagent => "ai-omniagent",
                 UserEventType.AlertInvestigationProjectAllowlistUpdated => "alert-investigation-project-allowlist-updated",
                 UserEventType.AlertRuleCreated => "alert-rule-created",
@@ -3377,6 +3392,7 @@ namespace Vercel
                 "ai-gateway-byok-credential-updated" => UserEventType.AiGatewayByokCredentialUpdated,
                 "ai-gateway-credits-purchased" => UserEventType.AiGatewayCreditsPurchased,
                 "ai-gateway-guardrails-updated" => UserEventType.AiGatewayGuardrailsUpdated,
+                "ai-gateway-hipaa-compliance-toggled" => UserEventType.AiGatewayHipaaComplianceToggled,
                 "ai-gateway-inference-regions-updated" => UserEventType.AiGatewayInferenceRegionsUpdated,
                 "ai-gateway-model-allowlist-models-updated" => UserEventType.AiGatewayModelAllowlistModelsUpdated,
                 "ai-gateway-model-allowlist-toggled" => UserEventType.AiGatewayModelAllowlistToggled,
@@ -3386,6 +3402,7 @@ namespace Vercel
                 "ai-gateway-private-provider-created" => UserEventType.AiGatewayPrivateProviderCreated,
                 "ai-gateway-private-provider-deleted" => UserEventType.AiGatewayPrivateProviderDeleted,
                 "ai-gateway-private-provider-updated" => UserEventType.AiGatewayPrivateProviderUpdated,
+                "ai-gateway-prompt-training-opt-out-toggled" => UserEventType.AiGatewayPromptTrainingOptOutToggled,
                 "ai-gateway-provider-allowlist-providers-updated" => UserEventType.AiGatewayProviderAllowlistProvidersUpdated,
                 "ai-gateway-provider-allowlist-toggled" => UserEventType.AiGatewayProviderAllowlistToggled,
                 "ai-gateway-rule-created" => UserEventType.AiGatewayRuleCreated,
@@ -3401,6 +3418,7 @@ namespace Vercel
                 "ai-gateway-virtual-model-config-created" => UserEventType.AiGatewayVirtualModelConfigCreated,
                 "ai-gateway-virtual-model-config-restored" => UserEventType.AiGatewayVirtualModelConfigRestored,
                 "ai-gateway-virtual-model-config-updated" => UserEventType.AiGatewayVirtualModelConfigUpdated,
+                "ai-gateway-zero-data-retention-toggled" => UserEventType.AiGatewayZeroDataRetentionToggled,
                 "ai-omniagent" => UserEventType.AiOmniagent,
                 "alert-investigation-project-allowlist-updated" => UserEventType.AlertInvestigationProjectAllowlistUpdated,
                 "alert-rule-created" => UserEventType.AlertRuleCreated,
