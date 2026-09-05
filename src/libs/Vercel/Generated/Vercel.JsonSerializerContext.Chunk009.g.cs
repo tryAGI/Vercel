@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemDeliveryVariant4Type), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemDeliveryVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemDeliveryVariant4Encoding), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemDeliveryVariant4Encoding2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemDeliveryVariant4Compression), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemDeliveryVariant4Compression2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructure), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructure2")]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateFlagResponseEnvironmentsRuleConditionLhsVariant1, global::Vercel.CreateFlagResponseEnvironmentsRuleConditionLhsVariant2>), TypeInfoPropertyName = "OneOfCreateFlagResponseEnvironmentsRuleConditionLhsVariant1CreateFlagResponseEnvironmentsRuleConditionLhsVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsRuleConditionLhsVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsRuleConditionLhsVariant1Type), TypeInfoPropertyName = "CreateFlagResponseEnvironmentsRuleConditionLhsVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsRuleConditionLhsVariant2))]
     internal sealed partial class SourceGenerationContextChunk009 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

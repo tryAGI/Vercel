@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseCronsDefinitionSource?), TypeInfoPropertyName = "NullableUploadProjectAvatarResponseCronsDefinitionSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UploadProjectAvatarResponseExpirationVariant1, global::Vercel.UploadProjectAvatarResponseExpirationVariant2>?), TypeInfoPropertyName = "NullableOneOfUploadProjectAvatarResponseExpirationVariant1UploadProjectAvatarResponseExpirationVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseEnvItemTargetItem>, global::Vercel.UploadProjectAvatarResponseEnvItemTarget?>?), TypeInfoPropertyName = "NullableOneOfIListUploadProjectAvatarResponseEnvItemTargetItemUploadProjectAvatarResponseEnvItemTarget2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseEnvItemTargetItem?), TypeInfoPropertyName = "NullableUploadProjectAvatarResponseEnvItemTargetItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UploadProjectAvatarResponseEnvItemTarget?), TypeInfoPropertyName = "NullableUploadProjectAvatarResponseEnvItemTarget2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRuleVariant1ActionMitigateLogHeaders?), TypeInfoPropertyName = "NullableGetSecurityFirewallConfigResponseDraftRuleVariant1ActionMitigateLogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRuleVariant2ConditionGroupItemConditionType?), TypeInfoPropertyName = "NullableGetSecurityFirewallConfigResponseDraftRuleVariant2ConditionGroupItemConditionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRuleVariant2ConditionGroupItemConditionOp?), TypeInfoPropertyName = "NullableGetSecurityFirewallConfigResponseDraftRuleVariant2ConditionGroupItemConditionOp2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRuleVariant2ActionMitigateAction?), TypeInfoPropertyName = "NullableGetSecurityFirewallConfigResponseDraftRuleVariant2ActionMitigateAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSecurityFirewallConfigResponseDraftRuleVariant2ActionMitigateRateLimitAlgo?), TypeInfoPropertyName = "NullableGetSecurityFirewallConfigResponseDraftRuleVariant2ActionMitigateRateLimitAlgo2")]
     internal sealed partial class SourceGenerationContextChunk029 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

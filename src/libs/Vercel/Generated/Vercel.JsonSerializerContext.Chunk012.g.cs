@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTargetsAliasError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTargetsBranchMatcher))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTargetsBranchMatcherType), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectTargetsBranchMatcherType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectTargetsBuild>))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant4Type), TypeInfoPropertyName = "GetProjectsResponseVariant1ItemCreatorVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemAlia>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant1ItemAlia))]
     internal sealed partial class SourceGenerationContextChunk012 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

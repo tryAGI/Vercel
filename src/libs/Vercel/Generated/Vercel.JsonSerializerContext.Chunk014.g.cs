@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectAbuseBlockHistoryItemVariant3RouteVariant2HaVariant2Value))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectAbuseBlockHistoryItemVariant3RouteVariant2Mitigate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectAbuseBlockHistoryItemVariant3RouteVariant2MitigateAction), TypeInfoPropertyName = "GetProjectsResponseVariant2ProjectAbuseBlockHistoryItemVariant3RouteVariant2MitigateAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant2ProjectAbuseBlockHistoryItemVariant4))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseJobsTypecheck))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseJobsMfeConfigPresent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseLatestDeployment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseLatestDeployment))]
     internal sealed partial class SourceGenerationContextChunk014 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

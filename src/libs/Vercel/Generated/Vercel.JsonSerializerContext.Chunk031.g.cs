@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ConnectConnectorUpdateDataTypeApiKeyToAddItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ConnectConnectorUpdateDataTypeApiKeyToUpdateItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ConnectConnectorUpdateDataTypeSlackSlashCommand>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ConnectConnectorUpdateDataTypeSlackShortcut>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ConnectTriggerDestinationInput>))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateDrainResponseVariant1FilterV2FilterVariant1LogSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateDrainResponseVariant1FilterV2FilterVariant1DeploymentEnvironment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateDrainResponseVariant2SamplingItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateDrainResponseVariant2FilterV2FilterVariant1LogSource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateDrainResponseVariant2FilterV2FilterVariant1DeploymentEnvironment>))]
     internal sealed partial class SourceGenerationContextChunk031 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

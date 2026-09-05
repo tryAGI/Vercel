@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateFlagResponseEnvironmentsRuleConditionLhsVariant1, global::Vercel.CreateFlagResponseEnvironmentsRuleConditionLhsVariant2>?), TypeInfoPropertyName = "CreateFlagResponseEnvironmentsRuleConditionLhsVariant2_1c2b5aadb3e5107b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsRuleConditionLhsVariant1Type?), TypeInfoPropertyName = "NullableCreateFlagResponseEnvironmentsRuleConditionLhsVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsRuleConditionLhsVariant2Type?), TypeInfoPropertyName = "NullableCreateFlagResponseEnvironmentsRuleConditionLhsVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseEnvironmentsRuleConditionCmp?), TypeInfoPropertyName = "NullableCreateFlagResponseEnvironmentsRuleConditionCmp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateFlagResponseKind?), TypeInfoPropertyName = "NullableCreateFlagResponseKind2")]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2>?), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2_f46268eff44ef91b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2HaVariant2>?), TypeInfoPropertyName = "GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2HaVariant2_edb5ec23495e7890")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1Type?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1Key?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2HaVariant1Key2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2HaVariant2Type?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectAbuseBlockHistoryItemVariant3RouteVariant2HaVariant2Type2")]
     internal sealed partial class SourceGenerationContextChunk026 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

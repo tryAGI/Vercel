@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant2Preset), TypeInfoPropertyName = "GetProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant2Preset2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseTrustedSourcesOidcProvider>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseTrustedSourcesOidcProvider>))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseTracingSamplingRule>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseTracingSamplingRule))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseTracingSamplingRuleEnv), TypeInfoPropertyName = "UpdateProjectResponseTracingSamplingRuleEnv2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateProjectResponseTracingSamplingRuleDestination), TypeInfoPropertyName = "UpdateProjectResponseTracingSamplingRuleDestination2")]
     internal sealed partial class SourceGenerationContextChunk016 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

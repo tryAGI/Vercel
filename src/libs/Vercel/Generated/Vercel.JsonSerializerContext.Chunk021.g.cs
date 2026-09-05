@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3DisabledEnum2), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3DisabledEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3HiddenEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3HiddenEnum2?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3HiddenE_6935c12eef513bf0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3HiddenEnum))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3HiddenEnum2), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3HiddenEnum22")]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypeCategorie?), TypeInfoPropertyName = "NullableListEventTypeCategorie2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypeReplacedByItem?), TypeInfoPropertyName = "NullableListEventTypeReplacedByItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseCategorieName?), TypeInfoPropertyName = "NullableListEventTypesResponseCategorieName2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FlagEnvironmentsPausedOutcomeType?), TypeInfoPropertyName = "NullableFlagEnvironmentsPausedOutcomeType2")]
     internal sealed partial class SourceGenerationContextChunk021 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

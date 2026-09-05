@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseConfigResourceConfigBuildQueue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseConfigResourceConfigBuildQueueConfiguration), TypeInfoPropertyName = "CancelDeploymentResponseConfigResourceConfigBuildQueueConfiguration2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseConfigResourceConfigElasticConcurrency), TypeInfoPropertyName = "CancelDeploymentResponseConfigResourceConfigElasticConcurrency2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseConfigResourceConfigBuildMachine))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemDeliveryVariant3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemDeliveryVariant3Type), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemDeliveryVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemDeliveryVariant4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDrainsResponseDrainsVariant1ItemDeliveryVariant4Type), TypeInfoPropertyName = "GetDrainsResponseDrainsVariant1ItemDeliveryVariant4Type2")]
     internal sealed partial class SourceGenerationContextChunk008 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

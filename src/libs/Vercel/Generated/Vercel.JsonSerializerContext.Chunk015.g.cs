@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseLatestDeployment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseLatestDeploymentAliasError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseLatestDeploymentBranchMatcher))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateProjectResponseLatestDeploymentBranchMatcherType), TypeInfoPropertyName = "CreateProjectResponseLatestDeploymentBranchMatcherType2")]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant1, global::Vercel.GetProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant2>), TypeInfoPropertyName = "GetProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant2_cc7233929470dc1d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant1Preset), TypeInfoPropertyName = "GetProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant1Preset2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectResponseTrustedSourcesProjectsCustomAllowItemToVariant2))]
     internal sealed partial class SourceGenerationContextChunk015 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

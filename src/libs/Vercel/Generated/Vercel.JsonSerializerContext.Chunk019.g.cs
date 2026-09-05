@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseInternalRouteVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UpdateMicrofrontendsResponseInternalRouteVariant2HaVariant1, global::Vercel.UpdateMicrofrontendsResponseInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "UpdateMicrofrontendsResponseInternalRouteVariant2HaVariant2_fab6eabbfe50a293")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateMicrofrontendsResponseInternalRouteVariant2HaVariant1, global::Vercel.UpdateMicrofrontendsResponseInternalRouteVariant2HaVariant2>), TypeInfoPropertyName = "UpdateMicrofrontendsResponseInternalRouteVariant2HaVariant2_824ebdd044de7076")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateMicrofrontendsResponseInternalRouteVariant2HaVariant1))]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRulesetActionMitigateLogHeaders), TypeInfoPropertyName = "PutFirewallConfigResponseActiveRulesetActionMitigateLogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.PutFirewallConfigResponseActiveRulesets2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRulesets2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRulesetsAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveRulesetsAction2")]
     internal sealed partial class SourceGenerationContextChunk019 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

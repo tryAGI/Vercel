@@ -11,6 +11,7 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRulesetsAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveRulesetsAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRulesetsRateLimit))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRulesetsRateLimitAlgo), TypeInfoPropertyName = "PutFirewallConfigResponseActiveRulesetsRateLimitAlgo2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigResponseActiveRulesetsRateLimitAction), TypeInfoPropertyName = "PutFirewallConfigResponseActiveRulesetsRateLimitAction2")]
@@ -510,7 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3DisabledEnum, bool?, global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3DisabledEnum2?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3Disable_3027e42677d430c4")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3DisabledEnum))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3DisabledEnum2), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaPropertiesVariant8UiOptionVariant3DisabledEnum22")]
     internal sealed partial class SourceGenerationContextChunk020 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

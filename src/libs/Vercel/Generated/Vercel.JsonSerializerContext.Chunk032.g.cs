@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateDrainResponseVariant2FilterV2FilterVariant1LogSource>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateDrainResponseVariant2FilterV2FilterVariant1DeploymentEnvironment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.GetDrainsResponseDrainsVariant1Item>, global::System.Collections.Generic.List<global::Vercel.GetDrainsResponseDrainsVariant2Item>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetDrainsResponseDrainsVariant1Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetDrainsResponseDrainsVariant1ItemSamplingItem>))]
@@ -509,8 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UploadProjectAvatarResponseAliaDeploymentBuild>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UploadProjectAvatarResponseConnectConfiguration>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UploadProjectAvatarResponseCronsDefinition>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UploadProjectAvatarResponseEnvItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.UploadProjectAvatarResponseEnvItemTargetItem>, global::Vercel.UploadProjectAvatarResponseEnvItemTarget?>))]
     internal sealed partial class SourceGenerationContextChunk032 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
