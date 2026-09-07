@@ -9,11 +9,11 @@ namespace Vercel
     public sealed partial class GetProjectsResponseVariant3ProjectLinkVariant7
     {
         /// <summary>
-        /// Owner (namespace) slug, e.g. `acme`.
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("org")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Owner { get; set; }
+        public required string Org { get; set; }
 
         /// <summary>
         ///
@@ -21,20 +21,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Repo { get; set; }
-
-        /// <summary>
-        /// Origin repository id.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RepoId { get; set; }
-
-        /// <summary>
-        /// Origin namespace id (`ns_…`) of the owner.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
 
         /// <summary>
         ///
@@ -91,16 +77,8 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant3ProjectLinkVariant7" /> class.
         /// </summary>
-        /// <param name="owner">
-        /// Owner (namespace) slug, e.g. `acme`.
-        /// </param>
+        /// <param name="org"></param>
         /// <param name="repo"></param>
-        /// <param name="repoId">
-        /// Origin repository id.
-        /// </param>
-        /// <param name="ownerId">
-        /// Origin namespace id (`ns_…`) of the owner.
-        /// </param>
         /// <param name="deployHooks"></param>
         /// <param name="gitCredentialId"></param>
         /// <param name="productionBranch"></param>
@@ -112,10 +90,8 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant3ProjectLinkVariant7(
-            string owner,
+            string org,
             string repo,
-            string repoId,
-            string ownerId,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant7DeployHook> deployHooks,
             string gitCredentialId,
             string productionBranch,
@@ -124,10 +100,8 @@ namespace Vercel
             double? updatedAt,
             bool? sourceless)
         {
-            this.Owner = owner ?? throw new global::System.ArgumentNullException(nameof(owner));
+            this.Org = org ?? throw new global::System.ArgumentNullException(nameof(org));
             this.Repo = repo ?? throw new global::System.ArgumentNullException(nameof(repo));
-            this.RepoId = repoId ?? throw new global::System.ArgumentNullException(nameof(repoId));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.Type = type;
             this.CreatedAt = createdAt;
             this.DeployHooks = deployHooks ?? throw new global::System.ArgumentNullException(nameof(deployHooks));

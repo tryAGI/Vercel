@@ -224,8 +224,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("link")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UploadProjectAvatarResponseLinkVariant1, global::Vercel.UploadProjectAvatarResponseLinkVariant2, global::Vercel.UploadProjectAvatarResponseLinkVariant3, global::Vercel.UploadProjectAvatarResponseLinkVariant4, global::Vercel.UploadProjectAvatarResponseLinkVariant5, global::Vercel.UploadProjectAvatarResponseLinkVariant6, global::Vercel.UploadProjectAvatarResponseLinkVariant7>))]
-        public global::Vercel.OneOf<global::Vercel.UploadProjectAvatarResponseLinkVariant1, global::Vercel.UploadProjectAvatarResponseLinkVariant2, global::Vercel.UploadProjectAvatarResponseLinkVariant3, global::Vercel.UploadProjectAvatarResponseLinkVariant4, global::Vercel.UploadProjectAvatarResponseLinkVariant5, global::Vercel.UploadProjectAvatarResponseLinkVariant6, global::Vercel.UploadProjectAvatarResponseLinkVariant7>? Link { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UploadProjectAvatarResponseLinkVariant1, global::Vercel.UploadProjectAvatarResponseLinkVariant2, global::Vercel.UploadProjectAvatarResponseLinkVariant3, global::Vercel.UploadProjectAvatarResponseLinkVariant4, global::Vercel.UploadProjectAvatarResponseLinkVariant5, global::Vercel.UploadProjectAvatarResponseLinkVariant6, global::Vercel.UploadProjectAvatarResponseLinkVariant7, global::Vercel.UploadProjectAvatarResponseLinkVariant8>))]
+        public global::Vercel.OneOf<global::Vercel.UploadProjectAvatarResponseLinkVariant1, global::Vercel.UploadProjectAvatarResponseLinkVariant2, global::Vercel.UploadProjectAvatarResponseLinkVariant3, global::Vercel.UploadProjectAvatarResponseLinkVariant4, global::Vercel.UploadProjectAvatarResponseLinkVariant5, global::Vercel.UploadProjectAvatarResponseLinkVariant6, global::Vercel.UploadProjectAvatarResponseLinkVariant7, global::Vercel.UploadProjectAvatarResponseLinkVariant8>? Link { get; set; }
 
         /// <summary>
         ///
@@ -763,7 +763,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseIpBucket>? ipBuckets,
             global::Vercel.UploadProjectAvatarResponseJobs? jobs,
             global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseLatestDeployment>? latestDeployments,
-            global::Vercel.OneOf<global::Vercel.UploadProjectAvatarResponseLinkVariant1, global::Vercel.UploadProjectAvatarResponseLinkVariant2, global::Vercel.UploadProjectAvatarResponseLinkVariant3, global::Vercel.UploadProjectAvatarResponseLinkVariant4, global::Vercel.UploadProjectAvatarResponseLinkVariant5, global::Vercel.UploadProjectAvatarResponseLinkVariant6, global::Vercel.UploadProjectAvatarResponseLinkVariant7>? link,
+            global::Vercel.OneOf<global::Vercel.UploadProjectAvatarResponseLinkVariant1, global::Vercel.UploadProjectAvatarResponseLinkVariant2, global::Vercel.UploadProjectAvatarResponseLinkVariant3, global::Vercel.UploadProjectAvatarResponseLinkVariant4, global::Vercel.UploadProjectAvatarResponseLinkVariant5, global::Vercel.UploadProjectAvatarResponseLinkVariant6, global::Vercel.UploadProjectAvatarResponseLinkVariant7, global::Vercel.UploadProjectAvatarResponseLinkVariant8>? link,
             global::Vercel.UploadProjectAvatarResponseBlobs? blobs,
             global::Vercel.OneOf<global::Vercel.UploadProjectAvatarResponseMicrofrontendsVariant1, global::Vercel.UploadProjectAvatarResponseMicrofrontendsVariant2, global::Vercel.UploadProjectAvatarResponseMicrofrontendsVariant3>? microfrontends,
             global::Vercel.UploadProjectAvatarResponseOptionsAllowlist? optionsAllowlist,

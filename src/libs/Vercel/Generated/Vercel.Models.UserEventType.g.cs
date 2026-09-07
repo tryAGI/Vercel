@@ -1020,6 +1020,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FlatRateCdnAutoUpgradeConsent,
+        /// <summary>
+        ///
+        /// </summary>
         GitIntegrationRepoPush,
         /// <summary>
         ///
@@ -2943,6 +2947,7 @@ namespace Vercel
                 UserEventType.FlagsSegment => "flags-segment",
                 UserEventType.FlagsSettings => "flags-settings",
                 UserEventType.FlagsTransferred => "flags-transferred",
+                UserEventType.FlatRateCdnAutoUpgradeConsent => "flat-rate-cdn-auto-upgrade-consent",
                 UserEventType.GitIntegrationRepoPush => "git-integration-repo-push",
                 UserEventType.GitAccountIntegrationLinkAdded => "git_account_integration_link_added",
                 UserEventType.GlobalConfigBackupRestored => "global-config-backup-restored",
@@ -3620,6 +3625,7 @@ namespace Vercel
                 "flags-segment" => UserEventType.FlagsSegment,
                 "flags-settings" => UserEventType.FlagsSettings,
                 "flags-transferred" => UserEventType.FlagsTransferred,
+                "flat-rate-cdn-auto-upgrade-consent" => UserEventType.FlatRateCdnAutoUpgradeConsent,
                 "git-integration-repo-push" => UserEventType.GitIntegrationRepoPush,
                 "git_account_integration_link_added" => UserEventType.GitAccountIntegrationLinkAdded,
                 "global-config-backup-restored" => UserEventType.GlobalConfigBackupRestored,
