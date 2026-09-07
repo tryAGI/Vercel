@@ -10,6 +10,9 @@ namespace Vercel
         /// </summary>
         /// <param name="ownerId"></param>
         /// <param name="virtualModelSlug"></param>
+        /// <param name="updatedBy"></param>
+        /// <param name="actingIp"></param>
+        /// <param name="actingUserAgent"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -22,6 +25,9 @@ namespace Vercel
         global::System.Threading.Tasks.Task<string> DeleteAiGatewayVirtualModelConfigAsync(
             string virtualModelSlug,
             string? ownerId = default,
+            string? updatedBy = default,
+            string? actingIp = default,
+            string? actingUserAgent = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -32,6 +38,9 @@ namespace Vercel
         /// </summary>
         /// <param name="ownerId"></param>
         /// <param name="virtualModelSlug"></param>
+        /// <param name="updatedBy"></param>
+        /// <param name="actingIp"></param>
+        /// <param name="actingUserAgent"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -44,6 +53,9 @@ namespace Vercel
         global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> DeleteAiGatewayVirtualModelConfigAsResponseAsync(
             string virtualModelSlug,
             string? ownerId = default,
+            string? updatedBy = default,
+            string? actingIp = default,
+            string? actingUserAgent = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
