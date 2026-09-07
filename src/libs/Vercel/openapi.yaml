@@ -76217,7 +76217,7 @@
                   },
                   "algorithm": {
                     "type": "string",
-                    "description": "The signing algorithm to use for the issuer.",
+                    "description": "The signing algorithm to use for the issuer. EdDSA is not accepted for new issuers.",
                     "enum": [
                       "RS256",
                       "RS384",
@@ -76227,8 +76227,7 @@
                       "PS512",
                       "ES256",
                       "ES384",
-                      "ES512",
-                      "EdDSA"
+                      "ES512"
                     ],
                     "default": "RS512"
                   },

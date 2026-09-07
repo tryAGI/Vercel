@@ -16,7 +16,7 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        /// The signing algorithm to use for the issuer.<br/>
+        /// The signing algorithm to use for the issuer. EdDSA is not accepted for new issuers.<br/>
         /// Default Value: RS512
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("algorithm")]
@@ -61,7 +61,7 @@ namespace Vercel
         /// The name of the issuer.
         /// </param>
         /// <param name="algorithm">
-        /// The signing algorithm to use for the issuer.<br/>
+        /// The signing algorithm to use for the issuer. EdDSA is not accepted for new issuers.<br/>
         /// Default Value: RS512
         /// </param>
         /// <param name="claimsSchema">
