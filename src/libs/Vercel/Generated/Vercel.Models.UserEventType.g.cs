@@ -140,6 +140,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayByokModelMappingsUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayCreditsPurchased,
         /// <summary>
         ///
@@ -241,6 +245,10 @@ namespace Vercel
         ///
         /// </summary>
         AiGatewayVirtualModelConfigCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayVirtualModelConfigDeleted,
         /// <summary>
         ///
         /// </summary>
@@ -2715,6 +2723,7 @@ namespace Vercel
                 UserEventType.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 UserEventType.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 UserEventType.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                UserEventType.AiGatewayByokModelMappingsUpdated => "ai-gateway-byok-model-mappings-updated",
                 UserEventType.AiGatewayCreditsPurchased => "ai-gateway-credits-purchased",
                 UserEventType.AiGatewayGuardrailsUpdated => "ai-gateway-guardrails-updated",
                 UserEventType.AiGatewayHipaaComplianceToggled => "ai-gateway-hipaa-compliance-toggled",
@@ -2741,6 +2750,7 @@ namespace Vercel
                 UserEventType.AiGatewayTranscriptsRetentionUpdated => "ai-gateway-transcripts-retention-updated",
                 UserEventType.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
                 UserEventType.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
+                UserEventType.AiGatewayVirtualModelConfigDeleted => "ai-gateway-virtual-model-config-deleted",
                 UserEventType.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
                 UserEventType.AiGatewayVirtualModelConfigUpdated => "ai-gateway-virtual-model-config-updated",
                 UserEventType.AiGatewayZeroDataRetentionToggled => "ai-gateway-zero-data-retention-toggled",
@@ -3390,6 +3400,7 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => UserEventType.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => UserEventType.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => UserEventType.AiGatewayByokCredentialUpdated,
+                "ai-gateway-byok-model-mappings-updated" => UserEventType.AiGatewayByokModelMappingsUpdated,
                 "ai-gateway-credits-purchased" => UserEventType.AiGatewayCreditsPurchased,
                 "ai-gateway-guardrails-updated" => UserEventType.AiGatewayGuardrailsUpdated,
                 "ai-gateway-hipaa-compliance-toggled" => UserEventType.AiGatewayHipaaComplianceToggled,
@@ -3416,6 +3427,7 @@ namespace Vercel
                 "ai-gateway-transcripts-retention-updated" => UserEventType.AiGatewayTranscriptsRetentionUpdated,
                 "ai-gateway-virtual-model-config-archived" => UserEventType.AiGatewayVirtualModelConfigArchived,
                 "ai-gateway-virtual-model-config-created" => UserEventType.AiGatewayVirtualModelConfigCreated,
+                "ai-gateway-virtual-model-config-deleted" => UserEventType.AiGatewayVirtualModelConfigDeleted,
                 "ai-gateway-virtual-model-config-restored" => UserEventType.AiGatewayVirtualModelConfigRestored,
                 "ai-gateway-virtual-model-config-updated" => UserEventType.AiGatewayVirtualModelConfigUpdated,
                 "ai-gateway-zero-data-retention-toggled" => UserEventType.AiGatewayZeroDataRetentionToggled,

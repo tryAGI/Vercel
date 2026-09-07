@@ -139,6 +139,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayByokModelMappingsUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayCreditsPurchased,
         /// <summary>
         ///
@@ -240,6 +244,10 @@ namespace Vercel
         ///
         /// </summary>
         AiGatewayVirtualModelConfigCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayVirtualModelConfigDeleted,
         /// <summary>
         ///
         /// </summary>
@@ -2714,6 +2722,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated => "ai-gateway-byok-credential-created",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted => "ai-gateway-byok-credential-deleted",
                 ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated => "ai-gateway-byok-credential-updated",
+                ListEventTypeReplacedByItem.AiGatewayByokModelMappingsUpdated => "ai-gateway-byok-model-mappings-updated",
                 ListEventTypeReplacedByItem.AiGatewayCreditsPurchased => "ai-gateway-credits-purchased",
                 ListEventTypeReplacedByItem.AiGatewayGuardrailsUpdated => "ai-gateway-guardrails-updated",
                 ListEventTypeReplacedByItem.AiGatewayHipaaComplianceToggled => "ai-gateway-hipaa-compliance-toggled",
@@ -2740,6 +2749,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayTranscriptsRetentionUpdated => "ai-gateway-transcripts-retention-updated",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigArchived => "ai-gateway-virtual-model-config-archived",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigCreated => "ai-gateway-virtual-model-config-created",
+                ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigDeleted => "ai-gateway-virtual-model-config-deleted",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigRestored => "ai-gateway-virtual-model-config-restored",
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigUpdated => "ai-gateway-virtual-model-config-updated",
                 ListEventTypeReplacedByItem.AiGatewayZeroDataRetentionToggled => "ai-gateway-zero-data-retention-toggled",
@@ -3389,6 +3399,7 @@ namespace Vercel
                 "ai-gateway-byok-credential-created" => ListEventTypeReplacedByItem.AiGatewayByokCredentialCreated,
                 "ai-gateway-byok-credential-deleted" => ListEventTypeReplacedByItem.AiGatewayByokCredentialDeleted,
                 "ai-gateway-byok-credential-updated" => ListEventTypeReplacedByItem.AiGatewayByokCredentialUpdated,
+                "ai-gateway-byok-model-mappings-updated" => ListEventTypeReplacedByItem.AiGatewayByokModelMappingsUpdated,
                 "ai-gateway-credits-purchased" => ListEventTypeReplacedByItem.AiGatewayCreditsPurchased,
                 "ai-gateway-guardrails-updated" => ListEventTypeReplacedByItem.AiGatewayGuardrailsUpdated,
                 "ai-gateway-hipaa-compliance-toggled" => ListEventTypeReplacedByItem.AiGatewayHipaaComplianceToggled,
@@ -3415,6 +3426,7 @@ namespace Vercel
                 "ai-gateway-transcripts-retention-updated" => ListEventTypeReplacedByItem.AiGatewayTranscriptsRetentionUpdated,
                 "ai-gateway-virtual-model-config-archived" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigArchived,
                 "ai-gateway-virtual-model-config-created" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigCreated,
+                "ai-gateway-virtual-model-config-deleted" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigDeleted,
                 "ai-gateway-virtual-model-config-restored" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigRestored,
                 "ai-gateway-virtual-model-config-updated" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigUpdated,
                 "ai-gateway-zero-data-retention-toggled" => ListEventTypeReplacedByItem.AiGatewayZeroDataRetentionToggled,

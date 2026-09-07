@@ -29,6 +29,9 @@ namespace Vercel
             global::System.Net.Http.HttpClient httpClient,
             ref string? ownerId,
             ref string vmcSlug,
+            ref string? updatedBy,
+            ref string? actingIp,
+            ref string? actingUserAgent,
             ref string? teamId,
             ref string? slug);
         partial void PrepareDeleteAiGatewayVirtualModelConfigBySlugRequest(
@@ -36,6 +39,9 @@ namespace Vercel
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string? ownerId,
             string vmcSlug,
+            string? updatedBy,
+            string? actingIp,
+            string? actingUserAgent,
             string? teamId,
             string? slug);
         partial void ProcessDeleteAiGatewayVirtualModelConfigBySlugResponse(
@@ -53,6 +59,9 @@ namespace Vercel
         /// </summary>
         /// <param name="ownerId"></param>
         /// <param name="vmcSlug"></param>
+        /// <param name="updatedBy"></param>
+        /// <param name="actingIp"></param>
+        /// <param name="actingUserAgent"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -65,6 +74,9 @@ namespace Vercel
         public async global::System.Threading.Tasks.Task<string> DeleteAiGatewayVirtualModelConfigBySlugAsync(
             string vmcSlug,
             string? ownerId = default,
+            string? updatedBy = default,
+            string? actingIp = default,
+            string? actingUserAgent = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -73,6 +85,9 @@ namespace Vercel
             var __response = await DeleteAiGatewayVirtualModelConfigBySlugAsResponseAsync(
                 vmcSlug: vmcSlug,
                 ownerId: ownerId,
+                updatedBy: updatedBy,
+                actingIp: actingIp,
+                actingUserAgent: actingUserAgent,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -87,6 +102,9 @@ namespace Vercel
         /// </summary>
         /// <param name="ownerId"></param>
         /// <param name="vmcSlug"></param>
+        /// <param name="updatedBy"></param>
+        /// <param name="actingIp"></param>
+        /// <param name="actingUserAgent"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -99,6 +117,9 @@ namespace Vercel
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<string>> DeleteAiGatewayVirtualModelConfigBySlugAsResponseAsync(
             string vmcSlug,
             string? ownerId = default,
+            string? updatedBy = default,
+            string? actingIp = default,
+            string? actingUserAgent = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -110,6 +131,9 @@ namespace Vercel
                 httpClient: HttpClient,
                 ownerId: ref ownerId,
                 vmcSlug: ref vmcSlug,
+                updatedBy: ref updatedBy,
+                actingIp: ref actingIp,
+                actingUserAgent: ref actingUserAgent,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -141,6 +165,9 @@ namespace Vercel
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("ownerId", ownerId)
+                                .AddOptionalParameter("updatedBy", updatedBy)
+                                .AddOptionalParameter("actingIp", actingIp)
+                                .AddOptionalParameter("actingUserAgent", actingUserAgent)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -186,6 +213,9 @@ namespace Vercel
                     httpRequestMessage: __httpRequest,
                     ownerId: ownerId,
                     vmcSlug: vmcSlug!,
+                    updatedBy: updatedBy,
+                    actingIp: actingIp,
+                    actingUserAgent: actingUserAgent,
                     teamId: teamId,
                     slug: slug);
 

@@ -2027,6 +2027,30 @@
             }
           },
           {
+            "name": "updatedBy",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "actingIp",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "actingUserAgent",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "description": "The Team identifier to perform the request on behalf of.",
             "in": "query",
             "name": "teamId",
@@ -2337,6 +2361,30 @@
             "name": "vmcSlug",
             "in": "path",
             "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "updatedBy",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "actingIp",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "actingUserAgent",
+            "in": "query",
+            "required": false,
             "schema": {
               "type": "string"
             }
@@ -209760,6 +209808,7 @@
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-byok-model-mappings-updated",
               "ai-gateway-credits-purchased",
               "ai-gateway-guardrails-updated",
               "ai-gateway-hipaa-compliance-toggled",
@@ -209786,6 +209835,7 @@
               "ai-gateway-transcripts-retention-updated",
               "ai-gateway-virtual-model-config-archived",
               "ai-gateway-virtual-model-config-created",
+              "ai-gateway-virtual-model-config-deleted",
               "ai-gateway-virtual-model-config-restored",
               "ai-gateway-virtual-model-config-updated",
               "ai-gateway-zero-data-retention-toggled",
@@ -210764,6 +210814,7 @@
               "ai-gateway-byok-credential-created",
               "ai-gateway-byok-credential-deleted",
               "ai-gateway-byok-credential-updated",
+              "ai-gateway-byok-model-mappings-updated",
               "ai-gateway-credits-purchased",
               "ai-gateway-guardrails-updated",
               "ai-gateway-hipaa-compliance-toggled",
@@ -210790,6 +210841,7 @@
               "ai-gateway-transcripts-retention-updated",
               "ai-gateway-virtual-model-config-archived",
               "ai-gateway-virtual-model-config-created",
+              "ai-gateway-virtual-model-config-deleted",
               "ai-gateway-virtual-model-config-restored",
               "ai-gateway-virtual-model-config-updated",
               "ai-gateway-zero-data-retention-toggled",
@@ -211488,6 +211540,7 @@
                 "ai-gateway-byok-credential-created",
                 "ai-gateway-byok-credential-deleted",
                 "ai-gateway-byok-credential-updated",
+                "ai-gateway-byok-model-mappings-updated",
                 "ai-gateway-credits-purchased",
                 "ai-gateway-guardrails-updated",
                 "ai-gateway-hipaa-compliance-toggled",
@@ -211514,6 +211567,7 @@
                 "ai-gateway-transcripts-retention-updated",
                 "ai-gateway-virtual-model-config-archived",
                 "ai-gateway-virtual-model-config-created",
+                "ai-gateway-virtual-model-config-deleted",
                 "ai-gateway-virtual-model-config-restored",
                 "ai-gateway-virtual-model-config-updated",
                 "ai-gateway-zero-data-retention-toggled",
