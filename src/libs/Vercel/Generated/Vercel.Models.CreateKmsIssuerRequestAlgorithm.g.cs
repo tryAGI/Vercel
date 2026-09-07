@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// The signing algorithm to use for the issuer.<br/>
+    /// The signing algorithm to use for the issuer. EdDSA is not accepted for new issuers.<br/>
     /// Default Value: RS512
     /// </summary>
     public enum CreateKmsIssuerRequestAlgorithm
@@ -21,10 +21,6 @@ namespace Vercel
         ///
         /// </summary>
         Es512,
-        /// <summary>
-        ///
-        /// </summary>
-        EdDSA,
         /// <summary>
         ///
         /// </summary>
@@ -66,7 +62,6 @@ namespace Vercel
                 CreateKmsIssuerRequestAlgorithm.Es256 => "ES256",
                 CreateKmsIssuerRequestAlgorithm.Es384 => "ES384",
                 CreateKmsIssuerRequestAlgorithm.Es512 => "ES512",
-                CreateKmsIssuerRequestAlgorithm.EdDSA => "EdDSA",
                 CreateKmsIssuerRequestAlgorithm.Ps256 => "PS256",
                 CreateKmsIssuerRequestAlgorithm.Ps384 => "PS384",
                 CreateKmsIssuerRequestAlgorithm.Ps512 => "PS512",
@@ -86,7 +81,6 @@ namespace Vercel
                 "ES256" => CreateKmsIssuerRequestAlgorithm.Es256,
                 "ES384" => CreateKmsIssuerRequestAlgorithm.Es384,
                 "ES512" => CreateKmsIssuerRequestAlgorithm.Es512,
-                "EdDSA" => CreateKmsIssuerRequestAlgorithm.EdDSA,
                 "PS256" => CreateKmsIssuerRequestAlgorithm.Ps256,
                 "PS384" => CreateKmsIssuerRequestAlgorithm.Ps384,
                 "PS512" => CreateKmsIssuerRequestAlgorithm.Ps512,
