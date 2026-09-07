@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        CursorOrigin,
+        V0,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                UpdateProjectResponseLinkVariant7Type.CursorOrigin => "cursor-origin",
+                UpdateProjectResponseLinkVariant7Type.V0 => "v0",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "cursor-origin" => UpdateProjectResponseLinkVariant7Type.CursorOrigin,
+                "v0" => UpdateProjectResponseLinkVariant7Type.V0,
                 _ => null,
             };
         }
