@@ -102,6 +102,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV2RequestFailoverRegion>? FailoverRegions { get; set; }
 
         /// <summary>
+        /// The Connect network id for the target Secure Compute private network.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("networkId")]
+        public string? NetworkId { get; set; }
+
+        /// <summary>
         /// Name for the sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
         /// Example: my-sandbox
         /// </summary>
@@ -192,6 +198,9 @@ namespace Vercel
         /// The regions the sandbox falls back to when it cannot be created in `region`.<br/>
         /// Example: [sfo1, cle1]
         /// </param>
+        /// <param name="networkId">
+        /// The Connect network id for the target Secure Compute private network.
+        /// </param>
         /// <param name="name">
         /// Name for the sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
         /// Example: my-sandbox
@@ -227,6 +236,7 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesV2RequestMounts2>? mounts,
             global::Vercel.CreateSandboxesV2RequestRegion? region,
             global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV2RequestFailoverRegion>? failoverRegions,
+            string? networkId,
             string? name,
             bool? persistent,
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
@@ -245,6 +255,7 @@ namespace Vercel
             this.Mounts = mounts;
             this.Region = region;
             this.FailoverRegions = failoverRegions;
+            this.NetworkId = networkId;
             this.Name = name;
             this.Persistent = persistent;
             this.SnapshotExpiration = snapshotExpiration;

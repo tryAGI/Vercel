@@ -8,7 +8,9 @@ namespace Vercel
         /// List repositories<br/>
         /// List container registry repositories for a project.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="limit"></param>
         /// <param name="cursor">
         /// Opaque pagination cursor returned by a previous list response.
@@ -34,7 +36,9 @@ namespace Vercel
         /// List repositories<br/>
         /// List container registry repositories for a project.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="limit"></param>
         /// <param name="cursor">
         /// Opaque pagination cursor returned by a previous list response.

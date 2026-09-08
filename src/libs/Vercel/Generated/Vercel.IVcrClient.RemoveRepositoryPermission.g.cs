@@ -8,7 +8,9 @@ namespace Vercel
         /// Remove a repository permission<br/>
         /// Revoke a team's access to a VCR repository.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -33,7 +35,9 @@ namespace Vercel
         /// Remove a repository permission<br/>
         /// Revoke a team's access to a VCR repository.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -58,7 +62,9 @@ namespace Vercel
         /// Remove a repository permission<br/>
         /// Revoke a team's access to a VCR repository.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l

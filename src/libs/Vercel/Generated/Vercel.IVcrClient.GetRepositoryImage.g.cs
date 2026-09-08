@@ -8,7 +8,9 @@ namespace Vercel
         /// Get a repository image<br/>
         /// Fetch an individual image from a repository, including its tags and Dockerfile history entries with discriminated layer details for UI rendering. The image may be addressed by its internal id (`image_...`) or by its manifest digest (`sha256:...`).
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="imageIdOrDigest">
         /// The internal image id (`image_...`) or the image manifest digest (`sha256:...`).
@@ -34,7 +36,9 @@ namespace Vercel
         /// Get a repository image<br/>
         /// Fetch an individual image from a repository, including its tags and Dockerfile history entries with discriminated layer details for UI rendering. The image may be addressed by its internal id (`image_...`) or by its manifest digest (`sha256:...`).
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="imageIdOrDigest">
         /// The internal image id (`image_...`) or the image manifest digest (`sha256:...`).
