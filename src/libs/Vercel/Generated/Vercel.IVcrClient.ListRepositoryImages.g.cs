@@ -8,7 +8,9 @@ namespace Vercel
         /// List repository images<br/>
         /// List images for a container registry repository, including their tags.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="limit"></param>
         /// <param name="cursor">
@@ -38,7 +40,9 @@ namespace Vercel
         /// List repository images<br/>
         /// List images for a container registry repository, including their tags.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="limit"></param>
         /// <param name="cursor">

@@ -135,6 +135,12 @@ namespace Vercel
         public global::Vercel.NamedSandboxNetworkPolicy? NetworkPolicy { get; set; }
 
         /// <summary>
+        /// The Connect network id for the target Secure Compute private network.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("networkId")]
+        public string? NetworkId { get; set; }
+
+        /// <summary>
         /// Cumulative egress bytes across all sandbox runs.<br/>
         /// Example: 4096
         /// </summary>
@@ -291,6 +297,9 @@ namespace Vercel
         /// <param name="networkPolicy">
         /// Network policy configuration.
         /// </param>
+        /// <param name="networkId">
+        /// The Connect network id for the target Secure Compute private network.
+        /// </param>
         /// <param name="totalEgressBytes">
         /// Cumulative egress bytes across all sandbox runs.<br/>
         /// Example: 4096
@@ -344,6 +353,7 @@ namespace Vercel
             double? snapshotExpiration,
             global::Vercel.NamedSandboxKeepLastSnapshots? keepLastSnapshots,
             global::Vercel.NamedSandboxNetworkPolicy? networkPolicy,
+            string? networkId,
             double? totalEgressBytes,
             double? totalIngressBytes,
             double? totalActiveCpuDurationMs,
@@ -369,6 +379,7 @@ namespace Vercel
             this.SnapshotExpiration = snapshotExpiration;
             this.KeepLastSnapshots = keepLastSnapshots;
             this.NetworkPolicy = networkPolicy;
+            this.NetworkId = networkId;
             this.TotalEgressBytes = totalEgressBytes;
             this.TotalIngressBytes = totalIngressBytes;
             this.TotalActiveCpuDurationMs = totalActiveCpuDurationMs;

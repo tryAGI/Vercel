@@ -858,6 +858,9 @@ namespace Vercel
         /// The regions the sandbox falls back to when it cannot be created in `region`.<br/>
         /// Example: [sfo1, cle1]
         /// </param>
+        /// <param name="networkId">
+        /// The Connect network id for the target Secure Compute private network.
+        /// </param>
         /// <param name="requestName">
         /// Name for the forked sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores). A random name is generated when omitted.<br/>
         /// Example: my-sandbox-fork
@@ -893,6 +896,7 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesByNameForkV3RequestMounts2>? mounts = default,
             global::Vercel.CreateSandboxesByNameForkV3RequestRegion? region = default,
             global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesByNameForkV3RequestFailoverRegion>? failoverRegions = default,
+            string? networkId = default,
             string? requestName = default,
             bool? persistent = default,
             global::Vercel.OneOf<object, int?>? snapshotExpiration = default,
@@ -912,6 +916,7 @@ namespace Vercel
                 Mounts = mounts,
                 Region = region,
                 FailoverRegions = failoverRegions,
+                NetworkId = networkId,
                 Name = requestName,
                 Persistent = persistent,
                 SnapshotExpiration = snapshotExpiration,

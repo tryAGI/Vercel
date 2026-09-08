@@ -161016,6 +161016,11 @@
                       "cle1"
                     ]
                   },
+                  "networkId": {
+                    "type": "string",
+                    "maxLength": 255,
+                    "description": "The Connect network id for the target Secure Compute private network."
+                  },
                   "name": {
                     "example": "my-sandbox",
                     "type": "string",
@@ -162980,6 +162985,18 @@
                         }
                       }
                     }
+                  },
+                  "networkId": {
+                    "description": "The Connect network id for the target Secure Compute private network. Set to null to remove the sandbox from Secure Compute.",
+                    "oneOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string",
+                        "maxLength": 255
+                      }
+                    ]
                   },
                   "env": {
                     "type": "object",
@@ -165740,6 +165757,11 @@
                       "cle1"
                     ]
                   },
+                  "networkId": {
+                    "type": "string",
+                    "maxLength": 255,
+                    "description": "The Connect network id for the target Secure Compute private network."
+                  },
                   "name": {
                     "example": "my-sandbox-fork",
                     "type": "string",
@@ -166573,6 +166595,11 @@
                       "sfo1",
                       "cle1"
                     ]
+                  },
+                  "networkId": {
+                    "type": "string",
+                    "maxLength": 255,
+                    "description": "The Connect network id for the target Secure Compute private network."
                   },
                   "name": {
                     "example": "my-sandbox",
@@ -167462,6 +167489,11 @@
                       "cle1"
                     ]
                   },
+                  "networkId": {
+                    "type": "string",
+                    "maxLength": 255,
+                    "description": "The Connect network id for the target Secure Compute private network."
+                  },
                   "name": {
                     "example": "my-sandbox-fork",
                     "type": "string",
@@ -168302,6 +168334,11 @@
                       "sfo1",
                       "cle1"
                     ]
+                  },
+                  "networkId": {
+                    "type": "string",
+                    "maxLength": 255,
+                    "description": "The Connect network id for the target Secure Compute private network."
                   },
                   "name": {
                     "example": "my-sandbox",
@@ -191318,7 +191355,8 @@
                 ],
                 "properties": {
                   "projectId": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Project ID. Missing or empty values return HTTP 400."
                   },
                   "name": {
                     "type": "string",
@@ -191375,10 +191413,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -191474,10 +191514,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -191551,10 +191593,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -191630,10 +191674,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -191746,10 +191792,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -191849,10 +191897,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -191952,10 +192002,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -192052,10 +192104,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -192202,10 +192256,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -192337,10 +192393,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -192433,10 +192491,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -192523,10 +192583,12 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "Project ID. Missing or empty values return HTTP 400.",
             "in": "query",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "Project ID. Missing or empty values return HTTP 400."
             }
           },
           {
@@ -214529,6 +214591,10 @@
             ],
             "type": "object",
             "description": "Network policy configuration."
+          },
+          "networkId": {
+            "type": "string",
+            "description": "The Connect network id for the target Secure Compute private network."
           },
           "totalEgressBytes": {
             "type": "number",

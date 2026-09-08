@@ -8,7 +8,9 @@ namespace Vercel
         /// List repository tags<br/>
         /// List a repository's tags.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="limit"></param>
         /// <param name="cursor"></param>
@@ -44,7 +46,9 @@ namespace Vercel
         /// List repository tags<br/>
         /// List a repository's tags.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="limit"></param>
         /// <param name="cursor"></param>

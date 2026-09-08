@@ -882,6 +882,9 @@ namespace Vercel
         /// <param name="mounts">
         /// Drives to mount to the sandbox at the provided path. Replaces the current mounts; an empty object removes them all. Changes take effect when the next session starts.
         /// </param>
+        /// <param name="networkId">
+        /// The Connect network id for the target Secure Compute private network. Set to null to remove the sandbox from Secure Compute.
+        /// </param>
         /// <param name="env">
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
@@ -916,6 +919,7 @@ namespace Vercel
             global::Vercel.UpdateSandboxRequestRegion? region = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestFailoverRegion>? failoverRegions = default,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateSandboxRequestMounts2>? mounts = default,
+            string? networkId = default,
             global::System.Collections.Generic.Dictionary<string, string>? env = default,
             global::System.Collections.Generic.IList<int>? ports = default,
             string? currentSnapshotId = default,
@@ -935,6 +939,7 @@ namespace Vercel
                 Region = region,
                 FailoverRegions = failoverRegions,
                 Mounts = mounts,
+                NetworkId = networkId,
                 Env = env,
                 Ports = ports,
                 CurrentSnapshotId = currentSnapshotId,

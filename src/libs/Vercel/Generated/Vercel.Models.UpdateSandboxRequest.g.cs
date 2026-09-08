@@ -84,6 +84,12 @@ namespace Vercel
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateSandboxRequestMounts2>? Mounts { get; set; }
 
         /// <summary>
+        /// The Connect network id for the target Secure Compute private network. Set to null to remove the sandbox from Secure Compute.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("networkId")]
+        public string? NetworkId { get; set; }
+
+        /// <summary>
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
         /// </summary>
@@ -155,6 +161,9 @@ namespace Vercel
         /// <param name="mounts">
         /// Drives to mount to the sandbox at the provided path. Replaces the current mounts; an empty object removes them all. Changes take effect when the next session starts.
         /// </param>
+        /// <param name="networkId">
+        /// The Connect network id for the target Secure Compute private network. Set to null to remove the sandbox from Secure Compute.
+        /// </param>
         /// <param name="env">
         /// Default environment variables for the sandbox. Set to empty object to clear.<br/>
         /// Example: {"NODE_ENV":"production","HELLO":"world"}
@@ -184,6 +193,7 @@ namespace Vercel
             global::Vercel.UpdateSandboxRequestRegion? region,
             global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestFailoverRegion>? failoverRegions,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateSandboxRequestMounts2>? mounts,
+            string? networkId,
             global::System.Collections.Generic.Dictionary<string, string>? env,
             global::System.Collections.Generic.IList<int>? ports,
             string? currentSnapshotId,
@@ -199,6 +209,7 @@ namespace Vercel
             this.Region = region;
             this.FailoverRegions = failoverRegions;
             this.Mounts = mounts;
+            this.NetworkId = networkId;
             this.Env = env;
             this.Ports = ports;
             this.CurrentSnapshotId = currentSnapshotId;

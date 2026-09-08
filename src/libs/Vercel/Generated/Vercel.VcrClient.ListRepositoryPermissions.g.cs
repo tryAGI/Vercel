@@ -55,7 +55,9 @@ namespace Vercel
         /// List repository permissions<br/>
         /// List the teams a VCR repository is shared with.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="limit"></param>
         /// <param name="cursor">
@@ -97,7 +99,9 @@ namespace Vercel
         /// List repository permissions<br/>
         /// List the teams a VCR repository is shared with.
         /// </summary>
-        /// <param name="projectId"></param>
+        /// <param name="projectId">
+        /// Project ID. Missing or empty values return HTTP 400.
+        /// </param>
         /// <param name="idOrName"></param>
         /// <param name="limit"></param>
         /// <param name="cursor">
