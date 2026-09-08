@@ -16,7 +16,7 @@ namespace Vercel
         public required string Drive { get; set; }
 
         /// <summary>
-        /// Mount the drive read-only or read-write.<br/>
+        /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.<br/>
         /// Default Value: read-write
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mode")]
@@ -36,7 +36,7 @@ namespace Vercel
         /// Name of the drive to mount. The drive must already exist.
         /// </param>
         /// <param name="mode">
-        /// Mount the drive read-only or read-write.<br/>
+        /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.<br/>
         /// Default Value: read-write
         /// </param>
 #if NET7_0_OR_GREATER

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Mount the drive read-only or read-write.<br/>
+    /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.<br/>
     /// Default Value: read-write
     /// </summary>
     public enum CreateSandboxesV3RequestMountsMode
@@ -12,11 +12,11 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        ReadOnly,
+        ReadWrite,
         /// <summary>
         ///
         /// </summary>
-        ReadWrite,
+        Snapshot,
     }
 
     /// <summary>
@@ -31,8 +31,8 @@ namespace Vercel
         {
             return value switch
             {
-                CreateSandboxesV3RequestMountsMode.ReadOnly => "read-only",
                 CreateSandboxesV3RequestMountsMode.ReadWrite => "read-write",
+                CreateSandboxesV3RequestMountsMode.Snapshot => "snapshot",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -43,8 +43,8 @@ namespace Vercel
         {
             return value switch
             {
-                "read-only" => CreateSandboxesV3RequestMountsMode.ReadOnly,
                 "read-write" => CreateSandboxesV3RequestMountsMode.ReadWrite,
+                "snapshot" => CreateSandboxesV3RequestMountsMode.Snapshot,
                 _ => null,
             };
         }

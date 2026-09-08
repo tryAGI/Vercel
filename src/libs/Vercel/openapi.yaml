@@ -160925,12 +160925,12 @@
                         },
                         "mode": {
                           "type": "string",
+                          "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
+                          "default": "read-write",
                           "enum": [
-                            "read-only",
+                            "snapshot",
                             "read-write"
-                          ],
-                          "description": "Mount the drive read-only or read-write.",
-                          "default": "read-write"
+                          ]
                         }
                       }
                     }
@@ -161383,7 +161383,7 @@
                   },
                   "maxSizeBytes": {
                     "type": "integer",
-                    "description": "Maximum drive size in bytes. Defaults to 1 TiB when omitted. The maximum quota is 16 TiB. Request a quota above 16 TiB at https://vercel.com/help."
+                    "description": "Maximum drive size in bytes. Defaults to 1 TiB when omitted (1 GiB for Hobby). The maximum quota is 16 TiB. Request a quota above 16 TiB at https://vercel.com/help."
                   },
                   "region": {
                     "type": "string",
@@ -162976,12 +162976,12 @@
                         },
                         "mode": {
                           "type": "string",
+                          "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
+                          "default": "read-write",
                           "enum": [
-                            "read-only",
+                            "snapshot",
                             "read-write"
-                          ],
-                          "description": "Mount the drive read-only or read-write.",
-                          "default": "read-write"
+                          ]
                         }
                       }
                     }
@@ -165666,12 +165666,12 @@
                         },
                         "mode": {
                           "type": "string",
+                          "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
+                          "default": "read-write",
                           "enum": [
-                            "read-only",
+                            "snapshot",
                             "read-write"
-                          ],
-                          "description": "Mount the drive read-only or read-write.",
-                          "default": "read-write"
+                          ]
                         }
                       }
                     }
@@ -166505,12 +166505,12 @@
                         },
                         "mode": {
                           "type": "string",
+                          "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
+                          "default": "read-write",
                           "enum": [
-                            "read-only",
+                            "snapshot",
                             "read-write"
-                          ],
-                          "description": "Mount the drive read-only or read-write.",
-                          "default": "read-write"
+                          ]
                         }
                       }
                     }
@@ -167398,12 +167398,12 @@
                         },
                         "mode": {
                           "type": "string",
+                          "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
+                          "default": "read-write",
                           "enum": [
-                            "read-only",
+                            "snapshot",
                             "read-write"
-                          ],
-                          "description": "Mount the drive read-only or read-write.",
-                          "default": "read-write"
+                          ]
                         }
                       }
                     }
@@ -168244,12 +168244,12 @@
                         },
                         "mode": {
                           "type": "string",
+                          "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
+                          "default": "read-write",
                           "enum": [
-                            "read-only",
+                            "snapshot",
                             "read-write"
-                          ],
-                          "description": "Mount the drive read-only or read-write.",
-                          "default": "read-write"
+                          ]
                         }
                       }
                     }
@@ -214642,7 +214642,8 @@
                   "type": "string",
                   "enum": [
                     "read-only",
-                    "read-write"
+                    "read-write",
+                    "snapshot"
                   ]
                 }
               },
