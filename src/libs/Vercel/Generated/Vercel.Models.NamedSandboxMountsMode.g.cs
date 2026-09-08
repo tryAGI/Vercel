@@ -16,6 +16,10 @@ namespace Vercel
         ///
         /// </summary>
         ReadWrite,
+        /// <summary>
+        ///
+        /// </summary>
+        Snapshot,
     }
 
     /// <summary>
@@ -32,6 +36,7 @@ namespace Vercel
             {
                 NamedSandboxMountsMode.ReadOnly => "read-only",
                 NamedSandboxMountsMode.ReadWrite => "read-write",
+                NamedSandboxMountsMode.Snapshot => "snapshot",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -44,6 +49,7 @@ namespace Vercel
             {
                 "read-only" => NamedSandboxMountsMode.ReadOnly,
                 "read-write" => NamedSandboxMountsMode.ReadWrite,
+                "snapshot" => NamedSandboxMountsMode.Snapshot,
                 _ => null,
             };
         }
