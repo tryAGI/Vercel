@@ -11,11 +11,6 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget?>?), TypeInfoPropertyName = "UpdateSharedEnvVariableResponseFailedItemErrorTarget_9f62c68cffafe0dd")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableResponseFailedItemErrorTargetItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableResponseFailedItemErrorTarget2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>?), TypeInfoPropertyName = "NullableOneOfStringIListDeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item?), TypeInfoPropertyName = "NullableDeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget?>?), TypeInfoPropertyName = "DeleteSharedEnvVariableResponseFailedItemErrorTarget_f1a3a936d624ccc1")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem?), TypeInfoPropertyName = "NullableDeleteSharedEnvVariableResponseFailedItemErrorTargetItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget?), TypeInfoPropertyName = "NullableDeleteSharedEnvVariableResponseFailedItemErrorTarget2")]
@@ -511,6 +506,11 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityRulesetsRateLimitAlgo?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityRulesetsRateLimitAlgo2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityRulesetsRateLimitAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityRulesetsRateLimitAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityRulesetsLogHeaders?>?), TypeInfoPropertyName = "NullableOneOfIListStringGetMicrofrontendsInGroupResponseProjectSecurityRulesetsLogHeaders2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityRulesetsLogHeaders?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityRulesetsLogHeaders2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityManagedRulesVercelRulesetAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityManagedRulesVercelRulesetAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityManagedRulesTrafficSourcesAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityManagedRulesTrafficSourcesAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityManagedRulesBotFilterAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityManagedRulesBotFilterAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityManagedRulesAiBotsAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityManagedRulesAiBotsAction2")]
     internal sealed partial class SourceGenerationContextChunk026 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

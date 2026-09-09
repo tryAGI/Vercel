@@ -27,6 +27,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorUpdateDataTypeApiKeyToUpdateItem>? ToUpdate { get; set; }
 
         /// <summary>
+        /// Markdown instructions shown to each user on the authorization screen, explaining how to obtain the key they should paste.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("instructions")]
+        public string? Instructions { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -44,17 +50,22 @@ namespace Vercel
         /// <param name="toUpdate">
         /// Existing API key values to update.
         /// </param>
+        /// <param name="instructions">
+        /// Markdown instructions shown to each user on the authorization screen, explaining how to obtain the key they should paste.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ConnectConnectorUpdateDataTypeApiKey(
             global::System.Collections.Generic.IList<string>? toDelete,
             global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorUpdateDataTypeApiKeyToAddItem>? toAdd,
-            global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorUpdateDataTypeApiKeyToUpdateItem>? toUpdate)
+            global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorUpdateDataTypeApiKeyToUpdateItem>? toUpdate,
+            string? instructions)
         {
             this.ToDelete = toDelete;
             this.ToAdd = toAdd;
             this.ToUpdate = toUpdate;
+            this.Instructions = instructions;
         }
 
         /// <summary>

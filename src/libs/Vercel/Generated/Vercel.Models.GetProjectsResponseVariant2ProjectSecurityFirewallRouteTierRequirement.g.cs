@@ -11,11 +11,11 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        Advanced,
+        Critical,
         /// <summary>
         ///
         /// </summary>
-        Critical,
+        Priority,
     }
 
     /// <summary>
@@ -30,8 +30,8 @@ namespace Vercel
         {
             return value switch
             {
-                GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement.Advanced => "advanced",
                 GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement.Critical => "critical",
+                GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement.Priority => "priority",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -42,8 +42,8 @@ namespace Vercel
         {
             return value switch
             {
-                "advanced" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement.Advanced,
                 "critical" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement.Critical,
+                "priority" => GetProjectsResponseVariant2ProjectSecurityFirewallRouteTierRequirement.Priority,
                 _ => null,
             };
         }

@@ -28,6 +28,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? ServiceUrls { get; set; }
 
         /// <summary>
+        /// Markdown instructions shown to each user on the authorization screen, explaining how to obtain the key they should paste.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("instructions")]
+        public string? Instructions { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,17 +51,22 @@ namespace Vercel
         /// <param name="serviceUrls">
         /// The HTTPS resources the API key authenticates against.
         /// </param>
+        /// <param name="instructions">
+        /// Markdown instructions shown to each user on the authorization screen, explaining how to obtain the key they should paste.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ConnectConnectorCreateDataTypeApiKey(
             global::Vercel.ConnectConnectorCreateDataTypeApiKeySubjectType? subjectType,
             global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorCreateDataTypeApiKeyValue>? values,
-            global::System.Collections.Generic.IList<string>? serviceUrls)
+            global::System.Collections.Generic.IList<string>? serviceUrls,
+            string? instructions)
         {
             this.SubjectType = subjectType;
             this.Values = values;
             this.ServiceUrls = serviceUrls;
+            this.Instructions = instructions;
         }
 
         /// <summary>
