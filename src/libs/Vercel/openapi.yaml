@@ -85891,8 +85891,8 @@
                           "tier": {
                             "type": "string",
                             "enum": [
-                              "advanced",
-                              "critical"
+                              "critical",
+                              "priority"
                             ]
                           },
                           "usageStatus": {
@@ -96997,8 +96997,8 @@
                                     "tierRequirement": {
                                       "type": "string",
                                       "enum": [
-                                        "advanced",
-                                        "critical"
+                                        "critical",
+                                        "priority"
                                       ]
                                     },
                                     "has": {
@@ -97651,8 +97651,8 @@
                           "tier": {
                             "type": "string",
                             "enum": [
-                              "advanced",
-                              "critical"
+                              "critical",
+                              "priority"
                             ]
                           },
                           "abuse": {
@@ -101487,8 +101487,8 @@
                                         "tierRequirement": {
                                           "type": "string",
                                           "enum": [
-                                            "advanced",
-                                            "critical"
+                                            "critical",
+                                            "priority"
                                           ]
                                         },
                                         "has": {
@@ -102141,8 +102141,8 @@
                               "tier": {
                                 "type": "string",
                                 "enum": [
-                                  "advanced",
-                                  "critical"
+                                  "critical",
+                                  "priority"
                                 ]
                               },
                               "abuse": {
@@ -109403,8 +109403,8 @@
                               "tier": {
                                 "type": "string",
                                 "enum": [
-                                  "advanced",
-                                  "critical"
+                                  "critical",
+                                  "priority"
                                 ]
                               },
                               "usageStatus": {
@@ -117392,8 +117392,8 @@
                     "tier": {
                       "type": "string",
                       "enum": [
-                        "advanced",
-                        "critical"
+                        "critical",
+                        "priority"
                       ]
                     },
                     "usageStatus": {
@@ -125607,8 +125607,8 @@
                     "tier": {
                       "type": "string",
                       "enum": [
-                        "advanced",
-                        "critical"
+                        "critical",
+                        "priority"
                       ]
                     },
                     "usageStatus": {
@@ -133114,8 +133114,8 @@
                     "tier": {
                       "type": "string",
                       "enum": [
-                        "advanced",
-                        "critical"
+                        "critical",
+                        "priority"
                       ]
                     },
                     "usageStatus": {
@@ -141927,8 +141927,8 @@
                     "tier": {
                       "type": "string",
                       "enum": [
-                        "advanced",
-                        "critical"
+                        "critical",
+                        "priority"
                       ]
                     },
                     "usageStatus": {
@@ -158720,8 +158720,8 @@
                     "tier": {
                       "type": "string",
                       "enum": [
-                        "advanced",
-                        "critical"
+                        "critical",
+                        "priority"
                       ]
                     },
                     "usageStatus": {
@@ -206964,6 +206964,11 @@
                   "format": "uri"
                 },
                 "description": "The HTTPS resources the API key authenticates against."
+              },
+              "instructions": {
+                "type": "string",
+                "maxLength": 4000,
+                "description": "Markdown instructions shown to each user on the authorization screen, explaining how to obtain the key they should paste."
               }
             },
             "additionalProperties": false,
@@ -208335,6 +208340,18 @@
                   "additionalProperties": false
                 },
                 "description": "Existing API key values to update."
+              },
+              "instructions": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "maxLength": 4000
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "description": "Markdown instructions shown to each user on the authorization screen, explaining how to obtain the key they should paste."
               }
             },
             "additionalProperties": false,
@@ -217067,7 +217084,6 @@
                   "ENTERPRISE_UNPAID_INVOICE",
                   "EXPOSURE_CAP_EXCEEDED",
                   "FAIR_USE_LIMITS_EXCEEDED",
-                  "HOBBY_ALLOCATION_PAUSED",
                   "SUBSCRIPTION_CANCELED",
                   "SUBSCRIPTION_EXPIRED",
                   "UNPAID_INVOICE"
@@ -217116,93 +217132,6 @@
                   "wafRateLimitRequest",
                   "webAnalyticsEvent"
                 ]
-              },
-              "hobbyAllocationPause": {
-                "properties": {
-                  "pausedUntil": {
-                    "type": "number",
-                    "description": "Unix ms timestamp at which the pause is eligible to end. This is the single source of truth for when the pause ends. Never re-derive it by re-checking usage \u2014 usage keeps moving while a team is paused, and the pause duration is a fixed experiment parameter."
-                  },
-                  "pausedAt": {
-                    "type": "number",
-                    "description": "Unix ms timestamp of when the pause was applied."
-                  },
-                  "triggers": {
-                    "items": {
-                      "properties": {
-                        "allocation": {
-                          "type": "string",
-                          "enum": [
-                            "analyticsUsage",
-                            "artifacts",
-                            "bandwidth",
-                            "blobDataTransfer",
-                            "blobTotalAdvancedRequests",
-                            "blobTotalAvgSizeInBytes",
-                            "blobTotalGetResponseObjectSizeInBytes",
-                            "blobTotalSimpleRequests",
-                            "connectDataTransfer",
-                            "dataCacheRead",
-                            "dataCacheWrite",
-                            "edgeConfigRead",
-                            "edgeConfigWrite",
-                            "edgeFunctionExecutionUnits",
-                            "edgeMiddlewareInvocations",
-                            "edgeRequest",
-                            "edgeRequestAdditionalCpuDuration",
-                            "elasticConcurrencyBuildSlots",
-                            "fastDataTransfer",
-                            "fastOriginTransfer",
-                            "fluidCpuDuration",
-                            "fluidDuration",
-                            "functionDuration",
-                            "functionInvocation",
-                            "imageOptimizationCacheRead",
-                            "imageOptimizationCacheWrite",
-                            "imageOptimizationTransformation",
-                            "logDrainsVolume",
-                            "monitoringMetric",
-                            "observabilityEvent",
-                            "onDemandConcurrencyMinutes",
-                            "runtimeCacheRead",
-                            "runtimeCacheWrite",
-                            "serverlessFunctionExecution",
-                            "sourceImages",
-                            "wafOwaspExcessBytes",
-                            "wafOwaspRequests",
-                            "wafRateLimitRequest",
-                            "webAnalyticsEvent"
-                          ],
-                          "description": "Metered allocation whose included amount was fully consumed."
-                        },
-                        "usage": {
-                          "type": "number",
-                          "description": "Usage recorded for that allocation when the pause was applied."
-                        }
-                      },
-                      "required": [
-                        "allocation",
-                        "usage"
-                      ],
-                      "type": "object",
-                      "description": "Allocations that were at or over 100% when the pause was applied."
-                    },
-                    "type": "array",
-                    "description": "Allocations that were at or over 100% when the pause was applied."
-                  },
-                  "cohort": {
-                    "type": "string",
-                    "description": "Experiment cohort the owner was assigned to when the pause fired. Free-form so cohort naming stays owned by the assignment path."
-                  }
-                },
-                "required": [
-                  "cohort",
-                  "pausedAt",
-                  "pausedUntil",
-                  "triggers"
-                ],
-                "type": "object",
-                "description": "Present only when `reason` is `HOBBY_ALLOCATION_PAUSED`. Makes the pause self-describing for support without a separate lookup."
               }
             },
             "required": [

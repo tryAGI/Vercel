@@ -106,6 +106,7 @@ namespace Vercel.JsonConverters
             if (__jsonProps.Contains("userAuthorization.enabled")) __score0++;
             if (__jsonProps.Contains("userAuthorization.scopes")) __score0++;
             var __score1 = 0;
+            if (__jsonProps.Contains("instructions")) __score1++;
             if (__jsonProps.Contains("serviceUrls")) __score1++;
             if (__jsonProps.Contains("subjectType")) __score1++;
             if (__jsonProps.Contains("values")) __score1++;
