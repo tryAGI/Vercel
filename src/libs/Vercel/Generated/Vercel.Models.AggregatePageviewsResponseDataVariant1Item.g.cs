@@ -845,6 +845,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isStreaming")]
+        public string? IsStreaming { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isRequestZdr")]
         public string? IsRequestZdr { get; set; }
 
@@ -1484,6 +1490,7 @@ namespace Vercel
         /// <param name="isByok"></param>
         /// <param name="spendAttribution"></param>
         /// <param name="isPrivateModel"></param>
+        /// <param name="isStreaming"></param>
         /// <param name="isRequestZdr"></param>
         /// <param name="hipaaRequested"></param>
         /// <param name="quotaRequested"></param>
@@ -1709,6 +1716,7 @@ namespace Vercel
             string? isByok,
             string? spendAttribution,
             string? isPrivateModel,
+            string? isStreaming,
             string? isRequestZdr,
             string? hipaaRequested,
             string? quotaRequested,
@@ -1930,6 +1938,7 @@ namespace Vercel
             this.IsByok = isByok;
             this.SpendAttribution = spendAttribution;
             this.IsPrivateModel = isPrivateModel;
+            this.IsStreaming = isStreaming;
             this.IsRequestZdr = isRequestZdr;
             this.HipaaRequested = hipaaRequested;
             this.QuotaRequested = quotaRequested;

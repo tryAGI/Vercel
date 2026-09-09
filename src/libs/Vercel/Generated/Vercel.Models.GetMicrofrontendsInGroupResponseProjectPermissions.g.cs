@@ -725,6 +725,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("automation")]
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Automation { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingAddress")]
         public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? BillingAddress { get; set; }
 
@@ -1816,6 +1822,7 @@ namespace Vercel
         /// <param name="vercelAppInstallation"></param>
         /// <param name="vercelAppInstallationRequest"></param>
         /// <param name="auditLog"></param>
+        /// <param name="automation"></param>
         /// <param name="billingAddress"></param>
         /// <param name="billingInformation"></param>
         /// <param name="billingInvoice"></param>
@@ -2100,6 +2107,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelAppInstallation,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? vercelAppInstallationRequest,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? auditLog,
+            global::System.Collections.Generic.IList<global::Vercel.ACLAction>? automation,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? billingAddress,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? billingInformation,
             global::System.Collections.Generic.IList<global::Vercel.ACLAction>? billingInvoice,
@@ -2381,6 +2389,7 @@ namespace Vercel
             this.VercelAppInstallation = vercelAppInstallation;
             this.VercelAppInstallationRequest = vercelAppInstallationRequest;
             this.AuditLog = auditLog;
+            this.Automation = automation;
             this.BillingAddress = billingAddress;
             this.BillingInformation = billingInformation;
             this.BillingInvoice = billingInvoice;
