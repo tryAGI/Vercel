@@ -83804,6 +83804,12 @@
                                 },
                                 "type": "array"
                               },
+                              "automation": {
+                                "items": {
+                                  "$ref": "#/components/schemas/ACLAction"
+                                },
+                                "type": "array"
+                              },
                               "billingAddress": {
                                 "items": {
                                   "$ref": "#/components/schemas/ACLAction"
@@ -106823,6 +106829,12 @@
                                     },
                                     "type": "array"
                                   },
+                                  "automation": {
+                                    "items": {
+                                      "$ref": "#/components/schemas/ACLAction"
+                                    },
+                                    "type": "array"
+                                  },
                                   "billingAddress": {
                                     "items": {
                                       "$ref": "#/components/schemas/ACLAction"
@@ -114801,6 +114813,12 @@
                           "type": "array"
                         },
                         "auditLog": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "automation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -123015,6 +123033,12 @@
                           },
                           "type": "array"
                         },
+                        "automation": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
                         "billingAddress": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
@@ -130511,6 +130535,12 @@
                           "type": "array"
                         },
                         "auditLog": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "automation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -139318,6 +139348,12 @@
                           "type": "array"
                         },
                         "auditLog": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "automation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -156105,6 +156141,12 @@
                           "type": "array"
                         },
                         "auditLog": {
+                          "items": {
+                            "$ref": "#/components/schemas/ACLAction"
+                          },
+                          "type": "array"
+                        },
+                        "automation": {
                           "items": {
                             "$ref": "#/components/schemas/ACLAction"
                           },
@@ -194490,6 +194532,9 @@
                               "isPrivateModel": {
                                 "type": "string"
                               },
+                              "isStreaming": {
+                                "type": "string"
+                              },
                               "isRequestZdr": {
                                 "type": "string"
                               },
@@ -195165,6 +195210,9 @@
                               "isPrivateModel": {
                                 "type": "string"
                               },
+                              "isStreaming": {
+                                "type": "string"
+                              },
                               "isRequestZdr": {
                                 "type": "string"
                               },
@@ -195502,6 +195550,7 @@
                               "isPrefetchRequest",
                               "isPrivateModel",
                               "isRequestZdr",
+                              "isStreaming",
                               "isrAction",
                               "isrCacheRegion",
                               "keyId",
@@ -196312,6 +196361,9 @@
                               "isPrivateModel": {
                                 "type": "string"
                               },
+                              "isStreaming": {
+                                "type": "string"
+                              },
                               "isRequestZdr": {
                                 "type": "string"
                               },
@@ -196987,6 +197039,9 @@
                               "isPrivateModel": {
                                 "type": "string"
                               },
+                              "isStreaming": {
+                                "type": "string"
+                              },
                               "isRequestZdr": {
                                 "type": "string"
                               },
@@ -197324,6 +197379,7 @@
                               "isPrefetchRequest",
                               "isPrivateModel",
                               "isRequestZdr",
+                              "isStreaming",
                               "isrAction",
                               "isrCacheRegion",
                               "keyId",
@@ -198100,6 +198156,9 @@
                             "isPrivateModel": {
                               "type": "string"
                             },
+                            "isStreaming": {
+                              "type": "string"
+                            },
                             "isRequestZdr": {
                               "type": "string"
                             },
@@ -198437,6 +198496,7 @@
                             "isPrefetchRequest",
                             "isPrivateModel",
                             "isRequestZdr",
+                            "isStreaming",
                             "isrAction",
                             "isrCacheRegion",
                             "keyId",
@@ -199161,6 +199221,9 @@
                             "isPrivateModel": {
                               "type": "string"
                             },
+                            "isStreaming": {
+                              "type": "string"
+                            },
                             "isRequestZdr": {
                               "type": "string"
                             },
@@ -199498,6 +199561,7 @@
                             "isPrefetchRequest",
                             "isPrivateModel",
                             "isRequestZdr",
+                            "isStreaming",
                             "isrAction",
                             "isrCacheRegion",
                             "keyId",

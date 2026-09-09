@@ -984,6 +984,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isStreaming")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IsStreaming { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isRequestZdr")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IsRequestZdr { get; set; }
@@ -1696,6 +1703,7 @@ namespace Vercel
         /// <param name="isByok"></param>
         /// <param name="spendAttribution"></param>
         /// <param name="isPrivateModel"></param>
+        /// <param name="isStreaming"></param>
         /// <param name="isRequestZdr"></param>
         /// <param name="hipaaRequested"></param>
         /// <param name="quotaRequested"></param>
@@ -1920,6 +1928,7 @@ namespace Vercel
             string isByok,
             string spendAttribution,
             string isPrivateModel,
+            string isStreaming,
             string isRequestZdr,
             string hipaaRequested,
             string quotaRequested,
@@ -2141,6 +2150,7 @@ namespace Vercel
             this.IsByok = isByok ?? throw new global::System.ArgumentNullException(nameof(isByok));
             this.SpendAttribution = spendAttribution ?? throw new global::System.ArgumentNullException(nameof(spendAttribution));
             this.IsPrivateModel = isPrivateModel ?? throw new global::System.ArgumentNullException(nameof(isPrivateModel));
+            this.IsStreaming = isStreaming ?? throw new global::System.ArgumentNullException(nameof(isStreaming));
             this.IsRequestZdr = isRequestZdr ?? throw new global::System.ArgumentNullException(nameof(isRequestZdr));
             this.HipaaRequested = hipaaRequested ?? throw new global::System.ArgumentNullException(nameof(hipaaRequested));
             this.QuotaRequested = quotaRequested ?? throw new global::System.ArgumentNullException(nameof(quotaRequested));
