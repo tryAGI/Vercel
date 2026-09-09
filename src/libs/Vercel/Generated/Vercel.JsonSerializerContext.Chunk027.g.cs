@@ -11,12 +11,6 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedSourcesOidcProviderToVariant2Preset?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectTrustedSourcesOidcProviderToVariant2Preset2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectGitProviderOptionsCreateDeployments?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectGitProviderOptionsCreateDeployments2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityRulesetsAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityRulesetsAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityRulesetsRateLimitAlgo?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityRulesetsRateLimitAlgo2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityRulesetsRateLimitAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityRulesetsRateLimitAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityRulesetsLogHeaders?>?), TypeInfoPropertyName = "NullableOneOfIListStringGetMicrofrontendsInGroupResponseProjectSecurityRulesetsLogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityRulesetsLogHeaders?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityRulesetsLogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityManagedRulesVercelRulesetAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityManagedRulesVercelRulesetAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurityManagedRulesTrafficSourcesAction?), TypeInfoPropertyName = "NullableGetMicrofrontendsInGroupResponseProjectSecurityManagedRulesTrafficSourcesAction2")]
@@ -511,6 +505,12 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectTargetsReadySubstate?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectTargetsReadySubstate2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectTargetsType?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectTargetsType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectLastAliasRequestJobStatus?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectLastAliasRequestJobStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectLastAliasRequestType?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectLastAliasRequestType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant3ProjectProtectionBypassVariant1, global::Vercel.GetProjectsResponseVariant3ProjectProtectionBypassVariant2>?), TypeInfoPropertyName = "GetProjectsResponseVariant3ProjectProtectionBypassVariant2_59f397c983759021")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectProtectionBypassVariant1Scope?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectProtectionBypassVariant1Scope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectProtectionBypassVariant2Scope?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectProtectionBypassVariant2Scope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant3ProjectTrustedIpsVariant1, global::Vercel.GetProjectsResponseVariant3ProjectTrustedIpsVariant2>?), TypeInfoPropertyName = "NullableOneOfGetProjectsResponseVariant3ProjectTrustedIpsVariant1GetProjectsResponseVariant3ProjectTrustedIpsVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsResponseVariant3ProjectTrustedIpsVariant1DeploymentType?), TypeInfoPropertyName = "NullableGetProjectsResponseVariant3ProjectTrustedIpsVariant1DeploymentType2")]
     internal sealed partial class SourceGenerationContextChunk027 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }

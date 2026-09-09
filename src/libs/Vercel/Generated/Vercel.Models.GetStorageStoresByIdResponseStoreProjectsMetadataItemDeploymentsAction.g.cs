@@ -20,7 +20,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsActionEnvironment> Environments { get; set; }
+        public required global::System.Collections.Generic.IList<string> Environments { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,7 +38,7 @@ namespace Vercel
 #endif
         public GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsAction(
             string slug,
-            global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsActionEnvironment> environments)
+            global::System.Collections.Generic.IList<string> environments)
         {
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));

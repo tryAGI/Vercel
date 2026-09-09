@@ -182492,12 +182492,7 @@
                                         },
                                         "environments": {
                                           "items": {
-                                            "type": "string",
-                                            "enum": [
-                                              "development",
-                                              "preview",
-                                              "production"
-                                            ]
+                                            "type": "string"
                                           },
                                           "type": "array"
                                         }
@@ -182817,12 +182812,7 @@
                                         },
                                         "environments": {
                                           "items": {
-                                            "type": "string",
-                                            "enum": [
-                                              "development",
-                                              "preview",
-                                              "production"
-                                            ]
+                                            "type": "string"
                                           },
                                           "type": "array"
                                         }
@@ -183305,12 +183295,7 @@
                                         },
                                         "environments": {
                                           "items": {
-                                            "type": "string",
-                                            "enum": [
-                                              "development",
-                                              "preview",
-                                              "production"
-                                            ]
+                                            "type": "string"
                                           },
                                           "type": "array"
                                         }
