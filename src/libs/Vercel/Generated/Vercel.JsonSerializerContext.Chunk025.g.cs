@@ -11,12 +11,6 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseServiceVariant2RouteVariant1MitigateAction?), TypeInfoPropertyName = "NullableCancelDeploymentResponseServiceVariant2RouteVariant1MitigateAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant1, global::Vercel.CancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant2>?), TypeInfoPropertyName = "CancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant2_061820df12813e7e")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant1Type?), TypeInfoPropertyName = "NullableCancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant1Op?), TypeInfoPropertyName = "NullableCancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant1Op2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.CancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant1TargetKey>?), TypeInfoPropertyName = "NullableOneOfStringCancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant1TargetKey2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant2Type?), TypeInfoPropertyName = "NullableCancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant2Op?), TypeInfoPropertyName = "NullableCancelDeploymentResponseServiceVariant2RouteVariant1TransformVariant2Op2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.CancelDeploymentResponseServiceVariant2RouteVariant1Destination>?), TypeInfoPropertyName = "NullableOneOfStringCancelDeploymentResponseServiceVariant2RouteVariant1Destination2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CancelDeploymentResponseServiceVariant2RouteVariant1DestinationType?), TypeInfoPropertyName = "NullableCancelDeploymentResponseServiceVariant2RouteVariant1DestinationType2")]
@@ -511,6 +505,12 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget?>?), TypeInfoPropertyName = "CreateSharedEnvVariableResponseFailedItemErrorTarget_5c80c24a0b85a0ab")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableResponseFailedItemErrorTargetItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableResponseFailedItemErrorTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSharedEnvVariableResponseDataItemType?), TypeInfoPropertyName = "NullableListSharedEnvVariableResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem?), TypeInfoPropertyName = "NullableListSharedEnvVariableResponseDataItemTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemType?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableResponseUpdatedItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableResponseUpdatedItemTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>?), TypeInfoPropertyName = "NullableOneOfStringIListUpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
     internal sealed partial class SourceGenerationContextChunk025 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
