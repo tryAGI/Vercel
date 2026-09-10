@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Advanced,
+        /// <summary>
+        ///
+        /// </summary>
         Critical,
         /// <summary>
         ///
@@ -30,6 +34,7 @@ namespace Vercel
         {
             return value switch
             {
+                GetProjectsResponseVariant3ProjectTier.Advanced => "advanced",
                 GetProjectsResponseVariant3ProjectTier.Critical => "critical",
                 GetProjectsResponseVariant3ProjectTier.Priority => "priority",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -42,6 +47,7 @@ namespace Vercel
         {
             return value switch
             {
+                "advanced" => GetProjectsResponseVariant3ProjectTier.Advanced,
                 "critical" => GetProjectsResponseVariant3ProjectTier.Critical,
                 "priority" => GetProjectsResponseVariant3ProjectTier.Priority,
                 _ => null,

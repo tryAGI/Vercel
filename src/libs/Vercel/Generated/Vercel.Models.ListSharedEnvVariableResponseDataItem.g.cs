@@ -9,12 +9,20 @@ namespace Vercel
     public sealed partial class ListSharedEnvVariableResponseDataItem
     {
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("securityIssues")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue> SecurityIssues { get; set; }
+
+        /// <summary>
         /// The date when the Shared Env Var was created.<br/>
         /// Example: 2021-02-10T13:11:49.180Z
         /// </summary>
         /// <example>2021-02-10T13:11:49.180Z</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
-        public global::System.DateTime? Created { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.DateTime Created { get; set; }
 
         /// <summary>
         /// The name of the Shared Env Var.<br/>
@@ -22,7 +30,8 @@ namespace Vercel
         /// </summary>
         /// <example>my-api-key</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("key")]
-        public string? Key { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Key { get; set; }
 
         /// <summary>
         /// The unique identifier of the owner (team) the Shared Env Var was created for.<br/>
@@ -38,7 +47,8 @@ namespace Vercel
         /// </summary>
         /// <example>env_XCG7t7AIHuO2SBA8667zNUiM</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
         /// The unique identifier of the user who created the Shared Env Var.<br/>
@@ -135,7 +145,8 @@ namespace Vercel
         /// whether or not this env variable is decrypted
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("decrypted")]
-        public bool? Decrypted { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Decrypted { get; set; }
 
         /// <summary>
         /// A user provided comment that describes what this Shared Env Var is for.
@@ -158,6 +169,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListSharedEnvVariableResponseDataItem" /> class.
         /// </summary>
+        /// <param name="securityIssues"></param>
         /// <param name="created">
         /// The date when the Shared Env Var was created.<br/>
         /// Example: 2021-02-10T13:11:49.180Z
@@ -166,13 +178,16 @@ namespace Vercel
         /// The name of the Shared Env Var.<br/>
         /// Example: my-api-key
         /// </param>
-        /// <param name="ownerId">
-        /// The unique identifier of the owner (team) the Shared Env Var was created for.<br/>
-        /// Example: team_LLHUOMOoDlqOp8wPE4kFo9pE
-        /// </param>
         /// <param name="id">
         /// The unique identifier of the Shared Env Var.<br/>
         /// Example: env_XCG7t7AIHuO2SBA8667zNUiM
+        /// </param>
+        /// <param name="decrypted">
+        /// whether or not this env variable is decrypted
+        /// </param>
+        /// <param name="ownerId">
+        /// The unique identifier of the owner (team) the Shared Env Var was created for.<br/>
+        /// Example: team_LLHUOMOoDlqOp8wPE4kFo9pE
         /// </param>
         /// <param name="createdBy">
         /// The unique identifier of the user who created the Shared Env Var.<br/>
@@ -219,9 +234,6 @@ namespace Vercel
         /// <param name="customEnvironmentIds">
         /// The custom environment IDs that this Shared Env Var is scoped to.
         /// </param>
-        /// <param name="decrypted">
-        /// whether or not this env variable is decrypted
-        /// </param>
         /// <param name="comment">
         /// A user provided comment that describes what this Shared Env Var is for.
         /// </param>
@@ -232,10 +244,12 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListSharedEnvVariableResponseDataItem(
-            global::System.DateTime? created,
-            string? key,
+            global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue> securityIssues,
+            global::System.DateTime created,
+            string key,
+            string id,
+            bool decrypted,
             string? ownerId,
-            string? id,
             string? createdBy,
             string? deletedBy,
             string? updatedBy,
@@ -248,14 +262,14 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem>? target,
             bool? applyToAllCustomEnvironments,
             global::System.Collections.Generic.IList<string>? customEnvironmentIds,
-            bool? decrypted,
             string? comment,
             string? lastEditedByDisplayName)
         {
+            this.SecurityIssues = securityIssues ?? throw new global::System.ArgumentNullException(nameof(securityIssues));
             this.Created = created;
-            this.Key = key;
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.OwnerId = ownerId;
-            this.Id = id;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.CreatedBy = createdBy;
             this.DeletedBy = deletedBy;
             this.UpdatedBy = updatedBy;

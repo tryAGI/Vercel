@@ -24,12 +24,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public string? Default { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enum")]
         public global::System.Collections.Generic.IList<string>? Enum { get; set; }
 
@@ -52,6 +46,12 @@ namespace Vercel
         public string? Pattern { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public string? Default { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -62,30 +62,30 @@ namespace Vercel
         /// </summary>
         /// <param name="type"></param>
         /// <param name="description"></param>
-        /// <param name="default"></param>
         /// <param name="enum"></param>
         /// <param name="maxLength"></param>
         /// <param name="minLength"></param>
         /// <param name="pattern"></param>
+        /// <param name="default"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant9Items(
             global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant9ItemsType type,
             string? description,
-            string? @default,
             global::System.Collections.Generic.IList<string>? @enum,
             double? maxLength,
             double? minLength,
-            string? pattern)
+            string? pattern,
+            string? @default)
         {
             this.Type = type;
             this.Description = description;
-            this.Default = @default;
             this.Enum = @enum;
             this.MaxLength = maxLength;
             this.MinLength = minLength;
             this.Pattern = pattern;
+            this.Default = @default;
         }
 
         /// <summary>

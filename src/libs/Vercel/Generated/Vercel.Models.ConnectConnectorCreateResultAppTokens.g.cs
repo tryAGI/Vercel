@@ -23,6 +23,12 @@ namespace Vercel
         public required bool SupportsRefinement { get; set; }
 
         /// <summary>
+        /// Whether callers can request resource-specific app tokens.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("supportsResources")]
+        public bool? SupportsResources { get; set; }
+
+        /// <summary>
         /// True when changing app token grants requires reinstalling the app, so tokens cannot be partitioned independently by requester environment.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requiresReinstallation")]
@@ -61,6 +67,9 @@ namespace Vercel
         /// <param name="supportsRefinement">
         /// Whether callers can narrow app-token grants per request.
         /// </param>
+        /// <param name="supportsResources">
+        /// Whether callers can request resource-specific app tokens.
+        /// </param>
         /// <param name="requiresReinstallation">
         /// True when changing app token grants requires reinstalling the app, so tokens cannot be partitioned independently by requester environment.
         /// </param>
@@ -79,6 +88,7 @@ namespace Vercel
         public ConnectConnectorCreateResultAppTokens(
             bool crossInstallation,
             bool supportsRefinement,
+            bool? supportsResources,
             bool? requiresReinstallation,
             global::System.Collections.Generic.IList<string>? scopes,
             global::System.Collections.Generic.IList<string>? supportedAuthorizationDetails,
@@ -86,6 +96,7 @@ namespace Vercel
         {
             this.CrossInstallation = crossInstallation;
             this.SupportsRefinement = supportsRefinement;
+            this.SupportsResources = supportsResources;
             this.RequiresReinstallation = requiresReinstallation;
             this.Scopes = scopes;
             this.SupportedAuthorizationDetails = supportedAuthorizationDetails;
