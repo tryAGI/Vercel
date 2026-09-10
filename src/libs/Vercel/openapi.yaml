@@ -205749,6 +205749,7 @@
             "type": "string",
             "enum": [
               "api-key",
+              "aws-alpha",
               "custom",
               "discord",
               "github",
@@ -206223,6 +206224,7 @@
             "type": "string",
             "enum": [
               "api-key",
+              "aws-alpha",
               "custom",
               "discord",
               "github",
