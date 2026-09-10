@@ -65,6 +65,50 @@ namespace Vercel
         public required string Id { get; set; }
 
         /// <summary>
+        /// The slug of the integration the configuration is created for.<br/>
+        /// Example: slack
+        /// </summary>
+        /// <example>slack</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
+
+        /// <summary>
+        /// A timestamp that tells you when the configuration was created<br/>
+        /// Example: 1558531915505L
+        /// </summary>
+        /// <example>1558531915505L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        /// A timestamp that tells you when the configuration was updated.<br/>
+        /// Example: 1558531915505L
+        /// </summary>
+        /// <example>1558531915505L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double UpdatedAt { get; set; }
+
+        /// <summary>
+        /// The user or team ID that owns the configuration<br/>
+        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
+        /// </summary>
+        /// <example>kr1PsOIzqEL5Xg6M4VZcZosf</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OwnerId { get; set; }
+
+        /// <summary>
+        /// A timestamp that tells you when the configuration was deleted.<br/>
+        /// Example: 1558531915505L
+        /// </summary>
+        /// <example>1558531915505L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
+        public double? DeletedAt { get; set; }
+
+        /// <summary>
         /// The unique identifier of the app the configuration was created for<br/>
         /// Example: oac_xzpVzcUOgcB1nrVlirtKhbWV
         /// </summary>
@@ -83,47 +127,12 @@ namespace Vercel
         public required string UserId { get; set; }
 
         /// <summary>
-        /// A timestamp that tells you when the configuration was created<br/>
-        /// Example: 1558531915505L
-        /// </summary>
-        /// <example>1558531915505L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
-
-        /// <summary>
-        /// A timestamp that tells you when the configuration was deleted.<br/>
-        /// Example: 1558531915505L
-        /// </summary>
-        /// <example>1558531915505L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
-        public double? DeletedAt { get; set; }
-
-        /// <summary>
-        /// The slug of the integration the configuration is created for.<br/>
-        /// Example: slack
-        /// </summary>
-        /// <example>slack</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
-
-        /// <summary>
         /// When the configuration was created for a team, this will show the ID of the team.<br/>
         /// Example: team_nLlpyC6RE1qxydlFKbrxDlud
         /// </summary>
         /// <example>team_nLlpyC6RE1qxydlFKbrxDlud</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
         public string? TeamId { get; set; }
-
-        /// <summary>
-        /// A timestamp that tells you when the configuration was updated.<br/>
-        /// Example: 1558531915505L
-        /// </summary>
-        /// <example>1558531915505L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double UpdatedAt { get; set; }
 
         /// <summary>
         /// The resources that are allowed to be accessed by the configuration.<br/>
@@ -133,15 +142,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<string> Scopes { get; set; }
-
-        /// <summary>
-        /// The user or team ID that owns the configuration<br/>
-        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
-        /// </summary>
-        /// <example>kr1PsOIzqEL5Xg6M4VZcZosf</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
 
         /// <summary>
         ///
@@ -233,6 +233,22 @@ namespace Vercel
         /// The unique identifier of the configuration<br/>
         /// Example: icfg_3bwCLgxL8qt5kjRLcv2Dit7F
         /// </param>
+        /// <param name="slug">
+        /// The slug of the integration the configuration is created for.<br/>
+        /// Example: slack
+        /// </param>
+        /// <param name="createdAt">
+        /// A timestamp that tells you when the configuration was created<br/>
+        /// Example: 1558531915505L
+        /// </param>
+        /// <param name="updatedAt">
+        /// A timestamp that tells you when the configuration was updated.<br/>
+        /// Example: 1558531915505L
+        /// </param>
+        /// <param name="ownerId">
+        /// The user or team ID that owns the configuration<br/>
+        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
+        /// </param>
         /// <param name="integrationId">
         /// The unique identifier of the app the configuration was created for<br/>
         /// Example: oac_xzpVzcUOgcB1nrVlirtKhbWV
@@ -241,25 +257,9 @@ namespace Vercel
         /// The ID of the user that created the configuration.<br/>
         /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
         /// </param>
-        /// <param name="createdAt">
-        /// A timestamp that tells you when the configuration was created<br/>
-        /// Example: 1558531915505L
-        /// </param>
-        /// <param name="slug">
-        /// The slug of the integration the configuration is created for.<br/>
-        /// Example: slack
-        /// </param>
-        /// <param name="updatedAt">
-        /// A timestamp that tells you when the configuration was updated.<br/>
-        /// Example: 1558531915505L
-        /// </param>
         /// <param name="scopes">
         /// The resources that are allowed to be accessed by the configuration.<br/>
         /// Example: [read:project, read-write:log-drain]
-        /// </param>
-        /// <param name="ownerId">
-        /// The user or team ID that owns the configuration<br/>
-        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
         /// </param>
         /// <param name="projects">
         /// When a configuration is limited to access certain projects, this will contain each of the project ID it is allowed to access. If it is not defined, the configuration has full access.<br/>
@@ -315,13 +315,13 @@ namespace Vercel
             global::Vercel.GetConfigurationResponseVariant1Notification notification,
             global::Vercel.OneOf<global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant1, global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant2> transferRequest,
             string id,
+            string slug,
+            double createdAt,
+            double updatedAt,
+            string ownerId,
             string integrationId,
             string userId,
-            double createdAt,
-            string slug,
-            double updatedAt,
             global::System.Collections.Generic.IList<string> scopes,
-            string ownerId,
             global::System.Collections.Generic.IList<string>? projects,
             global::Vercel.GetConfigurationResponseVariant1Status? status,
             global::Vercel.GetConfigurationResponseVariant1Type type,
@@ -345,15 +345,15 @@ namespace Vercel
             this.Status = status;
             this.Type = type;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.CreatedAt = createdAt;
+            this.UpdatedAt = updatedAt;
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.DeletedAt = deletedAt;
             this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
             this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
-            this.CreatedAt = createdAt;
-            this.DeletedAt = deletedAt;
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.TeamId = teamId;
-            this.UpdatedAt = updatedAt;
             this.Scopes = scopes ?? throw new global::System.ArgumentNullException(nameof(scopes));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.CanConfigureOpenTelemetry = canConfigureOpenTelemetry;
             this.CompletedAt = completedAt;
             this.ExternalId = externalId;

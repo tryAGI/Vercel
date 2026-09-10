@@ -25,6 +25,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RepoId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseLinkVariant7TypeJsonConverter))]
         public global::Vercel.CreateProjectResponseLinkVariant7Type Type { get; set; }
@@ -79,6 +86,7 @@ namespace Vercel
         /// </summary>
         /// <param name="org"></param>
         /// <param name="repo"></param>
+        /// <param name="repoId"></param>
         /// <param name="deployHooks"></param>
         /// <param name="gitCredentialId"></param>
         /// <param name="productionBranch"></param>
@@ -92,6 +100,7 @@ namespace Vercel
         public CreateProjectResponseLinkVariant7(
             string org,
             string repo,
+            string repoId,
             global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseLinkVariant7DeployHook> deployHooks,
             string gitCredentialId,
             string productionBranch,
@@ -102,6 +111,7 @@ namespace Vercel
         {
             this.Org = org ?? throw new global::System.ArgumentNullException(nameof(org));
             this.Repo = repo ?? throw new global::System.ArgumentNullException(nameof(repo));
+            this.RepoId = repoId ?? throw new global::System.ArgumentNullException(nameof(repoId));
             this.Type = type;
             this.CreatedAt = createdAt;
             this.DeployHooks = deployHooks ?? throw new global::System.ArgumentNullException(nameof(deployHooks));

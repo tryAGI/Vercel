@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1TargetItem>, global::Vercel.FilterProjectEnvsResponseVariant1Target?>))]
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1TargetItem>, global::Vercel.FilterProjectEnvsResponseVariant1Target?>? Target { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("securityIssues")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1SecurityIssue> SecurityIssues { get; set; }
 
         /// <summary>
         ///
@@ -22,6 +22,81 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.FilterProjectEnvsResponseVariant1TypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.FilterProjectEnvsResponseVariant1Type Type { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Value { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
+        public string? EdgeConfigId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenId")]
+        public string? EdgeConfigTokenId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        public double? CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        public double? UpdatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("system")]
+        public bool? System { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        public string? Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Key { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1TargetItem>, global::Vercel.FilterProjectEnvsResponseVariant1Target?>))]
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1TargetItem>, global::Vercel.FilterProjectEnvsResponseVariant1Target?>? Target { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitBranch")]
+        public string? GitBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
+        public string? CreatedBy { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedBy")]
+        public string? UpdatedBy { get; set; }
 
         /// <summary>
         /// This is used to identify variables that have been migrated from type secret to sensitive.
@@ -44,64 +119,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Value { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vsmValue")]
-        public string? VsmValue { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Key { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("configurationId")]
         public string? ConfigurationId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        public double? UpdatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
-        public string? CreatedBy { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedBy")]
-        public string? UpdatedBy { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitBranch")]
-        public string? GitBranch { get; set; }
 
         /// <summary>
         /// User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior.
@@ -109,18 +128,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("visibility")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.FilterProjectEnvsResponseVariant1VisibilityJsonConverter))]
         public global::Vercel.FilterProjectEnvsResponseVariant1Visibility? Visibility { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
-        public string? EdgeConfigId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenId")]
-        public string? EdgeConfigTokenId { get; set; }
 
         /// <summary>
         /// Provider-specific content hint metadata.
@@ -147,12 +154,6 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? CustomEnvironmentIds { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("system")]
-        public bool? System { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -161,10 +162,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="FilterProjectEnvsResponseVariant1" /> class.
         /// </summary>
+        /// <param name="securityIssues"></param>
         /// <param name="type"></param>
         /// <param name="value"></param>
         /// <param name="key"></param>
+        /// <param name="edgeConfigId"></param>
+        /// <param name="edgeConfigTokenId"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="updatedAt"></param>
+        /// <param name="system"></param>
+        /// <param name="id"></param>
         /// <param name="target"></param>
+        /// <param name="gitBranch"></param>
+        /// <param name="createdBy"></param>
+        /// <param name="updatedBy"></param>
         /// <param name="sunsetSecretId">
         /// This is used to identify variables that have been migrated from type secret to sensitive.
         /// </param>
@@ -172,19 +183,10 @@ namespace Vercel
         /// Legacy now-encryption ciphertext, present after migration swaps value/vsmValue
         /// </param>
         /// <param name="decrypted"></param>
-        /// <param name="vsmValue"></param>
-        /// <param name="id"></param>
         /// <param name="configurationId"></param>
-        /// <param name="createdAt"></param>
-        /// <param name="updatedAt"></param>
-        /// <param name="createdBy"></param>
-        /// <param name="updatedBy"></param>
-        /// <param name="gitBranch"></param>
         /// <param name="visibility">
         /// User-facing config/secret model. When set, authoritative for new code paths when the env-var-config-secret-ui flag is enabled. Legacy rows omit this field; legacy rows omit it and callers fall back to existing `type` behavior.
         /// </param>
-        /// <param name="edgeConfigId"></param>
-        /// <param name="edgeConfigTokenId"></param>
         /// <param name="contentHint">
         /// Provider-specific content hint metadata.
         /// </param>
@@ -193,58 +195,57 @@ namespace Vercel
         /// </param>
         /// <param name="comment"></param>
         /// <param name="customEnvironmentIds"></param>
-        /// <param name="system"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FilterProjectEnvsResponseVariant1(
+            global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1SecurityIssue> securityIssues,
             global::Vercel.FilterProjectEnvsResponseVariant1Type type,
             string value,
             string key,
+            string? edgeConfigId,
+            string? edgeConfigTokenId,
+            double? createdAt,
+            double? updatedAt,
+            bool? system,
+            string? id,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1TargetItem>, global::Vercel.FilterProjectEnvsResponseVariant1Target?>? target,
+            string? gitBranch,
+            string? createdBy,
+            string? updatedBy,
             string? sunsetSecretId,
             string? legacyValue,
             bool? decrypted,
-            string? vsmValue,
-            string? id,
             string? configurationId,
-            double? createdAt,
-            double? updatedAt,
-            string? createdBy,
-            string? updatedBy,
-            string? gitBranch,
             global::Vercel.FilterProjectEnvsResponseVariant1Visibility? visibility,
-            string? edgeConfigId,
-            string? edgeConfigTokenId,
             object? contentHint,
             global::Vercel.FilterProjectEnvsResponseVariant1InternalContentHint? internalContentHint,
             string? comment,
-            global::System.Collections.Generic.IList<string>? customEnvironmentIds,
-            bool? system)
+            global::System.Collections.Generic.IList<string>? customEnvironmentIds)
         {
-            this.Target = target;
+            this.SecurityIssues = securityIssues ?? throw new global::System.ArgumentNullException(nameof(securityIssues));
             this.Type = type;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
+            this.EdgeConfigId = edgeConfigId;
+            this.EdgeConfigTokenId = edgeConfigTokenId;
+            this.CreatedAt = createdAt;
+            this.UpdatedAt = updatedAt;
+            this.System = system;
+            this.Id = id;
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
+            this.Target = target;
+            this.GitBranch = gitBranch;
+            this.CreatedBy = createdBy;
+            this.UpdatedBy = updatedBy;
             this.SunsetSecretId = sunsetSecretId;
             this.LegacyValue = legacyValue;
             this.Decrypted = decrypted;
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
-            this.VsmValue = vsmValue;
-            this.Id = id;
-            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.ConfigurationId = configurationId;
-            this.CreatedAt = createdAt;
-            this.UpdatedAt = updatedAt;
-            this.CreatedBy = createdBy;
-            this.UpdatedBy = updatedBy;
-            this.GitBranch = gitBranch;
             this.Visibility = visibility;
-            this.EdgeConfigId = edgeConfigId;
-            this.EdgeConfigTokenId = edgeConfigTokenId;
             this.ContentHint = contentHint;
             this.InternalContentHint = internalContentHint;
             this.Comment = comment;
             this.CustomEnvironmentIds = customEnvironmentIds;
-            this.System = system;
         }
 
         /// <summary>

@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Advanced,
+        /// <summary>
+        ///
+        /// </summary>
         Critical,
         /// <summary>
         ///
@@ -30,6 +34,7 @@ namespace Vercel
         {
             return value switch
             {
+                UpdateMicrofrontendsResponseTier.Advanced => "advanced",
                 UpdateMicrofrontendsResponseTier.Critical => "critical",
                 UpdateMicrofrontendsResponseTier.Priority => "priority",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -42,6 +47,7 @@ namespace Vercel
         {
             return value switch
             {
+                "advanced" => UpdateMicrofrontendsResponseTier.Advanced,
                 "critical" => UpdateMicrofrontendsResponseTier.Critical,
                 "priority" => UpdateMicrofrontendsResponseTier.Priority,
                 _ => null,

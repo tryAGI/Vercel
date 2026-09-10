@@ -23,6 +23,12 @@ namespace Vercel
         public required bool SupportsRefinement { get; set; }
 
         /// <summary>
+        /// Whether callers can request resource-specific user tokens.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("supportsResources")]
+        public bool? SupportsResources { get; set; }
+
+        /// <summary>
         /// Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is the connector's enabled `userAuthorization.scopes` configuration.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scopes")]
@@ -55,6 +61,9 @@ namespace Vercel
         /// <param name="supportsRefinement">
         /// Whether callers can narrow user-token grants per request.
         /// </param>
+        /// <param name="supportsResources">
+        /// Whether callers can request resource-specific user tokens.
+        /// </param>
         /// <param name="scopes">
         /// Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is the connector's enabled `userAuthorization.scopes` configuration.
         /// </param>
@@ -70,12 +79,14 @@ namespace Vercel
         public ConnectConnectorCreateResultUserTokens(
             bool crossInstallation,
             bool supportsRefinement,
+            bool? supportsResources,
             global::System.Collections.Generic.IList<string>? scopes,
             global::System.Collections.Generic.IList<string>? supportedAuthorizationDetails,
             bool? manualCredentialInput)
         {
             this.CrossInstallation = crossInstallation;
             this.SupportsRefinement = supportsRefinement;
+            this.SupportsResources = supportsResources;
             this.Scopes = scopes;
             this.SupportedAuthorizationDetails = supportedAuthorizationDetails;
             this.ManualCredentialInput = manualCredentialInput;

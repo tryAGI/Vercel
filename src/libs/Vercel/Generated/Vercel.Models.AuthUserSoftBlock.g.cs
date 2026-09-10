@@ -31,6 +31,12 @@ namespace Vercel
         public global::Vercel.AuthUserSoftBlockBlockedDueToOverageType? BlockedDueToOverageType { get; set; }
 
         /// <summary>
+        /// Since September 2026. Set only by `billing-usage-alerts` for usage plans with a `blockDurationMs`; its presence marks a pause that expires on its own.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("unpauseAt")]
+        public double? UnpauseAt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -42,17 +48,22 @@ namespace Vercel
         /// <param name="blockedAt"></param>
         /// <param name="reason"></param>
         /// <param name="blockedDueToOverageType"></param>
+        /// <param name="unpauseAt">
+        /// Since September 2026. Set only by `billing-usage-alerts` for usage plans with a `blockDurationMs`; its presence marks a pause that expires on its own.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthUserSoftBlock(
             double blockedAt,
             global::Vercel.AuthUserSoftBlockReason reason,
-            global::Vercel.AuthUserSoftBlockBlockedDueToOverageType? blockedDueToOverageType)
+            global::Vercel.AuthUserSoftBlockBlockedDueToOverageType? blockedDueToOverageType,
+            double? unpauseAt)
         {
             this.BlockedAt = blockedAt;
             this.Reason = reason;
             this.BlockedDueToOverageType = blockedDueToOverageType;
+            this.UnpauseAt = unpauseAt;
         }
 
         /// <summary>

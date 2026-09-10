@@ -36,12 +36,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public double? Default { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("exclusiveMaximum")]
         public double? ExclusiveMaximum { get; set; }
 
@@ -50,6 +44,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("exclusiveMinimum")]
         public double? ExclusiveMinimum { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public double? Default { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -64,9 +64,9 @@ namespace Vercel
         /// <param name="minimum"></param>
         /// <param name="maximum"></param>
         /// <param name="description"></param>
-        /// <param name="default"></param>
         /// <param name="exclusiveMaximum"></param>
         /// <param name="exclusiveMinimum"></param>
+        /// <param name="default"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -75,17 +75,17 @@ namespace Vercel
             double? minimum,
             double? maximum,
             string? description,
-            double? @default,
             double? exclusiveMaximum,
-            double? exclusiveMinimum)
+            double? exclusiveMinimum,
+            double? @default)
         {
             this.Type = type;
             this.Minimum = minimum;
             this.Maximum = maximum;
             this.Description = description;
-            this.Default = @default;
             this.ExclusiveMaximum = exclusiveMaximum;
             this.ExclusiveMinimum = exclusiveMinimum;
+            this.Default = @default;
         }
 
         /// <summary>

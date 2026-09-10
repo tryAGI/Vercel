@@ -11,6 +11,14 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DuplicateDomainsCode?), TypeInfoPropertyName = "NullableDuplicateDomainsCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TooManyDomainsCode?), TypeInfoPropertyName = "NullableTooManyDomainsCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DNSSECEnabledCode?), TypeInfoPropertyName = "NullableDNSSECEnabledCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainAlreadyOwnedCode?), TypeInfoPropertyName = "NullableDomainAlreadyOwnedCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotRenewableCode?), TypeInfoPropertyName = "NullableDomainNotRenewableCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainAlreadyRenewingCode?), TypeInfoPropertyName = "NullableDomainAlreadyRenewingCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BoughtTooRecentlyCode?), TypeInfoPropertyName = "NullableBoughtTooRecentlyCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RegistrantField?), TypeInfoPropertyName = "NullableRegistrantField2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<string, global::Vercel.RegistrantFieldVariant1RequiredWhen>?), TypeInfoPropertyName = "NullableAnyOfStringRegistrantFieldVariant1RequiredWhen2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RegistrantFieldVariant1Type?), TypeInfoPropertyName = "NullableRegistrantFieldVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<string, global::Vercel.RegistrantFieldVariant2RequiredWhen>?), TypeInfoPropertyName = "NullableAnyOfStringRegistrantFieldVariant2RequiredWhen2")]
@@ -503,14 +511,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRuleConditionGroupItemConditionOp?), TypeInfoPropertyName = "NullablePutFirewallConfigRequestRuleConditionGroupItemConditionOp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<string, global::System.Collections.Generic.IList<string>, double?>?), TypeInfoPropertyName = "NullableAnyOfStringIListStringDouble2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRuleActionMitigateAction?), TypeInfoPropertyName = "NullablePutFirewallConfigRequestRuleActionMitigateAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PutFirewallConfigRequestRuleActionMitigateRateLimitVariant1, object>?), TypeInfoPropertyName = "NullableAnyOfPutFirewallConfigRequestRuleActionMitigateRateLimitVariant1Object2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRuleActionMitigateRateLimitVariant1Algo?), TypeInfoPropertyName = "NullablePutFirewallConfigRequestRuleActionMitigateRateLimitVariant1Algo2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PutFirewallConfigRequestRuleActionMitigateRateLimitVariant1ActionEnum?, object>?), TypeInfoPropertyName = "NullableAnyOfPutFirewallConfigRequestRuleActionMitigateRateLimitVariant1ActionEnumObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutFirewallConfigRequestRuleActionMitigateRateLimitVariant1ActionEnum?), TypeInfoPropertyName = "NullablePutFirewallConfigRequestRuleActionMitigateRateLimitVariant1ActionEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.PutFirewallConfigRequestRuleActionMitigateRedirectVariant1, object>?), TypeInfoPropertyName = "NullableAnyOfPutFirewallConfigRequestRuleActionMitigateRedirectVariant1Object2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>?), TypeInfoPropertyName = "NullableOneOfStringIListString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::System.Collections.Generic.IList<string>, string>?), TypeInfoPropertyName = "NullableAnyOfIListStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.PutFirewallConfigRequestRuleset>, global::System.Collections.Generic.Dictionary<string, global::Vercel.PutFirewallConfigRequestRulesets2>>?), TypeInfoPropertyName = "NullableAnyOfIListPutFirewallConfigRequestRulesetDictionaryStringPutFirewallConfigRequestRulesets22")]
     internal sealed partial class SourceGenerationContextChunk022 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
