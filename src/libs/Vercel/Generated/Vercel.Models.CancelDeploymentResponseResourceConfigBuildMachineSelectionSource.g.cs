@@ -23,6 +23,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        TeamEntitlement,
+        /// <summary>
+        ///
+        /// </summary>
         TeamSetting,
     }
 
@@ -41,6 +45,7 @@ namespace Vercel
                 CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.ElasticAlgorithm => "elastic-algorithm",
                 CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.PlanDefault => "plan-default",
                 CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.ProjectSetting => "project-setting",
+                CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.TeamEntitlement => "team-entitlement",
                 CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.TeamSetting => "team-setting",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -55,6 +60,7 @@ namespace Vercel
                 "elastic-algorithm" => CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.ElasticAlgorithm,
                 "plan-default" => CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.PlanDefault,
                 "project-setting" => CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.ProjectSetting,
+                "team-entitlement" => CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.TeamEntitlement,
                 "team-setting" => CancelDeploymentResponseResourceConfigBuildMachineSelectionSource.TeamSetting,
                 _ => null,
             };
