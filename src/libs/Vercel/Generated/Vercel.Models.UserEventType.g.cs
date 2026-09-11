@@ -1360,6 +1360,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        OrganizationTeamSsoUpdate,
+        /// <summary>
+        ///
+        /// </summary>
         OwnerBlocked,
         /// <summary>
         ///
@@ -3032,6 +3036,7 @@ namespace Vercel
                 UserEventType.OrganizationTeamAdd => "organization-team-add",
                 UserEventType.OrganizationTeamCreate => "organization-team-create",
                 UserEventType.OrganizationTeamDelete => "organization-team-delete",
+                UserEventType.OrganizationTeamSsoUpdate => "organization-team-sso-update",
                 UserEventType.OwnerBlocked => "owner-blocked",
                 UserEventType.OwnerSoftBlocked => "owner-soft-blocked",
                 UserEventType.OwnerSoftUnblocked => "owner-soft-unblocked",
@@ -3710,6 +3715,7 @@ namespace Vercel
                 "organization-team-add" => UserEventType.OrganizationTeamAdd,
                 "organization-team-create" => UserEventType.OrganizationTeamCreate,
                 "organization-team-delete" => UserEventType.OrganizationTeamDelete,
+                "organization-team-sso-update" => UserEventType.OrganizationTeamSsoUpdate,
                 "owner-blocked" => UserEventType.OwnerBlocked,
                 "owner-soft-blocked" => UserEventType.OwnerSoftBlocked,
                 "owner-soft-unblocked" => UserEventType.OwnerSoftUnblocked,
