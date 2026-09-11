@@ -44619,7 +44619,7 @@
         ],
         "responses": {
           "200": {
-            "description": "",
+            "description": "Successful response retrieving project domains for an apex domain.",
             "content": {
               "application/json": {
                 "schema": {
