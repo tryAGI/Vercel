@@ -1680,6 +1680,30 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ProjectGitCredentialBoundCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialBoundDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialBoundUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialGrantCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialGrantDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialGrantUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         ProjectGitForkProtectionUpdated,
         /// <summary>
         ///
@@ -3116,6 +3140,12 @@ namespace Vercel
                 ListEventTypeName.ProjectGitCommitCommentsToggled => "project-git-commit-comments-toggled",
                 ListEventTypeName.ProjectGitCommitStatusToggled => "project-git-commit-status-toggled",
                 ListEventTypeName.ProjectGitCreateDeploymentsToggled => "project-git-create-deployments-toggled",
+                ListEventTypeName.ProjectGitCredentialBoundCreated => "project-git-credential-bound-created",
+                ListEventTypeName.ProjectGitCredentialBoundDeleted => "project-git-credential-bound-deleted",
+                ListEventTypeName.ProjectGitCredentialBoundUpdated => "project-git-credential-bound-updated",
+                ListEventTypeName.ProjectGitCredentialGrantCreated => "project-git-credential-grant-created",
+                ListEventTypeName.ProjectGitCredentialGrantDeleted => "project-git-credential-grant-deleted",
+                ListEventTypeName.ProjectGitCredentialGrantUpdated => "project-git-credential-grant-updated",
                 ListEventTypeName.ProjectGitForkProtectionUpdated => "project-git-fork-protection-updated",
                 ListEventTypeName.ProjectGitLfsToggled => "project-git-lfs-toggled",
                 ListEventTypeName.ProjectGitPrCommentsToggled => "project-git-pr-comments-toggled",
@@ -3795,6 +3825,12 @@ namespace Vercel
                 "project-git-commit-comments-toggled" => ListEventTypeName.ProjectGitCommitCommentsToggled,
                 "project-git-commit-status-toggled" => ListEventTypeName.ProjectGitCommitStatusToggled,
                 "project-git-create-deployments-toggled" => ListEventTypeName.ProjectGitCreateDeploymentsToggled,
+                "project-git-credential-bound-created" => ListEventTypeName.ProjectGitCredentialBoundCreated,
+                "project-git-credential-bound-deleted" => ListEventTypeName.ProjectGitCredentialBoundDeleted,
+                "project-git-credential-bound-updated" => ListEventTypeName.ProjectGitCredentialBoundUpdated,
+                "project-git-credential-grant-created" => ListEventTypeName.ProjectGitCredentialGrantCreated,
+                "project-git-credential-grant-deleted" => ListEventTypeName.ProjectGitCredentialGrantDeleted,
+                "project-git-credential-grant-updated" => ListEventTypeName.ProjectGitCredentialGrantUpdated,
                 "project-git-fork-protection-updated" => ListEventTypeName.ProjectGitForkProtectionUpdated,
                 "project-git-lfs-toggled" => ListEventTypeName.ProjectGitLfsToggled,
                 "project-git-pr-comments-toggled" => ListEventTypeName.ProjectGitPrCommentsToggled,

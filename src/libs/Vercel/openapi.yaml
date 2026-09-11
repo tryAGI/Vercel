@@ -85000,6 +85000,14 @@
                           "trustedSources": {
                             "nullable": true,
                             "properties": {
+                              "enableVercelCiSameRepository": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ],
+                                "description": "Allow same-team Vercel CI access to preview deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value."
+                              },
                               "projects": {
                                 "additionalProperties": {
                                   "properties": {
@@ -96602,6 +96610,14 @@
                           "trustedSources": {
                             "nullable": true,
                             "properties": {
+                              "enableVercelCiSameRepository": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ],
+                                "description": "Allow same-team Vercel CI access to preview deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value."
+                              },
                               "projects": {
                                 "additionalProperties": {
                                   "properties": {
@@ -101102,6 +101118,14 @@
                               "trustedSources": {
                                 "nullable": true,
                                 "properties": {
+                                  "enableVercelCiSameRepository": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ],
+                                    "description": "Allow same-team Vercel CI access to preview deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value."
+                                  },
                                   "projects": {
                                     "additionalProperties": {
                                       "properties": {
@@ -108552,6 +108576,14 @@
                               "trustedSources": {
                                 "nullable": true,
                                 "properties": {
+                                  "enableVercelCiSameRepository": {
+                                    "type": "boolean",
+                                    "enum": [
+                                      false,
+                                      true
+                                    ],
+                                    "description": "Allow same-team Vercel CI access to preview deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value."
+                                  },
                                   "projects": {
                                     "additionalProperties": {
                                       "properties": {
@@ -116550,6 +116582,14 @@
                     "trustedSources": {
                       "nullable": true,
                       "properties": {
+                        "enableVercelCiSameRepository": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Allow same-team Vercel CI access to preview deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value."
+                        },
                         "projects": {
                           "additionalProperties": {
                             "properties": {
@@ -124774,6 +124814,14 @@
                     "trustedSources": {
                       "nullable": true,
                       "properties": {
+                        "enableVercelCiSameRepository": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Allow same-team Vercel CI access to preview deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value."
+                        },
                         "projects": {
                           "additionalProperties": {
                             "properties": {
@@ -132290,6 +132338,14 @@
                     "trustedSources": {
                       "nullable": true,
                       "properties": {
+                        "enableVercelCiSameRepository": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Allow same-team Vercel CI access to preview deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value."
+                        },
                         "projects": {
                           "additionalProperties": {
                             "properties": {
@@ -134812,6 +134868,10 @@
                     "additionalProperties": false,
                     "description": "Deployment Protection Trusted Sources",
                     "properties": {
+                      "enableVercelCiSameRepository": {
+                        "type": "boolean",
+                        "description": "Allow same-team Vercel CI access to preview deployments built from the same repository as the CI run. The deployment source repository, not the current project repository link, is authoritative. Defaults to enabled when not stored. Omitting this field preserves its stored value, including when trustedSources is cleared. Set true explicitly to re-enable."
+                      },
                       "projects": {
                         "type": "object",
                         "maxProperties": 100,
@@ -141112,6 +141172,14 @@
                     "trustedSources": {
                       "nullable": true,
                       "properties": {
+                        "enableVercelCiSameRepository": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Allow same-team Vercel CI access to preview deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value."
+                        },
                         "projects": {
                           "additionalProperties": {
                             "properties": {
@@ -157938,6 +158006,14 @@
                     "trustedSources": {
                       "nullable": true,
                       "properties": {
+                        "enableVercelCiSameRepository": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Allow same-team Vercel CI access to preview deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value."
+                        },
                         "projects": {
                           "additionalProperties": {
                             "properties": {
@@ -211133,6 +211209,12 @@
               "project-git-commit-comments-toggled",
               "project-git-commit-status-toggled",
               "project-git-create-deployments-toggled",
+              "project-git-credential-bound-created",
+              "project-git-credential-bound-deleted",
+              "project-git-credential-bound-updated",
+              "project-git-credential-grant-created",
+              "project-git-credential-grant-deleted",
+              "project-git-credential-grant-updated",
               "project-git-fork-protection-updated",
               "project-git-lfs-toggled",
               "project-git-pr-comments-toggled",
@@ -212141,6 +212223,12 @@
               "project-git-commit-comments-toggled",
               "project-git-commit-status-toggled",
               "project-git-create-deployments-toggled",
+              "project-git-credential-bound-created",
+              "project-git-credential-bound-deleted",
+              "project-git-credential-bound-updated",
+              "project-git-credential-grant-created",
+              "project-git-credential-grant-deleted",
+              "project-git-credential-grant-updated",
               "project-git-fork-protection-updated",
               "project-git-lfs-toggled",
               "project-git-pr-comments-toggled",
@@ -212869,6 +212957,12 @@
                 "project-git-commit-comments-toggled",
                 "project-git-commit-status-toggled",
                 "project-git-create-deployments-toggled",
+                "project-git-credential-bound-created",
+                "project-git-credential-bound-deleted",
+                "project-git-credential-bound-updated",
+                "project-git-credential-grant-created",
+                "project-git-credential-grant-deleted",
+                "project-git-credential-grant-updated",
                 "project-git-fork-protection-updated",
                 "project-git-lfs-toggled",
                 "project-git-pr-comments-toggled",
