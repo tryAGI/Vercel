@@ -51,7 +51,7 @@ namespace Vercel
         public global::Vercel.AnyOf<global::Vercel.CreateDeploymentRequestGitSourceVariant1, global::Vercel.CreateDeploymentRequestGitSourceVariant2, global::Vercel.CreateDeploymentRequestGitSourceVariant3, global::Vercel.CreateDeploymentRequestGitSourceVariant4, global::Vercel.CreateDeploymentRequestGitSourceVariant5, global::Vercel.CreateDeploymentRequestGitSourceVariant6, global::Vercel.CreateDeploymentRequestGitSourceVariant7, global::Vercel.CreateDeploymentRequestGitSourceVariant8, global::Vercel.CreateDeploymentRequestGitSourceVariant9>? GitSource { get; set; }
 
         /// <summary>
-        /// An object containing the deployment's metadata. Multiple key-value pairs can be attached to a deployment<br/>
+        /// An object containing the deployment's metadata. Multiple key-value pairs can be attached to a deployment. For deployments created with a Cursor Origin `gitSource`, Vercel automatically adds `cursorOriginDeployment`, `cursorOriginCommitSha`, `cursorOriginCommitRef`, `cursorOriginCommitMessage`, `cursorOriginCommitAuthorName`, `cursorOriginCommitAuthorEmail` when available, `cursorOriginOwner`, `cursorOriginRepo`, `cursorOriginRepoId`, and `cursorOriginPrId` for pull request deployments.<br/>
         /// Example: {"foo":"bar"}
         /// </summary>
         /// <example>{"foo":"bar"}</example>
@@ -136,7 +136,7 @@ namespace Vercel
         /// Defines the Git Repository source to be deployed. This property can not be used in combination with `files`.
         /// </param>
         /// <param name="meta">
-        /// An object containing the deployment's metadata. Multiple key-value pairs can be attached to a deployment<br/>
+        /// An object containing the deployment's metadata. Multiple key-value pairs can be attached to a deployment. For deployments created with a Cursor Origin `gitSource`, Vercel automatically adds `cursorOriginDeployment`, `cursorOriginCommitSha`, `cursorOriginCommitRef`, `cursorOriginCommitMessage`, `cursorOriginCommitAuthorName`, `cursorOriginCommitAuthorEmail` when available, `cursorOriginOwner`, `cursorOriginRepo`, `cursorOriginRepoId`, and `cursorOriginPrId` for pull request deployments.<br/>
         /// Example: {"foo":"bar"}
         /// </param>
         /// <param name="monorepoManager">

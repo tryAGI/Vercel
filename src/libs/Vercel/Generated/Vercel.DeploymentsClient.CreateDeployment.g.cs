@@ -887,7 +887,7 @@ namespace Vercel
         /// Defines the Git Repository source to be deployed. This property can not be used in combination with `files`.
         /// </param>
         /// <param name="meta">
-        /// An object containing the deployment's metadata. Multiple key-value pairs can be attached to a deployment<br/>
+        /// An object containing the deployment's metadata. Multiple key-value pairs can be attached to a deployment. For deployments created with a Cursor Origin `gitSource`, Vercel automatically adds `cursorOriginDeployment`, `cursorOriginCommitSha`, `cursorOriginCommitRef`, `cursorOriginCommitMessage`, `cursorOriginCommitAuthorName`, `cursorOriginCommitAuthorEmail` when available, `cursorOriginOwner`, `cursorOriginRepo`, `cursorOriginRepoId`, and `cursorOriginPrId` for pull request deployments.<br/>
         /// Example: {"foo":"bar"}
         /// </param>
         /// <param name="monorepoManager">

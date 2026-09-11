@@ -4,11 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    ///
+    /// Deploys from the Cursor Origin repository linked to the target project. The repository ID must match the linked repository; Vercel resolves the owner and repository name from the project link.
     /// </summary>
     public sealed partial class CreateDeploymentRequestGitSourceVariant9
     {
         /// <summary>
+        /// The Origin workspace slug. Optional because Vercel resolves it from the linked project.<br/>
         /// Example: bitbucket_user
         /// </summary>
         /// <example>bitbucket_user</example>
@@ -16,6 +17,7 @@ namespace Vercel
         public string? Owner { get; set; }
 
         /// <summary>
+        /// The branch or Git reference to deploy.<br/>
         /// Example: main
         /// </summary>
         /// <example>main</example>
@@ -24,6 +26,7 @@ namespace Vercel
         public required string Ref { get; set; }
 
         /// <summary>
+        /// The Origin repository name. Optional because Vercel resolves it from the linked project.<br/>
         /// Example: next.js
         /// </summary>
         /// <example>next.js</example>
@@ -31,6 +34,7 @@ namespace Vercel
         public string? Repo { get; set; }
 
         /// <summary>
+        /// The stable Origin repository ID. Read it from the `link.repoId` field returned by the project API.<br/>
         /// Example: 123456789
         /// </summary>
         /// <example>123456789</example>
@@ -39,6 +43,7 @@ namespace Vercel
         public required string RepoId { get; set; }
 
         /// <summary>
+        /// The commit SHA to deploy. When omitted, Vercel resolves the latest commit on `ref`.<br/>
         /// Example: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
         /// </summary>
         /// <example>a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0</example>
@@ -62,18 +67,23 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateDeploymentRequestGitSourceVariant9" /> class.
         /// </summary>
         /// <param name="ref">
+        /// The branch or Git reference to deploy.<br/>
         /// Example: main
         /// </param>
         /// <param name="repoId">
+        /// The stable Origin repository ID. Read it from the `link.repoId` field returned by the project API.<br/>
         /// Example: 123456789
         /// </param>
         /// <param name="owner">
+        /// The Origin workspace slug. Optional because Vercel resolves it from the linked project.<br/>
         /// Example: bitbucket_user
         /// </param>
         /// <param name="repo">
+        /// The Origin repository name. Optional because Vercel resolves it from the linked project.<br/>
         /// Example: next.js
         /// </param>
         /// <param name="sha">
+        /// The commit SHA to deploy. When omitted, Vercel resolves the latest commit on `ref`.<br/>
         /// Example: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
         /// </param>
         /// <param name="type"></param>
