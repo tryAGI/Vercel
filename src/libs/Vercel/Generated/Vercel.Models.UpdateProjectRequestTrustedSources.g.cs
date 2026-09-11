@@ -9,6 +9,12 @@ namespace Vercel
     public sealed partial class UpdateProjectRequestTrustedSources
     {
         /// <summary>
+        /// Allow same-team Vercel CI access to preview deployments built from the same repository as the CI run. The deployment source repository, not the current project repository link, is authoritative. Defaults to enabled when not stored. Omitting this field preserves its stored value, including when trustedSources is cleared. Set true explicitly to re-enable.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enableVercelCiSameRepository")]
+        public bool? EnableVercelCiSameRepository { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
@@ -29,15 +35,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateProjectRequestTrustedSources" /> class.
         /// </summary>
+        /// <param name="enableVercelCiSameRepository">
+        /// Allow same-team Vercel CI access to preview deployments built from the same repository as the CI run. The deployment source repository, not the current project repository link, is authoritative. Defaults to enabled when not stored. Omitting this field preserves its stored value, including when trustedSources is cleared. Set true explicitly to re-enable.
+        /// </param>
         /// <param name="projects"></param>
         /// <param name="oidcProviders"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectRequestTrustedSources(
+            bool? enableVercelCiSameRepository,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateProjectRequestTrustedSourcesProjects2>? projects,
             global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestTrustedSourcesOidcProvider>>? oidcProviders)
         {
+            this.EnableVercelCiSameRepository = enableVercelCiSameRepository;
             this.Projects = projects;
             this.OidcProviders = oidcProviders;
         }
